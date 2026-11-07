@@ -1,0 +1,314 @@
+[
+  {
+    "id": "CN-01",
+    "tier": "A",
+    "title": "个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange), PBOC Order No. 3 [2006]",
+    "publisher": "People's Bank of China / SAFE",
+    "lang": "zh",
+    "url": "http://m.safe.gov.cn/safe/2006/1225/5319.html",
+    "url_alt": "https://www.safe.gov.cn/safe/2006/1225/5319.html",
+    "key_text": "第九条 对个人结汇和境内个人购汇实行年度总额管理…；第十三条 境外个人在境内取得的经常项目项下合法人民币收入，可以凭本人有效身份证件及相关证明材料在银行办理购汇及汇出；第二十二条 境外个人出售境内商品房所得人民币，经外汇局核准可以购汇汇出；第二十六条 境外个人在境内的合法财产对外转移，应当按照个人财产对外转移的有关外汇管理规定办理；第三十七条 境内个人 = 持居民身份证等证件的中国公民；境外个人 = 持护照等证件的外国公民（含无国籍人）及港澳台同胞",
+    "verifies": "Definition of 境内个人 vs 境外个人; the annual-quota rule binds only 境内个人 purchases of FX; the 境外个人 current-account purchase-and-remit right; the property-sale remittance route; the capital-account carve-out."
+  },
+  {
+    "id": "CN-02",
+    "tier": "A",
+    "title": "个人外汇管理办法实施细则 (Implementing Rules), 汇发[2007]1号",
+    "publisher": "SAFE — Hebei sub-bureau publication",
+    "lang": "zh",
+    "url": "https://www.safe.gov.cn/hebei/2015/0514/422.html",
+    "key_text": "第二条 年度总额分别为每人每年等值5万美元；第十三条 境外个人经常项目合法人民币收入购汇及未用完的人民币兑回：在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的相关证明材料（含税务凭证）办理购汇",
+    "verifies": "The USD 50,000 per-person-per-year figure; that 境外个人 purchases under Art. 13 carry no annual cap in the rule text and require source documents including tax vouchers."
+  },
+  {
+    "id": "CN-03",
+    "tier": "A",
+    "title": "经常项目外汇业务指引（2020年版）, 汇发[2020]14号 — State Council Gazette 2020 No. 31",
+    "publisher": "SAFE, published in the State Council Gazette (gov.cn)",
+    "lang": "zh",
+    "url": "https://www.gov.cn/gongbao/content/2020/content_5560296.htm",
+    "key_text": "第五十五条/第五十六条 (annual facilitation quota USD 50,000); 第五十九条 境外个人在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的购汇资金来源材料（含税务凭证）在银行办理购汇，持有外国人永久居留身份证的境外个人适用购汇年度便利化额度; 第六十二条 个人不得以分拆等方式规避便利化额度管理及真实性管理…“关注名单”; 第六十四条 境内个人外汇汇出境外用于经常项目支出…当日累计等值5万美元以下（含）凭身份证件，超过凭身份证件和有交易额的相关材料，并配合购汇用途与付汇用途一致性审核; 第六十五条 境外个人经常项目外汇汇出境外:(一)外汇账户内外汇汇出，凭本人有效身份证件办理; 第六十七条 个人外汇账户内资金境内划转，仅限于本人账户之间、个人与近亲属账户之间",
+    "verifies": "Every binding number and rule used for the current-account routes: 50k quota, 50k/day remittance threshold, anti-splitting rule and watch-list consequence, the 境外个人 unrestricted-in-rule-text FX-account remittance, and the intra-China transfer restriction."
+  },
+  {
+    "id": "CN-04",
+    "tier": "A",
+    "title": "SAFE Tianjin sub-bureau FAQ: 境内个人外汇汇出境外用于经常项目支出，是否有额度限制？(2026-04-22)",
+    "publisher": "SAFE Tianjin",
+    "lang": "zh",
+    "url": "https://www.safe.gov.cn/tianjin/2026/0422/3039.html",
+    "key_text": "根据汇发[2020]14号第六十四条…（一）外汇账户内外汇汇出境外当日累计等值5万美元以下（含）的，凭本人有效身份证件办理；超过上述金额的，凭本人有效身份证件、有交易额的相关材料办理。",
+    "verifies": "SAFE's own current reading of Art. 64 (confirms the reg text is still operative in 2026)."
+  },
+  {
+    "id": "CN-05",
+    "tier": "A",
+    "title": "SAFE Tianjin sub-bureau FAQ: 个人留学是否占用本人便利化额度？(2026-07-06)",
+    "publisher": "SAFE Tianjin",
+    "lang": "zh",
+    "url": "https://www.safe.gov.cn/tianjin/2026/0706/3085.html",
+    "key_text": "汇发[2020]14号第五十五条、第五十六条…个人结汇和境内个人购汇实行年度便利化额度管理，便利化额度分别为每人每年等值5万美元。境内个人凭本人有效身份证件和有交易额的相关购汇用途材料，在银行办理不占用便利化额度的经常项目购汇。",
+    "verifies": "That above-quota current-account purchases are permitted with genuine purpose documentation — the quota is a convenience tier, not an absolute ceiling, for current-account uses."
+  },
+  {
+    "id": "CN-06",
+    "tier": "A",
+    "title": "个人财产对外转移售付汇管理暂行办法, PBOC Announcement [2004] No. 16 — State Council Gazette 2005 No. 22",
+    "publisher": "People's Bank of China (gov.cn gazette)",
+    "lang": "zh",
+    "url": "https://www.gov.cn/gongbao/content/2005/content_64294.htm",
+    "key_text": "第二条 个人财产对外转移包括移民财产转移和继承财产转移；第六条 移民转移必须一次性申请拟转移出境的全部财产金额，分步汇出。首次可汇出金额不得超过全部申请转移财产的一半；自首次汇出满1年后…满2年后可汇出全部剩余财产。全部申请转移财产在等值人民币20万元以下（含20万元）的，经批准后可一次性汇出；第八条(四)(六) 移居外国的应提供公安机关出具的中国户籍注销证明和中国驻外使领馆出具或认证的申请人在国外定居证明；申请转移财产所在地或收入来源地主管税务机关开具的税收证明或完税凭证；第十一条 售汇后应直接将外汇汇往申请人本人的账户，不得在境内提取外币现钞",
+    "verifies": "The only general capital-account channel for moving a whole personal balance; the RMB 200,000 one-shot threshold; the two-year staged release; the hukou-cancellation + overseas-settlement + tax-clearance prerequisites."
+  },
+  {
+    "id": "CN-07",
+    "tier": "A",
+    "title": "SAFE Q&A on 个人财产对外转移 (approval tiers and staged release)",
+    "publisher": "SAFE",
+    "lang": "zh",
+    "url": "https://www.safe.gov.cn/safe/2004/1116/4134.html",
+    "key_text": "对申请金额低于等值50万元人民币的，由外汇局省级分局审核办理；超过等值50万元（含50万元）人民币的，由省级外汇局初审后报国家外汇管理局批准。对超过20万元（含20万元）人民币的移民转移采取“一次申请、分步汇出”。",
+    "verifies": "The RMB 500,000 approval-tier split between the provincial SAFE branch and SAFE headquarters."
+  },
+  {
+    "id": "CN-08",
+    "tier": "A",
+    "title": "中华人民共和国外汇管理条例, State Council Order No. 532 (2008), Chapter VII Legal Liability",
+    "publisher": "State Council (gov.cn)",
+    "lang": "zh",
+    "url": "https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm",
+    "key_text": "第三十九条 逃汇…处逃汇金额30%以下的罚款；情节严重的，处逃汇金额30%以上等值以下的罚款；构成犯罪的，依法追究刑事责任。第四十五条 私自买卖外汇、变相买卖外汇、倒买倒卖外汇或者非法介绍买卖外汇数额较大的…处违法金额30%以下的罚款；情节严重的，处违法金额30%以上等值以下的罚款",
+    "verifies": "The statutory penalty ceilings for 逃汇 (evasion) and for private/underground FX dealing: up to 30% of the amount, and 30%-to-100% for serious cases."
+  },
+  {
+    "id": "CN-09",
+    "tier": "A",
+    "title": "GACC service guide: 进出境行李物品监管 (currency declaration thresholds, Red/Green channel)",
+    "publisher": "General Administration of Customs of China (online.customs.gov.cn)",
+    "lang": "zh",
+    "url": "https://online.customs.gov.cn/static/pages/guides/000629014002/000629014002.html",
+    "key_text": "出境旅客携带有下列物品的…（三）人民币现钞超过20000元，或外币现钞折合超过5000美元",
+    "verifies": "The RMB 20,000 and USD 5,000 cash declaration thresholds in both directions."
+  },
+  {
+    "id": "CN-10",
+    "tier": "A",
+    "title": "Changsha Customs Q&A: 进出境旅客可以携带多少外币? (引《携带外币现钞出入境管理暂行办法》)",
+    "publisher": "GACC — Changsha Customs",
+    "lang": "zh",
+    "url": "http://www.customs.gov.cn/changsha_customs/508949/508969/508972/1316760/index.html",
+    "key_text": "出境人员携出金额在等值5000美元以内（含5000美元）的，不需申领《携带证》；5000美元以上至10000美元（含10000美元）的，应当向银行申领《携带证》；10000美元以上的，应当向存款或购汇银行所在地外汇局申领《携带证》",
+    "verifies": "The three-tier foreign-currency cash export permit ladder (5k / 5k-10k bank permit / >10k SAFE permit)."
+  },
+  {
+    "id": "CN-11",
+    "tier": "C",
+    "title": "Bank of China FX rate board (中国银行外汇牌价) — USD, captured 2026/11/08 00:00:05",
+    "publisher": "Bank of China",
+    "lang": "zh",
+    "url": "https://www.boc.cn/sourcedb/whpj/",
+    "key_text": "美元: 现汇买入价 666.48 / 现钞买入价 666.48 / 现汇卖出价 669.29 / 现钞卖出价 669.29 / 中行折算价 671.68 (CNY per 100 USD)",
+    "verifies": "The retail bid/ask the customer actually faces. Derived: the bank's own round-trip spread is (669.29-666.48)=2.81 CNY per 100 USD = 0.42% of the ask price."
+  },
+  {
+    "id": "CN-12",
+    "tier": "C",
+    "title": "Bank of China republication of SAFE 汇发[2017]29号 Q&A (银行卡境外大额提取现金)",
+    "publisher": "Bank of China / SAFE",
+    "lang": "zh",
+    "url": "https://www.bankofchina.com/custserv/cs5/201712/t20171231_11032383.html",
+    "key_text": "一是个人持境内银行卡在境外提取现金，本人名下银行卡（含附属卡）合计每个自然年度不得超过等值10万元人民币；二是将人民币卡、外币卡境外提取现金每卡每日额度统一为等值1万元人民币；三是超过年度额度的，本年及次年将被暂停…；个人持卡境外消费…不占用个人便利化年度5万美元购汇额度",
+    "verifies": "Card cash-withdrawal caps (RMB 10,000/card/day, RMB 100,000/person/year) and that card spending abroad does not consume the USD 50,000 quota."
+  },
+  {
+    "id": "CN-13",
+    "tier": "A",
+    "title": "关于服务贸易等项目对外支付税务备案有关问题的公告, 国家税务总局 国家外汇管理局公告2013年第40号",
+    "publisher": "State Taxation Administration (fgk.chinatax.gov.cn)",
+    "lang": "zh",
+    "url": "https://fgk.chinatax.gov.cn/zcfgk/c100012/c5194375/content.html",
+    "key_text": "一、境内机构和个人向境外单笔支付等值5万美元以上…均应向所在地主管税务机关进行税务备案；三(十三) 境内个人境外留学、旅游、探亲等因私用汇 无需办理和提交《备案表》；四、境外个人办理服务贸易、收益和经常转移项下对外支付，应按照个人外汇管理的相关规定办理",
+    "verifies": "The USD 50,000 per-payment tax-filing (备案) trigger for outward current-account payments, and the carve-out that ordinary private travel/study payments need no filing."
+  },
+  {
+    "id": "CN-14",
+    "tier": "A",
+    "title": "中华人民共和国个人所得税法 (Individual Income Tax Law, as amended 2018)",
+    "publisher": "State Taxation Administration / NPC",
+    "lang": "zh",
+    "url": "https://tianjin.chinatax.gov.cn/11200000000/0300/030004/03000418/20260727143202317.shtml",
+    "url_alt": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_901ca8faba104739bbf54e22483e6079.html",
+    "key_text": "第一条 居民个人从中国境内和境外取得的所得，依照本法规定缴纳个人所得税；第二条 应税所得共九类（工资薪金、劳务报酬、稿酬、特许权使用费、经营、利息股息红利、财产租赁、财产转让、偶然）；第三条(三) 利息、股息、红利所得，财产租赁所得，财产转让所得和偶然所得，适用比例税率，税率为百分之二十",
+    "verifies": "The closed list of nine taxable income categories (a remittance of one's own principal is not among them) and the 20% flat rate on interest, dividends, property rental and property transfer."
+  },
+  {
+    "id": "CN-15",
+    "tier": "A",
+    "title": "CSRC 合格境内机构投资者境外证券投资管理试行办法, 证监会令第46号 (QDII)",
+    "publisher": "China Securities Regulatory Commission",
+    "lang": "zh",
+    "url": "http://www.csrc.gov.cn/csrc/c106256/c1653919/1653919/files/f2be4becdb964634a58ddb409270fd4b.pdf",
+    "key_text": "第二条 QDII = 经中国证监会批准在境内募集资金、以资产组合方式进行境外证券投资管理的境内基金管理公司和证券公司等证券经营机构；第三条 应当由境内商业银行负责资产托管业务",
+    "verifies": "QDII exists as a licensed institutional quota channel; a mainland resident participates by buying a domestic fund, not by holding offshore cash."
+  },
+  {
+    "id": "CN-16",
+    "tier": "B",
+    "title": "Xinhua report on 银发〔2021〕237号 — 十部门《关于进一步防范和处置虚拟货币交易炒作风险的通知》",
+    "publisher": "Xinhua (新华社) — state news agency; primary instrument cited",
+    "lang": "zh",
+    "url": "http://www.news.cn/2021-09/24/c_1127898838.htm",
+    "key_text": "虚拟货币相关业务活动属于非法金融活动。开展法定货币与虚拟货币兑换业务…一律严格禁止，坚决依法取缔。境外虚拟货币交易所通过互联网向我国境内居民提供服务同样属于非法金融活动。金融机构和非银行支付机构不得为虚拟货币相关业务活动提供服务。",
+    "verifies": "That FX-to-crypto and crypto-to-FX conversion is prohibited financial activity in China and that offshore exchanges serving mainland residents are likewise unlawful — so a USDT/OTC bridge is not a lawful route."
+  },
+  {
+    "id": "CN-17",
+    "tier": "A",
+    "title": "National Immigration Administration Q&A confirming 国籍法 第九条",
+    "publisher": "国家移民管理局 (nia.gov.cn)",
+    "lang": "zh",
+    "url": "https://www.nia.gov.cn/Enquiry/publish/showQuestion.jsp?MZ=9PQAMhZWr6Zk9fibcZHJMA%3D%3D",
+    "key_text": "根据《中华人民共和国国籍法》第九条规定：定居外国的中国公民，自愿加入或取得外国国籍的，即自动丧失中国国籍。",
+    "verifies": "A PRC national who settles abroad and voluntarily acquires another nationality automatically loses PRC nationality — which is why a naturalised US citizen should be treated by the bank as 境外个人, and why a still-active 居民身份证 is an irregularity to resolve."
+  },
+  {
+    "id": "US-01",
+    "tier": "A",
+    "title": "IRS — Comparison of Form 8938 and FBAR requirements",
+    "publisher": "Internal Revenue Service",
+    "lang": "en",
+    "url": "https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements",
+    "key_text": "FBAR threshold: aggregate value of financial accounts exceeds $10,000 at any time during the calendar year. Form 8938 thresholds (living in the US, unmarried): >$50,000 last day or >$75,000 any time; married filing jointly >$100,000 / >$150,000. Living outside the US: >$200,000/$300,000 single, >$400,000/$600,000 joint. FBAR due April 15 with automatic extension to Oct 15; Form 8938 attached to the return. FBAR civil penalties inflated annually; for pre-Aug-2016 assessments non-willful up to $10,000, willful up to the greater of $100,000 or 50% of account balances. Form 8938 penalty up to $10,000 plus $10,000 per 30 days, max $60,000.",
+    "verifies": "Both reporting regimes, their thresholds, deadlines and statutory penalty ceilings."
+  },
+  {
+    "id": "US-02",
+    "tier": "A",
+    "title": "IRS — Report of Foreign Bank and Financial Accounts (FBAR) landing page",
+    "publisher": "Internal Revenue Service",
+    "lang": "en",
+    "url": "https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar",
+    "key_text": "FBAR (FinCEN Form 114) must be filed by U.S. persons with a financial interest in, or signature authority over, foreign financial accounts; it is filed with FinCEN, not the IRS.",
+    "verifies": "The filing obligation itself and where it is filed."
+  },
+  {
+    "id": "US-03",
+    "tier": "A",
+    "title": "31 U.S.C. § 5321 — civil penalties (FBAR)",
+    "publisher": "U.S. Code (Office of the Law Revision Counsel)",
+    "lang": "en",
+    "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title31-section5321&num=0&edition=prelim",
+    "key_text": "§5321(a)(5)(B)(i) non-willful maximum $10,000; §5321(a)(5)(C) willful: greater of $100,000 or 50% of the balance in the account at the time of the violation; both adjusted for inflation under §5321 note.",
+    "verifies": "The statute behind the FBAR penalty numbers (the IRS page above gives the pre-inflation baseline)."
+  },
+  {
+    "id": "US-04",
+    "tier": "A",
+    "title": "26 U.S.C. § 988 — Treatment of certain foreign currency transactions",
+    "publisher": "U.S. Code (Office of the Law Revision Counsel)",
+    "lang": "en",
+    "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section988&num=0&edition=prelim",
+    "key_text": "§988(c)(1)(C)(i) a disposition of nonfunctional currency is a §988 transaction; §988(e)(2) exclusion for certain personal transactions — where an individual disposes of nonfunctional currency in a personal transaction, no gain is recognized by reason of exchange-rate changes between acquisition and disposition, unless the gain would exceed $200.",
+    "verifies": "How the US taxes (and mostly does not tax) the FX gain when an individual converts personal CNY into USD."
+  },
+  {
+    "id": "US-05",
+    "tier": "A",
+    "title": "IRS — About Form 3520 (foreign gifts, inheritances, foreign trusts)",
+    "publisher": "Internal Revenue Service",
+    "lang": "en",
+    "url": "https://www.irs.gov/forms-pubs/about-form-3520",
+    "key_text": "Information return for transactions with foreign trusts and for receipt of certain foreign gifts; Part IV applies to gifts/bequests from foreign persons exceeding the reporting threshold ($100,000 from a nonresident alien individual or foreign estate, aggregated across related donors).",
+    "verifies": "That receiving money from a foreign relative is reportable (though not taxable) above the threshold, and that the obligation sits on the US recipient."
+  },
+  {
+    "id": "US-06",
+    "tier": "A",
+    "title": "IRS — About Form 8938 (Statement of Specified Foreign Financial Assets)",
+    "publisher": "Internal Revenue Service",
+    "lang": "en",
+    "url": "https://www.irs.gov/forms-pubs/about-form-8938",
+    "key_text": "FATCA reporting of specified foreign financial assets attached to the annual return; thresholds as set out on the IRS comparison page.",
+    "verifies": "The second, independent reporting obligation over the same Chinese account."
+  },
+  {
+    "id": "US-07",
+    "tier": "A",
+    "title": "IRS — About Schedule B (Form 1040), Part III foreign accounts and trusts",
+    "publisher": "Internal Revenue Service",
+    "lang": "en",
+    "url": "https://www.irs.gov/forms-pubs/about-schedule-b-form-1040",
+    "key_text": "Part III asks whether you had a financial interest in or signature authority over a financial account in a foreign country, and requires the country name.",
+    "verifies": "The return-level disclosure question a US citizen must answer 'yes' to."
+  },
+  {
+    "id": "US-08",
+    "tier": "A",
+    "title": "IRS — Expatriation tax (IRC §877A)",
+    "publisher": "Internal Revenue Service",
+    "lang": "en",
+    "url": "https://www.irs.gov/individuals/international-taxpayers/expatriation-tax",
+    "key_text": "The mark-to-market exit tax under §877A applies to covered expatriates — citizens who relinquish US citizenship or long-term residents who end residency — and not to citizens who remain citizens.",
+    "verifies": "That no US exit tax attaches to simply moving funds while retaining citizenship; the exit tax is a renunciation event, not a transfer event."
+  },
+  {
+    "id": "US-09",
+    "tier": "A",
+    "title": "IRS — Foreign investment entities / PFIC overview",
+    "publisher": "Internal Revenue Service",
+    "lang": "en",
+    "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-investment-entities",
+    "key_text": "A US person owning shares in a passive foreign investment company may be subject to the PFIC rules, including an interest charge on deferred distributions and gain.",
+    "verifies": "Why the *form* the money is held in matters: a Chinese fund/insurance wrapper is a different (and much worse) US tax object than a bank deposit."
+  },
+  {
+    "id": "US-10",
+    "tier": "A",
+    "title": "United States–China income tax treaty (1984) and accompanying documents",
+    "publisher": "Internal Revenue Service",
+    "lang": "en",
+    "url": "https://www.irs.gov/pub/irs-trty/china.pdf",
+    "key_text": "Convention between the Government of the United States of America and the Government of the People's Republic of China for the Avoidance of Double Taxation and the Prevention of Tax Evasion with Respect to Taxes on Income.",
+    "verifies": "The treaty basis for double-tax relief and for the IRS competent-authority route if the same income is taxed in both countries."
+  },
+  {
+    "id": "US-11",
+    "tier": "A",
+    "title": "FinCEN — Report of International Transportation of Currency or Monetary Instruments (FinCEN Form 105)",
+    "publisher": "Financial Crimes Enforcement Network",
+    "lang": "en",
+    "url": "https://www.fincen.gov/reporting-international-transportation-currency-monetary-instruments",
+    "key_text": "Any person who physically transports, mails, or ships currency or monetary instruments in an amount exceeding $10,000 at one time into or out of the United States must file FinCEN Form 105 with CBP.",
+    "verifies": "The US inbound cash reporting threshold and form, and that there is no cap on the amount, only a reporting duty."
+  },
+  {
+    "id": "US-12",
+    "tier": "A",
+    "title": "31 U.S.C. § 5316 — Reports on exporting and importing monetary instruments",
+    "publisher": "U.S. Code",
+    "lang": "en",
+    "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title31-section5316&num=0&edition=prelim",
+    "key_text": "A person or agent knowingly transporting more than $10,000 in monetary instruments into or out of the US must file a report; 31 U.S.C. § 5321(a)(2)-(4) and § 5322 set civil and criminal penalties, and § 5317 permits seizure and forfeiture of the unreported amount.",
+    "verifies": "The statutory basis, including that the whole unreported amount — not just the excess — is exposed to forfeiture."
+  },
+  {
+    "id": "US-13",
+    "tier": "A",
+    "title": "IRS — Foreign currency and currency exchange rates (individuals)",
+    "publisher": "Internal Revenue Service",
+    "lang": "en",
+    "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-currency-and-currency-exchange-rates",
+    "key_text": "For US taxpayers the functional currency is the US dollar; foreign-currency transactions must be translated at the appropriate spot rate, and foreign currency gain or loss is generally ordinary income or loss.",
+    "verifies": "That the USD is the measuring currency and that FX gain is ordinary, not capital."
+  },
+  {
+    "id": "REF-01",
+    "tier": "C",
+    "title": "CFETS / China Foreign Exchange Trade System — CNY Central Parity Rate (the official daily fixing)",
+    "publisher": "China Foreign Exchange Trade System (chinamoney.com.cn)",
+    "lang": "en",
+    "url": "https://www.chinamoney.com.cn/english/bmkcpr/",
+    "key_text": "Daily CNY/USD central parity rate authorised by the PBOC; the reference against which bank quotes are set.",
+    "verifies": "A benchmark to measure any bank quote against, on any date the reader checks."
+  }
+]

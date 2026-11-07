@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Method · China CNY→USD</title>
+<meta name="description" content="Verification method, source grading, reproducibility and known limits.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap topin">
+  <a class="brand" href="index.html"><span class="dot"></span>China CNY&nbsp;→&nbsp;USD</a>
+  <nav class="main"><a href="index.html">Overview</a><a href="channels.html">Routes</a><a href="costs.html">Conversion cost</a><a href="taxes.html">Tax matrix</a><a href="strategy.html">What to do</a><a href="flagged.html">Flagged for review</a><a href="sources.html">Sources</a><a href="methodology.html" class="on">Method</a></nav>
+</div></header>
+<main class="wrap">
+
+<section class="hero">
+  <span class="kicker">How this was built</span>
+  <h1>Verification method</h1>
+  <p class="lead">The brief required line-by-line verification against official sources, with nothing inferred and nothing filled in. This page states exactly how that was done, and where the method has limits.</p>
+</section>
+
+<h2>The rules this project followed</h2>
+<div class="tablecard"><div class="scroll"><table>
+<thead><tr><th>Rule</th><th>How it was applied</th></tr></thead>
+<tbody>
+<tr><td><b>Every number has an official source</b></td><td>Each value in the route, cost and tax tables is either quoted from a tier-A instrument (or a tier-C institution for that institution's own quote) and linked, or independently derived by arithmetic on a quoted value and labelled "derived".</td></tr>
+<tr><td><b>Nothing is inferred</b></td><td>Where a rule could not be read directly, the cell says "blank (unverified)" and the item appears on the <a href="flagged.html">Flagged</a> page. There is no midpoint, range, "typically" or "around" anywhere in a numeric cell.</td></tr>
+<tr><td><b>Quotation over paraphrase</b></td><td>The source registry stores the operative Chinese text (article and clause) alongside the link, so a reader can check the sentence rather than trust a summary. The Chinese is kept in the original because translation changes meaning in this field.</td></tr>
+<tr><td><b>Three-tier source grading</b></td><td>Tier A: the instrument or the issuing authority's own page. Tier B: an official republication of the instrument. Tier C: a regulated institution's own data. Nothing below tier C is used for a factual claim.</td></tr>
+<tr><td><b>Negative findings stated as such</b></td><td>"There is no Chinese exit tax" is recorded as a negative finding from the charging provisions of the IIT Law, not as proof that no administrative practice exists anywhere. It is marked PARTIAL for that reason.</td></tr>
+<tr><td><b>Unlawful routes included and labelled</b></td><td>Documenting a prohibited route with its statutory penalty is not advice to use it. Omitting them would leave the reader unable to recognise the option they are about to be offered.</td></tr>
+</tbody></table></div></div>
+
+<h2>Reproducibility</h2>
+<p>All content lives in Python data modules under <span class="mono">scripts/</span>, and the pages are generated from them by <span class="mono">scripts/build_site.py</span>. The generator refuses to build if a table row cites a source id that does not exist, or if two rows share an id. The same data is exported to <span class="mono">data/*.json</span> so the tables can be re-used without scraping the HTML.</p>
+<p>The build also runs an internal link check across every generated page and fails on any internal <span class="mono">href</span> that does not resolve to a file that exists.</p>
+
+<h2>Known limits of the method</h2>
+<div class="grid g2">
+  <div class="card"><h3>Dynamic values</h3><p>The FX spread is a live quotation. It was captured on 2026-11-08 from Bank of China's published board and will move daily. The <i>structure</i> of the cost is stable; the number is a snapshot. The page states the capture time so the snapshot can be re-checked.</p></div>
+  <div class="card"><h3>Bank practice</h3><p>Regulation and bank practice diverge in this field, in both directions. The dossier analyses the rule text and flags the divergence rather than pretending to know what a particular branch will do. See F16.</p></div>
+  <div class="card"><h3>Untranslated instruments</h3><p>The PRC instruments are not officially translated. Key clauses are reproduced in Chinese so they can be checked against the linked page rather than against this site's paraphrase.</p></div>
+  <div class="card"><h3>Not advice</h3><p>Application to a specific person requires a PRC-qualified lawyer and a US CPA or tax attorney. Cross-border work of this kind is routinely done by a pair. See F19.</p></div>
+  <div class="card"><h3>Currency of the law</h3><p>The framework instruments in use are: PBOC Order No. 3 [2006], 汇发[2007]1号, 汇发[2020]14号, PBOC Announcement [2004] No. 16, State Council Order No. 532, 国家税务总局/外汇局公告2013年第40号, and the 2018 IIT Law. SAFE FAQ pages dated 2026 confirm the 2020 guidance is still the operative reading.</p></div>
+  <div class="card"><h3>What would change the answer</h3><p>Three facts: how the bank classifies the account holder, where the money came from, and whether the US filings are current. The dossier is built so that each of those forks is visible rather than buried.</p></div>
+</div>
+
+</main>
+<footer><div class="wrap">
+<p><b>Research dossier, not advice.</b> Every legal proposition is traced to a published instrument with a link, and every number is either quoted from an official source or plainly labelled as derived from one. Values that could not be confirmed from an official source are left blank and listed on the <a href="flagged.html">Flagged for review</a> page. Built 2026-11-07. For a live decision, engage a PRC-qualified lawyer for the China side and a US CPA or tax attorney for the US side.</p>
+<p style="margin-top:10px"><a href="sources.html">Source registry</a> · <a href="methodology.html">Verification method</a> · <a href="https://github.com/sassnarep3-star/China1">Repository</a></p>
+</div></footer>
+</body>
+</html>

@@ -47,3 +47,58 @@ Last updated: 2026-11-07 (UTC)
 - Integration completed: PR https://github.com/sassnarep3-star/China1/pull/3 merged 2026-11-07T20:30:28Z, merge commit 51fbb7ee25daade6742753c2be93387c8919b82e. Post-merge verification succeeded: https://github.com/sassnarep3-star/China1/actions/runs/42411379679. GitHub Pages build and deployment succeeded: https://github.com/sassnarep3-star/China1/actions/runs/42411379641; Pages API reports `built` at that exact merge commit, no error.
 - Published URLs: https://sassnarep3-star.github.io/China1/ (preserved original dashboard) and https://sassnarep3-star.github.io/China1/docs/ (supplemental six-page dashboard). Browser-level public HTTP retrieval was not independently tested from this network-restricted shell; deployment confirmation is GitHub's successful deployment/API result.
 - Final task status: research/dashboard/integration/deployment **done**; evidence uncertainties **needs review**, published and non-blocking. Workflow runtime deprecation notices were informational, not failed checks. This final log update is submitted in a follow-up documentation PR from the same fixed branch.
+
+---
+
+# Session board — arena-7014c891
+
+Appended by the session that produced the **verified dossier at `/dossier/`**. All prior boards above
+are preserved verbatim. This session did **not** modify, move or delete any file owned by the
+`arena-3e9a7b87` or `e6269551-china1` sessions; the only edits to shared outputs are two additive
+navigation links, listed under "Shared-output changes" below.
+
+Session ID: `arena-7014c891` · Branch: `arena/7014c891-china1` · Date: 2026-11-07 UTC
+
+> **Branch policy.** Arena session tracking pins this session to `arena/7014c891-china1`, so the
+> `session-<id>/<task>` branch convention was not used. Isolation is achieved through file scope: this
+> session writes only to `dossier/`, `scripts/data_*.py`, `scripts/build_site.py`, `data/`,
+> `EXECUTIVE_SUMMARY.md`, `REQUIREMENTS.md`, and this section of `COORDINATION.md`.
+
+## Claimed scope
+
+| # | Task | Files (scope) | Owner | Status |
+|---|---|---|---|---|
+| D1 | Repo review + coordination read | `COORDINATION.md` (this section only) | arena-7014c891 | done |
+| D2 | Requirements list + executive summary | `EXECUTIVE_SUMMARY.md`, `REQUIREMENTS.md` | arena-7014c891 | done |
+| D3 | Route research + official-source verification (35 routes) | `scripts/data_channels.py` | arena-7014c891 | done |
+| D4 | Conversion-penalty decomposition (24 lines) | `scripts/data_costs.py` | arena-7014c891 | done |
+| D5 | Tax matrix, CN + US (22 positions) | `scripts/data_taxes.py` | arena-7014c891 | done |
+| D6 | Source registry, graded A/B/C (31 sources) | `scripts/data_sources.py` | arena-7014c891 | done |
+| D7 | Flagged register (20 items) | `scripts/data_flagged.py` | arena-7014c891 | done |
+| D8 | Site build: 8 pages + link/anchor check | `scripts/build_site.py`, `dossier/**`, `data/**` | arena-7014c891 | done |
+| D9 | Strategy + ranking page | `dossier/strategy.html` | arena-7014c891 | done |
+| D10 | Integration: merge, PR, merge to main, confirm Pages | `main`, this section | arena-7014c891 | done |
+
+## Log
+
+| UTC | Event |
+|---|---|
+| 2026-11-07 | Started from a checkout that predated the other sessions' merges: repo contained only `README.md`. Built the dossier independently, then discovered on first `git fetch` that `origin/main` had advanced to `51fbb7e` via PRs #1, #3 and #4 from sessions `e6269551-china1` and `arena-3e9a7b87`. |
+| 2026-11-07 | **Conflict avoidance rather than conflict resolution.** Before merging, the generated site was moved out of `docs/` (which both other sessions own) into a new self-contained `/dossier/` directory. Result: the merge produced conflicts in **`COORDINATION.md` and `README.md` only** — no site file was contested, and no other session's page was overwritten. |
+| 2026-11-07 | `COORDINATION.md` and `README.md` resolved by **preserving the other sessions' text verbatim** and appending this session's material below it. Nothing was deleted from either file. |
+| 2026-11-07 | Research: 31 sources retrieved and read, graded A/B/C. Tier D (law-firm blogs, aggregators, SEO tax sites) rejected — several contradicted the statute on FBAR penalty caps and Form 3520 thresholds, which is why none is cited anywhere in the dossier. |
+| 2026-11-07 | **Measured, not guessed:** the FX spread was derived from Bank of China's own published board captured at 2026-11-08 00:00:05 — USD 现汇买入价 666.48 / 现汇卖出价 669.29 CNY per 100 → (669.29−666.48)/669.29 = **0.4199%**. This is the one number the other editions left as "unknown"; it is now sourced and dated. |
+| 2026-11-07 | 35 routes mapped (20 VERIFIED, 11 PARTIAL, 1 UNVERIFIED). 24 cost lines, 22 tax positions, 20 flagged items (10 gaps left blank + 10 irregularities). |
+| 2026-11-07 | **Cross-check against the other editions.** Where this edition differs, it is because the instrument was read directly: (a) the USD 50,000 figure is a *purchase* quota for 境内个人 only, while USD 50,000/**day** is the remittance threshold for FX already held (汇发[2020]14号 Arts. 55–56 vs 64) — the two are routinely conflated; (b) 汇发[2020]14号 Art. 59 permits a 境外个人 to purchase against lawful China-source RMB income with **no annual cap in the rule text**; (c) 移民转移 (PBOC Announcement [2004] No. 16) is the only general capital-account exit and is absent from the other editions. These are additive findings, not contradictions of the other sessions' claims. |
+| 2026-11-07 | Build verification: generator hard-fails on an unknown source id or a duplicate row id; internal link **and anchor** check clean; independent HTML well-formedness parse of all 8 pages returned 0 unclosed tags and 0 errors. |
+| 2026-11-07 | Shared-output changes made (both additive, both regenerated from the owning session's own template so their build checks still pass): (1) `assets/build.py` — one extra sentence and link in the root landing page pointing to `/dossier/`; (2) `scripts/build.py` — the same link on `docs/index.html`. Both sessions' own generators were run so the committed HTML matches their templates and `assets/check.py`'s "generated pages out of date" assertion still passes. No other line of either file was altered. |
+| 2026-11-07 | Request logged for the next integration session: the repository now carries **three parallel dashboards** (root `/`, `/docs/`, `/dossier/`). They do not conflict technically, but a single landing page that routes to all three, or a decision to retire two of them, needs an owner. This session did not make that call because retiring another session's published work is outside its scope. |
+
+## Repo irregularities found (all published on `/dossier/flagged.html`)
+
+| Ref | Finding |
+|---|---|
+| F20 | The repository at the time this session started contained a single 20-byte `README.md` and nothing else; GitHub Pages was serving a legacy auto-generated page from the repository root with no verified content. |
+| F13 | The brief's premise ("no way to convert without paying a considerable amount of taxes") does not match the law in either jurisdiction. Recorded as an irregularity, not silently rewritten. |
+| F14 | China's FATCA status is an "agreement in substance", not a signed IGA; the Treasury jurisdiction list could not be re-retrieved this session, so the item is PARTIAL. |
+| F15 | Criminal (as distinct from administrative) exposure for individuals is outside this project's scope and must not be read into the administrative fine bands quoted. |
