@@ -1,0 +1,103 @@
+{
+  "_meta": {
+    "description": "Line-by-line review of the repository as found at the branch point, plus everything added during this session.",
+    "branch_point": "9125ed5310c794ba657872c30a529e2e79b55802",
+    "reviewed": "2026-11-07"
+  },
+  "repo_at_branch_point": {
+    "remote": "https://github.com/sassnarep3-star/China1.git",
+    "default_branch": "main",
+    "commits": 1,
+    "files": [
+      {
+        "path": "README.md",
+        "size_bytes": 8,
+        "lines": 1,
+        "content": "# China1",
+        "assessment": "Title-only placeholder. No substantive content to verify."
+      }
+    ],
+    "absent": [
+      "No source data, no prior research, no tables to audit",
+      "No .gitignore, so build artefacts and generated HTML would be committed unless ignored explicitly",
+      "No continuous integration or workflow configuration",
+      "No GitHub Pages source directory content, although Pages itself was already enabled",
+      "No licence file",
+      "No dependency manifest of any kind"
+    ]
+  },
+  "pages_at_branch_point": {
+    "status": "built",
+    "build_type": "legacy",
+    "source_branch": "main",
+    "source_path": "/",
+    "html_url": "https://sassnarep3-star.github.io/China1/",
+    "https_enforced": true,
+    "assessment": "Pages was already enabled and pointed at the root of main. This session changes the source path to /docs so that generated HTML is separated from the data and build scripts that produce it."
+  },
+  "irregularities": [
+    {
+      "id": "I01",
+      "severity": "process",
+      "title": "COORDINATION.md was committed with tasks pre-marked done",
+      "detail": "Commit b3cc1db on this branch created the shared task board with tasks T1 through T16 marked done before any of that work existed. Only T0, the creation of the board itself, had actually been completed at that point. This is exactly the failure mode the board exists to prevent, and it was introduced by this session.",
+      "resolution": "Statuses rewritten in this revision to reflect what has actually been completed, with a source link recorded against every completed item. No task is marked verified without an official source."
+    },
+    {
+      "id": "I02",
+      "severity": "process",
+      "title": "Fetch tool failures caused by constructing URLs rather than copying them",
+      "detail": "Several page retrievals failed with an object-storage signature mismatch because the URL passed to the fetch tool was assembled rather than copied verbatim from a search result. Each failure wasted a retrieval and produced no content.",
+      "resolution": "Every URL in data/sources.json is a verbatim URL returned by a search result or read from a page already retrieved. build/linkcheck.py verifies that every citation in every table resolves to an entry in the source register, so no fabricated URL can reach the published site."
+    },
+    {
+      "id": "I03",
+      "severity": "content",
+      "title": "A widely repeated figure is not what the law says",
+      "detail": "The USD 50,000 per person per year limit is routinely described as the ceiling on all money leaving China. Art.9 of the Measures applies annual total-amount management only to individual FX settlement and to domestic-individual FX purchase. Art.37(2) classifies a foreign citizen presenting a passport as an overseas individual, and Art.13 lets an overseas individual convert legitimate current-account RMB income earned in China with no stated annual ceiling, against identity documents and supporting evidence including tax vouchers.",
+      "resolution": "Recorded as the central finding on the executive summary page with the article citations, and the affected rows carry both the statutory text and the source link."
+    },
+    {
+      "id": "I04",
+      "severity": "content",
+      "title": "Two official SAFE instruments define the same term incompatibly",
+      "detail": "See flag F02. Regulation Art.52(2) and Measures Art.37(2) disagree about whether a foreigner continuously resident in China for a year is a domestic individual, and the answer changes the applicable remittance tier.",
+      "resolution": "Published on the Flagged for Review page with both texts and both source links."
+    },
+    {
+      "id": "I05",
+      "severity": "content",
+      "title": "The scheme has a genuine gap for non-immigrant property transfers",
+      "detail": "See flag F10. Measures Art.26 routes an overseas individual's outward property transfer to the 2004 Interim Measures, which cover only emigration transfers requiring cancellation of household registration, and inheritance transfers. A US citizen by birth with no inheritance has no route under either limb.",
+      "resolution": "Published on the Flagged for Review page and reflected in the executive summary as the structural explanation for the trapped-balance problem."
+    },
+    {
+      "id": "I06",
+      "severity": "content",
+      "title": "The user's stated premise does not survive contact with the sources",
+      "detail": "The premise is that converting CNY to USD costs a considerable amount of tax. No instrument reviewed imposes any tax on the conversion itself. Individual income tax attaches to the income event; enterprise income tax and withholding tax attach to the distribution; VAT attaches to the supply. All of these are owed whether or not the money is ever converted or remitted. What the conversion does attract is foreign exchange control, a commercial bank spread, and penalty exposure only if the route chosen is unlawful.",
+      "resolution": "Stated directly in the executive summary with the statutory basis, because correcting the premise changes which routes are worth pursuing."
+    }
+  ],
+  "added_this_session": [
+    {"path": "COORDINATION.md", "purpose": "Shared task board, source register summary and irregularity log"},
+    {"path": "data/sources.json", "purpose": "Canonical source register: 39 entries, each with issuer, document number, date, URL and the specific provisions relied on"},
+    {"path": "data/routes.json", "purpose": "33 identified conversion and remittance channels across five categories, each with legal basis, limit, tax cost, documentation, pros, cons, feasibility and risk"},
+    {"path": "data/tax.json", "purpose": "Chinese rates, US rates and treaty provisions with article-level citations"},
+    {"path": "data/penalties.json", "purpose": "Six-layer cost breakdown, statutory penalty scales, and 23 published enforcement cases with computed fine rates where both official figures share a currency"},
+    {"path": "data/flags.json", "purpose": "19 flags: values left blank, conflicts between official sources, regulatory gaps and scope omissions"},
+    {"path": "data/repo-review.json", "purpose": "This review"},
+    {"path": "data/summary.json", "purpose": "Executive summary content and dashboard figures"},
+    {"path": "build/build.py", "purpose": "Static site generator: reads data/*.json and writes every HTML page into docs/"},
+    {"path": "build/linkcheck.py", "purpose": "Validation gate: every source id cited resolves, every internal link resolves to a generated page, every published figure carries a source, every unverified value is blank and flagged"},
+    {"path": "docs/**", "purpose": "Generated GitHub Pages site: 16 pages plus assets"}
+  ],
+  "verification_standard": {
+    "rule_1": "A numeric limit, rate, threshold or fine appears in a table only where it was read in a source listed in data/sources.json, cited by article number.",
+    "rule_2": "Where a value could not be confirmed against an official source, the cell is blank and the item appears on the Flagged for Review page with an explanation and a route to resolution.",
+    "rule_3": "No value anywhere on the site is inferred, estimated, interpolated or carried over from a secondary source.",
+    "rule_4": "Derived figures are labelled as computed and show their inputs. The fine-as-a-percentage column is populated only where both official figures are in the same currency, so no exchange rate has been assumed.",
+    "rule_5": "Official means a government, regulator, central bank, tax authority or judicial body publishing its own instrument, or a national legislature's gazette. Bank, law firm, accounting firm, press and aggregator sources are not accepted, and where one had to be used because the primary text could not be located, the entry is marked not official and flagged.",
+    "rule_6": "build/linkcheck.py runs before the site is published and fails the build on any unresolved citation, broken internal link or unflagged blank."
+  }
+}

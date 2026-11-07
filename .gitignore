@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+
+# Editors and OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Build scratch. docs/ IS committed: it is the GitHub Pages source directory
+# configured as branch "main", path "/docs". Do not ignore it.
+/tmp/
+*.log

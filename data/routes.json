@@ -1,0 +1,1049 @@
+{
+  "_meta": {
+    "description": "Every identified channel for converting onshore CNY into USD and moving it to the United States, including channels that are lawful, channels that are narrow, and channels that are prohibited. Each row cites source ids from data/sources.json.",
+    "verification_rule": "A numeric limit, rate or threshold appears only where it was read in a source listed in data/sources.json. Where a figure could not be confirmed against an official source the field is null and the row appears on the Flagged for Review page.",
+    "subject_profile": "US citizen, funds currently held as CNY in a mainland Chinese bank account.",
+    "count": 33
+  },
+  "categories": [
+    {
+      "id": "individual",
+      "name": "Individual and personal channels",
+      "page": "individual-channels.html",
+      "blurb": "Channels available to a natural person. For a US citizen the controlling legal question is whether Chinese foreign exchange law classifies you as an overseas individual or a domestic individual."
+    },
+    {
+      "id": "corporate",
+      "name": "Corporate and entity channels",
+      "page": "corporate-channels.html",
+      "blurb": "Channels that run through a Chinese legal entity: dividends, capital reduction, liquidation, equity sale and cross-border service or royalty payments."
+    },
+    {
+      "id": "trade",
+      "name": "Trade and current-account channels",
+      "page": "trade-channels.html",
+      "blurb": "Channels built on a genuine transaction in goods or services. The Regulation on Foreign Exchange Administration provides that the State does not restrict current-account international payments and transfers."
+    },
+    {
+      "id": "asset",
+      "name": "Asset monetisation channels",
+      "page": "asset-channels.html",
+      "blurb": "Channels that convert a Chinese asset into cash first, then remit the after-tax proceeds: property, equity, inherited estate, and the emigrant property transfer."
+    },
+    {
+      "id": "prohibited",
+      "name": "Prohibited and high-risk channels",
+      "page": "prohibited.html",
+      "blurb": "Documented for completeness and for avoidance. Every channel here is unlawful, and each carries published administrative penalties and a defined criminal threshold."
+    },
+    {
+      "id": "adjacent",
+      "name": "Assessed and rejected as repatriation routes",
+      "page": "assessed-and-rejected.html",
+      "blurb": "Mechanisms that are lawful and are often suggested for this problem, but that on examination do not deliver US dollars to the United States. Recorded so the reader can see they were considered and why they fail."
+    }
+  ],
+  "routes": [
+    {
+      "id": "R01",
+      "category": "individual",
+      "name": "Convert and remit legitimate current-account RMB income as an overseas individual",
+      "name_zh": "境外个人经常项目合法人民币收入购汇汇出",
+      "legal_basis": "Measures for the Administration of Individual Foreign Exchange Art.13; Detailed Rules (Huifa [2007] No.1) Art.13(1)",
+      "how_it_works": "A US citizen is an overseas individual, defined at Art.37(2) of the Measures as a foreign citizen holding a passport. Art.13 lets an overseas individual convert legitimate current-account RMB income earned in China into foreign exchange and remit it, presenting a valid identity document and supporting evidence of the transaction, including tax vouchers. Detailed Rules Art.13(1) repeats this and expressly names the tax voucher.",
+      "limit": "No annual quota is stated for this route. Art.9 of the Measures applies annual total-amount management to individual FX settlement and to domestic-individual FX purchase; an overseas individual purchasing FX against earned income is not a domestic individual.",
+      "china_tax": "Individual income tax on the underlying income must already have been paid and evidenced. Wage and salary income of a non-resident is taxed per month at 3% to 45% on revenue less RMB 5,000; remuneration for personal services and royalties are taken at 80% of revenue and taxed per item.",
+      "us_tax": "The income is already US taxable in the year earned. Converting and remitting it is not a second taxable event. Foreign tax credit under IRC s.901, or the foreign earned income exclusion where the taxpayer qualifies.",
+      "documentation": "Passport; employment contract or service contract; proof of income; tax voucher issued by the tax authority; bank's authenticity review.",
+      "pros": [
+        "The principal route for a US citizen and the only one with no stated annual ceiling",
+        "Processed at the bank counter, not by SAFE approval, so it is fast once documents are in order",
+        "No capital-account approval and no separate SAFE registration",
+        "The Xiamen branch guidance confirms no Individual FX Purchase Application form is required for an overseas individual",
+        "The Henan branch confirms no statutory time limit on converting previously earned income, provided the supporting evidence survives"
+      ],
+      "cons": [
+        "Only current-account income qualifies. Capital-account receipts such as sale proceeds, dividends or investment returns do not",
+        "The bank must be satisfied the income is legitimate and taxed; missing or stale tax vouchers stop the transaction",
+        "Each bank applies its own authenticity review, so outcomes vary by branch and by officer",
+        "Employment contract, payroll records and tax certificates must be assembled for every year being remitted"
+      ],
+      "feasibility": "High, where the money is earned income",
+      "risk": "Low",
+      "verified": true,
+      "sources": [
+        "S01",
+        "S02",
+        "S05",
+        "S21",
+        "S35",
+        "S36"
+      ]
+    },
+    {
+      "id": "R02",
+      "category": "individual",
+      "name": "Annual facilitation quota of USD 50,000 per person per year",
+      "name_zh": "个人年度便利化额度",
+      "legal_basis": "Measures Art.9; Detailed Rules Art.2",
+      "how_it_works": "Within the annual total amount an individual may settle or purchase FX on a valid identity document alone. Above it, current-account purchases require evidence of the transaction amount and capital-account items follow the capital-account chapter.",
+      "limit": "USD 50,000 equivalent per person per year, set by Detailed Rules Art.2. SAFE may adjust it in light of the balance of payments. Art.9 applies it to individual FX settlement and to domestic-individual FX purchase.",
+      "china_tax": "None on the conversion itself.",
+      "us_tax": "None on the conversion itself. The account is reportable on FinCEN Form 114 and possibly Form 8938.",
+      "documentation": "Valid identity document within the quota.",
+      "pros": [
+        "Simplest possible mechanics: identity document only, no supporting evidence",
+        "Available at any authorised bank and through personal internet banking",
+        "Unchanged since 2007 and stable to plan around"
+      ],
+      "cons": [
+        "The declared purpose may not be used for overseas real property, overseas securities investment or overseas dividend-paying insurance",
+        "USD 50,000 a year is immaterial for a large trapped balance; draining USD 1,000,000 at this rate takes twenty years",
+        "For a US citizen holding only a foreign passport this quota is not the binding constraint on earned-income conversion, which is a widely misunderstood point",
+        "Xiamen branch guidance states that an overseas individual who holds a Foreign Permanent Resident ID Card is subject to the annual facilitation quota for FX purchase, so permanent residents do not enjoy the R01 treatment"
+      ],
+      "feasibility": "Low as a primary route; useful as a supplement",
+      "risk": "Low if used within the quota and for a permitted purpose",
+      "verified": true,
+      "sources": [
+        "S01",
+        "S02",
+        "S04",
+        "S21"
+      ]
+    },
+    {
+      "id": "R03",
+      "category": "individual",
+      "name": "Reconvert previously exchanged but unused RMB back into foreign exchange",
+      "name_zh": "原兑换未用完的人民币兑回",
+      "legal_basis": "Measures Art.15; Detailed Rules Art.13(2)",
+      "how_it_works": "Where RMB was originally obtained by converting foreign exchange and has not been spent, it may be converted back on presentation of the original exchange receipt. The receipt is valid for 24 months from the exchange date. Daily cumulative reconversion up to USD 500 equivalent, and up to USD 1,000 equivalent at a pre-customs departure-port location, may be done on a valid identity document alone.",
+      "limit": "24-month validity of the original exchange receipt; USD 500 per day and USD 1,000 per day at departure ports on ID alone.",
+      "china_tax": "None.",
+      "us_tax": "None on the conversion itself.",
+      "documentation": "Valid identity document and the original exchange receipt.",
+      "pros": [
+        "Restores funds that were converted into RMB in the first place, so it is not new capital leaving China",
+        "Small amounts need no supporting evidence beyond the receipt"
+      ],
+      "cons": [
+        "Useless unless the money genuinely originated as foreign exchange that was converted into RMB",
+        "The 24-month window closes and the right is lost",
+        "Cannot be used to move money that was earned in RMB"
+      ],
+      "feasibility": "Narrow; only where the funds originated offshore",
+      "risk": "Low",
+      "verified": true,
+      "sources": [
+        "S01",
+        "S02",
+        "S21"
+      ]
+    },
+    {
+      "id": "R04",
+      "category": "individual",
+      "name": "Remit foreign exchange already held in an overseas individual's FX savings account",
+      "name_zh": "境外个人外汇储蓄账户内外汇汇出",
+      "legal_basis": "Detailed Rules Art.15(1)",
+      "how_it_works": "An overseas individual remitting foreign exchange abroad from an FX savings account does so on presentation of a valid identity document. No quota and no supporting evidence are stated for this leg.",
+      "limit": "None stated for an overseas individual. By contrast Detailed Rules Art.14 caps the domestic individual's equivalent leg at USD 50,000 equivalent per day on ID alone, above which current-account authenticity vouchers are required.",
+      "china_tax": "None.",
+      "us_tax": "None on the transfer. The receiving account is US reportable.",
+      "documentation": "Valid identity document.",
+      "pros": [
+        "Once funds are already in foreign currency, the outbound leg is administrative rather than substantive",
+        "Markedly lighter than the equivalent rule for a domestic individual"
+      ],
+      "cons": [
+        "Presupposes the money is already denominated in foreign exchange inside China, which is the hard part",
+        "A domestic individual and an overseas individual may not freely transfer FX between their savings accounts; Detailed Rules Art.28(3) manages such transfers as cross-border transactions"
+      ],
+      "feasibility": "High once the FX position exists",
+      "risk": "Low",
+      "verified": true,
+      "sources": [
+        "S02"
+      ]
+    },
+    {
+      "id": "R05",
+      "category": "asset",
+      "name": "Emigration property transfer",
+      "name_zh": "移民财产转移",
+      "legal_basis": "Interim Measures for the Transfer of Individual Property Abroad, PBOC Announcement [2004] No.16; Detailed Rules Art.20",
+      "how_it_works": "A natural person who moves from mainland China to a foreign country, or settles in Hong Kong or Macao, may realise the lawful property owned in China before acquiring emigrant status and remit it. The application goes to the SAFE branch at the emigrant's former place of household registration.",
+      "limit": "One application only, covering the full amount, remitted in stages: the first tranche may not exceed half; after one year from the first remittance up to half of the remainder; after two years the balance. Where the total is RMB 200,000 equivalent or less it may be remitted at once after approval.",
+      "china_tax": "A tax certificate or tax-paid voucher from the competent tax authority where the property or income arose is a mandatory document. Individual income tax is due on any gain before transfer, and Art.13 of the Individual Income Tax Law requires tax clearance before Chinese household registration is cancelled on emigration.",
+      "us_tax": "Return of capital is not income. Any gain realised on the underlying asset is US taxable in the year of realisation, with a foreign tax credit for the Chinese tax.",
+      "documentation": "Written application explaining the reason and the source and realisation of the property; the signed emigrant property transfer applicant form; the individual property transfer application form; public-security proof of cancellation of Chinese household registration; a settlement-abroad certificate issued or authenticated by a Chinese embassy or consulate; property title documents; the tax certificate.",
+      "pros": [
+        "The only route that moves an entire lifetime balance of Chinese assets out in one approved process",
+        "No cap on the total amount applied for",
+        "Covers deposits, real property and other lawfully owned property, not just income"
+      ],
+      "cons": [
+        "Requires cancellation of Chinese household registration, so it is closed to a US citizen who never held a PRC hukou",
+        "Two-year staged remittance is slow and locks the plan in; the amount cannot be increased later",
+        "Above RMB 500,000 equivalent the local branch must refer the file to SAFE headquarters",
+        "The bank must remit straight to the applicant's own account in the country of residence and domestic FX cash withdrawal is prohibited",
+        "SAFE will not accept applications over property under judicial or supervisory restriction, property whose lawful source cannot be shown, or property involved in unresolved criminal or civil proceedings"
+      ],
+      "feasibility": "Only for a former PRC citizen who has cancelled hukou",
+      "risk": "Low if genuinely eligible; severe if documents are falsified",
+      "verified": true,
+      "sources": [
+        "S06",
+        "S07",
+        "S02",
+        "S13"
+      ]
+    },
+    {
+      "id": "R06",
+      "category": "asset",
+      "name": "Inheritance property transfer",
+      "name_zh": "继承财产转移",
+      "legal_basis": "Interim Measures, PBOC Announcement [2004] No.16 Arts.2, 9; Detailed Rules Art.20",
+      "how_it_works": "A foreign citizen, or a Hong Kong or Macao resident, who lawfully inherits an estate situated in China may realise it and remit the proceeds. The application goes to the SAFE branch at the decedent's lifetime place of household registration.",
+      "limit": "All property inherited from the same decedent must be applied for in a single application, but may be remitted in one or several tranches. Property inherited from different decedents is applied for and remitted separately.",
+      "china_tax": "The decedent's property title documents plus a tax certificate or tax-paid voucher from the competent tax authority where the property is located are mandatory.",
+      "us_tax": "Inherited property generally takes a stepped-up basis; the remittance of principal is not income. Any gain on a later sale is US taxable.",
+      "documentation": "Written application stating the reason, the relationship to the decedent and the source and realisation of the property; the application form; identity documents, and for a foreign citizen a settlement-abroad certificate issued or authenticated by a Chinese embassy or consulate; proof of entitlement to the inherited property; the decedent's property title documents and the tax certificate. Documents not notarised must be notarised.",
+      "pros": [
+        "Expressly open to foreign citizens, so unlike emigration transfer it is available to a US citizen by birth",
+        "Single application but flexible remittance timing",
+        "No stated cap on the inherited amount"
+      ],
+      "cons": [
+        "Requires an actual inheritance from a decedent with a Chinese estate",
+        "Notarisation and embassy authentication of foreign documents is slow and expensive",
+        "The same RMB 500,000 equivalent referral threshold to SAFE headquarters applies",
+        "The bank must remit directly to the heir's own account in the country of residence"
+      ],
+      "feasibility": "Only where there is an inheritance",
+      "risk": "Low",
+      "verified": true,
+      "sources": [
+        "S06",
+        "S07",
+        "S02"
+      ]
+    },
+    {
+      "id": "R07",
+      "category": "asset",
+      "name": "Sale of domestic commercial property by an overseas individual",
+      "name_zh": "境外个人转让境内商品房所得资金购汇汇出",
+      "legal_basis": "Measures Art.22; Huifa [2006] No.47 Art.5; Detailed Rules Art.21; SAFE 2025 operational guidelines item 8",
+      "how_it_works": "An overseas individual who lawfully owns domestic commercial property may sell it and remit the after-tax proceeds. Huifa [2006] No.47 Art.5 required the local SAFE branch to confirm the FX purchase application, the transfer contract and the tax-paid certificate before conversion. The Henan branch's 2018 guidance states that such proceeds may now be processed directly at the bank, with no SAFE application and no time limit. The 2025 operational guidelines issued with Huifa [2025] No.43 set out the current documentary checklist.",
+      "limit": "The amount remitted may not exceed the transfer price less the taxes and fees of that transfer. Where the property is co-owned, the applicant may not remit more than their own share of the after-tax balance.",
+      "china_tax": "Individual income tax on property transfer income at a proportional rate of 20%, computed as transfer revenue less original value and reasonable expenses. Art.15 of the Individual Income Tax Law requires the registration authority to verify the individual income tax paid certificate before registering the transfer.",
+      "us_tax": "Gain on the sale is US taxable as a capital gain in the year of sale, with a foreign tax credit for the Chinese individual income tax. The conversion of the proceeds is not itself taxable.",
+      "documentation": "Passport or home-return permit; the transfer contract registered and filed with the real property authority and the registration certificate; the tax-paid certificate for the transfer of property rights; the FX purchase application; a notarised power of attorney and the agent's identity document where an agent acts.",
+      "pros": [
+        "Turns an illiquid Chinese asset into remittable cash with an established legal path",
+        "The 2018 Henan guidance removes the SAFE pre-approval step for overseas individuals",
+        "No time limit is stated on when the proceeds must be remitted"
+      ],
+      "cons": [
+        "Requires actually owning and then selling Chinese real property, with market risk and a long transaction timeline",
+        "Only the after-tax balance is remittable, so the 20% gain tax plus transaction taxes reduce the amount materially",
+        "Co-ownership with a domestic individual blocks that person's share, because there is no policy support for domestic individuals buying overseas real property",
+        "The 2006 rule and the 2018 guidance are not identical on whether SAFE approval is needed, so the position should be confirmed with the handling bank before contract"
+      ],
+      "feasibility": "Medium; conditional on owning Chinese property",
+      "risk": "Low to medium, driven by the conflict between the 2006 rule and later guidance",
+      "verified": true,
+      "sources": [
+        "S01",
+        "S17",
+        "S18",
+        "S19",
+        "S13"
+      ]
+    },
+    {
+      "id": "R08",
+      "category": "individual",
+      "name": "Overseas cash withdrawal against a mainland bank card",
+      "name_zh": "持境内银行卡在境外提取现金",
+      "legal_basis": "Huifa [2017] No.29; Measures Art.33 and Art.38; Detailed Rules Art.30",
+      "how_it_works": "A cardholder withdraws foreign currency cash at an overseas ATM against a mainland-issued card. The issuer settles the withdrawal, and the RMB cost is debited domestically.",
+      "limit": "All cards in the cardholder's own name, including supplementary cards, may not together withdraw more than RMB 100,000 equivalent per calendar year overseas. The per-card daily cap is RMB 10,000 equivalent for both RMB cards and foreign currency cards. Exceeding the annual cap suspends overseas cash withdrawal for the current and the following year.",
+      "china_tax": "None.",
+      "us_tax": "None on the withdrawal. FinCEN Form 105 applies if more than USD 10,000 in currency or monetary instruments is transported into the United States at one time.",
+      "documentation": "Card and PIN; the issuer enforces the caps through the SAFE card-overseas-transaction system.",
+      "pros": [
+        "Immediate physical access to cash outside China with no application or approval",
+        "RMB 100,000 a year is roughly USD 14,000, usable for living expenses"
+      ],
+      "cons": [
+        "Far too small to repatriate a material balance",
+        "Borrowing another person's card, or lending your own, to evade the cap is expressly prohibited and is itself punishable",
+        "Breaching the cap loses overseas cash access for two years and may attract penalties under the Regulation on Foreign Exchange Administration",
+        "ATM and issuer fees plus the card network's conversion rate apply on every withdrawal"
+      ],
+      "feasibility": "Very low as a repatriation route",
+      "risk": "Low within the caps; high if cards are pooled",
+      "verified": true,
+      "officiality_caveat": "The regulator's own text of Huifa [2017] No.29 was not located on safe.gov.cn during this session; figures are taken from Bank of China's republication of the notice and of the SAFE spokesperson's answers.",
+      "sources": [
+        "S08",
+        "S01",
+        "S02"
+      ]
+    },
+    {
+      "id": "R09",
+      "category": "individual",
+      "name": "Overseas card spending on current-account consumption",
+      "name_zh": "个人持境内银行卡境外消费",
+      "legal_basis": "Huifa [2017] No.29 SAFE spokesperson answers; Measures Art.38",
+      "how_it_works": "A mainland-issued card pays for travel, business, study, food, lodging, transport and shopping abroad. SAFE states that such current-account card use is unaffected by the cash-withdrawal rules and does not consume the USD 50,000 annual facilitation quota.",
+      "limit": "No stated cap on overseas current-account card consumption in the sources reviewed. Reporting thresholds and issuer limits apply commercially.",
+      "china_tax": "None.",
+      "us_tax": "None. Card repayment from a domestic account is not income.",
+      "documentation": "Card; the transaction must be a genuine current-account consumption.",
+      "pros": [
+        "Discharges US dollar living costs directly from the RMB balance, which is economically equivalent to repatriating the same amount",
+        "Does not consume the annual facilitation quota",
+        "No application, approval or supporting documents"
+      ],
+      "cons": [
+        "Only usable for consumption. It does not produce USD in a US bank account",
+        "Using overseas card transactions to move capital rather than to consume is a violation: in the 2022 SAFE circular an individual who made 188 overseas card transactions totalling CAD 1,222,000 was found to have evaded FX supervision and fined RMB 325,600",
+        "Issuer and network conversion spreads apply"
+      ],
+      "feasibility": "High for spending; none for repatriation",
+      "risk": "Low for genuine consumption; high for cash-out or capital movement",
+      "verified": true,
+      "sources": [
+        "S08",
+        "S09",
+        "S01"
+      ]
+    },
+    {
+      "id": "R10",
+      "category": "individual",
+      "name": "Withdraw and carry foreign currency banknotes out of China",
+      "name_zh": "个人购汇提钞并携带外币现钞出境",
+      "legal_basis": "Measures Arts.33 and 34; Detailed Rules Art.30; Regulation Art.15 and Art.42",
+      "how_it_works": "An individual withdraws foreign currency cash domestically, within the amount permitted to be carried out of the country, or above that amount after prior filing with the local SAFE branch, and carries it across the border with a customs declaration.",
+      "limit": "Detailed Rules Art.30: cumulative withdrawals up to USD 10,000 equivalent per day may be handled directly at the bank; above that, the individual must file in advance with the local SAFE branch and present the stamped foreign-currency-cash withdrawal filing form. Detailed Rules Art.31: cash deposits up to USD 5,000 equivalent per day may be made directly.",
+      "china_tax": "None on the withdrawal.",
+      "us_tax": "FinCEN Form 105 must be filed where currency or monetary instruments totalling more than USD 10,000 at one time are transported into the United States.",
+      "documentation": "Valid identity document; proof of the withdrawal purpose above the threshold; the SAFE filing form; customs declaration on exit and on US entry.",
+      "pros": [
+        "Produces physical USD with no counterparty and no wire trail to reconstruct later",
+        "Available in modest size without SAFE involvement"
+      ],
+      "cons": [
+        "Carrying FX across the border in violation of the rules attracts a warning and a fine of up to 20% of the illegal amount under Art.42 of the Regulation",
+        "Amounts above USD 10,000 must be declared to US Customs and Border Protection; failure is a separate US offence",
+        "Theft, loss and seizure risk, plus deposit difficulty at a US bank without a documented source of funds"
+      ],
+      "feasibility": "Very low; unsuitable for material amounts",
+      "risk": "Medium to high",
+      "verified": true,
+      "sources": [
+        "S01",
+        "S02",
+        "S03",
+        "S29"
+      ]
+    },
+    {
+      "id": "R11",
+      "category": "individual",
+      "name": "Insurance proceeds paid to an overseas beneficiary",
+      "name_zh": "境外个人作为保险受益人的理赔款购汇汇出",
+      "legal_basis": "Detailed Rules Art.10(4) and Art.13; SAFE Henan Q&A (I)",
+      "how_it_works": "Where the beneficiary of a policy is an overseas person, the claim proceeds may be converted and remitted if the purchase of the insurance was itself lawful and compliant, processed under the policy for legitimate RMB income of an overseas individual against the insurance contract and the insurer's payment proof.",
+      "limit": "None stated for this route.",
+      "china_tax": "Insurance indemnity is exempt from individual income tax under Art.4(5) of the Individual Income Tax Law.",
+      "us_tax": "Life insurance proceeds paid by reason of death are generally excluded; other indemnities are analysed by type. The conversion is not a taxable event.",
+      "documentation": "Valid identity document; the insurance contract; the insurer's payment proof.",
+      "pros": [
+        "Exempt from Chinese individual income tax as insurance indemnity",
+        "Uses the same lightweight overseas-individual income machinery as R01"
+      ],
+      "cons": [
+        "Requires a lawful underlying policy and an insurable event; not a planning tool",
+        "SAFE guidance makes legality of the original purchase a precondition",
+        "Domestic individuals paying FX premiums to a domestic insurer is a separate route with its own rules and does not move money out"
+      ],
+      "feasibility": "Narrow; contingent",
+      "risk": "Low",
+      "verified": true,
+      "sources": [
+        "S37",
+        "S02",
+        "S13"
+      ]
+    },
+    {
+      "id": "R12",
+      "category": "individual",
+      "name": "Individual foreign-trade operator FX settlement account",
+      "name_zh": "个人对外贸易经营者外汇结算账户",
+      "legal_basis": "Measures Arts.10 and 29; Detailed Rules Arts.9(1) and 25; SAFE spokesperson answers of 5 January 2007",
+      "how_it_works": "An individual who completes commercial registration and files for foreign trade operating rights may open an FX settlement account. That account is administered as an institutional account and is used for trade FX receipts, payments and settlement, whether trading directly or through an agent.",
+      "limit": "SAFE's own English explanation states that, unlike individual FX savings accounts and capital-account items, purchases and sales of FX under an FX settlement account are not subject to the annual quota and are handled against valid trading documents regardless of amount.",
+      "china_tax": "Business income of an individual is taxed at 5% to 35% progressive rates on annual revenue less costs, expenses and losses. VAT and surcharges apply to the trade.",
+      "us_tax": "Business income is US taxable; a foreign tax credit is available. If the activity runs through a foreign entity, Forms 8858, 8865 or 5471 may be required.",
+      "documentation": "Individual business licence or other practice certificate; foreign trade operating rights registration filing with the commerce authority; the export agency contract and the agent's customs declaration for settlement.",
+      "pros": [
+        "No annual quota, and no stated cap, provided the trade documents are genuine",
+        "Converts a person into a current-account trader, which is the category Chinese law is most willing to let through",
+        "Can be combined with an individually-owned business structure"
+      ],
+      "cons": [
+        "Requires a real, documented export or import business, not a paper one",
+        "Fabricating trade documents to move money is the single most heavily penalised pattern in the SAFE circulars, with corporate fines reaching RMB 37.34 million on USD 92.858 million of fictitious payments",
+        "Registration, bookkeeping, tax filing and customs compliance are ongoing obligations",
+        "Settlement is tied to specific customs declarations and transport documents"
+      ],
+      "feasibility": "High where a genuine trade exists",
+      "risk": "Low for genuine trade; severe for fabricated trade",
+      "verified": true,
+      "sources": [
+        "S01",
+        "S02",
+        "S04",
+        "S13",
+        "S09",
+        "S10"
+      ]
+    },
+    {
+      "id": "R13",
+      "category": "trade",
+      "name": "Tourism shopping trade settlement by an overseas individual",
+      "name_zh": "境外个人旅游购物贸易方式项下结汇",
+      "legal_basis": "Detailed Rules Art.9(3)",
+      "how_it_works": "An overseas individual settles foreign exchange earned under the tourism shopping trade mode against a valid identity document and a personal tourism shopping customs declaration.",
+      "limit": "None stated beyond the customs declaration requirement.",
+      "china_tax": "Depends on the trader's status and the goods; not determined by this route.",
+      "us_tax": "Business income is US taxable.",
+      "documentation": "Valid identity document; personal tourism shopping customs declaration.",
+      "pros": [
+        "A named, narrow current-account route with a simple document set"
+      ],
+      "cons": [
+        "Tied to a specific customs supervision mode and to declared goods",
+        "Small in practice and unsuited to material balances",
+        "Not a route for converting an existing deposit; it settles trade receipts"
+      ],
+      "feasibility": "Very narrow",
+      "risk": "Low",
+      "verified": true,
+      "sources": [
+        "S02"
+      ]
+    },
+    {
+      "id": "R14",
+      "category": "adjacent",
+      "name": "Cross-boundary Wealth Management Connect, southbound",
+      "name_zh": "粤港澳大湾区跨境理财通（南向通）",
+      "legal_basis": "Revised Implementation Rules for the Greater Bay Area Cross-boundary Wealth Management Connect pilot, issued January 2024 by the PBOC Guangdong Provincial Branch with the HKMA and the AMCM",
+      "how_it_works": "An eligible Greater Bay Area investor opens a remittance account locally and a paired investment account in Hong Kong or Macao. All cross-border remittances between the paired accounts are made in RMB through CIPS and are quota-managed in a closed loop. Principal and investment returns flow back through the same paired accounts.",
+      "limit": "Individual investor quota RMB 3,000,000, raised from RMB 1,000,000; RMB 1,500,000 each where the investor participates through both a bank and a securities company. The aggregate southbound quota is RMB 150 billion, shared with the northbound scheme.",
+      "china_tax": "Not applicable to the remittance; investment returns are taxed under normal rules.",
+      "us_tax": "Investment income is US taxable; the foreign accounts are reportable on FinCEN Form 114 and Form 8938.",
+      "documentation": "Household registration in the nine mainland GBA cities, or two years of continuous social insurance or individual income tax paid there; two years of investment experience; and either family financial net assets of RMB 1,000,000 at month end over the last three months, or family financial assets of RMB 2,000,000, or personal average annual income of RMB 400,000 over the last three years.",
+      "pros": [
+        "Moves RMB to Hong Kong through a fully sanctioned channel where offshore conversion to USD is possible",
+        "Quota was tripled in 2024 and securities companies were admitted to the pilot"
+      ],
+      "cons": [
+        "Not a repatriation channel. The paired-account design is closed loop and principal and returns are expected to flow back",
+        "Cross-border remittances must be in RMB; foreign currency may not be remitted and conversion must occur in the offshore market",
+        "Eligibility requires GBA household registration or two years of GBA social insurance or individual income tax, which a US citizen resident elsewhere cannot meet",
+        "Only nine mainland cities participate"
+      ],
+      "feasibility": "Not a repatriation route; listed for completeness and rejected",
+      "risk": "Low if used as designed; it does not solve the stated problem",
+      "verified": true,
+      "sources": [
+        "S33"
+      ]
+    },
+    {
+      "id": "R15",
+      "category": "corporate",
+      "name": "Dividend from a foreign-invested enterprise to a foreign corporate shareholder",
+      "name_zh": "外商投资企业向境外法人股东分配利润",
+      "legal_basis": "Regulation on Foreign Exchange Administration Art.21 and Art.22; Huifa [2015] No.13; EIT Law Art.4 and Art.27(5); EIT Implementation Regulations Art.91; US-China treaty Art.9(2)",
+      "how_it_works": "A Chinese entity with distributable profits declares a dividend to its foreign shareholder. The entity completes direct-investment FX registration, files for tax on the outbound payment where a single payment exceeds USD 50,000 equivalent, and the bank then processes the conversion and remittance.",
+      "limit": "Limited by distributable profits after making good prior-year losses and funding the statutory reserve. No FX quota applies. Huifa [2015] No.13 provides that only after direct-investment FX registration is complete may the entity carry out FX conversion and remittance, including remittance of profits and dividends.",
+      "china_tax": "Corporate income tax of 25% on the entity's profit first. Then withholding income tax on the dividend: the statutory rate for a non-resident enterprise under Art.3(3) of the EIT Law is 20%, reduced to 10% by Art.91 of the Implementation Regulations. Treaty Art.9(2) also caps the dividend tax at 10%, so the treaty gives no further reduction. VAT does not apply to a dividend distribution.",
+      "us_tax": "A US corporate shareholder generally excludes 100% of the foreign-source portion of a dividend from a 10%-owned foreign corporation under IRC s.245A, but may have a GILTI or Subpart F inclusion instead. A US individual shareholder includes the dividend in income, generally at qualified dividend rates, with a foreign tax credit for the 10% Chinese withholding.",
+      "documentation": "Audited financial statements; board or shareholder resolution on profit distribution; evidence that prior-year losses are made good and the statutory reserve is funded; tax payment certificates; the outbound payment tax filing number and verification code where the single payment exceeds USD 50,000 equivalent; direct-investment FX registration.",
+      "pros": [
+        "The standard, well-trodden route for recurring extraction with no volume ceiling",
+        "Registration is handled at the bank rather than by SAFE approval since June 2015",
+        "Treaty and domestic withholding rates are identical at 10%, so the cost is predictable and does not depend on treaty relief"
+      ],
+      "cons": [
+        "Requires a Chinese entity with real distributable profits; a bare bank balance is not distributable",
+        "Double layer of tax for an individual: 25% corporate tax then 10% withholding, so about 32.5% of pre-tax profit is lost before it reaches the shareholder",
+        "Setting up and maintaining a compliant entity costs audit, accounting and registered-capital time",
+        "Dividends are only distributable out of after-tax profits after losses and the statutory reserve"
+      ],
+      "feasibility": "High where a compliant operating entity exists or can be created",
+      "risk": "Low",
+      "verified": true,
+      "sources": [
+        "S03",
+        "S20",
+        "S14",
+        "S30",
+        "S15"
+      ]
+    },
+    {
+      "id": "R16",
+      "category": "corporate",
+      "name": "Dividend from a foreign-invested enterprise to a foreign individual shareholder",
+      "name_zh": "外商投资企业向境外个人股东分配利润",
+      "legal_basis": "Individual Income Tax Law Art.2(6) and Art.3(3); Regulation Art.21 and Art.22; Huifa [2015] No.13",
+      "how_it_works": "As R15, but the shareholder is a natural person. The distributing entity withholds individual income tax on the dividend and then processes the outbound payment and conversion.",
+      "limit": "Limited by distributable profits. No FX quota applies.",
+      "china_tax": "Corporate income tax of 25% at the entity level, then individual income tax on interest, dividends and bonuses at a proportional rate of 20% on the full amount of each receipt, per Art.3(3) and Art.6(6) of the Individual Income Tax Law.",
+      "us_tax": "The dividend is US taxable to the individual in the year received, with a foreign tax credit for the Chinese tax, subject to the s.904 limitation. The conversion and remittance of the after-tax dividend is not a further taxable event.",
+      "documentation": "As R15, plus the withholding declaration for the individual shareholder.",
+      "pros": [
+        "Reaches the individual directly with one entity and one distribution decision",
+        "No FX quota and no SAFE approval once direct-investment registration is in place"
+      ],
+      "cons": [
+        "Combined burden of 25% corporate tax then 20% dividend tax leaves 60% of pre-tax profit",
+        "A widely cited exemption for dividends paid to foreign individuals from foreign-invested enterprises rests on 1994-era circulars whose current validity was not confirmed from an official source in this session, so no relief is assumed here",
+        "Requires genuine distributable profits and a compliant entity"
+      ],
+      "feasibility": "High mechanically; expensive fiscally",
+      "risk": "Low",
+      "verified": true,
+      "sources": [
+        "S13",
+        "S03",
+        "S20"
+      ]
+    },
+    {
+      "id": "R17",
+      "category": "corporate",
+      "name": "Return of registered capital by capital reduction",
+      "name_zh": "外商投资企业减资汇出",
+      "legal_basis": "Regulation Art.22; Huifa [2015] No.13; Huifa [2013] No.21",
+      "how_it_works": "The entity reduces its registered capital, returns the reduced amount to the foreign investor, and remits it after completing the change in direct-investment FX registration and paying tax on any gain.",
+      "limit": "Bounded by the amount of registered capital actually contributed and by Company Law creditor-protection procedures. No FX quota applies.",
+      "china_tax": "A non-resident enterprise's gain on a capital reduction is taxable; the specific characterisation and computation of the reduction proceeds was not confirmed from an official source in this session and is therefore left unstated here.",
+      "us_tax": "Treatment depends on whether the distribution is a return of basis or a dividend equivalent. Not quantified here.",
+      "documentation": "Shareholder resolution on the capital reduction; newspaper or creditor notification and the statutory waiting period; amended articles and business licence change; tax clearance; change of direct-investment FX registration; board resolution and audit where required by the bank.",
+      "pros": [
+        "Returns contributed capital rather than profits, so it does not depend on the entity being profitable",
+        "No FX quota and no SAFE approval once registration is updated"
+      ],
+      "cons": [
+        "Company Law creditor notification and objection procedures make this slow",
+        "Reduces the entity's capital base and may breach minimum requirements or contractual commitments",
+        "The tax characterisation of reduction proceeds is genuinely contested in practice and was not resolvable from official sources in this session"
+      ],
+      "feasibility": "Medium; slow and fact-specific, with unresolved tax characterisation",
+      "risk": "Medium, driven by tax characterisation uncertainty",
+      "verified": true,
+      "flag": "F03",
+      "sources": [
+        "S03",
+        "S20"
+      ],
+      "verification_note": "The FX mechanics and the stated limit are sourced. The tax characterisation of capital-reduction proceeds is NOT confirmed and is left unstated in the China tax field; see flag F03."
+    },
+    {
+      "id": "R18",
+      "category": "corporate",
+      "name": "Liquidation of a foreign-invested enterprise",
+      "name_zh": "外商投资企业清算汇出",
+      "legal_basis": "Regulation Art.22 paragraph 3",
+      "how_it_works": "Art.22 paragraph 3 of the Regulation provides that where a foreign-invested enterprise is lawfully terminated, the RMB belonging to the foreign investor may, after liquidation and tax payment in accordance with State regulations, be purchased into foreign exchange and remitted through a financial institution operating settlement and sale of foreign exchange.",
+      "limit": "Bounded by net liquidation proceeds after creditors, taxes and liquidation expenses. No FX quota applies.",
+      "china_tax": "Liquidation income is taxable at the entity level; tax payment is an express statutory precondition to remittance. The computation was not separately verified in this session.",
+      "us_tax": "Liquidation distributions are analysed under the US liquidation rules; not quantified here.",
+      "documentation": "Termination and liquidation approvals; liquidation committee reports; creditor settlement; tax clearance certificates; deregistration of direct-investment FX registration; bank authenticity review.",
+      "pros": [
+        "Express statutory authority in a State Council regulation, so the entitlement is strong",
+        "Moves the entire residual value, not just profits or a quota slice",
+        "Clean exit: the entity and its compliance burden end"
+      ],
+      "cons": [
+        "Destroys the operating platform; it is a one-way exit",
+        "Liquidation is lengthy, requires settling all creditors and employees and obtaining tax clearance",
+        "Only the residual after all liabilities and taxes is remittable",
+        "Any unresolved tax exposure surfaces during clearance and can block the whole remittance"
+      ],
+      "feasibility": "High where the entity is to be wound up anyway",
+      "risk": "Low, but slow and irreversible",
+      "verified": true,
+      "sources": [
+        "S03"
+      ]
+    },
+    {
+      "id": "R19",
+      "category": "corporate",
+      "name": "Sale of equity in a Chinese entity to a foreign buyer",
+      "name_zh": "转让境内企业股权",
+      "legal_basis": "Individual Income Tax Law Art.2(8), Art.3(3), Art.6(5) and Art.15; EIT Law Art.19(2) and Art.27(5) with Implementation Regulations Art.91; US-China treaty Art.12(5)",
+      "how_it_works": "The shareholder sells its interest in the Chinese entity. Consideration may be payable offshore by the buyer, or onshore and then remitted. Art.15 of the Individual Income Tax Law requires the market entity registration authority to verify the individual income tax paid certificate before registering the equity change.",
+      "limit": "No FX quota. The remittance of the proceeds follows the capital-account rules applicable to the seller.",
+      "china_tax": "Individual seller: 20% on property transfer income, being transfer revenue less original value and reasonable expenses. Non-resident enterprise seller: taxable income is the full revenue less the net value of the property, at the 10% reduced rate under Art.91 of the Implementation Regulations. Treaty Art.12(5) permits China to tax a gain on a participation of 25% or more in a Chinese resident company.",
+      "us_tax": "The gain is US taxable in the year of sale with a foreign tax credit. Treaty Art.12 leaves the gain also taxable in the US as the state of residence, and the Protocol's saving clause preserves US taxation of its citizens in any event.",
+      "documentation": "Equity transfer agreement; valuation evidence supporting the price; tax payment certificate before registration change; consideration payment evidence; direct-investment FX registration change.",
+      "pros": [
+        "Realises the whole value of the holding in one transaction",
+        "Where a foreign buyer pays offshore, the consideration never enters China and no outbound remittance is needed at all",
+        "Only the gain is taxed, not the proceeds, where the cost base is documented"
+      ],
+      "cons": [
+        "Requires a willing buyer and an acceptable price",
+        "A below-market price invites adjustment; Art.8 of the Individual Income Tax Law permits adjustment of arrangements without reasonable commercial purpose",
+        "Registration cannot complete until the tax paid certificate is produced, so tax is unavoidable and must be funded first",
+        "Undocumented cost base means 20% on gross proceeds in practice"
+      ],
+      "feasibility": "High where a buyer exists",
+      "risk": "Low to medium",
+      "verified": true,
+      "sources": [
+        "S13",
+        "S14",
+        "S30"
+      ]
+    },
+    {
+      "id": "R20",
+      "category": "corporate",
+      "name": "Cross-border service fee paid by the Chinese entity to a US related party",
+      "name_zh": "境内企业向境外关联方支付服务费",
+      "legal_basis": "Regulation Arts.5, 12 and 14; STA and SAFE Announcement 2021 No.19 and 2013 No.40; EIT Implementation Regulations Art.7(5) and Art.49; Individual Income Tax Law Art.8",
+      "how_it_works": "The Chinese entity pays a genuine fee for services actually supplied from outside China. The payment is a current-account item, which the State does not restrict. Where a single payment exceeds USD 50,000 equivalent the payer completes the outbound payment tax filing and the bank processes the remittance against the filing number and verification code.",
+      "limit": "No FX quota. Bounded by the arm's-length value of real services and by deductibility rules.",
+      "china_tax": "Withholding income tax where the recipient is a non-resident without a Chinese establishment: 10% on the gross amount under Art.91 of the Implementation Regulations. VAT on imported services; the specific rate and any cross-border zero-rate or exemption depends on the service type and on whether it is consumed entirely outside China. Management fees paid between enterprises are expressly not deductible under Art.49 of the Implementation Regulations.",
+      "us_tax": "The fee is income to the US recipient and is US taxable. Where the recipient is a corporation, the arm's-length standard under IRC s.482 applies on both sides.",
+      "documentation": "Service contract with a genuine scope and deliverables; evidence of performance; invoices; withholding tax payment certificate; outbound payment tax filing number and verification code above USD 50,000 equivalent; transfer-pricing documentation.",
+      "pros": [
+        "Current-account, so Art.5 of the Regulation says the State does not restrict it",
+        "Recurring and scalable, and it does not require distributable profits",
+        "The 2021 announcement lets one filing cover multiple payments under the same contract, and exempts reinvestment of legitimate direct-investment income in China",
+        "Deductible at the Chinese entity, reducing 25% corporate tax on the same amount"
+      ],
+      "cons": [
+        "The services must be real and documented; a bare management fee is not deductible between enterprises",
+        "Art.8 of the Individual Income Tax Law and the transfer-pricing rules allow adjustment where related-party dealings are not at arm's length",
+        "10% withholding plus VAT means the gross-up must be modelled before pricing",
+        "Tax authorities scrutinise service fees to related parties closely, and a disallowed deduction converts the payment into a deemed distribution"
+      ],
+      "feasibility": "High where genuine services exist",
+      "risk": "Medium, driven by transfer pricing",
+      "verified": true,
+      "sources": [
+        "S03",
+        "S15",
+        "S14",
+        "S13"
+      ]
+    },
+    {
+      "id": "R21",
+      "category": "corporate",
+      "name": "Royalty payment by the Chinese entity to a US related party",
+      "name_zh": "境内企业向境外支付特许权使用费",
+      "legal_basis": "US-China treaty Art.11(2) and Protocol para.6; EIT Implementation Regulations Art.7(5), Art.20 and Art.91; STA and SAFE Announcement 2021 No.19",
+      "how_it_works": "The Chinese entity pays for the right to use a copyright, trademark, patent, design, model, secret formula or process, know-how or similar right. Royalties are sourced where the payer is located, so a Chinese payer creates Chinese-source income for the US recipient.",
+      "limit": "No FX quota. Bounded by arm's-length pricing and by the existence of a real intangible.",
+      "china_tax": "Withholding income tax at the reduced 10% rate under Art.91 of the Implementation Regulations. Treaty Art.11(2) caps it at 10% of the gross royalty, so no treaty reduction below the domestic rate. For leasing of industrial, commercial or scientific equipment, Protocol para.6 taxes only 70% of the gross amount, an effective cap of 7%. VAT applies to royalties; rent and royalties paid between operating units of the same enterprise are not deductible under Art.49.",
+      "us_tax": "Royalty income to the US recipient, US taxable, with a foreign tax credit for the Chinese withholding subject to the s.904 limitation and the separate passive-category basket.",
+      "documentation": "Licence agreement; evidence of the intangible and of its ownership; withholding tax payment certificate; outbound payment tax filing above USD 50,000 equivalent; transfer-pricing support.",
+      "pros": [
+        "Predictable 10% ceiling under both domestic law and the treaty",
+        "Equipment leasing gets an effective 7% ceiling under Protocol para.6",
+        "Scales with revenue rather than with profit, so it works even in a loss-making year",
+        "Deductible at the Chinese entity against 25% corporate tax"
+      ],
+      "cons": [
+        "Requires a genuinely owned, valuable intangible; a retro-fitted licence is the classic transfer-pricing adjustment",
+        "Related-party royalties between operating units of the same enterprise are not deductible",
+        "VAT and surcharges apply on top of the withholding tax",
+        "The 10% treaty rate is no better than domestic law, so there is no treaty planning benefit"
+      ],
+      "feasibility": "High where real intangibles exist",
+      "risk": "Medium, driven by transfer pricing",
+      "verified": true,
+      "sources": [
+        "S30",
+        "S14",
+        "S15"
+      ]
+    },
+    {
+      "id": "R22",
+      "category": "trade",
+      "name": "Export of goods, receiving USD proceeds",
+      "name_zh": "货物出口收汇",
+      "legal_basis": "Regulation Arts.5, 12 and 13; Detailed Rules Arts.9 and 25",
+      "how_it_works": "A Chinese exporter ships goods and receives payment in USD from the overseas buyer. Current-account FX receipts may be retained or sold to a financial institution operating settlement and sale of FX, and the transaction is processed against genuine commercial documents.",
+      "limit": "No individual annual quota applies to trade FX receipts and payments through an FX settlement account, which is administered as an institutional account.",
+      "china_tax": "VAT on exported goods is zero-rated subject to State Council exceptions, so export sales generally carry no output VAT and may attract refunds of input VAT. Corporate income tax at 25% on the profit, or the preferential rate where the entity qualifies.",
+      "us_tax": "The US buyer's cost is generally deductible; the Chinese seller's profit is US taxable to its US owners with a foreign tax credit.",
+      "documentation": "Sales contract; commercial invoice; customs declaration; transport documents; the bank reconciles the receipt against the declaration.",
+      "pros": [
+        "Creates USD abroad directly, with no CNY-to-USD conversion step and no SAFE quota at all",
+        "The cleanest structural answer: the money never needs to leave China because it is earned outside it",
+        "Zero-rated VAT on exports makes the goods channel tax-efficient on the indirect tax side"
+      ],
+      "cons": [
+        "Requires a real export business with goods, logistics and an overseas customer",
+        "Fabricated trade backgrounds are the most heavily fined pattern in the SAFE circulars, with corporate penalties of RMB 37.34 million, RMB 9.602 million and RMB 5.9788 million published for fictitious bills of lading",
+        "Working capital, customs and product compliance are ongoing costs",
+        "Does nothing for money already sitting in a Chinese account except by generating new export revenue"
+      ],
+      "feasibility": "High structurally; requires a real business",
+      "risk": "Low for genuine trade; severe for fabricated trade",
+      "verified": true,
+      "sources": [
+        "S03",
+        "S02",
+        "S09",
+        "S10"
+      ]
+    },
+    {
+      "id": "R23",
+      "category": "trade",
+      "name": "Export through an agent by an individually-owned business",
+      "name_zh": "个体工商户委托代理出口收结汇",
+      "legal_basis": "Detailed Rules Art.9(2), as amended by Huifa [2016] No.13",
+      "how_it_works": "An individually-owned business entrusts an enterprise holding foreign trade operating rights to export on its behalf. It may receive and settle the FX through its own FX settlement account, and settlement is processed against the export agency contract and transport documents issued by the logistics company.",
+      "limit": "No individual annual quota applies; the FX settlement account is managed as an institutional account.",
+      "china_tax": "Business income at 5% to 35% progressive rates; VAT and surcharges on the goods.",
+      "us_tax": "Business income, US taxable with a foreign tax credit.",
+      "documentation": "Export agency contract or agreement with the agent enterprise; transport documents issued by the logistics company, per the 2016 amendment replacing the earlier customs declaration requirement.",
+      "pros": [
+        "Lighter than forming a company while still accessing the institutional-account treatment",
+        "No annual quota against genuine trade documents",
+        "The 2016 amendment simplified settlement documents to contract plus transport documents"
+      ],
+      "cons": [
+        "Still requires real goods and a real agent",
+        "Depends on the agent's compliance and on the agent reporting the arrangement to the local SAFE branch",
+        "Business income rates of 5% to 35% can exceed the 25% corporate rate at scale"
+      ],
+      "feasibility": "Medium",
+      "risk": "Low for genuine trade",
+      "verified": true,
+      "sources": [
+        "S02",
+        "S13"
+      ]
+    },
+    {
+      "id": "R24",
+      "category": "corporate",
+      "name": "Outbound intercompany lending from the Chinese entity",
+      "name_zh": "境内企业向境外关联方放款",
+      "legal_basis": "Measures Art.21; Detailed Rules Art.23; Regulation Arts.17 and 20",
+      "how_it_works": "A Chinese entity lends to a related offshore borrower and receives principal and interest abroad, or the loan is repaid offshore. Art.23 of the Detailed Rules states that liberalisation of domestic individuals providing loans abroad, borrowing foreign debt, providing external guarantees and directly participating in overseas commodity futures and derivatives is to proceed according to the progress of capital-account convertibility, with specific measures to be formulated separately.",
+      "limit": null,
+      "china_tax": "Interest received is taxable. Interest paid by the Chinese entity to a non-resident is subject to 10% withholding under Art.91 of the Implementation Regulations and is sourced where the payer is located. Interest paid between non-bank operating units of the same enterprise is not deductible under Art.49.",
+      "us_tax": "Interest received by the US lender is US taxable; a foreign tax credit is available for Chinese withholding.",
+      "documentation": "Loan agreement; registration with SAFE where required; the applicable cross-border financing quota; outbound payment tax filing above USD 50,000 equivalent for interest.",
+      "pros": [
+        "Interest is deductible in China and creates a recurring outbound current-account payment",
+        "Principal repayment is a return of capital rather than income"
+      ],
+      "cons": [
+        "Capital-account item, so registration and quota conditions apply and the enabling measures were still to be formulated as drafted",
+        "Outbound lending by a Chinese entity is subject to macro-prudential cross-border financing limits whose current parameters were not verified from an official source in this session",
+        "Thin capitalisation and arm's-length interest rate rules allow adjustment",
+        "A loan that is never repaid invites recharacterisation as a distribution"
+      ],
+      "feasibility": "Not established from official sources in this session",
+      "risk": "Medium to high, driven by unresolved regulatory parameters",
+      "verified": false,
+      "flag": "F04",
+      "sources": [
+        "S01",
+        "S02",
+        "S03",
+        "S14"
+      ]
+    },
+    {
+      "id": "R25",
+      "category": "corporate",
+      "name": "Cross-border two-way RMB cash pooling within a multinational group",
+      "name_zh": "跨境双向人民币资金池",
+      "legal_basis": "Not established from an official source in this session",
+      "how_it_works": "A multinational group sweeps surplus RMB from Chinese member entities into an offshore master account under a PBOC-regulated pooling arrangement, where it can be converted. The specific eligibility thresholds, the group revenue tests and the current net-inflow cap could not be confirmed from an official PBOC source in this session.",
+      "limit": null,
+      "china_tax": "Not determined.",
+      "us_tax": "Not determined.",
+      "documentation": "Not determined.",
+      "pros": [
+        "Where available, moves large balances efficiently inside an existing group structure",
+        "RMB-denominated, so it uses the cross-border RMB framework rather than the FX purchase framework"
+      ],
+      "cons": [
+        "Requires a genuine multinational group with qualifying members",
+        "The operative circular and its current parameters were not verified against an official source, so this row is published without figures and is flagged",
+        "Pooling is a cash-management tool, not an exit; balances remain group property and subject to reversal"
+      ],
+      "feasibility": "Unverified",
+      "risk": "Unverified",
+      "verified": false,
+      "flag": "F05",
+      "sources": []
+    },
+    {
+      "id": "R26",
+      "category": "adjacent",
+      "name": "Qualified domestic institutional investor products",
+      "name_zh": "合格境内机构投资者（QDII）产品",
+      "legal_basis": "Measures Art.17; Detailed Rules Art.17",
+      "how_it_works": "A domestic individual may invest in overseas fixed-income and equity financial products using FX or RMB through a bank, fund management company or other qualified domestic institutional investor holding a SAFE quota.",
+      "limit": "Bounded by the institution's SAFE-granted quota. The individual's own USD 50,000 facilitation quota is not consumed by a QDII purchase.",
+      "china_tax": "Investment returns are taxed under normal rules.",
+      "us_tax": "Returns are US taxable. A foreign pooled fund may be a passive foreign investment company, bringing IRC s.1291 default treatment, excess distribution rules and Form 8621 filing, unless a qualified electing fund or mark-to-market election is available.",
+      "documentation": "Subscription through the licensed institution; risk disclosure and suitability assessment.",
+      "pros": [
+        "Exposure to offshore assets without using the personal facilitation quota",
+        "Fully sanctioned and simple to subscribe"
+      ],
+      "cons": [
+        "Not a repatriation channel: redemption proceeds return to the domestic account, so it moves value into offshore assets and back but does not deliver USD to the United States",
+        "Quota availability is controlled by the institution and is frequently suspended when exhausted",
+        "PFIC treatment can be punitive for a US holder and Form 8621 is required",
+        "Product range is limited to what the institution is licensed to sell"
+      ],
+      "feasibility": "Not a repatriation route; listed for completeness and rejected",
+      "risk": "Low as designed; US PFIC reporting risk for the holder",
+      "verified": true,
+      "sources": [
+        "S01",
+        "S02"
+      ]
+    },
+    {
+      "id": "R27",
+      "category": "individual",
+      "name": "Outward direct investment by a domestic individual",
+      "name_zh": "境内个人对外直接投资",
+      "legal_basis": "Measures Art.16; Detailed Rules Art.16",
+      "how_it_works": "Outward direct investment by a domestic individual requires SAFE approval: the FX needed may be purchased or remitted from own FX only after the local SAFE branch approves, and the individual must complete outward direct investment FX registration.",
+      "limit": "Case-by-case SAFE approval. No general quota is stated.",
+      "china_tax": "Returns are taxed under normal rules; Art.10(4) of the Individual Income Tax Law requires self-filing on overseas income.",
+      "us_tax": "A US person owning a foreign corporation generally files Form 5471 and may have GILTI or Subpart F inclusions.",
+      "documentation": "SAFE approval; outward direct investment FX registration; project approval or filing with the commerce authority where required.",
+      "pros": [
+        "Where approved, moves a defined amount out against a real investment project"
+      ],
+      "cons": [
+        "Requires SAFE approval, which is discretionary and rarely granted for individuals",
+        "Applies to a domestic individual, so a US citizen treated as an overseas individual follows a different path",
+        "Detailed Rules Art.16 also sweeps in overseas individuals who habitually reside in China for economic interest and set up or control a special purpose vehicle for round-trip investment",
+        "Registration and ongoing reporting obligations follow the investment"
+      ],
+      "feasibility": "Low",
+      "risk": "Medium",
+      "verified": true,
+      "sources": [
+        "S01",
+        "S02"
+      ]
+    },
+    {
+      "id": "R28",
+      "category": "individual",
+      "name": "Outward donation or property transfer by a domestic individual",
+      "name_zh": "境内个人对外捐赠和财产转移购付汇",
+      "legal_basis": "Measures Art.20; Detailed Rules Art.10(1) and Art.10(3)",
+      "how_it_works": "A domestic individual's outward donation or property transfer requiring FX purchase must comply with the relevant regulations and be approved by SAFE. Donations above the annual total amount require a notarised donation agreement or contract, and inheritance income requires the legal instrument or notarial certificate of inheritance.",
+      "limit": "SAFE approval required; no general quota stated.",
+      "china_tax": "Depends on the underlying asset.",
+      "us_tax": "A gift to a non-US person may trigger US gift tax and Form 709; a US recipient of a large foreign gift or bequest has its own reporting obligations. Not quantified here.",
+      "documentation": "Notarised donation agreement or contract, or the inheritance legal instrument or notarial certificate; SAFE approval.",
+      "pros": [
+        "A lawful route for genuine donations and family transfers above the quota"
+      ],
+      "cons": [
+        "Requires SAFE approval and notarisation",
+        "The donation must comply with State regulations, and authenticity is examined closely because it is a known quota-evasion pattern",
+        "US gift and generation-skipping rules may apply to the donor independently of Chinese approval"
+      ],
+      "feasibility": "Low to medium; discretionary",
+      "risk": "Medium",
+      "verified": true,
+      "sources": [
+        "S01",
+        "S02"
+      ]
+    },
+    {
+      "id": "R29",
+      "category": "prohibited",
+      "name": "Underground banking",
+      "name_zh": "地下钱庄",
+      "legal_basis": "Prohibited by Measures Art.30 and Regulation Art.45; criminal under Fashi [2019] No.1 Art.2 and Criminal Law Art.225(4)",
+      "how_it_works": "The customer pays RMB to a domestic account controlled by the operator and an associated party credits foreign currency to the customer's offshore account. No cross-border movement of the same funds occurs, which is why the arrangement is described as disguised buying and selling of FX.",
+      "limit": "Not applicable.",
+      "china_tax": "Not applicable. The arrangement is unlawful and no tax treatment is asserted.",
+      "us_tax": "Not applicable as a lawful channel. Receipt of funds through such a channel raises US money-laundering and reporting exposure independent of the Chinese offence.",
+      "documentation": "Not applicable.",
+      "pros": [
+        "None. Listed only so that the reader can recognise and avoid the channel"
+      ],
+      "cons": [
+        "Regulation Art.45: warning, confiscation of illegal gains and a fine of up to 30% of the illegal amount, rising to between 30% and 100% in serious circumstances, with criminal liability where a crime is constituted",
+        "Fashi [2019] No.1 sets the criminal threshold at an illegal business amount of RMB 5,000,000 or illegal gains of RMB 100,000, and 'especially serious' at RMB 25,000,000 or RMB 500,000",
+        "Published fines are large relative to the amounts moved: RMB 24,970,000 on RMB 312,000,000 of private FX purchase used to buy overseas property; RMB 1,300,000 on RMB 10,817,900 moved through a Macau casino underground bank; RMB 968,500 on RMB 13,835,800",
+        "Offenders are placed on the SAFE watch list and the penalty is entered into the PBOC credit-reference system, which damages future banking, borrowing and FX access",
+        "No legal recourse if the operator absconds with the funds, since the underlying contract is unlawful"
+      ],
+      "feasibility": "Prohibited",
+      "risk": "Severe",
+      "verified": true,
+      "sources": [
+        "S03",
+        "S01",
+        "S12",
+        "S10",
+        "S11",
+        "S09"
+      ]
+    },
+    {
+      "id": "R30",
+      "category": "prohibited",
+      "name": "Splitting transfers across multiple individuals' annual quotas",
+      "name_zh": "分拆购汇（蚂蚁搬家）",
+      "legal_basis": "Prohibited by Measures Art.7; penalised under Regulation Art.39",
+      "how_it_works": "Several individuals each use their own USD 50,000 annual quota to purchase FX and remit it to the same overseas account, so that a single beneficial owner moves an amount far above any one quota.",
+      "limit": "Not applicable.",
+      "china_tax": "Not applicable.",
+      "us_tax": "Where US persons lend their identity to such a scheme, they carry their own FBAR and Form 8938 exposure on accounts over which they have signature authority, and potential aiding exposure.",
+      "documentation": "Not applicable.",
+      "pros": [
+        "None. Listed only so that the reader can recognise and avoid the channel"
+      ],
+      "cons": [
+        "Measures Art.7 expressly prohibits evading quota supervision by splitting and prohibits using false commercial documents or vouchers to evade authenticity review",
+        "Regulation Art.39: SAFE orders repatriation within a time limit and imposes a fine of up to 30% of the evaded amount, rising to between 30% and 100% in serious circumstances, with criminal liability where a crime is constituted",
+        "Published penalties: 34 individuals' quotas and USD 2,446,200 moved, fined RMB 830,000; 102 individuals' quotas and CAD 6,753,600 moved, fined RMB 1,727,800; 173 individuals' quotas and CAD 12,056,500 moved, fined RMB 3,009,000; 21 individuals' quotas and USD 1,049,600 moved, fined RMB 330,000; 32 individuals' quotas and USD 1,582,500 moved, fined RMB 536,400",
+        "A bank that facilitates the splitting is also fined: one bank was fined RMB 1,000,000 for processing split purchases and payments for a client using 303 individuals' annual quotas",
+        "The individuals whose quotas were used are themselves exposed, and every offender is placed on the SAFE watch list and in the PBOC credit-reference system"
+      ],
+      "feasibility": "Prohibited",
+      "risk": "Severe",
+      "verified": true,
+      "sources": [
+        "S01",
+        "S03",
+        "S09",
+        "S10",
+        "S11"
+      ]
+    },
+    {
+      "id": "R31",
+      "category": "prohibited",
+      "name": "Cryptocurrency purchase in China and offshore sale",
+      "name_zh": "境内购买虚拟货币后境外出售",
+      "legal_basis": "Prohibited by Yinfa [2021] No.237",
+      "how_it_works": "CNY is used to acquire a virtual currency through a peer-to-peer or exchange channel and the asset is then sold offshore for USD.",
+      "limit": "Not applicable.",
+      "china_tax": "Not applicable. No lawful tax treatment arises from a prohibited activity.",
+      "us_tax": "Not applicable as a lawful channel. A US person holding convertible virtual currency has separate US reporting and taxation exposure.",
+      "documentation": "Not applicable.",
+      "pros": [
+        "None. Listed only so that the reader can recognise and avoid the channel"
+      ],
+      "cons": [
+        "Para 1(2): fiat-to-crypto exchange, crypto-to-crypto exchange, acting as central counterparty, providing information intermediary or pricing services, token issuance financing and crypto derivatives are all illegal financial activities, strictly prohibited and to be banned, with criminal liability where a crime is constituted",
+        "Para 1(3): overseas exchanges serving mainland residents over the internet are equally illegal",
+        "Para 1(4): civil acts of investing in virtual currency that offend public order and good morals are void and losses are borne by the participant, so there is no legal remedy for a failed or fraudulent trade",
+        "Para 4(9): banks and non-bank payment institutions must not open accounts, transfer funds or provide clearing and settlement for such activity, so the on-ramp itself is closed",
+        "Stablecoins including Tether are expressly named as having no legal-tender status"
+      ],
+      "feasibility": "Prohibited",
+      "risk": "Severe",
+      "verified": true,
+      "sources": [
+        "S16"
+      ]
+    },
+    {
+      "id": "R32",
+      "category": "prohibited",
+      "name": "Fabricated trade background and false commercial documents",
+      "name_zh": "虚构贸易背景对外付汇",
+      "legal_basis": "Prohibited by Regulation Arts.12 and 39; Measures Art.7",
+      "how_it_works": "False or invalid contracts, invoices or bills of lading are presented to a bank to justify an outbound payment as a current-account trade settlement.",
+      "limit": "Not applicable.",
+      "china_tax": "Not applicable.",
+      "us_tax": "Not applicable as a lawful channel.",
+      "documentation": "Not applicable.",
+      "pros": [
+        "None. Listed only so that the reader can recognise and avoid the channel"
+      ],
+      "cons": [
+        "Regulation Art.12 requires current-account FX receipts and payments to have a genuine and lawful transaction basis, and Art.39 penalises evasive transfer of capital abroad by deceit with a fine of up to 30% of the evaded amount, rising to between 30% and 100% in serious circumstances",
+        "Published corporate penalties: USD 92,858,000 paid out on false bills of lading, fined RMB 37,340,000; USD 27,349,000, fined RMB 9,602,000; USD 17,726,400, fined RMB 5,978,800; USD 15,656,200, fined RMB 5,098,400; USD 9,555,000, fined RMB 3,097,400; USD 6,190,000, fined RMB 2,136,500",
+        "Prepayment for goods that never arrive was separately penalised: USD 2,560,000 paid as advance payment with no delivery, fined RMB 837,200",
+        "Banks that process payments against false bills of lading are also fined under Art.47, and one was fined and had RMB 800,000 confiscated",
+        "Penalty information is entered into the PBOC credit-reference system"
+      ],
+      "feasibility": "Prohibited",
+      "risk": "Severe",
+      "verified": true,
+      "sources": [
+        "S03",
+        "S01",
+        "S09",
+        "S10",
+        "S11"
+      ]
+    },
+    {
+      "id": "R33",
+      "category": "prohibited",
+      "name": "Overseas card cash-out through fictitious point-of-sale transactions",
+      "name_zh": "境外违规刷卡套现",
+      "legal_basis": "Measures Art.16; Regulation Art.39",
+      "how_it_works": "A mainland card is used abroad for transactions that are not genuine consumption, generating cash or an offshore credit and moving capital out under the cover of card spending.",
+      "limit": "Not applicable.",
+      "china_tax": "Not applicable.",
+      "us_tax": "Not applicable as a lawful channel.",
+      "documentation": "Not applicable.",
+      "pros": [
+        "None. Listed only so that the reader can recognise and avoid the channel"
+      ],
+      "cons": [
+        "SAFE's 2022 circular records an individual who made 188 overseas card transactions totalling CAD 1,222,000, found to have evaded FX supervision under Art.16 of the Measures and fined RMB 325,600 under Art.39 of the Regulation",
+        "The penalty is entered into the PBOC credit-reference system and the individual is placed on the SAFE watch list",
+        "Genuine consumption by card is lawful; the violation is the fictitious character of the transactions, which is what monitoring models target"
+      ],
+      "feasibility": "Prohibited",
+      "risk": "High",
+      "verified": true,
+      "sources": [
+        "S09",
+        "S01",
+        "S03"
+      ]
+    }
+  ]
+}
