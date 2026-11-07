@@ -19,4 +19,8 @@ python scripts/build.py
 python scripts/verify.py
 python -m http.server 8000 --bind 0.0.0.0 --directory docs
 ```
-No dependencies or external fonts/scripts. Generated HTML supports navigation without JavaScript; JavaScript only filters the transfer table. Edit research records in `scripts/build.py`, regenerate and run verification. Pages serves `main:/docs`. See COORDINATION.md for deployment and PR records.
+No dependencies or external fonts/scripts. Generated HTML supports navigation without JavaScript; JavaScript only filters the transfer table. Edit research records in `scripts/build.py`, regenerate and run verification. Pages serves `main:/`; the supplemental site is under `/docs/`. See COORDINATION.md for deployment and PR records.
+
+## Preserved earlier dashboard
+
+The concurrent session’s original dashboard remains at the repository root, with its pages and assets preserved. The expanded research dashboard is at https://sassnarep3-star.github.io/China1/docs/.

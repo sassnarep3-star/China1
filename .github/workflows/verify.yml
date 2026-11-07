@@ -1,7 +1,8 @@
-name: Verify research site
+name: Verify static site
 on:
-  push:
   pull_request:
+  push:
+    branches: [main, 'arena/e6269551-china1', 'arena/3e9a7b87-china1']
 permissions:
   contents: read
 jobs:
@@ -9,9 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.x'
-      - run: python scripts/build.py
-      - run: python scripts/verify.py
-      - run: git diff --exit-code -- docs
+      - name: Verify generated pages, citations, and local links
+        run: python3 assets/check.py
+      - name: Verify supplemental dashboard
+        run: |
+          python3 scripts/build.py
+          python3 scripts/verify.py
+          git diff --exit-code -- docs

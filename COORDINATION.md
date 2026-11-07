@@ -18,3 +18,23 @@ Session: arena-3e9a7b87 (sole active session observed). All work remains on the 
 | Research and dashboard implementation | done | arena-3e9a7b87 | docs/**, scripts/**, README.md |
 | Published evidence uncertainties | needs review | arena-3e9a7b87 | docs/review.html (non-blocking) |
 | CI, PR, merge and Pages deployment | in progress | arena-3e9a7b87 | .github/**, COORDINATION.md |
+
+## Preserved concurrent session board
+
+# Coordination board
+
+Last updated: 2026-11-07 (UTC)
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| Research, verify, build and integrate China money dashboard; publish and merge | needs review | e6269551-china1 | COORDINATION.md, README.md, index.html, pages/, assets/, .github/workflows/ |
+
+## Log
+
+- 2026-11-07: Repository inspected; no existing board or project files beyond README. This session claims the integrated task. The Arena-assigned branch is `arena/e6269551-china1`; its name is fixed by the environment. Other sessions should claim non-overlapping scopes here before starting.
+
+- 2026-11-07: Research and integration complete; unresolved case facts and older-rule issues are published on Flagged for Review. Reviewed each displayed data row against its linked official source or marked the account-specific value unverified. Major sources: [SAFE salary and source evidence](https://www.safe.gov.cn/tianjin/2026/0713/3088.html), [SAFE individual measures](https://www.safe.gov.cn/tianjin/2024/0430/2464.html), [SAFE inheritance revisions](https://www.safe.gov.cn/en/2014/0801/741.html), [Shanghai property FAQ](https://english.shanghai.gov.cn/en-FAQHome/20240204/b4426264395b4fa3adfde73778c94ad4.html), [Chinese income tax law](https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html), [IRS FBAR](https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar), [IRS foreign tax credit](https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit), and other official authorities linked per row. Official pages and search-indexed official PDF text were examined; an official citation does not establish individual eligibility. Notable irregularity: 2004 asset-transfer provisions differ from 2014 SAFE changes; current local implementation needs confirmation. Source, amount, status, rates and tax demands remain unknown. No case-specific numeric penalty was invented.
+- Validation: `python3 assets/check.py` checks deterministic generation, 46 cited rows and local links; all five pages and stylesheet returned HTTP 200 locally. External source availability is not guaranteed by the local checker. The existing GitHub Pages configuration publishes `main` from the repository root. First pull of the newly created session branch failed because the remote branch did not yet exist; rebased against `main` before its initial push. No conflict occurred.
+- Integration PR: https://github.com/sassnarep3-star/China1/pull/1. Initial branch and pull-request verification jobs passed; merge and new Pages deployment are pending. GitHub Actions warned that `actions/checkout@v4` is being run on Node.js 24 after Node.js 20 deprecation; this did not fail the job.
+- Concurrent integration discovered after initial implementation: origin/main advanced to ef153cb (PR #1, owner e6269551-china1). Its completed/needs-review scope and site were not visible in the original checkout. Stopped to inspect that board, then merged origin/main on the fixed session branch. Add/add conflicts in workflow and coordination and README content conflict were resolved by preserving both coordination histories, preserving all prior pages/assets, retaining the prior checker and adding supplemental checks. No session branch was switched or deleted.
+- Pages-settings API update denied HTTP 403 (`Resource not accessible by integration`). Used the already-configured `main:/` publication instead. Original dashboard retained at site root; supplemental dashboard at `/docs/`; reciprocal landing-page links added by final integration. This avoids needing a Pages-setting permission change. Prior edition retains its own source log; supplemental audit does not independently certify every prior-edition claim.
