@@ -10,8 +10,8 @@
 | Task | Status | Owner | Files / exclusive scope |
 |---|---|---|---|
 | T0 — coordination and repository audit | done | arena-489b75a1-china1 | COORDINATION.md; read-only repository audit |
-| T1 — official China exchange-control and tax evidence | in progress | arena-489b75a1-china1 | research/china.json; research/china-notes.md |
-| T2 — official US tax and reporting evidence | unclaimed | — | research/us.json; research/us-notes.md |
+| T1 — official China exchange-control and tax evidence | done | arena-489b75a1-china1 | research/china.json; research/china-notes.md |
+| T2 — official US tax and reporting evidence | in progress | arena-489b75a1-china1 | research/us.json; research/us-notes.md |
 | T3 — route inventory, evidence-backed comparison, executive analysis | unclaimed | — | research/routes.json; research/analysis.json; EXECUTIVE_SUMMARY.md |
 | T4 — dashboard and category pages | unclaimed | — | site/; scripts/build_site.py; requirements.txt |
 | T5 — final integration, source/row validation, build and link checks | unclaimed | — | tests/; data/; docs/; index.html; .github/workflows/; .nojekyll; README.md |
@@ -25,7 +25,9 @@ Statuses: unclaimed / in progress / done / needs review. `needs review` items ar
 - 2026-11-07: T0 complete; initial `git pull --rebase` reported that the fixed remote branch did not yet exist. Created that same permitted branch with the initial push; no other branch was created. Claimed T1. All subsequent pushes will rebase first.
 
 ## Verification and irregularity log
-- To be populated with source URLs, exact verification performed, missing evidence, and review flags as each task completes.
+- 2026-11-07 — T1 complete, immediately claimed T2 (sequential scope handoff to the same session). `research/china.json` contains 21 official sources and 41 requirements/findings/unknowns/flags, all row-linked; JSON and source-reference integrity checked. Detailed verification method and exceptions are in `research/china-notes.md`.
+- T1 principal official sources: SAFE current-account guide (https://www.mofcom.gov.cn/zcfb/zgdwjjmywg/art/2020/art_0dd36157a03f494db7571002c7f785b8.html), SAFE 2026 salary Q&A (https://www.safe.gov.cn/tianjin/2026/0713/3088.html), SAFE 2024 emigration amendments (https://www.safe.gov.cn/tianjin/2024/0903/2594.html), 2024 Anhui capital-account guidance (https://www.safe.gov.cn/anhui/file/file/20250925/43f09589bb2046c2a01a58d3a80c2b5f.pdf), and the 2026 dividend change at MOF (http://szs.mof.gov.cn/zhengcefabu/202609/t20260901_3996442.htm) and STA (https://fgk.chinatax.gov.cn/zcfgk/c102416/c5252107/content.html). Every remaining URL and locator is recorded beside its source ID in china.json.
+- T1 flags: former FIE-dividend exemption repealed effective 2026-09-01; old staged property-transfer schedule superseded; user eligibility, balance, income source and prices unknown; China cash-exit thresholds not substantively exposed by the retrieved Customs page, so no number inferred. Failed/insufficient retrieval attempts are documented in china-notes.md. These review items do not block integration but must be published.
 
 ## Integration and publication record
 - Pending. This session will perform sequential integration only after research tasks finish, then validate rows and links before opening and merging a PR into main.
