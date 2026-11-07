@@ -26,3 +26,8 @@ jobs:
           python3 edition-b/build/generate.py
           git diff --exit-code -- edition-b
           python3 edition-b/build/verify.py
+      - name: Verify edition-c build is reproducible, citations resolve, and no blank is undisclosed
+        run: |
+          python3 edition-c/build/build.py
+          git diff --exit-code -- edition-c/docs
+          python3 edition-c/build/linkcheck.py

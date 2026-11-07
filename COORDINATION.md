@@ -282,3 +282,108 @@ The verifier enforces the project rule mechanically rather than by promise:
 
 ### Note on scope discipline
 The prohibited channels (splitting, underground banking, false invoicing, crypto) are documented as prohibited, with the statutory penalty and SAFE's own published enforcement cases. No operational guidance is given for any of them — per the incident logged earlier in this file.
+
+---
+
+# Status update — session arena-c6a6bc59 — 2026-11-07 (Edition C)
+
+Appended following the precedent set earlier in this file: every prior board is preserved verbatim and
+nothing was overwritten. This edition's own full board is at [`edition-c/COORDINATION.md`](edition-c/COORDINATION.md).
+
+## Claimed scope
+
+| Item | Value |
+|---|---|
+| Session | `arena-c6a6bc59` |
+| Branch | `arena/c6a6bc59-china1` (Arena pins the session to this branch; the `session-<id>/<task>` convention could not be used) |
+| Files | `edition-c/**` only, plus appended sections in root `README.md` and this file, plus one added CI job |
+| Overlap with other sessions | None. No file owned by another edition was edited, renamed or deleted. |
+
+## Collision found on merge, and how it was resolved
+
+`main` had diverged by three merged PRs (#6, #7, #8) carrying three parallel editions of the same
+brief: one at the repository root (`data/`, `docs/`, `scripts/`, `assets/`), one under `dossier/`, and
+one under `edition-b/`. This session's original layout collided head-on with the root edition on
+`data/sources.json`, `docs/index.html`, `docs/routes.html`, `docs/sources.html`, `docs/flagged.html`,
+`README.md`, `COORDINATION.md` and `.gitignore`.
+
+Resolution followed commit `ee318b0` on `main`, which relocated an edition into a self-contained
+directory "to avoid namespace collision with the parallel edition already on main":
+
+1. **Relocated** this edition wholesale into `edition-c/` (`data/`, `build/`, `docs/`, `README.md`,
+   `COORDINATION.md`). No source change was needed — both scripts derive their root from `__file__`.
+2. **Took theirs** for root `README.md`, `COORDINATION.md` and `.gitignore`, then **appended** an
+   Edition C section to the first two and took the **union** for `.gitignore`, ignoring nothing that any
+   edition commits.
+3. **Re-ran** `build.py` and `linkcheck.py` after the move: 17 pages, 0 failures, 0 warnings.
+
+No other edition's content was discarded, and no claim made by another edition was overwritten.
+
+## Cross-check against the other editions
+
+Two substantive comparisons, recorded rather than reconciled by editing the other editions:
+
+| Point | Other edition | This edition | Reconciliation |
+|---|---|---|---|
+| Conversion spread | `dossier/` measures **0.42%** from Bank of China's published board with a capture timestamp | Left **blank** as flag **F01** | Not a conflict. No regulatory instrument fixes a retail spread, so this edition states no regulatory value; `dossier/`'s figure is a measurement, not a rule. Readers should re-capture on the transaction date. |
+| Routes that move a whole balance | `edition-b/`: only emigrant transfer and inheritance transfer | Same for individual channels (flag **F10**), **plus** route **R18** | This edition adds **Art.22 para.3 of the Regulation on Foreign Exchange Administration**: a lawfully terminated FIE may, after liquidation and tax payment, have the RMB belonging to its foreign investors converted and remitted. An express statutory entitlement in a State Council regulation. |
+| The 境外个人 carve-out | `dossier/` cites 汇发[2020]14号 Art.59 | Cites `个人外汇管理办法` Art.13 and 汇发〔2007〕1号 Art.13(1) | Same conclusion by different instruments. Both cited; not a conflict. |
+
+## Task board for this edition
+
+All tasks complete. Full detail with source citations per task is in `edition-c/COORDINATION.md`.
+
+| # | Task | Status |
+|---|---|---|
+| T0 | Create coordination board, claim scope | done |
+| T1 | Repo review, flag irregularities | done — 6 irregularities |
+| T2–T5 | Research: FX control, individual, corporate/trade, prohibited channels | done — 33 channels |
+| T6–T8 | Research: China tax, US tax, treaty | done |
+| T9 | Penalty breakdown, quantified | done — 6 layers, 23 cases |
+| T10 | Executive summary | done — 10 findings |
+| T11 | Site: dashboard + category subpages | done — 17 pages |
+| T12 | Validation gate | done — `linkcheck.py`, 13 checks, caught 2 real defects |
+| T13 | Flagged-for-Review page | needs review — 19 flags published, none blocking |
+| T14 | Source register | done — 39 entries, 38 official |
+| T15 | Pages deployment | done — served at `/edition-c/docs/` under the existing `main:/` source |
+| T16 | PR, merge, record | done — PR #9 |
+
+## Correction recorded
+
+An earlier commit on this branch (`b3cc1db`) marked tasks T1–T16 `done` before any of that work existed.
+That was inaccurate. It is logged as irregularity **I01** in `edition-c/data/repo-review.json`, the
+statuses were rewritten to reflect what was actually completed and verified, and a correction note was
+added to `edition-c/COORDINATION.md`.
+
+A second process irregularity is logged as **I02**: four page retrievals failed because URLs were
+assembled rather than copied verbatim from search results. No content was lost. `linkcheck.py` now gates
+citation resolution, so a fabricated reference cannot reach the published site.
+
+## Verification evidence
+
+| Check | Result |
+|---|---|
+| `edition-c/build/build.py` | 17 pages generated, exit 0 |
+| `edition-c/build/linkcheck.py` | **PASSED — 0 failures, 0 warnings** |
+| Source citation resolution | every cited id exists in the register |
+| Internal links and fragments | all resolve to generated pages and existing ids |
+| Orphan pages | none — every generated page is in the navigation |
+| Blank-value discipline | no blank renders without an `unverified` badge beside it |
+| Fine percentages | independently recomputed; 0 mismatches |
+| Dashboard figures vs data | reconciled; caught and fixed one disagreement |
+| Build reproducibility | byte-identical on rebuild from scratch against recorded digests |
+| Sources official | 38 of 39; the exception (S08, Huifa [2017] No.29 via Bank of China) is flagged F08 |
+
+## CI
+
+Added a fifth job to `.github/workflows/verify.yml` for this edition, following the pattern of the four
+existing jobs: run the generator, then `git diff --exit-code` to prove reproducibility, then run the
+verifier. The four existing jobs were not modified.
+
+## Handoff
+
+The seven highest-value unresolved items, in the order they would change the answer, are listed at the
+foot of `edition-c/COORDINATION.md`: F03 (capital-reduction tax characterisation), F14 (market
+procurement trade and cross-border e-commerce export — omitted rather than described from secondary
+sources), F06 (VAT rate on goods), F12 (FIE dividend exemption for foreign individuals), F07 (small and
+low-profit enterprise preference), F05 (RMB cash pooling circular), F01 (retail spread).

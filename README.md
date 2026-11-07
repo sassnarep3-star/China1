@@ -160,3 +160,111 @@ Accepted sources: PRC government and regulator publications (gov.cn, safe.gov.cn
 ### Not advice
 
 The decisive facts — PRC residency under Art. 52(2) of the FX Regulations, US residency per covered year, availability of a capital-account route — are not in this dataset. Prohibited channels are documented **as prohibited**, with the statutory penalty and SAFE's published enforcement cases; **no operational guidance is given** for any of them.
+
+---
+
+# Edition C — every channel, its cost and its penalty exposure (`/edition-c/`)
+
+A **third, independently sourced research edition**, retained alongside the three above rather than
+replacing any of them. Self-contained: it shares no file with the root edition, `dossier/` or
+`edition-b/`, and can be built, verified and read on its own.
+
+**Read it:** https://sassnarep3-star.github.io/China1/edition-c/docs/
+
+### What is different about this edition
+
+| | `dossier/` | `edition-b/` | `edition-c/` |
+|---|---|---|---|
+| Channels | 35 | 22 | **33**, in 6 categories including 5 documented as prohibited |
+| Sources | 31 | 27 | **39**, each listing the specific provisions relied on |
+| Enforcement cases quantified | — | referenced | **23**, all from SAFE's own case circulars |
+| Flagged items | 20 | 15 | **19**, each with a stated route to resolution |
+| Verification | build-time id validation | `verify.py`, 15 checks | **`linkcheck.py`, 13 checks, 0 failures 0 warnings** |
+| Distinctive content | 0.42% measured spread; capital-account taxonomy | 6-layer penalty; US reporting as dominant exposure | **Live Treasury FATCA register finding**; independently recomputed fine percentages; the 2025 SAFE reform |
+
+### The finding
+
+**China levies no tax on the act of converting CNY into USD.** No instrument reviewed imposes a tax,
+levy or conversion charge on the exchange itself. Chinese tax attaches to the event that created the
+money and is owed whether or not the funds ever leave China. What conversion attracts instead is
+foreign exchange control — documentary, not fiscal — plus a commercial spread, plus penalty exposure
+only if the route chosen is unlawful.
+
+Art.9 of the Measures applies the USD 50,000 annual total-amount limit to only two things: individual
+FX settlement, and FX purchase by a **domestic individual**. Art.37(2) makes a foreign citizen
+presenting a passport an **overseas individual**, and Art.13 lets one convert legitimate
+current-account RMB income earned in China **with no stated annual ceiling**, against identity
+documents and evidence including tax vouchers.
+
+### Unique to this edition
+
+1. **The live US Treasury FATCA register.** China is recorded as `Agreement in Substance`, Model 1,
+   treated as in effect from 30 June 2014, **with no signed agreement**. There is therefore no executed
+   government-to-government pipeline under which Chinese banks report US account holders automatically
+   to the IRS, and the compliance burden sits entirely on the taxpayer's own filings.
+2. **Fine percentages recomputed independently.** Where both official figures share a currency, SAFE's
+   published fines for underground-bank dealings compute to **7.00%, 8.00%, 8.00%, 12.01%, 12.02% and
+   12.03%** of the amount moved. Where they do not, the cell is left blank rather than converted at an
+   assumed rate. `linkcheck.py` recomputes every stated percentage and fails on a mismatch.
+3. **The 2025 SAFE reform.** The operational guidelines annexed to Huifa [2025] No.43, retrieved from
+   `safe.gov.cn`, give the current bank-side checklist for an overseas individual converting and
+   remitting proceeds from selling domestic commercial property — and cap the remittance at the
+   transfer price less the taxes and fees of that transfer.
+4. **Three live conflicts between official sources** (F02, F09, F17), each of which means the same
+   transaction can be processed differently at different bank counters.
+
+### Contents
+
+| Path | Contents |
+|---|---|
+| `edition-c/docs/` | 17 generated pages: overview, executive summary, all 33 routes, 6 category pages, China tax, US tax, treaty, penalty breakdown, flagged, sources, repo review, methodology |
+| `edition-c/data/sources.json` | 39 entries with issuer, document number, date, URL on the issuing body's own domain, and the provisions relied on |
+| `edition-c/data/routes.json` | 33 channels with legal basis, limit, tax cost, documentation, pros, cons, feasibility, risk |
+| `edition-c/data/tax.json` | China rates, US rates, and the 1984 treaty article by article |
+| `edition-c/data/penalties.json` | 6 cost layers, statutory penalty scales, 23 published cases |
+| `edition-c/data/flags.json` | 19 unresolved items with a route to resolution for each |
+| `edition-c/data/repo-review.json` | Repository audit, 6 irregularities, the verification standard |
+| `edition-c/COORDINATION.md` | This edition's task board, source record and handoff notes |
+| `edition-c/README.md` | Full description of this edition |
+
+### Build and verify
+
+```bash
+python3 edition-c/build/build.py       # regenerates the 17 pages from edition-c/data/*.json
+python3 edition-c/build/linkcheck.py   # 13 checks; exit 0 = pass
+```
+
+Both derive their root from `__file__`, so they work from any working directory. Standard library only.
+Output is deterministic: rebuilding from unchanged data produces byte-identical files, and
+`linkcheck.py --rewrite-check` records digests so the next run can prove it.
+
+`linkcheck.py` caught two real defects during development — a route marked unverified while stating a
+sourced limit, and a dashboard figure disagreeing with the source register. Both were fixed rather than
+suppressed. It also refuses to render a blank value without an `unverified` badge beside it, so a gap
+cannot be silently hidden.
+
+### Cross-check against the other editions
+
+No claim made by another edition was overwritten or deleted. Two points of comparison are worth
+recording:
+
+- **The conversion spread.** `dossier/` measures 0.42% from Bank of China's published board with a
+  capture timestamp. This edition leaves the spread **blank** as flag **F01**, because no *regulatory*
+  instrument fixes a retail spread and this session did not capture a bank board itself. The two are not
+  in conflict: one is a measurement, the other is a refusal to state a regulatory value that does not
+  exist. Readers wanting a number should take `dossier/`'s measurement and re-capture it on the
+  transaction date.
+- **Which routes move a whole balance.** `edition-b/` concludes that only emigrant transfer and
+  inheritance transfer do. This edition reaches the same conclusion for *individual* channels (flag
+  **F10** records the gap) and adds a third: **Art.22 paragraph 3 of the Regulation on Foreign Exchange
+  Administration**, under which a lawfully terminated foreign-invested enterprise may, after liquidation
+  and tax payment, have the RMB belonging to its foreign investors converted and remitted. That is an
+  express statutory entitlement in a State Council regulation and is route **R18** here.
+
+### Not advice
+
+Research published with its sources. Not legal, tax or investment advice. Chinese FX practice varies by
+branch and by officer, three official instruments conflict with each other as recorded above, and both
+the Chinese and the US positions depend on facts about the origin of the funds that are not known here.
+Prohibited channels are documented **as prohibited**, with the statutory penalty scale and SAFE's
+published enforcement cases; no operational guidance is given for any of them.

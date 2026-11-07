@@ -1,0 +1,151 @@
+{
+  "_meta": {
+    "description": "Executive summary narrative and the dashboard figures shown on the landing page.",
+    "subject": "US citizen holding a renminbi balance in a mainland Chinese bank account, wanting to convert it to US dollars and bring it home",
+    "as_of": "2026-11-07"
+  },
+  "kpi": [
+    {
+      "label": "Conversion channels identified",
+      "value": "33",
+      "note": "Across 5 categories, including 5 that are prohibited and are documented only so they can be recognised and avoided",
+      "page": "routes.html"
+    },
+    {
+      "label": "Chinese tax on the act of converting CNY to USD",
+      "value": "None",
+      "note": "No instrument reviewed imposes a tax, levy or conversion charge on the exchange itself",
+      "page": "executive-summary.html"
+    },
+    {
+      "label": "Annual quota that binds a US citizen's earned income",
+      "value": "None stated",
+      "note": "Art.13 of the Measures lets an overseas individual convert legitimate current-account income with no stated annual ceiling",
+      "page": "individual-channels.html"
+    },
+    {
+      "label": "Sources verified against official texts",
+      "value": "38 of 39",
+      "note": "One entry, Huifa [2017] No.29, rests on a state-owned bank's verbatim republication because the regulator's own text was not located on safe.gov.cn; it is flagged F08. Several further entries are SAFE branch service guidance interpreting an instrument rather than the instrument itself.",
+      "page": "sources.html"
+    },
+    {
+      "label": "Items flagged rather than filled in",
+      "value": "19",
+      "note": "Values that could not be confirmed are blank in the tables and explained on the Flagged for Review page",
+      "page": "flagged.html"
+    },
+    {
+      "label": "Published enforcement cases analysed",
+      "value": "23",
+      "note": "SAFE's own case circulars, with fine rates computed where both official figures share a currency",
+      "page": "penalty.html"
+    }
+  ],
+  "headline": "The premise is wrong, and that changes the whole strategy",
+  "lede": "Converting renminbi into US dollars is not a taxable event in China. There is no conversion tax, no remittance tax and no exit tax on the exchange itself. What there is, is foreign exchange control, and it is documentary rather than fiscal. Separating those two things is what turns an apparently impossible problem into a paperwork problem.",
+  "sections": [
+    {
+      "title": "1. What is actually being taxed",
+      "body": "Chinese tax attaches to the event that created the money, not to the moment it changes currency or crosses the border. Individual income tax at 3% to 45% on comprehensive income, 5% to 35% on business income and 20% on interest, dividends, property leasing, property transfer and incidental income. Enterprise income tax at 25%. Withholding at 10% on dividends, interest and royalties paid to a non-resident. Every one of those liabilities exists whether or not a single renminbi is ever converted. The tax is not the price of leaving; it is the price of having earned.",
+      "sources": [
+        "S13",
+        "S38",
+        "S14"
+      ]
+    },
+    {
+      "title": "2. The USD 50,000 limit is not the ceiling it is usually presented as",
+      "body": "Art.9 of the Measures for the Administration of Individual Foreign Exchange applies annual total-amount management of USD 50,000 equivalent per person per year to two things only: individual foreign exchange settlement, and foreign exchange purchase by a domestic individual. Art.37(2) defines a domestic individual as a Chinese citizen holding a resident identity card, military identity card or armed police identity card, and defines an overseas individual as a foreign citizen presenting a passport. A US citizen is therefore an overseas individual, and Art.13 lets an overseas individual convert legitimate current-account renminbi income earned in China into foreign exchange and remit it, on a valid identity document and supporting evidence of the transaction, which Art.13(1) of the Detailed Rules states must include tax vouchers. No annual ceiling is stated for that route. The SAFE Henan branch confirms it directly, and the Xiamen branch confirms that an overseas individual does not even complete the standard foreign exchange purchase application form.",
+      "sources": [
+        "S01",
+        "S02",
+        "S05",
+        "S21"
+      ]
+    },
+    {
+      "title": "3. What actually constrains a US citizen",
+      "body": "Three things, none of them a tax. First, character: the Art.13 route covers current-account income such as salary, service fees, professional income and royalties. It does not cover capital-account receipts such as sale proceeds, dividends, deposit principal or investment returns. Second, evidence: the bank must be satisfied the income is legitimate and taxed, which means contracts, payroll records and tax certificates for every year being remitted, and the Henan branch notes there is no statutory time limit but the evidence of when and how the income was earned must survive. Third, approval: capital-account items still need SAFE approval or registration, including outward property transfer under Art.20, outward direct investment under Art.16, and the settlement of capital-account receipts under Art.21 of the Regulation.",
+      "sources": [
+        "S01",
+        "S02",
+        "S35",
+        "S03"
+      ]
+    },
+    {
+      "title": "4. There is a real gap, and it explains why the balance is trapped",
+      "body": "Art.26 of the Measures routes an overseas individual's outward transfer of legitimate domestic property to the Interim Measures for the Transfer of Individual Property Abroad. Those Interim Measures cover exactly two situations. Emigration transfer, which requires public-security proof of cancellation of Chinese household registration plus a settlement-abroad certificate issued or authenticated by a Chinese embassy or consulate. And inheritance transfer, which requires an estate inherited from a decedent. A US citizen by birth who never held a household registration and has no inheritance fits neither limb. General savings that are not current-account income have no express outbound channel. That is the structural answer to why the money is stuck, and it is a gap in the scheme rather than a tax.",
+      "sources": [
+        "S01",
+        "S06",
+        "S07"
+      ]
+    },
+    {
+      "title": "5. The routes that do work, ranked",
+      "body": "For earned income, route R01 is decisive: convert and remit against contract, payroll and tax vouchers, with no stated annual ceiling. For a balance that is not earned income, the realistic options are to give the money a current-account or corporate character before remitting. A compliant Chinese entity can pay a genuine service fee or royalty to a US related party, which is a current-account payment that Art.5 of the Regulation says the State does not restrict, and is deductible at 25% against enterprise income tax while bearing 10% withholding. A foreign-invested enterprise can distribute dividends with no volume ceiling, at a combined burden of roughly 32.5% of pre-tax profit to a corporate shareholder or 45% to an individual. A lawfully terminated foreign-invested enterprise can remit its residual value under Art.22 paragraph 3 of the Regulation after liquidation and tax payment, which is the strongest express statutory entitlement in the whole scheme. Owning Chinese real property, selling it and remitting the after-tax proceeds has an established path, and the Henan branch states it now needs no SAFE application. An individual foreign-trade operator's foreign exchange settlement account is administered as an institutional account and is expressly outside the annual quota.",
+      "sources": [
+        "S02",
+        "S03",
+        "S20",
+        "S15",
+        "S14",
+        "S18",
+        "S04"
+      ]
+    },
+    {
+      "title": "6. What it costs if the route chosen is not lawful",
+      "body": "This is where the 'penalty' belongs. Regulation Art.45 provides a warning, confiscation of illegal gains and a fine of up to 30% of the illegal amount for private, disguised or intermediary buying and selling of foreign exchange, rising to between 30% and 100% in serious circumstances. Art.39 provides the same scale for evading supervision, together with an order to repatriate the funds within a time limit, which is the commercially decisive element because the money does not stay offshore. Where both official figures are in renminbi, SAFE's own published fines for underground-bank dealings come out at 7.00%, 8.00%, 8.00%, 12.01%, 12.02% and 12.03% of the amount moved, including RMB 24,970,000 on RMB 312,000,000 used to buy overseas property. Above the administrative layer, Fashi [2019] No.1 sets the criminal threshold for illegal foreign exchange dealing at an illegal business amount of RMB 5,000,000 or illegal gains of RMB 100,000, with especially serious circumstances at RMB 25,000,000 or RMB 500,000, and deems illegal gains to be one thousandth of the amount where they cannot otherwise be determined. Every offender is also placed on the SAFE watch list and entered into the PBOC credit-reference system. Splitting other people's annual quotas is charged under Art.39 as evasion, not as a quota breach.",
+      "sources": [
+        "S03",
+        "S12",
+        "S09",
+        "S10",
+        "S11"
+      ]
+    },
+    {
+      "title": "7. The United States side is a reporting problem, not a conversion problem",
+      "body": "A US citizen is taxed on worldwide income regardless of where the funds sit, so the income was already reportable in the year it arose and converting it now is not a second realisation. Publication 54 requires only that amounts be expressed in US dollars. The account itself triggers FinCEN Form 114 once the aggregate value of foreign financial accounts exceeds USD 10,000 at any time in the year, due 15 April with an automatic extension to 15 October and filed electronically with FinCEN rather than with the return. Form 8938 is attached to Form 1040 once specified foreign financial assets exceed USD 50,000 at year end or USD 75,000 at any time for a single filer living in the United States, rising to USD 200,000 and USD 300,000 for a single filer living abroad. Adjusted civil penalties are USD 16,536 for a non-willful FBAR violation and USD 165,353 for a willful one, with the statute also providing for up to 50% of the account balance in the willful case. Relief on the income side comes either from the foreign earned income exclusion, USD 130,000 for 2025 and USD 132,900 for 2026, or from the foreign tax credit under Publication 514, limited to US tax multiplied by foreign-source income over total income, with a one-year carryback and ten-year carryover. The two cannot be stacked on the same income.",
+      "sources": [
+        "S29",
+        "S25",
+        "S27",
+        "S26",
+        "S23",
+        "S28"
+      ]
+    },
+    {
+      "title": "8. A finding that is easy to miss and cuts in the taxpayer's favour",
+      "body": "China is recorded on the US Treasury's live FATCA register as 'Agreement in Substance', Model 1, treated as having an agreement in effect from 30 June 2014, with no signed agreement. China therefore has no intergovernmental agreement in force, unlike the large majority of jurisdictions on that register which are listed as In Force with a dated signed agreement. There is consequently no executed government-to-government pipeline under which Chinese financial institutions report US account holders automatically to the IRS. The practical consequence is symmetrical: the compliance burden sits entirely on the taxpayer's own filings, and a historic omission is not surfaced automatically by Chinese banks. It also means that where prior years were not filed, the exposure is to the penalty schedule above rather than to a detection mechanism, and the disciplined response is to file late FBARs and returns as soon as possible, which IRS guidance states keeps potential penalties to a minimum.",
+      "sources": [
+        "S31",
+        "S32",
+        "S25"
+      ]
+    },
+    {
+      "title": "9. The treaty gives almost nothing on rates, and everything on relief",
+      "body": "The 1984 Agreement, effective 1 January 1987, caps source-state tax at 10% on dividends under Art.9(2), 10% on interest under Art.10(2) and 10% on royalties under Art.11(2), with Protocol para.6 taxing equipment leasing on 70% of the gross amount for an effective 7%. Because Art.91 of the Chinese Implementation Regulations already reduces the domestic withholding rate to 10%, the treaty produces no reduction on any of these items. Its real value to a US person is Art.22, the elimination of double taxation, which allows a credit for income taxes paid to China. Art.12 lets China tax gains on Chinese real property, on shares of a property-rich Chinese company, and on a holding of 25% or more in a Chinese resident company. Protocol para.2 is a saving clause preserving the right of the United States to tax its citizens in any event, and Protocol para.3 puts US social security taxes outside the Agreement.",
+      "sources": [
+        "S30",
+        "S14"
+      ]
+    },
+    {
+      "title": "10. Recommended sequence",
+      "body": "First, classify the balance. Determine how much of it is current-account income earned in China with surviving contracts, payroll records and tax certificates, because that portion can move under Art.13 with no stated annual ceiling. Second, file what is overdue on the US side before moving money, since late FBAR and Form 8938 filings made voluntarily carry materially lower exposure than the same omissions discovered later. Third, for any balance that is not earned income, choose between monetising an asset, which gives a documented source and a tax-paid certificate, and creating a current-account or corporate payment stream, which is what Chinese law is most willing to let through. Fourth, avoid entirely the five prohibited channels, on which SAFE has published fines and on which Fashi [2019] No.1 sets a criminal threshold that a single mid-six-figure transaction crosses. Fifth, confirm the handling branch's own practice in writing before transacting, because the conflicts recorded as flags F02, F09 and F17 mean the same transaction can be processed differently at different counters.",
+      "sources": [
+        "S01",
+        "S02",
+        "S25",
+        "S12"
+      ]
+    }
+  ],
+  "disclaimer": "This is research, published with its sources, not advice. It is not legal, tax or investment advice and creates no professional relationship. Chinese foreign exchange practice varies by branch and by officer, several official instruments conflict with each other as recorded on the Flagged for Review page, and both the Chinese and the US positions depend on facts about the origin of the funds that are not known here. The correct next step for a material balance is a written opinion from a PRC-qualified lawyer and a US-qualified international tax adviser, taken together, on the specific facts."
+}

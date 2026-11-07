@@ -1,3 +1,20 @@
+# Python
 __pycache__/
 *.pyc
+*.py[cod]
+*.egg-info/
+.venv/
+
+# Editors and OS
 .DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Scratch
+/tmp/
+*.log
+
+# NOTE: nothing under docs/, dossier/, edition-b/ or edition-c/ is ignored.
+# Those are generated site directories that ARE committed, because GitHub
+# Pages serves this repository from main at the root path.

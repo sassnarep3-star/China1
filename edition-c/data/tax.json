@@ -1,0 +1,437 @@
+{
+  "_meta": {
+    "description": "Every tax rate, threshold, filing obligation and penalty relied on in the analysis. A value appears only where it was read in a source listed in data/sources.json. Null means not confirmed from an official source in this session.",
+    "accessed": "2026-11-07"
+  },
+  "china": [
+    {
+      "item": "Individual income tax - comprehensive income (wages, personal service remuneration, author's remuneration, royalties)",
+      "rate": "3% to 45% progressive",
+      "basis": "Individual Income Tax Law Art.3(1)",
+      "notes": "For a resident individual, computed annually on revenue less RMB 60,000, special deductions, special additional deductions and other lawful deductions. For a non-resident, computed monthly or per item.",
+      "source": "S13"
+    },
+    {
+      "item": "Individual income tax - business income",
+      "rate": "5% to 35% progressive",
+      "basis": "Individual Income Tax Law Art.3(2), Art.6(3)",
+      "notes": "Annual revenue less costs, expenses and losses.",
+      "source": "S13"
+    },
+    {
+      "item": "Individual income tax - interest, dividends and bonuses; property leasing; property transfer; incidental income",
+      "rate": "20% proportional",
+      "basis": "Individual Income Tax Law Art.3(3)",
+      "notes": "Interest, dividends and bonuses are taxed on the full amount of each receipt (Art.6(6)). Property transfer is taxed on transfer revenue less original value and reasonable expenses (Art.6(5)).",
+      "source": "S13"
+    },
+    {
+      "item": "Income amount for remuneration for personal services and for royalties",
+      "rate": "80% of revenue",
+      "basis": "Individual Income Tax Law Art.6 paragraph 3",
+      "notes": "Revenue is reduced by 20% to give the income amount. Author's remuneration is further taken at 70% of that amount. A non-resident taxed per item at 20% on this base bears an effective 16%.",
+      "source": "S13"
+    },
+    {
+      "item": "Non-resident individual - monthly deduction for wages and salaries",
+      "rate": "RMB 5,000 per month",
+      "basis": "Individual Income Tax Law Art.6(2)",
+      "notes": "Non-residents do not perform annual reconciliation of comprehensive income where a withholding agent exists.",
+      "source": "S13"
+    },
+    {
+      "item": "Resident individual - annual basic deduction for comprehensive income",
+      "rate": "RMB 60,000 per year",
+      "basis": "Individual Income Tax Law Art.6(1)",
+      "notes": "Plus special deductions for social insurance and housing fund, and special additional deductions for children's education, continuing education, serious illness medical expense, housing loan interest or rent, and support for the elderly.",
+      "source": "S13"
+    },
+    {
+      "item": "Resident individual definition",
+      "rate": "Domicile in China, or 183 days or more in a tax year",
+      "basis": "Individual Income Tax Law Art.1",
+      "notes": "Residents are taxed on income from both China and outside China. Non-residents are taxed only on China-source income. The tax year is the calendar year.",
+      "source": "S13"
+    },
+    {
+      "item": "Credit for foreign tax paid by a Chinese resident individual on overseas income",
+      "rate": "Allowed up to the PRC tax computed on that overseas income",
+      "basis": "Individual Income Tax Law Art.7",
+      "notes": "The credit cannot exceed the PRC liability attributable to the overseas income.",
+      "source": "S13"
+    },
+    {
+      "item": "Filing deadline for overseas income of a Chinese resident individual",
+      "rate": "1 March to 30 June of the following year",
+      "basis": "Individual Income Tax Law Art.10(4), Art.13 paragraph 3",
+      "notes": "Self-filing is mandatory on obtaining overseas income.",
+      "source": "S13"
+    },
+    {
+      "item": "Tax clearance before cancelling Chinese household registration on emigration",
+      "rate": "Mandatory",
+      "basis": "Individual Income Tax Law Art.10(5), Art.13 paragraph 5",
+      "notes": "A taxpayer who cancels Chinese household registration because of emigration must complete tax clearance before cancellation. This is the operative gate on the emigration property transfer route.",
+      "source": "S13"
+    },
+    {
+      "item": "Tax-paid certificate required before registering a transfer of immovable property or equity",
+      "rate": "Mandatory",
+      "basis": "Individual Income Tax Law Art.15",
+      "notes": "The registration authority must verify the individual income tax paid certificate for the transfer of real property, and the market entity registration authority must verify it for an equity transfer. Tax therefore cannot be deferred past the point of transfer.",
+      "source": "S13"
+    },
+    {
+      "item": "Individual anti-avoidance adjustment power",
+      "rate": "Adjustment plus interest",
+      "basis": "Individual Income Tax Law Art.8",
+      "notes": "Applies to non-arm's-length related-party dealings, to non-distribution or reduced distribution by an enterprise in a markedly low-tax jurisdiction controlled by a resident individual without reasonable business need, and to arrangements lacking reasonable commercial purpose that secure an improper tax benefit.",
+      "source": "S13"
+    },
+    {
+      "item": "Conversion of foreign-currency income for Chinese tax",
+      "rate": "RMB central parity rate",
+      "basis": "Individual Income Tax Law Art.16",
+      "notes": "All income is computed in RMB; income in another currency is converted at the RMB central parity rate.",
+      "source": "S13"
+    },
+    {
+      "item": "Enterprise income tax - resident enterprise",
+      "rate": "25%",
+      "basis": "Enterprise Income Tax Law Art.4",
+      "notes": "Resident enterprises are taxed on income from China and outside China.",
+      "source": "S38"
+    },
+    {
+      "item": "Enterprise income tax - non-resident enterprise with no establishment in China, or whose income is not effectively connected with its establishment",
+      "rate": "20% statutory, reduced to 10%",
+      "basis": "Enterprise Income Tax Law Art.4 paragraph 2 and Art.27(5); Implementation Regulations Art.91",
+      "notes": "Art.4 sets 20%; Art.91 of the Implementation Regulations reduces the rate actually applied to 10%. Taxable income for dividends, interest, rent and royalties is the gross amount; for property transfer it is gross revenue less the net value of the property (EIT Law Art.19).",
+      "source": "S14"
+    },
+    {
+      "item": "Withholding tax exemption - interest to foreign governments and concessional lenders",
+      "rate": "Exempt",
+      "basis": "Enterprise Income Tax Law Implementation Regulations Art.91 paragraph 2",
+      "notes": "Interest on loans from a foreign government to the Chinese government, and interest on concessional loans from international financial organisations to the Chinese government and to resident enterprises, are exempt.",
+      "source": "S14"
+    },
+    {
+      "item": "Source rule for dividends, interest, rent and royalties",
+      "rate": "Dividends: location of the distributing enterprise. Interest, rent and royalties: location of the payer",
+      "basis": "Enterprise Income Tax Law Implementation Regulations Art.7(4) and Art.7(5)",
+      "notes": "This is why a Chinese payer creates Chinese-source income and a Chinese withholding obligation.",
+      "source": "S14"
+    },
+    {
+      "item": "Non-deductible intra-group payments",
+      "rate": "Not deductible",
+      "basis": "Enterprise Income Tax Law Implementation Regulations Art.49",
+      "notes": "Management fees paid between enterprises, rent and royalties paid between operating units within an enterprise, and interest paid between operating units of a non-bank enterprise are not deductible. This directly constrains the service-fee and royalty routes.",
+      "source": "S14"
+    },
+    {
+      "item": "Value added tax - sale of services, intangible assets and financial products",
+      "rate": "6%",
+      "basis": "Caishui [2016] No.36, Annex 1, Art.15(1)",
+      "notes": "The general rate for the taxable acts introduced by the business-tax-to-VAT reform.",
+      "source": "S39"
+    },
+    {
+      "item": "Value added tax - export of goods",
+      "rate": "Zero-rated, subject to State Council exceptions",
+      "basis": "Caishui [2016] No.36 regime",
+      "notes": "Cross-border supplies to an overseas party of telecom services, intellectual property services, logistics auxiliary services, assurance and consulting services, professional technical services, business auxiliary services, advertising placed overseas and intangible assets, consumed entirely outside China, fall within the zero-rate and exemption provisions for cross-border taxable acts.",
+      "source": "S39"
+    },
+    {
+      "item": "Value added tax - goods, processing and repair, and leasing of tangible movable property",
+      "rate": null,
+      "basis": "Caishui [2016] No.36, Annex 1, Art.15 originally set 17%; a 2019 adjustment is referenced within STA-hosted material",
+      "notes": "UNVERIFIED. The currently applicable rate for goods could not be confirmed directly against an official instrument in this session and is therefore left blank. See flag F06.",
+      "source": null
+    },
+    {
+      "item": "Outbound payment tax filing threshold",
+      "rate": "Single payment above USD 50,000 equivalent",
+      "basis": "STA and SAFE Announcement 2013 No.40, as supplemented by Announcement 2021 No.19",
+      "notes": "A single outbound payment not exceeding USD 50,000 equivalent needs no tax filing. Where the same contract requires multiple payments, filing is required once only, before the first payment exceeding USD 50,000 equivalent. Reinvestment in China by a foreign investor out of legitimate direct-investment income is exempt from filing. The filing is made through the electronic tax bureau and the bank processes the remittance against the filing number and verification code.",
+      "source": "S15"
+    },
+    {
+      "item": "Reduced enterprise income tax rate for qualifying small and low-profit enterprises",
+      "rate": null,
+      "basis": "Preferential circulars of the Ministry of Finance and the State Taxation Administration",
+      "notes": "UNVERIFIED. The current rate, the qualifying asset, headcount and income thresholds and the expiry date of the prevailing circular were not confirmed against an official instrument in this session. See flag F07.",
+      "source": null
+    }
+  ],
+  "us": [
+    {
+      "item": "Scope of US taxation for a citizen",
+      "rate": "Worldwide income",
+      "basis": "IRS Publication 54; IRS foreign earned income exclusion guidance",
+      "notes": "A US citizen or resident alien living abroad is taxed on worldwide income regardless of where the money is held. Moving already-taxed funds from a Chinese account to a US account is not a second taxable event.",
+      "source": "S24"
+    },
+    {
+      "item": "Reporting currency",
+      "rate": "US dollars",
+      "basis": "IRS Publication 54",
+      "notes": "Amounts reported on a US return must be expressed in US dollars. Foreign currency must be translated, and all federal income tax determinations are made in the taxpayer's functional currency, which is generally the US dollar unless the taxpayer is required to use a foreign currency.",
+      "source": "S29"
+    },
+    {
+      "item": "Foreign earned income exclusion, tax year 2025",
+      "rate": "USD 130,000 per qualifying person",
+      "basis": "IRC s.911; IRS guidance on figuring the exclusion",
+      "notes": "Married spouses who both qualify may together exclude up to USD 260,000 for 2025.",
+      "source": "S23"
+    },
+    {
+      "item": "Foreign earned income exclusion, tax year 2026",
+      "rate": "USD 132,900 per qualifying person",
+      "basis": "IRC s.911; IRS guidance on figuring the exclusion",
+      "notes": "Adjusted annually for inflation.",
+      "source": "S23"
+    },
+    {
+      "item": "Foreign earned income exclusion, tax year 2024",
+      "rate": "USD 126,500 per qualifying person",
+      "basis": "IRS guidance on figuring the exclusion",
+      "notes": "Cited in the IRS worked example for income received in a later year for work performed in 2024.",
+      "source": "S23"
+    },
+    {
+      "item": "Foreign housing amount limitation, 2025 and 2026",
+      "rate": "USD 39,000 for 2025; USD 39,870 for 2026",
+      "basis": "IRS guidance on figuring the exclusion",
+      "notes": "Generally 30% of the maximum foreign earned income exclusion, varying with the location of the foreign tax home and the number of qualifying days.",
+      "source": "S23"
+    },
+    {
+      "item": "Qualification tests for the foreign earned income exclusion",
+      "rate": "Foreign tax home plus bona fide residence for an uninterrupted period including an entire tax year, or physical presence for at least 330 full days in any twelve consecutive months",
+      "basis": "IRC s.911; IRS guidance",
+      "notes": "The exclusion covers earned income only. Pensions, annuities and social security benefits do not qualify, and the exclusion does not reduce self-employment tax.",
+      "source": "S24"
+    },
+    {
+      "item": "Foreign tax credit - limitation",
+      "rate": "Total US tax liability multiplied by foreign-source taxable income over total taxable income",
+      "basis": "IRC s.904; IRS Publication 514",
+      "notes": "Computed separately for each limitation category, including section 951A, foreign branch, passive, general, section 901(j) and income re-sourced by treaty.",
+      "source": "S28"
+    },
+    {
+      "item": "Foreign tax credit - creditability tests",
+      "rate": "Four tests",
+      "basis": "IRS Publication 514",
+      "notes": "The levy must be imposed on you, you must have paid or accrued it, it must be your legal and actual foreign tax liability, and it must be an income tax or a tax in lieu of an income tax.",
+      "source": "S28"
+    },
+    {
+      "item": "Foreign tax credit - carryback and carryover",
+      "rate": "1 year back, 10 years forward",
+      "basis": "IRS Publication 514",
+      "notes": "Applies to unused qualified foreign taxes that cannot be credited because of the limitation.",
+      "source": "S28"
+    },
+    {
+      "item": "Foreign tax credit - interaction with the exclusion",
+      "rate": "No credit or deduction",
+      "basis": "IRS Publication 514",
+      "notes": "No credit or deduction is allowed for foreign taxes paid on income excluded under the foreign earned income exclusion or the foreign housing exclusion. The two reliefs cannot be stacked on the same income.",
+      "source": "S28"
+    },
+    {
+      "item": "Foreign tax credit - de minimis election",
+      "rate": "USD 300, or USD 600 on a joint return",
+      "basis": "IRS Publication 514",
+      "notes": "Where all foreign-source gross income is passive category income reported on qualified payee statements and creditable foreign taxes do not exceed the threshold, the credit may be claimed without Form 1116. No carryback or carryover is available if the election is used.",
+      "source": "S28"
+    },
+    {
+      "item": "FBAR filing threshold",
+      "rate": "Aggregate value of foreign financial accounts exceeding USD 10,000 at any time during the calendar year",
+      "basis": "31 U.S.C. 5314; FinCEN Form 114; IRS FBAR guidance",
+      "notes": "A US person with a financial interest in or signature or other authority over at least one foreign financial account must file. Whether the account produced taxable income is irrelevant. A Chinese bank account holding the trapped CNY balance is a reportable foreign financial account.",
+      "source": "S25"
+    },
+    {
+      "item": "FBAR deadline and filing channel",
+      "rate": "15 April, automatic extension to 15 October",
+      "basis": "IRS FBAR guidance",
+      "notes": "Filed electronically through FinCEN's BSA E-Filing System. It is not filed with the federal tax return and no extension request is needed.",
+      "source": "S25"
+    },
+    {
+      "item": "FBAR record retention",
+      "rate": "5 years from the FBAR due date",
+      "basis": "IRS FBAR guidance",
+      "notes": "Records must include the name on the account, account number, name and address of the foreign bank, account type and maximum value during the year.",
+      "source": "S25"
+    },
+    {
+      "item": "FBAR civil penalty - non-willful violation",
+      "rate": "Statutory USD 10,000; adjusted maximum USD 16,536",
+      "basis": "31 U.S.C. 5321(a)(5)(B)(i); 31 CFR 1010.821",
+      "notes": "Amounts shown are those for penalties assessed on or after 17 January 2025, per the eCFR current to 5 November 2026.",
+      "source": "S26"
+    },
+    {
+      "item": "FBAR civil penalty - willful violation",
+      "rate": "Statutory USD 100,000; adjusted maximum USD 165,353",
+      "basis": "31 U.S.C. 5321(a)(5)(C)(i)(I); 31 CFR 1010.821",
+      "notes": "The statutory provision also provides for a penalty of up to 50% of the account balance in the willful case; the greater-of computation is set in the statute rather than in the adjustment table.",
+      "source": "S26"
+    },
+    {
+      "item": "General civil penalty for willful violations of Bank Secrecy Act requirements",
+      "rate": "Statutory USD 25,000 to USD 100,000; adjusted USD 71,545 to USD 286,184",
+      "basis": "31 U.S.C. 5321(a)(1); 31 CFR 1010.821",
+      "notes": "Applies across Bank Secrecy Act requirements, not only the FBAR.",
+      "source": "S26"
+    },
+    {
+      "item": "Recordkeeping violations for funds transfers; willful or grossly negligent recordkeeping",
+      "rate": "Statutory USD 10,000; adjusted USD 26,262",
+      "basis": "12 U.S.C. 1829b(j) and 12 U.S.C. 1955; 31 CFR 1010.821",
+      "notes": "Relevant to the five-year FBAR record retention duty.",
+      "source": "S26"
+    },
+    {
+      "item": "Negligent violation, and pattern of negligent activity, by a financial institution or non-financial trade or business",
+      "rate": "USD 500 adjusted to USD 1,430; USD 50,000 adjusted to USD 111,308",
+      "basis": "31 U.S.C. 5321(a)(6)(A) and (B); 31 CFR 1010.821",
+      "notes": "Applies to businesses, which is relevant where a US entity is party to a trade channel.",
+      "source": "S26"
+    },
+    {
+      "item": "Form 8938 reporting threshold - unmarried or married filing separately, living in the United States",
+      "rate": "More than USD 50,000 on the last day of the tax year, or more than USD 75,000 at any time during it",
+      "basis": "IRC s.6038D; Form 8938 instructions",
+      "notes": "The threshold is met only where the total value is more than the figure shown.",
+      "source": "S27"
+    },
+    {
+      "item": "Form 8938 reporting threshold - married filing jointly, living in the United States",
+      "rate": "More than USD 100,000 on the last day of the tax year, or more than USD 150,000 at any time during it",
+      "basis": "IRC s.6038D; Form 8938 instructions",
+      "notes": "Joint assets of spouses filing jointly are counted once, in full.",
+      "source": "S27"
+    },
+    {
+      "item": "Form 8938 reporting threshold - unmarried or married filing separately, living outside the United States",
+      "rate": "More than USD 200,000 on the last day of the tax year, or more than USD 300,000 at any time during it",
+      "basis": "IRC s.6038D; Form 8938 instructions",
+      "notes": "Higher thresholds recognise that taxpayers living abroad hold foreign assets for legitimate reasons.",
+      "source": "S27"
+    },
+    {
+      "item": "Form 8938 reporting threshold - married filing jointly, living outside the United States",
+      "rate": "More than USD 400,000 on the last day of the tax year, or more than USD 600,000 at any time during it",
+      "basis": "IRC s.6038D; Form 8938 instructions",
+      "notes": "A Chinese bank account is a specified foreign financial asset and counts toward this threshold.",
+      "source": "S27"
+    },
+    {
+      "item": "Form 8938 reporting threshold - specified domestic entity",
+      "rate": "More than USD 50,000 on the last day of the tax year, or more than USD 75,000 at any time during it",
+      "basis": "IRC s.6038D; Form 8938 instructions",
+      "notes": "Applies to certain closely held domestic corporations, partnerships and trusts.",
+      "source": "S27"
+    },
+    {
+      "item": "FinCEN Form 105 - international transportation of currency",
+      "rate": "More than USD 10,000 at one time",
+      "basis": "IRS Publication 54",
+      "notes": "Must be filed where currency or monetary instruments totalling more than USD 10,000 at one time are physically transported, mailed or shipped into or out of the United States. Directly relevant to the cash-carry route.",
+      "source": "S29"
+    },
+    {
+      "item": "Filing extension for taxpayers abroad",
+      "rate": "Automatic two-month extension to 15 June",
+      "basis": "IRS Publication 54",
+      "notes": "Available where the taxpayer's tax home and abode are outside the United States and Puerto Rico on the regular due date and the return is filed on a calendar-year basis.",
+      "source": "S29"
+    },
+    {
+      "item": "FATCA intergovernmental agreement status for China",
+      "rate": "Agreement in Substance; Model 1; never signed or brought into force",
+      "basis": "US Treasury FATCA register",
+      "notes": "China is treated as having an IGA in effect from 30 June 2014 but has no signed agreement, unlike the many jurisdictions the register lists as In Force with a dated agreement. The practical consequence is that there is no government-to-government automatic reporting pipeline from Chinese financial institutions to the IRS under an executed IGA, so the whole reporting burden falls on the taxpayer's own FBAR and Form 8938 filings.",
+      "source": "S31"
+    },
+    {
+      "item": "FATCA status for China, corroborating source",
+      "rate": "Agreement in Substance; Model 1; treated in effect from 30 June 2014",
+      "basis": "Congressional Research Service Report R44616, appendix",
+      "notes": "Congressional Research Service appendix listing China among jurisdictions with agreements in substance rather than in force.",
+      "source": "S32"
+    }
+  ],
+  "treaty": {
+    "instrument": "Agreement between the Government of the United States of America and the Government of the People's Republic of China for the Avoidance of Double Taxation and the Prevention of Tax Evasion with Respect to Taxes on Income",
+    "signed": "Beijing, 30 April 1984",
+    "second_protocol": "Signed at Beijing, 10 May 1986",
+    "general_effective_date": "1 January 1987, under Article 27",
+    "source": "S30",
+    "articles": [
+      {
+        "article": "Art.9 Dividends",
+        "provision": "Paragraph 2 caps tax in the state of the paying company at 10% of the gross dividend where the beneficial owner is a resident of the other Contracting State",
+        "practical_effect": "Identical to the domestic 10% reduced rate under Art.91 of the Chinese EIT Implementation Regulations, so the treaty produces no reduction on dividends out of China.",
+        "source": "S30"
+      },
+      {
+        "article": "Art.10 Interest",
+        "provision": "Paragraph 2 caps tax in the source state at 10% of the gross interest. Paragraph 3 exempts interest derived by the government, a political subdivision or local authority, the central bank, or a financial institution wholly owned by that government",
+        "practical_effect": "10% on interest paid out of China to a US resident, again identical to the domestic reduced rate.",
+        "source": "S30"
+      },
+      {
+        "article": "Art.11 Royalties",
+        "provision": "Paragraph 2 caps tax in the source state at 10% of the gross royalty. Paragraph 6 of the Protocol taxes the leasing of industrial, commercial and scientific equipment on 70% of the gross amount",
+        "practical_effect": "10% on royalties; an effective 7% of the gross rental payment on equipment leasing.",
+        "source": "S30"
+      },
+      {
+        "article": "Art.12 Gains",
+        "provision": "Paragraph 1: gains from alienating real property may be taxed where situated. Paragraph 4: gains from shares of a company whose assets consist principally of real property may be taxed where the property is situated. Paragraph 5: gains from shares representing a participation of 25% or more in a resident company may be taxed in that state. Paragraph 6: other gains may be taxed where they arise",
+        "practical_effect": "China may tax a US person's gain on selling Chinese real property, on a property-rich Chinese company, and on a holding of 25% or more in a Chinese company. The United States also taxes the gain as the state of residence, with relief under Art.22.",
+        "source": "S30"
+      },
+      {
+        "article": "Art.13 Independent Personal Services",
+        "provision": "Taxable in the other state only if the individual is present there more than 183 days in the calendar year or has a fixed base regularly available",
+        "practical_effect": "A US consultant working fewer than 183 days in China without a fixed base is not subject to Chinese tax on that service income.",
+        "source": "S30"
+      },
+      {
+        "article": "Art.22 Elimination of Double Taxation",
+        "provision": "The United States allows a credit for income taxes paid to China by or on behalf of a US resident or citizen, and for Chinese tax paid on the profits out of which dividends are paid to a US company owning at least 10% of the voting rights of the paying company",
+        "practical_effect": "The mechanism that prevents the same income being taxed twice. China correspondingly allows a credit for US tax up to the Chinese tax on that income.",
+        "source": "S30"
+      },
+      {
+        "article": "Protocol para.2 Saving clause",
+        "provision": "Preserves the right of the United States to tax its citizens and residents under domestic law",
+        "practical_effect": "A US citizen cannot use the treaty to escape US tax. The Technical Explanation confirms the United States may in any event tax dividends, interest and royalties derived by US citizens, and may also tax its citizens on gains.",
+        "source": "S30"
+      },
+      {
+        "article": "Protocol para.3 Taxes covered",
+        "provision": "US social security taxes are not covered by the Agreement",
+        "practical_effect": "No treaty relief from self-employment tax; totalisation would have to be considered separately.",
+        "source": "S30"
+      },
+      {
+        "article": "Art.2 Taxes covered",
+        "provision": "The Chinese taxes named are the individual income tax, the income tax concerning joint ventures with Chinese and foreign investment, the income tax concerning foreign enterprises, and the local income tax",
+        "practical_effect": "These named Chinese taxes predate the 2008 Enterprise Income Tax Law and the 2018 Individual Income Tax Law amendment. Art.2(2) extends the Agreement to taxes imposed after signature that are substantially similar, which is how the current taxes are covered, but the point deserves confirmation for any treaty claim.",
+        "source": "S30"
+      }
+    ]
+  }
+}

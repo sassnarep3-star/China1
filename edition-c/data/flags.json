@@ -1,0 +1,198 @@
+{
+  "_meta": {
+    "description": "Everything that could not be confirmed from an official source in this session, every internal conflict found between official sources, and every gap in the regulatory scheme. Nothing on this list blocks publication; all of it is published here with the source links needed to check it manually.",
+    "policy": "Where a value could not be confirmed it is left blank in the tables and appears here. No value on this site has been inferred, estimated or filled in from a secondary source."
+  },
+  "flags": [
+    {
+      "id": "F01",
+      "severity": "material",
+      "type": "value-left-blank",
+      "title": "The bank's retail CNY-to-USD conversion spread is not fixed by any official instrument",
+      "detail": "The Regulation on Foreign Exchange Administration Art.27 provides only that the renminbi exchange rate follows a managed floating regime based on market supply and demand, and that the foreign exchange authority is responsible for its implementation. No circular in this register sets a retail buy-sell spread or a maximum conversion charge for individuals. Every published percentage on this site therefore excludes the conversion spread, and the spread is shown as blank rather than estimated.",
+      "where_it_appears": ["penalty.html cost layer 1 and 3", "executive-summary.html"],
+      "how_to_resolve": "Obtain the current published CNY and USD buy and sell rates from the handling bank, or from the China Foreign Exchange Trade System central parity publication, and compute the spread for the actual transaction size.",
+      "sources": ["S03"]
+    },
+    {
+      "id": "F02",
+      "severity": "material",
+      "type": "conflict-between-official-sources",
+      "title": "Two official definitions of 'domestic individual' disagree about a foreigner living in China",
+      "detail": "Regulation Art.52(2) defines a domestic individual to include a foreign citizen who has continuously resided in China for one full year, and an overseas individual as a foreign citizen residing outside China. Measures Art.37(2) defines an overseas individual as any foreign citizen presenting a passport, home-return permit or compatriot permit, with no residence test. The Measures are the later and more specific instrument and are the ones SAFE branch guidance applies, but the conflict is unresolved on the face of the texts and determines which remittance tier applies: Art.15(1) of the Detailed Rules lets an overseas individual remit FX abroad on identity document alone, while Art.14 subjects a domestic individual to a USD 50,000 per day ceiling on the same transaction.",
+      "where_it_appears": ["individual-channels.html routes R01, R04", "flagged.html"],
+      "how_to_resolve": "Confirm the classification with the handling bank's FX compliance desk in the specific branch, and in a material case seek written confirmation from the local SAFE branch.",
+      "sources": ["S03", "S01", "S02"]
+    },
+    {
+      "id": "F03",
+      "severity": "material",
+      "type": "value-left-blank",
+      "title": "Tax characterisation and computation of proceeds from a capital reduction were not confirmed",
+      "detail": "Route R17 returns registered capital by reducing it. Whether the amount received by a non-resident shareholder is treated as a return of investment, as a dividend equivalent, or as a gain on equity transfer changes the Chinese tax from nil to 10% or 20% of different bases. The governing STA circular was not located on an official source in this session, so the China tax cell for R17 is blank and no rate is asserted.",
+      "where_it_appears": ["corporate-channels.html route R17"],
+      "how_to_resolve": "Locate the current STA announcement on the individual income tax treatment of income from equity transfers, and the corresponding enterprise income tax treatment for a capital reduction by a non-resident enterprise shareholder, on chinatax.gov.cn.",
+      "sources": []
+    },
+    {
+      "id": "F04",
+      "severity": "material",
+      "type": "value-left-blank",
+      "title": "Parameters governing outbound intercompany lending were not confirmed",
+      "detail": "Route R24 depends on the cross-border financing framework for a Chinese entity lending to a related offshore borrower. Detailed Rules Art.23 states that liberalisation of domestic individuals providing loans abroad is to proceed according to the progress of capital-account convertibility with specific measures to be formulated separately. The macro-prudential cross-border financing limit applicable to a Chinese corporate borrower or lender, and the registration requirements, were not verified from an official source in this session, so the limit cell for R24 is null.",
+      "where_it_appears": ["corporate-channels.html route R24"],
+      "how_to_resolve": "Retrieve the current PBOC and SAFE notice on macro-prudential management of cross-border financing from pbc.gov.cn or safe.gov.cn.",
+      "sources": ["S02"]
+    },
+    {
+      "id": "F05",
+      "severity": "material",
+      "type": "source-not-located",
+      "title": "The circular governing cross-border two-way RMB cash pooling was not located on an official source",
+      "detail": "Route R25 is included in the route inventory because it is a genuine mechanism used by multinational groups, but the eligibility thresholds, the group revenue tests and the net-inflow cap could not be confirmed against a PBOC or SAFE instrument in this session. Every numeric cell for R25 is therefore null and the route is marked unverified.",
+      "where_it_appears": ["corporate-channels.html route R25"],
+      "how_to_resolve": "Retrieve the current PBOC notice on cross-border two-way RMB cash pooling and any SAFE implementing circular from pbc.gov.cn.",
+      "sources": []
+    },
+    {
+      "id": "F06",
+      "severity": "minor",
+      "type": "value-left-blank",
+      "title": "The currently applicable VAT rate on goods was not confirmed",
+      "detail": "Caishui [2016] No.36 Annex 1 Art.15 set 17% on leasing of tangible movable property and 11% on transport, construction and immovable property. STA-hosted material refers to a 2019 adjustment by Announcement 2019 No.39 of the Ministry of Finance, the State Taxation Administration and the General Administration of Customs, but that instrument was not retrieved, so the goods rate cell is blank. The 6% rate on sale of services, intangible assets and financial products is confirmed directly from Art.15(1) of Annex 1 and is used throughout.",
+      "where_it_appears": ["tax-china.html"],
+      "how_to_resolve": "Retrieve Ministry of Finance, State Taxation Administration and General Administration of Customs Announcement 2019 No.39 from mof.gov.cn or chinatax.gov.cn.",
+      "sources": ["S39"]
+    },
+    {
+      "id": "F07",
+      "severity": "minor",
+      "type": "value-left-blank",
+      "title": "The reduced enterprise income tax rate for small and low-profit enterprises was not confirmed",
+      "detail": "The preferential rate, the qualifying asset, headcount and taxable income thresholds, and the expiry date of the prevailing circular were not verified from an official instrument in this session. The cell is left blank. Only the 25% standard rate from Art.4 of the Enterprise Income Tax Law is used in the cost analysis.",
+      "where_it_appears": ["tax-china.html", "corporate-channels.html"],
+      "how_to_resolve": "Retrieve the current Ministry of Finance and State Taxation Administration announcement on the small and low-profit enterprise preference from chinatax.gov.cn, checking its stated expiry date.",
+      "sources": ["S38"]
+    },
+    {
+      "id": "F08",
+      "severity": "minor",
+      "type": "officiality-gap",
+      "title": "The regulator's own text of Huifa [2017] No.29 was not located on safe.gov.cn",
+      "detail": "The RMB 100,000 per person per year overseas cash withdrawal cap, the RMB 10,000 per card per day cap and the two-year suspension for breach are taken from Bank of China's verbatim republication of the SAFE notice and of the SAFE spokesperson's answers to press questions. Bank of China is a state-owned commercial bank, not the regulator. The figures are corroborated across several independent republications but the primary safe.gov.cn text was not retrieved in this session.",
+      "where_it_appears": ["individual-channels.html route R08"],
+      "how_to_resolve": "Search safe.gov.cn for 国家外汇管理局关于规范银行卡境外大额提取现金交易的通知 and confirm the figures against the published notice.",
+      "sources": ["S08"]
+    },
+    {
+      "id": "F09",
+      "severity": "material",
+      "type": "conflict-between-official-sources",
+      "title": "Two official SAFE sources disagree on whether an overseas individual needs SAFE approval to remit property sale proceeds",
+      "detail": "Huifa [2006] No.47 Art.5 requires the SAFE branch where the property is located to review and confirm the FX purchase application, the transfer contract and the tax-paid certificate before the proceeds may be converted and remitted. The SAFE Henan branch's 2018 service guidance states that an overseas individual realising lawfully owned domestic commercial property needs no SAFE application and faces no time limit, and may deal directly with the bank. Measures Art.22 still says the purchase of FX and remittance of proceeds is subject to SAFE approval. The 2025 operational guidelines issued with Huifa [2025] No.43 set out a bank-side document checklist consistent with the Henan position.",
+      "where_it_appears": ["asset-channels.html route R07"],
+      "how_to_resolve": "Confirm with the handling bank which procedure applies in the specific city, and obtain the final text of Huifa [2025] No.43 to establish whether Art.5 of the 2006 notice has been superseded.",
+      "sources": ["S17", "S18", "S01", "S19"]
+    },
+    {
+      "id": "F10",
+      "severity": "material",
+      "type": "regulatory-gap",
+      "title": "There is no express channel for a non-immigrant overseas individual to transfer general property out of China",
+      "detail": "Measures Art.26 routes an overseas individual's outward transfer of legitimate domestic property to the Interim Measures for the Transfer of Individual Property Abroad. Those Interim Measures cover only two situations: emigration transfer, which requires public-security proof of cancellation of Chinese household registration and a settlement-abroad certificate, and inheritance transfer, which requires an estate inherited from a decedent. A US citizen who never held a PRC hukou and has no inheritance has no route under either limb. Deposits, investment returns and general savings that are not current-account income therefore fall outside the express channels, which is the structural reason the trapped-balance problem exists.",
+      "where_it_appears": ["executive-summary.html", "asset-channels.html routes R05, R06"],
+      "how_to_resolve": "This is a gap in the scheme rather than an unresolved question. The practical responses are the routes that do exist: current-account income conversion, asset monetisation through a sale, or a corporate or trade structure.",
+      "sources": ["S01", "S06", "S07"]
+    },
+    {
+      "id": "F11",
+      "severity": "minor",
+      "type": "drafting-anachronism",
+      "title": "The 1984 treaty names Chinese taxes that no longer exist in that form",
+      "detail": "Art.2 of the Agreement names the individual income tax, the income tax concerning joint ventures with Chinese and foreign investment, the income tax concerning foreign enterprises and the local income tax. Those instruments were superseded by the 2008 Enterprise Income Tax Law and the 2018 amendment to the Individual Income Tax Law. Coverage of the current taxes relies on Art.2(2), which extends the Agreement to taxes imposed after signature that are substantially similar, and on the competent authorities notifying each other of substantial changes. Any treaty claim should address this expressly.",
+      "where_it_appears": ["tax-treaty.html"],
+      "how_to_resolve": "Confirm with the competent authority, or rely on Art.2(2) with a documented substantially-similar analysis.",
+      "sources": ["S30"]
+    },
+    {
+      "id": "F12",
+      "severity": "material",
+      "type": "relief-not-assumed",
+      "title": "A widely cited exemption for dividends paid to foreign individuals from foreign-invested enterprises is not assumed",
+      "detail": "It is commonly stated that dividends from a foreign-invested enterprise to a foreign individual are exempt from Chinese individual income tax, on the authority of 1990s circulars. The current validity of that treatment was not confirmed from an official source in this session. Route R16 is therefore costed at the statutory 20% rate under Art.3(3) of the Individual Income Tax Law with no relief, which is the conservative position.",
+      "where_it_appears": ["corporate-channels.html route R16", "tax-china.html"],
+      "how_to_resolve": "Retrieve the current status of the circular from the STA policy and regulation database at fgk.chinatax.gov.cn and check its validity marking.",
+      "sources": ["S13"]
+    },
+    {
+      "id": "F13",
+      "severity": "minor",
+      "type": "source-partial",
+      "title": "Huifa [2025] No.43 was retrieved only as an operational-guideline annex, and a consultation draft was also seen",
+      "detail": "The document retrieved from safe.gov.cn dated 15 September 2025 is the annex titled Operational Guidelines for Facilitation Policies on Cross-Border Investment and Financing Foreign Exchange Administration, which cites Huifa [2025] No.43 as its parent instrument. A separate document dated 18 June 2025 titled consultation draft for public comment was also seen, in which the same notice was still cited as Huifa [2025] number to be assigned. The final notice text and its effective date were not retrieved, so the 2025 route R07 checklist is cited to the annex rather than to the notice.",
+      "where_it_appears": ["asset-channels.html route R07"],
+      "how_to_resolve": "Retrieve the final text of Huifa [2025] No.43 from safe.gov.cn and confirm its effective date.",
+      "sources": ["S19"]
+    },
+    {
+      "id": "F14",
+      "severity": "material",
+      "type": "scope-omission",
+      "title": "Market procurement trade and cross-border e-commerce export routes are omitted rather than asserted",
+      "detail": "Two channels are commonly recommended for exactly this problem: market procurement trade under customs supervision code 1039, and cross-border e-commerce export under codes 9610, 9710 and 9810 with a deemed-assessment enterprise income tax treatment. Neither could be confirmed from an official Ministry of Commerce, General Administration of Customs or State Taxation Administration instrument in this session. Rather than describe them from secondary sources they are excluded from the route tables and recorded here. The individually-owned business and individual foreign-trade operator routes R12, R13 and R23, which are confirmed from SAFE instruments, cover adjacent ground.",
+      "where_it_appears": ["trade-channels.html", "flagged.html"],
+      "how_to_resolve": "Retrieve the market procurement trade pilot notice from mofcom.gov.cn or customs.gov.cn, and the cross-border e-commerce enterprise income tax announcement from chinatax.gov.cn.",
+      "sources": []
+    },
+    {
+      "id": "F15",
+      "severity": "minor",
+      "type": "superseded-provision",
+      "title": "The individual fine scale in the Detailed Rules has been abolished and its replacement was not retrieved",
+      "detail": "Art.39 of the Detailed Rules provided fines of up to RMB 30,000 for a bank and up to RMB 1,000 for an individual for breaches not otherwise specified. SAFE's own text records that this article was abolished by Art.3 of Annex 3 to Huifa [2023] No.8. The instrument that replaced it was not retrieved, so the current residual individual fine scale is unknown. Regulation Art.48 remains in force and caps individual fines at RMB 50,000 for reporting and document breaches.",
+      "where_it_appears": ["penalty.html cost layer 5"],
+      "how_to_resolve": "Retrieve Huifa [2023] No.8 and its Annex 3 from safe.gov.cn.",
+      "sources": ["S02", "S03"]
+    },
+    {
+      "id": "F16",
+      "severity": "minor",
+      "type": "consolidation-gap",
+      "title": "The Detailed Rules are published as 'as amended' but the consolidating amendments were not fully retrieved",
+      "detail": "SAFE's own record shows Art.9(2) of the Detailed Rules amended by Art.4 of Huifa [2016] No.13, and Art.39 abolished by Huifa [2023] No.8 Annex 3. The consolidated text was read as published on the SAFE mobile site, which is authoritative for the articles cited here, but a full article-by-article amendment history was not assembled.",
+      "where_it_appears": ["all pages citing S02"],
+      "how_to_resolve": "Retrieve Huifa [2016] No.13 and Huifa [2023] No.8 from safe.gov.cn.",
+      "sources": ["S02"]
+    },
+    {
+      "id": "F17",
+      "severity": "material",
+      "type": "conflict-within-official-guidance",
+      "title": "An overseas individual holding a Foreign Permanent Resident ID Card appears to lose the Art.13 treatment",
+      "detail": "The SAFE Xiamen branch guidance states that an overseas individual who holds a Foreign Permanent Resident ID Card of the People's Republic of China is subject to the annual facilitation quota when purchasing foreign exchange. Read against Measures Art.37(2), which classifies any foreign citizen with a passport as an overseas individual, and Art.13, which exempts legitimate current-account income from the quota, the guidance creates a distinction that turns on the identity document presented rather than on residence. The same guidance confirms that an overseas individual converting earned income does not complete the Individual FX Purchase Application form.",
+      "where_it_appears": ["individual-channels.html routes R01 and R02"],
+      "how_to_resolve": "A permanent resident should present a passport rather than the permanent resident card when converting earned income, and should confirm the treatment with the branch before transacting.",
+      "sources": ["S21", "S01", "S02"]
+    },
+    {
+      "id": "F18",
+      "severity": "minor",
+      "type": "value-left-blank",
+      "title": "Bank remittance fees, intermediary bank charges and correspondent costs are not quantified",
+      "detail": "These are set commercially by each bank and by the SWIFT correspondent chain. No official instrument fixes them, so no figure is stated anywhere on this site.",
+      "where_it_appears": ["penalty.html", "executive-summary.html"],
+      "how_to_resolve": "Obtain the handling bank's published tariff for an outbound USD telegraphic transfer.",
+      "sources": []
+    },
+    {
+      "id": "F19",
+      "severity": "minor",
+      "type": "value-left-blank",
+      "title": "Current central parity and market exchange rates are not stated",
+      "detail": "No rate is quoted anywhere on this site. Fashi [2019] No.1 Art.11 requires conversion at the central parity rate published by the China Foreign Exchange Trade System or a PBOC-authorised institution on the date of discovery, and Art.16 of the Individual Income Tax Law requires foreign-currency income to be converted at the RMB central parity rate. Both are rules about which rate to use, not a rate itself, and rates move daily.",
+      "where_it_appears": ["all pages"],
+      "how_to_resolve": "Read the current central parity from the PBOC or from the China Foreign Exchange Trade System on the transaction date.",
+      "sources": ["S12", "S13"]
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "_meta": {
+    "description": "Breakdown of the cost of moving value from CNY to USD. Split into (1) the compliance cost of a lawful conversion, (2) the tax cost of the underlying income event, and (3) the administrative and criminal penalty exposure of an unlawful route, quantified from published official cases.",
+    "arithmetic_note": "Percentages in the case table are computed as fine divided by amount moved and are shown ONLY where both official figures are expressed in the same currency. Where the amount moved is in USD, CAD or HKD and the fine is in RMB, the percentage is left null because computing it would require an exchange rate that is not fixed by any source in this register. No rate has been assumed.",
+    "accessed": "2026-11-07"
+  },
+  "headline_finding": {
+    "title": "China levies no tax on the act of converting CNY into USD",
+    "body": "Nothing in the Individual Income Tax Law, the Enterprise Income Tax Law, the Regulation on Foreign Exchange Administration, the Measures for the Administration of Individual Foreign Exchange or the Detailed Rules imposes a tax, levy or conversion charge on exchanging renminbi for foreign currency. The obstacle the user describes as a 'considerable amount of taxes' is not a conversion tax. It is one of three different things, and separating them is the whole analysis.",
+    "components": [
+      {
+        "name": "Tax on the underlying income or gain event",
+        "nature": "Real and unavoidable",
+        "detail": "Individual income tax at 3% to 45% on comprehensive income, 5% to 35% on business income and 20% on interest, dividends, property leasing, property transfer and incidental income; enterprise income tax at 25%; withholding at 10% on dividends, interest and royalties paid to a non-resident. This tax is owed because the income arose, not because the money moved, and it is owed whether or not the funds ever leave China. Art.15 of the Individual Income Tax Law makes the tax-paid certificate a precondition to registering a transfer of real property or of equity, and Art.13(1) of the Detailed Rules makes a tax voucher a precondition to an overseas individual converting earned income.",
+        "sources": ["S13", "S38", "S14", "S02"]
+      },
+      {
+        "name": "Foreign exchange control, not tax",
+        "nature": "The actual binding constraint",
+        "detail": "The constraint on moving money out is quantitative and documentary, not fiscal. Art.9 of the Measures applies annual total-amount management of USD 50,000 equivalent per person per year to individual FX settlement and to domestic-individual FX purchase. Art.13 lets an overseas individual convert legitimate current-account income with no stated annual ceiling. Capital-account items require SAFE approval or registration. Art.5 of the Regulation states that the State does not restrict current-account international payments and transfers, which is why the lawful routes cluster in the current account.",
+        "sources": ["S01", "S02", "S03"]
+      },
+      {
+        "name": "Commercial cost of the conversion itself",
+        "nature": "Real but small, and not fixed by regulation",
+        "detail": "The bank's buy-sell spread and its remittance charge are set commercially by each bank. No instrument in this register fixes a retail conversion spread, so no percentage is stated here. The Regulation at Art.27 provides only for a managed floating exchange rate based on market supply and demand. This component is flagged rather than quantified.",
+        "sources": ["S03"],
+        "flag": "F01"
+      }
+    ]
+  },
+  "cost_layers": [
+    {
+      "layer": 1,
+      "name": "Chinese tax on the income event",
+      "applies_to": "Every route, because the tax arises on the income, not on the remittance",
+      "verified_rates": [
+        {"item": "Wages and comprehensive income of a resident individual", "rate": "3% to 45%", "source": "S13"},
+        {"item": "Wages of a non-resident individual, per month", "rate": "3% to 45% on revenue less RMB 5,000", "source": "S13"},
+        {"item": "Remuneration for personal services and royalties of a non-resident, per item", "rate": "20% on 80% of revenue, an effective 16%", "source": "S13"},
+        {"item": "Dividends received by an individual", "rate": "20% on the full amount of each receipt", "source": "S13"},
+        {"item": "Gain on transfer of property by an individual", "rate": "20% on revenue less original value and reasonable expenses", "source": "S13"},
+        {"item": "Business income of an individual", "rate": "5% to 35%", "source": "S13"},
+        {"item": "Enterprise income tax on a resident enterprise", "rate": "25%", "source": "S38"},
+        {"item": "Withholding on dividends, interest and royalties paid to a non-resident enterprise", "rate": "10%", "source": "S14"},
+        {"item": "Withholding on a non-resident enterprise's gain on property transfer", "rate": "10% on gross revenue less net value of the property", "source": "S14"},
+        {"item": "VAT on sale of services, intangibles and financial products", "rate": "6%", "source": "S39"},
+        {"item": "Insurance indemnity received by an individual", "rate": "Exempt", "source": "S13"}
+      ]
+    },
+    {
+      "layer": 2,
+      "name": "Treaty relief",
+      "applies_to": "US recipients of Chinese-source dividends, interest, royalties and gains",
+      "verified_rates": [
+        {"item": "Dividends, treaty cap", "rate": "10% of the gross dividend", "source": "S30"},
+        {"item": "Interest, treaty cap", "rate": "10% of the gross interest", "source": "S30"},
+        {"item": "Royalties, treaty cap", "rate": "10% of the gross royalty", "source": "S30"},
+        {"item": "Leasing of industrial, commercial or scientific equipment", "rate": "Taxed on 70% of the gross amount, an effective cap of 7%", "source": "S30"},
+        {"item": "Net benefit of the treaty on these items", "rate": "Zero", "note": "Because the domestic reduced rate under Art.91 of the Chinese EIT Implementation Regulations is also 10%, the treaty cap produces no reduction. The treaty's real value to a US person is Art.22, the foreign tax credit, not a lower withholding rate.", "source": "S30"}
+      ]
+    },
+    {
+      "layer": 3,
+      "name": "US tax on the same income",
+      "applies_to": "Every route, because a US citizen is taxed on worldwide income",
+      "verified_rates": [
+        {"item": "Scope", "rate": "Worldwide income, regardless of where the funds are held", "source": "S24"},
+        {"item": "Relief option A - foreign earned income exclusion", "rate": "USD 130,000 for 2025; USD 132,900 for 2026; USD 126,500 for 2024", "source": "S23"},
+        {"item": "Relief option A - foreign housing limitation", "rate": "USD 39,000 for 2025; USD 39,870 for 2026", "source": "S23"},
+        {"item": "Relief option B - foreign tax credit limitation", "rate": "US tax liability multiplied by foreign-source taxable income over total taxable income", "source": "S28"},
+        {"item": "Relief option B - carryback and carryover", "rate": "1 year back, 10 years forward", "source": "S28"},
+        {"item": "Relief option B - de minimis election, no Form 1116", "rate": "Creditable foreign tax of USD 300, or USD 600 on a joint return", "source": "S28"},
+        {"item": "Constraint - no stacking", "rate": "No credit or deduction for foreign tax paid on income excluded under the foreign earned income or housing exclusions", "source": "S28"},
+        {"item": "Conversion and remittance of already-taxed funds", "rate": "No further US income tax", "note": "Moving after-tax money between the taxpayer's own accounts is not a realisation event. Publication 54 requires only that amounts be expressed in US dollars, translated from the functional currency.", "source": "S29"}
+      ]
+    },
+    {
+      "layer": 4,
+      "name": "US reporting obligations and their penalties",
+      "applies_to": "Holding the Chinese account at all, independently of any remittance",
+      "verified_rates": [
+        {"item": "FBAR threshold", "rate": "Aggregate foreign financial accounts above USD 10,000 at any time in the year", "source": "S25"},
+        {"item": "FBAR non-willful penalty", "rate": "Statutory USD 10,000; adjusted maximum USD 16,536", "source": "S26"},
+        {"item": "FBAR willful penalty", "rate": "Statutory USD 100,000; adjusted maximum USD 165,353, with the statute also providing for up to 50% of the account balance", "source": "S26"},
+        {"item": "General willful Bank Secrecy Act penalty", "rate": "Statutory USD 25,000 to USD 100,000; adjusted USD 71,545 to USD 286,184", "source": "S26"},
+        {"item": "Funds-transfer recordkeeping violation", "rate": "Statutory USD 10,000; adjusted USD 26,262", "source": "S26"},
+        {"item": "Form 8938 threshold, single or MFS living in the US", "rate": "Above USD 50,000 at year end or USD 75,000 at any time", "source": "S27"},
+        {"item": "Form 8938 threshold, MFJ living in the US", "rate": "Above USD 100,000 at year end or USD 150,000 at any time", "source": "S27"},
+        {"item": "Form 8938 threshold, single or MFS living abroad", "rate": "Above USD 200,000 at year end or USD 300,000 at any time", "source": "S27"},
+        {"item": "Form 8938 threshold, MFJ living abroad", "rate": "Above USD 400,000 at year end or USD 600,000 at any time", "source": "S27"},
+        {"item": "FinCEN Form 105 threshold for moving cash across the US border", "rate": "More than USD 10,000 at one time", "source": "S29"},
+        {"item": "Automatic information flow from Chinese banks to the IRS", "rate": "None established", "note": "China is recorded on the US Treasury FATCA register as 'Agreement in Substance', Model 1, treated as in effect from 30 June 2014, with no signed agreement. There is therefore no executed intergovernmental agreement under which Chinese financial institutions report automatically to the IRS, and the compliance burden sits entirely on the taxpayer's own filings.", "source": "S31"}
+      ]
+    },
+    {
+      "layer": 5,
+      "name": "Chinese administrative penalties, if the route is not compliant",
+      "applies_to": "Only unlawful routes",
+      "verified_rates": [
+        {"item": "Evading FX supervision: transferring domestic FX abroad, or transferring domestic capital abroad by deceit (Art.39)", "rate": "Order to repatriate within a time limit plus a fine of up to 30% of the evaded amount; in serious circumstances 30% to 100%; criminal liability where a crime is constituted", "source": "S03"},
+        {"item": "Illegal FX arbitrage, including fraudulent purchase of FX on false or invalid documents (Art.40)", "rate": "Order to re-exchange plus a fine of up to 30% of the illegal amount; in serious circumstances 30% to 100%", "source": "S03"},
+        {"item": "Carrying FX across the border in violation of the rules (Art.42)", "rate": "Warning plus a fine of up to 20% of the illegal amount", "source": "S03"},
+        {"item": "Unauthorised change of the use of FX or of settled FX funds (Art.44)", "rate": "Correction, confiscation of illegal gains and a fine of up to 30%; in serious circumstances 30% to 100%", "source": "S03"},
+        {"item": "Private, disguised or intermediary buying and selling of FX (Art.45)", "rate": "Warning, confiscation of illegal gains and a fine of up to 30% of the illegal amount; in serious circumstances 30% to 100%; criminal liability where a crime is constituted", "source": "S03"},
+        {"item": "Failure to declare balance-of-payments statistics, or submitting untrue documents (Art.48)", "rate": "Correction and warning; up to RMB 300,000 for an institution and up to RMB 50,000 for an individual", "source": "S03"},
+        {"item": "Breach of the Detailed Rules not otherwise specified", "rate": "Art.39 of the Detailed Rules provided fines of up to RMB 30,000 for a bank and RMB 1,000 for an individual, but that article was abolished by Huifa [2023] No.8 Annex 3", "source": "S02"},
+        {"item": "Collateral consequence", "rate": "Placement on the SAFE watch list and entry of the penalty into the PBOC credit-reference system", "source": "S11"}
+      ]
+    },
+    {
+      "layer": 6,
+      "name": "Chinese criminal exposure, if the route is unlawful",
+      "applies_to": "Underground banking and disguised FX dealing",
+      "verified_rates": [
+        {"item": "Offence", "rate": "Illegal business operation, Criminal Law Art.225(4)", "source": "S12"},
+        {"item": "Serious circumstances", "rate": "Illegal business amount of RMB 5,000,000 or more, or illegal gains of RMB 100,000 or more", "source": "S12"},
+        {"item": "Serious circumstances at a reduced threshold", "rate": "RMB 2,500,000 or more, or illegal gains of RMB 50,000 or more, together with a prior criminal prosecution, an administrative penalty within two years, refusal to disclose where the funds went, or other serious consequences", "source": "S12"},
+        {"item": "Especially serious circumstances", "rate": "Illegal business amount of RMB 25,000,000 or more, or illegal gains of RMB 500,000 or more", "source": "S12"},
+        {"item": "Deemed illegal gains where they cannot be determined", "rate": "One thousandth of the illegal business amount, with a fine of one to five times that amount", "source": "S12"},
+        {"item": "Conversion of the offence amount", "rate": "Computed in RMB at the central parity rate published by the China Foreign Exchange Trade System or a PBOC-authorised institution on the date of discovery", "source": "S12"}
+      ]
+    }
+  ],
+  "published_cases": {
+    "description": "Administrative penalties published by SAFE itself. These are the only quantified figures in this analysis that come from enforcement rather than from statute, and they are the evidence base for the observed fine rates below.",
+    "cases": [
+      {"offender": "Individual surnamed Hong, Zhejiang", "conduct": "Private purchase of FX, paying RMB 312,000,000 to other people's accounts, used to buy overseas property", "amount_moved": "RMB 312,000,000", "amount_currency": "CNY", "violation": "Measures Art.30", "penalty_basis": "Regulation Art.45", "fine": "RMB 24,970,000", "fine_pct": "8.00%", "additional": "Watch list; PBOC credit-reference system", "source": "S10"},
+      {"offender": "Individual surnamed Cao, Hubei", "conduct": "Illegal FX dealing through an underground bank, 34 transactions in HKD", "amount_moved": "RMB 8,993,200", "amount_currency": "CNY", "violation": "Measures Art.30", "penalty_basis": "Regulation Art.45", "fine": "RMB 719,500", "fine_pct": "8.00%", "additional": "Watch list; PBOC credit-reference system", "source": "S10"},
+      {"offender": "Individual surnamed Peng, Chongqing", "conduct": "Purchased USD through an underground bank in 16 transactions and remitted abroad", "amount_moved": "RMB 13,835,800", "amount_currency": "CNY", "violation": "Measures Art.30", "penalty_basis": "Regulation Art.45", "fine": "RMB 968,500", "fine_pct": "7.00%", "additional": "Watch list; PBOC credit-reference system", "source": "S10"},
+      {"offender": "Individual surnamed Zhang, Anhui", "conduct": "Repeated illegal HKD dealing through an underground bank", "amount_moved": "RMB 3,762,400", "amount_currency": "CNY", "violation": "Measures Art.30", "penalty_basis": "Regulation Art.45", "fine": "RMB 452,000", "fine_pct": "12.01%", "additional": "Watch list; PBOC credit-reference system", "source": "S10"},
+      {"offender": "Individual surnamed Liu, Sichuan", "conduct": "Remitted HKD 7,671,700 through an underground bank in 12 transactions", "amount_moved": "HKD 7,671,700", "amount_currency": "HKD", "violation": "Measures Art.30", "penalty_basis": "Regulation Art.45", "fine": "RMB 491,400", "fine_pct": null, "additional": "Watch list; PBOC credit-reference system", "source": "S10"},
+      {"offender": "Individual surnamed Xu, Jiangsu", "conduct": "Illegal HKD dealing through an underground bank at a Macau casino", "amount_moved": "RMB 2,659,800", "amount_currency": "CNY", "violation": "Measures Art.30; Rules on Settlement, Sale and Payment of FX Art.32", "penalty_basis": "Regulation Art.45", "fine": "RMB 320,000", "fine_pct": "12.03%", "additional": "Watch list; PBOC credit-reference system", "source": "S11"},
+      {"offender": "Individual surnamed Feng, Liaoning", "conduct": "Illegal HKD dealing through an underground bank at a Macau casino", "amount_moved": "RMB 10,817,900", "amount_currency": "CNY", "violation": "Measures Art.30; Rules on Settlement, Sale and Payment of FX Art.32", "penalty_basis": "Regulation Art.45", "fine": "RMB 1,300,000", "fine_pct": "12.02%", "additional": "Watch list; PBOC credit-reference system", "source": "S11"},
+      {"offender": "Individual surnamed Sun, Guangdong", "conduct": "Used 34 domestic individuals' annual purchase quotas to split funds and remit abroad for overseas investment", "amount_moved": "USD 2,446,200", "amount_currency": "USD", "violation": "Measures Art.7", "penalty_basis": "Regulation Art.39", "fine": "RMB 830,000", "fine_pct": null, "additional": "Watch list; PBOC credit-reference system", "source": "S10"},
+      {"offender": "Individual surnamed Zhou, Shanghai", "conduct": "Used 21 domestic individuals' annual purchase quotas to split funds and remit abroad", "amount_moved": "USD 1,049,600", "amount_currency": "USD", "violation": "Measures Art.7", "penalty_basis": "Regulation Art.39", "fine": "RMB 330,000", "fine_pct": null, "additional": "Watch list; PBOC credit-reference system", "source": "S11"},
+      {"offender": "Individual surnamed Shen, Shanghai", "conduct": "Used 34 domestic individuals' annual purchase quotas to split funds and remit abroad to buy overseas property", "amount_moved": "CAD 2,040,000", "amount_currency": "CAD", "violation": "Measures Art.7", "penalty_basis": "Regulation Art.39", "fine": "RMB 510,000", "fine_pct": null, "additional": "Watch list; PBOC credit-reference system", "source": "S11"},
+      {"offender": "Individual surnamed Sui, Jilin", "conduct": "Used 173 domestic individuals' annual purchase quotas to split funds and remit abroad to buy overseas property", "amount_moved": "CAD 12,056,500", "amount_currency": "CAD", "violation": "Measures Art.7", "penalty_basis": "Regulation Art.39", "fine": "RMB 3,009,000", "fine_pct": null, "additional": "Watch list; PBOC credit-reference system", "source": "S11"},
+      {"offender": "Individual surnamed Li, Liaoning", "conduct": "Used 102 individuals' names to split purchases and remit abroad", "amount_moved": "CAD 6,753,600", "amount_currency": "CAD", "violation": "Measures Art.7", "penalty_basis": "Regulation Art.39", "fine": "RMB 1,727,800", "fine_pct": null, "additional": "Watch list; PBOC credit-reference system", "source": "S09"},
+      {"offender": "Shaoyang Xincheng Medical Technology Development Co Ltd", "conduct": "Used 32 domestic individuals' annual purchase quotas to split purchases and payments and move funds abroad", "amount_moved": "USD 1,582,500", "amount_currency": "USD", "violation": "Regulation Art.22", "penalty_basis": "Regulation Art.39", "fine": "RMB 536,400", "fine_pct": null, "additional": "Watch list; PBOC credit-reference system", "source": "S09"},
+      {"offender": "Individual surnamed Li, Heilongjiang", "conduct": "188 non-compliant overseas card transactions", "amount_moved": "CAD 1,222,000", "amount_currency": "CAD", "violation": "Measures Art.16", "penalty_basis": "Regulation Art.39", "fine": "RMB 325,600", "fine_pct": null, "additional": "PBOC credit-reference system", "source": "S09"},
+      {"offender": "Guangzhou Yangfan Trading Co Ltd", "conduct": "Used false bills of lading to fabricate a trade background and pay funds abroad", "amount_moved": "USD 92,858,000", "amount_currency": "USD", "violation": "Regulation Art.12", "penalty_basis": "Regulation Art.39", "fine": "RMB 37,340,000", "fine_pct": null, "additional": "PBOC credit-reference system", "source": "S10"},
+      {"offender": "Xuzhou Hongdian Electronic Technology Co Ltd", "conduct": "Fabricated trade background and paid funds abroad", "amount_moved": "USD 27,349,000", "amount_currency": "USD", "violation": "Regulation Art.12", "penalty_basis": "Regulation Art.39", "fine": "RMB 9,602,000", "fine_pct": null, "additional": "PBOC credit-reference system", "source": "S09"},
+      {"offender": "Shenzhen Shenzhou Bairuida Investment Co Ltd", "conduct": "Fabricated trade background and moved funds abroad", "amount_moved": "USD 17,726,400", "amount_currency": "USD", "violation": "Regulation Art.12", "penalty_basis": "Regulation Art.39", "fine": "RMB 5,978,800", "fine_pct": null, "additional": "PBOC credit-reference system", "source": "S09"},
+      {"offender": "Ningbo Huili International Trade Co Ltd", "conduct": "Used false bills of lading to fabricate a trade background and pay funds abroad", "amount_moved": "USD 15,656,200", "amount_currency": "USD", "violation": "Regulation Art.12", "penalty_basis": "Regulation Art.39", "fine": "RMB 5,098,400", "fine_pct": null, "additional": "PBOC credit-reference system", "source": "S10"},
+      {"offender": "Shandong Qingyuan Group Co Ltd", "conduct": "Used false contracts, invoices and bills of lading to fabricate a trade background and pay funds abroad", "amount_moved": "USD 9,555,000", "amount_currency": "USD", "violation": "Regulation Art.12", "penalty_basis": "Regulation Art.39", "fine": "RMB 3,097,400", "fine_pct": null, "additional": "PBOC credit-reference system", "source": "S10"},
+      {"offender": "Beijing Xinhongyang Commerce and Trade Co Ltd", "conduct": "Used an invalid bill of lading to fabricate a trade background and pay funds abroad", "amount_moved": "USD 6,190,000", "amount_currency": "USD", "violation": "Regulation Art.12", "penalty_basis": "Regulation Art.39", "fine": "RMB 2,136,500", "fine_pct": null, "additional": "PBOC credit-reference system", "source": "S10"},
+      {"offender": "Jiangsu Richen Special Equipment Technology Co Ltd", "conduct": "Paid USD 2,560,000 as advance payment for goods; the imported goods never arrived", "amount_moved": "USD 2,560,000", "amount_currency": "USD", "violation": "Regulation Art.12", "penalty_basis": "Regulation Art.39", "fine": "RMB 837,200", "fine_pct": null, "additional": "PBOC credit-reference system", "source": "S09"},
+      {"offender": "China Merchants Bank Hangzhou Branch", "conduct": "Processed split purchases and payments for a client using 303 domestic individuals' annual purchase quotas", "amount_moved": "303 individuals' quotas", "amount_currency": null, "violation": "Measures Art.7", "penalty_basis": "Regulation Art.47", "fine": "RMB 1,000,000 confiscated and fined, with an order to correct", "fine_pct": null, "additional": "The bank itself was penalised, not only the client", "source": "S10"},
+      {"offender": "Bank of Nanjing Shanghai Pudong Sub-branch", "conduct": "Processed transit-trade payments against a company's false bills of lading", "amount_moved": "Not stated in the published case", "amount_currency": null, "violation": "Regulation Art.12", "penalty_basis": "Regulation Art.47", "fine": "RMB 800,000 confiscated and fined", "fine_pct": null, "additional": "The bank itself was penalised", "source": "S10"}
+    ],
+    "observations": [
+      {
+        "finding": "Where both figures are in RMB, published fines for illegal FX dealing through underground banks cluster tightly at 7%, 8% and 12% of the amount moved.",
+        "evidence": "7.00%, 8.00%, 8.00%, 12.01%, 12.02%, 12.03% across six published individual cases.",
+        "significance": "These sit well inside the Art.45 statutory band of up to 30%, and far below the 30% to 100% band reserved for serious circumstances. The observed administrative cost of an underground-bank route, before criminal exposure and before confiscation of illegal gains, is therefore roughly 7% to 12% of the amount moved.",
+        "source": ["S10", "S11", "S03"]
+      },
+      {
+        "finding": "Splitting other people's annual quotas is charged as evasion of FX supervision under Art.39, not merely as a quota breach.",
+        "evidence": "Every published splitting case cites Measures Art.7 as the rule breached and Regulation Art.39 as the penalty basis, with an order to repatriate the funds within a time limit.",
+        "significance": "The repatriation order is the commercially decisive part: the money does not stay offshore. A fine is payable and the funds are ordered back.",
+        "source": ["S09", "S10", "S11", "S03"]
+      },
+      {
+        "finding": "Facilitating banks are penalised separately.",
+        "evidence": "A bank was fined and had RMB 1,000,000 confiscated for processing split purchases across 303 individuals' quotas; another RMB 800,000 for processing payments against false bills of lading.",
+        "significance": "Banks have their own exposure, which explains the conservative and inconsistent authenticity reviews individual customers experience at the counter.",
+        "source": ["S10", "S03"]
+      },
+      {
+        "finding": "The criminal threshold for illegal FX dealing is low relative to the sums in question.",
+        "evidence": "Fashi [2019] No.1 sets 'serious circumstances' at an illegal business amount of RMB 5,000,000 or illegal gains of RMB 100,000, and 'especially serious' at RMB 25,000,000 or RMB 500,000.",
+        "significance": "A single underground-bank transaction moving a mid-six-figure USD sum crosses the criminal threshold. The administrative fines above are the better outcome, not the expected one.",
+        "source": ["S12"]
+      }
+    ]
+  }
+}
