@@ -14,8 +14,8 @@
 | T2 — official US tax and reporting evidence | done | arena-489b75a1-china1 | research/us.json; research/us-notes.md |
 | T3 — route inventory, evidence-backed comparison, executive analysis | done | arena-489b75a1-china1 | research/routes.json; research/analysis.json; EXECUTIVE_SUMMARY.md |
 | T4 — dashboard and category pages | done | arena-489b75a1-china1 | site/; scripts/build_site.py; requirements.txt |
-| T5 — final integration, source/row validation, build and link checks | in progress | arena-489b75a1-china1 | tests/; data/; docs/; .github/workflows/; .gitignore; README.md; generated site/public output |
-| T6 — PR, merge, GitHub Pages deployment and publication record | unclaimed | — | COORDINATION.md; deployment record |
+| T5 — final integration, source/row validation, build and link checks | done | arena-489b75a1-china1 | tests/; data/; docs/; scripts/export_data.py; .github/workflows/; .gitignore; README.md; generated site/public output |
+| T6 — PR, merge, GitHub Pages deployment and publication record | in progress | arena-489b75a1-china1 | COORDINATION.md; docs/deployment.md; PR/merge/Pages record |
 
 Statuses: unclaimed / in progress / done / needs review. `needs review` items are published on Flagged for Review and do not block integration. No numerical gap will be inferred to complete a row.
 
@@ -39,5 +39,7 @@ Statuses: unclaimed / in progress / done / needs review. `needs review` items ar
 - 2026-11-07 — T4 complete; immediately claimed T5. Built a deterministic static dashboard with `scripts/build_site.py` (markdown-it-py pinned in requirements.txt), `site/styles.css`, `site/app.js` and generated `site/public/`: 10 pages (overview, China, US, routes, requirements, costs, analysis, flagged, sources, executive summary), 58 sources, 165 source-linked rows. Validation passed: every rendered data row has an external official/primary source link; internal links and local assets resolve; no remote assets/CDN; all 10 pages and both assets returned HTTP 200 from a local 0.0.0.0 preview; `node --check site/app.js` clean. Fixed one mixed-language typo in R22 requirements ("payment额度" → "payment quota") and rebuilt.
 - T4/T5 scope adaptation: GitHub Pages will deploy the generated `site/public` artifact via Actions rather than committing a root `index.html`; `.nojekyll` is included inside the artifact. T5 owns tests/docs/workflows/.gitignore/README and final generated output. No other session claims existed.
 
+- 2026-11-07 — T5 complete; immediately claimed T6. Added offline acceptance suite `tests/test_site.py` (14 tests), flat exports `data/evidence.csv` (165 rows) and `data/sources.csv` (58 sources) via `scripts/export_data.py`, `docs/verification.md`, `.gitignore`, README and `.github/workflows/pages.yml`. Fixed formula-row coverage by rendering cost formulas as a source-linked table with IDs. Validation passed: all 14 tests OK, deterministic rebuild identical, every rendered data row source-linked, all research row IDs and flags published, internal links/assets resolve, no remote assets/placeholders/local backend calls, route cost cells blank, `node --check site/app.js` clean, `git diff --check` clean. Workflow will build/test on PRs and deploy `site/public` to GitHub Pages only from `main` after checks pass.
+
 ## Integration and publication record
-- Pending. This session will perform sequential integration only after research tasks finish, then validate rows and links before opening and merging a PR into main.
+- In progress: T6 will open the integration PR from the fixed branch into `main`, merge autonomously after checks pass, enable/verify GitHub Pages, and record the PR link, merge result and live URL here and in `docs/deployment.md`.

@@ -441,13 +441,14 @@ def build_costs(data: dict, sources: dict) -> str:
     model = data["analysis"]["cost_model"]
     body = page_head("Conversion-penalty breakdown", "Keep execution cost, underlying income tax, currency gain/loss and compliance penalties separate. No live quote or user-specific tax amount was supplied.")
     body += notice('<strong>Blank ≠ zero.</strong> Every commercial cost and user-specific tax value below is intentionally blank until a like-for-like quote or actual tax facts exist.')
-    formulas = []
-    for formula in model["formulas"]:
-        formulas.append(
-            f'<article class="formula"><h3>{esc(formula["name"])}</h3><code>{esc(formula["formula"])}</code>'
-            f'<p>{esc(formula["condition"])}</p><p>{source_links(formula["source_ids"], sources)}</p></article>'
-        )
-    body += '<div class="formula-grid">' + "".join(formulas) + "</div>"
+    formula_rows = [tr([
+        td(f'<span class="id">{esc(row["id"])}</span>'),
+        td(esc(row["name"]), "row-title"),
+        td(f'<code>{esc(row["formula"])}</code>'),
+        td(esc(row["condition"])),
+        td(source_links(row["source_ids"], sources)),
+    ]) for row in model["formulas"]]
+    body += '<h2>Comparison formulas</h2>' + table("cost-formulas", ["ID", "Name", "Formula", "Condition", "Sources"], formula_rows, cls="wide-table")
     def_rows = [tr([
         td(f'<span class="id">{esc(row["id"])}</span>'),
         td(f'<code>{esc(row["term"])}</code>', "row-title"),
