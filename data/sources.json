@@ -198,7 +198,8 @@
       "ref": "Accessed 2026-11-07",
       "url": "https://www.liezhe.com/geren-jiehui-edu/",
       "status": "unverified",
-      "verifies": "NOT USED as a source of record. Listed only because it summarises the 2020 Guidelines; all values it states are taken from S03 directly instead."
+      "verifies": "NOT USED as a source of record. Listed only because it summarises the 2020 Guidelines; all values it states are taken from S03 directly instead.",
+      "unused_ok": true
     },
     {
       "id": "S20",

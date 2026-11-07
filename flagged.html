@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flagged for review — unverified values and source irregularities | China1</title>
+<meta name="description" content="Seven claims deliberately left open and seven irregularities found in circulating sources, with what each would change if resolved.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+  <span class="brand"><span class="mark">¥→$</span> China1</span>
+  <span class="spacer"></span>
+  <span class="head-meta"><span class="pill live">● live</span><span>Prepared 2026-11-07</span><span>Nothing here is used as a value</span></span>
+</div></header>
+
+<nav class="site-nav"><div class="wrap">
+  <a href="index.html">Overview</a><a href="plan.html">Action plan</a><a href="channels.html">Channels</a>
+  <a href="costs.html">Costs &amp; penalties</a><a href="china-rules.html">China rules</a><a href="us-tax.html">US tax</a>
+  <a href="prohibited.html">Do not do</a><a href="flagged.html">Flagged for review</a><a href="sources.html">Sources</a><a href="about.html">Method</a>
+</div></nav>
+
+<main><div class="wrap">
+  <div class="page-head">
+    <div class="eyebrow">Review queue</div>
+    <h1>Flagged for review</h1>
+    <p>Two kinds of thing live here: values I could <strong>not</strong> tie to a retrievable official source (left intentionally blank), and <strong>material errors in circulating sources</strong> found while verifying. Nothing on this page is used to fill any table value.</p>
+  </div>
+
+  <div class="grid g2">
+    <div class="panel kpi bad"><div class="k">Values left blank</div><div class="v" id="n-unv">—</div><div class="d">Never estimated, never inferred. Each marked <code>unverified</code> in the data files.</div></div>
+    <div class="panel kpi warn"><div class="k">Source irregularities</div><div class="v" id="n-irr">—</div><div class="d">Two would have materially corrupted the analysis if trusted. Corrected before publication.</div></div>
+  </div>
+
+  <div class="note">
+    <span class="lab">Why blank beats plausible</span>
+    An invented FX spread of "0.5%" reads more usefully than an empty cell — and would be wrong for your bank, your ticket size and your channel. Once one fabricated number enters a table like this, every other number becomes suspect. Blank plus flagged is the only honest option, and it is also the one you can act on: it tells you exactly what to go and get quoted.
+  </div>
+
+  <h2>Unverified values</h2>
+  <div id="unverified"></div>
+
+  <h2>Source irregularities</h2>
+  <p class="muted" style="margin-bottom:12px">Ordered by severity. R01 and R02 are the two that would have changed conclusions.</p>
+  <div id="irregularities"></div>
+
+  <div class="note ok">
+    <span class="lab">How to clear an item</span>
+    Each entry says what is missing and what would change if it were resolved. If you can supply the official document — a tax clearance certificate, a bank fee schedule, a treated circular — send it and the item moves off this page and into the tables. Until then it stays blank.
+  </div>
+
+  <div class="disclaimer">
+    <strong>This page does not block anything.</strong> The project is published with these items open, as intended. An unverified item is disclosed rather than guessed, and no conclusion in the analysis depends on one.
+  </div>
+</div></main>
+
+<footer><div class="wrap">
+  <span>China1 — RMB → USD, source-verified. Prepared 2026-11-07.</span>
+  <span><a href="index.html">Overview</a> · <a href="sources.html">Sources</a> · <a href="about.html">Method</a></span>
+</div></footer>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+<script>
+(function(){
+  var F = window.UI.D.flagged;
+  document.getElementById('n-unv').textContent = F.unverified_values.length;
+  document.getElementById('n-irr').textContent = F.source_irregularities.length;
+
+  document.getElementById('unverified').innerHTML = UI.table(
+    [{h:'#',w:'50px'},{h:'Claim that could not be confirmed',w:'230px'},{h:'Why not',w:'230px'},{h:'What it would change',w:'240px'},{h:'What to do',w:'240px'},{h:'Refs',w:'80px'}],
+    F.unverified_values.map(function(v){
+      return { cells:[
+        {html:'<span class="mono b bad">'+UI.esc(v.id)+'</span>'},
+        {html:'<strong>'+UI.esc(v.claim)+'</strong>'},
+        {html:UI.esc(v.why_unverified)},
+        {html:UI.esc(v.impact)},
+        {html:UI.esc(v.what_to_do)},
+        {html:UI.srcList(v.sources)}
+      ]};
+    })
+  );
+
+  var sev = {high:'bad', medium:'warn', low:'neutral'};
+  document.getElementById('irregularities').innerHTML = F.source_irregularities.map(function(r){
+    return '<div class="panel pad" style="margin-bottom:14px">' +
+      '<h3 style="margin-top:0;display:flex;align-items:center;gap:10px;flex-wrap:wrap">' +
+        '<span class="mono b '+ (sev[r.severity]||'neutral') +'">'+UI.esc(r.id)+'</span>' +
+        '<span class="b '+(sev[r.severity]||'neutral')+'">'+UI.esc(r.severity)+'</span>' +
+      '</h3>' +
+      '<p class="small"><strong>'+UI.esc(r.finding)+'</strong></p>' +
+      '<p class="small">'+UI.esc(r.detail)+'</p>' +
+      '<p class="small"><span class="muted">Action taken:</span> '+UI.esc(r.action)+'</p>' +
+      '<div style="margin-top:10px">'+UI.srcList(r.sources)+'</div>' +
+    '</div>';
+  }).join('');
+})();
+</script>
+</body>
+</html>

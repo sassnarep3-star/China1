@@ -14,7 +14,10 @@
       "penalty": "Non-willful: up to USD 16,536 per violation. Willful: up to USD 165,353 per violation (both inflation-adjusted, for penalties assessed on or after 2025-01-17)",
       "records": "Keep account name, number, bank name and address, account type and maximum value for 5 years from the FBAR due date",
       "verified": true,
-      "sources": ["S20", "S21"],
+      "sources": [
+        "S20",
+        "S21"
+      ],
       "note": "A Chinese bank account holding RMB is a foreign financial account. Whether it produced taxable income is irrelevant to the FBAR test."
     },
     {
@@ -27,7 +30,10 @@
       "penalty": "USD 10,000; plus up to USD 50,000 more if the failure continues after IRS notice (USD 10,000 per 30-day period after 90 days)",
       "records": "—",
       "verified": true,
-      "sources": ["S22", "S26"],
+      "sources": [
+        "S22",
+        "S26"
+      ],
       "note": "If you are not required to file a return, you do not file Form 8938 — even above the threshold. Reasonable cause is a defence under §6038D(g)."
     },
     {
@@ -40,7 +46,9 @@
       "penalty": "UNVERIFIED — the §6039F 5%-per-month / 25%-of-gift rule is widely cited but was not read from an official page in this session",
       "records": "—",
       "verified": false,
-      "sources": ["S24"],
+      "sources": [
+        "S24"
+      ],
       "note": "FLAGGED. Included because it is the correct form for the 'relative sends me money' variant, which is the most commonly suggested workaround."
     },
     {
@@ -66,7 +74,9 @@
       "penalty": "UNVERIFIED",
       "records": "—",
       "verified": false,
-      "sources": ["S28"],
+      "sources": [
+        "S28"
+      ],
       "note": "FLAGGED — the official FinCEN page returned HTTP 404 during this session, so the threshold is not used as a table value."
     },
     {
@@ -88,5 +98,8 @@
     "If prior years were missed and the conduct was not willful, the Streamlined Filing Compliance Procedures are the intended route (S25): a certification of non-willful conduct, amended or delinquent returns, and no closing agreement. It is unavailable if you are already under civil examination or criminal investigation.",
     "Never 'quiet disclose' by filing a bare amended return and hoping — the IRS states that previously assessed penalties are not abated by later joining the streamlined procedures.",
     "Then, and only then, choose the conversion route based on the SOURCE of the funds."
+  ],
+  "sources": [
+    "S25"
   ]
 }

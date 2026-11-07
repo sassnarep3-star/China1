@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sources — the full registry with verification status | China1</title>
+<meta name="description" content="Every official source used, with publisher, instrument number, verification status and what it establishes. Plus the sources that were rejected.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+  <span class="brand"><span class="mark">¥→$</span> China1</span>
+  <span class="spacer"></span>
+  <span class="head-meta"><span class="pill live">● live</span><span>Prepared 2026-11-07</span><span>Retrieved, not summarised</span></span>
+</div></header>
+
+<nav class="site-nav"><div class="wrap">
+  <a href="index.html">Overview</a><a href="plan.html">Action plan</a><a href="channels.html">Channels</a>
+  <a href="costs.html">Costs &amp; penalties</a><a href="china-rules.html">China rules</a><a href="us-tax.html">US tax</a>
+  <a href="prohibited.html">Do not do</a><a href="flagged.html">Flagged for review</a><a href="sources.html">Sources</a><a href="about.html">Method</a>
+</div></nav>
+
+<main><div class="wrap">
+  <div class="page-head">
+    <div class="eyebrow">Evidence</div>
+    <h1>Source registry</h1>
+    <p>Every row in every table on this site resolves to one of the instruments below. Each carries a verification status, because "I read it" and "a search engine quoted it" are different claims and should not be shown identically.</p>
+  </div>
+
+  <div class="grid g3">
+    <div class="panel kpi ok"><div class="k"><span class="b ok">Verified</span> retrieved &amp; read</div><div class="v" id="n-ret">—</div><div class="d">Fetched during preparation; the cited text was read directly.</div></div>
+    <div class="panel kpi warn"><div class="k"><span class="b warn">Excerpt</span> official domain</div><div class="v" id="n-srch">—</div><div class="d">Official-domain page confirmed with the cited text quoted in the result, but not fetched end-to-end.</div></div>
+    <div class="panel kpi bad"><div class="k"><span class="b bad">Unverified</span></div><div class="v" id="n-unv">—</div><div class="d">No official page could be confirmed. Not used to fill any value.</div></div>
+  </div>
+
+  <div class="note">
+    <span class="lab">What "verified" means here, precisely</span>
+    <strong>retrieved</strong> — the page was fetched with the research tool and the quoted text was read in this session. <strong>excerpt</strong> — the official-domain page appeared in search results with the operative text quoted, but the page itself was not fetched end-to-end. <strong>unverified</strong> — no official URL could be confirmed; the claim is never used as a basis for a table value.
+    <br><br>
+    Live HTTP link-checking was <em>not</em> possible from the build environment: outbound access to the cited government hosts is blocked (only package registries are reachable), so <code>curl</code> returns <code>000</code> for every one of them. Link validity rests on the fetches performed during research, not on an automated checker. That limitation is stated rather than hidden.
+  </div>
+
+  <h2>China</h2>
+  <div id="sources-cn"></div>
+
+  <h2>United States</h2>
+  <div id="sources-us"></div>
+
+  <h2>Rejected sources</h2>
+  <p class="muted" style="margin-bottom:12px">Appearing in the registry as <span class="b bad">unverified</span> is deliberate, not an oversight. These are listed so you can see exactly what was considered and excluded — and so a later reader cannot mistake their absence for ignorance of them.</p>
+  <div class="note warn">
+    <span class="lab">Specifically excluded</span>
+    Commercial tax-consultancy reprints of Chinese circulars (used only as pointers to find the official text, never as the citation); blog posts quoting a precise FX spread; and any source asserting a "conversion tax" percentage without naming an instrument. <strong>Six specific values that are widely published are nonetheless left blank on this site</strong> because no official source fixes them — see <a href="flagged.html">Flagged for review</a>.
+  </div>
+
+  <div class="disclaimer">
+    <strong>Official text wins.</strong> If anything on this site conflicts with the instrument it cites, the instrument prevails. Chinese instruments are cited by their original titles and document numbers so you can locate them independently; where a Chinese title is given, search for it directly rather than relying on any translation here.
+  </div>
+</div></main>
+
+<footer><div class="wrap">
+  <span>China1 — RMB → USD, source-verified. Prepared 2026-11-07.</span>
+  <span><a href="index.html">Overview</a> · <a href="flagged.html">Flagged</a> · <a href="about.html">Method</a></span>
+</div></footer>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+<script>
+(function(){
+  var S = UI.D.sources.sources;
+  function count(st){ return S.filter(function(s){return s.status===st;}).length; }
+  document.getElementById('n-ret').textContent  = count('retrieved');
+  document.getElementById('n-srch').textContent = count('search');
+  document.getElementById('n-unv').textContent  = count('unverified');
+
+  var COLS = [
+    {h:'ID',w:'52px'},{h:'Instrument',w:'300px'},{h:'Publisher / reference',w:'230px'},
+    {h:'Status',w:'130px'},{h:'What it establishes',w:'330px'},{h:'Link',w:'70px'}
+  ];
+
+  function rowOf(s){
+    return { attrs:' id="'+UI.esc(s.id)+'"', cells:[
+      {html:'<span class="mono"><strong>'+UI.esc(s.id)+'</strong></span>'},
+      {html:'<strong>'+UI.esc(s.title)+'</strong>'+(s.title_en&&s.title_en!==s.title?'<div class="muted" style="font-size:12px">'+UI.esc(s.title_en)+'</div>':'')},
+      {html:UI.esc(s.publisher||'—')+(s.ref?'<div class="muted" style="font-size:12px">'+UI.esc(s.ref)+'</div>':'')},
+      {html:UI.statusBadge(s.status)},
+      {html:UI.esc(s.verifies||'')},
+      {html: s.url ? '<a href="'+UI.esc(s.url)+'" target="_blank" rel="noopener noreferrer">open ↗</a>' : '<span class="muted">none</span>'}
+    ]};
+  }
+
+  document.getElementById('sources-cn').innerHTML = UI.table(COLS,
+    S.filter(function(s){ return s.jurisdiction==='CN'; }).map(rowOf));
+  document.getElementById('sources-us').innerHTML = UI.table(COLS,
+    S.filter(function(s){ return s.jurisdiction==='US'; }).map(rowOf));
+})();
+</script>
+</body>
+</html>

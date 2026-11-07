@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Method — how this was researched and verified | China1</title>
+<meta name="description" content="The verification protocol: what counts as a source, how blank values were handled, what could not be checked, and the corrections made mid-research.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+  <span class="brand"><span class="mark">¥→$</span> China1</span>
+  <span class="spacer"></span>
+  <span class="head-meta"><span class="pill live">● live</span><span>Prepared 2026-11-07</span><span>Reproducible</span></span>
+</div></header>
+
+<nav class="site-nav"><div class="wrap">
+  <a href="index.html">Overview</a><a href="plan.html">Action plan</a><a href="channels.html">Channels</a>
+  <a href="costs.html">Costs &amp; penalties</a><a href="china-rules.html">China rules</a><a href="us-tax.html">US tax</a>
+  <a href="prohibited.html">Do not do</a><a href="flagged.html">Flagged for review</a><a href="sources.html">Sources</a><a href="about.html">Method</a>
+</div></nav>
+
+<main><div class="wrap prose">
+  <div class="page-head">
+    <div class="eyebrow">Method</div>
+    <h1>How this was researched, and where it stops</h1>
+    <p>The interesting part of a source-verified document is not the sources — it is the record of what could not be verified and how that was handled.</p>
+  </div>
+
+  <h2>What counted as a source</h2>
+  <p>Only primary instruments: statutes, regulator-issued measures and notices, official gazette publications, and regulator Q&amp;A on regulator domains. Specifically:</p>
+  <ul>
+    <li><strong>China:</strong> the State Council Gazette on <code>gov.cn</code>, SAFE and its regional sub-bureaus on <code>safe.gov.cn</code>, the People's Bank of China on <code>pbc.gov.cn</code>, and the State Taxation Administration on <code>chinatax.gov.cn</code>.</li>
+    <li><strong>United States:</strong> the U.S. Code, the eCFR, and <code>irs.gov</code> / <code>fincen.gov</code>.</li>
+    <li><strong>Never</strong> as the citation: law-firm marketing pages, tax-consultancy reprints, forums, or blogs. Those were used only as <em>pointers</em> to locate the official text, which was then read.</li>
+  </ul>
+
+  <h2>Three verification states, shown honestly</h2>
+  <div class="grid g3">
+    <div class="panel pad"><h3 style="margin-top:0"><span class="b ok">retrieved</span></h3><p class="small">The page was fetched during preparation and the quoted text was read directly.</p></div>
+    <div class="panel pad"><h3 style="margin-top:0"><span class="b warn">excerpt</span></h3><p class="small">An official-domain page confirmed in search results with the operative text quoted, but not fetched end-to-end. Weaker than retrieved, and labelled as such.</p></div>
+    <div class="panel pad"><h3 style="margin-top:0"><span class="b bad">unverified</span></h3><p class="small">No official page could be confirmed. Never used to fill a table value. Listed on the Flagged page.</p></div>
+  </div>
+
+  <h2>The blank-value rule</h2>
+  <p>A value is stated only if an official source fixes it. Everything else is left <strong>blank and flagged</strong>, with a note on what is missing and what would change if it were resolved. Seven items are blank or withheld on this site for exactly this reason — including two that would make the analysis read far more confidently if they were invented.</p>
+  <p>This rule is enforced mechanically, not by good intentions: the build script fails if any cost row marked unverified carries a value, or if any row marked verified cites no source. Try to publish a fabricated number and the build stops.</p>
+
+  <h2>Two corrections made during research</h2>
+  <div class="panel pad" style="margin-bottom:14px">
+    <h3 style="margin-top:0">R01 · The crypto rule everyone cites was repealed</h3>
+    <p class="small">My first pass captured <strong>银发〔2021〕237号</strong> as the operative Chinese crypto prohibition. It had been <strong>repealed on 2026-02-06</strong> by <strong>银发〔2026〕42号</strong>. The corrected analysis uses the current instrument and flags the staleness, because most search results still present the 2021 notice as law.</p>
+  </div>
+  <div class="panel pad" style="margin-bottom:14px">
+    <h3 style="margin-top:0">R02 · A legal database says the 2020 Guidelines are repealed. They aren't.</h3>
+    <p class="small">An aggregated database marks <strong>汇发〔2020〕14号</strong> as "wholly repealed". Cross-checking against 汇发〔2025〕13号's actual repeal list and SAFE's own pages showed the label is a scraping artefact. If I had trusted it, the entire Chinese half of this analysis would have collapsed into "no rule found".</p>
+  </div>
+  <p>Both are recorded on the <a href="flagged.html">Flagged</a> page with sources. Recording a corrected error is more useful than quietly deleting it, because the error is one you are likely to encounter too.</p>
+
+  <h2>What could not be checked, and why</h2>
+  <p>The build environment has <strong>no outbound network access</strong> to any of the cited government hosts — only package registries are reachable, so an automated checker returns <code>000</code> for every one of them. External pages were therefore retrieved one at a time through the research fetch tool and read.</p>
+  <p>Consequence, stated plainly: <strong>link validity was established by fetch, not by an automated link checker.</strong> The build script validates URL syntax, that every cited source ID resolves, and that every internal link points at a real file — it cannot make a live HTTP request. Saying otherwise would be precisely the fabrication this project exists to avoid.</p>
+
+  <h2>Scope limits you should hold me to</h2>
+  <ul>
+    <li><strong>21 channels</strong> are inventoried, including those that do not work. That is as complete as the rules reviewed allow — not a claim that no other lawful mechanism exists anywhere in Chinese law.</li>
+    <li><strong>No cost total</strong> is given, because the two largest inputs are commercially set and published nowhere officially.</li>
+    <li><strong>No treaty benefit and no foreign tax credit amount</strong> is asserted. Neither instrument was retrieved in this session, so neither is relied on.</li>
+    <li><strong>Not advice.</strong> This is a research record. It is not legal, tax or investment advice, and it creates no adviser relationship.</li>
+  </ul>
+
+  <h2>Reproducing this</h2>
+  <p>The whole project is plain files in the repository: <code>data/*.json</code> for every row and every source, <code>research/*.md</code> for the narrative and the line-by-line verification log, and <code>scripts/build_site.py</code> to regenerate <code>assets/data.js</code> and run the checks. Run <code>python3 scripts/build_site.py</code> to reproduce the validation output. Every factual claim has an ID you can trace: channels are <code>C01</code>–<code>C21</code>, cost components <code>K1</code>–<code>K18</code>, US forms <code>U1</code>–<code>U6</code>, prohibited routes <code>P01</code>–<code>P06</code>, flags <code>F01</code>–<code>F07</code> and <code>R01</code>–<code>R07</code>, sources <code>S01</code>–<code>S33</code>.</p>
+
+  <div class="disclaimer">
+    <strong>If anything here conflicts with the instrument it cites, the instrument prevails.</strong> Chinese instruments are given by original title and document number so they can be located independently. Verify before relying on any figure.
+  </div>
+</div></main>
+
+<footer><div class="wrap">
+  <span>China1 — RMB → USD, source-verified. Prepared 2026-11-07.</span>
+  <span><a href="index.html">Overview</a> · <a href="flagged.html">Flagged</a> · <a href="sources.html">Sources</a></span>
+</div></footer>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

@@ -134,7 +134,7 @@ Also a dead end, though not illegal: **transferring the RMB to a Chinese relativ
 ## 8. Honest limits of this analysis
 
 - I am not a lawyer, CPA or licensed adviser, and this is not advice. Every route here has to be executed by a bank against documents you actually hold, and banks have discretion to refuse a transaction they cannot verify (S03 Art.68).
-- **Six values could not be officially confirmed** and are blank rather than guessed: the FX spread, wire fees, offshore spread, the US tax rate, the Form 3520 threshold and penalty, and the FinCEN 105 threshold. Plus two statutes I could not retrieve end-to-end (the 50%-of-balance willful FBAR measure, and the US–China treaty text). All are on the [Flagged for Review](../docs/flagged.html) page.
+- **Seven items could not be confirmed to official source** and are blank or withheld rather than guessed: the FX spread, wire fees, offshore spread, the US tax rate, the Form 3520 threshold and penalty, the FinCEN 105 threshold, and any US–China treaty benefit. Plus two statutory provisions I could not retrieve end-to-end (the 50%-of-balance willful FBAR measure and §5321(a)(5)(C) more generally). All are on the [Flagged for Review](../docs/flagged.html) page.
 - **Two of my own intermediate findings were wrong and were corrected during verification**: the 2021 crypto notice (repealed in Feb 2026) and a legal database's claim that the 2020 Current Account Guidelines are repealed (they are not). Both corrections are logged as R01 and R02. If a claim in this document ever conflicts with the cited official text, the official text wins.
 
 ---

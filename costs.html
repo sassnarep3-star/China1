@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Costs &amp; penalties — what converting actually costs | China1</title>
+<meta name="description" content="The conversion penalty decomposed into 18 components: which are officially fixed, which are commercially set and left blank, and which dwarf everything else.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+  <span class="brand"><span class="mark">¥→$</span> China1</span>
+  <span class="spacer"></span>
+  <span class="head-meta"><span class="pill live">● live</span><span>Prepared 2026-11-07</span><span>No invented percentages</span></span>
+</div></header>
+
+<nav class="site-nav"><div class="wrap">
+  <a href="index.html">Overview</a><a href="plan.html">Action plan</a><a href="channels.html">Channels</a>
+  <a href="costs.html">Costs &amp; penalties</a><a href="china-rules.html">China rules</a><a href="us-tax.html">US tax</a>
+  <a href="prohibited.html">Do not do</a><a href="flagged.html">Flagged for review</a><a href="sources.html">Sources</a><a href="about.html">Method</a>
+</div></nav>
+
+<main><div class="wrap">
+  <div class="page-head">
+    <div class="eyebrow">Cost decomposition</div>
+    <h1>Breaking down the "conversion penalty"</h1>
+    <p>The premise was that converting triggers a large tax. It doesn't. What exists is six different costs wearing one name — and the biggest of them has nothing to do with converting at all.</p>
+  </div>
+
+  <div class="grid g4">
+    <div class="panel kpi ok"><div class="k">China, on converting</div><div class="v">0%</div><div class="d">No provision found. <a href="#K1">K1</a></div></div>
+    <div class="panel kpi warn"><div class="k">China, on a property gain</div><div class="v">20%</div><div class="d">Flat rate, on gain only. <a href="#K2">K2</a></div></div>
+    <div class="panel kpi bad"><div class="k">US, for not filing FBAR</div><div class="v">$16,536</div><div class="d">Per violation, per year. <a href="#K9">K9</a></div></div>
+    <div class="panel kpi bad"><div class="k">SAFE, for a prohibited route</div><div class="v">30–100%</div><div class="d">Of the whole amount. <a href="#K13">K13</a></div></div>
+  </div>
+
+  <div class="note warn">
+    <span class="lab">Why there is no total</span>
+    Two of the largest real-world costs — the bank's FX bid-ask spread and correspondent-bank fees — are set commercially, published by no official source, and vary by bank, ticket size, channel and customer tier. Quoting a percentage for them would be fabrication. So those rows are <strong>deliberately blank</strong> and marked unverified. An article that hands you a single confident "conversion penalty %" is guessing. This one refuses to.
+  </div>
+
+  <h2>All 18 components</h2>
+  <div id="costs-table"></div>
+
+  <h2>Which costs apply to which route</h2>
+  <div id="scenario-table"></div>
+
+  <h2>Reading the asymmetry</h2>
+  <div class="grid g2">
+    <div class="panel pad">
+      <h3 style="margin-top:0">The legitimate route</h3>
+      <p class="small">Chinese tax on conversion: zero. Chinese IIT on the underlying gain: real but proportionate (20% of the <em>gain</em>, not the proceeds). Spread and fees: unknown but small in relative terms. Cost scales roughly linearly with the amount.</p>
+    </div>
+    <div class="panel pad">
+      <h3 style="margin-top:0">The illegitimate route</h3>
+      <p class="small">SAFE fines bite on the <strong>whole amount</strong>, not the gain: up to 30%, and 30–100% if serious, plus confiscation and possible criminal referral. Cost can equal or exceed the entire balance.</p>
+    </div>
+  </div>
+
+  <div class="note ok">
+    <span class="lab">The comparison that matters</span>
+    On a $100,000 balance, a 1% spread costs about $1,000. The same balance unreported for three years is three FBAR violations — up to <strong>$49,608</strong> if non-willful, and far more if willful. <strong>Reporting compliance is worth roughly fifty times more than shopping for a better FX rate.</strong> Do that first.
+  </div>
+
+  <div class="note">
+    <span class="lab">On the $200 figure</span>
+    IRC §988(e)(2) sets a USD 200 de minimis for foreign-currency gain on a <em>personal transaction</em>, and §988(e)(1) removes personal transactions from §988 altogether. The practical effect is that converting your own savings is not meant to create US income — but a personal FX <em>loss</em> is likewise not deductible. The interaction of (e)(1) and (e)(2) is genuinely technical; get a CPA to confirm the characterisation for your facts rather than relying on this summary.
+  </div>
+
+  <div class="disclaimer">
+    <strong>Not advice.</strong> Penalty amounts quoted are statutory or inflation-adjusted <em>maximums</em>; actual assertions depend on facts and circumstances and on the IRS's or SAFE's discretion. Reasonable-cause defences exist for several of them. Nothing here is a prediction of what you would owe.
+  </div>
+</div></main>
+
+<footer><div class="wrap">
+  <span>China1 — RMB → USD, source-verified. Prepared 2026-11-07.</span>
+  <span><a href="index.html">Overview</a> · <a href="sources.html">Sources</a> · <a href="about.html">Method</a></span>
+</div></footer>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+<script>
+(function(){
+  var C = window.UI.D.costs;
+  var rows = C.components.map(function(k){
+    var val = String(k.value||'').trim();
+    var cell = val
+      ? UI.esc(val)
+      : '<em class="muted">blank — unverified</em>';
+    var vbadge = k.verified ? '<span class="b ok">Officially fixed</span>' : '<span class="b bad">Unverified</span>';
+    return { attrs:' id="'+UI.esc(k.id)+'"', cells:[
+      {html:'<strong>'+UI.esc(k.id)+'</strong>'},
+      {html:'<strong>'+UI.esc(k.component)+'</strong>'},
+      {html:cell, cls: val ? 'num' : 'blank'},
+      {html:UI.esc(k.basis||'')},
+      {html:UI.esc(k.note||'')},
+      {html:vbadge},
+      {html:UI.srcList(k.sources)}
+    ]};
+  });
+  document.getElementById('costs-table').innerHTML = UI.table([
+    {h:'#',w:'50px'},{h:'Cost component',w:'250px'},{h:'Value',w:'200px'},
+    {h:'Basis',w:'300px'},{h:'Note',w:'260px'},{h:'Status',w:'110px'},{h:'Sources',w:'90px'}
+  ], rows);
+
+  var sc = C.scenarios.rows.map(function(r){
+    return { cells:[
+      {html:'<strong>'+UI.esc(r.route)+'</strong>'},
+      {html:'<span class="mono">'+UI.esc(r.applies)+'</span>'},
+      {html:'<span class="mono">'+UI.esc(r.cn_tax_on_conversion)+'</span>'}
+    ]};
+  });
+  document.getElementById('scenario-table').innerHTML = UI.table([
+    {h:'Route',w:'280px'},{h:'Cost components that apply',w:'360px'},{h:'Chinese tax on the conversion',w:'180px'}
+  ], sc);
+})();
+</script>
+</body>
+</html>

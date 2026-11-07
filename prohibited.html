@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Do not do — six routes that will cost you up to 100% | China1</title>
+<meta name="description" content="Underground banks, quota splitting, false declarations and crypto bridges: why each is expressly prohibited, and what the penalty actually is.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+  <span class="brand"><span class="mark">¥→$</span> China1</span>
+  <span class="spacer"></span>
+  <span class="head-meta"><span class="pill live">● live</span><span>Prepared 2026-11-07</span><span>Penalty attaches to the amount</span></span>
+</div></header>
+
+<nav class="site-nav"><div class="wrap">
+  <a href="index.html">Overview</a><a href="plan.html">Action plan</a><a href="channels.html">Channels</a>
+  <a href="costs.html">Costs &amp; penalties</a><a href="china-rules.html">China rules</a><a href="us-tax.html">US tax</a>
+  <a href="prohibited.html">Do not do</a><a href="flagged.html">Flagged for review</a><a href="sources.html">Sources</a><a href="about.html">Method</a>
+</div></nav>
+
+<main><div class="wrap">
+  <div class="page-head">
+    <div class="eyebrow">Prohibited and high-risk</div>
+    <h1>Six routes that appear in every search result</h1>
+    <p>These are not options. They are here because they are widely recommended, and because the penalty attaches to the <strong>whole amount</strong> rather than to any gain — which makes them the most expensive things on this site by a very wide margin.</p>
+  </div>
+
+  <div class="note bad">
+    <span class="lab">The arithmetic that settles it</span>
+    A lawful route costs you a spread and some professional fees, both of which scale with the amount. A prohibited route exposes you to <strong>30% of the amount, or 30–100% if serious, plus confiscation</strong>. The expected value is negative at any plausible detection probability. There is no balance size at which "clever" beats "documented".
+  </div>
+
+  <div id="prohibited-list"></div>
+
+  <h2>Why the crypto route deserves its own warning</h2>
+  <p>The advice you will find online almost always cites <strong>银发〔2021〕237号</strong> — the "924 notice". <strong>That document was repealed on 2026-02-06</strong> by <strong>银发〔2026〕42号</strong>.</p>
+  <p>The replacement is not more permissive. It keeps virtual-currency business activity an illegal financial activity, bars financial institutions and non-bank payment institutions from providing account opening, fund transfer or clearing and settlement services for it, provides that individuals' virtual-currency investment acts offending public order are <strong>void with losses borne by the investor</strong>, and adds new prohibitions on real-world-asset tokenisation and RMB-referenced stablecoins.</p>
+  <div class="note warn">
+    <span class="lab">Note the two layers of failure</span>
+    The obvious failure is that the counterparty is engaged in an illegal financial activity. The second, quieter one is that the payment leg — RMB out, foreign currency in — is <strong>变相买卖外汇</strong> under FX Regulations Art.45 in its own right, regardless of what instrument sits in the middle. Putting a token in the path does not change the character of the currency exchange. See <a href="sources.html#S14">S14</a> and <a href="sources.html#S01">S01</a>.
+  </div>
+
+  <h2>And the dead end that isn't even illegal</h2>
+  <p><strong>"Just send it to a relative in China."</strong> Art.67 of the 2020 Guidelines treats a transfer between a 境内个人 account and a 境外个人 account as a <strong>cross-border transaction</strong>, so it must satisfy the same outward current-account test as any other remittance. It is not a shortcut; it is the same queue with an extra form.</p>
+  <p>And if the point of the exercise is to consume the relative's USD 50,000 allowance, it stops being a dead end and becomes <strong>分拆</strong> under Art.62 — risk letter first, then watch-list designation for the current year plus two more, with full documentary review of every subsequent transaction. See <a href="sources.html#S03">S03</a>.</p>
+
+  <div class="note">
+    <span class="lab">What to do instead</span>
+    Go back to <a href="channels.html">Channels</a> and match the money to its source. If no row matches, the honest conclusion is that no lawful channel reaches it — and the correct response is to leave it, spend it in China (<a href="channels.html">C09</a>/<a href="channels.html">C20</a>), or get specific advice. Not to buy a workaround.
+  </div>
+
+  <div class="disclaimer">
+    <strong>Not advice.</strong> Descriptions of prohibited conduct are provided so they can be recognised and avoided, and are not instructions. Whether particular conduct constitutes 逃汇, 非法套汇 or 变相买卖外汇 depends on facts and on Chinese enforcement practice. Consult a Chinese-qualified lawyer before doing anything described on this page.
+  </div>
+</div></main>
+
+<footer><div class="wrap">
+  <span>China1 — RMB → USD, source-verified. Prepared 2026-11-07.</span>
+  <span><a href="index.html">Overview</a> · <a href="sources.html">Sources</a> · <a href="about.html">Method</a></span>
+</div></footer>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+<script>
+(function(){
+  var P = window.UI.D.prohibited.routes;
+  document.getElementById('prohibited-list').innerHTML = P.map(function(r){
+    return '<div class="panel pad" style="margin-bottom:16px">' +
+      '<h3 style="margin-top:0;display:flex;align-items:center;gap:10px;flex-wrap:wrap">' +
+        '<span class="mono b bad">'+UI.esc(r.id)+'</span> '+UI.esc(r.name)+
+        '<span class="b bad" style="margin-left:auto">'+UI.esc(r.verdict)+'</span></h3>' +
+      '<p class="small"><span class="muted">How it is pitched:</span> '+UI.esc(r.how_it_is_pitched)+'</p>' +
+      '<p class="small"><strong>Why it is prohibited.</strong> '+UI.esc(r.why_illegal)+'</p>' +
+      '<div class="grid g2" style="margin-top:12px">' +
+        '<div><div class="muted small" style="font-weight:700;letter-spacing:.05em;text-transform:uppercase;font-size:10.5px">Chinese penalty</div><div class="small">'+UI.esc(r.cn_penalty)+'</div></div>' +
+        '<div><div class="muted small" style="font-weight:700;letter-spacing:.05em;text-transform:uppercase;font-size:10.5px">US-side risk</div><div class="small">'+UI.esc(r.us_risk)+'</div></div>' +
+      '</div>' +
+      '<div style="margin-top:12px">'+UI.srcList(r.sources)+'</div>' +
+    '</div>';
+  }).join('');
+})();
+</script>
+</body>
+</html>
