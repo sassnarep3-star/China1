@@ -94,6 +94,37 @@ Session ID: `arena-7014c891` · Branch: `arena/7014c891-china1` · Date: 2026-11
 | 2026-11-07 | Shared-output changes made (both additive, both regenerated from the owning session's own template so their build checks still pass): (1) `assets/build.py` — one extra sentence and link in the root landing page pointing to `/dossier/`; (2) `scripts/build.py` — the same link on `docs/index.html`. Both sessions' own generators were run so the committed HTML matches their templates and `assets/check.py`'s "generated pages out of date" assertion still passes. No other line of either file was altered. |
 | 2026-11-07 | Request logged for the next integration session: the repository now carries **three parallel dashboards** (root `/`, `/docs/`, `/dossier/`). They do not conflict technically, but a single landing page that routes to all three, or a decision to retire two of them, needs an owner. This session did not make that call because retiring another session's published work is outside its scope. |
 
+## Pull request and deploy record
+
+| Field | Value |
+|---|---|
+| Branch | `arena/7014c891-china1` |
+| PR | [#6](https://github.com/sassnarep3-star/China1/pull/6) — "Verified CNY→USD dossier: 35 routes, measured 0.42% spread, capital-account taxonomy, 20 flagged items" |
+| Pre-merge check | `verify` → **pass** ([run 42411562917](https://github.com/sassnarep3-star/China1/actions/runs/42411562917)) |
+| Merge result | Merged at 2026-11-07T20:33:29Z — **success**, merge commit `5e028374c1a7f1927a0036724ba8c985c0ccdf2c` |
+| Pages deploy | `pages build and deployment` → **success** ([run 42411631524](https://github.com/sassnarep3-star/China1/actions/runs/42411631524)); Pages API reports `status: built` at that exact merge commit |
+| Post-merge check | `Verify static site` → **success** ([run 42411632305](https://github.com/sassnarep3-star/China1/actions/runs/42411632305)) |
+| Live URLs verified | `/dossier/index.html` and `/dossier/flagged.html` fetched over public HTTPS after deployment; both served the generated HTML with working source links |
+
+### Pre-merge verification actually executed
+
+1. `python3 scripts/build_site.py` — 8 pages, 31 sources, 35 routes, 24 cost lines, 22 tax positions, 20 flagged items. Source-id validation passed. Internal link **and anchor** check clean.
+2. Independent HTML well-formedness parse of all 8 generated pages — 0 unclosed tags, 0 errors.
+3. Both other sessions' checkers re-run after this session's additive edits: `assets/check.py` → `OK: 5 pages, 46 cited rows, local links and deterministic build`; `scripts/verify.py` → `PASS: 6 pages, 60 sourced table rows, local links, official hosts, blank unknown costs`.
+4. New CI step (`Verify dossier build is reproducible and internally linked`) rebuilds the dossier and asserts `git diff --exit-code -- dossier data`, so committed HTML cannot drift from the data modules.
+
+### Three merge conflicts encountered and how each was resolved
+
+`origin/main` advanced three times during this session (PRs #1, #3, #4 published by `e6269551-china1` and `arena-3e9a7b87`).
+
+| Conflict | Resolution |
+|---|---|
+| `docs/**` (would have been add/add on `index.html`, `costs.html`, `sources.html`) | **Avoided, not resolved.** The generated site was moved to a new self-contained `/dossier/` directory *before* merging, so no file owned by another session was ever contested. |
+| `COORDINATION.md` — add/add, then content, twice | Resolved by taking the other session's file verbatim and appending this session's board below it. Their new deployment-log lines from PR #3/#5 were preserved in full; nothing was removed. |
+| `README.md` — content | Resolved by keeping the other sessions' text verbatim and appending a clearly-labelled `/dossier/` section below it. |
+
+No other session's work was discarded, renamed or reverted at any point, and the archive of prior editions remains intact at `/` and `/docs/`.
+
 ## Repo irregularities found (all published on `/dossier/flagged.html`)
 
 | Ref | Finding |
