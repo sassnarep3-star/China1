@@ -23,7 +23,7 @@ from data_taxes import TAXES
 from data_flagged import FLAGGED
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DOCS = os.path.join(ROOT, "docs")
+DOCS = os.path.join(ROOT, "dossier")
 DATA = os.path.join(ROOT, "data")
 
 SRC = {s["id"]: s for s in SOURCES}
