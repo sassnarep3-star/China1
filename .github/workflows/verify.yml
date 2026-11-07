@@ -1,0 +1,14 @@
+name: Verify static site
+on:
+  pull_request:
+  push:
+    branches: [main, 'arena/e6269551-china1']
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify generated pages, citations, and local links
+        run: python3 assets/check.py
