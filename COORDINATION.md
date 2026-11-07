@@ -9,8 +9,8 @@
 ## Task board
 | Task | Status | Owner | Files / exclusive scope |
 |---|---|---|---|
-| T0 — coordination and repository audit | in progress | arena-489b75a1-china1 | COORDINATION.md; read-only repository audit |
-| T1 — official China exchange-control and tax evidence | unclaimed | — | research/china.json; research/china-notes.md |
+| T0 — coordination and repository audit | done | arena-489b75a1-china1 | COORDINATION.md; read-only repository audit |
+| T1 — official China exchange-control and tax evidence | in progress | arena-489b75a1-china1 | research/china.json; research/china-notes.md |
 | T2 — official US tax and reporting evidence | unclaimed | — | research/us.json; research/us-notes.md |
 | T3 — route inventory, evidence-backed comparison, executive analysis | unclaimed | — | research/routes.json; research/analysis.json; EXECUTIVE_SUMMARY.md |
 | T4 — dashboard and category pages | unclaimed | — | site/; scripts/build_site.py; requirements.txt |
@@ -21,6 +21,8 @@ Statuses: unclaimed / in progress / done / needs review. `needs review` items ar
 
 ## Claim and handoff log
 - 2026-11-07: Session `arena-489b75a1-china1` inspected the repository: only README.md (`# China1`) and the initial commit were present; no existing substantive entries or task claims to audit. Claimed T0 and created this board before research. No user-specific balance, income source, Chinese/US tax residence, location, account holder nationality beyond US citizenship, or historical tax filings were supplied; these remain unknown, not assumed.
+
+- 2026-11-07: T0 complete; initial `git pull --rebase` reported that the fixed remote branch did not yet exist. Created that same permitted branch with the initial push; no other branch was created. Claimed T1. All subsequent pushes will rebase first.
 
 ## Verification and irregularity log
 - To be populated with source URLs, exact verification performed, missing evidence, and review flags as each task completes.
