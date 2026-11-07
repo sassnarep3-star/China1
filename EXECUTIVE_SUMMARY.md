@@ -125,4 +125,4 @@ Twenty items are published on the *Flagged for review* page rather than filled i
 
 ---
 
-*Published site: <https://sassnarep3-star.github.io/China1/> · Method: [methodology](docs/methodology.html) · Full route table: [channels](docs/channels.html) · Unverified items: [flagged](docs/flagged.html)*
+*Published site: <https://sassnarep3-star.github.io/China1/> · Method: [methodology](dossier/methodology.html) · Full route table: [channels](dossier/channels.html) · Unverified items: [flagged](dossier/flagged.html)*
