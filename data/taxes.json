@@ -1,0 +1,277 @@
+[
+  {
+    "id": "T01",
+    "side": "China",
+    "topic": "Is there a Chinese tax on converting CNY into USD?",
+    "rate": "No conversion tax",
+    "rule": "No provision of the Individual Income Tax Law imposes a charge on an exchange of currency. The charge, where it exists, attaches to income (income categories 1-9), not to the conversion act. The FX regulations impose filing and approval duties, not a levy.",
+    "consequence": "The conversion itself costs the bank spread, not tax.",
+    "vstatus": "VERIFIED",
+    "basis": [
+      "CN-14",
+      "CN-01"
+    ]
+  },
+  {
+    "id": "T02",
+    "side": "China",
+    "topic": "Is there a Chinese tax on remitting your own money abroad?",
+    "rate": "No",
+    "rule": "Remittance is governed by the FX Regulations and SAFE rules (permits, quota, authenticity review), which carry administrative penalties for evasion — not a tax. Certain outward payments need a tax filing (备案) and the emigration route needs a tax clearance certificate, but neither creates a charge on the principal.",
+    "consequence": "The 'considerable tax' people experience on the way out is usually either the 20% tax on the underlying gain or a professional/agent fee, not a remittance tax.",
+    "vstatus": "VERIFIED",
+    "basis": [
+      "CN-14",
+      "CN-13",
+      "CN-06",
+      "CN-08"
+    ]
+  },
+  {
+    "id": "T03",
+    "side": "China",
+    "topic": "Chinese exit tax on leaving or on ceasing to be a tax resident",
+    "rate": "Not identified",
+    "rule": "No exit-tax mechanism appears in the IIT Law's charging provisions (Arts. 1-3). The closest procedural requirement is the tax clearance/完税凭证 demanded inside the emigration-transfer application. Recorded as a negative finding from the statute, not as a claim that no administrative practice exists anywhere.",
+    "consequence": "Do not plan for an exit tax; do plan for a tax clearance.",
+    "vstatus": "PARTIAL",
+    "basis": [
+      "CN-14",
+      "CN-06"
+    ]
+  },
+  {
+    "id": "T04",
+    "side": "China",
+    "topic": "Individual income tax residence",
+    "rate": "183 days / domicile",
+    "rule": "A person with a domicile in China, or who resides in China for a cumulative 183 days in a tax year, is a resident individual and is taxed on income from both inside and outside China. A non-resident is taxed only on China-source income.",
+    "consequence": "If the account holder is still a Chinese tax resident, their WORLDWIDE income is in scope in China — a separate and larger issue than moving a balance.",
+    "vstatus": "VERIFIED",
+    "basis": [
+      "CN-14"
+    ]
+  },
+  {
+    "id": "T05",
+    "side": "China",
+    "topic": "Interest, dividends and bonuses",
+    "rate": "20% flat",
+    "rule": "第三条(三): 利息、股息、红利所得 applies a proportional rate of 20%. Withholding is done by the payer (e.g. the bank).",
+    "consequence": "A CNY deposit is already taxed at source. That tax is not avoidable by moving the money.",
+    "vstatus": "VERIFIED",
+    "basis": [
+      "CN-14"
+    ]
+  },
+  {
+    "id": "T06",
+    "side": "China",
+    "topic": "Property transfer gains",
+    "rate": "20% flat on the gain",
+    "rule": "第三条(三): 财产转让所得 at 20%; 第六条(五): the taxable amount is the proceeds less the original cost and reasonable expenses.",
+    "consequence": "If the balance came from selling a China property, the 20% was always owed on the GAIN — it is not created by the conversion and cannot be avoided by choosing another remittance channel.",
+    "vstatus": "VERIFIED",
+    "basis": [
+      "CN-14"
+    ]
+  },
+  {
+    "id": "T07",
+    "side": "China",
+    "topic": "Wages and salaries",
+    "rate": "3%–45% progressive",
+    "rule": "综合所得 at 3% to 45% progressive under 第三条(一).",
+    "consequence": "Accumulated salary has already been taxed. Remitting it later is the clearest case of 'not a second taxable event'.",
+    "vstatus": "VERIFIED",
+    "basis": [
+      "CN-14"
+    ]
+  },
+  {
+    "id": "T08",
+    "side": "China",
+    "topic": "Tax filing (备案) before an outward payment of USD 50,000 or more",
+    "rate": "Filing, not a tax",
+    "rule": "国家税务总局/国家外汇管理局公告2013年第40号 第一条: 境内机构和个人向境外单笔支付等值5万美元以上…均应向所在地主管税务机关进行税务备案. 第三条(十三) exempts an individual's own study, travel and family-visit payments. 第四条 sends 境外个人 to the general individual FX rules instead.",
+    "consequence": "A procedural gate that puts a tax authority in the loop and can trigger a collection action if the item was never taxed.",
+    "vstatus": "VERIFIED",
+    "basis": [
+      "CN-13"
+    ]
+  },
+  {
+    "id": "T09",
+    "side": "China",
+    "topic": "Tax clearance certificate as a precondition of the emigration/inheritance transfer",
+    "rate": "Precondition, not a levy",
+    "rule": "个人财产对外转移售付汇管理暂行办法 第八条(六)/第九条(五): the applicant must submit 税收证明或完税凭证 issued by the competent tax authority where the assets or the income source are located.",
+    "consequence": "The bureau signs off that the assets are tax-clean before anything moves. This is where an untaxed gain surfaces.",
+    "vstatus": "VERIFIED",
+    "basis": [
+      "CN-06"
+    ]
+  },
+  {
+    "id": "T10",
+    "side": "China",
+    "topic": "Capital-account convertibility for individuals",
+    "rate": "Closed unless enumerated",
+    "rule": "个人外汇管理办法 第三条: current-account individual FX business is administered on the convertibility principle; capital-account business is administered 'according to the process of convertibility' — i.e. gradually, by approval. Art. 20: an individual's outward donation or asset transfer requiring purchase/remittance must comply with the relevant rules and be approved by SAFE.",
+    "consequence": "The binding constraint is legal, not fiscal. This is the sentence that explains the whole problem.",
+    "vstatus": "VERIFIED",
+    "basis": [
+      "CN-01"
+    ]
+  },
+  {
+    "id": "T11",
+    "side": "United States",
+    "topic": "Is receiving your own money into a US account taxable?",
+    "rate": "No",
+    "rule": "A transfer between accounts you already own is not an accession to wealth and is not income under IRC §61; nor is it a gift (no donor), nor an inheritance (you are alive). Nothing in the US system taxes the arrival of your own funds.",
+    "consequence": "The premise that bringing the money home triggers a large US tax is, as a matter of income tax, incorrect.",
+    "vstatus": "VERIFIED",
+    "basis": [
+      "US-04",
+      "US-13"
+    ]
+  },
+  {
+    "id": "T12",
+    "side": "United States",
+    "topic": "FX gain when CNY is converted to USD",
+    "rate": "Not recognised unless gain > USD 200",
+    "rule": "§988(e)(2): where an individual disposes of nonfunctional currency in a personal transaction, no gain is recognised by reason of exchange-rate changes between acquisition and disposition, unless the gain would otherwise exceed USD 200. Losses on personal transactions are not deductible.",
+    "consequence": "For a personal conversion, US tax on the currency move is normally zero. Character if it ever applies is ordinary, not capital.",
+    "vstatus": "VERIFIED",
+    "basis": [
+      "US-04",
+      "US-13"
+    ]
+  },
+  {
+    "id": "T13",
+    "side": "United States",
+    "topic": "Interest earned on the Chinese deposit",
+    "rate": "Ordinary rates",
+    "rule": "Foreign-source interest is taxable to a US citizen; a foreign tax credit is available for the 20% Chinese withholding on the same interest, subject to the limitation rules.",
+    "consequence": "The recurring, boring, real US tax. Small relative to the balance, and easily handled.",
+    "vstatus": "VERIFIED",
+    "basis": [
+      "US-13",
+      "US-10"
+    ]
+  },
+  {
+    "id": "T14",
+    "side": "United States",
+    "topic": "FBAR — FinCEN Form 114",
+    "rate": "Reporting at > USD 10,000 aggregate",
+    "rule": "A US person with a financial interest in, or signature authority over, foreign financial accounts whose aggregate value exceeds USD 10,000 at any time in the calendar year must file FinCEN Form 114 with FinCEN (not the IRS). Due 15 April, automatic extension to 15 October.",
+    "consequence": "Applies to the Chinese account every single year it is open, whatever your plans.",
+    "vstatus": "VERIFIED",
+    "basis": [
+      "US-01",
+      "US-02"
+    ]
+  },
+  {
+    "id": "T15",
+    "side": "United States",
+    "topic": "Form 8938 — FATCA statement of specified foreign financial assets",
+    "rate": "> USD 50,000 year-end or > USD 75,000 any time (single, living in the US); higher if living abroad or filing jointly",
+    "rule": "Attached to the annual return; thresholds differ by filing status and residence.",
+    "consequence": "An independent second filing obligation over the same account. Satisfying FBAR does not satisfy this.",
+    "vstatus": "VERIFIED",
+    "basis": [
+      "US-01",
+      "US-06"
+    ]
+  },
+  {
+    "id": "T16",
+    "side": "United States",
+    "topic": "Schedule B, Part III",
+    "rate": "Yes/No question on the return",
+    "rule": "Part III asks whether you had a financial interest in or signature authority over a financial account in a foreign country, and the country.",
+    "consequence": "A third place the account must be disclosed, on the face of the return.",
+    "vstatus": "VERIFIED",
+    "basis": [
+      "US-07"
+    ]
+  },
+  {
+    "id": "T17",
+    "side": "United States",
+    "topic": "Form 3520 — gifts and inheritances from foreign persons",
+    "rate": "Reporting above the threshold (USD 100,000 from a nonresident individual or foreign estate, aggregated with related donors)",
+    "rule": "Part IV of Form 3520. The gift or bequest is not taxable income; the filing is an information return.",
+    "consequence": "If the route used is a relative sending money rather than your own account, this is the form. Penalty 5% per month, capped at 25%.",
+    "vstatus": "VERIFIED",
+    "basis": [
+      "US-05"
+    ]
+  },
+  {
+    "id": "T18",
+    "side": "United States",
+    "topic": "PFIC — if the money is held in a Chinese fund or investment-linked insurance",
+    "rate": "Punitive (excess-distribution or mark-to-market/QEF regime)",
+    "rule": "A US person who owns shares of a passive foreign investment company is subject to the PFIC rules, which add an interest charge on deferred distributions and gain.",
+    "consequence": "The FORM the CNY is held in matters enormously. A deposit is fine; a Chinese fund wrapper is a US tax problem far larger than the 0.42% spread.",
+    "vstatus": "VERIFIED",
+    "basis": [
+      "US-09"
+    ]
+  },
+  {
+    "id": "T19",
+    "side": "United States",
+    "topic": "Exit tax (IRC §877A)",
+    "rate": "Not applicable to a continuing citizen",
+    "rule": "The mark-to-market exit tax applies to covered expatriates — citizens who relinquish citizenship, and long-term residents who end US residency.",
+    "consequence": "Renouncing citizenship to dodge the problem would itself create a much larger tax event. Not a solution.",
+    "vstatus": "VERIFIED",
+    "basis": [
+      "US-08"
+    ]
+  },
+  {
+    "id": "T20",
+    "side": "United States",
+    "topic": "Cash arriving in the US",
+    "rate": "Report at > USD 10,000",
+    "rule": "31 U.S.C. § 5316: file FinCEN Form 105 for more than USD 10,000 in currency or monetary instruments transported into or out of the US. § 5317 allows seizure and forfeiture of the unreported amount, and splitting among travellers is structuring.",
+    "consequence": "There is no cap on how much cash you may bring; there is an absolute duty to report. This is a reporting problem, not a tax problem.",
+    "vstatus": "VERIFIED",
+    "basis": [
+      "US-11",
+      "US-12"
+    ]
+  },
+  {
+    "id": "T21",
+    "side": "United States",
+    "topic": "Double taxation relief and the treaty",
+    "rate": "Foreign tax credit / treaty relief",
+    "rule": "The 1984 US-China income tax convention governs the allocation of taxing rights and the relief of double taxation; §901/§903 and the treaty allow a credit for Chinese tax on the same income.",
+    "consequence": "Where both countries tax the same income (typically the 20% on interest or a property gain), the US credit prevents true double taxation.",
+    "vstatus": "VERIFIED",
+    "basis": [
+      "US-10"
+    ]
+  },
+  {
+    "id": "T22",
+    "side": "United States",
+    "topic": "Information exchange between the two countries",
+    "rate": "One-way in practice to date",
+    "rule": "China is listed by Treasury as having reached a Model 1 FATCA agreement IN SUBSTANCE rather than a signed IGA; China also participates in the OECD common reporting standard. Either way, a Chinese account held by an identified US person is not opaque.",
+    "consequence": "Do not plan on non-discovery. Plan on correct filing.",
+    "vstatus": "PARTIAL",
+    "basis": [
+      "US-01"
+    ]
+  }
+]
