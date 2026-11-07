@@ -928,8 +928,8 @@ window.CHINA1 = {
    {
     "id": "K1",
     "component": "Chinese tax on the currency conversion itself",
-    "value": "0%",
-    "basis": "No provision imposing a tax on FX conversion was found in 汇发〔2020〕14号, PBoC Order [2006] No.3, the IIT Law or the FX Regulations. SAFE's own procedure treats conversion as a permitted, documented service, not a taxable event.",
+    "value": "0% (no tax on conversion found)",
+    "basis": "No provision imposing a tax on FX conversion was found in 汇发〔2020〕14号, PBoC Order [2006] No.3, the IIT Law or the FX Regulations. This is a NEGATIVE FINDING across those four instruments, not a positive citation of a 0% rate — no instrument states an exemption because no instrument imposes the charge in the first place.",
     "verified": true,
     "sources": [
      "S03",

@@ -8,10 +8,15 @@
     {
       "id": "K1",
       "component": "Chinese tax on the currency conversion itself",
-      "value": "0%",
-      "basis": "No provision imposing a tax on FX conversion was found in 汇发〔2020〕14号, PBoC Order [2006] No.3, the IIT Law or the FX Regulations. SAFE's own procedure treats conversion as a permitted, documented service, not a taxable event.",
+      "value": "0% (no tax on conversion found)",
+      "basis": "No provision imposing a tax on FX conversion was found in 汇发〔2020〕14号, PBoC Order [2006] No.3, the IIT Law or the FX Regulations. This is a NEGATIVE FINDING across those four instruments, not a positive citation of a 0% rate — no instrument states an exemption because no instrument imposes the charge in the first place.",
       "verified": true,
-      "sources": ["S03", "S02", "S10", "S01"],
+      "sources": [
+        "S03",
+        "S02",
+        "S10",
+        "S01"
+      ],
       "note": "This is the single most important correction to the user's premise: you are not being taxed to convert. You are being gated, taxed on the underlying income, and (potentially) penalised for non-reporting."
     },
     {
@@ -20,7 +25,9 @@
       "value": "20% flat on property transfer, interest, dividends, rent and incidental income; 3%-45% progressive on comprehensive income; 5%-35% on business income",
       "basis": "IIT Law Art.3 (2018 amendment). The taxable base for a property transfer is proceeds less original cost and reasonable expenses (Art.6(5)).",
       "verified": true,
-      "sources": ["S10"],
+      "sources": [
+        "S10"
+      ],
       "note": "This is a real, large cost — but it is tax on the gain, not on the conversion. It is also unavoidable: a tax clearance certificate is a mandatory attachment for 移民转移 (S04 Art.8(6)) and for property-sale remittance (S05 Art.5)."
     },
     {
@@ -29,7 +36,9 @@
       "value": "Administrative step, not a tax. Threshold: USD 50,000 per single payment.",
       "basis": "SAT/SAFE Announcement 2013 No.40 Art.1. Applies to a foreign individual's work remuneration, dividends, interest, royalties, non-capital-transfer gifts, indemnities and incidental income, and to real-property transfer income and equity-transfer gains.",
       "verified": true,
-      "sources": ["S12"],
+      "sources": [
+        "S12"
+      ],
       "note": "A gate, not a charge — but it is the step that most often derails a remittance, because it is filed with the tax bureau, not the bank."
     },
     {
@@ -74,7 +83,9 @@
       "value": "USD 200 de minimis threshold for personal transactions",
       "basis": "§988(e)(1): the section does not apply to an individual's personal transaction. §988(e)(2): no gain is recognised on a personal transaction in nonfunctional currency unless the gain would exceed USD 200.",
       "verified": true,
-      "sources": ["S23"],
+      "sources": [
+        "S23"
+      ],
       "note": "Practically: a personal conversion of your own savings is not meant to generate US income. The consequence cuts both ways — a personal FX LOSS is likewise not deductible. Confirm the characterisation with a CPA; the interaction of (e)(1) and (e)(2) is genuinely technical."
     },
     {
@@ -83,7 +94,10 @@
       "value": "USD 16,536 maximum, for penalties assessed on or after 2025-01-17",
       "basis": "31 CFR 1010.821 Table 1, row 31 U.S.C. 5321(a)(5)(B)(i). Inflation-adjusted annually.",
       "verified": true,
-      "sources": ["S21", "S20"],
+      "sources": [
+        "S21",
+        "S20"
+      ],
       "note": "Per year, per account failure. This dwarfs the FX spread on almost any realistic balance, and it applies whether or not you ever convert a single yuan."
     },
     {
@@ -92,7 +106,10 @@
       "value": "USD 165,353 maximum, for penalties assessed on or after 2025-01-17",
       "basis": "31 CFR 1010.821 Table 1, row 31 U.S.C. 5321(a)(5)(C)(i)(I).",
       "verified": true,
-      "sources": ["S21", "S20"],
+      "sources": [
+        "S21",
+        "S20"
+      ],
       "note": "The statute also contains an alternative willful measure — the greater of USD 100,000 or 50% of the account balance — but that provision was not retrieved end-to-end in this session, so it is FLAGGED and not given a verified value."
     },
     {
@@ -101,7 +118,10 @@
       "value": "USD 10,000, plus up to USD 50,000 for a continuing failure",
       "basis": "26 U.S.C. §6038D(d)(1) and (d)(2). A reasonable-cause exception exists at §6038D(g).",
       "verified": true,
-      "sources": ["S26", "S22"],
+      "sources": [
+        "S26",
+        "S22"
+      ],
       "note": "Separate from, and additive to, the FBAR penalty for the same account."
     },
     {
@@ -110,7 +130,9 @@
       "value": "",
       "basis": "The 5%-per-month / 25%-of-gift penalty rule is widely cited under §6039F, and the IRS Form 3520 instructions were retrieved, but the specific penalty paragraph was not read in this session.",
       "verified": false,
-      "sources": ["S24"],
+      "sources": [
+        "S24"
+      ],
       "note": "UNVERIFIED — blank. See the Flagged page."
     },
     {
@@ -119,7 +141,9 @@
       "value": "Up to 30% of the amount; if serious, 30% up to 100% of the amount; plus an order to repatriate",
       "basis": "FX Regulations (国务院令第532号) Art.39.",
       "verified": true,
-      "sources": ["S01"],
+      "sources": [
+        "S01"
+      ],
       "note": "This is the cost of getting the route wrong. It applies to the AMOUNT, not the gain — which is why 'clever' routes are catastrophically uneconomic."
     },
     {
@@ -128,7 +152,9 @@
       "value": "Up to 30% of the amount; if serious, 30% up to 100% of the amount; funds ordered re-exchanged",
       "basis": "FX Regulations Art.40.",
       "verified": true,
-      "sources": ["S01"],
+      "sources": [
+        "S01"
+      ],
       "note": "The provision SAFE cites for false-document transfers, including under 汇发〔2004〕16号 Art.13."
     },
     {
@@ -137,7 +163,9 @@
       "value": "Warning, confiscation of proceeds, up to 30% of the amount; if serious, 30% up to 100%; criminal liability if it constitutes a crime",
       "basis": "FX Regulations Art.45.",
       "verified": true,
-      "sources": ["S01"],
+      "sources": [
+        "S01"
+      ],
       "note": "This is the provision that reaches underground banks and crypto-based conversion."
     },
     {
@@ -146,7 +174,9 @@
       "value": "Warning and up to 20% of the amount",
       "basis": "FX Regulations Art.42.",
       "verified": true,
-      "sources": ["S01"],
+      "sources": [
+        "S01"
+      ],
       "note": "Relevant to cash-carry strategies and to splitting trips."
     },
     {
@@ -155,7 +185,9 @@
       "value": "Up to 24 months (50% first, then half the remainder at 12 months, balance at 24 months); RMB 200,000 or less may be remitted in one go",
       "basis": "PBoC Announcement [2004] No.16 Art.6.",
       "verified": true,
-      "sources": ["S04"],
+      "sources": [
+        "S04"
+      ],
       "note": "Not a tax, but a genuine financial cost: you are forced to take the exchange rate at three fixed future dates you do not control. This is usually underweighted in comparisons against the C01 route."
     },
     {
@@ -164,22 +196,60 @@
       "value": "Triggers at RMB 5,000 or USD 1,000 equivalent per single outbound remittance",
       "basis": "PBoC Order [2025] No.11 Art.34, effective 2026-01-01. Remitter identity must be verified accurately; name, account, address and payee details must be carried with the payment; records kept 10 years.",
       "verified": true,
-      "sources": ["S32"],
+      "sources": [
+        "S32"
+      ],
       "note": "Not a tax and not a cap — it is a data-quality gate. It does, however, make name/address mismatches between your Chinese account and your US bank a common cause of rejection."
     }
   ],
   "scenarios": {
     "note": "Total-cost illustrations are NOT provided, because two of the largest inputs (bank spread, wire fees) are commercially set and unverified. Providing a total would be fabrication. The structure below shows which costs apply to which route.",
     "rows": [
-      { "route": "C01 documented income remittance", "applies": "K3 (if >USD 50k), K4, K5, K7, K8, K18", "cn_tax_on_conversion": "0%" },
-      { "route": "C02 emigrant property transfer", "applies": "K2, K3, K4, K5, K7, K8, K17, K18", "cn_tax_on_conversion": "0%" },
-      { "route": "C03 inheritance transfer", "applies": "K2 (estate level), K3, K4, K5, K7, K8, K18", "cn_tax_on_conversion": "0%" },
-      { "route": "C04 home-sale proceeds remittance", "applies": "K2, K3, K4, K5, K7, K8, K18", "cn_tax_on_conversion": "0%" },
-      { "route": "C06/C07 cash carry", "applies": "K4 (if buying FX first), K6, K16 (if over limit)", "cn_tax_on_conversion": "0%" },
-      { "route": "C08 overseas ATM", "applies": "K6", "cn_tax_on_conversion": "0%" },
-      { "route": "C09 spend in China", "applies": "none", "cn_tax_on_conversion": "0%" },
-      { "route": "C20 do nothing", "applies": "K9/K11 exposure continues every year", "cn_tax_on_conversion": "n/a" },
-      { "route": "Prohibited routes (P01, P05...)", "applies": "K13, K14, K15, K16 + criminal exposure", "cn_tax_on_conversion": "30%-100% of the amount" }
+      {
+        "route": "C01 documented income remittance",
+        "applies": "K3 (if >USD 50k), K4, K5, K7, K8, K18",
+        "cn_tax_on_conversion": "0%"
+      },
+      {
+        "route": "C02 emigrant property transfer",
+        "applies": "K2, K3, K4, K5, K7, K8, K17, K18",
+        "cn_tax_on_conversion": "0%"
+      },
+      {
+        "route": "C03 inheritance transfer",
+        "applies": "K2 (estate level), K3, K4, K5, K7, K8, K18",
+        "cn_tax_on_conversion": "0%"
+      },
+      {
+        "route": "C04 home-sale proceeds remittance",
+        "applies": "K2, K3, K4, K5, K7, K8, K18",
+        "cn_tax_on_conversion": "0%"
+      },
+      {
+        "route": "C06/C07 cash carry",
+        "applies": "K4 (if buying FX first), K6, K16 (if over limit)",
+        "cn_tax_on_conversion": "0%"
+      },
+      {
+        "route": "C08 overseas ATM",
+        "applies": "K6",
+        "cn_tax_on_conversion": "0%"
+      },
+      {
+        "route": "C09 spend in China",
+        "applies": "none",
+        "cn_tax_on_conversion": "0%"
+      },
+      {
+        "route": "C20 do nothing",
+        "applies": "K9/K11 exposure continues every year",
+        "cn_tax_on_conversion": "n/a"
+      },
+      {
+        "route": "Prohibited routes (P01, P05...)",
+        "applies": "K13, K14, K15, K16 + criminal exposure",
+        "cn_tax_on_conversion": "30%-100% of the amount"
+      }
     ]
   }
 }
