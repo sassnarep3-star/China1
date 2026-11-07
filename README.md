@@ -1,63 +1,162 @@
-# Moving money out of China (CNY → USD) as a US citizen
+# China Money
 
-A sourced evidence pack on converting a CNY balance held in mainland China into USD with the least tax and penalty exposure. Every figure traces to an official source.
+Official-source research dashboard on lawful mainland-China CNY → USD transfers for a US citizen.
 
-**Read the site:** https://sassnarep3-star.github.io/China1/
+**Live site:** https://sassnarep3-star.github.io/China1/
+
+## Contents
+- Executive summary and conditional route recommendation
+- 18 routes, service variants and excluded workarounds, with pros/cons
+- Cost/tax components with unknown personal values left blank
+- US reporting requirements and published evidence limitations
+- Official-source registry and verification method
+
+No private financial records, credentials, live exchange-rate guesses or personal tax determinations are stored. Provider guidance is not legislation; editorial comparisons are labeled. Review `docs/review.html` before acting.
+
+## Build and checks
+```sh
+python scripts/build.py
+python scripts/verify.py
+python -m http.server 8000 --bind 0.0.0.0 --directory docs
+```
+No dependencies or external fonts/scripts. Generated HTML supports navigation without JavaScript; JavaScript only filters the transfer table. Edit research records in `scripts/build.py`, regenerate and run verification. Pages serves `main:/`; the supplemental site is under `/docs/`. See COORDINATION.md for deployment and PR records.
+
+## Preserved earlier dashboard
+
+The concurrent session’s original dashboard remains at the repository root, with its pages and assets preserved. The expanded research dashboard is at https://sassnarep3-star.github.io/China1/docs/.
 
 ---
 
-## The finding, in one paragraph
+# Verified dossier — `/dossier/`
 
-**There is no Chinese tax on converting CNY to USD — the rate is 0%**, and savings-deposit interest has been provisionally exempt from PRC individual income tax since 9 October 2008. So the cost is not a conversion tax. It is three other things: a **quota wall** of USD 50,000 per person per year; a **retail FX spread** that no official source publishes; and, for a US citizen, **US information-reporting exposure** on the account itself, which runs to USD 16,536 per report non-willfully and USD 165,353 or 50% of the balance willfully. The only route that is both fast and unlawful costs 30%–100% of the amount in fines, plus up to three years on a watch list.
+**Read this one first.** A second, independent research edition that answers the same question with a
+measured cost figure instead of an unknown, an explicit legal taxonomy for every route, and a hard rule
+that no value is ever estimated.
 
-Only **two** lawful routes can move an entire balance rather than a quota's worth: emigrant property transfer (requires cancelled PRC household registration, certified foreign residence and a PRC tax clearance) and inheritance transfer (requires foreign citizenship or HK/Macau residence). If neither applies to your facts, no lawful mechanism exists to move a large balance quickly — and no intermediary can lawfully change that.
+**Live:** https://sassnarep3-star.github.io/China1/dossier/
+
+> Research dossier, not legal, tax or investment advice. Every legal proposition is traced to a published
+> instrument with a link. Every number is quoted from an official source or plainly labelled as derived
+> from one. Anything that could not be confirmed is left **blank** and listed on the *Flagged for review*
+> page — never estimated, never given a "typical" range.
+
+## The finding, in one table
+
+| Belief | Reality | Source |
+|---|---|---|
+| Converting CNY→USD is taxed | No such tax exists in either jurisdiction | [CN-14](https://tianjin.chinatax.gov.cn/11200000000/0300/030004/03000418/20260727143202317.shtml), [US-04](https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section988&num=0&edition=prelim) |
+| The conversion penalty is large | It is a bank spread of **0.42%**, measured from Bank of China's own board on 2026-11-08 | [CN-11](https://www.boc.cn/sourcedb/whpj/) |
+| The blocker is tax | It is *capital-account* inconvertibility (`个人外汇管理办法` Art. 3) | [CN-01](http://m.safe.gov.cn/safe/2006/1225/5319.html) |
+| The 20% figure is the danger | The danger is a **50%-of-balance** willful-FBAR penalty | [US-03](https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title31-section5321&num=0&edition=prelim) |
+| USD 50,000/yr is the wall | USD 50,000/**year** is the *purchase* quota for 境内个人; USD 50,000/**day** is the *remittance* threshold for FX already held | [CN-03](https://www.gov.cn/gongbao/content/2020/content_5560296.htm) |
+| A US citizen is subject to the quota | Not if the bank holds a passport: 汇发[2020]14号 Art. 59 states no annual cap for a 境外个人 buying FX against lawful China-source income | [CN-03](https://www.gov.cn/gongbao/content/2020/content_5560296.htm) |
+
+Full argument: [`EXECUTIVE_SUMMARY.md`](EXECUTIVE_SUMMARY.md).
+
+## Dossier contents
+
+```
+EXECUTIVE_SUMMARY.md       findings, numbers, the five routes that matter, the penalty ladder, the gaps
+REQUIREMENTS.md            the brief restated as 42 testable requirements + traceability
+
+dossier/                   the published dossier (8 pages, self-contained, no JS required)
+  index.html               five findings, the decision fork, headline numbers
+  channels.html            35 routes grouped by the category that governs them, pros & cons each
+  costs.html               24-line decomposition of the "conversion penalty"
+  taxes.html               22 tax positions + the full US reporting stack
+  strategy.html            the sequenced plan and the ranked outcomes
+  flagged.html             20 items: 10 gaps left blank on purpose + 10 irregularities
+  sources.html             source registry, graded A/B/C, with the operative clause verbatim
+  methodology.html         how verification was done, and its limits
+
+scripts/data_sources.py    31 sources, graded, each with the operative Chinese clause quoted
+scripts/data_channels.py   35 routes: cap, documents, cost, CN tax, US tax, pros, cons
+scripts/data_costs.py      24 cost lines, split into unavoidable / real tax / penalty exposure
+scripts/data_taxes.py      22 tax positions, China and US separated
+scripts/data_flagged.py    20 flagged items
+scripts/build_site.py      generator + validator + internal link and anchor checker
+
+data/*.json                machine-readable export of every table
+```
+
+## Why this edition exists alongside the others
+
+The root edition and `/docs/` were produced by concurrent sessions working from the same brief. This one
+was produced independently and adds three things they record as unknown or do not raise:
+
+1. **A measured spread** (0.42%) instead of "net proceeds unverified", derived from an official bank board
+   with the capture timestamp stated.
+2. **The capital-account taxonomy** — `移民转移` / `继承转移` under PBOC Announcement [2004] No. 16 is the
+   only general-purpose exit for a whole balance, and it does not appear in the other two editions.
+3. **The 境外个人 carve-out** in 汇发[2020]14号 Art. 59, which is the difference between a ten-year plan and
+   a single approval.
+
+No claim made by the other editions was overwritten or deleted. Where this edition reaches a sharper
+conclusion it is because the instrument was read directly; each such case is logged in `COORDINATION.md`
+under "Cross-check against the other editions".
+
+## Rebuilding
+
+```bash
+python3 scripts/build_site.py     # regenerates dossier/ and data/
+```
+
+Pure Python 3 standard library. The generator refuses to build if any table row cites a source id that
+does not exist or if two rows share an id, then writes `data/*.json`, then runs an internal link **and
+anchor** check across every generated page and exits non-zero on any failure.
 
 ---
 
-## What is in here
+# Edition B — converter & penalty analysis (`/edition-b/`)
+
+A **second, independently sourced research edition**, retained alongside the two above rather than replacing them. It reaches the same core conclusion by a different research path and adds a machine-enforced verification harness.
+
+**Read it:** https://sassnarep3-star.github.io/China1/edition-b/
+
+### What is different about this edition
+
+| | `dossier/` | `edition-b/` |
+|---|---|---|
+| Route count | 35 | **22**, grouped into lawful / conditional / **non-transfer** / prohibited |
+| Sources | 31 | **27**, each with the propositions it actually supports recorded |
+| Verification | build-time id validation | **`verify.py`, 15 hard checks, exit 0** |
+| Distinctive content | 0.42% measured spread; capital-account taxonomy | Penalty decomposed into **6 layers**; US reporting quantified as the dominant exposure |
+
+### The finding
+
+**No PRC tax arises on the conversion — 0%.** Savings interest has been exempt since 2008-10-09 for both RMB and FX deposits. The cost is a **quota wall** of USD 50,000/person/year, a retail spread, and — for a US citizen — **US information-reporting exposure**: USD 16,536 per report non-willfully, USD 165,353 or 50% of the balance willfully. The only fast unlawful route costs 30%–100% of the amount plus up to three years on a watch list.
+
+Only two lawful routes move a whole balance: **emigrant transfer** (needs cancelled PRC household registration + certified foreign residence + PRC tax clearance, staged over ~2 years) and **inheritance transfer** (needs foreign citizenship or HK/Macau residence).
+
+### Contents
 
 | Page | Contents |
 |---|---|
-| [Executive summary](EXECUTIVE-SUMMARY.md) | The findings, the four cost layers, the sequencing |
-| `index.html` | Landing dashboard |
-| `methods.html` | **22 channels**, all columns, every row sourced |
-| `lawful.html` | The 12 unrestricted and conditional channels in detail |
-| `prohibited.html` | The 6 prohibited channels and why they are not cheaper |
-| `penalty.html` | The "conversion penalty" decomposed into **6 layers** |
-| `us-reporting.html` | FBAR, Form 8938, Form 3520 — the largest quantified exposure |
-| `sources.html` | **27 sources**, each with what it supports |
-| `flagged.html` | **15 flagged items** — everything not confirmable |
+| `edition-b/index.html` | Landing dashboard |
+| `edition-b/executive-summary.html` | Findings, four cost layers, sequencing |
+| `edition-b/methods.html` | **22 channels**, every row sourced |
+| `edition-b/lawful.html` | The 12 unrestricted and conditional channels |
+| `edition-b/prohibited.html` | The 6 prohibited channels |
+| `edition-b/penalty.html` | The penalty in **6 layers** |
+| `edition-b/us-reporting.html` | FBAR, 8938, 3520 — the largest quantified exposure |
+| `edition-b/sources.html` | **27 sources** with what each supports |
+| `edition-b/flagged.html` | **15 flagged items** |
 
-### Data
-
-| File | Contents |
-|---|---|
-| `data/sources.json` | S01–S27: tier, URL, retrieval date, propositions supported |
-| `data/methods.json` | M01–M22: limits, PRC tax, US tax, US reporting, penalty, pros, cons |
-| `data/penalties.json` | 6 penalty layers, each finding with value + verbatim basis + source |
-| `data/flagged.json` | F01–F15: unverified methods, open legal questions, blank-value families |
-
-### Build
+### Build and verify
 
 ```bash
-python3 build/generate.py   # regenerates the 9 pages from data/*.json
-python3 build/verify.py     # 15 static checks; exit 0 = pass
+python3 edition-b/build/generate.py   # regenerates the 9 pages from edition-b/data/*.json
+python3 edition-b/build/verify.py     # 15 static checks; exit 0 = pass
 ```
 
-`build/verify.py` is the enforcement mechanism, not decoration. It fails the build if any populated factual field lacks a source ID, if any external link leaves the allowlisted official domains, if any internal link or anchor is broken, or if any blank value is undisclosed. The site is generated server-side and loads no JavaScript, no fonts and no trackers, so the tables are readable and checkable as plain HTML.
+`verify.py` is the enforcement mechanism. It hard-fails if any populated factual field lacks a source ID, if any external link leaves the allowlisted official domains, if any internal link or anchor is broken, or if any blank value is undisclosed. It caught three real defects during authoring, which were fixed rather than suppressed.
 
----
+### The verification rule
 
-## The verification rule
+Where no official source confirmed a value, the cell is **left blank and marked `unverified`** — never inferred. Two channels (QDLP, private-bank "structured repatriation") are published with every value blank because no official description could be located. Four fields carry `n/a` where the concept genuinely does not arise.
 
-Every table row carries a link to an official source. Where no official source confirmed a value, **the cell is left blank and marked `unverified`** — it is never inferred, estimated or filled from a blog, a bank's marketing page or a law firm's summary. Two channels (QDLP, private-bank "structured repatriation programmes") are retained with every value blank because no official description could be located; four fields are marked `n/a` where the concept genuinely does not arise.
+Accepted sources: PRC government and regulator publications (gov.cn, safe.gov.cn, pbc.gov.cn, chinatax.gov.cn, mof.gov.cn, customs.gov.cn, samr.gov.cn) and US government publications (irs.gov, ecfr.gov, govinfo.gov, fincen.gov, treasury.gov). Anything else is labelled secondary.
 
-Accepted sources are PRC government and regulator publications (gov.cn, safe.gov.cn, pbc.gov.cn, chinatax.gov.cn, mof.gov.cn, customs.gov.cn, samr.gov.cn) and US government publications (irs.gov, ecfr.gov, govinfo.gov, fincen.gov, treasury.gov). Anything else is labelled secondary.
+### Not advice
 
----
-
-## Limits
-
-This is a documented evidence pack, not tax, legal or investment advice. The decisive facts — your PRC residency status under Art. 52(2) of the FX Regulations, your US residency for each covered year, whether a capital-account route is open to you — are not in this dataset and cannot be resolved from public sources. Consult a qualified cross-border adviser before filing or transferring.
-
-Prohibited channels are documented as prohibited, with the statutory penalty and SAFE's published enforcement cases. No operational guidance is given for any of them.
+The decisive facts — PRC residency under Art. 52(2) of the FX Regulations, US residency per covered year, availability of a capital-account route — are not in this dataset. Prohibited channels are documented **as prohibited**, with the statutory penalty and SAFE's published enforcement cases; **no operational guidance is given** for any of them.
