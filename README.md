@@ -104,3 +104,59 @@ python3 scripts/build_site.py     # regenerates dossier/ and data/
 Pure Python 3 standard library. The generator refuses to build if any table row cites a source id that
 does not exist or if two rows share an id, then writes `data/*.json`, then runs an internal link **and
 anchor** check across every generated page and exits non-zero on any failure.
+
+---
+
+# Edition B — converter & penalty analysis (`/edition-b/`)
+
+A **second, independently sourced research edition**, retained alongside the two above rather than replacing them. It reaches the same core conclusion by a different research path and adds a machine-enforced verification harness.
+
+**Read it:** https://sassnarep3-star.github.io/China1/edition-b/
+
+### What is different about this edition
+
+| | `dossier/` | `edition-b/` |
+|---|---|---|
+| Route count | 35 | **22**, grouped into lawful / conditional / **non-transfer** / prohibited |
+| Sources | 31 | **27**, each with the propositions it actually supports recorded |
+| Verification | build-time id validation | **`verify.py`, 15 hard checks, exit 0** |
+| Distinctive content | 0.42% measured spread; capital-account taxonomy | Penalty decomposed into **6 layers**; US reporting quantified as the dominant exposure |
+
+### The finding
+
+**No PRC tax arises on the conversion — 0%.** Savings interest has been exempt since 2008-10-09 for both RMB and FX deposits. The cost is a **quota wall** of USD 50,000/person/year, a retail spread, and — for a US citizen — **US information-reporting exposure**: USD 16,536 per report non-willfully, USD 165,353 or 50% of the balance willfully. The only fast unlawful route costs 30%–100% of the amount plus up to three years on a watch list.
+
+Only two lawful routes move a whole balance: **emigrant transfer** (needs cancelled PRC household registration + certified foreign residence + PRC tax clearance, staged over ~2 years) and **inheritance transfer** (needs foreign citizenship or HK/Macau residence).
+
+### Contents
+
+| Page | Contents |
+|---|---|
+| `edition-b/index.html` | Landing dashboard |
+| `edition-b/executive-summary.html` | Findings, four cost layers, sequencing |
+| `edition-b/methods.html` | **22 channels**, every row sourced |
+| `edition-b/lawful.html` | The 12 unrestricted and conditional channels |
+| `edition-b/prohibited.html` | The 6 prohibited channels |
+| `edition-b/penalty.html` | The penalty in **6 layers** |
+| `edition-b/us-reporting.html` | FBAR, 8938, 3520 — the largest quantified exposure |
+| `edition-b/sources.html` | **27 sources** with what each supports |
+| `edition-b/flagged.html` | **15 flagged items** |
+
+### Build and verify
+
+```bash
+python3 edition-b/build/generate.py   # regenerates the 9 pages from edition-b/data/*.json
+python3 edition-b/build/verify.py     # 15 static checks; exit 0 = pass
+```
+
+`verify.py` is the enforcement mechanism. It hard-fails if any populated factual field lacks a source ID, if any external link leaves the allowlisted official domains, if any internal link or anchor is broken, or if any blank value is undisclosed. It caught three real defects during authoring, which were fixed rather than suppressed.
+
+### The verification rule
+
+Where no official source confirmed a value, the cell is **left blank and marked `unverified`** — never inferred. Two channels (QDLP, private-bank "structured repatriation") are published with every value blank because no official description could be located. Four fields carry `n/a` where the concept genuinely does not arise.
+
+Accepted sources: PRC government and regulator publications (gov.cn, safe.gov.cn, pbc.gov.cn, chinatax.gov.cn, mof.gov.cn, customs.gov.cn, samr.gov.cn) and US government publications (irs.gov, ecfr.gov, govinfo.gov, fincen.gov, treasury.gov). Anything else is labelled secondary.
+
+### Not advice
+
+The decisive facts — PRC residency under Art. 52(2) of the FX Regulations, US residency per covered year, availability of a capital-account route — are not in this dataset. Prohibited channels are documented **as prohibited**, with the statutory penalty and SAFE's published enforcement cases; **no operational guidance is given** for any of them.
