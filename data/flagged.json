@@ -1,0 +1,166 @@
+{
+  "meta": {
+    "built": "2026-11-07",
+    "session": "arena-d7e7ed3b",
+    "policy": "If a value could not be confirmed from an official source it was left blank and registered here. Nothing was inferred, estimated, interpolated or filled from memory.",
+    "counts": {
+      "unverified_rows": 2,
+      "partially_verified_rows": 3,
+      "blank_cells": 4,
+      "secondary_source_uses": 1,
+      "open_legal_questions": 5
+    }
+  },
+  "items": [
+    {
+      "id": "F01",
+      "severity": "high",
+      "type": "unverified_method",
+      "subject": "M20 — QDLP (Qualified Domestic Limited Partnership)",
+      "finding": "Frequently recommended by intermediaries as a route to move onshore RMB into offshore alternatives. No official SAFE, PBoC, CSRC or gov.cn source describing the current pilot rules, quotas or investor eligibility was located and retrieved in this session.",
+      "action_taken": "Row retained on the site with every value field left blank and marked UNVERIFIED. No quota, rate or eligibility number was entered.",
+      "why_it_matters": "A reader who acts on an intermediary's QDLP pitch without a verified rule is exposed to exactly the risk this project exists to surface.",
+      "source_links": []
+    },
+    {
+      "id": "F02",
+      "severity": "high",
+      "type": "unverified_method",
+      "subject": "M21 — family-office / private-bank 'structured repatriation programmes'",
+      "finding": "Advertised to holders of large balances. No official source describes any such general programme. In the sources retrieved, the only lawful large-sum exit is the 2004 No.16 emigrant/inheritance transfer regime.",
+      "action_taken": "Row retained and marked UNVERIFIED with all values blank.",
+      "why_it_matters": "Programmes of this shape are the standard wrapper for the prohibited conduct named in M12–M17.",
+      "source_links": []
+    },
+    {
+      "id": "F03",
+      "severity": "medium",
+      "type": "partially_verified_method",
+      "subject": "M10 — individual outbound direct investment",
+      "finding": "Huifa [2007] No.1 Art. 16 establishes that a domestic individual's outbound direct investment is handled 'in accordance with the relevant State provisions' and requires SAFE approval plus overseas investment FX registration. The practical availability of this route to an ordinary individual saver is not established by the sources retrieved.",
+      "action_taken": "Legal basis recorded. Tax and US-reporting cells left blank. Marked PARTIAL.",
+      "why_it_matters": "The existence of the rule is not evidence that it is usable; conflating the two is the common analytical error in this area.",
+      "source_links": ["http://m.safe.gov.cn/safe/2007/0105/5320.html"]
+    },
+    {
+      "id": "F04",
+      "severity": "medium",
+      "type": "partially_verified_method",
+      "subject": "M22 — business channel and dividend withholding",
+      "finding": "The corporate current-account route is lawful when the trade is genuine, and treaty Art. 9 governs dividend withholding for a US shareholder. The PRC corporate income tax rate and the specific dividend withholding rate were not retrieved from the statutes in this session.",
+      "action_taken": "No rate entered in either field. Marked PARTIAL.",
+      "why_it_matters": "Entering a remembered rate would be exactly the hallucination this project forbids.",
+      "source_links": ["https://www.irs.gov/pub/irs-trty/china.pdf"]
+    },
+    {
+      "id": "F05",
+      "severity": "medium",
+      "type": "partially_verified_method",
+      "subject": "M05 — QDII aggregate quota figure",
+      "finding": "The figure of USD 170.869 billion of approved QDII quota across 191 institutions as of end-June 2025 comes from secondary financial-press reporting of SAFE's published quota table. The SAFE table itself was not retrieved directly in this session.",
+      "action_taken": "The figure appears only in the row's 'cons' narrative, explicitly attributed as secondary, and is not entered in any numeric field.",
+      "why_it_matters": "This is a moving number; pinning it as fact would be stale within a quarter.",
+      "source_links": ["https://www.safe.gov.cn/safe/file/file/20260805/d2d0d6ce1441436eadc8bc600eb79c43.pdf"]
+    },
+    {
+      "id": "F06",
+      "severity": "medium",
+      "type": "integration_gap",
+      "subject": "Full text of the QDII quota table and of 汇发〔2021〕13号",
+      "finding": "SAFE's consolidated catalogue (S08) confirms both instruments are in force and gives their numbers, but the individual document pages were not retrieved. The catalogue reference is recorded rather than the underlying text.",
+      "action_taken": "Cited only for the proposition that the instrument is in force.",
+      "why_it_matters": "A catalogue entry proves existence, not content. Content claims are not made.",
+      "source_links": ["https://www.safe.gov.cn/safe/file/file/20260805/d2d0d6ce1441436eadc8bc600eb79c43.pdf"]
+    },
+    {
+      "id": "F07",
+      "severity": "low",
+      "type": "secondary_source",
+      "subject": "S13 — Yin Fa [2021] No.237 virtual currency notice",
+      "finding": "The PBoC original page for 银发〔2021〕237号 could not be retrieved in this session (an earlier safe.gov.cn URL returned a 404). The notice is cited from a full republication on a government-affiliated investment-promotion platform (shanghaiinvest.com.cn).",
+      "action_taken": "The full text was read and quoted. The republication is disclosed in the source record. The PBoC is named as the issuing authority in the document itself.",
+      "why_it_matters": "Disclosed so the reader can verify against the PBoC original when it is reachable.",
+      "source_links": ["https://www.shanghaiinvest.com/cn/viewfile.php?id=16733"]
+    },
+    {
+      "id": "F08",
+      "severity": "low",
+      "type": "blank_value",
+      "subject": "Retail CNY/USD bid-offer spread and remittance fees",
+      "finding": "No official source publishes retail CNY/USD spreads or bank wire fees. SAFE publishes a central parity reference rate, which is not a customer rate.",
+      "action_taken": "Execution-cost fields left blank across the dataset. The execution cost is described qualitatively as 'a real cost, not quantified here'.",
+      "why_it_matters": "Quoting a spread from a bank marketing page would be a secondary source on a moving commercial number.",
+      "source_links": []
+    },
+    {
+      "id": "F09",
+      "severity": "low",
+      "type": "blank_value",
+      "subject": "PRC exit tax on household-registration cancellation",
+      "finding": "IIT Law Art. 10(5) and Art. 13 require tax settlement before cancelling PRC household registration on emigrating. Whether this operates as an exit tax, and at what rate, is not established by the retrieved material.",
+      "action_taken": "Left blank in the penalty layer. Stated as a documentary requirement only.",
+      "why_it_matters": "This is the one place a genuine PRC tax on departure could arise, so it is flagged rather than dismissed.",
+      "source_links": ["https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_901ca8faba104739bbf54e22483e6079.html"]
+    },
+    {
+      "id": "F10",
+      "severity": "low",
+      "type": "blank_value",
+      "subject": "Treaty interest rate under the US–PRC convention",
+      "finding": "Treaty Art. 10 covers interest, but the specific rate was not stated in the material retrieved in this session.",
+      "action_taken": "No rate entered in M11.",
+      "why_it_matters": "Largely academic, because savings interest is already exempt under Cai Shui [2008] No.132.",
+      "source_links": ["https://www.irs.gov/pub/irs-trty/china.pdf"]
+    },
+    {
+      "id": "F11",
+      "severity": "medium",
+      "type": "open_legal_question",
+      "subject": "Gift of RMB within China to a foreign-resident recipient",
+      "finding": "M18 notes that a gift is not a separate extraction channel. Whether an intra-China gift from a PRC relative can then be converted and remitted by the foreign recipient under the current-account regime, and on which documents, is not resolved by the sources retrieved.",
+      "action_taken": "Flagged on the row; marked PARTIAL; no limit or documentary requirement invented.",
+      "why_it_matters": "This is the most commonly assumed 'family' route and the one with the least clear published rule.",
+      "source_links": ["http://m.safe.gov.cn/safe/2007/0105/5320.html"]
+    },
+    {
+      "id": "F12",
+      "severity": "medium",
+      "type": "open_legal_question",
+      "subject": "Which FX penalty provision applies to virtual-currency conversion",
+      "finding": "Yin Fa [2021] No.237 declares the activity illegal financial activity and void as a civil matter. It does not state the FX fine that attaches. Mapping it to Art. 39, 40 or 45 of the FX Regulations would be legal characterisation, not a sourced fact.",
+      "action_taken": "No penalty percentage entered for M15. The prohibition and its consequences are cited as stated.",
+      "why_it_matters": "The risk is real and severe; the exact number is a matter for PRC counsel.",
+      "source_links": ["https://www.shanghaiinvest.com/cn/viewfile.php?id=16733", "https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm"]
+    },
+    {
+      "id": "F13",
+      "severity": "medium",
+      "type": "scope_limit",
+      "subject": "Which 境内/境外 individual class applies to the reader",
+      "finding": "This is decisive and cannot be resolved without facts only the reader has. FX Regulations Art. 52(2) defines a 境内个人 (domestic individual) as a PRC citizen, or a foreign national continuously resident in China for one year (excluding diplomats and international-organisation representatives). Huifa [2007] No.1 Art. 2 applies the USD 50,000 annual quota to settlement by any individual and to FX purchase by 境内个人 specifically, while Art. 13 governs a 境外个人 converting lawful RMB current-account income in China.",
+      "action_taken": "Both the quota route (M01) and the foreign-individual income-conversion route (M03/M04 and Art. 13) are documented. No single answer is asserted for the reader.",
+      "why_it_matters": "A US citizen who is a 境外个人 with lawful RMB income in China is on a materially different (and in some respects easier) footing than a PRC citizen subject to the quota. Getting this classification wrong invalidates the whole plan.",
+      "source_links": ["https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm", "http://m.safe.gov.cn/safe/2007/0105/5320.html"]
+    },
+    {
+      "id": "F14",
+      "severity": "medium",
+      "type": "source_access",
+      "subject": "Carrying-cash regulation citation is indirect",
+      "finding": "Huifa [2003] No.102 itself was not retrieved from a SAFE page in this session. Its continued force is confirmed by SAFE's own catalogue (S08, item 18), and its operative thresholds are confirmed by the General Administration of Customs quoting the article verbatim (S09).",
+      "action_taken": "M09 cites S09 (customs, verbatim quotation of Art. 5) and S08 (in-force status) rather than the unavailable primary text.",
+      "why_it_matters": "Two official sources together establish both the rule and its current force.",
+      "source_links": ["http://www.customs.gov.cn/eportal/ui?pageId=374112&msgDataId=4dd9dc6803b442978d6878c15ce639d6", "https://www.safe.gov.cn/safe/file/file/20260805/d2d0d6ce1441436eadc8bc600eb79c43.pdf"]
+    },
+    {
+      "id": "F15",
+      "severity": "low",
+      "type": "scope_limit",
+      "subject": "No personal tax or legal advice is given",
+      "finding": "Every figure on this site is a rule taken from a cited official source. None of it is advice on the reader's own facts, and several decisive facts (individual classification, account history, willfulness, whether any year's FBAR was already due) are unknown to this project.",
+      "action_taken": "Stated on every page. The site is an evidence pack, not a plan.",
+      "why_it_matters": "The single highest-risk decision in this domain — how to characterise prior non-filing — is a judgement a qualified adviser must make on the facts.",
+      "source_links": []
+    }
+  ]
+}

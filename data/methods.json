@@ -1,0 +1,902 @@
+{
+  "meta": {
+    "built": "2026-11-07",
+    "session": "arena-d7e7ed3b",
+    "currency_note": "All limits are per person per calendar year unless stated.",
+    "legend": {
+      "legality": {
+        "lawful": "Expressly permitted by the cited regulation for the described use.",
+        "conditional": "Permitted only if stated conditions/documentation are met.",
+        "not_a_transfer": "Facility exists and is lawful, but it does not move ownership of the money out of China.",
+        "prohibited": "Criminal or administrative offence under PRC law as cited.",
+        "unverified": "Could not be confirmed from an official source in this session."
+      },
+      "confidence": {
+        "verified": "Every filled cell traces to a primary official source read in this session.",
+        "partial": "Core rule verified; at least one cell left blank and flagged.",
+        "unverified": "No cell populated; row retained only so the reader knows it was considered."
+      }
+    },
+    "blank_rule": "An empty string in any numeric/rate field means: no official source confirmed a value, so none was entered. See data/flagged.json."
+  },
+  "methods": [
+    {
+      "id": "M01",
+      "name": "Annual facilitation quota — current-account FX purchase and remittance",
+      "name_zh": "个人年度便利化额度购汇汇出",
+      "category": "lawful-current-account",
+      "legality": "lawful",
+      "confidence": "verified",
+      "what_it_is": "The default retail channel. A domestic individual buys foreign exchange against ID within an annual aggregate quota and remits it abroad for a current-account purpose (travel, study, medical, family support, goods trade, non-investment insurance, advisory services).",
+      "annual_limit_usd": 50000,
+      "annual_limit_note": "RMB-equivalent USD 50,000 per person per year, aggregated across settlement (结汇) and purchase (购汇).",
+      "limit_source": "S04",
+      "china_tax_on_conversion": "0% — no PRC individual income tax arises from the act of exchanging CNY for USD",
+      "china_tax_note": "The Individual Income Tax Law taxes nine enumerated categories of income (Art. 2). 'Foreign exchange gain' and 'currency conversion' are not among them. Tax attaches to the underlying income, not the exchange.",
+      "china_tax_source": "S05",
+      "us_tax_treatment": "Not gross income. Moving your own after-tax funds is not a taxable event. Any exchange gain on the currency itself is a §988 transaction, but §988(e) exempts an individual's personal transaction from recognition unless the gain exceeds USD 200.",
+      "us_tax_source": "S24",
+      "us_reporting": "FBAR (FinCEN 114) if aggregate foreign accounts exceeded USD 10,000 at any time; Form 8938 if the FATCA threshold is met.",
+      "us_reporting_source": "S17",
+      "fx_spread_pct": "",
+      "fx_spread_note": "",
+      "penalty_if_misused": "If the declared purpose is false, or the funds are used for an unopened capital-account purpose, the individual may be listed on the watch list and lose the quota for the listing year plus the following two years. Evasion (逃汇) is fined up to 30% of the amount, or 30%–100% if serious.",
+      "penalty_source": "S01,S12",
+      "pros": [
+        "Fast, routine, bank-branch or mobile-banking process.",
+        "USD 50,000 per person per year with no documentary proof needed inside the quota.",
+        "No PRC tax on the conversion itself.",
+        "No US tax on remitting your own after-tax money."
+      ],
+      "cons": [
+        "USD 50,000 per person per year is small relative to a house-sized balance; a USD 1,000,000 balance takes 20 person-years.",
+        "The quota is per person — using relatives' quotas to pool funds is a criminal offence, not a planning technique.",
+        "Purpose must be current-account; overseas property and securities are expressly excluded.",
+        "Bank bid/offer spread is a real cost but is not published in any official source, so it is not quantified here."
+      ],
+      "flags": [
+        "FX spread not quantified — no official source publishes retail CNY/USD spreads."
+      ],
+      "sources": [
+        "S01",
+        "S04",
+        "S05",
+        "S11",
+        "S12",
+        "S17",
+        "S24"
+      ]
+    },
+    {
+      "id": "M02",
+      "name": "Above-quota current-account purchase with genuine documentation",
+      "name_zh": "超年度总额经常项目购汇（凭真实性证明材料）",
+      "category": "lawful-current-account",
+      "legality": "conditional",
+      "confidence": "verified",
+      "what_it_is": "Where a genuine current-account need exceeds USD 50,000 in a year — tuition, medical bills, family support, a genuine service contract — the individual buys FX above the quota by presenting ID plus documents evidencing the transaction amount.",
+      "annual_limit_usd": "",
+      "annual_limit_note": "No cap stated in the regulation; the ceiling is the genuine, documented transaction amount.",
+      "limit_source": "S04",
+      "china_tax_on_conversion": "0% — no PRC tax on the conversion",
+      "china_tax_note": "Tax attaches to the underlying income under IIT Law Art. 2, not to the exchange.",
+      "china_tax_source": "S05",
+      "us_tax_treatment": "Not gross income for the same reasons as M01; §988(e) personal-transaction exclusion applies to the currency leg.",
+      "us_tax_source": "S24",
+      "us_reporting": "FBAR / Form 8938 as applicable.",
+      "us_reporting_source": "S17,S20",
+      "fx_spread_pct": "",
+      "fx_spread_note": "",
+      "penalty_if_misused": "Submitting inauthentic documents is itself an Art. 48 breach (up to RMB 50,000 for an individual) and can escalate to 逃汇 under Art. 39 (up to 30%, or 30%–100% if serious).",
+      "penalty_source": "S01",
+      "pros": [
+        "No hard ceiling — genuinely the only lawful route to move a large sum for a qualifying current-account purpose.",
+        "Documents are ordinary (admission letter, tuition invoice, hospital invoice, kinship proof)."
+      ],
+      "cons": [
+        "Scope is limited to current-account purposes; it cannot fund overseas property or securities.",
+        "Bank authenticity review is discretionary and can be refused.",
+        "A balance sitting idle in a savings account does not by itself create a qualifying purpose."
+      ],
+      "flags": [],
+      "sources": [
+        "S01",
+        "S04",
+        "S05",
+        "S17",
+        "S20",
+        "S24"
+      ]
+    },
+    {
+      "id": "M03",
+      "name": "Emigrant property transfer (移民转移)",
+      "name_zh": "移民财产转移",
+      "category": "lawful-capital-account",
+      "legality": "conditional",
+      "confidence": "verified",
+      "what_it_is": "The dedicated capital-account channel for a person who has emigrated from the mainland (or settled in Hong Kong/Macau) to realise and remit lawful domestic property owned before emigrant status was acquired. Applied for once, remitted in stages.",
+      "annual_limit_usd": "",
+      "annual_limit_note": "Staged release, not an annual quota: first tranche up to 1/2 of the total; after 1 year up to 1/2 of the remainder; after 2 years the balance. Totals at or below RMB 200,000 equivalent may be remitted in one approved payment. Applications at or below RMB 500,000 are approved by the local SAFE branch; above that, by SAFE head office.",
+      "limit_source": "S02,S03",
+      "china_tax_on_conversion": "0% on the conversion, but a tax clearance certificate is a mandatory precondition",
+      "china_tax_note": "Art. 8(6) requires a tax payment certificate or tax clearance certificate from the competent tax authority before SAFE will process the transfer. The transfer itself is not a taxable event; the underlying disposal of property is taxed under IIT Law (property transfer at 20% on proceeds less original cost and reasonable expenses).",
+      "china_tax_source": "S02,S05",
+      "us_tax_treatment": "Not gross income; it is your own capital. If the property was sold at a gain after you became a US person, that gain is US taxable (and a foreign tax credit may be available under treaty Art. 22).",
+      "us_tax_source": "S24,S26",
+      "us_reporting": "FBAR / Form 8938 as applicable.",
+      "us_reporting_source": "S17,S20",
+      "fx_spread_pct": "",
+      "fx_spread_note": "",
+      "penalty_if_misused": "False documents or a duplicate application on the same property to obtain FX = illegal FX arbitrage under Art. 40, up to 30%, or 30%–100% if serious. SAFE will not accept property whose source cannot be proven lawful.",
+      "penalty_source": "S01,S02",
+      "pros": [
+        "The only general-purpose lawful channel that can move an entire lifetime balance, with no USD 50,000 cap.",
+        "Statutory timeline is finite — the whole balance is out within about two years of first remittance."
+      ],
+      "cons": [
+        "Requires cancellation of PRC household registration (户籍注销) plus certified proof of foreign residence — a one-way door for a PRC citizen.",
+        "Requires a PRC tax clearance certificate first.",
+        "Staged release: 50% now, 25% after a year, 25% after two years.",
+        "SAFE will refuse if the property is disputed, subject to unresolved litigation, or not provably lawful in origin.",
+        "Does not apply to a US citizen who never held PRC household registration."
+      ],
+      "flags": [],
+      "sources": [
+        "S01",
+        "S02",
+        "S03",
+        "S05",
+        "S17",
+        "S20",
+        "S24",
+        "S26"
+      ]
+    },
+    {
+      "id": "M04",
+      "name": "Inheritance property transfer (继承转移)",
+      "name_zh": "继承财产转移",
+      "category": "lawful-capital-account",
+      "legality": "conditional",
+      "confidence": "verified",
+      "what_it_is": "A foreign citizen, or a Hong Kong/Macau resident, who has lawfully inherited a mainland estate, applies to realise it and remit the proceeds abroad. Applied for once for all property from the same deceased person; may be remitted in one or several payments.",
+      "annual_limit_usd": "",
+      "annual_limit_note": "No annual cap stated. One application per deceased person; payment in one or several tranches. Local SAFE branch approves up to RMB 500,000 equivalent; above that it escalates to SAFE head office.",
+      "limit_source": "S02,S03",
+      "china_tax_on_conversion": "0% on the conversion; tax clearance certificate mandatory",
+      "china_tax_note": "Art. 9(5) requires the deceased's property-right documents and a tax payment or tax clearance certificate from the competent tax authority.",
+      "china_tax_source": "S02",
+      "us_tax_treatment": "A bequest is not gross income to the recipient. Inherited assets take a stepped-up basis at date of death, so pre-death appreciation is generally not taxed to the heir.",
+      "us_tax_source": "S22",
+      "us_reporting": "Part IV of Form 3520 if the aggregate bequest from the foreign estate exceeds USD 100,000; each gift over USD 5,000 separately identified. FBAR / Form 8938 as applicable.",
+      "us_reporting_source": "S21,S22,S17,S20",
+      "fx_spread_pct": "",
+      "fx_spread_note": "",
+      "penalty_if_misused": "False materials or duplicate applications = Art. 40 illegal FX arbitrage, up to 30%, or 30%–100% if serious. Missing Form 3520 = 5% of the gift per month, capped at 25%.",
+      "penalty_source": "S01,S21",
+      "pros": [
+        "No annual cap — the entire inheritance can move.",
+        "No PRC household-registration cancellation needed (the applicant is already foreign).",
+        "No US income tax on the bequest itself."
+      ],
+      "cons": [
+        "Only available to a genuine lawful heir, with notarised kinship and inheritance evidence.",
+        "Requires the deceased's tax clearance and property-right documents.",
+        "All property from one deceased must be applied for in a single application.",
+        "US Form 3520 is separately required and carries a 25% penalty for failure."
+      ],
+      "flags": [],
+      "sources": [
+        "S01",
+        "S02",
+        "S03",
+        "S20",
+        "S21",
+        "S22"
+      ]
+    },
+    {
+      "id": "M05",
+      "name": "QDII (Qualified Domestic Institutional Investor) funds",
+      "name_zh": "合格境内机构投资者（QDII）",
+      "category": "not-a-transfer",
+      "legality": "lawful",
+      "confidence": "verified",
+      "what_it_is": "A domestic individual invests RMB in an onshore fund that holds an approved QDII quota, and the fund invests abroad. This gives foreign-currency exposure but the investor's asset stays inside the PRC financial system, denominated and redeemable in RMB.",
+      "annual_limit_usd": "",
+      "annual_limit_note": "Quota is granted to the institution, not the individual; there is no published per-investor statutory cap. Individual products frequently suspend or cap subscriptions.",
+      "limit_source": "S04,S08,S11",
+      "china_tax_on_conversion": "Not applicable — no conversion occurs at the investor level",
+      "china_tax_note": "The investor buys and redeems in RMB; any gain is a PRC securities/investment gain and is not a currency conversion event.",
+      "china_tax_source": "S05",
+      "us_tax_treatment": "A foreign (PRC) fund is generally a passive foreign investment company; US holders face PFIC reporting (Form 8621) and PFIC tax treatment. Not a remittance, so no §988 currency leg.",
+      "us_tax_source": "S20",
+      "us_reporting": "Form 8938 (the fund interest is a specified foreign financial asset); Form 8621 if the fund is a PFIC. FBAR only if held in a foreign financial account.",
+      "us_reporting_source": "S20",
+      "fx_spread_pct": "",
+      "fx_spread_note": "",
+      "penalty_if_misused": "not_applicable",
+      "penalty_source": "",
+      "pros": [
+        "Fully lawful way to obtain USD/foreign-asset exposure from onshore RMB.",
+        "No SAFE application, no quota consumed, no documentary burden on the individual."
+      ],
+      "cons": [
+        "DOES NOT MOVE MONEY OUT OF CHINA. The asset remains a PRC fund share. This is the single most common misconception about QDII.",
+        "Product availability is rationed; SAFE's aggregate approved QDII quota across 191 institutions was USD 170.869 billion as of end-June 2025, and many individual funds remain closed or capped.",
+        "PFIC exposure and Form 8621 for US persons.",
+        "Ultimately you still have to repatriate — which returns you to M01–M04."
+      ],
+      "flags": [
+        "The USD 170.869bn aggregate QDII figure and the 191-institution count come from secondary financial-press reporting of SAFE's quota table, not from a SAFE page retrieved in this session. Flagged for review; no SAFE value is entered in any field."
+      ],
+      "sources": [
+        "S04",
+        "S08",
+        "S11",
+        "S20"
+      ]
+    },
+    {
+      "id": "M06",
+      "name": "GBA Cross-boundary Wealth Management Connect — Southbound",
+      "name_zh": "粤港澳大湾区跨境理财通（南向通）",
+      "category": "not-a-transfer",
+      "legality": "conditional",
+      "confidence": "verified",
+      "what_it_is": "Eligible mainland residents of the nine GBA cities invest in Hong Kong/Macau wealth products through a paired, closed-loop remittance account and investment account.",
+      "annual_limit_usd": "",
+      "annual_limit_note": "RMB 3,000,000 per individual investor; RMB 1,500,000 per channel if using both banks and securities firms. Closed-loop: redemption proceeds must return to the mainland.",
+      "limit_source": "S14",
+      "china_tax_on_conversion": "Not applicable at the conversion level; closed-loop RMB remittance",
+      "china_tax_note": "Remittance must be in RMB between the paired accounts; the design is closed-loop, so funds do not leave the ring permanently.",
+      "china_tax_source": "S14",
+      "us_tax_treatment": "Investments held through a foreign account; PFIC and foreign-account reporting can apply to a US person.",
+      "us_tax_source": "S20",
+      "us_reporting": "FBAR and Form 8938 as applicable; Form 8621 for PFICs.",
+      "us_reporting_source": "S17,S20",
+      "fx_spread_pct": "",
+      "fx_spread_note": "",
+      "penalty_if_misused": "not_applicable",
+      "penalty_source": "",
+      "pros": [
+        "Lawful and regulated, with a materially larger headline number (RMB 3m) than the USD 50,000 quota.",
+        "Eligibility was widened in 2024: two years of social insurance or IIT instead of five, plus an income route."
+      ],
+      "cons": [
+        "Closed-loop: proceeds must come back. It is not a route to extract capital.",
+        "Restricted to residents of the nine GBA mainland cities.",
+        "Investor qualification tests apply (assets or income thresholds).",
+        "No benefit at all to someone outside the Greater Bay Area."
+      ],
+      "flags": [],
+      "sources": [
+        "S14",
+        "S17",
+        "S20"
+      ]
+    },
+    {
+      "id": "M07",
+      "name": "Overseas card spending (consumption abroad on a domestic card)",
+      "name_zh": "境内银行卡境外消费",
+      "category": "lawful-current-account",
+      "legality": "lawful",
+      "confidence": "verified",
+      "what_it_is": "Using a mainland-issued bank card abroad for goods and services. Card consumption is handled outside the personal settlement/sale quota system.",
+      "annual_limit_usd": "",
+      "annual_limit_note": "Card consumption abroad is expressly excluded from the personal FX settlement/sale system, i.e. it does not consume the USD 50,000 quota. This is a spending channel, not a capital-transfer channel.",
+      "limit_source": "S04,S11",
+      "china_tax_on_conversion": "0% on the conversion",
+      "china_tax_note": "Consumption is not income.",
+      "china_tax_source": "S05",
+      "us_tax_treatment": "Not a taxable event; you are buying goods and services.",
+      "us_tax_source": "S24",
+      "us_reporting": "not_applicable",
+      "us_reporting_source": "",
+      "fx_spread_pct": "",
+      "fx_spread_note": "",
+      "penalty_if_misused": "Structuring card transactions to extract cash or to disguise a capital outflow is treated as evasion, with the standard Art. 39 exposure.",
+      "penalty_source": "S01",
+      "pros": [
+        "Does not consume the USD 50,000 quota.",
+        "No application, no documentation."
+      ],
+      "cons": [
+        "Buys goods and services, not capital. You cannot turn a card swipe into investable USD without a counterparty who hands you cash — which is the prohibited step.",
+        "Card cash advances abroad are separately capped (see M08)."
+      ],
+      "flags": [],
+      "sources": [
+        "S01",
+        "S04",
+        "S05",
+        "S11",
+        "S24"
+      ]
+    },
+    {
+      "id": "M08",
+      "name": "Overseas ATM cash withdrawal on a domestic card",
+      "name_zh": "境内银行卡境外提取现金",
+      "category": "lawful-current-account",
+      "legality": "lawful",
+      "confidence": "verified",
+      "what_it_is": "Withdrawing local currency abroad from a mainland-issued bank card. Subject to a per-card daily cap and an aggregated annual cap.",
+      "annual_limit_usd": "",
+      "annual_limit_note": "RMB 100,000 equivalent per calendar year, aggregated across every card in the individual's name including supplementary cards. Per card per day: RMB 10,000 equivalent.",
+      "limit_source": "S10",
+      "china_tax_on_conversion": "0% on the conversion",
+      "china_tax_note": "Cash withdrawal is not income.",
+      "china_tax_source": "S05",
+      "us_tax_treatment": "Not a taxable event.",
+      "us_tax_source": "S24",
+      "us_reporting": "If the withdrawn cash is deposited into a foreign account, that account is FBAR-reportable in the normal way. US customs requires a FinCEN 105 declaration for more than USD 10,000 of currency entering or leaving the US.",
+      "us_reporting_source": "S17",
+      "fx_spread_pct": "",
+      "fx_spread_note": "",
+      "penalty_if_misused": "Exceeding the annual cap suspends overseas cash withdrawal on domestic cards for the current year and the next. Lending or borrowing cards to get around the cap is prohibited; breach falls under the FX Regulations.",
+      "penalty_source": "S10,S01",
+      "pros": [
+        "Simple; no quota application.",
+        "Annual ceiling (RMB 100,000) is roughly double the USD 50,000 quota in RMB terms."
+      ],
+      "cons": [
+        "RMB 100,000 equivalent is a small absolute amount.",
+        "Cash is unpractical for large sums and creates its own US reporting issues on arrival.",
+        "Physical loss, theft and AML scrutiny on deposit.",
+        "Exceeding the cap locks the card out for two years."
+      ],
+      "flags": [],
+      "sources": [
+        "S01",
+        "S05",
+        "S10",
+        "S17",
+        "S24"
+      ]
+    },
+    {
+      "id": "M09",
+      "name": "Carrying foreign-currency cash across the border",
+      "name_zh": "携带外币现钞出境",
+      "category": "lawful-current-account",
+      "legality": "conditional",
+      "confidence": "verified",
+      "what_it_is": "Physically carrying banknotes out. Up to USD 5,000 equivalent is released without any permit; higher amounts need a Permit to Carry.",
+      "annual_limit_usd": 5000,
+      "annual_limit_note": "Up to USD 5,000 equivalent: no permit, customs releases. USD 5,000–10,000: a bank-issued Permit to Carry. Above USD 10,000: a SAFE-issued Permit to Carry. Multiple permits whose stamped total exceeds USD 10,000 will not be released.",
+      "limit_source": "S09",
+      "china_tax_on_conversion": "0% on the conversion",
+      "china_tax_note": "Carrying cash is not a taxable event.",
+      "china_tax_source": "S05",
+      "us_tax_treatment": "Not a taxable event. US customs requires a FinCEN 105 report for more than USD 10,000 of currency transported into or out of the US.",
+      "us_tax_source": "S24",
+      "us_reporting": "FinCEN 105 on entry to the US above USD 10,000; FBAR once deposited offshore.",
+      "us_reporting_source": "S17",
+      "fx_spread_pct": "",
+      "fx_spread_note": "",
+      "penalty_if_misused": "Unlawful carriage of FX across the border: warning plus a fine of up to 20% of the amount under Art. 42; customs handles it under its own rules. Smuggling currency is a separate customs offence.",
+      "penalty_source": "S01,S09",
+      "pros": [
+        "No quota consumed up to USD 5,000.",
+        "Immediate and final — the cash is outside the system."
+      ],
+      "cons": [
+        "USD 5,000 per trip is trivially small against a large balance.",
+        "Repeated trips sized to stay under the threshold is precisely the pattern enforcement looks for.",
+        "Physical risk of loss or seizure; US FinCEN 105 reporting above USD 10,000.",
+        "Permits above USD 10,000 are discretionary."
+      ],
+      "flags": [],
+      "sources": [
+        "S01",
+        "S05",
+        "S09",
+        "S17",
+        "S24"
+      ]
+    },
+    {
+      "id": "M10",
+      "name": "Individual outbound direct investment (境内个人对外直接投资)",
+      "name_zh": "境内个人对外直接投资",
+      "category": "lawful-capital-account",
+      "legality": "conditional",
+      "confidence": "partial",
+      "what_it_is": "The capital-account regime under which a domestic individual may make direct outbound investment, using SAFE-approved FX purchase or own FX, with overseas investment FX registration.",
+      "annual_limit_usd": "",
+      "annual_limit_note": "The rule states the individual 'shall proceed in accordance with the relevant State provisions' and requires SAFE approval plus overseas investment FX registration. No amount is published in the source retrieved, so none is entered.",
+      "limit_source": "S04,S08",
+      "china_tax_on_conversion": "",
+      "china_tax_note": "",
+      "china_tax_source": "",
+      "us_tax_treatment": "",
+      "us_tax_source": "",
+      "us_reporting": "",
+      "us_reporting_source": "",
+      "fx_spread_pct": "",
+      "fx_spread_note": "",
+      "penalty_if_misused": "Capital-account FX expenditure without the required approval falls under Art. 22 and the unauthorised-use penalty in Art. 44 (up to 30%, or 30%–100% if serious).",
+      "penalty_source": "S01",
+      "pros": [
+        "A genuine capital-account channel in principle, so it can move more than the current-account quota."
+      ],
+      "cons": [
+        "Approval-based and, for a natural person, generally limited in practice to special-purpose-vehicle and return-investment structures rather than a free individual ODI regime.",
+        "Requires SAFE approval and registration before the FX moves."
+      ],
+      "flags": [
+        "Practical availability to an ordinary individual saver is NOT established by the sources retrieved. The tax and US-reporting cells are left blank rather than inferred. Flagged for review."
+      ],
+      "sources": [
+        "S01",
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "id": "M11",
+      "name": "Treaty-partner interest rate on Chinese deposits",
+      "name_zh": "税收协定利息条款",
+      "category": "tax-planning",
+      "legality": "lawful",
+      "confidence": "partial",
+      "what_it_is": "For a resident of a treaty partner, interest from Chinese savings institutions is taxed at the treaty rate rather than the domestic rate. In practice largely moot for ordinary savings because the domestic rate is already zero.",
+      "annual_limit_usd": "",
+      "annual_limit_note": "Not an amount-limited channel; it is a rate rule.",
+      "limit_source": "S07",
+      "china_tax_on_conversion": "0% on the conversion",
+      "china_tax_note": "Tax on savings interest accruing on or after 2008-10-09 is provisionally exempt under Cai Shui [2008] No.132, so for ordinary savings deposits the treaty rate has no practical bite. It matters only for interest that is NOT savings-deposit interest.",
+      "china_tax_source": "S06,S07",
+      "us_tax_treatment": "US persons are taxed on worldwide interest; a foreign tax credit is available for PRC tax actually paid, under treaty Art. 22 and IIT Law Art. 7.",
+      "us_tax_source": "S05,S26",
+      "us_reporting": "Interest is reported on Schedule B / Form 1040; Form 8938 and FBAR as applicable.",
+      "us_reporting_source": "S17,S20",
+      "fx_spread_pct": "",
+      "fx_spread_note": "",
+      "penalty_if_misused": "not_applicable",
+      "penalty_source": "",
+      "pros": [
+        "Removes a withholding layer where it applies."
+      ],
+      "cons": [
+        "Does not address the actual problem, which is capital mobility, not the interest rate.",
+        "Savings interest is already exempt, so the practical saving is usually zero."
+      ],
+      "flags": [
+        "The exact treaty interest rate is not stated in any source retrieved in this session, so no rate is entered."
+      ],
+      "sources": [
+        "S05",
+        "S06",
+        "S07",
+        "S17",
+        "S20",
+        "S26"
+      ]
+    },
+    {
+      "id": "M12",
+      "name": "Splitting / smurfing across family and friends' quotas (分拆, 蚂蚁搬家)",
+      "name_zh": "分拆购汇 / 蚂蚁搬家",
+      "category": "prohibited",
+      "legality": "prohibited",
+      "confidence": "verified",
+      "what_it_is": "Assembling many individuals' USD 50,000 quotas to move one person's money out. Named, not explained: the technique is a charging instrument, and this row exists so the risk is visible.",
+      "annual_limit_usd": "",
+      "annual_limit_note": "Not applicable — the technique is unlawful.",
+      "limit_source": "S16",
+      "china_tax_on_conversion": "0% on the conversion, but the penalty dwarfs any tax",
+      "china_tax_note": "The state does not tax this; it prosecutes it as evasion. Under Art. 39 the fine is up to 30% of the evaded amount, and 30%–100% where serious.",
+      "china_tax_source": "S01",
+      "us_tax_treatment": "No separate US rule for the mechanism itself; the funds received are still your own and not income.",
+      "us_tax_source": "S24",
+      "us_reporting": "FBAR / Form 8938 as applicable.",
+      "us_reporting_source": "S17,S20",
+      "fx_spread_pct": "",
+      "fx_spread_note": "",
+      "penalty_if_misused": "Art. 39 evasion: order to repatriate, plus a fine of up to 30% of the amount; 30%–100% where serious; criminal liability where it constitutes a crime. Separately, anyone lending a quota is placed on the watch list for the listing year plus two years, and anyone borrowing quotas likewise.",
+      "penalty_source": "S01,S16,S12",
+      "pros": [
+        "None that survive contact with enforcement. The expected cost is a 30%–100% fine plus loss of the quota for three years."
+      ],
+      "cons": [
+        "Statutory fine of 30% of the amount, rising to 100% if serious — worse than any tax.",
+        "Watch list: no facilitation quota for the listing year and the following two years.",
+        "Penalty records are fed into the PBOC credit-information system.",
+        "Every family member who lends a quota is independently exposed.",
+        "Banks flag same-day, same-counterparty patterns routinely."
+      ],
+      "flags": [],
+      "sources": [
+        "S01",
+        "S12",
+        "S16",
+        "S17",
+        "S20",
+        "S24"
+      ]
+    },
+    {
+      "id": "M13",
+      "name": "Underground banking / matched off-book settlement (地下钱庄, 对敲)",
+      "name_zh": "地下钱庄 / 境内外对敲",
+      "category": "prohibited",
+      "legality": "prohibited",
+      "confidence": "verified",
+      "what_it_is": "Paying RMB to a domestic account and receiving the equivalent abroad from an unrelated counterparty, with no cross-border payment. Named, not explained.",
+      "annual_limit_usd": "",
+      "annual_limit_note": "Not applicable — unlawful.",
+      "limit_source": "S01",
+      "china_tax_on_conversion": "0% on the conversion",
+      "china_tax_note": "Charged as unauthorised FX trading under Art. 45: warning, confiscation of illegal gains, fine of up to 30% of the amount, 30%–100% if serious, plus criminal liability.",
+      "china_tax_source": "S01",
+      "us_tax_treatment": "No US tax on your own capital, but if the counterparty funds are ever characterised as unreported income the burden falls on you, and the offshore account remains FBAR-reportable.",
+      "us_tax_source": "S24",
+      "us_reporting": "FBAR / Form 8938. US AML rules independently reach structuring and unlicensed money transmission.",
+      "us_reporting_source": "S17,S20",
+      "fx_spread_pct": "",
+      "fx_spread_note": "",
+      "penalty_if_misused": "Real published outcomes from SAFE's 2024-03-22 notice: fines of RMB 1.059m to RMB 4.033m on transactions of USD 2.057m to USD 7.828m. The observed ratio of fine to amount is broadly 5%–6% in the published cases, but that is a sample of published cases, not a rule — the statutory ceiling is 30%, or 100% if serious.",
+      "penalty_source": "S01,S15",
+      "pros": [
+        "None. It is the highest-risk, lowest-defensibility option available."
+      ],
+      "cons": [
+        "Every single one of SAFE's ten published individual cases in March 2024 was an underground-bank case charged under Art. 45.",
+        "Statutory fine to 30% of the amount, 100% if serious, plus confiscation.",
+        "Penalty record enters the PBOC credit system.",
+        "Counterparty risk: the domestic leg is often seized in a money-laundering investigation.",
+        "Criminal exposure under PRC law, and potential US money-transmission issues."
+      ],
+      "flags": [],
+      "sources": [
+        "S01",
+        "S15",
+        "S17",
+        "S20",
+        "S24"
+      ]
+    },
+    {
+      "id": "M14",
+      "name": "Falsified trade invoicing / fake service contracts",
+      "name_zh": "虚构贸易背景对外付汇",
+      "category": "prohibited",
+      "legality": "prohibited",
+      "confidence": "verified",
+      "what_it_is": "Creating invoices or contracts for goods or services that did not happen, so a bank releases FX under the current account, which is not subject to the USD 50,000 quota. Named, not explained.",
+      "annual_limit_usd": "",
+      "annual_limit_note": "Not applicable — unlawful.",
+      "limit_source": "S01",
+      "china_tax_on_conversion": "0% on the conversion",
+      "china_tax_note": "Charged as 逃汇 under Art. 39: order to repatriate plus a fine of up to 30% of the amount, 30%–100% if serious, criminal liability where it is a crime.",
+      "china_tax_source": "S01",
+      "us_tax_treatment": "No US tax arises on moving your own capital. Separately, fabricated invoicing can create US exposure under US false-statement rules, which are outside the scope of the sources retrieved here.",
+      "us_tax_source": "S24",
+      "us_reporting": "FBAR / Form 8938 as applicable.",
+      "us_reporting_source": "S17,S20",
+      "fx_spread_pct": "",
+      "fx_spread_note": "",
+      "penalty_if_misused": "Art. 39 evasion: up to 30% of the amount, 30%–100% if serious. Art. 12 requires a genuine, lawful transaction basis for every current-account payment, and Art. 48 separately penalises submitting inauthentic documents (up to RMB 50,000 for an individual).",
+      "penalty_source": "S01",
+      "pros": [
+        "None. It converts a tax question into a criminal one."
+      ],
+      "cons": [
+        "Circumvents the quota by pretending the transaction is current-account.",
+        "Directly targets the authenticity review banks are required to perform (Art. 12).",
+        "Escalates to 逃汇 with a 30%–100% fine range.",
+        "Customs and tax data are cross-checked against declared invoices."
+      ],
+      "flags": [],
+      "sources": [
+        "S01",
+        "S17",
+        "S20"
+      ]
+    },
+    {
+      "id": "M15",
+      "name": "Crypto / stablecoin conversion (USDT and similar)",
+      "name_zh": "虚拟货币兑换（含稳定币）",
+      "category": "prohibited",
+      "legality": "prohibited",
+      "confidence": "verified",
+      "what_it_is": "Buying virtual currency onshore and selling it offshore. Under Yin Fa [2021] No.237, exchanging legal tender for virtual currency and vice versa is illegal financial activity in the PRC.",
+      "annual_limit_usd": "",
+      "annual_limit_note": "Not applicable — the activity is prohibited outright.",
+      "limit_source": "S13",
+      "china_tax_on_conversion": "",
+      "china_tax_note": "The notice prohibits the activity as illegal financial activity and states civil acts contrary to public order and good morals are void. The specific FX penalty provision that applies is a legal-characterisation question that requires PRC counsel; no penalty percentage is entered here because no source retrieved in this session maps the crypto prohibition to a specific FX fine.",
+      "china_tax_source": "S13",
+      "us_tax_treatment": "",
+      "us_tax_source": "",
+      "us_reporting": "",
+      "us_reporting_source": "",
+      "fx_spread_pct": "",
+      "fx_spread_note": "",
+      "penalty_if_misused": "Treated as illegal financial activity: strictly prohibited and subject to banning, with criminal liability where it constitutes a crime. Financial institutions and payment providers may not process it, which is why onshore bank rails to an exchange do not exist.",
+      "penalty_source": "S13",
+      "pros": [
+        "None that are lawful onshore. The onshore and offshore legs cannot both be done through regulated PRC rails."
+      ],
+      "cons": [
+        "Exchanging legal tender for virtual currency is illegal financial activity in the PRC.",
+        "Offshore exchanges serving PRC residents over the internet are likewise illegal.",
+        "Banks and payment institutions are barred from processing it, so it relies on unlicensed counterparties.",
+        "Civil acts are void and losses are borne by the party, so there is no recourse if the counterparty defaults."
+      ],
+      "flags": [
+        "Monetary penalty for the FX leg is not stated in the source retrieved; left blank rather than inferred.",
+        "Source S13 is a full republication on a government investment-promotion site rather than the PBoC original, because the PBoC page was not retrievable in this session. Flagged for review."
+      ],
+      "sources": [
+        "S13"
+      ]
+    },
+    {
+      "id": "M16",
+      "name": "Using purchased FX for overseas property",
+      "name_zh": "购汇用于境外购房",
+      "category": "prohibited",
+      "legality": "prohibited",
+      "confidence": "verified",
+      "what_it_is": "Buying FX inside the facilitation quota and then using it to buy real estate abroad. This is expressly one of the six prohibitions the individual affirms on the FX purchase application.",
+      "annual_limit_usd": "",
+      "annual_limit_note": "Not applicable — the use is prohibited even though the purchase was within the quota.",
+      "limit_source": "S12",
+      "china_tax_on_conversion": "0% on the conversion",
+      "china_tax_note": "Enforcement is administrative, not tax-based. The individual is placed on the watch list and loses the facilitation quota for the listing year plus two years; unauthorised change of use of FX falls under Art. 44 (up to 30%, or 30%–100% if serious).",
+      "china_tax_source": "S01,S12",
+      "us_tax_treatment": "US income tax is unaffected — an overseas property purchase is a capital transaction, not a realisation event.",
+      "us_tax_source": "S24",
+      "us_reporting": "FBAR does not reach directly held foreign real estate, but Form 8938 reporting can attach if the property is held through an entity or account.",
+      "us_reporting_source": "S20",
+      "fx_spread_pct": "",
+      "fx_spread_note": "",
+      "penalty_if_misused": "Watch list plus loss of the quota for three years; Art. 44 unauthorised change of use, up to 30% of the amount, 30%–100% if serious. SAFE has publicly penalised individual property purchases funded this way.",
+      "penalty_source": "S12,S01",
+      "pros": [
+        "None. This is the most commonly attempted and most commonly caught misuse."
+      ],
+      "cons": [
+        "Expressly prohibited on the application form the buyer signs.",
+        "Three-year loss of the facilitation quota.",
+        "Enforcement is now data-driven, with bank, tax and property records cross-checked.",
+        "Penalty record enters the PBOC credit system."
+      ],
+      "flags": [],
+      "sources": [
+        "S01",
+        "S12",
+        "S20"
+      ]
+    },
+    {
+      "id": "M17",
+      "name": "Using purchased FX for overseas securities or investment-linked life insurance",
+      "name_zh": "购汇用于境外证券投资 / 人寿保险",
+      "category": "prohibited",
+      "legality": "prohibited",
+      "confidence": "verified",
+      "what_it_is": "Buying FX within the quota and using it to buy offshore stocks, funds, or life and investment-type returning/dividend-paying insurance.",
+      "annual_limit_usd": "",
+      "annual_limit_note": "Not applicable — the use is prohibited.",
+      "limit_source": "S12",
+      "china_tax_on_conversion": "0% on the conversion",
+      "china_tax_note": "Administrative enforcement: watch list plus three-year loss of quota; Art. 44 unauthorised change of use, up to 30% of the amount, 30%–100% if serious.",
+      "china_tax_source": "S01,S12",
+      "us_tax_treatment": "For a US person, offshore investment-linked life insurance is a specified foreign financial asset and can create PFIC-type issues.",
+      "us_tax_source": "S20",
+      "us_reporting": "Form 8938 explicitly covers foreign life insurance with a cash surrender value.",
+      "us_reporting_source": "S20",
+      "fx_spread_pct": "",
+      "fx_spread_note": "",
+      "penalty_if_misused": "Watch list plus loss of the quota for three years; Art. 44 unauthorised change of use, up to 30% of the amount, 30%–100% if serious.",
+      "penalty_source": "S12,S01",
+      "pros": [
+        "None lawfully. QDII (M05) is the lawful way to get offshore securities exposure."
+      ],
+      "cons": [
+        "Expressly prohibited on the FX purchase application.",
+        "Capital account for individual outbound securities is not open, other than through QDII.",
+        "Three-year loss of quota plus a potential 30%–100% fine."
+      ],
+      "flags": [],
+      "sources": [
+        "S01",
+        "S12",
+        "S20"
+      ]
+    },
+    {
+      "id": "M18",
+      "name": "Receiving a gift or bequest from a relative in China",
+      "name_zh": "接受境内亲属赠与 / 继承",
+      "category": "note",
+      "legality": "conditional",
+      "confidence": "partial",
+      "what_it_is": "A relative in China gives you money. Important analytical point: this is not a separate extraction channel. The relative still has to get the money out of China first, which returns you to M01–M04, M08 or M09.",
+      "annual_limit_usd": "",
+      "annual_limit_note": "No separate channel — the relative's own limits govern.",
+      "limit_source": "S04",
+      "china_tax_on_conversion": "0% on the conversion",
+      "china_tax_note": "A gift or bequest is not among the nine taxable categories in IIT Law Art. 2, so there is no PRC IIT on the receipt. The relative's problem is the outbound transfer, not the tax.",
+      "china_tax_source": "S05",
+      "us_tax_treatment": "A gift or bequest from a foreign person is excluded from the recipient's gross income.",
+      "us_tax_source": "S22",
+      "us_reporting": "Form 3520 Part IV if the aggregate gift or bequest from a nonresident alien or foreign estate exceeds USD 100,000 in the year; each gift over USD 5,000 separately identified. Penalty for failure: 5% per month, capped at 25%.",
+      "us_reporting_source": "S21,S22",
+      "fx_spread_pct": "",
+      "fx_spread_note": "",
+      "penalty_if_misused": "Missing Form 3520: 5% of the amount per month, maximum 25%.",
+      "penalty_source": "S21",
+      "pros": [
+        "No US income tax on receipt.",
+        "No PRC income tax on receipt."
+      ],
+      "cons": [
+        "Solves nothing on its own — the money is still inside China.",
+        "US Form 3520 is required above USD 100,000 and is easy to miss.",
+        "A pattern of gifts sized just under reporting thresholds invites scrutiny."
+      ],
+      "flags": [
+        "Whether a gift of RMB within China to a foreign-resident recipient can be converted and remitted under the current-account regime, and on what documentation, is not resolved by the sources retrieved. Flagged for review."
+      ],
+      "sources": [
+        "S04",
+        "S05",
+        "S21",
+        "S22"
+      ]
+    },
+    {
+      "id": "M19",
+      "name": "Remitting foreign currency you already hold in a PRC bank account",
+      "name_zh": "外汇储蓄账户直接汇出（无需购汇）",
+      "category": "lawful-current-account",
+      "legality": "lawful",
+      "confidence": "verified",
+      "what_it_is": "If the account in China already holds USD rather than CNY, no conversion is needed. Remittance out of an FX savings account is handled on ID up to USD 50,000 per day, and on genuine current-account vouchers above that.",
+      "annual_limit_usd": 50000,
+      "annual_limit_note": "Per day, not per year: up to USD 50,000 equivalent per day on ID alone; above that, genuine current-account transaction vouchers.",
+      "limit_source": "S04",
+      "china_tax_on_conversion": "0% — there is no conversion",
+      "china_tax_note": "No conversion means no exchange event at all.",
+      "china_tax_source": "S05",
+      "us_tax_treatment": "Moving your own funds; not income. No §988 currency leg because there is no disposition of nonfunctional currency.",
+      "us_tax_source": "S24",
+      "us_reporting": "FBAR / Form 8938 as applicable.",
+      "us_reporting_source": "S17,S20",
+      "fx_spread_pct": "",
+      "fx_spread_note": "",
+      "penalty_if_misused": "Falsely describing the purpose is a current-account authenticity breach (Art. 12 / Art. 48) and can escalate to evasion under Art. 39.",
+      "penalty_source": "S01",
+      "pros": [
+        "No quota consumed and no conversion, so no exchange-rate loss at all.",
+        "Daily limit (USD 50,000) is 365x more permissive than the annual quota in theory — the binding constraint is the authenticity requirement above that amount."
+      ],
+      "cons": [
+        "Only helps if the balance is already in foreign currency.",
+        "Above USD 50,000 per day the bank will demand a genuine current-account purpose.",
+        "Does not create a lawful route to move CNY — the conversion question simply reappears."
+      ],
+      "flags": [],
+      "sources": [
+        "S01",
+        "S04",
+        "S05",
+        "S17",
+        "S20",
+        "S24"
+      ]
+    },
+    {
+      "id": "M20",
+      "name": "Qualified Domestic Limited Partnership (QDLP) and similar pilot schemes",
+      "name_zh": "合格境内有限合伙人（QDLP）",
+      "category": "not-a-transfer",
+      "legality": "unverified",
+      "confidence": "unverified",
+      "what_it_is": "Regional pilot programmes allowing onshore investors to commit RMB to offshore alternative strategies through a licensed domestic partnership. Considered because it is commonly recommended; not confirmed from an official source in this session.",
+      "annual_limit_usd": "",
+      "annual_limit_note": "",
+      "limit_source": "",
+      "china_tax_on_conversion": "",
+      "china_tax_note": "",
+      "china_tax_source": "",
+      "us_tax_treatment": "",
+      "us_tax_source": "",
+      "us_reporting": "",
+      "us_reporting_source": "",
+      "fx_spread_pct": "",
+      "fx_spread_note": "",
+      "penalty_if_misused": "",
+      "penalty_source": "",
+      "pros": [],
+      "cons": [
+        "Not verified in this session. Do not rely on it."
+      ],
+      "flags": [
+        "UNVERIFIED — no official source retrieved. Every value left blank deliberately."
+      ],
+      "sources": []
+    },
+    {
+      "id": "M21",
+      "name": "Family-office / private-bank structured repatriation programmes",
+      "name_zh": "家族办公室 / 私人银行结构化汇出方案",
+      "category": "not-a-transfer",
+      "legality": "unverified",
+      "confidence": "unverified",
+      "what_it_is": "Advertised by intermediaries as bespoke structures. Included because it is frequently pitched to holders of large balances; no official source describes any such general programme.",
+      "annual_limit_usd": "",
+      "annual_limit_note": "",
+      "limit_source": "",
+      "china_tax_on_conversion": "",
+      "china_tax_note": "",
+      "china_tax_source": "",
+      "us_tax_treatment": "",
+      "us_tax_source": "",
+      "us_reporting": "",
+      "us_reporting_source": "",
+      "fx_spread_pct": "",
+      "fx_spread_note": "",
+      "penalty_if_misused": "",
+      "penalty_source": "",
+      "pros": [],
+      "cons": [
+        "Not verified in this session. Treat any intermediary offering a 'programme' with suspicion."
+      ],
+      "flags": [
+        "UNVERIFIED — no official source retrieved. Every value left blank deliberately."
+      ],
+      "sources": []
+    },
+    {
+      "id": "M22",
+      "name": "Business channel: trading company or genuine service export",
+      "name_zh": "企业渠道：真实贸易或服务出口",
+      "category": "lawful-current-account",
+      "legality": "conditional",
+      "confidence": "partial",
+      "what_it_is": "The account is contributed as capital to a PRC company that earns genuine foreign-currency revenue from real exports or services, and the profits are later distributed as dividends. Lawful only if the trade is real.",
+      "annual_limit_usd": "",
+      "annual_limit_note": "Corporate current-account transfers have no fixed annual ceiling but require genuine trade documentation; dividend remittance is a capital-account payment requiring tax clearance.",
+      "limit_source": "S01,S08",
+      "china_tax_on_conversion": "Corporate income tax applies to the company's profits; dividends to a foreign shareholder are subject to withholding",
+      "china_tax_note": "No rate is entered because the relevant statute was not retrieved in this session. Treaty Art. 9 (Dividends) governs the withholding rate for a US shareholder, but the rate is not stated in the material retrieved.",
+      "china_tax_source": "S26",
+      "us_tax_treatment": "",
+      "us_tax_source": "",
+      "us_reporting": "Form 5471 if the US person is an officer, director or 10% shareholder of the foreign corporation; Form 8938 as applicable; FBAR as applicable.",
+      "us_reporting_source": "S20",
+      "fx_spread_pct": "",
+      "fx_spread_note": "",
+      "penalty_if_misused": "If the trade is fabricated this becomes 逃汇 under Art. 39 (up to 30%, 30%–100% if serious).",
+      "penalty_source": "S01",
+      "pros": [
+        "A genuine business has no USD 50,000 individual ceiling.",
+        "Fully lawful when the underlying trade is real."
+      ],
+      "cons": [
+        "Requires a real business with real customers — not a workaround for an idle balance.",
+        "Corporate-level tax, then dividend withholding, then US tax on the dividend: the most heavily taxed route.",
+        "Form 5471 exposure for a US person.",
+        "Fabricating the trade is the exact fact pattern in SAFE's enforcement notices."
+      ],
+      "flags": [
+        "PRC corporate income tax rate and dividend withholding rate left blank — the relevant statutes were not retrieved in this session. Flagged for review."
+      ],
+      "sources": [
+        "S01",
+        "S08",
+        "S20",
+        "S26"
+      ]
+    }
+  ]
+}
