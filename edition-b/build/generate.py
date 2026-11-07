@@ -152,7 +152,7 @@ def foot(rel=""):
     specific facts. Classification as a domestic vs foreign individual, prior-year filing history, and
     willfulness are decisive and cannot be determined from this dataset. Consult a qualified adviser.</p>
     <p class="muted">Built by session <code>arena-d7e7ed3b</code>. Source snapshot 2026-11-07.
-    Working notes and the verification log are in <a href="{rel}COORDINATION.md">COORDINATION.md</a>.</p>
+    Working notes and the verification log are in <a href="../COORDINATION.md">COORDINATION.md</a>.</p>
   </div>
 </footer>
 </body>
