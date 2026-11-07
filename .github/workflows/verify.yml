@@ -21,3 +21,8 @@ jobs:
           python3 scripts/build.py
           python3 scripts/verify.py
           git diff --exit-code -- docs
+      - name: Verify edition-b build is reproducible and every value is sourced
+        run: |
+          python3 edition-b/build/generate.py
+          git diff --exit-code -- edition-b
+          python3 edition-b/build/verify.py
