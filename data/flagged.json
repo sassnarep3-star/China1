@@ -1,0 +1,251 @@
+[
+  {
+    "id": "F01",
+    "kind": "GAP",
+    "severity": "High",
+    "item": "Whether the account holder is 境内个人 or 境外个人 at the bank",
+    "detail": "This single fact changes the answer more than anything else. If the account is registered as a PRC resident (居民身份证), the USD 50,000 annual quota governs purchases. If it is registered as 境外个人 (passport), 汇发[2020]14号 Art. 59 and 办法 Art. 13 allow a purchase against lawful China-source RMB income with source documents and no annual cap in the rule text.",
+    "why_it_matters": "Every recommendation forks on this. It cannot be established from documents available here.",
+    "action": "Ask the bank, in writing, how the account is classified (账户主体类别) and which ID document is on file. If a 居民身份证 is on file for a US citizen, that is itself an irregularity to correct — 国籍法 Art. 9 removes PRC nationality on voluntary acquisition of another nationality.",
+    "sources": [
+      "CN-01",
+      "CN-02",
+      "CN-03",
+      "CN-17"
+    ]
+  },
+  {
+    "id": "F02",
+    "kind": "IRREG",
+    "severity": "High",
+    "item": "A US citizen may still be banking on a PRC resident identity",
+    "detail": "Naturalised US citizens frequently keep an un-cancelled 户口 and a still-working 居民身份证. The National Immigration Administration confirms that PRC nationality is lost automatically on voluntary acquisition of another nationality while settled abroad. An account still classified as 境内个人 is therefore both a compliance problem and the reason the person is stuck behind the USD 50,000 quota.",
+    "why_it_matters": "Fixing the classification may be the unlock, and continuing to use the resident identity is misrepresentation to the bank.",
+    "action": "Take legal advice on the hukou/ID position before approaching the bank; do not present an ID you are no longer entitled to hold.",
+    "sources": [
+      "CN-17",
+      "CN-01"
+    ]
+  },
+  {
+    "id": "F03",
+    "kind": "GAP",
+    "severity": "High",
+    "item": "Source of the funds inside China",
+    "detail": "Not knowable from here. The lawful route differs completely: salary (current account, already taxed) → A3/C3; property sale (capital account, SAFE approval, 20% IIT on the gain) → A7; inheritance (继承转移) → B2; historic savings moved in as FX (原路汇回) → A6; investment gains (capital account) → D6/B1.",
+    "why_it_matters": "Applying for the wrong route is the fastest way to get declined and watch-listed.",
+    "action": "Assemble the paper trail for each tranche of the balance before contacting any bank.",
+    "sources": [
+      "CN-01",
+      "CN-03",
+      "CN-06"
+    ]
+  },
+  {
+    "id": "F04",
+    "kind": "GAP",
+    "severity": "High",
+    "item": "Whether prior FBAR / Form 8938 / Schedule B filings were made",
+    "detail": "If the Chinese account has existed for years and was never reported, the exposure is not a conversion cost — it is the willful-FBAR band (greater of USD 100,000 or 50% of the balance, per year) plus the Form 8938 continuous-failure penalty. Delinquent procedures exist and can produce no penalty in clean non-willful cases, but eligibility depends on facts.",
+    "why_it_matters": "This is the only part of the problem where a genuinely 'considerable amount' is at stake, and it grows with every unfiled year.",
+    "action": "Have a US international tax adviser review the filing history BEFORE any large transfer, because a large inbound transfer is what draws attention.",
+    "sources": [
+      "US-01",
+      "US-03",
+      "US-06",
+      "US-07"
+    ]
+  },
+  {
+    "id": "F05",
+    "kind": "GAP",
+    "severity": "High",
+    "item": "Whether the balance is in a deposit or in a fund / investment-linked insurance product",
+    "detail": "A bank deposit is a normal foreign account. A Chinese fund, structured product or investment-linked insurance policy is likely a PFIC for a US person, which changes the US tax analysis out of all recognition.",
+    "why_it_matters": "The 0.42% spread analysis assumes a deposit. A PFIC holding can produce a far larger US tax bill than any conversion cost.",
+    "action": "Get the product name and ISIN from the bank statement and have it classified.",
+    "sources": [
+      "US-09"
+    ]
+  },
+  {
+    "id": "F06",
+    "kind": "GAP",
+    "severity": "Medium",
+    "item": "Outbound wire commission, correspondent charges and inbound US wire fee",
+    "detail": "Deliberately left blank in the cost model. These are set by bank tariff schedules that were not retrieved from a tier-A page in this session. Typical structures (a percentage with a floor and cap, plus a fixed cable charge) are well known, but no number is asserted.",
+    "why_it_matters": "Fixed fees matter a lot on smaller transfers and almost not at all on large ones.",
+    "action": "Ask the specific branch for its published tariff sheet (服务价目表) for 境外汇出汇款, and ask the receiving US bank for its inbound wire fee.",
+    "sources": []
+  },
+  {
+    "id": "F07",
+    "kind": "GAP",
+    "severity": "Medium",
+    "item": "Exact 'prohibited uses' wording for quota purchases (overseas property, securities, investment insurance)",
+    "detail": "The prohibition is widely reported as appearing in the 个人购汇申请书 declaration that a customer signs. This session confirmed the underlying legal architecture from tier-A sources (current account vs capital account, and the requirement that purchase purpose match remittance purpose) but did not retrieve the 申请书 itself from a tier-A page. The specific wording is therefore NOT quoted anywhere in this project.",
+    "why_it_matters": "People rely on this list to decide what they may declare. Getting it second-hand is exactly the kind of thing that should not be passed on.",
+    "action": "Ask the bank for a copy of the 个人购汇申请书 you will sign, and read the declaration before signing it.",
+    "sources": [
+      "CN-01",
+      "CN-03"
+    ]
+  },
+  {
+    "id": "F08",
+    "kind": "GAP",
+    "severity": "Medium",
+    "item": "Offshore CNH vs onshore CNY spread",
+    "detail": "The offshore conversion is generally cheaper, but no tier-A CNH quote was captured in this session, so no figure is given. Onshore evidence (0.42%) is stated; the offshore comparison is not.",
+    "why_it_matters": "Would only matter once the money is lawfully offshore, which is the hard part.",
+    "action": "Compare a live CNH quote (e.g. an offshore bank or a CNH-capable broker) with the onshore BOC board on the same day.",
+    "sources": [
+      "CN-11",
+      "REF-01"
+    ]
+  },
+  {
+    "id": "F09",
+    "kind": "GAP",
+    "severity": "Medium",
+    "item": "QDII fund fee levels and per-investor limits",
+    "detail": "QDII is confirmed as a licensed institutional channel (CSRC Order No. 46), but fund-level fees, subscription caps and current quota availability were not retrieved from a tier-A source. No figures given.",
+    "why_it_matters": "QDII is closed-loop anyway, so it is not a repatriation route; the missing figures do not change the conclusion.",
+    "action": "Read the specific fund's prospectus (招募说明书) if considering it.",
+    "sources": [
+      "CN-15"
+    ]
+  },
+  {
+    "id": "F10",
+    "kind": "GAP",
+    "severity": "Medium",
+    "item": "Closed-loop investment schemes (Stock Connect southbound, mutual fund recognition, Wealth Management Connect) — eligibility and limits",
+    "detail": "These exist and are closed-loop, but the eligibility thresholds and product scope change and were not verified line-by-line. No figures stated.",
+    "why_it_matters": "Low: none of them repatriates cash.",
+    "action": "Check the current scheme rules on the HKMA / SFC / PBOC pages if relevant.",
+    "sources": [
+      "CN-15"
+    ]
+  },
+  {
+    "id": "F11",
+    "kind": "GAP",
+    "severity": "Low",
+    "item": "Traveller's cheque / bank draft availability",
+    "detail": "Historic SAFE guidance recommends drafts as an alternative to cash, but issuance has largely been discontinued. No current tier-A confirmation obtained; the row is published with all values blank.",
+    "why_it_matters": "Effectively obsolete.",
+    "action": "Ask the bank; expect the answer to be no.",
+    "sources": [
+      "CN-10"
+    ]
+  },
+  {
+    "id": "F12",
+    "kind": "GAP",
+    "severity": "Medium",
+    "item": "Chinese deposit interest rates and US short-term USD rates (opportunity cost)",
+    "detail": "Not retrieved; left blank in the cost table rather than estimated. The comparison is directionally important but must be made with live rates.",
+    "why_it_matters": "Affects whether waiting is expensive.",
+    "action": "Read the PBOC/bank deposit board and the US Treasury bill curve on the same day.",
+    "sources": []
+  },
+  {
+    "id": "F13",
+    "kind": "IRREG",
+    "severity": "Medium",
+    "item": "The premise in the brief — 'no way to convert without paying a considerable amount of taxes' — does not match the law",
+    "detail": "Neither jurisdiction taxes the conversion of your own money. China taxes the INCOME (20% on interest, dividends and property gains) and restricts the TRANSFER (quota, approvals, penalties for evasion). The US taxes income and penalises non-reporting. The 'considerable amount' being felt is most likely (a) a 20% IIT bill on an underlying gain, (b) an agent's commission for an unlawful route, or (c) an unfiled-FBAR exposure that has been conflated with a transfer tax.",
+    "why_it_matters": "Solving the wrong problem is expensive. If the real issue is an untaxed property gain, no remittance route avoids it.",
+    "action": "Identify which of the three it actually is before choosing a route. The decision tree on the Strategy page is built for exactly this.",
+    "sources": [
+      "CN-14",
+      "US-04",
+      "US-01"
+    ]
+  },
+  {
+    "id": "F14",
+    "kind": "IRREG",
+    "severity": "Medium",
+    "item": "China's FATCA status is 'agreement in substance', not a signed IGA",
+    "detail": "Treasury has long listed China as having reached a Model 1 agreement in substance rather than a signed intergovernmental agreement. Reporting on the Treasury FATCA jurisdiction list could not be re-verified from the Treasury site in this session, so this is recorded as PARTIAL: the practical conclusion (information is not opaque) holds either way because China also participates in the OECD common reporting standard.",
+    "why_it_matters": "Affects the assumed probability of discovery, not the legal obligation.",
+    "action": "Check the current Treasury FATCA jurisdiction list before relying on any specific exchange-of-information assumption.",
+    "sources": [
+      "US-01"
+    ]
+  },
+  {
+    "id": "F15",
+    "kind": "IRREG",
+    "severity": "High",
+    "item": "Criminal, as distinct from administrative, exposure for individuals is outside the scope of this project",
+    "detail": "The FX Regulations set administrative fines (up to 30% of the amount, 30%-100% for serious cases) and refer serious cases to criminal process. Which individual fact patterns cross the criminal line (and under which offence) is a question of criminal law that this project does not answer and should not be read as answering.",
+    "why_it_matters": "Users may treat an administrative figure as the worst case.",
+    "action": "If any unlawful route has already been used, obtain advice from a PRC-qualified lawyer before doing anything else.",
+    "sources": [
+      "CN-08"
+    ]
+  },
+  {
+    "id": "F16",
+    "kind": "IRREG",
+    "severity": "Medium",
+    "item": "Bank practice diverges from the written rule, in both directions",
+    "detail": "汇发[2020]14号 Art. 59 permits a 境外个人 to purchase FX against lawful China-source RMB income without an annual cap, and Art. 65 permits remittance of FX from the account on ID alone. In practice individual branches apply their own source-of-funds thresholds, may still push the case into the USD 50,000 quota, and may require documents the rule does not mention. Conversely some branches process quickly.",
+    "why_it_matters": "A reader may be told 'no' once and conclude the route does not exist.",
+    "action": "Ask for the refusal in writing with the rule cited; escalate to the branch's 国际业务 department, then to the local SAFE branch, which is the authority that interprets its own rules.",
+    "sources": [
+      "CN-03",
+      "CN-04"
+    ]
+  },
+  {
+    "id": "F17",
+    "kind": "IRREG",
+    "severity": "Medium",
+    "item": "The two-year emigration-transfer schedule is a floor, not a promise",
+    "detail": "The 暂行办法 stages the release (half, then half the remainder after a year, the balance after two years) but the release still depends on approval at the time of each instalment, and SAFE HQ approval is needed at CNY 500,000 and above. The statute does not guarantee that each instalment is granted.",
+    "why_it_matters": "Timelines quoted by agents as 'two years' may be optimistic.",
+    "action": "Get the approval in writing and diarise each release date.",
+    "sources": [
+      "CN-06",
+      "CN-07"
+    ]
+  },
+  {
+    "id": "F18",
+    "kind": "IRREG",
+    "severity": "Low",
+    "item": "The USD 50,000 quota is a per-person, per-calendar-year number and has been stable since 2007",
+    "detail": "The figure has been unchanged since 汇发[2007]1号 and SAFE restated it in 2020 and again in 2026 FAQ answers. It is set administratively and can be adjusted; it is not a statutory constant.",
+    "why_it_matters": "A plan built on ten years of stable quota assumes policy stability.",
+    "action": "Re-check each January.",
+    "sources": [
+      "CN-02",
+      "CN-03",
+      "CN-05"
+    ]
+  },
+  {
+    "id": "F19",
+    "kind": "IRREG",
+    "severity": "Medium",
+    "item": "This is a research dossier, not legal, tax or investment advice",
+    "detail": "Every legal proposition here is traced to a published instrument with a link. Every number is quoted or derived from a quoted number. But the application to a specific person's facts, and the choice among lawful routes, requires a PRC-qualified lawyer for the China side and a US CPA or tax attorney for the US side. Cross-border work of this kind is routinely done by a pair, not one adviser.",
+    "why_it_matters": "The stakes include penalties calculated as a percentage of a life's savings.",
+    "action": "Engage both sides before moving a material amount.",
+    "sources": []
+  },
+  {
+    "id": "F20",
+    "kind": "IRREG",
+    "severity": "Low",
+    "item": "Repository was empty at the start of this run",
+    "detail": "The repository contained a single 20-byte README.md ('# China1') and no data, site or coordination file. GitHub Pages was already enabled, serving a legacy auto-generated page from the repository root, so the published URL showed no verified content.",
+    "why_it_matters": "Recorded for audit: nothing was inherited, so nothing was silently discarded.",
+    "action": "None. Resolved by this run.",
+    "sources": []
+  }
+]

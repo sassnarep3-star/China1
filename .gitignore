@@ -1,5 +1,6 @@
 # Python
 __pycache__/
+*.pyc
 *.py[cod]
 *.egg-info/
 .venv/
@@ -10,7 +11,10 @@ __pycache__/
 .vscode/
 *.swp
 
-# Build scratch. docs/ IS committed: it is the GitHub Pages source directory
-# configured as branch "main", path "/docs". Do not ignore it.
+# Scratch
 /tmp/
 *.log
+
+# NOTE: nothing under docs/, dossier/, edition-b/ or edition-c/ is ignored.
+# Those are generated site directories that ARE committed, because GitHub
+# Pages serves this repository from main at the root path.

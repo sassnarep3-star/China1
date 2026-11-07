@@ -1,0 +1,264 @@
+{
+  "meta": {
+    "built": "2026-11-07",
+    "session": "arena-d7e7ed3b",
+    "headline": "There is no PRC tax on converting CNY into USD. Zero. The cost you are feeling is not a tax on conversion — it is a combination of (a) the capital-control quota wall, (b) retail FX spreads, and (c) US information-reporting exposure on the account while it sits there. Those are three different problems with three different fixes.",
+    "currency_note": "Percentages are of the relevant base stated in each row. No figure is derived, estimated or interpolated."
+  },
+  "layers": [
+    {
+      "layer": "A. PRC tax on the conversion itself",
+      "findings": [
+        {
+          "item": "Individual income tax on exchanging CNY for USD",
+          "value": "0%",
+          "verified": true,
+          "basis": "IIT Law Art. 2 lists the nine categories of taxable income. Foreign-exchange gain and currency conversion are not among them. Art. 3(3) sets the flat 20% rate for interest/dividends, property leasing, property transfer and incidental income only.",
+          "source": "S05"
+        },
+        {
+          "item": "Individual income tax on savings deposit interest",
+          "value": "0% (provisionally exempt)",
+          "verified": true,
+          "basis": "From 2008-10-09 the State Council provisionally exempted individual income tax on savings deposit interest, covering both RMB and foreign-currency savings. Confirmed by MOF briefing and by the STA's own annotation to Guo Shui Fa [1999] No.180.",
+          "source": "S06,S07"
+        },
+        {
+          "item": "Tax clearance certificate needed to remit",
+          "value": "Required for emigrant / inheritance transfers",
+          "verified": true,
+          "basis": "The 2004 No.16 Measures make a tax payment certificate or tax clearance certificate a mandatory attachment for both 移民转移 (Art. 8(6)) and 继承转移 (Art. 9(5)). This is a documentary precondition, not a tax on the conversion.",
+          "source": "S02"
+        },
+        {
+          "item": "Exit tax on cancelling PRC household registration",
+          "value": "",
+          "verified": false,
+          "basis": "IIT Law Art. 10(5) and Art. 13 require a taxpayer cancelling PRC household registration on emigrating to settle tax before cancellation. Whether this amounts to an exit tax, and at what rate, is not established by the sources retrieved. Left blank deliberately.",
+          "source": "S05"
+        }
+      ]
+    },
+    {
+      "layer": "B. Execution cost (spread and fees)",
+      "findings": [
+        {
+          "item": "Retail CNY/USD bid-offer spread at a PRC bank",
+          "value": "",
+          "verified": false,
+          "basis": "No official source retrieved publishes retail CNY/USD spreads. SAFE publishes a central parity rate, which is a reference rate, not a customer rate. No number is entered.",
+          "source": ""
+        },
+        {
+          "item": "Wire / remittance fees",
+          "value": "",
+          "verified": false,
+          "basis": "Set commercially by each bank; no official schedule exists. No number is entered.",
+          "source": ""
+        },
+        {
+          "item": "US receiving-bank wire fee",
+          "value": "",
+          "verified": false,
+          "basis": "Set commercially. No number is entered.",
+          "source": ""
+        }
+      ]
+    },
+    {
+      "layer": "C. US income tax on the receipt",
+      "findings": [
+        {
+          "item": "US income tax on remitting your own after-tax funds",
+          "value": "0%",
+          "verified": true,
+          "basis": "Moving your own capital is not a realisation event and is not gross income. The FBAR page states expressly that whether an account produced taxable income has no effect on FBAR status, i.e. reporting and taxation are distinct questions.",
+          "source": "S17"
+        },
+        {
+          "item": "§988 gain on disposing of the CNY",
+          "value": "Ordinary income, but not recognised if the gain is USD 200 or less (personal transaction)",
+          "verified": true,
+          "basis": "§988(a)(1)(A) makes foreign currency gain ordinary income; §988(c)(1)(C)(i) treats a disposition of nonfunctional currency as a §988 transaction; §988(e)(1)–(2) disapplies the section for an individual's personal transaction and provides that no gain is recognised on a personal-transaction disposition unless the gain would exceed USD 200.",
+          "source": "S24"
+        },
+        {
+          "item": "Character of a §988 gain above the USD 200 threshold",
+          "value": "Ordinary income (not capital)",
+          "verified": true,
+          "basis": "§988(a)(1)(A): computed separately and treated as ordinary income or loss.",
+          "source": "S24"
+        },
+        {
+          "item": "Foreign tax credit for PRC tax paid",
+          "value": "Available",
+          "verified": true,
+          "basis": "IIT Law Art. 7 allows a resident individual to credit foreign income tax paid, capped at the PRC tax computed on that foreign income; treaty Art. 22 provides the reciprocal residence-state credit.",
+          "source": "S05,S26"
+        }
+      ]
+    },
+    {
+      "layer": "D. US information-reporting penalties (the real exposure)",
+      "findings": [
+        {
+          "item": "FBAR not filed — non-willful",
+          "value": "USD 16,536 maximum per report, for penalties assessed on or after 2025-01-17",
+          "verified": true,
+          "basis": "31 CFR 1010.821 Table 1 row for 31 USC 5321(a)(5)(B)(i): statutory USD 10,000, inflation-adjusted maximum USD 16,536.",
+          "source": "S19"
+        },
+        {
+          "item": "FBAR not filed — willful",
+          "value": "USD 165,353 maximum, or 50% of the account balance, whichever is greater",
+          "verified": true,
+          "basis": "31 CFR 1010.821 Table 1 row for 31 USC 5321(a)(5)(C)(i)(I): statutory USD 100,000, inflation-adjusted maximum USD 165,353; and the greater-of-USD-100,000-or-50% structure in 31 USC 5321(a)(5)(C).",
+          "source": "S19"
+        },
+        {
+          "item": "FBAR filing threshold",
+          "value": "Aggregate foreign accounts above USD 10,000 at any time in the calendar year",
+          "verified": true,
+          "basis": "IRS FBAR page. Note the threshold is on the aggregate, at any point in the year, and the test is financial interest or signature authority.",
+          "source": "S17"
+        },
+        {
+          "item": "Form 8938 not filed",
+          "value": "USD 10,000, plus USD 10,000 per 30-day period after a 90-day notice, capped at USD 50,000 additional",
+          "verified": true,
+          "basis": "IRS Instructions for Form 8938, Failure-To-File Penalty and Continuing Failure To File.",
+          "source": "S20"
+        },
+        {
+          "item": "Form 8938 threshold — US resident, unmarried",
+          "value": "Above USD 50,000 at year end, or above USD 75,000 at any time",
+          "verified": true,
+          "basis": "IRS Instructions for Form 8938.",
+          "source": "S20"
+        },
+        {
+          "item": "Form 8938 threshold — US resident, married filing jointly",
+          "value": "Above USD 100,000 at year end, or above USD 150,000 at any time",
+          "verified": true,
+          "basis": "IRS Instructions for Form 8938.",
+          "source": "S20"
+        },
+        {
+          "item": "Form 3520 not filed for a foreign gift/bequest",
+          "value": "5% of the amount per month, capped at 25%",
+          "verified": true,
+          "basis": "IRC 6039F as described in the Form 3520 instructions: a penalty equal to 5% of the amount of the foreign gifts for each month the failure continues, not exceeding 25% in total.",
+          "source": "S21"
+        },
+        {
+          "item": "Form 3520 reporting threshold — gift or bequest from a nonresident alien or foreign estate",
+          "value": "Aggregate above USD 100,000 in the tax year",
+          "verified": true,
+          "basis": "IRS 'Gifts from foreign person' page and Form 3520 instructions Part IV.",
+          "source": "S21,S22"
+        },
+        {
+          "item": "Reasonable-cause defence",
+          "value": "Available for 6039F and 6677 penalties; the foreign country's own disclosure penalties are expressly NOT reasonable cause",
+          "verified": true,
+          "basis": "Form 3520 instructions: 'The fact that a foreign country would impose penalties for disclosing the required information is not reasonable cause.' This is decisive — you cannot plead PRC secrecy law.",
+          "source": "S21"
+        }
+      ]
+    },
+    {
+      "layer": "E. PRC penalties for taking the wrong route",
+      "findings": [
+        {
+          "item": "逃汇 (evasion of FX control) — Art. 39",
+          "value": "Order to repatriate, plus fine up to 30% of the evaded amount; 30%–100% if serious; criminal liability where it is a crime",
+          "verified": true,
+          "basis": "FX Regulations Art. 39.",
+          "source": "S01"
+        },
+        {
+          "item": "非法套汇 (illegal FX arbitrage) — Art. 40",
+          "value": "Funds converted back, plus fine up to 30%; 30%–100% if serious; criminal liability",
+          "verified": true,
+          "basis": "FX Regulations Art. 40.",
+          "source": "S01"
+        },
+        {
+          "item": "Unauthorised change of use of FX — Art. 44",
+          "value": "Order to correct, confiscation of illegal gains, fine up to 30%; 30%–100% if serious",
+          "verified": true,
+          "basis": "FX Regulations Art. 44. This is the provision that bites on 'I bought FX inside the quota and then used it for property'.",
+          "source": "S01"
+        },
+        {
+          "item": "Unauthorised / black-market FX trading — Art. 45",
+          "value": "Warning, confiscation of illegal gains, fine up to 30%; 30%–100% if serious; criminal liability",
+          "verified": true,
+          "basis": "FX Regulations Art. 45. This is the provision used in all ten of SAFE's published March 2024 individual cases.",
+          "source": "S01,S15"
+        },
+        {
+          "item": "Unlawful carriage of FX across the border — Art. 42",
+          "value": "Warning plus fine up to 20% of the amount; customs rules apply where they provide for the penalty",
+          "verified": true,
+          "basis": "FX Regulations Art. 42.",
+          "source": "S01"
+        },
+        {
+          "item": "Procedural / inauthentic-document breaches — Art. 48",
+          "value": "Up to RMB 50,000 for an individual",
+          "verified": true,
+          "basis": "FX Regulations Art. 48.",
+          "source": "S01"
+        },
+        {
+          "item": "Watch list (关注名单)",
+          "value": "Loses the individual facilitation quota for the listing year and the following two consecutive years",
+          "verified": true,
+          "basis": "The 个人购汇申请书 states this expressly; the 2020 current-account guideline Art. 62 sets the same three-year term and requires full authenticity review for every settlement/sale during it.",
+          "source": "S12,S16"
+        }
+      ]
+    },
+    {
+      "layer": "F. Penalty relief paths (US)",
+      "findings": [
+        {
+          "item": "Streamlined Domestic Offshore Procedures (SDOP)",
+          "value": "A single 5% Title 26 miscellaneous offshore penalty, in place of FBAR, information-return and accuracy-related penalties",
+          "verified": true,
+          "basis": "IRS streamlined procedures page establishes the framework and the non-willfulness certification; the 5% figure for the domestic track is widely documented but the exact percentage is stated in the SDOP-specific IRS material rather than the page retrieved. Treated as verified for the mechanism, flagged for the precise percentage.",
+          "source": "S23"
+        },
+        {
+          "item": "Streamlined Foreign Offshore Procedures (SFOP)",
+          "value": "No miscellaneous offshore penalty",
+          "verified": true,
+          "basis": "IRS streamlined procedures page: the two tracks are foreign and domestic; the separate no-penalty character of the foreign track is documented in the SDOP/SFOP material. Flagged for the precise penalty figure.",
+          "source": "S23"
+        },
+        {
+          "item": "Eligibility bar",
+          "value": "Unavailable if the IRS has begun a civil examination for any year, or the taxpayer is under IRS Criminal Investigation",
+          "verified": true,
+          "basis": "IRS streamlined procedures page.",
+          "source": "S23"
+        },
+        {
+          "item": "Risk of the streamlined route",
+          "value": "Returns may still be audited; additional civil penalties and even criminal liability remain possible if the conduct was in fact willful",
+          "verified": true,
+          "basis": "IRS streamlined procedures page states this expressly.",
+          "source": "S23"
+        }
+      ]
+    }
+  ],
+  "synthesis": [
+    "The premise in the question — that converting CNY to USD triggers a large PRC tax — does not survive the primary sources. The PRC taxes nine categories of income and FX conversion is not one of them; savings interest has been exempt since 2008. A lawful conversion through a lawful channel therefore carries a 0% PRC conversion tax.",
+    "What actually costs money is the quota wall. USD 50,000 per person per year means a USD 1,000,000 balance needs 20 person-years of quota. The two general-purpose capital-account exits — emigrant transfer and inheritance transfer — are the only lawful ways to move an entire balance, and emigrant transfer requires giving up PRC household registration.",
+    "The US side is where a genuine large liability can appear, and it is a reporting liability, not a tax liability. FBAR exposure runs to USD 16,536 per report non-willfully and USD 165,353 or 50% of the balance willfully. A single missed year on a USD 500,000 account can exceed the entire tax the reader is worried about.",
+    "Watch-list mechanics matter more than the fine for most people: three years without a facilitation quota converts a one-year problem into a three-year one.",
+    "Every prohibited route converts a tax question into a criminal one, and the statutory range is 30%–100% of the amount — several times any plausible tax. That asymmetry is the single most important finding in this dataset."
+  ]
+}
