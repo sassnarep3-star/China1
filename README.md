@@ -1,14 +1,26 @@
 # China Money
 
-An evidence-led static research dashboard about lawful conversion and transfer of money from mainland China to the United States. Start at [the site](https://sassnarep3-star.github.io/China1/) or open `index.html` locally. This is educational research, not individualized legal, tax, or investment advice. The source, balance, tax history and account status are unknown; conclusions are conditional and unresolved items are on the Flagged for Review page.
+Official-source research dashboard on lawful mainland-China CNY → USD transfers for a US citizen.
 
-## Build and verify
+**Live site:** https://sassnarep3-star.github.io/China1/
 
-No dependencies or credentials are required:
+## Contents
+- Executive summary and conditional route recommendation
+- 18 routes, service variants and excluded workarounds, with pros/cons
+- Cost/tax components with unknown personal values left blank
+- US reporting requirements and published evidence limitations
+- Official-source registry and verification method
 
+No private financial records, credentials, live exchange-rate guesses or personal tax determinations are stored. Provider guidance is not legislation; editorial comparisons are labeled. Review `docs/review.html` before acting.
+
+## Build and checks
 ```sh
-python3 assets/build.py
-python3 assets/check.py
+python scripts/build.py
+python scripts/verify.py
+python -m http.server 8000 --bind 0.0.0.0 --directory docs
 ```
+No dependencies or external fonts/scripts. Generated HTML supports navigation without JavaScript; JavaScript only filters the transfer table. Edit research records in `scripts/build.py`, regenerate and run verification. Pages serves `main:/`; the supplemental site is under `/docs/`. See COORDINATION.md for deployment and PR records.
 
-The build generates the five checked-in static HTML pages. The checker validates deterministic generation, local linked files, and an official HTTPS citation on every data row; it does **not** prove legal interpretation or live availability of external sources. Pages publishes from `main` using the repository's existing GitHub Pages configuration. See [COORDINATION.md](COORDINATION.md) for the task log and verification scope.
+## Preserved earlier dashboard
+
+The concurrent session’s original dashboard remains at the repository root, with its pages and assets preserved. The expanded research dashboard is at https://sassnarep3-star.github.io/China1/docs/.
