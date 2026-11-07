@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "generated": "2026-11-07",
+    "note": "These are NOT options. They are listed because they are widely recommended online, and because the penalty for choosing one is a percentage of the whole amount — which makes them the most expensive options on the page by a wide margin."
+  },
+  "routes": [
+    {
+      "id": "P01",
+      "name": "Underground banks / 地下钱庄",
+      "how_it_is_pitched": "A 'finance company' takes RMB in China and has an associate release USD to your US account. No money ever crosses the border.",
+      "why_illegal": "This is the textbook 变相买卖外汇 (disguised FX trading) caught by FX Regulations Art.45 — warning, confiscation, up to 30% of the amount, 30%-100% if serious, and criminal liability where it constitutes a crime. It also typically involves unlicensed operation of a financial business.",
+      "cn_penalty": "Up to 30% of the amount; 30%-100% if serious; criminal referral",
+      "us_risk": "Currency-transaction reporting exposure and money-laundering risk; counterparty funds are frequently connected to fraud, so the receiving US bank may freeze or close the account",
+      "sources": ["S01"],
+      "verified": true,
+      "verdict": "NEVER."
+    },
+    {
+      "id": "P02",
+      "name": "Structuring across relatives' USD 50,000 quotas / 蚂蚁搬家",
+      "how_it_is_pitched": "Ask five relatives to each buy USD 50,000 and remit it to you.",
+      "why_illegal": "汇发〔2020〕14号 Art.62 prohibits using split transactions (分拆) to evade the facilitation quota and the authenticity review. Lending your quota gets you a risk warning letter, then a 'watch list' entry; borrowing someone else's quota puts you on the watch list directly. The watch-list period is the year of listing plus the following two years, during which every FX transaction needs full documentary review.",
+      "cn_penalty": "Risk warning; watch-list designation for the current year plus 2 more; full documentary review of every subsequent transaction; underlying conduct can also be penalised under the FX Regulations",
+      "us_risk": "If the money then comes to you as a 'gift', Form 3520 exposure arises; and deliberate structuring of currency transactions is separately prohibited under US law",
+      "sources": ["S03"],
+      "verified": true,
+      "verdict": "NEVER. This is the single most commonly recommended 'solution' online and it is expressly the conduct the rule targets."
+    },
+    {
+      "id": "P03",
+      "name": "False purpose declaration / fabricated documents",
+      "how_it_is_pitched": "Declare the purchase as 'travel' or 'study' when it is really capital.",
+      "why_illegal": "骗购外汇 is 非法套汇 under FX Regulations Art.40 — re-exchange ordered, up to 30% of the amount, 30%-100% if serious, criminal liability where applicable. PBoC Announcement [2004] No.16 Art.13 invokes exactly this article for false documents in a property-transfer application.",
+      "cn_penalty": "Up to 30%; 30%-100% if serious; criminal referral",
+      "us_risk": "A false statement on a bank form is a false statement; it also poisons every later filing that repeats it",
+      "sources": ["S01", "S04"],
+      "verified": true,
+      "verdict": "NEVER."
+    },
+    {
+      "id": "P04",
+      "name": "Buying goods or property abroad with the purchase quota",
+      "how_it_is_pitched": "Use the annual allowance to buy overseas property or securities.",
+      "why_illegal": "Overseas property purchase, securities investment and life/return-of-premium insurance are unopened capital-account items. Note the nuance for this user: a US citizen is 境外个人 and does not complete the Individual FX Purchase Application at all — so the more precise statement is that these purposes are simply not open on the capital account, and dressing a capital transfer as a current-account item is P03.",
+      "cn_penalty": "As P03 if misdescribed",
+      "us_risk": "None specific; US tax rules for foreign property apply",
+      "sources": ["S08", "S09", "S01"],
+      "verified": true,
+      "verdict": "Not available. The capital account is not open for these purposes."
+    },
+    {
+      "id": "P05",
+      "name": "Crypto / stablecoin as a conversion bridge",
+      "how_it_is_pitched": "Buy USDT with RMB on an OTC desk, transfer it, sell for USD.",
+      "why_illegal": "The operative rule is now 银发〔2026〕42号 (effective 2026-02-06), which REPEALED the 2021 '924 notice'. It keeps virtual-currency business activity as an illegal financial activity, bars financial institutions and payment institutions from providing account, transfer, clearing or settlement services for it, and provides that individuals' virtual-currency investment acts that offend public order are VOID with losses borne by the investor. Anyone still citing 银发〔2021〕237号 as current law is quoting a repealed document.",
+      "cn_penalty": "Civil acts void; illegal-financial-activity enforcement against the counterparty, which is what usually destroys the individual's money; 变相买卖外汇 exposure under FX Regulations Art.45",
+      "us_risk": "Full US tax treatment of digital assets; counterparty and sanctions risk; the Chinese-side desk is unlicensed",
+      "sources": ["S14", "S01"],
+      "verified": true,
+      "verdict": "NEVER. And note the two-layer trap: the rule most of the internet cites for this was itself repealed in February 2026."
+    },
+    {
+      "id": "P06",
+      "name": "Borrowing or lending a bank card for overseas cash withdrawal",
+      "how_it_is_pitched": "Use a friend's card once you hit your RMB 100,000 annual ATM cap.",
+      "why_illegal": "汇发〔2017〕29号 Art.1 expressly prohibits both borrowing another person's card and lending your own to evade the overseas cash-withdrawal limits.",
+      "cn_penalty": "Suspension of overseas cash access for the current and following year; FX Regulations penalties depending on severity",
+      "us_risk": "Possible account takeover / AML flags on the receiving side",
+      "sources": ["S06"],
+      "verified": true,
+      "verdict": "NEVER."
+    }
+  ]
+}

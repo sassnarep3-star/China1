@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "generated": "2026-11-07",
+    "note": "One row per US obligation. 'verified' means the value was read from the cited official page in this session."
+  },
+  "forms": [
+    {
+      "id": "U1",
+      "form": "FinCEN Form 114 (FBAR)",
+      "triggers": "US person with a financial interest in, or signature authority over, any foreign financial account, where the aggregate value of all such accounts exceeded USD 10,000 at ANY time during the calendar year",
+      "threshold": "USD 10,000 aggregate, at any point in the year",
+      "due": "April 15 following the calendar year; automatic extension to October 15, no request needed",
+      "filed_where": "FinCEN BSA E-Filing System — NOT filed with your tax return",
+      "penalty": "Non-willful: up to USD 16,536 per violation. Willful: up to USD 165,353 per violation (both inflation-adjusted, for penalties assessed on or after 2025-01-17)",
+      "records": "Keep account name, number, bank name and address, account type and maximum value for 5 years from the FBAR due date",
+      "verified": true,
+      "sources": ["S20", "S21"],
+      "note": "A Chinese bank account holding RMB is a foreign financial account. Whether it produced taxable income is irrelevant to the FBAR test."
+    },
+    {
+      "id": "U2",
+      "form": "Form 8938 (Statement of Specified Foreign Financial Assets)",
+      "triggers": "Specified individual (e.g. US citizen) with an interest in specified foreign financial assets above the threshold, AND required to file an income tax return",
+      "threshold": "Unmarried living in the US: USD 50,000 year-end / USD 75,000 any time. MFJ in the US: 100,000 / 150,000. Living abroad single: 200,000 / 300,000. Living abroad joint: 400,000 / 600,000",
+      "due": "Attached to your annual income tax return",
+      "filed_where": "IRS Form 1040",
+      "penalty": "USD 10,000; plus up to USD 50,000 more if the failure continues after IRS notice (USD 10,000 per 30-day period after 90 days)",
+      "records": "—",
+      "verified": true,
+      "sources": ["S22", "S26"],
+      "note": "If you are not required to file a return, you do not file Form 8938 — even above the threshold. Reasonable cause is a defence under §6038D(g)."
+    },
+    {
+      "id": "U3",
+      "form": "Form 3520, Part IV (large foreign gifts / bequests)",
+      "triggers": "US person receiving gifts or bequests from a nonresident alien individual or foreign estate above the reporting threshold — e.g. a Chinese relative remitting money to you",
+      "threshold": "UNVERIFIED — commonly stated as USD 100,000 aggregate per year; the threshold paragraph was not read from the IRS page in this session",
+      "due": "April 15, or October 15 with an extension",
+      "filed_where": "Mailed to the IRS separately; not attached to the return",
+      "penalty": "UNVERIFIED — the §6039F 5%-per-month / 25%-of-gift rule is widely cited but was not read from an official page in this session",
+      "records": "—",
+      "verified": false,
+      "sources": ["S24"],
+      "note": "FLAGGED. Included because it is the correct form for the 'relative sends me money' variant, which is the most commonly suggested workaround."
+    },
+    {
+      "id": "U4",
+      "form": "Form 1116 (Foreign Tax Credit)",
+      "triggers": "US person who paid or accrued foreign income tax on foreign-source income",
+      "threshold": "No threshold",
+      "due": "With the income tax return",
+      "filed_where": "IRS Form 1040",
+      "penalty": "n/a",
+      "records": "—",
+      "verified": false,
+      "sources": [],
+      "note": "FLAGGED — the mechanism is certain in outline (IIT Law Art.7 provides the mirror-image Chinese credit for foreign tax paid), but the specific US limitation rules were not retrieved in this session. No credit amount is asserted anywhere in this project."
+    },
+    {
+      "id": "U5",
+      "form": "Form 105 (Report of International Transportation of Currency or Monetary Instruments)",
+      "triggers": "Physically transporting more than the threshold in currency or monetary instruments into or out of the United States",
+      "threshold": "UNVERIFIED — commonly stated as USD 10,000",
+      "due": "At the time of transport",
+      "filed_where": "FinCEN / CBP",
+      "penalty": "UNVERIFIED",
+      "records": "—",
+      "verified": false,
+      "sources": ["S28"],
+      "note": "FLAGGED — the official FinCEN page returned HTTP 404 during this session, so the threshold is not used as a table value."
+    },
+    {
+      "id": "U6",
+      "form": "Schedule B, Part III (Foreign Accounts and Trusts)",
+      "triggers": "Any US person with a foreign financial account, answering the Part III questions",
+      "threshold": "No threshold — the questions are yes/no",
+      "due": "With Form 1040",
+      "filed_where": "IRS Form 1040, Schedule B",
+      "penalty": "Accuracy-related penalties may follow an incorrect answer",
+      "records": "—",
+      "verified": false,
+      "sources": [],
+      "note": "FLAGGED — not retrieved in this session. Listed so the compliance picture is not artificially truncated."
+    }
+  ],
+  "sequence_advice": [
+    "Fix reporting first, conversion second. The penalty regime in K9-K11 is an order of magnitude larger than any FX spread, and it accrues every year you hold the account.",
+    "If prior years were missed and the conduct was not willful, the Streamlined Filing Compliance Procedures are the intended route (S25): a certification of non-willful conduct, amended or delinquent returns, and no closing agreement. It is unavailable if you are already under civil examination or criminal investigation.",
+    "Never 'quiet disclose' by filing a bare amended return and hoping — the IRS states that previously assessed penalties are not abated by later joining the streamlined procedures.",
+    "Then, and only then, choose the conversion route based on the SOURCE of the funds."
+  ]
+}

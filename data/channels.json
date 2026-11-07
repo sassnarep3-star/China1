@@ -1,0 +1,526 @@
+{
+  "meta": {
+    "generated": "2026-11-07",
+    "profile_assumed": "US citizen (therefore 境外个人 / 'overseas individual' under PBoC Order [2006] No.3 Art.37), holding RMB in a mainland-China bank account, resident in the United States.",
+    "critical_premise": "Under 汇发〔2020〕14号 Art.54, the USD 50,000 annual facilitation quota applies to (a) everyone's 结汇 (RMB-from-FX) and (b) 境内个人 only for 购汇 (FX-from-RMB). A US citizen is 境外个人 and therefore has NO blanket purchase quota — every conversion must be tied to a documented transaction, except where a Foreigner's Permanent Residence ID is held (Art.59).",
+    "cost_note": "Monetary amounts are only stated where an official source fixes them. Bank spreads and fees are left BLANK and flagged, because no official source publishes them and inventing them would be fabrication."
+  },
+  "channels": [
+    {
+      "id": "C01",
+      "group": "A. Current-account route (documented income)",
+      "name": "Overseas-individual current-account FX purchase and outward remittance",
+      "name_zh": "境外个人经常项目购汇及汇出",
+      "availability": "available",
+      "best_for": "Salary, bonuses, service fees, rent, dividends, interest and other China-source current-account income",
+      "legal_basis": "汇发〔2020〕14号 Art.59 (purchase) and Art.65 (outward remittance); PBoC Order [2006] No.3",
+      "limit": "No annual cap. Amount must match documented, already-taxed transaction value.",
+      "docs": "Passport; proof of the transaction amount (contract, payroll record, dividend resolution, lease, etc.); tax documents / 税务凭证",
+      "extra_step": "If a single outward payment exceeds USD 50,000, a 服务贸易等项目对外支付税务备案 (tax filing) is required first — SAT/SAFE Announcement 2013 No.40 Art.1",
+      "speed": "Days (bank review), plus tax filing where applicable",
+      "cn_tax": "No tax on the conversion itself. The underlying income bears Chinese IIT at source (3%-45% comprehensive, or flat 20% for interest/dividends/rent) per IIT Law Art.3.",
+      "us_tax": "Principal is not income. The income itself is US-taxable worldwide income; a foreign tax credit may be available for Chinese tax paid.",
+      "pros": [
+        "Fully legal, mainstream, bank-counter product — not an exception or a loophole",
+        "No annual ceiling; scales with the documented amount",
+        "Settlement and remittance are two separate, well-defined steps",
+        "Overseas individuals are not required to complete the Individual FX Purchase Application (S09)"
+      ],
+      "cons": [
+        "Every yuan must be traceable to a specific, already-taxed transaction — you cannot convert an unexplained balance",
+        "Tax clearance is a hard gate: without 完税凭证 the bank will refuse",
+        "Single payments over USD 50,000 add a separate tax-filing step and delay",
+        "Bank discretion is real: 汇发〔2020〕14号 Art.68 lets the bank refuse a transaction it considers unverifiable"
+      ],
+      "sources": ["S03", "S02", "S09", "S12"],
+      "confidence": "high",
+      "verdict": "The primary lawful route. Works only if the money is income and you can document and evidence the tax."
+    },
+    {
+      "id": "C02",
+      "group": "B. Capital-account approval route",
+      "name": "Emigrant property transfer (移民财产转移)",
+      "name_zh": "移民财产转移",
+      "availability": "conditional",
+      "best_for": "Pre-emigration lawful assets (savings, proceeds of a sold property) of someone who has emigrated from mainland China",
+      "legal_basis": "PBoC Announcement [2004] No.16, Art.2, Art.6, Art.8, Art.10, Art.11",
+      "limit": "Whole application filed once, paid out in stages: first tranche up to 50%; after 12 months, up to half the remainder; after 24 months, the balance. Amounts of RMB 200,000 or less may be remitted in one go (Art.6).",
+      "docs": "Written application; personal particulars form; SAFE application form; public-security 户籍注销证明 (cancelled household registration) + Chinese embassy/consulate certification of foreign settlement; title documents to the property / deposit certificates; tax clearance certificate from the tax authority where the property or income is located (Art.8)",
+      "extra_step": "Approval tiers: total up to RMB 500,000 approved by the local SAFE branch; above that, local branch screens and the SAFE head office approves (Art.10)",
+      "speed": "Months, and by design spread over 2+ years",
+      "cn_tax": "No conversion tax. A tax clearance certificate is a mandatory attachment, so any Chinese IIT on the asset disposal must be settled first.",
+      "us_tax": "Principal not income. Any gain realised on the disposal (e.g. property) is US-taxable in the year of sale, with a possible foreign tax credit.",
+      "pros": [
+        "The only route designed to move a whole lifetime of pre-emigration savings abroad",
+        "Not subject to the USD 50,000 quota at all",
+        "Explicitly contemplates large amounts with a defined staged timetable"
+      ],
+      "cons": [
+        "Requires a cancelled Chinese hukou — a one-way door with consequences far beyond tax",
+        "Covers only property owned BEFORE obtaining the emigration status (Art.2) — post-emigration savings do not qualify",
+        "Assets must first be 变现 (liquidated) — real estate must actually be sold",
+        "RMB 500,000+ goes to the SAFE head office, so timelines are not controllable",
+        "2-year phasing creates real FX exposure: you cannot pick your rate",
+        "Proceeds must be wired to your own overseas account — no cash (Art.11)"
+      ],
+      "sources": ["S04"],
+      "confidence": "high",
+      "verdict": "The single most powerful legitimate channel for a naturalised US citizen with pre-emigration assets — and the most consequential, because of the hukou cancellation."
+    },
+    {
+      "id": "C03",
+      "group": "B. Capital-account approval route",
+      "name": "Inheritance transfer (继承财产转移)",
+      "name_zh": "继承财产转移",
+      "availability": "conditional",
+      "best_for": "A US citizen who has inherited mainland-China assets",
+      "legal_basis": "PBoC Announcement [2004] No.16, Art.2, Art.6, Art.9, Art.10",
+      "limit": "All property inherited from one decedent must be applied for in a single application; may be remitted once or in instalments. Inheritances from different decedents are separate applications.",
+      "docs": "Written application incl. relationship to decedent; SAFE application form; Chinese embassy/consulate certification of foreign settlement; proof of inheritance; decedent's title documents PLUS the decedent's tax clearance certificate or tax payment voucher; other documents SAFE requires (Art.9)",
+      "speed": "Months",
+      "cn_tax": "No conversion tax. The decedent's tax clearance is a precondition, so estate-level Chinese liabilities must be settled first.",
+      "us_tax": "Inheritance is generally not US income to the recipient (basis rules apply); foreign gifts/bequests over the reporting threshold go on Form 3520 Part IV.",
+      "pros": [
+        "Purpose-built channel with a clear checklist",
+        "No USD 50,000 quota",
+        "Instalments permitted — no forced 2-year spread"
+      ],
+      "cons": [
+        "Only available for an actual inheritance, with notarised, often consular-legalised, documents",
+        "Requires the DEceased's tax clearance, which you do not control",
+        "Every application must be complete at once for one decedent"
+      ],
+      "sources": ["S04"],
+      "confidence": "high",
+      "verdict": "Correct route if and only if the funds are inherited. Not a fallback for other money."
+    },
+    {
+      "id": "C04",
+      "group": "B. Capital-account approval route",
+      "name": "Sale proceeds of a mainland home bought as an overseas individual",
+      "name_zh": "境外个人转让所购境内商品房购汇汇出",
+      "availability": "conditional",
+      "best_for": "RMB sitting in the account as the proceeds of a mainland residential property sale",
+      "legal_basis": "汇发〔2006〕47号 Art.5 (with Art.2 on purchase eligibility)",
+      "limit": "No stated cap; the amount is the net sale proceeds after Chinese tax.",
+      "docs": "FX purchase application; commercial-property transfer contract; tax-clearance certificate for the title transfer (Art.5); reviewed and confirmed by the SAFE branch where the property is located",
+      "speed": "Weeks to months",
+      "cn_tax": "Chinese IIT on the property transfer at a flat 20% of the gain per IIT Law Art.3(3), deducted from the sale proceeds. A tax-clearance certificate is a mandatory document.",
+      "us_tax": "Capital gain on the property is US-taxable; the section 121 exclusion may apply to a principal residence; a foreign tax credit may offset Chinese tax.",
+      "pros": [
+        "A short, explicit three-document checklist",
+        "No annual quota",
+        "Converts the single largest asset most people hold"
+      ],
+      "cons": [
+        "The property must have been bought in compliance with the overseas-individual purchase rules (in practice, having worked or studied in China for more than a year) — if the original purchase was non-compliant, SAFE can refuse the remittance",
+        "Only the property, not cash savings, is covered",
+        "Requires the title transfer to be complete before remittance",
+        "20% Chinese IIT on the gain is a genuine, non-trivial cost"
+      ],
+      "sources": ["S05", "S10"],
+      "confidence": "high",
+      "verdict": "The correct and often overlooked answer if the RMB is house money. Verify the original purchase complied with 建住房〔2006〕171号 before spending legal fees."
+    },
+    {
+      "id": "C05",
+      "group": "A. Current-account route (documented income)",
+      "name": "Service-trade / income / current-transfer outbound payment",
+      "name_zh": "服务贸易、收益和经常转移项下对外支付",
+      "availability": "available",
+      "best_for": "Fees for services, royalties, dividends, interest, non-capital-transfer gifts, indemnities, incidental income",
+      "legal_basis": "SAT/SAFE Announcement 2013 No.40 Art.1(1)-(2) and Art.4; 汇发〔2020〕14号 Art.59",
+      "limit": "No cap; above USD 50,000 per single payment a tax filing (税务备案) is required",
+      "docs": "Contract or transaction voucher; tax filing form where applicable; passport; tax documents",
+      "speed": "Days to weeks",
+      "cn_tax": "Chinese IIT/withholding on the income (flat 20% for dividends, interest, royalties; 3%-45% for remuneration)",
+      "us_tax": "Fully US-taxable; foreign tax credit may apply",
+      "pros": [
+        "Explicitly names a foreign individual's China work remuneration, dividends and interest as payable abroad",
+        "Art.4 confirms overseas individuals use the individual-FX rules, i.e. the C01 procedure",
+        "No quota"
+      ],
+      "cons": [
+        "The tax filing is a real administrative hurdle and is filed with the tax bureau, not the bank",
+        "Requires genuine underlying service or investment income — not applicable to idle savings"
+      ],
+      "sources": ["S12", "S03"],
+      "confidence": "high",
+      "verdict": "A refinement of C01 for service and investment income; same economics, extra paperwork."
+    },
+    {
+      "id": "C06",
+      "group": "C. Cash and card (small amounts)",
+      "name": "Carry foreign currency cash out of China",
+      "name_zh": "携带外币现钞出境",
+      "availability": "available",
+      "best_for": "Small amounts; topping up a trip",
+      "legal_basis": "汇发〔2003〕102号 Art.5; 汇发〔2020〕14号 Art.89",
+      "limit": "Up to USD 5,000 with no permit; USD 5,000-10,000 needs a bank-issued 携带外汇出境许可证; above USD 10,000 requires a SAFE permit and is granted only in exceptional, enumerated situations",
+      "docs": "Passport, visa, deposit certificate or FX purchase voucher; relative-relationship proof if drawing on a relative's account",
+      "speed": "Immediate",
+      "cn_tax": "None on the carriage itself",
+      "us_tax": "Cross-border currency reporting applies on the US side (threshold flagged as unverified — see S28)",
+      "pros": ["Immediate", "No SAFE approval up to USD 5,000", "Trivial paperwork at small amounts"],
+      "cons": [
+        "Economically irrelevant for a large balance — USD 10,000 is a rounding error",
+        "Physical loss/theft risk",
+        "Multiple permits cannot be aggregated: if bank-stamped permits total more than USD 10,000, customs will not release the money",
+        "Repeat trips to split the limit is exactly the conduct the rules are built to catch"
+      ],
+      "sources": ["S07", "S03"],
+      "confidence": "high",
+      "verdict": "Not a solution. Include it only to bound the problem honestly."
+    },
+    {
+      "id": "C07",
+      "group": "C. Cash and card (small amounts)",
+      "name": "Carry RMB cash out and convert offshore",
+      "name_zh": "携带人民币现钞出境后境外兑换",
+      "availability": "available",
+      "best_for": "Trivial amounts only",
+      "legal_basis": "Customs rule limiting RMB cash to RMB 20,000 per person per trip (S15)",
+      "limit": "RMB 20,000 per person per trip",
+      "docs": "None beyond normal customs declaration",
+      "speed": "Immediate",
+      "cn_tax": "None",
+      "us_tax": "Offshore conversion; any FX gain is a personal transaction under §988(e)",
+      "pros": ["Legal and simple", "Useful in Hong Kong, where RMB is actively quoted"],
+      "cons": [
+        "RMB 20,000 is roughly a few thousand dollars — a rounding error against a real balance",
+        "Offshore RMB conversion spreads are wider than onshore, and US retail RMB conversion is worse still (spread figures flagged: no official source)",
+        "Repeated trips to multiply the allowance is structuring"
+      ],
+      "sources": ["S15"],
+      "confidence": "high",
+      "verdict": "Legitimate, but immaterial at scale."
+    },
+    {
+      "id": "C08",
+      "group": "C. Cash and card (small amounts)",
+      "name": "UnionPay / mainland card withdrawals at overseas ATMs",
+      "name_zh": "境内银行卡境外提取现金",
+      "availability": "available",
+      "best_for": "Spending money abroad, not moving a balance",
+      "legal_basis": "汇发〔2017〕29号 Art.1 and Art.4",
+      "limit": "RMB 100,000 equivalent per person per calendar year across all your cards; RMB 10,000 equivalent per card per day",
+      "docs": "None",
+      "speed": "Immediate",
+      "cn_tax": "None",
+      "us_tax": "No conversion event; ordinary personal spending",
+      "pros": ["No paperwork", "Instant", "Uses an existing debit card"],
+      "cons": [
+        "Cap of RMB 100,000/year — about USD 14,000 at recent rates — will not move a meaningful balance",
+        "Exceeding it triggers suspension of overseas cash access for the current AND following year",
+        "ATM operator fees and the card scheme's FX markup apply on top (figures flagged)",
+        "Structurally designed as an anti-money-laundering control, not a remittance channel"
+      ],
+      "sources": ["S06"],
+      "confidence": "high",
+      "verdict": "Convenience only. Treat RMB 100,000/year as the hard annual ceiling of this route."
+    },
+    {
+      "id": "C09",
+      "group": "C. Cash and card (small amounts)",
+      "name": "Spend the RMB directly — cards, mobile wallets, in-China expenses",
+      "name_zh": "境外刷卡消费及境内消费",
+      "availability": "available",
+      "best_for": "Anyone with ongoing China-linked costs, or who travels to China",
+      "legal_basis": "汇发〔2017〕29号 policy Q&A: overseas card spending for food, lodging, travel and shopping is not capped and does not consume the USD 50,000 quota",
+      "limit": "No cap for genuine current-account consumption",
+      "docs": "None",
+      "speed": "Immediate",
+      "cn_tax": "None",
+      "us_tax": "None beyond ordinary consumption",
+      "pros": [
+        "Zero conversion cost — the money is never converted",
+        "No approval, no quota, no filing",
+        "Genuinely the optimal answer if you have real China expenses"
+      ],
+      "cons": [
+        "Only works if you actually have Chinese consumption to pay for",
+        "Cannot be converted into investable US dollars",
+        "Buying goods abroad purely to resell them is not 'consumption' and would not survive scrutiny"
+      ],
+      "sources": ["S06"],
+      "confidence": "high",
+      "verdict": "Underrated. If part of the balance can be consumed in China, that slice costs literally nothing to 'repatriate'."
+    },
+    {
+      "id": "C10",
+      "group": "C. Cash and card (small amounts)",
+      "name": "Foreign-currency traveller's cheques",
+      "name_zh": "外币旅行支票",
+      "availability": "limited",
+      "best_for": "Legacy product; increasingly unavailable",
+      "legal_basis": "汇发〔2020〕14号 Art.90 and Art.92",
+      "limit": "Buying with RMB follows the ordinary individual FX purchase rules; buying with existing FX in your account needs ID up to USD 50,000 and transaction proof above that",
+      "docs": "Passport; transaction proof above USD 50,000",
+      "speed": "Days",
+      "cn_tax": "None on the instrument",
+      "us_tax": "None at purchase",
+      "pros": ["Paper instrument, harder to steal than cash in some respects"],
+      "cons": [
+        "Restricted to travel, pilgrimage, family visits, medical treatment and study — cannot be used for goods trade or capital-account purposes (Art.90)",
+        "If bought with RMB it is just the C01 purchase test again, with extra steps",
+        "Issuers have largely withdrawn the product"
+      ],
+      "sources": ["S03"],
+      "confidence": "high",
+      "verdict": "Effectively obsolete. Listed for completeness only."
+    },
+    {
+      "id": "C11",
+      "group": "C. Cash and card (small amounts)",
+      "name": "Re-convert unused RMB from a prior exchange",
+      "name_zh": "原兑换未用完人民币兑回",
+      "availability": "limited",
+      "best_for": "Visitors who bought RMB and did not spend it",
+      "legal_basis": "汇发〔2020〕14号 Art.60",
+      "limit": "Up to the amount of the original exchange slip, valid for 24 months from the exchange date; USD 500/day, or USD 1,000/day at land-border/port locations before departure, on ID alone",
+      "docs": "Passport plus the original exchange receipt (水单)",
+      "speed": "Immediate",
+      "cn_tax": "None",
+      "us_tax": "None",
+      "pros": ["Fast, ID-only for small amounts", "24-month window"],
+      "cons": [
+        "Capped by the original exchange slip — it reverses your own earlier purchase, it does not create new capacity",
+        "Useless for RMB that was earned or held rather than bought"
+      ],
+      "sources": ["S03"],
+      "confidence": "high",
+      "verdict": "Not applicable unless you personally bought the RMB with FX and kept the slips."
+    },
+    {
+      "id": "C12",
+      "group": "E. Not available or prohibited",
+      "name": "Transfer the RMB to a Chinese relative's account",
+      "name_zh": "向境内近亲属账户划转",
+      "availability": "not-a-route",
+      "best_for": "—",
+      "legal_basis": "汇发〔2020〕14号 Art.67",
+      "limit": "Domestic FX transfers are limited to your own accounts and to close relatives — but where the two accounts belong to a 境内个人 and a 境外个人, the transfer is treated as a CROSS-BORDER transaction",
+      "docs": "—",
+      "speed": "—",
+      "cn_tax": "—",
+      "us_tax": "—",
+      "pros": ["None as a conversion strategy"],
+      "cons": [
+        "Does not escape the rules: Art.67 reclassifies it as cross-border and requires it to satisfy the outward current-account test",
+        "Any arrangement to use a relative's quota is separately prohibited as 分拆 (Art.62)"
+      ],
+      "sources": ["S03"],
+      "confidence": "high",
+      "verdict": "Dead end. A common misconception worth stating explicitly."
+    },
+    {
+      "id": "C13",
+      "group": "D. Structural / business",
+      "name": "Invest offshore through an approved onshore vehicle (QDII bank products, Stock Connect, Bond Connect)",
+      "name_zh": "QDII、港股通、债券通",
+      "availability": "not-a-route",
+      "best_for": "Investment exposure, not repatriation",
+      "legal_basis": "Scheme-specific rules; no rule retrieved in this session",
+      "limit": "Scheme quotas apply at the institutional level",
+      "docs": "—",
+      "speed": "—",
+      "cn_tax": "Chinese IIT on investment gains where applicable",
+      "us_tax": "US tax on gains; PFIC rules may apply to foreign collective vehicles",
+      "pros": ["Legitimate way to hold non-RMB assets"],
+      "cons": [
+        "These are investment channels: redemptions are normally returned to your onshore RMB account, so they do not move money out",
+        "Cross-boundary Wealth Management Connect is restricted to Greater Bay Area residents",
+        "Scheme rules were not retrieved from an official source in this session — treated as unverified"
+      ],
+      "sources": [],
+      "confidence": "low",
+      "verdict": "Not a repatriation channel. Listed so it can be ruled out rather than guessed about. FLAGGED."
+    },
+    {
+      "id": "C14",
+      "group": "D. Structural / business",
+      "name": "Individual outbound direct investment scheme ('QDII2')",
+      "name_zh": "个人境外直接投资（QDII2）",
+      "availability": "not-available",
+      "best_for": "—",
+      "legal_basis": "No operative rule located",
+      "limit": "—",
+      "docs": "—",
+      "speed": "—",
+      "cn_tax": "—",
+      "us_tax": "—",
+      "pros": ["—"],
+      "cons": [
+        "Frequently described in the press as a forthcoming programme; no implementing SAFE rule was located in this session",
+        "Must not be relied on in planning"
+      ],
+      "sources": [],
+      "confidence": "low",
+      "verdict": "Absence of an official rule is itself the finding. FLAGGED — verify with SAFE before ever assuming it exists."
+    },
+    {
+      "id": "C15",
+      "group": "D. Structural / business",
+      "name": "Incorporate a mainland entity and remit dividends or capital reductions",
+      "name_zh": "设立外商投资企业后利润汇出",
+      "availability": "conditional",
+      "best_for": "Business owners, not personal savings",
+      "legal_basis": "汇发〔2020〕14号 Art.47 (FDI profit/dividend remittance follows the direct-investment profit remittance rules)",
+      "limit": "No cap; requires audited distributable profits and tax paid",
+      "docs": "Board/shareholder resolution, audited accounts, tax payment evidence, FDI registration",
+      "speed": "Months",
+      "cn_tax": "10% withholding on dividends to a non-resident enterprise in the ordinary case; individual shareholders face 20%",
+      "us_tax": "US tax on the dividend or gain, with a possible foreign tax credit; Form 5471 and related reporting may apply",
+      "pros": ["Can move large amounts", "Well-trodden corporate route"],
+      "cons": [
+        "Only lawfully distributable business profits qualify — you cannot inject personal savings in and pull them out",
+        "Requires an actual operating business, audit, and ongoing compliance cost",
+        "Creating a company purely to move your own money risks being characterised as 构造交易 / 变相买卖外汇"
+      ],
+      "sources": ["S03"],
+      "confidence": "medium",
+      "verdict": "Right answer for a genuine business; wrong and dangerous as a workaround for personal savings."
+    },
+    {
+      "id": "C16",
+      "group": "D. Structural / business",
+      "name": "Cross-border e-commerce and market-procurement settlement",
+      "name_zh": "跨境电商、市场采购贸易结汇",
+      "availability": "conditional",
+      "best_for": "People who actually sell goods cross-border",
+      "legal_basis": "汇发〔2020〕14号 Art.66(2)-(3)",
+      "limit": "Settlement outside the annual facilitation quota when transaction data is supplied",
+      "docs": "Transaction/order data or platform records; business registration",
+      "speed": "Days",
+      "cn_tax": "Chinese IIT or business income tax on the trading profit",
+      "us_tax": "US trade or business income; sales-tax and entity questions arise",
+      "pros": ["Settlement not capped by the USD 50,000 quota", "Genuine commercial route"],
+      "cons": [
+        "This is an inbound/settlement rule for exporters — it does not authorise converting an existing idle balance",
+        "Requires a real trading business with customs and platform records"
+      ],
+      "sources": ["S03"],
+      "confidence": "high",
+      "verdict": "Only relevant if you start genuinely trading. Not a conversion trick."
+    },
+    {
+      "id": "C17",
+      "group": "D. Structural / business",
+      "name": "Free-trade accounts / free-trade-zone convertibility",
+      "name_zh": "自由贸易账户（FT账户）",
+      "availability": "not-a-route",
+      "best_for": "—",
+      "legal_basis": "No rule retrieved in this session",
+      "limit": "—",
+      "docs": "—",
+      "speed": "—",
+      "cn_tax": "—",
+      "us_tax": "—",
+      "pros": ["—"],
+      "cons": [
+        "FT accounts are primarily an institutional arrangement; no official rule permitting a US citizen to use one to repatriate personal savings was located",
+        "Rules vary by zone and change often"
+      ],
+      "sources": [],
+      "confidence": "low",
+      "verdict": "Unexamined and unverified. Do not plan around it. FLAGGED."
+    },
+    {
+      "id": "C18",
+      "group": "D. Structural / business",
+      "name": "Hold RMB offshore in Hong Kong (CNH) and convert there",
+      "name_zh": "离岸人民币（CNH）",
+      "availability": "not-a-route",
+      "best_for": "People whose RMB is ALREADY offshore",
+      "legal_basis": "Onshore/offshore RMB separation is a structural feature of the currency, not a permission",
+      "limit": "—",
+      "docs": "—",
+      "speed": "—",
+      "cn_tax": "—",
+      "us_tax": "—",
+      "pros": ["Offshore RMB converts freely and is actively quoted in Hong Kong"],
+      "cons": [
+        "The hard part is moving onshore CNY to offshore CNH, which is itself a capital-account transfer requiring approval — the very problem you are trying to solve",
+        "Doing the CNY-to-CNH leg outside approved channels is exactly what the FX Regulations penalise"
+      ],
+      "sources": ["S01"],
+      "confidence": "medium",
+      "verdict": "A description of the destination, not a route to it."
+    },
+    {
+      "id": "C19",
+      "group": "D. Structural / business",
+      "name": "Buy and export physical assets (goods, gold, collectibles)",
+      "name_zh": "实物出境",
+      "availability": "limited",
+      "best_for": "Genuine traders",
+      "legal_basis": "Customs rules and sector-specific export controls; no FX rule authorising this as a remittance route",
+      "limit": "—",
+      "docs": "Export declaration, commercial documents, sector licences",
+      "speed": "Weeks",
+      "cn_tax": "Export duties/VAT treatment depends on the goods",
+      "us_tax": "Import duties; ordinary business income",
+      "pros": ["Can be legitimate for a real trading business"],
+      "cons": [
+        "Only works at a commercial loss-free scale if you are actually in the trade",
+        "Cultural relics are subject to export prohibition, and gold export is separately controlled",
+        "Buying assets purely to smuggle value out is 逃汇 under Art.39 of the FX Regulations"
+      ],
+      "sources": ["S01"],
+      "confidence": "medium",
+      "verdict": "Not a personal-savings solution."
+    },
+    {
+      "id": "C20",
+      "group": "E. Not available or prohibited",
+      "name": "Do nothing — leave the RMB in China and use it for China-based needs",
+      "name_zh": "不转移，境内使用",
+      "availability": "available",
+      "best_for": "Anyone with family, property or future travel in China",
+      "legal_basis": "No action required",
+      "limit": "—",
+      "docs": "None",
+      "speed": "Immediate",
+      "cn_tax": "None",
+      "us_tax": "None on the principal; the account still triggers FBAR and possibly Form 8938 reporting every year",
+      "pros": [
+        "Zero conversion cost, zero legal risk",
+        "Keeps optionality: rules may loosen",
+        "Avoids locking in a 2-year staged payout at an unfavourable rate"
+      ],
+      "cons": [
+        "RMB exposure and convertibility risk remain indefinitely",
+        "Annual US information reporting continues",
+        "Inflation and rate moves erode value while you wait"
+      ],
+      "sources": ["S20", "S22"],
+      "confidence": "high",
+      "verdict": "A legitimate baseline. The right comparison point for every other option."
+    },
+    {
+      "id": "C21",
+      "group": "E. Not available or prohibited",
+      "name": "Pre-departure planning: sequence the move BEFORE giving up Chinese status",
+      "name_zh": "移民前规划",
+      "availability": "conditional",
+      "best_for": "Anyone who has not yet naturalised or cancelled their hukou",
+      "legal_basis": "Structural consequence of 汇发〔2004〕16号 Art.2 (pre-emigration property) and Art.8(4) (cancelled hukou)",
+      "limit": "—",
+      "docs": "As C02",
+      "speed": "—",
+      "cn_tax": "—",
+      "us_tax": "Timing affects basis and residency; get advice before the move",
+      "pros": [
+        "The cheapest moment to move money is usually before status changes, not after",
+        "Once hukou is cancelled the 移民转移 window is open; if you never had it, that door is shut"
+      ],
+      "cons": [
+        "Only available to people who still have the choice",
+        "Requires coordinated tax and immigration advice"
+      ],
+      "sources": ["S04"],
+      "confidence": "high",
+      "verdict": "If you still have the option, this is the highest-leverage item on the page."
+    }
+  ]
+}

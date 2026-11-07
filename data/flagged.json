@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "generated": "2026-11-07",
+    "intro": "Everything on this page is either (a) a claim I could not tie to a retrievable official source, or (b) a material error in widely circulating sources that I found while verifying. Nothing on this page is used to fill a value in any table. This page does not block publication.",
+    "counts": { "unverified_values": 6, "source_irregularities": 7 }
+  },
+  "unverified_values": [
+    {
+      "id": "F01",
+      "claim": "Chinese individual savings-deposit interest has been exempt from IIT since 2008-10-09 (财税〔2008〕132号)",
+      "why_unverified": "Every citation traced back to tax-consultancy reprints. No retrievable chinatax.gov.cn or gov.cn copy of the notice was located in this session.",
+      "impact": "If true, a Chinese savings account produces no Chinese tax but is still US-taxable interest income. If false, a 20% Chinese rate could apply. Either way the conversion analysis is unchanged; only the pre-remittance tax position moves.",
+      "what_to_do": "Ask the bank for the withholding record on your account's interest. That record settles it empirically, which is better than any citation.",
+      "sources": ["S11"]
+    },
+    {
+      "id": "F02",
+      "claim": "SAT/SAFE Announcement 2021 No.19 relaxed overseas-payment tax filing to once per contract, keeping the USD 50,000 per-payment threshold",
+      "why_unverified": "Described consistently across secondary sources, but the official announcement page on chinatax.gov.cn was not retrieved.",
+      "impact": "Affects only how many times you must file, not whether you must. The verified baseline is Announcement 2013 No.40.",
+      "what_to_do": "Confirm with the local tax service hall when you file the first 备案.",
+      "sources": ["S13", "S12"]
+    },
+    {
+      "id": "F03",
+      "claim": "FBAR willful penalty may alternatively be the greater of USD 100,000 or 50% of the account balance (31 U.S.C. §5321(a)(5)(C)(ii))",
+      "why_unverified": "The statute section was not retrieved end-to-end. Only the inflation-adjusted USD 165,353 ceiling from 31 CFR 1010.821 is used as a value.",
+      "impact": "The real willful exposure could be materially higher than the number shown. Treat USD 165,353 as a floor on the maximum, not a cap on the risk.",
+      "what_to_do": "Read §5321(a)(5)(C) directly and get a tax attorney's view before any willful-conduct analysis.",
+      "sources": ["S27", "S21"]
+    },
+    {
+      "id": "F04",
+      "claim": "US cross-border currency reporting applies above USD 10,000 (FinCEN Form 105)",
+      "why_unverified": "The official FinCEN page returned HTTP 404 on 2026-11-07.",
+      "impact": "Bears only on cash-carry routes, which are immaterial here anyway.",
+      "what_to_do": "Not worth pursuing unless you actually plan to carry more than a few thousand dollars in cash.",
+      "sources": ["S28"]
+    },
+    {
+      "id": "F05",
+      "claim": "Form 3520 Part IV applies to foreign gifts/bequests above USD 100,000, with a 5%-per-month penalty capped at 25%",
+      "why_unverified": "The IRS Form 3520 instructions page was retrieved, but the specific threshold and penalty paragraphs were not read.",
+      "impact": "Bears on the 'have a Chinese relative send me the money' variant. The reporting obligation itself is not in doubt.",
+      "what_to_do": "Read the Part IV threshold in the current instructions before relying on any number.",
+      "sources": ["S24"]
+    },
+    {
+      "id": "F06",
+      "claim": "China and the US exchange US-person account data under a Model 1 FATCA IGA, and China participates in CRS",
+      "why_unverified": "No retrievable Treasury or IRS page confirming the specific agreement was fetched in this session.",
+      "impact": "Affects ONLY the probability that non-filing is detected — not the legal obligation, which exists independently. This project does not rely on the claim.",
+      "what_to_do": "Treat as true for risk-planning purposes anyway: the correct decision is identical either way.",
+      "sources": ["S30"]
+    }
+  ],
+  "source_irregularities": [
+    {
+      "id": "R01",
+      "severity": "high",
+      "finding": "The Chinese crypto prohibition most widely cited online — 银发〔2021〕237号, the '924 notice' — was REPEALED on 2026-02-06 by 银发〔2026〕42号.",
+      "detail": "The replacement keeps virtual-currency business activity illegal, bars institutions from servicing it, and voids offending individual civil acts. It adds RWA tokenisation and RMB-stablecoin prohibitions. Citing 237号 as current law in November 2026 is citing a dead instrument.",
+      "action": "Any plan, article or advisor still quoting 237号 should be treated as out of date on this point.",
+      "sources": ["S14"]
+    },
+    {
+      "id": "R02",
+      "severity": "high",
+      "finding": "Third-party legal databases label 汇发〔2020〕14号 (Current Account FX Business Guidelines 2020) as '全文废止' (wholly repealed). That label is wrong.",
+      "detail": "The 'repealed' note appears to be a scraping artefact: 汇发〔2025〕13号 repealed five unrelated documents and voided one COVID-era notice — not the 2020 Guidelines. SAFE's own Tianjin page still publishes the 2020 Guidelines as amended only by 汇发〔2023〕8号 (two insurance clauses). SAFE Shanghai's March 2025 notice still applies it to goods trade.",
+      "action": "This project treats 汇发〔2020〕14号 as in force, amended by 汇发〔2023〕8号 in respects immaterial to individual FX.",
+      "sources": ["S31", "S33", "S03"]
+    },
+    {
+      "id": "R03",
+      "severity": "high",
+      "finding": "The 'USD 50,000 a year' figure is described almost everywhere as a hard ceiling. It is not, and for this user it does not apply to purchases at all.",
+      "detail": "汇发〔2020〕14号 Art.54 makes USD 50,000 a FACILITATION threshold: it decides whether you need documentary proof, not whether conversion is permitted. SAFE's own regional Q&A states outright that the annual facilitation quota is not a limit on purchases or settlements. And Art.59 gives overseas individuals NO purchase quota unless they hold a Foreigner's Permanent Residence ID. So a US citizen faces no USD 50,000 purchase cap — instead there is no quota at all, and every conversion must be documented.",
+      "action": "The mental model must flip: from 'a cap I keep exceeding' to 'no cap, but a proof requirement I must satisfy'.",
+      "sources": ["S03", "S08"]
+    },
+    {
+      "id": "R04",
+      "severity": "medium",
+      "finding": "Numerous guides state that a foreigner simply has the same USD 50,000 purchase allowance as a Chinese citizen.",
+      "detail": "Directly contradicted by SAFE Tianjin (2025) and SAFE Xiamen, both of which state that only holders of a Foreigner's Permanent Residence ID get the purchase quota.",
+      "action": "Ignore these guides. If you hold a Chinese permanent residence ID the analysis changes completely and favourably — verify that first.",
+      "sources": ["S08", "S09", "S03"]
+    },
+    {
+      "id": "R05",
+      "severity": "medium",
+      "finding": "The user's premise — that converting CNY to USD triggers 'a considerable amount of taxes' — does not match any rule found.",
+      "detail": "No Chinese tax on FX conversion appears in any source reviewed. What does exist: Chinese IIT on the underlying income/gain; a hard requirement for a tax clearance certificate before remittance; and a US penalty regime for non-reporting that is unrelated to conversion. The expensive part is upstream and downstream of the conversion, not the conversion.",
+      "action": "Reframe the problem before spending money on it.",
+      "sources": ["S03", "S04", "S05", "S10", "S20", "S21"]
+    },
+    {
+      "id": "R06",
+      "severity": "medium",
+      "finding": "Advice to 'just use relatives' quotas' contradicts an express prohibition.",
+      "detail": "汇发〔2020〕14号 Art.62 makes both lending and borrowing facilitation quotas a watch-list matter, for the year of listing plus two more. It is the most common online recommendation and the most reliably punished.",
+      "action": "Discard any plan built on it.",
+      "sources": ["S03"]
+    },
+    {
+      "id": "R07",
+      "severity": "low",
+      "finding": "The repository contained no prior work to review.",
+      "detail": "At commit 9125ed5 the repo held a single 8-byte README.md ('# China1'). There was no data, no site, no COORDINATION.md, and no other branch. There was therefore nothing to verify line by line on arrival — every table row in this project was built in this session and is sourced here.",
+      "action": "Recorded for audit purposes. No action needed.",
+      "sources": []
+    }
+  ]
+}

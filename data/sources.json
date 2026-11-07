@@ -1,0 +1,314 @@
+{
+  "meta": {
+    "generated": "2026-11-07",
+    "note": "Every source below carries a verification status. 'retrieved' = the page was fetched during this session and the cited text was read directly. 'search' = the official-domain page appeared in search results with the cited text quoted, but the page was not fetched end-to-end. 'unverified' = no official page could be confirmed; the claim is NOT used as a basis for any table value.",
+    "legend": {
+      "retrieved": "Fetched and read in this session",
+      "search": "Official domain confirmed via search excerpt only",
+      "unverified": "No official source confirmed — flagged, never used to fill a value"
+    }
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "jurisdiction": "CN",
+      "title": "中华人民共和国外汇管理条例 (Foreign Exchange Administration Regulations)",
+      "title_en": "Regulations of the PRC on Foreign Exchange Administration",
+      "publisher": "State Council of the PRC (国务院令第532号)",
+      "ref": "国务院令第532号, effective 2008-08-05",
+      "url": "http://m.safe.gov.cn/safe/2008/0806/5321.html",
+      "status": "search",
+      "verifies": "Penalty ceilings for 逃汇 (Art.39), 非法套汇 (Art.40), 携带外汇出入境 (Art.42), 私自买卖外汇/变相买卖外汇 (Art.45)"
+    },
+    {
+      "id": "S02",
+      "jurisdiction": "CN",
+      "title": "个人外汇管理办法 (Measures for Administration of Individual Foreign Exchange)",
+      "publisher": "People's Bank of China (中国人民银行令〔2006〕第3号)",
+      "ref": "PBoC Order [2006] No.3, effective 2007-02-01",
+      "url": "https://nanjing.pbc.gov.cn/zhengwugongkai/4081330/4406346/4406348/2025092319185421938/index.html",
+      "status": "search",
+      "verifies": "Art.37 legal definitions of 境内个人 (domestic individual) vs 境外个人 (overseas individual) — the single most important classification for a US citizen"
+    },
+    {
+      "id": "S03",
+      "jurisdiction": "CN",
+      "title": "经常项目外汇业务指引（2020年版）(Current Account Foreign Exchange Business Guidelines 2020)",
+      "publisher": "State Administration of Foreign Exchange (SAFE) — 汇发〔2020〕14号",
+      "ref": "汇发〔2020〕14号; published in State Council Gazette 2020 No.31",
+      "url": "https://www.gov.cn/gongbao/content/2020/content_5560296.htm",
+      "status": "retrieved",
+      "verifies": "Art.54 (USD 50,000 facilitation quota applies to 个人结汇 and 境内个人购汇 only); Art.58 (overseas individual settlement); Art.59 (overseas individual FX purchase on documented current-account income); Art.60 (re-conversion of unused RMB); Art.62 (anti-structuring / watch list); Art.65 (overseas individual outward remittance); Art.86-89 (foreign cash); Art.67 (domestic transfers)"
+    },
+    {
+      "id": "S04",
+      "jurisdiction": "CN",
+      "title": "个人财产对外转移售付汇管理暂行办法 (Interim Measures on Sale and Payment of FX for Outward Transfer of Personal Property)",
+      "publisher": "People's Bank of China — 中国人民银行公告〔2004〕第16号",
+      "ref": "PBoC Announcement [2004] No.16, effective 2004-12-01",
+      "url": "http://m.safe.gov.cn/safe/2004/1116/5461.html",
+      "status": "retrieved",
+      "verifies": "移民转移 (emigrant transfer) and 继承转移 (inheritance transfer): eligibility, required documents incl. cancelled hukou and tax clearance, phased payout (Art.6), approval tiers (Art.10), no cash withdrawal (Art.11), penalty for false documents (Art.13)"
+    },
+    {
+      "id": "S05",
+      "jurisdiction": "CN",
+      "title": "国家外汇管理局 建设部关于规范房地产市场外汇管理有关问题的通知",
+      "publisher": "SAFE + Ministry of Construction — 汇发〔2006〕47号",
+      "ref": "汇发〔2006〕47号",
+      "url": "http://m.safe.gov.cn/safe/2006/0901/22169.html",
+      "status": "retrieved",
+      "verifies": "Art.5 — an overseas individual who sells a mainland commercial dwelling may purchase FX and remit the proceeds after SAFE review of: FX purchase application, sale contract, and the tax-clearance certificate for the title transfer. Art.2 — purchase eligibility required >1 year working/studying in China"
+    },
+    {
+      "id": "S06",
+      "jurisdiction": "CN",
+      "title": "国家外汇管理局关于规范银行卡境外大额提取现金交易的通知",
+      "publisher": "SAFE — 汇发〔2017〕29号",
+      "ref": "汇发〔2017〕29号, effective 2018-01-01",
+      "url": "http://m.safe.gov.cn/safe/2017/1230/8116.html",
+      "status": "search",
+      "verifies": "Overseas ATM cash withdrawal cap: RMB 100,000 per person per calendar year; RMB 10,000 per card per day; suspension for the current and following year if exceeded; card lending/borrowing prohibited"
+    },
+    {
+      "id": "S07",
+      "jurisdiction": "CN",
+      "title": "携带外币现钞出入境管理暂行办法",
+      "publisher": "SAFE + General Administration of Customs — 汇发〔2003〕102号",
+      "ref": "汇发〔2003〕102号, effective 2003-09-01",
+      "url": "http://m.mofcom.gov.cn/article/zcfb/zcwgtz/200309/20030900122517.shtml",
+      "status": "search",
+      "verifies": "Foreign cash carry limits: ≤USD 5,000 no permit; USD 5,000-10,000 bank-issued 携带外汇出境许可证; >USD 10,000 requires SAFE permit and is exceptional"
+    },
+    {
+      "id": "S08",
+      "jurisdiction": "CN",
+      "title": "2025年外汇管理互联网信息——个人外汇（十六）",
+      "publisher": "SAFE Tianjin Sub-bureau",
+      "ref": "Published 2025-11-13",
+      "url": "https://www.safe.gov.cn/tianjin/2025/1113/2926.html",
+      "status": "retrieved",
+      "verifies": "Confirms that only overseas individuals holding a Foreigner's Permanent Residence ID get the USD 50,000 purchase facilitation quota (citing 汇发〔2020〕14号 Art.54 and Art.59)"
+    },
+    {
+      "id": "S09",
+      "jurisdiction": "CN",
+      "title": "个人外汇业务服务小贴士 (Individual FX Service Guide)",
+      "publisher": "SAFE Xiamen Sub-bureau",
+      "ref": "PDF, published 2021-10-22",
+      "url": "http://www.safe.gov.cn/xiamen/file/file/20211022/f4794075e84e40dd9394be523a52731b.pdf",
+      "status": "search",
+      "verifies": "Overseas individuals have a USD 50,000 settlement (结汇) quota but NO purchase (购汇) quota unless holding a permanent residence ID; overseas individuals do not fill the Individual FX Purchase Application; overseas individuals may remit documented current-account RMB income (services, income, current transfers) after buying FX with ID + transaction proof + tax documents"
+    },
+    {
+      "id": "S10",
+      "jurisdiction": "CN",
+      "title": "中华人民共和国个人所得税法（2018年修正）(Individual Income Tax Law)",
+      "publisher": "National People's Congress; published by Guangdong Provincial Tax Service, SAT",
+      "ref": "Seventh amendment, effective 2019-01-01",
+      "url": "https://guangdong.chinatax.gov.cn/gdsw/zjfg/2018-08/31/content_a735b4c382d94439b581054c32a4e7f4.shtml",
+      "status": "search",
+      "verifies": "Art.1 tax residency (183-day test / domicile); Art.3 rates — comprehensive income 3%-45%, business income 5%-35%, and interest/dividends/rent/property-transfer/incidental income at a flat 20%; Art.6 taxable base for property transfers"
+    },
+    {
+      "id": "S11",
+      "jurisdiction": "CN",
+      "title": "财税〔2008〕132号 关于储蓄存款利息所得有关个人所得税政策的通知",
+      "publisher": "Ministry of Finance + State Administration of Taxation",
+      "ref": "财税〔2008〕132号, effective 2008-10-09",
+      "url": "",
+      "status": "unverified",
+      "verifies": "FLAGGED — the widely repeated claim that individual savings-deposit interest is temporarily exempt from Chinese IIT since 2008-10-09 could not be tied to a retrievable official URL. Not used to fill any table value."
+    },
+    {
+      "id": "S12",
+      "jurisdiction": "CN",
+      "title": "国家税务总局 国家外汇管理局关于服务贸易等项目对外支付税务备案有关问题的公告",
+      "publisher": "SAT + SAFE — 公告2013年第40号",
+      "ref": "SAT/SAFE Announcement 2013 No.40",
+      "url": "https://tianjin.pbc.gov.cn/fzhtianjin/113682/113697/3990685/2651318/index.html",
+      "status": "search",
+      "verifies": "Tax filing (税务备案) required for any single outward payment above USD 50,000 covering, inter alia, a foreign individual's China work remuneration, dividends/interest/royalties, and non-capital-transfer gifts, indemnities and incidental income; also covers real-property transfer income and equity-transfer gains. Art.4: overseas individuals' outward payments follow individual FX rules."
+    },
+    {
+      "id": "S13",
+      "jurisdiction": "CN",
+      "title": "国家税务总局 国家外汇管理局公告2021年第19号 (supplement to Announcement 2013 No.40)",
+      "publisher": "SAT + SAFE",
+      "ref": "Announcement 2021 No.19, effective 2021-06-29",
+      "url": "",
+      "status": "unverified",
+      "verifies": "FLAGGED — reported to relax tax filing to 'one filing per contract' and to keep the USD 50,000 per-payment filing threshold. Official chinatax.gov.cn URL not confirmed in this session."
+    },
+    {
+      "id": "S14",
+      "jurisdiction": "CN",
+      "title": "关于进一步防范和处置虚拟货币等相关风险的通知 (Notice on further preventing and handling risks related to virtual currencies)",
+      "publisher": "PBoC and 7 other ministries — 银发〔2026〕42号",
+      "ref": "银发〔2026〕42号, effective 2026-02-06; repeals 银发〔2021〕237号",
+      "url": "https://www.cfachina.org/industrydynamics/industrynews/202602/t20260206_86652.html",
+      "status": "search",
+      "verifies": "Virtual-currency business activity remains an illegal financial activity; financial institutions may not provide account, transfer, clearing or settlement services for it; civil acts by individuals investing in virtual currency are void. Repeals the 2021 '924 notice'."
+    },
+    {
+      "id": "S15",
+      "jurisdiction": "CN",
+      "title": "海关提醒：携带超量外币进境切记如实申报",
+      "publisher": "General Administration of Customs, via the State Council website",
+      "ref": "2017-01-23",
+      "url": "http://app.www.gov.cn/govdata/gov/201701/23/397808/article.html",
+      "status": "search",
+      "verifies": "RMB cash in/out of China is capped at RMB 20,000 per person per trip; foreign cash above USD 5,000 must be declared on entry"
+    },
+    {
+      "id": "S31",
+      "jurisdiction": "CN",
+      "title": "国家外汇管理局关于废止和宣布失效6件外汇管理规范性文件的通知",
+      "publisher": "SAFE — 汇发〔2025〕13号",
+      "ref": "汇发〔2025〕13号, effective 2025-03-27",
+      "url": "https://www.safe.gov.cn/safe/2025/0328/25916.html",
+      "status": "search",
+      "verifies": "Repeals 5 SAFE normative documents and voids 1 — none of them is 汇发〔2020〕14号. Used to rebut a third-party database that mislabels the 2020 Current Account Guidelines as 'wholly repealed'."
+    },
+    {
+      "id": "S32",
+      "jurisdiction": "CN",
+      "title": "金融机构客户尽职调查和客户身份资料及交易记录保存管理办法 (Measures on Customer Due Diligence and Record Keeping)",
+      "publisher": "PBoC + National Financial Regulatory Administration + CSRC — 中国人民银行令〔2025〕第11号",
+      "ref": "PBoC Order [2025] No.11, effective 2026-01-01",
+      "url": "https://www.pbc.gov.cn/tiaofasi/144941/144957/5916164/index.html",
+      "status": "search",
+      "verifies": "From 2026-01-01, for any outbound cross-border remittance of RMB 5,000 or USD 1,000 equivalent or more, the institution must verify the remitter's identity accurately; remitter name, account, address and payee details must travel with the payment; customer identity and transaction records kept at least 10 years. Applies to payment institutions as well as banks."
+    },
+    {
+      "id": "S33",
+      "jurisdiction": "CN",
+      "title": "（已修改）《国家外汇管理局关于印发〈经常项目外汇业务指引（2020年版）〉的通知》",
+      "publisher": "SAFE Tianjin Sub-bureau",
+      "ref": "Published 2024-04-30",
+      "url": "https://www.safe.gov.cn/tianjin/2024/0430/2467.html",
+      "status": "search",
+      "verifies": "Confirms 汇发〔2020〕14号 is still in force and was amended only by 汇发〔2023〕8号, which struck part of Art.102 and Art.173(2) (insurance provisions). None of the individual-FX articles (54-89) were affected."
+    },
+    {
+      "id": "S16",
+      "jurisdiction": "CN",
+      "title": "个人结汇额度每年5万美元：不是上限（secondary explanatory article)",
+      "publisher": "LieZhe (non-governmental)",
+      "ref": "Accessed 2026-11-07",
+      "url": "https://www.liezhe.com/geren-jiehui-edu/",
+      "status": "unverified",
+      "verifies": "NOT USED as a source of record. Listed only because it summarises the 2020 Guidelines; all values it states are taken from S03 directly instead."
+    },
+    {
+      "id": "S20",
+      "jurisdiction": "US",
+      "title": "Report of Foreign Bank and Financial Accounts (FBAR)",
+      "publisher": "Internal Revenue Service",
+      "ref": "IRS.gov, accessed 2026-11-07",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar",
+      "status": "retrieved",
+      "verifies": "Who must file; USD 10,000 aggregate threshold at any time in the year; due April 15 with automatic extension to October 15; filed electronically with FinCEN, not with the return; 5-year record retention; penalties adjusted annually for inflation"
+    },
+    {
+      "id": "S21",
+      "jurisdiction": "US",
+      "title": "31 CFR 1010.821 — Penalty adjustment and table",
+      "publisher": "FinCEN / eCFR (Office of the Federal Register)",
+      "ref": "Title 31 up to date as of 2026-11-05",
+      "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821",
+      "status": "retrieved",
+      "verifies": "Inflation-adjusted FBAR penalty maximums for penalties assessed on or after 2025-01-17: non-willful violation USD 16,536 (31 USC 5321(a)(5)(B)(i)); willful violation USD 165,353 (31 USC 5321(a)(5)(C)(i)(I))"
+    },
+    {
+      "id": "S22",
+      "jurisdiction": "US",
+      "title": "Do I need to file Form 8938, Statement of Specified Foreign Financial Assets?",
+      "publisher": "Internal Revenue Service",
+      "ref": "IRS.gov, accessed 2026-11-07",
+      "url": "https://www.irs.gov/businesses/corporations/do-i-need-to-file-form-8938-statement-of-specified-foreign-financial-assets",
+      "status": "retrieved",
+      "verifies": "Form 8938 thresholds: unmarried living in the US USD 50,000 year-end / 75,000 any time; married filing jointly in the US 100,000 / 150,000; taxpayers living abroad 200,000 / 300,000 (single) and 400,000 / 600,000 (joint); no 8938 if no income tax return is required"
+    },
+    {
+      "id": "S23",
+      "jurisdiction": "US",
+      "title": "26 U.S. Code § 988 — Treatment of certain foreign currency transactions",
+      "publisher": "U.S. Code (Legal Information Institute, Cornell Law School)",
+      "ref": "26 U.S.C. §988",
+      "url": "https://www.law.cornell.edu/uscode/text/26/988",
+      "status": "retrieved",
+      "verifies": "§988(a)(1)(A) FX gain/loss is ordinary, computed separately; §988(e)(1) the section does not apply to an individual's personal transaction; §988(e)(2) no gain recognised on a personal transaction in nonfunctional currency unless the gain would exceed USD 200; §988(e)(3) definition of personal transaction"
+    },
+    {
+      "id": "S24",
+      "jurisdiction": "US",
+      "title": "Instructions for Form 3520 (12/2025)",
+      "publisher": "Internal Revenue Service",
+      "ref": "Rev. December 2025",
+      "url": "https://www.irs.gov/instructions/i3520",
+      "status": "retrieved",
+      "verifies": "Form 3520 exists as the information return for large foreign gifts/bequests (Part IV) and foreign trust transactions; penalty framework under §6677 and §6039F"
+    },
+    {
+      "id": "S25",
+      "jurisdiction": "US",
+      "title": "Streamlined filing compliance procedures",
+      "publisher": "Internal Revenue Service",
+      "ref": "IRS.gov, accessed 2026-11-07",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/streamlined-filing-compliance-procedures",
+      "status": "retrieved",
+      "verifies": "Delinquent/amended filing route for taxpayers certifying non-willful conduct; available to both US residents and non-residents; not available if under civil examination or criminal investigation; requires a valid TIN; no closing agreement is signed"
+    },
+    {
+      "id": "S26",
+      "jurisdiction": "US",
+      "title": "26 U.S. Code § 6038D — Information with respect to foreign financial assets",
+      "publisher": "U.S. Code (Legal Information Institute, Cornell Law School)",
+      "ref": "26 U.S.C. §6038D",
+      "url": "https://www.law.cornell.edu/uscode/text/26/6038D",
+      "status": "retrieved",
+      "verifies": "Form 8938 statutory basis; USD 50,000 statutory floor; §6038D(d)(1) USD 10,000 penalty; §6038D(d)(2) additional USD 10,000 per 30-day period after 90 days' notice, capped at USD 50,000; §6038D(g) reasonable-cause exception"
+    },
+    {
+      "id": "S27",
+      "jurisdiction": "US",
+      "title": "26 U.S. Code § 5321 — Civil penalties (Bank Secrecy Act)",
+      "publisher": "U.S. Code (Legal Information Institute, Cornell Law School)",
+      "ref": "31 U.S.C. §5321(a)(5)",
+      "url": "https://www.law.cornell.edu/uscode/text/31/5321",
+      "status": "unverified",
+      "verifies": "FLAGGED — the statutory willful-FBAR alternative ('greater of USD 100,000 or 50% of the balance in the account at the time of the violation', 31 U.S.C. §5321(a)(5)(C)(ii)) was not retrieved end-to-end in this session. Only the inflation-adjusted maxima in S21 are used as values."
+    },
+    {
+      "id": "S28",
+      "jurisdiction": "US",
+      "title": "FinCEN Form 105 — Report of International Transportation of Currency or Monetary Instruments",
+      "publisher": "Financial Crimes Enforcement Network",
+      "ref": "31 CFR 1010.340",
+      "url": "",
+      "status": "unverified",
+      "verifies": "FLAGGED — the USD 10,000 cross-border currency reporting threshold is widely cited but the official FinCEN page returned 404 during this session. Not used to fill any table value."
+    },
+    {
+      "id": "S29",
+      "jurisdiction": "US",
+      "title": "United States–China income tax treaty",
+      "publisher": "U.S. Department of the Treasury / IRS",
+      "ref": "Treaty signed 1984-04-30",
+      "url": "",
+      "status": "unverified",
+      "verifies": "FLAGGED — the treaty's existence and 1984 signature date are not in dispute, but no specific article text was retrieved in this session, so no treaty benefit is asserted anywhere in this project."
+    },
+    {
+      "id": "S30",
+      "jurisdiction": "US",
+      "title": "FATCA — intergovernmental agreement with China (Model 1)",
+      "publisher": "U.S. Department of the Treasury",
+      "ref": "",
+      "url": "",
+      "status": "unverified",
+      "verifies": "FLAGGED — the claim that Chinese financial institutions report US-person account data to the IRS under a Model 1 IGA was not verified against a retrievable Treasury page in this session. Treated as a risk hypothesis only, not a fact."
+    }
+  ]
+}
