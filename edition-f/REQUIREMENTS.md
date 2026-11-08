@@ -19,8 +19,8 @@ Legend: **M** = met by an artifact/check; **M\*** = met with a documented limita
 | R13 | Clean landing page + category subpages | M | `site/index.html` + 10 subpages | Overview, costs, methods, mechanics, penalty, tax, reporting, audit, flagged, sources, methodology. |
 | R14 | Findings in simple tables | M | All site pages | Key findings, methods, steps, costs, tax, flags, audit and sources are table rows. |
 | R15 | No broken internal links | M | `build/verify.py` internal link/anchor check | External HTTP liveness is not continuously checked; flagged F21. |
-| R16 | Live GitHub Pages dashboard | P | Target `https://sassnarep3-star.github.io/China1/edition-f/site/index.html`; publication record in root `COORDINATION.md` | To be confirmed after PR merge and Pages deploy; this file will be updated in the publication record. |
-| R17 | Fully autonomous PR to main, merge, confirm deploy, log | P | Root `COORDINATION.md` session board | PR/merge/deploy actions are recorded after they occur; no user approval requested. |
+| R16 | Live GitHub Pages dashboard | M | Target `https://sassnarep3-star.github.io/China1/edition-f/site/index.html`; publication record in root `COORDINATION.md` | Confirmed after PR #17 merge at e414add; Pages run 42536528502 succeeded and live pages were fetched. |
+| R17 | Fully autonomous PR to main, merge, confirm deploy, log | M | Root `COORDINATION.md` session board | PR #17 merged without approval; Pages deploy confirmed; publication record appended to COORDINATION.md. |
 | R18 | Read/create COORDINATION.md and claim scope | M | Root `COORDINATION.md` appended session board | Original edition-d claim superseded by edition-f scope after concurrent PR #13 merge; earlier boards preserved. |
 | R19 | Non-overlapping scopes / preserve prior work | M | `audit/REVIEW_NOTES.md`, git diff | Only `edition-f/**`, `.github/workflows/edition-f.yml`, and appended COORDINATION section changed. |
 | R20 | Reproducible build, no dependency risk | M | `build/build.py`, `build/verify.py`, `.github/workflows/edition-f.yml` | Pure Python 3 stdlib; byte-identical rebuild check; separate workflow, shared verify.yml untouched. |
@@ -34,4 +34,4 @@ python3 edition-f/build/build.py
 python3 edition-f/build/verify.py
 ```
 
-Latest local result before PR: **PASS — 27 checks, 0 failures**.
+Latest local and CI result: **PASS — 27 checks, 0 failures**; PR #17 merged and Pages deployed.
