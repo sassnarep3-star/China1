@@ -387,3 +387,21 @@ foot of `edition-c/COORDINATION.md`: F03 (capital-reduction tax characterisation
 procurement trade and cross-border e-commerce export — omitted rather than described from secondary
 sources), F06 (VAT rate on goods), F12 (FIE dividend exemption for foreign individuals), F07 (small and
 low-profit enterprise preference), F05 (RMB cash pooling circular), F01 (retail spread).
+
+
+---
+
+# Session board — arena-e58c83ae — 2026-11-08
+
+Session ID: `arena-e58c83ae`; fixed Arena branch: `arena/e58c83ae-china1`. All preceding boards and completed work are preserved. No active competing claim was found in the reviewed board. This is a serial research/build/integration session, not a competing edit of a claimed task. The environment prohibits switching to or creating another branch, so the requested `session-<id>/<task>` naming cannot be used; isolation is by the exclusive file scope below.
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| E1: independent repo audit and requirements coverage | in progress | arena-e58c83ae | edition-d/data/repo-review.json, edition-d/REQUIREMENTS.md |
+| E2: primary-source route, tax and fee research | in progress | arena-e58c83ae | edition-d/data/**, edition-d/research/** |
+| E3: cost estimates at every $10,000 increment from $10,000 to $400,000 | unclaimed (this session next) | arena-e58c83ae | edition-d/data/**, edition-d/build/** |
+| E4: executive summary and mobile-first dashboard | unclaimed (this session next) | arena-e58c83ae | edition-d/** |
+| E5: line-by-line verification and flagged review | unclaimed (this session next) | arena-e58c83ae | edition-d/** |
+| E6: final integration, additive landing navigation, PR/merge and Pages confirmation | unclaimed (this session next) | arena-e58c83ae | edition-d/**; additive COORDINATION.md, README.md, index.html; .github/workflows/edition-d-verify.yml |
+
+Initial claim is committed and pushed before research/build work. Existing editions remain untouched. Shared landing/navigation changes are deferred until this session's research and verification are complete; then this session acts as final integrator, preserving all prior editions. Unknown personal tax facts and unsupported fees will remain blank and be flagged, not inferred. Numeric cost estimates will distinguish published-fee calculations from missing all-in quotes. No prohibited-channel execution instructions will be provided.
