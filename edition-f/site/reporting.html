@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>US reporting: FBAR, 8938, 3520 and cash declarations · Edition F · CNY→USD</title>
+<meta name="description" content="Independently verified CNY to USD transfer research, cost ladder, mechanics, tax/reporting and repository audit.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">CNY→USD <span>Edition F</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav" onclick="document.getElementById('nav').classList.toggle('open');this.setAttribute('aria-expanded',this.getAttribute('aria-expanded')==='false')">Menu</button>
+    <nav id="nav" class="nav"><a href="index.html" class="">Overview</a><a href="costs.html" class="">Cost ladder</a><a href="methods.html" class="">Methods</a><a href="mechanics.html" class="">Step by step</a><a href="penalty.html" class="">Conversion penalty</a><a href="tax.html" class="">Tax</a><a href="reporting.html" class="active">US reporting</a><a href="audit.html" class="">Repo audit</a><a href="flagged.html" class="">Flagged for review</a><a href="sources.html" class="">Sources</a><a href="methodology.html" class="">Methodology</a></nav>
+  </div>
+</header>
+<main id="main" class="wrap">
+<section class="hero">
+  <p class="eyebrow">Independent verification edition · report date 2026-11-08 UTC</p>
+  <h1>US reporting: FBAR, 8938, 3520 and cash declarations</h1>
+  <p class="lede">The reporting obligations that survive even when the transfer itself produces no income tax.</p>
+</section>
+
+<div class="callout"><strong>Reporting is not tax.</strong> A transfer can be tax-free and still reportable; a reportable account can produce no taxable income. The largest quantified exposure in this problem is usually non-reporting, not the FX spread.</div>
+<div class="table-wrap" id="reporting-forms" tabindex="0" role="region" aria-label="US reporting triggers and penalty framework"><table><caption>US reporting triggers and penalty framework</caption><thead><tr><th scope="col">Form / rule</th><th scope="col">Trigger and mechanics</th><th scope="col">Value</th><th scope="col">Sources</th></tr></thead><tbody><tr ><td class=""><strong>T15</strong> FBAR trigger</td><td class="">US person must file FinCEN Form 114 if aggregate foreign financial accounts exceed USD 10,000 at any time in the calendar year; BSA e-file; Apr 15 → Oct 15.</td><td class="">&gt;USD 10,000 aggregate</td><td class=""><a class="src official" href="https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements" target="_blank" rel="noopener noreferrer" title="official: Internal Revenue Service — Comparison of Form 8938 and FBAR requirements">US05</a> <a class="badge flag" href="flagged.html#F10">F10</a></td></tr>
+<tr ><td class=""><strong>T16</strong> Form 8938 triggers</td><td class="">US single: 50k year-end/75k any time; US joint: 100k/150k; abroad single: 200k/300k; abroad joint: 400k/600k. Attached to return.</td><td class="">Thresholds by residence/filing status</td><td class=""><a class="src official" href="https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements" target="_blank" rel="noopener noreferrer" title="official: Internal Revenue Service — Comparison of Form 8938 and FBAR requirements">US05</a> <a class="badge flag" href="flagged.html#F10">F10</a></td></tr>
+<tr ><td class=""><strong>T17</strong> Form 3520 foreign gifts</td><td class="">Gifts/bequests from foreign individual/estate &gt;USD 100,000 aggregate reported on Form 3520; penalty 5%/month up to 25%; gift itself generally not income.</td><td class="">&gt;USD 100,000 aggregate</td><td class=""><a class="src official" href="https://www.irs.gov/pub/irs-npl/2023ntf-15-foreign-gift-and-trust-reporting-on-form-3520-and-3520-a.pdf" target="_blank" rel="noopener noreferrer" title="official: Internal Revenue Service — 2023 NTF training paper — Form 3520 foreign gift/trust reporting">US07</a> <a class="badge flag" href="flagged.html#F10">F10</a></td></tr>
+<tr ><td class=""><strong>T18</strong> Cash crossing border</td><td class="">More than USD 10,000 in currency/monetary instruments transported into/out of US requires FinCEN 105; family aggregate; forfeiture risk.</td><td class="">&gt;USD 10,000</td><td class=""><a class="src official" href="https://www.cbp.gov/travel/international-visitors/money-monetary-instruments" target="_blank" rel="noopener noreferrer" title="official: U.S. Customs and Border Protection — Currency and monetary instruments reporting">US09</a> </td></tr>
+<tr ><td class=""><strong>T19</strong> FBAR penalty amounts</td><td class="">Statutory non-willful cap USD 10,000; willful maximum greater of USD 100,000 or 50% of transaction/account balance; reasonable-cause exception; inflation-adjusted in practice; Bittner per-report non-willful.</td><td class="">Current adjusted dollars blank</td><td class=""><a class="src official" href="https://www.govinfo.gov/content/pkg/USCODE-2024-title31/html/USCODE-2024-title31-subtitleIV-chap53-subchapII-sec5321.htm" target="_blank" rel="noopener noreferrer" title="official: U.S. Government Publishing Office — 31 U.S.C. §5321 — civil penalties including FBAR">US10</a> <a class="src official" href="https://www.irs.gov/irm/part4/irm_04-026-016" target="_blank" rel="noopener noreferrer" title="official: Internal Revenue Service — IRM 4.26.16 — FBAR penalties (rev. 2025-08-26)">US06</a> <a class="badge flag" href="flagged.html#F03">F03</a></td></tr></tbody></table></div>
+<h2>Practical filing sequence</h2>
+<ol>
+<li>Inventory every foreign financial account and maximum aggregate value during the year; test FBAR &gt; USD 10,000.</li>
+<li>Test Form 8938 against residence/filing-status thresholds; attach to the return if required.</li>
+<li>If a foreign individual/estate gift or bequest exceeds USD 100,000 aggregate, test Form 3520.</li>
+<li>If carrying &gt; USD 10,000 cash/monetary instruments across the US border, file FinCEN 105; family aggregate applies.</li>
+<li>For prior-year gaps, obtain professional advice before amended filings or streamlined procedures; do not assume penalty relief.</li>
+</ol>
+
+</main>
+<footer class="site-footer"><div class="wrap">
+<p>Research with linked sources and shown arithmetic. Not legal, tax or investment advice, and not a bank quote. Provider tariffs support only that provider’s prices/product terms; legal propositions cite government/regulator sources. Unknown values are blank and flagged.</p>
+<p><a href="sources.html">Sources</a> · <a href="flagged.html">Flagged for review</a> · <a href="methodology.html">Methodology</a> · <a href="cost-ladder.csv">CSV</a> · <a href="cost-ladder.json">JSON</a></p>
+</div></footer>
+</body>
+</html>

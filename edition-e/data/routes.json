@@ -1,0 +1,986 @@
+{
+  "meta": {
+    "edition": "E",
+    "report_date": "2026-11-08",
+    "status_vocabulary": {
+      "conditional": "lawful only if the stated facts/documents are satisfied",
+      "approval": "requires competent approval",
+      "closed_loop": "regulated investment channel, not unrestricted US repatriation",
+      "prohibited": "do not use",
+      "unverified": "no operative personal route verified"
+    }
+  },
+  "categories": [
+    {
+      "id": "earned",
+      "name": "Earned and documented current-account money",
+      "page": "earned.html",
+      "intro": "Salary and other lawful mainland current-account income. The bank reviews the source, tax evidence and purpose; a US passport alone is not a remittance entitlement."
+    },
+    {
+      "id": "capital",
+      "name": "Capital, property and corporate routes",
+      "page": "capital.html",
+      "intro": "Narrow approval or transaction-specific routes. They do not turn unrelated savings into sale proceeds, inheritance or corporate distributions."
+    },
+    {
+      "id": "investment",
+      "name": "Investment and closed-loop channels",
+      "page": "investment.html",
+      "intro": "Regulated outbound investment is not the same as unrestricted USD repatriation. Closed-loop proceeds generally return to the mainland funding account."
+    },
+    {
+      "id": "cash",
+      "name": "Cash, cards and everyday spending",
+      "page": "cash.html",
+      "intro": "Carriage permits, ATM aggregation and card spending are constrained channels, not a scalable way to move USD 10,000–400,000."
+    },
+    {
+      "id": "excluded",
+      "name": "Prohibited, evasive or unverified routes",
+      "page": "excluded.html",
+      "intro": "Named for review, not instructed. Evasive routes are prohibited; unverified routes have no populated cost or limit."
+    }
+  ],
+  "routes": [
+    {
+      "id": "R01",
+      "category": "earned",
+      "name": "BOC documented salary / current-account purchase and wire",
+      "status": "conditional",
+      "who": "Overseas individual with lawful mainland current-account RMB income",
+      "mechanism": "Buy FX against ID and transaction-value source materials, then remit through BOC.",
+      "limit": "No stated annual ceiling in Article 59 for qualifying overseas-individual current-account income; bank authenticity review applies.",
+      "documents": "ID; employment/source documents; tax evidence unless nontaxable; payment purpose; beneficiary details.",
+      "cost_model": "boc_tt",
+      "tax_cn": "Income tax attaches to the underlying income, not to moving already-taxed principal. Personal tax is blank.",
+      "tax_us": "US worldwide income/reporting may apply; moving principal is not a second income event by itself. Personal tax is blank.",
+      "pros": [
+        "Direct documented path",
+        "Current personal tariff retrieved",
+        "No generic USD 50,000 ceiling for qualifying Article 59 income"
+      ],
+      "cons": [
+        "Bank may require more documents",
+        "FX quote and receiving fees unknown",
+        "Not for unrelated capital savings"
+      ],
+      "sources": [
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S14",
+        "S15",
+        "S16"
+      ],
+      "flags": [
+        "F01",
+        "F02",
+        "F03"
+      ]
+    },
+    {
+      "id": "R02",
+      "category": "earned",
+      "name": "Standard Chartered China documented current-account electronic transfer",
+      "status": "conditional",
+      "who": "SC China customer with qualifying lawful current-account income",
+      "mechanism": "SC electronic overseas transfer; tier and OUR selection affect sender-side tariff.",
+      "limit": "Provider electronic-banking limits and regulatory source review apply; account-specific limit not verified.",
+      "documents": "ID; source/tax evidence; SC eligibility and beneficiary details.",
+      "cost_model": "sc_tiers",
+      "tax_cn": "Underlying income tax is separate; personal tax blank.",
+      "tax_us": "US reporting/income rules separate; personal tax blank.",
+      "pros": [
+        "Current provider tariff retrieved",
+        "Tiered sender fees published"
+      ],
+      "cons": [
+        "Tier eligibility unknown",
+        "OUR does not guarantee every beneficiary-side deduction",
+        "FX and receiving fees unknown"
+      ],
+      "sources": [
+        "S02",
+        "S03",
+        "S18",
+        "S19"
+      ],
+      "flags": [
+        "F01",
+        "F03",
+        "F06"
+      ]
+    },
+    {
+      "id": "R03",
+      "category": "earned",
+      "name": "Wise CNY salary outflow to own overseas account",
+      "status": "conditional",
+      "who": "Non-mainland individual with qualifying China work/tax records",
+      "mechanism": "Wise CNY sending channel to an account the sender owns abroad.",
+      "limit": "Current help: CNY 300,000 per China-bank-app transfer; CNY 50,000 via Alipay; overall limit depends on documented income/tax.",
+      "documents": "China work/tax records within three years; own overseas account; provider verification.",
+      "cost_model": "none",
+      "tax_cn": "Underlying salary tax separate; personal tax blank.",
+      "tax_us": "US reporting/income rules separate; personal tax blank.",
+      "pros": [
+        "Provider help retrieved",
+        "Own-account destination reduces third-party ambiguity"
+      ],
+      "cons": [
+        "Not arbitrary savings",
+        "Older blog limit conflicts",
+        "No executable fee/FX quote retrieved"
+      ],
+      "sources": [
+        "S20",
+        "S21"
+      ],
+      "flags": [
+        "F01",
+        "F04"
+      ]
+    },
+    {
+      "id": "R04",
+      "category": "earned",
+      "name": "Repeat salary purchase at the same bank",
+      "status": "conditional",
+      "who": "Foreign employee with a valid employment contract and prior approved salary purchase",
+      "mechanism": "Repeat lawful salary purchase at the same bank may avoid repeated duplicate materials.",
+      "limit": "Same underlying Article 59 income rule; facilitation is procedural, not a new quota.",
+      "documents": "First-time salary/source/tax file; valid contract; repeat payment evidence.",
+      "cost_model": "boc_tt",
+      "tax_cn": "Underlying salary tax separate; personal tax blank.",
+      "tax_us": "US reporting/income rules separate; personal tax blank.",
+      "pros": [
+        "Reduces repeated paperwork",
+        "Uses the same lawful income basis"
+      ],
+      "cons": [
+        "Only same bank / valid contract",
+        "Does not waive source authenticity"
+      ],
+      "sources": [
+        "S03",
+        "S05",
+        "S15"
+      ],
+      "flags": [
+        "F01",
+        "F02",
+        "F03"
+      ]
+    },
+    {
+      "id": "R05",
+      "category": "earned",
+      "name": "Nontaxable lawful current-account income",
+      "status": "conditional",
+      "who": "Overseas individual whose mainland current-account income is nontaxable under the rules",
+      "mechanism": "Purchase/remit with ID and transaction-value source materials; tax voucher may be omitted if nontaxable.",
+      "limit": "No tax voucher where the income is nontaxable under the rules; bank still reviews source.",
+      "documents": "ID; source materials; basis for nontaxable treatment.",
+      "cost_model": "none",
+      "tax_cn": "Nontaxable status must be established; personal tax blank.",
+      "tax_us": "US tax may still apply; personal tax blank.",
+      "pros": [
+        "Official tax-evidence exception",
+        "Avoids assuming a Chinese tax voucher is always required"
+      ],
+      "cons": [
+        "Nontaxable in China does not mean nontaxable in the US",
+        "Provider price unknown"
+      ],
+      "sources": [
+        "S04",
+        "S28",
+        "S30"
+      ],
+      "flags": [
+        "F01",
+        "F09"
+      ]
+    },
+    {
+      "id": "R06",
+      "category": "earned",
+      "name": "Registered foreign equity-incentive sale/dividend proceeds",
+      "status": "conditional",
+      "who": "Foreign employee participating in a registered mainland-listed equity incentive plan",
+      "mechanism": "Remit or convert registered plan proceeds through the bank against registration and broker evidence.",
+      "limit": "Only qualifying registered plan proceeds; not a generic securities/savings channel.",
+      "documents": "Plan registration certificate; matching ID; broker/trading evidence; bank authenticity review.",
+      "cost_model": "none",
+      "tax_cn": "Plan income may have IIT obligations; personal tax blank.",
+      "tax_us": "US worldwide income and asset reporting may apply; personal tax blank.",
+      "pros": [
+        "Specific official plan channel",
+        "Keeps plan proceeds traceable"
+      ],
+      "cons": [
+        "Registration required",
+        "Cannot wrap unrelated savings"
+      ],
+      "sources": [
+        "S13",
+        "S28",
+        "S30"
+      ],
+      "flags": [
+        "F01"
+      ]
+    },
+    {
+      "id": "R07",
+      "category": "earned",
+      "name": "Basic pension / retirement pay under uniform state provisions",
+      "status": "conditional",
+      "who": "Person receiving qualifying basic pension/retirement pay",
+      "mechanism": "Document the lawful income and ask the bank for the applicable current-account purchase/remittance treatment.",
+      "limit": "No numeric personal limit verified; underlying pension exemption is narrow.",
+      "documents": "Pension entitlement/source evidence; ID; tax treatment evidence; bank checklist.",
+      "cost_model": "none",
+      "tax_cn": "Basic pension/retirement pay under uniform state provisions is exempt under the IIT law; other retirement income is not automatically exempt.",
+      "tax_us": "US taxation/reporting of pension income is separate; personal tax blank.",
+      "pros": [
+        "Statutory exemption identified",
+        "Lawful income may be documentable"
+      ],
+      "cons": [
+        "Exemption is narrow",
+        "Bank FX path and fees not verified"
+      ],
+      "sources": [
+        "S28",
+        "S30"
+      ],
+      "flags": [
+        "F01",
+        "F09"
+      ]
+    },
+    {
+      "id": "R08",
+      "category": "earned",
+      "name": "Genuine business / trade current-account payment",
+      "status": "conditional",
+      "who": "Registered business with a real cross-border transaction",
+      "mechanism": "Pay a genuine service/goods obligation through the business’s FX/current-account process.",
+      "limit": "Real lawful transaction required; no personal savings ceiling verified.",
+      "documents": "Contracts; invoices; tax/filing evidence where covered; business registration; bank review.",
+      "cost_model": "none",
+      "tax_cn": "Business taxes depend on the transaction; personal tax blank.",
+      "tax_us": "US entity/owner reporting may apply; personal tax blank.",
+      "pros": [
+        "Lawful current-account principle",
+        "Can be scalable for real trade"
+      ],
+      "cons": [
+        "Not a wrapper for personal savings",
+        "Entity, transfer-pricing and tax complexity"
+      ],
+      "sources": [
+        "S01",
+        "S12"
+      ],
+      "flags": [
+        "F01",
+        "F16"
+      ]
+    },
+    {
+      "id": "R09",
+      "category": "capital",
+      "name": "Nonresident house-sale proceeds",
+      "status": "conditional",
+      "who": "Nonresident seller of mainland property with completed transfer/tax steps",
+      "mechanism": "Remit documented sale proceeds after transfer registration and tax steps.",
+      "limit": "Transaction-specific; no generic savings limit. External-payment filing described above USD 50,000 where covered.",
+      "documents": "ID; transfer contract/registration; tax voucher; filing form where required; agent POA if used.",
+      "cost_model": "none",
+      "tax_cn": "Property-transfer gain may be taxed; personal tax blank.",
+      "tax_us": "US gain/reporting rules separate; personal tax blank.",
+      "pros": [
+        "Government-hosted sale FAQ",
+        "Established documentary path"
+      ],
+      "cons": [
+        "Only actual sale proceeds",
+        "Local practice and inherited cases need confirmation"
+      ],
+      "sources": [
+        "S11",
+        "S12",
+        "S28",
+        "S30"
+      ],
+      "flags": [
+        "F01",
+        "F13"
+      ]
+    },
+    {
+      "id": "R10",
+      "category": "capital",
+      "name": "Emigrant property transfer",
+      "status": "approval",
+      "who": "Person with qualifying pre-emigration mainland property and former household registration",
+      "mechanism": "Apply to former-hukou SAFE office; after approval bank remits directly to applicant’s own overseas account.",
+      "limit": "Within approval; 2014 circular allows lump sum or batches. Old staged schedule not confirmed current.",
+      "documents": "ID; emigration/former-hukou evidence; title/source; tax evidence; application; agent POA if used.",
+      "cost_model": "none",
+      "tax_cn": "Underlying asset taxes may apply; transfer itself is not a generic income tax. Personal tax blank.",
+      "tax_us": "US gain/reporting rules separate; personal tax blank.",
+      "pros": [
+        "Express capital route",
+        "Direct own-account remittance"
+      ],
+      "cons": [
+        "US citizenship alone is insufficient",
+        "Documents and local office control",
+        "Old staged-release claims conflicted"
+      ],
+      "sources": [
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10"
+      ],
+      "flags": [
+        "F01",
+        "F07",
+        "F08"
+      ]
+    },
+    {
+      "id": "R11",
+      "category": "capital",
+      "name": "Inheritance property transfer",
+      "status": "approval",
+      "who": "Qualifying foreign/HK/Macao/Taiwan heir of mainland estate",
+      "mechanism": "Apply at decedent’s former-hukou SAFE office; bank remits directly to applicant’s own overseas account.",
+      "limit": "Within approval; different decedents may be combined at one competent office under the 2026 FAQ.",
+      "documents": "ID; inheritance proof; decedent title/source; tax evidence; application; agent POA if used.",
+      "cost_model": "none",
+      "tax_cn": "No blanket inheritance-tax rate is asserted; underlying asset taxes may apply. Personal tax blank.",
+      "tax_us": "Foreign inheritance above USD 100,000 may require Form 3520; income later produced is separate. Personal tax blank.",
+      "pros": [
+        "Specific inheritance route",
+        "2026 filing-office FAQ retrieved"
+      ],
+      "cons": [
+        "Requires qualifying inheritance",
+        "Not a gift or savings workaround"
+      ],
+      "sources": [
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S30"
+      ],
+      "flags": [
+        "F01",
+        "F08"
+      ]
+    },
+    {
+      "id": "R12",
+      "category": "capital",
+      "name": "Corporate dividend / profit distribution to foreign shareholder",
+      "status": "conditional",
+      "who": "Foreign shareholder of a compliant mainland enterprise with distributable profit",
+      "mechanism": "Distribute genuine profit through the enterprise’s bank/tax process.",
+      "limit": "Real profit and corporate approvals required; no personal savings limit verified.",
+      "documents": "Board/partner distribution resolution; financial/tax evidence; shareholder ID; bank review.",
+      "cost_model": "none",
+      "tax_cn": "Enterprise and withholding taxes depend on facts; personal/corporate tax blank.",
+      "tax_us": "US shareholder reporting/income rules separate; tax blank.",
+      "pros": [
+        "Recognised corporate current-account path",
+        "2014 profit-remittance simplification retrieved"
+      ],
+      "cons": [
+        "Requires real company/profit",
+        "Not a personal savings wrapper"
+      ],
+      "sources": [
+        "S01",
+        "S10",
+        "S12"
+      ],
+      "flags": [
+        "F01",
+        "F16"
+      ]
+    },
+    {
+      "id": "R13",
+      "category": "capital",
+      "name": "Liquidation residual of a foreign-invested enterprise",
+      "status": "conditional",
+      "who": "Foreign investor in a lawfully terminated/liquidated enterprise",
+      "mechanism": "Remit residual value after liquidation and tax payment under the FX Regulation.",
+      "limit": "Liquidation-specific; no generic personal limit verified.",
+      "documents": "Liquidation/tax/title evidence; investor ID; bank/SAFE checklist.",
+      "cost_model": "none",
+      "tax_cn": "Liquidation taxes depend on facts; tax blank.",
+      "tax_us": "US shareholder reporting/income rules separate; tax blank.",
+      "pros": [
+        "Express statutory entitlement identified"
+      ],
+      "cons": [
+        "Requires actual liquidation",
+        "Cost and timeline unknown"
+      ],
+      "sources": [
+        "S01"
+      ],
+      "flags": [
+        "F01",
+        "F16"
+      ]
+    },
+    {
+      "id": "R14",
+      "category": "capital",
+      "name": "Capital reduction / equity transfer / ODI-style capital route",
+      "status": "unverified",
+      "who": "Person or entity with a genuine approved capital transaction",
+      "mechanism": "Potentially available only under the specific capital-account rules and approvals.",
+      "limit": "Not verified for this fact pattern; no limit populated.",
+      "documents": "Transaction approvals, registration, tax and source evidence would be required.",
+      "cost_model": "none",
+      "tax_cn": "Not verified; tax blank.",
+      "tax_us": "Not verified; tax blank.",
+      "pros": [
+        "Named for completeness"
+      ],
+      "cons": [
+        "No operative personal route verified",
+        "Cannot be used to relabel savings"
+      ],
+      "sources": [
+        "S01",
+        "S09"
+      ],
+      "flags": [
+        "F01",
+        "F16"
+      ]
+    },
+    {
+      "id": "R15",
+      "category": "investment",
+      "name": "Cross-boundary Wealth Management Connect southbound",
+      "status": "closed_loop",
+      "who": "Eligible Greater Bay Area mainland investor",
+      "mechanism": "Paired dedicated RMB/CIPS accounts invest in eligible HK/Macao products; proceeds return to mainland remittance account.",
+      "limit": "Closed-loop and quota management; not a US repatriation account.",
+      "documents": "GBA eligibility; paired dedicated accounts; product suitability; bank quota.",
+      "cost_model": "none",
+      "tax_cn": "Investment income tax separate; tax blank.",
+      "tax_us": "US reporting/income rules may apply; tax blank.",
+      "pros": [
+        "Regulated closed-loop channel",
+        "HKMA operational page retrieved"
+      ],
+      "cons": [
+        "Not direct USD to US",
+        "Eligibility and product risk"
+      ],
+      "sources": [
+        "S26",
+        "S27"
+      ],
+      "flags": [
+        "F01",
+        "F15"
+      ]
+    },
+    {
+      "id": "R16",
+      "category": "investment",
+      "name": "QDII product / custody channel",
+      "status": "closed_loop",
+      "who": "Investor in an approved QDII product",
+      "mechanism": "Institution invests under SAFE quota; redemption/dividend FX may return to domestic individual FX accounts under the rules.",
+      "limit": "Institutional quota and product terms; no personal offshore cash entitlement.",
+      "documents": "Product subscription; institution quota/custody; redemption terms.",
+      "cost_model": "none",
+      "tax_cn": "Investment income tax separate; tax blank.",
+      "tax_us": "US reporting/income rules may apply; tax blank.",
+      "pros": [
+        "Official SAFE QDII rules retrieved",
+        "Can hold foreign assets through a product"
+      ],
+      "cons": [
+        "Not unrestricted repatriation",
+        "Product fees/quota unknown"
+      ],
+      "sources": [
+        "S39"
+      ],
+      "flags": [
+        "F01",
+        "F15"
+      ]
+    },
+    {
+      "id": "R17",
+      "category": "investment",
+      "name": "Stock Connect southbound trading link",
+      "status": "closed_loop",
+      "who": "Eligible mainland investor under current Stock Connect rules",
+      "mechanism": "Closed-loop trading link; RMB between mainland broker and ChinaClear, HKD at HK side.",
+      "limit": "Current eligibility/quota not verified; historical operator presentation only.",
+      "documents": "Broker eligibility; current scheme rules; account docs.",
+      "cost_model": "none",
+      "tax_cn": "Investment income tax separate; tax blank.",
+      "tax_us": "US reporting/income rules may apply; tax blank.",
+      "pros": [
+        "Operator primary source retrieved"
+      ],
+      "cons": [
+        "Historical source",
+        "Not a US cash-deposit route"
+      ],
+      "sources": [
+        "S40"
+      ],
+      "flags": [
+        "F01",
+        "F14"
+      ]
+    },
+    {
+      "id": "R18",
+      "category": "investment",
+      "name": "Convert to USD and hold in a mainland FX account",
+      "status": "conditional",
+      "who": "Person permitted to purchase/retain FX under the applicable source rule",
+      "mechanism": "Purchase FX and retain it in the person’s own domestic FX account where the underlying rule permits.",
+      "limit": "Depends on the underlying current/capital permission; no standalone exit quota.",
+      "documents": "ID; source/tax evidence; bank account rules.",
+      "cost_model": "none",
+      "tax_cn": "No tax merely from holding principal is asserted; FX gain rules may apply. Personal tax blank.",
+      "tax_us": "US FBAR/8938 and FX-gain rules may apply; personal tax blank.",
+      "pros": [
+        "May avoid immediate cross-border wire",
+        "Official destination option for current-account purchased FX"
+      ],
+      "cons": [
+        "Still onshore",
+        "Does not solve capital-account source problem"
+      ],
+      "sources": [
+        "S04",
+        "S30",
+        "S33",
+        "S34",
+        "S36"
+      ],
+      "flags": [
+        "F01",
+        "F02",
+        "F11"
+      ]
+    },
+    {
+      "id": "R19",
+      "category": "cash",
+      "name": "Carry foreign cash within the no-permit tier",
+      "status": "conditional",
+      "who": "Traveller carrying up to USD 5,000 equivalent without a controlling prior entry declaration",
+      "mechanism": "Carry cash out and report to US customs if covered instruments exceed USD 10,000 on entry/exit.",
+      "limit": "Up to USD 5,000 equivalent without carry permit under the cited notice; frequent-traveller rules differ.",
+      "documents": "Travel documents; customs declarations where required; source evidence.",
+      "cost_model": "none",
+      "tax_cn": "No conversion tax asserted; underlying income tax separate. Tax blank.",
+      "tax_us": "CBP reporting above USD 10,000 is not a tax; personal tax blank.",
+      "pros": [
+        "Official carriage tiers retrieved"
+      ],
+      "cons": [
+        "Not scalable",
+        "Security/customs risk",
+        "Grid amounts above tier are not feasible as a single carry"
+      ],
+      "sources": [
+        "S24",
+        "S25"
+      ],
+      "flags": [
+        "F01",
+        "F13"
+      ]
+    },
+    {
+      "id": "R20",
+      "category": "cash",
+      "name": "Carry foreign cash above USD 5,000 through USD 10,000 with bank permit",
+      "status": "conditional",
+      "who": "Traveller in the bank-permit cash tier",
+      "mechanism": "Obtain bank carry permit and declare where required.",
+      "limit": "Above USD 5,000 through USD 10,000 equivalent needs bank permit under the cited notice.",
+      "documents": "Bank permit; travel documents; source evidence; customs declarations.",
+      "cost_model": "none",
+      "tax_cn": "Underlying income tax separate; tax blank.",
+      "tax_us": "CBP reporting is separate; tax blank.",
+      "pros": [
+        "Official permit tier"
+      ],
+      "cons": [
+        "Only a narrow cash band",
+        "BOC carrying certificate fee waived through 2026 but other costs unknown"
+      ],
+      "sources": [
+        "S15",
+        "S24",
+        "S25"
+      ],
+      "flags": [
+        "F01",
+        "F13"
+      ]
+    },
+    {
+      "id": "R21",
+      "category": "cash",
+      "name": "Carry foreign cash above USD 10,000 with exceptional SAFE approval",
+      "status": "approval",
+      "who": "Exceptional traveller meeting the notice’s special conditions",
+      "mechanism": "SAFE carry permit for exceptional cases; not a routine large-transfer channel.",
+      "limit": "Above USD 10,000 is exceptional and needs SAFE approval under the cited notice.",
+      "documents": "SAFE application; travel/source evidence; permit; customs declarations.",
+      "cost_model": "none",
+      "tax_cn": "Underlying income tax separate; tax blank.",
+      "tax_us": "CBP reporting is separate; tax blank.",
+      "pros": [
+        "Official exceptional tier named"
+      ],
+      "cons": [
+        "Not a routine repatriation method",
+        "Grid amounts are not approved by this page"
+      ],
+      "sources": [
+        "S24",
+        "S25"
+      ],
+      "flags": [
+        "F01",
+        "F13"
+      ]
+    },
+    {
+      "id": "R22",
+      "category": "cash",
+      "name": "Overseas ATM withdrawal with mainland bank cards",
+      "status": "conditional",
+      "who": "Cardholder using ordinary overseas ATM withdrawals",
+      "mechanism": "Withdraw cash abroad within per-person annual and per-card daily aggregation limits.",
+      "limit": "CNY 100,000 per person per calendar year across cards; CNY 10,000 per card per day.",
+      "documents": "Card; travel/ATM evidence; bank limits.",
+      "cost_model": "none",
+      "tax_cn": "Underlying income tax separate; tax blank.",
+      "tax_us": "US reporting may apply; tax blank.",
+      "pros": [
+        "Official aggregation rule retrieved",
+        "BOC current ATM tariff retrieved"
+      ],
+      "cons": [
+        "Not USD 10,000–400,000 repatriation",
+        "ATM operator fees and card FX unknown",
+        "Borrowing cards to evade is prohibited"
+      ],
+      "sources": [
+        "S15",
+        "S22",
+        "S23"
+      ],
+      "flags": [
+        "F01",
+        "F05"
+      ]
+    },
+    {
+      "id": "R23",
+      "category": "cash",
+      "name": "Ordinary overseas card spending",
+      "status": "conditional",
+      "who": "Cardholder making genuine personal overseas purchases",
+      "mechanism": "Spend directly abroad; distinct from ATM cash withdrawal aggregation.",
+      "limit": "Ordinary spending is not the ATM cash-withdrawal quota; provider limits apply.",
+      "documents": "Card; merchant transactions; provider terms.",
+      "cost_model": "none",
+      "tax_cn": "Underlying income tax separate; tax blank.",
+      "tax_us": "US reporting may apply; tax blank.",
+      "pros": [
+        "Official distinction from ATM withdrawals"
+      ],
+      "cons": [
+        "Not a cash repatriation route",
+        "FX/card fees unknown"
+      ],
+      "sources": [
+        "S22"
+      ],
+      "flags": [
+        "F01"
+      ]
+    },
+    {
+      "id": "R24",
+      "category": "cash",
+      "name": "BOC clean collection / draft instruments",
+      "status": "conditional",
+      "who": "Customer using a qualifying financial instrument",
+      "mechanism": "Collection or draft service under BOC personal tariff; instrument and destination rules apply.",
+      "limit": "Instrument-specific; no generic repatriation limit verified.",
+      "documents": "Financial instrument; ID; source/purpose evidence; postage if any.",
+      "cost_model": "none",
+      "tax_cn": "Underlying income tax separate; tax blank.",
+      "tax_us": "US reporting may apply; tax blank.",
+      "pros": [
+        "Personal tariff retrieved"
+      ],
+      "cons": [
+        "Postage and receiving charges unknown",
+        "Not a verified USD salary path"
+      ],
+      "sources": [
+        "S15"
+      ],
+      "flags": [
+        "F01",
+        "F03"
+      ]
+    },
+    {
+      "id": "R25",
+      "category": "excluded",
+      "name": "Splitting transfers to evade quota/authenticity review",
+      "status": "prohibited",
+      "who": "Anyone using multiple persons/cards/accounts to evade controls",
+      "mechanism": "Do not use. SAFE guidelines and ATM rules prohibit splitting/borrowing cards to evade limits.",
+      "limit": "Prohibited evasion; no lawful limit populated.",
+      "documents": "None recommended.",
+      "cost_model": "none",
+      "tax_cn": "Penalty exposure is separate from conversion cost; personal penalty blank.",
+      "tax_us": "US reporting obligations remain; tax blank.",
+      "pros": [
+        "Named so it is not mistaken for a loophole"
+      ],
+      "cons": [
+        "Prohibited",
+        "Enforcement and reporting risk"
+      ],
+      "sources": [
+        "S02",
+        "S22",
+        "S01"
+      ],
+      "flags": [
+        "F01"
+      ]
+    },
+    {
+      "id": "R26",
+      "category": "excluded",
+      "name": "Underground bank / private FX dealing",
+      "status": "prohibited",
+      "who": "Anyone offering off-bank CNY/USD swapping",
+      "mechanism": "Do not use. Private or disguised FX dealing is prohibited.",
+      "limit": "No lawful limit populated.",
+      "documents": "None recommended.",
+      "cost_model": "none",
+      "tax_cn": "Statutory penalty exposure; personal penalty blank.",
+      "tax_us": "US reporting obligations remain; tax blank.",
+      "pros": [
+        "Named for review"
+      ],
+      "cons": [
+        "Prohibited",
+        "Counterparty and criminal risk"
+      ],
+      "sources": [
+        "S01",
+        "S09"
+      ],
+      "flags": [
+        "F01"
+      ]
+    },
+    {
+      "id": "R27",
+      "category": "excluded",
+      "name": "CNY–crypto–USD bridge",
+      "status": "prohibited",
+      "who": "Anyone attempting fiat/virtual-currency exchange to move value",
+      "mechanism": "Do not use. Mainland fiat/virtual-currency exchange and related business are prohibited illegal financial activity.",
+      "limit": "No lawful limit populated.",
+      "documents": "None recommended.",
+      "cost_model": "none",
+      "tax_cn": "2026 No.42 replaces 2021 No.237; personal penalty blank.",
+      "tax_us": "US digital-asset reporting/tax may apply; tax blank.",
+      "pros": [
+        "Current authority retrieved"
+      ],
+      "cons": [
+        "Prohibited",
+        "No operational guidance"
+      ],
+      "sources": [
+        "S38"
+      ],
+      "flags": [
+        "F01",
+        "F10"
+      ]
+    },
+    {
+      "id": "R28",
+      "category": "excluded",
+      "name": "False trade / salary / inheritance documents",
+      "status": "prohibited",
+      "who": "Anyone misrepresenting the source or purpose",
+      "mechanism": "Do not use. Current-account payments require a real lawful transaction basis.",
+      "limit": "No lawful limit populated.",
+      "documents": "None recommended.",
+      "cost_model": "none",
+      "tax_cn": "Deceptive transfer penalty exposure; personal penalty blank.",
+      "tax_us": "US reporting obligations remain; tax blank.",
+      "pros": [
+        "Named for review"
+      ],
+      "cons": [
+        "Prohibited",
+        "Documentary fraud risk"
+      ],
+      "sources": [
+        "S01",
+        "S02",
+        "S09"
+      ],
+      "flags": [
+        "F01"
+      ]
+    },
+    {
+      "id": "R29",
+      "category": "excluded",
+      "name": "Borrowing another person’s quota or account",
+      "status": "prohibited",
+      "who": "Anyone using a third party to evade personal limits",
+      "mechanism": "Do not use. Splitting and third-party evasion are prohibited; property transfers require own-account destination.",
+      "limit": "No lawful limit populated.",
+      "documents": "None recommended.",
+      "cost_model": "none",
+      "tax_cn": "Penalty exposure; personal penalty blank.",
+      "tax_us": "US gift/reporting rules may apply to real gifts; tax blank.",
+      "pros": [
+        "Named for review"
+      ],
+      "cons": [
+        "Prohibited",
+        "Third-party legal risk"
+      ],
+      "sources": [
+        "S02",
+        "S08",
+        "S22"
+      ],
+      "flags": [
+        "F01"
+      ]
+    },
+    {
+      "id": "R30",
+      "category": "excluded",
+      "name": "Unverified fintech / offshore RMB workaround",
+      "status": "unverified",
+      "who": "Person offered a provider or offshore conversion scheme",
+      "mechanism": "No verified lawful personal route or price retrieved for this fact pattern.",
+      "limit": "No limit populated.",
+      "documents": "Provider licence, regulatory basis and account-specific terms would be required.",
+      "cost_model": "none",
+      "tax_cn": "Not verified; tax blank.",
+      "tax_us": "Not verified; tax blank.",
+      "pros": [
+        "Named for completeness"
+      ],
+      "cons": [
+        "No operative source",
+        "No cost populated"
+      ],
+      "sources": [
+        "S01",
+        "S20"
+      ],
+      "flags": [
+        "F01",
+        "F16"
+      ]
+    },
+    {
+      "id": "R31",
+      "category": "excluded",
+      "name": "QDLP / private-bank structured repatriation programme",
+      "status": "unverified",
+      "who": "Investor offered a private programme",
+      "mechanism": "No verified general personal repatriation entitlement or price retrieved.",
+      "limit": "No limit populated.",
+      "documents": "Programme approval, eligibility and product terms would be required.",
+      "cost_model": "none",
+      "tax_cn": "Not verified; tax blank.",
+      "tax_us": "Not verified; tax blank.",
+      "pros": [
+        "Named for completeness"
+      ],
+      "cons": [
+        "Marketing is not authority",
+        "No cost populated"
+      ],
+      "sources": [
+        "S01"
+      ],
+      "flags": [
+        "F01",
+        "F16"
+      ]
+    },
+    {
+      "id": "R32",
+      "category": "earned",
+      "name": "Domestic-individual convenience quota if the bank classifies the person as domestic",
+      "status": "conditional",
+      "who": "Person the bank classifies as a domestic individual under the applicable rules",
+      "mechanism": "Use the annual convenience purchase quota only if the classification actually applies.",
+      "limit": "USD 50,000 equivalent per person per year convenience quota for domestic individuals; classification conflict flagged.",
+      "documents": "ID; bank classification; source/purpose evidence above quota.",
+      "cost_model": "none",
+      "tax_cn": "Underlying income tax separate; tax blank.",
+      "tax_us": "US worldwide reporting remains; tax blank.",
+      "pros": [
+        "Quota rule retrieved"
+      ],
+      "cons": [
+        "A US passport usually points away from this classification",
+        "Habitual-residence/permanent-residence rules can complicate it"
+      ],
+      "sources": [
+        "S02",
+        "S03"
+      ],
+      "flags": [
+        "F01",
+        "F17"
+      ]
+    }
+  ]
+}

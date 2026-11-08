@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "edition": "E",
+    "policy": "Adjudicate inherited claims without editing prior editions."
+  },
+  "findings": [
+    {
+      "id": "A01",
+      "severity": "medium",
+      "subject": "Root EXECUTIVE_SUMMARY.md and data/costs.json",
+      "finding": "The 0.42% figure is the full bid/ask gap divided by the ask, described as a round-trip loss. It is not the one-way midpoint spread proxy used by Edition E.",
+      "adjudication": "Different metric, not a universal conversion cost. Edition E publishes both definitions and uses a labelled one-way proxy.",
+      "sources": [
+        "S16"
+      ],
+      "paths": [
+        "EXECUTIVE_SUMMARY.md",
+        "data/costs.json"
+      ]
+    },
+    {
+      "id": "A02",
+      "severity": "high",
+      "subject": "data/costs.json K9 and scripts/data_costs.py",
+      "finding": "Blanket statement that a CNY deposit coupon is taxed at 20% and nets 80% conflicts with the retrieved savings-deposit interest exemption from 2008-10-09.",
+      "adjudication": "Overbroad. Edition E limits the statutory 20% category to non-exempt items and leaves personal tax blank.",
+      "sources": [
+        "S28",
+        "S29"
+      ],
+      "paths": [
+        "data/costs.json",
+        "scripts/data_costs.py"
+      ]
+    },
+    {
+      "id": "A03",
+      "severity": "high",
+      "subject": "Older crypto authority in root/edition-b/edition-c and published Edition D",
+      "finding": "Sources cite 2021 No.237. PBOC 2026 No.42 expressly repeals that notice.",
+      "adjudication": "Outdated authority. Practical prohibition remains, but Edition E cites the current notice.",
+      "sources": [
+        "S38"
+      ],
+      "paths": [
+        "scripts/data_sources.py",
+        "edition-b/data/sources.json",
+        "edition-c/data/sources.json",
+        "edition-d/data/sources.json"
+      ]
+    },
+    {
+      "id": "A04",
+      "severity": "high",
+      "subject": "data/channels.json B1, data/costs.json K7, edition-d/data/parameters.json emigration",
+      "finding": "Old staged 50%/25%/25% release schedule is presented as current. The 2014 circular allows lump sum or batches within approval; full current section 6.4 was not isolated.",
+      "adjudication": "Not confirmed current. Edition E leaves staging blank and flags local-office confirmation.",
+      "sources": [
+        "S09",
+        "S10"
+      ],
+      "paths": [
+        "data/channels.json",
+        "data/costs.json",
+        "edition-d/data/parameters.json"
+      ]
+    },
+    {
+      "id": "A05",
+      "severity": "medium",
+      "subject": "edition-b/data/flagged.json F08 and older no-tariff statements",
+      "finding": "Earlier editions say no retail tariff/spread was retrieved. Current BOC personal and SC China provider tariffs were retrieved in this session.",
+      "adjudication": "Historical limitation superseded for Edition E. Provider prices are still not government rates or executable quotes.",
+      "sources": [
+        "S14",
+        "S15",
+        "S18"
+      ],
+      "paths": [
+        "edition-b/data/flagged.json"
+      ]
+    },
+    {
+      "id": "A06",
+      "severity": "high",
+      "subject": "edition-d receiving-bank assumption and total-cost cells",
+      "finding": "Published Edition D includes a named USD 15 Chase receiving-bank assumption to complete totals. The user supplied no receiving bank.",
+      "adjudication": "Labelled assumption is not a verified personal value. Edition E leaves receiving fees and all-in totals blank.",
+      "sources": [
+        "S15",
+        "S18"
+      ],
+      "paths": [
+        "edition-d/data/parameters.json",
+        "edition-d/docs/pages/costs-boc-documented.html"
+      ]
+    },
+    {
+      "id": "A07",
+      "severity": "medium",
+      "subject": "edition-d BOC tariff vintage and full-arrival source",
+      "finding": "Edition D uses a 2014 personal e-banking tariff and a corporate/trade-finance full-arrival announcement. This session retrieved the current personal tariff effective 2025-11-11, including the USD full-arrival note.",
+      "adjudication": "Edition E uses the current personal schedule and keeps the optional surcharge separate from base sender tariff.",
+      "sources": [
+        "S14",
+        "S15"
+      ],
+      "paths": [
+        "edition-d/data/parameters.json",
+        "edition-d/data/sources.json"
+      ]
+    },
+    {
+      "id": "A08",
+      "severity": "medium",
+      "subject": "edition-d board timestamp timezone",
+      "finding": "Edition D labels the BOC board stamp as Beijing time. The retrieved board did not establish the timezone for this session.",
+      "adjudication": "Edition E preserves the publisher timestamp and flags timezone/date mismatch instead of asserting a timezone.",
+      "sources": [
+        "S16"
+      ],
+      "paths": [
+        "edition-d/data/parameters.json"
+      ]
+    },
+    {
+      "id": "A09",
+      "severity": "low",
+      "subject": "IRS Publication 525 personal-FX rule",
+      "finding": "The USD 200 tip is supported by an official search excerpt, but the targeted full-body passage was not isolated by repeated chunk fetches.",
+      "adjudication": "disclosed as excerpt-only; no personal FX gain is computed.",
+      "sources": [
+        "S36"
+      ],
+      "paths": [
+        "edition-e/data/sources.json"
+      ]
+    },
+    {
+      "id": "A10",
+      "severity": "process",
+      "subject": "Concurrent edition collision",
+      "finding": "Another session published edition-d while this session was researching. An untracked-file rebase conflict prevented overwriting it.",
+      "adjudication": "This session relocated its isolated outputs to edition-e, merged main, and preserved the published Edition D unchanged.",
+      "sources": [],
+      "paths": [
+        "COORDINATION.md",
+        "edition-d/",
+        "edition-e/"
+      ]
+    }
+  ]
+}

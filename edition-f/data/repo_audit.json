@@ -1,0 +1,190 @@
+[
+  {
+    "id": "A01",
+    "severity": "high",
+    "title": "Root headline says no tax in either jurisdiction and uses 0.42% as the conversion cost",
+    "detail": "Root EXECUTIVE_SUMMARY.md says “no tax on converting or transferring your own money in either jurisdiction” and “real cost … about 0.42%”. data/costs.json K1 correctly calls 0.4199% a round-trip spread, and K22/§988 shows personal FX gain >USD 200 can be recognised. The headline overclaims both tax and one-way cost.",
+    "artifact": "https://github.com/sassnarep3-star/China1/blob/4d844a5/EXECUTIVE_SUMMARY.md",
+    "sources": [
+      "US01",
+      "US02",
+      "BK02"
+    ],
+    "action": "Rewrite headline to separate principal, FX gain, round-trip vs one-way proxy, and reporting penalties. Edition F does not edit the root file."
+  },
+  {
+    "id": "A02",
+    "severity": "high",
+    "title": "Root deposit-interest row says 20% withheld and “nets 80%”",
+    "detail": "data/costs.json K9 interest/dividends row (which says a CNY deposit nets 80% of its coupon) states a CNY deposit already nets 80% of its coupon and that 20% withholding is the only Chinese tax most savers pay. Official 财税〔2008〕132号 and STA Q&A temporarily exempt savings-deposit interest (RMB and foreign currency) from 2008-10-09.",
+    "artifact": "https://github.com/sassnarep3-star/China1/blob/4d844a5/data/costs.json",
+    "sources": [
+      "CN22",
+      "CN23"
+    ],
+    "action": "Correct savings-deposit interest treatment; do not generalise the exemption to all interest/dividends."
+  },
+  {
+    "id": "A03",
+    "severity": "medium",
+    "title": "Root/dossier date the BOC spread as measured 2026-11-08",
+    "detail": "data/channels.json and dossier text describe the 0.42% spread as measured on 2026-11-08, while the retrieved BOC board displays 2026-11-09. Rates are identical in this capture, but the timestamp claim is not supported.",
+    "artifact": "https://github.com/sassnarep3-star/China1/blob/4d844a5/data/channels.json",
+    "sources": [
+      "BK02"
+    ],
+    "action": "Label capture date vs board display date; treat as reference-only scenario."
+  },
+  {
+    "id": "A04",
+    "severity": "medium",
+    "title": "Root quota schedule implies a two-person household halves the time",
+    "detail": "data/costs.json K6 says a two-person household halves the quota schedule. Using another person’s quota for one person’s funds is splitting/borrowing unless each person has their own lawful funds and purpose.",
+    "artifact": "https://github.com/sassnarep3-star/China1/blob/4d844a5/data/costs.json",
+    "sources": [
+      "CN01",
+      "CN07"
+    ],
+    "action": "Remove or qualify household halving; do not present quota borrowing as a lawful schedule."
+  },
+  {
+    "id": "A05",
+    "severity": "high",
+    "title": "Edition C states adjusted FBAR dollars without a retrieved adjusted table",
+    "detail": "edition-c/data/penalties.json, tax.json and summary.json state adjusted maxima USD 16,536 / USD 165,353. This session read IRM 4.26.16 and 31 USC 5321 but not an official current-year adjusted table, so those dollars are not independently verified here.",
+    "artifact": "https://github.com/sassnarep3-star/China1/blob/4d844a5/edition-c/data/penalties.json",
+    "sources": [
+      "US06",
+      "US10"
+    ],
+    "action": "Leave adjusted dollars blank until the current official table is read; keep statutory framework and Bittner note."
+  },
+  {
+    "id": "A06",
+    "severity": "medium",
+    "title": "Edition C “only two lawful routes move a whole balance” is overbroad",
+    "detail": "Edition C README/summary says only emigrant and inheritance transfers move a whole balance for individuals. Art.59 documented current-account income, property-sale proceeds under the 2025 guide, and corporate liquidation/dividend routes can move larger amounts where their own conditions are met.",
+    "artifact": "https://github.com/sassnarep3-star/China1/blob/4d844a5/edition-c/README.md",
+    "sources": [
+      "CN01",
+      "CN14",
+      "CN07"
+    ],
+    "action": "Qualify by source of funds and route conditions; do not present the 2004 property-transfer limbs as the only large-value paths."
+  },
+  {
+    "id": "A07",
+    "severity": "medium",
+    "title": "Edition C process irregularities I01/I02 are historical, not current verification",
+    "detail": "edition-c/data/repo-review.json records tasks pre-marked done (I01) and assembled URLs (I02). These are useful process warnings, but they do not verify the current site’s external links or factual correctness.",
+    "artifact": "https://github.com/sassnarep3-star/China1/blob/4d844a5/edition-c/data/repo-review.json",
+    "sources": [
+      "CN02"
+    ],
+    "action": "Keep historical flags; require current build/link/arithmetic checks and manual source re-opening."
+  },
+  {
+    "id": "A08",
+    "severity": "high",
+    "title": "Merged Edition D uses a named Chase receiving fee as an assumption in “total cost”",
+    "detail": "edition-d/data/parameters.json receiving_bank.usd=15 is labelled an assumption from a Chase business schedule, yet the portal/summary presents modelled total cost as the answer. The user required unverifiable values to stay blank; a named example is not the user’s receiving-bank fee.",
+    "artifact": "https://github.com/sassnarep3-star/China1/blob/4d844a5/edition-d/data/parameters.json",
+    "sources": [
+      "BK01",
+      "BK04"
+    ],
+    "action": "Keep correspondent/receiving fees blank or show a separate labelled example outside the verified total. Edition F base known cost excludes them."
+  },
+  {
+    "id": "A09",
+    "severity": "medium",
+    "title": "Merged Edition D relies on an older BOC e-banking tariff and a corporate full-amount notice",
+    "detail": "edition-d/data/parameters.json boc_personal_wire effective 2014-11-01 and correspondent full-amount source is a trade-finance/corporate announcement. Edition F read BOC’s current personal tariff effective 2025-11-11, which contains the personal TT/cable and full-arrival notes.",
+    "artifact": "https://github.com/sassnarep3-star/China1/blob/4d844a5/edition-d/data/parameters.json",
+    "sources": [
+      "BK01"
+    ],
+    "action": "Prefer the current personal tariff; label optional full-arrival charges as conditional, not universal."
+  },
+  {
+    "id": "A10",
+    "severity": "low",
+    "title": "Merged Edition D one-way margin denominator differs from Edition F",
+    "detail": "Merged D computes one-way margin as (ask-mid)/mid = 0.2103%; Edition F computes (ask-mid)/ask = 0.2099239% and round-trip (ask-bid)/ask = 0.4198479%. Both are transparent proxies if labelled; neither is an executable mid-market cost.",
+    "artifact": "https://github.com/sassnarep3-star/China1/blob/4d844a5/edition-d/data/parameters.json",
+    "sources": [
+      "BK02"
+    ],
+    "action": "State the denominator and comparator. Do not call either number a tax or a guaranteed saving."
+  },
+  {
+    "id": "A11",
+    "severity": "high",
+    "title": "Open PR #12 targets the same edition-d path and is conflicting",
+    "detail": "GitHub reports PR #12 (arena/e748c15f) OPEN and CONFLICTING after PR #13 merged a different edition-d. Its model also uses labelled assumptions for unverified fees. Merging it without resolution could overwrite or duplicate the merged edition.",
+    "artifact": "https://github.com/sassnarep3-star/China1/pull/12",
+    "sources": [
+      "BK01",
+      "BK04"
+    ],
+    "action": "Owner should rebase/resolve and remove assumption-based totals or clearly separate them. This session does not merge/close another session’s PR."
+  },
+  {
+    "id": "A12",
+    "severity": "medium",
+    "title": "HSBC “Premier free overseas transfer” is product-specific, not universal",
+    "detail": "Search/marketing summaries can imply all Premier overseas wires are free. HSBC’s current tariff charges ordinary Premier/Advance third-party wires 0.1% (min100/max500) + CNY120 cable; free local fees apply to private-banking personal, Elite, and qualifying same-name Global Transfer products, excluding non-HSBC charges.",
+    "artifact": "https://github.com/sassnarep3-star/China1/blob/4d844a5/README.md",
+    "sources": [
+      "BK04"
+    ],
+    "action": "Use the tariff item and product condition, not the marketing shorthand."
+  },
+  {
+    "id": "A13",
+    "severity": "medium",
+    "title": "Internal checkers passed while external dead links and overclaims remained",
+    "detail": "All inherited build/verify suites passed at claim time, but root data contains a dead uscode.house.gov granule URL and earlier editions contain timestamp/adjusted-penalty overclaims. Internal consistency is not external verification.",
+    "artifact": "https://github.com/sassnarep3-star/China1/blob/4d844a5/data/sources.json",
+    "sources": [
+      "US01",
+      "US06"
+    ],
+    "action": "Add manual source re-opening and claim-level audit; do not equate green CI with factual correctness."
+  },
+  {
+    "id": "A14",
+    "severity": "low",
+    "title": "Expired BOC e-banking promotion must not be used as current pricing",
+    "detail": "Earlier research encountered a BOC 2025 e-banking promotion expiring 2025-12-31. Edition F uses the personal tariff effective 2025-11-11 and the 2026-11-11 ATM announcement instead.",
+    "artifact": "https://github.com/sassnarep3-star/China1/blob/4d844a5/data/sources.json",
+    "sources": [
+      "BK01",
+      "BK03"
+    ],
+    "action": "Check effective dates; future-effective ATM changes are not applied before 2026-11-11."
+  },
+  {
+    "id": "A15",
+    "severity": "medium",
+    "title": "Concurrent editions created repeated scope collisions (D, E and F)",
+    "detail": "PR #13 merged edition-d and a root portal; PR #12 remains open against edition-d; PRs #15/#16 then merged a different edition-e while this session was preparing its own edition-e. This session preserved all merged work and relocated its deliverable to edition-f. It does not merge/close another session’s PR.",
+    "artifact": "https://github.com/sassnarep3-star/China1/blob/1ed1fe7/COORDINATION.md",
+    "sources": [
+      "CN02"
+    ],
+    "action": "Keep file scopes disjoint and re-check origin/main immediately before PR/merge; root owner integrates links; do not merge conflicting duplicate editions without owner resolution."
+  },
+  {
+    "id": "A16",
+    "severity": "medium",
+    "title": "Merged Edition E is a separate concurrent deliverable, not this edition",
+    "detail": "Session arena-0614c102 merged edition-e at 7ce3a7f/1ed1fe7 with 32 methods, 1,280 grid rows and its own verifier. Edition F is an additional independent verification edition under edition-f/; it does not overwrite edition-e or adopt its numbers.",
+    "artifact": "https://github.com/sassnarep3-star/China1/blob/1ed1fe7/edition-e/site/index.html",
+    "sources": [
+      "CN01",
+      "BK01"
+    ],
+    "action": "Readers should compare editions by source date and model inputs; root portal owner may link both. Edition F keeps unknown personal/corridor values blank."
+  }
+]

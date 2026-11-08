@@ -1,0 +1,79 @@
+{
+  "_meta": {
+    "report_date": "2026-11-08",
+    "accessed": "2026-11-08 UTC",
+    "rule": "Only quoted provider inputs are multiplied. Unknown fees/taxes remain blank. BOC board is reference-only and date-mismatched; SkyRemit is an illustrative rate-pair scenario, not an executable quote."
+  },
+  "fx": {
+    "bid_per_100_usd": "666.48",
+    "ask_per_100_usd": "669.29",
+    "reference_per_100_usd": "671.68",
+    "board_stamp": "2026-11-09 07:14:36",
+    "source": "BK02",
+    "note": "CNY per 100 USD. Arithmetic midpoint = (bid+ask)/2. One-way proxy uses (ask-mid)/ask; round-trip proxy uses (ask-bid)/ask. Neither is a tax or an executable mid-market quote."
+  },
+  "boc_wire": {
+    "commission_rate": "0.001",
+    "commission_min_cny": "50",
+    "commission_max_cny": "260",
+    "cable_international_cny": "150",
+    "source": "BK01",
+    "full_arrival_optional": {
+      "usd_boc_ny": "15",
+      "usd_other_qualifying": "25",
+      "note": "Conditional optional service; not included in base known cost. Overseas/receiving charges may still apply."
+    }
+  },
+  "hsbc_wire": {
+    "premier_advance": {
+      "commission_rate": "0.001",
+      "commission_min_cny": "100",
+      "commission_max_cny": "500",
+      "cable_cny": "120"
+    },
+    "private_banking_personal": {
+      "commission_cny": "0",
+      "cable_cny": "0"
+    },
+    "premier_elite": {
+      "commission_cny": "0",
+      "cable_cny": "0"
+    },
+    "full_delivery_precharge_cny": "200",
+    "source": "BK04",
+    "note": "Ordinary third-party Premier/Advance wire. Free tiers exclude correspondent/receiving charges and taxes. HSBC FX spread and account fees are not captured."
+  },
+  "skyremit": {
+    "fee_cny": "79",
+    "min_cny": "500",
+    "max_cny": "300000",
+    "realtime_usd_per_cny": "0.149900",
+    "final_usd_per_cny": "0.149496",
+    "displayed_markup_pct": "0.27",
+    "source": "BK10",
+    "note": "Scenario: CNY principal = target USD / final rate; transfers = ceil(principal/300000); fee assumed separate in CNY; FX loss = principal*(realtime-final); fee USD equivalent = fee*transfers*final. Provider may deduct fee from send amount; confirm live quote."
+  },
+  "wise": {
+    "quote_send_cny": "200000",
+    "bank_transfer_fee_cny": "1224.40",
+    "wise_balance_fee_cny": "1208.11",
+    "volume_discount_cny": "31.93",
+    "usd_per_cny": "0.1498",
+    "source": "BK08",
+    "note": "Single dynamic capture only. No 40-point Wise curve is inferred; ladder Wise total remains blank."
+  },
+  "blank_fields": [
+    "personal_income_tax",
+    "correspondent_fee",
+    "receiving_bank_fee",
+    "hsbc_fx_spread",
+    "hsbc_account_fee",
+    "icbc_wire_fee",
+    "western_union_outbound_fee",
+    "card_purchase_fx_fee",
+    "cash_travel_cost",
+    "notarisation_translation",
+    "current_fbar_adjusted_maxima",
+    "current_feie_amount"
+  ]
+}

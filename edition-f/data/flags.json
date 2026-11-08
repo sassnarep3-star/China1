@@ -1,0 +1,277 @@
+[
+  {
+    "id": "F01",
+    "severity": "high",
+    "title": "Identity classification conflict",
+    "detail": "State Council Regulation Art.52(2) includes a foreigner continuously resident in China for one year as a domestic individual; PBOC Measures Art.37 and SAFE current guide key overseas-individual treatment to passport/permit and permanent-residence-card quota. The same US citizen can be processed differently.",
+    "blank_fields": "bank_classification; applicable_quota",
+    "resolution": "Ask the bank in writing which document/rule governs; escalate to local SAFE if needed. Do not assume passport alone guarantees uncapped treatment.",
+    "sources": [
+      "CN07",
+      "CN03",
+      "CN01",
+      "CN05"
+    ]
+  },
+  {
+    "id": "F02",
+    "severity": "high",
+    "title": "US personal FX gain character conflict",
+    "detail": "§988 ordinary default vs IRS Pub 525 capital-gain instruction for personal gain >USD 200. The USD 200 amount is a recognition threshold, not a tax-free allowance.",
+    "blank_fields": "fx_gain_character; personal_us_tax",
+    "resolution": "Provide acquisition/disposition dates and basis to a US tax professional; do not report “always zero” or assume capital treatment without analysis.",
+    "sources": [
+      "US01",
+      "US02"
+    ]
+  },
+  {
+    "id": "F03",
+    "severity": "high",
+    "title": "Current inflation-adjusted FBAR maxima not verified",
+    "detail": "IRM says penalties are adjusted per 31 CFR 1010.821 and incorporates Bittner, but this session did not read an official current-year adjusted dollar table. Earlier edition figures are not reused.",
+    "blank_fields": "fbar_non_willful_adjusted_usd; fbar_willful_adjusted_usd; current_fbar_adjusted_maxima",
+    "resolution": "Check the current 31 CFR 1010.821 table / IRS penalty page before quoting adjusted dollars. Statutory framework is published; adjusted cells stay blank.",
+    "sources": [
+      "US06",
+      "US10"
+    ]
+  },
+  {
+    "id": "F04",
+    "severity": "medium",
+    "title": "BOC board date mismatch and dynamic stamp",
+    "detail": "Report date is 2026-11-08 UTC; retrieved BOC board displays 2026-11-09 (latest 07:14:36; earlier capture 05:30) with the same USD rates. Board is reference-only.",
+    "blank_fields": "executable_fx_rate",
+    "resolution": "Re-capture the bank’s actual online/branch quote on transaction date. Ladder is a conditional scenario, not a quote.",
+    "sources": [
+      "BK02"
+    ]
+  },
+  {
+    "id": "F05",
+    "severity": "medium",
+    "title": "SkyRemit widget internally inconsistent",
+    "detail": "Retrieved markup showed send 33,333 CNY but receive 1,483.16 USD alongside rate pair 0.149900/0.149496 and CNY 79 fee; the receive amount matches a different default send amount. Only rate pair and fixed fee are used.",
+    "blank_fields": "skyremit_executable_quote",
+    "resolution": "Obtain a logged-in transaction quote for the exact amount and funding method; confirm whether fee is deducted from send amount.",
+    "sources": [
+      "BK10"
+    ]
+  },
+  {
+    "id": "F06",
+    "severity": "medium",
+    "title": "Wise quote is dynamic and no fee curve was harvested",
+    "detail": "Live page changed during research (1,224.43→1,224.40 CNY fee; discount 31.90→31.93; balance 1,208.14→1,208.11). ?amount= did not alter the server-rendered 200,000 CNY quote. SkyRemit usage shares the Wise limit.",
+    "blank_fields": "wise_fee_at_40_amounts",
+    "resolution": "Use the authenticated Wise quote for each amount; do not extrapolate the single point. Cancel unfunded transfers if they consume limit.",
+    "sources": [
+      "BK08",
+      "BK07"
+    ]
+  },
+  {
+    "id": "F07",
+    "severity": "medium",
+    "title": "ICBC wire fees not extractable",
+    "detail": "ICBC price index publishes international-business fees as GIF images; numeric wire fees were not extractable. Overseas-branch tariffs are not substitutes.",
+    "blank_fields": "icbc_wire_fee_cny; icbc_wire_fee",
+    "resolution": "Open the GIF/branch tariff manually or ask ICBC for a written quote; leave blank until then.",
+    "sources": [
+      "BK06"
+    ]
+  },
+  {
+    "id": "F08",
+    "severity": "medium",
+    "title": "Western Union outbound fee/limit unverified",
+    "detail": "Provider page lists partner banks and cash pickup but no complete outbound fee schedule; bank-account delivery temporarily unavailable.",
+    "blank_fields": "wu_outbound_fee; wu_limit; western_union_outbound_fee",
+    "resolution": "Obtain a partner-bank/WU written quote and limit confirmation before relying on the route.",
+    "sources": [
+      "BK11"
+    ]
+  },
+  {
+    "id": "F09",
+    "severity": "medium",
+    "title": "Correspondent and receiving-bank fees unknown",
+    "detail": "BOC/HSBC tariffs exclude or pass through non-HSBC/overseas charges. Optional full-arrival/pre-charge amounts are not a verified all-in corridor cost.",
+    "blank_fields": "correspondent_fee_usd; receiving_bank_fee_usd; correspondent_fee; receiving_bank_fee",
+    "resolution": "Ask both banks for SHA/BEN/OUR or full-delivery pricing and the receiving bank’s inbound fee; keep blank until confirmed.",
+    "sources": [
+      "BK01",
+      "BK04"
+    ]
+  },
+  {
+    "id": "F10",
+    "severity": "high",
+    "title": "Personal tax and eligibility facts absent",
+    "detail": "No source of funds, PRC/US tax residency, filing status, basis, prior FBAR/8938 history, treaty residence, account classification or property/inheritance/emigration facts were supplied.",
+    "blank_fields": "personal_tax_usd; personal_eligibility; personal_income_tax; current_feie_amount",
+    "resolution": "Treat the ladder as arithmetic only. Obtain a fact-specific legal/tax review before executing; do not infer a personal tax amount.",
+    "sources": [
+      "CN20",
+      "US01",
+      "US03",
+      "US04",
+      "US05",
+      "CN03"
+    ]
+  },
+  {
+    "id": "F11",
+    "severity": "medium",
+    "title": "HSBC FX spread and account cost unverified",
+    "detail": "HSBC tariff gives local wire fees and Premier eligibility, but no live HSBC CNY→USD execution spread or total account cost was captured.",
+    "blank_fields": "hsbc_fx_spread; hsbc_total_cost; hsbc_account_fee",
+    "resolution": "Capture HSBC’s actual FX quote and account-fee waiver status; ordinary Premier wire is not universally free.",
+    "sources": [
+      "BK04"
+    ]
+  },
+  {
+    "id": "F12",
+    "severity": "high",
+    "title": "Emigration-transfer eligibility unproven",
+    "detail": "US citizenship alone does not establish emigration transfer eligibility; requires pre-immigrant-status property, hukou cancellation and consular residence proof.",
+    "blank_fields": "emigration_eligibility",
+    "resolution": "Confirm documents with former-hukou SAFE office; do not use this route for ordinary savings without eligibility.",
+    "sources": [
+      "CN08",
+      "CN09",
+      "CN24",
+      "CN25"
+    ]
+  },
+  {
+    "id": "F13",
+    "severity": "high",
+    "title": "Inheritance-transfer eligibility unproven",
+    "detail": "Requires foreign/HK-Macao-Taiwan heir, lawful inheritance and decedent property/tax evidence.",
+    "blank_fields": "inheritance_eligibility",
+    "resolution": "Confirm inheritance公证/will, property proof and tax certificate with decedent’s former-hukou SAFE office.",
+    "sources": [
+      "CN08",
+      "CN10",
+      "CN24",
+      "CN25"
+    ]
+  },
+  {
+    "id": "F14",
+    "severity": "medium",
+    "title": "Property-sale gain and other taxes unknown",
+    "detail": "2025 guide caps outbound at sale price less taxes/fees and requires tax-certificate match, but the user’s gain, original cost, deductions and other sale taxes are unknown.",
+    "blank_fields": "property_gain_cny; property_tax_cny",
+    "resolution": "Use the actual tax certificate and sale settlement; do not apply 20% to gross proceeds.",
+    "sources": [
+      "CN14",
+      "CN20",
+      "BK05"
+    ]
+  },
+  {
+    "id": "F15",
+    "severity": "medium",
+    "title": "Current corporate profit/divestment checklist partially unretrieved",
+    "detail": "Capital Guide 2024 PDF retrieval did not return full §7.10/§7.12 body text; notice and older/service guides establish framework but not every current bank document.",
+    "blank_fields": "corporate_profit_checklist; corporate_liquidation_checklist",
+    "resolution": "Obtain the full current guide section or bank checklist before filing; corporate route steps are framework-level only.",
+    "sources": [
+      "CN11",
+      "CN12",
+      "CN07"
+    ]
+  },
+  {
+    "id": "F16",
+    "severity": "medium",
+    "title": "QDII/securities/insurance/private wrapper outbound route unverified",
+    "detail": "Retrieved sources do not establish a general personal overseas-account redemption route for QDII, securities/insurance liquidation or private wrappers.",
+    "blank_fields": "qdii_personal_outbound; securities_insurance_outbound",
+    "resolution": "Do not treat liquidation or an investment wrapper as an outbound entitlement; obtain product-specific official rules.",
+    "sources": [
+      "CN12",
+      "CN03",
+      "HK01"
+    ]
+  },
+  {
+    "id": "F17",
+    "severity": "medium",
+    "title": "Cash travel, notarisation and translation costs blank",
+    "detail": "Permit fee may be waived, but travel, insurance, notarisation, translation, valuation and agent costs were not verified.",
+    "blank_fields": "cash_travel_cost; notarisation_translation_cost; notarisation_translation",
+    "resolution": "Quote these locally; they are access costs, not conversion taxes.",
+    "sources": [
+      "CN17",
+      "BK01",
+      "CN09",
+      "CN10"
+    ]
+  },
+  {
+    "id": "F18",
+    "severity": "medium",
+    "title": "Card purchase FX fees and foreign ATM surcharge blank",
+    "detail": "BOC publishes ATM fees, but card purchase foreign-transaction fees and foreign ATM surcharges were not verified.",
+    "blank_fields": "card_purchase_fx_fee; foreign_atm_surcharge",
+    "resolution": "Check issuer/network terms and ATM disclosure before spending/withdrawing.",
+    "sources": [
+      "BK01",
+      "BK03",
+      "CN16"
+    ]
+  },
+  {
+    "id": "F19",
+    "severity": "medium",
+    "title": "Service-trade outward tax filing threshold/exemptions not fully verified",
+    "detail": "Genuine current-account payments may require tax filing/withholding; exact threshold/exemptions for the user’s transaction were not established.",
+    "blank_fields": "service_trade_tax_filing_threshold",
+    "resolution": "Confirm with the competent tax authority/bank for the actual contract and payment type.",
+    "sources": [
+      "CN01",
+      "CN20",
+      "CN07"
+    ]
+  },
+  {
+    "id": "F20",
+    "severity": "high",
+    "title": "Prohibited-route figures are statutory exposure, not prices",
+    "detail": "Fine ranges and enforcement cases describe unlawful conduct; they are not fees, assessments or safe harbours. Crypto notice has no fixed percentage.",
+    "blank_fields": "prohibited_route_price",
+    "resolution": "Do not execute prohibited routes; no operational steps are published.",
+    "sources": [
+      "CN07",
+      "CN18",
+      "CN19"
+    ]
+  },
+  {
+    "id": "F21",
+    "severity": "medium",
+    "title": "External retrievability is not continuously verified",
+    "detail": "Source register records URLs read during research; the build checker validates internal links/citations/arithmetic, not live external HTTP status. Some official pages are dynamic or move.",
+    "blank_fields": "external_link_liveness",
+    "resolution": "Re-open load-bearing sources before execution; CI should not be read as proof that every external URL is currently retrievable.",
+    "sources": [
+      "CN02",
+      "BK02"
+    ]
+  },
+  {
+    "id": "F22",
+    "severity": "low",
+    "title": "Root portal link to Edition F pending",
+    "detail": "This session does not overwrite the shared root portal owned by another session; Edition F is published under /edition-f/ and a link request is logged.",
+    "blank_fields": "root_portal_link",
+    "resolution": "Root/portal owner to add the Edition F link after merge; direct URL remains live.",
+    "sources": [],
+    "artifact": "https://github.com/sassnarep3-star/China1/blob/4d844a5/COORDINATION.md"
+  }
+]
