@@ -387,3 +387,15 @@ foot of `edition-c/COORDINATION.md`: F03 (capital-reduction tax characterisation
 procurement trade and cross-border e-commerce export — omitted rather than described from secondary
 sources), F06 (VAT rate on goods), F12 (FIE dividend exemption for foreign individuals), F07 (small and
 low-profit enterprise preference), F05 (RMB cash pooling circular), F01 (retail spread).
+
+---
+
+# Session update — arena-22534b4a (current Arena branch)
+
+## Claim
+
+| Task | Status | Owner | Scope |
+|---|---|---|---|
+| Add a source-linked USD 10k–400k scenario page; reconcile estimates with the official-rate timestamp and preserve unknown fees as blank | in progress | arena-22534b4a | `pages/estimates.html`, `pages/costs.html`, `index.html`, `COORDINATION.md`, `REQUIREMENTS.md` |
+
+No other active owner or in-progress scope was present in the current checkout. Historical edition boards above are preserved; no other edition's data will be edited. Current branch name is Arena-pinned and remains `arena/22534b4a-china1`.
