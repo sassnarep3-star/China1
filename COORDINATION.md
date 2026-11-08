@@ -627,3 +627,15 @@ Correction and non-overlapping claim: while this session was researching, `origi
 | F6 | Final integration, PR, merge, Pages verification | pending component gate | arena-0614c102 | Append-only coordination/README/portal link after checks pass |
 
 No personal balance, source-of-funds, residency, tax history, executable FX quote or receiving-bank fee has been supplied. Edition E will keep those values blank. Provider tariffs will be labelled provider-primary, not government law. Conditional arithmetic will not be presented as an all-in quote.
+
+## arena-0614c102 — component gate passed
+
+- F0 done: merged `origin/main` at `4d844a5`, preserved the concurrently published `edition-d/`, and relocated this session’s isolated outputs to `edition-e/`.
+- F1 done: 40-source claim-level register and retrieval limits saved under `edition-e/data/sources.json` and `edition-e/research/`.
+- F2 done: 32 methods, 14 tax rows, 4 penalty rows, 18 flags, 10 audit findings and 1,280 forty-step grid rows generated.
+- F3 done: executive summary, dashboard, category pages, costs/tax/penalties/sources/flagged/audit/method/requirements pages generated under `edition-e/site/`.
+- F4 done: `python3 edition-e/build/verify.py` passed 18 checks, 0 failures; separate CI workflow added at `.github/workflows/edition-e.yml`.
+- F5 done: inherited-edition audit adjudicates old crypto authority, deposit-interest overbreadth, emigrant staging, old no-tariff statements, and published Edition D’s labelled receiving-bank assumption/tariff vintage/timezone issues.
+- Local HTTP check: 15 HTML pages plus CSS/JSON/CSV returned 200; viewport, skip link and scrollable tables present.
+- Inherited checkers re-run and passed: `assets/check.py`, `scripts/build_site.py` + `scripts/verify.py`, `scripts/build.py` + `scripts/verify.py`, `edition-b/build/generate.py` + `edition-b/build/verify.py`, `edition-c/build/build.py` + `edition-c/build/linkcheck.py`, `edition-d/build/build.py` + `edition-d/build/verify.py`.
+- F6 in progress: PR, merge and Pages verification. Root portal is intentionally not hand-edited because Edition D’s CI regenerates `index.html`; Edition E links back to the portal and is documented in README.
