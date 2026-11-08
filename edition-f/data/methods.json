@@ -1,0 +1,1240 @@
+[
+  {
+    "id": "M01",
+    "name": "Domestic-individual convenience quota purchase + bank wire",
+    "category": "A. Individual current-account and provider routes",
+    "status": "conditional",
+    "fit": "Account classified as 境内个人 (PRC ID); genuine current-account purpose; unused annual quota.",
+    "limit": "USD 50,000 equivalent per person per calendar year for purchase inside the convenience quota; above quota needs authenticity documents or another route. Outbound remittance from an existing FX account has a separate USD 50,000/day ID-only threshold.",
+    "cost": "BOC and HSBC local wire charges are tariff-derived in the cost ladder; FX spread is a BOC board proxy only; personal tax blank.",
+    "pros": "Simple inside quota; bank executes purchase and wire together; capped wire commission.",
+    "cons": "Annual quota is not a universal outbound ceiling; false purpose declarations are prohibited; branch may refuse; larger balances need documents/approval.",
+    "sources": [
+      "CN01",
+      "CN03",
+      "BK01",
+      "BK04"
+    ],
+    "steps": [
+      {
+        "action": "Confirm the bank’s identity classification and remaining annual convenience quota.",
+        "evidence": "Art.54 quota applies to domestic-individual purchase; Art.37 defines domestic individual by PRC ID.",
+        "sources": [
+          "CN01",
+          "CN03"
+        ]
+      },
+      {
+        "action": "Complete the individual FX purchase application with the genuine current-account purpose and buy USD inside the unused quota.",
+        "evidence": "Arts.55–57 require ID and purchase application inside quota.",
+        "sources": [
+          "CN01"
+        ]
+      },
+      {
+        "action": "Submit the outbound remittance instruction with payee name, account/IBAN, SWIFT/BIC, bank address and purpose; provide authenticity documents if above the applicable threshold.",
+        "evidence": "Art.64 distinguishes USD 50,000/day ID-only outbound from above-threshold documentary review.",
+        "sources": [
+          "CN01"
+        ]
+      },
+      {
+        "action": "Choose SHA/BEN/OUR or full-amount-arrival option, confirm all charges in writing, send and retain the purchase memo and wire receipt.",
+        "evidence": "BOC/HSBC tariffs list cable, commission and optional full-delivery charges; correspondent/receiving fees may remain.",
+        "sources": [
+          "BK01",
+          "BK04"
+        ]
+      }
+    ],
+    "flags": [
+      "F01",
+      "F09",
+      "F10",
+      "F11"
+    ],
+    "no_steps_reason": ""
+  },
+  {
+    "id": "M02",
+    "name": "Overseas-individual documented current-account income purchase + remittance (Art.59)",
+    "category": "A. Individual current-account and provider routes",
+    "status": "conditional",
+    "fit": "Account classified as 境外个人 (passport/HK-Macao-Taiwan permit); lawful current-account RMB income earned in China (e.g. salary) with source and tax evidence.",
+    "limit": "No annual cap is stated in Art.59 for documented lawful current-account RMB income; permanent-residence-card holders use the convenience quota. Bank accepts only proven amount.",
+    "cost": "Same bank tariffs as M01; no transfer tax identified on the exchange itself; underlying IIT and US tax depend on facts.",
+    "pros": "Strongest text-based route for documented China salary; can exceed USD 50,000; repeat salary facilitation at same bank.",
+    "cons": "Document-heavy; branch practice varies; capital proceeds/savings without income proof do not qualify; classification conflict with one-year residence rule.",
+    "sources": [
+      "CN01",
+      "CN03",
+      "CN04",
+      "CN05",
+      "CN06",
+      "BK05"
+    ],
+    "steps": [
+      {
+        "action": "Ask the bank in writing to process the purchase under Art.59 as an overseas individual and confirm which identity document governs the account.",
+        "evidence": "Art.37 passport definition; Art.59 source-material route; F01 conflict must be resolved by the branch/SAFE.",
+        "sources": [
+          "CN01",
+          "CN03",
+          "CN05"
+        ]
+      },
+      {
+        "action": "Assemble passport, employment/contract evidence, payroll records, PRC tax vouchers or electronic tax records, and source-of-funds explanation matching the RMB amount.",
+        "evidence": "Art.59 requires ID and source materials including tax vouchers; CN06 removes tax voucher only where income is not taxable.",
+        "sources": [
+          "CN01",
+          "CN05",
+          "CN06"
+        ]
+      },
+      {
+        "action": "For repeat salary purchases within contract validity at the same bank, invoke the 2021 facilitation to avoid duplicate documents; otherwise submit the full file.",
+        "evidence": "汇发〔2021〕13号 repeat salary/tuition facilitation.",
+        "sources": [
+          "CN04"
+        ]
+      },
+      {
+        "action": "Buy USD against the approved amount, remit to your own overseas account or genuine payee, and retain the bank’s approved source file and receipts.",
+        "evidence": "Art.59 purchase/remittance; provider guidance restates documentary review.",
+        "sources": [
+          "CN01",
+          "BK05"
+        ]
+      }
+    ],
+    "flags": [
+      "F01",
+      "F10",
+      "F19"
+    ],
+    "no_steps_reason": ""
+  },
+  {
+    "id": "M03",
+    "name": "Remit existing USD from a domestic FX account",
+    "category": "A. Individual current-account and provider routes",
+    "status": "conditional",
+    "fit": "Funds are already foreign currency in a domestic individual FX savings account; genuine current-account outbound purpose.",
+    "limit": "Domestic individual: USD 50,000 equivalent/day cumulative on ID, above with documents. Overseas individual: FX-account outbound on ID. Cash withdrawal tier is USD 10,000/day.",
+    "cost": "Bank wire tariff applies; no CNY→USD spread at the remittance step because conversion already happened; original conversion cost/tax still matters.",
+    "pros": "Avoids a second conversion; per-day threshold is not the annual purchase quota; overseas-individual account simpler.",
+    "cons": "Does not solve CNY conversion; purpose/authenticity still reviewed; cash and transfer thresholds differ.",
+    "sources": [
+      "CN01",
+      "BK01",
+      "BK04"
+    ],
+    "steps": [
+      {
+        "action": "Confirm the account holds 现汇 (spot FX), not 现钞 (cash) or RMB, and identify the original conversion/source records.",
+        "evidence": "Art.64/65 apply to FX-account outbound; cash rules are separate.",
+        "sources": [
+          "CN01"
+        ]
+      },
+      {
+        "action": "For a domestic individual, keep ID-only outbound within USD 50,000 equivalent per day or prepare transaction-amount documents above it; for an overseas individual, present ID.",
+        "evidence": "Art.64 domestic tiers; Art.65 overseas individual ID-only.",
+        "sources": [
+          "CN01"
+        ]
+      },
+      {
+        "action": "Submit payee/SWIFT details and genuine purpose, choose charge option, and remit; retain receipt and source records.",
+        "evidence": "Provider tariffs govern local charges; SAFE requires authenticity.",
+        "sources": [
+          "BK01",
+          "BK04",
+          "CN01"
+        ]
+      }
+    ],
+    "flags": [
+      "F09",
+      "F10"
+    ],
+    "no_steps_reason": ""
+  },
+  {
+    "id": "M04",
+    "name": "Wise CNY salary route to own USD account",
+    "category": "A. Individual current-account and provider routes",
+    "status": "conditional",
+    "fit": "Non-mainland Chinese personal customer who works/worked in China; valid PRC tax record within last 3 years; recipient account in own name.",
+    "limit": "Bank-app funding max CNY 300,000 per transfer; Alipay max CNY 50,000; overall limit generally after-tax China salary proven by tax records; SkyRemit transfers share the remaining limit.",
+    "cost": "One live 200,000 CNY bank-funded quote captured; no 40-point fee curve inferred; ladder Wise total blank.",
+    "pros": "Digital onboarding; own-name delivery; transparent fee quote; large-amount discount.",
+    "cons": "Not a general savings/property route; tax-record limit; shared SkyRemit limit; dynamic pricing; bank-app funding quirks.",
+    "sources": [
+      "BK07",
+      "BK08",
+      "CN01",
+      "CN05"
+    ],
+    "steps": [
+      {
+        "action": "Register a personal Wise account and complete first-time verification (provider says 1–2 working days).",
+        "evidence": "Wise CNY guide verification and eligibility.",
+        "sources": [
+          "BK07"
+        ]
+      },
+      {
+        "action": "Upload passport/identity and PRC tax records showing taxes paid within the accepted window; wait for the assigned overall sending limit.",
+        "evidence": "Wise limit is based on annual income, tax paid and years proven; SkyRemit usage reduces it.",
+        "sources": [
+          "BK07"
+        ]
+      },
+      {
+        "action": "Create a CNY→USD transfer to an account you own, choose bank-app or Alipay funding, and review the exact fee/rate/limit before confirming.",
+        "evidence": "Wise own-name rule and per-transfer funding caps; live quote is transaction-specific.",
+        "sources": [
+          "BK07",
+          "BK08"
+        ]
+      },
+      {
+        "action": "Fund from the Chinese bank app/Alipay exactly as instructed, track conversion, and reconcile the USD receipt and fee statement.",
+        "evidence": "Wise guide describes bank-app funding, safeguarding and conversion timing.",
+        "sources": [
+          "BK07"
+        ]
+      }
+    ],
+    "flags": [
+      "F06",
+      "F10"
+    ],
+    "no_steps_reason": ""
+  },
+  {
+    "id": "M05",
+    "name": "SkyRemit CNY salary route to own overseas account",
+    "category": "A. Individual current-account and provider routes",
+    "status": "conditional",
+    "fit": "Expats/HK-Macao-Taiwan residents in China with identity and tax invoice/work certificate; provider and bank accept the source file.",
+    "limit": "CNY 500–300,000 per transfer; Wise guide says SkyRemit usage shares the Wise overall after-tax salary limit.",
+    "cost": "CNY 79 fixed fee plus observed 0.27% FX markup scenario; ladder is illustrative, not an executable quote.",
+    "pros": "Mobile/PC, 7×24, fast delivery, multiple funding methods; fixed fee transparent.",
+    "cons": "Per-transfer cap forces multiple transfers; shared Wise limit; marketing superiority claim not used; widget inconsistency flagged; not a quota bypass.",
+    "sources": [
+      "BK10",
+      "BK07",
+      "CN01"
+    ],
+    "steps": [
+      {
+        "action": "Register with Chinese mobile/email and complete identity verification (passport, work visa/permit).",
+        "evidence": "SkyRemit four-step onboarding.",
+        "sources": [
+          "BK10"
+        ]
+      },
+      {
+        "action": "Upload tax invoice/work certificate and source evidence; obtain the provider’s approved sending limit and confirm it does not exceed the lawful documented income.",
+        "evidence": "SkyRemit verification; Wise guide confirms shared limit; SAFE Art.59 substance still governs.",
+        "sources": [
+          "BK10",
+          "BK07",
+          "CN01"
+        ]
+      },
+      {
+        "action": "Initiate a transfer within CNY 300,000, select Alipay/WeChat/bank funding, review final rate and CNY 79 fee, and confirm payee details.",
+        "evidence": "SkyRemit product terms and calculator.",
+        "sources": [
+          "BK10"
+        ]
+      },
+      {
+        "action": "Fund the transfer, track receipt (normally 24–48h per provider), and retain rate/fee confirmation for tax basis and reporting.",
+        "evidence": "SkyRemit delivery claim; records needed for US/PRC reporting.",
+        "sources": [
+          "BK10",
+          "US01",
+          "US05"
+        ]
+      }
+    ],
+    "flags": [
+      "F05",
+      "F06",
+      "F10"
+    ],
+    "no_steps_reason": ""
+  },
+  {
+    "id": "M06",
+    "name": "HSBC Global Transfer / same-name overseas HSBC account",
+    "category": "A. Individual current-account and provider routes",
+    "status": "conditional",
+    "fit": "Eligible HSBC China customer with linked same-name overseas HSBC account; product and regulatory purpose accepted.",
+    "limit": "Product-specific limits and eligibility; not a blanket exemption from SAFE purchase/remittance rules.",
+    "cost": "HSBC tariff waives certain HSBC local fees for qualifying same-name Global Transfers; ordinary Premier/Advance third-party wires are not universally free; FX spread and account fees unverified.",
+    "pros": "Can reduce HSBC local wire/cable charges; integrated same-name transfer.",
+    "cons": "Premier eligibility/monthly fee or balance requirement; overseas account opening rules; correspondent/receiving charges may remain; not a legal quota bypass.",
+    "sources": [
+      "BK04",
+      "BK05",
+      "CN01"
+    ],
+    "steps": [
+      {
+        "action": "Confirm HSBC China customer tier and whether the intended transfer is a qualifying same-name Global Transfer, not an ordinary third-party wire.",
+        "evidence": "Tariff distinguishes private banking, Premier/Advance, Elite and product-specific waivers.",
+        "sources": [
+          "BK04"
+        ]
+      },
+      {
+        "action": "Open/link the overseas HSBC account through HSBC’s accepted witnessing/onboarding process and satisfy local account rules.",
+        "evidence": "HSBC tariff overseas-account appointment and witnessing items; SAFE Art.79 visa condition for witnessing.",
+        "sources": [
+          "BK04",
+          "CN01"
+        ]
+      },
+      {
+        "action": "Purchase/remit only against a lawful documented purpose and quota/Art.59 route; select the linked own-name account in online banking.",
+        "evidence": "SAFE rules govern purchase/remittance; provider product does not override them.",
+        "sources": [
+          "CN01",
+          "BK05"
+        ]
+      },
+      {
+        "action": "Before confirming, obtain written confirmation of HSBC local fee waiver, FX rate, and any non-HSBC correspondent/receiving charges.",
+        "evidence": "Tariff says free excludes non-HSBC charges; full-delivery pre-charge may apply.",
+        "sources": [
+          "BK04"
+        ]
+      }
+    ],
+    "flags": [
+      "F01",
+      "F09",
+      "F11"
+    ],
+    "no_steps_reason": ""
+  },
+  {
+    "id": "M07",
+    "name": "BOC overseas-account witnessing (account-opening aid, not a transfer route)",
+    "category": "A. Individual current-account and provider routes",
+    "status": "conditional",
+    "fit": "Customer needs an overseas BOC account and holds a foreign visa valid at least three months.",
+    "limit": "SAFE Art.79 visa condition; overseas account approval is separate.",
+    "cost": "BOC tariff lists witnessing ≤CNY 400; account fees and transfer costs unverified.",
+    "pros": "May help establish a lawful destination account; fee cap published.",
+    "cons": "Not itself a CNY→USD remittance; overseas KYC/eligibility; visa condition; account fees unknown.",
+    "sources": [
+      "CN01",
+      "BK01"
+    ],
+    "steps": [
+      {
+        "action": "Confirm the foreign visa is valid for at least three months and ask BOC whether the destination account/product is available for witnessing.",
+        "evidence": "SAFE Art.79 minimum visa validity.",
+        "sources": [
+          "CN01"
+        ]
+      },
+      {
+        "action": "Book the witnessing service, present identity/visa documents, and obtain the tariff-quoted fee (≤CNY 400).",
+        "evidence": "BOC personal tariff witnessing item.",
+        "sources": [
+          "BK01"
+        ]
+      },
+      {
+        "action": "Complete overseas account approval separately; then use a lawful purchase/remittance route (M01–M03) to fund it.",
+        "evidence": "Account opening does not create FX permission; SAFE purchase/remittance rules still apply.",
+        "sources": [
+          "CN01"
+        ]
+      }
+    ],
+    "flags": [
+      "F09",
+      "F11"
+    ],
+    "no_steps_reason": ""
+  },
+  {
+    "id": "M08",
+    "name": "Emigration property transfer (移民财产转移)",
+    "category": "B. Capital, property and corporate routes",
+    "status": "conditional",
+    "fit": "Natural person who emigrated from mainland China / settled in HK-Macao-Taiwan and owned lawful China property before acquiring immigrant status; hukou cancellation and foreign residence proof.",
+    "limit": "One-time application for the whole amount; staging: first ≤50%, after 1 year ≤half remainder, after 2 years balance; ≤CNY 200,000 may go at once after approval. Provincial approval ≤CNY 500,000; above SAFE HQ.",
+    "cost": "SAFE administrative fee none in service guide; bank FX/wire charges and underlying taxes still apply; personal total blank.",
+    "pros": "Express route for pre-emigration property; can move large documented balances; no SAFE service fee in guide.",
+    "cons": "Not available merely because one holds a US passport; staging delays; hukou/consular/tax documents; funds to own overseas account only.",
+    "sources": [
+      "CN08",
+      "CN09",
+      "CN24",
+      "CN25",
+      "CN03"
+    ],
+    "steps": [
+      {
+        "action": "Confirm eligibility: property owned before immigrant status, hukou cancellation, and foreign citizenship/permanent residence or HK-Macao-Taiwan settlement.",
+        "evidence": "2004 Measures and 2026 SAFE definition FAQ.",
+        "sources": [
+          "CN08",
+          "CN24"
+        ]
+      },
+      {
+        "action": "Apply once to the SAFE office of former hukou locality with application form, identity, consular residence proof/apostille, property/income evidence and tax certificate.",
+        "evidence": "Service guide document list; jurisdiction FAQ.",
+        "sources": [
+          "CN09",
+          "CN25"
+        ]
+      },
+      {
+        "action": "Obtain the capital-account approval and observe staging/approval-tier limits; do not split applications to evade staging.",
+        "evidence": "2004 Measures one-time application and staging.",
+        "sources": [
+          "CN08"
+        ]
+      },
+      {
+        "action": "Through the approved bank, purchase FX and remit to your own overseas account in permitted stages; retain approval and tax records.",
+        "evidence": "2004 Measures own-account destination; service guide in-person handling.",
+        "sources": [
+          "CN08",
+          "CN09"
+        ]
+      }
+    ],
+    "flags": [
+      "F12",
+      "F10"
+    ],
+    "no_steps_reason": ""
+  },
+  {
+    "id": "M09",
+    "name": "Inheritance property transfer (继承财产转移)",
+    "category": "B. Capital, property and corporate routes",
+    "status": "conditional",
+    "fit": "Foreign citizen or HK-Macao-Taiwan resident who lawfully inherited mainland China property and realised it.",
+    "limit": "Apply to decedent’s former hukou locality; same property-transfer staging/approval framework; amount limited to lawful inherited realised property.",
+    "cost": "SAFE administrative fee none in service guide; bank charges and underlying inheritance/property taxes unverified; personal total blank.",
+    "pros": "Express route for foreign heirs; can combine multiple decedents at one locality.",
+    "cons": "Requires inheritance公证/will and decedent property proof; tax certificate; not a general savings route; staging may apply.",
+    "sources": [
+      "CN08",
+      "CN10",
+      "CN24",
+      "CN25"
+    ],
+    "steps": [
+      {
+        "action": "Establish heir status (foreign passport/HK-Macao-Taiwan documents) and lawful inheritance through notarised inheritance/will documents.",
+        "evidence": "Inheritance service guide identity and inheritance proof.",
+        "sources": [
+          "CN10",
+          "CN24"
+        ]
+      },
+      {
+        "action": "Collect decedent property-rights evidence and the competent tax authority’s tax certificate (or electronic verification).",
+        "evidence": "Service guide materials list.",
+        "sources": [
+          "CN10"
+        ]
+      },
+      {
+        "action": "Apply to SAFE at the decedent’s former hukou locality; if multiple decedents, choose one locality for a combined application.",
+        "evidence": "Jurisdiction FAQ.",
+        "sources": [
+          "CN25"
+        ]
+      },
+      {
+        "action": "After approval, use the bank to purchase/remit to the applicant’s own overseas account within the approved amount and staging.",
+        "evidence": "2004 Measures and service guide.",
+        "sources": [
+          "CN08",
+          "CN10"
+        ]
+      }
+    ],
+    "flags": [
+      "F13",
+      "F10"
+    ],
+    "no_steps_reason": ""
+  },
+  {
+    "id": "M10",
+    "name": "Overseas individual’s China property-sale proceeds",
+    "category": "B. Capital, property and corporate routes",
+    "status": "conditional",
+    "fit": "Overseas individual sells domestic commercial property; title transfer completed; tax certificate matches remittance amount.",
+    "limit": "Remittance cannot exceed sale price less taxes/fees of the transfer; co-owners limited to their share; tax-certificate amount must match; title transfer must be completed before outbound.",
+    "cost": "Underlying property-transfer IIT may apply to gain; bank FX/wire charges apply; personal total blank.",
+    "pros": "Express current property-sale route; 2025 operational guide clarifies cap and documents.",
+    "cons": "Not the 2004 emigration route; requires completed sale/title transfer and tax match; gain/tax facts unknown; other sale taxes unverified.",
+    "sources": [
+      "CN03",
+      "CN14",
+      "BK05",
+      "CN20"
+    ],
+    "steps": [
+      {
+        "action": "Complete the property sale and title transfer; obtain contract/registration, tax certificate, property invoice and title proof.",
+        "evidence": "2025 operational guide requires completed title transfer and matching tax certificate; HSBC guide lists documents.",
+        "sources": [
+          "CN14",
+          "BK05"
+        ]
+      },
+      {
+        "action": "Calculate the maximum outbound amount as sale price minus taxes/fees included in this transfer (and your co-owner share if any).",
+        "evidence": "Operational guide cap and tax-certificate match.",
+        "sources": [
+          "CN14"
+        ]
+      },
+      {
+        "action": "Apply through the bank for purchase/remittance under the overseas-individual property-sale rules; provide公证授权委托书 if delegating.",
+        "evidence": "Operational guide delegation and bank review; Measures Art.22.",
+        "sources": [
+          "CN14",
+          "CN03"
+        ]
+      },
+      {
+        "action": "Remit the approved net proceeds to your overseas account and retain sale/tax/bank records for PRC and US reporting.",
+        "evidence": "Operational guide bank reporting; US reporting may apply to accounts/gains.",
+        "sources": [
+          "CN14",
+          "US01",
+          "US05"
+        ]
+      }
+    ],
+    "flags": [
+      "F14",
+      "F10"
+    ],
+    "no_steps_reason": ""
+  },
+  {
+    "id": "M11",
+    "name": "FIE dividend / profit repatriation to foreign investor",
+    "category": "B. Capital, property and corporate routes",
+    "status": "conditional",
+    "fit": "Foreign investor receives lawfully distributable profits from a foreign-invested enterprise; corporate, not personal savings.",
+    "limit": "Current capital-account guide locates profit remittance at §7.12; full current checklist not retrieved from PDF; historical guide lists resolution, audited accounts and tax filing.",
+    "cost": "Corporate dividend withholding/IIT and treaty facts unverified; bank charges blank; no personal ladder amount.",
+    "pros": "Express corporate profit route where profits exist; treaty may cap source tax for qualifying residents.",
+    "cons": "Requires corporate profits, loss make-up, audit/resolution and tax filing; not a way to move personal savings; current checklist gap.",
+    "sources": [
+      "CN12",
+      "CN20",
+      "US08",
+      "CN07"
+    ],
+    "steps": [
+      {
+        "action": "Confirm the enterprise has distributable after-tax profits after making up prior losses and obtain the board/shareholder profit-distribution resolution.",
+        "evidence": "Historical/current guide framework; IIT law taxes dividend income; full 2024 checklist flagged.",
+        "sources": [
+          "CN12",
+          "CN20"
+        ]
+      },
+      {
+        "action": "Prepare audited financial statements and the competent tax authority’s outward-payment tax filing/withholding evidence.",
+        "evidence": "Profit-remittance documentary framework; treaty relief requires facts.",
+        "sources": [
+          "CN12",
+          "US08"
+        ]
+      },
+      {
+        "action": "Submit the bank’s authenticity/tax review and remit to the foreign investor’s account; retain corporate and tax records.",
+        "evidence": "Capital-account guide profit-remittance section; FX Regulation current/capital authenticity.",
+        "sources": [
+          "CN12",
+          "CN07"
+        ]
+      }
+    ],
+    "flags": [
+      "F15",
+      "F10"
+    ],
+    "no_steps_reason": ""
+  },
+  {
+    "id": "M12",
+    "name": "FIE liquidation / capital reduction repatriation",
+    "category": "B. Capital, property and corporate routes",
+    "status": "conditional",
+    "fit": "Foreign-invested enterprise lawfully terminated/liquidated or capital reduced; foreign investor’s RMB proceeds after tax.",
+    "limit": "State Council Regulation Art.22 paragraph 3 permits conversion/remittance after liquidation and tax payment; capital-guide divestment section locates bank control-table process.",
+    "cost": "Corporate/liquidation taxes and bank charges unverified; personal total blank.",
+    "pros": "Express statutory entitlement for terminated FIE proceeds; can move investor’s share.",
+    "cons": "Corporate liquidation is costly/slow; tax and creditor process; not personal savings; exact bank checklist partially unverified.",
+    "sources": [
+      "CN07",
+      "CN12"
+    ],
+    "steps": [
+      {
+        "action": "Complete lawful liquidation/capital reduction, creditor and tax procedures, and determine the foreign investor’s net RMB entitlement.",
+        "evidence": "Regulation Art.22 paragraph 3 requires liquidation and tax payment.",
+        "sources": [
+          "CN07"
+        ]
+      },
+      {
+        "action": "Obtain the capital-account business registration/control information required by the bank for divestment/liquidation outflow.",
+        "evidence": "Capital Guide §7.10 locator; exact current checklist flagged where not retrieved.",
+        "sources": [
+          "CN12"
+        ]
+      },
+      {
+        "action": "Bank reviews authenticity, converts the investor’s RMB and remits to the foreign investor’s overseas account; complete balance-of-payments reporting.",
+        "evidence": "Regulation entitlement and capital-guide framework.",
+        "sources": [
+          "CN07",
+          "CN12"
+        ]
+      }
+    ],
+    "flags": [
+      "F15",
+      "F10"
+    ],
+    "no_steps_reason": ""
+  },
+  {
+    "id": "M13",
+    "name": "Genuine current-account service/trade or income payment abroad",
+    "category": "B. Capital, property and corporate routes",
+    "status": "conditional",
+    "fit": "A real cross-border service, trade, royalty, tuition, medical or other current-account obligation exists; not a disguised capital transfer.",
+    "limit": "No universal USD 50,000 ceiling for genuine current-account payments; documentary authenticity and tax filing where applicable (service-trade filing threshold/exemptions need confirmation).",
+    "cost": "Underlying VAT/IIT/withholding and bank charges depend on transaction; blank.",
+    "pros": "Lawful current-account payments are not restricted in principle; can fit genuine obligations.",
+    "cons": "Cannot invent a service to move savings; tax filing/withholding may apply; contract/invoice evidence required.",
+    "sources": [
+      "CN07",
+      "CN01",
+      "CN20",
+      "US08"
+    ],
+    "steps": [
+      {
+        "action": "Identify the genuine current-account obligation and collect contract, invoice, tax and counterparty evidence matching the payment amount.",
+        "evidence": "FX Regulation Art.5/current-account authenticity; current guide documentary review.",
+        "sources": [
+          "CN07",
+          "CN01"
+        ]
+      },
+      {
+        "action": "Determine whether outward-payment tax filing/withholding applies and complete it before bank processing where required.",
+        "evidence": "Service-trade tax filing is transaction-specific; threshold/exemptions flagged F19.",
+        "sources": [
+          "CN01",
+          "CN20"
+        ]
+      },
+      {
+        "action": "Purchase FX if needed under the applicable individual/corporate route and remit to the genuine counterparty with purpose documents.",
+        "evidence": "Current-account purchase/remittance rules; no disguised capital transfer.",
+        "sources": [
+          "CN01",
+          "CN07"
+        ]
+      }
+    ],
+    "flags": [
+      "F19",
+      "F10"
+    ],
+    "no_steps_reason": ""
+  },
+  {
+    "id": "M14",
+    "name": "Cross-border e-commerce / market procurement / border trade settlement",
+    "category": "B. Capital, property and corporate routes",
+    "status": "conditional",
+    "fit": "Genuine qualifying trade activity with electronic transaction data or evidence; not personal savings.",
+    "limit": "Art.66 allows settlement outside the convenience quota for qualifying e-commerce/market-procurement/border trade based on actual transaction volume.",
+    "cost": "Trade taxes, platform/payment fees and bank charges unverified; blank.",
+    "pros": "Does not consume USD 50,000 convenience quota; suited to real traders.",
+    "cons": "Requires genuine trade data; AML/authenticity review; not a personal remittance workaround.",
+    "sources": [
+      "CN01",
+      "CN07"
+    ],
+    "steps": [
+      {
+        "action": "Confirm the activity qualifies under Art.66 and gather platform/transaction/customs evidence showing actual trade volume.",
+        "evidence": "Art.66 evidence-based settlement outside quota.",
+        "sources": [
+          "CN01"
+        ]
+      },
+      {
+        "action": "Use the qualified bank/payment institution’s trade-settlement process, declare the true trade purpose and complete applicable tax filings.",
+        "evidence": "Current-account authenticity and tax rules.",
+        "sources": [
+          "CN01",
+          "CN07",
+          "CN20"
+        ]
+      },
+      {
+        "action": "Settle/remit only against verified transactions and retain electronic data for bank and tax review.",
+        "evidence": "Art.66 and FX Regulation authenticity.",
+        "sources": [
+          "CN01",
+          "CN07"
+        ]
+      }
+    ],
+    "flags": [
+      "F19",
+      "F10"
+    ],
+    "no_steps_reason": ""
+  },
+  {
+    "id": "M15",
+    "name": "Reconversion / refund of unused RMB from a prior FX exchange",
+    "category": "C. Cash, cards, domestic and closed-loop paths",
+    "status": "conditional",
+    "fit": "Unused RMB remains from a prior lawful FX exchange and original exchange memo is available.",
+    "limit": "Art.60: original exchange memo valid 24 months; small daily reconversion tiers (USD 500/day; USD 1,000 at exit ports) without memo in specified cases.",
+    "cost": "Bank spread/fees may apply; original conversion cost already incurred; personal tax blank.",
+    "pros": "Restores unused FX without a new income source; express rule.",
+    "cons": "Time-limited; memo required for larger reconversion; not a route for ordinary RMB savings.",
+    "sources": [
+      "CN01"
+    ],
+    "steps": [
+      {
+        "action": "Locate the original FX exchange memo and confirm the unused RMB amount and 24-month validity.",
+        "evidence": "Art.60 reconversion rule.",
+        "sources": [
+          "CN01"
+        ]
+      },
+      {
+        "action": "Present ID and memo at the bank; if within the small daily tier without memo, confirm the applicable USD 500/1,000 exit-port condition.",
+        "evidence": "Art.60 daily tiers.",
+        "sources": [
+          "CN01"
+        ]
+      },
+      {
+        "action": "Reconvert only the eligible unused amount and retain the new receipt; remit/deposit/carry subject to the usual rules.",
+        "evidence": "Art.60 and CN06 use of purchased FX.",
+        "sources": [
+          "CN01",
+          "CN06"
+        ]
+      }
+    ],
+    "flags": [
+      "F10"
+    ],
+    "no_steps_reason": ""
+  },
+  {
+    "id": "M16",
+    "name": "Carry foreign-currency cash out of China and declare into the US",
+    "category": "C. Cash, cards, domestic and closed-loop paths",
+    "status": "conditional",
+    "fit": "Physical USD cash lawfully obtained; travel and permits feasible; US declaration if >USD 10,000.",
+    "limit": "China: ≤USD 5,000 no permit; USD 5,000–10,000 bank permit; >USD 10,000 SAFE permit in principle; repeat-exit lower tiers. US: >USD 10,000 family aggregate requires FinCEN 105.",
+    "cost": "BOC permit fee CNY 10 waived through 2026-12-31; travel/insurance/cash spread unverified; personal tax blank.",
+    "pros": "No wire corridor; immediate physical possession; permit fee may be waived.",
+    "cons": " Impractical/risky for large balances; permits and declarations; forfeiture risk; cash spread may differ; not a way to evade reporting.",
+    "sources": [
+      "CN17",
+      "BK01",
+      "US09",
+      "CN01"
+    ],
+    "steps": [
+      {
+        "action": "Determine the cash amount and obtain the correct Chinese carrying permit: none ≤USD 5,000, bank permit USD 5,000–10,000, SAFE permit above USD 10,000 in principle; check repeat-exit tiers.",
+        "evidence": "ICBC guidance implementing carry rules; BOC tariff permit fee/waiver.",
+        "sources": [
+          "CN17",
+          "BK01"
+        ]
+      },
+      {
+        "action": "Carry the permit, ID and source records; declare truthfully to Chinese customs where required and do not structure trips to evade limits.",
+        "evidence": "Carry rules and anti-evasion framework; structuring flagged as prohibited.",
+        "sources": [
+          "CN17",
+          "CN07"
+        ]
+      },
+      {
+        "action": "On US arrival, if currency/monetary instruments exceed USD 10,000 in aggregate (including family), file FinCEN 105 with CBP.",
+        "evidence": "CBP reporting rule; reporting is not a tax.",
+        "sources": [
+          "US09"
+        ]
+      },
+      {
+        "action": "Deposit or hold the cash lawfully and retain source/declaration records for tax basis and FBAR/8938 analysis.",
+        "evidence": "US reporting and §988 basis records.",
+        "sources": [
+          "US09",
+          "US01",
+          "US05"
+        ]
+      }
+    ],
+    "flags": [
+      "F17",
+      "F10"
+    ],
+    "no_steps_reason": ""
+  },
+  {
+    "id": "M17",
+    "name": "Overseas ATM withdrawal using a China-issued card",
+    "category": "C. Cash, cards, domestic and closed-loop paths",
+    "status": "conditional",
+    "fit": "China-issued card with overseas ATM cash access; within annual/daily caps.",
+    "limit": "All domestic cards combined: CNY 100,000/person/year; each card CNY 10,000/day; over-limit suspension this year and next.",
+    "cost": "BOC UnionPay CNY 12+1% cap CNY 112; from 2026-11-11 Mastercard/VISA 2.5% min USD 3 max USD 40; foreign ATM surcharge and card FX fee unverified.",
+    "pros": "Useful for small travel cash; issuer tariff published for BOC.",
+    "cons": "Annual cap is far below USD 400,000; suspension risk; foreign ATM surcharge; not a bulk repatriation route.",
+    "sources": [
+      "CN16",
+      "BK01",
+      "BK03"
+    ],
+    "steps": [
+      {
+        "action": "Check the card network, remaining annual CNY 100,000 person-wide cash quota and CNY 10,000/card/day limit.",
+        "evidence": "SAFE 2017 notice.",
+        "sources": [
+          "CN16"
+        ]
+      },
+      {
+        "action": "Confirm issuer fee (UnionPay vs Mastercard/VISA and effective date) and the foreign ATM’s own surcharge before withdrawal.",
+        "evidence": "BOC current tariff and 2026-11-11 announcement; foreign surcharge extra.",
+        "sources": [
+          "BK01",
+          "BK03"
+        ]
+      },
+      {
+        "action": "Withdraw within limits, retain receipts, and report/declare cash if later transported across borders above thresholds.",
+        "evidence": "SAFE caps; CBP reporting if transported into US >USD 10,000.",
+        "sources": [
+          "CN16",
+          "US09"
+        ]
+      }
+    ],
+    "flags": [
+      "F18",
+      "F10"
+    ],
+    "no_steps_reason": ""
+  },
+  {
+    "id": "M18",
+    "name": "Spend abroad directly on a China-issued card (not cash repatriation)",
+    "category": "C. Cash, cards, domestic and closed-loop paths",
+    "status": "conditional",
+    "fit": "Genuine personal overseas spending; card accepted; not a cash-out or investment purchase.",
+    "limit": "Card spending abroad does not consume the USD 50,000 purchase quota and is distinct from the CNY 100,000 overseas cash-withdrawal cap.",
+    "cost": "Card network/issuer FX fee and merchant pricing unverified; no wire fee; not a USD balance transfer.",
+    "pros": "Avoids a separate wire for consumption; quota distinction is explicit.",
+    "cons": "Does not create a US USD deposit; merchant/network spread; cash-advance fees differ; investment/insurance purchases may be restricted.",
+    "sources": [
+      "CN16",
+      "BK01",
+      "BK03",
+      "CN01"
+    ],
+    "steps": [
+      {
+        "action": "Confirm the transaction is genuine consumption, not cash withdrawal or a prohibited capital/investment purchase.",
+        "evidence": "SAFE distinguishes card spending from cash withdrawal; purchase-purpose restrictions apply.",
+        "sources": [
+          "CN16",
+          "CN01"
+        ]
+      },
+      {
+        "action": "Check issuer/network foreign-transaction fee and whether merchant offers dynamic currency conversion; choose the cheaper lawful option.",
+        "evidence": "Issuer tariffs publish ATM fees but card purchase FX fees were not verified; flagged.",
+        "sources": [
+          "BK01",
+          "BK03"
+        ]
+      },
+      {
+        "action": "Pay the merchant directly and retain statements; do not use refunds or fake merchants to extract cash.",
+        "evidence": "Anti-evasion/authenticity framework.",
+        "sources": [
+          "CN07"
+        ]
+      }
+    ],
+    "flags": [
+      "F18"
+    ],
+    "no_steps_reason": ""
+  },
+  {
+    "id": "M19",
+    "name": "Western Union China outbound (partner bank / cash pickup)",
+    "category": "C. Cash, cards, domestic and closed-loop paths",
+    "status": "unverified",
+    "fit": "Provider says online sends only through partner banks or in person at listed banks; cash pickup abroad; bank-account delivery temporarily unavailable.",
+    "limit": "Exact China outbound limits and fee schedule not published on retrieved page; PSBC limited to listed countries including US.",
+    "cost": "Outbound fee, FX markup and limit blank/unverified.",
+    "pros": "Established cash-pickup network; partner-bank channels listed.",
+    "cons": "No verified outbound tariff; bank-account delivery unavailable; cash pickup may not suit own-account repatriation; limits unknown.",
+    "sources": [
+      "BK11",
+      "CN01"
+    ],
+    "steps": [],
+    "flags": [
+      "F08",
+      "F10"
+    ],
+    "no_steps_reason": "No exact step-by-step is published because the provider page does not give a complete outbound fee/limit checklist; obtain a written partner-bank quote before relying on it."
+  },
+  {
+    "id": "M20",
+    "name": "Domestic FX transfer to self or close relative (not outbound)",
+    "category": "C. Cash, cards, domestic and closed-loop paths",
+    "status": "conditional",
+    "fit": "Domestic individual transfers FX within China to own account or close relative.",
+    "limit": "Art.67 permits domestic transfers only to self/close relatives; not a cross-border remittance.",
+    "cost": "Domestic bank fees unverified; no outbound conversion cost at this step.",
+    "pros": "Can consolidate lawful FX before a permitted outbound route.",
+    "cons": "Does not move money abroad; relative transfers must be genuine; cannot borrow quotas.",
+    "sources": [
+      "CN01"
+    ],
+    "steps": [
+      {
+        "action": "Confirm recipient is self or a close relative and the transfer is domestic FX, not RMB quota lending.",
+        "evidence": "Art.67 domestic transfer restriction; Art.62 splitting prohibition.",
+        "sources": [
+          "CN01"
+        ]
+      },
+      {
+        "action": "Submit the bank’s domestic FX transfer instruction with relationship/source evidence and retain receipt.",
+        "evidence": "Art.67 and bank authenticity practice.",
+        "sources": [
+          "CN01"
+        ]
+      }
+    ],
+    "flags": [
+      "F10"
+    ],
+    "no_steps_reason": ""
+  },
+  {
+    "id": "M21",
+    "name": "Wealth Management Connect Southbound (closed-loop investment)",
+    "category": "C. Cash, cards, domestic and closed-loop paths",
+    "status": "not_repatriation",
+    "fit": "Mainland GBA eligible investor; RMB via CIPS; investment products only.",
+    "limit": "Aggregate CNY 150bn / individual CNY 3m; funds must return closed loop to the same mainland account.",
+    "cost": "Investment/product fees unverified; not a US repatriation cost.",
+    "pros": "Regulated outbound investment channel for eligible GBA investors.",
+    "cons": "Cannot remit proceeds to a US personal account; closed loop; eligibility narrow.",
+    "sources": [
+      "HK01"
+    ],
+    "steps": [
+      {
+        "action": "Confirm GBA eligibility and open the paired investment/remittance accounts under the scheme.",
+        "evidence": "HKMA Southbound eligibility and closed-loop rules.",
+        "sources": [
+          "HK01"
+        ]
+      },
+      {
+        "action": "Invest only in eligible products within quota; on redemption/exit, funds return to the same mainland account.",
+        "evidence": "HKMA closed-loop requirement.",
+        "sources": [
+          "HK01"
+        ]
+      }
+    ],
+    "flags": [
+      "F16"
+    ],
+    "no_steps_reason": ""
+  },
+  {
+    "id": "M22",
+    "name": "QDII / other regulated outbound investment product",
+    "category": "C. Cash, cards, domestic and closed-loop paths",
+    "status": "unverified",
+    "fit": "Institutional/product-specific outbound investment scheme; not a general personal cash repatriation entitlement.",
+    "limit": "Personal redemption-to-overseas-account mechanics not verified from retrieved sources; values blank.",
+    "cost": "Fees/limits blank/unverified.",
+    "pros": "May provide regulated foreign-asset exposure where available.",
+    "cons": "Not a verified route to a US personal bank account; product rules and redemption destination unverified.",
+    "sources": [
+      "CN12",
+      "CN03"
+    ],
+    "steps": [],
+    "flags": [
+      "F16"
+    ],
+    "no_steps_reason": "No operational steps are given because the retrieved capital-guide chunks did not establish a personal overseas-account redemption route."
+  },
+  {
+    "id": "M23",
+    "name": "Keep CNY in China / delay conversion (no transfer)",
+    "category": "C. Cash, cards, domestic and closed-loop paths",
+    "status": "conditional",
+    "fit": "No immediate USD need; lawful RMB balance remains onshore.",
+    "limit": "No outbound transaction; future conversion/remittance rules still apply.",
+    "cost": "No transfer fee now; FX opportunity cost and future spread unverified; savings-deposit interest temporarily exempt from PRC IIT.",
+    "pros": "Avoids immediate spread/fees and documentary friction; preserves optionality.",
+    "cons": "Currency risk; future quota/rules; US reporting may still apply to the account; not a solution if USD is needed now.",
+    "sources": [
+      "CN20",
+      "CN22",
+      "CN23",
+      "US05"
+    ],
+    "steps": [
+      {
+        "action": "Confirm the balance is lawful and the account remains reportable for US purposes if thresholds are met.",
+        "evidence": "FBAR/8938 depend on account value, not transfer.",
+        "sources": [
+          "US05"
+        ]
+      },
+      {
+        "action": "Monitor the eventual lawful purchase/remittance route and re-quote FX/fees before converting later.",
+        "evidence": "SAFE rules and provider tariffs change; no current transfer cost is incurred.",
+        "sources": [
+          "CN01",
+          "BK02"
+        ]
+      }
+    ],
+    "flags": [
+      "F10"
+    ],
+    "no_steps_reason": ""
+  },
+  {
+    "id": "M24",
+    "name": "Convert to USD now and hold onshore / spend later",
+    "category": "C. Cash, cards, domestic and closed-loop paths",
+    "status": "conditional",
+    "fit": "Lawful purchase route exists; no immediate outbound need.",
+    "limit": "Purchase consumes quota or requires Art.59/documents; later outbound uses M03 rules.",
+    "cost": "Conversion spread applies now; later wire fee avoided until remittance; personal tax blank.",
+    "pros": "Locks USD rate; avoids immediate wire; onshore USD account may be useful.",
+    "cons": "Does not move funds abroad; future outbound rules; account/reporting obligations; original FX gain/loss basis must be kept.",
+    "sources": [
+      "CN01",
+      "BK02",
+      "US01",
+      "US05"
+    ],
+    "steps": [
+      {
+        "action": "Buy USD only through M01/M02 or another lawful purchase route and retain the exchange memo/basis records.",
+        "evidence": "SAFE purchase rules; §988 basis records.",
+        "sources": [
+          "CN01",
+          "US01"
+        ]
+      },
+      {
+        "action": "Hold in a domestic FX account; later remit under M03 or spend subject to card/cash rules.",
+        "evidence": "Art.64/65 outbound; cash/card rules separate.",
+        "sources": [
+          "CN01"
+        ]
+      }
+    ],
+    "flags": [
+      "F10",
+      "F02"
+    ],
+    "no_steps_reason": ""
+  },
+  {
+    "id": "M25",
+    "name": "Securities / insurance liquidation proceeds to overseas account",
+    "category": "C. Cash, cards, domestic and closed-loop paths",
+    "status": "unverified",
+    "fit": "Proceeds from selling domestic securities/insurance or surrendering a policy; capital-account classification and outbound route depend on product.",
+    "limit": "No general personal overseas-account route verified from retrieved sources; values blank.",
+    "cost": "Fees/taxes/limits blank/unverified.",
+    "pros": "Underlying asset may be liquidated lawfully in China.",
+    "cons": "Liquidation does not itself create an outbound FX entitlement; product-specific capital rules unverified.",
+    "sources": [
+      "CN03",
+      "CN12"
+    ],
+    "steps": [],
+    "flags": [
+      "F16"
+    ],
+    "no_steps_reason": "No exact outbound steps are published because the retrieved sources do not verify a personal overseas-account route for these proceeds."
+  },
+  {
+    "id": "P01",
+    "name": "Splitting / borrowing family or friends’ quotas",
+    "category": "D. Prohibited or unverified wrappers",
+    "status": "prohibited",
+    "fit": "Using multiple persons or repeated small transactions to evade quota/authenticity supervision.",
+    "limit": "Art.62 watch list for current year plus two years; underlying evasion/illegal-arbitrage fines may apply.",
+    "cost": "No lawful price; statutory fine exposure up to 30%, serious 30%–100% for evasion/illegal arbitrage; not a fee.",
+    "pros": "None lawful.",
+    "cons": "Prohibited; watch list; fines/criminal referral; does not create a lawful source file.",
+    "sources": [
+      "CN01",
+      "CN07"
+    ],
+    "steps": [],
+    "flags": [
+      "F20"
+    ],
+    "no_steps_reason": "Prohibited: no operational steps are provided."
+  },
+  {
+    "id": "P02",
+    "name": "Underground bank / matched payments (对敲)",
+    "category": "D. Prohibited or unverified wrappers",
+    "status": "prohibited",
+    "fit": "Private dealer offsets RMB in China against USD abroad without a lawful cross-border transfer.",
+    "limit": "Art.45 private/disguised FX trading; enforcement case shows fine under Art.45.",
+    "cost": "No lawful price; case-specific fine; statutory up to 30%, serious 30%–100%; confiscation/criminal risk.",
+    "pros": "None lawful.",
+    "cons": "Illegal financial activity; counterparty/AML risk; no bank receipt or lawful tax trail.",
+    "sources": [
+      "CN07",
+      "CN19"
+    ],
+    "steps": [],
+    "flags": [
+      "F20"
+    ],
+    "no_steps_reason": "Prohibited: no operational steps are provided."
+  },
+  {
+    "id": "P03",
+    "name": "Crypto / stablecoin bridge from mainland China",
+    "category": "D. Prohibited or unverified wrappers",
+    "status": "prohibited",
+    "fit": "Buy crypto with RMB in China and sell abroad for USD.",
+    "limit": "PBOC 2021 notice treats virtual-currency business and overseas exchanges serving mainland residents as illegal financial activity.",
+    "cost": "No fixed percentage penalty in the notice; do not invent one; other AML/criminal exposure possible.",
+    "pros": "None lawful.",
+    "cons": "Prohibited; no legal-tender status; civil acts offending public order may be void; losses borne by participant.",
+    "sources": [
+      "CN18",
+      "CN07"
+    ],
+    "steps": [],
+    "flags": [
+      "F20"
+    ],
+    "no_steps_reason": "Prohibited: no operational steps are provided."
+  },
+  {
+    "id": "P04",
+    "name": "False documents / sham trade or service contract",
+    "category": "D. Prohibited or unverified wrappers",
+    "status": "prohibited",
+    "fit": "Fabricated contract/invoice/tax record to obtain purchase or remittance.",
+    "limit": "FX Regulation Arts.39–40/48; current-guide authenticity and watch-list rules.",
+    "cost": "No lawful price; fines up to 30%, serious 30%–100%; individual document failures up to CNY 50,000; criminal referral where constituted.",
+    "pros": "None lawful.",
+    "cons": "Fraud/document risk; bank refusal; watch list; tax and AML exposure.",
+    "sources": [
+      "CN07",
+      "CN01"
+    ],
+    "steps": [],
+    "flags": [
+      "F20"
+    ],
+    "no_steps_reason": "Prohibited: no operational steps are provided."
+  },
+  {
+    "id": "P05",
+    "name": "Undeclared cash carry / structuring trips",
+    "category": "D. Prohibited or unverified wrappers",
+    "status": "prohibited",
+    "fit": "Carrying cash without required permits/declarations or splitting trips to evade thresholds.",
+    "limit": "Chinese carry permits and US FinCEN 105 apply; evasion/illegal carriage penalised.",
+    "cost": "No lawful price; forfeiture and statutory fine exposure; not a fee.",
+    "pros": "None lawful.",
+    "cons": "Forfeiture risk; permit/declaration violations; structuring does not cure the underlying source problem.",
+    "sources": [
+      "CN17",
+      "US09",
+      "CN07"
+    ],
+    "steps": [],
+    "flags": [
+      "F20"
+    ],
+    "no_steps_reason": "Prohibited: no operational steps are provided."
+  },
+  {
+    "id": "P06",
+    "name": "Disguised investment / private “repatriation” wrapper",
+    "category": "D. Prohibited or unverified wrappers",
+    "status": "prohibited",
+    "fit": "Private structure marketed as investment/consulting to move capital without the required approval or genuine transaction.",
+    "limit": "If it disguises capital transfer or evades FX control, Arts.39–40/45 apply; no verified lawful product.",
+    "cost": "No lawful price; statutory fine exposure; structure-specific legal risk unverified.",
+    "pros": "None lawful.",
+    "cons": "Unverified wrapper; potential evasion; no official product source; do not rely on marketing.",
+    "sources": [
+      "CN07",
+      "CN12"
+    ],
+    "steps": [],
+    "flags": [
+      "F16",
+      "F20"
+    ],
+    "no_steps_reason": "Prohibited/unverified: no operational steps are provided."
+  }
+]

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Methodology and limits · Edition F · CNY→USD</title>
+<meta name="description" content="Independently verified CNY to USD transfer research, cost ladder, mechanics, tax/reporting and repository audit.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">CNY→USD <span>Edition F</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav" onclick="document.getElementById('nav').classList.toggle('open');this.setAttribute('aria-expanded',this.getAttribute('aria-expanded')==='false')">Menu</button>
+    <nav id="nav" class="nav"><a href="index.html" class="">Overview</a><a href="costs.html" class="">Cost ladder</a><a href="methods.html" class="">Methods</a><a href="mechanics.html" class="">Step by step</a><a href="penalty.html" class="">Conversion penalty</a><a href="tax.html" class="">Tax</a><a href="reporting.html" class="">US reporting</a><a href="audit.html" class="">Repo audit</a><a href="flagged.html" class="">Flagged for review</a><a href="sources.html" class="">Sources</a><a href="methodology.html" class="active">Methodology</a></nav>
+  </div>
+</header>
+<main id="main" class="wrap">
+<section class="hero">
+  <p class="eyebrow">Independent verification edition · report date 2026-11-08 UTC</p>
+  <h1>Methodology and limits</h1>
+  <p class="lede">How the edition is built, what the checker proves, and what it deliberately does not prove.</p>
+</section>
+
+<h2>Build and verify</h2>
+<pre><code>python3 edition-f/build/build.py
+python3 edition-f/build/verify.py</code></pre>
+<p>Pure Python 3 standard library. No npm, no CDN, no server-side code. The site works without JavaScript except the optional mobile menu toggle; all tables and links are plain HTML.</p>
+<div class="table-wrap" id="methodology-checks" tabindex="0" role="region" aria-label="Verification standard"><table><caption>Verification standard</caption><thead><tr><th scope="col">Rule</th><th scope="col">Implementation</th><th scope="col">Sources</th></tr></thead><tbody><tr ><td class=""><strong>Source discipline</strong></td><td class="">Legal/tax rows cite official sources; provider prices cite issuer tariffs labelled provider-primary. Unknown values are blank and flagged.</td><td class=""><a class="src official" href="https://www.safe.gov.cn/safe/file/file/20200831/f0127756271c43ef9b3908d5d157bd91.pdf" target="_blank" rel="noopener noreferrer" title="official: State Administration of Foreign Exchange — 经常项目外汇业务指引（2020年版） / Current-Account FX Business Guide (2020)">CN01</a> <a class="src provider" href="https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf" target="_blank" rel="noopener noreferrer" title="provider-primary: Bank of China — Personal service tariff effective 2025-11-11 (item 210105008 and notes)">BK01</a> <a class="src official" href="https://www.govinfo.gov/content/pkg/USCODE-2020-title26/pdf/USCODE-2020-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.pdf" target="_blank" rel="noopener noreferrer" title="official: U.S. Government Publishing Office — 26 U.S.C. §988 — foreign currency transactions">US01</a></td></tr>
+<tr ><td class=""><strong>Arithmetic</strong></td><td class="">Decimal math; 40 targets from 10,000 to 400,000 by 10,000; formulas printed on the cost page; CSV/JSON exports included.</td><td class=""><a class="src official" href="https://www.safe.gov.cn/safe/file/file/20200831/f0127756271c43ef9b3908d5d157bd91.pdf" target="_blank" rel="noopener noreferrer" title="official: State Administration of Foreign Exchange — 经常项目外汇业务指引（2020年版） / Current-Account FX Business Guide (2020)">CN01</a> <a class="src provider" href="https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf" target="_blank" rel="noopener noreferrer" title="provider-primary: Bank of China — Personal service tariff effective 2025-11-11 (item 210105008 and notes)">BK01</a> <a class="src official" href="https://www.govinfo.gov/content/pkg/USCODE-2020-title26/pdf/USCODE-2020-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.pdf" target="_blank" rel="noopener noreferrer" title="official: U.S. Government Publishing Office — 26 U.S.C. §988 — foreign currency transactions">US01</a></td></tr>
+<tr ><td class=""><strong>No invention</strong></td><td class="">No personal tax, correspondent fee, receiving-bank fee, HSBC FX spread, ICBC/WU fee or Wise 40-point curve is inferred.</td><td class=""><a class="src official" href="https://www.safe.gov.cn/safe/file/file/20200831/f0127756271c43ef9b3908d5d157bd91.pdf" target="_blank" rel="noopener noreferrer" title="official: State Administration of Foreign Exchange — 经常项目外汇业务指引（2020年版） / Current-Account FX Business Guide (2020)">CN01</a> <a class="src provider" href="https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf" target="_blank" rel="noopener noreferrer" title="provider-primary: Bank of China — Personal service tariff effective 2025-11-11 (item 210105008 and notes)">BK01</a> <a class="src official" href="https://www.govinfo.gov/content/pkg/USCODE-2020-title26/pdf/USCODE-2020-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.pdf" target="_blank" rel="noopener noreferrer" title="official: U.S. Government Publishing Office — 26 U.S.C. §988 — foreign currency transactions">US01</a></td></tr>
+<tr ><td class=""><strong>Prohibited routes</strong></td><td class="">Named with statutory basis and penalty exposure; no operational steps.</td><td class=""><a class="src official" href="https://www.safe.gov.cn/safe/file/file/20200831/f0127756271c43ef9b3908d5d157bd91.pdf" target="_blank" rel="noopener noreferrer" title="official: State Administration of Foreign Exchange — 经常项目外汇业务指引（2020年版） / Current-Account FX Business Guide (2020)">CN01</a> <a class="src provider" href="https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf" target="_blank" rel="noopener noreferrer" title="provider-primary: Bank of China — Personal service tariff effective 2025-11-11 (item 210105008 and notes)">BK01</a> <a class="src official" href="https://www.govinfo.gov/content/pkg/USCODE-2020-title26/pdf/USCODE-2020-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.pdf" target="_blank" rel="noopener noreferrer" title="official: U.S. Government Publishing Office — 26 U.S.C. §988 — foreign currency transactions">US01</a></td></tr>
+<tr ><td class=""><strong>Verification</strong></td><td class="">build.py regenerates site; verify.py checks citations, internal links/anchors, table-row source links, ladder arithmetic, blanks, prohibited-step absence and reproducibility inputs.</td><td class=""><a class="src official" href="https://www.safe.gov.cn/safe/file/file/20200831/f0127756271c43ef9b3908d5d157bd91.pdf" target="_blank" rel="noopener noreferrer" title="official: State Administration of Foreign Exchange — 经常项目外汇业务指引（2020年版） / Current-Account FX Business Guide (2020)">CN01</a> <a class="src provider" href="https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf" target="_blank" rel="noopener noreferrer" title="provider-primary: Bank of China — Personal service tariff effective 2025-11-11 (item 210105008 and notes)">BK01</a> <a class="src official" href="https://www.govinfo.gov/content/pkg/USCODE-2020-title26/pdf/USCODE-2020-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.pdf" target="_blank" rel="noopener noreferrer" title="official: U.S. Government Publishing Office — 26 U.S.C. §988 — foreign currency transactions">US01</a></td></tr>
+<tr ><td class=""><strong>Limits</strong></td><td class="">External HTTP liveness is not continuously checked; official pages can move. Branch practice and personal facts decide execution. Not advice.</td><td class=""><a class="src official" href="https://www.safe.gov.cn/safe/file/file/20200831/f0127756271c43ef9b3908d5d157bd91.pdf" target="_blank" rel="noopener noreferrer" title="official: State Administration of Foreign Exchange — 经常项目外汇业务指引（2020年版） / Current-Account FX Business Guide (2020)">CN01</a> <a class="src provider" href="https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf" target="_blank" rel="noopener noreferrer" title="provider-primary: Bank of China — Personal service tariff effective 2025-11-11 (item 210105008 and notes)">BK01</a> <a class="src official" href="https://www.govinfo.gov/content/pkg/USCODE-2020-title26/pdf/USCODE-2020-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.pdf" target="_blank" rel="noopener noreferrer" title="official: U.S. Government Publishing Office — 26 U.S.C. §988 — foreign currency transactions">US01</a></td></tr></tbody></table></div>
+<h2>Known limitations</h2>
+<ul>
+<li>BOC board is reference-only and displays a date later than the report date; re-quote before execution.</li>
+<li>SkyRemit widget was internally inconsistent; only the rate pair and fixed fee are used in a labelled scenario.</li>
+<li>Wise pricing changed during research and only one amount was captured; no curve is extrapolated.</li>
+<li>Capital Guide 2024 PDF retrieval did not return every corporate checklist section; corporate steps are framework-level and flagged.</li>
+<li>Personal tax, eligibility and prior filing history are unknown; no personal liability amount is computed.</li>
+</ul>
+
+</main>
+<footer class="site-footer"><div class="wrap">
+<p>Research with linked sources and shown arithmetic. Not legal, tax or investment advice, and not a bank quote. Provider tariffs support only that provider’s prices/product terms; legal propositions cite government/regulator sources. Unknown values are blank and flagged.</p>
+<p><a href="sources.html">Sources</a> · <a href="flagged.html">Flagged for review</a> · <a href="methodology.html">Methodology</a> · <a href="cost-ladder.csv">CSV</a> · <a href="cost-ladder.json">JSON</a></p>
+</div></footer>
+</body>
+</html>

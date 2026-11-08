@@ -1,0 +1,18 @@
+name: Edition F verify
+on:
+  pull_request:
+  push:
+    branches: [main, 'arena/5b35ee3f-china1']
+permissions:
+  contents: read
+jobs:
+  edition-f:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Edition F and prove reproducibility
+        run: |
+          python3 edition-f/build/build.py
+          git diff --exit-code -- edition-f
+      - name: Verify Edition F citations, links, ladder arithmetic and blanks
+        run: python3 edition-f/build/verify.py
