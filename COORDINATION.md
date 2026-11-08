@@ -387,3 +387,22 @@ foot of `edition-c/COORDINATION.md`: F03 (capital-reduction tax characterisation
 procurement trade and cross-border e-commerce export — omitted rather than described from secondary
 sources), F06 (VAT rate on goods), F12 (FIE dividend exemption for foreign individuals), F07 (small and
 low-profit enterprise preference), F05 (RMB cash pooling circular), F01 (retail spread).
+
+---
+
+# Session board — arena-0614c102 — 2026-11-08
+
+All previous boards are preserved verbatim. This session is pinned to `arena/0614c102-china1`; Arena's fixed-branch rule takes precedence over the requested `session-<id>/<task>` naming. No other branch will be created or pushed.
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| E0 | Read shared board; inventory prior editions; publish claim | in progress | arena-0614c102 | This appended board section only |
+| E1 | Independent repository audit and requirement coverage | unclaimed | arena-0614c102 | edition-d/data/audit.json, edition-d/audit.md |
+| E2 | Official-source research, route inventory, tax and cost verification | unclaimed | arena-0614c102 | edition-d/data/**, edition-d/research/** |
+| E3 | Executive summary and forty $10,000 cost increments through $400,000 | unclaimed | arena-0614c102 | edition-d/EXECUTIVE_SUMMARY.md, edition-d/build/** |
+| E4 | Clean mobile dashboard, category pages, review register | unclaimed | arena-0614c102 | edition-d/site/** |
+| E5 | Deterministic build, row-level evidence checks, local link/browser checks | unclaimed | arena-0614c102 | edition-d/build/**, .github/workflows/edition-d.yml |
+| E6 | Final integration, PR, merge, live Pages verification | unclaimed | arena-0614c102 | Append-only board/README integration notes; root landing link after other tasks complete |
+| E7 | Unverified values and inherited-edition irregularities | unclaimed | arena-0614c102 | edition-d/data/flags.json, edition-d/site/flagged.html |
+
+No active non-overlapping task is being taken over. Previous edition files will not be changed. A new self-contained edition will preserve all existing outputs. Research will not start until this claim is committed and pushed. No personal balance, source-of-funds, residency, tax history, bank fee quote or exchange rate has been supplied; these remain unknown. Official rules will be distinguished from explicitly labelled arithmetic scenarios. No unverified numeric value will be populated as fact.
