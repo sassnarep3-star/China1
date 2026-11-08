@@ -380,7 +380,7 @@ else:
         dest = os.path.normpath(os.path.join(ROOT, "..", href.split("#")[0]))
         if not os.path.exists(dest):
             portal_bad.append("missing target: " + href)
-    for required in ("edition-d/docs/index.html", "overview.html", "dossier/index.html",
+    for required in ("edition-d/docs/index.html", "overview.html", "pages/estimates.html", "dossier/index.html",
                      "edition-b/index.html", "edition-c/docs/index.html", "COORDINATION.md"):
         if required not in doc:
             portal_bad.append("portal does not link " + required)
