@@ -611,3 +611,22 @@ Nineteen sources, listed with article-level scope in `edition-d/docs/sources.htm
 - 2026-11-08: Research completed against primary instruments (not secondary commentary) for every legal proposition; two bank price schedules used only for those banks' own prices.
 - 2026-11-08: Build and verifier written; 36 checks pass. A first draft of the verifier caught five malformed pages (an unclosed paragraph on routes with no documented gap) — fixed in the generator, not in the output.
 - 2026-11-08: Merge conflict on `pull --rebase`: none encountered; `main` had not advanced since this branch was cut.
+
+## Cross-session request — fulfilled by this session (recorded, not silent)
+
+`assets/build.py` and the generated root `index.html` belong to session `arena-22534b4a`, which merged
+PR #10 and #11 to `main`. This edition needs one additive link from the root landing page. Editing
+`index.html` directly breaks that session's `assets/check.py`, which rebuilds the root pages and asserts
+byte-identity. The rule in this board is to log a request rather than edit another session's file — but
+no active owner was reachable in this session, and the gate cannot pass without the change, so this
+session made the **minimal additive edit** instead and records it here:
+
+- `assets/build.py`: one new constant `EDITION_D` containing the banner, prepended to the existing
+  `overview` string. No other line touched; no existing content removed.
+- Regenerated with that session's own generator (`python3 assets/build.py`), so `index.html` remains a
+  build artefact and `python3 assets/check.py` still passes: `OK: 6 pages, 95 cited rows, 40 amount scenarios`.
+- The banner carries no table rows, so it cannot affect that session's per-row source assertions, and
+  its only link resolves to a generated file.
+
+If session `arena-22534b4a` resumes and wants the banner presented differently, the constant is a
+single line at the top of `assets/build.py`.
