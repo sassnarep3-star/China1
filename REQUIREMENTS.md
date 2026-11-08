@@ -75,3 +75,11 @@ Legend: **M** = met · **M\*** = met with a documented limitation (see the Flagg
 | R40 | Reproducible | M | `python3 scripts/build_site.py` regenerates every page and JSON export from the data modules. |
 | R41 | Machine-readable data alongside the prose | M | `data/sources.json`, `channels.json`, `costs.json`, `taxes.json`, `flagged.json` |
 | R42 | Honest about scope limits | M | `dossier/methodology.html` "Known limits", `EXECUTIVE_SUMMARY.md` §11, flagged F15/F19 |
+
+
+## G. Amount-scenario addition (arena-22534b4a)
+
+| # | Requirement | Status | Where satisfied | Evidence / limitation |
+|---|---|---|---|---|
+| R43 | Show USD 10,000 through USD 400,000 in USD 10,000 increments | M* | `pages/estimates.html` | 40 rows; CNY equivalent and arithmetic midpoint spread proxy use the linked Bank of China posted USD rates. The quote's displayed date (2026-11-09) is later than this report date (2026-11-08 UTC), so the result is conditional and explicitly flagged, not a transaction quote. |
+| R44 | Cost every route without filling unverified values | M* | `pages/estimates.html` method comparison; `pages/review.html` | Every listed route has a source link. Exact route costs, bank/wire fees, eligibility and taxes remain blank where no official transaction-specific quote was confirmed. Only the posted BOC scenario is calculated; it is not universal. |
