@@ -390,6 +390,25 @@ low-profit enterprise preference), F05 (RMB cash pooling circular), F01 (retail 
 
 ---
 
+# Session board — arena-0614c102 — 2026-11-08
+
+All previous boards are preserved verbatim. This session is pinned to `arena/0614c102-china1`; Arena's fixed-branch rule takes precedence over the requested `session-<id>/<task>` naming. No other branch will be created or pushed.
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| E0 | Read shared board; inventory prior editions; publish claim | done | arena-0614c102 | This appended board section only |
+| E1 | Independent repository audit and requirement coverage | in progress | arena-0614c102 | edition-d/data/audit.json, edition-d/audit.md |
+| E2 | Official-source research, route inventory, tax and cost verification | in progress | arena-0614c102 | edition-d/data/**, edition-d/research/** |
+| E3 | Executive summary and forty $10,000 cost increments through $400,000 | in progress | arena-0614c102 | edition-d/EXECUTIVE_SUMMARY.md, edition-d/build/** |
+| E4 | Clean mobile dashboard, category pages, review register | in progress | arena-0614c102 | edition-d/site/** |
+| E5 | Deterministic build, row-level evidence checks, local link/browser checks | in progress | arena-0614c102 | edition-d/build/**, .github/workflows/edition-d.yml |
+| E6 | Final integration, PR, merge, live Pages verification | pending component completion | arena-0614c102 | Append-only board/README integration notes; root landing link after other tasks complete |
+| E7 | Unverified values and inherited-edition irregularities | in progress | arena-0614c102 | edition-d/data/flags.json, edition-d/site/flagged.html |
+
+No active non-overlapping task is being taken over. Previous edition files will not be changed. A new self-contained edition will preserve all existing outputs. Research will not start until this claim is committed and pushed. No personal balance, source-of-funds, residency, tax history, bank fee quote or exchange rate has been supplied; these remain unknown. Official rules will be distinguished from explicitly labelled arithmetic scenarios. No unverified numeric value will be populated as fact.
+
+- 2026-11-08: Initial claim commit `dbcc779` pushed successfully. The remote session branch did not exist, so its first pull failed; rebased against origin/main and published the fixed Arena branch. No conflict or discarded work. E0 complete; E1/E2 claimed before implementation.
+- 2026-11-08: E3/E4/E5/E7 claimed by the same session before implementation. E6 awaits a passing component build; shared files remain untouched until that gate. Official-page checks found that PBOC notice [2026] No.42 replaced the 2021 virtual-currency notice, and SC China's current personal tariff is Version 2 dated 2026-07-26. These are being checked against the inherited editions rather than copying older figures.
 # Session update — arena-22534b4a (current Arena branch)
 
 ## Claim
@@ -590,3 +609,33 @@ intact and reachable from the new landing page. No value of theirs was altered.
 ### Pull request, merge and deployment
 
 _Pending — this line is completed after the merge._
+
+---
+
+# Session board — arena-0614c102 continuation — 2026-11-08
+
+Correction and non-overlapping claim: while this session was researching, `origin/main` advanced to `4d844a5` and published a different session’s `edition-d/` through PR #13. The earlier E-board above is preserved as history. This session will **not** overwrite that Edition D. Its isolated outputs are relocated to `edition-e/`, and its audit will adjudicate the newly published Edition D alongside the older editions.
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| F0 | Preserve concurrent Edition D and merge main | in progress | arena-0614c102 | Merge resolution; no deletion of edition-d |
+| F1 | Claim-level source register and retrieval limits | done | arena-0614c102 | edition-e/data/sources.json, edition-e/research/** |
+| F2 | Route/tax/cost datasets and forty-step grids | in progress | arena-0614c102 | edition-e/data/**, edition-e/build/** |
+| F3 | Executive summary, dashboard, category/review pages | in progress | arena-0614c102 | edition-e/EXECUTIVE_SUMMARY.md, edition-e/site/** |
+| F4 | Deterministic verifier and separate CI | in progress | arena-0614c102 | edition-e/build/verify.py, .github/workflows/edition-e.yml |
+| F5 | Audit inherited editions including published Edition D | in progress | arena-0614c102 | edition-e/audit.md, edition-e/data/audit.json |
+| F6 | Final integration, PR, merge, Pages verification | pending component gate | arena-0614c102 | Append-only coordination/README/portal link after checks pass |
+
+No personal balance, source-of-funds, residency, tax history, executable FX quote or receiving-bank fee has been supplied. Edition E will keep those values blank. Provider tariffs will be labelled provider-primary, not government law. Conditional arithmetic will not be presented as an all-in quote.
+
+## arena-0614c102 — component gate passed
+
+- F0 done: merged `origin/main` at `4d844a5`, preserved the concurrently published `edition-d/`, and relocated this session’s isolated outputs to `edition-e/`.
+- F1 done: 40-source claim-level register and retrieval limits saved under `edition-e/data/sources.json` and `edition-e/research/`.
+- F2 done: 32 methods, 14 tax rows, 4 penalty rows, 18 flags, 10 audit findings and 1,280 forty-step grid rows generated.
+- F3 done: executive summary, dashboard, category pages, costs/tax/penalties/sources/flagged/audit/method/requirements pages generated under `edition-e/site/`.
+- F4 done: `python3 edition-e/build/verify.py` passed 18 checks, 0 failures; separate CI workflow added at `.github/workflows/edition-e.yml`.
+- F5 done: inherited-edition audit adjudicates old crypto authority, deposit-interest overbreadth, emigrant staging, old no-tariff statements, and published Edition D’s labelled receiving-bank assumption/tariff vintage/timezone issues.
+- Local HTTP check: 15 HTML pages plus CSS/JSON/CSV returned 200; viewport, skip link and scrollable tables present.
+- Inherited checkers re-run and passed: `assets/check.py`, `scripts/build_site.py` + `scripts/verify.py`, `scripts/build.py` + `scripts/verify.py`, `edition-b/build/generate.py` + `edition-b/build/verify.py`, `edition-c/build/build.py` + `edition-c/build/linkcheck.py`, `edition-d/build/build.py` + `edition-d/build/verify.py`.
+- F6 in progress: PR, merge and Pages verification. Root portal is intentionally not hand-edited because Edition D’s CI regenerates `index.html`; Edition E links back to the portal and is documented in README.

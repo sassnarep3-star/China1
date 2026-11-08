@@ -1,0 +1,69 @@
+{
+  "title": "CNY to USD for a US citizen — verified routes, conditional costs, blank unknowns",
+  "report_date": "2026-11-08",
+  "answer": "The reviewed rules do not impose a tax merely on converting or remitting your own principal. The hard problem is proving the lawful source and using the correct current/capital channel. Commercial FX spread and tariffs can be shown only as conditional arithmetic; personal tax, executable FX and receiving fees remain blank.",
+  "findings": [
+    {
+      "title": "Do not start with the USD 50,000 slogan",
+      "body": "For a qualifying overseas individual, documented lawful mainland current-account RMB income follows Article 59 rather than a generic USD 50,000 exit cap. Classification and bank review still control.",
+      "sources": [
+        "S02",
+        "S03"
+      ]
+    },
+    {
+      "title": "Capital savings need a real capital route",
+      "body": "Emigrant transfer, inheritance and actual property/corporate transactions are narrow. A US passport alone does not create an emigrant-transfer entitlement.",
+      "sources": [
+        "S06",
+        "S07",
+        "S08",
+        "S11"
+      ]
+    },
+    {
+      "title": "Current provider tariffs are retrievable, but not all-in",
+      "body": "BOC personal TT is 0.1% capped at CNY 260 plus CNY 150 international cable; SC electronic OUR components vary by tier. FX execution and receiving charges remain unknown.",
+      "sources": [
+        "S15",
+        "S18"
+      ]
+    },
+    {
+      "title": "Closed-loop investment is not US repatriation",
+      "body": "WMC proceeds return to the mainland remittance account; QDII is a product/custody channel; Stock Connect is a trading link.",
+      "sources": [
+        "S27",
+        "S39",
+        "S40"
+      ]
+    },
+    {
+      "title": "US reporting can matter more than conversion fees",
+      "body": "FBAR, Form 8938, Form 3520 and worldwide income rules have separate triggers. The treaty saving clause preserves US citizen taxation.",
+      "sources": [
+        "S30",
+        "S33",
+        "S34",
+        "S35"
+      ]
+    },
+    {
+      "title": "Prohibited shortcuts are not cost options",
+      "body": "Splitting, underground dealing and the 2026 crypto/RWA notice are excluded. No operational guidance is given.",
+      "sources": [
+        "S01",
+        "S02",
+        "S38"
+      ]
+    }
+  ],
+  "headline": {
+    "methods": 32,
+    "amount_steps": 40,
+    "grid_rows": 1280,
+    "sources": 40,
+    "personal_tax": "blank",
+    "all_in_total": "blank"
+  }
+}

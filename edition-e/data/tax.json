@@ -1,0 +1,207 @@
+{
+  "meta": {
+    "edition": "E",
+    "personal_tax": "blank: no return facts supplied"
+  },
+  "rows": [
+    {
+      "id": "T01",
+      "jurisdiction": "China",
+      "item": "Exchange of own CNY principal for USD",
+      "rule": "No reviewed instrument imposes a tax merely on converting or remitting own principal. Tax attaches to income/gain events.",
+      "rate": null,
+      "personal_amount": null,
+      "sources": [
+        "S01",
+        "S28"
+      ],
+      "flags": [
+        "F01"
+      ]
+    },
+    {
+      "id": "T02",
+      "jurisdiction": "China",
+      "item": "Comprehensive income (including wages)",
+      "rule": "Statutory progressive rates apply to taxable comprehensive income; residence and source rules matter.",
+      "rate": "3%–45%",
+      "personal_amount": null,
+      "sources": [
+        "S28"
+      ],
+      "flags": [
+        "F01"
+      ]
+    },
+    {
+      "id": "T03",
+      "jurisdiction": "China",
+      "item": "Asset-transfer gain",
+      "rule": "Generally 20% of the balance after original value and reasonable expenses, not 20% of gross principal.",
+      "rate": "20% of gain",
+      "personal_amount": null,
+      "sources": [
+        "S28"
+      ],
+      "flags": [
+        "F01"
+      ]
+    },
+    {
+      "id": "T04",
+      "jurisdiction": "China",
+      "item": "Savings-deposit interest accrued from 2008-10-09",
+      "rule": "Temporarily exempt under the published Caishui [2008] No.132 notice; do not generalise to every product or US tax.",
+      "rate": "temporarily exempt",
+      "personal_amount": null,
+      "sources": [
+        "S29"
+      ],
+      "flags": [
+        "F09"
+      ]
+    },
+    {
+      "id": "T05",
+      "jurisdiction": "China",
+      "item": "Basic pension / retirement pay under uniform state provisions",
+      "rule": "Exempt under the IIT law; other retirement income is not automatically exempt.",
+      "rate": "exempt if qualifying",
+      "personal_amount": null,
+      "sources": [
+        "S28"
+      ],
+      "flags": [
+        "F01"
+      ]
+    },
+    {
+      "id": "T06",
+      "jurisdiction": "China",
+      "item": "Emigration household cancellation",
+      "rule": "IIT law requires filing before cancellation of household registration; this is not a transfer tax rate.",
+      "rate": null,
+      "personal_amount": null,
+      "sources": [
+        "S28"
+      ],
+      "flags": [
+        "F07"
+      ]
+    },
+    {
+      "id": "T07",
+      "jurisdiction": "US",
+      "item": "Worldwide income",
+      "rule": "US citizens generally report worldwide income regardless of where funds sit.",
+      "rate": null,
+      "personal_amount": null,
+      "sources": [
+        "S30",
+        "S35"
+      ],
+      "flags": [
+        "F01"
+      ]
+    },
+    {
+      "id": "T08",
+      "jurisdiction": "US",
+      "item": "Foreign tax credit",
+      "rule": "Qualifying foreign income tax on the same income may be credited subject to limitations; no credit on excluded income.",
+      "rate": null,
+      "personal_amount": null,
+      "sources": [
+        "S31",
+        "S32"
+      ],
+      "flags": [
+        "F01"
+      ]
+    },
+    {
+      "id": "T09",
+      "jurisdiction": "US",
+      "item": "FBAR",
+      "rule": "Aggregate foreign financial accounts above USD 10,000 at any time in the calendar year trigger FinCEN Form 114 for US persons.",
+      "rate": "threshold > USD 10,000 aggregate",
+      "personal_amount": null,
+      "sources": [
+        "S33"
+      ],
+      "flags": [
+        "F01"
+      ]
+    },
+    {
+      "id": "T10",
+      "jurisdiction": "US",
+      "item": "Form 8938",
+      "rule": "Thresholds depend on residence/filing status: US unmarried >50,000 year-end/75,000 any time; qualifying abroad unmarried >200,000/300,000; joint thresholds double.",
+      "rate": "thresholds vary",
+      "personal_amount": null,
+      "sources": [
+        "S34"
+      ],
+      "flags": [
+        "F01"
+      ]
+    },
+    {
+      "id": "T11",
+      "jurisdiction": "US",
+      "item": "Foreign gifts/bequests",
+      "rule": "Above USD 100,000 from a nonresident alien individual/foreign estate can require Form 3520 reporting.",
+      "rate": "threshold > USD 100,000",
+      "personal_amount": null,
+      "sources": [
+        "S30"
+      ],
+      "flags": [
+        "F01"
+      ]
+    },
+    {
+      "id": "T12",
+      "jurisdiction": "US",
+      "item": "Personal foreign-currency gain",
+      "rule": "Publication 525 tip: personal FX gain not included unless more than USD 200; above that report as capital gain. Precise application needs manual confirmation.",
+      "rate": "threshold > USD 200 gain",
+      "personal_amount": null,
+      "sources": [
+        "S36"
+      ],
+      "flags": [
+        "F11"
+      ]
+    },
+    {
+      "id": "T13",
+      "jurisdiction": "US",
+      "item": "Form 720 remittance excise",
+      "rule": "1% applies to certain remittance transfers after 2025 funded with cash/money order/cashier’s check/similar physical instrument; not a blanket tax on money leaving China.",
+      "rate": "1% if covered",
+      "personal_amount": null,
+      "sources": [
+        "S37"
+      ],
+      "flags": [
+        "F12"
+      ]
+    },
+    {
+      "id": "T14",
+      "jurisdiction": "US",
+      "item": "Physical currency/instrument carriage",
+      "rule": "More than USD 10,000 in covered instruments transported into/out of the US must be reported on FinCEN Form 105; reporting is not a tax.",
+      "rate": "threshold > USD 10,000",
+      "personal_amount": null,
+      "sources": [
+        "S25"
+      ],
+      "flags": [
+        "F13"
+      ]
+    }
+  ]
+}

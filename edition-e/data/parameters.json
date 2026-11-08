@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "edition": "E",
+    "report_date": "2026-11-08",
+    "rule": "Only recorded provider-primary inputs may enter arithmetic. Unknown personal values are null. Computed cells are conditional scenarios, not quotes or tax assessments."
+  },
+  "amounts": {"start_usd": 10000, "step_usd": 10000, "count": 40},
+  "fx": {
+    "source": "S16",
+    "boc_spot_buy_cny_per_usd": "6.6648",
+    "boc_spot_sell_cny_per_usd": "6.6929",
+    "boc_middle_cny_per_usd": "6.7168",
+    "bid_ask_midpoint_cny_per_usd": "6.67885",
+    "spread_proxy_cny_per_usd": "0.01405",
+    "publisher_timestamp": "2026/11/09 05:30:00",
+    "timezone": null,
+    "treasury_reporting_cny_per_usd": "6.7050",
+    "treasury_source": "S17",
+    "note": "Reference snapshot only; actual transaction rate governs. Timestamp is later than report date and timezone was not established."
+  },
+  "boc_tt": {
+    "source": "S15",
+    "commission_rate": "0.001",
+    "commission_min_cny": "50",
+    "commission_max_cny": "260",
+    "international_cable_cny": "150",
+    "full_arrival_usd_ny": "15",
+    "full_arrival_usd_other": "25",
+    "full_arrival_included_in_base": false,
+    "note": "Base sender tariff excludes optional USD full-arrival surcharge and all overseas/receiving charges."
+  },
+  "sc_electronic_our": {
+    "source": "S18",
+    "tiers": {
+      "personal": {"handling_cny": "100", "cable_cny": "120", "our_intermediary_cny": "200"},
+      "ease": {"handling_cny": "0", "cable_cny": "120", "our_intermediary_cny": "200"},
+      "priority": {"handling_cny": "0", "cable_cny": "0", "our_intermediary_cny": "200"},
+      "priority_private": {"handling_cny": "0", "cable_cny": "0", "our_intermediary_cny": "0"}
+    },
+    "note": "Conditional sender-side components only. Tier eligibility, FX and beneficiary-side deductions are unknown."
+  }
+}

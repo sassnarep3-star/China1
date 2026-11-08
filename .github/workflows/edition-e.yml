@@ -1,0 +1,18 @@
+name: Verify Edition E
+on:
+  pull_request:
+  push:
+    branches: [main, 'arena/0614c102-china1']
+permissions:
+  contents: read
+jobs:
+  edition-e:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Edition E deterministically
+        run: |
+          python3 edition-e/build/build.py
+          git diff --exit-code -- edition-e/site
+      - name: Verify Edition E citations, grids, blanks and links
+        run: python3 edition-e/build/verify.py
