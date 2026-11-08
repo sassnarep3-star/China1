@@ -1,5 +1,69 @@
 # China Money
 
+**Live site:** https://sassnarep3-star.github.io/China1/ — the landing page is now a portal; the dashboard is Edition D.
+
+---
+
+## Edition D — the costed dashboard (current)
+
+**Open it:** https://sassnarep3-star.github.io/China1/edition-d/
+
+The first four editions in this repository established the legal taxonomy and, correctly, refused to invent
+bank fees. That left the practical question unanswered: how much does each route cost, at each size, and in
+what order do the steps happen? Edition D answers it with published tariffs instead of estimates.
+
+### The four numbers
+
+| Question | Answer | Basis |
+|---|---|---|
+| Is converting CNY to USD taxed? | No, in either jurisdiction | CN-05 Art. 2 (nine income categories, exchange is not one); US-01 §988(e)(2) |
+| What does one lawful conversion cost? | **0.2104%** FX margin, plus fees | Derived from BOC's USD board: sell 669.29, buy 666.48, midpoint 667.885 |
+| What does it cost all-in at USD 400,000? | **$932.72 (0.233%)** | BOC tariff + full-amount surcharge + named US receiving fee |
+| What does it cost all-in at USD 10,000? | **$83.45 (0.834%)** | Same machinery; the capped commission and cable fee dominate |
+
+The frequently quoted **0.42%** is the round-trip spread — the cost of converting twice. Edition D uses the
+one-way margin for a single conversion and says so. See finding **R01** on the Edition D repo-review page.
+
+### What is on the site
+
+| Page | Contents |
+|---|---|
+| `/edition-d/` | Dashboard: six findings, headline numbers, cost matrix |
+| `pages/summary.html` | Executive summary, ten findings, the recommendation |
+| `pages/methods.html` | 16 routes: rule, cap, documents, pros and cons, lawfulness |
+| `pages/costs.html` | Every costed route side by side, plus the formula and its inputs |
+| `pages/costs-*.html` | Eight tables, each with 40 rows, USD 10,000 to USD 400,000 in 10,000 steps |
+| `pages/steps.html` | Step-by-step procedure per route, with the provision to cite |
+| `pages/tax.html` | China IIT, §988, the FBAR ladder, the penalty ranges |
+| `pages/reporting.html` | FBAR, 8938, 3520 and the currency report |
+| `pages/sources.html` | 17 sources, graded A/B, with what each supports and what was retrieved |
+| `pages/flagged.html` | 25 items left blank on purpose |
+| `pages/repo-review.html` | Line-by-line audit of the four earlier editions (15 findings) |
+| `pages/methodology.html` | Rules enforced in code, the arithmetic, and the limits |
+
+### Build and verify
+
+```sh
+python3 edition-d/build/build.py    # writes edition-d/docs/ and the root index.html
+python3 edition-d/build/verify.py   # 19 checks; recomputes every cell from the parameters
+```
+
+`verify.py` does not trust the HTML. It recomputes all 320 cost cells from `edition-d/data/parameters.json`,
+checks that every table row carries a source, that every blank is disclosed, that every internal link and
+anchor resolves, that every external host is on the official allowlist, that no page is orphaned, and that a
+rebuild is byte-identical.
+
+### What Edition D does not do
+
+It does not tell you which route applies to your balance, because the source of the funds is unknown (F03).
+It does not price notarisation, travel or card conversion fees, because no official price exists (F14, F18,
+F20). It does not model a §988 gain, because the basis is unknown (F11). And it does not touch the earlier
+editions: they are preserved unchanged and linked from the portal.
+
+---
+
+# China Money
+
 Official-source research dashboard on lawful mainland-China CNY → USD transfers for a US citizen.
 
 **Live site:** https://sassnarep3-star.github.io/China1/

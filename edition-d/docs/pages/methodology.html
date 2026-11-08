@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Official-source research on converting CNY to USD for a US citizen: every route, its published cost at USD 10,000 steps to USD 400,000, and the tax position on each side.">
+<title>Method and limits &middot; China Money</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<input type="checkbox" id="navtoggle" class="navtoggle" aria-label="Open navigation">
+<div class="layout">
+<aside class="sidebar">
+  <a class="brand" href="../index.html"><span class="mark">&#165;&#8594;$</span><span>China Money<small>EDITION D &middot; COST ENGINE</small></span></a>
+  <label for="navtoggle" class="navburger">Menu</label>
+  <nav aria-label="Main navigation"><div class="nav-group"><div class="nav-label">Overview</div><a class="nav-link" href="../index.html">Dashboard</a><a class="nav-link" href="../pages/summary.html">Executive summary</a><a class="nav-link active" href="../pages/methodology.html">Method and limits</a></div><div class="nav-group"><div class="nav-label">Convert</div><a class="nav-link" href="../pages/methods.html">All methods</a><a class="nav-link" href="../pages/costs.html">Cost comparison</a><a class="nav-link" href="../pages/steps.html">Step by step</a></div><div class="nav-group"><div class="nav-label">Tax and reporting</div><a class="nav-link" href="../pages/tax.html">Tax and penalties</a><a class="nav-link" href="../pages/reporting.html">US reporting</a></div><div class="nav-group"><div class="nav-label">Evidence</div><a class="nav-link" href="../pages/sources.html">Sources</a><a class="nav-link" href="../pages/repo-review.html">Repo review</a><a class="nav-link" href="../pages/flagged.html">Flagged for review</a></div></nav>
+  <div class="sidebar-note"><span class="dot"></span> Sources checked 8 November 2026<br><small>Every figure cites an official page</small></div>
+</aside>
+<main id="main">
+<div class="topline"><span>RESEARCH BRIEF &middot; CNY TO USD</span><span>8 November 2026</span></div>
+<header class="page-head"><div class="eyebrow">Method and limits</div><h1>How this was built, and what it cannot tell you</h1><p class="sub">The rules the generator enforces, the arithmetic it performs, and the questions it deliberately does not answer.</p></header>
+<section>
+  <h2>Rules enforced in code</h2>
+  <ol>
+    <li>A source id must exist in the register or the build fails.</li>
+    <li>A number is printed only when every input behind it carries a source id.</li>
+    <li>A missing official price renders as an em dash plus an UNVERIFIED marker; no default, no range, no "typical" value.</li>
+    <li>Every table row carries at least one source link.</li>
+    <li>Every page is in the navigation, so no orphan page can exist.</li>
+  </ol>
+  <p>These are re-checked independently by <span class="mono">build/verify.py</span>, which recomputes every cost cell from the parameters rather than trusting the HTML.</p>
+</section>
+<section>
+  <h2>Arithmetic, stated exactly</h2>
+  <p class="mono">mid = (666.48 + 669.29) / 2 = 667.885</p>
+  <p class="mono">one-way margin = (669.29 &minus; 667.885) / 667.885 = 0.2104%</p>
+  <p class="mono">round-trip spread = (669.29 &minus; 666.48) / 669.29 = 0.4198%</p>
+  <p class="mono">commission = min(max(amount &times; 6.6929 &times; 0.001, 50), 260) CNY</p>
+  <p class="mono">bank fees in USD = (commission + 150) / 6.6929</p>
+  <p>The one-way margin is the right figure for a single conversion. The round-trip figure is what two conversions cost, and it is the number the earlier editions labelled as the cost of one.</p>
+</section>
+<section>
+  <h2>What this cannot tell you</h2>
+  <ul>
+    <li>Whether your balance qualifies for any route — that depends on the source of the funds (F03).</li>
+    <li>Whether your bank classifies you as 境内个人 or 境外个人 (F01).</li>
+    <li>What your own bank charges to receive a wire (F07).</li>
+    <li>What notarisation, translation or travel will cost (F14, F20).</li>
+    <li>What your §988 basis is, and therefore whether you have a taxable FX gain (F11).</li>
+    <li>What a Chinese branch will actually do at the counter, as opposed to what the rule says (F10, F16).</li>
+  </ul>
+</section>
+<section>
+  <h2>Scope and status</h2>
+  <p>Research current to 8 November 2026. Not legal, tax or investment advice. No account was contacted, no funds were moved, and no personal tax position was determined. Where a professional is required — a Chinese notary, a SAFE filing, a US international tax return — this edition says so rather than substituting a calculation for it.</p>
+</section>
+
+<footer>
+<p><strong>What this is.</strong> Published-rule research with arithmetic shown. It is not legal, tax or investment advice, and it is not a bank quote. Rates and tariffs change; the sources are linked for manual review.</p>
+<p>Values that could not be confirmed from an official page are blank and listed on <a href="../pages/flagged.html">Flagged for review</a>. No value is ever inferred.</p>
+</footer>
+</main>
+</div>
+</body>
+</html>

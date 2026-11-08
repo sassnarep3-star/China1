@@ -1,0 +1,237 @@
+{
+  "_meta": {
+    "description": "Items that could not be confirmed from an official source, or where two official sources point in different directions. Publishing an item here is the alternative to filling a cell with a guess.",
+    "severity": {
+      "high": "Changes which route is available or how large the cost is.",
+      "medium": "Changes the size of a cost line, but not the route.",
+      "low": "Presentation, currency of the source, or a residual limitation."
+    }
+  },
+  "flags": [
+    {
+      "id": "F01",
+      "title": "Two official instruments classify the same person differently",
+      "severity": "high",
+      "sources": ["CN-02", "CN-01"],
+      "detail": "CN-02 Art. 52(2) defines 境内个人 as PRC citizens and foreigners who have resided continuously in China for a full year. CN-01 Art. 37 defines 境内个人 as holders of a PRC resident identity card and 境外个人 as passport holders. A US citizen who has lived in China for years is a 境内个人 under the Regulation and a 境外个人 under the Measures. Banks operate the Measures, because CN-01 Art. 28 makes the account category a determination from the identity document on file.",
+      "why_it_matters": "The annual USD 50,000 quota is written to apply to the 境内个人. Whether it applies to you turns on which document the bank holds, which is fact F02.",
+      "what_would_resolve_it": "A written statement from the bank of the account's subject category and the identity document on file."
+    },
+    {
+      "id": "F02",
+      "title": "Whether the bank will in practice treat a passport-holder's purchase as uncapped",
+      "severity": "high",
+      "sources": ["CN-03"],
+      "detail": "CN-03 Art. 59 contains no annual amount limit for a 境外个人 purchasing FX against lawful current-account RMB income, and states that only a holder of a Foreigner Permanent Residence ID card uses the annual facilitation quota. CN-03 Art. 68 also gives the bank an express discretion to refuse a transaction where authenticity is in doubt.",
+      "why_it_matters": "This single point decides whether the balance moves in one operation or over eight years.",
+      "what_would_resolve_it": "A written pre-clearance from the branch's FX desk, naming Art. 59."
+    },
+    {
+      "id": "F03",
+      "title": "The source of the funds is unknown",
+      "severity": "high",
+      "sources": ["CN-01", "CN-03", "CN-04"],
+      "detail": "Every lawful route is defined by the character of the money: current-account income (M01), pre-emigration property (M03), inherited property (M04), property-sale proceeds (M05), trade revenue (M12). No fact about the actual balance was supplied.",
+      "why_it_matters": "Choosing the cheapest route before establishing the character of the funds is how people end up describing savings as something they are not.",
+      "what_would_resolve_it": "A tranche-by-tranche provenance file: payslips, tax certificates, sale contracts, probate documents, bank statements."
+    },
+    {
+      "id": "F04",
+      "title": "Whether genuine emigrant status can be documented",
+      "severity": "high",
+      "sources": ["CN-04"],
+      "detail": "The emigration transfer route is described for persons who moved abroad and owned the property before acquiring emigrant status, applying at the jurisdiction of their original household registration. Whether the household registration was cancelled, and when, is unknown.",
+      "why_it_matters": "It is the route built for exactly this problem, and it is unavailable without proof of emigration.",
+      "what_would_resolve_it": "The 户口注销证明 and the date of foreign permanent residence or naturalisation."
+    },
+    {
+      "id": "F05",
+      "title": "Prior US filings are unknown",
+      "severity": "high",
+      "sources": ["US-02", "US-03"],
+      "detail": "No information was supplied about past FBAR, Form 8938 or Schedule B filings for the Chinese account.",
+      "why_it_matters": "The largest quantified exposure in the whole picture is not the conversion at all: it is a willful FBAR penalty of the greater of USD 100,000 or 50% of the balance, per violation (US-02).",
+      "what_would_resolve_it": "A filing history check before any large inbound transfer."
+    },
+    {
+      "id": "F06",
+      "title": "The full-amount-arrival fee is published in a corporate tariff, not a personal one",
+      "severity": "medium",
+      "sources": ["CN-09", "CN-07"],
+      "detail": "The USD 15 / USD 25 full-amount figures appear in BOC's 2018 trade-finance price announcement. The personal e-banking tariff (CN-07) states the commission and cable fee but not the full-amount surcharge.",
+      "why_it_matters": "It is the second-largest wire cost line after the FX margin, and it may not apply to a personal remittance at all.",
+      "what_would_resolve_it": "A personal-channel quote at the counter, or BOC's personal service price list for the branch."
+    },
+    {
+      "id": "F07",
+      "title": "The US receiving-bank fee is bank-specific",
+      "severity": "medium",
+      "sources": ["BK-01", "BK-02"],
+      "detail": "The model uses USD 15, taken from a Chase published fee schedule. Several US account tiers charge nothing for an incoming wire, and others charge more.",
+      "why_it_matters": "At USD 10,000 the difference between USD 0 and USD 25 is 0.25% of the transfer — larger than the bank's own commission.",
+      "what_would_resolve_it": "Your bank's current fee schedule."
+    },
+    {
+      "id": "F08",
+      "title": "Only one bank's tariff was verified, so this is not a bank comparison",
+      "severity": "medium",
+      "sources": ["CN-07"],
+      "detail": "Bank of China's personal e-banking tariff was retrieved and verified in full. Comparable published personal tariffs for ICBC, CCB, ABC and CMB were not retrieved, so no cross-bank comparison is made and no figure is attributed to them.",
+      "why_it_matters": "A different bank may be cheaper; the reader should not read this as a recommendation of one institution.",
+      "what_would_resolve_it": "Each bank's published personal service price list."
+    },
+    {
+      "id": "F09",
+      "title": "The verified tariff is old and explicitly subject to local variation",
+      "severity": "medium",
+      "sources": ["CN-07"],
+      "detail": "The BOC personal e-banking fee table states rates effective 1 November 2014, and its note 1 says that where a separate agreement, a promotional price or a local fee difference applies, the agreed or locally published price governs.",
+      "why_it_matters": "The absolute fees in the tables may be out of date even though the published rule is unchanged.",
+      "what_would_resolve_it": "The branch's current displayed price list."
+    },
+    {
+      "id": "F10",
+      "title": "The bank has a discretion to refuse",
+      "severity": "medium",
+      "sources": ["CN-03"],
+      "detail": "CN-03 Art. 68 provides that the bank may refuse a transaction that violates FX rules or whose authenticity is in doubt, and must explain the reason and the appeal channel.",
+      "why_it_matters": "No document list in this edition guarantees that a particular branch will process a particular tranche.",
+      "what_would_resolve_it": "A written refusal or approval, which is itself useful evidence."
+    },
+    {
+      "id": "F11",
+      "title": "The USD 200 threshold in §988(e)(2) applies to a balance this size",
+      "severity": "high",
+      "sources": ["US-01"],
+      "detail": "§988(e)(2) disapplies recognition of exchange-rate gain on a personal transaction only where the gain that would otherwise be recognised does not exceed USD 200. On a CNY balance of any size, the gain measured from the acquisition rate can exceed USD 200.",
+      "why_it_matters": "It means the common statement 'the US does not tax the FX gain on conversion' is true only up to USD 200 of gain. Above that, §988 gain is ordinary income.",
+      "what_would_resolve_it": "The acquisition dates and rates for each tranche of RMB, which is a records question, not a legal one."
+    },
+    {
+      "id": "F12",
+      "title": "Whether China taxes interest on an ordinary deposit was not verified",
+      "severity": "low",
+      "sources": ["CN-05"],
+      "detail": "CN-05 Art. 3(3) sets a flat 20% rate on interest, dividends and bonuses, while Art. 4 exempts interest on State treasury bonds and State-issued financial bonds. Whether a specific deposit-interest exemption applies was not verified.",
+      "why_it_matters": "It affects the tax on accrued interest, not the tax on the principal.",
+      "what_would_resolve_it": "The State Council's current deposit-interest rule."
+    },
+    {
+      "id": "F13",
+      "title": "The property gain is unknown, so the 20% is not computed",
+      "severity": "medium",
+      "sources": ["CN-05"],
+      "detail": "The 20% rate applies to the transfer gain, not to the sale price or the balance. No purchase price, sale price or cost basis was supplied.",
+      "why_it_matters": "Presenting 20% of the balance would overstate the tax by a large multiple.",
+      "what_would_resolve_it": "The sale contract and the original acquisition cost."
+    },
+    {
+      "id": "F14",
+      "title": "Notarisation, translation and valuation costs are blank",
+      "severity": "medium",
+      "sources": ["CN-04"],
+      "detail": "CN-04 requires documents that are not notarised to be notarised, and applications may be made through an agent with a notarised power of attorney. No official price schedule for notarisation, translation or valuation was retrieved.",
+      "why_it_matters": "On the emigration and inheritance routes these fees can exceed the FX cost.",
+      "what_would_resolve_it": "A quote from a Chinese notary public and a certified translation provider."
+    },
+    {
+      "id": "F15",
+      "title": "When the service-trade tax filing step is triggered",
+      "severity": "medium",
+      "sources": ["CN-03"],
+      "detail": "CN-03 Art. 49 requires tax filing verification before a service-trade payment above USD 50,000 equivalent. Whether a particular remittance of a person's own previously taxed income is characterised as a service-trade payment is a branch-level determination.",
+      "why_it_matters": "It can add a step and a delay to the cheapest route.",
+      "what_would_resolve_it": "The branch's classification of the payment at the counter."
+    },
+    {
+      "id": "F16",
+      "title": "No threshold in the text does not mean no documents at the counter",
+      "severity": "medium",
+      "sources": ["CN-03"],
+      "detail": "CN-03 Art. 65 states that a 境外个人 remitting FX from an FX account does so on valid ID, without an amount threshold. CN-03 Art. 68 still allows the bank to demand evidence where authenticity is in doubt.",
+      "why_it_matters": "The difference between the rule and the counter is where delays happen.",
+      "what_would_resolve_it": "A pre-clearance call to the branch."
+    },
+    {
+      "id": "F17",
+      "title": "No purchase-only fee appears in the published tariff",
+      "severity": "low",
+      "sources": ["CN-07"],
+      "detail": "The verified BOC personal tariff lists commissions for cross-border remittance but not for a purchase of FX that is not remitted. That is an absence of a line item, not proof that no fee exists.",
+      "why_it_matters": "It affects only method M06, where the whole claimed saving is the avoided wire fee.",
+      "what_would_resolve_it": "A branch quote for a purchase settled into a USD account."
+    },
+    {
+      "id": "F18",
+      "title": "Card currency-conversion fees were not sourced",
+      "severity": "medium",
+      "sources": [],
+      "detail": "No official cardholder tariff stating the overseas transaction conversion rate was retrieved, so method M07 has blank cost cells.",
+      "why_it_matters": "Card spending may be the cheapest practical way to consume the balance, and its cost is entirely unknown here.",
+      "what_would_resolve_it": "The issuing bank's cardholder agreement and fee schedule."
+    },
+    {
+      "id": "F19",
+      "title": "The rule for an individual's outbound RMB remittance was not retrieved",
+      "severity": "medium",
+      "sources": [],
+      "detail": "Method M08 depends on cross-border RMB rules for individuals. The governing instrument was not retrieved and is not cited; the method carries no numbers and no steps.",
+      "why_it_matters": "If it is available, the offshore spread could be better at large size.",
+      "what_would_resolve_it": "The PBOC cross-border RMB settlement rules for individuals."
+    },
+    {
+      "id": "F20",
+      "title": "Cash travel cost is blank and the structuring line is close",
+      "severity": "medium",
+      "sources": ["CN-03", "US-06"],
+      "detail": "The model counts only the FX margin and the number of trips; airfare, time and insurance are not priced. Repeated carriage just under reporting thresholds is itself a compliance risk distinct from the carriage rule.",
+      "why_it_matters": "The cash table looks cheap because its largest costs are not monetary or not priceable here.",
+      "what_would_resolve_it": "Actual travel costs, and legal advice before any repeated pattern."
+    },
+    {
+      "id": "F21",
+      "title": "No official source confirms a fintech can execute this transfer",
+      "severity": "medium",
+      "sources": ["CN-03"],
+      "detail": "CN-03 Chapter 6 licenses payment institutions for small-value current-account electronic payment connected to goods and services. It is not a framework for moving a personal balance offshore.",
+      "why_it_matters": "A provider's marketing page is not an authority to move capital.",
+      "what_would_resolve_it": "A named provider's SAFE payment-institution registration and its written confirmation that it will process the transaction."
+    },
+    {
+      "id": "F22",
+      "title": "Outbound investment product rules were not retrieved",
+      "severity": "low",
+      "sources": ["CN-01"],
+      "detail": "CN-01 Art. 17 states that a 境内个人 invests abroad through qualified domestic institutions, but no QDII product rule or eligibility test was retrieved.",
+      "why_it_matters": "It is an investment channel, not a way to get cash into your US account.",
+      "what_would_resolve_it": "CSRC and SAFE rules for the specific product."
+    },
+    {
+      "id": "F23",
+      "title": "Corporate route costs and US corporate reporting were not analysed",
+      "severity": "low",
+      "sources": ["CN-02"],
+      "detail": "CN-02 Art. 22 para. 3 gives the entitlement, but liquidation, audit and tax-clearance costs were not priced, and the US consequences of an interest in a foreign corporation (including Form 5471) were not analysed.",
+      "why_it_matters": "The route can be right where the money genuinely sits in a company, and is irrelevant otherwise.",
+      "what_would_resolve_it": "A China corporate lawyer and a US international tax adviser."
+    },
+    {
+      "id": "F24",
+      "title": "The prohibited-route figures are statutory ranges, not assessments",
+      "severity": "high",
+      "sources": ["CN-02", "CN-03"],
+      "detail": "The 30% and 100% figures are the maximum fine ranges in CN-02 Arts. 39 and 45. The actual fine depends on whether the case is 'serious', on confiscation, and on criminal referral. Splitting carries watch-list treatment under CN-03 Art. 62 rather than a percentage fine.",
+      "why_it_matters": "A range is the honest way to show exposure; a single number would be invented.",
+      "what_would_resolve_it": "SAFE enforcement decisions in comparable cases, which are not a prediction for any individual."
+    },
+    {
+      "id": "F25",
+      "title": "Crypto has no fixed penalty, only prohibition",
+      "severity": "high",
+      "sources": ["CN-06", "CN-02"],
+      "detail": "CN-06 declares the activity illegal and to be banned, without specifying a civil fine for a retail participant. Related conduct can engage CN-02 penalties or criminal provisions, but no specific figure was verified.",
+      "why_it_matters": "The table for prohibited routes shows the CN-02 range as the exposure benchmark; it is not a crypto-specific penalty.",
+      "what_would_resolve_it": "Enforcement decisions, not text."
+    }
+  ]
+}
