@@ -28,3 +28,20 @@ Personal tax, executable FX quotes, receiving-bank charges and unavailable provi
 
 - Dashboard: https://sassnarep3-star.github.io/China1/edition-e/site/index.html
 - PR #15 merged into `main` at `7ce3a7f`; GitHub Pages build reported `built`.
+
+---
+
+## Edition G — verified cost dashboard (2026-11-08)
+
+`edition-g/` is an additive, self-contained edition by session `arena-e58c83ae`.
+It was originally built as `edition-d/` but relocated to `edition-g/` after a
+concurrent session merged a different Edition D (PR #13) plus Editions E and F.
+No merged edition was overwritten. 43 distinct candidates (legal entitlements,
+execution rails, business routes, alternatives and rejected candidates counted
+separately), 1,720 cost rows covering every $10,000 increment from $10,000 to
+$400,000, 52 registered sources, 47 review flags, and a line-by-line repository
+audit. Unknown values are blank and flagged, never zero.
+
+- Site: `edition-g/docs/index.html`
+- Build/verify: `python3 edition-g/build/build.py && python3 edition-g/build/verify.py`
+- CI: `.github/workflows/edition-g-verify.yml`

@@ -332,7 +332,7 @@ Session ID: `arena-e58c83ae`; fixed Arena branch: `arena/e58c83ae-china1`. All p
 | E3: cost estimates at every $10,000 increment from $10,000 to $400,000 | done | arena-e58c83ae | edition-g/data/**, edition-g/build/** |
 | E4: executive summary and mobile-first dashboard | done | arena-e58c83ae | edition-g/** |
 | E5: line-by-line verification and flagged review | done | arena-e58c83ae | edition-g/** |
-| E6: final integration, additive landing navigation, PR/merge and Pages confirmation | in progress | arena-e58c83ae | edition-g/**; additive COORDINATION.md, README.md, index.html; .github/workflows/edition-g-verify.yml |
+| E6: final integration, additive landing navigation, PR/merge and Pages confirmation | in progress | arena-e58c83ae | edition-g/**; additive COORDINATION.md, README.md; .github/workflows/edition-g-verify.yml |
 
 Initial claim is committed and pushed before research/build work. Existing editions remain untouched. Shared landing/navigation changes are deferred until this session's research and verification are complete; then this session acts as final integrator, preserving all prior editions. Unknown personal tax facts and unsupported fees will remain blank and be flagged, not inferred. Numeric cost estimates will distinguish published-fee calculations from missing all-in quotes. No prohibited-channel execution instructions will be provided.
 
@@ -344,7 +344,7 @@ Progress note (2026-11-08 UTC): primary-source verification now includes the 202
 
 - Added self-contained `edition-g/` datasets: 52 sources, 43 candidates, 1,720 cost rows (43×40), 16 tax positions, 7 penalty layers, 47 flags, line-by-line repo-review snapshot (92 files / 18,148 lines; 20 findings in prior editions, preserved unchanged).
 - Generator `edition-g/build/build.py` produces 58 mobile-first pages; `verify.py` gates citations, exact 40-point grids, blank-not-zero discipline, links/fragments and reproducibility. All five editions' generators/checks re-run together: PASS with clean diffs.
-- Independent CI `.github/workflows/edition-g-verify.yml` added; existing `verify.yml` untouched. Root `index.html` and `README.md` updated additively with Edition G navigation.
+- Independent CI `.github/workflows/edition-g-verify.yml` added; existing `verify.yml` untouched. README updated additively with Edition G navigation. Root `index.html`/`assets/build.py` were taken from main unchanged after the relocation because the merged Edition D regenerates the portal; a cross-session portal-link request is logged below instead of hand-editing the shared generator.
 - Cost model: only published sender-fee bounds/zeros and directly observed Wise public quotes populated; CNY principal, FX, downstream, documentation, tax and all-in totals blank + UNVERIFIED. Prohibited schemes have no execution steps.
 - Material corrections flagged for earlier editions: staged emigrant release superseded (2014 amendment); foreign-individual FIE dividend exemption repealed effective 2026-09-01 (20% IIT); BOC bid/ask ~0.42% is a round-trip indicator, not a verified one-way loss; future BOC ATM pricing not applied before 2026-11-11; Wise historical formulas not used as current; WU bank-account payout temporarily unavailable; U.S. 1% remittance tax does not apply to China→U.S. transfers.
 - Next: commit, rebase, push, open PR to main, merge without waiting, confirm Pages deployment, record PR/merge/deploy here.
