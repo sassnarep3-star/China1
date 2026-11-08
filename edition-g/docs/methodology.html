@@ -1,0 +1,37 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Methodology · China Money · Edition G</title><style>
+:root{--ink:#182420;--muted:#5c6b64;--green:#14532d;--accent:#0f766e;--line:#dde5df;--bg:#f7faf7;--card:#fff;--warn:#92400e;--warnbg:#fef3c7;--bad:#991b1b;--badbg:#fee2e2}
+*{box-sizing:border-box}body{margin:0;font:16px/1.55 system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--accent)}header.site{background:var(--green);color:#fff;padding:14px 16px}header.site a{color:#fff;text-decoration:none}
+header.site .brand{font-weight:700;font-size:1.05rem}nav.main{display:flex;flex-wrap:wrap;gap:6px;padding:10px 12px;background:#fff;border-bottom:1px solid var(--line)}
+nav.main a{padding:6px 10px;border-radius:8px;text-decoration:none;font-size:.9rem;background:var(--bg)}nav.main a[aria-current]{background:var(--green);color:#fff}
+main{max-width:1100px;margin:0 auto;padding:18px 14px 60px}h1{font-size:1.6rem;line-height:1.2;margin:.2em 0}h2{font-size:1.25rem;margin-top:1.6em}h3{font-size:1.05rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:12px 0}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.badge{display:inline-block;font-size:.7rem;font-weight:700;border-radius:6px;padding:2px 6px;vertical-align:middle}
+.badge.unverified{background:var(--warnbg);color:var(--warn)}.badge.flag{background:#e0f2fe;color:#075985;text-decoration:none}
+.badge.ok{background:#dcfce7;color:#166534}.badge.no{background:var(--badbg);color:var(--bad)}
+.blank{display:inline-block;min-width:2.2em;border-bottom:2px dotted var(--warn);height:1em}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:#fff;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:.88rem;min-width:640px}th,td{padding:8px 10px;border-top:1px solid var(--line);text-align:left;vertical-align:top}
+th{background:#eef4ee;position:sticky;top:0;font-size:.78rem;text-transform:uppercase;letter-spacing:.03em}
+td:first-child,th:first-child{position:sticky;left:0;background:#fff;font-weight:700;white-space:nowrap}th:first-child{background:#eef4ee}
+small{display:block;color:var(--muted);font-size:.75rem}.srcs a{display:inline-block;margin:2px 6px 2px 0;font-size:.78rem}
+.notice{background:var(--warnbg);border:1px solid #fcd34d;border-radius:10px;padding:10px 14px;margin:12px 0;font-size:.92rem}
+.kpi{font-size:1.5rem;font-weight:800;color:var(--green)}ol.steps li,ul.req li{margin:6px 0}
+footer{border-top:1px solid var(--line);padding:18px 14px;color:var(--muted);font-size:.85rem;text-align:center}
+.method-head{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.status{font-size:.8rem;font-weight:700}
+@media(max-width:640px){h1{font-size:1.35rem}table{min-width:560px;font-size:.82rem}th,td{padding:6px 7px}}
+@media print{nav.main,header.site{display:none}table{min-width:0}}
+</style></head><body>
+<header class="site"><a class="brand" href="index.html">China Money · Edition G</a> <small style="display:inline;color:#d1fae5">CNY → USD · researched 2026-11-08 UTC</small></header>
+<nav class="main" aria-label="Main"><a href="index.html">Overview</a><a href="executive-summary.html">Executive summary</a><a href="costs.html">Cost explorer</a><a href="category-personal.html">Personal</a><a href="category-rails.html">Rails</a><a href="category-business.html">Business</a><a href="category-alternatives.html">Alternatives</a><a href="category-rejected.html">Rejected</a><a href="taxes.html">Tax</a><a href="penalty.html">Penalty breakdown</a><a href="requirements.html">Requirements</a><a href="sources.html">Sources</a><a href="flagged.html">Flagged for Review</a><a href="repo-review.html">Repo audit</a><a href="methodology.html" aria-current="page">Methodology</a></nav>
+<main id="main"><h1>Methodology</h1>
+<div class="card"><h2>Counting</h2><p>A legal entitlement, an execution rail, an adjacent alternative and a rejected candidate are different objects. They are not added together as independent ways to move the same money. Every candidate still receives a full 40-point cost grid so omissions are visible.</p></div>
+<div class="card"><h2>Verification</h2><p>Only directly checked official regulator/government/court pages and provider-origin tariff/eligibility pages are marked verified. Provider pages verify product terms, not legal entitlement. Unknown values are blank and flagged, never inferred or set to zero.</p></div>
+<div class="card"><h2>Cost model</h2><p>Target USD is the desired receipt amount. CNY principal is unknown without an executable quote. Sender-fee cells show published tariff bounds/zeros only. FX cost, downstream charges, documentation, tax and all-in totals remain blank + UNVERIFIED. Observed Wise quotes are listed separately and not extrapolated.</p></div>
+<div class="card"><h2>Reproducibility</h2><p><code>python3 edition-g/build/audit.py</code> regenerates the repo-review manifest; <code>python3 edition-g/build/build.py</code> regenerates costs.json and docs; <code>python3 edition-g/build/verify.py</code> gates citations, grids, blanks and links. CI runs the same commands and requires a clean diff.</p></div>
+</main>
+<footer>Edition G is additive. Earlier editions remain intact; see <a href="repo-review.html">repo audit</a> and <a href="flagged.html">Flagged for Review</a>. Blank = unverified, never zero. Not legal or tax advice.</footer>
+</body></html>
