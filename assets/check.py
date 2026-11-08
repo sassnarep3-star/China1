@@ -6,7 +6,7 @@ from urllib.parse import urlparse
 import subprocess
 
 root = Path(__file__).resolve().parent.parent
-pages = [root / 'index.html', *sorted((root / 'pages').glob('*.html'))]
+pages = [root / 'overview.html', *sorted((root / 'pages').glob('*.html'))]
 assert len(pages) == 5, 'expected all five pages'
 class Checker(HTMLParser):
  def __init__(self, path):
