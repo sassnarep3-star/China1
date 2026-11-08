@@ -268,3 +268,27 @@ branch and by officer, three official instruments conflict with each other as re
 the Chinese and the US positions depend on facts about the origin of the funds that are not known here.
 Prohibited channels are documented **as prohibited**, with the statutory penalty scale and SAFE's
 published enforcement cases; no operational guidance is given for any of them.
+
+---
+
+# Edition D — costed at every $10,000 step
+
+**Live:** https://sassnarep3-star.github.io/China1/edition-d/docs/ · **Summary:** [`edition-d/README.md`](edition-d/README.md)
+
+A fifth, self-contained edition under `edition-d/` that answers the brief where the earlier editions
+stopped short: a **dollar cost at every $10,000 step from $10,000 to $400,000** for every route that has
+a price, a **step-by-step sequence** for each route, and a **verifier that re-derives every published
+number** from the model before the site can be committed.
+
+| Headline | Value | Basis |
+|---|---|---|
+| Cost of the best lawful route on $400,000 | **$940.95 (0.235%)** | Bank spread derived from the Bank of China board plus disclosed fee assumptions, stress-tested |
+| Cost of the same money moved as 8 quota tranches | $1,398.60 over 8 years | USD 50,000 per person per year |
+| Chinese tax on the conversion itself | **None found** | IIT Law enumerates nine income categories; conversion is not one |
+| US tax on repatriating your own principal | **None** | §988(e)(2) personal transaction, unless the FX gain exceeds $200 |
+| The exposure that actually bites | Willful FBAR: greater of $100,000 or 50% of the balance | IRS |
+| Statutory fine band for an unlawful route | 0–30% of the amount; 30%–100% if serious | Foreign Exchange Regulation Arts. 39–45 |
+
+Nineteen registered sources, each with the scope of what was inspected; twelve published flags,
+including a genuine definitional conflict over who counts as a "domestic individual" (U09). The build
+and the 36-check verifier run in CI on every pull request.

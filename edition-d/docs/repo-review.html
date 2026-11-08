@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Repository review · China Money · Edition D</title>
+<meta name="description" content="Evidence-led analysis of moving CNY from mainland China to the United States: every route, its cost at $10,000 steps to $400,000, and its penalty exposure.">
+<link rel="stylesheet" href="assets/style.css">
+</head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <a class="brand" href="index.html"><span class="mark">¥→$</span> China Money <small>EDITION D</small></a>
+  <button class="navbtn" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" aria-label="Section navigation"><a href="index.html">Dashboard</a><a href="executive-summary.html">Executive summary</a><a href="methods.html">All routes</a><a href="costs.html">Cost tables</a><a href="penalty.html">The conversion penalty</a><a href="taxes.html">Tax</a><a href="reporting.html">US reporting</a><a href="requirements.html">Requirements</a><a href="sources.html">Sources</a><a href="flagged.html">Flagged for review</a></nav>
+</header>
+<main id="main">
+<div class="crumb">Edition D · built 2026-11-08 · every figure sourced, derived or flagged</div>
+<h1>Repository review</h1><p class="sub">What was already here, what was wrong with it, and what this edition did about it.</p>
+
+<p class="lead">The repository as found, read line by line against its own claims, with the irregularities that matter recorded rather than smoothed over.</p>
+<section><div class="table-wrap"><table>
+<thead><tr><th scope="col">ID</th><th scope="col">Observation</th><th scope="col">Assessment</th><th scope="col">Severity</th></tr></thead>
+<tbody><tr><td>I01</td><td>Four parallel editions of the same brief already existed in this repository (root, <code>dossier/</code>, <code>edition-b/</code>, <code>edition-c/</code>), each with its own source register and its own cost analysis. None is wrong; none is integrated.</td><td>Structural, not factual. This edition is self-contained under <code>edition-d/</code> and does not modify them. The overlap is published in COORDINATION.md.</td><td><span class='tag conditional'>High</span></td></tr><tr><td>I02</td><td>The root <code>index.html</code> and <code>dossier/</code> both describe 0.42% as a measured spread and date the Bank of China board 2026-11-08; the board now displayed is stamped 2026-11-09 05:30 Beijing time.</td><td>Not an error — the earlier date is the UTC retrieval date and the board stamps Beijing time, which is a day ahead after 16:00 UTC. The residual issue is presentation: a reader comparing captures can mistake the two dates for different readings. This edition prints the board's own stamp, the retrieval date and the arithmetic.</td><td><span class='tag conditional'>Low</span></td></tr><tr><td>I03</td><td>Earlier editions leave the bank commission, cable charge and correspondent deduction blank because no official tariff was retrieved. The brief nonetheless asks for a dollar estimate at every $10,000 step.</td><td>Resolved by disclosure rather than by invention: the figures are used as assumptions A2/A3, published with their basis, and stress-tested. A blank table would not have answered the brief; an unlabelled number would have been a lie.</td><td><span class='tag conditional'>High</span></td></tr><tr><td>I04</td><td>The 2008 Regulation defines a domestic individual to include a foreigner resident in China for a year or more, while the 2006 Measures define an overseas individual by passport, and SAFE's 2024 answer keys the quota to the permanent-residence ID.</td><td>Genuine definitional conflict across three instruments of different dates. Published as <a href='flagged.html#U09'>U09</a>; the practical advice is to obtain the branch's position in writing.</td><td><span class='tag conditional'>High</span></td></tr><tr><td>I05</td><td>Earlier editions list prohibited channels — underground banking, splitting, crypto — and state that they are 'named, not explained'.</td><td>Checked and confirmed: no page in the editions reviewed gives an operational sequence for a prohibited route. This edition follows the same rule and says so on each such page, rather than leaving the omission implicit.</td><td><span class='tag conditional'>Low</span></td></tr><tr><td>I06</td><td>No edition verifies that cited URLs are currently live at read time; they record what was inspected.</td><td>Stated explicitly on the sources page. Source rot is a property of the web, not of the analysis.</td><td><span class='tag conditional'>Low</span></td></tr></tbody></table></div></section>
+<section>
+<h2>What was checked, and how</h2>
+<ul>
+<li>Every page in the repository was opened and its central numerical claims compared with the source register in the same edition.</li>
+<li>No file owned by another edition was edited, renamed or deleted by this edition.</li>
+<li>Where this edition disagrees with an earlier one — principally on how to treat unverified fees — the disagreement is stated here and in COORDINATION.md rather than silently overwritten.</li>
+<li>The build is deterministic and the verifier re-derives every published number from the model, so a transcription error cannot survive a commit.</li>
+</ul>
+</section>
+
+</main>
+<footer>
+<p><strong>What this is.</strong> A source-led research edition on converting renminbi held in mainland China into US dollars. Every legal proposition links to an official instrument; every number is quoted, derived by arithmetic from a quoted number, or openly marked as an assumption.</p>
+<p><strong>What this is not.</strong> Legal, tax or investment advice for your specific facts. The classification of your money — and therefore the correct route — depends on facts this edition does not have.</p>
+<p><a href="sources.html">Sources</a> · <a href="flagged.html">Flagged for review</a> · <a href="requirements.html">Requirements</a></p>
+</footer>
+<script>
+(function(){var b=document.querySelector('.navbtn');if(!b)return;b.addEventListener('click',function(){var n=document.getElementById('nav');n.classList.toggle('open');b.setAttribute('aria-expanded',n.classList.contains('open'));});})();
+</script>
+</body></html>

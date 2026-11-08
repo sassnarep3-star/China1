@@ -1,0 +1,30 @@
+name: Verify edition D
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  edition-d:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build is reproducible
+        run: |
+          python3 edition-d/build/build.py
+          git diff --exit-code -- edition-d/docs
+
+      - name: Verify every figure, source, link and disclosure
+        run: python3 edition-d/build/verify.py
+
+      - name: Upload the generated site as an artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: edition-d-site
+          path: edition-d/docs
+          retention-days: 7
