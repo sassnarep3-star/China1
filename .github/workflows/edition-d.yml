@@ -14,10 +14,24 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Environment
+        run: |
+          python3 --version
+          git --version
+          git config --global --add safe.directory "$PWD" || true
+          git status --porcelain | head
+
       - name: Build is reproducible
         run: |
+          set -o pipefail
           python3 edition-d/build/build.py
-          git diff --exit-code -- edition-d/docs
+          if ! git diff --quiet -- edition-d/docs; then
+            echo "::error title=Generated site differs from the committed files::Re-run python3 edition-d/build/build.py locally and commit the result."
+            git diff --stat -- edition-d/docs | tail -20
+            git diff -- edition-d/docs | head -120
+            exit 1
+          fi
+          echo "Generated output is byte-identical to the committed site."
 
       - name: Verify every figure, source, link and disclosure
         run: python3 edition-d/build/verify.py
