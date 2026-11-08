@@ -1,0 +1,184 @@
+[
+  {
+    "id": "L01",
+    "layer": "1. FX conversion margin",
+    "value": "BOC round-trip proxy 0.4198479%; one-way vs arithmetic-midpoint proxy 0.2099239% of ask",
+    "how": "Derived from BK02 bid 666.48 / ask 669.29 per 100 USD. Round-trip=(ask-bid)/ask; one-way=(ask-mid)/ask where mid=(ask+bid)/2. The midpoint is a comparator, not a verified executable mid-market rate.",
+    "status": "derived",
+    "sources": [
+      "BK02"
+    ],
+    "flags": [
+      "F04"
+    ]
+  },
+  {
+    "id": "L02",
+    "layer": "2. BOC local wire charges",
+    "value": "0.1% of CNY remittance, min CNY 50, max CNY 260, plus CNY 150 international cable",
+    "how": "Tariff item 210105008. Ladder converts the CNY charge to USD at the same BOC ask for comparison only; actual charge currency/rate may differ.",
+    "status": "provider-tariff",
+    "sources": [
+      "BK01"
+    ],
+    "flags": [
+      "F09"
+    ]
+  },
+  {
+    "id": "L03",
+    "layer": "3. HSBC local wire charges",
+    "value": "Premier/Advance: 0.1%, min CNY 100, max CNY 500 + CNY 120 cable; private-banking personal and Elite: CNY 0 local",
+    "how": "Items 2.2.4.1/2.2.4.2. Free excludes non-HSBC charges. HSBC FX spread is blank, so HSBC total cost is blank.",
+    "status": "provider-tariff",
+    "sources": [
+      "BK04"
+    ],
+    "flags": [
+      "F11",
+      "F09"
+    ]
+  },
+  {
+    "id": "L04",
+    "layer": "4. SkyRemit fee + FX markup scenario",
+    "value": "CNY 79 per transfer; observed final rate 0.149496 vs real-time 0.149900 USD/CNY (displayed 0.27% markup)",
+    "how": "Illustrative arithmetic from a single widget capture; per-transfer cap CNY 300,000 forces multiple transfers. Not an executable quote; widget inconsistency flagged.",
+    "status": "derived-scenario",
+    "sources": [
+      "BK10"
+    ],
+    "flags": [
+      "F05",
+      "F06"
+    ]
+  },
+  {
+    "id": "L05",
+    "layer": "5. Wise one-point quote",
+    "value": "200,000 CNY bank-funded fee 1,224.40 CNY; Wise-balance 1,208.11 CNY; rate 0.1498 USD/CNY",
+    "how": "Single live capture. No fee curve extrapolated to the 40 ladder amounts; Wise ladder total blank.",
+    "status": "provider-quote",
+    "sources": [
+      "BK08"
+    ],
+    "flags": [
+      "F06"
+    ]
+  },
+  {
+    "id": "L06",
+    "layer": "6. Correspondent / receiving / full-arrival charges",
+    "value": "BOC optional full-arrival +USD 15 or +USD 25; HSBC full-delivery pre-charge CNY 200; actual correspondent/receiving fees blank",
+    "how": "Optional/conditional charges are not the same as a verified all-in corridor cost. SHA/BEN/OUR allocation changes who pays.",
+    "status": "partial",
+    "sources": [
+      "BK01",
+      "BK04"
+    ],
+    "flags": [
+      "F09"
+    ]
+  },
+  {
+    "id": "L07",
+    "layer": "7. Account, eligibility and documentary costs",
+    "value": "HSBC Premier: CNY 500,000 monthly average balance or CNY 300 monthly fee (other routes); BOC witnessing ≤CNY 400; notarisation/translation blank",
+    "how": "These are access costs, not conversion taxes. SAFE emigration/inheritance service guides show no administrative fee, but bank/tax/document costs remain.",
+    "status": "partial",
+    "sources": [
+      "BK04",
+      "BK01",
+      "CN09",
+      "CN10"
+    ],
+    "flags": [
+      "F11",
+      "F17"
+    ]
+  },
+  {
+    "id": "L08",
+    "layer": "8. Chinese tax on the underlying income",
+    "value": "Comprehensive 3%–45%; business 5%–35%; interest/dividends/property transfer/lease/incidental 20%; savings-deposit interest temporarily exempt",
+    "how": "IIT attaches to the income event, not the currency exchange. Property transfer tax is on gain under Art.6, not automatically on gross proceeds. Personal amount blank.",
+    "status": "statutory",
+    "sources": [
+      "CN20",
+      "CN22",
+      "CN23"
+    ],
+    "flags": [
+      "F10",
+      "F14"
+    ]
+  },
+  {
+    "id": "L09",
+    "layer": "9. US tax on currency gain / worldwide income",
+    "value": "Personal FX gain >USD 200 may be recognised; character conflict (§988 ordinary default vs Pub 525 capital); FEIE/FTC facts required",
+    "how": "Repatriating after-tax principal is not itself ordinary income, but exchange-rate gain can be taxable. USD 200 is a recognition threshold, not a tax-free allowance. Personal amount blank.",
+    "status": "statutory-conflict",
+    "sources": [
+      "US01",
+      "US02",
+      "US03",
+      "US04",
+      "US08"
+    ],
+    "flags": [
+      "F02",
+      "F10"
+    ]
+  },
+  {
+    "id": "L10",
+    "layer": "10. Reporting penalties (not conversion tax)",
+    "value": "FBAR >USD 10,000 aggregate; Form 8938 thresholds; Form 3520 foreign gifts >USD 100,000; FinCEN 105 cash >USD 10,000",
+    "how": "Statutory willful FBAR maximum greater of USD 100,000 or 50% of balance; non-willful statutory USD 10,000; current inflation-adjusted dollars blank. Bittner per-report non-willful rule noted.",
+    "status": "statutory",
+    "sources": [
+      "US05",
+      "US06",
+      "US07",
+      "US09",
+      "US10"
+    ],
+    "flags": [
+      "F03",
+      "F10"
+    ]
+  },
+  {
+    "id": "L11",
+    "layer": "11. Unlawful-route penalty exposure",
+    "value": "Evasion/illegal arbitrage/private FX dealing: up to 30%, serious 30%–100%; crypto notice has no fixed percentage",
+    "how": "Statutory ranges and enforcement cases, not fees or assessments. Prohibited routes receive no operational steps.",
+    "status": "statutory",
+    "sources": [
+      "CN07",
+      "CN18",
+      "CN19"
+    ],
+    "flags": [
+      "F20"
+    ]
+  },
+  {
+    "id": "L12",
+    "layer": "12. Cash/card access costs",
+    "value": "BOC carry permit CNY 10 waived to 2026-12-31; UnionPay ATM CNY 12+1% cap CNY 112; Mastercard/VISA 2.5% min USD 3 max USD 40 from 2026-11-11; card purchase FX fee blank",
+    "how": "Cash and card routes have separate caps and fees. Foreign ATM surcharge and travel cost unverified.",
+    "status": "partial",
+    "sources": [
+      "CN17",
+      "BK01",
+      "BK03",
+      "CN16"
+    ],
+    "flags": [
+      "F17",
+      "F18"
+    ]
+  }
+]

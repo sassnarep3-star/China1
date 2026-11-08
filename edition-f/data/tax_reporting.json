@@ -1,0 +1,287 @@
+[
+  {
+    "id": "T01",
+    "jurisdiction": "China",
+    "topic": "Exchange itself",
+    "rule": "No enumerated IIT income category is triggered merely by exchanging CNY for USD in the reviewed IIT Law; this is not a blanket “zero tax” opinion.",
+    "value": "",
+    "status": "verified-rule",
+    "sources": [
+      "CN20"
+    ],
+    "flags": [
+      "F10"
+    ]
+  },
+  {
+    "id": "T02",
+    "jurisdiction": "China",
+    "topic": "Wages / comprehensive income",
+    "rule": "Resident comprehensive income (wages, services, author’s remuneration, royalties) taxed at progressive rates; non-resident rules differ.",
+    "value": "3%–45%",
+    "status": "statutory",
+    "sources": [
+      "CN20"
+    ],
+    "flags": [
+      "F10"
+    ]
+  },
+  {
+    "id": "T03",
+    "jurisdiction": "China",
+    "topic": "Business income",
+    "rule": "Business operation income taxed at progressive rates.",
+    "value": "5%–35%",
+    "status": "statutory",
+    "sources": [
+      "CN20"
+    ],
+    "flags": [
+      "F10"
+    ]
+  },
+  {
+    "id": "T04",
+    "jurisdiction": "China",
+    "topic": "Interest, dividends, property transfer, lease, incidental",
+    "rule": "Statutory flat rate on the relevant income category; taxable base depends on category (e.g. property transfer gain).",
+    "value": "20%",
+    "status": "statutory",
+    "sources": [
+      "CN20"
+    ],
+    "flags": [
+      "F10",
+      "F14"
+    ]
+  },
+  {
+    "id": "T05",
+    "jurisdiction": "China",
+    "topic": "Savings-deposit interest",
+    "rule": "Savings-deposit interest arising on/after 2008-10-09 temporarily exempt from IIT; official Q&A includes RMB and foreign-currency savings.",
+    "value": "Temporarily exempt",
+    "status": "statutory",
+    "sources": [
+      "CN22",
+      "CN23"
+    ],
+    "flags": []
+  },
+  {
+    "id": "T06",
+    "jurisdiction": "China",
+    "topic": "Property-transfer taxable base",
+    "rule": "Property-transfer income is revenue minus original value and reasonable expenses; the 20% rate applies to that income, not automatically to gross sale proceeds.",
+    "value": "20% of gain",
+    "status": "statutory",
+    "sources": [
+      "CN20"
+    ],
+    "flags": [
+      "F14",
+      "F10"
+    ]
+  },
+  {
+    "id": "T07",
+    "jurisdiction": "China",
+    "topic": "Tax residency",
+    "rule": "Individual domiciled in China, or resident ≥183 days in a tax year, is taxed on China and foreign income; non-resident on China-source income.",
+    "value": "183-day test",
+    "status": "statutory",
+    "sources": [
+      "CN20"
+    ],
+    "flags": [
+      "F10"
+    ]
+  },
+  {
+    "id": "T08",
+    "jurisdiction": "China",
+    "topic": "Foreign-income credit",
+    "rule": "PRC residents with foreign income file 1 March–30 June following year; per-country credit limits, five-year carryforward, foreign tax receipts required.",
+    "value": "Per-country limit; 5-year carryforward",
+    "status": "statutory",
+    "sources": [
+      "CN21"
+    ],
+    "flags": [
+      "F10"
+    ]
+  },
+  {
+    "id": "T09",
+    "jurisdiction": "Treaty",
+    "topic": "Dividend / interest / royalty source caps",
+    "rule": "Treaty generally caps source-state tax at 10% for qualifying beneficial owners; equipment royalties taxed on 70% of gross (effective 7%).",
+    "value": "10% general cap; 7% equipment-royalty effective",
+    "status": "statutory",
+    "sources": [
+      "US08"
+    ],
+    "flags": [
+      "F10"
+    ]
+  },
+  {
+    "id": "T10",
+    "jurisdiction": "Treaty",
+    "topic": "Saving clause",
+    "rule": "Protocol paragraph 2 preserves the US right to tax its citizens notwithstanding the treaty, subject to listed exceptions.",
+    "value": "US citizens still taxable",
+    "status": "statutory",
+    "sources": [
+      "US08"
+    ],
+    "flags": []
+  },
+  {
+    "id": "T11",
+    "jurisdiction": "United States",
+    "topic": "Worldwide income / FEIE",
+    "rule": "US citizens/residents are taxed on worldwide income; FEIE requires foreign tax home plus bona fide residence or 330-day physical presence; excluded income list applies.",
+    "value": "Current-year exclusion amount blank",
+    "status": "statutory",
+    "sources": [
+      "US04"
+    ],
+    "flags": [
+      "F10"
+    ]
+  },
+  {
+    "id": "T12",
+    "jurisdiction": "United States",
+    "topic": "Foreign tax credit",
+    "rule": "Credit/deduction for qualifying foreign income tax; Form 1116; no credit for tax on FEIE-excluded income; treaty-reduced rate only.",
+    "value": "No double benefit on excluded income",
+    "status": "statutory",
+    "sources": [
+      "US03",
+      "US04"
+    ],
+    "flags": [
+      "F10"
+    ]
+  },
+  {
+    "id": "T13",
+    "jurisdiction": "United States",
+    "topic": "Personal foreign-currency gain",
+    "rule": "§988(e)(2): personal-transaction exchange gain not recognised unless it exceeds USD 200; personal losses generally not deductible.",
+    "value": "USD 200 recognition threshold",
+    "status": "statutory",
+    "sources": [
+      "US01"
+    ],
+    "flags": [
+      "F02",
+      "F10"
+    ]
+  },
+  {
+    "id": "T14",
+    "jurisdiction": "United States",
+    "topic": "Character of personal FX gain",
+    "rule": "IRS Pub 525 says report gain >USD 200 as capital gain; §988 statutory default is ordinary. Resolve with a tax professional for the actual facts.",
+    "value": "Character unverified/conflicting",
+    "status": "conflict",
+    "sources": [
+      "US01",
+      "US02"
+    ],
+    "flags": [
+      "F02"
+    ]
+  },
+  {
+    "id": "T15",
+    "jurisdiction": "United States",
+    "topic": "FBAR trigger",
+    "rule": "US person must file FinCEN Form 114 if aggregate foreign financial accounts exceed USD 10,000 at any time in the calendar year; BSA e-file; Apr 15 → Oct 15.",
+    "value": ">USD 10,000 aggregate",
+    "status": "statutory",
+    "sources": [
+      "US05"
+    ],
+    "flags": [
+      "F10"
+    ]
+  },
+  {
+    "id": "T16",
+    "jurisdiction": "United States",
+    "topic": "Form 8938 triggers",
+    "rule": "US single: 50k year-end/75k any time; US joint: 100k/150k; abroad single: 200k/300k; abroad joint: 400k/600k. Attached to return.",
+    "value": "Thresholds by residence/filing status",
+    "status": "statutory",
+    "sources": [
+      "US05"
+    ],
+    "flags": [
+      "F10"
+    ]
+  },
+  {
+    "id": "T17",
+    "jurisdiction": "United States",
+    "topic": "Form 3520 foreign gifts",
+    "rule": "Gifts/bequests from foreign individual/estate >USD 100,000 aggregate reported on Form 3520; penalty 5%/month up to 25%; gift itself generally not income.",
+    "value": ">USD 100,000 aggregate",
+    "status": "statutory",
+    "sources": [
+      "US07"
+    ],
+    "flags": [
+      "F10"
+    ]
+  },
+  {
+    "id": "T18",
+    "jurisdiction": "United States",
+    "topic": "Cash crossing border",
+    "rule": "More than USD 10,000 in currency/monetary instruments transported into/out of US requires FinCEN 105; family aggregate; forfeiture risk.",
+    "value": ">USD 10,000",
+    "status": "statutory",
+    "sources": [
+      "US09"
+    ],
+    "flags": []
+  },
+  {
+    "id": "T19",
+    "jurisdiction": "United States",
+    "topic": "FBAR penalty amounts",
+    "rule": "Statutory non-willful cap USD 10,000; willful maximum greater of USD 100,000 or 50% of transaction/account balance; reasonable-cause exception; inflation-adjusted in practice; Bittner per-report non-willful.",
+    "value": "Current adjusted dollars blank",
+    "status": "statutory",
+    "sources": [
+      "US10",
+      "US06"
+    ],
+    "flags": [
+      "F03"
+    ]
+  },
+  {
+    "id": "T20",
+    "jurisdiction": "Personal",
+    "topic": "Actual tax owed by this user",
+    "rule": "No residency, filing status, income source, basis, prior filings, treaty residence or account history was supplied. No personal tax amount is computed.",
+    "value": "",
+    "status": "unverified",
+    "sources": [
+      "CN20",
+      "US01",
+      "US03",
+      "US04",
+      "US05"
+    ],
+    "flags": [
+      "F10"
+    ]
+  }
+]
