@@ -1,0 +1,342 @@
+{
+  "_meta": {
+    "description": "Canonical source register for Edition D. Every number rendered on the site cites an id from this file.",
+    "tiers": {
+      "A": "Primary law or regulation published by a government, legislature, regulator or central bank.",
+      "B": "The institution's own published tariff or rate board. Authoritative for that institution's prices, not for the law.",
+      "C": "Secondary or commentary. Never used to populate a value; may appear only in prose as context."
+    },
+    "retrieval": "Each entry records what was actually retrieved into this session versus what was only seen in a search index. A search-index excerpt is recorded as 'index' and is never used for a quoted clause.",
+    "accessed": "2026-11-08",
+    "edition": "D",
+    "session": "arena-133875bd"
+  },
+  "sources": [
+    {
+      "id": "CN-01",
+      "title_en": "Measures for the Administration of Individual Foreign Exchange",
+      "title_zh": "个人外汇管理办法",
+      "issuer": "People's Bank of China (中国人民银行)",
+      "doc": "PBOC Order [2006] No. 3, effective 2007-02-01",
+      "url": "http://m.safe.gov.cn/safe/2006/1225/5319.html",
+      "host": "safe.gov.cn",
+      "tier": "A",
+      "language": "zh",
+      "retrieval": "full",
+      "accessed": "2026-11-08",
+      "supports": [
+        "Art. 3: current-account individual FX business is administered on the convertibility principle; capital-account business 'according to the process of convertibility'",
+        "Art. 7: no splitting to evade quota supervision; no false commercial documents to evade authenticity review",
+        "Art. 9: annual total-amount management; inside the amount, ID only; above it, current-account items need ID plus transaction documents, capital-account items follow Chapter 3",
+        "Art. 13: an overseas individual may buy FX and remit lawful current-account RMB income earned in China against ID and supporting materials",
+        "Art. 14: unused inward-remitted FX may be sent back on the original path",
+        "Art. 22: an overseas individual's sale proceeds from domestic commercial property may be purchased and remitted with SAFE approval",
+        "Art. 26: outward transfer of an overseas individual's lawful property in China follows the separate property-transfer rules",
+        "Art. 28: the bank determines the account's subject category from the identity document produced at account opening",
+        "Art. 37: 境内个人 = holders of a PRC resident identity card; 境外个人 = passport holders (foreign citizens, including stateless persons) and Hong Kong/Macau/Taiwan compatriots"
+      ]
+    },
+    {
+      "id": "CN-02",
+      "title_en": "Regulation of the People's Republic of China on Foreign Exchange Administration",
+      "title_zh": "中华人民共和国外汇管理条例",
+      "issuer": "State Council of the PRC (国务院)",
+      "doc": "State Council Decree No. 532, promulgated 2008-08-05",
+      "url": "https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm",
+      "host": "gov.cn",
+      "tier": "A",
+      "language": "zh",
+      "retrieval": "full",
+      "accessed": "2026-11-08",
+      "supports": [
+        "Art. 5: the State does not restrict current-account international payments and transfers",
+        "Art. 12: current-account FX payments must rest on a genuine and lawful transaction basis; the bank must reasonably review the authenticity of documents and their consistency with the payment",
+        "Art. 22 para. 3: a lawfully terminated foreign-invested enterprise may, after liquidation and tax payment in accordance with State rules, purchase FX and remit the RMB belonging to the foreign investor",
+        "Art. 39: evading FX control by moving domestic FX or capital abroad — fine up to 30% of the amount; if serious, 30% to 100%; criminal liability where constituted",
+        "Art. 42: carrying FX into or out of the country in violation of the rules — warning and fine up to 20% of the amount",
+        "Art. 45: private, disguised or brokered buying and selling of FX in relatively large amounts — warning, confiscation of illegal gains, fine up to 30% (30%-100% if serious)",
+        "Art. 48: individuals failing to submit valid documents, or submitting untrue documents, may be fined up to CNY 50,000",
+        "Art. 52(2): 境内个人 means PRC citizens and foreigners who have resided continuously in China for one full year (excluding foreign diplomats and representatives of international organisations)"
+      ]
+    },
+    {
+      "id": "CN-03",
+      "title_en": "Guidelines for Current-Account Foreign Exchange Business (2020 edition)",
+      "title_zh": "经常项目外汇业务指引（2020年版）",
+      "issuer": "State Administration of Foreign Exchange (国家外汇管理局)",
+      "doc": "Huifa [2020] No. 14 (汇发〔2020〕14号), issued 2020-08-28",
+      "url": "https://www.gov.cn/gongbao/content/2020/content_5560296.htm",
+      "host": "gov.cn (State Council Gazette)",
+      "tier": "A",
+      "language": "zh",
+      "retrieval": "full",
+      "accessed": "2026-11-08",
+      "supports": [
+        "Art. 49: service-trade payments above USD 50,000 equivalent require tax filing verification before the bank processes the payment",
+        "Art. 54: individual FX settlement, and FX purchase by 境内个人, are subject to an annual facilitation quota of USD 50,000 equivalent each",
+        "Art. 55: within the annual facilitation quota, the bank processes against valid ID alone",
+        "Art. 56: a 境内个人 may settle or purchase FX outside the facilitation quota against ID plus source-of-funds or purpose documents",
+        "Art. 58: a 境外个人 may settle FX outside the facilitation quota against ID plus purpose documents; a single settlement above USD 50,000 must be paid directly to the counterparty's onshore RMB account",
+        "Art. 59: a 境外个人 may purchase FX against lawful current-account RMB income earned in China, against ID plus source-of-funds documents including tax vouchers; only a 境外个人 holding a Foreigner Permanent Residence ID card uses the annual facilitation quota",
+        "Art. 60: unused RMB converted back to FX within 24 months against the original exchange receipt; USD 500/day and USD 1,000/day at departure ports on ID alone",
+        "Art. 62: splitting to evade quota or authenticity management is prohibited; SAFE maintains a watch list, for the year of listing plus two further years",
+        "Art. 64: a 境内个人 remitting FX from an FX account abroad for current-account purposes — up to USD 50,000/day cumulative on ID alone, above that with transaction documents",
+        "Art. 65: a 境外个人 remitting FX from an FX account abroad — on valid ID, with no amount threshold in the text; cash remittance up to USD 10,000/day on ID alone",
+        "Art. 66: individual cross-border e-commerce and market-procurement settlement against transaction materials does not consume the facilitation quota",
+        "Art. 86: individual cash withdrawal up to USD 10,000/day on ID; above that requires SAFE filing",
+        "Art. 89: inbound cash above USD 5,000 equivalent must be declared to customs; outbound cash of USD 5,000-10,000 requires a foreign-exchange carriage permit from the bank, and above USD 10,000 a SAFE permit"
+      ]
+    },
+    {
+      "id": "CN-04",
+      "title_en": "PBOC official answers on the Interim Measures for the Administration of the Sale and Payment of Foreign Exchange for the Outward Transfer of Individual Property",
+      "title_zh": "中国人民银行有关负责人就《个人财产对外转移售付汇管理暂行办法》有关问题答记者问",
+      "issuer": "State Administration of Foreign Exchange (国家外汇管理局)",
+      "doc": "Index 000014453-2004-00016, published 2004-11-16",
+      "url": "https://www.safe.gov.cn/safe/2004/1116/4134.html",
+      "host": "safe.gov.cn",
+      "tier": "A",
+      "language": "zh",
+      "retrieval": "full",
+      "accessed": "2026-11-08",
+      "supports": [
+        "Two and only two categories of individual property transfer: emigration property transfer (移民财产转移) and inheritance property transfer (继承财产转移)",
+        "Applicant must own the property lawfully and it must not be subject to a rights dispute; unproven source of funds and property involved in unsettled criminal or civil proceedings are not accepted",
+        "Applications go to the SAFE branch in the jurisdiction of the emigrant's original household registration, or of the deceased's household registration before death",
+        "Below CNY 500,000 equivalent: decided by the provincial SAFE branch. At or above CNY 500,000: provincial review then SAFE head office approval",
+        "Emigration transfers at or above CNY 200,000: one single application for the whole amount, released in stages — half first, half of the remainder after one year, the rest after two years",
+        "All property inherited from the same decedent may be applied for once and remitted in one or several instalments; property inherited from different decedents requires separate applications",
+        "Who may apply: natural persons who have moved from mainland China to a foreign country or to Hong Kong/Macau, for property lawfully owned before acquiring emigrant status; foreign citizens and Hong Kong/Macau residents for lawfully inherited property in China",
+        "Documents that are not notarised must be notarised, including the power of attorney and the property-right and inheritance documents"
+      ]
+    },
+    {
+      "id": "CN-05",
+      "title_en": "Individual Income Tax Law of the People's Republic of China",
+      "title_zh": "中华人民共和国个人所得税法",
+      "issuer": "State Taxation Administration (国家税务总局)",
+      "doc": "Adopted 1980; seventh amendment 2018-08-31",
+      "url": "https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html",
+      "host": "chinatax.gov.cn",
+      "tier": "A",
+      "language": "en",
+      "retrieval": "full",
+      "accessed": "2026-11-08",
+      "supports": [
+        "Art. 2: the nine categories of income subject to individual income tax — salary and wages; remuneration for personal services; author's remuneration; royalties; business operation; interest, dividends and bonuses; leasing of assets; transfer of assets; incidental income",
+        "Art. 3(3): a flat 20% rate applies to interest, dividends and bonuses, leasing of assets, transfer of assets, and incidental income",
+        "No category describes the exchange of one currency for another, or the remittance of a person's own funds"
+      ]
+    },
+    {
+      "id": "CN-06",
+      "title_en": "Notice on Further Preventing and Handling the Risks of Virtual-Currency Trading and Speculation",
+      "title_zh": "关于进一步防范和处置虚拟货币交易炒作风险的通知",
+      "issuer": "People's Bank of China and nine other departments",
+      "doc": "Yinfa [2021] No. 237 (银发〔2021〕237号), 2021-09-24",
+      "url": "https://www.pbc.gov.cn/tiaofasi/144941/3581332/4348658/index.html",
+      "host": "pbc.gov.cn",
+      "tier": "A",
+      "language": "zh",
+      "retrieval": "index",
+      "accessed": "2026-11-08",
+      "supports": [
+        "Virtual currency has no legal-tender status and shall not and cannot circulate as currency in the market",
+        "Business activity connected with virtual currency — including exchange between legal tender and virtual currency, exchange between virtual currencies, acting as central counterparty, information intermediation and pricing services, token issuance and derivatives — is illegal financial activity, strictly prohibited and to be banned",
+        "Financial institutions and non-bank payment institutions may not provide account opening, fund transfer, clearing or settlement services for virtual-currency business"
+      ],
+      "note": "Retrieved as a search-index excerpt that reproduces the operative paragraphs verbatim; the live page was not re-fetched in this session. Quoted wording is confined to what the excerpt reproduced."
+    },
+    {
+      "id": "CN-07",
+      "title_en": "Bank of China personal e-banking transfer and remittance tariff",
+      "title_zh": "中国银行电子银行个人服务转账汇款费率表",
+      "issuer": "Bank of China (中国银行)",
+      "doc": "Rates stated as effective 2014-11-01",
+      "url": "https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html",
+      "host": "boc.cn",
+      "tier": "B",
+      "language": "zh",
+      "retrieval": "full",
+      "accessed": "2026-11-08",
+      "supports": [
+        "Cross-border wire (电汇): 1 per mille of the remittance amount, minimum CNY 50 per transaction, maximum CNY 260 per transaction",
+        "Cable/telegraph fee (电讯费) additional: CNY 150 per transaction for destinations other than Hong Kong, Macau and Taiwan; CNY 80 for Hong Kong, Macau and Taiwan",
+        "Page note 1: where a separate agreement, a promotional price or a local fee difference applies, the agreed or locally published price is charged"
+      ]
+    },
+    {
+      "id": "CN-08",
+      "title_en": "Bank of China foreign-exchange rate board",
+      "title_zh": "中国银行外汇牌价",
+      "issuer": "Bank of China (中国银行)",
+      "doc": "USD row, board stamp 2026/11/09 05:30:00 (Beijing time). Units: CNY per 100 USD",
+      "url": "https://www.boc.cn/sourcedb/whpj/",
+      "host": "boc.cn",
+      "tier": "B",
+      "language": "zh",
+      "retrieval": "full",
+      "accessed": "2026-11-08",
+      "supports": [
+        "USD cash-spot buying rate (现汇买入价) 666.48",
+        "USD cash buying rate (现钞买入价) 666.48",
+        "USD cash-spot selling rate (现汇卖出价) 669.29",
+        "USD cash selling rate (现钞卖出价) 669.29",
+        "BOC conversion reference rate (中行折算价) 671.68",
+        "Board disclaimer: the table is for reference only; the rate actually applied at the counter, online banking, mobile banking or smart counter governs"
+      ]
+    },
+    {
+      "id": "CN-09",
+      "title_en": "Bank of China announcement adjusting part of its trade-finance service prices, effective 2018-02-09",
+      "title_zh": "关于调整部分贸易金融服务项目的公告",
+      "issuer": "Bank of China (中国银行)",
+      "doc": "Published 2017-11-09",
+      "url": "https://www.boc.cn/cbservice/bi2/201711/t20171109_10646775.html",
+      "host": "boc.cn",
+      "tier": "B",
+      "language": "zh",
+      "retrieval": "full",
+      "accessed": "2026-11-08",
+      "supports": [
+        "Full-amount-arrival (全额到账) service: in addition to the wire commission and cable fee, a currency-specific surcharge applies — USD 15 per transaction where the receiving bank holds its account with BOC's New York branch, and USD 25 per transaction otherwise",
+        "The surcharge is set and collected by the overseas correspondent bank with which the onshore bank has a full-amount-arrival arrangement",
+        "Full-amount arrival under an ordinary wire applies only where the sending and receiving banks have no direct account relationship and at least one intermediary is involved"
+      ],
+      "note": "This is a corporate/trade-finance tariff announcement. The personal-channel equivalent is described on BOC's personal pages but no personal tariff page stating the USD 15/25 figures was retrieved, so applicability to a personal remittance is flagged F06."
+    },
+    {
+      "id": "US-01",
+      "title_en": "26 U.S.C. §988 — Treatment of certain foreign currency transactions",
+      "issuer": "United States Congress (U.S. Code, 2024 edition, GPO)",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm",
+      "host": "govinfo.gov",
+      "tier": "A",
+      "language": "en",
+      "retrieval": "full",
+      "accessed": "2026-11-08",
+      "supports": [
+        "§988(a)(1)(A): foreign-currency gain or loss on a §988 transaction is computed separately and treated as ordinary income or loss",
+        "§988(c)(1)(C)(i): a disposition of nonfunctional currency is treated as a §988 transaction",
+        "§988(c)(1)(C)(ii): nonfunctional currency includes coin or currency and nonfunctional-currency-denominated demand or time deposits or similar instruments issued by a bank",
+        "§988(e)(1): the section does not apply to a §988 transaction entered into by an individual which is a personal transaction",
+        "§988(e)(2): on a disposition of nonfunctional currency in a personal transaction, no gain is recognised by reason of exchange-rate changes between acquisition and disposition — but that sentence does not apply if the gain that would otherwise be recognised exceeds USD 200",
+        "§988(e)(3): 'personal transaction' means a transaction entered into by an individual, except to the extent allocable expenses meet §162 or §212"
+      ]
+    },
+    {
+      "id": "US-02",
+      "title_en": "31 U.S.C. §5321 — Civil penalties (including the FBAR penalty)",
+      "issuer": "United States Congress (U.S. Code, 2024 edition, GPO)",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title31/html/USCODE-2024-title31-subtitleIV-chap53-subchapII-sec5321.htm",
+      "host": "govinfo.gov",
+      "tier": "A",
+      "language": "en",
+      "retrieval": "full",
+      "accessed": "2026-11-08",
+      "supports": [
+        "§5321(a)(5)(B)(i): a civil penalty for a violation of §5314 shall not exceed USD 10,000",
+        "§5321(a)(5)(B)(ii): no penalty where the violation was due to reasonable cause and the account balance was properly reported",
+        "§5321(a)(5)(C): for a willful violation the maximum is the greater of USD 100,000 or 50% of the amount determined under (D)",
+        "§5321(a)(5)(D): that amount is the amount of the transaction, or, for a failure to report an account, the balance in the account at the time of the violation"
+      ]
+    },
+    {
+      "id": "US-03",
+      "title_en": "Comparison of Form 8938 and FBAR requirements",
+      "issuer": "Internal Revenue Service",
+      "url": "https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements",
+      "host": "irs.gov",
+      "tier": "A",
+      "language": "en",
+      "retrieval": "full",
+      "accessed": "2026-11-08",
+      "supports": [
+        "FBAR threshold: aggregate value of financial accounts exceeds USD 10,000 at any time during the calendar year",
+        "FBAR is filed with FinCEN, not with the income-tax return; received by 15 April with an automatic extension to 15 October",
+        "FBAR maximum value is converted to USD at the end-of-calendar-year exchange rate",
+        "Form 8938 threshold for a specified individual living in the United States: more than USD 50,000 on the last day of the tax year or more than USD 75,000 at any time (unmarried); USD 100,000 / USD 150,000 for a joint filer",
+        "Form 8938 threshold for a specified individual living outside the United States is higher (USD 200,000 / USD 300,000 unmarried)",
+        "Form 8938 penalty: up to USD 10,000 for failure to disclose plus USD 10,000 for each 30 days after IRS notice, maximum USD 60,000",
+        "FBAR civil penalties are adjusted annually for inflation; for assessments before 1 August 2016, non-willful up to USD 10,000 and willful up to the greater of USD 100,000 or 50% of account balances"
+      ]
+    },
+    {
+      "id": "US-04",
+      "title_en": "Rev. Proc. 2025-32 — 2026 inflation-adjusted amounts, including the §1 tax rate tables and the standard deduction",
+      "issuer": "Internal Revenue Service",
+      "url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "host": "irs.gov",
+      "tier": "A",
+      "language": "en",
+      "retrieval": "full",
+      "accessed": "2026-11-08",
+      "supports": [
+        "2026 single-filer rate table: 10% to USD 12,400; USD 1,240 plus 12% to USD 50,400; USD 5,800 plus 22% to USD 105,700; USD 17,966 plus 24% to USD 201,775; USD 41,024 plus 32% to USD 256,225; USD 58,448 plus 35% to USD 640,600; USD 192,979.25 plus 37% above",
+        "2026 standard deduction, unmarried individual: USD 16,100",
+        "2026 married-filing-jointly table and USD 32,200 standard deduction, for comparison"
+      ]
+    },
+    {
+      "id": "US-05",
+      "title_en": "Gifts from foreign person (Form 3520, Part IV)",
+      "issuer": "Internal Revenue Service",
+      "url": "https://www.irs.gov/businesses/gifts-from-foreign-person",
+      "host": "irs.gov",
+      "tier": "A",
+      "language": "en",
+      "retrieval": "full",
+      "accessed": "2026-11-08",
+      "supports": [
+        "A U.S. person who receives a large gift or bequest from a foreign person reports it on Part IV of Form 3520",
+        "Reporting is required where the aggregate received from a nonresident alien or foreign estate exceeds USD 100,000 in the taxable year; each gift over USD 5,000 must be separately identified",
+        "For purported gifts from foreign corporations or partnerships the threshold is USD 20,573 for 2026",
+        "Penalties may apply under IRC §6039F(c) where there is no reasonable cause"
+      ]
+    },
+    {
+      "id": "US-06",
+      "title_en": "31 U.S.C. §5316 — Reports on exporting and importing monetary instruments",
+      "issuer": "United States Congress (U.S. Code, 2024 edition, GPO)",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title31/html/USCODE-2024-title31-subtitleIV-chap53-subchapII-sec5316.htm",
+      "host": "govinfo.gov",
+      "tier": "A",
+      "language": "en",
+      "retrieval": "full",
+      "accessed": "2026-11-08",
+      "supports": [
+        "A report is required where a person knowingly transports monetary instruments of more than USD 10,000 at one time into or out of the United States, or receives more than USD 10,000 transported into the United States"
+      ]
+    },
+    {
+      "id": "BK-01",
+      "title_en": "Chase — Additional Banking Services and Fees for Personal Accounts (Deposit Account Agreement)",
+      "issuer": "JPMorgan Chase Bank, N.A.",
+      "url": "https://www.chase.com/content/dam/chase-ux/documents/personal/checking/ABSF-en.pdf",
+      "host": "chase.com",
+      "tier": "B",
+      "language": "en",
+      "retrieval": "partial",
+      "accessed": "2026-11-08",
+      "supports": [
+        "The document is Chase's personal-account fee schedule and contains a Wire Transfer Fees section"
+      ],
+      "note": "Used only as a named example of a US receiving-bank inbound wire fee. The exact USD figure for an incoming international wire was not located in the retrieved portion, so no value is populated from this source; the model treats the receiving-bank fee as an explicit assumption shown to the user, flagged F07."
+    },
+    {
+      "id": "BK-02",
+      "title_en": "Chase — Additional Banking Services and Fees for Business Accounts (fee schedule)",
+      "issuer": "JPMorgan Chase Bank, N.A.",
+      "url": "https://www.chase.com/content/dam/chase-ux/documents/personal/checking/biz-how-your-transaction-will-work.pdf",
+      "host": "chase.com",
+      "tier": "B",
+      "language": "en",
+      "retrieval": "index",
+      "accessed": "2026-11-08",
+      "supports": [
+        "Wire transfer fee table shows incoming domestic wires at USD 15 per transfer and incoming international wires at USD 15 per transfer for the account tiers tabulated"
+      ],
+      "note": "Retrieved as a search-index excerpt of Chase's own PDF; the PDF was not re-fetched clause by clause in this session. Used only as a named example of a US receiving-bank inbound fee, not as a statement about the reader's bank. Applicability to personal accounts is flagged F07."
+    }
+  ]
+}

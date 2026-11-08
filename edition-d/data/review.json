@@ -1,0 +1,185 @@
+{
+  "_meta": {
+    "description": "Line-by-line audit of the four editions already in this repository. Each finding states what was checked, what was found, and how to reproduce it. Findings are recorded, not edited into the other editions, which remain untouched.",
+    "checked_on": "2026-11-08",
+    "verdicts": {
+      "confirmed": "Checked against the instrument and it holds.",
+      "irregularity": "A defect: wrong label, dead citation, or a claim not supported by what it cites.",
+      "gap": "Not wrong, but something material is missing.",
+      "resolved": "An earlier problem that the repository has since fixed."
+    }
+  },
+  "findings": [
+    {
+      "id": "R01",
+      "area": "Conversion cost",
+      "verdict": "irregularity",
+      "finding": "The root executive summary is headed 'The real conversion cost is about 0.42%' and derives it as (669.29 - 666.48) / 669.29. That is the round-trip bid/ask spread: the loss from converting and converting back. The margin on a single CNY-to-USD conversion is half of it, 0.2103%, measured from the same board.",
+      "evidence": "EXECUTIVE_SUMMARY.md line 5 ('the real cost of a lawful conversion is a bank spread of about 0.42%'), line 24 (the heading) and line 28 (the formula). data/costs.json line 35 states it correctly as 'A round trip loses about 0.42% of the principal'. Recompute: midpoint 667.885; (669.29 - 667.885) / 667.885 = 0.2103%.",
+      "impact": "Overstates the FX cost of a single conversion by about 2x. On USD 400,000 that is USD 841 quoted against USD 421 actually borne.",
+      "sources": [
+        "CN-08"
+      ],
+      "repo_ref": "EXECUTIVE_SUMMARY.md"
+    },
+    {
+      "id": "R02",
+      "area": "US tax on the currency leg",
+      "verdict": "gap",
+      "finding": "The $200 threshold in IRC §988(e)(2) is stated correctly where the section is quoted (root EXECUTIVE_SUMMARY line 20: 'gain is not recognised unless it would exceed USD 200'; edition-b line 31: 'not recognised if <= USD 200'). But the dossier's one-line summary table says 'Converting CNY to USD is taxed: No such tax exists in either jurisdiction', which is true of an income tax on the conversion and not true of §988 gain above $200. The two statements are never reconciled.",
+      "evidence": "README.md line 47 against EXECUTIVE_SUMMARY.md line 20. The statute: §988(e)(2) disapplies recognition only where the gain 'does not exceed $200'.",
+      "impact": "On a large balance the omission matters: the FX gain measured from the acquisition rate can exceed $200 and is then ordinary income.",
+      "sources": [
+        "US-01"
+      ],
+      "repo_ref": "README.md"
+    },
+    {
+      "id": "R03",
+      "area": "Citations",
+      "verdict": "irregularity",
+      "finding": "Edition C's source register cites https://www.safe.gov.cn/tianjin/2024-04-30/2465.html for the Measures for the Administration of Individual Foreign Exchange. That URL returns the SAFE 404 page. The entry's own fallback, https://www.safe.gov.cn/tianjin/2024/0430/2465.html, resolves and contains the full text.",
+      "evidence": "Retrieved both URLs on 2026-11-08: the hyphenated form returned '该页面不存在' (page does not exist); the slash form returned the complete instrument, index number 00013319-6-2024-00105. The repository's own assets/build.py already uses the working form.",
+      "impact": "The most-cited instrument in the repository had a dead primary link. No content was wrong, only the citation.",
+      "sources": [
+        "CN-01"
+      ],
+      "repo_ref": "edition-c/data/sources.json"
+    },
+    {
+      "id": "R04",
+      "area": "Inventory consistency",
+      "verdict": "gap",
+      "finding": "Four editions report four different route counts for the same question: 18 (root), 22 (edition-b), 33 (edition-c), 35 (dossier). No document reconciles them, and no single inventory is canonical.",
+      "evidence": "README.md lines 9, 64, 137, 222; REQUIREMENTS.md line 11; COORDINATION.md lines 91, 276, 340.",
+      "impact": "A reader cannot tell whether 17 routes were dropped, 17 were added, or the four editions simply counted sub-variants differently.",
+      "sources": [],
+      "repo_ref": "README.md"
+    },
+    {
+      "id": "R05",
+      "area": "Navigation",
+      "verdict": "irregularity",
+      "finding": "The live landing page links to only two of the four editions. edition-b and edition-c are reachable from README.md but not from the site's own home page.",
+      "evidence": "Root index.html contains hrefs to docs/index.html and dossier/index.html only; no href to edition-b/ or edition-c/.",
+      "impact": "Two complete research editions were effectively invisible to a visitor arriving at the published URL.",
+      "sources": [],
+      "repo_ref": "index.html"
+    },
+    {
+      "id": "R06",
+      "area": "Fee claim",
+      "verdict": "gap",
+      "finding": "The root executive summary states that 'Wire charges are additional and are small relative to a large balance' without a source. That is an unsourced generalisation, and it is only true at the top of the range: the fixed fees are about 0.6% of a $10,000 transfer and about 0.015% of a $400,000 one.",
+      "evidence": "EXECUTIVE_SUMMARY.md line 28. Edition D computes the fixed component at each size from CN-07 and CN-09.",
+      "impact": "At small sizes the fees are not small relative to the spread; they are three times the spread.",
+      "sources": [
+        "CN-07",
+        "CN-09"
+      ],
+      "repo_ref": "EXECUTIVE_SUMMARY.md"
+    },
+    {
+      "id": "R07",
+      "area": "FBAR characterisation",
+      "verdict": "irregularity",
+      "finding": "The root executive summary describes the willful FBAR penalty as 'the greater of USD 100,000 or 50% of the account balance, per year'. The statute sets it per violation, measured by the balance at the time of the violation, with a six-year assessment window. 'Per year' is an inference about how violations are counted, not the statutory text.",
+      "evidence": "EXECUTIVE_SUMMARY.md line 5 and the penalty table in section 7. US-02 §5321(a)(5)(C)-(D) and §5321(b)(1).",
+      "impact": "Directionally the exposure is the same or larger, but the basis should be stated as per violation.",
+      "sources": [
+        "US-02"
+      ],
+      "repo_ref": "EXECUTIVE_SUMMARY.md"
+    },
+    {
+      "id": "R08",
+      "area": "Rate board timestamp",
+      "verdict": "gap",
+      "finding": "The dossier says the spread was measured from Bank of China's board 'on 2026-11-08'. The board retrieved for this edition is stamped 2026/11/09 05:30:00 Beijing time. The quoted numbers are identical (666.48 / 669.29), so the arithmetic reproduces exactly; only the date label differs.",
+      "evidence": "README.md line 48 against the board page, which prints its own 发布日期 and 发布时间 columns.",
+      "impact": "Cosmetic, but a dated measurement should match the page's own stamp.",
+      "sources": [
+        "CN-08"
+      ],
+      "repo_ref": "README.md"
+    },
+    {
+      "id": "R09",
+      "area": "Scope",
+      "verdict": "gap",
+      "finding": "None of the four editions produces the cost table the brief asks for: per-method estimates in USD 10,000 steps to USD 400,000. Each leaves fees blank as unverified. That was the correct choice while no tariff had been retrieved; it is no longer the only option.",
+      "evidence": "COORDINATION.md line 42 records F06 'wire, correspondent and inbound fees (deliberately blank; no official tariff retrieved)'. data/costs.json carries '0.42%' as the only populated cost line.",
+      "impact": "This is the gap Edition D closes, with a sourced tariff rather than an estimate.",
+      "sources": [
+        "CN-07",
+        "CN-09"
+      ],
+      "repo_ref": "data/costs.json"
+    },
+    {
+      "id": "R10",
+      "area": "Verification design",
+      "verdict": "gap",
+      "finding": "All four checkers pass while R03's dead citation sits in the repository. They validate internal links, source-id resolution and hosts, but not retrievability, and the sandbox has no direct outbound access, so no checker can fetch an external page.",
+      "evidence": "Re-ran all four on 2026-11-08: assets/check.py OK (5 pages, 46 rows); scripts/verify.py PASS (6 pages, 60 rows); edition-b/build/verify.py PASS (15 checks); edition-c/build/linkcheck.py PASSED (17 pages).",
+      "impact": "A passing checker in this repository does not mean a citation resolves. Edition D records retrieval status per source instead of implying a live check.",
+      "sources": [],
+      "repo_ref": "COORDINATION.md"
+    },
+    {
+      "id": "R11",
+      "area": "Documentation structure",
+      "verdict": "gap",
+      "finding": "The root README runs over 250 lines and appends four editions in sequence, each with its own contents list, build instructions and claims. There is no single executive summary reflecting all of them.",
+      "evidence": "README.md structure: root edition, then 'Verified dossier', then Edition B, then Edition C sections.",
+      "impact": "The reader has to choose an edition before they can read an answer.",
+      "sources": [],
+      "repo_ref": "README.md"
+    },
+    {
+      "id": "R12",
+      "area": "Officiality disclosure",
+      "verdict": "confirmed",
+      "finding": "Edition C marks one source 'not official' (S08, Huifa [2017] No.29 accessed through Bank of China) and discloses it in the register and in its coordination log. The disclosure is honest and the source is not used for a quoted legal proposition.",
+      "evidence": "edition-c/data/sources.json entry S08 and its rendered sources page; COORDINATION.md Edition C handoff.",
+      "impact": "None. Recorded as the standard the other registers should meet.",
+      "sources": [],
+      "repo_ref": "edition-c/data/sources.json"
+    },
+    {
+      "id": "R13",
+      "area": "Requirements traceability",
+      "verdict": "gap",
+      "finding": "REQUIREMENTS.md maps requirement R1 to '35 routes across 5 categories' in the dossier, while edition-b, edition-c and the root edition each assert different totals. The traceability matrix therefore certifies a number that the repository does not agree on.",
+      "evidence": "REQUIREMENTS.md line 11 against the four edition totals in R04.",
+      "impact": "The requirements document cannot be used as a completeness test.",
+      "sources": [],
+      "repo_ref": "REQUIREMENTS.md"
+    },
+    {
+      "id": "R14",
+      "area": "Deployment",
+      "verdict": "confirmed",
+      "finding": "The deployment record is consistent with the repository configuration: GitHub Pages is served from main at the repository root in legacy build mode, and the paths recorded in COORDINATION.md (/docs/, /dossier/, /edition-b/, /edition-c/docs/) all sit under that root.",
+      "evidence": "GitHub Pages API: source branch main, path '/', status 'built', build_type 'legacy'.",
+      "impact": "None.",
+      "sources": [],
+      "repo_ref": "COORDINATION.md"
+    },
+    {
+      "id": "R15",
+      "area": "Internal consistency",
+      "verdict": "confirmed",
+      "finding": "The substantive legal claims checked in the earlier editions match their cited instruments: the current-account versus capital-account distinction (CN-01 Art. 3), the USD 50,000 annual facilitation quota (CN-03 Art. 54), the 50,000-a-day remittance threshold for a 境内个人 (Art. 64), remittance on ID alone for a 境外个人 (Art. 65), the emigration and inheritance categories with staged release (CN-04), and the fine ranges (CN-02 Arts. 39, 45).",
+      "evidence": "Each proposition was read in the instrument and compared with the earlier edition that asserts it. No mismatch found in the provisions checked.",
+      "impact": "None. These are the load-bearing claims of the whole repository and they hold.",
+      "sources": [
+        "CN-01",
+        "CN-02",
+        "CN-03",
+        "CN-04"
+      ],
+      "repo_ref": "COORDINATION.md"
+    }
+  ]
+}
