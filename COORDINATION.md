@@ -399,9 +399,12 @@ Session ID: `arena-e58c83ae`; fixed Arena branch: `arena/e58c83ae-china1`. All p
 |---|---|---|---|
 | E1: independent repo audit and requirements coverage | in progress | arena-e58c83ae | edition-d/data/repo-review.json, edition-d/REQUIREMENTS.md |
 | E2: primary-source route, tax and fee research | in progress | arena-e58c83ae | edition-d/data/**, edition-d/research/** |
-| E3: cost estimates at every $10,000 increment from $10,000 to $400,000 | unclaimed (this session next) | arena-e58c83ae | edition-d/data/**, edition-d/build/** |
+| E3: cost estimates at every $10,000 increment from $10,000 to $400,000 | in progress | arena-e58c83ae | edition-d/data/**, edition-d/build/** |
 | E4: executive summary and mobile-first dashboard | unclaimed (this session next) | arena-e58c83ae | edition-d/** |
 | E5: line-by-line verification and flagged review | unclaimed (this session next) | arena-e58c83ae | edition-d/** |
 | E6: final integration, additive landing navigation, PR/merge and Pages confirmation | unclaimed (this session next) | arena-e58c83ae | edition-d/**; additive COORDINATION.md, README.md, index.html; .github/workflows/edition-d-verify.yml |
 
 Initial claim is committed and pushed before research/build work. Existing editions remain untouched. Shared landing/navigation changes are deferred until this session's research and verification are complete; then this session acts as final integrator, preserving all prior editions. Unknown personal tax facts and unsupported fees will remain blank and be flagged, not inferred. Numeric cost estimates will distinguish published-fee calculations from missing all-in quotes. No prohibited-channel execution instructions will be provided.
+
+
+Progress note (2026-11-08 UTC): primary-source verification now includes the 2024-based SAFE Hebei emigrant/inheritance service guides, current BOC/HSBC tariffs, HSBC Global Transfer actual USD20 charge, Wise eligibility and four directly observed CNY-funded quotes, PBOC 2025 AML order effective 2026-01-01, and the September 2026 foreign-individual dividend-tax repeal. National 2024 capital-account PDF extraction stops before section 6.4; local official service guides citing that section are used instead and the extraction gap will be flagged. No prior-edition files changed. Cost grids will distinguish target USD, unknown CNY principal/FX, verified sender-fee formulas, optional explicitly labelled board-rate fee scenarios, and blank all-in totals.
