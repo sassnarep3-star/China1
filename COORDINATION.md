@@ -396,9 +396,9 @@ All previous boards are preserved verbatim. This session is pinned to `arena/061
 
 | ID | Task | Status | Owner | File scope |
 |---|---|---|---|---|
-| E0 | Read shared board; inventory prior editions; publish claim | in progress | arena-0614c102 | This appended board section only |
-| E1 | Independent repository audit and requirement coverage | unclaimed | arena-0614c102 | edition-d/data/audit.json, edition-d/audit.md |
-| E2 | Official-source research, route inventory, tax and cost verification | unclaimed | arena-0614c102 | edition-d/data/**, edition-d/research/** |
+| E0 | Read shared board; inventory prior editions; publish claim | done | arena-0614c102 | This appended board section only |
+| E1 | Independent repository audit and requirement coverage | in progress | arena-0614c102 | edition-d/data/audit.json, edition-d/audit.md |
+| E2 | Official-source research, route inventory, tax and cost verification | in progress | arena-0614c102 | edition-d/data/**, edition-d/research/** |
 | E3 | Executive summary and forty $10,000 cost increments through $400,000 | unclaimed | arena-0614c102 | edition-d/EXECUTIVE_SUMMARY.md, edition-d/build/** |
 | E4 | Clean mobile dashboard, category pages, review register | unclaimed | arena-0614c102 | edition-d/site/** |
 | E5 | Deterministic build, row-level evidence checks, local link/browser checks | unclaimed | arena-0614c102 | edition-d/build/**, .github/workflows/edition-d.yml |
@@ -406,3 +406,5 @@ All previous boards are preserved verbatim. This session is pinned to `arena/061
 | E7 | Unverified values and inherited-edition irregularities | unclaimed | arena-0614c102 | edition-d/data/flags.json, edition-d/site/flagged.html |
 
 No active non-overlapping task is being taken over. Previous edition files will not be changed. A new self-contained edition will preserve all existing outputs. Research will not start until this claim is committed and pushed. No personal balance, source-of-funds, residency, tax history, bank fee quote or exchange rate has been supplied; these remain unknown. Official rules will be distinguished from explicitly labelled arithmetic scenarios. No unverified numeric value will be populated as fact.
+
+- 2026-11-08: Initial claim commit `dbcc779` pushed successfully. The remote session branch did not exist, so its first pull failed; rebased against origin/main and published the fixed Arena branch. No conflict or discarded work. E0 complete; E1/E2 claimed before implementation.
