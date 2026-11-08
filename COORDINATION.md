@@ -387,3 +387,34 @@ foot of `edition-c/COORDINATION.md`: F03 (capital-reduction tax characterisation
 procurement trade and cross-border e-commerce export — omitted rather than described from secondary
 sources), F06 (VAT rate on goods), F12 (FIE dividend exemption for foreign individuals), F07 (small and
 low-profit enterprise preference), F05 (RMB cash pooling circular), F01 (retail spread).
+
+---
+
+# Integration & Completion Session — `arena-31162c4c`
+
+**Session ID:** `arena-31162c4c`
+**Branch:** `arena/31162c4c-china1` *(Arena pins this session to this branch; `session-<id>/<task>` branches are not created per platform branch policy)*
+**Started:** 2026-11-08 (UTC)
+**Role:** Final repo audit, official-source re-verification, $10k–$400k increment cost modeling, step-by-step method guides, and unified root GitHub Pages dashboard integration.
+
+## Claimed scope
+
+All prior editions in `docs/`, `dossier/`, `edition-b/`, and `edition-c/` remain preserved in their own directories. To resolve the multi-dashboard fragmentation logged above and serve a unified mobile-friendly live site at the GitHub Pages root (`main:/`), this session claims:
+
+- Archiving the prior PR #1 root snapshot verbatim into `edition-root/` (updating its path references only so its checks remain valid).
+- Unified integrated root dashboard & subpages: `index.html`, `pages/**` (rebuilt for unified dashboard), `site_data/**`, `site_build/**`, `site_assets/**`.
+- Top-level documentation & coordination: `COORDINATION.md` (this section), `EXECUTIVE_SUMMARY.md`, `REQUIREMENTS.md`, `README.md`, `.github/workflows/verify.yml`.
+
+## Task board (`arena-31162c4c`)
+
+| ID | Task | Status | Owner | Files in scope |
+|---|---|---|---|---|
+| I1 | Line-by-line audit of all 4 existing repo editions & external link verification | in progress | arena-31162c4c | `site_data/repo_audit.json`, `pages/repo-audit.html` |
+| I2 | Official-source verification of FX rates, bank tariffs, 2026 US penalties, SAFE/STA rules | in progress | arena-31162c4c | `site_data/sources.json`, `site_data/flagged.json` |
+| I3 | Exhaustive method catalogue with pros, cons & step-by-step walkthroughs | unclaimed | — | `site_data/methods.json`, `pages/methods.html`, `pages/step-by-step.html` |
+| I4 | $10,000–$400,000 USD increment cost tables for every method (mobile-first) | unclaimed | — | `site_data/increments.json`, `pages/cost-estimator.html` |
+| I5 | Executive summary, conversion penalty breakdown, taxes/reporting & requirements traceability | unclaimed | — | `EXECUTIVE_SUMMARY.md`, `REQUIREMENTS.md`, `pages/penalty.html`, `pages/taxes.html` |
+| I6 | Unified mobile-friendly GitHub Pages dashboard at root `/` & preservation of `edition-root/` | unclaimed | — | `index.html`, `pages/**`, `edition-root/**`, `site_assets/**`, `README.md` |
+| I7 | Deterministic generator, verification gate & CI workflow update | unclaimed | — | `site_build/**`, `.github/workflows/verify.yml` |
+| I8 | PR to `main`, merge, confirm GitHub Pages deployment, record result | unclaimed | — | `COORDINATION.md`, `main` |
+
