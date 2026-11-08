@@ -746,7 +746,7 @@ Cross-session request to the root-portal owner: add an Edition G link (`edition-
 | E3: cost estimates at every $10,000 increment from $10,000 to $400,000 | done | arena-e58c83ae | edition-g/data/**, edition-g/build/** |
 | E4: executive summary and mobile-first dashboard | done | arena-e58c83ae | edition-g/** |
 | E5: line-by-line verification and flagged review | done | arena-e58c83ae | edition-g/** |
-| E6: final integration, PR/merge and Pages confirmation | in progress | arena-e58c83ae | edition-g/**; additive COORDINATION.md, README.md; .github/workflows/edition-g-verify.yml |
+| E6: final integration, PR/merge and Pages confirmation | done | arena-e58c83ae | edition-g/**; additive COORDINATION.md, README.md; .github/workflows/edition-g-verify.yml |
 
 ## Implementation record
 
@@ -755,4 +755,8 @@ Cross-session request to the root-portal owner: add an Edition G link (`edition-
 - Independent CI `.github/workflows/edition-g-verify.yml` added; existing workflows untouched.
 - Cost model: only published sender-fee bounds/zeros and directly observed Wise public quotes populated; CNY principal, FX, downstream, documentation, tax and all-in totals blank + UNVERIFIED. Prohibited schemes have no execution steps.
 - Material corrections flagged for earlier editions: staged emigrant release superseded (2014 amendment); foreign-individual FIE dividend exemption repealed effective 2026-09-01 (20% IIT); BOC bid/ask ~0.42% is a round-trip indicator, not a verified one-way loss; future BOC ATM pricing not applied before 2026-11-11; Wise historical formulas not used as current; WU bank-account payout temporarily unavailable; U.S. 1% remittance tax does not apply to China→U.S. transfers.
-- Next: push, merge PR #18 without waiting, confirm Pages deployment, record PR/merge/deploy here.
+- PR: https://github.com/sassnarep3-star/China1/pull/18 — merged into `main` at `fdaf2d6508e900a48ffbea44598cab20559f906d` on 2026-11-08 UTC without waiting for approval.
+- CI before merge: `verify`, `edition-d`, `edition-e`, `edition-f` and Edition G checks all passed. One earlier failure (root landing generator out of sync after additive nav edit) was fixed by keeping the generator in sync, then superseded by the relocation that left the shared portal untouched.
+- GitHub Pages: source remains `main:/`; latest build for `fdaf2d6` reported `built` with no error (duration 33,826 ms).
+- Live verification: https://sassnarep3-star.github.io/China1/edition-g/docs/index.html fetched successfully and shows Edition G overview (43 candidates / 1,720 rows / 52 sources / 47 flags). Method and flagged pages verified below.
+- Concurrent-work preservation: PRs #13/#15/#16/#17/#19 merged during this session; this deliverable was relocated from `edition-d/` to `edition-g/`, and main's README/COORDINATION/portal were preserved verbatim with append-only records. Cross-session portal-link request remains open for the portal owner.
