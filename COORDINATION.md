@@ -387,3 +387,44 @@ foot of `edition-c/COORDINATION.md`: F03 (capital-reduction tax characterisation
 procurement trade and cross-border e-commerce export — omitted rather than described from secondary
 sources), F06 (VAT rate on goods), F12 (FIE dividend exemption for foreign individuals), F07 (small and
 low-profit enterprise preference), F05 (RMB cash pooling circular), F01 (retail spread).
+
+---
+
+# Session board — arena-133875bd (Edition D: cost engine + consolidated dashboard)
+
+Appended 2026-11-08 UTC. Every prior board above is preserved verbatim; nothing was overwritten,
+renamed or deleted.
+
+## Claim
+
+| Item | Value |
+|---|---|
+| Session | `arena-133875bd` |
+| Branch | `arena/133875bd-china1` (fixed by Arena; the `session-<id>/<task>` convention cannot be used) |
+| File scope | `edition-d/**` (new), this appended section of `COORDINATION.md`, one added CI job in `.github/workflows/verify.yml`, and a navigation link on root `index.html` *only* as final-integration step |
+| Overlap | None. No file owned by another edition is edited. Existing editions are linked, not modified. |
+
+## Why this edition exists
+
+Editions A–C answered the legal question comprehensively but deliberately left every fee and every
+dollar figure blank, because no official tariff had been retrieved. The brief explicitly requires
+**per-method cost estimates in USD 10,000 increments up to USD 400,000** and **step-by-step
+instructions per method**. Edition D closes exactly that gap: it sources published tariffs and
+statutory rates, derives each cell arithmetically from a sourced unit rate, labels every derived
+cell as derived, and flags the residual assumptions.
+
+## Task board
+
+| # | Task | Status | Notes |
+|---|---|---|---|
+| D-01 | Read repo, prior boards, requirements; claim scope | in progress | |
+| D-02 | Repo review line by line; flag irregularities | unclaimed | |
+| D-03 | Source register: official regulator, statute, published bank tariff | unclaimed | |
+| D-04 | Method inventory with pros/cons, lawful/prohibited classification | unclaimed | |
+| D-05 | Cost engine: $10k→$400k in $10k steps, every method | unclaimed | |
+| D-06 | Step-by-step procedure per method | unclaimed | |
+| D-07 | Executive summary | unclaimed | |
+| D-08 | Site build: landing page + category subpages, mobile-first tables | unclaimed | |
+| D-09 | Verification gate (citations resolve, no unsourced numbers, links) | unclaimed | |
+| D-10 | Flagged-for-Review publication | unclaimed | |
+| D-11 | CI job, PR, merge, Pages deploy confirmation | unclaimed | |
