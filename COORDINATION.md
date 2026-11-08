@@ -387,3 +387,21 @@ foot of `edition-c/COORDINATION.md`: F03 (capital-reduction tax characterisation
 procurement trade and cross-border e-commerce export — omitted rather than described from secondary
 sources), F06 (VAT rate on goods), F12 (FIE dividend exemption for foreign individuals), F07 (small and
 low-profit enterprise preference), F05 (RMB cash pooling circular), F01 (retail spread).
+
+---
+
+# Session board — arena/8227798a-china1 — 2026-11-08
+
+Session ID: `arena/8227798a-china1` · Branch: `arena/8227798a-china1` (pinned by Arena) · Date: 2026-11-08 UTC
+
+## Claimed scope
+
+| # | Task | Files (scope) | Owner | Status |
+|---|---|---|---|---|
+| E1 | Research: CNY→USD official cost parameters (SAFE quotas, FX spread measurement, bank wire fee schedules, IRS penalty amounts) | research notes under `edition-d/` | arena/8227798a-china1 | claimed 2026-11-08 |
+| E2 | $10,000-increment cost ladder ($10k…$400k) for every lawful method, mobile-friendly tables, most-important-first | `edition-d/**` | arena/8227798a-china1 | claimed 2026-11-08 |
+| E3 | Step-by-step execution guide per method + executive summary | `edition-d/**` | arena/8227798a-china1 | claimed 2026-11-08 |
+| E4 | Repo review: run every edition's build/verify, flag irregularities | `edition-d/repo-review.md` + this log | arena/8227798a-china1 | claimed 2026-11-08 |
+| E5 | Site for this edition + integration, PR, merge, Pages confirm | `edition-d/**`; additive links only as integration session | arena/8227798a-china1 | claimed 2026-11-08 |
+
+No file owned by another session will be edited except (a) additive navigation links at the repository root at integration time, (b) appended sections in this file and root `README.md`. All prior boards and editions preserved verbatim.
