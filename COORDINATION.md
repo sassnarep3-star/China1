@@ -589,4 +589,27 @@ intact and reachable from the new landing page. No value of theirs was altered.
 
 ### Pull request, merge and deployment
 
-_Pending — this line is completed after the merge._
+- Pull request: https://github.com/sassnarep3-star/China1/pull/13 — **merged without approval** 2026-11-08
+  23:17:47 UTC; merge commit `4d844a5adaa95e66369fd9a7d202f3b865e13300`.
+- PR checks: https://github.com/sassnarep3-star/China1/actions/runs/42534437253 — **passed**, both jobs:
+  `verify` (all five existing checkers) 6s and the new `edition-d` job 5s.
+- Main-branch validation: https://github.com/sassnarep3-star/China1/actions/runs/42534481821 — **passed** at
+  the merge commit.
+- GitHub Pages: https://github.com/sassnarep3-star/China1/actions/runs/42534481119 — **passed**. The Pages API
+  reports `status=built`, source `main:/`, at https://sassnarep3-star.github.io/China1/.
+- Public verification after deploy: fetched https://sassnarep3-star.github.io/China1/ (portal: four headline
+  figures, nine cards, the six-row answer, the cost-at-a-glance table) and
+  https://sassnarep3-star.github.io/China1/edition-d/docs/pages/costs-boc-documented.html (all 40 rows, every
+  row carrying its source chips). Both render from the published tree.
+
+### Result
+
+**Live:** https://sassnarep3-star.github.io/China1/ (portal) → https://sassnarep3-star.github.io/China1/edition-d/
+(dashboard). The original dashboard is preserved at `/overview.html`; Editions B, C, the dossier and the
+supplemental dashboard are unchanged and reachable from the portal.
+
+**Answer delivered:** converting your own CNY is untaxed in both countries; the real cost of the best lawful
+route is 0.2104% of the amount plus about USD 62 in fixed fees, i.e. $83.45 at $10,000 (0.834%) falling to
+$932.72 at $400,000 (0.233%). What actually stops the money is China's capital-account rule, and what actually
+threatens the balance is a US filing failure — a willful FBAR penalty at $400,000 is $200,000, 214 times the
+cost of doing the transfer lawfully.
