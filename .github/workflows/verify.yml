@@ -2,7 +2,7 @@ name: Verify static site
 on:
   pull_request:
   push:
-    branches: [main, 'arena/e6269551-china1', 'arena/3e9a7b87-china1']
+    branches: [main, 'arena/e6269551-china1', 'arena/3e9a7b87-china1', 'arena/8227798a-china1']
 permissions:
   contents: read
 jobs:
@@ -31,3 +31,8 @@ jobs:
           python3 edition-c/build/build.py
           git diff --exit-code -- edition-c/docs
           python3 edition-c/build/linkcheck.py
+      - name: Verify edition-d build is reproducible, arithmetic recomputed, and internally linked
+        run: |
+          python3 edition-d/build/generate.py
+          git diff --exit-code -- edition-d/docs edition-d/data
+          python3 edition-d/build/verify.py

@@ -1,0 +1,205 @@
+[
+  {
+    "id": "F-D01",
+    "severity": "medium",
+    "title": "FX board is a measurement, not a rule",
+    "detail": "All spreads are derived from Bank of China's published board captured 2026-11-09 05:30:00 (Beijing time): spot sell 669.29 vs mid 667.885 → one-way 0.2104%; full bid–ask 0.4206%; vs reference price 671.68 → 0.3558%. No regulation fixes a retail spread. Boards move intraday and differ across banks.",
+    "action": "Re-capture on the actual trade date; treat the three percentages as bounds of the measured spread, not as a fee promise.",
+    "sources": [
+      "B01",
+      "R01"
+    ]
+  },
+  {
+    "id": "F-D02",
+    "severity": "medium",
+    "title": "BoC 'counter' fees used; 2026 online pricing unconfirmed",
+    "detail": "The published personal e-banking table (effective 2014-11-01) charges 1‰ (min ¥50 / max ¥260) + ¥150 telegraph fee for international wires. A 2025 campaign (2025-05→2025-12) waived fees for wires to BoC's own overseas branches and gave 9折 for wires to other banks via online channels. The 2026 renewal was NOT confirmed this session, so the ladder uses the counter standard — your actual online cost may be 10% lower (≈¥369 vs ¥410 per wire) or zero if BoC's overseas branch is in your US city.",
+    "action": "Check BoC's current 个人跨境汇款 page before executing; verify whether the 0.9 discount or a branch fee-waiver applies.",
+    "sources": [
+      "B02",
+      "B03"
+    ]
+  },
+  {
+    "id": "F-D03",
+    "severity": "high",
+    "title": "US receiving-bank wire fee is unknown — excluded from every total",
+    "detail": "No government source publishes US incoming-wire fees; US banks charge their own fees and none is sourced here. Totals therefore UNDERSTATE your true all-in USD cost by the US receiving fee.",
+    "action": "Obtain a written fee quote from your US bank before the first wire; add it to each tranche in the ladder.",
+    "sources": []
+  },
+  {
+    "id": "F-D04",
+    "severity": "medium",
+    "title": "Emigrant/inheritance routes rely on the 2004 Announcement; current SAFE practice not re-verified",
+    "detail": "Staging (50% → 50% of remainder after 1 year → remainder after 2 years; ≤¥200k one-go), the ¥500k approval split (provincial vs SAFE), and required documents all come from PBOC Announcement [2004] No.16 and SAFE's 2004 Q&A — both verified this session. SAFE revised the inheritance framework in 2014 (registration → approval); whether the operative 2026 practice differs in timing/approval splits was not re-verified against a 2026 SAFE circular this session (the 2004 text remains the published instrument).",
+    "action": "Before relying on L3/L4, ask the local SAFE branch (or read the current 资本项目个人外汇业务流程） for the current form names and approval tiers.",
+    "sources": [
+      "S04",
+      "S05"
+    ]
+  },
+  {
+    "id": "F-D05",
+    "severity": "low",
+    "title": "境外个人 route modeled as one remittance",
+    "detail": "The rule text contains no cap and no per-transfer limit (S02 Art.13; S03 Art.59/65). Banks may nonetheless split a large single purchase for operational reasons; the ladder models one transfer — costs scale with your bank's actual practice.",
+    "action": "Ask the bank in advance whether it processes the full documented amount in one purchase.",
+    "sources": [
+      "S02",
+      "S03"
+    ]
+  },
+  {
+    "id": "F-D06",
+    "severity": "low",
+    "title": "USD values of CNY fees move with the board",
+    "detail": "¥ fees were converted at 6.6929 CNY/USD (spot sell, captured). Each $0.01 move in the board changes wire fees by ≈0.15% in USD terms and every percentage-of-amount figure by the same.",
+    "action": "Recompute with rate = current board on trade date; ladder formulas are stated in methodology.",
+    "sources": [
+      "B01"
+    ]
+  },
+  {
+    "id": "F-D07",
+    "severity": "high",
+    "title": "Property-sale route omits disposition taxes by design",
+    "detail": "L5 totals contain ONLY the FX/remit leg. The sale itself triggers Chinese deed tax, VAT, surtaxes, and 20% IIT on 财产转让所得 (S09). These are DISPOSITION costs, not conversion costs, and can run to 5–20%+ of proceeds — they dominate the conversion penalty for this route.",
+    "action": "Model the sale taxes separately with local tax bureau quotes before choosing L5 over L3/L4.",
+    "sources": [
+      "S09"
+    ]
+  },
+  {
+    "id": "F-D08",
+    "severity": "medium",
+    "title": "Card/ATM/QDII FX-leg costs have no official schedule → blank",
+    "detail": "UnionPay acquiring-network FX markups, US/CN ATM access fees, and QDII in-NAV FX implementation spreads are not published in any source used this session. They are shown as blank rather than guessed. The ¥10万/yr and ¥1万/day ATM caps are verified (B04).",
+    "action": "Request your card issuer's and network's FX fee table in writing; ask the QDII manager for the FX implementation policy.",
+    "sources": [
+      "B04"
+    ]
+  },
+  {
+    "id": "F-D09",
+    "severity": "low",
+    "title": "BoC fee table vintage is 2014",
+    "detail": "The only official published personal transfer-fee schedule retrieved (B02) is BoC's 2014-11-01 table. Bank-published, so tier C; age means it is nonetheless the best available public number. No 2025/2026 successor fee schedule was found on boc.cn in this session's checks.",
+    "action": "Prefer written confirmation from your branch at order time.",
+    "sources": [
+      "B02"
+    ]
+  },
+  {
+    "id": "F-D10",
+    "severity": "medium",
+    "title": "关注名单 mechanics: direction verified, exact triggers not re-verified",
+    "detail": "Art. 62 of the 2020 guideline (S03) bars splitting/evasion and names the 关注名单； the FAQ/Tianjin readings this session restated Art. 64 daily-limit mechanics only. The exact numeric trigger for placement on 关注名单 and the full 2-year diminished-facilitation regime were not re-verified line-by-line verbatim this session.",
+    "action": "If you have ever been flagged, obtain the current text of Art. 62 from 汇发〔2020〕14号 verbatim before transacting; past-flagged persons should assume USD 50,000/year is NOT available to them.",
+    "sources": [
+      "S03"
+    ]
+  },
+  {
+    "id": "F-D11",
+    "severity": "low",
+    "title": "2026 FBAR penalty figures: regulation table operative at $16,536 / $165,353",
+    "detail": "eCFR (retrieved 2026-11-08) lists FY2025 inflation adjustments for penalties assessed on or after 2025-01-17: non-willful $16,536 (31 U.S.C. 5321(a)(5)(B)(i)); willful $165,353 (or 50% of balance, greater). Several 2026 secondary sources report OMB M-26-11 cancelled the 2026 annual adjustment, leaving these in effect for 2026 — the OMB memorandum was not retrieved this session, so secondary only. No conflict: regulation shows the amounts above regardless of the 2026 COLA outcome.",
+    "action": "Use $16,536 / $165,353 or 50% balance in current planning; check the Federal Register each January.",
+    "sources": [
+      "S14",
+      "S15"
+    ]
+  },
+  {
+    "id": "F-D12",
+    "severity": "low",
+    "title": "现钞买入 == 现汇买入 on the capture date — not a general truth",
+    "detail": "On the captured board, USD cash-buy and spot-buy were both 666.48 CNY/100. Cash boards historically differ (cash usually worse). Do not assume cash and spot board equality persists.",
+    "action": "Check the 现钞 row specifically before a cash transaction.",
+    "sources": [
+      "B01"
+    ]
+  },
+  {
+    "id": "F-D13",
+    "severity": "medium",
+    "title": "§988 analysis depends on your functional currency",
+    "detail": "26 U.S.C. § 988 (S20) treats FX-denominated transactions as ordinary. Whether converting your CNY deposit generates ordinary income depends on ¥ vs $ functional-currency status (your life/work currency) — a US citizen living in China may have a CNY functional currency, changing both §988 and measurement. This edition does NOT decide your functional currency.",
+    "action": "Fix functional currency with a US CPA before the conversion, not after.",
+    "sources": [
+      "S20"
+    ]
+  },
+  {
+    "id": "F-D14",
+    "severity": "medium",
+    "title": "Corporate wrappers not modeled",
+    "detail": "Holding CNY/USD via a PRC/LLC structure shifts the analysis to §6038A/6038C/5471/8865 territory with statutory penalties independent of any FX question. No costing is offered; presence of any entity is a fact this edition cannot see.",
+    "action": "If part of the balance sits in an entity, get US entity-reporting advice before any transfer.",
+    "sources": [
+      "S22"
+    ]
+  },
+  {
+    "id": "F-D15",
+    "severity": "low",
+    "title": "QDII quota limits not confirmable from this edition's registry",
+    "detail": "CSRC Order No. 46 (QDII pilot rules) was not retrieved this session; manager quotas and per-fund caps are therefore left blank rather than estimated. (The separate 'dossier' edition carries a CSRC source for the framework only; quotas remain unpublished per-manager.)",
+    "action": "Ask your manager for the fund's QDII capacity and any subscription cap in writing.",
+    "sources": []
+  },
+  {
+    "id": "F-D16",
+    "severity": "high",
+    "title": "REPO: prior editions cite superseded crypto-ban notice (2021 → abolished 2026-02-06)",
+    "detail": "Edition(s) citing 银发〔2021〕237号 / Xinhua 2021 for 'crypto is banned in China' describe superseded law: 银发〔2026〕42号 (eight departments, 2026-02-06) now governs and expressly abolishes 237号文. Substantive risk conclusion unchanged (illegal financial activity; transactions void), but every citation should be re-pointed to the 2026 notice.",
+    "action": "Re-point S16-family citations to pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html; mark affected rows in prior editions new review.",
+    "sources": [
+      "S23"
+    ]
+  },
+  {
+    "id": "F-D17",
+    "severity": "medium",
+    "title": "REPO: uscode.house.gov OLRC 'granule' links are dead (verified 2026-11-08)",
+    "detail": "Every registry link of the form uscode.house.gov/view.xhtml?req=granuleid:... returns 'Page Not Found' (US Code Online is in a temporary format). Verified dead for title 31 §5321 and title 26 §988; the pattern therefore fails for all granule citations across root/dossier/edition-b/edition-c registries. Working official replacement: govinfo.gov link service (verified working for 31 USC 5321, 26 USC 988/6038D/6039F/6038).",
+    "action": "Replace granule links with govinfo.gov equivalents repo-wide; re-run link checkers.",
+    "sources": [
+      "S15",
+      "S20"
+    ]
+  },
+  {
+    "id": "F-D18",
+    "severity": "low",
+    "title": "REPO: README route counts disagree across editions (18 / 22 / 33 / 35)",
+    "detail": "Root README says '18 routes'; edition-b '22'; edition-c '33'; dossier '35'. Different scopes, but the repository landing pages no longer tell one story; this edition states its own denominator (20 entries: 5 ladder-enabled lawful + 15 non-ladder — see methods.html for the grouping).",
+    "action": "Integration session: add one line per edition stating route-count denominator and definition.",
+    "sources": []
+  },
+  {
+    "id": "F-D19",
+    "severity": "low",
+    "title": "FBAR delinquency mechanics out of scope",
+    "detail": "If you have not filed FBARs for past years, the correct path (Streamlined Filing Compliance Procedures etc.) depends on willfulness and is not costed here. Civil exposure alone can exceed the balance (see Penalties page).",
+    "action": "Retain a US international tax practitioner; do not let this document-driven project substitute for advice.",
+    "sources": [
+      "S13",
+      "S14"
+    ]
+  },
+  {
+    "id": "F-D20",
+    "severity": "low",
+    "title": "Tier C sources are evidence, not law",
+    "detail": "B01/B02/B03/B04/R01 are bank-published materials: accurate for what the bank says it charges/quotes TODAY at that channel, but alterable unilaterally and not themselves law. Tier A (government/regulatory) sources remain the authority on what you must or must not do.",
+    "action": "When a tier-A and a tier-C source ever conflict, the tier-A statement wins; tier-C remains evidence of market practice.",
+    "sources": [
+      "B01",
+      "B02",
+      "R01"
+    ]
+  }
+]

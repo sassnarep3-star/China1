@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Methodology — China Money · Edition D</title>
+<meta name="description" content="Measured BoC board arithmetic, spread formulas, reserved blanks, limits, cross-edition map.">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2248%22 fill=%22%23c8a24a%22/><text x=%2250%22 y=%2268%22 font-size=%2248%22 text-anchor=%22middle%22 fill=%22%230f2740%22 font-weight=%22bold%22>中</text></svg>">
+</head><body>
+<header class="topbar"><div class="inner">
+<a class="brand" href="index.html"><span class="seal">中</span>China Money · Edition D</a>
+<nav class="pills"><a href="index.html" class="">Overview</a><a href="ladder.html" class="">Cost ladder $10k–$400k</a><a href="methods.html" class="">Every method, step by step</a><a href="penalties.html" class="">Penalties &amp; US exposure</a><a href="repo-review.html" class="">Repo review</a><a href="flagged.html" class="">Flagged for review</a><a href="sources.html" class="">Sources</a><a href="methodology.html" class="active">Methodology</a></nav>
+</div></header>
+<main class="wrap">
+<div class="hero"><div class="kicker">Method · formulas · capture evidence · limits</div>
+<h1>Methodology</h1>
+</div>
+<h2>1 · The measured board</h2>
+<p>Bank of China FX board (中国银行外汇牌价), captured via the public page on 2026-11-08/09; board row published <b>2026-11-09 05:30:00 UTC+8</b> (China's banks publish during the Beijing day):</p>
+<div class="twrap"><table><thead><tr><th>现汇买入<br>spot buy</th><th>现钞买入<br>cash buy</th><th>现汇卖出<br>spot sell ← <b>converter pays this</b></th><th>现钞卖出<br>cash sell</th><th>中行折算价<br>reference</th></tr></thead>
+<tbody><tr class="hl"><td class="num">666.48</td><td class="num">666.48</td><td class="num">669.29</td><td class="num">669.29</td><td class="num">671.68</td></tr></tbody></table></div>
+<p class="footer-note">CNY per 100 USD. Source: <a href="https://www.boc.cn/sourcedb/whpj/" target="_blank" rel="noopener" title="Bank of China FX board 中国银行外汇牌价 (captured 2026-11-09 05:30:00, board time UTC+8)">[B01]</a>. The 2026-11-08 UTC capture retrieves a board stamped 2026-11-09 05:30 Beijing time — the banking day boundary, not an error (see flag F-D12 family note).</p>
+<h2>2 · Arithmetic</h2>
+<ul>
+<li>mid = (666.48 + 669.29)/2 = <b>667.885</b></li>
+<li>one-way spread vs mid = (669.29 − 667.885)/667.885 = <b>0.2104%</b> — used as the central “spread” column</li>
+<li>full bid–ask width = (669.29 − 666.48)/667.885 = <b>0.4206%</b> — “round-trip band”; shown in Table 0 footnote logic as the conservative case</li>
+<li>sell vs reference = (671.68 − 669.29)/671.68 = <b>0.3558%</b></li>
+<li>FX rate used for fee conversion: 669.29/100 = <b>6.6929 CNY per USD</b></li>
+<li>wire fee (counter, international, any currency): fee_CNY = min(max(amount_CNY × 0.001, 50), 260) + 150 (B02)</li>
+<li>wire fee in USD = fee_CNY / 6.6929</li>
+<li>L1 tranche plan: tranches of ≤ $50,000 per calendar year, one wire per year per person (S02/S03)</li>
+<li>L3 emigrant plan: if amount×6.6929 ≤ ¥200,000 → 1 tranche; else tranches of 50% / 25% / 25% mapped to approval-stage releases (S04/S05)</li>
+<li>L2/L4/L5: single tranche</li>
+<li>Total cost = Σ wire_USD + amount × one-way spread; percent = total/amount</li>
+</ul>
+<h2>3 · What is deliberately absent (and why)</h2>
+<ul>
+<li><b>US receiving-bank fee</b> — no official source exists; publishing an “estimated typical $15–25” would violate this repo's no-inference rule (F-D03).</li>
+<li><b>SAFE/bank permit application fees for cash/capital-account approvals</b> — none published in retrieved sources; shown blank (F-D08).</li>
+<li><b>Property disposition taxes</b> — wrong category for a “conversion” ladder; quantified by Chinese law at 20% on 财产转让所得 + transaction taxes (F-D07).</li>
+<li><b>Market-intervention risk premium</b> — un-priceable; out of scope.</li>
+<li><b>QDII in-NAV FX implementation spread</b> — no per-trade official figure (F-D08/F-D15).</li>
+</ul>
+<h2>4 · Limits and candour</h2>
+<ul>
+<li>Values are arithmetic reproductions from sourced inputs, not quotes from your bank. Bank discretion (documentation sufficiency) is real and unbounded here.</li>
+<li>Bank-published (tier C) numbers can change without notice; treat August 2026 as a spot check and re-verify the two fee tables before the first wire.</li>
+<li>Regulation quoted is PRC law as published; local SAFE sub-bureau practice, bank head-office circulars, and your fact pattern may differ.</li>
+<li>This is research, not legal, tax or investment advice. For an amount ≥ US$50,000 the paperwork is documentary; for ≥ US$100,000 the US-reporting side is the one that destroys value if mishandled — retain a US international CPA/attorney before executing.</li>
+</ul>
+<h2>5 · Cross-edition map</h2>
+<ul>
+<li>Root <code>/</code> dashboard — original research dashboard (root + <code>/docs/</code>)</li>
+<li><code>/dossier/</code> — full desk-research edition (35 routes, measured spread)</li>
+<li><code>/edition-b/</code> — verifier-enforced edition (22 channels)</li>
+<li><code>/edition-c/docs/</code> — edition C (33 channels incl. Art.22(3) FIE liquidation R18)</li>
+<li><code>/edition-d/docs/</code> — <b>this edition</b>: the increment ladder, the quantified arithmetic</li>
+</ul>
+</main>
+<footer class="wrap">
+<p><b>China Money · Edition D</b> — official-source research on moving CNY→USD for a US citizen. Research document, not legal/tax/investment advice.</p>
+<p>Every populated figure links to its source; anything unverifiable is blank and listed on <a href="flagged.html">Flagged for review</a>. Built 2026-11-08 UTC. Self-contained static site; no tracking; no JavaScript required.</p>
+<p>Other editions in this repository: <a href="../../index.html">root dashboard</a> · <a href="../../docs/">/docs/ supplemental</a> · <a href="../../dossier/">dossier</a> · <a href="../../edition-b/">edition-b</a> · <a href="../../edition-c/docs/">edition-c</a>.</p>
+</footer></body></html>

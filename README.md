@@ -268,3 +268,41 @@ branch and by officer, three official instruments conflict with each other as re
 the Chinese and the US positions depend on facts about the origin of the funds that are not known here.
 Prohibited channels are documented **as prohibited**, with the statutory penalty scale and SAFE's
 published enforcement cases; no operational guidance is given for any of them.
+
+---
+
+# Edition D — the CNY→USD cost ladder (`/edition-d/`)
+
+**Live:** https://sassnarep3-star.github.io/China1/edition-d/docs/
+
+A fifth, self-contained edition answering the brief's operational question directly: **what does
+every lawful way to move CNY→USD cost, in USD 10,000 increments from $10,000 to $400,000, and
+exactly how is each executed step by step.**
+
+### The one-paragraph answer
+
+CNY→USD is not taxed in either country; the lawful cost of $400,000 is **≈$0.9–1.0k**
+(measured 0.2104% one-way spread, BoC board captured 2026-11-09, + ≤¥410 (~$61) wire fee per
+remittance — BoC 2014 counter table, tier-C flagged). The binding constraint is
+**capital-account control**, not tax: the USD 50,000/yr facilitation quota binds only 境内个人
+(PRC residents); a naturalized US citizen is 境外个人 and buys FX against documented
+China-source income with no cap in the rule text (汇发〔2007〕1号 Art.13; 汇发〔2020〕14号 Art.59).
+Whole legacy balances exit only via 移民转移 (staged ~2 years), 继承转移， or SAFE-approved
+property-sale proceeds. The largest real-world exposure for a US citizen is **US reporting**:
+FBAR willful = greater of $165,353 or 50% of balance per report (31 CFR 1010.821); Form 8938 =
+$10,000 + $10,000/30 days after notice, $50,000 cap. Unlawful shortcuts terminate at a
+**30%–100% fine band** (外汇管理条例 Art.39/45).
+
+### Contents
+
+`edition-d/docs/` — 8 pages: executive dashboard, **cost ladder** (200 increment rows + FBAR
+exposure + penalty bands), methods with full step-by-step and pros/cons, penalties, repo-review
+(rebuilt & probed all prior editions; found 2 repo-wide citation defects: dead OLRC
+`uscode.house.gov` granule links, superseded 2021 crypto notice → 银发〔2026〕42号）, flagged
+register (20 items), sources (28), methodology. `edition-d/data/*.json` machine-readable exports;
+`edition-d/EXECUTIVE_SUMMARY.md` in markdown. Build: `python3 edition-d/build/generate.py`; verify:
+`python3 edition-d/build/verify.py` (20 checks, exit 0).
+
+Flagged for review items and the two repo-wide defects are published, non-blocking, at
+https://sassnarep3-star.github.io/China1/edition-d/docs/flagged.html and
+https://sassnarep3-star.github.io/China1/edition-d/docs/repo-review.html
