@@ -662,7 +662,7 @@ the actual deliverable is now the independent verification edition at `edition-f
 | Official-source research and lawful route inventory | done (gaps flagged) | arena-5b35ee3f | edition-f/data/**, edition-f/research/** |
 | Executive summary and requirements traceability | done (publication rows pending deploy record) | arena-5b35ee3f | edition-f/EXECUTIVE_SUMMARY.md, edition-f/REQUIREMENTS.md |
 | USD 10,000–400,000 cost ladder and responsive dashboard | done (11 pages, 40 rows, 31 methods) | arena-5b35ee3f | edition-f/site/**, edition-f/build/**, edition-f/README.md |
-| Independent verification and publication | in progress | arena-5b35ee3f | edition-f/**, .github/workflows/edition-f.yml, this appended board |
+| Independent verification and publication | done (PR #17 merged; Pages deployed) | arena-5b35ee3f | edition-f/**, .github/workflows/edition-f.yml, this appended board |
 | Existing evidence gaps and irregularities | needs review | arena-5b35ee3f | edition-f/site/flagged.html (non-blocking) |
 
 ### Concurrent integration / scope correction
@@ -706,5 +706,23 @@ invented. Prohibited channels are described only as prohibited, with no operatio
   rows, 40 scenarios); `scripts/verify.py` PASS (6 pages, 60 rows); edition-b PASS (15 checks);
   edition-c linkcheck PASSED (0 warnings); edition-d verify PASS (19 checks). These are mechanical
   consistency checks, not external retrievability or factual correctness.
-- Publication next: PR to main, merge autonomously, confirm Pages at
-  https://sassnarep3-star.github.io/China1/edition-f/, then append the PR/merge/deploy record here.
+- Publication completed: PR #17 merged autonomously; Pages deployed and publicly verified below.
+
+### Publication record — PR #17 (Edition F)
+
+- Pull request: https://github.com/sassnarep3-star/China1/pull/17 — **merged** 2026-11-08 23:43:19 UTC;
+  merge commit `e414add89a690ea52d21f56454fa7eebfb38b61e`.
+- PR checks: `verify`, `edition-d`, `edition-e`, `edition-f` passed before merge. Main-branch runs at
+  `e414add` passed: Edition F verify https://github.com/sassnarep3-star/China1/actions/runs/42536528824;
+  Verify static site and Verify Edition E also succeeded.
+- GitHub Pages build/deploy: https://github.com/sassnarep3-star/China1/actions/runs/42536528502 —
+  **success** at `e414add`; source remains `main:/`.
+- Public verification: fetched
+  https://sassnarep3-star.github.io/China1/edition-f/site/index.html?build=e414add and
+  https://sassnarep3-star.github.io/China1/edition-f/site/costs.html?build=e414add after deployment.
+  The published dashboard shows 40 targets, 31 methods, 47 sources, source links on table rows,
+  blank/unverified personal tax, and the BOC date-mismatch warning. `/edition-f/` redirects to
+  `edition-f/site/index.html`.
+- Concurrent work preserved: PRs #10/#11 root scenarios, PR #13 Edition D, PRs #15/#16 Edition E,
+  and open PRs #12/#14 were not merged/closed/overwritten by this session. Root portal link to
+  Edition F remains a cross-session request for the portal owner.
