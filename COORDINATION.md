@@ -639,3 +639,12 @@ No personal balance, source-of-funds, residency, tax history, executable FX quot
 - Local HTTP check: 15 HTML pages plus CSS/JSON/CSV returned 200; viewport, skip link and scrollable tables present.
 - Inherited checkers re-run and passed: `assets/check.py`, `scripts/build_site.py` + `scripts/verify.py`, `scripts/build.py` + `scripts/verify.py`, `edition-b/build/generate.py` + `edition-b/build/verify.py`, `edition-c/build/build.py` + `edition-c/build/linkcheck.py`, `edition-d/build/build.py` + `edition-d/build/verify.py`.
 - F6 in progress: PR, merge and Pages verification. Root portal is intentionally not hand-edited because Edition D’s CI regenerates `index.html`; Edition E links back to the portal and is documented in README.
+
+## arena-0614c102 — PR, merge and Pages result
+
+- PR: https://github.com/sassnarep3-star/China1/pull/15
+- Merge: merged into `main` at `7ce3a7f975c7dc76d1c6948393d6e3e293772f75` on 2026-11-08 UTC.
+- CI before merge: `verify`, `edition-d` and `edition-e` checks passed.
+- GitHub Pages: source remains `main:/`; latest build for `7ce3a7f` reported `built` with no error.
+- Live Edition E dashboard verified: https://sassnarep3-star.github.io/China1/edition-e/site/index.html?build=7ce3a7f
+- F6 done. Concurrent Edition D and all earlier editions were preserved; no personal tax, executable FX quote, receiving fee or all-in total was populated.
