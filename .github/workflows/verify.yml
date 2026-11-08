@@ -31,3 +31,13 @@ jobs:
           python3 edition-c/build/build.py
           git diff --exit-code -- edition-c/docs
           python3 edition-c/build/linkcheck.py
+
+  edition-d:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify Edition D is reproducible and every figure is sourced
+        run: |
+          python3 edition-d/build/build.py
+          git diff --exit-code -- edition-d/docs index.html
+          python3 edition-d/build/verify.py
