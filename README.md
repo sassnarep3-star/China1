@@ -268,3 +268,19 @@ branch and by officer, three official instruments conflict with each other as re
 the Chinese and the US positions depend on facts about the origin of the funds that are not known here.
 Prohibited channels are documented **as prohibited**, with the statutory penalty scale and SAFE's
 published enforcement cases; no operational guidance is given for any of them.
+
+---
+
+## Edition D — verified cost dashboard (2026-11-08)
+
+`edition-d/` is an additive, self-contained edition: 43 distinct candidates
+(legal entitlements, execution rails, business routes, alternatives and rejected
+candidates are counted separately), 1,720 cost rows covering every $10,000
+increment from $10,000 to $400,000, 52 registered sources, 47 review flags, and a
+line-by-line repository audit. Unknown values are blank and flagged, never zero.
+Earlier editions are preserved; irregularities found in them are published on
+Edition D's Flagged for Review and Repo Audit pages rather than silently edited.
+
+- Site: `edition-d/docs/index.html`
+- Build/verify: `python3 edition-d/build/build.py && python3 edition-d/build/verify.py`
+- CI: `.github/workflows/edition-d-verify.yml`

@@ -1,0 +1,824 @@
+{
+  "_meta": {
+    "edition": "D",
+    "method": "Automated line-by-line scan of every tracked text file plus targeted irregularity rules. Not a claim of human legal review of every line.",
+    "files_scanned": 92,
+    "lines_scanned": 18148,
+    "findings": 20
+  },
+  "files": [
+    {
+      "path": ".github/workflows/verify.yml",
+      "bytes": 1172,
+      "sha256": "028eab7085a11c9f854b62ed9f37d736ca7c2ab90e24b5832d93a273b1328f15",
+      "lines": 33,
+      "scan": "line-by-line"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 340,
+      "sha256": "aeba5454b2283bc29d5da53120ab663965c644c7fcc618a1fe47f099464f9736",
+      "scan": "binary-skipped"
+    },
+    {
+      "path": "COORDINATION.md",
+      "bytes": 34998,
+      "sha256": "48a0cf75c2ea5356e60e06f98479ac590a0966aed418cf25ce51a8e5cf6b6416",
+      "lines": 410,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "EXECUTIVE_SUMMARY.md",
+      "bytes": 13656,
+      "sha256": "7f42ecfc3b30d6888d9f4d0be3907efb98ae1ae214806a5a0dae99e5bb63484c",
+      "lines": 128,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "README.md",
+      "bytes": 17380,
+      "sha256": "8d3c60237bd9cdc2c6ab2ec1a6b9dd9a11e1ac83185af7411ab60136eaab6a09",
+      "lines": 270,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "REQUIREMENTS.md",
+      "bytes": 8508,
+      "sha256": "1e06f025f8d8c6242d3631d03ddd2c5fa5697e51ff0df4bac1b2a0e8f49f8525",
+      "lines": 77,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "assets/build.py",
+      "bytes": 22873,
+      "sha256": "783559d62592dd9d5cc0bdad1b0e589eb8fd6701b1da369bc463aa0086b0a49c",
+      "lines": 112,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "assets/check.py",
+      "bytes": 1798,
+      "sha256": "3111a5d9815d0917dc21557a8f7a5c88c66b8f0d235de5a84bb137caa2819444",
+      "lines": 39,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "assets/style.css",
+      "bytes": 5944,
+      "sha256": "9f1061600f585bfb513b01081bc60419c81349217b91596d72303789dc0edc6f",
+      "lines": 1,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "data/channels.json",
+      "bytes": 46806,
+      "sha256": "e90e9d85f406b5a4e239cf43d2fb7184ed69fc00dd21e836abf19d0518656920",
+      "lines": 915,
+      "scan": "line-by-line",
+      "json_valid": true
+    },
+    {
+      "path": "data/costs.json",
+      "bytes": 14629,
+      "sha256": "bec48354bf62c0e3fc44983f81ee56b5e9423bb42b9baaba382fa1f161f8b856",
+      "lines": 320,
+      "scan": "line-by-line",
+      "json_valid": true
+    },
+    {
+      "path": "data/flagged.json",
+      "bytes": 15078,
+      "sha256": "9f66dee5961c1c75fec1de055c212d06ed1fed76c61f76bf7ac73953018a24dd",
+      "lines": 251,
+      "scan": "line-by-line",
+      "json_valid": true
+    },
+    {
+      "path": "data/sources.json",
+      "bytes": 24873,
+      "sha256": "ee8db662a2002c853cc05e8caae27346e7ba0d11ad5b74960d7d829aacc4d128",
+      "lines": 314,
+      "scan": "line-by-line",
+      "json_valid": true
+    },
+    {
+      "path": "data/taxes.json",
+      "bytes": 13042,
+      "sha256": "13771df5866c5cb4d44bcd3a434b4b53d7ed6c2880aab88c9285abd5ad98d9c3",
+      "lines": 277,
+      "scan": "line-by-line",
+      "json_valid": true
+    },
+    {
+      "path": "docs/app.js",
+      "bytes": 608,
+      "sha256": "736e782b435e2b2b013e953432e205cbb6b41f1bfa514077e62bf177b637480d",
+      "lines": 16,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "docs/costs.html",
+      "bytes": 6306,
+      "sha256": "9c238e55011d6e7bf48852caeb531a68f521b5e70eedb919ccefd0e4e709cf1c",
+      "lines": 1,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "docs/data.json",
+      "bytes": 18200,
+      "sha256": "4ac167cfad95ba7b4b21f50dac07a2d17edace2fa20b3e12dd7fa9ad12bbcabc",
+      "lines": 388,
+      "scan": "line-by-line",
+      "json_valid": true
+    },
+    {
+      "path": "docs/index.html",
+      "bytes": 6354,
+      "sha256": "7e1a56432cc4a2a1d1bd87ae71bda3db67e318e0136d855bb1e59973dd83f0ae",
+      "lines": 1,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "docs/review.html",
+      "bytes": 8136,
+      "sha256": "c82e3813ce1329343a9c0d9ec3cc808a098cac03a1f1a9412a5cd00916cf14f0",
+      "lines": 1,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "docs/routes.html",
+      "bytes": 14792,
+      "sha256": "cadc75f6bbc1b2da8c86ffb2b26f92f9bc5f8e1dece42c738121e865f6680164",
+      "lines": 1,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "docs/sources.html",
+      "bytes": 7067,
+      "sha256": "c62a9f2db7a83cd585b5059da9ea52c15a5226d324951a8c96003b785f86bbe2",
+      "lines": 1,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "docs/style.css",
+      "bytes": 3654,
+      "sha256": "d159f4d24d0bd398694805fe0e6aba8baa060e495b4e8886fe38cef3447daa3c",
+      "lines": 1,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "docs/tax.html",
+      "bytes": 5863,
+      "sha256": "509380034280cbb84bea24f5a8f70ed95678cbaac2704db01b07fcfca6eb7a67",
+      "lines": 1,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "dossier/assets/style.css",
+      "bytes": 6421,
+      "sha256": "ba2d8bc27248509f81fb2ae16c079c92fc1a0d645672ca5396432d21f4aaca0c",
+      "lines": 96,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "dossier/channels.html",
+      "bytes": 83223,
+      "sha256": "beff4760ef0daade2fb1c1ded4d9f0a2477381b27c24e3eeec0bc0c80d8069b1",
+      "lines": 128,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "dossier/costs.html",
+      "bytes": 27640,
+      "sha256": "f2cf70bc3cec966402a36b3392e8bba3d80d7f327a6b386ad84da617913c1cce",
+      "lines": 94,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "dossier/flagged.html",
+      "bytes": 27902,
+      "sha256": "82fb566ee158840cb63706a7e9a438c26dbdd72af6396208c3c95ef278636937",
+      "lines": 65,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "dossier/index.html",
+      "bytes": 14515,
+      "sha256": "59773261b817c32ddf8374571eadffcea42a17048e56e632677e058345e23d24",
+      "lines": 118,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "dossier/methodology.html",
+      "bytes": 6204,
+      "sha256": "c3443c5ccef6a3ec4f72abd1964c191666c7eafe4a8a3630a46043647e5262dd",
+      "lines": 55,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "dossier/sources.html",
+      "bytes": 34436,
+      "sha256": "45215a21df4eff240c6aa581fdf6c9617ea3802c6c1c66b570fa3fb2628a68c1",
+      "lines": 76,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "dossier/strategy.html",
+      "bytes": 9694,
+      "sha256": "d52f3f6ada4946d3ad185479b94f1ca40834e9a97191d90dedaa9daa2e351247",
+      "lines": 109,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "dossier/taxes.html",
+      "bytes": 29558,
+      "sha256": "1a53525bc3e6202c7973e4a86b0bb8c85f4aeb1276ee96c9dbd62a1a641a4b53",
+      "lines": 78,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "edition-b/EXECUTIVE-SUMMARY.md",
+      "bytes": 14449,
+      "sha256": "bdde847f021b056a44ac0190f5d4a888ab705f3aaf106b22ec58682a5585711e",
+      "lines": 136,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "edition-b/assets/style.css",
+      "bytes": 9925,
+      "sha256": "3b5fe48fd0b7f59a235112f8188255322c660ce00e1ada2cf5d6f12eb5b5cbbe",
+      "lines": 208,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "edition-b/build/generate.py",
+      "bytes": 35307,
+      "sha256": "5f691d608629efa74242fcbf46b76e2e1f3391b1c8b10b3c3bd202baea3e0408",
+      "lines": 732,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "edition-b/build/verify.py",
+      "bytes": 11718,
+      "sha256": "bb6b7160e827091a74dfa2b77d1a58f6779e5878a6bec7b88a32c0e6871b59ef",
+      "lines": 307,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "edition-b/data/flagged.json",
+      "bytes": 12268,
+      "sha256": "47a76d0e655e3834e815adfaf5ccd195e6eb068e2897f839e5d7e6705b5527c4",
+      "lines": 166,
+      "scan": "line-by-line",
+      "json_valid": true
+    },
+    {
+      "path": "edition-b/data/methods.json",
+      "bytes": 49886,
+      "sha256": "fc4c8370b93938ac207ede053043e92dd5289f0219cb3b98401f0ea3c932850b",
+      "lines": 902,
+      "scan": "line-by-line",
+      "json_valid": true
+    },
+    {
+      "path": "edition-b/data/penalties.json",
+      "bytes": 14531,
+      "sha256": "335f42c1f48645dbf6a11baf19540b552fadd9730d8b4a6666ed2cfc8d510683",
+      "lines": 264,
+      "scan": "line-by-line",
+      "json_valid": true
+    },
+    {
+      "path": "edition-b/data/sources.json",
+      "bytes": 32170,
+      "sha256": "495d43e7462261d2a45cbfc9707210dbc225aa1aa8d98b657c551d704ad26a7f",
+      "lines": 453,
+      "scan": "line-by-line",
+      "json_valid": true
+    },
+    {
+      "path": "edition-b/executive-summary.html",
+      "bytes": 17857,
+      "sha256": "0248f7fb318315d031df06c795232841a33712e3a739d4711687938a05824542",
+      "lines": 226,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "edition-b/flagged.html",
+      "bytes": 18771,
+      "sha256": "6393beb3c2036eed5c9c769287c5bdfe30a154d07b2588aecfd4b9b6aeb1f746",
+      "lines": 235,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "edition-b/index.html",
+      "bytes": 23932,
+      "sha256": "0186fad86679eb3a0de952f88f0c52573099a5624106728e6fce13d3a3c742b9",
+      "lines": 337,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "edition-b/lawful.html",
+      "bytes": 70440,
+      "sha256": "52dfaf227a9705dec5c536b61d30fdf60828c8846087ed9baef3e14045acc2e0",
+      "lines": 293,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "edition-b/methods.html",
+      "bytes": 100288,
+      "sha256": "0a0823d54cb218cec9520c7da70e62a22a311d3124b5d5de6427d55f76728264",
+      "lines": 421,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "edition-b/penalty.html",
+      "bytes": 26490,
+      "sha256": "ddf946f0b2db61110c264b3d80918c98b53cc80cacb2a258e5d5f5eeca08ea13",
+      "lines": 276,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "edition-b/prohibited.html",
+      "bytes": 33275,
+      "sha256": "b3c589b66b8db018aefb9f8f9a93c1eb27885f4555d4fc73e59ff9b0cdd1bc9f",
+      "lines": 197,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "edition-b/sources.html",
+      "bytes": 37161,
+      "sha256": "8665fa23fed8bb3fee3320e0d5fd5dd5d1b38427568eab8f5ea40058fb766dd7",
+      "lines": 333,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "edition-b/us-reporting.html",
+      "bytes": 11144,
+      "sha256": "5200934714181720804a21c97c8daefe60114ca87f2aad40b67e29efc4b7363d",
+      "lines": 130,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "edition-c/COORDINATION.md",
+      "bytes": 14068,
+      "sha256": "7e03d1c92e00fa8604794413f7d1d22cca61d2a973c4025453a651dccfddfe3f",
+      "lines": 190,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "edition-c/README.md",
+      "bytes": 8204,
+      "sha256": "022609de869039ff2cc9828dca201251d064a2e16709718e56369ecdd4d1d1e5",
+      "lines": 109,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "edition-c/build/build.py",
+      "bytes": 57317,
+      "sha256": "8c928cf1051283e7d159e456ea634ed67a6e91786154ab2cad34db527b80f7f1",
+      "lines": 1345,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "edition-c/build/linkcheck.py",
+      "bytes": 18235,
+      "sha256": "bf170a64c81dece9e6f9f58e582db80b0b4d208a92b140e05e2ba54dd7197a01",
+      "lines": 492,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "edition-c/data/.build-digests.json",
+      "bytes": 1805,
+      "sha256": "1ace2aa1ca6445d674685b47c3c84f295238c76dcadaadeb3ea537b97ec9a3cb",
+      "lines": 22,
+      "scan": "line-by-line",
+      "json_valid": true
+    },
+    {
+      "path": "edition-c/data/flags.json",
+      "bytes": 19803,
+      "sha256": "af8e5cb7f90d8c87ca2b95a51cf1240cb8c9d3e417a0bc59005b09e0f7bc45c9",
+      "lines": 198,
+      "scan": "line-by-line",
+      "json_valid": true
+    },
+    {
+      "path": "edition-c/data/penalties.json",
+      "bytes": 25607,
+      "sha256": "2197440a45b39feeda0a0f215e6e5759c7292a105e9aa0ee96454cb67ec965b8",
+      "lines": 179,
+      "scan": "line-by-line",
+      "json_valid": true
+    },
+    {
+      "path": "edition-c/data/repo-review.json",
+      "bytes": 8599,
+      "sha256": "49f3d8b95299cb84c2031cd564b1f5c39000e5039c8dfe7d19ce07b892c240a5",
+      "lines": 103,
+      "scan": "line-by-line",
+      "json_valid": true
+    },
+    {
+      "path": "edition-c/data/routes.json",
+      "bytes": 76328,
+      "sha256": "9f3608a4bc6463fe9526c6fe01e53e67acdc55a15fe1e15cce86ec0cfe8930eb",
+      "lines": 1049,
+      "scan": "line-by-line",
+      "json_valid": true
+    },
+    {
+      "path": "edition-c/data/sources.json",
+      "bytes": 48073,
+      "sha256": "df5c16bbb388f755317c8911b2982cdade023e33292a684297a9fc871397f64b",
+      "lines": 703,
+      "scan": "line-by-line",
+      "json_valid": true
+    },
+    {
+      "path": "edition-c/data/summary.json",
+      "bytes": 15182,
+      "sha256": "e2d5f00f874e2422b26a5038ecb5308afe27f4b51c2e7afb4fa35c98250943b6",
+      "lines": 151,
+      "scan": "line-by-line",
+      "json_valid": true
+    },
+    {
+      "path": "edition-c/data/tax.json",
+      "bytes": 27316,
+      "sha256": "8d3140f3b91cd1385b93baf2f135bbf471104a053895963607b9cddf9eb48dc8",
+      "lines": 437,
+      "scan": "line-by-line",
+      "json_valid": true
+    },
+    {
+      "path": "edition-c/docs/.nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "scan": "binary-skipped"
+    },
+    {
+      "path": "edition-c/docs/assessed-and-rejected.html",
+      "bytes": 11216,
+      "sha256": "bbe416df2265aebf129da33b549d43aab29e82cb86acb14b9a6aec8b4c196502",
+      "lines": 44,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "edition-c/docs/asset-channels.html",
+      "bytes": 18738,
+      "sha256": "12f07041cf577e436521ec707b3a6c9cd4771e466cd4946a09b50f5aaa449b98",
+      "lines": 44,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "edition-c/docs/assets/css/style.css",
+      "bytes": 9108,
+      "sha256": "28e382f5cff8cfdf5b574161005567042ae25a0343d26078140ecefbf2fc6a49",
+      "lines": 151,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "edition-c/docs/assets/js/site.js",
+      "bytes": 1680,
+      "sha256": "006a273d05cb939e5002fdcac79022e14a57646d00a469c0e1e43d16999a3abc",
+      "lines": 47,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "edition-c/docs/corporate-channels.html",
+      "bytes": 39483,
+      "sha256": "c7e294003853aa48c787750a25fc26841434f554b2149fc1b14be095776d2c4d",
+      "lines": 44,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "edition-c/docs/executive-summary.html",
+      "bytes": 22990,
+      "sha256": "ae73b92859794c1c56d1d4fcb6203906f140b2dd66bc22577a4110b3aaf3a047",
+      "lines": 44,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "edition-c/docs/flagged.html",
+      "bytes": 35531,
+      "sha256": "19a41adfd87f4af35fbb6f96149a4e872e9ef659614f2613849c5f63b3fdc537",
+      "lines": 44,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "edition-c/docs/index.html",
+      "bytes": 43226,
+      "sha256": "66234d8c8ad65d11c5ec5a838fcb840d66a7560c7692d2cdec2a8dfc27cefd0b",
+      "lines": 44,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "edition-c/docs/individual-channels.html",
+      "bytes": 42766,
+      "sha256": "0bb69d8ab6d28b9afb5dd28a15f89fef2e5ba24aa4ca257333cba2487391f4d1",
+      "lines": 44,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "edition-c/docs/methodology.html",
+      "bytes": 10760,
+      "sha256": "aa3b84de961c05e174d7a81ab70b76933d23ef472c54d23d7df516de08a9055b",
+      "lines": 44,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "edition-c/docs/penalty.html",
+      "bytes": 41312,
+      "sha256": "45d4c3ce6bb4d5520f61dc47b679882c0cd52fa8541eb3d70c7e200673e7e3e1",
+      "lines": 44,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "edition-c/docs/prohibited.html",
+      "bytes": 21782,
+      "sha256": "e9a8e6eaef29a8cbf1357531f3b5e140164265b7a55a0b4e40843f35c017ef63",
+      "lines": 44,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "edition-c/docs/repo-review.html",
+      "bytes": 14272,
+      "sha256": "2c56aac0cefc291953520cd4bf0397001beff8c28360924d14098c5b0377153a",
+      "lines": 44,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "edition-c/docs/routes.html",
+      "bytes": 49354,
+      "sha256": "b31b5ed72ab2b4593707ea9a973575cad231bbfd1ce15d4c64a09be0aa7d9d9b",
+      "lines": 44,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "edition-c/docs/sources.html",
+      "bytes": 78615,
+      "sha256": "739fe61d739f9fa29dd447fc1abe00a1690ffd25a3e49802320315b7fa6f1ee1",
+      "lines": 44,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "edition-c/docs/tax-china.html",
+      "bytes": 19491,
+      "sha256": "efc36f37de16bd59374fbbf44e961948f0236f8742fcd941e5c1eb43a293fd6d",
+      "lines": 44,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "edition-c/docs/tax-treaty.html",
+      "bytes": 14934,
+      "sha256": "9fab1c47e9da89923fa06cadb1dea16c3ca9dfd52d9276c2104b87cbf57e035f",
+      "lines": 44,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "edition-c/docs/tax-us.html",
+      "bytes": 19985,
+      "sha256": "e5242f1aabaf9a0abdd2f578b1ee1b4cb0cc8d9a02b62cfaeb53ebecfa12e0fc",
+      "lines": 44,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "edition-c/docs/trade-channels.html",
+      "bytes": 13610,
+      "sha256": "90f15af59623f8e6dd9e4f4cc31f54b8662df86c28dcdf1534e9e313374fdbfc",
+      "lines": 44,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "index.html",
+      "bytes": 7143,
+      "sha256": "4725b8630bc81d7402e56c0ea0563bd94b3e3c6d37765744e04e54b06168d321",
+      "lines": 1,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "pages/costs.html",
+      "bytes": 6526,
+      "sha256": "b26578f4ae3a97ac6879d0ab494f6c5fd2f4dc84c9f97082741eba334f8849ee",
+      "lines": 1,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "pages/reporting.html",
+      "bytes": 5718,
+      "sha256": "70572826445285e300ca75eb85afc1d14177eee7b77fd7e9f9111f986935e878",
+      "lines": 1,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "pages/review.html",
+      "bytes": 7056,
+      "sha256": "df0c0191eb22341213a848b2ae4dc52cec9041245af927dc099fc9b266430d7d",
+      "lines": 1,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "pages/routes.html",
+      "bytes": 13188,
+      "sha256": "eeefb7053525511662c11d3ce1f5dbd570548d83484fe14e54327778f4d42d36",
+      "lines": 1,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "scripts/build.py",
+      "bytes": 25946,
+      "sha256": "ebf4f8940c5edc66aa5258737d1f8f41c4e98c3c8a3b6ada5b7ae53980c31a92",
+      "lines": 61,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "scripts/build_site.py",
+      "bytes": 54952,
+      "sha256": "083920b15c239f3753600d221f9078e28d3648f7a7d17855a338c8e3c43212f0",
+      "lines": 853,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "scripts/data_channels.py",
+      "bytes": 48268,
+      "sha256": "b0bea471f00bec3f1698d442e4d32f48d1a7f4640a1fa4f9cb561606f401d76d",
+      "lines": 625,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "scripts/data_costs.py",
+      "bytes": 13498,
+      "sha256": "7eb9ad8b3c38eccace2d95e2af6119a362ec7a2d5472e8ea1bb444cc97fbe759",
+      "lines": 146,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "scripts/data_flagged.py",
+      "bytes": 15065,
+      "sha256": "f0d18513bac8271bc5675dfd237b8af679c4daf9654414b4338245beb020250d",
+      "lines": 153,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "scripts/data_sources.py",
+      "bytes": 25679,
+      "sha256": "a815ecde391818a63d2787a918c084cd8e66c6f687e2c6b2412596f8472e4da8",
+      "lines": 240,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "scripts/data_taxes.py",
+      "bytes": 12480,
+      "sha256": "0dc3a4d7456794f3c5081a0a08fb03f9e8190a4a6d3c83c288f09691b8465c32",
+      "lines": 119,
+      "scan": "line-by-line"
+    },
+    {
+      "path": "scripts/verify.py",
+      "bytes": 1335,
+      "sha256": "eb989f2a0cdd315703c4872f808e342788b20c05a80bad80145c4dd86741f04b",
+      "lines": 29,
+      "scan": "line-by-line"
+    }
+  ],
+  "findings": [
+    {
+      "path": "EXECUTIVE_SUMMARY.md",
+      "line": 5,
+      "rule": "SPREAD_AS_ONE_WAY_COST",
+      "detail": "Bid/ask round-trip spread is not a verified one-way conversion loss; BOC ask was below reference rate.",
+      "excerpt": "**Answer in one sentence.** There is no tax on converting or transferring your own money in either jurisdiction; the real cost of a lawful conversion is a bank spread of about **0.42%**; the real barrier is China's *capital-account* inconve"
+    },
+    {
+      "path": "EXECUTIVE_SUMMARY.md",
+      "line": 58,
+      "rule": "STALE_STAGED_EMIGRANT",
+      "detail": "Superseded staged emigrant-release wording; amended Huifa [2014] No. 2 removed staged remittance.",
+      "excerpt": "| **B1** | 移民转移 — emigration asset transfer (PBOC Announcement [2004] No. 16) | Whole declared balance, staged: 50%, then half the remainder after a year, the rest after two; ≤ CNY 200,000 may go in one release | A whole balance, for someon"
+    },
+    {
+      "path": "README.md",
+      "line": 129,
+      "rule": "STALE_STAGED_EMIGRANT",
+      "detail": "Superseded staged emigrant-release wording; amended Huifa [2014] No. 2 removed staged remittance.",
+      "excerpt": "Only two lawful routes move a whole balance: **emigrant transfer** (needs cancelled PRC household registration + certified foreign residence + PRC tax clearance, staged over ~2 years) and **inheritance transfer** (needs foreign citizenship "
+    },
+    {
+      "path": "data/costs.json",
+      "line": 6,
+      "rule": "SPREAD_AS_ONE_WAY_COST",
+      "detail": "Bid/ask round-trip spread is not a verified one-way conversion loss; BOC ask was below reference rate.",
+      "excerpt": "      \"note\": \"The real, unavoidable 'conversion penalty' on a lawful CNY→USD purchase, derived from Bank of China's own USD quotes of 2026-11-08.\""
+    },
+    {
+      "path": "data/sources.json",
+      "line": 60,
+      "rule": "STALE_STAGED_EMIGRANT",
+      "detail": "Superseded staged emigrant-release wording; amended Huifa [2014] No. 2 removed staged remittance.",
+      "excerpt": "    \"key_text\": \"第二条 个人财产对外转移包括移民财产转移和继承财产转移；第六条 移民转移必须一次性申请拟转移出境的全部财产金额，分步汇出。首次可汇出金额不得超过全部申请转移财产的一半；自首次汇出满1年后…满2年后可汇出全部剩余财产。全部申请转移财产在等值人民币20万元以下（含20万元）的，经批准后可一次性汇出；第八条(四)(六) 移居外国的应提供公安机关出具的中国户籍注销证明和中国驻外使领馆出具或认证的申请人在国外定居证明；申请转移财产所在地或收入来源地主管"
+    },
+    {
+      "path": "data/sources.json",
+      "line": 70,
+      "rule": "STALE_STAGED_EMIGRANT",
+      "detail": "Superseded staged emigrant-release wording; amended Huifa [2014] No. 2 removed staged remittance.",
+      "excerpt": "    \"key_text\": \"对申请金额低于等值50万元人民币的，由外汇局省级分局审核办理；超过等值50万元（含50万元）人民币的，由省级外汇局初审后报国家外汇管理局批准。对超过20万元（含20万元）人民币的移民转移采取“一次申请、分步汇出”。\","
+    },
+    {
+      "path": "dossier/index.html",
+      "line": 39,
+      "rule": "SPREAD_AS_ONE_WAY_COST",
+      "detail": "Bid/ask round-trip spread is not a verified one-way conversion loss; BOC ask was below reference rate.",
+      "excerpt": "    <p>Bank of China quoted USD at 666.48 (bid) and 669.29 (ask) CNY per 100 on 2026-11-08 <a class=\"src\" href=\"https://www.boc.cn/sourcedb/whpj/\" target=\"_blank\" rel=\"noopener\" title=\"Bank of China FX rate board (中国银行外汇牌价) — USD, captured "
+    },
+    {
+      "path": "dossier/sources.html",
+      "line": 31,
+      "rule": "STALE_STAGED_EMIGRANT",
+      "detail": "Superseded staged emigrant-release wording; amended Huifa [2014] No. 2 removed staged remittance.",
+      "excerpt": "<tr id=\"CN-06\"><td class=\"mono\"><b>CN-06</b></td><td><b>个人财产对外转移售付汇管理暂行办法, PBOC Announcement [2004] No. 16 — State Council Gazette 2005 No. 22</b><br><span style=\"color:var(--muted);font-size:13px\">People&#x27;s Bank of China (gov.cn gazett"
+    },
+    {
+      "path": "dossier/sources.html",
+      "line": 32,
+      "rule": "STALE_STAGED_EMIGRANT",
+      "detail": "Superseded staged emigrant-release wording; amended Huifa [2014] No. 2 removed staged remittance.",
+      "excerpt": "<tr id=\"CN-07\"><td class=\"mono\"><b>CN-07</b></td><td><b>SAFE Q&amp;A on 个人财产对外转移 (approval tiers and staged release)</b><br><span style=\"color:var(--muted);font-size:13px\">SAFE · zh</span><br><span class=\"mono\" style=\"font-size:12px;color:v"
+    },
+    {
+      "path": "dossier/strategy.html",
+      "line": 60,
+      "rule": "STALE_STAGED_EMIGRANT",
+      "detail": "Superseded staged emigrant-release wording; amended Huifa [2014] No. 2 removed staged remittance.",
+      "excerpt": "    <p>If the person has genuinely emigrated from the PRC and can produce a hukou cancellation certificate plus an authenticated foreign-settlement certificate, this is the only written-in-law route that moves an entire personal balance. It"
+    },
+    {
+      "path": "edition-b/lawful.html",
+      "line": 48,
+      "rule": "TRAILING_WHITESPACE",
+      "detail": "Trailing whitespace."
+    },
+    {
+      "path": "edition-b/methods.html",
+      "line": 48,
+      "rule": "TRAILING_WHITESPACE",
+      "detail": "Trailing whitespace."
+    },
+    {
+      "path": "edition-b/prohibited.html",
+      "line": 48,
+      "rule": "TRAILING_WHITESPACE",
+      "detail": "Trailing whitespace."
+    },
+    {
+      "path": "edition-c/docs/corporate-channels.html",
+      "line": 33,
+      "rule": "STALE_DIVIDEND_EXEMPTION",
+      "detail": "Foreign-individual FIE dividend exemption repealed by MOF/STA 2026 No. 27 effective 2026-09-01.",
+      "excerpt": "<div class=\"callout callout-note\"><p>Channels that run through a Chinese legal entity: dividends, capital reduction, liquidation, equity sale and cross-border service or royalty payments.</p></div><article class=\"route\" id=\"R15\"><div class="
+    },
+    {
+      "path": "edition-c/docs/flagged.html",
+      "line": 33,
+      "rule": "STALE_DIVIDEND_EXEMPTION",
+      "detail": "Foreign-individual FIE dividend exemption repealed by MOF/STA 2026 No. 27 effective 2026-09-01.",
+      "excerpt": "<div class=\"callout callout-warn\"><p><strong>Where a value could not be confirmed it is left blank in the tables and appears here. No value on this site has been inferred, estimated or filled in from a secondary source.</strong> None of the"
+    },
+    {
+      "path": "scripts/build_site.py",
+      "line": 288,
+      "rule": "SPREAD_AS_ONE_WAY_COST",
+      "detail": "Bid/ask round-trip spread is not a verified one-way conversion loss; BOC ask was below reference rate.",
+      "excerpt": "    <p>Bank of China quoted USD at 666.48 (bid) and 669.29 (ask) CNY per 100 on 2026-11-08 {srclink('CN-11')}. That spread — the only cost of a lawful conversion that is actually a percentage — is <b>0.42%</b>, or about CNY 4,200 on a CNY 1"
+    },
+    {
+      "path": "scripts/build_site.py",
+      "line": 596,
+      "rule": "STALE_STAGED_EMIGRANT",
+      "detail": "Superseded staged emigrant-release wording; amended Huifa [2014] No. 2 removed staged remittance.",
+      "excerpt": "    <p>If the person has genuinely emigrated from the PRC and can produce a hukou cancellation certificate plus an authenticated foreign-settlement certificate, this is the only written-in-law route that moves an entire personal balance. It"
+    },
+    {
+      "path": "scripts/data_costs.py",
+      "line": 141,
+      "rule": "SPREAD_AS_ONE_WAY_COST",
+      "detail": "Bid/ask round-trip spread is not a verified one-way conversion loss; BOC ask was below reference rate.",
+      "excerpt": "    (\"0.42%\", \"Measured bank spread\", \"The real, unavoidable 'conversion penalty' on a lawful CNY→USD purchase, derived from Bank of China's own USD quotes of 2026-11-08.\"),"
+    },
+    {
+      "path": "scripts/data_sources.py",
+      "line": 59,
+      "rule": "STALE_STAGED_EMIGRANT",
+      "detail": "Superseded staged emigrant-release wording; amended Huifa [2014] No. 2 removed staged remittance.",
+      "excerpt": "         key_text=\"第二条 个人财产对外转移包括移民财产转移和继承财产转移；第六条 移民转移必须一次性申请拟转移出境的全部财产金额，分步汇出。首次可汇出金额不得超过全部申请转移财产的一半；自首次汇出满1年后…满2年后可汇出全部剩余财产。全部申请转移财产在等值人民币20万元以下（含20万元）的，经批准后可一次性汇出；第八条(四)(六) 移居外国的应提供公安机关出具的中国户籍注销证明和中国驻外使领馆出具或认证的申请人在国外定居证明；申请转移财产所在地或收入来源地"
+    },
+    {
+      "path": "scripts/data_sources.py",
+      "line": 66,
+      "rule": "STALE_STAGED_EMIGRANT",
+      "detail": "Superseded staged emigrant-release wording; amended Huifa [2014] No. 2 removed staged remittance.",
+      "excerpt": "         key_text=\"对申请金额低于等值50万元人民币的，由外汇局省级分局审核办理；超过等值50万元（含50万元）人民币的，由省级外汇局初审后报国家外汇管理局批准。对超过20万元（含20万元）人民币的移民转移采取“一次申请、分步汇出”。\","
+    }
+  ]
+}

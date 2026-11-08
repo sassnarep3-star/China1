@@ -397,14 +397,24 @@ Session ID: `arena-e58c83ae`; fixed Arena branch: `arena/e58c83ae-china1`. All p
 
 | Task | Status | Owner | File scope |
 |---|---|---|---|
-| E1: independent repo audit and requirements coverage | in progress | arena-e58c83ae | edition-d/data/repo-review.json, edition-d/REQUIREMENTS.md |
-| E2: primary-source route, tax and fee research | in progress | arena-e58c83ae | edition-d/data/**, edition-d/research/** |
-| E3: cost estimates at every $10,000 increment from $10,000 to $400,000 | in progress | arena-e58c83ae | edition-d/data/**, edition-d/build/** |
-| E4: executive summary and mobile-first dashboard | unclaimed (this session next) | arena-e58c83ae | edition-d/** |
-| E5: line-by-line verification and flagged review | unclaimed (this session next) | arena-e58c83ae | edition-d/** |
-| E6: final integration, additive landing navigation, PR/merge and Pages confirmation | unclaimed (this session next) | arena-e58c83ae | edition-d/**; additive COORDINATION.md, README.md, index.html; .github/workflows/edition-d-verify.yml |
+| E1: independent repo audit and requirements coverage | done | arena-e58c83ae | edition-d/data/repo-review.json, edition-d/REQUIREMENTS.md |
+| E2: primary-source route, tax and fee research | done | arena-e58c83ae | edition-d/data/**, edition-d/research/** |
+| E3: cost estimates at every $10,000 increment from $10,000 to $400,000 | done | arena-e58c83ae | edition-d/data/**, edition-d/build/** |
+| E4: executive summary and mobile-first dashboard | done | arena-e58c83ae | edition-d/** |
+| E5: line-by-line verification and flagged review | done | arena-e58c83ae | edition-d/** |
+| E6: final integration, additive landing navigation, PR/merge and Pages confirmation | in progress | arena-e58c83ae | edition-d/**; additive COORDINATION.md, README.md, index.html; .github/workflows/edition-d-verify.yml |
 
 Initial claim is committed and pushed before research/build work. Existing editions remain untouched. Shared landing/navigation changes are deferred until this session's research and verification are complete; then this session acts as final integrator, preserving all prior editions. Unknown personal tax facts and unsupported fees will remain blank and be flagged, not inferred. Numeric cost estimates will distinguish published-fee calculations from missing all-in quotes. No prohibited-channel execution instructions will be provided.
 
 
 Progress note (2026-11-08 UTC): primary-source verification now includes the 2024-based SAFE Hebei emigrant/inheritance service guides, current BOC/HSBC tariffs, HSBC Global Transfer actual USD20 charge, Wise eligibility and four directly observed CNY-funded quotes, PBOC 2025 AML order effective 2026-01-01, and the September 2026 foreign-individual dividend-tax repeal. National 2024 capital-account PDF extraction stops before section 6.4; local official service guides citing that section are used instead and the extraction gap will be flagged. No prior-edition files changed. Cost grids will distinguish target USD, unknown CNY principal/FX, verified sender-fee formulas, optional explicitly labelled board-rate fee scenarios, and blank all-in totals.
+
+
+### Edition D implementation record (2026-11-08 UTC)
+
+- Added self-contained `edition-d/` datasets: 52 sources, 43 candidates, 1,720 cost rows (43×40), 16 tax positions, 7 penalty layers, 47 flags, line-by-line repo-review snapshot (92 files / 18,148 lines; 20 findings in prior editions, preserved unchanged).
+- Generator `edition-d/build/build.py` produces 58 mobile-first pages; `verify.py` gates citations, exact 40-point grids, blank-not-zero discipline, links/fragments and reproducibility. All five editions' generators/checks re-run together: PASS with clean diffs.
+- Independent CI `.github/workflows/edition-d-verify.yml` added; existing `verify.yml` untouched. Root `index.html` and `README.md` updated additively with Edition D navigation.
+- Cost model: only published sender-fee bounds/zeros and directly observed Wise public quotes populated; CNY principal, FX, downstream, documentation, tax and all-in totals blank + UNVERIFIED. Prohibited schemes have no execution steps.
+- Material corrections flagged for earlier editions: staged emigrant release superseded (2014 amendment); foreign-individual FIE dividend exemption repealed effective 2026-09-01 (20% IIT); BOC bid/ask ~0.42% is a round-trip indicator, not a verified one-way loss; future BOC ATM pricing not applied before 2026-11-11; Wise historical formulas not used as current; WU bank-account payout temporarily unavailable; U.S. 1% remittance tax does not apply to China→U.S. transfers.
+- Next: commit, rebase, push, open PR to main, merge without waiting, confirm Pages deployment, record PR/merge/deploy here.
