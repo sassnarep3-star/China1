@@ -1,0 +1,1281 @@
+route_id,amount_usd,status,feasibility,fx_spread_proxy_usd,sender_fee_cny,sender_fee_usd,sc_personal_cny,sc_ease_cny,sc_priority_cny,sc_priority_private_cny,receiving_fee_usd,personal_tax_usd,all_in_total_usd,sources
+R01,10000,conditional,"Conditional on source, documents, classification and bank review",20.99,216.93,32.41,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,20000,conditional,"Conditional on source, documents, classification and bank review",41.98,283.86,42.41,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,30000,conditional,"Conditional on source, documents, classification and bank review",62.98,350.79,52.41,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,40000,conditional,"Conditional on source, documents, classification and bank review",83.97,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,50000,conditional,"Conditional on source, documents, classification and bank review",104.96,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,60000,conditional,"Conditional on source, documents, classification and bank review",125.95,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,70000,conditional,"Conditional on source, documents, classification and bank review",146.95,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,80000,conditional,"Conditional on source, documents, classification and bank review",167.94,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,90000,conditional,"Conditional on source, documents, classification and bank review",188.93,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,100000,conditional,"Conditional on source, documents, classification and bank review",209.92,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,110000,conditional,"Conditional on source, documents, classification and bank review",230.92,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,120000,conditional,"Conditional on source, documents, classification and bank review",251.91,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,130000,conditional,"Conditional on source, documents, classification and bank review",272.90,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,140000,conditional,"Conditional on source, documents, classification and bank review",293.89,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,150000,conditional,"Conditional on source, documents, classification and bank review",314.89,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,160000,conditional,"Conditional on source, documents, classification and bank review",335.88,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,170000,conditional,"Conditional on source, documents, classification and bank review",356.87,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,180000,conditional,"Conditional on source, documents, classification and bank review",377.86,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,190000,conditional,"Conditional on source, documents, classification and bank review",398.86,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,200000,conditional,"Conditional on source, documents, classification and bank review",419.85,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,210000,conditional,"Conditional on source, documents, classification and bank review",440.84,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,220000,conditional,"Conditional on source, documents, classification and bank review",461.83,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,230000,conditional,"Conditional on source, documents, classification and bank review",482.83,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,240000,conditional,"Conditional on source, documents, classification and bank review",503.82,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,250000,conditional,"Conditional on source, documents, classification and bank review",524.81,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,260000,conditional,"Conditional on source, documents, classification and bank review",545.80,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,270000,conditional,"Conditional on source, documents, classification and bank review",566.79,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,280000,conditional,"Conditional on source, documents, classification and bank review",587.79,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,290000,conditional,"Conditional on source, documents, classification and bank review",608.78,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,300000,conditional,"Conditional on source, documents, classification and bank review",629.77,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,310000,conditional,"Conditional on source, documents, classification and bank review",650.76,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,320000,conditional,"Conditional on source, documents, classification and bank review",671.76,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,330000,conditional,"Conditional on source, documents, classification and bank review",692.75,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,340000,conditional,"Conditional on source, documents, classification and bank review",713.74,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,350000,conditional,"Conditional on source, documents, classification and bank review",734.73,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,360000,conditional,"Conditional on source, documents, classification and bank review",755.73,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,370000,conditional,"Conditional on source, documents, classification and bank review",776.72,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,380000,conditional,"Conditional on source, documents, classification and bank review",797.71,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,390000,conditional,"Conditional on source, documents, classification and bank review",818.70,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R01,400000,conditional,"Conditional on source, documents, classification and bank review",839.70,410.00,61.26,,,,,,,,S02|S03|S04|S05|S14|S15|S16
+R02,10000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,20000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,30000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,40000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,50000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,60000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,70000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,80000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,90000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,100000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,110000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,120000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,130000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,140000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,150000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,160000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,170000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,180000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,190000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,200000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,210000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,220000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,230000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,240000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,250000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,260000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,270000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,280000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,290000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,300000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,310000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,320000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,330000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,340000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,350000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,360000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,370000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,380000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,390000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R02,400000,conditional,"Conditional on source, documents, classification and bank review",,,,420.00,320.00,200.00,0.00,,,,S02|S03|S18|S19
+R03,10000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,20000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,30000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,40000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,50000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,60000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,70000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,80000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,90000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,100000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,110000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,120000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,130000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,140000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,150000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,160000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,170000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,180000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,190000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,200000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,210000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,220000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,230000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,240000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,250000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,260000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,270000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,280000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,290000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,300000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,310000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,320000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,330000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,340000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,350000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,360000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,370000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,380000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,390000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R03,400000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S20|S21
+R04,10000,conditional,"Conditional on source, documents, classification and bank review",20.99,216.93,32.41,,,,,,,,S03|S05|S15|S16
+R04,20000,conditional,"Conditional on source, documents, classification and bank review",41.98,283.86,42.41,,,,,,,,S03|S05|S15|S16
+R04,30000,conditional,"Conditional on source, documents, classification and bank review",62.98,350.79,52.41,,,,,,,,S03|S05|S15|S16
+R04,40000,conditional,"Conditional on source, documents, classification and bank review",83.97,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R04,50000,conditional,"Conditional on source, documents, classification and bank review",104.96,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R04,60000,conditional,"Conditional on source, documents, classification and bank review",125.95,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R04,70000,conditional,"Conditional on source, documents, classification and bank review",146.95,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R04,80000,conditional,"Conditional on source, documents, classification and bank review",167.94,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R04,90000,conditional,"Conditional on source, documents, classification and bank review",188.93,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R04,100000,conditional,"Conditional on source, documents, classification and bank review",209.92,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R04,110000,conditional,"Conditional on source, documents, classification and bank review",230.92,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R04,120000,conditional,"Conditional on source, documents, classification and bank review",251.91,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R04,130000,conditional,"Conditional on source, documents, classification and bank review",272.90,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R04,140000,conditional,"Conditional on source, documents, classification and bank review",293.89,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R04,150000,conditional,"Conditional on source, documents, classification and bank review",314.89,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R04,160000,conditional,"Conditional on source, documents, classification and bank review",335.88,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R04,170000,conditional,"Conditional on source, documents, classification and bank review",356.87,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R04,180000,conditional,"Conditional on source, documents, classification and bank review",377.86,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R04,190000,conditional,"Conditional on source, documents, classification and bank review",398.86,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R04,200000,conditional,"Conditional on source, documents, classification and bank review",419.85,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R04,210000,conditional,"Conditional on source, documents, classification and bank review",440.84,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R04,220000,conditional,"Conditional on source, documents, classification and bank review",461.83,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R04,230000,conditional,"Conditional on source, documents, classification and bank review",482.83,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R04,240000,conditional,"Conditional on source, documents, classification and bank review",503.82,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R04,250000,conditional,"Conditional on source, documents, classification and bank review",524.81,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R04,260000,conditional,"Conditional on source, documents, classification and bank review",545.80,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R04,270000,conditional,"Conditional on source, documents, classification and bank review",566.79,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R04,280000,conditional,"Conditional on source, documents, classification and bank review",587.79,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R04,290000,conditional,"Conditional on source, documents, classification and bank review",608.78,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R04,300000,conditional,"Conditional on source, documents, classification and bank review",629.77,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R04,310000,conditional,"Conditional on source, documents, classification and bank review",650.76,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R04,320000,conditional,"Conditional on source, documents, classification and bank review",671.76,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R04,330000,conditional,"Conditional on source, documents, classification and bank review",692.75,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R04,340000,conditional,"Conditional on source, documents, classification and bank review",713.74,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R04,350000,conditional,"Conditional on source, documents, classification and bank review",734.73,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R04,360000,conditional,"Conditional on source, documents, classification and bank review",755.73,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R04,370000,conditional,"Conditional on source, documents, classification and bank review",776.72,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R04,380000,conditional,"Conditional on source, documents, classification and bank review",797.71,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R04,390000,conditional,"Conditional on source, documents, classification and bank review",818.70,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R04,400000,conditional,"Conditional on source, documents, classification and bank review",839.70,410.00,61.26,,,,,,,,S03|S05|S15|S16
+R05,10000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,20000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,30000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,40000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,50000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,60000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,70000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,80000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,90000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,100000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,110000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,120000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,130000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,140000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,150000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,160000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,170000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,180000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,190000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,200000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,210000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,220000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,230000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,240000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,250000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,260000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,270000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,280000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,290000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,300000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,310000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,320000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,330000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,340000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,350000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,360000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,370000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,380000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,390000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R05,400000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S28|S30
+R06,10000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,20000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,30000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,40000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,50000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,60000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,70000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,80000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,90000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,100000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,110000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,120000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,130000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,140000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,150000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,160000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,170000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,180000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,190000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,200000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,210000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,220000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,230000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,240000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,250000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,260000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,270000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,280000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,290000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,300000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,310000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,320000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,330000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,340000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,350000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,360000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,370000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,380000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,390000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R06,400000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S13|S28|S30
+R07,10000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,20000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,30000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,40000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,50000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,60000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,70000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,80000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,90000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,100000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,110000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,120000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,130000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,140000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,150000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,160000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,170000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,180000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,190000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,200000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,210000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,220000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,230000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,240000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,250000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,260000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,270000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,280000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,290000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,300000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,310000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,320000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,330000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,340000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,350000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,360000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,370000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,380000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,390000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R07,400000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S28|S30
+R08,10000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,20000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,30000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,40000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,50000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,60000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,70000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,80000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,90000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,100000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,110000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,120000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,130000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,140000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,150000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,160000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,170000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,180000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,190000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,200000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,210000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,220000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,230000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,240000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,250000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,260000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,270000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,280000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,290000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,300000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,310000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,320000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,330000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,340000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,350000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,360000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,370000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,380000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,390000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R08,400000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S12
+R09,10000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,20000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,30000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,40000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,50000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,60000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,70000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,80000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,90000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,100000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,110000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,120000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,130000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,140000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,150000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,160000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,170000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,180000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,190000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,200000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,210000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,220000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,230000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,240000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,250000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,260000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,270000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,280000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,290000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,300000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,310000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,320000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,330000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,340000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,350000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,360000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,370000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,380000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,390000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R09,400000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S11|S12|S28|S30
+R10,10000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,20000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,30000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,40000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,50000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,60000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,70000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,80000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,90000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,100000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,110000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,120000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,130000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,140000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,150000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,160000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,170000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,180000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,190000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,200000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,210000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,220000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,230000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,240000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,250000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,260000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,270000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,280000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,290000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,300000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,310000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,320000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,330000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,340000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,350000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,360000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,370000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,380000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,390000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R10,400000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10
+R11,10000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,20000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,30000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,40000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,50000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,60000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,70000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,80000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,90000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,100000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,110000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,120000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,130000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,140000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,150000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,160000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,170000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,180000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,190000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,200000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,210000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,220000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,230000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,240000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,250000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,260000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,270000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,280000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,290000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,300000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,310000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,320000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,330000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,340000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,350000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,360000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,370000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,380000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,390000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R11,400000,approval,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S06|S07|S08|S09|S10|S30
+R12,10000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,20000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,30000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,40000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,50000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,60000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,70000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,80000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,90000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,100000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,110000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,120000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,130000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,140000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,150000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,160000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,170000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,180000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,190000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,200000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,210000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,220000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,230000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,240000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,250000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,260000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,270000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,280000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,290000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,300000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,310000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,320000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,330000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,340000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,350000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,360000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,370000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,380000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,390000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R12,400000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01|S10|S12
+R13,10000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,20000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,30000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,40000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,50000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,60000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,70000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,80000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,90000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,100000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,110000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,120000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,130000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,140000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,150000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,160000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,170000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,180000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,190000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,200000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,210000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,220000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,230000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,240000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,250000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,260000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,270000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,280000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,290000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,300000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,310000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,320000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,330000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,340000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,350000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,360000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,370000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,380000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,390000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R13,400000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S01
+R14,10000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,20000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,30000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,40000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,50000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,60000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,70000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,80000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,90000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,100000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,110000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,120000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,130000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,140000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,150000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,160000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,170000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,180000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,190000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,200000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,210000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,220000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,230000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,240000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,250000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,260000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,270000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,280000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,290000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,300000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,310000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,320000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,330000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,340000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,350000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,360000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,370000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,380000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,390000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R14,400000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R15,10000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,20000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,30000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,40000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,50000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,60000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,70000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,80000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,90000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,100000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,110000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,120000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,130000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,140000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,150000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,160000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,170000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,180000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,190000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,200000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,210000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,220000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,230000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,240000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,250000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,260000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,270000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,280000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,290000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,300000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,310000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,320000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,330000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,340000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,350000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,360000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,370000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,380000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,390000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R15,400000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S26|S27
+R16,10000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,20000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,30000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,40000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,50000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,60000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,70000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,80000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,90000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,100000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,110000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,120000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,130000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,140000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,150000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,160000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,170000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,180000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,190000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,200000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,210000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,220000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,230000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,240000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,250000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,260000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,270000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,280000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,290000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,300000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,310000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,320000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,330000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,340000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,350000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,360000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,370000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,380000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,390000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R16,400000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S39
+R17,10000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,20000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,30000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,40000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,50000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,60000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,70000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,80000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,90000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,100000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,110000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,120000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,130000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,140000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,150000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,160000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,170000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,180000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,190000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,200000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,210000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,220000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,230000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,240000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,250000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,260000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,270000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,280000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,290000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,300000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,310000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,320000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,330000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,340000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,350000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,360000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,370000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,380000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,390000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R17,400000,closed_loop,Closed-loop investment; not direct US repatriation,,,,,,,,,,,S40
+R18,10000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,20000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,30000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,40000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,50000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,60000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,70000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,80000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,90000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,100000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,110000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,120000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,130000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,140000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,150000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,160000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,170000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,180000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,190000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,200000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,210000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,220000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,230000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,240000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,250000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,260000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,270000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,280000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,290000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,300000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,310000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,320000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,330000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,340000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,350000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,360000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,370000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,380000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,390000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R18,400000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S04|S30|S33|S34|S36
+R19,10000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,20000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,30000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,40000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,50000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,60000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,70000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,80000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,90000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,100000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,110000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,120000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,130000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,140000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,150000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,160000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,170000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,180000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,190000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,200000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,210000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,220000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,230000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,240000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,250000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,260000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,270000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,280000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,290000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,300000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,310000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,320000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,330000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,340000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,350000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,360000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,370000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,380000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,390000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R19,400000,conditional,"Grid amount exceeds the USD 5,000 no-permit carry tier",,,,,,,,,,,S24|S25
+R20,10000,conditional,"Bank-permit tier only at USD 10,000; larger grid amounts exceed it",,,,,,,,,,,S15|S24|S25
+R20,20000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,30000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,40000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,50000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,60000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,70000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,80000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,90000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,100000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,110000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,120000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,130000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,140000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,150000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,160000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,170000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,180000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,190000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,200000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,210000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,220000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,230000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,240000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,250000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,260000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,270000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,280000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,290000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,300000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,310000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,320000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,330000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,340000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,350000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,360000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,370000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,380000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,390000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R20,400000,conditional,"Exceeds the USD 10,000 bank-permit carry tier",,,,,,,,,,,S15|S24|S25
+R21,10000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,20000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,30000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,40000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,50000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,60000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,70000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,80000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,90000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,100000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,110000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,120000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,130000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,140000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,150000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,160000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,170000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,180000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,190000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,200000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,210000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,220000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,230000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,240000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,250000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,260000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,270000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,280000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,290000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,300000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,310000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,320000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,330000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,340000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,350000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,360000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,370000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,380000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,390000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R21,400000,approval,Exceptional SAFE approval only; not routine,,,,,,,,,,,S24|S25
+R22,10000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,20000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,30000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,40000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,50000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,60000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,70000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,80000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,90000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,100000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,110000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,120000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,130000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,140000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,150000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,160000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,170000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,180000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,190000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,200000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,210000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,220000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,230000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,240000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,250000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,260000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,270000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,280000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,290000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,300000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,310000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,320000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,330000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,340000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,350000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,360000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,370000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,380000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,390000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R22,400000,conditional,"CNY 100,000/person/year and CNY 10,000/card/day aggregation; not a scalable wire",,,,,,,,,,,S15|S22|S23
+R23,10000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,20000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,30000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,40000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,50000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,60000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,70000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,80000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,90000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,100000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,110000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,120000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,130000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,140000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,150000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,160000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,170000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,180000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,190000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,200000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,210000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,220000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,230000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,240000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,250000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,260000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,270000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,280000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,290000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,300000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,310000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,320000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,330000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,340000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,350000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,360000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,370000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,380000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,390000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R23,400000,conditional,Genuine spending only; not cash repatriation,,,,,,,,,,,S22
+R24,10000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,20000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,30000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,40000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,50000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,60000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,70000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,80000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,90000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,100000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,110000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,120000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,130000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,140000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,150000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,160000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,170000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,180000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,190000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,200000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,210000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,220000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,230000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,240000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,250000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,260000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,270000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,280000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,290000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,300000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,310000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,320000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,330000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,340000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,350000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,360000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,370000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,380000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,390000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R24,400000,conditional,"Conditional on source, documents, classification and bank review",,,,,,,,,,,S15
+R25,10000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,20000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,30000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,40000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,50000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,60000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,70000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,80000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,90000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,100000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,110000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,120000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,130000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,140000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,150000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,160000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,170000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,180000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,190000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,200000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,210000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,220000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,230000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,240000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,250000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,260000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,270000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,280000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,290000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,300000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,310000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,320000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,330000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,340000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,350000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,360000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,370000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,380000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,390000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R25,400000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S22
+R26,10000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,20000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,30000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,40000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,50000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,60000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,70000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,80000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,90000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,100000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,110000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,120000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,130000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,140000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,150000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,160000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,170000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,180000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,190000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,200000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,210000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,220000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,230000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,240000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,250000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,260000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,270000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,280000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,290000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,300000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,310000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,320000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,330000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,340000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,350000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,360000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,370000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,380000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,390000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R26,400000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S09
+R27,10000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,20000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,30000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,40000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,50000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,60000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,70000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,80000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,90000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,100000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,110000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,120000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,130000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,140000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,150000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,160000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,170000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,180000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,190000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,200000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,210000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,220000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,230000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,240000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,250000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,260000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,270000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,280000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,290000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,300000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,310000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,320000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,330000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,340000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,350000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,360000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,370000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,380000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,390000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R27,400000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S38
+R28,10000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,20000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,30000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,40000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,50000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,60000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,70000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,80000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,90000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,100000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,110000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,120000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,130000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,140000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,150000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,160000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,170000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,180000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,190000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,200000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,210000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,220000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,230000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,240000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,250000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,260000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,270000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,280000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,290000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,300000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,310000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,320000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,330000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,340000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,350000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,360000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,370000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,380000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,390000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R28,400000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S01|S02|S09
+R29,10000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,20000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,30000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,40000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,50000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,60000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,70000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,80000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,90000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,100000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,110000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,120000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,130000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,140000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,150000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,160000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,170000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,180000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,190000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,200000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,210000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,220000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,230000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,240000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,250000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,260000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,270000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,280000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,290000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,300000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,310000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,320000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,330000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,340000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,350000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,360000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,370000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,380000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,390000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R29,400000,prohibited,No lawful/verified cost scenario,,,,,,,,,,,S02|S08|S22
+R30,10000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,20000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,30000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,40000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,50000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,60000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,70000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,80000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,90000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,100000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,110000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,120000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,130000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,140000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,150000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,160000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,170000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,180000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,190000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,200000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,210000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,220000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,230000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,240000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,250000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,260000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,270000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,280000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,290000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,300000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,310000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,320000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,330000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,340000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,350000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,360000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,370000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,380000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,390000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R30,400000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01|S20
+R31,10000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,20000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,30000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,40000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,50000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,60000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,70000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,80000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,90000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,100000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,110000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,120000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,130000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,140000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,150000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,160000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,170000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,180000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,190000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,200000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,210000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,220000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,230000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,240000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,250000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,260000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,270000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,280000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,290000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,300000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,310000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,320000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,330000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,340000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,350000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,360000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,370000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,380000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,390000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R31,400000,unverified,No lawful/verified cost scenario,,,,,,,,,,,S01
+R32,10000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,20000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,30000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,40000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,50000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,60000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,70000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,80000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,90000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,100000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,110000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,120000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,130000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,140000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,150000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,160000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,170000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,180000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,190000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,200000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,210000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,220000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,230000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,240000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,250000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,260000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,270000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,280000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,290000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,300000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,310000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,320000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,330000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,340000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,350000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,360000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,370000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,380000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,390000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03
+R32,400000,conditional,"Only if bank classifies person as domestic; USD 50,000/year convenience quota",,,,,,,,,,,S02|S03

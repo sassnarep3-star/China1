@@ -1,0 +1,284 @@
+{
+  "meta": {
+    "edition": "E",
+    "blank_policy": "Unknown values are null and rendered as labelled blanks, never zero."
+  },
+  "flags": [
+    {
+      "id": "F01",
+      "severity": "high",
+      "title": "Personal eligibility and tax facts are unknown",
+      "detail": "Balance, source of funds, residence history, household registration, prior US filings, account classification and treaty positions were not supplied. No personal tax, penalty or eligibility conclusion is populated.",
+      "sources": [
+        "S02",
+        "S28",
+        "S30"
+      ],
+      "routes": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "R08",
+        "R09",
+        "R10",
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R15",
+        "R16",
+        "R17",
+        "R18",
+        "R19",
+        "R20",
+        "R21",
+        "R22",
+        "R23",
+        "R24",
+        "R25",
+        "R26",
+        "R27",
+        "R28",
+        "R29",
+        "R30",
+        "R31",
+        "R32"
+      ]
+    },
+    {
+      "id": "F02",
+      "severity": "high",
+      "title": "No executable FX quote",
+      "detail": "The BOC board is a reference snapshot with a publisher timestamp later than the report date and unestablished timezone. Actual online/branch transaction rates govern.",
+      "sources": [
+        "S16",
+        "S17"
+      ],
+      "routes": [
+        "R01",
+        "R04",
+        "R18"
+      ]
+    },
+    {
+      "id": "F03",
+      "severity": "medium",
+      "title": "Receiving-bank and intermediary charges are unknown",
+      "detail": "No user receiving-bank fee was supplied. BOC overseas charges are actual; SC OUR does not guarantee every beneficiary-side deduction. All receiving-fee cells remain blank.",
+      "sources": [
+        "S15",
+        "S18",
+        "S19"
+      ],
+      "routes": [
+        "R01",
+        "R02",
+        "R04",
+        "R24"
+      ]
+    },
+    {
+      "id": "F04",
+      "severity": "medium",
+      "title": "Wise limit conflict",
+      "detail": "Current help lists CNY 300,000 bank-app / CNY 50,000 Alipay per transfer; an older blog says CNY 100,000. The help centre is preferred, but product verification is required.",
+      "sources": [
+        "S20",
+        "S21"
+      ],
+      "routes": [
+        "R03"
+      ]
+    },
+    {
+      "id": "F05",
+      "severity": "low",
+      "title": "Future BOC ATM tariff not applied",
+      "detail": "The announced Mastercard/VISA change takes effect 2026-11-11, after the report date. Current report-date tariff is used only as provider evidence; ATM total cost remains blank.",
+      "sources": [
+        "S15",
+        "S23"
+      ],
+      "routes": [
+        "R22"
+      ]
+    },
+    {
+      "id": "F06",
+      "severity": "medium",
+      "title": "SC tier and OUR limitations",
+      "detail": "Tier eligibility, FX execution and beneficiary-side deductions are unknown. A zero published sender component is not a zero all-in cost.",
+      "sources": [
+        "S18",
+        "S19"
+      ],
+      "routes": [
+        "R02"
+      ]
+    },
+    {
+      "id": "F07",
+      "severity": "high",
+      "title": "Old emigrant staged-release schedule not confirmed current",
+      "detail": "Inherited editions present 50%/25%/25% staging. The 2014 circular allows lump sum or batches within approval; the full current operative section was not isolated. No staging schedule is populated.",
+      "sources": [
+        "S09",
+        "S10"
+      ],
+      "routes": [
+        "R10"
+      ]
+    },
+    {
+      "id": "F08",
+      "severity": "medium",
+      "title": "SAFE 2024 capital section 6.4 not independently isolated",
+      "detail": "The Ningxia PDF chunk retrieved did not contain section 6.4. The 2026 Tianjin FAQs and 2024 Beijing guide are used, with local-office confirmation required.",
+      "sources": [
+        "S07",
+        "S09"
+      ],
+      "routes": [
+        "R10",
+        "R11"
+      ]
+    },
+    {
+      "id": "F09",
+      "severity": "medium",
+      "title": "Deposit-interest exemption scope",
+      "detail": "The retrieved notice temporarily exempts savings-deposit interest from 2008-10-09. It is not a blanket exemption for every investment, foreign account or US tax.",
+      "sources": [
+        "S29"
+      ],
+      "routes": [
+        "R05",
+        "R07"
+      ]
+    },
+    {
+      "id": "F10",
+      "severity": "medium",
+      "title": "Crypto authority updated",
+      "detail": "PBOC 2026 No.42 expressly repeals 2021 No.237. Older editions citing only No.237 are outdated as authority.",
+      "sources": [
+        "S38"
+      ],
+      "routes": [
+        "R27"
+      ]
+    },
+    {
+      "id": "F11",
+      "severity": "medium",
+      "title": "IRS personal-FX passage is official-search-excerpt evidence",
+      "detail": "The USD 200 tip was verified in an official IRS search excerpt; repeated full-page chunks exposed navigation/other sections. No personal gain is calculated.",
+      "sources": [
+        "S36"
+      ],
+      "routes": [
+        "R18"
+      ]
+    },
+    {
+      "id": "F12",
+      "severity": "medium",
+      "title": "Form 720 scope must not be overread",
+      "detail": "The 1% remittance excise concerns certain physical-instrument-funded transfers after 2025. Direction, provider and funding instrument must be established.",
+      "sources": [
+        "S37"
+      ],
+      "routes": []
+    },
+    {
+      "id": "F13",
+      "severity": "medium",
+      "title": "Cash and carriage costs are not all-in",
+      "detail": "CNY 20,000 customs figure was not fully retrieved and is not numerically published. Travel, security, cash FX spread and destination rules remain unknown.",
+      "sources": [
+        "S24",
+        "S25"
+      ],
+      "routes": [
+        "R09",
+        "R19",
+        "R20",
+        "R21"
+      ]
+    },
+    {
+      "id": "F14",
+      "severity": "medium",
+      "title": "Stock Connect current terms unverified",
+      "detail": "Only a historical 2014 operator presentation was retrieved. Current eligibility, quotas and fees are blank.",
+      "sources": [
+        "S40"
+      ],
+      "routes": [
+        "R17"
+      ]
+    },
+    {
+      "id": "F15",
+      "severity": "medium",
+      "title": "Investment product fees and quotas unknown",
+      "detail": "WMC/QDII are regulated channels, not quoted products. Product fees, quota availability and redemption terms are blank.",
+      "sources": [
+        "S26",
+        "S27",
+        "S39"
+      ],
+      "routes": [
+        "R15",
+        "R16"
+      ]
+    },
+    {
+      "id": "F16",
+      "severity": "medium",
+      "title": "Corporate/unverified routes lack operative personal pricing",
+      "detail": "Real corporate transactions may be lawful, but no entity facts, approvals or prices were supplied. Unverified programmes have no populated limit or cost.",
+      "sources": [
+        "S01",
+        "S10",
+        "S12"
+      ],
+      "routes": [
+        "R08",
+        "R12",
+        "R13",
+        "R14",
+        "R30",
+        "R31"
+      ]
+    },
+    {
+      "id": "F17",
+      "severity": "high",
+      "title": "Domestic vs overseas individual classification conflict",
+      "detail": "The convenience quota and Article 59 path depend on classification. Habitual residence, permanent-residence status and bank practice can change the result.",
+      "sources": [
+        "S02",
+        "S03"
+      ],
+      "routes": [
+        "R32"
+      ]
+    },
+    {
+      "id": "F18",
+      "severity": "medium",
+      "title": "Concurrent Edition D uses labelled assumptions and older tariff sources",
+      "detail": "Edition D is preserved, but its receiving-bank assumption, older BOC tariff and old crypto authority are adjudicated in Edition E’s audit. Edition E does not populate those assumptions as facts.",
+      "sources": [
+        "S15",
+        "S38"
+      ],
+      "routes": []
+    }
+  ]
+}

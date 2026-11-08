@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "edition": "E",
+    "rule": "Statutory exposure is not a personal assessment. Personal penalty amounts are blank."
+  },
+  "rows": [
+    {
+      "id": "P01",
+      "jurisdiction": "China",
+      "conduct": "Splitting or deceptive outward transfer to evade FX controls",
+      "statutory_scale": "Art. 39: order repatriation; fine up to 30% of the evaded amount; serious cases 30% up to the equivalent amount; criminal liability where constituted.",
+      "personal_amount": null,
+      "sources": [
+        "S09",
+        "S02",
+        "S01"
+      ],
+      "flags": [
+        "F01"
+      ]
+    },
+    {
+      "id": "P02",
+      "jurisdiction": "China",
+      "conduct": "Private, disguised or illegal introduction of FX dealing",
+      "statutory_scale": "Art. 45: warning, confiscation of illegal gains, fine of 30% or more of the illegal amount; serious cases 30% up to the equivalent amount; criminal liability where constituted.",
+      "personal_amount": null,
+      "sources": [
+        "S09",
+        "S01"
+      ],
+      "flags": [
+        "F01"
+      ]
+    },
+    {
+      "id": "P03",
+      "jurisdiction": "China",
+      "conduct": "Virtual-currency / RWA illegal financial activity",
+      "statutory_scale": "2026 No.42 provides punishment under relevant rules and criminal referral where constituted; no personal numeric rate is populated.",
+      "personal_amount": null,
+      "sources": [
+        "S38"
+      ],
+      "flags": [
+        "F10"
+      ]
+    },
+    {
+      "id": "P04",
+      "jurisdiction": "US",
+      "conduct": "FBAR / Form 8938 / Form 3520 non-reporting",
+      "statutory_scale": "Reporting thresholds are sourced; current inflation-adjusted penalty amounts are not verified here and remain blank.",
+      "personal_amount": null,
+      "sources": [
+        "S33",
+        "S34",
+        "S30"
+      ],
+      "flags": [
+        "F01"
+      ]
+    }
+  ]
+}

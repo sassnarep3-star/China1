@@ -3,7 +3,7 @@
     "report_date": "2026-11-08",
     "timezone": "UTC",
     "verification": "Claim-by-claim review against primary authorities and provider-published terms. Retrieval mode is disclosed; this is not a legal opinion or a guarantee that every source remains unchanged.",
-    "official_definition": "government = issuing authority/regulator/government-hosted primary text or FAQ; provider_primary = the provider itself, never labelled government."
+    "official_definition": "government = issuing authority/regulator/government-hosted primary text or FAQ; provider_primary = the provider itself, never labelled government; operator_primary = market operator’s own material, not a regulator."
   },
   "sources": [
     {
