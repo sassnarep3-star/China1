@@ -1445,7 +1445,7 @@
       "kind": "alternative",
       "status": "not-repatriation",
       "cost_profile": "unknown",
-      "summary": "QDII lets a licensed domestic institution invest domestic funds offshore within quota. It is an investment product, not a right to receive free USD abroad; redemption proceeds return through the product. Current HSBC subscription suspensions are flagged.",
+      "summary": "QDII lets a licensed domestic institution invest domestic funds offshore within quota. It is an investment product, not a right to receive free USD abroad; redemption proceeds return through the product. HSBC scheduled currency-specific holiday subscription suspensions are flagged; redemption and switching remain available under that notice.",
       "eligibility": [
         "Product open and quota available.",
         "Investor suitability."

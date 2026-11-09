@@ -865,13 +865,21 @@ so it cannot overwrite another session's research, data, generated pages, or ver
 
 | Task | Status | Owner | Exclusive file scope |
 |---|---|---|---|
-| H1 Repository audit and claim-level official-source research | in progress | arena-c2310264 | edition-h/data/**, edition-h/audit/** |
-| H2 Requirements, route/tax/penalty analysis and 40-step cost estimates | unclaimed | arena-c2310264 | edition-h/data/**, edition-h/build/**, edition-h/EXECUTIVE_SUMMARY.md |
-| H3 Mobile-first categorized dashboard and Flagged for Review | unclaimed | arena-c2310264 | edition-h/site/**, edition-h/build/** |
-| H4 Independent verifier, CI, integration, PR, merge and Pages | unclaimed | arena-c2310264 | edition-h/**, .github/workflows/edition-h.yml, append-only COORDINATION.md/README.md |
+| H1 Repository audit and claim-level official-source research | done | arena-c2310264 | edition-h/data/**, edition-h/audit/** |
+| H2 Requirements, route/tax/penalty analysis and 40-step cost estimates | done | arena-c2310264 | edition-h/data/**, edition-h/build/** |
+| H3 Mobile-first categorized dashboard and Flagged for Review | done | arena-c2310264 | edition-h/site/**, edition-h/build/** |
+| H4 Independent verifier, CI, integration, PR, merge and Pages | in progress | arena-c2310264 | edition-h/**, .github/workflows/edition-h.yml, append-only COORDINATION.md/README.md |
 
 No personal account, source-of-funds, residency, tax-payment, executable FX quote, or receiving-bank
 fee facts are available. These must remain unknown. Provider-published tariffs may support provider
 prices only; government sources support law and tax. Prohibited methods will have risk information,
 not execution instructions. Cross-session request to the root-portal owner: add the Edition H link
 after publication; this session will not edit the shared portal.
+
+## Edition H implementation and verification log
+
+- 2026-11-09: 43 candidates × 40 exact USD-equivalent targets = 1,720 cost rows. BOC and HSBC arithmetic uses official published formulas and the timestamped BOC board; four Wise quotes are observations only. FX, downstream, documents, personal tax and all-in totals remain null/blank + UNVERIFIED. Prohibited candidates have no execution instructions.
+- 2026-11-09: final `python3 edition-h/build/audit.py` read 348 tracked files / 166,857 text lines; `build.py` generated 58 HTML pages and CSV; `verify.py` passed 37,155 checks covering citations, arithmetic, amount grids, blank semantics, prohibited dispositions and local links/anchors.
+- 2026-11-09: Material review corrections include PBOC 2026 No. 42 superseding 2021 No. 237, foreign-individual FIE dividend exemption ending 2026-09-01, current BOC FX/ATM dates, Wise quote drift, and the inherited SAFE inheritance-guide wording irregularity. All are published; unknowns remain non-blocking.
+- Rebase incident: origin/main advanced through PR #24. COORDINATION.md conflict was resolved by preserving both complete boards. The fixed remote session branch then required a lease-protected update to the rebased equivalent; no main or other-session content was discarded.
+- Publication URL intended: https://sassnarep3-star.github.io/China1/edition-h/site/ . PR, merge and deployment remain in progress.

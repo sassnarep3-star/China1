@@ -165,7 +165,7 @@ def build_costs():
     (DATA / "costs.json").write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     with (SITE / "cost-ladder.csv").open("w", newline="", encoding="utf-8") as f:
         fields = ["method_id", "target_usd_equivalent", "cny_estimate", "sender_cny", "sender_usd", "known_subtotal_usd", "charge_text", "status", "fx_cost_usd", "downstream_usd", "documentation_usd", "tax_usd", "all_in_usd", "all_in_status", "note", "sources"]
-        w = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore")
+        w = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore", lineterminator="\n")
         w.writeheader()
         for r in rows:
             w.writerow({**r, "sources": " ".join(r["sources"])})

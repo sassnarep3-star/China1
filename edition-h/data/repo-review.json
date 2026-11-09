@@ -5,9 +5,9 @@
     "scope": "Tracked checkout before generated H outputs; inherited editions preserved"
   },
   "stats": {
-    "tracked_files": 266,
-    "text_files": 266,
-    "text_lines": 112272
+    "tracked_files": 348,
+    "text_files": 348,
+    "text_lines": 166857
   },
   "findings": [
     {
@@ -15,7 +15,7 @@
       "severity": "high",
       "title": "Superseded virtual-currency authority remains in inherited editions",
       "detail": "The tracked corpus cites PBOC 2021 No. 237, but current PBOC 2026 No. 42 expressly repeals it. Edition H uses the current instrument and rejects crypto bridges without instructions.",
-      "files": "COORDINATION.md, EXECUTIVE_SUMMARY.md, data/sources.json, dossier/channels.html, dossier/sources.html (+40 more)",
+      "files": "COORDINATION.md, EXECUTIVE_SUMMARY.md, data/sources.json, dossier/channels.html, dossier/sources.html (+39 more)",
       "disposition": "Flagged; earlier editions preserved, Edition H corrected.",
       "sources": [
         "S45"

@@ -401,7 +401,7 @@
       "severity": "medium",
       "status": "open",
       "title": "QDII product availability",
-      "detail": "HSBC lists subscription suspension notices; product-level availability must be checked. QDII is not free USD repatriation.",
+      "detail": "HSBC lists currency- and date-specific holiday subscription suspensions; the 2026-10-27 notice keeps redemption and switching available. Product-level availability must be checked. QDII is not free USD repatriation.",
       "sources": [
         "S17",
         "S51"
