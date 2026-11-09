@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Getting CNY out of China as a US citizen: every lawful route, the published cost at every USD 10,000 step from 10,000 to 400,000, and where the tax penalties actually come from.">
+<meta name="color-scheme" content="light">
+<title>Sources · China Money</title>
+<style>
+:root{
+ --ink:#10151b; --ink2:#39434f; --muted:#68737f; --line:#e3e7ec; --bg:#f5f6f8;
+ --panel:#fff; --accent:#0d5c49; --accent2:#0a4537; --warn:#8a4b00; --warnbg:#fff6e8;
+ --bad:#8c1d18; --badbg:#fdf0ef; --okbg:#eaf5f1; --chip:#eef1f5;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+ font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px 64px}
+header.site{background:var(--panel);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.hbar{max-width:1080px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;
+ gap:12px;justify-content:space-between}
+.brand{font-weight:800;letter-spacing:-.02em;font-size:1rem;color:var(--ink);white-space:nowrap}
+.brand span{color:var(--accent)}
+nav.main{display:flex;gap:4px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+nav.main::-webkit-scrollbar{display:none}
+nav.main a{font-size:.82rem;font-weight:600;padding:8px 10px;border-radius:8px;white-space:nowrap;color:var(--ink2)}
+nav.main a:hover{background:var(--chip);text-decoration:none}
+nav.main a[aria-current]{background:var(--accent);color:#fff}
+h1{font-size:1.65rem;line-height:1.2;letter-spacing:-.025em;margin:22px 0 8px}
+h2{font-size:1.2rem;letter-spacing:-.01em;margin:32px 0 10px}
+h3{font-size1rem;font-size:1rem;margin:20px 0 6px}
+p.lede{font-size:1.02rem;color:var(--ink2);margin:0 0 18px;max-width:68ch}
+p{max-width:75ch}
+.eyebrow{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700;margin:24px 0 0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;margin:14px 0}
+.answer{background:linear-gradient(180deg,#0d5c49,#0a4537);color:#fff;border:0}
+.answer h2{color:#fff;margin-top:0;font-size:1.05rem;letter-spacing:.02em;text-transform:uppercase;font-size:.78rem}
+.answer .big{font-size:1.5rem;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin:0 0 8px}
+.answer p{color:#d8ece5;margin:.5em 0}
+.answer a{color:#bff0e0}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px}
+.stat small{display:block;font-size:.63rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.stat strong{display:block;font-size:1.28rem;letter-spacing:-.02em;margin:3px 0 1px}
+.stat em{display:block;font-size:.73rem;color:var(--ink2);font-style:normal}
+.grid{display:grid;grid-template-columns:1fr;gap:10px;margin:14px 0}
+.nav-card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:12px;
+ padding:14px;color:inherit}
+.nav-card:hover{border-color:var(--accent);text-decoration:none}
+.nav-card h3{margin:2px 0 4px;font-size:1rem}
+.nav-card p{margin:0;font-size:.85rem;color:var(--ink2)}
+.kicker{font-size:.63rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:700}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--panel);
+ -webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:.86rem}
+th,td{padding:10px 11px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:#eff2f5;font-size:.66rem;letter-spacing:.05em;text-transform:uppercase;color:var(--ink2);
+ font-weight:700;position:sticky;top:0}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover{background:#fafbfc}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+td.big{font-weight:700}
+.src{display:inline-block;font-size:.63rem;font-weight:700;padding:2px 5px;border-radius:5px;
+ background:var(--chip);border:1px solid var(--line);color:var(--ink2);white-space:nowrap;margin:1px 0}
+.src:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
+.g{display:inline-block;font-size:.6rem;font-weight:800;width:16px;height:16px;line-height:16px;
+ text-align:center;border-radius:4px;color:#fff}
+.gA{background:#0d5c49}.gB{background:#3f5a8a}.gC{background:#7a5a1e}
+.st{display:inline-block;font-size:.67rem;font-weight:700;padding:2px 7px;border-radius:999px;white-space:nowrap}
+.s-lawful{background:var(--okbg);color:#0a4537}
+.s-conditional{background:var(--warnbg);color:var(--warn)}
+.s-prohibited{background:var(--badbg);color:var(--bad)}
+.s-not_a_transfer{background:var(--chip);color:var(--ink2)}
+.note{font-size:.82rem;color:var(--muted);max-width:75ch}
+.flag{background:var(--warnbg);border:1px solid #f2ddbb;border-radius:10px;padding:12px;margin:12px 0}
+.flag strong{color:var(--warn)}
+.danger{background:var(--badbg);border:1px solid #f3cfcb;border-radius:10px;padding:12px;margin:12px 0}
+.danger strong{color:var(--bad)}
+.ok{background:var(--okbg);border:1px solid #cfe6de;border-radius:10px;padding:12px;margin:12px 0}
+ul,ol{padding-left:1.15em;max-width:75ch}
+li{margin:.3em 0}
+.crumb{font-size:.78rem;color:var(--muted);margin:16px 0 0}
+.crumb a{color:var(--muted)}
+details{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--panel);margin:10px 0}
+summary{cursor:pointer;font-weight:650;font-size:.9rem}
+.block{border-left:3px solid var(--accent);padding-left:12px;margin:14px 0}
+footer.site{border-top:1px solid var(--line);margin-top:40px;padding:18px 0 0;font-size:.8rem;color:var(--muted)}
+footer.site p{max-width:none}
+.pill{display:inline-block;font-size:.66rem;font-weight:700;padding:2px 7px;border-radius:999px;
+ background:var(--chip);color:var(--ink2);margin-left:4px}
+.two{display:grid;grid-template-columns:1fr;gap:14px}
+.pros li{color:#0a4537}
+.cons li{color:#5c2a26}
+.mobonly{display:block}
+@media(min-width:760px){
+ h1{font-size:2.1rem}
+ .stats{grid-template-columns:repeat(4,1fr)}
+ .grid{grid-template-columns:repeat(3,1fr)}
+ .two{grid-template-columns:1fr 1fr}
+ .mobonly{display:none}
+}
+@media(max-width:640px){
+ /* stacked cards for the key tables so nothing needs horizontal scrolling */
+ table.stack thead{display:none}
+ table.stack tr{display:block;border:1px solid var(--line);border-radius:10px;margin:8px;background:var(--panel)}
+ table.stack td{display:flex;justify-content:space-between;gap:12px;border:0;padding:6px 10px}
+ table.stack td::before{content:attr(data-l);font-size:.66rem;letter-spacing:.05em;
+  text-transform:uppercase;color:var(--muted);font-weight:700;flex:0 0 42%}
+ table.stack td.num{justify-content:space-between}
+ table.stack tr td:first-child{background:#f7f9fa;border-radius:10px 10px 0 0;font-weight:700}
+ .tw{border:0;background:transparent}
+}
+.py{display:none}
+</style>
+</head>
+<body>
+<header class="site"><div class="hbar">
+<a class="brand" href="index.html">CNY<span>&rarr;</span>USD <span style="color:#68737f;font-weight:600">research</span></a>
+<nav class="main"><a href="index.html">Dashboard</a><a href="answer.html">The answer</a><a href="costs.html">Costs $10k–$400k</a><a href="methods.html">All routes</a><a href="penalty.html">Penalty</a><a href="tax.html">Tax</a><a href="reporting.html">US filing</a><a href="steps.html">Step by step</a><a href="sources.html" aria-current="page">Sources</a><a href="flagged.html">Flagged</a><a href="repo-review.html">Repo audit</a><a href="methodology.html">Method</a></nav>
+</div></header>
+<div class="wrap">
+
+<p class="crumb"><a href="index.html">Dashboard</a> / Sources</p>
+<h1>45 sources, quoted</h1>
+<p class="lede">Every claim on this site traces to one of these pages. Each entry shows the exact
+text retrieved and the time it was retrieved, so you can re-check it by hand rather than trusting a
+citation.</p>
+
+<div class="tw"><table class="stack">
+<thead><tr><th>Grade</th><th class="num">Count</th><th>What it can support</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td data-l="Grade"><span class="g gA" title="statute or regulator rule">A</span> statute / regulator</td><td class="num" data-l="Count">29</td>
+ <td data-l="Supports">A legal or tax proposition.</td>
+ <td data-l="Example"><a class="src" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" target="_blank" rel="noopener noreferrer" title="经常项目外汇业务指引（2020年版）, 汇发〔2020〕14号, 第五十四、五十八、五十九、六十二、六十五、六十六条">CN-09</a></td></tr>
+<tr><td data-l="Grade"><span class="g gB" title="official guidance or form instruction">B</span> official guidance</td><td class="num" data-l="Count">5</td>
+ <td data-l="Supports">An official process, threshold or form instruction.</td>
+ <td data-l="Example"><a class="src" href="https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements" target="_blank" rel="noopener noreferrer" title="Comparison of Form 8938 and FBAR requirements">US-03</a></td></tr>
+<tr><td data-l="Grade"><span class="g gC" title="provider&#x27;s own published price — binds that provider only">C</span> provider price</td><td class="num" data-l="Count">11</td>
+ <td data-l="Supports">That provider's own price or product terms — never a legal entitlement.</td>
+ <td data-l="Example"><a class="src" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" target="_blank" rel="noopener noreferrer" title="中国银行电子银行个人服务转账汇款费率表 (BOC personal remittance tariff)">BK-01</a></td></tr>
+</tbody></table></div>
+
+<p class="note">All pages were retrieved on 2026-11-09. The retrieval tool did not expose HTTP status
+codes, so none is claimed; each entry records what the tool reported. A source being listed is not a
+claim that the link will resolve for you tomorrow.</p>
+
+
+<div class="card" id="CN-01">
+<p><span class="kicker">CN-01</span> <span class="g gA" title="statute or regulator rule">A</span></p>
+<h3>个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange), PBOC Order [2006] No. 3</h3>
+<p class="note">People&#x27;s Bank of China / SAFE · retrieved 2026-11-09T01:34Z · content returned</p>
+<p><a href="https://www.safe.gov.cn/safe/2006/1225/5319.html" target="_blank" rel="noopener noreferrer">https://www.safe.gov.cn/safe/2006/1225/5319.html</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">第三条　经常项目项下的个人外汇业务按照可兑换原则管理，资本项目项下的个人外汇业务按照可兑换进程管理。</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> The legal root cause: current-account personal FX is convertible on principle, capital-account personal FX follows the convertibility process. Explains why an ordinary savings balance cannot simply be bought into USD.</p>
+<p class="note">Rows: WHY-1, M01, M02</p>
+</div>
+<div class="card" id="CN-02">
+<p><span class="kicker">CN-02</span> <span class="g gA" title="statute or regulator rule">A</span></p>
+<h3>个人外汇管理办法 第七、九、十三、二十二、二十六、三十七条 (same instrument, specific articles)</h3>
+<p class="note">People&#x27;s Bank of China / SAFE · retrieved 2026-11-09T01:34Z · content returned</p>
+<p><a href="https://www.safe.gov.cn/safe/2006/1225/5319.html" target="_blank" rel="noopener noreferrer">https://www.safe.gov.cn/safe/2006/1225/5319.html</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">第三十七条 ... （一）境内个人是指持有中华人民共和国居民身份证、军人身份证件、武装警察身份证件的中国公民。（二）境外个人是指持护照、港澳居民来往内地通行证、台湾居民来往大陆通行证的外国公民（包括无国籍人）以及港澳台同胞。</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> Defines 境内个人 (domestic individual) by holding a PRC resident ID, and 境外个人 (overseas individual) by holding a passport. A US citizen is therefore an overseas individual for these rules unless they also hold a PRC ID.</p>
+<p class="note">Rows: ID-1, M01, M02, M16</p>
+</div>
+<div class="card" id="CN-03">
+<p><span class="kicker">CN-03</span> <span class="g gA" title="statute or regulator rule">A</span></p>
+<h3>个人外汇管理办法 第七条 (prohibition on splitting)</h3>
+<p class="note">People&#x27;s Bank of China / SAFE · retrieved 2026-11-09T01:34Z · content returned</p>
+<p><a href="https://www.safe.gov.cn/safe/2006/1225/5319.html" target="_blank" rel="noopener noreferrer">https://www.safe.gov.cn/safe/2006/1225/5319.html</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">第七条　银行和个人在办理个人外汇业务时，应当遵守本办法的相关规定，不得以分拆等方式逃避限额监管，也不得使用虚假商业单据或者凭证逃避真实性管理。</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> Splitting a transfer to evade quota supervision is prohibited in the governing administrative measure itself, not merely in guidance.</p>
+<p class="note">Rows: M33</p>
+</div>
+<div class="card" id="CN-04">
+<p><span class="kicker">CN-04</span> <span class="g gA" title="statute or regulator rule">A</span></p>
+<h3>中华人民共和国外汇管理条例 (Regulation on Foreign Exchange Administration), State Council Order No. 532</h3>
+<p class="note">State Council of the PRC · retrieved 2026-11-09T01:36Z · content returned</p>
+<p><a href="https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm" target="_blank" rel="noopener noreferrer">https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">第三十九条　有违反规定将境内外汇转移境外，或者以欺骗手段将境内资本转移境外等逃汇行为的，由外汇管理机关责令限期调回外汇，处逃汇金额30%以下的罚款；情节严重的，处逃汇金额30%以上等值以下的罚款；构成犯罪的，依法追究刑事责任。</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> Statutory penalty ladder for evading FX control (逃汇): fine up to 30% of the amount, 30%-100% where serious, plus repatriation order and criminal referral. This is the statutory maximum range, not an assessment of any case.</p>
+<p class="note">Rows: PEN-1</p>
+</div>
+<div class="card" id="CN-05">
+<p><span class="kicker">CN-05</span> <span class="g gA" title="statute or regulator rule">A</span></p>
+<h3>外汇管理条例 第四十五条 (private/disguised FX dealing)</h3>
+<p class="note">State Council of the PRC · retrieved 2026-11-09T01:36Z · content returned</p>
+<p><a href="https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm" target="_blank" rel="noopener noreferrer">https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">第四十五条　私自买卖外汇、变相买卖外汇、倒买倒卖外汇或者非法介绍买卖外汇数额较大的，由外汇管理机关给予警告，没收违法所得，处违法金额30%以下的罚款；情节严重的，处违法金额30%以上等值以下的罚款；构成犯罪的，依法追究刑事责任。</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> Underground-bank and mirror-trade dealing definition and penalty range: warning, confiscation of illegal gains, 30% fine, up to 100% where serious, criminal referral.</p>
+<p class="note">Rows: PEN-2, M36</p>
+</div>
+<div class="card" id="CN-06">
+<p><span class="kicker">CN-06</span> <span class="g gA" title="statute or regulator rule">A</span></p>
+<h3>外汇管理条例 第四十二条 (carrying currency across the border in breach)</h3>
+<p class="note">State Council of the PRC · retrieved 2026-11-09T01:36Z · content returned</p>
+<p><a href="https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm" target="_blank" rel="noopener noreferrer">https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">第四十二条　违反规定携带外汇出入境的，由外汇管理机关给予警告，可以处违法金额20%以下的罚款。法律、行政法规规定由海关予以处罚的，从其规定。</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> Penalty for breaching the currency-carriage limits: warning plus a fine of up to 20% of the amount, with Customs penalties applied where the law so provides.</p>
+<p class="note">Rows: PEN-3, M24</p>
+</div>
+<div class="card" id="CN-07">
+<p><span class="kicker">CN-07</span> <span class="g gA" title="statute or regulator rule">A</span></p>
+<h3>个人外汇管理办法实施细则 (Detailed Rules), 汇发〔2007〕1号, 第二、十、十一、十三、十四、二十条</h3>
+<p class="note">SAFE · retrieved 2026-11-09T01:42Z · content returned</p>
+<p><a href="http://m.safe.gov.cn/safe/2007/0105/5320.html" target="_blank" rel="noopener noreferrer">http://m.safe.gov.cn/safe/2007/0105/5320.html</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">第二条 对个人结汇和境内个人购汇实行年度总额管理。年度总额分别为每人每年等值5万美元。</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> The USD 50,000 annual total applies to individual settlement (结汇) and to FX purchase by a DOMESTIC individual (境内个人购汇) — it is not framed as an overseas individual&#x27;s purchase quota.</p>
+<p class="note">Rows: Q-1, M01, M02</p>
+</div>
+<div class="card" id="CN-08">
+<p><span class="kicker">CN-08</span> <span class="g gA" title="statute or regulator rule">A</span></p>
+<h3>个人外汇管理办法实施细则 第十三条 (overseas individual converting unused RMB back)</h3>
+<p class="note">SAFE · retrieved 2026-11-09T01:42Z · content returned</p>
+<p><a href="http://m.safe.gov.cn/safe/2007/0105/5320.html" target="_blank" rel="noopener noreferrer">http://m.safe.gov.cn/safe/2007/0105/5320.html</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">第十三条 境外个人经常项目合法人民币收入购汇及未用完的人民币兑回，按以下规定办理：（一）在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的相关证明材料（含税务凭证）办理购汇。</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> The route that actually fits an overseas individual with documented PRC current-account income: purchase against the ID plus transaction-amount evidence INCLUDING TAX VOUCHERS.</p>
+<p class="note">Rows: M01, M02, M16</p>
+</div>
+<div class="card" id="CN-09">
+<p><span class="kicker">CN-09</span> <span class="g gA" title="statute or regulator rule">A</span></p>
+<h3>经常项目外汇业务指引（2020年版）, 汇发〔2020〕14号, 第五十四、五十八、五十九、六十二、六十五、六十六条</h3>
+<p class="note">SAFE, published in State Council Gazette 2020 No. 31 · retrieved 2026-11-09T01:45Z · content returned</p>
+<p><a href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" target="_blank" rel="noopener noreferrer">https://www.gov.cn/gongbao/content/2020/content_5560296.htm</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">第五十九条　境外个人在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的购汇资金来源材料（含税务凭证）在银行办理购汇。持有外国人永久居留身份证的境外个人适用购汇年度便利化额度。</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> The current consolidated text. Overseas individual purchase needs ID + source-of-funds evidence including tax vouchers; ONLY an overseas individual holding a permanent-residence ID may use the annual facilitation quota. A US passport alone is therefore outside the quota route and inside the documented route.</p>
+<p class="note">Rows: Q-1, M01, M02</p>
+</div>
+<div class="card" id="CN-10">
+<p><span class="kicker">CN-10</span> <span class="g gA" title="statute or regulator rule">A</span></p>
+<h3>经常项目外汇业务指引（2020年版）第五十四条、第五十六条</h3>
+<p class="note">SAFE · retrieved 2026-11-09T01:45Z · content returned</p>
+<p><a href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" target="_blank" rel="noopener noreferrer">https://www.gov.cn/gongbao/content/2020/content_5560296.htm</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">第五十四条　个人结汇和境内个人购汇实行年度便利化额度管理，便利化额度分别为每人每年等值5万美元。... 第五十六条　境内个人凭本人有效身份证件和有交易额的购汇资金用途材料，在银行办理不占用年度便利化额度的经常项目购汇。</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> Two-track design: a USD 50,000 facilitation quota, and a second documented track that does NOT use the quota. The documented track is the one available when the quota is not.</p>
+<p class="note">Rows: Q-1, Q-2, M01, M02</p>
+</div>
+<div class="card" id="CN-11">
+<p><span class="kicker">CN-11</span> <span class="g gA" title="statute or regulator rule">A</span></p>
+<h3>经常项目外汇业务指引（2020年版）第六十二条 (splitting / watchlist, current text)</h3>
+<p class="note">SAFE · retrieved 2026-11-09T01:45Z · content returned</p>
+<p><a href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" target="_blank" rel="noopener noreferrer">https://www.gov.cn/gongbao/content/2020/content_5560296.htm</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">第六十二条　个人不得以分拆等方式规避便利化额度管理及真实性管理。外汇局对规避管理的个人实行“关注名单”管理。... “关注名单”内个人的关注期限为列入“关注名单”的当年及之后连续2年。</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> The current (2020) watchlist rule: 2 years plus the year of listing, stricter documentary review, and it applies to both the lender and the borrower of a quota.</p>
+<p class="note">Rows: PEN-4, M33</p>
+</div>
+<div class="card" id="CN-12">
+<p><span class="kicker">CN-12</span> <span class="g gA" title="statute or regulator rule">A</span></p>
+<h3>经常项目外汇业务指引（2020年版）第六十四条、第六十五条 (outward remittance)</h3>
+<p class="note">SAFE · retrieved 2026-11-09T01:45Z · content returned</p>
+<p><a href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" target="_blank" rel="noopener noreferrer">https://www.gov.cn/gongbao/content/2020/content_5560296.htm</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">第六十五条　境外个人经常项目外汇汇出境外，按下列规定在银行办理：（一）外汇账户内外汇汇出，凭本人有效身份证件办理；（二）持外币现钞汇出，当日累计等值1万美元以下（含）的，凭本人有效身份证件办理</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> Once USD is already in the overseas individual&#x27;s FX account, the outward remittance step needs only the ID — which is why the binding constraint is the PURCHASE step, not the wire.</p>
+<p class="note">Rows: M01, M13</p>
+</div>
+<div class="card" id="CN-13">
+<p><span class="kicker">CN-13</span> <span class="g gA" title="statute or regulator rule">A</span></p>
+<h3>经常项目外汇业务指引（2020年版）第八十六条 (cash withdrawal)</h3>
+<p class="note">SAFE · retrieved 2026-11-09T01:45Z · content returned</p>
+<p><a href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" target="_blank" rel="noopener noreferrer">https://www.gov.cn/gongbao/content/2020/content_5560296.htm</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">第八十六条　个人提取外币现钞当日累计等值1万美元以下（含）的，凭本人有效身份证件在银行办理；... 凭本人有效身份证件、提钞用途等材料向银行所在地外汇局事前报备。</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> Cash withdrawal limit of USD 10,000 equivalent per day on ID; above that a purpose-based pre-filing with the local SAFE office is required.</p>
+<p class="note">Rows: M24, Q-4</p>
+</div>
+<div class="card" id="CN-14">
+<p><span class="kicker">CN-14</span> <span class="g gA" title="statute or regulator rule">A</span></p>
+<h3>个人财产对外转移售付汇管理暂行办法, PBOC Announcement [2004] No. 16</h3>
+<p class="note">People&#x27;s Bank of China / SAFE · retrieved 2026-11-09T01:50Z · content returned</p>
+<p><a href="http://m.safe.gov.cn/safe/2004/1116/5461.html" target="_blank" rel="noopener noreferrer">http://m.safe.gov.cn/safe/2004/1116/5461.html</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">第二条 本办法所称个人财产对外转移包括移民财产转移（以下简称移民转移）和继承财产转移（以下简称继承转移）。移民转移是指从中国内地移居外国，或者赴香港特别行政区、澳门特别行政区定居的自然人（以下简称移民），将其在取得移民身份之前在境内拥有的合法财产变现，通过外汇指定银行购汇和汇出境外的行为。</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> The capital-account route built for exactly this problem: an emigrant transferring lawful pre-emigration property out through a designated bank. Covers property owned BEFORE the emigration status was obtained.</p>
+<p class="note">Rows: M03, M04, M26</p>
+</div>
+<div class="card" id="CN-15">
+<p><span class="kicker">CN-15</span> <span class="g gA" title="statute or regulator rule">A</span></p>
+<h3>个人财产对外转移售付汇管理暂行办法 第八、九、十一条 (document list and destination)</h3>
+<p class="note">People&#x27;s Bank of China / SAFE · retrieved 2026-11-09T01:50Z · content returned</p>
+<p><a href="http://m.safe.gov.cn/safe/2004/1116/5461.html" target="_blank" rel="noopener noreferrer">http://m.safe.gov.cn/safe/2004/1116/5461.html</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">（六）申请转移财产所在地或收入来源地主管税务机关开具的税收证明或完税凭证。... 第十一条 外汇指定银行办理售汇后，应直接将外汇汇往移民或继承人居住国或地区申请人本人的账户，不得在境内提取外币现钞。</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> The document set includes a PRC tax certificate or duty-paid voucher, and the bank must remit directly to the applicant&#x27;s own account abroad and may not hand over banknotes inside China.</p>
+<p class="note">Rows: M03, M04, DOC-1</p>
+</div>
+<div class="card" id="CN-16">
+<p><span class="kicker">CN-16</span> <span class="g gA" title="statute or regulator rule">A</span></p>
+<h3>汇发〔2014〕2号 第六条 简化个人财产转移售付汇管理 (amending the 2004 measure)</h3>
+<p class="note">SAFE · retrieved 2026-11-09T01:52Z · content returned</p>
+<p><a href="http://m.safe.gov.cn/safe/2014/0124/5476.html" target="_blank" rel="noopener noreferrer">http://m.safe.gov.cn/safe/2014/0124/5476.html</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">（二）取消移民财产转移分次汇出的要求。申请人向原户籍所在地外汇局办理移民财产转移核准手续后，银行可在核准件审批额度内一次或分次汇出相关资金。</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> MATERIAL: the staged 50% / 25% / 25% release schedule and the CNY 500,000 threshold in the 2004 text were abolished in 2014. The approved amount may be remitted once or in instalments. Any cost model that still applies the staged releases is measuring a rule that no longer exists.</p>
+<p class="note">Rows: F-01, M03</p>
+</div>
+<div class="card" id="CN-17">
+<p><span class="kicker">CN-17</span> <span class="g gA" title="statute or regulator rule">A</span></p>
+<h3>汇发〔2014〕2号 第六条（一）（三）（四）</h3>
+<p class="note">SAFE · retrieved 2026-11-09T01:52Z · content returned</p>
+<p><a href="http://m.safe.gov.cn/safe/2014/0124/5476.html" target="_blank" rel="noopener noreferrer">http://m.safe.gov.cn/safe/2014/0124/5476.html</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">（一）移民财产转移购付汇核准，由移民原户籍所在地外汇局负责审批。继承财产转移购付汇核准，由被继承人生前户籍所在地外汇局负责审批。取消财产转移总金额超过等值人民币50万元报国家外汇管理局备案的要求。（四）取消对有关财产权利文件...进行公证的要求</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> Approval is devolved to the local SAFE branch at the original household-registration location; the CNY 500,000 upward-filing requirement is abolished; notarisation of the property-rights documents is no longer required.</p>
+<p class="note">Rows: M03, DOC-1, M04</p>
+</div>
+<div class="card" id="CN-18">
+<p><span class="kicker">CN-18</span> <span class="g gA" title="statute or regulator rule">A</span></p>
+<h3>Individual Income Tax Law of the PRC, Article 2 (nine income categories)</h3>
+<p class="note">State Taxation Administration · retrieved 2026-11-09T01:38Z · content returned</p>
+<p><a href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" target="_blank" rel="noopener noreferrer">https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">Article 2 The following categories of individual income shall be subject to individual income tax: (1) Income from salary and wages; (2) Income from remuneration for personal services; (3) Income from author&#x27;s remuneration; (4) Income from royalties; (5) Income from business operation; (6) Income from interest, dividends or bonuses; (7) Income from leasing of assets; (8) Income from transfer of assets; and (9) Incidental income.</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> PRC IIT is imposed on nine enumerated categories of INCOME. A currency exchange of one&#x27;s own after-tax principal is not on the list — which is why converting is not itself a taxable event.</p>
+<p class="note">Rows: TAX-CN-1</p>
+</div>
+<div class="card" id="CN-19">
+<p><span class="kicker">CN-19</span> <span class="g gA" title="statute or regulator rule">A</span></p>
+<h3>Individual Income Tax Law, Article 3(3) (flat 20% rate)</h3>
+<p class="note">State Taxation Administration · retrieved 2026-11-09T01:38Z · content returned</p>
+<p><a href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" target="_blank" rel="noopener noreferrer">https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">(3) For income from interest, dividends or bonuses, income from leasing of assets, income from transfer of assets, and incidental income, a flat tax rate of 20 percent shall apply.</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> Where a disposal is a taxable transfer of assets, the PRC rate is a flat 20% — on the gain or the income, never on the principal.</p>
+<p class="note">Rows: TAX-CN-2</p>
+</div>
+<div class="card" id="CN-20">
+<p><span class="kicker">CN-20</span> <span class="g gA" title="statute or regulator rule">A</span></p>
+<h3>关于进一步防范和处置虚拟货币交易炒作风险的通知, 银发〔2021〕237号</h3>
+<p class="note">PBOC and nine other departments · retrieved 2026-11-09T01:56Z · content returned</p>
+<p><a href="https://www.pbc.gov.cn/tiaofasi/144941/3581332/4348658/index.html" target="_blank" rel="noopener noreferrer">https://www.pbc.gov.cn/tiaofasi/144941/3581332/4348658/index.html</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">（二）虚拟货币相关业务活动属于非法金融活动。开展法定货币与虚拟货币兑换业务、虚拟货币之间的兑换业务...一律严格禁止，坚决依法取缔。</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> Converting fiat to virtual currency is classified as illegal financial activity and is strictly prohibited. The crypto bridge is therefore excluded as a lawful method, with no execution steps provided.</p>
+<p class="note">Rows: PEN-5, M37</p>
+</div>
+<div class="card" id="CN-21">
+<p><span class="kicker">CN-21</span> <span class="g gA" title="statute or regulator rule">A</span></p>
+<h3>个人财产对外转移售付汇管理暂行办法 第十条 (approval authority) — as amended by 汇发〔2014〕2号</h3>
+<p class="note">PBOC / SAFE · retrieved 2026-11-09T01:50Z · content returned</p>
+<p><a href="http://m.safe.gov.cn/safe/2004/1116/5461.html" target="_blank" rel="noopener noreferrer">http://m.safe.gov.cn/safe/2004/1116/5461.html</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">第十条 申请财产对外转移总金额在等值人民币50万元以下（含50万元）的，由所在地外汇局审批。...超过上述金额的，由所在地外汇局初审后，报国家外汇管理局审批。</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> Original approval split at CNY 500,000; the upward-filing half was abolished by CN-17. Recorded so the reader can see the exact text that changed.</p>
+<p class="note">Rows: DOC-1</p>
+</div>
+<div class="card" id="CN-22">
+<p><span class="kicker">CN-22</span> <span class="g gA" title="statute or regulator rule">A</span></p>
+<h3>境内外汇账户管理规定 / 个人外汇账户 — 个人外汇管理办法 第三十二条</h3>
+<p class="note">PBOC / SAFE · retrieved 2026-11-09T01:34Z · content returned</p>
+<p><a href="https://www.safe.gov.cn/safe/2006/1225/5319.html" target="_blank" rel="noopener noreferrer">https://www.safe.gov.cn/safe/2006/1225/5319.html</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">第三十二条　个人可以凭本人有效身份证件在银行开立外汇储蓄账户。外汇储蓄账户的收支范围为非经营性外汇收付、本人或与其直系亲属之间同一主体类别的外汇储蓄账户间的资金划转。</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> An individual may open a foreign-currency savings account on ID; its permitted scope is non-operating FX receipts and payments and transfers between the holder&#x27;s own accounts of the same subject category. This is the account used by the &#x27;convert early, hold USD onshore&#x27; strategy.</p>
+<p class="note">Rows: M23</p>
+</div>
+<div class="card" id="US-01">
+<p><span class="kicker">US-01</span> <span class="g gA" title="statute or regulator rule">A</span></p>
+<h3>26 U.S.C. §988(e)(2) — exclusion for certain personal transactions</h3>
+<p class="note">U.S. Government Publishing Office, U.S. Code 2024 edition · retrieved 2026-11-09T01:40Z · content returned</p>
+<p><a href="https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm" target="_blank" rel="noopener noreferrer">https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">(2) Exclusion for certain personal transactions If— (A) nonfunctional currency is disposed of by an individual in any transaction, and (B) such transaction is a personal transaction, no gain shall be recognized for purposes of this subtitle by reason of changes in exchange rates after such currency was acquired by such individual and before such disposition. The preceding sentence shall not apply if the gain which would otherwise be recognized on the transaction exceeds $200.</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> A personal foreign-currency conversion by an individual recognises no FX gain up to USD 200. Above USD 200 of FX gain the exclusion does not apply and the gain is ordinary income under §988(a).</p>
+<p class="note">Rows: TAX-US-1</p>
+</div>
+<div class="card" id="US-02">
+<p><span class="kicker">US-02</span> <span class="g gA" title="statute or regulator rule">A</span></p>
+<h3>31 U.S.C. §5321(a)(5) — FBAR civil penalties (via IRS / FinCEN inflation table)</h3>
+<p class="note">FinCEN, 31 CFR 1010.821 Table 1 · retrieved 2026-11-09T01:44Z · content returned</p>
+<p><a href="https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821" target="_blank" rel="noopener noreferrer">https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">31 U.S.C. 5321(a)(5)(B)(i) | Foreign Financial Agency Transaction—Non-Willful Violation of Transaction | 10,000 | 16,536 ... 31 U.S.C. 5321(a)(5)(C)(i)(I) | Foreign Financial Agency Transaction—Willful Violation of Transaction | 100,000 | 165,353</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> Current inflation-adjusted FBAR maxima: non-willful USD 16,536 per violation (statutory 10,000), willful USD 165,353 per violation (statutory 100,000), for penalties assessed on or after 17 Jan 2025. The willful penalty is ALSO the greater of that amount or 50% of the account balance under the statute.</p>
+<p class="note">Rows: PEN-6, PEN-7</p>
+</div>
+<div class="card" id="US-03">
+<p><span class="kicker">US-03</span> <span class="g gB" title="official guidance or form instruction">B</span></p>
+<h3>Comparison of Form 8938 and FBAR requirements</h3>
+<p class="note">Internal Revenue Service · retrieved 2026-11-09T01:44Z · content returned</p>
+<p><a href="https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements" target="_blank" rel="noopener noreferrer">https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">If non-willful, up to $10,000; if willful, up to the greater of $100,000 or 50 percent of account balances</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> The statutory willful-penalty formula is the greater of USD 100,000 (as adjusted) or 50% of the account balance — the single largest number in this whole exercise at high balances.</p>
+<p class="note">Rows: PEN-7</p>
+</div>
+<div class="card" id="US-04">
+<p><span class="kicker">US-04</span> <span class="g gB" title="official guidance or form instruction">B</span></p>
+<h3>Report of Foreign Bank and Financial Accounts (FBAR)</h3>
+<p class="note">Internal Revenue Service · retrieved 2026-11-09T01:58Z · content returned</p>
+<p><a href="https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar" target="_blank" rel="noopener noreferrer">https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">a financial interest in or signature or other authority over at least one financial account located outside the United States if the aggregate value of those foreign financial accounts exceeded $10,000 at any time during the calendar year reported.</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> FBAR threshold and the fact it is a separate filing with FinCEN, due 15 April with an automatic extension to 15 October.</p>
+<p class="note">Rows: REP-1</p>
+</div>
+<div class="card" id="US-05">
+<p><span class="kicker">US-05</span> <span class="g gB" title="official guidance or form instruction">B</span></p>
+<h3>Gifts from foreign person (Form 3520 Part IV)</h3>
+<p class="note">Internal Revenue Service · retrieved 2026-11-09T01:52Z · content returned</p>
+<p><a href="https://www.irs.gov/businesses/gifts-from-foreign-person" target="_blank" rel="noopener noreferrer">https://www.irs.gov/businesses/gifts-from-foreign-person</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">For gifts or bequests from a nonresident alien or foreign estate, you are required to report the receipt of such gifts or bequests only if the aggregate amount received from that nonresident alien or foreign estate ... exceeds $100,000 during the taxable year.</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> A genuine third-party gift from a foreign individual above USD 100,000 in a year is reportable on Form 3520 Part IV. A transfer of your OWN money is not a gift and this does not apply to it — the distinction matters for the &#x27;family and friends&#x27; routes.</p>
+<p class="note">Rows: REP-2, M33</p>
+</div>
+<div class="card" id="US-06">
+<p><span class="kicker">US-06</span> <span class="g gA" title="statute or regulator rule">A</span></p>
+<h3>1% remittance transfer excise tax — IRS news release IR-2026-48</h3>
+<p class="note">Internal Revenue Service · retrieved 2026-11-09T01:47Z · content returned</p>
+<p><a href="https://www.irs.gov/newsroom/treasury-irs-issue-proposed-regulations-on-the-new-remittance-transfer-tax-established-under-the-one-big-beautiful-bill" target="_blank" rel="noopener noreferrer">https://www.irs.gov/newsroom/treasury-irs-issue-proposed-regulations-on-the-new-remittance-transfer-tax-established-under-the-one-big-beautiful-bill</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">Beginning Jan. 1, 2026, a 1% remittance transfer tax applies to remittances sent from the United States to recipients in foreign countries when the sender provides cash, a money order, a cashier&#x27;s check, or other similar physical instrument to the remittance transfer provider.</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> DIRECTIONAL: the 1% tax applies to money sent FROM the United States TO a foreign country. A China-to-United-States transfer is the opposite direction and is not within this description.</p>
+<p class="note">Rows: TAX-US-2</p>
+</div>
+<div class="card" id="US-07">
+<p><span class="kicker">US-07</span> <span class="g gB" title="official guidance or form instruction">B</span></p>
+<h3>Foreign Tax Credit</h3>
+<p class="note">Internal Revenue Service · retrieved 2026-11-09T01:30Z · content returned</p>
+<p><a href="https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit" target="_blank" rel="noopener noreferrer">https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">If you paid or accrued foreign taxes to a foreign country or U.S. possession and are subject to U.S. tax on the same income, you may be able to take either a credit or an itemized deduction for those taxes.</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> Where PRC tax was actually paid on the same income, a US credit may be available on Form 1116, which is how double taxation is avoided rather than suffered.</p>
+<p class="note">Rows: TAX-US-3</p>
+</div>
+<div class="card" id="US-08">
+<p><span class="kicker">US-08</span> <span class="g gB" title="official guidance or form instruction">B</span></p>
+<h3>Form 8938 / FBAR thresholds for a specified individual living outside the US</h3>
+<p class="note">Internal Revenue Service · retrieved 2026-11-09T01:44Z · content returned</p>
+<p><a href="https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements" target="_blank" rel="noopener noreferrer">https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">Specified individuals living outside the US: - Unmarried individual (or married filing separately): Total value of assets was more than $200,000 on the last day of the tax year, or more than $300,000 at any time during the year.</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> Form 8938 threshold differs depending on whether the specified individual lives inside or outside the US; the FBAR USD 10,000 threshold applies regardless.</p>
+<p class="note">Rows: REP-3</p>
+</div>
+<div class="card" id="BK-01">
+<p><span class="kicker">BK-01</span> <span class="g gC" title="provider&#x27;s own published price — binds that provider only">C</span></p>
+<h3>中国银行电子银行个人服务转账汇款费率表 (BOC personal remittance tariff)</h3>
+<p class="note">Bank of China · retrieved 2026-11-09T01:32Z · content returned</p>
+<p><a href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" target="_blank" rel="noopener noreferrer">https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">跨境汇款（电汇） 每笔汇款金额的1‰，最低收取50元/笔，最高收取260元/笔；另收电讯费,港澳台地区人民币80元/笔,非港澳台地区人民币150元/笔。</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> BOC cross-border telegraphic transfer commission: 0.1% of the amount, minimum CNY 50, maximum CNY 260, plus a cable fee of CNY 150 outside Hong Kong/Macau/Taiwan. Charged by the BANK; it is a price, not a law.</p>
+<p class="note">Rows: COST-COMM, COST-CABLE</p>
+</div>
+<div class="card" id="BK-02">
+<p><span class="kicker">BK-02</span> <span class="g gC" title="provider&#x27;s own published price — binds that provider only">C</span></p>
+<h3>中国银行服务价目表 第三章：个人客户服务收费业务 (BOC personal customer price list, Nov 2025)</h3>
+<p class="note">Bank of China · retrieved 2026-11-09T01:53Z · content returned</p>
+<p><a href="https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf" target="_blank" rel="noopener noreferrer">https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">本外币跨境汇款： 电汇/票汇按汇款金额的1‰，最低收取50元/笔，最高收取260元/笔，电汇另收电讯费（中国港澳台地区发电80元/笔，国际发电150元/笔，下同）</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> Cross-confirms the current published BOC personal tariff (0.1%, CNY 50 min, CNY 260 max, CNY 150 international cable), so the 2014-dated tariff page is not stale.</p>
+<p class="note">Rows: COST-COMM, COST-CABLE</p>
+</div>
+<div class="card" id="BK-03">
+<p><span class="kicker">BK-03</span> <span class="g gC" title="provider&#x27;s own published price — binds that provider only">C</span></p>
+<h3>中国银行服务价目表 — 全额到账 (full-amount arrival) clauses</h3>
+<p class="note">Bank of China · retrieved 2026-11-09T01:53Z · content returned</p>
+<p><a href="https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf" target="_blank" rel="noopener noreferrer">https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">按币种另行加收：美元，收款行在我行纽约分行开立账户的，15 美元/笔，其他均为 25 美元/笔</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> Optional full-amount-arrival surcharge in USD: 15 if the receiving bank holds its account with BOC New York, otherwise 25. It replaces an unknown correspondent deduction with a fixed, published price.</p>
+<p class="note">Rows: COST-CORR</p>
+</div>
+<div class="card" id="BK-04">
+<p><span class="kicker">BK-04</span> <span class="g gC" title="provider&#x27;s own published price — binds that provider only">C</span></p>
+<h3>中国银行外汇牌价 (BOC foreign-exchange rate board), USD row</h3>
+<p class="note">Bank of China · retrieved 2026-11-09T01:31Z · content returned</p>
+<p><a href="https://www.boc.cn/sourcedb/whpj/" target="_blank" rel="noopener noreferrer">https://www.boc.cn/sourcedb/whpj/</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">美元 | 666.38 | 666.38 | 669.19 | 669.19 | 671.88 | 2026/11/09 | 09:15:45</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> Live USD board in CNY per 100 USD: cash-remittance buying 666.38, selling 669.19, BOC reference 671.88. The board itself states the rate actually applied at the counter governs.</p>
+<p class="note">Rows: COST-FX</p>
+</div>
+<div class="card" id="BK-05">
+<p><span class="kicker">BK-05</span> <span class="g gC" title="provider&#x27;s own published price — binds that provider only">C</span></p>
+<h3>中国银行服务价目表 — 外币携带证 (currency carriage certificate)</h3>
+<p class="note">Bank of China · retrieved 2026-11-09T01:53Z · content returned</p>
+<p><a href="https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf" target="_blank" rel="noopener noreferrer">https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">外币携带证：10元/份 ... 外币携带证自2025年4月1日起至2026年12月31日免收费。</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> The carriage certificate that the cash route requires costs CNY 10 per copy, waived from 1 Apr 2025 to 31 Dec 2026.</p>
+<p class="note">Rows: COST-PERMIT, M24</p>
+</div>
+<div class="card" id="BK-06">
+<p><span class="kicker">BK-06</span> <span class="g gC" title="provider&#x27;s own published price — binds that provider only">C</span></p>
+<h3>中国银行服务价目表 — 出具个人银行业务相关证明材料 (certificate of deposit)</h3>
+<p class="note">Bank of China · retrieved 2026-11-09T01:53Z · content returned</p>
+<p><a href="https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf" target="_blank" rel="noopener noreferrer">https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">出具个人银行业务相关证明材料 ... 存款证明：20元—40元/份；外币携带证：10元/份；开具资信证明：最高100元/笔</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> A certificate of deposit statement, commonly required as source-of-funds evidence, costs CNY 20-40 per copy at BOC.</p>
+<p class="note">Rows: COST-DOC</p>
+</div>
+<div class="card" id="BK-07">
+<p><span class="kicker">BK-07</span> <span class="g gC" title="provider&#x27;s own published price — binds that provider only">C</span></p>
+<h3>中国银行 announcements — 全额到账 note (USD 15 / USD 25)</h3>
+<p class="note">Bank of China · retrieved 2026-11-09T01:55Z · content returned</p>
+<p><a href="https://www.boc.cn/cbservice/bi2/201711/t20171109_10646775.html" target="_blank" rel="noopener noreferrer">https://www.boc.cn/cbservice/bi2/201711/t20171109_10646775.html</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">按币种另行加收：美元，收款行在我行纽约分行开立账户的，15美元/笔，其他均为25美元/笔</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> Second, dating-independent confirmation of the full-amount-arrival surcharge.</p>
+<p class="note">Rows: COST-CORR</p>
+</div>
+<div class="card" id="BK-08">
+<p><span class="kicker">BK-08</span> <span class="g gC" title="provider&#x27;s own published price — binds that provider only">C</span></p>
+<h3>Chase Business Complete Checking fee schedule — incoming international wire</h3>
+<p class="note">JPMorgan Chase Bank, N.A. · retrieved 2026-11-09T01:57Z · content returned</p>
+<p><a href="https://www.chase.com/content/dam/chase-ux/documents/personal/checking/biz-how-your-transaction-will-work.pdf" target="_blank" rel="noopener noreferrer">https://www.chase.com/content/dam/chase-ux/documents/personal/checking/biz-how-your-transaction-will-work.pdf</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">Incoming Domestic $15 per transfer International $15 per transfer $0 if transfer was originally sent with the help of a Chase banker or using chase.com or Chase Mobile</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> A named US receiving-bank example: USD 15 for an incoming international wire. NAMED EXAMPLE ONLY — another bank may charge nothing or more.</p>
+<p class="note">Rows: COST-RECV</p>
+</div>
+<div class="card" id="BK-09">
+<p><span class="kicker">BK-09</span> <span class="g gC" title="provider&#x27;s own published price — binds that provider only">C</span></p>
+<h3>Wise — Guide to CNY transfers (who may send FROM CNY)</h3>
+<p class="note">Wise · retrieved 2026-11-09T01:58Z · content returned</p>
+<p><a href="https://wise.com/help/articles/2955298/guide-to-cny-transfers" target="_blank" rel="noopener noreferrer">https://wise.com/help/articles/2955298/guide-to-cny-transfers</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">You can send money from CNY if: You&#x27;re not mainland Chinese ... You&#x27;re working or have worked in China before ... You have a valid tax record issued by the China tax authority showing taxes paid within the last 3 years</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> Wise&#x27;s own eligibility gate for the from-CNY corridor: non-mainland-Chinese, has worked in China, and has a PRC tax record within 3 years. Its overall limit is tied to after-tax salary earned in China, so it does NOT solve a savings balance with no PRC payroll history.</p>
+<p class="note">Rows: M10, ELIG-1</p>
+</div>
+<div class="card" id="BK-10">
+<p><span class="kicker">BK-10</span> <span class="g gC" title="provider&#x27;s own published price — binds that provider only">C</span></p>
+<h3>Wise — Guide to CNY transfers (single-transfer caps)</h3>
+<p class="note">Wise · retrieved 2026-11-09T01:58Z · content returned</p>
+<p><a href="https://wise.com/help/articles/2955298/guide-to-cny-transfers" target="_blank" rel="noopener noreferrer">https://wise.com/help/articles/2955298/guide-to-cny-transfers</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">If you&#x27;re sending CNY from your China bank app, the maximum you can send in one transfer is 300,000 CNY. ... If you are sending CNY from Alipay, the maximum you can send in one transfer is 50,000 CNY.</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> Wise&#x27;s per-transfer ceilings from China: CNY 300,000 by bank app, CNY 50,000 by Alipay. These are provider limits, not statutory limits.</p>
+<p class="note">Rows: M10, CAP-WISE</p>
+</div>
+<div class="card" id="BK-11">
+<p><span class="kicker">BK-11</span> <span class="g gC" title="provider&#x27;s own published price — binds that provider only">C</span></p>
+<h3>Wise — Guide to CNY transfers (destination must be your own account)</h3>
+<p class="note">Wise · retrieved 2026-11-09T01:58Z · content returned</p>
+<p><a href="https://wise.com/help/articles/2955298/guide-to-cny-transfers" target="_blank" rel="noopener noreferrer">https://wise.com/help/articles/2955298/guide-to-cny-transfers</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">Due to regulations, you can only send CNY from China to another account you own.</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> The from-CNY corridor must land in an account you own — which also rules it out as a way to pay a third party.</p>
+<p class="note">Rows: M10</p>
+</div>
+<div class="card" id="US-09">
+<p><span class="kicker">US-09</span> <span class="g gA" title="statute or regulator rule">A</span></p>
+<h3>31 U.S.C. §5321(a)(5)(C) — willful FBAR penalty formula</h3>
+<p class="note">U.S. Government Publishing Office, U.S. Code 2024 edition · retrieved 2026-11-09T02:04Z · content returned</p>
+<p><a href="https://www.govinfo.gov/content/pkg/USCODE-2024-title31/html/USCODE-2024-title31-subtitleIV-chap53-subchapII-sec5321.htm" target="_blank" rel="noopener noreferrer">https://www.govinfo.gov/content/pkg/USCODE-2024-title31/html/USCODE-2024-title31-subtitleIV-chap53-subchapII-sec5321.htm</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">(C) Willful violations.—In the case of any person willfully violating, or willfully causing any violation of, any provision of section 5314— (i) the maximum penalty under subparagraph (B)(i) shall be increased to the greater of— (I) $100,000, or (II) 50 percent of the amount determined under subparagraph (D)</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> The statutory willful FBAR formula itself: the greater of USD 100,000 or 50% of the amount in (D). (D)(ii) fixes that amount at the account balance at the time of the violation for a failure to report the account.</p>
+<p class="note">Rows: PEN-7</p>
+</div>
+<div class="card" id="US-10">
+<p><span class="kicker">US-10</span> <span class="g gA" title="statute or regulator rule">A</span></p>
+<h3>26 U.S.C. §6651 — failure to file and failure to pay</h3>
+<p class="note">Legal Information Institute, Cornell Law School (U.S. Code) · retrieved 2026-11-09T02:06Z · content returned</p>
+<p><a href="https://www.law.cornell.edu/uscode/text/26/6651" target="_blank" rel="noopener noreferrer">https://www.law.cornell.edu/uscode/text/26/6651</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">there shall be added to the amount required to be shown as tax on such return 5 percent of the amount of such tax if the failure is for not more than 1 month, with an additional 5 percent for each additional month ... not exceeding 25 percent in the aggregate</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> Failure-to-file: 5% per month, capped at 25%. Failure-to-pay is 0.5% per month capped at 25%. For a fraudulent failure to file, the same paragraph is applied with 15% per month and a 75% cap.</p>
+<p class="note">Rows: PEN-8</p>
+</div>
+<div class="card" id="US-11">
+<p><span class="kicker">US-11</span> <span class="g gA" title="statute or regulator rule">A</span></p>
+<h3>26 U.S.C. §6662 — accuracy-related penalty</h3>
+<p class="note">Legal Information Institute, Cornell Law School (U.S. Code) · retrieved 2026-11-09T02:06Z · content returned</p>
+<p><a href="https://www.law.cornell.edu/uscode/text/26/6662" target="_blank" rel="noopener noreferrer">https://www.law.cornell.edu/uscode/text/26/6662</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">there shall be added to the tax an amount equal to 20 percent of the portion of the underpayment to which this section applies</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> A 20% penalty on the portion of an underpayment attributable to negligence, disregard of rules, or a substantial understatement, and separately to an undisclosed foreign financial asset understatement.</p>
+<p class="note">Rows: PEN-9</p>
+</div>
+<div class="card" id="US-12">
+<p><span class="kicker">US-12</span> <span class="g gA" title="statute or regulator rule">A</span></p>
+<h3>26 U.S.C. §6663 — fraud penalty</h3>
+<p class="note">Legal Information Institute, Cornell Law School (U.S. Code) · retrieved 2026-11-09T02:06Z · content returned</p>
+<p><a href="https://www.law.cornell.edu/uscode/text/26/6663" target="_blank" rel="noopener noreferrer">https://www.law.cornell.edu/uscode/text/26/6663</a></p>
+<blockquote style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #d7dee6;background:#fafbfc;
+ font-size:.84rem;color:#39434f">there shall be added to the tax an amount equal to 75 percent of the portion of the underpayment which is attributable to fraud</blockquote>
+<p class="note" style="margin-top:8px"><strong>Supports:</strong> 75% of the portion of an underpayment attributable to fraud, on top of the tax itself.</p>
+<p class="note">Rows: PEN-10</p>
+</div>
+
+<h2>What is deliberately absent</h2>
+<ul>
+<li>No social-media, forum, blog or news article is used to support any figure.</li>
+<li>No exchange rate from a non-bank aggregator is used to compute a cost.</li>
+<li>No invented HTTP status, no invented quote, and no source id without a URL.</li>
+</ul>
+
+<footer class="site">
+<p><strong>What this is.</strong> Published-rule research with the arithmetic shown, built from official
+government, regulator, statute and provider pages retrieved on 9 November 2026. It is not legal, tax or
+investment advice, and it is not a bank quote. Rates and tariffs change — every source is linked so
+you can re-check it by hand.</p>
+<p>Values that could not be confirmed from an official page are left blank and published on the
+<a href="flagged.html">Flagged for review</a> page. Nothing is inferred or estimated.
+Edition H · session arena-e01cf383 · <a href="https://github.com/sassnarep3-star/China1">repository</a></p>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Getting CNY out of China as a US citizen: every lawful route, the published cost at every USD 10,000 step from 10,000 to 400,000, and where the tax penalties actually come from.">
+<meta name="color-scheme" content="light">
+<title>Flagged for review · China Money</title>
+<style>
+:root{
+ --ink:#10151b; --ink2:#39434f; --muted:#68737f; --line:#e3e7ec; --bg:#f5f6f8;
+ --panel:#fff; --accent:#0d5c49; --accent2:#0a4537; --warn:#8a4b00; --warnbg:#fff6e8;
+ --bad:#8c1d18; --badbg:#fdf0ef; --okbg:#eaf5f1; --chip:#eef1f5;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+ font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px 64px}
+header.site{background:var(--panel);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.hbar{max-width:1080px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;
+ gap:12px;justify-content:space-between}
+.brand{font-weight:800;letter-spacing:-.02em;font-size:1rem;color:var(--ink);white-space:nowrap}
+.brand span{color:var(--accent)}
+nav.main{display:flex;gap:4px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+nav.main::-webkit-scrollbar{display:none}
+nav.main a{font-size:.82rem;font-weight:600;padding:8px 10px;border-radius:8px;white-space:nowrap;color:var(--ink2)}
+nav.main a:hover{background:var(--chip);text-decoration:none}
+nav.main a[aria-current]{background:var(--accent);color:#fff}
+h1{font-size:1.65rem;line-height:1.2;letter-spacing:-.025em;margin:22px 0 8px}
+h2{font-size:1.2rem;letter-spacing:-.01em;margin:32px 0 10px}
+h3{font-size1rem;font-size:1rem;margin:20px 0 6px}
+p.lede{font-size:1.02rem;color:var(--ink2);margin:0 0 18px;max-width:68ch}
+p{max-width:75ch}
+.eyebrow{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700;margin:24px 0 0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;margin:14px 0}
+.answer{background:linear-gradient(180deg,#0d5c49,#0a4537);color:#fff;border:0}
+.answer h2{color:#fff;margin-top:0;font-size:1.05rem;letter-spacing:.02em;text-transform:uppercase;font-size:.78rem}
+.answer .big{font-size:1.5rem;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin:0 0 8px}
+.answer p{color:#d8ece5;margin:.5em 0}
+.answer a{color:#bff0e0}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px}
+.stat small{display:block;font-size:.63rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.stat strong{display:block;font-size:1.28rem;letter-spacing:-.02em;margin:3px 0 1px}
+.stat em{display:block;font-size:.73rem;color:var(--ink2);font-style:normal}
+.grid{display:grid;grid-template-columns:1fr;gap:10px;margin:14px 0}
+.nav-card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:12px;
+ padding:14px;color:inherit}
+.nav-card:hover{border-color:var(--accent);text-decoration:none}
+.nav-card h3{margin:2px 0 4px;font-size:1rem}
+.nav-card p{margin:0;font-size:.85rem;color:var(--ink2)}
+.kicker{font-size:.63rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:700}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--panel);
+ -webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:.86rem}
+th,td{padding:10px 11px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:#eff2f5;font-size:.66rem;letter-spacing:.05em;text-transform:uppercase;color:var(--ink2);
+ font-weight:700;position:sticky;top:0}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover{background:#fafbfc}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+td.big{font-weight:700}
+.src{display:inline-block;font-size:.63rem;font-weight:700;padding:2px 5px;border-radius:5px;
+ background:var(--chip);border:1px solid var(--line);color:var(--ink2);white-space:nowrap;margin:1px 0}
+.src:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
+.g{display:inline-block;font-size:.6rem;font-weight:800;width:16px;height:16px;line-height:16px;
+ text-align:center;border-radius:4px;color:#fff}
+.gA{background:#0d5c49}.gB{background:#3f5a8a}.gC{background:#7a5a1e}
+.st{display:inline-block;font-size:.67rem;font-weight:700;padding:2px 7px;border-radius:999px;white-space:nowrap}
+.s-lawful{background:var(--okbg);color:#0a4537}
+.s-conditional{background:var(--warnbg);color:var(--warn)}
+.s-prohibited{background:var(--badbg);color:var(--bad)}
+.s-not_a_transfer{background:var(--chip);color:var(--ink2)}
+.note{font-size:.82rem;color:var(--muted);max-width:75ch}
+.flag{background:var(--warnbg);border:1px solid #f2ddbb;border-radius:10px;padding:12px;margin:12px 0}
+.flag strong{color:var(--warn)}
+.danger{background:var(--badbg);border:1px solid #f3cfcb;border-radius:10px;padding:12px;margin:12px 0}
+.danger strong{color:var(--bad)}
+.ok{background:var(--okbg);border:1px solid #cfe6de;border-radius:10px;padding:12px;margin:12px 0}
+ul,ol{padding-left:1.15em;max-width:75ch}
+li{margin:.3em 0}
+.crumb{font-size:.78rem;color:var(--muted);margin:16px 0 0}
+.crumb a{color:var(--muted)}
+details{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--panel);margin:10px 0}
+summary{cursor:pointer;font-weight:650;font-size:.9rem}
+.block{border-left:3px solid var(--accent);padding-left:12px;margin:14px 0}
+footer.site{border-top:1px solid var(--line);margin-top:40px;padding:18px 0 0;font-size:.8rem;color:var(--muted)}
+footer.site p{max-width:none}
+.pill{display:inline-block;font-size:.66rem;font-weight:700;padding:2px 7px;border-radius:999px;
+ background:var(--chip);color:var(--ink2);margin-left:4px}
+.two{display:grid;grid-template-columns:1fr;gap:14px}
+.pros li{color:#0a4537}
+.cons li{color:#5c2a26}
+.mobonly{display:block}
+@media(min-width:760px){
+ h1{font-size:2.1rem}
+ .stats{grid-template-columns:repeat(4,1fr)}
+ .grid{grid-template-columns:repeat(3,1fr)}
+ .two{grid-template-columns:1fr 1fr}
+ .mobonly{display:none}
+}
+@media(max-width:640px){
+ /* stacked cards for the key tables so nothing needs horizontal scrolling */
+ table.stack thead{display:none}
+ table.stack tr{display:block;border:1px solid var(--line);border-radius:10px;margin:8px;background:var(--panel)}
+ table.stack td{display:flex;justify-content:space-between;gap:12px;border:0;padding:6px 10px}
+ table.stack td::before{content:attr(data-l);font-size:.66rem;letter-spacing:.05em;
+  text-transform:uppercase;color:var(--muted);font-weight:700;flex:0 0 42%}
+ table.stack td.num{justify-content:space-between}
+ table.stack tr td:first-child{background:#f7f9fa;border-radius:10px 10px 0 0;font-weight:700}
+ .tw{border:0;background:transparent}
+}
+.py{display:none}
+</style>
+</head>
+<body>
+<header class="site"><div class="hbar">
+<a class="brand" href="index.html">CNY<span>&rarr;</span>USD <span style="color:#68737f;font-weight:600">research</span></a>
+<nav class="main"><a href="index.html">Dashboard</a><a href="answer.html">The answer</a><a href="costs.html">Costs $10k–$400k</a><a href="methods.html">All routes</a><a href="penalty.html">Penalty</a><a href="tax.html">Tax</a><a href="reporting.html">US filing</a><a href="steps.html">Step by step</a><a href="sources.html">Sources</a><a href="flagged.html" aria-current="page">Flagged</a><a href="repo-review.html">Repo audit</a><a href="methodology.html">Method</a></nav>
+</div></header>
+<div class="wrap">
+
+<p class="crumb"><a href="index.html">Dashboard</a> / Flagged for review</p>
+<h1>Flagged for review</h1>
+<p class="lede">Everything this session could not verify, every cell left blank on purpose, and every
+irregularity found in the earlier editions of this repository. Nothing here is hidden behind a
+default value. Review these after the site is live.</p>
+
+<div class="flag"><strong>Count:</strong> 15 items — 4 high, 7 medium, 4 low severity.
+None of them blocks publication, and none of them has been quietly resolved by estimation.</div>
+
+<h2>Routes with no published price</h2>
+<p class="note">These are lawful routes whose all-in cost cannot be computed from an official page.
+Their tables show an em dash rather than a fabricated number.</p>
+<div class="tw"><table class="stack">
+<thead><tr><th>Route</th><th>Why the cells are blank</th><th>Source</th></tr></thead>
+<tbody><tr><td data-l="Route"><a href="method-A08.html">A08 · Qualified Domestic Institutional Investor scheme (funds and bank products)</a></td><td data-l="Why blank">No published all-in price.</td><td data-l="Source"><a class="src" href="http://m.safe.gov.cn/safe/2007/0105/5320.html" target="_blank" rel="noopener noreferrer" title="个人外汇管理办法实施细则 (Detailed Rules), 汇发〔2007〕1号, 第二、十、十一、十三、十四、二十条">CN-07</a></td></tr><tr><td data-l="Route"><a href="method-B01.html">B01 · Foreign-invested enterprise liquidation: the foreign investor&#x27;s share</a></td><td data-l="Why blank">No published all-in price.</td><td data-l="Source"><a class="src" href="https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm" target="_blank" rel="noopener noreferrer" title="中华人民共和国外汇管理条例 (Regulation on Foreign Exchange Administration), State Council Order No. 532">CN-04</a> <a class="src" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" target="_blank" rel="noopener noreferrer" title="中国银行电子银行个人服务转账汇款费率表 (BOC personal remittance tariff)">BK-01</a></td></tr><tr><td data-l="Route"><a href="method-B03.html">B03 · Genuine service or royalty payment to your own offshore entity</a></td><td data-l="Why blank">No published all-in price.</td><td data-l="Source"><a class="src" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" target="_blank" rel="noopener noreferrer" title="经常项目外汇业务指引（2020年版）, 汇发〔2020〕14号, 第五十四、五十八、五十九、六十二、六十五、六十六条">CN-09</a> <a class="src" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" target="_blank" rel="noopener noreferrer" title="中国银行电子银行个人服务转账汇款费率表 (BOC personal remittance tariff)">BK-01</a></td></tr><tr><td data-l="Route"><a href="method-C02.html">C02 · Licensed remittance fintech from CNY (Wise and similar)</a></td><td data-l="Why blank">No published all-in price.</td><td data-l="Source"><a class="src" href="https://wise.com/help/articles/2955298/guide-to-cny-transfers" target="_blank" rel="noopener noreferrer" title="Wise — Guide to CNY transfers (who may send FROM CNY)">BK-09</a> <a class="src" href="https://wise.com/help/articles/2955298/guide-to-cny-transfers" target="_blank" rel="noopener noreferrer" title="Wise — Guide to CNY transfers (single-transfer caps)">BK-10</a> <a class="src" href="https://wise.com/help/articles/2955298/guide-to-cny-transfers" target="_blank" rel="noopener noreferrer" title="Wise — Guide to CNY transfers (destination must be your own account)">BK-11</a></td></tr><tr><td data-l="Route"><a href="method-C03.html">C03 · UnionPay debit or credit card spending and ATM withdrawal abroad</a></td><td data-l="Why blank">No published all-in price.</td><td data-l="Source"><a class="src" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" target="_blank" rel="noopener noreferrer" title="经常项目外汇业务指引（2020年版）, 汇发〔2020〕14号, 第五十四、五十八、五十九、六十二、六十五、六十六条">CN-09</a></td></tr></tbody></table></div>
+
+<h2>The flag list</h2>
+
+<div class="card" id="H01">
+<p><span class="kicker">H01 · HIGH · unknown fact</span></p>
+<h3>The source of the funds is unknown, so no single route can be named as yours</h3>
+<p>Every route in this analysis is conditional on how the money was earned and documented. Salary, a property sale, an inheritance and undifferentiated savings lead to four different provisions. No personal fact was supplied and none has been assumed.</p>
+<p class="note">Sources: <a class="src" href="http://m.safe.gov.cn/safe/2007/0105/5320.html" target="_blank" rel="noopener noreferrer" title="个人外汇管理办法实施细则 第十三条 (overseas individual converting unused RMB back)">CN-08</a> <a class="src" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" target="_blank" rel="noopener noreferrer" title="经常项目外汇业务指引（2020年版）, 汇发〔2020〕14号, 第五十四、五十八、五十九、六十二、六十五、六十六条">CN-09</a> <a class="src" href="http://m.safe.gov.cn/safe/2004/1116/5461.html" target="_blank" rel="noopener noreferrer" title="个人财产对外转移售付汇管理暂行办法, PBOC Announcement [2004] No. 16">CN-14</a></p>
+</div>
+<div class="card" id="H02">
+<p><span class="kicker">H02 · HIGH · unknown fact</span></p>
+<h3>Which identity document the bank holds is unknown</h3>
+<p>A PRC resident identity card or a permanent-residence ID opens the USD 50,000 facilitation quota; a US passport alone does not, and routes you to the documented path instead. This single fact decides between A01 and A02.</p>
+<p class="note">Sources: <a class="src" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" target="_blank" rel="noopener noreferrer" title="个人外汇管理办法 第七、九、十三、二十二、二十六、三十七条 (same instrument, specific articles)">CN-02</a> <a class="src" href="http://m.safe.gov.cn/safe/2007/0105/5320.html" target="_blank" rel="noopener noreferrer" title="个人外汇管理办法实施细则 (Detailed Rules), 汇发〔2007〕1号, 第二、十、十一、十三、十四、二十条">CN-07</a> <a class="src" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" target="_blank" rel="noopener noreferrer" title="经常项目外汇业务指引（2020年版）, 汇发〔2020〕14号, 第五十四、五十八、五十九、六十二、六十五、六十六条">CN-09</a></p>
+</div>
+<div class="card" id="H03">
+<p><span class="kicker">H03 · HIGH · unknown fact</span></p>
+<h3>Prior US filing history is unknown</h3>
+<p>Whether the FBAR and Form 8938 were filed for prior years, and whether any omission was wilful, changes the exposure from zero to 50% of the balance. No figure is asserted for it.</p>
+<p class="note">Sources: <a class="src" href="https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar" target="_blank" rel="noopener noreferrer" title="Report of Foreign Bank and Financial Accounts (FBAR)">US-04</a> <a class="src" href="https://www.govinfo.gov/content/pkg/USCODE-2024-title31/html/USCODE-2024-title31-subtitleIV-chap53-subchapII-sec5321.htm" target="_blank" rel="noopener noreferrer" title="31 U.S.C. §5321(a)(5)(C) — willful FBAR penalty formula">US-09</a></p>
+</div>
+<div class="card" id="H04">
+<p><span class="kicker">H04 · HIGH · inherited error (Edition D)</span></p>
+<h3>Edition D prices a staged emigrant release schedule that was abolished in 2014</h3>
+<p>Edition D&#x27;s cost model for M03 applies releases of 50%, 25% and 25% above CNY 200,000 and states the rule on its summary page. That staging came from the 2004 measure. 汇发〔2014〕2号 art. 6(2) abolished the staged-release requirement: after approval the bank may remit once or in instalments. Edition H does not apply the staging and prices A03 as a single remittance, which is what the current text allows. Edition D&#x27;s underlying figures for other routes were not altered or relied on here.</p>
+<p class="note">Sources: <a class="src" href="http://m.safe.gov.cn/safe/2014/0124/5476.html" target="_blank" rel="noopener noreferrer" title="汇发〔2014〕2号 第六条 简化个人财产转移售付汇管理 (amending the 2004 measure)">CN-16</a> <a class="src" href="http://m.safe.gov.cn/safe/2004/1116/5461.html" target="_blank" rel="noopener noreferrer" title="个人财产对外转移售付汇管理暂行办法, PBOC Announcement [2004] No. 16">CN-14</a></p>
+</div>
+<div class="card" id="H05">
+<p><span class="kicker">H05 · MEDIUM · stale rate risk</span></p>
+<h3>The FX board moves every business day</h3>
+<p>The board used here was captured on 2026-11-09 at 09:15:45 Beijing time. The board itself states that the rate actually applied at the counter governs, so every FX-derived figure on this site is a point-in-time arithmetic result, not a quote you will receive.</p>
+<p class="note">Sources: <a class="src" href="https://www.boc.cn/sourcedb/whpj/" target="_blank" rel="noopener noreferrer" title="中国银行外汇牌价 (BOC foreign-exchange rate board), USD row">BK-04</a></p>
+</div>
+<div class="card" id="H06">
+<p><span class="kicker">H06 · MEDIUM · named example only</span></p>
+<h3>The receiving-bank fee is one bank&#x27;s published price</h3>
+<p>USD 15 is Chase&#x27;s published incoming international wire fee on the business schedule retrieved. Your own bank&#x27;s inbound fee was not verified and may be zero. The ladder keeps it as a named component so it can be removed.</p>
+<p class="note">Sources: <a class="src" href="https://www.chase.com/content/dam/chase-ux/documents/personal/checking/biz-how-your-transaction-will-work.pdf" target="_blank" rel="noopener noreferrer" title="Chase Business Complete Checking fee schedule — incoming international wire">BK-08</a></p>
+</div>
+<div class="card" id="H07">
+<p><span class="kicker">H07 · MEDIUM · provider terms</span></p>
+<h3>Wise&#x27;s fee is not published as a static schedule</h3>
+<p>Wise publishes the eligibility gate and the per-transfer ceilings, but the fee is quoted only when a transfer is built. No ladder is shown for C02 because a publicly verifiable static price does not exist.</p>
+<p class="note">Sources: <a class="src" href="https://wise.com/help/articles/2955298/guide-to-cny-transfers" target="_blank" rel="noopener noreferrer" title="Wise — Guide to CNY transfers (who may send FROM CNY)">BK-09</a> <a class="src" href="https://wise.com/help/articles/2955298/guide-to-cny-transfers" target="_blank" rel="noopener noreferrer" title="Wise — Guide to CNY transfers (single-transfer caps)">BK-10</a></p>
+</div>
+<div class="card" id="H08">
+<p><span class="kicker">H08 · MEDIUM · unverified component</span></p>
+<h3>Card spending and overseas ATM fees are not priced</h3>
+<p>The card conversion rate embeds a margin that is not published in advance, and cash-withdrawal caps abroad could not be pinned to an operative notice in this session. Route C03 is therefore blank.</p>
+<p class="note">Sources: <a class="src" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" target="_blank" rel="noopener noreferrer" title="经常项目外汇业务指引（2020年版）, 汇发〔2020〕14号, 第五十四、五十八、五十九、六十二、六十五、六十六条">CN-09</a></p>
+</div>
+<div class="card" id="H09">
+<p><span class="kicker">H09 · MEDIUM · unverified component</span></p>
+<h3>Document, translation, certification and notarisation costs are not priced</h3>
+<p>The emigrant and inheritance routes need translations and consular certification whose prices depend on the issuer and the country. Only the bank&#x27;s own certificate of deposit (CNY 20–40) is published and included.</p>
+<p class="note">Sources: <a class="src" href="http://m.safe.gov.cn/safe/2004/1116/5461.html" target="_blank" rel="noopener noreferrer" title="个人财产对外转移售付汇管理暂行办法 第八、九、十一条 (document list and destination)">CN-15</a> <a class="src" href="https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf" target="_blank" rel="noopener noreferrer" title="中国银行服务价目表 — 出具个人银行业务相关证明材料 (certificate of deposit)">BK-06</a></p>
+</div>
+<div class="card" id="H10">
+<p><span class="kicker">H10 · MEDIUM · policy availability</span></p>
+<h3>QDII subscription capacity is not verified</h3>
+<p>Route A08 depends on an institution having open quota. Availability changes and was not verified for any specific institution in this session.</p>
+<p class="note">Sources: <a class="src" href="http://m.safe.gov.cn/safe/2007/0105/5320.html" target="_blank" rel="noopener noreferrer" title="个人外汇管理办法实施细则 (Detailed Rules), 汇发〔2007〕1号, 第二、十、十一、十三、十四、二十条">CN-07</a></p>
+</div>
+<div class="card" id="H11">
+<p><span class="kicker">H11 · MEDIUM · scope limit</span></p>
+<h3>Business routes are described at the level of the rule, not the checklist</h3>
+<p>Routes B01–B03 depend on entity-level practice (liquidation audits, tax clearance, transfer pricing) that is not published as a national price list. Their all-in cost is blank rather than estimated.</p>
+<p class="note">Sources: <a class="src" href="https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm" target="_blank" rel="noopener noreferrer" title="中华人民共和国外汇管理条例 (Regulation on Foreign Exchange Administration), State Council Order No. 532">CN-04</a> <a class="src" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" target="_blank" rel="noopener noreferrer" title="经常项目外汇业务指引（2020年版）, 汇发〔2020〕14号, 第五十四、五十八、五十九、六十二、六十五、六十六条">CN-09</a></p>
+</div>
+<div class="card" id="H12">
+<p><span class="kicker">H12 · LOW · deliberate blank</span></p>
+<h3>No PRC tax is computed on the principal</h3>
+<p>Row TAX-CN-4 is blank: no retrieved provision imposes tax on transferring after-tax principal, and a rate is not invented to fill the cell.</p>
+<p class="note">Sources: <a class="src" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" target="_blank" rel="noopener noreferrer" title="Individual Income Tax Law of the PRC, Article 2 (nine income categories)">CN-18</a></p>
+</div>
+<div class="card" id="H13">
+<p><span class="kicker">H13 · LOW · scope limit</span></p>
+<h3>The full-amount-arrival surcharge is optional</h3>
+<p>USD 15 or USD 25 applies only if you elect full-amount arrival. Declining it does not make the correspondent charge disappear; it moves an unknown deduction into the principal.</p>
+<p class="note">Sources: <a class="src" href="https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf" target="_blank" rel="noopener noreferrer" title="中国银行服务价目表 — 全额到账 (full-amount arrival) clauses">BK-03</a> <a class="src" href="https://www.boc.cn/cbservice/bi2/201711/t20171109_10646775.html" target="_blank" rel="noopener noreferrer" title="中国银行 announcements — 全额到账 note (USD 15 / USD 25)">BK-07</a></p>
+</div>
+<div class="card" id="H14">
+<p><span class="kicker">H14 · LOW · irregularity in an earlier edition</span></p>
+<h3>Earlier editions&#x27; headline all-in figures differ from Edition H by a few dollars</h3>
+<p>Edition D reports $83.45 at USD 10,000 and $932.72 at USD 400,000 using a board captured a day earlier plus its own parameter choices. Edition H recomputes from the 2026-11-09 board and includes a certificate-of-deposit component the earlier model omitted, giving $87.94 and $937.34. The difference is traceable to published inputs, not to a dispute about the rule. Both are shown so the reader can see the drift.</p>
+<p class="note">Sources: <a class="src" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" target="_blank" rel="noopener noreferrer" title="中国银行电子银行个人服务转账汇款费率表 (BOC personal remittance tariff)">BK-01</a> <a class="src" href="https://www.boc.cn/sourcedb/whpj/" target="_blank" rel="noopener noreferrer" title="中国银行外汇牌价 (BOC foreign-exchange rate board), USD row">BK-04</a> <a class="src" href="https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf" target="_blank" rel="noopener noreferrer" title="中国银行服务价目表 — 出具个人银行业务相关证明材料 (certificate of deposit)">BK-06</a></p>
+</div>
+<div class="card" id="H15">
+<p><span class="kicker">H15 · LOW · scope limit</span></p>
+<h3>Cross-border RMB to a Hong Kong account, then convert, was not verified</h3>
+<p>A commonly described route is to remit RMB to your own Hong Kong account and convert there. The remittance side and the Hong Kong conversion side each need their own verification and neither was retrieved here, so it is not listed as a priced route.</p>
+<p class="note">Sources: <a class="src" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" target="_blank" rel="noopener noreferrer" title="个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange), PBOC Order [2006] No. 3">CN-01</a></p>
+</div>
+
+<footer class="site">
+<p><strong>What this is.</strong> Published-rule research with the arithmetic shown, built from official
+government, regulator, statute and provider pages retrieved on 9 November 2026. It is not legal, tax or
+investment advice, and it is not a bank quote. Rates and tariffs change — every source is linked so
+you can re-check it by hand.</p>
+<p>Values that could not be confirmed from an official page are left blank and published on the
+<a href="flagged.html">Flagged for review</a> page. Nothing is inferred or estimated.
+Edition H · session arena-e01cf383 · <a href="https://github.com/sassnarep3-star/China1">repository</a></p>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Getting CNY out of China as a US citizen: every lawful route, the published cost at every USD 10,000 step from 10,000 to 400,000, and where the tax penalties actually come from.">
+<meta name="color-scheme" content="light">
+<title>The answer · China Money</title>
+<style>
+:root{
+ --ink:#10151b; --ink2:#39434f; --muted:#68737f; --line:#e3e7ec; --bg:#f5f6f8;
+ --panel:#fff; --accent:#0d5c49; --accent2:#0a4537; --warn:#8a4b00; --warnbg:#fff6e8;
+ --bad:#8c1d18; --badbg:#fdf0ef; --okbg:#eaf5f1; --chip:#eef1f5;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+ font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px 64px}
+header.site{background:var(--panel);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.hbar{max-width:1080px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;
+ gap:12px;justify-content:space-between}
+.brand{font-weight:800;letter-spacing:-.02em;font-size:1rem;color:var(--ink);white-space:nowrap}
+.brand span{color:var(--accent)}
+nav.main{display:flex;gap:4px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+nav.main::-webkit-scrollbar{display:none}
+nav.main a{font-size:.82rem;font-weight:600;padding:8px 10px;border-radius:8px;white-space:nowrap;color:var(--ink2)}
+nav.main a:hover{background:var(--chip);text-decoration:none}
+nav.main a[aria-current]{background:var(--accent);color:#fff}
+h1{font-size:1.65rem;line-height:1.2;letter-spacing:-.025em;margin:22px 0 8px}
+h2{font-size:1.2rem;letter-spacing:-.01em;margin:32px 0 10px}
+h3{font-size1rem;font-size:1rem;margin:20px 0 6px}
+p.lede{font-size:1.02rem;color:var(--ink2);margin:0 0 18px;max-width:68ch}
+p{max-width:75ch}
+.eyebrow{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700;margin:24px 0 0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;margin:14px 0}
+.answer{background:linear-gradient(180deg,#0d5c49,#0a4537);color:#fff;border:0}
+.answer h2{color:#fff;margin-top:0;font-size:1.05rem;letter-spacing:.02em;text-transform:uppercase;font-size:.78rem}
+.answer .big{font-size:1.5rem;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin:0 0 8px}
+.answer p{color:#d8ece5;margin:.5em 0}
+.answer a{color:#bff0e0}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px}
+.stat small{display:block;font-size:.63rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.stat strong{display:block;font-size:1.28rem;letter-spacing:-.02em;margin:3px 0 1px}
+.stat em{display:block;font-size:.73rem;color:var(--ink2);font-style:normal}
+.grid{display:grid;grid-template-columns:1fr;gap:10px;margin:14px 0}
+.nav-card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:12px;
+ padding:14px;color:inherit}
+.nav-card:hover{border-color:var(--accent);text-decoration:none}
+.nav-card h3{margin:2px 0 4px;font-size:1rem}
+.nav-card p{margin:0;font-size:.85rem;color:var(--ink2)}
+.kicker{font-size:.63rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:700}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--panel);
+ -webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:.86rem}
+th,td{padding:10px 11px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:#eff2f5;font-size:.66rem;letter-spacing:.05em;text-transform:uppercase;color:var(--ink2);
+ font-weight:700;position:sticky;top:0}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover{background:#fafbfc}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+td.big{font-weight:700}
+.src{display:inline-block;font-size:.63rem;font-weight:700;padding:2px 5px;border-radius:5px;
+ background:var(--chip);border:1px solid var(--line);color:var(--ink2);white-space:nowrap;margin:1px 0}
+.src:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
+.g{display:inline-block;font-size:.6rem;font-weight:800;width:16px;height:16px;line-height:16px;
+ text-align:center;border-radius:4px;color:#fff}
+.gA{background:#0d5c49}.gB{background:#3f5a8a}.gC{background:#7a5a1e}
+.st{display:inline-block;font-size:.67rem;font-weight:700;padding:2px 7px;border-radius:999px;white-space:nowrap}
+.s-lawful{background:var(--okbg);color:#0a4537}
+.s-conditional{background:var(--warnbg);color:var(--warn)}
+.s-prohibited{background:var(--badbg);color:var(--bad)}
+.s-not_a_transfer{background:var(--chip);color:var(--ink2)}
+.note{font-size:.82rem;color:var(--muted);max-width:75ch}
+.flag{background:var(--warnbg);border:1px solid #f2ddbb;border-radius:10px;padding:12px;margin:12px 0}
+.flag strong{color:var(--warn)}
+.danger{background:var(--badbg);border:1px solid #f3cfcb;border-radius:10px;padding:12px;margin:12px 0}
+.danger strong{color:var(--bad)}
+.ok{background:var(--okbg);border:1px solid #cfe6de;border-radius:10px;padding:12px;margin:12px 0}
+ul,ol{padding-left:1.15em;max-width:75ch}
+li{margin:.3em 0}
+.crumb{font-size:.78rem;color:var(--muted);margin:16px 0 0}
+.crumb a{color:var(--muted)}
+details{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--panel);margin:10px 0}
+summary{cursor:pointer;font-weight:650;font-size:.9rem}
+.block{border-left:3px solid var(--accent);padding-left:12px;margin:14px 0}
+footer.site{border-top:1px solid var(--line);margin-top:40px;padding:18px 0 0;font-size:.8rem;color:var(--muted)}
+footer.site p{max-width:none}
+.pill{display:inline-block;font-size:.66rem;font-weight:700;padding:2px 7px;border-radius:999px;
+ background:var(--chip);color:var(--ink2);margin-left:4px}
+.two{display:grid;grid-template-columns:1fr;gap:14px}
+.pros li{color:#0a4537}
+.cons li{color:#5c2a26}
+.mobonly{display:block}
+@media(min-width:760px){
+ h1{font-size:2.1rem}
+ .stats{grid-template-columns:repeat(4,1fr)}
+ .grid{grid-template-columns:repeat(3,1fr)}
+ .two{grid-template-columns:1fr 1fr}
+ .mobonly{display:none}
+}
+@media(max-width:640px){
+ /* stacked cards for the key tables so nothing needs horizontal scrolling */
+ table.stack thead{display:none}
+ table.stack tr{display:block;border:1px solid var(--line);border-radius:10px;margin:8px;background:var(--panel)}
+ table.stack td{display:flex;justify-content:space-between;gap:12px;border:0;padding:6px 10px}
+ table.stack td::before{content:attr(data-l);font-size:.66rem;letter-spacing:.05em;
+  text-transform:uppercase;color:var(--muted);font-weight:700;flex:0 0 42%}
+ table.stack td.num{justify-content:space-between}
+ table.stack tr td:first-child{background:#f7f9fa;border-radius:10px 10px 0 0;font-weight:700}
+ .tw{border:0;background:transparent}
+}
+.py{display:none}
+</style>
+</head>
+<body>
+<header class="site"><div class="hbar">
+<a class="brand" href="index.html">CNY<span>&rarr;</span>USD <span style="color:#68737f;font-weight:600">research</span></a>
+<nav class="main"><a href="index.html">Dashboard</a><a href="answer.html" aria-current="page">The answer</a><a href="costs.html">Costs $10k–$400k</a><a href="methods.html">All routes</a><a href="penalty.html">Penalty</a><a href="tax.html">Tax</a><a href="reporting.html">US filing</a><a href="steps.html">Step by step</a><a href="sources.html">Sources</a><a href="flagged.html">Flagged</a><a href="repo-review.html">Repo audit</a><a href="methodology.html">Method</a></nav>
+</div></header>
+<div class="wrap">
+
+<p class="crumb"><a href="index.html">Dashboard</a> / The answer</p>
+<h1>The least-tax-penalty way out</h1>
+<p class="lede">Ranked by what actually reduces the penalty, not by what looks cheapest on a fee
+page. The first step is free and removes most of the risk.</p>
+
+<div class="ok">
+<p><strong>The one-sentence answer.</strong> There is no tax on converting your own CNY into USD in
+either country — so the least-penalty strategy is not a clever conversion trick, it is to use the
+documented route that matches how the money was earned, pay the PRC tax that was already due on that
+income, and be current on your US filings <em>before</em> the money moves.</p>
+</div>
+
+<h2>The four steps, in order</h2>
+<div class="tw"><table class="stack">
+<thead><tr><th>Step</th><th>Do this</th><th>What it removes</th><th>Source</th></tr></thead>
+<tbody><tr><td data-l="Step"><strong>1</strong></td><td data-l="Do this"><strong>Use the documented route that matches the money&#x27;s real source</strong><br><span class="note">It is the only class of route where the cost is a published 0.21%-0.9% of the amount. Every prohibited route converts that into a 20%-100% statutory sanction.</span></td><td data-l="Exposure">Layer 1 only, plus the underlying PRC tax that is already due</td><td data-l="Source"><a class="src" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" target="_blank" rel="noopener noreferrer" title="经常项目外汇业务指引（2020年版）, 汇发〔2020〕14号, 第五十四、五十八、五十九、六十二、六十五、六十六条">CN-09</a> <a class="src" href="http://m.safe.gov.cn/safe/2004/1116/5461.html" target="_blank" rel="noopener noreferrer" title="个人财产对外转移售付汇管理暂行办法, PBOC Announcement [2004] No. 16">CN-14</a> <a class="src" href="https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm" target="_blank" rel="noopener noreferrer" title="中华人民共和国外汇管理条例 (Regulation on Foreign Exchange Administration), State Council Order No. 532">CN-04</a></td></tr><tr><td data-l="Step"><strong>2</strong></td><td data-l="Do this"><strong>Settle the PRC tax on the income BEFORE applying</strong><br><span class="note">The tax certificate is a required document on the capital-account routes and is the evidence the bank reviews on the current-account route. Paying what is due is not an extra cost of moving money — it is the condition for being allowed to move it, and it stops the 20% from becoming 20% plus a 30%-100% fine.</span></td><td data-l="Exposure">Layer 2 only, which is a rate on the gain or income, never on the principal</td><td data-l="Source"><a class="src" href="http://m.safe.gov.cn/safe/2004/1116/5461.html" target="_blank" rel="noopener noreferrer" title="个人财产对外转移售付汇管理暂行办法 第八、九、十一条 (document list and destination)">CN-15</a> <a class="src" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" target="_blank" rel="noopener noreferrer" title="Individual Income Tax Law, Article 3(3) (flat 20% rate)">CN-19</a></td></tr><tr><td data-l="Step"><strong>3</strong></td><td data-l="Do this"><strong>Fix US reporting before moving anything</strong><br><span class="note">This is where the largest single number in the analysis sits. A willful FBAR penalty is the greater of USD 165,353 or 50% of the balance — USD 200,000 at a USD 400,000 balance — and it is triggered by not filing, not by transferring.</span></td><td data-l="Exposure">Layer 4: 20%-50% of the balance plus 25%-75% of the tax</td><td data-l="Source"><a class="src" href="https://www.govinfo.gov/content/pkg/USCODE-2024-title31/html/USCODE-2024-title31-subtitleIV-chap53-subchapII-sec5321.htm" target="_blank" rel="noopener noreferrer" title="31 U.S.C. §5321(a)(5)(C) — willful FBAR penalty formula">US-09</a> <a class="src" href="https://www.law.cornell.edu/uscode/text/26/6651" target="_blank" rel="noopener noreferrer" title="26 U.S.C. §6651 — failure to file and failure to pay">US-10</a> <a class="src" href="https://www.law.cornell.edu/uscode/text/26/6662" target="_blank" rel="noopener noreferrer" title="26 U.S.C. §6662 — accuracy-related penalty">US-11</a> <a class="src" href="https://www.law.cornell.edu/uscode/text/26/6663" target="_blank" rel="noopener noreferrer" title="26 U.S.C. §6663 — fraud penalty">US-12</a></td></tr><tr><td data-l="Step"><strong>4</strong></td><td data-l="Do this"><strong>Do not use splitting, underground dealing or crypto</strong><br><span class="note">These are the routes that generate the &#x27;considerable penalty&#x27; the premise describes. They are not cheaper: they replace a sub-1% fee with a 20%-100% statutory range, and they leave the US reporting obligation intact.</span></td><td data-l="Exposure">Layers 3 and 4 together</td><td data-l="Source"><a class="src" href="https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm" target="_blank" rel="noopener noreferrer" title="中华人民共和国外汇管理条例 (Regulation on Foreign Exchange Administration), State Council Order No. 532">CN-04</a> <a class="src" href="https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm" target="_blank" rel="noopener noreferrer" title="外汇管理条例 第四十五条 (private/disguised FX dealing)">CN-05</a> <a class="src" href="https://www.pbc.gov.cn/tiaofasi/144941/3581332/4348658/index.html" target="_blank" rel="noopener noreferrer" title="关于进一步防范和处置虚拟货币交易炒作风险的通知, 银发〔2021〕237号">CN-20</a></td></tr></tbody></table></div>
+
+<h2>Why the premise is wrong, specifically</h2>
+<div class="block">
+<p><strong>PRC tax law lists nine categories of income. Currency exchange is not one of them.</strong>
+Individual income tax attaches to salary, service remuneration, author's remuneration, royalties,
+business operation, interest/dividends/bonuses, leasing of assets, transfer of assets and incidental
+income. Moving your own after-tax principal between currencies falls outside all nine. That is the
+whole of the reason there is no conversion tax.</p>
+<p class="note">Quote: "The following categories of individual income shall be subject to individual
+income tax: (1) Income from salary and wages; … (9) Incidental income." — <a class="src" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" target="_blank" rel="noopener noreferrer" title="Individual Income Tax Law of the PRC, Article 2 (nine income categories)">CN-18</a></p>
+</div>
+<div class="block">
+<p><strong>On the US side, a personal conversion recognises no FX gain up to USD 200.</strong>
+§988(e)(2) disapplies the recognition rule for an individual's personal transaction, unless the gain
+that would otherwise be recognised exceeds USD 200. Above that threshold the exclusion simply does
+not apply and ordinary-income treatment follows.</p>
+<p class="note">Quote: "no gain shall be recognized … The preceding sentence shall not apply if the
+gain which would otherwise be recognized on the transaction exceeds $200." — <a class="src" href="https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm" target="_blank" rel="noopener noreferrer" title="26 U.S.C. §988(e)(2) — exclusion for certain personal transactions">US-01</a></p>
+</div>
+<div class="block">
+<p><strong>The 1% remittance transfer tax does not apply to this direction.</strong> It is imposed on
+remittances sent FROM the United States TO a recipient in a foreign country, when the sender hands
+over cash, a money order, a cashier's cheque or a similar physical instrument. A China-to-United-States
+transfer is the opposite direction.</p>
+<p class="note">Quote: "a 1% remittance transfer tax applies to remittances sent from the United
+States to recipients in foreign countries when the sender provides cash, a money order, a cashier's
+check, or other similar physical instrument" — <a class="src" href="https://www.irs.gov/newsroom/treasury-irs-issue-proposed-regulations-on-the-new-remittance-transfer-tax-established-under-the-one-big-beautiful-bill" target="_blank" rel="noopener noreferrer" title="1% remittance transfer excise tax — IRS news release IR-2026-48">US-06</a></p>
+</div>
+
+<h2>What the PRC tax layer actually is</h2>
+<p class="note">Rates are statutory and verified. The <em>base</em> is personal and unknown, so no
+dollar figure is invented for it. Where a rate could not be pinned down, the cell is blank.</p>
+<div class="tw"><table class="stack">
+<thead><tr><th>Item</th><th class="num">Rate</th><th>Base</th><th>Finding</th><th>Source</th></tr></thead>
+<tbody><tr><td data-l="Item">Is converting CNY to USD itself subject to PRC IIT?</td><td class="num" data-l="Rate">0%</td><td data-l="Base">not applicable</td><td data-l="Finding">No. PRC IIT is imposed on nine enumerated categories of income (CN-18). A currency exchange of your own after-tax principal is not one of them, so there is nothing to tax on the exchange itself.</td><td data-l="Source"><a class="src" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" target="_blank" rel="noopener noreferrer" title="Individual Income Tax Law of the PRC, Article 2 (nine income categories)">CN-18</a></td></tr><tr><td data-l="Item">PRC IIT on a transfer of assets (e.g. a property gain)</td><td class="num" data-l="Rate">20% flat</td><td data-l="Base">the gain, not the price</td><td data-l="Finding">Where the money in the account came from disposing of an asset, the 20% flat rate applies to the gain. It is charged whether or not you remit, so remitting does not create it — it only requires you to prove it was paid.</td><td data-l="Source"><a class="src" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" target="_blank" rel="noopener noreferrer" title="Individual Income Tax Law, Article 3(3) (flat 20% rate)">CN-19</a></td></tr><tr><td data-l="Item">PRC IIT on salary and wages</td><td class="num" data-l="Rate">3% to 45% progressive</td><td data-l="Base">taxable salary after the standard deduction</td><td data-l="Finding">Salary is the one category where a PRC tax record is routinely generated, which is exactly why the salary route (A06) is the easiest to document.</td><td data-l="Source"><a class="src" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" target="_blank" rel="noopener noreferrer" title="Individual Income Tax Law of the PRC, Article 2 (nine income categories)">CN-18</a></td></tr><tr><td data-l="Item">PRC tax on the amount actually being transferred</td><td class="num" data-l="Rate">—</td><td data-l="Base">—</td><td data-l="Finding">No provision retrieved imposes tax on the transfer of after-tax principal. This row is deliberately blank rather than filled with a rate.</td><td data-l="Source"><a class="src" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" target="_blank" rel="noopener noreferrer" title="Individual Income Tax Law of the PRC, Article 2 (nine income categories)">CN-18</a></td></tr></tbody></table></div>
+
+<h2>The single fact that decides your route</h2>
+<p>Read the definition, not the folklore. The USD 50,000 annual facilitation quota applies to
+individual <em>settlement</em> and to foreign-exchange <em>purchase by a domestic individual</em> —
+and a domestic individual is defined by holding a PRC resident identity card.</p>
+<div class="tw"><table class="stack">
+<thead><tr><th>If the bank has this on file</th><th>You are</th><th class="num">Annual quota</th>
+<th>Route to use</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td data-l="On file"><strong>PRC resident ID, or a permanent-residence ID</strong></td>
+ <td data-l="You are">Domestic individual, or an overseas individual expressly allowed the quota</td>
+ <td class="num" data-l="Quota">USD 50,000</td>
+ <td data-l="Route"><a href="method-A02.html">A02 quota purchase</a></td>
+ <td data-l="Source"><a class="src" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" target="_blank" rel="noopener noreferrer" title="经常项目外汇业务指引（2020年版）, 汇发〔2020〕14号, 第五十四、五十八、五十九、六十二、六十五、六十六条">CN-09</a> <a class="src" href="http://m.safe.gov.cn/safe/2007/0105/5320.html" target="_blank" rel="noopener noreferrer" title="个人外汇管理办法实施细则 (Detailed Rules), 汇发〔2007〕1号, 第二、十、十一、十三、十四、二十条">CN-07</a></td></tr>
+<tr><td data-l="On file"><strong>A US passport only</strong></td>
+ <td data-l="You are">Overseas individual (境外个人)</td>
+ <td class="num" data-l="Quota">No figure in the rule</td>
+ <td data-l="Route"><a href="method-A01.html">A01 documented purchase</a></td>
+ <td data-l="Source"><a class="src" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" target="_blank" rel="noopener noreferrer" title="个人外汇管理办法 第七、九、十三、二十二、二十六、三十七条 (same instrument, specific articles)">CN-02</a> <a class="src" href="http://m.safe.gov.cn/safe/2007/0105/5320.html" target="_blank" rel="noopener noreferrer" title="个人外汇管理办法实施细则 第十三条 (overseas individual converting unused RMB back)">CN-08</a> <a class="src" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" target="_blank" rel="noopener noreferrer" title="经常项目外汇业务指引（2020年版）, 汇发〔2020〕14号, 第五十四、五十八、五十九、六十二、六十五、六十六条">CN-09</a></td></tr>
+<tr><td data-l="On file"><strong>Cancelled PRC household registration + pre-emigration property</strong></td>
+ <td data-l="You are">Emigrant</td>
+ <td class="num" data-l="Quota">No statutory ceiling</td>
+ <td data-l="Route"><a href="method-A03.html">A03 emigrant transfer</a></td>
+ <td data-l="Source"><a class="src" href="http://m.safe.gov.cn/safe/2004/1116/5461.html" target="_blank" rel="noopener noreferrer" title="个人财产对外转移售付汇管理暂行办法, PBOC Announcement [2004] No. 16">CN-14</a> <a class="src" href="http://m.safe.gov.cn/safe/2014/0124/5476.html" target="_blank" rel="noopener noreferrer" title="汇发〔2014〕2号 第六条 简化个人财产转移售付汇管理 (amending the 2004 measure)">CN-16</a></td></tr>
+</tbody></table></div>
+
+<h2>What you should not do</h2>
+<div class="danger">
+<p><strong>Splitting the amount across family and friends.</strong> The prohibition is in the
+administrative measure itself, and the watchlist lasts the year of listing plus two more, during
+which every FX transaction you make is pushed to the counter under strict documentary review. It
+applies to the person who lends a quota as well as the one who borrows.</p>
+<p class="note"><a class="src" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" target="_blank" rel="noopener noreferrer" title="个人外汇管理办法 第七条 (prohibition on splitting)">CN-03</a> <a class="src" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" target="_blank" rel="noopener noreferrer" title="经常项目外汇业务指引（2020年版）第六十二条 (splitting / watchlist, current text)">CN-11</a></p>
+</div>
+<div class="danger">
+<p><strong>Underground banking, crypto, false invoices, undeclared cash.</strong> The statutory range
+for the FX-control offences is a fine of up to 30% of the amount, and 30% to 100% where the
+circumstances are serious, plus confiscation. At USD 400,000 that is between $120,000 and $400,000 — larger
+than every lawful fee in this entire analysis, added together, many times over.</p>
+<p class="note"><a class="src" href="https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm" target="_blank" rel="noopener noreferrer" title="中华人民共和国外汇管理条例 (Regulation on Foreign Exchange Administration), State Council Order No. 532">CN-04</a> <a class="src" href="https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm" target="_blank" rel="noopener noreferrer" title="外汇管理条例 第四十五条 (private/disguised FX dealing)">CN-05</a> <a class="src" href="https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm" target="_blank" rel="noopener noreferrer" title="外汇管理条例 第四十二条 (carrying currency across the border in breach)">CN-06</a> <a class="src" href="https://www.pbc.gov.cn/tiaofasi/144941/3581332/4348658/index.html" target="_blank" rel="noopener noreferrer" title="关于进一步防范和处置虚拟货币交易炒作风险的通知, 银发〔2021〕237号">CN-20</a></p>
+</div>
+
+<h2>The realistic path if your balance is not salary</h2>
+<p>If the money is not documented current-account income, the honest position is that no clean route
+matches it. The three real options are: give it a genuine current-account character by earning it
+via a real activity (a registered trade or e-commerce business); use the capital-account route that
+fits the underlying event (property sale, emigration, inheritance); or leave some of it in RMB for
+future RMB needs and convert only the rest. Inventing a character for it is the offence described
+above.</p>
+<p class="note">Detail on each: <a href="methods.html">all routes</a> ·
+<a href="methodology.html">method and limits</a></p>
+
+<footer class="site">
+<p><strong>What this is.</strong> Published-rule research with the arithmetic shown, built from official
+government, regulator, statute and provider pages retrieved on 9 November 2026. It is not legal, tax or
+investment advice, and it is not a bank quote. Rates and tariffs change — every source is linked so
+you can re-check it by hand.</p>
+<p>Values that could not be confirmed from an official page are left blank and published on the
+<a href="flagged.html">Flagged for review</a> page. Nothing is inferred or estimated.
+Edition H · session arena-e01cf383 · <a href="https://github.com/sassnarep3-star/China1">repository</a></p>
+</footer>
+</div>
+</body>
+</html>

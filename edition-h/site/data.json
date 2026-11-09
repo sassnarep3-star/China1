@@ -1,0 +1,2120 @@
+{
+ "edition": "H",
+ "as_of": "2026-11-09",
+ "fx": {
+  "buy": "666.38",
+  "sell": "669.19",
+  "mid": "667.785",
+  "one_way_pct": 0.2104,
+  "round_trip_pct": 0.4199
+ },
+ "counts": {
+  "methods": 23,
+  "priced": 11,
+  "unpublished": 5,
+  "prohibited": 5,
+  "sources": 45,
+  "pages": 46
+ },
+ "costs": {
+  "A01": [
+   {
+    "amount": 10000,
+    "total": "87.94"
+   },
+   {
+    "amount": 20000,
+    "total": "118.98"
+   },
+   {
+    "amount": 30000,
+    "total": "150.02"
+   },
+   {
+    "amount": 40000,
+    "total": "179.91"
+   },
+   {
+    "amount": 50000,
+    "total": "200.95"
+   },
+   {
+    "amount": 60000,
+    "total": "221.99"
+   },
+   {
+    "amount": 70000,
+    "total": "243.03"
+   },
+   {
+    "amount": 80000,
+    "total": "264.07"
+   },
+   {
+    "amount": 90000,
+    "total": "285.11"
+   },
+   {
+    "amount": 100000,
+    "total": "306.15"
+   },
+   {
+    "amount": 110000,
+    "total": "327.19"
+   },
+   {
+    "amount": 120000,
+    "total": "348.23"
+   },
+   {
+    "amount": 130000,
+    "total": "369.27"
+   },
+   {
+    "amount": 140000,
+    "total": "390.31"
+   },
+   {
+    "amount": 150000,
+    "total": "411.35"
+   },
+   {
+    "amount": 160000,
+    "total": "432.39"
+   },
+   {
+    "amount": 170000,
+    "total": "453.43"
+   },
+   {
+    "amount": 180000,
+    "total": "474.46"
+   },
+   {
+    "amount": 190000,
+    "total": "495.50"
+   },
+   {
+    "amount": 200000,
+    "total": "516.54"
+   },
+   {
+    "amount": 210000,
+    "total": "537.58"
+   },
+   {
+    "amount": 220000,
+    "total": "558.62"
+   },
+   {
+    "amount": 230000,
+    "total": "579.66"
+   },
+   {
+    "amount": 240000,
+    "total": "600.70"
+   },
+   {
+    "amount": 250000,
+    "total": "621.74"
+   },
+   {
+    "amount": 260000,
+    "total": "642.78"
+   },
+   {
+    "amount": 270000,
+    "total": "663.82"
+   },
+   {
+    "amount": 280000,
+    "total": "684.86"
+   },
+   {
+    "amount": 290000,
+    "total": "705.90"
+   },
+   {
+    "amount": 300000,
+    "total": "726.94"
+   },
+   {
+    "amount": 310000,
+    "total": "747.98"
+   },
+   {
+    "amount": 320000,
+    "total": "769.02"
+   },
+   {
+    "amount": 330000,
+    "total": "790.06"
+   },
+   {
+    "amount": 340000,
+    "total": "811.10"
+   },
+   {
+    "amount": 350000,
+    "total": "832.14"
+   },
+   {
+    "amount": 360000,
+    "total": "853.18"
+   },
+   {
+    "amount": 370000,
+    "total": "874.22"
+   },
+   {
+    "amount": 380000,
+    "total": "895.26"
+   },
+   {
+    "amount": 390000,
+    "total": "916.30"
+   },
+   {
+    "amount": 400000,
+    "total": "937.34"
+   }
+  ],
+  "A02": [
+   {
+    "amount": 10000,
+    "total": "87.94"
+   },
+   {
+    "amount": 20000,
+    "total": "118.98"
+   },
+   {
+    "amount": 30000,
+    "total": "150.02"
+   },
+   {
+    "amount": 40000,
+    "total": "179.91"
+   },
+   {
+    "amount": 50000,
+    "total": "200.95"
+   },
+   {
+    "amount": 60000,
+    "total": "221.99"
+   },
+   {
+    "amount": 70000,
+    "total": "243.03"
+   },
+   {
+    "amount": 80000,
+    "total": "264.07"
+   },
+   {
+    "amount": 90000,
+    "total": "285.11"
+   },
+   {
+    "amount": 100000,
+    "total": "306.15"
+   },
+   {
+    "amount": 110000,
+    "total": "327.19"
+   },
+   {
+    "amount": 120000,
+    "total": "348.23"
+   },
+   {
+    "amount": 130000,
+    "total": "369.27"
+   },
+   {
+    "amount": 140000,
+    "total": "390.31"
+   },
+   {
+    "amount": 150000,
+    "total": "411.35"
+   },
+   {
+    "amount": 160000,
+    "total": "432.39"
+   },
+   {
+    "amount": 170000,
+    "total": "453.43"
+   },
+   {
+    "amount": 180000,
+    "total": "474.46"
+   },
+   {
+    "amount": 190000,
+    "total": "495.50"
+   },
+   {
+    "amount": 200000,
+    "total": "516.54"
+   },
+   {
+    "amount": 210000,
+    "total": "537.58"
+   },
+   {
+    "amount": 220000,
+    "total": "558.62"
+   },
+   {
+    "amount": 230000,
+    "total": "579.66"
+   },
+   {
+    "amount": 240000,
+    "total": "600.70"
+   },
+   {
+    "amount": 250000,
+    "total": "621.74"
+   },
+   {
+    "amount": 260000,
+    "total": "642.78"
+   },
+   {
+    "amount": 270000,
+    "total": "663.82"
+   },
+   {
+    "amount": 280000,
+    "total": "684.86"
+   },
+   {
+    "amount": 290000,
+    "total": "705.90"
+   },
+   {
+    "amount": 300000,
+    "total": "726.94"
+   },
+   {
+    "amount": 310000,
+    "total": "747.98"
+   },
+   {
+    "amount": 320000,
+    "total": "769.02"
+   },
+   {
+    "amount": 330000,
+    "total": "790.06"
+   },
+   {
+    "amount": 340000,
+    "total": "811.10"
+   },
+   {
+    "amount": 350000,
+    "total": "832.14"
+   },
+   {
+    "amount": 360000,
+    "total": "853.18"
+   },
+   {
+    "amount": 370000,
+    "total": "874.22"
+   },
+   {
+    "amount": 380000,
+    "total": "895.26"
+   },
+   {
+    "amount": 390000,
+    "total": "916.30"
+   },
+   {
+    "amount": 400000,
+    "total": "937.34"
+   }
+  ],
+  "A03": [
+   {
+    "amount": 10000,
+    "total": "87.94"
+   },
+   {
+    "amount": 20000,
+    "total": "118.98"
+   },
+   {
+    "amount": 30000,
+    "total": "150.02"
+   },
+   {
+    "amount": 40000,
+    "total": "179.91"
+   },
+   {
+    "amount": 50000,
+    "total": "200.95"
+   },
+   {
+    "amount": 60000,
+    "total": "221.99"
+   },
+   {
+    "amount": 70000,
+    "total": "243.03"
+   },
+   {
+    "amount": 80000,
+    "total": "264.07"
+   },
+   {
+    "amount": 90000,
+    "total": "285.11"
+   },
+   {
+    "amount": 100000,
+    "total": "306.15"
+   },
+   {
+    "amount": 110000,
+    "total": "327.19"
+   },
+   {
+    "amount": 120000,
+    "total": "348.23"
+   },
+   {
+    "amount": 130000,
+    "total": "369.27"
+   },
+   {
+    "amount": 140000,
+    "total": "390.31"
+   },
+   {
+    "amount": 150000,
+    "total": "411.35"
+   },
+   {
+    "amount": 160000,
+    "total": "432.39"
+   },
+   {
+    "amount": 170000,
+    "total": "453.43"
+   },
+   {
+    "amount": 180000,
+    "total": "474.46"
+   },
+   {
+    "amount": 190000,
+    "total": "495.50"
+   },
+   {
+    "amount": 200000,
+    "total": "516.54"
+   },
+   {
+    "amount": 210000,
+    "total": "537.58"
+   },
+   {
+    "amount": 220000,
+    "total": "558.62"
+   },
+   {
+    "amount": 230000,
+    "total": "579.66"
+   },
+   {
+    "amount": 240000,
+    "total": "600.70"
+   },
+   {
+    "amount": 250000,
+    "total": "621.74"
+   },
+   {
+    "amount": 260000,
+    "total": "642.78"
+   },
+   {
+    "amount": 270000,
+    "total": "663.82"
+   },
+   {
+    "amount": 280000,
+    "total": "684.86"
+   },
+   {
+    "amount": 290000,
+    "total": "705.90"
+   },
+   {
+    "amount": 300000,
+    "total": "726.94"
+   },
+   {
+    "amount": 310000,
+    "total": "747.98"
+   },
+   {
+    "amount": 320000,
+    "total": "769.02"
+   },
+   {
+    "amount": 330000,
+    "total": "790.06"
+   },
+   {
+    "amount": 340000,
+    "total": "811.10"
+   },
+   {
+    "amount": 350000,
+    "total": "832.14"
+   },
+   {
+    "amount": 360000,
+    "total": "853.18"
+   },
+   {
+    "amount": 370000,
+    "total": "874.22"
+   },
+   {
+    "amount": 380000,
+    "total": "895.26"
+   },
+   {
+    "amount": 390000,
+    "total": "916.30"
+   },
+   {
+    "amount": 400000,
+    "total": "937.34"
+   }
+  ],
+  "A04": [
+   {
+    "amount": 10000,
+    "total": "87.94"
+   },
+   {
+    "amount": 20000,
+    "total": "118.98"
+   },
+   {
+    "amount": 30000,
+    "total": "150.02"
+   },
+   {
+    "amount": 40000,
+    "total": "179.91"
+   },
+   {
+    "amount": 50000,
+    "total": "200.95"
+   },
+   {
+    "amount": 60000,
+    "total": "221.99"
+   },
+   {
+    "amount": 70000,
+    "total": "243.03"
+   },
+   {
+    "amount": 80000,
+    "total": "264.07"
+   },
+   {
+    "amount": 90000,
+    "total": "285.11"
+   },
+   {
+    "amount": 100000,
+    "total": "306.15"
+   },
+   {
+    "amount": 110000,
+    "total": "327.19"
+   },
+   {
+    "amount": 120000,
+    "total": "348.23"
+   },
+   {
+    "amount": 130000,
+    "total": "369.27"
+   },
+   {
+    "amount": 140000,
+    "total": "390.31"
+   },
+   {
+    "amount": 150000,
+    "total": "411.35"
+   },
+   {
+    "amount": 160000,
+    "total": "432.39"
+   },
+   {
+    "amount": 170000,
+    "total": "453.43"
+   },
+   {
+    "amount": 180000,
+    "total": "474.46"
+   },
+   {
+    "amount": 190000,
+    "total": "495.50"
+   },
+   {
+    "amount": 200000,
+    "total": "516.54"
+   },
+   {
+    "amount": 210000,
+    "total": "537.58"
+   },
+   {
+    "amount": 220000,
+    "total": "558.62"
+   },
+   {
+    "amount": 230000,
+    "total": "579.66"
+   },
+   {
+    "amount": 240000,
+    "total": "600.70"
+   },
+   {
+    "amount": 250000,
+    "total": "621.74"
+   },
+   {
+    "amount": 260000,
+    "total": "642.78"
+   },
+   {
+    "amount": 270000,
+    "total": "663.82"
+   },
+   {
+    "amount": 280000,
+    "total": "684.86"
+   },
+   {
+    "amount": 290000,
+    "total": "705.90"
+   },
+   {
+    "amount": 300000,
+    "total": "726.94"
+   },
+   {
+    "amount": 310000,
+    "total": "747.98"
+   },
+   {
+    "amount": 320000,
+    "total": "769.02"
+   },
+   {
+    "amount": 330000,
+    "total": "790.06"
+   },
+   {
+    "amount": 340000,
+    "total": "811.10"
+   },
+   {
+    "amount": 350000,
+    "total": "832.14"
+   },
+   {
+    "amount": 360000,
+    "total": "853.18"
+   },
+   {
+    "amount": 370000,
+    "total": "874.22"
+   },
+   {
+    "amount": 380000,
+    "total": "895.26"
+   },
+   {
+    "amount": 390000,
+    "total": "916.30"
+   },
+   {
+    "amount": 400000,
+    "total": "937.34"
+   }
+  ],
+  "A05": [
+   {
+    "amount": 10000,
+    "total": "87.94"
+   },
+   {
+    "amount": 20000,
+    "total": "118.98"
+   },
+   {
+    "amount": 30000,
+    "total": "150.02"
+   },
+   {
+    "amount": 40000,
+    "total": "179.91"
+   },
+   {
+    "amount": 50000,
+    "total": "200.95"
+   },
+   {
+    "amount": 60000,
+    "total": "221.99"
+   },
+   {
+    "amount": 70000,
+    "total": "243.03"
+   },
+   {
+    "amount": 80000,
+    "total": "264.07"
+   },
+   {
+    "amount": 90000,
+    "total": "285.11"
+   },
+   {
+    "amount": 100000,
+    "total": "306.15"
+   },
+   {
+    "amount": 110000,
+    "total": "327.19"
+   },
+   {
+    "amount": 120000,
+    "total": "348.23"
+   },
+   {
+    "amount": 130000,
+    "total": "369.27"
+   },
+   {
+    "amount": 140000,
+    "total": "390.31"
+   },
+   {
+    "amount": 150000,
+    "total": "411.35"
+   },
+   {
+    "amount": 160000,
+    "total": "432.39"
+   },
+   {
+    "amount": 170000,
+    "total": "453.43"
+   },
+   {
+    "amount": 180000,
+    "total": "474.46"
+   },
+   {
+    "amount": 190000,
+    "total": "495.50"
+   },
+   {
+    "amount": 200000,
+    "total": "516.54"
+   },
+   {
+    "amount": 210000,
+    "total": "537.58"
+   },
+   {
+    "amount": 220000,
+    "total": "558.62"
+   },
+   {
+    "amount": 230000,
+    "total": "579.66"
+   },
+   {
+    "amount": 240000,
+    "total": "600.70"
+   },
+   {
+    "amount": 250000,
+    "total": "621.74"
+   },
+   {
+    "amount": 260000,
+    "total": "642.78"
+   },
+   {
+    "amount": 270000,
+    "total": "663.82"
+   },
+   {
+    "amount": 280000,
+    "total": "684.86"
+   },
+   {
+    "amount": 290000,
+    "total": "705.90"
+   },
+   {
+    "amount": 300000,
+    "total": "726.94"
+   },
+   {
+    "amount": 310000,
+    "total": "747.98"
+   },
+   {
+    "amount": 320000,
+    "total": "769.02"
+   },
+   {
+    "amount": 330000,
+    "total": "790.06"
+   },
+   {
+    "amount": 340000,
+    "total": "811.10"
+   },
+   {
+    "amount": 350000,
+    "total": "832.14"
+   },
+   {
+    "amount": 360000,
+    "total": "853.18"
+   },
+   {
+    "amount": 370000,
+    "total": "874.22"
+   },
+   {
+    "amount": 380000,
+    "total": "895.26"
+   },
+   {
+    "amount": 390000,
+    "total": "916.30"
+   },
+   {
+    "amount": 400000,
+    "total": "937.34"
+   }
+  ],
+  "A06": [
+   {
+    "amount": 10000,
+    "total": "87.94"
+   },
+   {
+    "amount": 20000,
+    "total": "118.98"
+   },
+   {
+    "amount": 30000,
+    "total": "150.02"
+   },
+   {
+    "amount": 40000,
+    "total": "179.91"
+   },
+   {
+    "amount": 50000,
+    "total": "200.95"
+   },
+   {
+    "amount": 60000,
+    "total": "221.99"
+   },
+   {
+    "amount": 70000,
+    "total": "243.03"
+   },
+   {
+    "amount": 80000,
+    "total": "264.07"
+   },
+   {
+    "amount": 90000,
+    "total": "285.11"
+   },
+   {
+    "amount": 100000,
+    "total": "306.15"
+   },
+   {
+    "amount": 110000,
+    "total": "327.19"
+   },
+   {
+    "amount": 120000,
+    "total": "348.23"
+   },
+   {
+    "amount": 130000,
+    "total": "369.27"
+   },
+   {
+    "amount": 140000,
+    "total": "390.31"
+   },
+   {
+    "amount": 150000,
+    "total": "411.35"
+   },
+   {
+    "amount": 160000,
+    "total": "432.39"
+   },
+   {
+    "amount": 170000,
+    "total": "453.43"
+   },
+   {
+    "amount": 180000,
+    "total": "474.46"
+   },
+   {
+    "amount": 190000,
+    "total": "495.50"
+   },
+   {
+    "amount": 200000,
+    "total": "516.54"
+   },
+   {
+    "amount": 210000,
+    "total": "537.58"
+   },
+   {
+    "amount": 220000,
+    "total": "558.62"
+   },
+   {
+    "amount": 230000,
+    "total": "579.66"
+   },
+   {
+    "amount": 240000,
+    "total": "600.70"
+   },
+   {
+    "amount": 250000,
+    "total": "621.74"
+   },
+   {
+    "amount": 260000,
+    "total": "642.78"
+   },
+   {
+    "amount": 270000,
+    "total": "663.82"
+   },
+   {
+    "amount": 280000,
+    "total": "684.86"
+   },
+   {
+    "amount": 290000,
+    "total": "705.90"
+   },
+   {
+    "amount": 300000,
+    "total": "726.94"
+   },
+   {
+    "amount": 310000,
+    "total": "747.98"
+   },
+   {
+    "amount": 320000,
+    "total": "769.02"
+   },
+   {
+    "amount": 330000,
+    "total": "790.06"
+   },
+   {
+    "amount": 340000,
+    "total": "811.10"
+   },
+   {
+    "amount": 350000,
+    "total": "832.14"
+   },
+   {
+    "amount": 360000,
+    "total": "853.18"
+   },
+   {
+    "amount": 370000,
+    "total": "874.22"
+   },
+   {
+    "amount": 380000,
+    "total": "895.26"
+   },
+   {
+    "amount": 390000,
+    "total": "916.30"
+   },
+   {
+    "amount": 400000,
+    "total": "937.34"
+   }
+  ],
+  "A07": [
+   {
+    "amount": 10000,
+    "total": "87.94"
+   },
+   {
+    "amount": 20000,
+    "total": "118.98"
+   },
+   {
+    "amount": 30000,
+    "total": "150.02"
+   },
+   {
+    "amount": 40000,
+    "total": "179.91"
+   },
+   {
+    "amount": 50000,
+    "total": "200.95"
+   },
+   {
+    "amount": 60000,
+    "total": "221.99"
+   },
+   {
+    "amount": 70000,
+    "total": "243.03"
+   },
+   {
+    "amount": 80000,
+    "total": "264.07"
+   },
+   {
+    "amount": 90000,
+    "total": "285.11"
+   },
+   {
+    "amount": 100000,
+    "total": "306.15"
+   },
+   {
+    "amount": 110000,
+    "total": "327.19"
+   },
+   {
+    "amount": 120000,
+    "total": "348.23"
+   },
+   {
+    "amount": 130000,
+    "total": "369.27"
+   },
+   {
+    "amount": 140000,
+    "total": "390.31"
+   },
+   {
+    "amount": 150000,
+    "total": "411.35"
+   },
+   {
+    "amount": 160000,
+    "total": "432.39"
+   },
+   {
+    "amount": 170000,
+    "total": "453.43"
+   },
+   {
+    "amount": 180000,
+    "total": "474.46"
+   },
+   {
+    "amount": 190000,
+    "total": "495.50"
+   },
+   {
+    "amount": 200000,
+    "total": "516.54"
+   },
+   {
+    "amount": 210000,
+    "total": "537.58"
+   },
+   {
+    "amount": 220000,
+    "total": "558.62"
+   },
+   {
+    "amount": 230000,
+    "total": "579.66"
+   },
+   {
+    "amount": 240000,
+    "total": "600.70"
+   },
+   {
+    "amount": 250000,
+    "total": "621.74"
+   },
+   {
+    "amount": 260000,
+    "total": "642.78"
+   },
+   {
+    "amount": 270000,
+    "total": "663.82"
+   },
+   {
+    "amount": 280000,
+    "total": "684.86"
+   },
+   {
+    "amount": 290000,
+    "total": "705.90"
+   },
+   {
+    "amount": 300000,
+    "total": "726.94"
+   },
+   {
+    "amount": 310000,
+    "total": "747.98"
+   },
+   {
+    "amount": 320000,
+    "total": "769.02"
+   },
+   {
+    "amount": 330000,
+    "total": "790.06"
+   },
+   {
+    "amount": 340000,
+    "total": "811.10"
+   },
+   {
+    "amount": 350000,
+    "total": "832.14"
+   },
+   {
+    "amount": 360000,
+    "total": "853.18"
+   },
+   {
+    "amount": 370000,
+    "total": "874.22"
+   },
+   {
+    "amount": 380000,
+    "total": "895.26"
+   },
+   {
+    "amount": 390000,
+    "total": "916.30"
+   },
+   {
+    "amount": 400000,
+    "total": "937.34"
+   }
+  ],
+  "B02": [
+   {
+    "amount": 10000,
+    "total": "87.94"
+   },
+   {
+    "amount": 20000,
+    "total": "118.98"
+   },
+   {
+    "amount": 30000,
+    "total": "150.02"
+   },
+   {
+    "amount": 40000,
+    "total": "179.91"
+   },
+   {
+    "amount": 50000,
+    "total": "200.95"
+   },
+   {
+    "amount": 60000,
+    "total": "221.99"
+   },
+   {
+    "amount": 70000,
+    "total": "243.03"
+   },
+   {
+    "amount": 80000,
+    "total": "264.07"
+   },
+   {
+    "amount": 90000,
+    "total": "285.11"
+   },
+   {
+    "amount": 100000,
+    "total": "306.15"
+   },
+   {
+    "amount": 110000,
+    "total": "327.19"
+   },
+   {
+    "amount": 120000,
+    "total": "348.23"
+   },
+   {
+    "amount": 130000,
+    "total": "369.27"
+   },
+   {
+    "amount": 140000,
+    "total": "390.31"
+   },
+   {
+    "amount": 150000,
+    "total": "411.35"
+   },
+   {
+    "amount": 160000,
+    "total": "432.39"
+   },
+   {
+    "amount": 170000,
+    "total": "453.43"
+   },
+   {
+    "amount": 180000,
+    "total": "474.46"
+   },
+   {
+    "amount": 190000,
+    "total": "495.50"
+   },
+   {
+    "amount": 200000,
+    "total": "516.54"
+   },
+   {
+    "amount": 210000,
+    "total": "537.58"
+   },
+   {
+    "amount": 220000,
+    "total": "558.62"
+   },
+   {
+    "amount": 230000,
+    "total": "579.66"
+   },
+   {
+    "amount": 240000,
+    "total": "600.70"
+   },
+   {
+    "amount": 250000,
+    "total": "621.74"
+   },
+   {
+    "amount": 260000,
+    "total": "642.78"
+   },
+   {
+    "amount": 270000,
+    "total": "663.82"
+   },
+   {
+    "amount": 280000,
+    "total": "684.86"
+   },
+   {
+    "amount": 290000,
+    "total": "705.90"
+   },
+   {
+    "amount": 300000,
+    "total": "726.94"
+   },
+   {
+    "amount": 310000,
+    "total": "747.98"
+   },
+   {
+    "amount": 320000,
+    "total": "769.02"
+   },
+   {
+    "amount": 330000,
+    "total": "790.06"
+   },
+   {
+    "amount": 340000,
+    "total": "811.10"
+   },
+   {
+    "amount": 350000,
+    "total": "832.14"
+   },
+   {
+    "amount": 360000,
+    "total": "853.18"
+   },
+   {
+    "amount": 370000,
+    "total": "874.22"
+   },
+   {
+    "amount": 380000,
+    "total": "895.26"
+   },
+   {
+    "amount": 390000,
+    "total": "916.30"
+   },
+   {
+    "amount": 400000,
+    "total": "937.34"
+   }
+  ],
+  "C01": [
+   {
+    "amount": 10000,
+    "total": "87.94"
+   },
+   {
+    "amount": 20000,
+    "total": "118.98"
+   },
+   {
+    "amount": 30000,
+    "total": "150.02"
+   },
+   {
+    "amount": 40000,
+    "total": "179.91"
+   },
+   {
+    "amount": 50000,
+    "total": "200.95"
+   },
+   {
+    "amount": 60000,
+    "total": "221.99"
+   },
+   {
+    "amount": 70000,
+    "total": "243.03"
+   },
+   {
+    "amount": 80000,
+    "total": "264.07"
+   },
+   {
+    "amount": 90000,
+    "total": "285.11"
+   },
+   {
+    "amount": 100000,
+    "total": "306.15"
+   },
+   {
+    "amount": 110000,
+    "total": "327.19"
+   },
+   {
+    "amount": 120000,
+    "total": "348.23"
+   },
+   {
+    "amount": 130000,
+    "total": "369.27"
+   },
+   {
+    "amount": 140000,
+    "total": "390.31"
+   },
+   {
+    "amount": 150000,
+    "total": "411.35"
+   },
+   {
+    "amount": 160000,
+    "total": "432.39"
+   },
+   {
+    "amount": 170000,
+    "total": "453.43"
+   },
+   {
+    "amount": 180000,
+    "total": "474.46"
+   },
+   {
+    "amount": 190000,
+    "total": "495.50"
+   },
+   {
+    "amount": 200000,
+    "total": "516.54"
+   },
+   {
+    "amount": 210000,
+    "total": "537.58"
+   },
+   {
+    "amount": 220000,
+    "total": "558.62"
+   },
+   {
+    "amount": 230000,
+    "total": "579.66"
+   },
+   {
+    "amount": 240000,
+    "total": "600.70"
+   },
+   {
+    "amount": 250000,
+    "total": "621.74"
+   },
+   {
+    "amount": 260000,
+    "total": "642.78"
+   },
+   {
+    "amount": 270000,
+    "total": "663.82"
+   },
+   {
+    "amount": 280000,
+    "total": "684.86"
+   },
+   {
+    "amount": 290000,
+    "total": "705.90"
+   },
+   {
+    "amount": 300000,
+    "total": "726.94"
+   },
+   {
+    "amount": 310000,
+    "total": "747.98"
+   },
+   {
+    "amount": 320000,
+    "total": "769.02"
+   },
+   {
+    "amount": 330000,
+    "total": "790.06"
+   },
+   {
+    "amount": 340000,
+    "total": "811.10"
+   },
+   {
+    "amount": 350000,
+    "total": "832.14"
+   },
+   {
+    "amount": 360000,
+    "total": "853.18"
+   },
+   {
+    "amount": 370000,
+    "total": "874.22"
+   },
+   {
+    "amount": 380000,
+    "total": "895.26"
+   },
+   {
+    "amount": 390000,
+    "total": "916.30"
+   },
+   {
+    "amount": 400000,
+    "total": "937.34"
+   }
+  ],
+  "C04": [
+   {
+    "amount": 10000,
+    "total": "32.53"
+   },
+   {
+    "amount": 20000,
+    "total": "63.57"
+   },
+   {
+    "amount": 30000,
+    "total": "94.61"
+   },
+   {
+    "amount": 40000,
+    "total": "124.50"
+   },
+   {
+    "amount": 50000,
+    "total": "145.54"
+   },
+   {
+    "amount": 60000,
+    "total": "166.58"
+   },
+   {
+    "amount": 70000,
+    "total": "187.62"
+   },
+   {
+    "amount": 80000,
+    "total": "208.66"
+   },
+   {
+    "amount": 90000,
+    "total": "229.70"
+   },
+   {
+    "amount": 100000,
+    "total": "250.74"
+   },
+   {
+    "amount": 110000,
+    "total": "271.78"
+   },
+   {
+    "amount": 120000,
+    "total": "292.82"
+   },
+   {
+    "amount": 130000,
+    "total": "313.86"
+   },
+   {
+    "amount": 140000,
+    "total": "334.90"
+   },
+   {
+    "amount": 150000,
+    "total": "355.94"
+   },
+   {
+    "amount": 160000,
+    "total": "376.98"
+   },
+   {
+    "amount": 170000,
+    "total": "398.02"
+   },
+   {
+    "amount": 180000,
+    "total": "419.05"
+   },
+   {
+    "amount": 190000,
+    "total": "440.09"
+   },
+   {
+    "amount": 200000,
+    "total": "461.13"
+   },
+   {
+    "amount": 210000,
+    "total": "482.17"
+   },
+   {
+    "amount": 220000,
+    "total": "503.21"
+   },
+   {
+    "amount": 230000,
+    "total": "524.25"
+   },
+   {
+    "amount": 240000,
+    "total": "545.29"
+   },
+   {
+    "amount": 250000,
+    "total": "566.33"
+   },
+   {
+    "amount": 260000,
+    "total": "587.37"
+   },
+   {
+    "amount": 270000,
+    "total": "608.41"
+   },
+   {
+    "amount": 280000,
+    "total": "629.45"
+   },
+   {
+    "amount": 290000,
+    "total": "650.49"
+   },
+   {
+    "amount": 300000,
+    "total": "671.53"
+   },
+   {
+    "amount": 310000,
+    "total": "692.57"
+   },
+   {
+    "amount": 320000,
+    "total": "713.61"
+   },
+   {
+    "amount": 330000,
+    "total": "734.65"
+   },
+   {
+    "amount": 340000,
+    "total": "755.69"
+   },
+   {
+    "amount": 350000,
+    "total": "776.73"
+   },
+   {
+    "amount": 360000,
+    "total": "797.77"
+   },
+   {
+    "amount": 370000,
+    "total": "818.81"
+   },
+   {
+    "amount": 380000,
+    "total": "839.85"
+   },
+   {
+    "amount": 390000,
+    "total": "860.89"
+   },
+   {
+    "amount": 400000,
+    "total": "881.93"
+   }
+  ],
+  "E01": [
+   {
+    "amount": 10000,
+    "total": "35.52"
+   },
+   {
+    "amount": 20000,
+    "total": "66.56"
+   },
+   {
+    "amount": 30000,
+    "total": "97.60"
+   },
+   {
+    "amount": 40000,
+    "total": "127.49"
+   },
+   {
+    "amount": 50000,
+    "total": "148.53"
+   },
+   {
+    "amount": 60000,
+    "total": "169.57"
+   },
+   {
+    "amount": 70000,
+    "total": "190.61"
+   },
+   {
+    "amount": 80000,
+    "total": "211.65"
+   },
+   {
+    "amount": 90000,
+    "total": "232.69"
+   },
+   {
+    "amount": 100000,
+    "total": "253.73"
+   },
+   {
+    "amount": 110000,
+    "total": "274.77"
+   },
+   {
+    "amount": 120000,
+    "total": "295.81"
+   },
+   {
+    "amount": 130000,
+    "total": "316.85"
+   },
+   {
+    "amount": 140000,
+    "total": "337.89"
+   },
+   {
+    "amount": 150000,
+    "total": "358.93"
+   },
+   {
+    "amount": 160000,
+    "total": "379.97"
+   },
+   {
+    "amount": 170000,
+    "total": "401.01"
+   },
+   {
+    "amount": 180000,
+    "total": "422.04"
+   },
+   {
+    "amount": 190000,
+    "total": "443.08"
+   },
+   {
+    "amount": 200000,
+    "total": "464.12"
+   },
+   {
+    "amount": 210000,
+    "total": "485.16"
+   },
+   {
+    "amount": 220000,
+    "total": "506.20"
+   },
+   {
+    "amount": 230000,
+    "total": "527.24"
+   },
+   {
+    "amount": 240000,
+    "total": "548.28"
+   },
+   {
+    "amount": 250000,
+    "total": "569.32"
+   },
+   {
+    "amount": 260000,
+    "total": "590.36"
+   },
+   {
+    "amount": 270000,
+    "total": "611.40"
+   },
+   {
+    "amount": 280000,
+    "total": "632.44"
+   },
+   {
+    "amount": 290000,
+    "total": "653.48"
+   },
+   {
+    "amount": 300000,
+    "total": "674.52"
+   },
+   {
+    "amount": 310000,
+    "total": "695.56"
+   },
+   {
+    "amount": 320000,
+    "total": "716.60"
+   },
+   {
+    "amount": 330000,
+    "total": "737.64"
+   },
+   {
+    "amount": 340000,
+    "total": "758.68"
+   },
+   {
+    "amount": 350000,
+    "total": "779.72"
+   },
+   {
+    "amount": 360000,
+    "total": "800.76"
+   },
+   {
+    "amount": 370000,
+    "total": "821.80"
+   },
+   {
+    "amount": 380000,
+    "total": "842.84"
+   },
+   {
+    "amount": 390000,
+    "total": "863.88"
+   },
+   {
+    "amount": 400000,
+    "total": "884.92"
+   }
+  ]
+ },
+ "sources": [
+  {
+   "id": "CN-01",
+   "grade": "A",
+   "url": "https://www.safe.gov.cn/safe/2006/1225/5319.html",
+   "title": "个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange), PBOC Order [2006] No. 3",
+   "retrieved": "2026-11-09T01:34Z"
+  },
+  {
+   "id": "CN-02",
+   "grade": "A",
+   "url": "https://www.safe.gov.cn/safe/2006/1225/5319.html",
+   "title": "个人外汇管理办法 第七、九、十三、二十二、二十六、三十七条 (same instrument, specific articles)",
+   "retrieved": "2026-11-09T01:34Z"
+  },
+  {
+   "id": "CN-03",
+   "grade": "A",
+   "url": "https://www.safe.gov.cn/safe/2006/1225/5319.html",
+   "title": "个人外汇管理办法 第七条 (prohibition on splitting)",
+   "retrieved": "2026-11-09T01:34Z"
+  },
+  {
+   "id": "CN-04",
+   "grade": "A",
+   "url": "https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm",
+   "title": "中华人民共和国外汇管理条例 (Regulation on Foreign Exchange Administration), State Council Order No. 532",
+   "retrieved": "2026-11-09T01:36Z"
+  },
+  {
+   "id": "CN-05",
+   "grade": "A",
+   "url": "https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm",
+   "title": "外汇管理条例 第四十五条 (private/disguised FX dealing)",
+   "retrieved": "2026-11-09T01:36Z"
+  },
+  {
+   "id": "CN-06",
+   "grade": "A",
+   "url": "https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm",
+   "title": "外汇管理条例 第四十二条 (carrying currency across the border in breach)",
+   "retrieved": "2026-11-09T01:36Z"
+  },
+  {
+   "id": "CN-07",
+   "grade": "A",
+   "url": "http://m.safe.gov.cn/safe/2007/0105/5320.html",
+   "title": "个人外汇管理办法实施细则 (Detailed Rules), 汇发〔2007〕1号, 第二、十、十一、十三、十四、二十条",
+   "retrieved": "2026-11-09T01:42Z"
+  },
+  {
+   "id": "CN-08",
+   "grade": "A",
+   "url": "http://m.safe.gov.cn/safe/2007/0105/5320.html",
+   "title": "个人外汇管理办法实施细则 第十三条 (overseas individual converting unused RMB back)",
+   "retrieved": "2026-11-09T01:42Z"
+  },
+  {
+   "id": "CN-09",
+   "grade": "A",
+   "url": "https://www.gov.cn/gongbao/content/2020/content_5560296.htm",
+   "title": "经常项目外汇业务指引（2020年版）, 汇发〔2020〕14号, 第五十四、五十八、五十九、六十二、六十五、六十六条",
+   "retrieved": "2026-11-09T01:45Z"
+  },
+  {
+   "id": "CN-10",
+   "grade": "A",
+   "url": "https://www.gov.cn/gongbao/content/2020/content_5560296.htm",
+   "title": "经常项目外汇业务指引（2020年版）第五十四条、第五十六条",
+   "retrieved": "2026-11-09T01:45Z"
+  },
+  {
+   "id": "CN-11",
+   "grade": "A",
+   "url": "https://www.gov.cn/gongbao/content/2020/content_5560296.htm",
+   "title": "经常项目外汇业务指引（2020年版）第六十二条 (splitting / watchlist, current text)",
+   "retrieved": "2026-11-09T01:45Z"
+  },
+  {
+   "id": "CN-12",
+   "grade": "A",
+   "url": "https://www.gov.cn/gongbao/content/2020/content_5560296.htm",
+   "title": "经常项目外汇业务指引（2020年版）第六十四条、第六十五条 (outward remittance)",
+   "retrieved": "2026-11-09T01:45Z"
+  },
+  {
+   "id": "CN-13",
+   "grade": "A",
+   "url": "https://www.gov.cn/gongbao/content/2020/content_5560296.htm",
+   "title": "经常项目外汇业务指引（2020年版）第八十六条 (cash withdrawal)",
+   "retrieved": "2026-11-09T01:45Z"
+  },
+  {
+   "id": "CN-14",
+   "grade": "A",
+   "url": "http://m.safe.gov.cn/safe/2004/1116/5461.html",
+   "title": "个人财产对外转移售付汇管理暂行办法, PBOC Announcement [2004] No. 16",
+   "retrieved": "2026-11-09T01:50Z"
+  },
+  {
+   "id": "CN-15",
+   "grade": "A",
+   "url": "http://m.safe.gov.cn/safe/2004/1116/5461.html",
+   "title": "个人财产对外转移售付汇管理暂行办法 第八、九、十一条 (document list and destination)",
+   "retrieved": "2026-11-09T01:50Z"
+  },
+  {
+   "id": "CN-16",
+   "grade": "A",
+   "url": "http://m.safe.gov.cn/safe/2014/0124/5476.html",
+   "title": "汇发〔2014〕2号 第六条 简化个人财产转移售付汇管理 (amending the 2004 measure)",
+   "retrieved": "2026-11-09T01:52Z"
+  },
+  {
+   "id": "CN-17",
+   "grade": "A",
+   "url": "http://m.safe.gov.cn/safe/2014/0124/5476.html",
+   "title": "汇发〔2014〕2号 第六条（一）（三）（四）",
+   "retrieved": "2026-11-09T01:52Z"
+  },
+  {
+   "id": "CN-18",
+   "grade": "A",
+   "url": "https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html",
+   "title": "Individual Income Tax Law of the PRC, Article 2 (nine income categories)",
+   "retrieved": "2026-11-09T01:38Z"
+  },
+  {
+   "id": "CN-19",
+   "grade": "A",
+   "url": "https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html",
+   "title": "Individual Income Tax Law, Article 3(3) (flat 20% rate)",
+   "retrieved": "2026-11-09T01:38Z"
+  },
+  {
+   "id": "CN-20",
+   "grade": "A",
+   "url": "https://www.pbc.gov.cn/tiaofasi/144941/3581332/4348658/index.html",
+   "title": "关于进一步防范和处置虚拟货币交易炒作风险的通知, 银发〔2021〕237号",
+   "retrieved": "2026-11-09T01:56Z"
+  },
+  {
+   "id": "CN-21",
+   "grade": "A",
+   "url": "http://m.safe.gov.cn/safe/2004/1116/5461.html",
+   "title": "个人财产对外转移售付汇管理暂行办法 第十条 (approval authority) — as amended by 汇发〔2014〕2号",
+   "retrieved": "2026-11-09T01:50Z"
+  },
+  {
+   "id": "CN-22",
+   "grade": "A",
+   "url": "https://www.safe.gov.cn/safe/2006/1225/5319.html",
+   "title": "境内外汇账户管理规定 / 个人外汇账户 — 个人外汇管理办法 第三十二条",
+   "retrieved": "2026-11-09T01:34Z"
+  },
+  {
+   "id": "US-01",
+   "grade": "A",
+   "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm",
+   "title": "26 U.S.C. §988(e)(2) — exclusion for certain personal transactions",
+   "retrieved": "2026-11-09T01:40Z"
+  },
+  {
+   "id": "US-02",
+   "grade": "A",
+   "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821",
+   "title": "31 U.S.C. §5321(a)(5) — FBAR civil penalties (via IRS / FinCEN inflation table)",
+   "retrieved": "2026-11-09T01:44Z"
+  },
+  {
+   "id": "US-03",
+   "grade": "B",
+   "url": "https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements",
+   "title": "Comparison of Form 8938 and FBAR requirements",
+   "retrieved": "2026-11-09T01:44Z"
+  },
+  {
+   "id": "US-04",
+   "grade": "B",
+   "url": "https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar",
+   "title": "Report of Foreign Bank and Financial Accounts (FBAR)",
+   "retrieved": "2026-11-09T01:58Z"
+  },
+  {
+   "id": "US-05",
+   "grade": "B",
+   "url": "https://www.irs.gov/businesses/gifts-from-foreign-person",
+   "title": "Gifts from foreign person (Form 3520 Part IV)",
+   "retrieved": "2026-11-09T01:52Z"
+  },
+  {
+   "id": "US-06",
+   "grade": "A",
+   "url": "https://www.irs.gov/newsroom/treasury-irs-issue-proposed-regulations-on-the-new-remittance-transfer-tax-established-under-the-one-big-beautiful-bill",
+   "title": "1% remittance transfer excise tax — IRS news release IR-2026-48",
+   "retrieved": "2026-11-09T01:47Z"
+  },
+  {
+   "id": "US-07",
+   "grade": "B",
+   "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit",
+   "title": "Foreign Tax Credit",
+   "retrieved": "2026-11-09T01:30Z"
+  },
+  {
+   "id": "US-08",
+   "grade": "B",
+   "url": "https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements",
+   "title": "Form 8938 / FBAR thresholds for a specified individual living outside the US",
+   "retrieved": "2026-11-09T01:44Z"
+  },
+  {
+   "id": "BK-01",
+   "grade": "C",
+   "url": "https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html",
+   "title": "中国银行电子银行个人服务转账汇款费率表 (BOC personal remittance tariff)",
+   "retrieved": "2026-11-09T01:32Z"
+  },
+  {
+   "id": "BK-02",
+   "grade": "C",
+   "url": "https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf",
+   "title": "中国银行服务价目表 第三章：个人客户服务收费业务 (BOC personal customer price list, Nov 2025)",
+   "retrieved": "2026-11-09T01:53Z"
+  },
+  {
+   "id": "BK-03",
+   "grade": "C",
+   "url": "https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf",
+   "title": "中国银行服务价目表 — 全额到账 (full-amount arrival) clauses",
+   "retrieved": "2026-11-09T01:53Z"
+  },
+  {
+   "id": "BK-04",
+   "grade": "C",
+   "url": "https://www.boc.cn/sourcedb/whpj/",
+   "title": "中国银行外汇牌价 (BOC foreign-exchange rate board), USD row",
+   "retrieved": "2026-11-09T01:31Z"
+  },
+  {
+   "id": "BK-05",
+   "grade": "C",
+   "url": "https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf",
+   "title": "中国银行服务价目表 — 外币携带证 (currency carriage certificate)",
+   "retrieved": "2026-11-09T01:53Z"
+  },
+  {
+   "id": "BK-06",
+   "grade": "C",
+   "url": "https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf",
+   "title": "中国银行服务价目表 — 出具个人银行业务相关证明材料 (certificate of deposit)",
+   "retrieved": "2026-11-09T01:53Z"
+  },
+  {
+   "id": "BK-07",
+   "grade": "C",
+   "url": "https://www.boc.cn/cbservice/bi2/201711/t20171109_10646775.html",
+   "title": "中国银行 announcements — 全额到账 note (USD 15 / USD 25)",
+   "retrieved": "2026-11-09T01:55Z"
+  },
+  {
+   "id": "BK-08",
+   "grade": "C",
+   "url": "https://www.chase.com/content/dam/chase-ux/documents/personal/checking/biz-how-your-transaction-will-work.pdf",
+   "title": "Chase Business Complete Checking fee schedule — incoming international wire",
+   "retrieved": "2026-11-09T01:57Z"
+  },
+  {
+   "id": "BK-09",
+   "grade": "C",
+   "url": "https://wise.com/help/articles/2955298/guide-to-cny-transfers",
+   "title": "Wise — Guide to CNY transfers (who may send FROM CNY)",
+   "retrieved": "2026-11-09T01:58Z"
+  },
+  {
+   "id": "BK-10",
+   "grade": "C",
+   "url": "https://wise.com/help/articles/2955298/guide-to-cny-transfers",
+   "title": "Wise — Guide to CNY transfers (single-transfer caps)",
+   "retrieved": "2026-11-09T01:58Z"
+  },
+  {
+   "id": "BK-11",
+   "grade": "C",
+   "url": "https://wise.com/help/articles/2955298/guide-to-cny-transfers",
+   "title": "Wise — Guide to CNY transfers (destination must be your own account)",
+   "retrieved": "2026-11-09T01:58Z"
+  },
+  {
+   "id": "US-09",
+   "grade": "A",
+   "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title31/html/USCODE-2024-title31-subtitleIV-chap53-subchapII-sec5321.htm",
+   "title": "31 U.S.C. §5321(a)(5)(C) — willful FBAR penalty formula",
+   "retrieved": "2026-11-09T02:04Z"
+  },
+  {
+   "id": "US-10",
+   "grade": "A",
+   "url": "https://www.law.cornell.edu/uscode/text/26/6651",
+   "title": "26 U.S.C. §6651 — failure to file and failure to pay",
+   "retrieved": "2026-11-09T02:06Z"
+  },
+  {
+   "id": "US-11",
+   "grade": "A",
+   "url": "https://www.law.cornell.edu/uscode/text/26/6662",
+   "title": "26 U.S.C. §6662 — accuracy-related penalty",
+   "retrieved": "2026-11-09T02:06Z"
+  },
+  {
+   "id": "US-12",
+   "grade": "A",
+   "url": "https://www.law.cornell.edu/uscode/text/26/6663",
+   "title": "26 U.S.C. §6663 — fraud penalty",
+   "retrieved": "2026-11-09T02:06Z"
+  }
+ ]
+}

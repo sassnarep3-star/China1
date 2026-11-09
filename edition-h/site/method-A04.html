@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Getting CNY out of China as a US citizen: every lawful route, the published cost at every USD 10,000 step from 10,000 to 400,000, and where the tax penalties actually come from.">
+<meta name="color-scheme" content="light">
+<title>A04 · Inheritance property transfer · China Money</title>
+<style>
+:root{
+ --ink:#10151b; --ink2:#39434f; --muted:#68737f; --line:#e3e7ec; --bg:#f5f6f8;
+ --panel:#fff; --accent:#0d5c49; --accent2:#0a4537; --warn:#8a4b00; --warnbg:#fff6e8;
+ --bad:#8c1d18; --badbg:#fdf0ef; --okbg:#eaf5f1; --chip:#eef1f5;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+ font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px 64px}
+header.site{background:var(--panel);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.hbar{max-width:1080px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;
+ gap:12px;justify-content:space-between}
+.brand{font-weight:800;letter-spacing:-.02em;font-size:1rem;color:var(--ink);white-space:nowrap}
+.brand span{color:var(--accent)}
+nav.main{display:flex;gap:4px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+nav.main::-webkit-scrollbar{display:none}
+nav.main a{font-size:.82rem;font-weight:600;padding:8px 10px;border-radius:8px;white-space:nowrap;color:var(--ink2)}
+nav.main a:hover{background:var(--chip);text-decoration:none}
+nav.main a[aria-current]{background:var(--accent);color:#fff}
+h1{font-size:1.65rem;line-height:1.2;letter-spacing:-.025em;margin:22px 0 8px}
+h2{font-size:1.2rem;letter-spacing:-.01em;margin:32px 0 10px}
+h3{font-size1rem;font-size:1rem;margin:20px 0 6px}
+p.lede{font-size:1.02rem;color:var(--ink2);margin:0 0 18px;max-width:68ch}
+p{max-width:75ch}
+.eyebrow{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700;margin:24px 0 0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;margin:14px 0}
+.answer{background:linear-gradient(180deg,#0d5c49,#0a4537);color:#fff;border:0}
+.answer h2{color:#fff;margin-top:0;font-size:1.05rem;letter-spacing:.02em;text-transform:uppercase;font-size:.78rem}
+.answer .big{font-size:1.5rem;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin:0 0 8px}
+.answer p{color:#d8ece5;margin:.5em 0}
+.answer a{color:#bff0e0}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px}
+.stat small{display:block;font-size:.63rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.stat strong{display:block;font-size:1.28rem;letter-spacing:-.02em;margin:3px 0 1px}
+.stat em{display:block;font-size:.73rem;color:var(--ink2);font-style:normal}
+.grid{display:grid;grid-template-columns:1fr;gap:10px;margin:14px 0}
+.nav-card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:12px;
+ padding:14px;color:inherit}
+.nav-card:hover{border-color:var(--accent);text-decoration:none}
+.nav-card h3{margin:2px 0 4px;font-size:1rem}
+.nav-card p{margin:0;font-size:.85rem;color:var(--ink2)}
+.kicker{font-size:.63rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:700}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--panel);
+ -webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:.86rem}
+th,td{padding:10px 11px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:#eff2f5;font-size:.66rem;letter-spacing:.05em;text-transform:uppercase;color:var(--ink2);
+ font-weight:700;position:sticky;top:0}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover{background:#fafbfc}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+td.big{font-weight:700}
+.src{display:inline-block;font-size:.63rem;font-weight:700;padding:2px 5px;border-radius:5px;
+ background:var(--chip);border:1px solid var(--line);color:var(--ink2);white-space:nowrap;margin:1px 0}
+.src:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
+.g{display:inline-block;font-size:.6rem;font-weight:800;width:16px;height:16px;line-height:16px;
+ text-align:center;border-radius:4px;color:#fff}
+.gA{background:#0d5c49}.gB{background:#3f5a8a}.gC{background:#7a5a1e}
+.st{display:inline-block;font-size:.67rem;font-weight:700;padding:2px 7px;border-radius:999px;white-space:nowrap}
+.s-lawful{background:var(--okbg);color:#0a4537}
+.s-conditional{background:var(--warnbg);color:var(--warn)}
+.s-prohibited{background:var(--badbg);color:var(--bad)}
+.s-not_a_transfer{background:var(--chip);color:var(--ink2)}
+.note{font-size:.82rem;color:var(--muted);max-width:75ch}
+.flag{background:var(--warnbg);border:1px solid #f2ddbb;border-radius:10px;padding:12px;margin:12px 0}
+.flag strong{color:var(--warn)}
+.danger{background:var(--badbg);border:1px solid #f3cfcb;border-radius:10px;padding:12px;margin:12px 0}
+.danger strong{color:var(--bad)}
+.ok{background:var(--okbg);border:1px solid #cfe6de;border-radius:10px;padding:12px;margin:12px 0}
+ul,ol{padding-left:1.15em;max-width:75ch}
+li{margin:.3em 0}
+.crumb{font-size:.78rem;color:var(--muted);margin:16px 0 0}
+.crumb a{color:var(--muted)}
+details{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--panel);margin:10px 0}
+summary{cursor:pointer;font-weight:650;font-size:.9rem}
+.block{border-left:3px solid var(--accent);padding-left:12px;margin:14px 0}
+footer.site{border-top:1px solid var(--line);margin-top:40px;padding:18px 0 0;font-size:.8rem;color:var(--muted)}
+footer.site p{max-width:none}
+.pill{display:inline-block;font-size:.66rem;font-weight:700;padding:2px 7px;border-radius:999px;
+ background:var(--chip);color:var(--ink2);margin-left:4px}
+.two{display:grid;grid-template-columns:1fr;gap:14px}
+.pros li{color:#0a4537}
+.cons li{color:#5c2a26}
+.mobonly{display:block}
+@media(min-width:760px){
+ h1{font-size:2.1rem}
+ .stats{grid-template-columns:repeat(4,1fr)}
+ .grid{grid-template-columns:repeat(3,1fr)}
+ .two{grid-template-columns:1fr 1fr}
+ .mobonly{display:none}
+}
+@media(max-width:640px){
+ /* stacked cards for the key tables so nothing needs horizontal scrolling */
+ table.stack thead{display:none}
+ table.stack tr{display:block;border:1px solid var(--line);border-radius:10px;margin:8px;background:var(--panel)}
+ table.stack td{display:flex;justify-content:space-between;gap:12px;border:0;padding:6px 10px}
+ table.stack td::before{content:attr(data-l);font-size:.66rem;letter-spacing:.05em;
+  text-transform:uppercase;color:var(--muted);font-weight:700;flex:0 0 42%}
+ table.stack td.num{justify-content:space-between}
+ table.stack tr td:first-child{background:#f7f9fa;border-radius:10px 10px 0 0;font-weight:700}
+ .tw{border:0;background:transparent}
+}
+.py{display:none}
+</style>
+</head>
+<body>
+<header class="site"><div class="hbar">
+<a class="brand" href="index.html">CNY<span>&rarr;</span>USD <span style="color:#68737f;font-weight:600">research</span></a>
+<nav class="main"><a href="index.html">Dashboard</a><a href="answer.html">The answer</a><a href="costs.html">Costs $10k–$400k</a><a href="methods.html" aria-current="page">All routes</a><a href="penalty.html">Penalty</a><a href="tax.html">Tax</a><a href="reporting.html">US filing</a><a href="steps.html">Step by step</a><a href="sources.html">Sources</a><a href="flagged.html">Flagged</a><a href="repo-review.html">Repo audit</a><a href="methodology.html">Method</a></nav>
+</div></header>
+<div class="wrap">
+
+<p class="crumb"><a href="index.html">Dashboard</a> / <a href="methods.html">All routes</a> /
+<a href="methods.html#personal">Personal routes</a> / A04</p>
+<p class="eyebrow">Personal routes · A04</p>
+<h1>Inheritance property transfer</h1>
+<p class="lede">继承财产转移 &nbsp; <span class="st s-conditional">Conditional</span></p>
+
+<h2>The rule</h2>
+<div class="block"><p>Same 2004 measure, second limb: the heir applies to the SAFE office at the deceased&#x27;s last household-registration location; after approval the bank buys FX and remits to the heir&#x27;s own account abroad.</p><p class="note">Source: <a class="src" href="http://m.safe.gov.cn/safe/2004/1116/5461.html" target="_blank" rel="noopener noreferrer" title="个人财产对外转移售付汇管理暂行办法, PBOC Announcement [2004] No. 16">CN-14</a> <a class="src" href="http://m.safe.gov.cn/safe/2004/1116/5461.html" target="_blank" rel="noopener noreferrer" title="个人财产对外转移售付汇管理暂行办法 第八、九、十一条 (document list and destination)">CN-15</a> <a class="src" href="http://m.safe.gov.cn/safe/2014/0124/5476.html" target="_blank" rel="noopener noreferrer" title="汇发〔2014〕2号 第六条（一）（三）（四）">CN-17</a> <a class="src" href="https://www.irs.gov/businesses/gifts-from-foreign-person" target="_blank" rel="noopener noreferrer" title="Gifts from foreign person (Form 3520 Part IV)">US-05</a></p></div>
+
+<div class="two">
+<div class="card"><h3>Who can use it</h3><p>A foreign citizen (including a US citizen) or a Hong Kong/Macau resident who has lawfully inherited assets in mainland China and wants the realised proceeds out.</p>
+<h3 style="margin-top:18px">Cap or limit</h3><p>No statutory ceiling. The 2014 amendment removed both the CNY 500,000 upward-filing requirement and the rule that inheritances from different deceased persons must be applied for separately.</p></div>
+<div class="card"><h3>Documents</h3><ul><li>Written application: reason, relationship to the deceased, detailed account of the deceased&#x27;s property and its realisation</li><li>个人财产对外转移外汇业务申请表</li><li>Passport plus proof of residence abroad certified by a PRC embassy or consulate</li><li>Proof of entitlement to the inheritance (will, grant of probate, notarial certificate)</li><li>The deceased&#x27;s property-rights documents and the tax certificate or duty-paid voucher</li><li>Translation and certification as the local office requires</li></ul></div>
+</div>
+
+<div class="two">
+<div class="card"><h3>Pros</h3><ul class="pros"><li>The only clean route for inherited mainland assets</li><li>Consolidated applications now permitted across multiple deceased persons</li><li>No cap in the rule</li></ul></div>
+<div class="card"><h3>Cons</h3><ul class="cons"><li>Requires a completed PRC inheritance process first, which is slow and document-heavy</li><li>PRC inheritance tax does not exist, but tax on the deceased&#x27;s or the estate&#x27;s income can</li><li>US side can be worse than the PRC side: a bequest above USD 100,000 from a foreign person is reportable on Form 3520 Part IV (US-05)</li><li>Document and translation costs are unpublished — the all-in figure stays blank</li></ul></div>
+</div>
+
+
+<h2>Cost at a glance</h2>
+<div class="tw"><table class="stack">
+<thead><tr><th class="num">Amount</th><th class="num">Total cost</th><th class="num">Share</th>
+<th class="num">Net received</th><th>Source</th></tr></thead><tbody><tr><td class="num" data-l="Amount">$10,000</td><td class="num big" data-l="Total cost">$87.94</td><td class="num" data-l="Share">0.879%</td><td class="num" data-l="Net received">$9,912.06</td><td data-l="Source"><a class="src" href="http://m.safe.gov.cn/safe/2004/1116/5461.html" target="_blank" rel="noopener noreferrer" title="个人财产对外转移售付汇管理暂行办法, PBOC Announcement [2004] No. 16">CN-14</a> <a class="src" href="http://m.safe.gov.cn/safe/2004/1116/5461.html" target="_blank" rel="noopener noreferrer" title="个人财产对外转移售付汇管理暂行办法 第八、九、十一条 (document list and destination)">CN-15</a> <a class="src" href="http://m.safe.gov.cn/safe/2014/0124/5476.html" target="_blank" rel="noopener noreferrer" title="汇发〔2014〕2号 第六条（一）（三）（四）">CN-17</a> <a class="src" href="https://www.irs.gov/businesses/gifts-from-foreign-person" target="_blank" rel="noopener noreferrer" title="Gifts from foreign person (Form 3520 Part IV)">US-05</a></td></tr><tr><td class="num" data-l="Amount">$50,000</td><td class="num big" data-l="Total cost">$200.95</td><td class="num" data-l="Share">0.402%</td><td class="num" data-l="Net received">$49,799.05</td><td data-l="Source"><a class="src" href="http://m.safe.gov.cn/safe/2004/1116/5461.html" target="_blank" rel="noopener noreferrer" title="个人财产对外转移售付汇管理暂行办法, PBOC Announcement [2004] No. 16">CN-14</a> <a class="src" href="http://m.safe.gov.cn/safe/2004/1116/5461.html" target="_blank" rel="noopener noreferrer" title="个人财产对外转移售付汇管理暂行办法 第八、九、十一条 (document list and destination)">CN-15</a> <a class="src" href="http://m.safe.gov.cn/safe/2014/0124/5476.html" target="_blank" rel="noopener noreferrer" title="汇发〔2014〕2号 第六条（一）（三）（四）">CN-17</a> <a class="src" href="https://www.irs.gov/businesses/gifts-from-foreign-person" target="_blank" rel="noopener noreferrer" title="Gifts from foreign person (Form 3520 Part IV)">US-05</a></td></tr><tr><td class="num" data-l="Amount">$100,000</td><td class="num big" data-l="Total cost">$306.15</td><td class="num" data-l="Share">0.306%</td><td class="num" data-l="Net received">$99,693.85</td><td data-l="Source"><a class="src" href="http://m.safe.gov.cn/safe/2004/1116/5461.html" target="_blank" rel="noopener noreferrer" title="个人财产对外转移售付汇管理暂行办法, PBOC Announcement [2004] No. 16">CN-14</a> <a class="src" href="http://m.safe.gov.cn/safe/2004/1116/5461.html" target="_blank" rel="noopener noreferrer" title="个人财产对外转移售付汇管理暂行办法 第八、九、十一条 (document list and destination)">CN-15</a> <a class="src" href="http://m.safe.gov.cn/safe/2014/0124/5476.html" target="_blank" rel="noopener noreferrer" title="汇发〔2014〕2号 第六条（一）（三）（四）">CN-17</a> <a class="src" href="https://www.irs.gov/businesses/gifts-from-foreign-person" target="_blank" rel="noopener noreferrer" title="Gifts from foreign person (Form 3520 Part IV)">US-05</a></td></tr><tr><td class="num" data-l="Amount">$200,000</td><td class="num big" data-l="Total cost">$516.54</td><td class="num" data-l="Share">0.258%</td><td class="num" data-l="Net received">$199,483.46</td><td data-l="Source"><a class="src" href="http://m.safe.gov.cn/safe/2004/1116/5461.html" target="_blank" rel="noopener noreferrer" title="个人财产对外转移售付汇管理暂行办法, PBOC Announcement [2004] No. 16">CN-14</a> <a class="src" href="http://m.safe.gov.cn/safe/2004/1116/5461.html" target="_blank" rel="noopener noreferrer" title="个人财产对外转移售付汇管理暂行办法 第八、九、十一条 (document list and destination)">CN-15</a> <a class="src" href="http://m.safe.gov.cn/safe/2014/0124/5476.html" target="_blank" rel="noopener noreferrer" title="汇发〔2014〕2号 第六条（一）（三）（四）">CN-17</a> <a class="src" href="https://www.irs.gov/businesses/gifts-from-foreign-person" target="_blank" rel="noopener noreferrer" title="Gifts from foreign person (Form 3520 Part IV)">US-05</a></td></tr><tr><td class="num" data-l="Amount">$400,000</td><td class="num big" data-l="Total cost">$937.34</td><td class="num" data-l="Share">0.234%</td><td class="num" data-l="Net received">$399,062.66</td><td data-l="Source"><a class="src" href="http://m.safe.gov.cn/safe/2004/1116/5461.html" target="_blank" rel="noopener noreferrer" title="个人财产对外转移售付汇管理暂行办法, PBOC Announcement [2004] No. 16">CN-14</a> <a class="src" href="http://m.safe.gov.cn/safe/2004/1116/5461.html" target="_blank" rel="noopener noreferrer" title="个人财产对外转移售付汇管理暂行办法 第八、九、十一条 (document list and destination)">CN-15</a> <a class="src" href="http://m.safe.gov.cn/safe/2014/0124/5476.html" target="_blank" rel="noopener noreferrer" title="汇发〔2014〕2号 第六条（一）（三）（四）">CN-17</a> <a class="src" href="https://www.irs.gov/businesses/gifts-from-foreign-person" target="_blank" rel="noopener noreferrer" title="Gifts from foreign person (Form 3520 Part IV)">US-05</a></td></tr></tbody></table></div>
+<p><a href="cost-A04.html">Full 40-row ladder for A04 &rarr;</a></p>
+
+
+<h2>Step by step</h2>
+<ol><li>Complete the PRC inheritance formalities and obtain the notarial certificate or probate document.</li><li>Realise the inherited assets into RMB and obtain the tax certificate or duty-paid voucher.</li><li>Apply to the SAFE office at the deceased&#x27;s last household-registration location with the document set.</li><li>On approval, take the 核准件 to the designated bank for purchase and remittance to your own account abroad.</li><li>Report the bequest on Form 3520 Part IV if it exceeds USD 100,000 in the year, and file the FBAR for the Chinese account.</li></ol>
+
+<p class="note">All sources for this route: <a class="src" href="http://m.safe.gov.cn/safe/2004/1116/5461.html" target="_blank" rel="noopener noreferrer" title="个人财产对外转移售付汇管理暂行办法, PBOC Announcement [2004] No. 16">CN-14</a> <a class="src" href="http://m.safe.gov.cn/safe/2004/1116/5461.html" target="_blank" rel="noopener noreferrer" title="个人财产对外转移售付汇管理暂行办法 第八、九、十一条 (document list and destination)">CN-15</a> <a class="src" href="http://m.safe.gov.cn/safe/2014/0124/5476.html" target="_blank" rel="noopener noreferrer" title="汇发〔2014〕2号 第六条（一）（三）（四）">CN-17</a> <a class="src" href="https://www.irs.gov/businesses/gifts-from-foreign-person" target="_blank" rel="noopener noreferrer" title="Gifts from foreign person (Form 3520 Part IV)">US-05</a> <a class="src" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" target="_blank" rel="noopener noreferrer" title="中国银行电子银行个人服务转账汇款费率表 (BOC personal remittance tariff)">BK-01</a></p>
+<p><a href="methods.html">&larr; all routes</a></p>
+
+<footer class="site">
+<p><strong>What this is.</strong> Published-rule research with the arithmetic shown, built from official
+government, regulator, statute and provider pages retrieved on 9 November 2026. It is not legal, tax or
+investment advice, and it is not a bank quote. Rates and tariffs change — every source is linked so
+you can re-check it by hand.</p>
+<p>Values that could not be confirmed from an official page are left blank and published on the
+<a href="flagged.html">Flagged for review</a> page. Nothing is inferred or estimated.
+Edition H · session arena-e01cf383 · <a href="https://github.com/sassnarep3-star/China1">repository</a></p>
+</footer>
+</div>
+</body>
+</html>

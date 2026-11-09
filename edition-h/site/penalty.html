@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Getting CNY out of China as a US citizen: every lawful route, the published cost at every USD 10,000 step from 10,000 to 400,000, and where the tax penalties actually come from.">
+<meta name="color-scheme" content="light">
+<title>Penalty · China Money</title>
+<style>
+:root{
+ --ink:#10151b; --ink2:#39434f; --muted:#68737f; --line:#e3e7ec; --bg:#f5f6f8;
+ --panel:#fff; --accent:#0d5c49; --accent2:#0a4537; --warn:#8a4b00; --warnbg:#fff6e8;
+ --bad:#8c1d18; --badbg:#fdf0ef; --okbg:#eaf5f1; --chip:#eef1f5;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+ font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px 64px}
+header.site{background:var(--panel);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.hbar{max-width:1080px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;
+ gap:12px;justify-content:space-between}
+.brand{font-weight:800;letter-spacing:-.02em;font-size:1rem;color:var(--ink);white-space:nowrap}
+.brand span{color:var(--accent)}
+nav.main{display:flex;gap:4px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+nav.main::-webkit-scrollbar{display:none}
+nav.main a{font-size:.82rem;font-weight:600;padding:8px 10px;border-radius:8px;white-space:nowrap;color:var(--ink2)}
+nav.main a:hover{background:var(--chip);text-decoration:none}
+nav.main a[aria-current]{background:var(--accent);color:#fff}
+h1{font-size:1.65rem;line-height:1.2;letter-spacing:-.025em;margin:22px 0 8px}
+h2{font-size:1.2rem;letter-spacing:-.01em;margin:32px 0 10px}
+h3{font-size1rem;font-size:1rem;margin:20px 0 6px}
+p.lede{font-size:1.02rem;color:var(--ink2);margin:0 0 18px;max-width:68ch}
+p{max-width:75ch}
+.eyebrow{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700;margin:24px 0 0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;margin:14px 0}
+.answer{background:linear-gradient(180deg,#0d5c49,#0a4537);color:#fff;border:0}
+.answer h2{color:#fff;margin-top:0;font-size:1.05rem;letter-spacing:.02em;text-transform:uppercase;font-size:.78rem}
+.answer .big{font-size:1.5rem;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin:0 0 8px}
+.answer p{color:#d8ece5;margin:.5em 0}
+.answer a{color:#bff0e0}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px}
+.stat small{display:block;font-size:.63rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.stat strong{display:block;font-size:1.28rem;letter-spacing:-.02em;margin:3px 0 1px}
+.stat em{display:block;font-size:.73rem;color:var(--ink2);font-style:normal}
+.grid{display:grid;grid-template-columns:1fr;gap:10px;margin:14px 0}
+.nav-card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:12px;
+ padding:14px;color:inherit}
+.nav-card:hover{border-color:var(--accent);text-decoration:none}
+.nav-card h3{margin:2px 0 4px;font-size:1rem}
+.nav-card p{margin:0;font-size:.85rem;color:var(--ink2)}
+.kicker{font-size:.63rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:700}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--panel);
+ -webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:.86rem}
+th,td{padding:10px 11px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:#eff2f5;font-size:.66rem;letter-spacing:.05em;text-transform:uppercase;color:var(--ink2);
+ font-weight:700;position:sticky;top:0}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover{background:#fafbfc}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+td.big{font-weight:700}
+.src{display:inline-block;font-size:.63rem;font-weight:700;padding:2px 5px;border-radius:5px;
+ background:var(--chip);border:1px solid var(--line);color:var(--ink2);white-space:nowrap;margin:1px 0}
+.src:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
+.g{display:inline-block;font-size:.6rem;font-weight:800;width:16px;height:16px;line-height:16px;
+ text-align:center;border-radius:4px;color:#fff}
+.gA{background:#0d5c49}.gB{background:#3f5a8a}.gC{background:#7a5a1e}
+.st{display:inline-block;font-size:.67rem;font-weight:700;padding:2px 7px;border-radius:999px;white-space:nowrap}
+.s-lawful{background:var(--okbg);color:#0a4537}
+.s-conditional{background:var(--warnbg);color:var(--warn)}
+.s-prohibited{background:var(--badbg);color:var(--bad)}
+.s-not_a_transfer{background:var(--chip);color:var(--ink2)}
+.note{font-size:.82rem;color:var(--muted);max-width:75ch}
+.flag{background:var(--warnbg);border:1px solid #f2ddbb;border-radius:10px;padding:12px;margin:12px 0}
+.flag strong{color:var(--warn)}
+.danger{background:var(--badbg);border:1px solid #f3cfcb;border-radius:10px;padding:12px;margin:12px 0}
+.danger strong{color:var(--bad)}
+.ok{background:var(--okbg);border:1px solid #cfe6de;border-radius:10px;padding:12px;margin:12px 0}
+ul,ol{padding-left:1.15em;max-width:75ch}
+li{margin:.3em 0}
+.crumb{font-size:.78rem;color:var(--muted);margin:16px 0 0}
+.crumb a{color:var(--muted)}
+details{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--panel);margin:10px 0}
+summary{cursor:pointer;font-weight:650;font-size:.9rem}
+.block{border-left:3px solid var(--accent);padding-left:12px;margin:14px 0}
+footer.site{border-top:1px solid var(--line);margin-top:40px;padding:18px 0 0;font-size:.8rem;color:var(--muted)}
+footer.site p{max-width:none}
+.pill{display:inline-block;font-size:.66rem;font-weight:700;padding:2px 7px;border-radius:999px;
+ background:var(--chip);color:var(--ink2);margin-left:4px}
+.two{display:grid;grid-template-columns:1fr;gap:14px}
+.pros li{color:#0a4537}
+.cons li{color:#5c2a26}
+.mobonly{display:block}
+@media(min-width:760px){
+ h1{font-size:2.1rem}
+ .stats{grid-template-columns:repeat(4,1fr)}
+ .grid{grid-template-columns:repeat(3,1fr)}
+ .two{grid-template-columns:1fr 1fr}
+ .mobonly{display:none}
+}
+@media(max-width:640px){
+ /* stacked cards for the key tables so nothing needs horizontal scrolling */
+ table.stack thead{display:none}
+ table.stack tr{display:block;border:1px solid var(--line);border-radius:10px;margin:8px;background:var(--panel)}
+ table.stack td{display:flex;justify-content:space-between;gap:12px;border:0;padding:6px 10px}
+ table.stack td::before{content:attr(data-l);font-size:.66rem;letter-spacing:.05em;
+  text-transform:uppercase;color:var(--muted);font-weight:700;flex:0 0 42%}
+ table.stack td.num{justify-content:space-between}
+ table.stack tr td:first-child{background:#f7f9fa;border-radius:10px 10px 0 0;font-weight:700}
+ .tw{border:0;background:transparent}
+}
+.py{display:none}
+</style>
+</head>
+<body>
+<header class="site"><div class="hbar">
+<a class="brand" href="index.html">CNY<span>&rarr;</span>USD <span style="color:#68737f;font-weight:600">research</span></a>
+<nav class="main"><a href="index.html">Dashboard</a><a href="answer.html">The answer</a><a href="costs.html">Costs $10k–$400k</a><a href="methods.html">All routes</a><a href="penalty.html" aria-current="page">Penalty</a><a href="tax.html">Tax</a><a href="reporting.html">US filing</a><a href="steps.html">Step by step</a><a href="sources.html">Sources</a><a href="flagged.html">Flagged</a><a href="repo-review.html">Repo audit</a><a href="methodology.html">Method</a></nav>
+</div></header>
+<div class="wrap">
+
+<p class="crumb"><a href="index.html">Dashboard</a> / Penalty</p>
+<h1>Breaking down "the conversion penalty"</h1>
+<p class="lede">The premise says converting triggers a considerable tax. Checked provision by
+provision, that premise is four unrelated things stacked into one word. This page separates them and
+puts a verified number on each, and leaves blank what cannot be known without your own facts.</p>
+
+
+
+<h2>Layer 1 · friction — the only real cost of converting</h2>
+<p class="note">Every cell is a published price, computed for that amount. The FX margin is the one-way bid/ask from BOC&#x27;s board.</p>
+<div class="tw"><table class="stack">
+<thead><tr><th>Component</th><th class="num">At $10,000</th><th class="num">At $100,000</th>
+<th class="num">At $400,000</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td data-l="Component"><strong>FX margin, one conversion</strong></td>
+<td class="num" data-l="$10,000">$21.04</td><td class="num" data-l="$100,000">$210.40</td>
+<td class="num" data-l="$400,000">$841.59</td><td data-l="Source"><a class="src" href="https://www.boc.cn/sourcedb/whpj/" target="_blank" rel="noopener noreferrer" title="中国银行外汇牌价 (BOC foreign-exchange rate board), USD row">BK-04</a></td></tr>
+<tr><td data-l="Component"><strong>Bank commission</strong></td>
+<td class="num" data-l="$10,000">$10.00</td><td class="num" data-l="$100,000">$38.85</td>
+<td class="num" data-l="$400,000">$38.85</td><td data-l="Source"><a class="src" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" target="_blank" rel="noopener noreferrer" title="中国银行电子银行个人服务转账汇款费率表 (BOC personal remittance tariff)">BK-01</a></td></tr>
+<tr><td data-l="Component"><strong>Cable fee</strong></td>
+<td class="num" data-l="$10,000">$22.42</td><td class="num" data-l="$100,000">$22.42</td>
+<td class="num" data-l="$400,000">$22.42</td><td data-l="Source"><a class="src" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" target="_blank" rel="noopener noreferrer" title="中国银行电子银行个人服务转账汇款费率表 (BOC personal remittance tariff)">BK-01</a></td></tr>
+<tr><td data-l="Component"><strong>Full-amount arrival</strong></td>
+<td class="num" data-l="$10,000">$15.00</td><td class="num" data-l="$100,000">$15.00</td>
+<td class="num" data-l="$400,000">$15.00</td><td data-l="Source"><a class="src" href="https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf" target="_blank" rel="noopener noreferrer" title="中国银行服务价目表 — 全额到账 (full-amount arrival) clauses">BK-03</a></td></tr>
+<tr><td data-l="Component"><strong>Receiving bank (named example)</strong></td>
+<td class="num" data-l="$10,000">$15.00</td><td class="num" data-l="$100,000">$15.00</td>
+<td class="num" data-l="$400,000">$15.00</td><td data-l="Source"><a class="src" href="https://www.chase.com/content/dam/chase-ux/documents/personal/checking/biz-how-your-transaction-will-work.pdf" target="_blank" rel="noopener noreferrer" title="Chase Business Complete Checking fee schedule — incoming international wire">BK-08</a></td></tr>
+<tr><td data-l="Component"><strong>Certificate of deposit</strong></td>
+<td class="num" data-l="$10,000">$4.48</td><td class="num" data-l="$100,000">$4.48</td>
+<td class="num" data-l="$400,000">$4.48</td><td data-l="Source"><a class="src" href="https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf" target="_blank" rel="noopener noreferrer" title="中国银行服务价目表 — 出具个人银行业务相关证明材料 (certificate of deposit)">BK-06</a></td></tr>
+<tr style="background:#f7f9fa"><td data-l="Component"><strong>ALL-IN</strong></td>
+<td class="num big" data-l="$10,000">$87.94</td><td class="num big" data-l="$100,000">$306.15</td>
+<td class="num big" data-l="$400,000">$937.34</td><td data-l="Source">computed</td></tr>
+<tr><td data-l="Component"><strong>as a share of the amount</strong></td>
+<td class="num" data-l="$10,000">0.879%</td><td class="num" data-l="$100,000">0.306%</td>
+<td class="num" data-l="$400,000">0.234%</td><td data-l="Source">computed</td></tr>
+</tbody></table></div>
+
+<h2>Layer 2 · PRC income tax — a rate on the income, never on the principal</h2>
+<div class="tw"><table class="stack">
+<thead><tr><th>Item</th><th class="num">Rate</th><th>Base</th><th>Finding</th><th>Source</th></tr></thead>
+<tbody><tr><td data-l="Item">Is converting CNY to USD itself subject to PRC IIT?</td><td class="num" data-l="Rate">0%</td><td data-l="Base">not applicable</td><td data-l="Finding">No. PRC IIT is imposed on nine enumerated categories of income (CN-18). A currency exchange of your own after-tax principal is not one of them, so there is nothing to tax on the exchange itself.</td><td data-l="Source"><a class="src" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" target="_blank" rel="noopener noreferrer" title="Individual Income Tax Law of the PRC, Article 2 (nine income categories)">CN-18</a></td></tr><tr><td data-l="Item">PRC IIT on a transfer of assets (e.g. a property gain)</td><td class="num" data-l="Rate">20% flat</td><td data-l="Base">the gain, not the price</td><td data-l="Finding">Where the money in the account came from disposing of an asset, the 20% flat rate applies to the gain. It is charged whether or not you remit, so remitting does not create it — it only requires you to prove it was paid.</td><td data-l="Source"><a class="src" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" target="_blank" rel="noopener noreferrer" title="Individual Income Tax Law, Article 3(3) (flat 20% rate)">CN-19</a></td></tr><tr><td data-l="Item">PRC IIT on salary and wages</td><td class="num" data-l="Rate">3% to 45% progressive</td><td data-l="Base">taxable salary after the standard deduction</td><td data-l="Finding">Salary is the one category where a PRC tax record is routinely generated, which is exactly why the salary route (A06) is the easiest to document.</td><td data-l="Source"><a class="src" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" target="_blank" rel="noopener noreferrer" title="Individual Income Tax Law of the PRC, Article 2 (nine income categories)">CN-18</a></td></tr><tr><td data-l="Item">PRC tax on the amount actually being transferred</td><td class="num" data-l="Rate">—</td><td data-l="Base">—</td><td data-l="Finding">No provision retrieved imposes tax on the transfer of after-tax principal. This row is deliberately blank rather than filled with a rate.</td><td data-l="Source"><a class="src" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" target="_blank" rel="noopener noreferrer" title="Individual Income Tax Law of the PRC, Article 2 (nine income categories)">CN-18</a></td></tr></tbody></table></div>
+
+<h2>Layer 3 · PRC conduct fines — what the prohibited routes actually cost</h2>
+<div class="tw"><table class="stack">
+<thead><tr><th>Conduct</th><th class="num">Fine</th><th>Escalation</th><th>Also</th>
+<th>Source</th></tr></thead><tbody><tr><td data-l="Conduct"><strong>Evading FX control (逃汇): moving domestic FX or capital abroad in breach of the rules</strong><br><span class="note">逃汇</span></td><td class="num" data-l="Fine">up to 30%</td><td data-l="Escalation">30% to 100% where the circumstances are serious</td><td data-l="Also">Repatriation order; confiscation of illegal gains; criminal referral where the threshold is met</td><td data-l="Source"><a class="src" href="https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm" target="_blank" rel="noopener noreferrer" title="中华人民共和国外汇管理条例 (Regulation on Foreign Exchange Administration), State Council Order No. 532">CN-04</a></td></tr><tr><td data-l="Conduct"><strong>Private, disguised or brokered FX dealing (地下钱庄, mirror trade)</strong><br><span class="note">私自买卖外汇</span></td><td class="num" data-l="Fine">up to 30%</td><td data-l="Escalation">30% to 100% where serious</td><td data-l="Also">Warning; confiscation of illegal gains; criminal referral</td><td data-l="Source"><a class="src" href="https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm" target="_blank" rel="noopener noreferrer" title="外汇管理条例 第四十五条 (private/disguised FX dealing)">CN-05</a></td></tr><tr><td data-l="Conduct"><strong>Breaching the currency-carriage rules at the border</strong><br><span class="note">违反规定携带外汇出入境</span></td><td class="num" data-l="Fine">up to 20%</td><td data-l="Escalation">none published</td><td data-l="Also">Warning; Customs penalties where the law so provides</td><td data-l="Source"><a class="src" href="https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm" target="_blank" rel="noopener noreferrer" title="外汇管理条例 第四十二条 (carrying currency across the border in breach)">CN-06</a></td></tr><tr><td data-l="Conduct"><strong>Splitting to evade quota or authenticity supervision (watchlist)</strong><br><span class="note">分拆 / 关注名单</span></td><td class="num" data-l="Fine">see note</td><td data-l="Escalation">not a fine: enhanced review</td><td data-l="Also">Watchlist for the year of listing plus two more; every subsequent FX transaction pushed to the counter with strict documentary review; applies to the person who LENDS a quota as well as the borrower</td><td data-l="Source"><a class="src" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" target="_blank" rel="noopener noreferrer" title="个人外汇管理办法 第七条 (prohibition on splitting)">CN-03</a> <a class="src" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" target="_blank" rel="noopener noreferrer" title="经常项目外汇业务指引（2020年版）第六十二条 (splitting / watchlist, current text)">CN-11</a></td></tr><tr><td data-l="Conduct"><strong>Fiat-to-virtual-currency conversion and related business activity</strong><br><span class="note">虚拟货币</span></td><td class="num" data-l="Fine">see note</td><td data-l="Escalation">classified as illegal financial activity</td><td data-l="Also">Strictly prohibited and to be suppressed; criminal liability where the activity constitutes a crime. The FX-law fine ranges in PEN-1/PEN-2 apply to the FX-control breach that funds it.</td><td data-l="Source"><a class="src" href="https://www.pbc.gov.cn/tiaofasi/144941/3581332/4348658/index.html" target="_blank" rel="noopener noreferrer" title="关于进一步防范和处置虚拟货币交易炒作风险的通知, 银发〔2021〕237号">CN-20</a></td></tr></tbody></table></div>
+<div class="danger"><p><strong>At USD 400,000 the statutory exposure on these is between
+$120,000 and $400,000.</strong> That is not a fee you negotiate; it is the range the regulation sets, before
+confiscation of illegal gains and before any criminal referral.</p></div>
+
+<h2>Layer 4 · US tax and filing penalties — usually the largest number</h2>
+<p class="note">The largest exposure in this whole analysis is not on the Chinese side. It is a
+filing failure on the US side, and it is triggered by not filing, not by transferring.</p>
+<div class="tw"><table class="stack">
+<thead><tr><th>Penalty</th><th class="num">Amount</th><th>Basis</th><th>Source</th></tr></thead>
+<tbody><tr><td data-l="Penalty"><strong>FBAR non-willful violation</strong></td><td class="num" data-l="statutory maximum">$16,536</td><td data-l="Basis">Per violation, inflation-adjusted to USD 16,536 for penalties assessed on or after 17 January 2025. A reasonable-cause exception exists where the transaction or balance was properly reported.</td><td data-l="Source"><a class="src" href="https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821" target="_blank" rel="noopener noreferrer" title="31 U.S.C. §5321(a)(5) — FBAR civil penalties (via IRS / FinCEN inflation table)">US-02</a></td></tr><tr><td data-l="Penalty"><strong>FBAR willful violation</strong></td><td class="num" data-l="greater of">$165,353</td><td data-l="Basis">The greater of USD 165,353 (inflation-adjusted) OR 50% of the account balance at the time of the violation. At USD 400,000 that second limb is USD 200,000.</td><td data-l="Source"><a class="src" href="https://www.govinfo.gov/content/pkg/USCODE-2024-title31/html/USCODE-2024-title31-subtitleIV-chap53-subchapII-sec5321.htm" target="_blank" rel="noopener noreferrer" title="31 U.S.C. §5321(a)(5)(C) — willful FBAR penalty formula">US-09</a> <a class="src" href="https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements" target="_blank" rel="noopener noreferrer" title="Comparison of Form 8938 and FBAR requirements">US-03</a></td></tr><tr><td data-l="Penalty"><strong>Failure to file a US return</strong></td><td class="num" data-l="% of tax due">25%</td><td data-l="Basis">5% of the tax per month, capped at 25%. Failure to pay adds 0.5% per month, capped at 25%. Where the failure to file is fraudulent the same paragraph is applied with 15% per month and a 75% cap.</td><td data-l="Source"><a class="src" href="https://www.law.cornell.edu/uscode/text/26/6651" target="_blank" rel="noopener noreferrer" title="26 U.S.C. §6651 — failure to file and failure to pay">US-10</a></td></tr><tr><td data-l="Penalty"><strong>Accuracy-related underpayment</strong></td><td class="num" data-l="% of underpayment">20%</td><td data-l="Basis">20% of the portion of the underpayment attributable to negligence, disregard of rules, a substantial understatement, or an undisclosed foreign financial asset understatement.</td><td data-l="Source"><a class="src" href="https://www.law.cornell.edu/uscode/text/26/6662" target="_blank" rel="noopener noreferrer" title="26 U.S.C. §6662 — accuracy-related penalty">US-11</a></td></tr><tr><td data-l="Penalty"><strong>Fraud</strong></td><td class="num" data-l="% of underpayment">75%</td><td data-l="Basis">75% of the portion of the underpayment attributable to fraud, added to the tax itself.</td><td data-l="Source"><a class="src" href="https://www.law.cornell.edu/uscode/text/26/6663" target="_blank" rel="noopener noreferrer" title="26 U.S.C. §6663 — fraud penalty">US-12</a></td></tr><tr><td data-l="Penalty"><strong>PRC IIT on the underlying income or gain</strong></td><td class="num" data-l="">—</td><td data-l="Basis">Depends on the category of income and on the cost basis, neither of which is known. Left blank.</td><td data-l="Source"><a class="src" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" target="_blank" rel="noopener noreferrer" title="Individual Income Tax Law, Article 3(3) (flat 20% rate)">CN-19</a></td></tr></tbody></table></div>
+<p class="note">The willful FBAR penalty is the greater of the inflation-adjusted statutory figure or
+50% of the account balance. At a USD 400,000 balance that second limb is <strong>$200,000</strong> —
+213 times the total cost of moving the money lawfully.</p>
+
+<h2>What this means in one paragraph</h2>
+<p>The conversion itself is not taxed. The friction is under one per cent at every size. The tax that
+does arise is on the income behind the money, at 20% of the gain where the transfer-of-assets rate
+applies, and it is owed whether or not you move anything. The penalties that reach 30% to 100% are
+for using a prohibited channel, and the penalties that reach 50% of the balance are for not filing in
+the United States. Every one of those is avoidable by doing the documented thing in the right order.</p>
+
+<footer class="site">
+<p><strong>What this is.</strong> Published-rule research with the arithmetic shown, built from official
+government, regulator, statute and provider pages retrieved on 9 November 2026. It is not legal, tax or
+investment advice, and it is not a bank quote. Rates and tariffs change — every source is linked so
+you can re-check it by hand.</p>
+<p>Values that could not be confirmed from an official page are left blank and published on the
+<a href="flagged.html">Flagged for review</a> page. Nothing is inferred or estimated.
+Edition H · session arena-e01cf383 · <a href="https://github.com/sassnarep3-star/China1">repository</a></p>
+</footer>
+</div>
+</body>
+</html>
