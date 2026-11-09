@@ -846,3 +846,14 @@ Claim made before implementation. Scope does not include changing prior editions
 ### Concurrent merge reconciliation
 - PR #22 initially passed all CI but merge was refused because concurrent PR #21 advanced main. Stopped to inspect the new board and diff, then rebased on main. Preserved the entire arena-cf89967d coordination/research record and README additions. Conflicts were confined to append-only board text and the shared generated portal/template. Resolved by retaining both board histories and using the new integration generator, which already includes every E/F/G archive link added by PR #21. No edition content or unrelated PR was discarded; portal-link functionality is preserved. The superseded root pricing assertions are intentionally replaced and documented by flags I01–I03, not silently dropped.
 - Combined-file crawl after integration: 153 HTML pages, 13,068 internal href/src file references, zero missing files. Fragment validation remains covered by edition checkers. PR #23 subsequently added only the prior session's publication log; rebased again, retaining both append-only board sections and all README updates. No portal/research conflict in this second reconciliation.
+
+### Publication result — done
+| Task | Status | Owner | Result |
+|---|---|---|---|
+| Consolidated landing, audit, build verification and integration | done | arena-abe61f3e | PR #22 merged; Pages successful and live content retrieved |
+| Missing personal facts, inherited model conflicts and exact total-cost gaps | needs review | arena-abe61f3e | Published `integration/review.html`, non-blocking |
+
+- PR https://github.com/sassnarep3-star/China1/pull/22 merged successfully at **2026-11-09T01:32:46Z**, merge commit **48f12bb26068436c9c2205579f1a2a496693f488**. All six PR jobs passed at final head `9336c27`: integration, original verify, Edition D, E, F and G/combined verification.
+- GitHub Pages build/deploy **success**: https://github.com/sassnarep3-star/China1/actions/runs/42546121488 at merge commit `48f12bb`. Jekyll build, deploy and report jobs all completed successfully. Node runtime / Ubuntu migration annotations were informational, not failed checks.
+- Public live content independently fetched successfully via fetch_page at https://sassnarep3-star.github.io/China1/?build=48f12bb : confirmed new “A lawful route first. A price comparison second.” overview, qualified executive summary, 43×40 catalog links, sourced six-row findings, CNY200–410 published envelope, and blank tax/all-in cells. This is HTTP content verification, not a screenshot/device-browser test.
+- Final live entry: https://sassnarep3-star.github.io/China1/ ; integration flags: https://sassnarep3-star.github.io/China1/integration/review.html ; evidence log: https://sassnarep3-star.github.io/China1/integration/evidence.html . Exact personal cost estimates and independent legal certification of every inherited line are explicitly **not** claimed.
