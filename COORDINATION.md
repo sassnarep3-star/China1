@@ -760,3 +760,66 @@ Cross-session request to the root-portal owner: add an Edition G link (`edition-
 - GitHub Pages: source remains `main:/`; latest build for `fdaf2d6` reported `built` with no error (duration 33,826 ms).
 - Live verification: https://sassnarep3-star.github.io/China1/edition-g/docs/index.html fetched successfully and shows Edition G overview (43 candidates / 1,720 rows / 52 sources / 47 flags). Method and flagged pages verified below.
 - Concurrent-work preservation: PRs #13/#15/#16/#17/#19 merged during this session; this deliverable was relocated from `edition-d/` to `edition-g/`, and main's README/COORDINATION/portal were preserved verbatim with append-only records. Cross-session portal-link request remains open for the portal owner.
+
+---
+
+# Session board — arena-a1326a73 — 2026-11-09
+
+Session: `arena-a1326a73`. Arena pins this session to branch `arena/a1326a73-china1`, so the
+`session-<id>/<task>` branch convention in the brief cannot be used; the fixed-branch rule takes
+precedence and no other branch will be created, switched to, or pushed. All prior boards above are
+preserved verbatim — this section is appended, nothing above it was edited.
+
+Branch point: `578ed83` = `origin/main`, level at claim time. Open PRs #12 and #14 are read-only for
+this session: they are neither merged, closed, nor rebased by me.
+
+## Situation this session inherited
+
+Seven parallel editions already exist (`/`, `/docs/`, `/dossier/`, `/edition-b/`, `/edition-c/`,
+`/edition-d/`, `/edition-e/`, `/edition-f/`, `/edition-g/`). The cross-session request logged by
+`arena-e58c83ae`, `arena-5b35ee3f`, `arena-133875bd`, `arena-7014c891` and others — *"add the later
+editions to the root portal"* — is still open, and the root landing page links only up to Edition D.
+There is no single place a reader can go to see every method, every price and every dollar amount
+across the whole repository. That integration is the gap this session claims.
+
+## Claim
+
+| ID | Task | File scope | Status |
+|---|---|---|---|
+| A1 | Read shared board, inventory all editions, count and spot-check their data | this appended section only | done |
+| A2 | Independent live re-retrieval of the load-bearing official instruments, line by line | `consolidated/data/sources.json` | in progress |
+| A3 | Deduplicated master method list with pros/cons and lawfulness, reconciled across editions | `consolidated/data/methods.json` | in progress |
+| A4 | One deterministic $10,000→$400,000 cost engine, every method, every step, formulas shown | `consolidated/data/costs.json`, `consolidated/build/**` | in progress |
+| A5 | Penalty / tax decomposition and US-reporting exposure, reconciled | `consolidated/data/tax.json`, `consolidated/data/penalty.json` | in progress |
+| A6 | Executive summary (markdown + site page) | `consolidated/EXECUTIVE_SUMMARY.md` | in progress |
+| A7 | Mobile-first consolidated dashboard + category subpages + Flagged for Review | `consolidated/docs/**` | in progress |
+| A8 | Independent verification gate: every row sourced, blanks not zeros, links, reproducibility | `consolidated/build/verify.py` | in progress |
+| A9 | Integration: portal links for Editions E/F/G and the consolidated site, PR, merge, Pages check | `index.html`, `COORDINATION.md`, `README.md`, `consolidated/**` | pending gate |
+
+## Non-overlap statement
+
+I create one new self-contained directory, `consolidated/`, and one new workflow file,
+`.github/workflows/consolidated.yml`. I do not edit, move, rename or delete any file inside
+`docs/`, `dossier/`, `edition-b/`, `edition-c/`, `edition-d/`, `edition-e/`, `edition-f/`,
+`edition-g/`, `data/`, `scripts/` or `assets/`. The only shared files I touch are three additive
+edits, each deferred until my own verification gate passes: a nav block appended to the root
+`index.html`, and appended sections in `README.md` and this file.
+
+**Known constraint on the root portal.** `edition-d/build/build.py` regenerates the root
+`index.html` from a hard-coded template and `.github/workflows/verify.yml` asserts
+`git diff --exit-code -- index.html` after running it. Any hand edit to `index.html` that the
+Edition D generator does not also produce will fail that CI job. My integration step must
+therefore be verified by running `python3 edition-d/build/build.py` and confirming a clean diff,
+not by assuming a hand edit survives.
+
+## What is unknown and stays unknown
+
+No personal balance, account-holder identity, residency, source-of-funds, tax history, bank
+quote or receiving-bank tariff has been supplied by the user. Every one of those remains
+**UNVERIFIED and blank** — never zero, never inferred. A blank cell must never render as `$0`.
+
+## Log
+
+- 2026-11-09: Claim written and pushed before any research or build began, per operating rule 2.
+  No task above was claimed by an active session at claim time; the seven earlier boards are all
+  closed/done except their published `needs review` registers, which do not block.
