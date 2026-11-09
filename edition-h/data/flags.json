@@ -1,0 +1,568 @@
+{
+  "_meta": {
+    "edition": "H",
+    "researched_utc": "2026-11-09",
+    "policy": "Open review items are published and non-blocking. Blank means unverified, never zero. N/A means not applicable or deliberately not priced."
+  },
+  "flags": [
+    {
+      "id": "F01",
+      "severity": "high",
+      "status": "open",
+      "title": "Bank FX classification vs nationality vs tax residence",
+      "detail": "A U.S. citizen with a still-active PRC resident ID may be classified inconsistently. Resolve with the bank/SAFE before using any quota or overseas-person route.",
+      "sources": [
+        "S02",
+        "S31"
+      ]
+    },
+    {
+      "id": "F02",
+      "severity": "high",
+      "status": "open",
+      "title": "No executable CNY-to-USD quote for the user's amount/date",
+      "detail": "All FX cost and all-in USD totals remain blank. The BOC board is indicative only and its ask was below its reference rate.",
+      "sources": [
+        "S16"
+      ]
+    },
+    {
+      "id": "F03",
+      "severity": "high",
+      "status": "open",
+      "title": "Unknown source-of-funds and tax history",
+      "detail": "The balance may contain salary, property gain, dividends, gifts or already-taxed principal. Personalized tax cannot be computed.",
+      "sources": [
+        "S31",
+        "S37"
+      ]
+    },
+    {
+      "id": "F04",
+      "severity": "medium",
+      "status": "resolved-for-edition-g",
+      "title": "Old staged emigrant-release rule superseded",
+      "detail": "2004 text staged releases; amended 2014 rules removed the staged requirement. Edition G uses the amended rule and 2024-based service guides.",
+      "sources": [
+        "S04",
+        "S05"
+      ]
+    },
+    {
+      "id": "F05",
+      "severity": "medium",
+      "status": "open",
+      "title": "Local SAFE document practice varies",
+      "detail": "Service guides are official but local offices may request additional evidence; apostille/consular practice depends on documents and treaties.",
+      "sources": [
+        "S07",
+        "S08",
+        "S10"
+      ]
+    },
+    {
+      "id": "F06",
+      "severity": "medium",
+      "status": "open",
+      "title": "Emigrant route only covers pre-status property",
+      "detail": "Property acquired after immigration needs another basis; do not assume the whole current balance qualifies.",
+      "sources": [
+        "S07",
+        "S09"
+      ]
+    },
+    {
+      "id": "F07",
+      "severity": "medium",
+      "status": "open",
+      "title": "Inheritance guide internal eligibility copy irregularity",
+      "detail": "SAFE Hebei inheritance guide's eligibility section appears to copy emigrant pre-status wording, while its definition and cited law correctly describe inheritance. Flagged rather than silently corrected.",
+      "sources": [
+        "S08",
+        "S04"
+      ]
+    },
+    {
+      "id": "F08",
+      "severity": "medium",
+      "status": "open",
+      "title": "Property-sale local implementation",
+      "detail": "Local tax/SAFE checklists and later housing policies must be confirmed for the specific city and sale date.",
+      "sources": [
+        "S02",
+        "S32"
+      ]
+    },
+    {
+      "id": "F09",
+      "severity": "medium",
+      "status": "open",
+      "title": "Housing assessed-rate alternative is not a default",
+      "detail": "1%-3% assessed taxation applies only where original value cannot be verified and the tax authority assesses; do not present it as a universal rate.",
+      "sources": [
+        "S32"
+      ]
+    },
+    {
+      "id": "F10",
+      "severity": "medium",
+      "status": "open",
+      "title": "Insurance payout character",
+      "detail": "Only lawful compliant insurance proceeds are covered by the SAFE FAQ; surrender/investment products may differ.",
+      "sources": [
+        "S12"
+      ]
+    },
+    {
+      "id": "F11",
+      "severity": "low",
+      "status": "open",
+      "title": "Reconversion requires original exchange trail",
+      "detail": "Long-held CNY savings without an original FX exchange memo do not qualify for the 24-month reconversion route.",
+      "sources": [
+        "S03"
+      ]
+    },
+    {
+      "id": "F12",
+      "severity": "low",
+      "status": "resolved-for-edition-g",
+      "title": "Already-FX return is not CNY conversion",
+      "detail": "Listed separately to avoid double-counting; it does not solve a CNY balance.",
+      "sources": [
+        "S02"
+      ]
+    },
+    {
+      "id": "F13",
+      "severity": "high",
+      "status": "open",
+      "title": "Quota is not a capital-account savings export right",
+      "detail": "Domestic-person quota and above-quota current-account purchases require genuine current-account purposes; splitting and false purposes are prohibited.",
+      "sources": [
+        "S02",
+        "S03"
+      ]
+    },
+    {
+      "id": "F14",
+      "severity": "high",
+      "status": "open",
+      "title": "Trade/service routes require real transactions",
+      "detail": "Fabricated contracts/invoices are prohibited; tax filing may apply.",
+      "sources": [
+        "S01",
+        "S03",
+        "S35"
+      ]
+    },
+    {
+      "id": "F15",
+      "severity": "high",
+      "status": "open",
+      "title": "Published sender fees are not all-in costs",
+      "detail": "FX spread, correspondent/receiver charges, taxes and document costs are separate and mostly unknown.",
+      "sources": [
+        "S14",
+        "S18"
+      ]
+    },
+    {
+      "id": "F16",
+      "severity": "medium",
+      "status": "open",
+      "title": "BOC full-arrival service is conditional",
+      "detail": "USD15/25 applies only where intermediary routing applies and the receiving bank condition is met; other overseas charges may still be actual.",
+      "sources": [
+        "S14"
+      ]
+    },
+    {
+      "id": "F17",
+      "severity": "medium",
+      "status": "open",
+      "title": "Draft collection risk",
+      "detail": "U.S. bank acceptance, collection fees, delay and loss/stop-payment risk are unverified.",
+      "sources": [
+        "S14"
+      ]
+    },
+    {
+      "id": "F18",
+      "severity": "medium",
+      "status": "open",
+      "title": "HSBC segment eligibility and relationship costs",
+      "detail": "Premier/Advance/Private Banking status, monthly fees and Advance opening restrictions affect availability and total cost.",
+      "sources": [
+        "S18",
+        "S19"
+      ]
+    },
+    {
+      "id": "F19",
+      "severity": "medium",
+      "status": "open",
+      "title": "Global Transfer moves FX, not CNY entitlement",
+      "detail": "CNY must first be lawfully purchased into USD; corridor and per-transfer limits must be confirmed.",
+      "sources": [
+        "S18",
+        "S19"
+      ]
+    },
+    {
+      "id": "F20",
+      "severity": "high",
+      "status": "open",
+      "title": "Wise is not a mainland-national quota workaround",
+      "detail": "Eligibility requires non-mainland-Chinese status, China work/tax records and own-account destination; overall limit is documented net income.",
+      "sources": [
+        "S20"
+      ]
+    },
+    {
+      "id": "F21",
+      "severity": "medium",
+      "status": "open",
+      "title": "Wise per-transfer and overall limits",
+      "detail": "Bank app CNY300k / Alipay CNY50k per transfer; overall limit depends on tax records and prior transfers.",
+      "sources": [
+        "S20"
+      ]
+    },
+    {
+      "id": "F22",
+      "severity": "medium",
+      "status": "open",
+      "title": "Wise current full fee schedule unverified",
+      "detail": "Only four public source-amount quotes were observed; they are not locked and do not verify a 40-point schedule. Historical Nov-2024 formulas are not used as current.",
+      "sources": [
+        "S21",
+        "S22",
+        "S23",
+        "S24"
+      ]
+    },
+    {
+      "id": "F23",
+      "severity": "medium",
+      "status": "open",
+      "title": "Wise Alipay current fee unverified",
+      "detail": "No current numeric schedule verified; live quote required.",
+      "sources": [
+        "S20"
+      ]
+    },
+    {
+      "id": "F24",
+      "severity": "high",
+      "status": "open",
+      "title": "WU bank-account payout temporarily unavailable",
+      "detail": "Only cash pickup was verified on the China outbound page; cash collection/deposit adds compliance and fees.",
+      "sources": [
+        "S25"
+      ]
+    },
+    {
+      "id": "F25",
+      "severity": "medium",
+      "status": "open",
+      "title": "WU China-outbound fees/FX unverified",
+      "detail": "No numeric fee schedule or executable quote verified.",
+      "sources": [
+        "S25"
+      ]
+    },
+    {
+      "id": "F26",
+      "severity": "high",
+      "status": "open",
+      "title": "Overseas ATM cash caps make large targets impractical",
+      "detail": "CNY100k/person/year and CNY10k/card/day caps apply; borrowing cards is prohibited.",
+      "sources": [
+        "S28"
+      ]
+    },
+    {
+      "id": "F27",
+      "severity": "medium",
+      "status": "open",
+      "title": "BOC future ATM pricing not current on research date",
+      "detail": "Mastercard/Visa 2.5% min USD3/max USD40 starts 2026-11-11; do not apply it on 2026-11-09.",
+      "sources": [
+        "S15"
+      ]
+    },
+    {
+      "id": "F28",
+      "severity": "medium",
+      "status": "open",
+      "title": "HSBC ATM segment/network differences",
+      "detail": "Premier HSBC ATMs free; UnionPay formula differs; foreign surcharges may apply.",
+      "sources": [
+        "S18"
+      ]
+    },
+    {
+      "id": "F29",
+      "severity": "high",
+      "status": "open",
+      "title": "Cash export above USD10k generally prohibited",
+      "detail": "Special-case SAFE permit required; frequent-traveler lower caps apply. Do not treat cash as a large-balance workaround.",
+      "sources": [
+        "S29"
+      ]
+    },
+    {
+      "id": "F30",
+      "severity": "medium",
+      "status": "open",
+      "title": "U.S. cash declaration and deposit",
+      "detail": "Over USD10k entering/leaving the U.S. requires FinCEN 105; U.S. bank deposit policies vary.",
+      "sources": [
+        "S30"
+      ]
+    },
+    {
+      "id": "F31",
+      "severity": "medium",
+      "status": "open",
+      "title": "MoneyGram China corridor unverified",
+      "detail": "Generic agent page does not verify CNY funding, USD payout, own-account eligibility, limits or fees.",
+      "sources": [
+        "S26"
+      ]
+    },
+    {
+      "id": "F32",
+      "severity": "medium",
+      "status": "open",
+      "title": "PayPal C2 repatriation unverified",
+      "detail": "International payment capability does not establish CNY bank-funded own-account USD withdrawal.",
+      "sources": [
+        "S27"
+      ]
+    },
+    {
+      "id": "F33",
+      "severity": "high",
+      "status": "resolved-for-edition-g",
+      "title": "Foreign-individual FIE dividend exemption repealed",
+      "detail": "MOF/STA 2026 No. 27 imposes 20% IIT from 2026-09-01. Prior editions' exemption claims are flagged as outdated.",
+      "sources": [
+        "S33"
+      ]
+    },
+    {
+      "id": "F34",
+      "severity": "medium",
+      "status": "open",
+      "title": "Treaty relief and U.S. foreign tax credit are fact-dependent",
+      "detail": "Beneficial ownership, residence, saving clause and credit limitations prevent automatic full offset.",
+      "sources": [
+        "S36",
+        "S37"
+      ]
+    },
+    {
+      "id": "F35",
+      "severity": "medium",
+      "status": "open",
+      "title": "Business routes require real entities/transactions",
+      "detail": "Entity tax, registration and operational checklists are not fully verified for every route; personal savings cannot be relabelled.",
+      "sources": [
+        "S01",
+        "S06",
+        "S48"
+      ]
+    },
+    {
+      "id": "F36",
+      "severity": "medium",
+      "status": "open",
+      "title": "Capital reduction/equity sale current checklist not fully extracted",
+      "detail": "2024 national PDF extraction stopped before the relevant operational detail; bank checklist required.",
+      "sources": [
+        "S06"
+      ]
+    },
+    {
+      "id": "F37",
+      "severity": "medium",
+      "status": "open",
+      "title": "Cash pooling/outbound lending detailed rules unverified",
+      "detail": "Only framework verified; not a personal repatriation route.",
+      "sources": [
+        "S01",
+        "S06"
+      ]
+    },
+    {
+      "id": "F38",
+      "severity": "medium",
+      "status": "open",
+      "title": "QDII product availability",
+      "detail": "HSBC lists subscription suspension notices; product-level availability must be checked. QDII is not free USD repatriation.",
+      "sources": [
+        "S17",
+        "S51"
+      ]
+    },
+    {
+      "id": "F39",
+      "severity": "medium",
+      "status": "open",
+      "title": "WMC closed loop",
+      "detail": "Southbound funds return via the same RMB closed loop; not free USD repatriation.",
+      "sources": [
+        "S49",
+        "S50"
+      ]
+    },
+    {
+      "id": "F40",
+      "severity": "medium",
+      "status": "open",
+      "title": "Employee plan proceeds return through dedicated structure",
+      "detail": "Not a general offshore savings retention route.",
+      "sources": [
+        "S47"
+      ]
+    },
+    {
+      "id": "F41",
+      "severity": "medium",
+      "status": "open",
+      "title": "ODI/SPV is investment, not personal spending money",
+      "detail": "Approvals/filings and later distribution rules apply.",
+      "sources": [
+        "S01",
+        "S06",
+        "S48"
+      ]
+    },
+    {
+      "id": "F42",
+      "severity": "high",
+      "status": "resolved-for-edition-h",
+      "title": "Prohibited schemes rejected",
+      "detail": "PBOC Yinfa [2026] No. 42 now governs virtual currency and expressly repealed Yinfa [2021] No. 237. Edition H uses the current rule; earlier editions citing only the repealed notice are flagged for review.",
+      "sources": [
+        "S45"
+      ]
+    },
+    {
+      "id": "F43",
+      "severity": "medium",
+      "status": "open",
+      "title": "Outward gift basis unverified",
+      "detail": "U.S. Form 3520 reporting is verified, but a general PRC outward-gift entitlement for a domestic relative was not.",
+      "sources": [
+        "S02",
+        "S43"
+      ]
+    },
+    {
+      "id": "F44",
+      "severity": "medium",
+      "status": "open",
+      "title": "Revolut/Remitly/Xoom outbound CNY corridor unverified",
+      "detail": "Inbound-to-China capability is not outbound capability.",
+      "sources": [
+        "S03"
+      ]
+    },
+    {
+      "id": "F45",
+      "severity": "low",
+      "status": "resolved-for-edition-g",
+      "title": "U.S. 1% remittance tax misapplication",
+      "detail": "It applies to specified U.S.-outbound physical-instrument-funded remittances, not China-to-U.S. transfers.",
+      "sources": [
+        "S44"
+      ]
+    },
+    {
+      "id": "F46",
+      "severity": "medium",
+      "status": "open",
+      "title": "Personal FX gain character and basis",
+      "detail": "The USD200 threshold disapplies the exclusion for the transaction; it is not a USD200 deduction. Basis/holding period/personal-vs-investment character require records.",
+      "sources": [
+        "S38",
+        "S39"
+      ]
+    },
+    {
+      "id": "F47",
+      "severity": "high",
+      "status": "open",
+      "title": "FBAR/FATCA history unknown",
+      "detail": "Prior filings, account maxima and willfulness are unknown. Penalty maxima are ceilings, not predicted annual charges.",
+      "sources": [
+        "S40",
+        "S41",
+        "S42"
+      ]
+    },
+    {
+      "id": "F48",
+      "severity": "high",
+      "status": "resolved-for-edition-h",
+      "title": "Superseded crypto authority in earlier editions",
+      "detail": "Earlier editions cite PBOC 2021 No. 237. Current 2026 No. 42 expressly repeals it. The conclusion remains rejection, but the authority and expanded RWA wording require updated review.",
+      "sources": [
+        "S45"
+      ]
+    },
+    {
+      "id": "F49",
+      "severity": "medium",
+      "status": "open",
+      "title": "Point-in-time BOC indicative FX board",
+      "detail": "CNY estimates use BOC 2026-11-09 09:15:45 USD100 ask 669.19 and reference 671.88. BOC says the board is for reference only and the actual channel/counter rate controls. No FX spread or guaranteed receipt is inferred.",
+      "sources": [
+        "S16"
+      ]
+    },
+    {
+      "id": "F50",
+      "severity": "medium",
+      "status": "open",
+      "title": "Conditional BOC execution scenario for personal entitlements",
+      "detail": "Personal entitlement grids show a conditional BOC TT execution estimate so each amount has arithmetic. This is not proof BOC accepts the route, not an additional entitlement fee, and not an all-in quote. Choose one rail only.",
+      "sources": [
+        "S03",
+        "S14",
+        "S16"
+      ]
+    },
+    {
+      "id": "F51",
+      "severity": "medium",
+      "status": "open",
+      "title": "Wise public quotes drifted between review dates",
+      "detail": "On 2026-11-09 the four public pages showed bank fees CNY436.18, 848.58, 1,228.50 and 1,574.72 for source amounts CNY66,929, 133,858, 200,787 and 267,716. The last two differed slightly from the earlier edition. Edition H records observations only and never extrapolates a 40-row schedule.",
+      "sources": [
+        "S20",
+        "S21",
+        "S22",
+        "S23",
+        "S24"
+      ]
+    },
+    {
+      "id": "F52",
+      "severity": "high",
+      "status": "open",
+      "title": "No personalized all-in total or tax bill",
+      "detail": "The user supplied no source-of-funds breakdown, tax history, bank classification, receiving bank, executable quote, or document quotes. Tax, downstream, document and all-in cells remain blank and UNVERIFIED. Partial known charges must not be read as total cost.",
+      "sources": [
+        "S03",
+        "S14",
+        "S18",
+        "S31",
+        "S37"
+      ]
+    }
+  ]
+}

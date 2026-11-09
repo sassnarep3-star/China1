@@ -1,0 +1,104 @@
+{
+  "_meta": {
+    "edition": "H",
+    "researched_utc": "2026-11-09"
+  },
+  "headline": "Best lawful path: match the balance to its real source, document the tax treatment, then compare live execution quotes. For eligible after-tax current income, a BOC TT has the lowest verified published sender fee among the standard BOC/HSBC tariffs modeled; this is not an all-in ranking.",
+  "findings": [
+    {
+      "title": "Identity and source-of-funds decide the route",
+      "detail": "A U.S. citizen is usually an overseas individual (境外个人) for PRC individual-FX rules if the bank classifies them by passport. Documented current-account RMB income can be purchased/remitted with tax evidence; pre-emigration property and inheritance have separate SAFE approval routes. The domestic-person USD50k quota is not a general savings-export right.",
+      "sources": [
+        "S02",
+        "S03",
+        "S07",
+        "S08"
+      ]
+    },
+    {
+      "title": "There is no verified single 'conversion penalty'",
+      "detail": "Cost separates into FX quote/spread, sender commission/cable, correspondent/receiver charges, document costs, underlying income/property tax, and U.S. FX-gain/reporting exposure. The BOC board's ~0.42% bid/ask gap is a round-trip indicator, not a verified one-way loss; its ask was below its reference rate.",
+      "sources": [
+        "S14",
+        "S16",
+        "S18",
+        "S39"
+      ]
+    },
+    {
+      "title": "All-in totals stay blank until a live quote exists",
+      "detail": "Every method has a 40-point USD-equivalent grid. Personal entitlements include a conditional BOC TT amount-specific scenario. Known charges are arithmetic from official tariffs and a timestamped BOC indicative ask. FX cost, downstream charges, documentation, personal tax and all-in totals remain blank where unverified.",
+      "sources": [
+        "S14",
+        "S16",
+        "S18",
+        "S20",
+        "S21",
+        "S22",
+        "S23",
+        "S24"
+      ]
+    },
+    {
+      "title": "Emigrant and inheritance transfers are real capital-account routes",
+      "detail": "Amended 2014 rules removed staged emigrant releases; approved amounts may be remitted once or in installments to the applicant's own overseas account. 2024-based SAFE service guides supply the document checklist. Emigrant transfer covers pre-status property only.",
+      "sources": [
+        "S04",
+        "S05",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11"
+      ]
+    },
+    {
+      "title": "Provider rails do not create legal entitlement",
+      "detail": "Wise from-CNY is limited to eligible non-mainland-Chinese individuals with China work/tax records and own-account destinations. WU China bank-account payout is temporarily unavailable; cash pickup adds steps. MoneyGram/PayPal outbound CNY repatriation corridors remain unverified.",
+      "sources": [
+        "S20",
+        "S25",
+        "S26",
+        "S27"
+      ]
+    },
+    {
+      "title": "Tax follows the income, not the wire",
+      "detail": "Moving after-tax principal is not itself a PRC IIT category. Housing gains, dividends and other income have their own rules. From 2026-09-01 foreign individuals' FIE dividends face 20% IIT; the old exemption is repealed. U.S. citizens report worldwide income and may face FBAR/FATCA duties independent of the transfer.",
+      "sources": [
+        "S31",
+        "S32",
+        "S33",
+        "S37",
+        "S40"
+      ]
+    },
+    {
+      "title": "U.S. reporting penalties are ceilings, not transfer fees",
+      "detail": "FBAR/FATCA thresholds and penalties are separate from conversion cost. Bittner counts nonwillful FBAR penalties per report; willful 50% is a statutory ceiling in specified cases, not a predicted annual charge. The U.S. 1% remittance tax applies to specified U.S.-outbound physical-instrument transfers, not China-to-U.S. moves.",
+      "sources": [
+        "S40",
+        "S41",
+        "S42",
+        "S44"
+      ]
+    },
+    {
+      "title": "Prohibited schemes are rejected, not priced",
+      "detail": "Quota splitting, underground banking, crypto bridges and fabricated trade are rejected. PBOC Yinfa [2026] No. 42 is the current virtual-currency authority and expressly repealed the 2021 notice. Prohibited schemes receive no execution steps or legitimising price.",
+      "sources": [
+        "S01",
+        "S03",
+        "S45"
+      ]
+    }
+  ],
+  "decision_order": [
+    "Resolve bank FX classification and PRC tax residence separately.",
+    "Identify the real source of every part of the balance (salary, property sale, inheritance, dividends, already-taxed principal).",
+    "Match each part to its legal entitlement: documented current income, emigrant property, inheritance, property sale, insurance, or business distribution.",
+    "Complete tax certificates/filings for the underlying income before remitting.",
+    "Only then compare execution rails (BOC/HSBC TT, HSBC Global Transfer, eligible Wise, WU cash pickup) using live executable quotes.",
+    "Keep receipts for U.S. FBAR/FATCA/3520 and personal FX-gain analysis."
+  ]
+}
