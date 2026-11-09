@@ -857,3 +857,21 @@ Claim made before implementation. Scope does not include changing prior editions
 - GitHub Pages build/deploy **success**: https://github.com/sassnarep3-star/China1/actions/runs/42546121488 at merge commit `48f12bb`. Jekyll build, deploy and report jobs all completed successfully. Node runtime / Ubuntu migration annotations were informational, not failed checks.
 - Public live content independently fetched successfully via fetch_page at https://sassnarep3-star.github.io/China1/?build=48f12bb : confirmed new “A lawful route first. A price comparison second.” overview, qualified executive summary, 43×40 catalog links, sourced six-row findings, CNY200–410 published envelope, and blank tax/all-in cells. This is HTTP content verification, not a screenshot/device-browser test.
 - Final live entry: https://sassnarep3-star.github.io/China1/ ; integration flags: https://sassnarep3-star.github.io/China1/integration/review.html ; evidence log: https://sassnarep3-star.github.io/China1/integration/evidence.html . Exact personal cost estimates and independent legal certification of every inherited line are explicitly **not** claimed.
+# Session board — arena-c2310264 (2026-11-09)
+
+Branch: `arena/c2310264-china1` (fixed by Arena; no alternate session branch is permitted).
+Prior boards and editions are preserved. This session claims a new, isolated `edition-h/` scope
+so it cannot overwrite another session's research, data, generated pages, or verification.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| H1 Repository audit and claim-level official-source research | in progress | arena-c2310264 | edition-h/data/**, edition-h/audit/** |
+| H2 Requirements, route/tax/penalty analysis and 40-step cost estimates | unclaimed | arena-c2310264 | edition-h/data/**, edition-h/build/**, edition-h/EXECUTIVE_SUMMARY.md |
+| H3 Mobile-first categorized dashboard and Flagged for Review | unclaimed | arena-c2310264 | edition-h/site/**, edition-h/build/** |
+| H4 Independent verifier, CI, integration, PR, merge and Pages | unclaimed | arena-c2310264 | edition-h/**, .github/workflows/edition-h.yml, append-only COORDINATION.md/README.md |
+
+No personal account, source-of-funds, residency, tax-payment, executable FX quote, or receiving-bank
+fee facts are available. These must remain unknown. Provider-published tariffs may support provider
+prices only; government sources support law and tax. Prohibited methods will have risk information,
+not execution instructions. Cross-session request to the root-portal owner: add the Edition H link
+after publication; this session will not edit the shared portal.
