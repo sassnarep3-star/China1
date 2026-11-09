@@ -401,3 +401,4 @@ published on each edition's Flagged-for-Review page. Details: `COORDINATION.md`,
 
 **Not legal, tax or financial advice.** Consult a China-qualified FX/tax adviser and a U.S. international tax
 professional before moving funds; the decisive facts (source of funds, residency, documents) are case-specific.
+- PR [#21](https://github.com/sassnarep3-star/China1/pull/21) merged 2026-11-09 (`c35e131`); GitHub Pages reported `built` at that exact commit; live site verified with the new archive links.
