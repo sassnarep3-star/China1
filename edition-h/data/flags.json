@@ -1,0 +1,217 @@
+{
+  "_meta": {
+    "edition": "H",
+    "compiled": "2026-11-09",
+    "rule": "A flag is a place where a value was withheld, a source was not retrieved, or two official texts do not fit together. An empty 'sources' list means no official instrument was retrieved for that point: the item is unverified by definition and no number is shown anywhere on the site."
+  },
+  "flags": [
+    {
+      "id": "F-01",
+      "severity": "high",
+      "title": "The rule set classifies the same person two ways",
+      "detail": "The FX Regulations define a domestic individual as a PRC citizen or a foreigner continuously resident in China for one year (CN-01 Art. 52(2)). The 2020 Guidelines give a foreign individual a documented purchase route with no annual cap (CN-02 Art. 59) and then add that a foreign permanent-residence ID holder uses the annual quota. A US citizen who has lived in China for years can therefore be treated as domestic at one counter and foreign at another. Which classification the bank applies decides whether the cap is USD 50,000 or none, and the outcome cannot be resolved from the texts alone.",
+      "sources": ["CN-01", "CN-02"],
+      "status": "unverified"
+    },
+    {
+      "id": "F-02",
+      "severity": "high",
+      "title": "The text permits a route the counter may refuse",
+      "detail": "Art. 59 is permissive language addressed to banks, and Art. 68 lets a bank refuse a transaction whose reality it doubts. Nothing retrieved this session states that a particular branch will accept a particular documentary file. The cost tables price the route; they do not promise approval.",
+      "sources": ["CN-02"],
+      "status": "unverified"
+    },
+    {
+      "id": "F-03",
+      "severity": "high",
+      "title": "The origin of the money is unknown",
+      "detail": "No information was supplied about how the RMB balance arose: salary, property sale, inheritance, business proceeds or a gift. Every route in this edition is conditional on that fact, which is why the site recommends a decision tree rather than a single answer, and why no personal tax or penalty amount is computed.",
+      "sources": [],
+      "status": "unverified"
+    },
+    {
+      "id": "F-04",
+      "severity": "medium",
+      "title": "Currency of the 2004 personal-property transfer measures",
+      "detail": "The PBOC Announcement [2004] No. 16 page on the SAFE portal carries no repeal notice, and the articles are quoted in full on the site. No later consolidation that would supersede it was retrieved this session. Its in-force status, and any provincial implementation differences, need confirmation from SAFE before an application is prepared.",
+      "sources": ["CN-03"],
+      "status": "needs confirmation"
+    },
+    {
+      "id": "F-05",
+      "severity": "high",
+      "title": "Prior US filing history is unknown",
+      "detail": "The largest number in the whole project is the FBAR exposure, and it depends entirely on whether prior years were filed. A non-willful maximum is USD 16,536 per violation; a willful one is the greater of USD 165,353 or 50% of the balance. No delinquency analysis is published because the facts were not supplied.",
+      "sources": ["US-03", "US-06"],
+      "status": "unverified"
+    },
+    {
+      "id": "F-06",
+      "severity": "medium",
+      "title": "The USD 15 full-amount line comes from a corporate price list",
+      "detail": "CN-08 is BOC's trade-finance announcement, not the personal tariff. The USD 15 (New York branch account) / USD 25 (other) full-amount charge is therefore shown in a separate column and excluded from the headline totals, because applying a corporate schedule to a personal remittance is an assumption.",
+      "sources": ["CN-06", "CN-08"],
+      "status": "unverified"
+    },
+    {
+      "id": "F-07",
+      "severity": "medium",
+      "title": "The US receiving-bank fee is blank",
+      "detail": "No official fee schedule was retrieved for a personal US account receiving an international wire. Earlier editions used a USD 15 figure taken from a business-account schedule; that substitution is not repeated here. The ladder stops at the China side and the flag tells the reader to add their own bank's inbound fee.",
+      "sources": [],
+      "status": "unverified"
+    },
+    {
+      "id": "F-08",
+      "severity": "medium",
+      "title": "Wise's CNY fee is not published",
+      "detail": "The Wise help page sets eligibility, the CNY 300,000 single-transfer cap and the own-account-only payout rule, but the conversion fee is quoted per transaction. No fee figure can be put in a ladder without inventing one, so the Wise route appears with a verified cap and a blank price.",
+      "sources": ["WISE-01"],
+      "status": "unverified"
+    },
+    {
+      "id": "F-09",
+      "severity": "low",
+      "title": "Cash-carriage travel cost is unpublished",
+      "detail": "The cash route's FX cost can be computed from the board, but the trips needed (80 of them for USD 400,000) carry a travel cost with no published price. The ladder shows conversion cost only and says so.",
+      "sources": ["CN-02", "CN-07"],
+      "status": "unverified"
+    },
+    {
+      "id": "F-10",
+      "severity": "low",
+      "title": "Trade-settlement route has no amount ladder",
+      "detail": "The individual cross-border e-commerce and market-purchase route is quota-free by rule, but it depends on a real trade and no published tariff covers it. No ladder is printed for a route that cannot apply to a passive balance.",
+      "sources": ["CN-02"],
+      "status": "not applicable"
+    },
+    {
+      "id": "F-11",
+      "severity": "high",
+      "title": "Emigration status is unproven",
+      "detail": "The emigration transfer requires cancelled PRC household registration and certified proof of settlement abroad. Whether a naturalised US citizen retains those documents is a personal fact not supplied. The route is the strongest one on paper and the weakest one to assume.",
+      "sources": ["CN-03"],
+      "status": "unverified"
+    },
+    {
+      "id": "F-12",
+      "severity": "medium",
+      "title": "An inheritance route needs an inheritance",
+      "detail": "The inheritance transfer requires a completed succession, notarised proof of inheritance, the deceased's title documents and the deceased's China tax certificate. None of that is assumed here; the route is listed because it is the one written expressly for a foreign heir.",
+      "sources": ["CN-03"],
+      "status": "unverified"
+    },
+    {
+      "id": "F-13",
+      "severity": "medium",
+      "title": "The property gain is unknown, so the 20% tax is blank",
+      "detail": "China taxes the gain on transfer of assets at 20%. Without the original cost and the sale price, no tax amount can be published. The rate is verified; the amount is withheld.",
+      "sources": ["CN-04"],
+      "status": "unverified"
+    },
+    {
+      "id": "F-14",
+      "severity": "low",
+      "title": "FIE liquidation cost is unquoted",
+      "detail": "Liquidation, audit and tax-clearance costs for a company are commercial and were not retrieved. The route is described but not priced.",
+      "sources": ["CN-01"],
+      "status": "unverified"
+    },
+    {
+      "id": "F-15",
+      "severity": "medium",
+      "title": "US cross-border currency reporting not verified",
+      "detail": "A US traveller carrying a large sum across the border must ordinarily report it, but no CBP or FinCEN text was retrieved this session (the CBP help page returned an error). No threshold is stated here and the point is flagged rather than asserted.",
+      "sources": [],
+      "status": "unverified"
+    },
+    {
+      "id": "F-16",
+      "severity": "medium",
+      "title": "Wise's overall limit depends on China tax history",
+      "detail": "Wise's overall sending limit is calculated from declared China income and tax paid. For a large balance with a modest declared salary the limit may be far below the balance, which is a bigger constraint than the CNY 300,000 single-transfer cap.",
+      "sources": ["WISE-01"],
+      "status": "unverified"
+    },
+    {
+      "id": "F-17",
+      "severity": "medium",
+      "title": "UnionPay overseas spending: quota treatment and markup unverified",
+      "detail": "No official text retrieved this session states whether overseas card spending consumes the facilitation quota, and no card FX markup was retrieved. Both are needed before the card can be compared with a remittance, so neither is published.",
+      "sources": ["CN-02"],
+      "status": "unverified"
+    },
+    {
+      "id": "F-18",
+      "severity": "high",
+      "title": "Cross-border RMB to a Hong Kong account has no retrieved basis",
+      "detail": "The manoeuvre is widely described in commentary and appears in no official instrument retrieved here for an individual's personal balance. CN-01 Art. 17 requires registration for outbound investment. Presented as unverified and not priced; a reader should ask SAFE before attempting it.",
+      "sources": ["CN-01"],
+      "status": "unverified"
+    },
+    {
+      "id": "F-19",
+      "severity": "medium",
+      "title": "QDII-type channels: no individual entitlement retrieved",
+      "detail": "Outbound portfolio investment runs through approved institutions. No instrument retrieved gives an individual a personal quota, and product fees are commercial. Described as unverified; not priced.",
+      "sources": ["CN-01"],
+      "status": "unverified"
+    },
+    {
+      "id": "F-20",
+      "severity": "high",
+      "title": "Prohibited-route figures are statutory ranges, not bills",
+      "detail": "Arts. 39, 40 and 45 set a fine of up to 30% of the amount, or 30%-100% where the case is serious, plus confiscation and possible criminal referral. The site prints the range so the risk is visible; it is not an assessment of any case and it is not a price.",
+      "sources": ["CN-01"],
+      "status": "statutory range"
+    },
+    {
+      "id": "F-21",
+      "severity": "medium",
+      "title": "Criminal exposure is out of scope",
+      "detail": "Whether a given conduct crosses a criminal threshold is a matter for the criminal law and for a lawyer. Nothing in this edition should be read as a statement that a penalty stops at the administrative fine.",
+      "sources": ["CN-01"],
+      "status": "out of scope"
+    },
+    {
+      "id": "F-22",
+      "severity": "medium",
+      "title": "The 2026 US 1% remittance excise tax was not verified from the statute",
+      "detail": "Commentary and practitioner summaries describe IRC section 4475, added in 2025 and effective 1 January 2026, as a 1% excise on outbound remittance transfers funded by cash or a similar physical instrument, collected by the remittance transfer provider. The statutory text was not retrieved this session (the U.S. Code lookup returned no page, and the public law text is too large to read in full), so the item is flagged and no figure is used. On the descriptions read, the tax runs on transfers out of the United States, so a China-to-US inbound wire should be outside it - but that conclusion is not verified here.",
+      "sources": [],
+      "status": "unverified"
+    },
+    {
+      "id": "F-23",
+      "severity": "low",
+      "title": "The FX board is a dated snapshot",
+      "detail": "The ladder uses the BOC board stamped 2026/11/09 09:15:45 Beijing time. Rates move hourly. The bank's page says the rate actually applied at the counter governs, so every figure here is arithmetic at a date, not a quote.",
+      "sources": ["CN-07"],
+      "status": "dated"
+    },
+    {
+      "id": "F-24",
+      "severity": "medium",
+      "title": "The repository carries nine parallel editions",
+      "detail": "Editions and dashboards exist at /, /docs/, /dossier/, /overview.html, /pages/, /edition-b/ through /edition-h/. The root page now presents Edition H as the current dashboard and lists the rest as an archive. Earlier editions were not re-verified line by line by this session except where the repo review records a specific finding.",
+      "sources": [],
+      "status": "documented"
+    },
+    {
+      "id": "F-25",
+      "severity": "medium",
+      "title": "Professional fees are unquoted",
+      "detail": "Notarisation, translation, embassy certification, PRC tax-certificate work, US tax-return preparation and legal review all cost money. None of those prices were retrieved, so none appears in a total.",
+      "sources": [],
+      "status": "unverified"
+    },
+    {
+      "id": "F-26",
+      "severity": "low",
+      "title": "The ladder excludes the US inbound fee and any intermediary deduction",
+      "detail": "Correspondent banks along the route may deduct their own charges before the money reaches the US bank unless full-amount arrival is bought. The totals are therefore a floor for the China-side cost, not the exact amount credited.",
+      "sources": ["CN-08"],
+      "status": "documented"
+    }
+  ]
+}

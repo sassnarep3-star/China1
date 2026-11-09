@@ -1,0 +1,502 @@
+{
+  "_meta": {
+    "edition": "H",
+    "compiled": "2026-11-09",
+    "status_vocabulary": {
+      "lawful": "The rule text provides a route and no approval beyond the bank's documentary review is named.",
+      "lawful_with_approval": "The rule text provides a route but names an approval or registration step.",
+      "lawful_conditional": "Lawful only if a fact about the person or the money is true; the fact is not known here.",
+      "unverified": "A route is commonly described but no official instrument retrieved this session confirms the entitlement or the price.",
+      "prohibited": "An official instrument names the conduct as prohibited or penalised."
+    }
+  },
+  "methods": [
+    {
+      "id": "M01",
+      "cat": "current",
+      "name": "Bank purchase and wire as a foreign individual against documented China-source income",
+      "name_zh": "境外个人凭境内经常项目合法人民币收入购汇汇出",
+      "status": "lawful_conditional",
+      "cost_model": "wire_purchase",
+      "summary": "The widest lawful door in the rule text. If you are a foreign individual (a US passport ordinarily makes you one) and the RMB in the account is lawful current-account income earned in China, Art. 59 lets the bank sell you FX against your ID and the source documents, including tax vouchers, and Art. 65 lets you remit it. The text sets no annual cap on this route; the constraint is documentary, not numeric.",
+      "cap": "No annual cap stated in Art. 59 for a foreign individual who is not a permanent-residence holder. Art. 64 allows remittance of up to USD 50,000 a day from an FX account on ID alone, and above that with supporting documents.",
+      "who": "A foreign individual with lawful current-account RMB income in China: salary, personal services, or other current-account receipts, with the tax position documented.",
+      "rule": [
+        "CN-02 Art. 59: a foreign individual's lawful current-account RMB income in China may be purchased into FX against ID and source documents including tax vouchers",
+        "CN-02 Art. 64: remitting FX from an account, up to USD 50,000 a day on ID alone, above that with transaction documents",
+        "CN-01 Art. 5: the State does not restrict current international payments and transfers",
+        "CN-01 Art. 12: current-account business must have a real, lawful transaction basis"
+      ],
+      "docs": [
+        "Passport and the bank's customer file",
+        "Evidence the RMB is current-account income: employment contract, payroll records, service contract and invoices, or dividend resolution",
+        "China individual income tax payment records or the tax certificate for the income",
+        "The individual FX purchase application (CN-02 Art. 57 applies to domestic individuals; banks apply the same form in practice)",
+        "Destination account details in your own name"
+      ],
+      "pros": [
+        "No annual cap in the rule text, which is the difference between this route and the USD 50,000 quota",
+        "Expressly contemplates tax vouchers, so a compliant tax history is an asset rather than an obstacle",
+        "One bank relationship, one currency conversion, published tariff"
+      ],
+      "cons": [
+        "The bank decides whether your source qualifies as current-account income; a capital gain or a property sale does not",
+        "Requires a paper trail that many balances do not have",
+        "The route does not exist for a PRC citizen or for a permanent-residence holder, who fall under the quota instead"
+      ],
+      "steps": [
+        {"do": "Confirm how the bank classifies you: foreign individual, or domestic individual because you have lived in China continuously for a year or more", "cite": "CN-01"},
+        {"do": "Assemble the income chain: contract, payroll or invoices, and the China tax record for the same money", "cite": "CN-02"},
+        {"do": "Ask the bank to purchase FX against those documents under Art. 59 rather than against the annual quota", "cite": "CN-02"},
+        {"do": "Remit in your own name; above USD 50,000 in one day the bank will ask for the transaction documents again", "cite": "CN-02"},
+        {"do": "Expect the 2026 identity-verification step on any remittance at or above RMB 5,000 / USD 1,000", "cite": "CN-05"},
+        {"do": "File the US side: FBAR if the aggregate exceeded USD 10,000 at any time, and Form 8938 if the threshold for your filing status is met", "cite": "US-04"}
+      ],
+      "sources": ["CN-01", "CN-02", "CN-05", "US-04"],
+      "flags": ["F-01", "F-02", "F-03"]
+    },
+    {
+      "id": "M02",
+      "cat": "current",
+      "name": "Annual facilitation quota, paced over calendar years",
+      "name_zh": "个人年度便利化额度（每人每年等值5万美元）",
+      "status": "lawful",
+      "cost_model": "wire_quota",
+      "summary": "The default route and the one most guides describe. Each person has USD 50,000 of settlement and USD 50,000 of purchase a year, usable on ID alone. It is the cheapest route per dollar because the documentation burden is lowest, and it is the slowest because USD 400,000 needs eight calendar years at one person.",
+      "cap": "USD 50,000 per person per calendar year for purchase and USD 50,000 for settlement; unused quota does not carry over.",
+      "who": "A domestic individual, meaning a PRC citizen or a foreigner continuously resident in China for at least a year. A foreign permanent-residence ID holder also uses the quota.",
+      "rule": [
+        "CN-02 Art. 54: annual facilitation quota of USD 50,000 for settlement and for domestic-individual purchase",
+        "CN-02 Art. 55: ID alone within the quota, at the counter or through electronic banking",
+        "CN-02 Art. 62: splitting to evade the quota is prohibited and leads to the watch list",
+        "CN-01 Art. 52(2): a foreigner continuously resident in China for one year is a domestic individual"
+      ],
+      "docs": [
+        "Passport or PRC identity card",
+        "The individual FX purchase application, with a truthful stated purpose",
+        "No source documents inside the quota, but the bank may still ask"
+      ],
+      "pros": [
+        "Lowest documentation burden of any route",
+        "Can be done online, repeatedly, without an approval file",
+        "Predictable: the same arithmetic every year"
+      ],
+      "cons": [
+        "USD 50,000 a year means USD 400,000 takes eight years and eight sets of fees",
+        "Cannot be used for overseas property or securities purchase, which are capital-account uses",
+        "Borrowing another person's quota is prohibited and is the single most common way people turn a lawful transfer into a penalised one"
+      ],
+      "steps": [
+        {"do": "Open or confirm the bank's online FX purchase and remittance access", "cite": "CN-02"},
+        {"do": "Each January, purchase up to USD 50,000 and remit it to your own US account", "cite": "CN-02"},
+        {"do": "Keep the purchase application and the remittance receipt for each year", "cite": "CN-02"},
+        {"do": "Repeat in later calendar years; unused quota is lost at the year end", "cite": "CN-02"},
+        {"do": "Never route a family member's quota for your money: Art. 62 makes both sides watch-listed", "cite": "CN-02"}
+      ],
+      "sources": ["CN-02", "CN-01", "CN-05"],
+      "flags": ["F-02", "F-05"]
+    },
+    {
+      "id": "M03",
+      "cat": "current",
+      "name": "Remit USD already held in your own FX account",
+      "name_zh": "外汇账户内外汇汇出境外",
+      "status": "lawful",
+      "cost_model": "wire_fees_only",
+      "summary": "If the balance has already been converted, this is the cheapest step available: no second conversion, so no FX margin, only the wire tariff. Art. 64 allows up to USD 50,000 a day on ID alone.",
+      "cap": "USD 50,000 per day on ID; above that, transaction documents are required. No annual cap stated for this step.",
+      "who": "Anyone holding FX in a Chinese bank account.",
+      "rule": [
+        "CN-02 Art. 64(1): FX in an account remitted abroad up to USD 50,000 a day on ID; above that with documents",
+        "CN-02 Art. 65: the same for a foreign individual",
+        "CN-01 Art. 5: current international payments and transfers are not restricted"
+      ],
+      "docs": ["Passport or ID", "Above USD 50,000 a day: documents evidencing the transaction"],
+      "pros": [
+        "No conversion spread: the FX margin is already sunk",
+        "Daily limit is high relative to the quota",
+        "Works for someone who converted onshore years ago and now wants the money out"
+      ],
+      "cons": [
+        "Only helps if the money is already USD; the typical stuck balance is CNY",
+        "The bank still verifies identity and may ask about the origin of the FX",
+        "If the FX came from a capital-account conversion, the account's own use restrictions may still bind"
+      ],
+      "steps": [
+        {"do": "Confirm the account is an FX account holding USD, not CNY", "cite": "CN-02"},
+        {"do": "Remit up to USD 50,000 a day in your own name", "cite": "CN-02"},
+        {"do": "For larger daily amounts, supply the documents behind the transaction", "cite": "CN-02"},
+        {"do": "Expect the identity-verification step under the 2026 AML order", "cite": "CN-05"}
+      ],
+      "sources": ["CN-02", "CN-01", "CN-05"],
+      "flags": ["F-03"]
+    },
+    {
+      "id": "M04",
+      "cat": "current",
+      "name": "Individual cross-border e-commerce and market-purchase settlement",
+      "name_zh": "个人跨境电子商务、市场采购贸易外汇结算",
+      "status": "lawful_conditional",
+      "cost_model": "none",
+      "summary": "A quota-free current-account channel for a person actually trading: settlement of e-commerce or market-purchase receipts is made against transaction evidence and does not consume the facilitation quota. It is not a way to move a passive balance, and this edition does not model it.",
+      "cap": "No quota where transaction evidence is provided; the bank verifies the trade.",
+      "who": "An individual actually engaged in cross-border e-commerce or market-purchase trade.",
+      "rule": [
+        "CN-02 Art. 66(2) and (3): an individual's cross-border e-commerce and market-purchase settlement is made against transaction materials or electronic trade information and does not occupy the annual facilitation quota"
+      ],
+      "docs": ["Trade platform records or customs data", "Contract and logistics documents", "ID"],
+      "pros": ["Does not consume the annual quota", "Legitimate for a real trading business"],
+      "cons": [
+        "Requires an actual trade, so it does not apply to a savings balance",
+        "No published price for the conversion step beyond the bank tariff",
+        "Not modelled here: no amount ladder is published for this route"
+      ],
+      "steps": [
+        {"do": "Establish the trade and keep the platform and logistics records", "cite": "CN-02"},
+        {"do": "Settle through your own FX account against those records", "cite": "CN-02"}
+      ],
+      "sources": ["CN-02"],
+      "flags": ["F-10"]
+    },
+    {
+      "id": "M05",
+      "cat": "capital",
+      "name": "Emigration property transfer (移民转移)",
+      "name_zh": "移民财产转移",
+      "status": "lawful_with_approval",
+      "cost_model": "emigration",
+      "summary": "The general capital-account exit for a person who has emigrated. You apply once for the whole amount, then draw it down in three releases over two years. It is the only route in this edition that is designed to move a large capital sum rather than income, and it needs SAFE approval plus a China tax certificate.",
+      "cap": "No cap on the amount that may be approved. Release schedule: no more than half first, then up to half the remainder after a year, the rest after two years; up to RMB 200,000 may be released at once. Approval is local up to RMB 500,000 and by SAFE head office above that.",
+      "who": "A person who moved from mainland China to a foreign country (or Hong Kong/Macao) and is transferring lawful property owned before acquiring the emigration status.",
+      "rule": [
+        "CN-03 Art. 2: definition of an emigration transfer",
+        "CN-03 Art. 3: the property must be your own, lawful and undisputed",
+        "CN-03 Art. 6: one application, staged releases, RMB 200,000 one-off tier",
+        "CN-03 Art. 8: documents, including cancelled PRC household registration, proof of settlement abroad, title documents and a tax certificate",
+        "CN-03 Art. 10: local approval up to RMB 500,000, SAFE head office above",
+        "CN-03 Art. 11: the bank must remit to your own account abroad and may not pay cash",
+        "CN-03 Art. 12: refused where the property is legally restricted or its origin cannot be shown"
+      ],
+      "docs": [
+        "Written application explaining the reason and the source of the property",
+        "The completed applicant form and application form",
+        "Cancelled PRC household registration certificate and proof of settlement abroad certified by a PRC embassy or consulate",
+        "Property title documents: real-estate certificate, sale contract, relocation compensation agreement",
+        "China tax certificate or tax payment certificate from the competent tax authority",
+        "Notarised authorisation if an agent acts"
+      ],
+      "pros": [
+        "Designed for exactly the large-balance problem: no USD 50,000 ceiling",
+        "Staged release means the FX exposure can be spread over two years",
+        "Published tariff applies; no black-market premium"
+      ],
+      "cons": [
+        "You must actually be an emigrant with cancelled PRC household registration; a US passport alone does not prove this file exists",
+        "SAFE approval, not bank discretion: months of processing, and head-office review above RMB 500,000",
+        "Disclosure of the full property and tax history, which cuts both ways",
+        "Three releases mean three sets of wire fees"
+      ],
+      "steps": [
+        {"do": "Confirm the household registration was cancelled and obtain the certificate", "cite": "CN-03"},
+        {"do": "Obtain proof of settlement abroad, certified by a PRC embassy or consulate", "cite": "CN-03"},
+        {"do": "Obtain the China tax certificate for the property being transferred", "cite": "CN-03"},
+        {"do": "File one application for the whole amount at the SAFE branch where your household registration was", "cite": "CN-03"},
+        {"do": "Receive the approval letter and the capital-account approval document", "cite": "CN-03"},
+        {"do": "Take the approval to the designated bank and remit release one, no more than half", "cite": "CN-03"},
+        {"do": "Repeat after 12 and 24 months for the remaining releases, re-submitting the prior approval", "cite": "CN-03"}
+      ],
+      "sources": ["CN-03", "CN-01", "CN-02", "CN-05"],
+      "flags": ["F-01", "F-04", "F-11"]
+    },
+    {
+      "id": "M06",
+      "cat": "capital",
+      "name": "Inheritance property transfer (继承转移)",
+      "name_zh": "继承财产转移",
+      "status": "lawful_with_approval",
+      "cost_model": "inheritance",
+      "summary": "The capital-account route that is written for a foreign citizen: an heir who is a foreign national (or a Hong Kong/Macao resident) applies once to transfer a lawfully inherited PRC estate. If the money in the account came from an inheritance, this is the route the rule text names.",
+      "cap": "No cap on the amount. One application per deceased person; may be paid in one or several instalments. Approval is local up to RMB 500,000 and by SAFE head office above that.",
+      "who": "A foreign citizen or Hong Kong/Macao resident who has lawfully inherited property situated in mainland China.",
+      "rule": [
+        "CN-03 Art. 2: definition of an inheritance transfer, expressly for a foreign citizen or Hong Kong/Macao resident",
+        "CN-03 Art. 6: one application, one or several remittances",
+        "CN-03 Art. 9: documents, including proof of inheritance and the deceased's property and tax documents",
+        "CN-03 Art. 10: approval thresholds",
+        "CN-03 Art. 11: remittance to your own account abroad, no cash"
+      ],
+      "docs": [
+        "Written application describing the inheritance and the deceased's property",
+        "Application form",
+        "Passport and proof of residence abroad certified by a PRC embassy or consulate",
+        "Proof of inheritance: will, notarised succession certificate or court document, notarised if not already notarised",
+        "The deceased's title documents and China tax certificate",
+        "Notarised authorisation if an agent acts"
+      ],
+      "pros": [
+        "Written around a foreign heir, which matches a US citizen's position",
+        "No annual cap and no staged-release schedule in the text",
+        "The tax certificate is of the deceased's property, which may show a low or nil gain"
+      ],
+      "cons": [
+        "Requires a completed succession with notarised documents; this is the slowest step",
+        "A dispute among heirs stops the application (Art. 12)",
+        "Only the inherited estate qualifies, not other money in the same account"
+      ],
+      "steps": [
+        {"do": "Complete the succession and obtain notarised proof of inheritance", "cite": "CN-03"},
+        {"do": "Obtain the deceased's property title documents and the China tax certificate", "cite": "CN-03"},
+        {"do": "Apply once at the SAFE branch where the deceased was registered", "cite": "CN-03"},
+        {"do": "Remit against the approval, in one or several instalments, to your own account abroad", "cite": "CN-03"}
+      ],
+      "sources": ["CN-03", "CN-01", "CN-02"],
+      "flags": ["F-12"]
+    },
+    {
+      "id": "M07",
+      "cat": "capital",
+      "name": "Sale of PRC real property: tax first, and no automatic exit",
+      "name_zh": "境内房产转让",
+      "status": "lawful_conditional",
+      "cost_model": "gain_tax",
+      "summary": "Selling a Chinese property does not itself move money out. It converts property into RMB, and it creates a taxable gain taxed at a flat 20%. The proceeds then have to leave through a current-account route (only if the gain is current-account income, which a property gain is not) or through emigration or inheritance transfer. This edition prices the tax, not the exit.",
+      "cap": "20% flat on the gain from transfer of assets; the principal is not taxed.",
+      "who": "An owner of PRC real property who is tax resident or non-resident; the sourcing and collection rules apply at the transaction.",
+      "rule": [
+        "CN-04 Art. 2(8): income from transfer of assets is taxable income",
+        "CN-04 Art. 3(3): a flat 20% rate applies to income from transfer of assets",
+        "CN-01 Art. 17: outbound investment by individuals requires registration; proceeds of a property sale are a capital-account item"
+      ],
+      "docs": ["Sale contract and title", "Tax payment certificate for the transfer", "Evidence of original cost for the gain computation"],
+      "pros": ["The tax is on the gain, not the price", "A tax certificate is the document every later route asks for"],
+      "cons": [
+        "Selling does not give you a route out; the money stays onshore",
+        "The gain is unknown here, so no tax figure can be published (F-13)",
+        "The proceeds are capital-account money, so the USD 50,000 quota cannot be used to buy FX with them"
+      ],
+      "steps": [
+        {"do": "Complete the transfer and settle the 20% tax on the gain", "cite": "CN-04"},
+        {"do": "Keep the tax certificate: it is required by the emigration and inheritance routes", "cite": "CN-03"},
+        {"do": "Choose an exit route that matches the money's character, not the quota", "cite": "CN-01"}
+      ],
+      "sources": ["CN-04", "CN-01", "CN-03"],
+      "flags": ["F-13"]
+    },
+    {
+      "id": "M08",
+      "cat": "capital",
+      "name": "Liquidation of a foreign-invested enterprise and remittance by the foreign investor",
+      "name_zh": "外商投资企业清算、外方所得汇出",
+      "status": "lawful_with_approval",
+      "cost_model": "none",
+      "summary": "The rule text allows a lawfully terminated FIE's foreign investor to purchase FX and remit the RMB belonging to it after liquidation and tax. The route exists and is not priced here: the cost depends on the liquidation, audit and tax filings, and no published tariff covers them.",
+      "cap": "No cap stated; approval and tax clearance are the constraints.",
+      "who": "A foreign investor in a PRC company that is being lawfully terminated and liquidated.",
+      "rule": [
+        "CN-01 Art. 22: capital-account FX payments follow approval rules; a lawfully terminated FIE's foreign investor's RMB may be purchased into FX and remitted after liquidation and tax",
+        "CN-01 Art. 17: outbound investment and registration requirements"
+      ],
+      "docs": ["Liquidation and audit reports", "Tax clearance", "Capital-account registration documents", "Board and approval documents"],
+      "pros": ["Expressly contemplated by the FX Regulations", "Can move a large capital sum"],
+      "cons": [
+        "Requires an actual company, with liquidation cost and time",
+        "Tax and audit work is not quoted here",
+        "No amount ladder is published for this route"
+      ],
+      "steps": [
+        {"do": "Terminate and liquidate the company lawfully, with audit", "cite": "CN-01"},
+        {"do": "Clear tax and obtain the tax documents", "cite": "CN-01"},
+        {"do": "Apply at the bank or SAFE for the capital-account remittance", "cite": "CN-01"}
+      ],
+      "sources": ["CN-01"],
+      "flags": ["F-14"]
+    },
+    {
+      "id": "M09",
+      "cat": "alternatives",
+      "name": "Carry cash out",
+      "name_zh": "携带外币现钞出境",
+      "status": "lawful_conditional",
+      "cost_model": "cash",
+      "summary": "Lawful up to USD 5,000 a trip without a permit, and USD 5,000-10,000 with a bank-issued carriage permit. Above USD 10,000 the only permit is a SAFE one, and the rule text reserves it for destinations with war-risk or similar conditions. For a US destination this is effectively closed above USD 10,000, and USD 400,000 would take eighty trips.",
+      "cap": "USD 5,000 per trip without a permit; USD 5,000-10,000 with a bank permit; above USD 10,000 only with a SAFE permit for restricted destinations.",
+      "who": "A traveller carrying their own foreign cash.",
+      "rule": [
+        "CN-02 Art. 89: permit tiers and the SAFE-only tier above USD 10,000",
+        "CN-02 Art. 86: cash withdrawal up to USD 10,000 a day on ID",
+        "CN-01 Art. 42: illegal carriage of FX - warning and a fine up to 20% of the amount"
+      ],
+      "docs": ["Passport", "Bank-issued carriage permit for USD 5,000-10,000", "Customs declaration where required"],
+      "pros": ["No wire fee", "No bank commission", "Settles small amounts simply"],
+      "cons": [
+        "Eighty trips for USD 400,000 at USD 5,000 each",
+        "Travel cost and risk are real and are not published anywhere (F-09)",
+        "Above USD 10,000 to the US the permit route is not available on the text read here"
+      ],
+      "steps": [
+        {"do": "Withdraw up to USD 10,000 a day on ID", "cite": "CN-02"},
+        {"do": "For USD 5,000-10,000 outbound, obtain the bank's carriage permit", "cite": "CN-02"},
+        {"do": "Declare at customs where required", "cite": "CN-02"}
+      ],
+      "sources": ["CN-02", "CN-01"],
+      "flags": ["F-09", "F-15"]
+    },
+    {
+      "id": "M10",
+      "cat": "alternatives",
+      "name": "Wise CNY-to-USD transfer",
+      "name_zh": "Wise 人民币汇出",
+      "status": "lawful_conditional",
+      "cost_model": "none",
+      "summary": "A licensed route with published eligibility, and a narrow one. Wise's own help page says a sender from CNY must not be mainland Chinese, or must have worked in China with a China tax record showing tax paid in the last three years; the maximum single transfer is CNY 300,000; and the money can only go to another account you own. The fee is quoted per transaction and is not published, so no figure is used here.",
+      "cap": "CNY 300,000 per transfer from the China bank app; an overall limit based on declared China income and tax paid.",
+      "who": "A non-mainland-Chinese sender, or someone who has worked in China with a recent China tax record.",
+      "rule": [
+        "WISE-01: eligibility, CNY 300,000 single-transfer cap, own-account-only payout, tax record requirement",
+        "CN-05 Art. 34: the 2026 identity-verification threshold applies to the underlying bank transfer"
+      ],
+      "docs": ["Passport", "China tax record showing tax paid within three years", "Proof that the destination account is yours"],
+      "pros": [
+        "Published, checkable eligibility rather than a rumour",
+        "Mid-market-style pricing is Wise's stated model",
+        "Handles the conversion and the transfer in one step"
+      ],
+      "cons": [
+        "The fee is quote-based, so it cannot be put in the ladder (F-08)",
+        "Own-account-only payout rules out paying a relative",
+        "The overall limit depends on your China tax history, which may be far below your balance",
+        "Mainland Chinese citizens cannot use it as CNY senders"
+      ],
+      "steps": [
+        {"do": "Check the eligibility conditions on Wise's CNY page against your own status", "cite": "WISE-01"},
+        {"do": "Obtain the China tax record for the last three years", "cite": "WISE-01"},
+        {"do": "Verify identity with Wise (1-2 working days)", "cite": "WISE-01"},
+        {"do": "Send to your own US or Wise account, up to CNY 300,000 per transfer", "cite": "WISE-01"}
+      ],
+      "sources": ["WISE-01", "CN-05"],
+      "flags": ["F-08", "F-16"]
+    },
+    {
+      "id": "M11",
+      "cat": "alternatives",
+      "name": "Spend from the CNY balance abroad on a UnionPay card",
+      "name_zh": "银联卡境外消费",
+      "status": "unverified",
+      "cost_model": "none",
+      "summary": "Spending the balance directly avoids a remittance, but it is consumption, not conversion: it pays for goods and services and cannot deliver USD to your US account. No official rule retrieved this session states whether card spending abroad consumes the facilitation quota, or what the card's FX markup is. Both points are flagged, and no figure is published.",
+      "cap": "Not verified.",
+      "who": "A cardholder spending abroad.",
+      "rule": ["CN-02 Art. 76 lists card-related settlement cases that are not entered in the individual FX system; it does not settle the outbound-spending question"],
+      "docs": ["Card and ID"],
+      "pros": ["No remittance step", "Useful for living costs while in China or travelling"],
+      "cons": [
+        "Does not put USD in your account",
+        "Quota treatment and card FX markup not verified (F-17)",
+        "No published price, so no cell in the ladder"
+      ],
+      "steps": [
+        {"do": "Ask the issuing bank in writing whether overseas card spending consumes the annual quota", "cite": "CN-02"},
+        {"do": "Ask for the card's FX conversion and any cross-border fee in writing", "cite": "CN-02"}
+      ],
+      "sources": ["CN-02"],
+      "flags": ["F-17"]
+    },
+    {
+      "id": "M12",
+      "cat": "alternatives",
+      "name": "Cross-border RMB to your own Hong Kong account, then convert offshore",
+      "name_zh": "跨境人民币汇至本人香港账户",
+      "status": "unverified",
+      "cost_model": "none",
+      "summary": "Widely described, and not verified here. An individual's cross-border RMB remittance to their own offshore account depends on capital-account rules and on the receiving bank's policy; no official instrument retrieved this session grants an individual that entitlement for a personal balance. Nothing is priced and nothing is recommended.",
+      "cap": "Not verified.",
+      "who": "Not verified.",
+      "rule": ["No official instrument supporting an individual entitlement was retrieved this session; CN-01 Art. 17 requires registration for outbound investment by individuals"],
+      "docs": ["Not verified"],
+      "pros": ["Would avoid the USD purchase quota if it were available"],
+      "cons": [
+        "No official basis retrieved (F-18)",
+        "Treating an unverified channel as available is how people end up in an Art. 39 case",
+        "No price, no ladder"
+      ],
+      "steps": [
+        {"do": "Ask SAFE in writing whether your own case qualifies before attempting it", "cite": "CN-01"}
+      ],
+      "sources": ["CN-01"],
+      "flags": ["F-18"]
+    },
+    {
+      "id": "M13",
+      "cat": "alternatives",
+      "name": "Regulated outbound investment schemes (QDII and similar)",
+      "name_zh": "合格境内机构投资者等境外投资",
+      "status": "unverified",
+      "cost_model": "none",
+      "summary": "Outbound portfolio investment by individuals runs through approved institutional channels. No official instrument retrieved this session gives an individual a personal quota or a direct entitlement, and the retail product terms are set by the institutions. Not priced, not recommended.",
+      "cap": "Not verified for individuals.",
+      "who": "Not verified.",
+      "rule": ["CN-01 Art. 17: domestic institutions and individuals investing abroad must register, and where approval or filing is required it precedes the FX registration"],
+      "docs": ["Not verified"],
+      "pros": ["A lawful institutional channel exists in principle"],
+      "cons": ["No individual entitlement retrieved (F-19)", "Product fees are commercial and not in the official register"],
+      "steps": [
+        {"do": "Ask the institution and SAFE for the current rules before relying on the channel", "cite": "CN-01"}
+      ],
+      "sources": ["CN-01"],
+      "flags": ["F-19"]
+    },
+    {
+      "id": "M14",
+      "cat": "prohibited",
+      "name": "Splitting the balance across relatives' or friends' quotas",
+      "name_zh": "分拆结售汇",
+      "status": "prohibited",
+      "cost_model": "fine",
+      "summary": "The single most common workaround, and it is prohibited by name. Art. 62 puts both the person who lends a quota and the person who borrows one on a watch list for the current year plus two more, and the FX Regulations penalise evasion with a fine of up to 30% of the amount, or 30%-100% in a serious case, plus confiscation and possible criminal referral.",
+      "cap": "Not applicable: the conduct is prohibited.",
+      "who": "Not applicable.",
+      "rule": [
+        "CN-02 Art. 62: no splitting to evade the quota or the reality check; watch list applies to lender and borrower",
+        "CN-02 Art. 61: close relatives may act for you within your own quota with authorisation, which is different from using their quota",
+        "CN-01 Art. 39: evasion of FX control - fine up to 30%, 30%-100% if serious",
+        "CN-01 Art. 40: fraudulent purchase of FX - fine up to 30%, 30%-100% if serious"
+      ],
+      "docs": ["None: no procedure is published here"],
+      "pros": ["None that survives enforcement"],
+      "cons": [
+        "Watch list for three years and strict documentary review after that",
+        "Statutory fine range of 30%-100% of the amount in a serious case, plus confiscation",
+        "Each family member carries the penalty risk personally"
+      ],
+      "steps": [
+        {"do": "No steps are given. The conduct is prohibited; the lawful alternative is M01 or M05", "cite": "CN-01"}
+      ],
+      "sources": ["CN-01", "CN-02"],
+      "flags": ["F-20"]
+    },
+    {
+      "id": "M15",
+      "cat": "prohibited",
+      "name": "Underground bank, mirror trade or private FX dealer",
+      "name_zh": "地下钱庄、对敲、私自买卖外汇",
+      "status": "prohibited",
+      "cost_model": "fine",
+      "summary": "Private or disguised FX dealing is named in Art. 45: warning, confiscation of illegal gains, a fine of up to 30% of the amount, 30%-100% in a serious case, and criminal liability where the threshold is met. The quoted 'discount' is a price for legal risk, not a market rate.",
+      "cap": "Not applicable.",
+      "who": "Not applicable.",
+      "rule": ["CN-01 Art. 45: private, disguised or brokered FX dealing is penalised", "CN-01 Art. 40: fraud and illegal arbitrage"],
+      "docs": ["None: no procedure is published here"],
+      "pros": ["A quoted rate that appears better than the bank's"],
+      "cons": [
+        "Confiscation of the money involved, not just a fine",
+        "Criminal exposure",
+        "The counterparty risk is unsecured: no court will enforce the deal"
+      ],
+      "steps": [
+        {"do": "No steps are given. The conduct is prohibited; the lawful alternative is M01 or M05", "cite": "CN-01"}
+      ],
+      "sources": ["CN-01"],
+      "flags": ["F-21"]
+    }
+  ]
+}

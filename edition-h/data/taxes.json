@@ -1,0 +1,104 @@
+{
+  "_meta": {"edition": "H", "compiled": "2026-11-09", "rule": "A tax row carries a value only where the official text states it. The 'value' column is what the instrument says, not an estimate of anyone's bill."},
+  "rows": [
+    {
+      "id": "T01",
+      "jurisdiction": "China",
+      "topic": "Is converting your own money a taxable event?",
+      "position": "No. Individual income tax attaches to nine categories of income. Converting CNY into USD is not one of them, so the conversion itself produces no China tax. That is a statement about the character of the transaction, not a promise about the origin of the money.",
+      "value": "0% on the conversion",
+      "sources": ["CN-04"],
+      "status": "verified"
+    },
+    {
+      "id": "T02",
+      "jurisdiction": "China",
+      "topic": "Tax on the gain when the underlying asset is sold",
+      "position": "Income from the transfer of assets is taxed at a flat 20%. It is charged on the gain, not on the principal, so the rate is not 20% of the amount you want to move.",
+      "value": "20% of the gain",
+      "sources": ["CN-04"],
+      "status": "verified"
+    },
+    {
+      "id": "T03",
+      "jurisdiction": "China",
+      "topic": "Who is taxed on worldwide income",
+      "position": "A resident individual - domiciled in China, or resident there for 183 days or more in a tax year - is taxed on income from within China and overseas. A non-resident is taxed on China-source income only.",
+      "value": "Worldwide for residents; China-source for non-residents",
+      "sources": ["CN-04"],
+      "status": "verified"
+    },
+    {
+      "id": "T04",
+      "jurisdiction": "United States",
+      "topic": "Worldwide income of a US citizen",
+      "position": "A US citizen is taxed on worldwide income from all sources and must report all taxable income. This is why the US side, not the China side, is where a large balance creates real exposure.",
+      "value": "Worldwide income taxable",
+      "sources": ["US-02"],
+      "status": "verified"
+    },
+    {
+      "id": "T05",
+      "jurisdiction": "United States",
+      "topic": "Foreign-currency gain on the conversion itself",
+      "position": "Disposing of foreign currency is a section 988 transaction and the gain is ordinary income. For an individual's personal transaction, gain from exchange-rate movement is not recognized - but the exclusion does not apply if the gain would exceed USD 200. The figure is a cliff: cross it and the whole gain is recognized, not just the excess.",
+      "value": "USD 200 per transaction, cliff",
+      "sources": ["US-01"],
+      "status": "verified"
+    },
+    {
+      "id": "T06",
+      "jurisdiction": "United States",
+      "topic": "FBAR filing duty",
+      "position": "A US person with a financial interest in, or signature authority over, a foreign financial account must file FinCEN Form 114 where the aggregate value of the foreign accounts exceeded USD 10,000 at any time in the calendar year. Due 15 April, with an automatic extension to 15 October. Filing is required even if the account earned nothing.",
+      "value": "USD 10,000 aggregate threshold",
+      "sources": ["US-04"],
+      "status": "verified"
+    },
+    {
+      "id": "T07",
+      "jurisdiction": "United States",
+      "topic": "Willful FBAR penalty",
+      "position": "The willful penalty is capped at the greater of USD 100,000 (adjusted for inflation to USD 165,353 for assessments on or after 17 January 2025) or 50% of the balance in the account at the time of the violation, per violation. At USD 400,000 the 50% limb is the larger number: USD 200,000 per violation.",
+      "value": "Greater of USD 165,353 or 50% of balance, per violation",
+      "sources": ["US-03", "US-06"],
+      "status": "verified"
+    },
+    {
+      "id": "T08",
+      "jurisdiction": "United States",
+      "topic": "Non-willful FBAR penalty",
+      "position": "The non-willful maximum is USD 10,000 per violation, adjusted to USD 16,536 for assessments on or after 17 January 2025. It is a maximum, not a rate.",
+      "value": "USD 16,536 per violation, adjusted",
+      "sources": ["US-06"],
+      "status": "verified"
+    },
+    {
+      "id": "T09",
+      "jurisdiction": "United States",
+      "topic": "Form 8938 thresholds and penalty",
+      "position": "For a specified individual living in the US: more than USD 50,000 on the last day of the year or more than USD 75,000 at any time (single or married filing separately); USD 100,000 / USD 150,000 for a joint return. Living outside the US the thresholds rise to USD 200,000 / USD 300,000 and USD 400,000 / USD 600,000. The penalty can reach USD 60,000.",
+      "value": "USD 50,000-600,000 thresholds; penalty up to USD 60,000",
+      "sources": ["US-03"],
+      "status": "verified"
+    },
+    {
+      "id": "T10",
+      "jurisdiction": "United States",
+      "topic": "Inheritance or gift from a foreign person",
+      "position": "Receipt of more than USD 100,000 in aggregate in a taxable year from a nonresident alien individual or a foreign estate must be reported on Form 3520, Part IV, with each gift over USD 5,000 separately identified. Receiving an inheritance is not itself taxable income, but the report is mandatory and penalties may apply under IRC section 6039F(c).",
+      "value": "Report above USD 100,000 aggregate",
+      "sources": ["US-05", "US-02"],
+      "status": "verified"
+    },
+    {
+      "id": "T11",
+      "jurisdiction": "United States",
+      "topic": "Form 3520 penalty amount",
+      "position": "The IRS page records that penalties may apply under IRC section 6039F(c) but does not state an amount on the page retrieved. No percentage is published here: the penalty figure is flagged, not guessed.",
+      "value": "",
+      "sources": ["US-05"],
+      "status": "unverified"
+    }
+  ]
+}

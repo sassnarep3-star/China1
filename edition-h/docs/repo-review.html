@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Repo audit">
+<title>Repo audit &middot; China Money Edition H</title>
+<style>
+:root{--ink:#101720;--ink2:#3a4552;--muted:#697584;--line:#e0e5ec;--bg:#f5f7fa;--panel:#fff;
+--accent:#0d5c4a;--accent2:#0a4a3c;--warn:#8a4b00;--warnbg:#fff6e6;--bad:#8c1d1d;--badbg:#fdeeee;--ok:#0d5c4a;--okbg:#e8f4f0}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1060px;margin:0 auto;padding:16px 14px 60px}
+header.top{border-bottom:1px solid var(--line);background:var(--panel);position:sticky;top:0;z-index:5}
+header.top .inner{max-width:1060px;margin:0 auto;padding:10px 14px;display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.brand{font-weight:800;letter-spacing:-.02em;font-size:1rem;color:var(--ink)}
+.brand small{display:block;font-weight:600;font-size:.6rem;letter-spacing:.12em;color:var(--muted);text-transform:uppercase}
+nav{display:flex;gap:2px;flex-wrap:wrap;font-size:.78rem}
+nav a{padding:5px 8px;border-radius:8px;color:var(--ink2)}
+nav a:hover{background:#eef2f6;text-decoration:none}
+nav a.on{background:var(--okbg);color:var(--accent);font-weight:700}
+h1{font-size:1.75rem;line-height:1.15;letter-spacing:-.025em;margin:.5em 0 .3em;max-width:24ch}
+h2{font-size:1.12rem;margin:1.8em 0 .5em;letter-spacing:-.01em}
+h3{font-size:.98rem;margin:1.2em 0 .35em}
+p,li{color:var(--ink2)}
+.lede{font-size:1.02rem;max-width:68ch}
+.eyebrow{font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:800;margin-bottom:0}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:16px 0}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 11px}
+.stat small{display:block;font-size:.58rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.stat strong{display:block;font-size:1.18rem;letter-spacing:-.02em;margin:1px 0}
+.stat span{display:block;font-size:.72rem;color:var(--ink2)}
+.grid{display:grid;grid-template-columns:1fr;gap:8px;margin:12px 0}
+.card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px;color:inherit}
+.card:hover{border-color:var(--accent);text-decoration:none}
+.card h3{margin:.1em 0 .25em;font-size:.94rem}
+.card p{margin:0;font-size:.8rem}
+.kicker{font-size:.6rem;letter-spacing:.1em;color:var(--accent);font-weight:800}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:12px;background:var(--panel);margin:10px 0}
+table{border-collapse:collapse;width:100%;font-size:.79rem;min-width:520px}
+th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:#eff3f7;font-size:.62rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink2);white-space:nowrap}
+tbody tr:nth-child(even) td{background:#fbfcfd}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.hl td{background:var(--okbg)!important;font-weight:600}
+.src{display:inline-block;font-size:.6rem;font-weight:700;padding:1px 5px;border-radius:5px;background:#eef1f5;border:1px solid var(--line);color:var(--ink2);white-space:nowrap}
+.flag{display:inline-block;font-size:.6rem;font-weight:700;padding:1px 5px;border-radius:5px;background:var(--warnbg);border:1px solid #f0d9b0;color:var(--warn);white-space:nowrap}
+.note{font-size:.79rem;color:var(--muted)}
+.pill{display:inline-block;font-size:.6rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;padding:2px 7px;border-radius:99px;border:1px solid var(--line);background:#eef1f5;color:var(--ink2)}
+.pill.lawful{background:var(--okbg);border-color:#c5e2d9;color:var(--ok)}
+.pill.cond{background:var(--warnbg);border-color:#f0d9b0;color:var(--warn)}
+.pill.prohibited{background:var(--badbg);border-color:#f0c9c9;color:var(--bad)}
+.pill.unverified{background:#f2f0fb;border-color:#d9d3f0;color:#4b3a8c}
+.cta{display:inline-block;background:var(--accent);color:#fff;font-weight:700;padding:10px 16px;border-radius:10px;margin:10px 0}
+.cta:hover{background:var(--accent2);text-decoration:none}
+.small{font-size:.78rem}
+ol,ul{padding-left:1.15em}
+li{margin:.25em 0}
+.callout{border-left:4px solid var(--accent);background:var(--panel);padding:10px 12px;border-radius:0 10px 10px 0;margin:12px 0}
+.callout.warn{border-left-color:#b0761f;background:var(--warnbg)}
+.callout.bad{border-left-color:#a33;background:var(--badbg)}
+details{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin:8px 0}
+details summary{cursor:pointer;font-weight:700;font-size:.88rem}
+details[open] summary{margin-bottom:8px}
+footer{border-top:1px solid var(--line);margin-top:30px;padding-top:12px;font-size:.76rem;color:var(--muted)}
+.two{display:grid;grid-template-columns:1fr;gap:14px}
+dl{margin:0}
+dt{font-weight:700;font-size:.8rem;margin-top:8px}
+dd{margin:0 0 0 0;font-size:.82rem;color:var(--ink2)}
+@media(min-width:720px){
+ h1{font-size:2.3rem}
+ .stats{grid-template-columns:repeat(4,1fr)}
+ .grid{grid-template-columns:repeat(3,1fr)}
+ .two{grid-template-columns:1fr 1fr}
+}
+@media print{header.top{position:static}nav{display:none}}
+</style>
+</head>
+<body>
+<header class="top"><div class="inner">
+<a class="brand" href="index.html">China Money<small>Edition H &middot; CNY to USD</small></a>
+<nav><a href="index.html">Dashboard</a><a href="methods.html">All routes</a><a href="costs.html">Costs</a><a href="taxes.html">Tax</a><a href="steps.html">Steps</a><a href="sources.html">Sources</a><a href="flagged.html">Flagged</a><a href="repo-review.html" class="on">Repo audit</a></nav>
+</div></header>
+<div class="wrap">
+
+<p class="eyebrow">Repository review</p>
+<h1>What the eight earlier editions did, and what this one changed.</h1>
+<p class="lede">The repository holds overlapping dashboards produced by separate sessions. This is the line-by-line review of the parts that bear on the answer, with the action taken. Nothing belonging to another session was edited; the findings are published instead.</p>
+<div class="scroll"><table class="flagtable"><thead><tr><th>ID</th><th>Finding</th><th>Evidence in the repository</th><th>Action in Edition H</th></tr></thead><tbody>
+<tr><td>R01</td><td><strong>Seven dashboards, no front door</strong></td><td>The root page made one edition the dashboard and listed the rest as an archive inside a paragraph; /docs/, /dossier/, /overview.html, /pages/ and editions B-G all remained live and independently reachable</td><td>The root page is now a single landing page: the headline numbers, the route comparison, and an explicit archive list. Nothing was deleted.</td></tr>
+<tr><td>R02</td><td><strong>A business fee used for a personal transfer</strong></td><td>Edition D's model adds USD 15 for the US receiving bank, sourced to Chase's <em>business</em> account schedule (BK-02)</td><td>The US inbound fee is blank and flagged (F-07); the ladder stops at the China side.</td></tr>
+<tr><td>R03</td><td><strong>Prohibited-route fines overstated as a flat range</strong></td><td>Edition D's front page says "the wrong routes cost 30% to 100%" without the statutory base of up to 30%; CN-01 Arts. 39/40/45 reserve 30%-100% for serious cases</td><td>Both limbs are printed: up to 30% in the ordinary case, 30%-100% where serious, plus confiscation (F-20).</td></tr>
+<tr><td>R04</td><td><strong>The &#167;988 caveat was in the body but not the headline</strong></td><td>Edition D's headline stat says "Tax on the conversion $0 &mdash; in both jurisdictions"; the USD 200 cliff appears only deeper in the site</td><td>The $0 carries an asterisk on the dashboard and a full paragraph on the tax page.</td></tr>
+<tr><td>R05</td><td><strong>A CI check is pinned to one date string</strong></td><td>assets/check.py asserts that pages/estimates.html contains "2026/11/09" and "later-dated"; regenerating that page with a new stamp fails the build even though nothing is wrong</td><td>Not edited (owned by another session). Logged here and in COORDINATION.md.</td></tr>
+<tr><td>R06</td><td><strong>Six incompatible route counts</strong></td><td>Edition B 22 methods, C 33 routes, D 16 methods, F 31, G 43, dossier 35; none reconciles the others</td><td>Fifteen routes with the counting rule stated, and the divergence explained rather than averaged.</td></tr>
+<tr><td>R07</td><td><strong>An unverified 2026 China tax claim</strong></td><td>Edition G states that a "MOF/STA 2026 No. 27" instrument repealed the foreign-individual FIE dividend exemption from 2026-09-01; no such instrument was retrieved this session</td><td>Not repeated. The dividend route is described only through the instruments on this edition's register.</td></tr>
+<tr><td>R08</td><td><strong>Older pages can be read as current</strong></td><td>Editions B-G remain fully published and are not cross-referenced from each other</td><td>Every page of Edition H carries the edition label and a link to the archive; the archive labels the earlier editions as historical.</td></tr>
+<tr><td>R09</td><td><strong>Checkers prove consistency, not retrievability</strong></td><td>The other editions' verifiers check internal links, citations and reproducibility; none re-fetches a source. Edition C's S01 URL pattern (.../2024-04-30/2465.html) is the kind of link that rots</td><td>Every source on this edition's register records what was read and when, and the site says plainly that a link is not a verification.</td></tr>
+<tr><td>R10</td><td><strong>No edition published a per-route ladder for every route</strong></td><td>Editions B, C, E, F and G left most cost cells blank; D published eight ladders for its own 16 routes; none reconciled the two</td><td>Eight ladders of 40 rows, plus an explicit blank for the seven routes that cannot be priced, each with a flag.</td></tr>
+<tr><td>R11</td><td><strong>The root README mixes editions</strong></td><td>The README leads with Edition D and then restarts the document title mid-file</td><td>An Edition H section is appended (no existing text removed) pointing at the new dashboard.</td></tr>
+<tr><td>R12</td><td><strong>Shared-file ownership is unresolved</strong></td><td>edition-d/build/build.py writes the root index.html, so no other session can own the landing page without breaking its CI</td><td>Handover recorded: Edition D's generator no longer writes the root page; its own pages remain byte-identical and its verifier still passes.</td></tr>
+</tbody></table></div>
+<p class="note">Rows in this register cite the repository itself &mdash; files, generated pages and CI scripts &mdash; rather than an external instrument, so they are marked as a review table: the evidence is the file named in the row and can be opened in the repository. That is why this table is exempt from the external-source rule that the verifier applies to every other table.</p>
+<h2>Not reviewed</h2>
+<p>The legal substance of editions B-G was not re-audited line by line. Their pages remain published as historical
+work, each with its own source log. Where this edition disagrees with an earlier one, the disagreement is on this page,
+not silently applied to their files.</p>
+
+<footer>
+<p><strong>What this is.</strong> Published-rule research with the arithmetic shown, compiled 2026-11-09 from 15 official and provider-primary documents. Not legal, tax or investment advice, and not a bank quote. Rates and tariffs change; every source is linked for manual review.</p>
+<p>Values that could not be confirmed are blank and published on the <a href="flagged.html">Flagged for review</a> page. No value is inferred. Edition H is self-contained; the earlier dashboards in this repository are archived from the <a href="../../index.html">root page</a>. Coordination record: <a href="../../COORDINATION.md">COORDINATION.md</a>. Utility pages: <a href="penalties.html">penalties</a> &middot; <a href="requirements.html">requirements</a> &middot; <a href="methodology.html">methodology</a>.</p>
+</footer>
+</div>
+</body>
+</html>

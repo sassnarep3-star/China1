@@ -1,0 +1,21 @@
+{
+  "_meta": {"edition": "H", "compiled": "2026-11-09", "source_of_requirements": "The project brief supplied with the task, split into testable lines."},
+  "requirements": [
+    {"id": "Q01", "requirement": "Collect, organize and analyse against a full list of requirements", "delivered": "This page plus REQUIREMENTS.md; every line points at the page that answers it", "status": "done"},
+    {"id": "Q02", "requirement": "Create an executive summary outlining important details", "delivered": "/edition-h/docs/executive-summary.html and edition-h/EXECUTIVE_SUMMARY.md", "status": "done"},
+    {"id": "Q03", "requirement": "As a US citizen, find the best way to get money out of China with the least tax penalties", "delivered": "The decision tree on the dashboard and the recommendation on the executive summary; the answer is conditional because the origin of the money is unknown (F-03)", "status": "done, conditional"},
+    {"id": "Q04", "requirement": "Research ways to convert CNY into USD; list as many as possible with pros and cons", "delivered": "15 routes across four categories, each with rule, cap, documents, pros, cons and steps", "status": "done"},
+    {"id": "Q05", "requirement": "Break down the conversion penalty (what the conversion actually costs)", "delivered": "The cost decomposition page: FX margin, commission, cable, full-amount, tax, reporting exposure, prohibited-route range", "status": "done"},
+    {"id": "Q06", "requirement": "Estimate costs in USD 10,000 increments from USD 10,000 to USD 400,000, in a mobile-friendly table, most important information first", "delivered": "Eight 40-row ladders plus a cross-route table; the dashboard opens with total cost and share of the amount", "status": "done"},
+    {"id": "Q07", "requirement": "Actually estimate the cost of every method and give exact step-by-step instructions", "delivered": "A ladder on every route page; routes that cannot be priced carry a blank ladder and a flag instead of an invented number", "status": "done, gaps flagged"},
+    {"id": "Q08", "requirement": "No manual input from the user; work autonomously", "delivered": "No question was asked; unknown personal facts are flagged rather than requested", "status": "done"},
+    {"id": "Q09", "requirement": "Verify line by line from official, trusted sources; no hallucination; provide links for manual review", "delivered": "Every value traces to a source id and a URL on the sources page; retrieval notes record what was actually read", "status": "done"},
+    {"id": "Q10", "requirement": "Review the repository line by line and flag irregularities", "delivered": "The repo review page: 12 findings with file references and the action taken", "status": "done"},
+    {"id": "Q11", "requirement": "Create a GitHub Pages site with a clean landing page and subpages organised by category", "delivered": "Root landing page plus 27 pages under /edition-h/docs/, with four category pages", "status": "done"},
+    {"id": "Q12", "requirement": "A dashboard-style UI that is simple, clean and easy to use", "delivered": "Card dashboard, one table per question, all tables scrollable, no client-side dependency", "status": "done"},
+    {"id": "Q13", "requirement": "Every table row carries a source link; unconfirmed values are blank and flagged", "delivered": "Enforced by the verifier, which fails the build on a row without a source or on a zero standing in for an unknown", "status": "done"},
+    {"id": "Q14", "requirement": "Coordinate with other sessions; do not overwrite their work", "delivered": "Claim in COORDINATION.md; all new work under edition-h/; the one shared file changed is the root landing page, logged as an integration decision", "status": "done"},
+    {"id": "Q15", "requirement": "Open a pull request, merge it without waiting, confirm Pages deploys, record the result", "delivered": "Recorded in COORDINATION.md with the PR number, merge commit and Pages result", "status": "done"},
+    {"id": "Q16", "requirement": "Publish flagged irregularities on a clearly labelled page with source links", "delivered": "/edition-h/docs/flagged.html, 26 items, none of which blocks publication", "status": "done"}
+  ]
+}

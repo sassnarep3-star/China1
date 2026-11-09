@@ -402,3 +402,57 @@ published on each edition's Flagged-for-Review page. Details: `COORDINATION.md`,
 **Not legal, tax or financial advice.** Consult a China-qualified FX/tax adviser and a U.S. international tax
 professional before moving funds; the decisive facts (source of funds, residency, documents) are case-specific.
 - PR [#21](https://github.com/sassnarep3-star/China1/pull/21) merged 2026-11-09 (`c35e131`); GitHub Pages reported `built` at that exact commit; live site verified with the new archive links.
+
+---
+
+# Edition H — the current dashboard (2026-11-09)
+
+**Open it:** https://sassnarep3-star.github.io/China1/edition-h/docs/index.html
+
+The root landing page now points here. Edition H supersedes nothing — the eight earlier editions are preserved
+unchanged and listed on the archive line of the root page — but it is the first edition that prices **every** route
+at **every** USD 10,000 step and publishes its own blanks in one place.
+
+### The five numbers
+
+| Question | Answer | Basis |
+|---|---|---|
+| Is converting CNY to USD taxed? | **No**, in either jurisdiction | IIT Law Art. 2 (nine categories, conversion is not one); 26 U.S.C. §988(e)(2) |
+| What does one lawful conversion cost? | **0.2104%** FX margin, plus fees | Bank of China board 2026/11/09 09:15:45: buy 666.38, sell 669.19, mid 667.785 |
+| China-side cost at USD 400,000 | **$902.86 (0.226%)** | FX margin + commission capped at CNY 260 + CNY 150 cable |
+| China-side cost at USD 10,000 | **$53.45 (0.535%)** | Same tariff; the fixed cable charge dominates |
+| What decides the route? | How the RMB arose | IIT/SAFE classification, not the balance size |
+
+### What is here
+
+| Page | Contents |
+|---|---|
+| `edition-h/docs/index.html` | Dashboard: the answer, the comparison table, the full 40-row ladder |
+| `executive-summary.html` | Nine findings, the recommendation, the decision table |
+| `methods.html` + 15 `method-*.html` | Every route: rule, cap, documents, pros, cons, steps |
+| `category-*.html` | Four category pages (current account, capital account, alternatives, prohibited) |
+| `costs.html` | The penalty decomposed, every input, six comparison ladders |
+| `taxes.html` | China IIT, §988, FBAR, 8938, 3520 |
+| `penalties.html` | Statutory ranges in both countries, with exposure ladders |
+| `steps.html` | The master sequence, with the provision to cite at each step |
+| `sources.html` | 15 documents, what each supports, when it was read |
+| `flagged.html` | 26 items left blank, each with its reason |
+| `repo-review.html` | 12 findings on the earlier editions |
+
+### Build and verify
+
+```sh
+python3 edition-h/build/build.py    # 31 pages, 320 ladder rows, and the root index.html
+python3 edition-h/build/verify.py   # 14 checks; recomputes every cell from parameters.json
+```
+
+`verify.py` recomputes the published ladder rows and hand-checks two of them against written-out arithmetic, fails on a table row without an external source, fails on an
+internal link or fragment that does not resolve, fails on an off-allowlist host, fails on an orphan page, and fails
+unless a rebuild is byte-identical. It does not claim to verify external retrievability.
+
+### Two decisions worth knowing
+
+1. **The US receiving-bank fee is blank.** Edition D added USD 15 sourced to Chase's *business* schedule. Edition H
+   does not apply a business price to a personal transfer; the ladder stops at the China side and the gap is flagged.
+2. **The prohibited-route fine is printed as two limbs.** Up to 30% of the amount in the ordinary case, 30%-100%
+   where the case is serious, plus confiscation — not a flat "30% to 100%".

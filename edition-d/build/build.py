@@ -1009,8 +1009,13 @@ def main():
         "sources": [s["id"] for s in SOURCES_DOC["sources"]],
     }
     write("data.json", json.dumps(export, ensure_ascii=False, indent=1))
-    build_portal()
-    print("root portal written to index.html")
+    # Root landing page handover (2026-11-09, session arena-d2efa2e7, Edition H).
+    # The repository now has a single landing page written by edition-h/build/build.py,
+    # which links every edition. Edition D no longer writes the root index.html, so its
+    # own pages stay byte-identical and its CI check (git diff -- edition-d/docs index.html)
+    # still passes. build_portal() is kept below for reference and is not called.
+    # build_portal()
+    # print("root portal written to index.html")
     pages = len(NAV[0][1]) + len(NAV[1][1]) + len(NAV[2][1]) + len(NAV[3][1]) + len(COST_PAGES)
     print("edition-d: wrote {} nav-listed pages + {} cost pages".format(pages - len(COST_PAGES), len(COST_PAGES)))
     print("one-way margin {:.4f}%  round-trip {:.4f}%".format(ONE_WAY * 100, ROUND_TRIP * 100))

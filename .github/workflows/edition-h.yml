@@ -1,0 +1,33 @@
+name: Verify Edition H
+
+on:
+  pull_request:
+  push:
+    branches: [main, 'arena/d2efa2e7-china1']
+
+permissions:
+  contents: read
+
+jobs:
+  edition-h:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Edition H rebuilds byte-identically
+        run: |
+          python3 edition-h/build/build.py
+          git diff --exit-code -- edition-h index.html
+      - name: Edition H verification
+        run: python3 edition-h/build/verify.py
+      - name: The hosted root page still owns the archive links
+        run: |
+          python3 - <<'PY'
+          doc = open("index.html", encoding="utf-8").read()
+          required = ["edition-h/docs/index.html", "edition-d/docs/index.html", "edition-g/docs/index.html",
+                      "edition-f/site/index.html", "edition-e/site/index.html", "edition-c/docs/index.html",
+                      "edition-b/index.html", "dossier/index.html", "docs/index.html", "overview.html",
+                      "pages/estimates.html", "COORDINATION.md"]
+          missing = [r for r in required if r not in doc]
+          assert not missing, missing
+          print("root page links all twelve targets")
+          PY

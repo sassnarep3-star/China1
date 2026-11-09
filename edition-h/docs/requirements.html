@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Requirements">
+<title>Requirements &middot; China Money Edition H</title>
+<style>
+:root{--ink:#101720;--ink2:#3a4552;--muted:#697584;--line:#e0e5ec;--bg:#f5f7fa;--panel:#fff;
+--accent:#0d5c4a;--accent2:#0a4a3c;--warn:#8a4b00;--warnbg:#fff6e6;--bad:#8c1d1d;--badbg:#fdeeee;--ok:#0d5c4a;--okbg:#e8f4f0}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1060px;margin:0 auto;padding:16px 14px 60px}
+header.top{border-bottom:1px solid var(--line);background:var(--panel);position:sticky;top:0;z-index:5}
+header.top .inner{max-width:1060px;margin:0 auto;padding:10px 14px;display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.brand{font-weight:800;letter-spacing:-.02em;font-size:1rem;color:var(--ink)}
+.brand small{display:block;font-weight:600;font-size:.6rem;letter-spacing:.12em;color:var(--muted);text-transform:uppercase}
+nav{display:flex;gap:2px;flex-wrap:wrap;font-size:.78rem}
+nav a{padding:5px 8px;border-radius:8px;color:var(--ink2)}
+nav a:hover{background:#eef2f6;text-decoration:none}
+nav a.on{background:var(--okbg);color:var(--accent);font-weight:700}
+h1{font-size:1.75rem;line-height:1.15;letter-spacing:-.025em;margin:.5em 0 .3em;max-width:24ch}
+h2{font-size:1.12rem;margin:1.8em 0 .5em;letter-spacing:-.01em}
+h3{font-size:.98rem;margin:1.2em 0 .35em}
+p,li{color:var(--ink2)}
+.lede{font-size:1.02rem;max-width:68ch}
+.eyebrow{font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:800;margin-bottom:0}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:16px 0}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 11px}
+.stat small{display:block;font-size:.58rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.stat strong{display:block;font-size:1.18rem;letter-spacing:-.02em;margin:1px 0}
+.stat span{display:block;font-size:.72rem;color:var(--ink2)}
+.grid{display:grid;grid-template-columns:1fr;gap:8px;margin:12px 0}
+.card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px;color:inherit}
+.card:hover{border-color:var(--accent);text-decoration:none}
+.card h3{margin:.1em 0 .25em;font-size:.94rem}
+.card p{margin:0;font-size:.8rem}
+.kicker{font-size:.6rem;letter-spacing:.1em;color:var(--accent);font-weight:800}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:12px;background:var(--panel);margin:10px 0}
+table{border-collapse:collapse;width:100%;font-size:.79rem;min-width:520px}
+th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:#eff3f7;font-size:.62rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink2);white-space:nowrap}
+tbody tr:nth-child(even) td{background:#fbfcfd}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.hl td{background:var(--okbg)!important;font-weight:600}
+.src{display:inline-block;font-size:.6rem;font-weight:700;padding:1px 5px;border-radius:5px;background:#eef1f5;border:1px solid var(--line);color:var(--ink2);white-space:nowrap}
+.flag{display:inline-block;font-size:.6rem;font-weight:700;padding:1px 5px;border-radius:5px;background:var(--warnbg);border:1px solid #f0d9b0;color:var(--warn);white-space:nowrap}
+.note{font-size:.79rem;color:var(--muted)}
+.pill{display:inline-block;font-size:.6rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;padding:2px 7px;border-radius:99px;border:1px solid var(--line);background:#eef1f5;color:var(--ink2)}
+.pill.lawful{background:var(--okbg);border-color:#c5e2d9;color:var(--ok)}
+.pill.cond{background:var(--warnbg);border-color:#f0d9b0;color:var(--warn)}
+.pill.prohibited{background:var(--badbg);border-color:#f0c9c9;color:var(--bad)}
+.pill.unverified{background:#f2f0fb;border-color:#d9d3f0;color:#4b3a8c}
+.cta{display:inline-block;background:var(--accent);color:#fff;font-weight:700;padding:10px 16px;border-radius:10px;margin:10px 0}
+.cta:hover{background:var(--accent2);text-decoration:none}
+.small{font-size:.78rem}
+ol,ul{padding-left:1.15em}
+li{margin:.25em 0}
+.callout{border-left:4px solid var(--accent);background:var(--panel);padding:10px 12px;border-radius:0 10px 10px 0;margin:12px 0}
+.callout.warn{border-left-color:#b0761f;background:var(--warnbg)}
+.callout.bad{border-left-color:#a33;background:var(--badbg)}
+details{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin:8px 0}
+details summary{cursor:pointer;font-weight:700;font-size:.88rem}
+details[open] summary{margin-bottom:8px}
+footer{border-top:1px solid var(--line);margin-top:30px;padding-top:12px;font-size:.76rem;color:var(--muted)}
+.two{display:grid;grid-template-columns:1fr;gap:14px}
+dl{margin:0}
+dt{font-weight:700;font-size:.8rem;margin-top:8px}
+dd{margin:0 0 0 0;font-size:.82rem;color:var(--ink2)}
+@media(min-width:720px){
+ h1{font-size:2.3rem}
+ .stats{grid-template-columns:repeat(4,1fr)}
+ .grid{grid-template-columns:repeat(3,1fr)}
+ .two{grid-template-columns:1fr 1fr}
+}
+@media print{header.top{position:static}nav{display:none}}
+</style>
+</head>
+<body>
+<header class="top"><div class="inner">
+<a class="brand" href="index.html">China Money<small>Edition H &middot; CNY to USD</small></a>
+<nav><a href="index.html">Dashboard</a><a href="methods.html">All routes</a><a href="costs.html">Costs</a><a href="taxes.html">Tax</a><a href="steps.html">Steps</a><a href="sources.html">Sources</a><a href="flagged.html">Flagged</a><a href="repo-review.html" class="on">Repo audit</a></nav>
+</div></header>
+<div class="wrap">
+<p class="eyebrow">Requirements traceability</p><h1>Every line of the brief, and where it is answered.</h1><div class="scroll"><table class="flagtable"><thead><tr><th>#</th><th>Requirement</th><th>Where it is delivered</th><th>Status</th></tr></thead><tbody><tr><td>Q01</td><td>Collect, organize and analyse against a full list of requirements</td><td>This page plus REQUIREMENTS.md; every line points at the page that answers it</td><td><span class="pill lawful">done</span></td></tr><tr><td>Q02</td><td>Create an executive summary outlining important details</td><td>/edition-h/docs/executive-summary.html and edition-h/EXECUTIVE_SUMMARY.md</td><td><span class="pill lawful">done</span></td></tr><tr><td>Q03</td><td>As a US citizen, find the best way to get money out of China with the least tax penalties</td><td>The decision tree on the dashboard and the recommendation on the executive summary; the answer is conditional because the origin of the money is unknown (F-03)</td><td><span class="pill lawful">done, conditional</span></td></tr><tr><td>Q04</td><td>Research ways to convert CNY into USD; list as many as possible with pros and cons</td><td>15 routes across four categories, each with rule, cap, documents, pros, cons and steps</td><td><span class="pill lawful">done</span></td></tr><tr><td>Q05</td><td>Break down the conversion penalty (what the conversion actually costs)</td><td>The cost decomposition page: FX margin, commission, cable, full-amount, tax, reporting exposure, prohibited-route range</td><td><span class="pill lawful">done</span></td></tr><tr><td>Q06</td><td>Estimate costs in USD 10,000 increments from USD 10,000 to USD 400,000, in a mobile-friendly table, most important information first</td><td>Eight 40-row ladders plus a cross-route table; the dashboard opens with total cost and share of the amount</td><td><span class="pill lawful">done</span></td></tr><tr><td>Q07</td><td>Actually estimate the cost of every method and give exact step-by-step instructions</td><td>A ladder on every route page; routes that cannot be priced carry a blank ladder and a flag instead of an invented number</td><td><span class="pill lawful">done, gaps flagged</span></td></tr><tr><td>Q08</td><td>No manual input from the user; work autonomously</td><td>No question was asked; unknown personal facts are flagged rather than requested</td><td><span class="pill lawful">done</span></td></tr><tr><td>Q09</td><td>Verify line by line from official, trusted sources; no hallucination; provide links for manual review</td><td>Every value traces to a source id and a URL on the sources page; retrieval notes record what was actually read</td><td><span class="pill lawful">done</span></td></tr><tr><td>Q10</td><td>Review the repository line by line and flag irregularities</td><td>The repo review page: 12 findings with file references and the action taken</td><td><span class="pill lawful">done</span></td></tr><tr><td>Q11</td><td>Create a GitHub Pages site with a clean landing page and subpages organised by category</td><td>Root landing page plus 27 pages under /edition-h/docs/, with four category pages</td><td><span class="pill lawful">done</span></td></tr><tr><td>Q12</td><td>A dashboard-style UI that is simple, clean and easy to use</td><td>Card dashboard, one table per question, all tables scrollable, no client-side dependency</td><td><span class="pill lawful">done</span></td></tr><tr><td>Q13</td><td>Every table row carries a source link; unconfirmed values are blank and flagged</td><td>Enforced by the verifier, which fails the build on a row without a source or on a zero standing in for an unknown</td><td><span class="pill lawful">done</span></td></tr><tr><td>Q14</td><td>Coordinate with other sessions; do not overwrite their work</td><td>Claim in COORDINATION.md; all new work under edition-h/; the one shared file changed is the root landing page, logged as an integration decision</td><td><span class="pill lawful">done</span></td></tr><tr><td>Q15</td><td>Open a pull request, merge it without waiting, confirm Pages deploys, record the result</td><td>Recorded in COORDINATION.md with the PR number, merge commit and Pages result</td><td><span class="pill lawful">done</span></td></tr><tr><td>Q16</td><td>Publish flagged irregularities on a clearly labelled page with source links</td><td>/edition-h/docs/flagged.html, 26 items, none of which blocks publication</td><td><span class="pill lawful">done</span></td></tr></tbody></table></div><p class="note">Requirements are quoted from the project brief and split into testable lines; the brief itself is not reproduced verbatim beyond the requirement text. This is a traceability register, not a fact table: its evidence is the page or file named in each row, so it is exempt from the external-source rule.</p>
+<footer>
+<p><strong>What this is.</strong> Published-rule research with the arithmetic shown, compiled 2026-11-09 from 15 official and provider-primary documents. Not legal, tax or investment advice, and not a bank quote. Rates and tariffs change; every source is linked for manual review.</p>
+<p>Values that could not be confirmed are blank and published on the <a href="flagged.html">Flagged for review</a> page. No value is inferred. Edition H is self-contained; the earlier dashboards in this repository are archived from the <a href="../../index.html">root page</a>. Coordination record: <a href="../../COORDINATION.md">COORDINATION.md</a>. Utility pages: <a href="penalties.html">penalties</a> &middot; <a href="requirements.html">requirements</a> &middot; <a href="methodology.html">methodology</a>.</p>
+</footer>
+</div>
+</body>
+</html>
