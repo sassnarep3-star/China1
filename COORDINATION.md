@@ -857,3 +857,39 @@ Claim made before implementation. Scope does not include changing prior editions
 - GitHub Pages build/deploy **success**: https://github.com/sassnarep3-star/China1/actions/runs/42546121488 at merge commit `48f12bb`. Jekyll build, deploy and report jobs all completed successfully. Node runtime / Ubuntu migration annotations were informational, not failed checks.
 - Public live content independently fetched successfully via fetch_page at https://sassnarep3-star.github.io/China1/?build=48f12bb : confirmed new “A lawful route first. A price comparison second.” overview, qualified executive summary, 43×40 catalog links, sourced six-row findings, CNY200–410 published envelope, and blank tax/all-in cells. This is HTTP content verification, not a screenshot/device-browser test.
 - Final live entry: https://sassnarep3-star.github.io/China1/ ; integration flags: https://sassnarep3-star.github.io/China1/integration/review.html ; evidence log: https://sassnarep3-star.github.io/China1/integration/evidence.html . Exact personal cost estimates and independent legal certification of every inherited line are explicitly **not** claimed.
+
+---
+
+---
+
+# Session board — arena-d2efa2e7 — 2026-11-09
+
+Session ID: `arena-d2efa2e7` · Fixed Arena branch: `arena/d2efa2e7-china1` · Status: **claimed, in progress**
+
+All earlier boards and all files they own are preserved verbatim. This session did not edit, move or
+delete any earlier edition before writing this claim. It acts as the **final integration session** under
+the repo's operating rules, so it also owns the shared root landing page (`index.html`) and the
+navigation change that points to its own consolidated dashboard.
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| H0 | This claim + repo audit | in progress | arena-d2efa2e7 | this appended section of `COORDINATION.md` |
+| H1 | Primary-source research (China FX rules, 2026 PBOC AML order, US tax/reporting) | in progress | arena-d2efa2e7 | `edition-h/data/sources.json` |
+| H2 | Route inventory, pros/cons, step-by-step procedures | in progress | arena-d2efa2e7 | `edition-h/data/methods.json` |
+| H3 | Cost engine: USD 10,000→400,000 in 10,000 steps for every costed route | in progress | arena-d2efa2e7 | `edition-h/data/parameters.json`, `edition-h/build/**` |
+| H4 | Executive summary, requirements traceability | in progress | arena-d2efa2e7 | `edition-h/EXECUTIVE_SUMMARY.md`, `edition-h/REQUIREMENTS.md` |
+| H5 | Static site: dashboard + category subpages + tables | in progress | arena-d2efa2e7 | `edition-h/docs/**` |
+| H6 | Verifier: recompute every cell, cite every row, resolve every link | in progress | arena-d2efa2e7 | `edition-h/build/verify.py` |
+| H7 | Flagged-for-Review page | in progress | arena-d2efa2e7 | `edition-h/data/flags.json`, `edition-h/docs/flagged.html` |
+| H8 | Root landing page ownership + integration, PR, merge, Pages check | in progress | arena-d2efa2e7 | `index.html`, `edition-d/build/build.py` (one-line handover), `.github/workflows/edition-h.yml`, this section |
+
+### Cross-session note on the root landing page
+
+`edition-d/build/build.py` currently regenerates the root `index.html` and CI asserts
+`git diff --exit-code -- edition-d/docs index.html`. To give the repository one clean landing page, this
+session (a) writes the root page from `edition-h/build/build.py` and (b) removes the root-portal write from
+Edition D's generator, leaving Edition D's own pages byte-identical. Edition D's verifier is **not** edited:
+the new root page deliberately keeps every link that verifier requires (`edition-d/docs/index.html`,
+`overview.html`, `pages/estimates.html`, `dossier/index.html`, `edition-b/index.html`,
+`edition-c/docs/index.html`, `COORDINATION.md`) and uses only hosts on its allowlist. This is recorded as an
+integration decision, not a silent overwrite.
