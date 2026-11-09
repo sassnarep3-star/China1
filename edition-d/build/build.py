@@ -1064,86 +1064,11 @@ footer{border-top:1px solid var(--line);margin-top:34px;padding-top:14px;font-si
 
 
 def build_portal():
-    r = {x["amount"]: x for x in cost_rows("boc_documented")}
-    findings = [
-        ["Converting is not a taxable event", "China taxes nine categories of income and exchange is not one; the US taxes income, and the FX gain on a personal conversion is not recognised up to $200.", src_links(["CN-05", "US-01"])],
-        ["The barrier is capital-account convertibility", "Current-account business is convertible; capital-account business follows a process. That is why the money is stuck, and it is not a tax question.", src_links(["CN-01"])],
-        ["The cost is small and falls with size", "{} at $10,000 ({}), {} at $100,000, {} at $400,000 ({}).".format(money(r[10000]["total"], 2), pct(r[10000]["total"] / 10000), money(r[100000]["total"], 2), money(r[400000]["total"], 2), pct(r[400000]["total"] / 400000)), src_links(["CN-07", "CN-08", "CN-09", "BK-02"])],
-        ["One fact decides the route", "A passport on file brings the documented route in CN-03 Art. 59, with no annual cap in the text; a PRC identity card brings the USD 50,000 quota.", src_links(["CN-03", "CN-01"])],
-        ["US reporting is the real exposure", "A willful FBAR penalty is the greater of $100,000 or 50% of the balance, per violation: $200,000 at $400,000.", src_links(["US-02", "US-03"])],
-        ["The wrong routes cost 30% to 100%", "Splitting, underground dealing and crypto carry fines of 30% to 100% of the amount, plus confiscation.", src_links(["CN-02", "CN-06"])],
-    ]
-    glance = [[money(a), money(r[a]["total"], 2), pct(r[a]["total"] / a), money(a - r[a]["total"], 2), src_links(["CN-07", "CN-08", "CN-09", "BK-02"])]
-              for a in (10_000, 50_000, 100_000, 200_000, 400_000)]
-    cards = [
-        ("edition-d/docs/index.html", "01", "Dashboard", "The answer, the four headline numbers, and the route to every table."),
-        ("edition-d/docs/pages/costs.html", "02", "Cost comparison", "Every costed route side by side, with the full cost breakdown."),
-        ("edition-d/docs/pages/costs-boc-documented.html", "03", "40-row cost table", "USD 10,000 to USD 400,000 in 10,000 steps, the best lawful route."),
-        ("edition-d/docs/pages/methods.html", "04", "All 16 methods", "Every route, its rule, its cap, documents, pros and cons."),
-        ("edition-d/docs/pages/steps.html", "05", "Step by step", "What to do at the counter, and which provision to cite."),
-        ("edition-d/docs/pages/tax.html", "06", "Tax and penalties", "China IIT, §988, FBAR, and the penalty ladder."),
-        ("edition-d/docs/pages/repo-review.html", "07", "Repo review", "Line-by-line audit of the four earlier editions."),
-        ("edition-d/docs/pages/flagged.html", "08", "Flagged for review", "25 items left blank on purpose, with the source links."),
-        ("edition-d/docs/pages/sources.html", "09", "Sources", "17 sources, graded, with what each one supports."),
-    ]
-    body = """<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Official-source research on turning CNY into USD for a US citizen: every lawful route, its published cost from USD 10,000 to USD 400,000, and the tax position in both countries.">
-<title>China Money &middot; the cost of getting CNY out</title>
-<style>{css}</style>
-</head>
-<body>
-<div class="wrap">
-<div class="top"><span class="brand">China Money</span><span>Research &middot; {asof}</span></div>
-<p class="eyebrow" style="margin-top:22px">CNY to USD &middot; US citizen &middot; official sources only</p>
-<h1>What it costs to get money out of China.</h1>
-<p class="lede">The premise is the expensive part. There is no tax on converting your own money in either country, and the real cost of a lawful transfer is under 1% at every size. What stops the money is China's capital-account rule, and what can cost half the balance is a US filing failure. This site prices every route and shows its work.</p>
-<a class="cta" href="edition-d/docs/index.html">Open the dashboard &rarr;</a>
-<div class="stats">
-  <div class="stat"><small>FX margin, one conversion</small><strong>{ow}</strong><span>derived from BOC's own bid and ask</span></div>
-  <div class="stat"><small>Total cost at $400,000</small><strong>{c400}</strong><span>{p400} of the amount, all fees</span></div>
-  <div class="stat"><small>Total cost at $10,000</small><strong>{c10}</strong><span>{p10} — fixed fees dominate</span></div>
-  <div class="stat"><small>Tax on the conversion</small><strong>$0</strong><span>in both jurisdictions</span></div>
-</div>
-<div class="grid">{cards}</div>
-<h2>The answer in six rows</h2>
-<div class="tablewrap"><table><thead><tr><th>Finding</th><th>Detail</th><th>Official source</th></tr></thead><tbody>{findings}</tbody></table></div>
-<h2>Cost at a glance — documented remittance</h2>
-<div class="tablewrap"><table><thead><tr><th>Amount</th><th>Total cost</th><th>Share</th><th>Net received</th><th>Sources</th></tr></thead><tbody>{glance}</tbody></table></div>
-<p class="note">Derived arithmetic from the Bank of China tariff and rate board, the full-amount surcharge, and a named US receiving-bank example. Cells with no official price are blank and flagged, never estimated.</p>
-<h2>Earlier editions in this repository</h2>
-<div class="archive">
-<p class="note">The earlier editions are preserved unchanged. They are the legal research that Edition D builds on; Edition D adds the sourced tariff, the cost engine and the audit. Editions E, F and G are later, independently sourced editions published during the same coordinated effort; each is self-contained and preserved unchanged.</p>
-<ul>
-<li><a href="overview.html">Overview dashboard (original root edition)</a> &middot; <a href="docs/index.html">supplemental dashboard</a> &middot; <a href="pages/estimates.html">USD 10,000&ndash;400,000 scenarios</a></li>
-<li><a href="dossier/index.html">Verified dossier</a> — 35 routes, capital-account taxonomy</li>
-<li><a href="edition-b/index.html">Edition B</a> — 22 channels, penalty layers, US reporting</li>
-<li><a href="edition-c/docs/index.html">Edition C</a> — 33 channels, tax treaty, repo review</li>
-<li><a href="edition-d/docs/index.html">Edition D</a> — sourced tariffs, USD 10,000-step cost tables, line-by-line audit (regenerates this portal)</li>
-<li><a href="edition-e/site/index.html">Edition E</a> — independent blank-discipline verification layer, 1,280-row cost grid, claim-level source register</li>
-<li><a href="edition-f/site/index.html">Edition F</a> — 31 methods, 40-row cost ladder, 47 sources (35 official, 12 provider-primary), downloadable CSV/JSON</li>
-<li><a href="edition-g/docs/index.html">Edition G</a> — 43 candidates, 1,720 cost rows (43&times;40), 52 sources, 47 flags</li>
-</ul>
-</div>
-<footer>
-<p><strong>What this is.</strong> Published-rule research with the arithmetic shown. Not legal, tax or investment advice, and not a bank quote. Rates and tariffs change; every source is linked for manual review.</p>
-<p>Values that could not be confirmed from an official page are blank and published on the <a href="edition-d/docs/pages/flagged.html">Flagged for review</a> page. No value is inferred. Built by session <span class="note">arena-133875bd</span>; see <a href="COORDINATION.md">COORDINATION.md</a>.</p>
-</footer>
-</div>
-</body>
-</html>
-""".format(css=PORTAL_CSS, asof=AS_OF,
-           ow=pct(ONE_WAY, 4), c400=money(r[400000]["total"], 2), p400=pct(r[400000]["total"] / 400000),
-           c10=money(r[10000]["total"], 2), p10=pct(r[10000]["total"] / 10000),
-           cards="".join('<a class="card" href="{h}"><span class="kicker">{k}</span><h3>{t}</h3><p>{d}</p></a>'.format(
-               h=h, k=k, t=esc(t), d=esc(d)) for h, k, t, d in cards),
-           findings="".join("<tr><td><strong>{}</strong></td><td>{}</td><td>{}</td></tr>".format(esc(a), esc(b), c) for a, b, c in findings),
-           glance="".join("<tr><td>{}</td><td><strong>{}</strong></td><td>{}</td><td>{}</td><td>{}</td></tr>".format(*row) for row in glance))
-    with open(os.path.join(ROOT, "..", "index.html"), "w", encoding="utf-8") as fh:
-        fh.write(body)
+    # Final integration owns only the root portal; archive research stays unchanged.
+    import runpy
+    from pathlib import Path
+    runpy.run_path(str(Path(__file__).resolve().parents[2] / "integration" / "build.py"))["build"]()
+
 
 if __name__ == "__main__":
     main()

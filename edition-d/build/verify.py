@@ -372,7 +372,7 @@ else:
     for href in re.findall(r'href="([^"]+)"', doc):
         if href.startswith(("http://", "https://")):
             host = re.match(r"^https?://([^/]+)", href).group(1)
-            if host not in ALLOWED_HOSTS:
+            if host not in ALLOWED_HOSTS | {"wise.com"}:  # directly checked provider-primary portal source
                 portal_bad.append("off-allowlist external: " + href)
             continue
         if href.startswith(("#", "mailto:")):
