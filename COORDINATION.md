@@ -760,3 +760,22 @@ Cross-session request to the root-portal owner: add an Edition G link (`edition-
 - GitHub Pages: source remains `main:/`; latest build for `fdaf2d6` reported `built` with no error (duration 33,826 ms).
 - Live verification: https://sassnarep3-star.github.io/China1/edition-g/docs/index.html fetched successfully and shows Edition G overview (43 candidates / 1,720 rows / 52 sources / 47 flags). Method and flagged pages verified below.
 - Concurrent-work preservation: PRs #13/#15/#16/#17/#19 merged during this session; this deliverable was relocated from `edition-d/` to `edition-g/`, and main's README/COORDINATION/portal were preserved verbatim with append-only records. Cross-session portal-link request remains open for the portal owner.
+
+---
+
+# Session board — arena-cf89967d — 2026-11-09
+
+All preceding boards above are preserved verbatim. Session ID `arena-cf89967d`; fixed Arena branch `arena/cf89967d-china1` (the Arena-assigned branch name takes precedence over the requested `session-<id>/<task>` convention, as logged by prior sessions). No other branches will be created or pushed.
+
+| ID | Task | Status | File scope |
+|---|---|---|---|
+| I0 | Read board; inventory repo and open PRs | done | this appended board only |
+| I1 | Final integration: claim board, coordinate | in progress | COORDINATION.md (append-only), README.md (append-only) |
+| I2 | Re-verify combined site: every edition builder/verifier; independent whole-repo internal-link crawl | unclaimed→claimed | read-only; no file edits outside scope |
+| I3 | Close open cross-session requests: portal archive link to Edition E/F/G via the generating script; rebuild | claimed | edition-d/build/build.py (template only), regenerated index.html |
+| I4 | Spot-check load-bearing official sources resolve | claimed | none (read-only) |
+| I5 | PR to main, merge, confirm Pages deploy, record result | claimed | COORDINATION.md, README.md (append-only) |
+
+Ground rules observed: no merged edition is overwritten; shared generator edit is template-only with byte-identical rebuild otherwise; open PRs #12/#14 (other sessions) are not touched; README/COORDINATION.md edits are append-only.
+
+I0 findings: my branch is exactly at origin/main (578ed83, PR #20 merge). All prior edition tasks are marked done; the only open items on the board are (a) the open cross-session requests for portal links to Edition F and Edition G, and (b) "Flagged for Review" items which are non-blocking by protocol.
