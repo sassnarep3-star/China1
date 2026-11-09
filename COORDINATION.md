@@ -892,3 +892,143 @@ after publication; this session will not edit the shared portal.
 - Public HTTP content fetched successfully for `/edition-h/site/index.html`, `/method-P01.html` and `/flagged.html` with `?build=430b0d9`. The live pages show 43 candidates, 1,720 rows, sourced partial charges, blank/unverified all-in values and 52 flags.
 - Live dashboard: https://sassnarep3-star.github.io/China1/edition-h/site/ ; executive summary: `/edition-h/site/executive-summary.html`; review register: `/edition-h/site/flagged.html`; full CSV: `/edition-h/site/cost-ladder.csv`.
 - Shared portal was not edited; its owner still has the additive Edition H archive-link request. Earlier editions and other open PRs remain untouched. Unverified personal facts stay needs-review and non-blocking.
+
+
+> The following historical board was written at branch point `578ed832` before `origin/main` advanced. Status update 2 within it relocates this independent work to the exclusive `edition-i/**` scope; no `edition-h/**` file is edited.
+
+# Active session board — arena-8344a869 (2026-11-09 UTC)
+
+Branch: `arena/8344a869-china1` (fixed by Arena; no other branch will be created or pushed).
+All earlier boards are preserved verbatim above. Read at session start. No other session has an
+`in progress` claim in this file; open PRs #12 and #14 are stale documentation/edition-D PRs owned
+by earlier sessions and are **not** merged, closed, claimed, or overwritten here. Their file scopes
+(`edition-d/**`, `assets/build.py`, `assets/check.py`, `index.html`, `README.md`, `COORDINATION.md`
+append-only) are therefore avoided or edited append-only.
+
+Session ID: `arena-8344a869`. Solo final-integration session: component work and the integration pass
+are performed by the same owner because no other active claim exists.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| H1  Read board, repo audit, claim + immediate push | in progress | arena-8344a869 | this appended board section |
+| H2  Official-source research, claim-level source register, retrieval log | unclaimed | arena-8344a869 | edition-h/data/**, edition-h/research/** |
+| H3  Executive summary + full requirements traceability | unclaimed | arena-8344a869 | edition-h/EXECUTIVE_SUMMARY.md, edition-h/REQUIREMENTS.md |
+| H4  Cost model: every $10,000 step $10,000–$400,000 for every method | unclaimed | arena-8344a869 | edition-h/data/**, edition-h/build/** |
+| H5  Clean dashboard site + category subpages + Flagged for Review | unclaimed | arena-8344a869 | edition-h/site/** |
+| H6  Line-by-line verification, internal/external link check, local HTTP 200 | unclaimed | arena-8344a869 | edition-h/build/verify.py, .github/workflows/edition-h-verify.yml |
+| H7  Final integration: PR from this branch, merge, confirm Pages deploy, record results | unclaimed | arena-8344a869 | append-only COORDINATION.md / README.md; no other session's site files |
+
+Coordination constraints honored: file-scope isolation instead of `session-<id>/<task>` branches
+(Arena pins the branch); `git pull --rebase` before every push; small frequent commits; conflicts,
+if any, resolved without discarding another session's work and logged here. Shared outputs
+(root portal, other editions' tables/navigation) are **not** edited. Edition H is reachable from
+README and from its own clean landing page; a cross-session request for a portal link is logged
+below rather than editing the portal generator owned by the Edition D session.
+
+Verification standard for this session: government/regulator/statute pages support legal and tax
+claims; a provider's own tariff supports only that provider's price. Every displayed table row
+carries an official-source link. Values not confirmed from an official source are **blank** and
+published on Flagged for Review. Derived arithmetic is allowed only when both inputs and the
+formula are shown and sourced; it is labelled conditional, never as an executable quote.
+
+## Status update 1 — arena-8344a869 (2026-11-09 UTC)
+
+Supersedes the initial H1–H7 table above for H1 and H2 only. No other session has claimed these tasks.
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| H1 Read board, repo audit, claim + immediate push | **done** | arena-8344a869 | this appended board section |
+| H2 Official-source research, claim-level source register, retrieval log | **in progress** | arena-8344a869 | `edition-h/build/model.py`, `edition-h/data/**`, `edition-h/research/**` |
+| H3–H7 | unclaimed | — | as in the original table |
+
+### H1 — sources, verification and irregularities
+
+- Repository state read at branch point `578ed832bc4fcdc6cf6404da47cbeaace0a18ec4`; official remote is [sassnarep3-star/China1](https://github.com/sassnarep3-star/China1). `git status`, `git log`, `find` and `gh pr list` were run locally.
+- Open PRs checked with GitHub: [PR #12](https://github.com/sassnarep3-star/China1/pull/12) and [PR #14](https://github.com/sassnarep3-star/China1/pull/14). [PR #20](https://github.com/sassnarep3-star/China1/pull/20) was already merged at the branch point. Pages source `main:/`, public site [https://sassnarep3-star.github.io/China1/](https://sassnarep3-star.github.io/China1/).
+- Verification: 266 inherited files and seven prior editions were enumerated; root `index.html` was read and traced to the Edition D generator in [`.github/workflows/verify.yml`](https://github.com/sassnarep3-star/China1/blob/main/.github/workflows/verify.yml), which regenerates it and asserts a clean diff. No other `in progress` claim existed in the board.
+- Irregularities logged, not silently edited: PR #12 claims many `edition-d/**`, `assets/**`, `README.md` and `index.html` paths; PR #14 edits `COORDINATION.md`; root portal is generated by another session's CI. Edition H therefore uses an exclusive `edition-h/**` scope and append-only coordination. Cross-session request: add an Edition H portal link; this session will not overwrite the portal generator.
+- H1 initial claim commit `14df952` was pushed on the Arena-fixed branch `arena/8344a869-china1` before any research/build work, with a clean `git pull --rebase origin main`.
+
+### H2 — claim and research record (sources checked, links for manual review)
+
+Source registry transcribed line by line into [`edition-h/build/model.py`](https://github.com/sassnarep3-star/China1/blob/arena/8344a869-china1/edition-h/build/model.py): 45 exact official/provider URLs, each with issuer, kind, short verbatim quote and verification note. Chinese text controls where an English translation is reference-only. Web search was used only to locate primary pages; no third-party result is cited as legal authority.
+
+| Source group | Representative exact official URL | What was verified |
+|---|---|---|
+| PRC FX statute / rule | [State Council Order 532](https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm); [PBOC Decree [2006] No.3](http://m.safe.gov.cn/safe/2006/1225/5319.html) | Current-account vs capital-account administration; 30% / 30%–100% fine bands |
+| SAFE current-account guideline | [Huifa [2020] No.14 gazette](https://www.gov.cn/gongbao/content/2020/content_5560296.htm); [2026 Tianjin Art. 59 Q&A](https://www.safe.gov.cn/tianjin/2026/0713/3088.html) | USD 50,000 convenience quota, Art. 56 documented purchase, Art. 59 tax vouchers, USD 50,000/day remittance threshold |
+| SAFE capital-account reform | [Huifa [2014] No.2](http://m.safe.gov.cn/safe/2014/0124/5476.html); [PBOC [2004] No.16](https://www.gov.cn/gongbao/content/2005/content_64294.htm) | Staged release and >CNY 500,000 filing cancelled; emigration/inheritance documents |
+| PRC tax | [STA IIT Law](https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html); [2026 No.27](https://shanghai.chinatax.gov.cn/zzzb/zcwj/202609/t481448.html); [2008 No.132](https://shanghai.chinatax.gov.cn/tax/zcfw/zcfgk/grsds/200810/t288953.html) | Nine income categories, 20% flat rates, savings-interest exemption, FIE-dividend repeal |
+| Bank / provider tariffs | [BOC FX board](https://www.boc.cn/sourcedb/whpj/); [BOC tariff PDF](https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf); [HSBC China tariff](https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf); [Wise guide](https://wise.com/help/articles/2955298/guide-to-cny-transfers) | 666.38 / 669.19 board, 0.1% capped TT + CNY 150 cable, HSBC tiers, Wise eligibility/limits |
+| US statute / IRS / CBP | [31 USC §5321](https://www.govinfo.gov/content/pkg/USCODE-2024-title31/html/USCODE-2024-title31-subtitleIV-chap53-subchapII-sec5321.htm); [26 USC §988](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm); [31 CFR §1010.821](https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821); [IRS FBAR](https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar); [IR-2026-48](https://www.irs.gov/newsroom/treasury-irs-issue-proposed-regulations-on-the-new-remittance-transfer-tax-established-under-the-one-big-beautiful-bill); [CBP cash reminder](https://www.cbp.gov/newsroom/local-media-release/dulles-cbp-officers-seize-over-111k-unreported-currency) | FBAR/8938/3520 thresholds, adjusted penalty maxima, §988(e) USD 200 de minimis, 1% remittance-tax scope, FinCEN 105 |
+| Canonical IRS overview | [Working Families Tax Cuts](https://www.irs.gov/newsroom/working-families-tax-cuts) | Section 70604 / 1% excise tax confirmation from the canonical page, chunk 4 |
+
+Verification performed: primary pages were fetched and short verbatim excerpts transcribed; the canonical IRS Working Families Tax Cuts page was fetched directly; both inherited `uscode.house.gov` granuleid URLs for 26 USC 988 and 31 USC 5321 were fetched and returned "Page Not Found"; the IRS FBAR page's second chunk was fetched so no unretrieved chunks remain for that page. Partial chunk coverage of other long pages/PDFs is recorded in `model.py` and will be published in `edition-h/research/retrieval-log.md`; full-page coverage is not asserted for partial fetches.
+
+Irregularities to publish on Flagged for Review: future-dated BOC ATM notice effective 2026-11-11 (not applied on 2026-11-09); HSBC PDF with mixed 2024/2026 effective dates; four observed Wise quotes only and waiting-list pages above CNY 300,000; dead `fincen.gov`, Changsha Customs, MOF, Xiamen tax and uscode.house.gov URLs; 2014 staged-release error; 1994 dividend-exemption error; 0.42% full-spread misuse; unadjusted FBAR maxima; overbroad 1% remittance-tax claims; 50%-of-transfer FBAR error. No value was inferred; unknown values are `None` in the model and will render blank.
+
+## Status update 2 — scope relocation to Edition I (arena-8344a869, 2026-11-09 UTC)
+
+### Concurrent-claim conflict, stopped and resolved without discarding work
+
+While pushing the H2 claim, `git pull --rebase origin main` stopped because `origin/main` had advanced from
+`578ed832` to [`fc92a7bf`](https://github.com/sassnarep3-star/China1/commit/fc92a7bf03f5c881259c6f1cc5e848092fdd9967)
+and introduced **tracked** `edition-h/**` files. The main board and GitHub show that session
+`arena-c2310264` claimed and merged Edition H through [PR #26](https://github.com/sassnarep3-star/China1/pull/26)
+and [PR #27](https://github.com/sassnarep3-star/China1/pull/27), and open [PR #25](https://github.com/sassnarep3-star/China1/pull/25)
+from `arena/d2efa2e7-china1` also claims `edition-h/**`. Those claims did not exist in the board at this
+session's branch point `578ed832`.
+
+Per the user's coordination rule, work stopped at the rebase error. Main's Edition H files were inspected,
+not overwritten. This session's independently researched draft was relocated **whole** to the unused,
+exclusive `edition-i/**` scope; the workflow will be `.github/workflows/edition-i-verify.yml`. Earlier
+editions, `edition-h/**`, `integration/**`, root `index.html`, open PRs #12/#14/#25 and the other session's
+coordination history are preserved. Cross-session request remains: add the Edition I link to the shared
+portal; this session will not edit another session's portal generator.
+
+| Task (relabelled I1–I7) | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| I1 Read board, repo audit, claim + immediate push | **done** | arena-8344a869 | append-only board section |
+| I2 Official-source research, exact source register, retrieval log | **done** | arena-8344a869 | `edition-i/build/model.py`, `edition-i/data/**`, `edition-i/research/**` |
+| I3 Executive summary + full requirements traceability | **done** | arena-8344a869 | `edition-i/EXECUTIVE_SUMMARY.md`, `edition-i/REQUIREMENTS.md`, `edition-i/README.md` |
+| I4 Cost model: every USD 10,000 step $10,000–$400,000 for all 23 methods | **done** | arena-8344a869 | `edition-i/data/**`, `edition-i/build/**` |
+| I5 Clean mobile dashboard, category pages, source table, Flagged for Review | **done** | arena-8344a869 | `edition-i/site/**`, `edition-i/index.html` |
+| I6 Line-by-line verification, internal/external link check, local HTTP 200, CI | **in progress** | arena-8344a869 | `edition-i/build/verify.py`, `.github/workflows/edition-i-verify.yml`, `edition-i/research/verification.md` |
+| I7 Final integration: PR from this branch, merge, confirm Pages deploy, record results | **in progress** | arena-8344a869 | append-only `COORDINATION.md` / `README.md`; no other session's site files |
+
+### Sources, verification and irregularities carried forward
+
+The 45 exact official/provider URLs, short verbatim excerpts, chunk-coverage notes and dead-end records
+from Status update 1 are unchanged and now live in `edition-i/build/model.py`, `edition-i/data/sources.json`,
+`edition-i/research/retrieval-log.md` and `edition-i/research/known-dead-ends.md`. Primary official links:
+[SAFE Huifa [2020] No.14](https://www.gov.cn/gongbao/content/2020/content_5560296.htm),
+[SAFE Huifa [2014] No.2](http://m.safe.gov.cn/safe/2014/0124/5476.html),
+[STA IIT Law](https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html),
+[BOC board](https://www.boc.cn/sourcedb/whpj/),
+[BOC tariff](https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf),
+[IRS FBAR](https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar),
+[31 USC §5321](https://www.govinfo.gov/content/pkg/USCODE-2024-title31/html/USCODE-2024-title31-subtitleIV-chap53-subchapII-sec5321.htm),
+[26 USC §988](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm),
+[31 CFR §1010.821](https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821),
+[IR-2026-48](https://www.irs.gov/newsroom/treasury-irs-issue-proposed-regulations-on-the-new-remittance-transfer-tax-established-under-the-one-big-beautiful-bill).
+
+Deterministic line-by-line audit at the original branch point scanned 266 tracked text files and 112,251 lines;
+the snapshot will be re-based to `fc92a7bf` after the rebase so the other session's merged Edition H and
+integration work are also included in the inherited-repo review. No inherited file was modified. Unknown
+personal values remain `None` / blank and flagged; 20 flags are published on the clearly labelled Flagged
+for Review page and do not block merge.
+
+## Status update 3 — rebase conflict reconciliation and clean-base rewrite (arena-8344a869)
+
+A first `git pull --rebase origin main` stopped with a `COORDINATION.md` append conflict. A second attempt
+also produced false directory-rename/add-add conflicts because Git detected the `edition-h/**` → `edition-i/**`
+relocation as a rename of the other session's newly merged Edition H files. Per the coordination rule, work was
+stopped at each conflict, `origin/main` was inspected, and no other session's file was discarded.
+
+Resolution: the branch was rebuilt from the clean `fc92a7bf` main tree, the other session's `edition-h/**`,
+`integration/**`, root portal and all earlier editions were retained verbatim, and this session's independent
+work was re-applied only under `edition-i/**`. Both board histories are preserved above; the earlier H1–H7
+claims are historical and superseded by the I1–I7 relocation table. The inherited-repo audit snapshot is now
+pinned to `fc92a7bf03f5c881259c6f1cc5e848092fdd9967`, so the other session's merged edition is also included
+in the line-by-line review. The remote Arena branch will be updated with `--force-with-lease` to this clean
+history; no other branch is created, switched or pushed. This is logged as the required conflict resolution.

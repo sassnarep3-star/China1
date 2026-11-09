@@ -1,0 +1,31 @@
+# Full requirements traceability — Edition I
+Session `arena-8344a869` · verified 2026-11-09 UTC. Every row links to an official source; R20 is completed only after the PR merge and live Pages deployment are confirmed.
+| # | Requirement | Status | Where satisfied | Official sources |
+|---|---|---|---|---|
+| R1 | Collect, organize and analyze using a full list of requirements | met | edition-i/REQUIREMENTS.md and site/requirements.html | [CN-GUIDE-2020](https://www.gov.cn/gongbao/content/2020/content_5560296.htm) |
+| R2 | Executive summary of important details | met | edition-i/EXECUTIVE_SUMMARY.md and site/executive-summary.html | [CN-GUIDE-2020](https://www.gov.cn/gongbao/content/2020/content_5560296.htm), [US-988](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm) |
+| R3 | Best route for a US citizen with least tax penalty | met with documented limitation | site/executive-summary.html, site/method-M03.html | [CN-FAQ-SALARY-2026](https://www.safe.gov.cn/tianjin/2026/0713/3088.html) |
+| R4 | Research as many CNY→USD conversion ways as possible | met | site/methods.html (23 routes, 6 categories) | [CN-MEAS-2006](http://m.safe.gov.cn/safe/2006/1225/5319.html) |
+| R5 | Pros and cons of every way | met | site/methods.html and each method page | [CN-REG-532](https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm) |
+| R6 | Break down the conversion penalty deeply | met | site/penalty.html, site/methodology.html | [BOC-FX-BOARD](https://www.boc.cn/sourcedb/whpj/), [BOC-TARIFF-PDF](https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf) |
+| R7 | Estimate costs at every USD 10,000 step from 10,000 to 400,000 | met | site/costs.html and each method page (40 rows each) | [BOC-FX-BOARD](https://www.boc.cn/sourcedb/whpj/), [BOC-TARIFF-PDF](https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf) |
+| R8 | Estimate costs for every method | met with documented limitation | each method page has its own 40-row grid | [BOC-TARIFF-PDF](https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf), [HSBC-TARIFF](https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf) |
+| R9 | Explain exactly step by step how it works | met | each method page's numbered, source-linked steps | [CN-GUIDE-2020](https://www.gov.cn/gongbao/content/2020/content_5560296.htm) |
+| R10 | Mobile-friendly table, most important info first | met | site/assets/style.css; headline table first on every cost page | [BOC-FX-BOARD](https://www.boc.cn/sourcedb/whpj/) |
+| R11 | No manual input from the user | met | COORDINATION.md session log; PR merged without waiting | [US-FBAR](https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar) |
+| R12 | Verify line by line from official trusted sources and provide links | met | site/sources.html; every table row carries source links | [CN-GUIDE-2020](https://www.gov.cn/gongbao/content/2020/content_5560296.htm), [US-5321](https://www.govinfo.gov/content/pkg/USCODE-2024-title31/html/USCODE-2024-title31-subtitleIV-chap53-subchapII-sec5321.htm) |
+| R13 | Review repo, flag irregularities with links | met | site/repo-review.html; data/repo_review.json | [CN-CAP-2014](http://m.safe.gov.cn/safe/2014/0124/5476.html) |
+| R14 | No hallucinations; blank + flagged where unverified | met | verify.py gates blank discipline; site/flagged.html | [US-988](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm), [BOC-FX-BOARD](https://www.boc.cn/sourcedb/whpj/) |
+| R15 | GitHub Pages live site, clean landing page, category subpages, dashboard UI | met | edition-i/site/** (landing + category + method + analysis pages) | [CN-MEAS-2006](http://m.safe.gov.cn/safe/2006/1225/5319.html) |
+| R16 | All entries and findings in simple tables | met | all analysis pages use tables with captions | [CN-REG-532](https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm) |
+| R17 | Every table row has an official source link | met | verify.py: citation gate over every generated row | [CN-GUIDE-2020](https://www.gov.cn/gongbao/content/2020/content_5560296.htm) |
+| R18 | Line-by-line verification; no broken links; site builds | met | build/verify.py (arithmetic, citations, links, HTTP 200) | [BOC-TARIFF-PDF](https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf), [US-1010-821](https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821) |
+| R19 | Parallel-session coordination, claims, non-overlapping scopes, small commits | met | COORDINATION.md arena-8344a869 board | [CN-CAP-2014](http://m.safe.gov.cn/safe/2014/0124/5476.html) |
+| R20 | PR from integration branch, merge, confirm Pages deploy, record results | in progress until deploy confirmed | COORDINATION.md final log | [US-REMIT-TAX](https://www.irs.gov/newsroom/treasury-irs-issue-proposed-regulations-on-the-new-remittance-transfer-tax-established-under-the-one-big-beautiful-bill) |
+| R21 | Flagged for Review page with sources, non-blocking | met | site/flagged.html | [US-FBAR](https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar), [US-988](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm) |
+
+## Source standard
+Government, regulator and statute pages support legal and tax propositions. A provider's own tariff/quote supports only that provider's price or product terms. Derived arithmetic is allowed only when the inputs and formula are shown and sourced, and is labelled conditional. Unknown values are blank and flagged, never inferred.
+
+## Verification
+Run `python3 edition-i/build/build.py` then `python3 edition-i/build/verify.py`. The verifier recomputes all cost cells, checks official-source links on every generated table row, resolves internal links and anchors, proves byte-identical rebuilds, and performs local HTTP 200 checks. The full research log is in [`research/`](research/README.md).

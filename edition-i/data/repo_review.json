@@ -1,0 +1,130 @@
+[
+  {
+    "id": "R01",
+    "sources": [
+      "US-988",
+      "US-5321"
+    ],
+    "finding": "Both inherited uscode.house.gov 'granuleid:USC-prelim-...' URLs for 26 USC 988 and 31 USC 5321 were fetched on 2026-11-09 and returned 'Page Not Found'.",
+    "disposition": "Edition I uses govinfo.gov US Code 2024 edition pages, which were retrieved successfully; the two dead URLs and their replacements are recorded in research/known-dead-ends.md."
+  },
+  {
+    "id": "R02",
+    "sources": [
+      "US-CBP-CASH"
+    ],
+    "finding": "The FinCEN URL 'https://www.fincen.gov/reporting-international-transportation-currency-monetary-instruments' in an inherited source registry returns 'Page Not Found'.",
+    "disposition": "Edition I cites a retrieved CBP newsroom page for the USD 10,000 / FinCEN 105 rule."
+  },
+  {
+    "id": "R03",
+    "sources": [
+      "CN-CASH-CUSTOMS"
+    ],
+    "finding": "The Changsha Customs Q&A URL (customs.gov.cn/changsha_customs/.../1316760/index.html) used in earlier editions returns HTTP 404.",
+    "disposition": "Edition I uses a retrieved GACC consultation answer plus the GACC service guide."
+  },
+  {
+    "id": "R04",
+    "sources": [
+      "CN-PROP-2004",
+      "CN-CAP-2014"
+    ],
+    "finding": "Several editions present the 2004 three-stage emigration release as current law.",
+    "disposition": "Corrected against SAFE Huifa [2014] No.2 §VI(2), retrieved from SAFE's own site."
+  },
+  {
+    "id": "R05",
+    "sources": [
+      "CN-GUIDE-2020",
+      "CN-FAQ-QUOTA-2026"
+    ],
+    "finding": "USD 50,000 is repeatedly described as an absolute annual ceiling on all individual FX purchases.",
+    "disposition": "The official gazette distinguishes a convenience quota (Art. 54) from documented non-quota current-account purchases (Art. 56), confirmed by a 2026 SAFE Q&A."
+  },
+  {
+    "id": "R06",
+    "sources": [
+      "CN-GUIDE-2020",
+      "CN-FAQ-REMIT-2026"
+    ],
+    "finding": "USD 50,000/day remittance threshold and USD 50,000/year purchase quota are conflated in several inherited tables.",
+    "disposition": "Separated with the exact Arts. 54 / 64 / 65 citations."
+  },
+  {
+    "id": "R07",
+    "sources": [
+      "BOC-FX-BOARD"
+    ],
+    "finding": "BOC board rates from 2026-11-08 are carried forward without the bank's 仅供参考 disclaimer.",
+    "disposition": "Edition I re-retrieved the board (2026-11-09 09:15:45) and states it is not an executable quote."
+  },
+  {
+    "id": "R08",
+    "sources": [
+      "BOC-TARIFF",
+      "BOC-TARIFF-PDF"
+    ],
+    "finding": "Earlier editions cite a 2025-03 BOC tariff PDF although the price-list index now links a 2025-11-11 edition.",
+    "disposition": "Edition I uses the current PDF; both editions' cross-border TT figures were read and are identical for item 210105008."
+  },
+  {
+    "id": "R09",
+    "sources": [
+      "WISE-GUIDE",
+      "WISE-Q-66919"
+    ],
+    "finding": "Inherited Wise quote URLs are presented as a price grid, but the provider's own guide caps a single bank-app transfer at CNY 300,000 and ties the overall limit to tax records.",
+    "disposition": "Edition I publishes only four directly observed quotes and leaves the rest blank."
+  },
+  {
+    "id": "R10",
+    "sources": [
+      "US-REMIT-TAX"
+    ],
+    "finding": "Inherited material sometimes treats the 1% US remittance tax as applying to inbound China→US wires.",
+    "disposition": "Corrected with IR-2026-48, which limits it to US-origin, physical-instrument-funded remittances."
+  },
+  {
+    "id": "R11",
+    "sources": [
+      "HSBC-TARIFF"
+    ],
+    "finding": "The HSBC China tariff PDF contains tables of two different effective dates.",
+    "disposition": "Disclosed and restricted to the top-level 2026-10-31 tariff."
+  },
+  {
+    "id": "R12",
+    "sources": [
+      "CN-INTEREST-2008",
+      "US-WORLDWIDE"
+    ],
+    "finding": "PRC savings-interest exemption and US worldwide-income taxation are sometimes merged into a single 'no tax' claim.",
+    "disposition": "Separated: PRC IIT on savings interest is temporarily exempt; US taxation of worldwide income continues."
+  },
+  {
+    "id": "R13",
+    "sources": [
+      "CN-DIV-2026"
+    ],
+    "finding": "The repeal of the foreign-individual dividend exemption effective 2026-09-01 is absent from most inherited tax tables.",
+    "disposition": "Added with the official MOF/STA announcement republication."
+  },
+  {
+    "id": "R14",
+    "sources": [
+      "US-1010-821"
+    ],
+    "finding": "FBAR penalty maxima in inherited tables are the unadjusted statutory figures.",
+    "disposition": "Added the eCFR inflation-adjusted table figures, with the assessment-date caveat."
+  },
+  {
+    "id": "R15",
+    "sources": [
+      "CN-TAXFILING-2013",
+      "CN-TAXFILING-2021"
+    ],
+    "finding": "The 2013 tax-filing announcement is cited as if wholly current, although 2021 No.19 repealed several articles.",
+    "disposition": "Both instruments are cited with the repeal noted."
+  }
+]

@@ -412,3 +412,17 @@ professional before moving funds; the decisive facts (source of funds, residency
 - Live dashboard: <https://sassnarep3-star.github.io/China1/edition-h/site/>
 - Rebuild/verify: `python3 edition-h/build/audit.py && python3 edition-h/build/build.py && python3 edition-h/build/verify.py`
 - Publication: PR [#26](https://github.com/sassnarep3-star/China1/pull/26), merge `430b0d9`; Pages deployment succeeded and public content was retrieved.
+
+---
+
+## Edition I — independent verified dashboard (arena-8344a869)
+
+**Live:** https://sassnarep3-star.github.io/China1/edition-i/site/index.html · **Short redirect:** https://sassnarep3-star.github.io/China1/edition-i/
+
+This session's independently researched, source-linked dossier is isolated in `edition-i/**` because another
+session claimed and merged `edition-h/**` while this work was in progress. It contains 23 routes, six category
+pages, 40 USD amount steps per route (920 rows), 45 exact official/provider-primary sources, a clearly labelled
+Flagged for Review page, a line-by-line inherited-repo audit and deterministic build/verify scripts. Earlier
+editions and the shared root portal are preserved unchanged. Build: `python3 edition-i/build/build.py`; verify:
+`python3 edition-i/build/verify.py`. Unknown values are blank and flagged, never inferred. Not legal, tax or
+investment advice.

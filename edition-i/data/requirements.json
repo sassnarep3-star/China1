@@ -1,0 +1,128 @@
+[
+  {
+    "id": "R1",
+    "text": "Collect, organize and analyze using a full list of requirements",
+    "where": "edition-i/REQUIREMENTS.md and site/requirements.html",
+    "status": "met"
+  },
+  {
+    "id": "R2",
+    "text": "Executive summary of important details",
+    "where": "edition-i/EXECUTIVE_SUMMARY.md and site/executive-summary.html",
+    "status": "met"
+  },
+  {
+    "id": "R3",
+    "text": "Best route for a US citizen with least tax penalty",
+    "where": "site/executive-summary.html, site/method-M03.html",
+    "status": "met with documented limitation"
+  },
+  {
+    "id": "R4",
+    "text": "Research as many CNY→USD conversion ways as possible",
+    "where": "site/methods.html (23 routes, 6 categories)",
+    "status": "met"
+  },
+  {
+    "id": "R5",
+    "text": "Pros and cons of every way",
+    "where": "site/methods.html and each method page",
+    "status": "met"
+  },
+  {
+    "id": "R6",
+    "text": "Break down the conversion penalty deeply",
+    "where": "site/penalty.html, site/methodology.html",
+    "status": "met"
+  },
+  {
+    "id": "R7",
+    "text": "Estimate costs at every USD 10,000 step from 10,000 to 400,000",
+    "where": "site/costs.html and each method page (40 rows each)",
+    "status": "met"
+  },
+  {
+    "id": "R8",
+    "text": "Estimate costs for every method",
+    "where": "each method page has its own 40-row grid",
+    "status": "met with documented limitation"
+  },
+  {
+    "id": "R9",
+    "text": "Explain exactly step by step how it works",
+    "where": "each method page's numbered, source-linked steps",
+    "status": "met"
+  },
+  {
+    "id": "R10",
+    "text": "Mobile-friendly table, most important info first",
+    "where": "site/assets/style.css; headline table first on every cost page",
+    "status": "met"
+  },
+  {
+    "id": "R11",
+    "text": "No manual input from the user",
+    "where": "COORDINATION.md session log; PR merged without waiting",
+    "status": "met"
+  },
+  {
+    "id": "R12",
+    "text": "Verify line by line from official trusted sources and provide links",
+    "where": "site/sources.html; every table row carries source links",
+    "status": "met"
+  },
+  {
+    "id": "R13",
+    "text": "Review repo, flag irregularities with links",
+    "where": "site/repo-review.html; data/repo_review.json",
+    "status": "met"
+  },
+  {
+    "id": "R14",
+    "text": "No hallucinations; blank + flagged where unverified",
+    "where": "verify.py gates blank discipline; site/flagged.html",
+    "status": "met"
+  },
+  {
+    "id": "R15",
+    "text": "GitHub Pages live site, clean landing page, category subpages, dashboard UI",
+    "where": "edition-i/site/** (landing + category + method + analysis pages)",
+    "status": "met"
+  },
+  {
+    "id": "R16",
+    "text": "All entries and findings in simple tables",
+    "where": "all analysis pages use tables with captions",
+    "status": "met"
+  },
+  {
+    "id": "R17",
+    "text": "Every table row has an official source link",
+    "where": "verify.py: citation gate over every generated row",
+    "status": "met"
+  },
+  {
+    "id": "R18",
+    "text": "Line-by-line verification; no broken links; site builds",
+    "where": "build/verify.py (arithmetic, citations, links, HTTP 200)",
+    "status": "met"
+  },
+  {
+    "id": "R19",
+    "text": "Parallel-session coordination, claims, non-overlapping scopes, small commits",
+    "where": "COORDINATION.md arena-8344a869 board",
+    "status": "met"
+  },
+  {
+    "id": "R20",
+    "text": "PR from integration branch, merge, confirm Pages deploy, record results",
+    "where": "COORDINATION.md final log",
+    "status": "in progress until deploy confirmed"
+  },
+  {
+    "id": "R21",
+    "text": "Flagged for Review page with sources, non-blocking",
+    "where": "site/flagged.html",
+    "status": "met"
+  }
+]

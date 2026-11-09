@@ -1,0 +1,30 @@
+[
+  {
+    "amount_cny": 66919.0,
+    "fee_cny": 436.11,
+    "balance_fee_cny": 419.84,
+    "discount_cny": null,
+    "src": "WISE-Q-66919"
+  },
+  {
+    "amount_cny": 133858.0,
+    "fee_cny": 848.58,
+    "balance_fee_cny": 832.29,
+    "discount_cny": null,
+    "src": "WISE-Q-133858"
+  },
+  {
+    "amount_cny": 200787.0,
+    "fee_cny": 1228.5,
+    "balance_fee_cny": 1212.2,
+    "discount_cny": 32.69,
+    "src": "WISE-Q-200787"
+  },
+  {
+    "amount_cny": 267716.0,
+    "fee_cny": 1574.72,
+    "balance_fee_cny": 1558.43,
+    "discount_cny": 99.27,
+    "src": "WISE-Q-267716"
+  }
+]

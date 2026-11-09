@@ -1,0 +1,407 @@
+[
+  {
+    "id": "CN-REG-532",
+    "issuer": "State Council / gov.cn",
+    "kind": "regulation",
+    "title": "PRC Regulations on Foreign Exchange Administration (State Council Order 532, 2008)",
+    "url": "https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm",
+    "quote": "第三十九条 ... 处逃汇金额30%以下的罚款；情节严重的，处逃汇金额30%以上等值以下的罚款",
+    "note": "Arts. 5, 12, 39, 40, 45, 52 read and transcribed. Penalty bands are ceilings, not predictions."
+  },
+  {
+    "id": "CN-MEAS-2006",
+    "issuer": "PBOC / SAFE",
+    "kind": "regulation",
+    "title": "Measures for the Administration of Individual Foreign Exchange (PBOC Decree [2006] No.3)",
+    "url": "http://m.safe.gov.cn/safe/2006/1225/5319.html",
+    "quote": "第三条 经常项目项下的个人外汇业务按照可兑换原则管理，资本项目项下的个人外汇业务按照可兑换进程管理",
+    "note": "Arts. 2, 3, 7, 9, 13, 14, 22, 26, 28, 33-37 read; Art. 37 defines 境内个人 / 境外个人."
+  },
+  {
+    "id": "CN-GUIDE-2020",
+    "issuer": "SAFE / State Council Gazette",
+    "kind": "regulation",
+    "title": "Current Account Foreign Exchange Business Guidelines (2020), Huifa [2020] No.14",
+    "url": "https://www.gov.cn/gongbao/content/2020/content_5560296.htm",
+    "quote": "第五十四条 个人结汇和境内个人购汇实行年度便利化额度管理，便利化额度分别为每人每年等值5万美元",
+    "note": "Chapter 3 Arts. 54-65, Chapter 4 Arts. 86-88 read from the official gazette text. Art. 56 permits non-quota current-account purchase with purpose documents; Art. 59 covers overseas individuals' lawful China-source RMB income; Art. 64 sets a USD 50,000/day remittance threshold; Art. 65 covers overseas individuals' outward remittance."
+  },
+  {
+    "id": "CN-FAQ-QUOTA-2026",
+    "issuer": "SAFE Tianjin branch",
+    "kind": "guidance",
+    "title": "2026 individual FX Q&A (07): does studying abroad consume the convenience quota?",
+    "url": "https://www.safe.gov.cn/tianjin/2026/0706/3085.html",
+    "quote": "个人可以自主选择是否占用本人便利化额度 ... 如不占用本人便利化额度，则需凭本人有效身份证件和有交易额的购汇资金用途相关材料",
+    "note": "Confirms the USD 50,000 quota is a convenience tier, not an absolute ceiling, for genuine current-account purposes."
+  },
+  {
+    "id": "CN-FAQ-REMIT-2026",
+    "issuer": "SAFE Tianjin branch",
+    "kind": "guidance",
+    "title": "2026 individual FX Q&A (03): is there a quota on outward remittance for current-account spending?",
+    "url": "https://www.safe.gov.cn/tianjin/2026/0422/3039.html",
+    "quote": "外汇账户内外汇汇出境外当日累计等值5万美元以下（含）的，凭本人有效身份证件办理；超过上述金额的，凭本人有效身份证件、有交易额的相关材料办理",
+    "note": "USD 50,000/day (not per year) threshold for remitting FX already held; above it, documents."
+  },
+  {
+    "id": "CN-FAQ-SALARY-2026",
+    "issuer": "SAFE Tianjin branch",
+    "kind": "guidance",
+    "title": "2026 individual FX Q&A (08): how does an overseas individual remit China-source labour remuneration?",
+    "url": "https://www.safe.gov.cn/tianjin/2026/0713/3088.html",
+    "quote": "境外个人在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的购汇资金来源材料（含税务凭证）在银行办理购汇",
+    "note": "2026 restatement of Art. 59; tax vouchers are documentation, not a conversion tax."
+  },
+  {
+    "id": "CN-CAP-2014",
+    "issuer": "SAFE",
+    "kind": "regulation",
+    "title": "SAFE Circular Huifa [2014] No.2 — capital-account policy adjustments (amended)",
+    "url": "http://m.safe.gov.cn/safe/2014/0124/5476.html",
+    "quote": "六、简化个人财产转移售付汇管理 ... （二）取消移民财产转移分次汇出的要求",
+    "note": "Section VI cancels the 2004 staged-release requirement, the >CNY 500,000 SAFE head-office filing, separate applications for different decedents, and notarisation. Page is marked 已修改; the footnote's amendment concerns Section III (ODI preliminary expenses), not Section VI."
+  },
+  {
+    "id": "CN-CAP-2014-EN",
+    "issuer": "SAFE (English)",
+    "kind": "guidance",
+    "title": "SAFE English translation of Huifa [2014] No.2",
+    "url": "https://www.safe.gov.cn/en/2014/0801/741.html",
+    "quote": "The English translation may only be used as a reference. In case of a different interpretation ... the original Chinese shall prevail",
+    "note": "English is a reference translation only; the Chinese text governs."
+  },
+  {
+    "id": "CN-PROP-2004",
+    "issuer": "PBOC / State Council Gazette",
+    "kind": "regulation",
+    "title": "Interim Measures for FX Settlement and Payment for Individual Property Transfers (PBOC Announcement [2004] No.16)",
+    "url": "https://www.gov.cn/gongbao/content/2005/content_64294.htm",
+    "quote": "第六条 移民转移必须一次性申请拟转移出境的全部财产金额，分步汇出 ... 第十一条 外汇指定银行办理售汇后，应直接将外汇汇往 ... 申请人本人的账户",
+    "note": "Art. 6 staged release is SUPERSEDED by CN-CAP-2014 §VI(2). Art. 8 requires hukou cancellation, foreign-settlement certificate, property-title and tax-clearance documents. Art. 10's >CNY 500,000 head-office approval is also superseded. Art. 11 direct remittance to the applicant's own account remains."
+  },
+  {
+    "id": "CN-PROPERTY-FAQ",
+    "issuer": "Shanghai Municipal Government (source: Bank of China)",
+    "kind": "guidance",
+    "title": "FAQ: can I buy foreign exchange using the proceeds from selling my house?",
+    "url": "https://english.shanghai.gov.cn/en-FAQHome/20240204/b4426264395b4fa3adfde73778c94ad4.html",
+    "quote": "Step 3. Visit the local tax authority to settle the tax on the proceeds from the sale of the house property and obtain the proof of tax payment",
+    "note": "Tax voucher and, above USD 50,000, a Tax Filing Form for External Payments are required before purchase/remittance."
+  },
+  {
+    "id": "CN-IIT-LAW",
+    "issuer": "State Taxation Administration (English)",
+    "kind": "law",
+    "title": "Individual Income Tax Law of the PRC (2018 amendment)",
+    "url": "https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html",
+    "quote": "Article 2 The following categories of individual income shall be subject to individual income tax ... (6) Income from interest, dividends or bonuses ... (8) Income from transfer of assets",
+    "note": "Art. 2 lists the nine taxable categories; converting one's own principal is not listed. Art. 3 sets a 20% flat rate for interest/dividends, asset transfers, leasing and incidental income."
+  },
+  {
+    "id": "CN-INTEREST-2008",
+    "issuer": "MOF / STA (Shanghai tax bureau republication)",
+    "kind": "regulation",
+    "title": "Caishui [2008] No.132 — IIT on interest from savings deposits",
+    "url": "https://shanghai.chinatax.gov.cn/tax/zcfw/zcfgk/grsds/200810/t288953.html",
+    "quote": "自2008年10月9日起，对储蓄存款利息所得暂免征收个人所得税",
+    "note": "Interest accruing on savings deposits from 2008-10-09 is temporarily exempt from PRC IIT. Other interest remains taxable at 20% under the IIT Law."
+  },
+  {
+    "id": "CN-DIV-2026",
+    "issuer": "MOF / STA (Shanghai tax bureau republication)",
+    "kind": "regulation",
+    "title": "MOF/STA Announcement 2026 No.27 — IIT on dividends received by foreign individuals",
+    "url": "https://shanghai.chinatax.gov.cn/zzzb/zcwj/202609/t481448.html",
+    "quote": "一、外籍个人从外商投资企业取得的股息红利所得，按照“利息、股息、红利所得”缴纳个人所得税，适用20%税率",
+    "note": "Effective 2026-09-01; repeals the 1994 exemption in Caishui [1994] No.20 Art. 2(8). Relevant only if the stuck CNY came from FIE dividends."
+  },
+  {
+    "id": "CN-TAXFILING-2013",
+    "issuer": "STA / SAFE",
+    "kind": "regulation",
+    "title": "STA/SAFE Announcement 2013 No.40 — tax filing for external payments (amended)",
+    "url": "https://fgk.chinatax.gov.cn/zcfgk/c100012/c5194375/content.html",
+    "quote": "一、境内机构和个人向境外单笔支付等值5万美元以上（不含等值5万美元）下列外汇资金 ... 均应向所在地主管税务机关进行税务备案",
+    "note": "Art. 3(13) exempts 境内个人境外留学、旅游、探亲等因私用汇. The page's annotation states that 2021 No.19 repealed Art. 1(2), Art. 2(2), Arts. 5-8, Art. 10 and Annex 2. A tax filing is a reporting step, not a tax."
+  },
+  {
+    "id": "CN-TAXFILING-2021",
+    "issuer": "STA / SAFE (Tianjin tax bureau)",
+    "kind": "regulation",
+    "title": "STA/SAFE Announcement 2021 No.19 — supplementary announcement on tax filing",
+    "url": "https://tianjin.chinatax.gov.cn/11200000000/0300/030004/03000418/20210705111145797.shtml",
+    "quote": "一、境内机构和个人对同一笔合同需要多次对外支付的，仅需在首次付汇前办理税务备案",
+    "note": "Online/one-time filing; confirms which 2013 provisions were repealed."
+  },
+  {
+    "id": "CN-ATM-2017",
+    "issuer": "SAFE",
+    "kind": "guidance",
+    "title": "SAFE explainer of Huifa [2017] No.29 — overseas ATM cash withdrawals",
+    "url": "https://www.safe.gov.cn/safe/2017/1230/8130.html",
+    "quote": "本人名下银行卡（含附属卡）合计每个自然年度不得超过等值10万元人民币；将人民币卡、外币卡境外提取现金每卡每日额度统一为等值1万元人民币",
+    "note": "Effective 2018-01-01. Also states normal card consumption and the USD 50,000 convenience quota are unaffected."
+  },
+  {
+    "id": "CN-CASH-CUSTOMS",
+    "issuer": "GACC (Jiangmen Customs answer)",
+    "kind": "guidance",
+    "title": "GACC Q&A: how much cash may be taken out of China?",
+    "url": "http://www.customs.gov.cn/eportal/ui?pageId=374112&msgDataId=7cebfa81134447ad8a57883790a3e68d",
+    "quote": "每人每次携带现金的限额是人民币20000元，外币5000美元",
+    "note": "Official customs consultation answer dated 2021-03-12. Larger amounts require a 携带外汇出境许可证; the Changsha Customs Q&A URL used in earlier editions returned HTTP 404 on retrieval."
+  },
+  {
+    "id": "CN-CUSTOMS-GUIDE",
+    "issuer": "GACC",
+    "kind": "guidance",
+    "title": "GACC service guide — supervision of inbound/outbound passenger baggage",
+    "url": "https://online.customs.gov.cn/static/pages/guides/000629014002/000629014002.html",
+    "quote": "进出境旅客携带有应向海关申报物品的，应选择“申报通道”（又称“红色通道”）通关",
+    "note": "Confirms the red-channel written declaration procedure; no fee is charged."
+  },
+  {
+    "id": "CN-NATIONALITY",
+    "issuer": "National Immigration Administration",
+    "kind": "guidance",
+    "title": "NIA Q&A citing Nationality Law Art. 9",
+    "url": "https://www.nia.gov.cn/Enquiry/publish/showQuestion.jsp?MZ=9PQAMhZWr6Zk9fibcZHJMA%3D%3D",
+    "quote": "定居外国的中国公民，自愿加入或取得外国国籍的，即自动丧失中国国籍",
+    "note": "An un-cancelled hukou / PRC ID does not preserve Chinese nationality, but it can cause the bank to classify the account as 境内个人."
+  },
+  {
+    "id": "CN-CRYPTO-2021",
+    "issuer": "PBOC and nine other agencies",
+    "kind": "regulation",
+    "title": "Yinfa [2021] No.237 — further prevention of virtual-currency trading risks",
+    "url": "https://www.pbc.gov.cn/tiaofasi/144941/3581332/4348658/index.html",
+    "quote": "虚拟货币相关业务活动属于非法金融活动 ... 一律严格禁止，坚决依法取缔",
+    "note": "Fiat-to-virtual-currency exchange and offshore exchanges serving mainland residents are prohibited. No execution steps are published for this route."
+  },
+  {
+    "id": "BOC-FX-BOARD",
+    "issuer": "Bank of China",
+    "kind": "provider-rate",
+    "title": "Bank of China foreign-exchange board (USD), published 2026-11-09 09:15:45",
+    "url": "https://www.boc.cn/sourcedb/whpj/",
+    "quote": "美元 | 666.38 | 666.38 | 669.19 | 669.19 | 671.88 | 2026/11/09 | 09:15:45",
+    "note": "CNY per 100 USD: 现汇买入价 666.38, 现汇卖出价 669.19, 中行折算价 671.88. Board disclaimer: 仅供参考; the actual transaction rate is the rate offered in online/mobile banking, smart counter or branch. NOT an executable quote."
+  },
+  {
+    "id": "BOC-TARIFF",
+    "issuer": "Bank of China",
+    "kind": "provider-tariff",
+    "title": "Bank of China service price list index (effective 2025-11-11)",
+    "url": "https://www.bankofchina.com/custserv/fd5/",
+    "quote": "本价目表自2025年11月11日起实施，至本价目表失效之日终止，另有规定的从其规定",
+    "note": "Links the current personal-finance tariff PDF and a future-dated 2026-11-11 adjustment notice."
+  },
+  {
+    "id": "BOC-TARIFF-PDF",
+    "issuer": "Bank of China",
+    "kind": "provider-tariff",
+    "title": "BOC service price list, Chapter 3 personal finance (effective 2025-11-11)",
+    "url": "https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf",
+    "quote": "本外币跨境汇款：电汇/票汇按汇款金额的1‰，最低收取50元/笔，最高收取260元/笔，电汇另收电讯费（中国港澳台地区发电80元/笔，国际发电150元/笔）",
+    "note": "Item 210105008. Also: 全额到账 surcharge USD 15 (receiving bank holds an account at BOC New York) or USD 25 (others); 境外银行收费按实向客户收取; ATM 跨境取现 12元+取现金额的1%, max 112元/笔; 我行网点提供的外币兑换服务不收取此项费用; electronic-channel discounts are published separately and were not retrieved."
+  },
+  {
+    "id": "BOC-ATM-2026",
+    "issuer": "Bank of China",
+    "kind": "provider-tariff",
+    "title": "BOC notice adjusting personal service charges, effective 2026-11-11",
+    "url": "https://www.bankofchina.com/pbservice/bi2/202608/t20260811_25684907.html",
+    "quote": "国外及中国港澳台：银联：每笔（12 元+取现金额的1%）收取，最高 112 元/笔 万事达、VISA：取现金额的2.5%，最低等值3美元/笔，最高等值40美元/笔",
+    "note": "NOT YET EFFECTIVE on 2026-11-09. UnionPay pricing is unchanged; Mastercard/Visa pricing changes from 2026-11-11. This edition uses the current tariff and flags the future change."
+  },
+  {
+    "id": "HSBC-TARIFF",
+    "issuer": "HSBC Bank (China)",
+    "kind": "provider-tariff",
+    "title": "HSBC China Tariff of Accounts and Services for Wealth and Personal Banking (effective 2026-10-31)",
+    "url": "https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf",
+    "quote": "Telegraphic Transfer Issuance ... For individual customer: Free ... 0.1% of remittance amount Min. CNY100 ... Max. CNY500 ... Plus Cable Charge; Cable Charges ... CNY120 / equivalent per cable",
+    "note": "Items 2.2.4.1/2.2.4.2. Free only for Private Banking individual customers; Premier/Advance pay 0.1% (min CNY100, max CNY500) + CNY120 cable. 'Pay Exact' is CNY200. The PDF also contains an embedded older table headed 2024年9月12日生效 — mixed vintage is flagged."
+  },
+  {
+    "id": "WISE-GUIDE",
+    "issuer": "Wise",
+    "kind": "provider-terms",
+    "title": "Wise help centre — guide to CNY transfers",
+    "url": "https://wise.com/help/articles/2955298/guide-to-cny-transfers",
+    "quote": "You can send money from CNY if: You're not mainland Chinese ... You're working or have worked in China before ... You have a valid tax record issued by the China tax authority showing taxes paid within the last 3 years",
+    "note": "Only to an account in the sender's own name; bank-app single transfer maximum CNY 300,000; overall limit based on China salary after China tax, evidenced by tax records; Wise works with a PBOC-licensed third-party payment provider."
+  },
+  {
+    "id": "WISE-Q-66919",
+    "issuer": "Wise",
+    "kind": "provider-quote",
+    "title": "Wise public CNY→USD quote, sourceAmount=66919 CNY",
+    "url": "https://wise.com/us/send-money/send-money-to-the-usa-from-china?sourceAmount=66919",
+    "quote": "Total fees ... 436.11 CNY ... The cheapest way to send 66,919 CNY ... costs 419.84 CNY",
+    "note": "Bank-transfer cost 436.11 CNY; Wise-balance cost 419.84 CNY; displayed rate 1 CNY = 0.1498 USD. Public indicative quote, not a logged-in executable quote."
+  },
+  {
+    "id": "WISE-Q-133858",
+    "issuer": "Wise",
+    "kind": "provider-quote",
+    "title": "Wise public CNY→USD quote, sourceAmount=133858 CNY",
+    "url": "https://wise.com/us/send-money/send-money-to-the-usa-from-china?sourceAmount=133858",
+    "quote": "Total fees ... 848.58 CNY ... costs 832.29 CNY",
+    "note": "Bank-transfer cost 848.58 CNY; Wise-balance cost 832.29 CNY; displayed rate 1 CNY = 0.1498 USD."
+  },
+  {
+    "id": "WISE-Q-200787",
+    "issuer": "Wise",
+    "kind": "provider-quote",
+    "title": "Wise public CNY→USD quote, sourceAmount=200787 CNY",
+    "url": "https://wise.com/us/send-money/send-money-to-the-usa-from-china?sourceAmount=200787",
+    "quote": "Total fees ... 1,228.50 CNY ... 32.69 CNY volume discount",
+    "note": "Bank-transfer cost 1,228.50 CNY; Wise-balance cost 1,212.20 CNY; displayed volume discount 32.69 CNY."
+  },
+  {
+    "id": "WISE-Q-267716",
+    "issuer": "Wise",
+    "kind": "provider-quote",
+    "title": "Wise public CNY→USD quote, sourceAmount=267716 CNY",
+    "url": "https://wise.com/us/send-money/send-money-to-the-usa-from-china?sourceAmount=267716",
+    "quote": "Total fees ... 1,574.72 CNY ... 99.27 CNY volume discount",
+    "note": "Bank-transfer cost 1,574.72 CNY; Wise-balance cost 1,558.43 CNY; displayed volume discount 99.27 CNY."
+  },
+  {
+    "id": "CHASE-FEES",
+    "issuer": "JPMorgan Chase",
+    "kind": "provider-tariff",
+    "title": "Chase Additional Banking Services and Fees for Personal Accounts",
+    "url": "https://www.chase.com/content/dam/chase-ux/documents/personal/checking/ABSF-en.pdf",
+    "quote": "Domestic and International Incoming Wire ... $15 per transfer OR $0 if the transfer was originally sent with the help of a Chase banker or using chase.com or Chase Mobile",
+    "note": "USD 15 per incoming international wire for personal accounts; the $0 branch applies to transfers originated at Chase, not a BOC-originated wire. Fees may be waived for some account types. Provider-specific, not universal."
+  },
+  {
+    "id": "US-FBAR",
+    "issuer": "IRS",
+    "kind": "guidance",
+    "title": "IRS — Report of Foreign Bank and Financial Accounts (FBAR)",
+    "url": "https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar",
+    "quote": "the aggregate value of those foreign financial accounts exceeded $10,000 at any time during the calendar year reported",
+    "note": "Both chunks of the page were read on 2026-11-09. US citizens must file FinCEN Form 114; due April 15 with automatic extension to October 15; records retained five years; civil maxima adjusted annually for inflation; e-file with FinCEN, not with the tax return."
+  },
+  {
+    "id": "US-8938-FBAR",
+    "issuer": "IRS",
+    "kind": "guidance",
+    "title": "IRS — comparison of Form 8938 and FBAR requirements",
+    "url": "https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements",
+    "quote": "Up to $10,000 for failure to disclose and an additional $10,000 for each 30 days of non-filing after IRS notice ... potential maximum penalty of $60,000",
+    "note": "Form 8938 thresholds: US-resident unmarried >USD 50,000 on last day / >USD 75,000 during year; MFJ >USD 100,000 / >USD 150,000; abroad thresholds are higher. FBAR threshold USD 10,000 aggregate."
+  },
+  {
+    "id": "US-5321",
+    "issuer": "U.S. Code / govinfo",
+    "kind": "law",
+    "title": "31 U.S.C. §5321 — civil penalties (2024 edition)",
+    "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title31/html/USCODE-2024-title31-subtitleIV-chap53-subchapII-sec5321.htm",
+    "quote": "the maximum penalty ... shall be increased to the greater of (I) $100,000, or (II) 50 percent of the amount determined under subparagraph (D)",
+    "note": "31 USC 5321(a)(5)(C): willful FBAR penalty is the greater of USD 100,000 or 50% of the account balance at the time of violation; (a)(5)(B) sets USD 10,000 for non-willful, with a reasonable-cause exception."
+  },
+  {
+    "id": "US-1010-821",
+    "issuer": "eCFR / FinCEN",
+    "kind": "regulation",
+    "title": "31 CFR §1010.821 — penalty adjustment table",
+    "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821",
+    "quote": "Foreign Financial Agency Transaction—Non-Willful Violation of Transaction ... $16,536; ... Willful Violation of Transaction ... $165,353",
+    "note": "Table displayed for penalties assessed on or after January 17, 2025; eCFR page was current through 2026-11-05 on retrieval. Statutory USD 100,000 floor is adjusted to USD 165,353; non-willful USD 10,000 to USD 16,536. These are maxima, not predicted assessments."
+  },
+  {
+    "id": "US-988",
+    "issuer": "U.S. Code / govinfo",
+    "kind": "law",
+    "title": "26 U.S.C. §988 — treatment of certain foreign currency transactions (2024 edition)",
+    "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm",
+    "quote": "no gain shall be recognized ... The preceding sentence shall not apply if the gain which would otherwise be recognized on the transaction exceeds $200",
+    "note": "§988(e): personal transactions are excluded; no gain recognised on exchange-rate changes for an individual's personal transaction unless the gain exceeds USD 200. §988(c)(1)(C) treats disposition of nonfunctional currency as a §988 transaction."
+  },
+  {
+    "id": "US-FXCURRENCY",
+    "issuer": "IRS",
+    "kind": "guidance",
+    "title": "IRS — foreign currency and currency exchange rates",
+    "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-currency-and-currency-exchange-rates",
+    "quote": "You must express the amounts you report on your U.S. tax return in U.S. dollars ... Use the exchange rate prevailing when you receive, pay, or accrue the item",
+    "note": "Reporting currency rule; not a tax on moving one's own principal."
+  },
+  {
+    "id": "US-WORLDWIDE",
+    "issuer": "IRS",
+    "kind": "guidance",
+    "title": "IRS — U.S. citizens and resident aliens abroad",
+    "url": "https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad",
+    "quote": "You are subject to tax on worldwide income from all sources and must report all taxable income",
+    "note": "Interest earned on the CNY deposit is US-taxable even while the money sits in China. Also states Form 3520 is required for gifts/bequests >USD 100,000 from a nonresident alien or foreign estate."
+  },
+  {
+    "id": "US-FTC",
+    "issuer": "IRS",
+    "kind": "guidance",
+    "title": "IRS — foreign tax credit",
+    "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit",
+    "quote": "If you paid or accrued foreign taxes to a foreign country ... and are subject to U.S. tax on the same income, you may be able to take either a credit or an itemized deduction",
+    "note": "Form 1116; generally only income, war profits and excess profits taxes qualify; no credit for tax on excluded income."
+  },
+  {
+    "id": "US-3520-GIFTS",
+    "issuer": "IRS",
+    "kind": "guidance",
+    "title": "IRS — gifts from foreign person",
+    "url": "https://www.irs.gov/businesses/gifts-from-foreign-person",
+    "quote": "the aggregate amount received ... exceeds $100,000 during the taxable year",
+    "note": "Form 3520 Part IV threshold for gifts/bequests from a nonresident alien or foreign estate; 2026 threshold for foreign corporations/partnerships is USD 20,573. Reporting only — a foreign gift is generally excluded from gross income."
+  },
+  {
+    "id": "US-3520-INSTR",
+    "issuer": "IRS",
+    "kind": "guidance",
+    "title": "IRS — Instructions for Form 3520 (12/2025)",
+    "url": "https://www.irs.gov/instructions/i3520",
+    "quote": "Section 6677 ... Section 6039F",
+    "note": "Penalty sections for failure to file Form 3520; the percentage amounts were not transcribed from the retrieved chunk and are left blank."
+  },
+  {
+    "id": "US-STREAMLINED",
+    "issuer": "IRS",
+    "kind": "guidance",
+    "title": "IRS — streamlined filing compliance procedures",
+    "url": "https://www.irs.gov/individuals/international-taxpayers/streamlined-filing-compliance-procedures",
+    "quote": "Taxpayers must certify that conduct was not willful",
+    "note": "Available to individual taxpayers who certify non-willful conduct; resolves delinquent returns and FBARs. Not available once a civil examination has begun."
+  },
+  {
+    "id": "US-REMIT-TAX",
+    "issuer": "IRS",
+    "kind": "guidance",
+    "title": "IR-2026-48 — proposed regulations on the 1% remittance transfer tax",
+    "url": "https://www.irs.gov/newsroom/treasury-irs-issue-proposed-regulations-on-the-new-remittance-transfer-tax-established-under-the-one-big-beautiful-bill",
+    "quote": "Beginning Jan. 1, 2026, a 1% remittance transfer tax applies to remittances sent from the United States to recipients in foreign countries when the sender provides cash, a money order, a cashier's check, or other similar physical instrument",
+    "note": "A China→US transfer is not a remittance sent FROM the United States; a bank-to-bank wire funded from a deposit is not a physical instrument. The tax therefore does not apply to the routes in this dossier."
+  },
+  {
+    "id": "US-OBBBA",
+    "issuer": "IRS",
+    "kind": "guidance",
+    "title": "IRS — Working Families Tax Cuts, 'Other taxes' section",
+    "url": "https://www.irs.gov/newsroom/working-families-tax-cuts",
+    "quote": "Beginning Jan. 1, 2026 ... Collect the 1% excise tax on applicable remittance transactions when the sender pays with cash, a money order, a cashier's check, or a similar physical instrument",
+    "note": "Canonical URL fetched directly on 2026-11-09; chunk 4, 'Excise tax on certain remittance transfers (Section 70604)', confirms the 1% tax and the physical-instrument funding condition. Official overview of section 70604 / IRC §4475."
+  },
+  {
+    "id": "US-CBP-CASH",
+    "issuer": "U.S. Customs and Border Protection",
+    "kind": "guidance",
+    "title": "CBP — currency reporting reminder (Dulles seizures)",
+    "url": "https://www.cbp.gov/newsroom/local-media-release/dulles-cbp-officers-seize-over-111k-unreported-currency",
+    "quote": "federal law ... requires travelers to report all currency and monetary instruments of $10,000 or greater to a CBP officer",
+    "note": "No limit on the amount, but FinCEN 105 is required at USD 10,000 or more; CBP states unreported currency risks seizure and criminal prosecution. There is no tax on declaring."
+  }
+]

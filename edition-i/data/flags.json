@@ -1,0 +1,243 @@
+[
+  {
+    "id": "F01",
+    "severity": "high",
+    "kind": "gap",
+    "sources": [
+      "CN-MEAS-2006",
+      "CN-NATIONALITY"
+    ],
+    "issue": "Account subject classification (境内个人 vs 境外个人) is unknown.",
+    "missing": "The bank's written classification and the ID document on file.",
+    "action": "Ask the bank in writing for 账户主体类别 before choosing M01/M03/M18."
+  },
+  {
+    "id": "F02",
+    "severity": "high",
+    "kind": "gap",
+    "sources": [
+      "CN-NATIONALITY",
+      "CN-MEAS-2006"
+    ],
+    "issue": "Whether a PRC resident ID / hukou is still active for this US citizen is unknown.",
+    "missing": "Hukou cancellation status and the ID used to open the account.",
+    "action": "Resolve nationality/ID status with the NIA and the bank; it drives both eligibility and compliance."
+  },
+  {
+    "id": "F03",
+    "severity": "high",
+    "kind": "gap",
+    "sources": [
+      "CN-GUIDE-2020",
+      "CN-FAQ-SALARY-2026",
+      "CN-PROP-2004"
+    ],
+    "issue": "Source of the CNY balance (salary, property, inheritance, dividend, savings, other) is unknown.",
+    "missing": "Source-of-funds documents and tax vouchers.",
+    "action": "Map each tranche to a source; the route and any real Chinese tax depend on it."
+  },
+  {
+    "id": "F04",
+    "severity": "high",
+    "kind": "gap",
+    "sources": [
+      "US-FBAR",
+      "US-8938-FBAR",
+      "US-5321",
+      "US-STREAMLINED"
+    ],
+    "issue": "Prior US filing history (FBAR, Form 8938, Schedule B, income on worldwide interest) is unknown.",
+    "missing": "Copies of prior filings and account statements.",
+    "action": "Resolve reporting before a large inbound wire; the willful-FBAR ceiling is the largest number in this dossier."
+  },
+  {
+    "id": "F05",
+    "severity": "high",
+    "kind": "gap",
+    "sources": [
+      "US-WORLDWIDE",
+      "US-FTC"
+    ],
+    "issue": "The exact financial product holding the CNY is unknown (deposit vs fund / insurance / structured product).",
+    "missing": "Product name, contract and statements.",
+    "action": "Identify the product; PFIC / foreign-trust rules can dominate the US tax result."
+  },
+  {
+    "id": "F06",
+    "severity": "medium",
+    "kind": "gap",
+    "sources": [
+      "BOC-TARIFF-PDF",
+      "HSBC-TARIFF"
+    ],
+    "issue": "Intermediary / correspondent / receiving-bank charges are not published as a fixed number.",
+    "missing": "The actual SWIFT route and the receiving bank's tariff.",
+    "action": "Keep those cells blank; substitute your own bank's published tariff."
+  },
+  {
+    "id": "F07",
+    "severity": "medium",
+    "kind": "gap",
+    "sources": [
+      "BOC-FX-BOARD"
+    ],
+    "issue": "The BOC posted board is explicitly 仅供参考 and is not an executable transaction quote.",
+    "missing": "A live rate from online/mobile banking or a branch at the moment of conversion.",
+    "action": "Treat the spread proxy as conditional arithmetic, not a price."
+  },
+  {
+    "id": "F08",
+    "severity": "medium",
+    "kind": "gap",
+    "sources": [
+      "BOC-TARIFF-PDF"
+    ],
+    "issue": "Electronic-channel discounts (0%-100%) are published separately and were not retrieved.",
+    "missing": "The specific channel's discount and validity dates.",
+    "action": "The cost tables use the counter-tariff baseline; check the channel discount before transacting."
+  },
+  {
+    "id": "F09",
+    "severity": "medium",
+    "kind": "gap",
+    "sources": [
+      "WISE-GUIDE",
+      "WISE-Q-267716"
+    ],
+    "issue": "No Wise public quote was retrievable above the CNY 300,000 single-transfer cap; the page returned a waiting-list notice.",
+    "missing": "Logged-in quotes for a multi-transfer schedule, and the user's Wise overall limit.",
+    "action": "Wise cost cells above that cap are blank and flagged."
+  },
+  {
+    "id": "F10",
+    "severity": "medium",
+    "kind": "gap",
+    "sources": [
+      "CN-TAXFILING-2013",
+      "CN-IIT-LAW",
+      "CN-DIV-2026"
+    ],
+    "issue": "Any real PRC income tax on the underlying source (property gain, dividends, salary) cannot be computed.",
+    "missing": "Cost basis, gain, withholding records and tax residency.",
+    "action": "Tax cells are blank; the 20% statutory rate is shown only as conditional arithmetic."
+  },
+  {
+    "id": "F11",
+    "severity": "medium",
+    "kind": "gap",
+    "sources": [
+      "US-988",
+      "US-FXCURRENCY"
+    ],
+    "issue": "US §988 gain on the disposition of CNY cannot be computed without the acquisition rate/date.",
+    "missing": "CNY acquisition dates and USD-equivalent basis.",
+    "action": "US tax cells are blank; §988(e) USD 200 personal-transaction de minimis is noted."
+  },
+  {
+    "id": "F12",
+    "severity": "medium",
+    "kind": "gap",
+    "sources": [
+      "CN-PROP-2004",
+      "CN-CAP-2014"
+    ],
+    "issue": "SAFE approval timing, local document checklists and any administrative charge for 移民/继承转移 were not published in the retrieved instruments.",
+    "missing": "Local SAFE branch practice and fee schedule.",
+    "action": "Keep these cells blank; confirm at the former-hukou SAFE branch."
+  },
+  {
+    "id": "F13",
+    "severity": "medium",
+    "kind": "irregularity",
+    "sources": [
+      "CN-PROP-2004",
+      "CN-CAP-2014"
+    ],
+    "issue": "Inherited editions describe emigration transfers as necessarily staged over three years (50% / 25% / 25%), quoting Art. 6 of the 2004 measures without the amendment.",
+    "missing": "—",
+    "action": "Applied the 2014 cancellation of staged release, verified on SAFE's own page."
+  },
+  {
+    "id": "F14",
+    "severity": "medium",
+    "kind": "irregularity",
+    "sources": [
+      "CN-DIV-2026",
+      "CN-IIT-LAW"
+    ],
+    "issue": "Some inherited material treats foreign-individual FIE dividends as exempt under the 1994 policy.",
+    "missing": "—",
+    "action": "The exemption was repealed effective 2026-09-01; 20% IIT now applies."
+  },
+  {
+    "id": "F15",
+    "severity": "medium",
+    "kind": "irregularity",
+    "sources": [
+      "BOC-ATM-2026",
+      "BOC-TARIFF-PDF"
+    ],
+    "issue": "A BOC notice changes overseas ATM pricing effective 2026-11-11, two days after this edition's retrieval date.",
+    "missing": "—",
+    "action": "This edition uses the currently effective tariff and shows the future change separately."
+  },
+  {
+    "id": "F16",
+    "severity": "medium",
+    "kind": "irregularity",
+    "sources": [
+      "HSBC-TARIFF"
+    ],
+    "issue": "The HSBC China PDF headed 'Effective from 31 Oct 2026' contains an embedded older table headed 2024年9月12日生效.",
+    "missing": "—",
+    "action": "Only the top-level current tariff is used; mixed vintage is disclosed."
+  },
+  {
+    "id": "F17",
+    "severity": "medium",
+    "kind": "irregularity",
+    "sources": [
+      "US-REMIT-TAX",
+      "US-OBBBA"
+    ],
+    "issue": "The new 1% US remittance excise tax is sometimes described online as a tax on all inbound international transfers.",
+    "missing": "—",
+    "action": "IR-2026-48 limits it to remittances sent FROM the US and funded with physical instruments; it does not apply here."
+  },
+  {
+    "id": "F18",
+    "severity": "medium",
+    "kind": "irregularity",
+    "sources": [
+      "US-1010-821",
+      "US-5321"
+    ],
+    "issue": "FBAR penalty figures in older material use the statutory USD 10,000 / USD 100,000 amounts without inflation adjustment.",
+    "missing": "—",
+    "action": "eCFR 31 CFR 1010.821 displays adjusted maxima USD 16,536 / USD 165,353 for assessments on or after 2025-01-17."
+  },
+  {
+    "id": "F19",
+    "severity": "low",
+    "kind": "irregularity",
+    "sources": [
+      "BOC-FX-BOARD",
+      "BOC-TARIFF-PDF"
+    ],
+    "issue": "Inherited editions quote a 0.42% bid/ask figure as a one-way conversion cost.",
+    "missing": "—",
+    "action": "0.4199% is the full round-trip board spread; the one-way half-spread proxy used here is 0.2100%."
+  },
+  {
+    "id": "F20",
+    "severity": "low",
+    "kind": "irregularity",
+    "sources": [
+      "US-5321",
+      "US-FBAR"
+    ],
+    "issue": "A willful FBAR penalty is sometimes quoted as 50% of the transferred amount.",
+    "missing": "—",
+    "action": "31 USC 5321(a)(5)(D)(ii) uses the balance in the account at the time of the violation."
+  }
+]

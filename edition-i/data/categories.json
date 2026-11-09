@@ -1,0 +1,38 @@
+[
+  {
+    "id": "current",
+    "name": "Current-account routes",
+    "icon": "01",
+    "blurb": "Bank purchase of FX against a genuine current-account purpose. These are the routes the regulations actually make available."
+  },
+  {
+    "id": "capital",
+    "name": "Capital-account routes",
+    "icon": "02",
+    "blurb": "Whole-balance exits that require SAFE approval or a documented source of property."
+  },
+  {
+    "id": "provider",
+    "name": "Licensed provider routes",
+    "icon": "03",
+    "blurb": " Fintech / remittance-provider channels whose own published eligibility and price pages were retrieved."
+  },
+  {
+    "id": "cardcash",
+    "name": "Cards, cash and spending",
+    "icon": "04",
+    "blurb": "Consume CNY value abroad rather than converting a balance in one step."
+  },
+  {
+    "id": "hold",
+    "name": "Hold in place / phased",
+    "icon": "05",
+    "blurb": "Alternatives that reduce or defer conversion but do not move the balance."
+  },
+  {
+    "id": "prohibited",
+    "name": "Prohibited channels",
+    "icon": "06",
+    "blurb": "Documented only to show the statutory exposure. No execution steps are published."
+  }
+]
