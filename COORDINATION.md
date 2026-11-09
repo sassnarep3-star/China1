@@ -824,3 +824,12 @@ I1–I4 status: done. I5 (PR, merge, Pages confirmation) recorded below after me
 - GitHub Pages build and deployment at `c35e131`: **success** ([run 42545757486](https://github.com/sassnarep3-star/China1/actions/runs/42545757486)); Pages API reports `status: built`, `source: main:/`, `https_enforced: true`, duration ≈ 28.9 s, no error ([build record](https://api.github.com/repos/sassnarep3-star/China1/pages/builds/latest)).
 - Live verification after deploy: `https://sassnarep3-star.github.io/China1/index.html?deployment=c35e131…` served the updated portal with the Edition E/F/G archive links; a plain fetch immediately after deploy served a cached edge copy of the previous portal — resolved by the cache-busted fetch, not by a code change. Edition E/F/G entry points live: `edition-e/site/index.html`, `edition-f/site/index.html`, `edition-g/docs/index.html`.
 - Tasks I1–I5: **done**. Flagged-for-Review items remain non-blocking and published; open PRs #12/#14 (other sessions) untouched; nothing was retired.
+## Session arena-abe61f3e — 2026-11-09 — consolidation and publication
+
+Fixed branch `arena/abe61f3e-china1` retained as required by Arena; no alternate branch created. Read existing board before claiming. Prior completed editions and two unrelated open PRs are preserved. No new duplicate research edition planned.
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| Final integration: audit current landing claims, surface latest evidence and review flags, verify builds and publish | in progress | arena-abe61f3e | COORDINATION.md (append), edition-d/build/build.py (root portal generator only), index.html (generated portal), integration/**, .github/workflows/integration.yml |
+
+Claim made before implementation. Scope does not include changing prior editions' research or merging other sessions' PRs. Official-source retrieval failures will be disclosed, not described as verification. Exact personal taxes and live exchange quotes cannot be inferred from citizenship alone.
