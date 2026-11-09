@@ -1,0 +1,62 @@
+#!/usr/bin/env python3
+"""Read tracked text line by line and publish a point-in-time repo review.
+
+This is an evidence scan, not a certification of every inherited claim. Earlier
+editions are never edited by this script.
+"""
+import json
+import subprocess
+from collections import defaultdict
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[2]
+OUT = ROOT / "edition-h" / "data" / "repo-review.json"
+files = subprocess.check_output(["git", "ls-files"], cwd=ROOT, text=True).splitlines()
+text_lines = 0
+text_files = 0
+markers = defaultdict(set)
+needles = {
+    "crypto_2021": ["2021] No. 237", "〔2021〕237", "Yinfa [2021]", "银发〔2021〕237", "4348658"],
+    "old_wise_30": ["1,228.46", "1228.46"],
+    "old_wise_40": ["1,574.68", "1574.68"],
+    "old_boc_ask": ["669.29"],
+    "future_atm": ["2026-11-11"],
+}
+for rel in files:
+    path = ROOT / rel
+    try:
+        raw = path.read_bytes()
+        if b"\0" in raw:
+            continue
+        text = raw.decode("utf-8")
+    except (UnicodeDecodeError, OSError):
+        continue
+    text_files += 1
+    lines = text.splitlines()
+    text_lines += len(lines)
+    # The new H review itself is excluded from marker counts to avoid self-match.
+    if rel.startswith("edition-h/"):
+        continue
+    for key, variants in needles.items():
+        if any(v in text for v in variants):
+            markers[key].add(rel)
+
+
+def compact(key, limit=5):
+    vals = sorted(markers[key])
+    return ", ".join(vals[:limit]) + (f" (+{len(vals)-limit} more)" if len(vals) > limit else "")
+
+findings = [
+    {"id": "RR01", "severity": "high", "title": "Superseded virtual-currency authority remains in inherited editions", "detail": "The tracked corpus cites PBOC 2021 No. 237, but current PBOC 2026 No. 42 expressly repeals it. Edition H uses the current instrument and rejects crypto bridges without instructions.", "files": compact("crypto_2021"), "disposition": "Flagged; earlier editions preserved, Edition H corrected.", "sources": ["S45"]},
+    {"id": "RR02", "severity": "medium", "title": "Wise public quote drift", "detail": "Earlier records contain CNY1,228.46 and CNY1,574.68 for two source amounts. On 2026-11-09 the provider pages displayed CNY1,228.50 and CNY1,574.72. Public quotes are dynamic and cannot be extrapolated into a fixed tariff.", "files": compact("old_wise_30") + "; " + compact("old_wise_40"), "disposition": "Edition H records new observations only; old values not silently overwritten.", "sources": ["S23", "S24", "S20"]},
+    {"id": "RR03", "severity": "medium", "title": "Multiple historical BOC FX snapshots", "detail": "Inherited pages contain the earlier USD100 ask 669.29. Edition H observed 669.19 at 2026-11-09 09:15:45 China time. BOC says its board is indicative and actual channel/counter rates control.", "files": compact("old_boc_ask"), "disposition": "Every H CNY scenario is timestamped and labeled non-executable.", "sources": ["S16"]},
+    {"id": "RR04", "severity": "medium", "title": "Future BOC ATM price change must not be applied early", "detail": "A BOC notice changes some ATM pricing from 2026-11-11, two days after this research date. H uses the tariff effective on 2026-11-09 and records the future notice separately.", "files": compact("future_atm"), "disposition": "No future price is used in current estimates.", "sources": ["S14", "S15", "S28"]},
+    {"id": "RR05", "severity": "medium", "title": "Official inheritance guide contains inconsistent eligibility wording", "detail": "SAFE Hebei's inheritance guide repeats pre-immigration-property wording in its administrative conditions, while its definition and cited 2024 materials address inherited property. H follows the specific inheritance checklist and flags the inconsistency for local SAFE confirmation.", "files": "Official source text, not a repository-authored defect", "disposition": "Open official-source irregularity; no silent correction.", "sources": ["S08", "S04", "S10"]},
+    {"id": "RR06", "severity": "high", "title": "All-in personal costs remain unverifiable", "detail": "No account bank, receiving bank, source-of-funds breakdown, tax history, executable quote or document quote exists in the repository. Published sender fees and conditional scenarios cannot be promoted to total cost.", "files": "Applies to all inherited numeric comparisons", "disposition": "H leaves FX cost, downstream, documents, tax and all-in blank + UNVERIFIED.", "sources": ["S03", "S14", "S18", "S31", "S37"]},
+    {"id": "RR07", "severity": "medium", "title": "Historical staged emigrant-release wording is obsolete", "detail": "Older 2004 provisions staged emigrant transfers. SAFE 2014 No. 2 removed that requirement; approved amounts can be remitted once or in installments within the approval. H uses the amended position and current service guide.", "files": "Historical inherited editions and 2004 source text", "disposition": "Current rule linked; older statements flagged rather than edited.", "sources": ["S04", "S05", "S07"]},
+    {"id": "RR08", "severity": "high", "title": "Foreign-individual FIE dividend exemption has ended", "detail": "Any inherited statement that foreign individuals remain exempt on FIE dividends is outdated for payments from 2026-09-01. MOF/STA 2026 No. 27 imposes 20% IIT and repeals the old exemption; treaty analysis remains separate.", "files": "Historical inherited tax tables", "disposition": "H uses 20% domestic rate and flags possible treaty relief as fact-dependent.", "sources": ["S33", "S36"]},
+    {"id": "RR09", "severity": "medium", "title": "U.S. remittance excise tax direction is easy to misread", "detail": "The 1% tax from 2026 covers specified remittances sent from the United States using cash or similar physical instruments. It is not a China-to-U.S. charge and is excluded from every H cost grid.", "files": "Historical inherited editions", "disposition": "H marks the suggested addition N/A with an IRS source.", "sources": ["S44"]},
+    {"id": "RR10", "severity": "medium", "title": "BOC bid/ask gap is not a verified one-way spread", "detail": "The current board's bid/ask gap is about 0.42%, but its ask 669.19 is below its reference 671.88. A round-trip gap or a comparison with that reference cannot establish the user's one-way conversion loss.", "files": "Applies to inherited spread shorthand", "disposition": "H leaves FX cost blank and shows the actual CNY scenario instead.", "sources": ["S16"]},
+]
+OUT.write_text(json.dumps({"_meta": {"edition": "H", "audited_utc": "2026-11-09", "scope": "Tracked checkout before generated H outputs; inherited editions preserved"}, "stats": {"tracked_files": len(files), "text_files": text_files, "text_lines": text_lines}, "findings": findings}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+print(f"Audited {len(files)} tracked files / {text_lines:,} text lines; {len(findings)} findings -> {OUT.relative_to(ROOT)}")

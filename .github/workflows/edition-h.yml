@@ -1,0 +1,37 @@
+name: Edition H verification
+
+on:
+  push:
+    branches: [main, arena/c2310264-china1]
+    paths:
+      - 'edition-h/**'
+      - '.github/workflows/edition-h.yml'
+  pull_request:
+    paths:
+      - 'edition-h/**'
+      - '.github/workflows/edition-h.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Audit tracked repository text
+        run: python3 edition-h/build/audit.py
+      - name: Build static dashboard
+        run: python3 edition-h/build/build.py
+      - name: Verify sources, arithmetic, blanks and links
+        run: python3 edition-h/build/verify.py
+      - name: Reject unexpected generated changes
+        run: git diff --exit-code -- edition-h
+      - name: Run earlier independent verifiers
+        run: |
+          if [ -f edition-g/build/verify.py ]; then python3 edition-g/build/verify.py; fi
+          if [ -f edition-f/build/verify.py ]; then python3 edition-f/build/verify.py; fi
