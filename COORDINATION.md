@@ -760,3 +760,36 @@ Cross-session request to the root-portal owner: add an Edition G link (`edition-
 - GitHub Pages: source remains `main:/`; latest build for `fdaf2d6` reported `built` with no error (duration 33,826 ms).
 - Live verification: https://sassnarep3-star.github.io/China1/edition-g/docs/index.html fetched successfully and shows Edition G overview (43 candidates / 1,720 rows / 52 sources / 47 flags). Method and flagged pages verified below.
 - Concurrent-work preservation: PRs #13/#15/#16/#17/#19 merged during this session; this deliverable was relocated from `edition-d/` to `edition-g/`, and main's README/COORDINATION/portal were preserved verbatim with append-only records. Cross-session portal-link request remains open for the portal owner.
+
+---
+
+# Session board — arena-8a02a5b6 — 2026-11-09 UTC
+
+Session ID: `arena-8a02a5b6`. Fixed Arena branch: `arena/8a02a5b6-china1` (Arena pins this session to `arena/8a02a5b6-china1`, so the `session-<id>/<task>` branch naming convention is superseded by file-scope isolation; no other branch will be created, switched to, or pushed).
+
+All prior boards and completed editions on `main` (`578ed83`) are preserved verbatim above. Inspection of remote sibling branches via GitHub API at session start identified active concurrent sessions claiming `consolidated/`, `integration/`, `edition-h/`, and `edition-d/build/build.py` + `index.html`. To guarantee zero file-scope overlap with both merged editions (`/`, `/docs/`, `/dossier/`, `/edition-b/`..`/edition-g/`) and active sibling branches, this session claims the isolated namespace `edition-8a02a5b6/**` plus `.github/workflows/edition-8a02a5b6.yml`. Open PRs #12 and #14 belong to earlier sessions and are left untouched.
+
+## Claimed task board (`arena-8a02a5b6`)
+
+| ID | Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|---|
+| S0 | Read `COORDINATION.md`, inspect `main` and active sibling branches, commit & push non-overlapping claim | done | arena-8a02a5b6 | `COORDINATION.md` (this appended section) |
+| S1 | Line-by-line repository review across prior editions & requirements traceability | in progress | arena-8a02a5b6 | `edition-8a02a5b6/data/repo_audit.json`, `edition-8a02a5b6/REQUIREMENTS.md` |
+| S2 | Official-source verification & claim-level source registry (PRC SAFE, PBOC, STA, GACC, NPC/State Council; US IRS, FinCEN, Treasury, US Code; provider-primary tariffs) | unclaimed | arena-8a02a5b6 | `edition-8a02a5b6/data/sources.json` |
+| S3 | Exhaustive CNY→USD channel inventory (lawful individual, corporate/asset/treaty, card/ATM/cash/fintech, and prohibited/non-compliant channels) with pros/cons & conversion-penalty decomposition | unclaimed | arena-8a02a5b6 | `edition-8a02a5b6/data/methods.json`, `edition-8a02a5b6/data/penalties.json`, `edition-8a02a5b6/data/taxes.json` |
+| S4 | Deterministic cost-estimation engine for all methods across all 40 increments ($10,000 to $400,000 USD by $10,000) + lawful step-by-step execution workflows | unclaimed | arena-8a02a5b6 | `edition-8a02a5b6/data/costs.json`, `edition-8a02a5b6/build/build.py` |
+| S5 | Executive summary & mobile-first dashboard site with category subpages and Flagged for Review page | unclaimed | arena-8a02a5b6 | `edition-8a02a5b6/EXECUTIVE_SUMMARY.md`, `edition-8a02a5b6/index.html`, `edition-8a02a5b6/pages/**`, `edition-8a02a5b6/assets/**` |
+| S6 | Automated line-by-line verifier (official source links on every row, blank-not-zero discipline for unconfirmed values, 40-increment completeness, internal link/anchor checks, deterministic build) + CI workflow | unclaimed | arena-8a02a5b6 | `edition-8a02a5b6/build/verify.py`, `.github/workflows/edition-8a02a5b6.yml` |
+| S7 | Final integration, re-verification of combined repository checks, PR to `main`, merge, GitHub Pages deployment confirmation, and board update | unclaimed | arena-8a02a5b6 | `edition-8a02a5b6/**`, `.github/workflows/edition-8a02a5b6.yml`, append-only `COORDINATION.md` and `README.md` |
+
+## Cross-session requests logged
+
+- **To the root portal owner (`index.html` / `edition-d/build/build.py`):** Please add a link to `edition-8a02a5b6/index.html` once published. Per coordination rules, this session does not edit files owned or actively claimed by other sessions.
+
+## Verification & safety rules enforced in `edition-8a02a5b6`
+
+1. Every rendered table row carries a direct link to an official regulator/statute source (or clearly labeled provider-primary tariff for that provider's published fee schedule only).
+2. Any figure that cannot be confirmed from an official/provider-primary source (including account-specific PRC/US tax liability, unquoted correspondent deductions, executable intraday FX quotes, or unverified channel pricing) is left **blank** (`—` with explicit `UNVERIFIED` flag), never guessed, inferred, or filled as `$0`.
+3. Conditional arithmetic (such as applying published bank wire fee formulas or reference FX board spreads across $10,000–$400,000 increments) explicitly displays the sourced formula, inputs, and timestamp caveats, separating confirmed tariff components from unverified case-specific components.
+4. Prohibited/non-compliant channels (quota-splitting/"smurfing", underground banking/feiqian, crypto OTC circumvention, false trade invoicing, undeclared bulk cash) are catalogued purely to document legal prohibitions, statutory fine bands, and enforcement risks — never with operational evasion instructions.
+
