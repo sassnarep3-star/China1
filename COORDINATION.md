@@ -893,3 +893,81 @@ the new root page deliberately keeps every link that verifier requires (`edition
 `overview.html`, `pages/estimates.html`, `dossier/index.html`, `edition-b/index.html`,
 `edition-c/docs/index.html`, `COORDINATION.md`) and uses only hosts on its allowlist. This is recorded as an
 integration decision, not a silent overwrite.
+
+## arena-d2efa2e7 — implementation and verification record
+
+### What was built
+
+| Item | Result |
+|---|---|
+| New edition | `edition-h/` — 31 generated pages, self-contained generator and verifier |
+| Routes | 15, in four categories (current account, capital account, alternatives, prohibited) |
+| Cost ladders | 8 × 40 rows = 320 ladder rows (M01, M02, M03, M05, M06, M09, M14, M15) |
+| Sources | 15 documents on a claim-level register, each with what it supports and when it was read |
+| Tax rows | 11, of which 10 carry a verified value and 1 is deliberately blank (Form 3520 penalty amount) |
+| Flags | 26, published on the Flagged for Review page |
+| Repo review | 12 findings on the earlier editions, including 4 corrections to methods or figures |
+| Root landing page | Replaced with a single dashboard entry point; every earlier edition linked in the archive line |
+
+### Verification actually executed on 2026-11-09
+
+```
+$ python3 edition-h/build/build.py
+edition-h: wrote 31 pages, 320 ladder rows
+one-way margin 0.2104%  round trip 0.4199%
+  $10,000: china-side $53.45 (0.535%)
+  $100,000: china-side $271.67 (0.272%)
+  $400,000: china-side $902.86 (0.226%)
+
+$ python3 edition-h/build/verify.py
+RESULT: PASS - 15 checks, 0 failures
+```
+
+The 15 checks: source register complete and on the allowlist; method/step/tax/flag cross-references; cost models
+implemented; **every ladder cell recomputed from parameters.json**; an **independent hand-check** of the $10,000 and
+$400,000 rows against arithmetic written out without the engine's helpers; headline figures matching the engine; the
+one-way margin used rather than the round trip; every table row carrying an external source link; every flag published
+and unsourced flags disclosed; the US receiving-bank fee blank rather than estimated; 628 internal links and fragments
+resolving; the root page resolving and reaching every edition; required pages present; no orphan page; byte-identical
+rebuild.
+
+A defect was found and fixed during verification: the first engine version applied the CNY 50 commission floor to a
+*fraction* of the amount instead of the amount, which understated the commission at large sizes (it reported $871.48 at
+USD 400,000 instead of $902.86). The independent hand-check exists because of it. This is recorded rather than quietly
+patched because it is the kind of error a verifier that shares the engine's helper functions cannot catch.
+
+All inherited checkers were re-run after the change and pass: `assets/check.py` (6 pages, 95 cited rows, 40 scenarios),
+`scripts/build_site.py` + `scripts/verify.py` (6 pages, 60 rows), edition-b (15 checks), edition-c linkcheck (0
+warnings), edition-d (19 checks, including its root-portal assertions against the new landing page), edition-e (18),
+edition-f (27), edition-g (43 candidates / 1,720 rows / 52 sources).
+
+### Sources used (all opened this session)
+
+SAFE portal: PBOC Announcement [2004] No. 16. State Council: FX Regulations (Decree 532). State Council Gazette:
+Guidelines for Current-Account FX Business 2020 (Hui Fa [2020] No. 14), Arts. 54-67 and 86-89. PBOC/NFRA/CSRC: Order
+[2025] No. 11, Art. 34 and 52 (in force 1 January 2026). State Taxation Administration: Individual Income Tax Law,
+English text. Bank of China: personal e-banking remittance tariff; FX rate board stamped 2026/11/09 09:15:45; 2018
+trade-finance price announcement. IRS: FBAR page; 8938/FBAR comparison; gifts from foreign person; US citizens abroad.
+govinfo: 26 U.S.C. §988. eCFR: 31 CFR 1010.821. Wise Help Centre: CNY transfers.
+
+### Irregularities and open items
+
+1. **F-01** the rule set classifies the same person as domestic and as foreign depending on the article, and that
+   classification decides whether the cap is USD 50,000 or none. Not resolvable from the texts.
+2. **F-03, F-05, F-11, F-12, F-13** depend on facts not supplied (origin of funds, filing history, emigration file,
+   succession file, property gain). No personal tax or penalty amount was computed.
+3. **F-07** the US receiving-bank fee is blank. Edition D used a Chase *business* schedule for a personal transfer; that
+   substitution is not repeated.
+4. **F-22** the 2026 US 1% remittance excise tax (IRC §4475) could not be verified from the statute this session. It is
+   flagged with no figure; nothing on the site depends on it.
+5. **R05** `assets/check.py` asserts that `pages/estimates.html` contains the string "2026/11/09". Regenerating that page
+   with a new stamp will fail CI even though nothing is wrong. Not edited: the file belongs to another session.
+6. **R07** Edition G's claim of a 2026 MOF/STA instrument repealing the foreign-individual FIE dividend exemption could
+   not be verified. Not repeated in Edition H.
+7. **R12** the root page handover required one line of Edition D's generator to change (the call to `build_portal()` is
+   commented out, with the reason). Edition D's own pages are byte-identical and its verifier passes.
+
+### Publication record
+
+_Pending: filled in below after the pull request is merged and Pages reports a deployment._
+
