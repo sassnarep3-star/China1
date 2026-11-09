@@ -760,3 +760,58 @@ Cross-session request to the root-portal owner: add an Edition G link (`edition-
 - GitHub Pages: source remains `main:/`; latest build for `fdaf2d6` reported `built` with no error (duration 33,826 ms).
 - Live verification: https://sassnarep3-star.github.io/China1/edition-g/docs/index.html fetched successfully and shows Edition G overview (43 candidates / 1,720 rows / 52 sources / 47 flags). Method and flagged pages verified below.
 - Concurrent-work preservation: PRs #13/#15/#16/#17/#19 merged during this session; this deliverable was relocated from `edition-d/` to `edition-g/`, and main's README/COORDINATION/portal were preserved verbatim with append-only records. Cross-session portal-link request remains open for the portal owner.
+
+---
+
+# Session board — arena-cf89967d — 2026-11-09
+
+All preceding boards above are preserved verbatim. Session ID `arena-cf89967d`; fixed Arena branch `arena/cf89967d-china1` (the Arena-assigned branch name takes precedence over the requested `session-<id>/<task>` convention, as logged by prior sessions). No other branches will be created or pushed.
+
+| ID | Task | Status | File scope |
+|---|---|---|---|
+| I0 | Read board; inventory repo and open PRs | done | this appended board only |
+| I1 | Final integration: claim board, coordinate | in progress | COORDINATION.md (append-only), README.md (append-only) |
+| I2 | Re-verify combined site: every edition builder/verifier; independent whole-repo internal-link crawl | unclaimed→claimed | read-only; no file edits outside scope |
+| I3 | Close open cross-session requests: portal archive link to Edition E/F/G via the generating script; rebuild | claimed | edition-d/build/build.py (template only), regenerated index.html |
+| I4 | Spot-check load-bearing official sources resolve | claimed | none (read-only) |
+| I5 | PR to main, merge, confirm Pages deploy, record result | claimed | COORDINATION.md, README.md (append-only) |
+
+Ground rules observed: no merged edition is overwritten; shared generator edit is template-only with byte-identical rebuild otherwise; open PRs #12/#14 (other sessions) are not touched; README/COORDINATION.md edits are append-only.
+
+I0 findings: my branch is exactly at origin/main (578ed83, PR #20 merge). All prior edition tasks are marked done; the only open items on the board are (a) the open cross-session requests for portal links to Edition F and Edition G, and (b) "Flagged for Review" items which are non-blocking by protocol.
+
+### Verification record — I2–I4 (2026-11-09)
+
+Combined-site re-verification executed by this session, all from the repository root at 578ed83 + integration commits:
+
+- `python3 assets/check.py` → OK: 6 pages, 95 cited rows, 40 amount scenarios.
+- `python3 scripts/build_site.py` → 8 pages; internal link check clean.
+- `python3 scripts/build.py && python3 scripts/verify.py` → PASS: 6 pages, 60 sourced rows.
+- `python3 edition-b/build/generate.py && python3 edition-b/build/verify.py` → PASS: 15 checks.
+- `python3 edition-c/build/build.py && python3 edition-c/build/linkcheck.py` → PASSED, 0 warnings.
+- `python3 edition-d/build/build.py && python3 edition-d/build/verify.py` → PASS: 19 checks.
+- `python3 edition-e/build/build.py && python3 edition-e/build/verify.py` → PASS: 18 checks.
+- `python3 edition-f/build/build.py && python3 edition-f/build/verify.py` → PASS: 27 checks.
+- `python3 edition-g/build/build.py && python3 edition-g/build/verify.py` → PASS.
+- Working tree was clean after every rebuild (byte-identical output).
+- Independent whole-repo crawl (all 151 `*.html`): 13,043 internal `href`/`src` references checked → **0 broken**; 58 external hosts referenced. External link liveness is not guaranteed; prior editions' retrieval logs stand as their record.
+
+Official-source spot checks performed by this session (fetch succeeded; load-bearing content confirmed):
+
+| Source | Confirmed |
+|---|---|
+| https://www.gov.cn/gongbao/content/2020/content_5560296.htm — 汇发〔2020〕14号《经常项目外汇业务指引（2020年版）》, 国务院公报 2020年第31号 | Arts. 54 (便利化额度 5万美元/person/year), 55–59 (境外个人 purchase against lawful current-account RMB income, incl. Art. 59 含税务凭证）, 62 (no 分拆）, 64–65 (汇出） — verbatim |
+| https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar | FBAR filing threshold: aggregate value exceeded $10,000 at any time during the year; electronic filing; 5-year record retention; penalties cross-referenced to 31 CFR 1010.821 inflation adjustment |
+| https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm — 26 U.S.C. §988 (2024 ed.) | Foreign-currency gain/loss treated as ordinary; disposition of nonfunctional currency is a §988 transaction |
+| https://www.govinfo.gov/content/pkg/USCODE-2024-title31/html/USCODE-2024-title31-subtitleIV-chap53-subchapII-sec5321.htm — 31 U.S.C. §5321 (2024 ed.) | §5321(a)(5)(B): non-willful ≤ $10,000 (statutory, inflation-adjusted per 31 CFR 1010.821); §5321(a)(5)(C): willful → greater of $100,000 or 50% of the account balance |
+
+Not re-fetched: the remaining several hundred external URLs across the seven editions. They retain their prior retrieval records and Flagged-for-Review treatment; nothing here upgrades their status.
+
+Irregularities / notes carried into Flagged-for-Review (no merge blocked):
+
+- The "no way to convert without considerable taxes" premise in the original brief does not match the statute in either jurisdiction (recorded earlier as F13 in the dossier); the editions consistently present conversion as non-taxable and FX control as the operative constraint.
+- Case-specific values (personal tax result, bank quote, actual FX rate on transaction date) remain blank by design; no personal numbers are invented anywhere in this repository.
+- Two PRs from other sessions remain open and untouched: #12 (arena/e748c15f-china1) and #14 (arena/133875bd-china1).
+- This session did not retire any edition; the repository intentionally preserves all seven research paths. The dossier session's open request for "a single landing page that routes to all" is satisfied by the portal (root `index.html`) now routing to every published dashboard; no content was retired.
+
+I1–I4 status: done. I5 (PR, merge, Pages confirmation) recorded below after merge.
