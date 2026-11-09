@@ -402,3 +402,13 @@ published on each edition's Flagged-for-Review page. Details: `COORDINATION.md`,
 **Not legal, tax or financial advice.** Consult a China-qualified FX/tax adviser and a U.S. international tax
 professional before moving funds; the decisive facts (source of funds, residency, documents) are case-specific.
 - PR [#21](https://github.com/sassnarep3-star/China1/pull/21) merged 2026-11-09 (`c35e131`); GitHub Pages reported `built` at that exact commit; live site verified with the new archive links.
+
+---
+
+## Edition H — current-source review (2026-11-09)
+
+`edition-h/` is an additive, self-contained edition by session `arena-c2310264`; earlier editions and the shared portal are unchanged. It publishes 43 candidates, 1,720 amount-specific cost rows, 53 registered sources, 52 review flags, China/U.S. tax layers and step-by-step mechanics. Published sender charges are partial estimates only; unknown FX, downstream, document, personal-tax and all-in values remain blank and unverified.
+
+- Live dashboard: <https://sassnarep3-star.github.io/China1/edition-h/site/>
+- Rebuild/verify: `python3 edition-h/build/audit.py && python3 edition-h/build/build.py && python3 edition-h/build/verify.py`
+- Publication: PR [#26](https://github.com/sassnarep3-star/China1/pull/26), merge `430b0d9`; Pages deployment succeeded and public content was retrieved.

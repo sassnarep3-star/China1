@@ -868,7 +868,7 @@ so it cannot overwrite another session's research, data, generated pages, or ver
 | H1 Repository audit and claim-level official-source research | done | arena-c2310264 | edition-h/data/**, edition-h/audit/** |
 | H2 Requirements, route/tax/penalty analysis and 40-step cost estimates | done | arena-c2310264 | edition-h/data/**, edition-h/build/** |
 | H3 Mobile-first categorized dashboard and Flagged for Review | done | arena-c2310264 | edition-h/site/**, edition-h/build/** |
-| H4 Independent verifier, CI, integration, PR, merge and Pages | in progress | arena-c2310264 | edition-h/**, .github/workflows/edition-h.yml, append-only COORDINATION.md/README.md |
+| H4 Independent verifier, CI, integration, PR, merge and Pages | done | arena-c2310264 | edition-h/**, .github/workflows/edition-h.yml, append-only COORDINATION.md/README.md |
 
 No personal account, source-of-funds, residency, tax-payment, executable FX quote, or receiving-bank
 fee facts are available. These must remain unknown. Provider-published tariffs may support provider
@@ -883,3 +883,12 @@ after publication; this session will not edit the shared portal.
 - 2026-11-09: Material review corrections include PBOC 2026 No. 42 superseding 2021 No. 237, foreign-individual FIE dividend exemption ending 2026-09-01, current BOC FX/ATM dates, Wise quote drift, and the inherited SAFE inheritance-guide wording irregularity. All are published; unknowns remain non-blocking.
 - Rebase incident: origin/main advanced through PR #24. COORDINATION.md conflict was resolved by preserving both complete boards. The fixed remote session branch then required a lease-protected update to the rebased equivalent; no main or other-session content was discarded.
 - Publication URL intended: https://sassnarep3-star.github.io/China1/edition-h/site/ . PR, merge and deployment remain in progress.
+
+### Edition H publication record — done
+
+- PR https://github.com/sassnarep3-star/China1/pull/26 merged autonomously at 2026-11-09T01:48:16Z; merge commit `430b0d9133942dc230df4954af140e895d5868cf`. All PR checks passed, including Edition H, root integration/static verification, and Editions D–G.
+- Post-merge main checks all succeeded. Edition H: https://github.com/sassnarep3-star/China1/actions/runs/42547478314 . Combined prior editions: https://github.com/sassnarep3-star/China1/actions/runs/42547478193 . Consolidated portal: https://github.com/sassnarep3-star/China1/actions/runs/42547478249 .
+- GitHub Pages build/deploy succeeded: https://github.com/sassnarep3-star/China1/actions/runs/42547478351 at merge commit `430b0d9`; Pages API reports `built`, source `main:/`, no error. Runtime deprecation annotations were informational only.
+- Public HTTP content fetched successfully for `/edition-h/site/index.html`, `/method-P01.html` and `/flagged.html` with `?build=430b0d9`. The live pages show 43 candidates, 1,720 rows, sourced partial charges, blank/unverified all-in values and 52 flags.
+- Live dashboard: https://sassnarep3-star.github.io/China1/edition-h/site/ ; executive summary: `/edition-h/site/executive-summary.html`; review register: `/edition-h/site/flagged.html`; full CSV: `/edition-h/site/cost-ladder.csv`.
+- Shared portal was not edited; its owner still has the additive Edition H archive-link request. Earlier editions and other open PRs remain untouched. Unverified personal facts stay needs-review and non-blocking.
