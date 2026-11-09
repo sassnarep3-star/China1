@@ -1,0 +1,91 @@
+{
+  "checked_utc": "2026-11-09",
+  "method": "Direct fetch_page relevant text inspection",
+  "sources": {
+    "SAFE": [
+      "SAFE individual FX measures, Articles 7, 13, 26, 28, 37",
+      "https://www.safe.gov.cn/safe/2006/1225/5319.html"
+    ],
+    "AMEND": [
+      "SAFE 2014 No. 2, Section VI (amended republication)",
+      "https://www.safe.gov.cn/tianjin/2024/0903/2594.html"
+    ],
+    "IRS": [
+      "IRS: U.S. citizens and resident aliens abroad, opening and reporting sections",
+      "https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad"
+    ],
+    "BOC": [
+      "BOC personal electronic-banking tariff, cross-border TT and note 1",
+      "https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+    ],
+    "WISE": [
+      "Wise: Guide to CNY transfers, Sending from CNY section",
+      "https://wise.com/help/articles/2955298/guide-to-cny-transfers"
+    ],
+    "DIV": [
+      "MOF/STA 2026 No. 27, Sections I\u2013III",
+      "https://shanghai.chinatax.gov.cn/zzzb/zcwj/202609/t481448.html"
+    ]
+  },
+  "flags": [
+    [
+      "I01 \u00b7 Removed universal price claim",
+      "Root landing previously claimed costs under 1% at all sizes and exact totals ($83.45 at $10,000; $932.72 at $400,000). These are scenario arithmetic, not a verified quote. A bid/ask gap does not establish one-way customer loss; an assumed recipient fee does not establish this account\u2019s fee. Archived Edition D remains unchanged.",
+      [
+        "BOC"
+      ]
+    ],
+    [
+      "I02 \u00b7 Removed blanket $0 conversion tax",
+      "U.S. worldwide-income and currency-gain analysis cannot be replaced with a universal tax-free statement. Unknown basis, income history, residence and compliance history prevent personal tax calculation.",
+      [
+        "IRS"
+      ]
+    ],
+    [
+      "I03 \u00b7 Identity is necessary, not sufficient",
+      "A passport alone is not a right to export any balance. Article 13 requires lawful current-account income with supporting documents; capital property has separate rules.",
+      [
+        "SAFE"
+      ]
+    ],
+    [
+      "I04 \u00b7 Old staged emigrant rules",
+      "Section VI of the 2014 amendment cancels mandatory staged emigrant remittances. Do not rely on the original 2004 staging schedule without this amendment.",
+      [
+        "AMEND"
+      ]
+    ],
+    [
+      "I05 \u00b7 Recent dividend rule",
+      "Rechecked official Shanghai STA page: MOF/STA 2026 No. 27 states 20% IIT for foreign individuals\u2019 FIE dividends effective 1 September 2026 and repeals the specified 1994 exemption. Earlier exemption claims are stale. Individual treaty effects and applicability remain case-specific.",
+      [
+        "DIV"
+      ]
+    ],
+    [
+      "I06 \u00b7 Provider eligibility and limits",
+      "Wise requires qualifying work history and tax records; own-account destination; CNY 300,000 per bank-app transfer or CNY 50,000 via Alipay, plus overall after-tax-income limit. It is not an unrestricted route for accumulated savings.",
+      [
+        "WISE"
+      ]
+    ],
+    [
+      "I07 \u00b7 Missing user facts",
+      "Bank, account holder classification, source dates, tax status, CNY balance, USD basis and recipient fees are unknown. No account-specific total, tax amount, net USD or best provider is certified.",
+      [
+        "SAFE",
+        "IRS",
+        "BOC"
+      ]
+    ],
+    [
+      "I08 \u00b7 Verification limits",
+      "This integration directly re-read six primary-source pages and reviewed root claims. Prior catalog citations and audit records are inherited, not a new line-by-line legal re-certification. Mechanical row/link checks cannot prove every legal proposition or future source availability.",
+      [
+        "SAFE",
+        "IRS"
+      ]
+    ]
+  ]
+}

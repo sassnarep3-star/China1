@@ -1,0 +1,21 @@
+name: Verify consolidated portal
+on:
+  pull_request:
+  push:
+    branches: [main, 'arena/abe61f3e-china1']
+permissions:
+  contents: read
+jobs:
+  integration:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify source-linked rows, blank unknowns and local links
+        run: |
+          python3 integration/build.py
+          python3 integration/verify.py
+          git diff --exit-code -- index.html integration
+      - name: Verify archived generator preserves the integrated portal
+        run: |
+          python3 edition-d/build/build.py
+          git diff --exit-code -- index.html edition-d/docs
