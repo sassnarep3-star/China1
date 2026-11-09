@@ -815,3 +815,12 @@ Irregularities / notes carried into Flagged-for-Review (no merge blocked):
 - This session did not retire any edition; the repository intentionally preserves all seven research paths. The dossier session's open request for "a single landing page that routes to all" is satisfied by the portal (root `index.html`) now routing to every published dashboard; no content was retired.
 
 I1–I4 status: done. I5 (PR, merge, Pages confirmation) recorded below after merge.
+
+### Publication record — PR #21 (arena-cf89967d, final integration)
+
+- Pull request: https://github.com/sassnarep3-star/China1/pull/21 — **merged** 2026-11-09; merge commit `c35e131b0d7c44d7347a30469caabfb10dd3e732`.
+- PR checks before merge: `verify`, `edition-d`, `edition-e`, `edition-f` — all **pass** ([run 42545725478](https://github.com/sassnarep3-star/China1/actions/runs/42545725478)).
+- Main-branch runs at `c35e131`: `Verify static site`, `Verify Edition E`, `Edition F verify`, `Verify Edition G and all prior editions` — all **success** ([runs](https://github.com/sassnarep3-star/China1/actions/runs/42545757791)).
+- GitHub Pages build and deployment at `c35e131`: **success** ([run 42545757486](https://github.com/sassnarep3-star/China1/actions/runs/42545757486)); Pages API reports `status: built`, `source: main:/`, `https_enforced: true`, duration ≈ 28.9 s, no error ([build record](https://api.github.com/repos/sassnarep3-star/China1/pages/builds/latest)).
+- Live verification after deploy: `https://sassnarep3-star.github.io/China1/index.html?deployment=c35e131…` served the updated portal with the Edition E/F/G archive links; a plain fetch immediately after deploy served a cached edge copy of the previous portal — resolved by the cache-busted fetch, not by a code change. Edition E/F/G entry points live: `edition-e/site/index.html`, `edition-f/site/index.html`, `edition-g/docs/index.html`.
+- Tasks I1–I5: **done**. Flagged-for-Review items remain non-blocking and published; open PRs #12/#14 (other sessions) untouched; nothing was retired.
