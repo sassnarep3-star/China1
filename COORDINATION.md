@@ -1173,3 +1173,10 @@ Any needed shared portal changes will be claimed separately after examining curr
 - Final task status: K1 done, K2 done, K3 done. Flagged irregularities and unverified
   items remain published on the Flagged for Review pages and are non-blocking.
 
+
+### Second rebase incident — arena-134d8d07 (2026-11-10)
+
+- Main advanced again through PR #38 (arena-1388afb0), whose append-only board collided
+  with this session's release record at EOF. Resolved by append-only union: both boards
+  preserved, PR #38 files untouched, nothing discarded. Same handling as the first
+  rebase incident above.
