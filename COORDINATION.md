@@ -1037,6 +1037,7 @@ closed at integration with explanatory comments; no content silently discarded.
   `assets/check.py` OK; `edition-d/build/verify.py` PASS 19 checks. No conflicts in
   research data; editions B–H and their archives untouched.
 
+
 ## Session arena-0fe51697 (2026-11-10)
 
 | Task | Status | Owner | Exclusive scope |
@@ -1063,3 +1064,77 @@ The Arena-assigned branch is fixed; the requested session branch name cannot be 
 - Local tests passed: `integration/verify.py`, `edition-i/build/verify.py`, `assets/check.py`, `edition-d/build/verify.py`. Link checks are local structural checks, not proof of live external source availability.
 - Task: **needs review** for unresolved case facts and broad independent source certification; audit artifact complete. The requested alternate branch name conflicts with Arena's fixed branch requirement. Initial pull of new remote session branch failed because it did not exist; rebased against main and pushed claim without conflicts.
 - Rebase incident: main advanced through PR #34 after this branch was created; the append-only board conflicted. Preserved both sessions' complete board entries and all of PR #34's files, then continued rebase. No research content was discarded.
+---
+
+# Session board — arena-134d8d07 (2026-11-10)
+
+Branch: `arena/134d8d07-china1` (fixed by Arena). Prior boards and editions preserved verbatim.
+This session claims a final-verification scope only: no edition data, generated pages, or
+shared generators will be edited. Claimed 2026-11-10 before any task work.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| K1 Final re-verification: all builders/verifiers, live official-source spot-checks, Pages status | in progress | arena-134d8d07 | COORDINATION.md (append-only) |
+| K2 Handoff of stale open PR #29 (competing Edition I, unmergeable, superseded by merged Edition I PRs #32/#33) | in progress | arena-134d8d07 | none (GitHub PR close with comment only) |
+| K3 PR to main, merge, confirm Pages deploy, record result | in progress | arena-134d8d07 | COORDINATION.md (append-only) |
+
+Ground rules observed: append-only edits to COORDINATION.md; no merged edition overwritten;
+open PRs owned by other sessions are not merged — PR #29 is closed as superseded with an
+explanatory comment (its branch content remains in git history, nothing discarded silently).
+
+## Verification record — arena-134d8d07 (2026-11-10)
+
+Final re-verification of the combined site at main 93a6757 (PR #33 merge), all from repo root:
+
+- All 11 builder/verifier suites PASS with byte-identical rebuilds (working tree clean after
+  every rebuild): assets/check.py (6 pages, 95 rows, 40 scenarios); dossier scripts/build_site.py
+  (8 pages, 31 sources, 35 routes, 24 cost lines, 22 tax positions, 20 flags, link check clean);
+  scripts/build.py+verify.py (6 pages, 60 rows); edition-b (15 checks); edition-c linkcheck
+  (0 warnings); edition-d (19 checks); edition-e (18 checks); edition-f (27 checks);
+  edition-g (58 pages, 1,720 rows); edition-i (1,868 checks, 0 errors); integration/verify.py
+  (7 pages, 142 rows, 40 targets, 160 recomputed values, 43 method links, 223 HTML files /
+  20,119 local references).
+- Live official-source spot-checks (fetched 2026-11-10, this session):
+  - BOC FX board (boc.cn/sourcedb/whpj/): live USD row 665.86/668.66 CNY per 100 USD at
+    13:49:58 — confirms the site's 07:32:39 snapshot (666.22/669.03) is a correctly
+    timestamped observation and the ~0.21% one-way margin methodology (now 0.2098%).
+  - SAFE PBOC Decree [2006] No. 3 full text: Arts. 3, 7, 9, 12–15, 20, 22, 26, 37–38 read
+    verbatim; all site citations match.
+  - IRS FBAR page: USD 10,000 aggregate threshold, April 15 + automatic October 15 extension,
+    FinCEN Form 114 via BSA E-Filing — matches site.
+  - Wise CNY guide (Sending from CNY): non-mainland-Chinese eligibility, China work + tax
+    record within 3 years, own-account destination only, CNY 300,000 bank-app / CNY 50,000
+    Alipay per-transfer caps, after-tax-salary overall limit, quote-time-only fees — matches site.
+- Cost-table structure check: integration/costs.html has header + exactly 40 rows
+  (USD 10,000–400,000 in 10,000 steps), viewport meta, mobile data-label card layout, and 40
+  blank + UNVERIFIED all-in cells (blank, never zero). edition-i/site/costs.html has 410 rows
+  (10 ladders x 40 targets + headers). Root index.html links to both.
+- GitHub Pages: API reports status `built`, source main:/, latest pages-build-deployment run
+  42737816560 completed successfully. Direct HTTP retrieval from this sandbox is network-
+  restricted (curl 000), so deployment confirmation is GitHub's API/run result, as recorded
+  by prior sessions.
+- PR #29 handoff (K2): closed as superseded with explanatory comment; branch content preserved
+  in git history. No other open PRs remain (PRs #12/#14/#25 were closed earlier as superseded).
+
+Irregularities: none new. All previously published flagged items (integration/review.html,
+edition-i/site/flagged.html F01–F18, audit A01–A12) remain published and non-blocking.
+Personal facts (source of funds, SAFE classification, tax history, destination bank) remain
+unknown — no personalized determination is made or claimed.
+
+| Task | Status | Owner | Result |
+|---|---|---|---|
+| K1 Final re-verification | done | arena-134d8d07 | 11/11 suites PASS; 4/4 live source spot-checks match |
+| K2 PR #29 handoff | done | arena-134d8d07 | Closed as superseded, branch preserved |
+| K3 PR, merge, Pages | in progress | arena-134d8d07 | This record; merge + Pages confirmation below |
+
+
+### Rebase incident — arena-134d8d07 (2026-11-10)
+
+- `git pull --rebase origin main` hit conflicts: main had advanced through PR #34
+  (arena-0fe51697) and PR #36 (arena-12b8fb19), both of which appended to COORDINATION.md
+  at EOF, colliding with this session's append-only board. Per the coordination rule,
+  stopped to inspect and resolved without discarding any concurrent work: all three
+  sessions' complete boards are preserved (append-only union), and PR #34/#36 files
+  (edition-j/REVIEW.md, audit-12b8fb19/REVIEW.md) are untouched. No research content
+  discarded. Their independent reviews reach consistent conclusions with this session's
+  spot-checks (same SAFE/IRS/BOC sources, same unknown-personal-facts limits).
