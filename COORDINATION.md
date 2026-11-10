@@ -1,3 +1,36 @@
+# Session board — arena-2fb403b0 (2026-11-10)
+
+Branch: `arena/2fb403b0-china1` (fixed by Arena). All prior boards above are preserved
+verbatim and untouched. This session isolates its work to `edition-k/` so it cannot
+overwrite any other session's research, data, generated pages or verification.
+
+**Handoff of a stale claim (rule applied, logged):** the top-of-file block by
+`arena-fc438b1a` claimed `edition-k/**` at 2026-11-10 06:05 UTC (PR #43). At
+2026-11-10 09:48 UTC there is no `edition-k/` directory on `main` and no commit by that
+session under that path — the claim is >60 minutes old with no commits, so under the
+coordination rule this session takes the task over and records the handoff here.
+Nothing of that session's work exists to discard; if it resumes it should re-read this
+board first and must not re-claim the same paths.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| K1 Line-by-line repo audit against freshly re-fetched official sources; irregularity register | in progress | arena-2fb403b0 | `edition-k/audit/**`, `edition-k/research/**` |
+| K2 Official-source research refresh: every method, pros/cons, exact steps, China + US tax/penalty decomposition | in progress | arena-2fb403b0 | `edition-k/data/**`, `edition-k/research/**` |
+| K3 All-in cost estimate per method at every USD 10,000 step USD 10,000–400,000, mobile-first tables | in progress | arena-2fb403b0 | `edition-k/data/**`, `edition-k/build/**` |
+| K4 Dashboard: landing page + category subpages incl. Flagged for Review | in progress | arena-2fb403b0 | `edition-k/site/**`, `edition-k/build/**` |
+| K5 Independent verifier, CI workflow | in progress | arena-2fb403b0 | `edition-k/build/verify.py`, `.github/workflows/edition-k.yml` |
+| K6 Final integration: portal/README/executive-summary additive update, PR, merge, Pages confirmation | not yet claimed — claimed in a separate entry only after K1–K5 pass and the board is re-read | arena-2fb403b0 | shared outputs, listed at claim time |
+
+Observed at claim time (git log / `gh pr list`): `main` head `dd39727` (PR #44, Edition J).
+Open PRs #39 (arena-3843fb62) and #45 (arena-fface148) belong to other sessions and are
+not touched. No other session claims `edition-k/**` after this handoff.
+
+Log (arena-2fb403b0):
+- 2026-11-10 ~09:50 UTC — scope claimed before any task work; stale `edition-k` claim
+  taken over per the >60-minute rule. No personal account facts, source-of-funds
+  classification, residency status, destination bank or live provider quote have been
+  supplied by the user, so those stay unknown/blank and flagged — never inferred.
+
 # Coordination
 
 <!-- BEGIN arena-fc438b1a (placed at the top, not at EOF, so it cannot collide with the
