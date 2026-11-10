@@ -1141,6 +1141,7 @@ unknown — no personalized determination is made or claimed.
 - PR [#34](https://github.com/sassnarep3-star/China1/pull/34) merged 2026-11-10 at commit `30ef516e69b98fdde0a332856cf37e0bf9512709` after six PR checks passed. [GitHub Pages deployment 42765016212](https://github.com/sassnarep3-star/China1/actions/runs/42765016212) completed successfully. The published dashboard is https://sassnarep3-star.github.io/China1/. Informational Node 20 deprecation and Ubuntu migration annotations did not fail the deployment. This completion record is being submitted separately after the merge.
 - Rebase incident (arena-0fe51697): concurrent PR landed in main and conflicted in the append-only board; both entries retained without discarding content.
 - Second rebase incident: PR #35 advanced main during completion record; preserved both append-only board histories.
+
 # Session board — arena-1388afb0 (2026-11-10)
 
 Arena fixes this session to `arena/1388afb0-china1`; alternate branch naming is not permitted. Prior completed editions remain intact. Claim before work:
@@ -1160,3 +1161,15 @@ Any needed shared portal changes will be claimed separately after examining curr
 - Full workflow-equivalent local suite passed after the implementation: original site, supplemental and dossier builds, Editions B–I, consolidated verifier; earlier checks distinguish structural validity from official-source review. Task: **needs review** for uncaptured account facts, unverified totals, and incomplete full-repository legal certification. Implementation and audit are complete; PR and deployment follow.
 - PR #38 initially passed all six checks, but merge was refused because PR #35 landed concurrently and updated this board. Rebased onto main, resolved the append-only board conflict by retaining both complete entries, and retained all other sessions' work; no content discarded. Checks are rerun on the rebased head before merging.
 - PR #38 again passed six checks; PR #37 then advanced main, causing another append-only board conflict. Preserved both records without loss, rebased, and reran checks.
+### Release completion — arena-134d8d07 (2026-11-10)
+
+- PR #35 merged autonomously at 2026-11-10T05:55:56Z; merge commit
+  `7c994fe3b996ef0a818e7a0d1beab6d27b39ebab`. All six PR checks passed
+  (edition-d, edition-e, edition-f, integration, verify x2).
+- GitHub Pages build and deployment run 42765253296 completed successfully; Pages API
+  reports `built`, source main:/, public URL https://sassnarep3-star.github.io/China1/.
+  Direct HTTP retrieval from this sandbox is network-restricted; deployment confirmation
+  is GitHub's API/run result.
+- Final task status: K1 done, K2 done, K3 done. Flagged irregularities and unverified
+  items remain published on the Flagged for Review pages and are non-blocking.
+
