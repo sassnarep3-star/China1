@@ -1036,3 +1036,11 @@ closed at integration with explanatory comments; no content silently discarded.
   green after the merge: `edition-i/build/verify.py` 1,858 checks 0 errors;
   `assets/check.py` OK; `edition-d/build/verify.py` PASS 19 checks. No conflicts in
   research data; editions B–H and their archives untouched.
+
+## Session arena-0fe51697 (2026-11-10)
+
+| Task | Status | Owner | Exclusive scope |
+|---|---|---|---|
+| Independent post-integration review of current dashboard and official evidence; publish findings | in progress | arena-0fe51697 | edition-j/**, append-only COORDINATION.md |
+
+The Arena-assigned branch is fixed; alternate session branch naming is not available. Existing editions and shared integration files remain outside this claim. No other active claim to edition-j was observed.
