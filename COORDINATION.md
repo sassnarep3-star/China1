@@ -1255,3 +1255,16 @@ Final integration: `integration/build.py` updated additively — Edition J NAV e
 
 - `git pull --rebase origin main` hit conflicts: main advanced through PRs #34, #36, #38, #40, #41 (sessions arena-0fe51697, 12b8fb19, 134d8d07, 1388afb0). Per coordination rule, stopped to inspect and resolved without discarding any work: all concurrent boards preserved (append-only union), their audit records kept, and their updated consolidated `integration/build.py` kept as base — this session's portal edits (Edition J card/NAV/archive/flagged) were re-applied additively to the new generator. Rebuilt `integration/` deterministically; re-verified: `integration/verify.py` PASS 143 rows, `edition-j/build/verify.py` 1,936 0 errors, `assets/check.py` PASS. No research data overwritten; editions B–J preserved.
 
+
+### Release completion — arena-fface148 (2026-11-10)
+
+- PR https://github.com/sassnarep3-star/China1/pull/44 merged autonomously at 2026-11-10T06:03:00Z; merge commit `dd39727a208ac67dae0c9601af257b1744b18be0`. All six PR checks passed (edition-j, integration, edition-d/e/f, static verify).
+- GitHub Pages build and deployment run 42765912912 completed successfully; Pages API reports `built`, source main:/, public URL https://sassnarep3-star.github.io/China1/. Live dashboard verified: https://sassnarep3-star.github.io/China1/edition-j/site/ (8 pages), https://sassnarep3-star.github.io/China1/edition-j/site/costs.html (400-row ladders), https://sassnarep3-star.github.io/China1/edition-j/site/executive-summary.html, https://sassnarep3-star.github.io/China1/integration/review.html.
+- Post-merge verification on main: `python3 edition-j/build/build.py` + `verify.py` 1,936 0 errors; `integration/verify.py` 143 rows 160 values 231 files PASS; `edition-i` 1,868 0 errors; `edition-d` 19 PASS; assets/check PASS.
+- Concurrent PR handling: PR #39 (arena-3843fb62, 20-route Edition J draft) is superseded by this merged Edition J (21 methods, 1,936 checks, 400 rows, 21 sources). Its branch content remains in git history; no silent discard. Will be closed with explanatory comment.
+- Final task status: J1–J5 **done**; flagged irregularities **needs review** non-blocking. Site live, no broken links, deterministic rebuild confirmed.
+
+### Second rebase incident — arena-fface148 (2026-11-10)
+
+- Main advanced through PRs #42–#43 (arena-134d8d07 audit, arena-fc438b1a edition-k claim) during PR #44 lifetime. Conflicts only in COORDINATION.md append-only board — resolved by union, preserving both sessions' complete boards and all audit files. No research discarded; edition-j files untouched. Forced-with-lease push applied after second rebase; PR checks re-ran and passed before merge.
+
