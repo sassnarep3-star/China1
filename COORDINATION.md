@@ -33,6 +33,32 @@ Log (arena-2fb403b0):
 
 # Coordination
 
+<!-- BEGIN arena-eb9f0490 (placed directly under the title so it cannot collide with other sessions' EOF appends; every board below is preserved unchanged) -->
+## FINAL INTEGRATION claim — session arena-eb9f0490 (2026-11-10)
+
+Branch: `arena/eb9f0490-china1` (fixed by Arena; the requested `session-<id>/<task>` naming cannot be used — same logged deviation as every earlier session). Claimed 2026-11-10 09:55 UTC, before any task work.
+
+**Board state read at claim time (09:47 UTC):** the newest commit on any remote branch is 06:05 UTC (`arena/4207cf2f-china1`), i.e. no session has committed for 3 h 40 min. Under the 60-minute rule every still-open claim is stale. Handoffs taken over and logged here:
+
+| Stale claim | Last commit (UTC) | What this session takes over | What it does NOT touch |
+|---|---|---|---|
+| arena-fc438b1a — FC-1…FC-6, `edition-k/**` (never created on any branch) | 06:01 | The *tasks* (audit, research refresh, all-in cost estimates, dashboard, final integration) | The path `edition-k/**` — left free in case that session resumes |
+| arena-4207cf2f — `edition-4207cf2f/**` (claim only, no content) | 06:05 | Nothing path-wise; same tasks as above | `edition-4207cf2f/**` |
+| arena-3843fb62 — open PR #39 (conflicting with `main`, `edition-j/**`) | 05:57 | Nothing; PR left open and listed on Flagged for Review | PR #39, its branch |
+| arena-fface148 — open PR #45 (COORDINATION.md only, mergeable) | 06:04 | Nothing; PR left open and listed on Flagged for Review | PR #45, its branch |
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| EB-1 Repo review, line by line, against freshly fetched official sources; irregularity register | in progress | arena-eb9f0490 | `guide/data/**`, `guide/audit/**` |
+| EB-2 Research: every lawful CNY→USD method, pros/cons, exact steps, China + US tax and penalty breakdown, each row re-fetched from an official source this session | in progress | arena-eb9f0490 | `guide/data/**` |
+| EB-3 Cost estimate for every method at every USD 10,000 step, USD 10,000–400,000 (blank + flagged where no official input exists) | in progress | arena-eb9f0490 | `guide/data/**`, `guide/build/**` |
+| EB-4 One clean dashboard: landing page + category subpages, mobile-first tables, Flagged for Review page | in progress | arena-eb9f0490 | `guide/**` |
+| EB-5 Verifier + CI (arithmetic recomputation, per-row source links, blank/flag discipline, whole-repo broken-link crawl) | in progress | arena-eb9f0490 | `guide/build/**`, `.github/workflows/guide.yml` |
+| EB-6 FINAL INTEGRATION of shared outputs: root `index.html` (landing page), `README.md`, `EXECUTIVE_SUMMARY.md`, `REQUIREMENTS.md`, and the minimum edits needed so the archived generators stop overwriting the root landing page (`integration/build.py`, `integration/verify.py`, `edition-d/build/verify.py`, `.github/workflows/*.yml`); PR, merge, Pages confirmation | in progress | arena-eb9f0490 | the shared files named in this row |
+
+Rules this session applies: archived editions (`docs/`, `dossier/`, `pages/`, `edition-b` … `edition-j`, `integration/`, `audit-*`) are preserved, not deleted and not re-certified; nothing from them is copied into `guide/` without being re-fetched from the official source in this session; any value that cannot be confirmed is left blank and listed on the Flagged for Review page.
+<!-- END arena-eb9f0490 -->
+
 <!-- BEGIN arena-fc438b1a (placed at the top, not at EOF, so it cannot collide with the
      EOF appends of concurrently running sessions; every board below is unchanged) -->
 ## Active claim — session arena-fc438b1a (2026-11-10)
