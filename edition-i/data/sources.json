@@ -108,11 +108,11 @@
     },
     {
       "id": "S14",
-      "title": "26 U.S.C. §988 — Treatment of certain foreign currency transactions (U.S. Code, GPO official text)",
+      "title": "26 U.S.C. §988 — Treatment of certain foreign currency transactions (U.S. Code, GPO official text, 2024 edition)",
       "publisher": "U.S. Government Publishing Office (govinfo.gov)",
-      "url": "https://www.govinfo.gov/content/pkg/USCODE-2003-title26/html/USCODE-2003-title26-chap1-subchapN-partIII-subpartJ-sec988.htm",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm",
       "kind": "government",
-      "supports": "(a)(1)(A) foreign currency gain/loss on section 988 transactions computed separately and treated as ordinary income/loss; (c)(1)(C) disposition of nonfunctional currency is a section 988 transaction; (e)(1) section 988 rules do not apply to an individual's personal transactions; (e)(2) exclusion for personal transactions — no gain recognized from exchange-rate changes if the gain does not exceed USD 200; if the gain exceeds USD 200 the exclusion does not apply (gain recognized in full); (e)(3) personal-transaction definition excludes §162/§212 expenses. Amendment notes show subsection (e) last amended by Pub. L. 105-34 (1997). Text retrieved from the GPO 2003 edition because uscode.house.gov was serving a temporary-format notice (flag F11)."
+      "supports": "(a)(1)(A) foreign currency gain/loss on section 988 transactions computed separately and treated as ordinary income/loss; (c)(1)(C) disposition of nonfunctional currency is a section 988 transaction; (e)(1) section 988 rules do not apply to an individual's personal transactions; (e)(2) exclusion for personal transactions — no gain recognized from exchange-rate changes if the gain does not exceed USD 200; if the gain exceeds USD 200 the exclusion does not apply (gain recognized in full); (e)(3) personal-transaction definition excludes §162/§212 expenses. Amendment notes show subsection (e) last amended by Pub. L. 105-34 (1997). Text verified on the current GPO 2024 edition (chunks 0 and 2 read 2026-11-10) and cross-checked against the GPO 2003 edition."
     },
     {
       "id": "S15",
@@ -140,11 +140,19 @@
     },
     {
       "id": "S18",
-      "title": "关于进一步防范和处置虚拟货币交易炒作风险的通知 (Notice on preventing virtual-currency trading speculation risks), PBOC et al. Yin Fa [2021] No. 237",
+      "title": "关于进一步防范和处置虚拟货币交易炒作风险的通知 (Notice on preventing virtual-currency trading speculation risks), PBOC et al. Yin Fa [2021] No. 237 — REPEALED 2026-02-06 by S21",
       "publisher": "People's Bank of China and nine other authorities",
       "url": "https://www.pbc.gov.cn/tiaofasi/144941/3581332/4348658/index.html",
       "kind": "government",
-      "supports": "Virtual currencies (incl. stablecoins) have no legal-tender status; fiat-crypto exchange, crypto-crypto exchange, market-making, information/pricing services, token issuance financing and crypto derivatives are illegal financial activities, strictly banned and subject to shutdown; offshore exchanges serving domestic residents via the internet are likewise illegal financial activities; associated gambling, fraud, money-laundering and other crimes highlighted."
+      "supports": "Historical text (2021-09-15): virtual currencies (incl. stablecoins) have no legal-tender status; fiat-crypto exchange and related services are illegal financial activities, strictly banned. NOTE: this instrument was expressly repealed when Yin Fa [2026] No. 42 took effect on 2026-02-06 (final clause: 银发〔2021〕237号 同时废止). It is retained here as the historical instrument; the current authority is S21 (flag F18)."
+    },
+    {
+      "id": "S21",
+      "title": "关于进一步防范和处置虚拟货币等相关风险的通知 (Notice on preventing virtual-currency and related risks), PBOC et al. Yin Fa [2026] No. 42",
+      "publisher": "People's Bank of China, NDRC, MIIT, MPS, SAMR, NFRA, CSRC and SAFE",
+      "url": "https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html",
+      "kind": "government",
+      "supports": "Current authority in force from 2026-02-06 (fetched 2026-11-10). Virtual-currency business activities remain illegal financial activities strictly banned (Sec. 1(1)); offshore entities and individuals may not provide virtual-currency services to domestic parties in any form; fiat-pegged stablecoins may not be issued offshore pegged to RMB without approval; RWA tokenization activities are banned absent approval; financial institutions may not provide accounts, transfers or settlement for virtual-currency business (Sec. 3(6)); penalties incl. criminal liability (Sec. 6); civil acts violating the notice are void with losses borne by the parties (Sec. 6(19)). Final clause expressly repeals Yin Fa [2021] No. 237."
     },
     {
       "id": "S19",

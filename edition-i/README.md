@@ -2,7 +2,7 @@
 
 **Live:** https://sassnarep3-star.github.io/China1/edition-i/site/
 
-Session `arena-e90d36c3`, built 2026-11-10. Independent research pass: 20 official sources
+Session `arena-e90d36c3`, built 2026-11-10. Independent research pass: 21 official sources
 fetched and read during this session (government: SAFE, PBOC, China STA, China Customs,
 IRS, GPO govinfo; provider: Bank of China, Wise). Every displayed row links the official
 page it was checked against. Values that cannot be confirmed are **blank + flagged**, never
@@ -18,8 +18,8 @@ inferred.
 | `site/steps.html` | Step-by-step procedures per lawful route |
 | `site/costs.html` | 10 cost ladders × 40 targets ($10,000–$400,000 in $10,000 steps) |
 | `site/taxes.html` | 14 tax/penalty findings: CN IIT, §988, FBAR, 8938, FTC |
-| `site/sources.html` | 20-source register with retrieval notes |
-| `site/flagged.html` | 17 published flags (F01–F17), non-blocking |
+| `site/sources.html` | 21-source register with retrieval notes |
+| `site/flagged.html` | 18 published flags (F01–F18), non-blocking |
 
 ## Model (all inputs sourced)
 
@@ -46,7 +46,7 @@ links to the 20 registered sources, and confirms prohibited methods carry no ste
 
 ## Verification record
 
-- All 20 sources fetched 2026-11-10 via direct page retrieval; quoted figures read from the
+- All 21 sources fetched 2026-11-10 via direct page retrieval; quoted figures read from the
   fetched text (quota USD 50,000 = S02 Art. 2; tariff = S06; board = S07; §988(e)(2) $200
   exclusion = S14 statutory text; FBAR/8938 thresholds and penalties = S10–S12; property
   steps = S05; property-transfer reforms = S03 §VI; 2004 transfer framework = S04;

@@ -62,8 +62,14 @@
     },
     {
       "id": "F11",
-      "title": "U.S. Code text currency caveat",
-      "detail": "uscode.house.gov displayed a temporary-format notice during retrieval (2026-11-10). The §988 text (S14) was therefore taken from GPO's official govinfo.gov compilation (2003 edition). Its amendment notes show subsection (e) last amended in 1997 (Pub. L. 105-34); no later amendments to (e) appear in that edition. Independent confirmation against the current OLRC edition should be repeated when uscode.house.gov is fully restored.",
+      "title": "U.S. Code text currency — resolved against the current GPO edition",
+      "detail": "uscode.house.gov displayed a temporary-format notice during retrieval (2026-11-10), and the first govinfo path tried returned 404. The §988 text (S14) is now verified directly on the current GPO 2024 edition (govinfo 2024 U.S. Code, Subchapter N Part III Subpart J), chunks 0 and 2 read 2026-11-10, including §988(e)(2)'s USD 200 personal-transaction exclusion verbatim, and cross-checked against the GPO 2003 edition. Amendment notes show subsection (e) last amended by Pub. L. 105-34 (1997). Residual caveat: the OLRC uscode.house.gov live edition remains unreadable during the outage; statutory text is GPO-official.",
+      "blocking": false
+    },
+    {
+      "id": "F18",
+      "title": "PBOC 2021 crypto notice repealed by Yin Fa [2026] No. 42 — older editions are historical",
+      "detail": "The 2021 virtual-currency notice (S18, Yin Fa [2021] No. 237) was expressly repealed when Yin Fa [2026] No. 42 (S21) took effect on 2026-02-06 (final clause: 银发〔2021〕237号 同时废止). Edition I now cites S21 as the current authority; S18 is retained as historical text. Any edition citing only the 2021 instrument states a superseded citation — the prohibition itself continues unchanged under S21. Verified directly from the PBOC text on 2026-11-10.",
       "blocking": false
     },
     {

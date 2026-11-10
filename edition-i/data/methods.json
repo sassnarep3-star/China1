@@ -296,13 +296,13 @@
       "name": "Underground banking (地下钱庄) / black-market exchange",
       "category": "Prohibited — criminal risk",
       "who": "—",
-      "rule": "S08 explicitly names underground-banking participation as a violation; PBOC/SAFE enforcement treats such value transfer as illegal; associated money-laundering crimes are prosecuted (context in S18's list of harms).",
+      "rule": "S08 explicitly names underground-banking participation as a violation; PBOC/SAFE enforcement treats such value transfer as illegal; associated money-laundering crimes are prosecuted (S21 Sec. 6 names money laundering among the crimes jointly targeted).",
       "docs": "—",
       "pros": [],
       "cons": ["Criminal exposure (illegal business operations, money laundering) plus total-loss risk on funds.", "No recourse if the counterparty disappears.", "No execution steps are provided by design."],
       "steps": [],
       "cost_ladder": null,
-      "sources": ["S08", "S18"]
+      "sources": ["S08", "S21"]
     },
     {
       "id": "P03",
@@ -322,13 +322,13 @@
       "name": "Cryptocurrency / stablecoin cash-out",
       "category": "Prohibited — illegal financial activity",
       "who": "—",
-      "rule": "S18 (Yin Fa [2021] No. 237): fiat-crypto exchange and related services are illegal financial activities, strictly banned; offshore exchanges serving domestic residents are likewise illegal; virtual currency has no legal-tender status.",
+      "rule": "S21 (Yin Fa [2026] No. 42, in force 2026-02-06): fiat-crypto exchange and related services remain illegal financial activities, strictly banned and subject to shutdown; offshore entities and individuals may not provide virtual-currency services to domestic parties in any form; unapproved RWA tokenization is likewise banned. S21 expressly repealed the older S18 (Yin Fa [2021] No. 237), which had established the same prohibition in 2021.",
       "docs": "—",
       "pros": [],
-      "cons": ["Declared illegal financial activity in China; counterparties and platforms are enforcement targets.", "Funds can be frozen during investigations; contract protections do not apply.", "U.S. tax treatment of crypto dispositions is separate and adds reporting complexity (not a tax-free channel).", "No execution steps are provided by design."],
+      "cons": ["Declared illegal financial activity in China; counterparties and platforms are enforcement targets.", "Funds can be frozen during investigations; contract protections do not apply (S21 Sec. 6(19): civil acts violating the notice are void, losses borne by the parties).", "U.S. tax treatment of crypto dispositions is separate and adds reporting complexity (not a tax-free channel).", "No execution steps are provided by design."],
       "steps": [],
       "cost_ladder": null,
-      "sources": ["S18"]
+      "sources": ["S21", "S18"]
     },
     {
       "id": "P05",
