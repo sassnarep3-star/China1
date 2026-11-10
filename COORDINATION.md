@@ -892,3 +892,48 @@ after publication; this session will not edit the shared portal.
 - Public HTTP content fetched successfully for `/edition-h/site/index.html`, `/method-P01.html` and `/flagged.html` with `?build=430b0d9`. The live pages show 43 candidates, 1,720 rows, sourced partial charges, blank/unverified all-in values and 52 flags.
 - Live dashboard: https://sassnarep3-star.github.io/China1/edition-h/site/ ; executive summary: `/edition-h/site/executive-summary.html`; review register: `/edition-h/site/flagged.html`; full CSV: `/edition-h/site/cost-ladder.csv`.
 - Shared portal was not edited; its owner still has the additive Edition H archive-link request. Earlier editions and other open PRs remain untouched. Unverified personal facts stay needs-review and non-blocking.
+
+---
+
+# Session board — arena-d25b40f7 (2026-11-10) — "Playbook" (decision-first answer + all-in cost model)
+
+Branch: `arena/d25b40f7-china1` (fixed by Arena; the requested `session-<id>/<task>` naming cannot be used,
+as every earlier session has logged). All boards above are preserved verbatim.
+
+**Concurrent sessions observed before claiming** (read from their pushed branches at 2026-11-10 01:04 UTC,
+because claims pushed to a session branch are not visible on `main`):
+
+| Session | Claimed scope | This session's response |
+|---|---|---|
+| `arena-0d6abfa6` | Final integration: `integration/**`, `EXECUTIVE_SUMMARY.md`, `REQUIREMENTS.md`, root-portal template in `edition-d/build/build.py`, generated `index.html`, `.github/workflows/integration.yml` | **Not touched.** A root-portal link to this deliverable is logged as a cross-session request below. |
+| `arena-051006bc` | `edition-j/**`, `.github/workflows/edition-j.yml` | **Not touched.** |
+
+The directory name carries the session id on purpose: three sessions collided on `edition-d/` and four on
+`edition-h/` in earlier rounds, so a letter name is not collision-safe.
+
+| ID | Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|---|
+| P0 | Read board, inspect concurrent branches, publish claim | done | arena-d25b40f7 | this appended section only |
+| P1 | Repo review: cross-edition reconciliation of load-bearing claims (A–H), contradictions flagged | in progress | arena-d25b40f7 | `playbook-d25b40f7/data/repo-review.json`, `playbook-d25b40f7/research/**` |
+| P2 | Fresh official-source retrieval log with quoted passages (PRC FX/tax, US tax/reporting, published bank tariffs) | in progress | arena-d25b40f7 | `playbook-d25b40f7/data/sources.json`, `playbook-d25b40f7/research/**` |
+| P3 | Method catalog by source of funds: pros/cons, eligibility, exact steps (lawful routes); prohibited routes named with penalties, no instructions | unclaimed→claimed | arena-d25b40f7 | `playbook-d25b40f7/data/methods.json` |
+| P4 | All-in cost model, USD 10,000 → 400,000 in USD 10,000 steps, every method: transfer cost + China tax scenario + US tax line, each input sourced, formula shown | claimed | arena-d25b40f7 | `playbook-d25b40f7/data/**`, `playbook-d25b40f7/build/**` |
+| P5 | Executive summary + mobile-first dashboard with category subpages + Flagged for Review | claimed | arena-d25b40f7 | `playbook-d25b40f7/**` (site at `playbook-d25b40f7/`) |
+| P6 | Verifier (citations, arithmetic recomputation, blanks flagged, links/anchors), own CI workflow | claimed | arena-d25b40f7 | `playbook-d25b40f7/build/**`, `.github/workflows/playbook-d25b40f7.yml` |
+| P7 | PR to `main`, merge, confirm Pages deploy, record result | claimed | arena-d25b40f7 | this appended section; `README.md` (one appended section only) |
+
+Ground rules for this session: no file of any other edition or of the root portal is edited; no personal
+fact (source of funds, residency, tax history, bank quote) is invented; a number is published only when its
+inputs are quoted from an official or provider-primary page retrieved in this session, and derived cells are
+labelled as arithmetic; anything else stays blank and is listed on this deliverable's Flagged for Review
+page. Prohibited channels receive risk and penalty information only.
+
+## Cross-session requests (arena-d25b40f7)
+
+- To the root-portal owner (`arena-0d6abfa6`, or whichever session next integrates): please add an archive
+  link to `playbook-d25b40f7/index.html` once it is published. This session will not edit `index.html`,
+  `integration/**` or `edition-d/build/build.py` while that claim is active.
+
+## Log (arena-d25b40f7)
+
+- 2026-11-10 01:05 UTC — Claim written before any research or build. `main` at `fc92a7b`.
