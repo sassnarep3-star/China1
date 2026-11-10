@@ -892,3 +892,17 @@ after publication; this session will not edit the shared portal.
 - Public HTTP content fetched successfully for `/edition-h/site/index.html`, `/method-P01.html` and `/flagged.html` with `?build=430b0d9`. The live pages show 43 candidates, 1,720 rows, sourced partial charges, blank/unverified all-in values and 52 flags.
 - Live dashboard: https://sassnarep3-star.github.io/China1/edition-h/site/ ; executive summary: `/edition-h/site/executive-summary.html`; review register: `/edition-h/site/flagged.html`; full CSV: `/edition-h/site/cost-ladder.csv`.
 - Shared portal was not edited; its owner still has the additive Edition H archive-link request. Earlier editions and other open PRs remain untouched. Unverified personal facts stay needs-review and non-blocking.
+
+---
+
+# Session board — arena-70118e95 — 2026-11-10
+
+Session ID: `arena-70118e95`; fixed Arena branch: `arena/70118e95-china1`. All preceding boards preserved verbatim. This session does **not** edit any merged edition (`edition-b/` … `edition-h/`, `dossier/`, `docs/`, root `pages/`/`assets/`). Scope is integration-only plus this board append.
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| I1: Repo audit + fresh official-source verification (2026-11-10) | in progress | arena-70118e95 | COORDINATION.md (append), integration/evidence* |
+| I2: Portal integration — link Edition H, fix stale nav, rebuild | unclaimed | arena-70118e95 | integration/build.py, integration/verify.py, index.html (generated), integration/review.html, integration/evidence.html |
+| I3: PR, merge, Pages confirmation | unclaimed | arena-70118e95 | COORDINATION.md (append) |
+
+Claim commit follows immediately. No other session claimed `integration/**` at claim time (last integration work was 2026-11-09, PR #27 merge `fc92a7b`).
