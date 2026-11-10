@@ -1,0 +1,158 @@
+{
+ "F01": {
+  "detail": "Where the money came from (salary, sale of a home, inheritance, gift, business, money you brought in), your visa / residence history, whether Chinese tax was already paid, which bank holds it and which US bank will receive it were not supplied. The site therefore shows every route and prices scenarios; it does not pick one for you.",
+  "sources": [
+   "S03",
+   "S04"
+  ],
+  "title": "Your facts are unknown"
+ },
+ "F02": {
+  "detail": "The Individual Income Tax Law states 3%–45% for wages and 20% for the flat categories in text, but its bracket table is published as an image on the official page and could not be read. Per-amount wage tax is left blank; only the statutory 3% and 45% bounds are shown.",
+  "sources": [
+   "S14"
+  ],
+  "title": "Wage-tax brackets not machine-verified"
+ },
+ "F03": {
+  "detail": "All conversions use the Bank of China board of 2026/11/10 17:39:58. The board itself says it is indicative and the actual transaction rate applies. Other banks' rates were not verified.",
+  "sources": [
+   "S09"
+  ],
+  "title": "Exchange rate is a snapshot, not a quote"
+ },
+ "F04": {
+  "detail": "On a standard (shared-cost) wire, banks along the route may deduct their own charges. BOC's tariff says charges of banks abroad are passed on at cost; no amount is published. Left blank. BOC's full-amount option (USD 25) is priced separately.",
+  "sources": [
+   "S10",
+   "S11"
+  ],
+  "title": "Intermediary-bank deductions unknown"
+ },
+ "F05": {
+  "detail": "Chase's incoming-wire fee (USD 15 or USD 0) was read on chase.com (the indexed copy may be dated — re-check). Fees of Bank of America, Wells Fargo, Citi, Schwab and Fidelity could not be confirmed on their own sites in this session and are left blank.",
+  "sources": [
+   "S31"
+  ],
+  "title": "US receiving fees: only Chase confirmed"
+ },
+ "F06": {
+  "detail": "No current official tariff page of ICBC, Agricultural Bank, Bank of Communications or China Merchants Bank could be opened. Their cost cells are blank.",
+  "sources": [],
+  "title": "ICBC and other Chinese banks not confirmed"
+ },
+ "F07": {
+  "detail": "The only official CCB page found is a product page dated 2016-08-22. Its figures are shown and priced, but treat them as unconfirmed for today.",
+  "sources": [
+   "S12"
+  ],
+  "title": "CCB tariff is dated"
+ },
+ "F08": {
+  "detail": "Only the Bank of China board was read. HSBC China and CCB tables therefore show bank fees only; their FX-margin cell is blank. HSBC Global Transfers terms were not checked.",
+  "sources": [
+   "S11",
+   "S12"
+  ],
+  "title": "HSBC and CCB exchange margins not verified"
+ },
+ "F09": {
+  "detail": "The Wise help page gives eligibility and limits but no fee; it points to a live price page. The Wise fee cell is blank.",
+  "sources": [
+   "S13"
+  ],
+  "title": "Wise price not published"
+ },
+ "F10": {
+  "detail": "Confirmed in the Federal Register: USD 16,536 non-willful for penalties assessed from 17 January 2025. The adjusted willful figure and any 2026 adjustment were not confirmed on an official page; the statutory base of USD 100,000 is used and labelled.",
+  "sources": [
+   "S28",
+   "S23"
+  ],
+  "title": "FBAR penalty inflation figures"
+ },
+ "F11": {
+  "detail": "The IRS page read in this session refers to penalties under IRC 6039F(c) without stating the percentage. The amount is left blank.",
+  "sources": [
+   "S24"
+  ],
+  "title": "Form 3520 penalty percentage"
+ },
+ "F12": {
+  "detail": "The 2004 Measures as still published on gov.cn require staged remittance (half, then half of the rest, then the remainder) and SAFE head-office approval above CNY 500,000. SAFE Huifa [2014] No. 2 section 6 abolished both and says earlier rules give way. The site follows the 2014 notice.",
+  "sources": [
+   "S05",
+   "S06"
+  ],
+  "title": "Official texts disagree: emigrant transfers"
+ },
+ "F13": {
+  "detail": "The State Council Regulation (Art. 52) treats a foreigner who has lived in China continuously for one year as a domestic individual. The Individual FX Measures (Art. 2) classify by identity document: a passport holder is an overseas individual. Banks' practice for long-term foreign residents was not verified.",
+  "sources": [
+   "S01",
+   "S02"
+  ],
+  "title": "Official texts disagree: who is a 'domestic individual'"
+ },
+ "F14": {
+  "detail": "A 2011 SAFE Q&A required review by the SAFE branch; the 2017 operating guidelines let the bank handle it directly. The currently effective capital-account guidelines were not opened in this session. Confirm the document list with the bank.",
+  "sources": [
+   "S18",
+   "S19"
+  ],
+  "title": "Home-sale remittance procedure changed over time"
+ },
+ "F15": {
+  "detail": "Announcement 2013 No. 40 lists an overseas individual's remuneration among payments needing a tax filing above USD 50,000. A clause sending overseas individuals to the individual FX rules instead (which ask for tax vouchers) was seen only in a non-official reprint. Which paper a branch asks for was not verified. Confirm before visiting.",
+  "sources": [
+   "S17",
+   "S03"
+  ],
+  "title": "Tax filing form versus tax-payment certificate"
+ },
+ "F16": {
+  "detail": "Sending the money abroad as RMB and converting it offshore (for example in Hong Kong) is used in practice, but no official rule or tariff for individuals was opened in this session. Listed without values.",
+  "sources": [],
+  "title": "Cross-border RMB remittance not verified"
+ },
+ "F17": {
+  "detail": "For overseas ATM withdrawals the card network's conversion rate and the ATM owner's surcharge are not published in the sources read. Only the issuer fee in the BOC tariff is priced.",
+  "sources": [
+   "S10"
+  ],
+  "title": "Card-network rate and ATM surcharges"
+ },
+ "F18": {
+  "detail": "Flights and time are not priced. The table shows only how many crossings the legal limits would require.",
+  "sources": [
+   "S07"
+  ],
+  "title": "Travel cost of carrying cash"
+ },
+ "F19": {
+  "detail": "No treaty position and no US state tax rule was researched. Nothing is asserted about them.",
+  "sources": [],
+  "title": "US–China tax treaty and state taxes not covered"
+ },
+ "F20": {
+  "detail": "The SAFE Shanghai Q&A is an official branch answer that explains the rule; the binding text is Art. 13 of the Implementing Rules. The Implementing Rules were read on the SAFE Qinghai branch copy; whether later amendments changed other articles was not checked.",
+  "sources": [
+   "S04",
+   "S03"
+  ],
+  "title": "Branch Q&A is guidance, not law"
+ },
+ "F21": {
+  "detail": "Savings-deposit interest is exempt from Chinese income tax, but whether a bank accepts an interest statement alone as the 'tax voucher' for conversion was not verified.",
+  "sources": [
+   "S15",
+   "S03"
+  ],
+  "title": "Deposit interest as convertible income"
+ },
+ "F22": {
+  "detail": "The repository holds eleven earlier edition folders plus four older site folders with overlapping content and figures that differ between them, two stale open pull requests and non-official link hosts in older pages. Details are on the Repo review page.",
+  "sources": [],
+  "title": "Repository irregularities"
+ }
+}

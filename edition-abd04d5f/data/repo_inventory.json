@@ -1,0 +1,384 @@
+{
+ "snapshot_commit": "0e8099807c7b65f838222cfc019f843f065f6d86",
+ "dirs": {
+  ".github": {
+   "files": 10,
+   "html": 0,
+   "tr": 0,
+   "ext_links": 0
+  },
+  "(root)": {
+   "files": 7,
+   "html": 2,
+   "tr": 19,
+   "ext_links": 58
+  },
+  "assets": {
+   "files": 3,
+   "html": 0,
+   "tr": 0,
+   "ext_links": 0
+  },
+  "audit-12b8fb19": {
+   "files": 1,
+   "html": 0,
+   "tr": 0,
+   "ext_links": 0
+  },
+  "audit-2026-11-10": {
+   "files": 1,
+   "html": 0,
+   "tr": 0,
+   "ext_links": 0
+  },
+  "data": {
+   "files": 5,
+   "html": 0,
+   "tr": 0,
+   "ext_links": 0
+  },
+  "docs": {
+   "files": 9,
+   "html": 6,
+   "tr": 66,
+   "ext_links": 81
+  },
+  "dossier": {
+   "files": 9,
+   "html": 8,
+   "tr": 206,
+   "ext_links": 232
+  },
+  "edition-b": {
+   "files": 17,
+   "html": 9,
+   "tr": 167,
+   "ext_links": 481
+  },
+  "edition-c": {
+   "files": 32,
+   "html": 17,
+   "tr": 500,
+   "ext_links": 46
+  },
+  "edition-d": {
+   "files": 29,
+   "html": 19,
+   "tr": 449,
+   "ext_links": 1642
+  },
+  "edition-e": {
+   "files": 36,
+   "html": 15,
+   "tr": 1545,
+   "ext_links": 125
+  },
+  "edition-f": {
+   "files": 30,
+   "html": 12,
+   "tr": 440,
+   "ext_links": 1063
+  },
+  "edition-g": {
+   "files": 72,
+   "html": 58,
+   "tr": 1927,
+   "ext_links": 6184
+  },
+  "edition-h": {
+   "files": 74,
+   "html": 58,
+   "tr": 2020,
+   "ext_links": 7212
+  },
+  "edition-i": {
+   "files": 20,
+   "html": 8,
+   "tr": 493,
+   "ext_links": 999
+  },
+  "edition-j": {
+   "files": 19,
+   "html": 8,
+   "tr": 467,
+   "ext_links": 1010
+  },
+  "edition-k": {
+   "files": 17,
+   "html": 8,
+   "tr": 272,
+   "ext_links": 635
+  },
+  "edition-l": {
+   "files": 20,
+   "html": 11,
+   "tr": 366,
+   "ext_links": 995
+  },
+  "integration": {
+   "files": 12,
+   "html": 6,
+   "tr": 137,
+   "ext_links": 359
+  },
+  "pages": {
+   "files": 5,
+   "html": 5,
+   "tr": 97,
+   "ext_links": 119
+  },
+  "scripts": {
+   "files": 8,
+   "html": 0,
+   "tr": 0,
+   "ext_links": 0
+  }
+ },
+ "broken_local_links": 0,
+ "hosts": [
+  [
+   "www.safe.gov.cn",
+   4443
+  ],
+  [
+   "www.gov.cn",
+   4101
+  ],
+  [
+   "www.boc.cn",
+   3369
+  ],
+  [
+   "www.irs.gov",
+   1247
+  ],
+  [
+   "www.hsbc.com.cn",
+   1174
+  ],
+  [
+   "pic.bankofchina.com",
+   1143
+  ],
+  [
+   "www.pbc.gov.cn",
+   1143
+  ],
+  [
+   "wise.com",
+   784
+  ],
+  [
+   "guangdong.chinatax.gov.cn",
+   611
+  ],
+  [
+   "tianjin.chinatax.gov.cn",
+   377
+  ],
+  [
+   "www.cbp.gov",
+   375
+  ],
+  [
+   "m.safe.gov.cn",
+   286
+  ],
+  [
+   "www.chase.com",
+   277
+  ],
+  [
+   "www.chinatax.gov.cn",
+   274
+  ],
+  [
+   "www.govinfo.gov",
+   270
+  ],
+  [
+   "www.bankofchina.com",
+   191
+  ],
+  [
+   "www.bankofamerica.com",
+   153
+  ],
+  [
+   "shanghai.chinatax.gov.cn",
+   109
+  ],
+  [
+   "www.westernunion.com",
+   106
+  ],
+  [
+   "www.skyremit.cn",
+   97
+  ],
+  [
+   "www.moneygram.com",
+   94
+  ],
+  [
+   "www.paypal.com",
+   94
+  ],
+  [
+   "www.gdhmo.gov.cn",
+   92
+  ],
+  [
+   "www.icbcasia.com",
+   91
+  ],
+  [
+   "fgk.chinatax.gov.cn",
+   55
+  ],
+  [
+   "www.samr.gov.cn",
+   45
+  ],
+  [
+   "github.com",
+   26
+  ],
+  [
+   "english.shanghai.gov.cn",
+   22
+  ],
+  [
+   "www.ecfr.gov",
+   22
+  ],
+  [
+   "uscode.house.gov",
+   18
+  ],
+  [
+   "www.fincen.gov",
+   18
+  ],
+  [
+   "www.icbc.com.cn",
+   16
+  ],
+  [
+   "www.supremecourt.gov",
+   14
+  ],
+  [
+   "www.customs.gov.cn",
+   10
+  ],
+  [
+   "www.hkma.gov.hk",
+   10
+  ],
+  [
+   "www.moj.gov.cn",
+   10
+  ],
+  [
+   "www.shanghaiinvest.com",
+   9
+  ],
+  [
+   "guangzhou.customs.gov.cn",
+   8
+  ],
+  [
+   "m.mof.gov.cn",
+   7
+  ],
+  [
+   "online.customs.gov.cn",
+   5
+  ],
+  [
+   "www.csrc.gov.cn",
+   5
+  ],
+  [
+   "english.customs.gov.cn",
+   4
+  ],
+  [
+   "www.consumerfinance.gov",
+   4
+  ],
+  [
+   "www.nia.gov.cn",
+   4
+  ],
+  [
+   "www.chinamoney.com.cn",
+   3
+  ],
+  [
+   "www.sz.gov.cn",
+   3
+  ],
+  [
+   "av.sc.com",
+   2
+  ],
+  [
+   "jinan.pbc.gov.cn",
+   2
+  ],
+  [
+   "ningxia.chinatax.gov.cn",
+   2
+  ],
+  [
+   "www.hkex.com.hk",
+   2
+  ],
+  [
+   "www.law.cornell.edu",
+   2
+  ],
+  [
+   "www.news.cn",
+   2
+  ],
+  [
+   "www.sc.com",
+   2
+  ],
+  [
+   "[^",
+   1
+  ],
+  [
+   "fiscaldata.treasury.gov",
+   1
+  ],
+  [
+   "home.treasury.gov",
+   1
+  ],
+  [
+   "sassnarep3-star.github.io",
+   1
+  ],
+  [
+   "www.congress.gov",
+   1
+  ],
+  [
+   "www.hunan.gov.cn",
+   1
+  ],
+  [
+   "xzfg.moj.gov.cn",
+   1
+  ],
+  [
+   "zhejiang.chinatax.gov.cn",
+   1
+  ]
+ ]
+}
