@@ -1,0 +1,1006 @@
+[
+ {
+  "id": "M01",
+  "cat": "A",
+  "model": "boc_full",
+  "verdict": "Recommended",
+  "name": "Bank of China: buy USD against documented China income and wire it, full-amount arrival",
+  "who": "Passport holders (overseas individuals) whose RMB is lawful current-account income earned in China, with tax evidence.",
+  "cap": "No annual cap in the rule text; limited to the documented amount.",
+  "time": "Same day to a few days once documents are accepted (bank discretion).",
+  "steps": [
+   {
+    "step": "Collect proof that the RMB is lawful China-source income and that tax was paid: contract or pay records plus the tax payment record covering the amount.",
+    "sources": [
+     "CN-FX-02",
+     "CN-FX-01"
+    ]
+   },
+   {
+    "step": "Go to the bank that holds the RMB with your passport. The bank set your account category from the ID shown at opening.",
+    "sources": [
+     "CN-FX-01"
+    ]
+   },
+   {
+    "step": "Ask to buy USD against those documents. The bank reviews authenticity and consistency, may ask for more, and must give a reason and an appeal channel if it refuses.",
+    "sources": [
+     "CN-FX-02"
+    ]
+   },
+   {
+    "step": "Wire the USD from your foreign-currency account to your own US account using your ID.",
+    "sources": [
+     "CN-FX-02"
+    ]
+   },
+   {
+    "step": "Tick full-amount arrival (全额到账) so intermediary banks cannot deduct from the principal: USD 25, or USD 15 when the receiving bank holds an account with Bank of China New York.",
+    "sources": [
+     "FEE-02"
+    ]
+   },
+   {
+    "step": "Pay the commission of 0.1% (minimum CNY 50, maximum CNY 260) and the CNY 150 cable fee. Keep the purchase memo and wire receipt.",
+    "sources": [
+     "FEE-02"
+    ]
+   },
+   {
+    "step": "In the US, the receiving bank may charge an incoming-wire fee (Chase: $15). Report the China account on FBAR and Form 8938 if you pass the thresholds.",
+    "sources": [
+     "FEE-09",
+     "US-02"
+    ]
+   }
+  ],
+  "pros": [
+   "No annual cap in the rules for documented income",
+   "Lowest published all-in cost; the commission stops at CNY 260 so one large wire is cheapest",
+   "Leaves a clean paper trail for the IRS and for later transfers"
+  ],
+  "cons": [
+   "Needs tax evidence that matches the amount",
+   "The branch decides which documents satisfy it",
+   "Savings with no paper trail do not qualify"
+  ],
+  "cn_tax": "None on the conversion. The income was taxed when earned.",
+  "us": "No tax on the wire. The income was reportable when earned; China income tax may be credited.",
+  "src": [
+   "CN-FX-01",
+   "CN-FX-02",
+   "FEE-01",
+   "FEE-02",
+   "FEE-09"
+  ],
+  "flags": [
+   "F17",
+   "F18",
+   "F19",
+   "F24",
+   "F03"
+  ]
+ },
+ {
+  "id": "M02",
+  "cat": "A",
+  "model": "boc_sha",
+  "verdict": "Lawful",
+  "name": "Bank of China: same purchase, standard wire without full-amount arrival",
+  "who": "Same as M01.",
+  "cap": "Same as M01.",
+  "time": "Same as M01.",
+  "steps": [
+   {
+    "step": "Follow M01 steps 1–4.",
+    "sources": [
+     "CN-FX-02"
+    ]
+   },
+   {
+    "step": "Send as a standard wire. Foreign-bank charges are passed on at cost and come out of the principal.",
+    "sources": [
+     "FEE-02"
+    ]
+   },
+   {
+    "step": "Pay the 0.1% commission (CNY 50–260) and CNY 150 cable fee.",
+    "sources": [
+     "FEE-02"
+    ]
+   }
+  ],
+  "pros": [
+   "Saves the USD 25 full-amount-arrival fee"
+  ],
+  "cons": [
+   "Intermediary deductions are not published, so the arriving amount is not known in advance"
+  ],
+  "cn_tax": "As M01.",
+  "us": "As M01.",
+  "src": [
+   "CN-FX-02",
+   "FEE-01",
+   "FEE-02",
+   "FEE-09"
+  ],
+  "flags": [
+   "F01",
+   "F17",
+   "F19"
+  ]
+ },
+ {
+  "id": "M03",
+  "cat": "A",
+  "model": "hsbc_premier",
+  "verdict": "Lawful",
+  "name": "HSBC China Premier or Advance telegraphic transfer",
+  "who": "HSBC China Premier or Advance customers; same document gate as M01. Premier needs a CNY 500,000 relationship balance or a CNY 300 monthly fee; Advance is closed to most new customers since 18 Mar 2026.",
+  "cap": "No annual cap in the rule text; documented amount.",
+  "time": "Bank discretion.",
+  "steps": [
+   {
+    "step": "Hold or open an HSBC China account in the Premier or Advance tier.",
+    "sources": [
+     "FEE-06"
+    ]
+   },
+   {
+    "step": "Present the same source and tax documents as in M01 and buy USD.",
+    "sources": [
+     "CN-FX-02"
+    ]
+   },
+   {
+    "step": "Send a telegraphic transfer: 0.1% of the amount (minimum CNY 100, maximum CNY 500) plus CNY 120 cable.",
+    "sources": [
+     "FEE-06"
+    ]
+   },
+   {
+    "step": "Optional Pay Exact, CNY 200, so the beneficiary receives the full USD amount; any shortfall in overseas charges is collected from you.",
+    "sources": [
+     "FEE-06"
+    ]
+   }
+  ],
+  "pros": [
+   "Published tariff in English",
+   "Pay Exact option fixes the arriving amount"
+  ],
+  "cons": [
+   "Exchange rate not published in the tariff",
+   "Higher commission ceiling than Bank of China",
+   "Tier requirements"
+  ],
+  "cn_tax": "As M01.",
+  "us": "As M01.",
+  "src": [
+   "CN-FX-02",
+   "FEE-06",
+   "FEE-09"
+  ],
+  "flags": [
+   "F02",
+   "F03"
+  ]
+ },
+ {
+  "id": "M04",
+  "cat": "A",
+  "model": "hsbc_pb",
+  "verdict": "Lawful",
+  "name": "HSBC China Private Banking individual telegraphic transfer",
+  "who": "HSBC China Private Banking individual customers; same document gate as M01.",
+  "cap": "Documented amount.",
+  "time": "Bank discretion.",
+  "steps": [
+   {
+    "step": "Present source and tax documents and buy USD.",
+    "sources": [
+     "CN-FX-02"
+    ]
+   },
+   {
+    "step": "Send a telegraphic transfer; issuance and cable are free for individual Private Banking customers.",
+    "sources": [
+     "FEE-06"
+    ]
+   }
+  ],
+  "pros": [
+   "No commission and no cable fee"
+  ],
+  "cons": [
+   "Private Banking relationship required",
+   "Exchange rate and overseas charges not published"
+  ],
+  "cn_tax": "As M01.",
+  "us": "As M01.",
+  "src": [
+   "CN-FX-02",
+   "FEE-06",
+   "FEE-09"
+  ],
+  "flags": [
+   "F02",
+   "F01",
+   "F03"
+  ]
+ },
+ {
+  "id": "M05",
+  "cat": "A",
+  "model": "wise",
+  "verdict": "Lawful",
+  "name": "Wise from-CNY transfer through its licensed China partner",
+  "who": "Non-mainland individuals who work or worked in China and hold a China tax record from the last three years; personal accounts only; pays only to an account you own.",
+  "cap": "CNY 300,000 per transfer from a bank app, plus an overall limit computed from income, tax paid and years of tax records.",
+  "time": "First-time verification 1–2 working days.",
+  "steps": [
+   {
+    "step": "Open a personal Wise account and start a CNY→USD transfer to your own US account.",
+    "sources": [
+     "FEE-07"
+    ]
+   },
+   {
+    "step": "Upload proof of work in China and a tax record issued by the China tax authority within the last three years; verification takes 1–2 working days the first time.",
+    "sources": [
+     "FEE-07"
+    ]
+   },
+   {
+    "step": "Pay from a Chinese bank account in your own name (up to CNY 300,000 per transfer) or from Alipay.",
+    "sources": [
+     "FEE-07"
+    ]
+   },
+   {
+    "step": "Wise's licensed partner converts; the fee is shown before you pay and Wise states it uses the mid-market rate.",
+    "sources": [
+     "FEE-08",
+     "FEE-10"
+    ]
+   },
+   {
+    "step": "Repeat for further tranches; supply new tax records when the overall limit is reached.",
+    "sources": [
+     "FEE-07"
+    ]
+   }
+  ],
+  "pros": [
+   "Online, no branch visit",
+   "Fee shown upfront; provider states mid-market rate",
+   "Documents uploaded once"
+  ],
+  "cons": [
+   "Only income backed by tax records",
+   "CNY 300,000 per transfer and an overall limit",
+   "Costs more than a bank wire from about USD 20,000 upward",
+   "Quotes change"
+  ],
+  "cn_tax": "As M01.",
+  "us": "As M01.",
+  "src": [
+   "FEE-07",
+   "FEE-08",
+   "FEE-10",
+   "FEE-11",
+   "FEE-12",
+   "FEE-13"
+  ],
+  "flags": [
+   "F04",
+   "F21"
+  ]
+ },
+ {
+  "id": "M06",
+  "cat": "A",
+  "model": "boc_quota",
+  "verdict": "Lawful",
+  "name": "Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",
+  "who": "Overseas individuals holding a Foreign Permanent Resident ID Card.",
+  "cap": "USD 50,000 per person per year on ID alone; above that, documents as in M01.",
+  "time": "Same day.",
+  "steps": [
+   {
+    "step": "Show the Foreign Permanent Resident ID Card; the yearly purchase quota applies to you.",
+    "sources": [
+     "CN-FX-02"
+    ]
+   },
+   {
+    "step": "Buy up to USD 50,000 in the year on ID alone.",
+    "sources": [
+     "CN-FX-02",
+     "CN-FX-01"
+    ]
+   },
+   {
+    "step": "Wire it out from your foreign-currency account with ID; costs as M01.",
+    "sources": [
+     "CN-FX-02",
+     "FEE-02"
+    ]
+   },
+   {
+    "step": "Do not split, borrow or lend quotas.",
+    "sources": [
+     "CN-FX-02"
+    ]
+   }
+  ],
+  "pros": [
+   "No source documents inside the quota"
+  ],
+  "cons": [
+   "Only for holders of that card",
+   "USD 50,000 a year: USD 400,000 takes eight years"
+  ],
+  "cn_tax": "None on the conversion.",
+  "us": "No tax on the wire.",
+  "src": [
+   "CN-FX-02",
+   "CN-FX-01",
+   "FEE-02"
+  ],
+  "flags": [
+   "F08"
+  ]
+ },
+ {
+  "id": "M07",
+  "cat": "B",
+  "model": "boc_full",
+  "verdict": "Recommended",
+  "name": "Emigrant property transfer (移民财产转移) with SAFE approval",
+  "who": "People who moved abroad from mainland China and obtained foreign citizenship or permanent residence; covers lawful property owned in China before that status.",
+  "cap": "The approved amount; one remittance or several.",
+  "time": "Acceptance within 5 working days, decision within 20 working days; tax certificate within 15 days when papers are complete.",
+  "steps": [
+   {
+    "step": "Turn the property into RMB and gather proof of ownership and of the income behind it.",
+    "sources": [
+     "CN-FX-07"
+    ]
+   },
+   {
+    "step": "Obtain a tax certificate from the tax bureau, unless the total is CNY 150,000 or less or you already hold tax-paid vouchers.",
+    "sources": [
+     "CN-TAX-01"
+    ]
+   },
+   {
+    "step": "Assemble identity papers: foreign passport or ID, the certificate of settlement abroad issued or certified by a Chinese embassy or consulate (unless exempted under the relevant convention), and the certificate that your household registration was cancelled.",
+    "sources": [
+     "CN-FX-07"
+    ]
+   },
+   {
+    "step": "File the written application and form at the SAFE branch of your original household registration. One visit, not online, no fee.",
+    "sources": [
+     "CN-FX-07",
+     "CN-FX-04",
+     "CN-FX-06"
+    ]
+   },
+   {
+    "step": "SAFE issues the approval document within 20 working days.",
+    "sources": [
+     "CN-FX-07"
+    ]
+   },
+   {
+    "step": "Take the approval to the bank, buy USD and remit in one wire or several within the approved amount.",
+    "sources": [
+     "CN-FX-04"
+    ]
+   },
+   {
+    "step": "Wire costs as M01.",
+    "sources": [
+     "FEE-02"
+    ]
+   }
+  ],
+  "pros": [
+   "Built for naturalised citizens' pre-emigration assets",
+   "Whole estate under one approval; staging was abolished",
+   "No government fee"
+  ],
+  "cons": [
+   "Needs proof of cancelled household registration and certified settlement abroad",
+   "Only property owned before the foreign status",
+   "Assets restricted by judicial or supervisory bodies are refused"
+  ],
+  "cn_tax": "None on the transfer itself; unpaid tax on the underlying income must be settled before the certificate is issued.",
+  "us": "No tax on the wire; FBAR and Form 8938 while the money sits in China.",
+  "src": [
+   "CN-FX-04",
+   "CN-FX-05",
+   "CN-FX-06",
+   "CN-FX-07",
+   "CN-TAX-01",
+   "FEE-02"
+  ],
+  "flags": [
+   "F25",
+   "F17",
+   "F19",
+   "F21"
+  ]
+ },
+ {
+  "id": "M08",
+  "cat": "B",
+  "model": "boc_full",
+  "verdict": "Recommended",
+  "name": "Inheritance property transfer (继承财产转移) with SAFE approval",
+  "who": "Foreign citizens who lawfully inherit an estate in mainland China.",
+  "cap": "The approved amount; one remittance or several; estates of several decedents may be combined.",
+  "time": "Acceptance within 5 working days, decision within 20 working days.",
+  "steps": [
+   {
+    "step": "Obtain proof of inheritance (for example a notarised succession or will) and the decedent's property documents; turn the estate into RMB.",
+    "sources": [
+     "CN-FX-08"
+    ]
+   },
+   {
+    "step": "Obtain the tax certificate unless exempt from providing one.",
+    "sources": [
+     "CN-FX-08",
+     "CN-TAX-01"
+    ]
+   },
+   {
+    "step": "Assemble identity papers: foreign passport, residence-country ID, and the certificate of settlement in that country issued or certified by a Chinese embassy or consulate (unless exempted under the relevant convention).",
+    "sources": [
+     "CN-FX-08"
+    ]
+   },
+   {
+    "step": "File at the SAFE branch of the decedent's last household registration. No fee.",
+    "sources": [
+     "CN-FX-08",
+     "CN-FX-06"
+    ]
+   },
+   {
+    "step": "After approval, buy USD at the bank and remit once or in batches.",
+    "sources": [
+     "CN-FX-04"
+    ]
+   },
+   {
+    "step": "In the US, report on Form 3520 if bequests from the foreign estate exceed $100,000 in the year.",
+    "sources": [
+     "US-04"
+    ]
+   }
+  ],
+  "pros": [
+   "Purpose-built route for heirs",
+   "No government fee",
+   "Several estates in one application"
+  ],
+  "cons": [
+   "Notarised succession papers and a certified settlement certificate",
+   "In-person filing at the decedent's locality"
+  ],
+  "cn_tax": "Inheritance is not among the nine taxable categories listed in the Individual Income Tax Law.",
+  "us": "A bequest is excluded from income by the recipient; Form 3520 reporting above $100,000.",
+  "src": [
+   "CN-FX-04",
+   "CN-FX-05",
+   "CN-FX-06",
+   "CN-FX-08",
+   "CN-TAX-04",
+   "US-04",
+   "FEE-02"
+  ],
+  "flags": [
+   "F25",
+   "F14",
+   "F23",
+   "F10"
+  ]
+ },
+ {
+  "id": "M09",
+  "cat": "B",
+  "model": "boc_property",
+  "verdict": "Lawful",
+  "name": "Proceeds of selling a home bought as an overseas individual",
+  "who": "Overseas individuals who sell their mainland commodity housing.",
+  "cap": "The sale proceeds evidenced by contract and tax vouchers.",
+  "time": "Tax filing review up to 15 working days.",
+  "steps": [
+   {
+    "step": "Sell the home. Tax is assessed at transfer and the registry checks the income-tax payment certificate before registering.",
+    "sources": [
+     "CN-TAX-04",
+     "CN-TAX-07"
+    ]
+   },
+   {
+    "step": "Keep the transfer contract, registration proof and tax vouchers.",
+    "sources": [
+     "CN-FX-11"
+    ]
+   },
+   {
+    "step": "For a single outward payment above USD 50,000, complete the tax filing; the tax bureau reviews it within 15 working days.",
+    "sources": [
+     "CN-TAX-02"
+    ]
+   },
+   {
+    "step": "Submit the purchase application, contract and tax proof for review, then buy USD and wire it.",
+    "sources": [
+     "CN-FX-01",
+     "CN-FX-11"
+    ]
+   }
+  ],
+  "pros": [
+   "Recognised route in Order No. 3",
+   "Tax paid on the sale is documented for the US credit"
+  ],
+  "cons": [
+   "Income tax of 20% of the gain, or 1%–3% of the price where cost records are incomplete",
+   "Current desk procedure not confirmed in this session"
+  ],
+  "cn_tax": "20% of the gain; or 1%–3% of the sale price under the deemed method.",
+  "us": "Gain is reportable; China income tax may be credited.",
+  "src": [
+   "CN-FX-01",
+   "CN-FX-11",
+   "CN-TAX-02",
+   "CN-TAX-04",
+   "CN-TAX-07",
+   "FEE-02"
+  ],
+  "flags": [
+   "F06",
+   "F13",
+   "F21"
+  ]
+ },
+ {
+  "id": "M10",
+  "cat": "B",
+  "model": "boc_dividend",
+  "verdict": "Lawful",
+  "name": "Dividends from your foreign-invested enterprise",
+  "who": "Foreign individuals holding equity in a foreign-invested enterprise with distributable profit.",
+  "cap": "The distributed profit.",
+  "time": "Company process.",
+  "steps": [
+   {
+    "step": "The company resolves to distribute profit.",
+    "sources": [
+     "CN-FX-04"
+    ]
+   },
+   {
+    "step": "The company withholds 20% individual income tax and files by the 15th of the following month.",
+    "sources": [
+     "CN-TAX-05"
+    ]
+   },
+   {
+    "step": "Above USD 50,000 the company's bank checks the distribution resolution and the tax filing form; up to USD 50,000 documents are in principle not reviewed.",
+    "sources": [
+     "CN-FX-04",
+     "CN-TAX-02"
+    ]
+   },
+   {
+    "step": "The company's bank remits the dividend to your US account.",
+    "sources": [
+     "CN-FX-04"
+    ]
+   },
+   {
+    "step": "In the US, report the dividend and claim the credit; only tax at the treaty rate is creditable.",
+    "sources": [
+     "US-05",
+     "US-07"
+    ]
+   }
+  ],
+  "pros": [
+   "Goes straight from the company to your US account"
+  ],
+  "cons": [
+   "20% tax since 1 September 2026",
+   "The treaty caps China's tax at 10% for a US-resident beneficial owner, and the IRS credits only the treaty rate"
+  ],
+  "cn_tax": "20% withheld; treaty ceiling 10% for a US-resident beneficial owner.",
+  "us": "Dividend is taxable; credit limited to the treaty-rate tax.",
+  "src": [
+   "CN-TAX-05",
+   "CN-FX-04",
+   "CN-TAX-02",
+   "US-05",
+   "US-07"
+  ],
+  "flags": [
+   "F26",
+   "F09"
+  ]
+ },
+ {
+  "id": "M11",
+  "cat": "B",
+  "model": "boc_full",
+  "verdict": "Lawful",
+  "name": "Proceeds of a lawfully liquidated foreign-invested enterprise",
+  "who": "Foreign investors in an enterprise that has been lawfully terminated.",
+  "cap": "RMB belonging to the foreign investor after liquidation and tax.",
+  "time": "Liquidation process.",
+  "steps": [
+   {
+    "step": "Complete liquidation and pay tax under the national rules.",
+    "sources": [
+     "CN-FX-03"
+    ]
+   },
+   {
+    "step": "Buy USD at a bank with the investor's share and remit it.",
+    "sources": [
+     "CN-FX-03"
+    ]
+   },
+   {
+    "step": "Wire costs as M01.",
+    "sources": [
+     "FEE-02"
+    ]
+   }
+  ],
+  "pros": [
+   "Stated directly in the State Council Regulation"
+  ],
+  "cons": [
+   "Liquidation takes time",
+   "Tax computation not retrieved in this session"
+  ],
+  "cn_tax": "Tax on liquidation must be paid first.",
+  "us": "Gain or loss is reportable.",
+  "src": [
+   "CN-FX-03",
+   "FEE-02"
+  ],
+  "flags": [
+   "F15"
+  ]
+ },
+ {
+  "id": "M12",
+  "cat": "C",
+  "model": "boc_wire_only",
+  "verdict": "Recommended",
+  "name": "Send unused inbound foreign currency back by the original route",
+  "who": "Overseas individuals whose money arrived from abroad and is still in foreign currency.",
+  "cap": "The unused inbound amount.",
+  "time": "Same day.",
+  "steps": [
+   {
+    "step": "Confirm the balance is still foreign currency that was remitted in from abroad.",
+    "sources": [
+     "CN-FX-01"
+    ]
+   },
+   {
+    "step": "Ask the bank to return it by the original route with your ID.",
+    "sources": [
+     "CN-FX-01"
+    ]
+   },
+   {
+    "step": "Pay commission and cable; no exchange is involved.",
+    "sources": [
+     "FEE-02"
+    ]
+   }
+  ],
+  "pros": [
+   "No conversion, so no FX margin",
+   "ID only"
+  ],
+  "cons": [
+   "Only for money that never became RMB"
+  ],
+  "cn_tax": "None.",
+  "us": "No tax on the wire.",
+  "src": [
+   "CN-FX-01",
+   "FEE-02",
+   "FEE-09"
+  ],
+  "flags": [
+   "F17"
+  ]
+ },
+ {
+  "id": "M13",
+  "cat": "C",
+  "model": "boc_full",
+  "verdict": "Lawful",
+  "name": "Convert back unused RMB that you exchanged from foreign currency",
+  "who": "Overseas individuals holding the original exchange memo, within 24 months of the exchange.",
+  "cap": "The unused part of what you exchanged.",
+  "time": "Same day.",
+  "steps": [
+   {
+    "step": "Find the original exchange memo (兑换水单); it is valid for 24 months from the exchange date.",
+    "sources": [
+     "CN-FX-02"
+    ]
+   },
+   {
+    "step": "Present passport and memo and convert the unused RMB back.",
+    "sources": [
+     "CN-FX-02",
+     "CN-FX-01"
+    ]
+   },
+   {
+    "step": "Wire it out; costs as M01.",
+    "sources": [
+     "FEE-02"
+    ]
+   }
+  ],
+  "pros": [
+   "No income or tax documents needed"
+  ],
+  "cons": [
+   "24-month limit",
+   "Capped at the amount originally exchanged"
+  ],
+  "cn_tax": "None.",
+  "us": "No tax on the wire.",
+  "src": [
+   "CN-FX-02",
+   "CN-FX-01",
+   "FEE-02"
+  ],
+  "flags": [
+   "F17",
+   "F19"
+  ]
+ },
+ {
+  "id": "M14",
+  "cat": "D",
+  "model": "cash",
+  "verdict": "Capacity-limited",
+  "name": "Withdraw USD cash and carry it out",
+  "who": "Anyone with lawfully purchased foreign currency.",
+  "cap": "USD 5,000 per trip without a permit; USD 10,000 per trip with a bank-issued permit; USD 10,000 cash withdrawal per day.",
+  "time": "Per trip.",
+  "steps": [
+   {
+    "step": "Withdraw foreign cash, up to USD 10,000 a day on ID.",
+    "sources": [
+     "CN-FX-02"
+    ]
+   },
+   {
+    "step": "To carry more than USD 5,000 (up to USD 10,000) beyond your last inbound declaration, obtain the carrying permit from the bank. Bank of China lists CNY 10 per permit, waived until 31 December 2026.",
+    "sources": [
+     "CN-FX-02",
+     "FEE-02"
+    ]
+   },
+   {
+    "step": "More than USD 10,000 per trip is allowed only for specified hardship destinations with a SAFE-issued permit.",
+    "sources": [
+     "CN-FX-02"
+    ]
+   },
+   {
+    "step": "On arrival in the US, report amounts exceeding $10,000; the threshold counts a family or group together.",
+    "sources": [
+     "US-09"
+    ]
+   }
+  ],
+  "pros": [
+   "No wire fees"
+  ],
+  "cons": [
+   "USD 400,000 needs 40 permitted trips",
+   "Loss and theft risk; travel cost not counted",
+   "Unlawful carrying: warning and a fine of up to 20%"
+  ],
+  "cn_tax": "None.",
+  "us": "No tax; currency report above $10,000.",
+  "src": [
+   "CN-FX-02",
+   "CN-FX-03",
+   "FEE-01",
+   "FEE-02",
+   "US-09"
+  ],
+  "flags": [
+   "F27",
+   "F19"
+  ]
+ },
+ {
+  "id": "M15",
+  "cat": "D",
+  "model": "atm",
+  "verdict": "Capacity-limited",
+  "name": "UnionPay debit card cash withdrawals abroad",
+  "who": "Holders of mainland bank cards.",
+  "cap": "CNY 10,000 per card per day and CNY 100,000 per person per calendar year across all cards.",
+  "time": "Per withdrawal.",
+  "steps": [
+   {
+    "step": "Keep the RMB on a UnionPay debit card.",
+    "sources": [
+     "FEE-04"
+    ]
+   },
+   {
+    "step": "Withdraw abroad, at most CNY 10,000 per card per day.",
+    "sources": [
+     "CN-FX-10"
+    ]
+   },
+   {
+    "step": "Stop at CNY 100,000 in the calendar year across all your cards; exceeding it suspends overseas cash withdrawal for that year and the next.",
+    "sources": [
+     "CN-FX-10"
+    ]
+   },
+   {
+    "step": "Bank of China charges CNY 12 plus 1% per withdrawal, at most CNY 112.",
+    "sources": [
+     "FEE-04"
+    ]
+   }
+  ],
+  "pros": [
+   "No documents"
+  ],
+  "cons": [
+   "About USD 15,000 a year",
+   "Network exchange rate and ATM surcharge unknown in advance",
+   "Borrowing or lending cards to get around the cap is prohibited"
+  ],
+  "cn_tax": "None.",
+  "us": "No tax.",
+  "src": [
+   "CN-FX-10",
+   "FEE-04",
+   "FEE-02"
+  ],
+  "flags": [
+   "F05"
+  ]
+ },
+ {
+  "id": "M16",
+  "cat": "D",
+  "model": "small_recon",
+  "verdict": "Capacity-limited",
+  "name": "Small conversion back on ID alone",
+  "who": "Overseas individuals with leftover RMB from an earlier exchange.",
+  "cap": "USD 500 a day; USD 1,000 on the day of departure at airside counters.",
+  "time": "Per day.",
+  "steps": [
+   {
+    "step": "Show your passport at a bank or exchange counter.",
+    "sources": [
+     "CN-FX-02",
+     "CN-FX-01"
+    ]
+   },
+   {
+    "step": "Convert up to USD 500 that day, or up to USD 1,000 airside on departure.",
+    "sources": [
+     "CN-FX-02"
+    ]
+   }
+  ],
+  "pros": [
+   "ID only"
+  ],
+  "cons": [
+   "USD 10,000 takes 20 days of visits"
+  ],
+  "cn_tax": "None.",
+  "us": "No tax.",
+  "src": [
+   "CN-FX-02",
+   "CN-FX-01",
+   "FEE-01",
+   "FEE-02"
+  ],
+  "flags": [
+   "F27",
+   "F19"
+  ]
+ },
+ {
+  "id": "M17",
+  "cat": "E",
+  "model": null,
+  "verdict": "Not confirmed",
+  "name": "Rental income from mainland housing",
+  "who": "",
+  "cap": "",
+  "time": "",
+  "steps": [],
+  "pros": [],
+  "cons": [
+   "A SAFE Jiangxi Q&A excerpt states such rent cannot be remitted because the home must be for own use; the page was not opened"
+  ],
+  "cn_tax": "",
+  "us": "",
+  "src": [
+   "CN-FX-12"
+  ],
+  "flags": [
+   "F07"
+  ]
+ },
+ {
+  "id": "M18",
+  "cat": "E",
+  "model": null,
+  "verdict": "Not confirmed",
+  "name": "Send RMB abroad and convert it offshore",
+  "who": "",
+  "cap": "",
+  "time": "",
+  "steps": [],
+  "pros": [],
+  "cons": [
+   "Governing notice not retrieved in this session"
+  ],
+  "cn_tax": "",
+  "us": "",
+  "src": [
+   "CN-FX-09"
+  ],
+  "flags": [
+   "F22"
+  ]
+ },
+ {
+  "id": "M19",
+  "cat": "E",
+  "model": null,
+  "verdict": "Not a route for your money",
+  "name": "Gift sent by a relative in China",
+  "who": "",
+  "cap": "",
+  "time": "",
+  "steps": [],
+  "pros": [],
+  "cons": [
+   "A relative's yearly quota covers the relative's own genuine transactions; using it to move your money is quota borrowing (prohibited item X02)",
+   "A genuine gift of the relative's own money is the relative's transaction; in the US you report gifts above $100,000 a year from a foreign person on Form 3520"
+  ],
+  "cn_tax": "",
+  "us": "",
+  "src": [
+   "CN-FX-02",
+   "US-04"
+  ],
+  "flags": [
+   "F10"
+  ]
+ }
+]

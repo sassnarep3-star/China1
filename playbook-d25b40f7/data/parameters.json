@@ -1,0 +1,212 @@
+{
+ "boc_bid": {
+  "value": "666.22",
+  "unit": "CNY per 100 USD",
+  "source": "FEE-01",
+  "text_in_source": "666.22"
+ },
+ "boc_ask": {
+  "value": "669.03",
+  "unit": "CNY per 100 USD",
+  "source": "FEE-01",
+  "text_in_source": "669.03"
+ },
+ "boc_comm_rate": {
+  "value": "0.001",
+  "unit": "of amount",
+  "source": "FEE-02",
+  "text_in_source": "1‰"
+ },
+ "boc_comm_min_cny": {
+  "value": "50",
+  "unit": "CNY",
+  "source": "FEE-02",
+  "text_in_source": "最低收取50元/笔"
+ },
+ "boc_comm_max_cny": {
+  "value": "260",
+  "unit": "CNY",
+  "source": "FEE-02",
+  "text_in_source": "最高收取260元/笔"
+ },
+ "boc_cable_cny": {
+  "value": "150",
+  "unit": "CNY",
+  "source": "FEE-02",
+  "text_in_source": "国际发电150元/笔"
+ },
+ "boc_full_arrival_usd": {
+  "value": "25",
+  "unit": "USD",
+  "source": "FEE-02",
+  "text_in_source": "其他均为 25 美元/笔"
+ },
+ "boc_full_arrival_ny_usd": {
+  "value": "15",
+  "unit": "USD",
+  "source": "FEE-02",
+  "text_in_source": "15 美元/笔"
+ },
+ "chase_incoming_usd": {
+  "value": "15",
+  "unit": "USD",
+  "source": "FEE-09",
+  "text_in_source": "$15 fee per transfer"
+ },
+ "hsbc_comm_rate": {
+  "value": "0.001",
+  "unit": "of amount",
+  "source": "FEE-06",
+  "text_in_source": "0.1% of remittance amount"
+ },
+ "hsbc_comm_min_cny": {
+  "value": "100",
+  "unit": "CNY",
+  "source": "FEE-06",
+  "text_in_source": "Min. CNY100"
+ },
+ "hsbc_comm_max_cny": {
+  "value": "500",
+  "unit": "CNY",
+  "source": "FEE-06",
+  "text_in_source": "Max. CNY500"
+ },
+ "hsbc_cable_cny": {
+  "value": "120",
+  "unit": "CNY",
+  "source": "FEE-06",
+  "text_in_source": "CNY120 / equivalent per cable"
+ },
+ "hsbc_payexact_cny": {
+  "value": "200",
+  "unit": "CNY",
+  "source": "FEE-06",
+  "text_in_source": "CNY200 / equivalent will be collected"
+ },
+ "wise_cap_cny": {
+  "value": "300000",
+  "unit": "CNY per transfer",
+  "source": "FEE-07",
+  "text_in_source": "300,000 CNY"
+ },
+ "atm_fixed_cny": {
+  "value": "12",
+  "unit": "CNY",
+  "source": "FEE-04",
+  "text_in_source": "12 元"
+ },
+ "atm_rate": {
+  "value": "0.01",
+  "unit": "of amount",
+  "source": "FEE-04",
+  "text_in_source": "取现金额的1%"
+ },
+ "atm_max_cny": {
+  "value": "112",
+  "unit": "CNY",
+  "source": "FEE-04",
+  "text_in_source": "最高 112 元/笔"
+ },
+ "card_day_cny": {
+  "value": "10000",
+  "unit": "CNY per card per day",
+  "source": "CN-FX-10",
+  "text_in_source": "每卡每日额度统一为等值1万元人民币"
+ },
+ "card_year_cny": {
+  "value": "100000",
+  "unit": "CNY per person per year",
+  "source": "CN-FX-10",
+  "text_in_source": "不得超过等值10万元人民币"
+ },
+ "cash_no_permit_usd": {
+  "value": "5000",
+  "unit": "USD per trip",
+  "source": "CN-FX-02",
+  "text_in_source": "5000美元以上至1万美元"
+ },
+ "cash_permit_usd": {
+  "value": "10000",
+  "unit": "USD per trip",
+  "source": "CN-FX-02",
+  "text_in_source": "5000美元以上至1万美元"
+ },
+ "cash_withdraw_day_usd": {
+  "value": "10000",
+  "unit": "USD per day",
+  "source": "CN-FX-02",
+  "text_in_source": "当日累计等值1万美元以下"
+ },
+ "recon_day_usd": {
+  "value": "500",
+  "unit": "USD per day",
+  "source": "CN-FX-02",
+  "text_in_source": "不超过等值500美元"
+ },
+ "quota_usd": {
+  "value": "50000",
+  "unit": "USD per year",
+  "source": "CN-FX-02",
+  "text_in_source": "每人每年等值5万美元"
+ },
+ "div_rate": {
+  "value": "0.20",
+  "unit": "of gross dividend",
+  "source": "CN-TAX-05",
+  "text_in_source": "适用20%税率"
+ },
+ "treaty_div_cap": {
+  "value": "0.10",
+  "unit": "of gross dividend",
+  "source": "US-07",
+  "text_in_source": "shall not exceed 10 percent of the gross amount of the dividends"
+ },
+ "deemed_low": {
+  "value": "0.01",
+  "unit": "of sale price",
+  "source": "CN-TAX-07",
+  "text_in_source": "1%-3%"
+ },
+ "deemed_high": {
+  "value": "0.03",
+  "unit": "of sale price",
+  "source": "CN-TAX-07",
+  "text_in_source": "1%-3%"
+ },
+ "fbar_threshold": {
+  "value": "10000",
+  "unit": "USD",
+  "source": "US-02",
+  "text_in_source": "exceeds $10,000"
+ },
+ "fbar_nonwillful": {
+  "value": "16536",
+  "unit": "USD",
+  "source": "US-03",
+  "text_in_source": "16,536"
+ },
+ "fbar_willful": {
+  "value": "165353",
+  "unit": "USD",
+  "source": "US-03",
+  "text_in_source": "165,353"
+ },
+ "f3520_threshold": {
+  "value": "100000",
+  "unit": "USD",
+  "source": "US-04",
+  "text_in_source": "exceeds $100,000"
+ },
+ "cbp_threshold": {
+  "value": "10000",
+  "unit": "USD",
+  "source": "US-09",
+  "text_in_source": "exceeding $10,000"
+ },
+ "s988_threshold": {
+  "value": "200",
+  "unit": "USD",
+  "source": "US-06",
+  "text_in_source": "exceeds $200"
+ }
+}

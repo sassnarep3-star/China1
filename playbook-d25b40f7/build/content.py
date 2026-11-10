@@ -94,6 +94,7 @@ FLAGS = [
  ("F23", "Irregularities inside an official guide", "The SAFE Hebei inheritance guide repeats the emigrant condition (property owned before obtaining foreign status) and cites 国税发〔2005〕16号 where the emigrant guide and the tax authority's library give 国税发〔2005〕13号.", ["CN-FX-08", "CN-FX-07", "CN-TAX-01"]),
  ("F25", "Cost of obtaining documents", "Notary fees, consular certification, translations and travel to file in person were not retrieved. Totals for the approval routes are transfer costs only.", ["CN-FX-07", "CN-FX-08"]),
  ("F26", "Company-side wire tariff for dividends", "The dividend is remitted by the company under its bank's corporate tariff, which was not retrieved. Only the withholding tax is computed.", ["CN-FX-04"]),
+ ("F27", "Cash routes: travel and US deposit charges", "The cost of each trip is personal and no US cash-deposit charge was retrieved. Cash rows show the exchange margin and the permit fee only.", ["CN-FX-02", "US-09"]),
  ("F24", "Tax paperwork for an overseas individual's own large remittance", "Guidelines Art. 59 require source documents including tax evidence; Art. 49(4) and Announcement 2013 No. 40 require a tax filing for single payments above USD 50,000, while Announcement 40 Art. 4 sends overseas individuals back to the individual FX rules. Which paper the desk asks for is the bank's call (Art. 68).", ["CN-FX-02", "CN-TAX-02"]),
 ]
 
@@ -226,7 +227,7 @@ METHODS = [
           ("More than USD 10,000 per trip is allowed only for specified hardship destinations with a SAFE-issued permit.", ["CN-FX-02"]),
           ("On arrival in the US, report amounts exceeding $10,000; the threshold counts a family or group together.", ["US-09"])],
    pros=["No wire fees"], cons=["USD 400,000 needs 40 permitted trips", "Loss and theft risk; travel cost not counted", "Unlawful carrying: warning and a fine of up to 20%"],
-   cn_tax="None.", us="No tax; currency report above $10,000.", src=["CN-FX-02", "CN-FX-03", "FEE-01", "FEE-02", "US-09"], flags=["F19"]),
+   cn_tax="None.", us="No tax; currency report above $10,000.", src=["CN-FX-02", "CN-FX-03", "FEE-01", "FEE-02", "US-09"], flags=["F27", "F19"]),
  M(id="M15", cat="D", model="atm", verdict="Capacity-limited", name="UnionPay debit card cash withdrawals abroad",
    who="Holders of mainland bank cards.", cap="CNY 10,000 per card per day and CNY 100,000 per person per calendar year across all cards.", time="Per withdrawal.",
    steps=[("Keep the RMB on a UnionPay debit card.", ["FEE-04"]), ("Withdraw abroad, at most CNY 10,000 per card per day.", ["CN-FX-10"]),
@@ -237,7 +238,7 @@ METHODS = [
  M(id="M16", cat="D", model="small_recon", verdict="Capacity-limited", name="Small conversion back on ID alone",
    who="Overseas individuals with leftover RMB from an earlier exchange.", cap="USD 500 a day; USD 1,000 on the day of departure at airside counters.", time="Per day.",
    steps=[("Show your passport at a bank or exchange counter.", ["CN-FX-02", "CN-FX-01"]), ("Convert up to USD 500 that day, or up to USD 1,000 airside on departure.", ["CN-FX-02"])],
-   pros=["ID only"], cons=["USD 10,000 takes 20 days of visits"], cn_tax="None.", us="No tax.", src=["CN-FX-02", "CN-FX-01", "FEE-01", "FEE-02"], flags=["F19"]),
+   pros=["ID only"], cons=["USD 10,000 takes 20 days of visits"], cn_tax="None.", us="No tax.", src=["CN-FX-02", "CN-FX-01", "FEE-01", "FEE-02"], flags=["F27", "F19"]),
  M(id="M17", cat="E", model=None, verdict="Not confirmed", name="Rental income from mainland housing",
    who="", cap="", time="", steps=[], pros=[], cons=["A SAFE Jiangxi Q&A excerpt states such rent cannot be remitted because the home must be for own use; the page was not opened"],
    cn_tax="", us="", src=["CN-FX-12"], flags=["F07"]),
@@ -270,7 +271,7 @@ DECISION = [
  ("Foreign currency you sent in and never converted", "M12", "Returns by the original route on ID; no exchange.", ["CN-FX-01"]),
  ("RMB you exchanged within the last 24 months and did not use", "M13", "Converts back against the original memo.", ["CN-FX-02"]),
  ("You hold a Foreign Permanent Resident ID Card", "M06", "USD 50,000 a year without source documents.", ["CN-FX-02"]),
- ("Savings with no income or tax paper trail", "M14", "No bulk route appears in the rules read. Rebuild the paper trail, or use the capped routes M14–M16. Do not use a prohibited shortcut.", ["CN-FX-02", "CN-FX-03"]),
+ ("Savings with no income or tax paper trail", None, "No bulk route appears in the rules read. Rebuild the paper trail from pay and tax records, or use the small capped routes M14 to M16. A prohibited shortcut risks a fine of up to 30% of the amount or more.", ["CN-FX-02", "CN-FX-03"]),
 ]
 
 CN_TAX = [

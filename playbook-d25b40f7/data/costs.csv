@@ -1,0 +1,641 @@
+method_id,method,model,amount_usd,cny_to_buy,exchange_margin_usd,bank_fees_usd,addon_usd,receiving_usd,published_costs_usd,total_usd,total_pct,china_tax_usd,deemed_tax_low_usd,deemed_tax_high_usd,units,flags,sources
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,10000,66903.00,21.04,32.47,25.00,15.00,93.51,93.51,0.9351,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,20000,133806.00,42.09,42.47,25.00,15.00,124.56,124.56,0.6228,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,30000,200709.00,63.13,52.47,25.00,15.00,155.60,155.60,0.5187,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,40000,267612.00,84.18,61.41,25.00,15.00,185.59,185.59,0.4640,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,50000,334515.00,105.22,61.41,25.00,15.00,206.64,206.64,0.4133,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,60000,401418.00,126.27,61.41,25.00,15.00,227.68,227.68,0.3795,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,70000,468321.00,147.31,61.41,25.00,15.00,248.72,248.72,0.3553,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,80000,535224.00,168.36,61.41,25.00,15.00,269.77,269.77,0.3372,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,90000,602127.00,189.40,61.41,25.00,15.00,290.81,290.81,0.3231,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,100000,669030.00,210.45,61.41,25.00,15.00,311.86,311.86,0.3119,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,110000,735933.00,231.49,61.41,25.00,15.00,332.90,332.90,0.3026,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,120000,802836.00,252.54,61.41,25.00,15.00,353.95,353.95,0.2950,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,130000,869739.00,273.58,61.41,25.00,15.00,374.99,374.99,0.2885,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,140000,936642.00,294.63,61.41,25.00,15.00,396.04,396.04,0.2829,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,150000,1003545.00,315.67,61.41,25.00,15.00,417.08,417.08,0.2781,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,160000,1070448.00,336.72,61.41,25.00,15.00,438.13,438.13,0.2738,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,170000,1137351.00,357.76,61.41,25.00,15.00,459.17,459.17,0.2701,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,180000,1204254.00,378.81,61.41,25.00,15.00,480.22,480.22,0.2668,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,190000,1271157.00,399.85,61.41,25.00,15.00,501.26,501.26,0.2638,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,200000,1338060.00,420.89,61.41,25.00,15.00,522.31,522.31,0.2612,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,210000,1404963.00,441.94,61.41,25.00,15.00,543.35,543.35,0.2587,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,220000,1471866.00,462.98,61.41,25.00,15.00,564.40,564.40,0.2565,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,230000,1538769.00,484.03,61.41,25.00,15.00,585.44,585.44,0.2545,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,240000,1605672.00,505.07,61.41,25.00,15.00,606.49,606.49,0.2527,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,250000,1672575.00,526.12,61.41,25.00,15.00,627.53,627.53,0.2510,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,260000,1739478.00,547.16,61.41,25.00,15.00,648.58,648.58,0.2495,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,270000,1806381.00,568.21,61.41,25.00,15.00,669.62,669.62,0.2480,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,280000,1873284.00,589.25,61.41,25.00,15.00,690.66,690.66,0.2467,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,290000,1940187.00,610.30,61.41,25.00,15.00,711.71,711.71,0.2454,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,300000,2007090.00,631.34,61.41,25.00,15.00,732.75,732.75,0.2443,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,310000,2073993.00,652.39,61.41,25.00,15.00,753.80,753.80,0.2432,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,320000,2140896.00,673.43,61.41,25.00,15.00,774.84,774.84,0.2421,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,330000,2207799.00,694.48,61.41,25.00,15.00,795.89,795.89,0.2412,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,340000,2274702.00,715.52,61.41,25.00,15.00,816.93,816.93,0.2403,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,350000,2341605.00,736.57,61.41,25.00,15.00,837.98,837.98,0.2394,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,360000,2408508.00,757.61,61.41,25.00,15.00,859.02,859.02,0.2386,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,370000,2475411.00,778.66,61.41,25.00,15.00,880.07,880.07,0.2379,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,380000,2542314.00,799.70,61.41,25.00,15.00,901.11,901.11,0.2371,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,390000,2609217.00,820.75,61.41,25.00,15.00,922.16,922.16,0.2365,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M01,"Bank of China: buy USD against documented China income and wire it, full-amount arrival",boc_full,400000,2676120.00,841.79,61.41,25.00,15.00,943.20,943.20,0.2358,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,10000,66903.00,21.04,32.47,,15.00,68.51,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,20000,133806.00,42.09,42.47,,15.00,99.56,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,30000,200709.00,63.13,52.47,,15.00,130.60,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,40000,267612.00,84.18,61.41,,15.00,160.59,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,50000,334515.00,105.22,61.41,,15.00,181.64,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,60000,401418.00,126.27,61.41,,15.00,202.68,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,70000,468321.00,147.31,61.41,,15.00,223.72,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,80000,535224.00,168.36,61.41,,15.00,244.77,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,90000,602127.00,189.40,61.41,,15.00,265.81,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,100000,669030.00,210.45,61.41,,15.00,286.86,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,110000,735933.00,231.49,61.41,,15.00,307.90,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,120000,802836.00,252.54,61.41,,15.00,328.95,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,130000,869739.00,273.58,61.41,,15.00,349.99,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,140000,936642.00,294.63,61.41,,15.00,371.04,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,150000,1003545.00,315.67,61.41,,15.00,392.08,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,160000,1070448.00,336.72,61.41,,15.00,413.13,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,170000,1137351.00,357.76,61.41,,15.00,434.17,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,180000,1204254.00,378.81,61.41,,15.00,455.22,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,190000,1271157.00,399.85,61.41,,15.00,476.26,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,200000,1338060.00,420.89,61.41,,15.00,497.31,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,210000,1404963.00,441.94,61.41,,15.00,518.35,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,220000,1471866.00,462.98,61.41,,15.00,539.40,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,230000,1538769.00,484.03,61.41,,15.00,560.44,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,240000,1605672.00,505.07,61.41,,15.00,581.49,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,250000,1672575.00,526.12,61.41,,15.00,602.53,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,260000,1739478.00,547.16,61.41,,15.00,623.58,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,270000,1806381.00,568.21,61.41,,15.00,644.62,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,280000,1873284.00,589.25,61.41,,15.00,665.66,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,290000,1940187.00,610.30,61.41,,15.00,686.71,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,300000,2007090.00,631.34,61.41,,15.00,707.75,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,310000,2073993.00,652.39,61.41,,15.00,728.80,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,320000,2140896.00,673.43,61.41,,15.00,749.84,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,330000,2207799.00,694.48,61.41,,15.00,770.89,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,340000,2274702.00,715.52,61.41,,15.00,791.93,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,350000,2341605.00,736.57,61.41,,15.00,812.98,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,360000,2408508.00,757.61,61.41,,15.00,834.02,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,370000,2475411.00,778.66,61.41,,15.00,855.07,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,380000,2542314.00,799.70,61.41,,15.00,876.11,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,390000,2609217.00,820.75,61.41,,15.00,897.16,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M02,"Bank of China: same purchase, standard wire without full-amount arrival",boc_sha,400000,2676120.00,841.79,61.41,,15.00,918.20,,,,,,1 wire,F01,FEE-01 FEE-02 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,10000,,,32.95,29.96,15.00,77.91,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,20000,,,37.97,29.96,15.00,82.93,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,30000,,,47.97,29.96,15.00,92.93,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,40000,,,57.97,29.96,15.00,102.93,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,50000,,,67.97,29.96,15.00,112.93,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,60000,,,77.97,29.96,15.00,122.93,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,70000,,,87.97,29.96,15.00,132.93,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,80000,,,92.87,29.96,15.00,137.82,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,90000,,,92.87,29.96,15.00,137.82,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,100000,,,92.87,29.96,15.00,137.82,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,110000,,,92.87,29.96,15.00,137.82,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,120000,,,92.87,29.96,15.00,137.82,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,130000,,,92.87,29.96,15.00,137.82,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,140000,,,92.87,29.96,15.00,137.82,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,150000,,,92.87,29.96,15.00,137.82,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,160000,,,92.87,29.96,15.00,137.82,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,170000,,,92.87,29.96,15.00,137.82,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,180000,,,92.87,29.96,15.00,137.82,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,190000,,,92.87,29.96,15.00,137.82,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,200000,,,92.87,29.96,15.00,137.82,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,210000,,,92.87,29.96,15.00,137.82,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,220000,,,92.87,29.96,15.00,137.82,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,230000,,,92.87,29.96,15.00,137.82,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,240000,,,92.87,29.96,15.00,137.82,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,250000,,,92.87,29.96,15.00,137.82,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,260000,,,92.87,29.96,15.00,137.82,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,270000,,,92.87,29.96,15.00,137.82,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,280000,,,92.87,29.96,15.00,137.82,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,290000,,,92.87,29.96,15.00,137.82,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,300000,,,92.87,29.96,15.00,137.82,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,310000,,,92.87,29.96,15.00,137.82,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,320000,,,92.87,29.96,15.00,137.82,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,330000,,,92.87,29.96,15.00,137.82,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,340000,,,92.87,29.96,15.00,137.82,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,350000,,,92.87,29.96,15.00,137.82,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,360000,,,92.87,29.96,15.00,137.82,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,370000,,,92.87,29.96,15.00,137.82,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,380000,,,92.87,29.96,15.00,137.82,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,390000,,,92.87,29.96,15.00,137.82,,,,,,1 wire,F02,FEE-06 FEE-09
+M03,HSBC China Premier or Advance telegraphic transfer,hsbc_premier,400000,,,92.87,29.96,15.00,137.82,,,,,,1 wire,F02,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,10000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,20000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,30000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,40000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,50000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,60000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,70000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,80000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,90000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,100000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,110000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,120000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,130000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,140000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,150000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,160000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,170000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,180000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,190000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,200000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,210000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,220000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,230000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,240000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,250000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,260000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,270000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,280000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,290000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,300000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,310000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,320000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,330000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,340000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,350000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,360000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,370000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,380000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,390000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M04,HSBC China Private Banking individual telegraphic transfer,hsbc_pb,400000,,,0.00,,15.00,15.00,,,,,,1 wire,F02 F01,FEE-06 FEE-09
+M05,Wise from-CNY transfer through its licensed China partner,wise,10000,,0.00,65.18,0.00,,65.18,,,,,,1 transfer,F04,FEE-07 FEE-10
+M05,Wise from-CNY transfer through its licensed China partner,wise,20000,,0.00,126.80,0.00,,126.80,,,,,,1 transfer,F04,FEE-07 FEE-11
+M05,Wise from-CNY transfer through its licensed China partner,wise,30000,,0.00,183.61,0.00,,183.61,,,,,,1 transfer,F04,FEE-07 FEE-12
+M05,Wise from-CNY transfer through its licensed China partner,wise,40000,,0.00,235.34,0.00,,235.34,,,,,,1 transfer,F04,FEE-07 FEE-13
+M05,Wise from-CNY transfer through its licensed China partner,wise,50000,,,,,,,,,,,,"2 transfers (CNY 300,000 limit each)",F04,FEE-07
+M05,Wise from-CNY transfer through its licensed China partner,wise,60000,,,,,,,,,,,,"2 transfers (CNY 300,000 limit each)",F04,FEE-07
+M05,Wise from-CNY transfer through its licensed China partner,wise,70000,,,,,,,,,,,,"2 transfers (CNY 300,000 limit each)",F04,FEE-07
+M05,Wise from-CNY transfer through its licensed China partner,wise,80000,,,,,,,,,,,,"2 transfers (CNY 300,000 limit each)",F04,FEE-07
+M05,Wise from-CNY transfer through its licensed China partner,wise,90000,,,,,,,,,,,,"3 transfers (CNY 300,000 limit each)",F04,FEE-07
+M05,Wise from-CNY transfer through its licensed China partner,wise,100000,,,,,,,,,,,,"3 transfers (CNY 300,000 limit each)",F04,FEE-07
+M05,Wise from-CNY transfer through its licensed China partner,wise,110000,,,,,,,,,,,,"3 transfers (CNY 300,000 limit each)",F04,FEE-07
+M05,Wise from-CNY transfer through its licensed China partner,wise,120000,,,,,,,,,,,,"3 transfers (CNY 300,000 limit each)",F04,FEE-07
+M05,Wise from-CNY transfer through its licensed China partner,wise,130000,,,,,,,,,,,,"3 transfers (CNY 300,000 limit each)",F04,FEE-07
+M05,Wise from-CNY transfer through its licensed China partner,wise,140000,,,,,,,,,,,,"4 transfers (CNY 300,000 limit each)",F04,FEE-07
+M05,Wise from-CNY transfer through its licensed China partner,wise,150000,,,,,,,,,,,,"4 transfers (CNY 300,000 limit each)",F04,FEE-07
+M05,Wise from-CNY transfer through its licensed China partner,wise,160000,,,,,,,,,,,,"4 transfers (CNY 300,000 limit each)",F04,FEE-07
+M05,Wise from-CNY transfer through its licensed China partner,wise,170000,,,,,,,,,,,,"4 transfers (CNY 300,000 limit each)",F04,FEE-07
+M05,Wise from-CNY transfer through its licensed China partner,wise,180000,,,,,,,,,,,,"5 transfers (CNY 300,000 limit each)",F04,FEE-07
+M05,Wise from-CNY transfer through its licensed China partner,wise,190000,,,,,,,,,,,,"5 transfers (CNY 300,000 limit each)",F04,FEE-07
+M05,Wise from-CNY transfer through its licensed China partner,wise,200000,,,,,,,,,,,,"5 transfers (CNY 300,000 limit each)",F04,FEE-07
+M05,Wise from-CNY transfer through its licensed China partner,wise,210000,,,,,,,,,,,,"5 transfers (CNY 300,000 limit each)",F04,FEE-07
+M05,Wise from-CNY transfer through its licensed China partner,wise,220000,,,,,,,,,,,,"5 transfers (CNY 300,000 limit each)",F04,FEE-07
+M05,Wise from-CNY transfer through its licensed China partner,wise,230000,,,,,,,,,,,,"6 transfers (CNY 300,000 limit each)",F04,FEE-07
+M05,Wise from-CNY transfer through its licensed China partner,wise,240000,,,,,,,,,,,,"6 transfers (CNY 300,000 limit each)",F04,FEE-07
+M05,Wise from-CNY transfer through its licensed China partner,wise,250000,,,,,,,,,,,,"6 transfers (CNY 300,000 limit each)",F04,FEE-07
+M05,Wise from-CNY transfer through its licensed China partner,wise,260000,,,,,,,,,,,,"6 transfers (CNY 300,000 limit each)",F04,FEE-07
+M05,Wise from-CNY transfer through its licensed China partner,wise,270000,,,,,,,,,,,,"7 transfers (CNY 300,000 limit each)",F04,FEE-07
+M05,Wise from-CNY transfer through its licensed China partner,wise,280000,,,,,,,,,,,,"7 transfers (CNY 300,000 limit each)",F04,FEE-07
+M05,Wise from-CNY transfer through its licensed China partner,wise,290000,,,,,,,,,,,,"7 transfers (CNY 300,000 limit each)",F04,FEE-07
+M05,Wise from-CNY transfer through its licensed China partner,wise,300000,,,,,,,,,,,,"7 transfers (CNY 300,000 limit each)",F04,FEE-07
+M05,Wise from-CNY transfer through its licensed China partner,wise,310000,,,,,,,,,,,,"7 transfers (CNY 300,000 limit each)",F04,FEE-07
+M05,Wise from-CNY transfer through its licensed China partner,wise,320000,,,,,,,,,,,,"8 transfers (CNY 300,000 limit each)",F04,FEE-07
+M05,Wise from-CNY transfer through its licensed China partner,wise,330000,,,,,,,,,,,,"8 transfers (CNY 300,000 limit each)",F04,FEE-07
+M05,Wise from-CNY transfer through its licensed China partner,wise,340000,,,,,,,,,,,,"8 transfers (CNY 300,000 limit each)",F04,FEE-07
+M05,Wise from-CNY transfer through its licensed China partner,wise,350000,,,,,,,,,,,,"8 transfers (CNY 300,000 limit each)",F04,FEE-07
+M05,Wise from-CNY transfer through its licensed China partner,wise,360000,,,,,,,,,,,,"9 transfers (CNY 300,000 limit each)",F04,FEE-07
+M05,Wise from-CNY transfer through its licensed China partner,wise,370000,,,,,,,,,,,,"9 transfers (CNY 300,000 limit each)",F04,FEE-07
+M05,Wise from-CNY transfer through its licensed China partner,wise,380000,,,,,,,,,,,,"9 transfers (CNY 300,000 limit each)",F04,FEE-07
+M05,Wise from-CNY transfer through its licensed China partner,wise,390000,,,,,,,,,,,,"9 transfers (CNY 300,000 limit each)",F04,FEE-07
+M05,Wise from-CNY transfer through its licensed China partner,wise,400000,,,,,,,,,,,,"9 transfers (CNY 300,000 limit each)",F04,FEE-07
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,10000,66903.00,21.04,32.47,25.00,15.00,93.51,93.51,0.9351,,,,"1 year, 1 wire",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,20000,133806.00,42.09,42.47,25.00,15.00,124.56,124.56,0.6228,,,,"1 year, 1 wire",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,30000,200709.00,63.13,52.47,25.00,15.00,155.60,155.60,0.5187,,,,"1 year, 1 wire",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,40000,267612.00,84.18,61.41,25.00,15.00,185.59,185.59,0.4640,,,,"1 year, 1 wire",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,50000,334515.00,105.22,61.41,25.00,15.00,206.64,206.64,0.4133,,,,"1 year, 1 wire",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,60000,401418.00,126.27,93.88,50.00,30.00,300.15,300.15,0.5002,,,,"2 years, 2 wires",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,70000,468321.00,147.31,103.88,50.00,30.00,331.19,331.19,0.4731,,,,"2 years, 2 wires",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,80000,535224.00,168.36,113.88,50.00,30.00,362.24,362.24,0.4528,,,,"2 years, 2 wires",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,90000,602127.00,189.40,122.82,50.00,30.00,392.23,392.23,0.4358,,,,"2 years, 2 wires",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,100000,669030.00,210.45,122.82,50.00,30.00,413.27,413.27,0.4133,,,,"2 years, 2 wires",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,110000,735933.00,231.49,155.29,75.00,45.00,506.78,506.78,0.4607,,,,"3 years, 3 wires",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,120000,802836.00,252.54,165.29,75.00,45.00,537.83,537.83,0.4482,,,,"3 years, 3 wires",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,130000,869739.00,273.58,175.29,75.00,45.00,568.87,568.87,0.4376,,,,"3 years, 3 wires",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,140000,936642.00,294.63,184.24,75.00,45.00,598.86,598.86,0.4278,,,,"3 years, 3 wires",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,150000,1003545.00,315.67,184.24,75.00,45.00,619.91,619.91,0.4133,,,,"3 years, 3 wires",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,160000,1070448.00,336.72,216.70,100.00,60.00,713.42,713.42,0.4459,,,,"4 years, 4 wires",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,170000,1137351.00,357.76,226.70,100.00,60.00,744.46,744.46,0.4379,,,,"4 years, 4 wires",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,180000,1204254.00,378.81,236.70,100.00,60.00,775.51,775.51,0.4308,,,,"4 years, 4 wires",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,190000,1271157.00,399.85,245.65,100.00,60.00,805.50,805.50,0.4239,,,,"4 years, 4 wires",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,200000,1338060.00,420.89,245.65,100.00,60.00,826.54,826.54,0.4133,,,,"4 years, 4 wires",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,210000,1404963.00,441.94,278.11,125.00,75.00,920.05,920.05,0.4381,,,,"5 years, 5 wires",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,220000,1471866.00,462.98,288.11,125.00,75.00,951.10,951.10,0.4323,,,,"5 years, 5 wires",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,230000,1538769.00,484.03,298.11,125.00,75.00,982.14,982.14,0.4270,,,,"5 years, 5 wires",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,240000,1605672.00,505.07,307.06,125.00,75.00,1012.13,1012.13,0.4217,,,,"5 years, 5 wires",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,250000,1672575.00,526.12,307.06,125.00,75.00,1033.18,1033.18,0.4133,,,,"5 years, 5 wires",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,260000,1739478.00,547.16,339.53,150.00,90.00,1126.69,1126.69,0.4333,,,,"6 years, 6 wires",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,270000,1806381.00,568.21,349.53,150.00,90.00,1157.73,1157.73,0.4288,,,,"6 years, 6 wires",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,280000,1873284.00,589.25,359.53,150.00,90.00,1188.78,1188.78,0.4246,,,,"6 years, 6 wires",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,290000,1940187.00,610.30,368.47,150.00,90.00,1218.77,1218.77,0.4203,,,,"6 years, 6 wires",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,300000,2007090.00,631.34,368.47,150.00,90.00,1239.81,1239.81,0.4133,,,,"6 years, 6 wires",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,310000,2073993.00,652.39,400.94,175.00,105.00,1333.33,1333.33,0.4301,,,,"7 years, 7 wires",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,320000,2140896.00,673.43,410.94,175.00,105.00,1364.37,1364.37,0.4264,,,,"7 years, 7 wires",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,330000,2207799.00,694.48,420.94,175.00,105.00,1395.41,1395.41,0.4229,,,,"7 years, 7 wires",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,340000,2274702.00,715.52,429.88,175.00,105.00,1425.40,1425.40,0.4192,,,,"7 years, 7 wires",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,350000,2341605.00,736.57,429.88,175.00,105.00,1446.45,1446.45,0.4133,,,,"7 years, 7 wires",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,360000,2408508.00,757.61,462.35,200.00,120.00,1539.96,1539.96,0.4278,,,,"8 years, 8 wires",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,370000,2475411.00,778.66,472.35,200.00,120.00,1571.01,1571.01,0.4246,,,,"8 years, 8 wires",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,380000,2542314.00,799.70,482.35,200.00,120.00,1602.05,1602.05,0.4216,,,,"8 years, 8 wires",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,390000,2609217.00,820.75,491.29,200.00,120.00,1632.04,1632.04,0.4185,,,,"8 years, 8 wires",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M06,"Foreign Permanent Resident ID Card holder: USD 50,000 yearly purchase quota",boc_quota,400000,2676120.00,841.79,491.29,200.00,120.00,1653.08,1653.08,0.4133,,,,"8 years, 8 wires",,FEE-01 FEE-02 FEE-09 CN-FX-02
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,10000,66903.00,21.04,32.47,25.00,15.00,93.51,93.51,0.9351,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,20000,133806.00,42.09,42.47,25.00,15.00,124.56,124.56,0.6228,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,30000,200709.00,63.13,52.47,25.00,15.00,155.60,155.60,0.5187,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,40000,267612.00,84.18,61.41,25.00,15.00,185.59,185.59,0.4640,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,50000,334515.00,105.22,61.41,25.00,15.00,206.64,206.64,0.4133,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,60000,401418.00,126.27,61.41,25.00,15.00,227.68,227.68,0.3795,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,70000,468321.00,147.31,61.41,25.00,15.00,248.72,248.72,0.3553,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,80000,535224.00,168.36,61.41,25.00,15.00,269.77,269.77,0.3372,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,90000,602127.00,189.40,61.41,25.00,15.00,290.81,290.81,0.3231,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,100000,669030.00,210.45,61.41,25.00,15.00,311.86,311.86,0.3119,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,110000,735933.00,231.49,61.41,25.00,15.00,332.90,332.90,0.3026,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,120000,802836.00,252.54,61.41,25.00,15.00,353.95,353.95,0.2950,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,130000,869739.00,273.58,61.41,25.00,15.00,374.99,374.99,0.2885,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,140000,936642.00,294.63,61.41,25.00,15.00,396.04,396.04,0.2829,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,150000,1003545.00,315.67,61.41,25.00,15.00,417.08,417.08,0.2781,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,160000,1070448.00,336.72,61.41,25.00,15.00,438.13,438.13,0.2738,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,170000,1137351.00,357.76,61.41,25.00,15.00,459.17,459.17,0.2701,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,180000,1204254.00,378.81,61.41,25.00,15.00,480.22,480.22,0.2668,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,190000,1271157.00,399.85,61.41,25.00,15.00,501.26,501.26,0.2638,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,200000,1338060.00,420.89,61.41,25.00,15.00,522.31,522.31,0.2612,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,210000,1404963.00,441.94,61.41,25.00,15.00,543.35,543.35,0.2587,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,220000,1471866.00,462.98,61.41,25.00,15.00,564.40,564.40,0.2565,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,230000,1538769.00,484.03,61.41,25.00,15.00,585.44,585.44,0.2545,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,240000,1605672.00,505.07,61.41,25.00,15.00,606.49,606.49,0.2527,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,250000,1672575.00,526.12,61.41,25.00,15.00,627.53,627.53,0.2510,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,260000,1739478.00,547.16,61.41,25.00,15.00,648.58,648.58,0.2495,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,270000,1806381.00,568.21,61.41,25.00,15.00,669.62,669.62,0.2480,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,280000,1873284.00,589.25,61.41,25.00,15.00,690.66,690.66,0.2467,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,290000,1940187.00,610.30,61.41,25.00,15.00,711.71,711.71,0.2454,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,300000,2007090.00,631.34,61.41,25.00,15.00,732.75,732.75,0.2443,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,310000,2073993.00,652.39,61.41,25.00,15.00,753.80,753.80,0.2432,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,320000,2140896.00,673.43,61.41,25.00,15.00,774.84,774.84,0.2421,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,330000,2207799.00,694.48,61.41,25.00,15.00,795.89,795.89,0.2412,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,340000,2274702.00,715.52,61.41,25.00,15.00,816.93,816.93,0.2403,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,350000,2341605.00,736.57,61.41,25.00,15.00,837.98,837.98,0.2394,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,360000,2408508.00,757.61,61.41,25.00,15.00,859.02,859.02,0.2386,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,370000,2475411.00,778.66,61.41,25.00,15.00,880.07,880.07,0.2379,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,380000,2542314.00,799.70,61.41,25.00,15.00,901.11,901.11,0.2371,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,390000,2609217.00,820.75,61.41,25.00,15.00,922.16,922.16,0.2365,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M07,Emigrant property transfer (移民财产转移) with SAFE approval,boc_full,400000,2676120.00,841.79,61.41,25.00,15.00,943.20,943.20,0.2358,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,10000,66903.00,21.04,32.47,25.00,15.00,93.51,93.51,0.9351,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,20000,133806.00,42.09,42.47,25.00,15.00,124.56,124.56,0.6228,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,30000,200709.00,63.13,52.47,25.00,15.00,155.60,155.60,0.5187,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,40000,267612.00,84.18,61.41,25.00,15.00,185.59,185.59,0.4640,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,50000,334515.00,105.22,61.41,25.00,15.00,206.64,206.64,0.4133,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,60000,401418.00,126.27,61.41,25.00,15.00,227.68,227.68,0.3795,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,70000,468321.00,147.31,61.41,25.00,15.00,248.72,248.72,0.3553,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,80000,535224.00,168.36,61.41,25.00,15.00,269.77,269.77,0.3372,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,90000,602127.00,189.40,61.41,25.00,15.00,290.81,290.81,0.3231,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,100000,669030.00,210.45,61.41,25.00,15.00,311.86,311.86,0.3119,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,110000,735933.00,231.49,61.41,25.00,15.00,332.90,332.90,0.3026,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,120000,802836.00,252.54,61.41,25.00,15.00,353.95,353.95,0.2950,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,130000,869739.00,273.58,61.41,25.00,15.00,374.99,374.99,0.2885,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,140000,936642.00,294.63,61.41,25.00,15.00,396.04,396.04,0.2829,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,150000,1003545.00,315.67,61.41,25.00,15.00,417.08,417.08,0.2781,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,160000,1070448.00,336.72,61.41,25.00,15.00,438.13,438.13,0.2738,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,170000,1137351.00,357.76,61.41,25.00,15.00,459.17,459.17,0.2701,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,180000,1204254.00,378.81,61.41,25.00,15.00,480.22,480.22,0.2668,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,190000,1271157.00,399.85,61.41,25.00,15.00,501.26,501.26,0.2638,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,200000,1338060.00,420.89,61.41,25.00,15.00,522.31,522.31,0.2612,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,210000,1404963.00,441.94,61.41,25.00,15.00,543.35,543.35,0.2587,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,220000,1471866.00,462.98,61.41,25.00,15.00,564.40,564.40,0.2565,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,230000,1538769.00,484.03,61.41,25.00,15.00,585.44,585.44,0.2545,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,240000,1605672.00,505.07,61.41,25.00,15.00,606.49,606.49,0.2527,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,250000,1672575.00,526.12,61.41,25.00,15.00,627.53,627.53,0.2510,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,260000,1739478.00,547.16,61.41,25.00,15.00,648.58,648.58,0.2495,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,270000,1806381.00,568.21,61.41,25.00,15.00,669.62,669.62,0.2480,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,280000,1873284.00,589.25,61.41,25.00,15.00,690.66,690.66,0.2467,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,290000,1940187.00,610.30,61.41,25.00,15.00,711.71,711.71,0.2454,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,300000,2007090.00,631.34,61.41,25.00,15.00,732.75,732.75,0.2443,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,310000,2073993.00,652.39,61.41,25.00,15.00,753.80,753.80,0.2432,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,320000,2140896.00,673.43,61.41,25.00,15.00,774.84,774.84,0.2421,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,330000,2207799.00,694.48,61.41,25.00,15.00,795.89,795.89,0.2412,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,340000,2274702.00,715.52,61.41,25.00,15.00,816.93,816.93,0.2403,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,350000,2341605.00,736.57,61.41,25.00,15.00,837.98,837.98,0.2394,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,360000,2408508.00,757.61,61.41,25.00,15.00,859.02,859.02,0.2386,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,370000,2475411.00,778.66,61.41,25.00,15.00,880.07,880.07,0.2379,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,380000,2542314.00,799.70,61.41,25.00,15.00,901.11,901.11,0.2371,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,390000,2609217.00,820.75,61.41,25.00,15.00,922.16,922.16,0.2365,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M08,Inheritance property transfer (继承财产转移) with SAFE approval,boc_full,400000,2676120.00,841.79,61.41,25.00,15.00,943.20,943.20,0.2358,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,10000,66903.00,21.04,32.47,25.00,15.00,93.51,93.51,0.9351,,100.00,300.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,20000,133806.00,42.09,42.47,25.00,15.00,124.56,124.56,0.6228,,200.00,600.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,30000,200709.00,63.13,52.47,25.00,15.00,155.60,155.60,0.5187,,300.00,900.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,40000,267612.00,84.18,61.41,25.00,15.00,185.59,185.59,0.4640,,400.00,1200.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,50000,334515.00,105.22,61.41,25.00,15.00,206.64,206.64,0.4133,,500.00,1500.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,60000,401418.00,126.27,61.41,25.00,15.00,227.68,227.68,0.3795,,600.00,1800.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,70000,468321.00,147.31,61.41,25.00,15.00,248.72,248.72,0.3553,,700.00,2100.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,80000,535224.00,168.36,61.41,25.00,15.00,269.77,269.77,0.3372,,800.00,2400.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,90000,602127.00,189.40,61.41,25.00,15.00,290.81,290.81,0.3231,,900.00,2700.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,100000,669030.00,210.45,61.41,25.00,15.00,311.86,311.86,0.3119,,1000.00,3000.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,110000,735933.00,231.49,61.41,25.00,15.00,332.90,332.90,0.3026,,1100.00,3300.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,120000,802836.00,252.54,61.41,25.00,15.00,353.95,353.95,0.2950,,1200.00,3600.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,130000,869739.00,273.58,61.41,25.00,15.00,374.99,374.99,0.2885,,1300.00,3900.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,140000,936642.00,294.63,61.41,25.00,15.00,396.04,396.04,0.2829,,1400.00,4200.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,150000,1003545.00,315.67,61.41,25.00,15.00,417.08,417.08,0.2781,,1500.00,4500.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,160000,1070448.00,336.72,61.41,25.00,15.00,438.13,438.13,0.2738,,1600.00,4800.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,170000,1137351.00,357.76,61.41,25.00,15.00,459.17,459.17,0.2701,,1700.00,5100.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,180000,1204254.00,378.81,61.41,25.00,15.00,480.22,480.22,0.2668,,1800.00,5400.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,190000,1271157.00,399.85,61.41,25.00,15.00,501.26,501.26,0.2638,,1900.00,5700.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,200000,1338060.00,420.89,61.41,25.00,15.00,522.31,522.31,0.2612,,2000.00,6000.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,210000,1404963.00,441.94,61.41,25.00,15.00,543.35,543.35,0.2587,,2100.00,6300.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,220000,1471866.00,462.98,61.41,25.00,15.00,564.40,564.40,0.2565,,2200.00,6600.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,230000,1538769.00,484.03,61.41,25.00,15.00,585.44,585.44,0.2545,,2300.00,6900.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,240000,1605672.00,505.07,61.41,25.00,15.00,606.49,606.49,0.2527,,2400.00,7200.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,250000,1672575.00,526.12,61.41,25.00,15.00,627.53,627.53,0.2510,,2500.00,7500.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,260000,1739478.00,547.16,61.41,25.00,15.00,648.58,648.58,0.2495,,2600.00,7800.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,270000,1806381.00,568.21,61.41,25.00,15.00,669.62,669.62,0.2480,,2700.00,8100.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,280000,1873284.00,589.25,61.41,25.00,15.00,690.66,690.66,0.2467,,2800.00,8400.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,290000,1940187.00,610.30,61.41,25.00,15.00,711.71,711.71,0.2454,,2900.00,8700.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,300000,2007090.00,631.34,61.41,25.00,15.00,732.75,732.75,0.2443,,3000.00,9000.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,310000,2073993.00,652.39,61.41,25.00,15.00,753.80,753.80,0.2432,,3100.00,9300.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,320000,2140896.00,673.43,61.41,25.00,15.00,774.84,774.84,0.2421,,3200.00,9600.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,330000,2207799.00,694.48,61.41,25.00,15.00,795.89,795.89,0.2412,,3300.00,9900.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,340000,2274702.00,715.52,61.41,25.00,15.00,816.93,816.93,0.2403,,3400.00,10200.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,350000,2341605.00,736.57,61.41,25.00,15.00,837.98,837.98,0.2394,,3500.00,10500.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,360000,2408508.00,757.61,61.41,25.00,15.00,859.02,859.02,0.2386,,3600.00,10800.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,370000,2475411.00,778.66,61.41,25.00,15.00,880.07,880.07,0.2379,,3700.00,11100.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,380000,2542314.00,799.70,61.41,25.00,15.00,901.11,901.11,0.2371,,3800.00,11400.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,390000,2609217.00,820.75,61.41,25.00,15.00,922.16,922.16,0.2365,,3900.00,11700.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M09,Proceeds of selling a home bought as an overseas individual,boc_property,400000,2676120.00,841.79,61.41,25.00,15.00,943.20,943.20,0.2358,,4000.00,12000.00,1 wire,,FEE-01 FEE-02 FEE-09 CN-TAX-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,10000,,,,,,,,,2000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,20000,,,,,,,,,4000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,30000,,,,,,,,,6000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,40000,,,,,,,,,8000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,50000,,,,,,,,,10000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,60000,,,,,,,,,12000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,70000,,,,,,,,,14000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,80000,,,,,,,,,16000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,90000,,,,,,,,,18000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,100000,,,,,,,,,20000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,110000,,,,,,,,,22000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,120000,,,,,,,,,24000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,130000,,,,,,,,,26000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,140000,,,,,,,,,28000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,150000,,,,,,,,,30000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,160000,,,,,,,,,32000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,170000,,,,,,,,,34000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,180000,,,,,,,,,36000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,190000,,,,,,,,,38000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,200000,,,,,,,,,40000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,210000,,,,,,,,,42000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,220000,,,,,,,,,44000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,230000,,,,,,,,,46000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,240000,,,,,,,,,48000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,250000,,,,,,,,,50000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,260000,,,,,,,,,52000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,270000,,,,,,,,,54000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,280000,,,,,,,,,56000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,290000,,,,,,,,,58000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,300000,,,,,,,,,60000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,310000,,,,,,,,,62000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,320000,,,,,,,,,64000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,330000,,,,,,,,,66000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,340000,,,,,,,,,68000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,350000,,,,,,,,,70000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,360000,,,,,,,,,72000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,370000,,,,,,,,,74000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,380000,,,,,,,,,76000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,390000,,,,,,,,,78000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M10,Dividends from your foreign-invested enterprise,boc_dividend,400000,,,,,,,,,80000.00,,,gross dividend,F26,CN-TAX-05 US-07
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,10000,66903.00,21.04,32.47,25.00,15.00,93.51,93.51,0.9351,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,20000,133806.00,42.09,42.47,25.00,15.00,124.56,124.56,0.6228,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,30000,200709.00,63.13,52.47,25.00,15.00,155.60,155.60,0.5187,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,40000,267612.00,84.18,61.41,25.00,15.00,185.59,185.59,0.4640,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,50000,334515.00,105.22,61.41,25.00,15.00,206.64,206.64,0.4133,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,60000,401418.00,126.27,61.41,25.00,15.00,227.68,227.68,0.3795,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,70000,468321.00,147.31,61.41,25.00,15.00,248.72,248.72,0.3553,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,80000,535224.00,168.36,61.41,25.00,15.00,269.77,269.77,0.3372,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,90000,602127.00,189.40,61.41,25.00,15.00,290.81,290.81,0.3231,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,100000,669030.00,210.45,61.41,25.00,15.00,311.86,311.86,0.3119,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,110000,735933.00,231.49,61.41,25.00,15.00,332.90,332.90,0.3026,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,120000,802836.00,252.54,61.41,25.00,15.00,353.95,353.95,0.2950,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,130000,869739.00,273.58,61.41,25.00,15.00,374.99,374.99,0.2885,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,140000,936642.00,294.63,61.41,25.00,15.00,396.04,396.04,0.2829,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,150000,1003545.00,315.67,61.41,25.00,15.00,417.08,417.08,0.2781,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,160000,1070448.00,336.72,61.41,25.00,15.00,438.13,438.13,0.2738,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,170000,1137351.00,357.76,61.41,25.00,15.00,459.17,459.17,0.2701,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,180000,1204254.00,378.81,61.41,25.00,15.00,480.22,480.22,0.2668,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,190000,1271157.00,399.85,61.41,25.00,15.00,501.26,501.26,0.2638,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,200000,1338060.00,420.89,61.41,25.00,15.00,522.31,522.31,0.2612,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,210000,1404963.00,441.94,61.41,25.00,15.00,543.35,543.35,0.2587,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,220000,1471866.00,462.98,61.41,25.00,15.00,564.40,564.40,0.2565,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,230000,1538769.00,484.03,61.41,25.00,15.00,585.44,585.44,0.2545,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,240000,1605672.00,505.07,61.41,25.00,15.00,606.49,606.49,0.2527,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,250000,1672575.00,526.12,61.41,25.00,15.00,627.53,627.53,0.2510,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,260000,1739478.00,547.16,61.41,25.00,15.00,648.58,648.58,0.2495,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,270000,1806381.00,568.21,61.41,25.00,15.00,669.62,669.62,0.2480,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,280000,1873284.00,589.25,61.41,25.00,15.00,690.66,690.66,0.2467,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,290000,1940187.00,610.30,61.41,25.00,15.00,711.71,711.71,0.2454,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,300000,2007090.00,631.34,61.41,25.00,15.00,732.75,732.75,0.2443,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,310000,2073993.00,652.39,61.41,25.00,15.00,753.80,753.80,0.2432,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,320000,2140896.00,673.43,61.41,25.00,15.00,774.84,774.84,0.2421,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,330000,2207799.00,694.48,61.41,25.00,15.00,795.89,795.89,0.2412,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,340000,2274702.00,715.52,61.41,25.00,15.00,816.93,816.93,0.2403,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,350000,2341605.00,736.57,61.41,25.00,15.00,837.98,837.98,0.2394,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,360000,2408508.00,757.61,61.41,25.00,15.00,859.02,859.02,0.2386,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,370000,2475411.00,778.66,61.41,25.00,15.00,880.07,880.07,0.2379,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,380000,2542314.00,799.70,61.41,25.00,15.00,901.11,901.11,0.2371,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,390000,2609217.00,820.75,61.41,25.00,15.00,922.16,922.16,0.2365,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M11,Proceeds of a lawfully liquidated foreign-invested enterprise,boc_full,400000,2676120.00,841.79,61.41,25.00,15.00,943.20,943.20,0.2358,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,10000,,0.00,32.47,25.00,15.00,72.47,72.47,0.7247,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,20000,,0.00,42.47,25.00,15.00,82.47,82.47,0.4123,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,30000,,0.00,52.47,25.00,15.00,92.47,92.47,0.3082,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,40000,,0.00,61.41,25.00,15.00,101.41,101.41,0.2535,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,50000,,0.00,61.41,25.00,15.00,101.41,101.41,0.2028,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,60000,,0.00,61.41,25.00,15.00,101.41,101.41,0.1690,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,70000,,0.00,61.41,25.00,15.00,101.41,101.41,0.1449,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,80000,,0.00,61.41,25.00,15.00,101.41,101.41,0.1268,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,90000,,0.00,61.41,25.00,15.00,101.41,101.41,0.1127,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,100000,,0.00,61.41,25.00,15.00,101.41,101.41,0.1014,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,110000,,0.00,61.41,25.00,15.00,101.41,101.41,0.0922,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,120000,,0.00,61.41,25.00,15.00,101.41,101.41,0.0845,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,130000,,0.00,61.41,25.00,15.00,101.41,101.41,0.0780,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,140000,,0.00,61.41,25.00,15.00,101.41,101.41,0.0724,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,150000,,0.00,61.41,25.00,15.00,101.41,101.41,0.0676,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,160000,,0.00,61.41,25.00,15.00,101.41,101.41,0.0634,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,170000,,0.00,61.41,25.00,15.00,101.41,101.41,0.0597,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,180000,,0.00,61.41,25.00,15.00,101.41,101.41,0.0563,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,190000,,0.00,61.41,25.00,15.00,101.41,101.41,0.0534,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,200000,,0.00,61.41,25.00,15.00,101.41,101.41,0.0507,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,210000,,0.00,61.41,25.00,15.00,101.41,101.41,0.0483,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,220000,,0.00,61.41,25.00,15.00,101.41,101.41,0.0461,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,230000,,0.00,61.41,25.00,15.00,101.41,101.41,0.0441,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,240000,,0.00,61.41,25.00,15.00,101.41,101.41,0.0423,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,250000,,0.00,61.41,25.00,15.00,101.41,101.41,0.0406,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,260000,,0.00,61.41,25.00,15.00,101.41,101.41,0.0390,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,270000,,0.00,61.41,25.00,15.00,101.41,101.41,0.0376,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,280000,,0.00,61.41,25.00,15.00,101.41,101.41,0.0362,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,290000,,0.00,61.41,25.00,15.00,101.41,101.41,0.0350,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,300000,,0.00,61.41,25.00,15.00,101.41,101.41,0.0338,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,310000,,0.00,61.41,25.00,15.00,101.41,101.41,0.0327,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,320000,,0.00,61.41,25.00,15.00,101.41,101.41,0.0317,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,330000,,0.00,61.41,25.00,15.00,101.41,101.41,0.0307,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,340000,,0.00,61.41,25.00,15.00,101.41,101.41,0.0298,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,350000,,0.00,61.41,25.00,15.00,101.41,101.41,0.0290,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,360000,,0.00,61.41,25.00,15.00,101.41,101.41,0.0282,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,370000,,0.00,61.41,25.00,15.00,101.41,101.41,0.0274,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,380000,,0.00,61.41,25.00,15.00,101.41,101.41,0.0267,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,390000,,0.00,61.41,25.00,15.00,101.41,101.41,0.0260,,,,1 wire,,FEE-02 FEE-09
+M12,Send unused inbound foreign currency back by the original route,boc_wire_only,400000,,0.00,61.41,25.00,15.00,101.41,101.41,0.0254,,,,1 wire,,FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,10000,66903.00,21.04,32.47,25.00,15.00,93.51,93.51,0.9351,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,20000,133806.00,42.09,42.47,25.00,15.00,124.56,124.56,0.6228,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,30000,200709.00,63.13,52.47,25.00,15.00,155.60,155.60,0.5187,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,40000,267612.00,84.18,61.41,25.00,15.00,185.59,185.59,0.4640,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,50000,334515.00,105.22,61.41,25.00,15.00,206.64,206.64,0.4133,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,60000,401418.00,126.27,61.41,25.00,15.00,227.68,227.68,0.3795,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,70000,468321.00,147.31,61.41,25.00,15.00,248.72,248.72,0.3553,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,80000,535224.00,168.36,61.41,25.00,15.00,269.77,269.77,0.3372,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,90000,602127.00,189.40,61.41,25.00,15.00,290.81,290.81,0.3231,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,100000,669030.00,210.45,61.41,25.00,15.00,311.86,311.86,0.3119,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,110000,735933.00,231.49,61.41,25.00,15.00,332.90,332.90,0.3026,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,120000,802836.00,252.54,61.41,25.00,15.00,353.95,353.95,0.2950,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,130000,869739.00,273.58,61.41,25.00,15.00,374.99,374.99,0.2885,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,140000,936642.00,294.63,61.41,25.00,15.00,396.04,396.04,0.2829,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,150000,1003545.00,315.67,61.41,25.00,15.00,417.08,417.08,0.2781,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,160000,1070448.00,336.72,61.41,25.00,15.00,438.13,438.13,0.2738,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,170000,1137351.00,357.76,61.41,25.00,15.00,459.17,459.17,0.2701,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,180000,1204254.00,378.81,61.41,25.00,15.00,480.22,480.22,0.2668,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,190000,1271157.00,399.85,61.41,25.00,15.00,501.26,501.26,0.2638,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,200000,1338060.00,420.89,61.41,25.00,15.00,522.31,522.31,0.2612,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,210000,1404963.00,441.94,61.41,25.00,15.00,543.35,543.35,0.2587,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,220000,1471866.00,462.98,61.41,25.00,15.00,564.40,564.40,0.2565,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,230000,1538769.00,484.03,61.41,25.00,15.00,585.44,585.44,0.2545,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,240000,1605672.00,505.07,61.41,25.00,15.00,606.49,606.49,0.2527,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,250000,1672575.00,526.12,61.41,25.00,15.00,627.53,627.53,0.2510,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,260000,1739478.00,547.16,61.41,25.00,15.00,648.58,648.58,0.2495,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,270000,1806381.00,568.21,61.41,25.00,15.00,669.62,669.62,0.2480,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,280000,1873284.00,589.25,61.41,25.00,15.00,690.66,690.66,0.2467,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,290000,1940187.00,610.30,61.41,25.00,15.00,711.71,711.71,0.2454,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,300000,2007090.00,631.34,61.41,25.00,15.00,732.75,732.75,0.2443,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,310000,2073993.00,652.39,61.41,25.00,15.00,753.80,753.80,0.2432,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,320000,2140896.00,673.43,61.41,25.00,15.00,774.84,774.84,0.2421,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,330000,2207799.00,694.48,61.41,25.00,15.00,795.89,795.89,0.2412,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,340000,2274702.00,715.52,61.41,25.00,15.00,816.93,816.93,0.2403,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,350000,2341605.00,736.57,61.41,25.00,15.00,837.98,837.98,0.2394,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,360000,2408508.00,757.61,61.41,25.00,15.00,859.02,859.02,0.2386,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,370000,2475411.00,778.66,61.41,25.00,15.00,880.07,880.07,0.2379,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,380000,2542314.00,799.70,61.41,25.00,15.00,901.11,901.11,0.2371,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,390000,2609217.00,820.75,61.41,25.00,15.00,922.16,922.16,0.2365,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M13,Convert back unused RMB that you exchanged from foreign currency,boc_full,400000,2676120.00,841.79,61.41,25.00,15.00,943.20,943.20,0.2358,,,,1 wire,,FEE-01 FEE-02 FEE-09
+M14,Withdraw USD cash and carry it out,cash,10000,66903.00,21.04,0.00,0.00,,21.04,,,,,,1 trip with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,20000,133806.00,42.09,0.00,0.00,,42.09,,,,,,2 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,30000,200709.00,63.13,0.00,0.00,,63.13,,,,,,3 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,40000,267612.00,84.18,0.00,0.00,,84.18,,,,,,4 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,50000,334515.00,105.22,0.00,0.00,,105.22,,,,,,5 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,60000,401418.00,126.27,0.00,0.00,,126.27,,,,,,6 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,70000,468321.00,147.31,0.00,0.00,,147.31,,,,,,7 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,80000,535224.00,168.36,0.00,0.00,,168.36,,,,,,8 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,90000,602127.00,189.40,0.00,0.00,,189.40,,,,,,9 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,100000,669030.00,210.45,0.00,0.00,,210.45,,,,,,10 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,110000,735933.00,231.49,0.00,0.00,,231.49,,,,,,11 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,120000,802836.00,252.54,0.00,0.00,,252.54,,,,,,12 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,130000,869739.00,273.58,0.00,0.00,,273.58,,,,,,13 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,140000,936642.00,294.63,0.00,0.00,,294.63,,,,,,14 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,150000,1003545.00,315.67,0.00,0.00,,315.67,,,,,,15 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,160000,1070448.00,336.72,0.00,0.00,,336.72,,,,,,16 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,170000,1137351.00,357.76,0.00,0.00,,357.76,,,,,,17 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,180000,1204254.00,378.81,0.00,0.00,,378.81,,,,,,18 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,190000,1271157.00,399.85,0.00,0.00,,399.85,,,,,,19 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,200000,1338060.00,420.89,0.00,0.00,,420.89,,,,,,20 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,210000,1404963.00,441.94,0.00,0.00,,441.94,,,,,,21 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,220000,1471866.00,462.98,0.00,0.00,,462.98,,,,,,22 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,230000,1538769.00,484.03,0.00,0.00,,484.03,,,,,,23 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,240000,1605672.00,505.07,0.00,0.00,,505.07,,,,,,24 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,250000,1672575.00,526.12,0.00,0.00,,526.12,,,,,,25 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,260000,1739478.00,547.16,0.00,0.00,,547.16,,,,,,26 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,270000,1806381.00,568.21,0.00,0.00,,568.21,,,,,,27 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,280000,1873284.00,589.25,0.00,0.00,,589.25,,,,,,28 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,290000,1940187.00,610.30,0.00,0.00,,610.30,,,,,,29 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,300000,2007090.00,631.34,0.00,0.00,,631.34,,,,,,30 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,310000,2073993.00,652.39,0.00,0.00,,652.39,,,,,,31 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,320000,2140896.00,673.43,0.00,0.00,,673.43,,,,,,32 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,330000,2207799.00,694.48,0.00,0.00,,694.48,,,,,,33 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,340000,2274702.00,715.52,0.00,0.00,,715.52,,,,,,34 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,350000,2341605.00,736.57,0.00,0.00,,736.57,,,,,,35 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,360000,2408508.00,757.61,0.00,0.00,,757.61,,,,,,36 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,370000,2475411.00,778.66,0.00,0.00,,778.66,,,,,,37 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,380000,2542314.00,799.70,0.00,0.00,,799.70,,,,,,38 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,390000,2609217.00,820.75,0.00,0.00,,820.75,,,,,,39 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M14,Withdraw USD cash and carry it out,cash,400000,2676120.00,841.79,0.00,0.00,,841.79,,,,,,40 trips with permit,F27,FEE-01 FEE-02 CN-FX-02
+M15,UnionPay debit card cash withdrawals abroad,atm,10000,,,112.58,,,112.58,,,,,,"7 withdrawals, 1 year",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,20000,,,225.16,,,225.16,,,,,,"14 withdrawals, 2 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,30000,,,337.75,,,337.75,,,,,,"21 withdrawals, 3 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,40000,,,448.53,,,448.53,,,,,,"27 withdrawals, 3 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,50000,,,561.11,,,561.11,,,,,,"34 withdrawals, 4 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,60000,,,673.69,,,673.69,,,,,,"41 withdrawals, 5 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,70000,,,784.48,,,784.48,,,,,,"47 withdrawals, 5 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,80000,,,897.06,,,897.06,,,,,,"54 withdrawals, 6 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,90000,,,1009.64,,,1009.64,,,,,,"61 withdrawals, 7 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,100000,,,1120.43,,,1120.43,,,,,,"67 withdrawals, 7 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,110000,,,1233.01,,,1233.01,,,,,,"74 withdrawals, 8 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,120000,,,1345.59,,,1345.59,,,,,,"81 withdrawals, 9 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,130000,,,1456.38,,,1456.38,,,,,,"87 withdrawals, 9 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,140000,,,1568.96,,,1568.96,,,,,,"94 withdrawals, 10 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,150000,,,1681.54,,,1681.54,,,,,,"101 withdrawals, 11 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,160000,,,1792.32,,,1792.32,,,,,,"107 withdrawals, 11 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,170000,,,1904.91,,,1904.91,,,,,,"114 withdrawals, 12 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,180000,,,2017.49,,,2017.49,,,,,,"121 withdrawals, 13 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,190000,,,2128.27,,,2128.27,,,,,,"127 withdrawals, 13 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,200000,,,2240.85,,,2240.85,,,,,,"134 withdrawals, 14 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,210000,,,2353.44,,,2353.44,,,,,,"141 withdrawals, 15 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,220000,,,2464.22,,,2464.22,,,,,,"147 withdrawals, 15 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,230000,,,2576.80,,,2576.80,,,,,,"154 withdrawals, 16 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,240000,,,2689.38,,,2689.38,,,,,,"161 withdrawals, 17 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,250000,,,2800.17,,,2800.17,,,,,,"167 withdrawals, 17 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,260000,,,2912.75,,,2912.75,,,,,,"174 withdrawals, 18 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,270000,,,3025.33,,,3025.33,,,,,,"181 withdrawals, 19 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,280000,,,3136.12,,,3136.12,,,,,,"187 withdrawals, 19 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,290000,,,3248.70,,,3248.70,,,,,,"194 withdrawals, 20 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,300000,,,3361.28,,,3361.28,,,,,,"201 withdrawals, 21 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,310000,,,3472.07,,,3472.07,,,,,,"207 withdrawals, 21 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,320000,,,3584.65,,,3584.65,,,,,,"214 withdrawals, 22 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,330000,,,3697.23,,,3697.23,,,,,,"221 withdrawals, 23 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,340000,,,3808.01,,,3808.01,,,,,,"227 withdrawals, 23 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,350000,,,3920.60,,,3920.60,,,,,,"234 withdrawals, 24 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,360000,,,4033.18,,,4033.18,,,,,,"241 withdrawals, 25 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,370000,,,4145.76,,,4145.76,,,,,,"248 withdrawals, 25 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,380000,,,4256.54,,,4256.54,,,,,,"254 withdrawals, 26 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,390000,,,4369.13,,,4369.13,,,,,,"261 withdrawals, 27 years",F05,FEE-04 CN-FX-10
+M15,UnionPay debit card cash withdrawals abroad,atm,400000,,,4481.71,,,4481.71,,,,,,"268 withdrawals, 27 years",F05,FEE-04 CN-FX-10
+M16,Small conversion back on ID alone,small_recon,10000,66903.00,21.04,0.00,0.00,,21.04,,,,,,20 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,20000,133806.00,42.09,0.00,0.00,,42.09,,,,,,40 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,30000,200709.00,63.13,0.00,0.00,,63.13,,,,,,60 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,40000,267612.00,84.18,0.00,0.00,,84.18,,,,,,80 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,50000,334515.00,105.22,0.00,0.00,,105.22,,,,,,100 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,60000,401418.00,126.27,0.00,0.00,,126.27,,,,,,120 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,70000,468321.00,147.31,0.00,0.00,,147.31,,,,,,140 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,80000,535224.00,168.36,0.00,0.00,,168.36,,,,,,160 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,90000,602127.00,189.40,0.00,0.00,,189.40,,,,,,180 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,100000,669030.00,210.45,0.00,0.00,,210.45,,,,,,200 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,110000,735933.00,231.49,0.00,0.00,,231.49,,,,,,220 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,120000,802836.00,252.54,0.00,0.00,,252.54,,,,,,240 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,130000,869739.00,273.58,0.00,0.00,,273.58,,,,,,260 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,140000,936642.00,294.63,0.00,0.00,,294.63,,,,,,280 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,150000,1003545.00,315.67,0.00,0.00,,315.67,,,,,,300 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,160000,1070448.00,336.72,0.00,0.00,,336.72,,,,,,320 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,170000,1137351.00,357.76,0.00,0.00,,357.76,,,,,,340 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,180000,1204254.00,378.81,0.00,0.00,,378.81,,,,,,360 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,190000,1271157.00,399.85,0.00,0.00,,399.85,,,,,,380 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,200000,1338060.00,420.89,0.00,0.00,,420.89,,,,,,400 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,210000,1404963.00,441.94,0.00,0.00,,441.94,,,,,,420 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,220000,1471866.00,462.98,0.00,0.00,,462.98,,,,,,440 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,230000,1538769.00,484.03,0.00,0.00,,484.03,,,,,,460 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,240000,1605672.00,505.07,0.00,0.00,,505.07,,,,,,480 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,250000,1672575.00,526.12,0.00,0.00,,526.12,,,,,,500 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,260000,1739478.00,547.16,0.00,0.00,,547.16,,,,,,520 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,270000,1806381.00,568.21,0.00,0.00,,568.21,,,,,,540 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,280000,1873284.00,589.25,0.00,0.00,,589.25,,,,,,560 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,290000,1940187.00,610.30,0.00,0.00,,610.30,,,,,,580 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,300000,2007090.00,631.34,0.00,0.00,,631.34,,,,,,600 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,310000,2073993.00,652.39,0.00,0.00,,652.39,,,,,,620 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,320000,2140896.00,673.43,0.00,0.00,,673.43,,,,,,640 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,330000,2207799.00,694.48,0.00,0.00,,694.48,,,,,,660 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,340000,2274702.00,715.52,0.00,0.00,,715.52,,,,,,680 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,350000,2341605.00,736.57,0.00,0.00,,736.57,,,,,,700 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,360000,2408508.00,757.61,0.00,0.00,,757.61,,,,,,720 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,370000,2475411.00,778.66,0.00,0.00,,778.66,,,,,,740 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,380000,2542314.00,799.70,0.00,0.00,,799.70,,,,,,760 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,390000,2609217.00,820.75,0.00,0.00,,820.75,,,,,,780 days,F27,FEE-01 FEE-02 CN-FX-02
+M16,Small conversion back on ID alone,small_recon,400000,2676120.00,841.79,0.00,0.00,,841.79,,,,,,800 days,F27,FEE-01 FEE-02 CN-FX-02

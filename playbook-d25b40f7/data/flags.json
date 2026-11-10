@@ -1,0 +1,242 @@
+[
+ {
+  "id": "F01",
+  "item": "Intermediary-bank deductions on a standard (shared-cost) wire",
+  "why": "No published figure. The Bank of China tariff only says foreign-bank charges are passed on at cost. Totals for the standard wire therefore exclude them; the full-amount-arrival option replaces them with a published fixed fee.",
+  "sources": [
+   "FEE-02"
+  ]
+ },
+ {
+  "id": "F02",
+  "item": "HSBC China customer exchange rate",
+  "why": "HSBC China's CNY→USD customer rate was not retrieved, so HSBC totals show published fees only and the FX-margin cell is blank.",
+  "sources": [
+   "FEE-06"
+  ]
+ },
+ {
+  "id": "F03",
+  "item": "Receiving fees at US banks other than Chase",
+  "why": "Only Chase's incoming-wire fee was confirmed on a Chase page. Check your own bank's fee schedule.",
+  "sources": [
+   "FEE-09"
+  ]
+ },
+ {
+  "id": "F04",
+  "item": "Wise: fees at other amounts, pay-out amount, discount schedule, overall limit",
+  "why": "Five live quotes were read (CNY 66,763 to CNY 300,000). The recipient amount did not render, the monthly volume-discount schedule is not a published table, the overall limit is computed per customer, and whether a US bank charges for the incoming credit was not checked. Other amounts are not interpolated.",
+  "sources": [
+   "FEE-07",
+   "FEE-08",
+   "FEE-10",
+   "FEE-11",
+   "FEE-12",
+   "FEE-13"
+  ]
+ },
+ {
+  "id": "F05",
+  "item": "Card-network exchange rate and foreign ATM surcharge",
+  "why": "Bank of China publishes its own withdrawal fee; the network conversion rate and any surcharge of the ATM owner are shown only at the machine. Both cells are blank.",
+  "sources": [
+   "FEE-02",
+   "FEE-04"
+  ]
+ },
+ {
+  "id": "F06",
+  "item": "Current procedure for remitting home-sale proceeds",
+  "why": "Order No. 3 Art. 22 says SAFE approval; a 2011 SAFE Q&A says the local SAFE branch reviews three documents; a 2019 SAFE Jiangxi Q&A excerpt says banks handle it directly under the 2017 capital-account guidelines. The 2024 guidelines (汇发〔2024〕12号) were not read in this session. Confirm the current desk procedure with the bank before selling.",
+  "sources": [
+   "CN-FX-01",
+   "CN-FX-11",
+   "CN-FX-12"
+  ]
+ },
+ {
+  "id": "F07",
+  "item": "Rental income of overseas individuals",
+  "why": "Seen only as a search-result excerpt of a SAFE Jiangxi Q&A stating that such rent cannot be remitted; the item page was not opened. Treated as unverified.",
+  "sources": [
+   "CN-FX-12"
+  ]
+ },
+ {
+  "id": "F08",
+  "item": "Two official definitions of “domestic individual”",
+  "why": "The State Council Regulation (Art. 52(2)) counts foreigners resident in China for one continuous year as domestic individuals; PBOC Order No. 3 (Art. 37) defines overseas individuals by passport, and banks classify by the ID shown at account opening (Art. 28). Ask the bank which category your account carries.",
+  "sources": [
+   "CN-FX-03",
+   "CN-FX-01"
+  ]
+ },
+ {
+  "id": "F09",
+  "item": "US–China treaty read only in part",
+  "why": "Articles 1–11 were read. The saving clause, Articles 12–22 (gains, employment income, relief from double taxation) and the Protocol were not, and China's procedure for claiming the treaty rate was not retrieved.",
+  "sources": [
+   "US-07"
+  ]
+ },
+ {
+  "id": "F10",
+  "item": "Form 3520 late-filing penalty rate",
+  "why": "The IRS page read names IRC §6039F(c) but states no percentage; the percentage cell is blank.",
+  "sources": [
+   "US-04"
+  ]
+ },
+ {
+  "id": "F11",
+  "item": "How the FBAR non-willful maximum is counted",
+  "why": "The regulation gives the maximum amount; the court decision on per-report counting was not re-read in this session.",
+  "sources": [
+   "US-03"
+  ]
+ },
+ {
+  "id": "F12",
+  "item": "US 1% remittance excise tax",
+  "why": "Only Wise's FAQ was read: it describes the tax as applying to transfers sent from the US by cash, cheque or money order. The IRS release was not re-read, so the scope is unverified.",
+  "sources": [
+   "FEE-08"
+  ]
+ },
+ {
+  "id": "F13",
+  "item": "Other taxes on a home sale and the local deemed rate",
+  "why": "Only the individual income tax rule was read. VAT, surcharges, land VAT, stamp duty and the city's rate inside the 1%–3% band were not retrieved.",
+  "sources": [
+   "CN-TAX-07"
+  ]
+ },
+ {
+  "id": "F14",
+  "item": "Costs of liquidating an inherited estate",
+  "why": "Notarisation and any taxes on selling inherited assets were not retrieved.",
+  "sources": [
+   "CN-FX-08"
+  ]
+ },
+ {
+  "id": "F15",
+  "item": "Taxes on liquidating a foreign-invested enterprise",
+  "why": "The Regulation allows conversion after liquidation and tax; the tax computation was not retrieved.",
+  "sources": [
+   "CN-FX-03"
+  ]
+ },
+ {
+  "id": "F16",
+  "item": "Progressive income-tax brackets",
+  "why": "The two rate tables annexed to the Individual Income Tax Law are images on the official page; only the ranges stated in Art. 3 are quoted.",
+  "sources": [
+   "CN-TAX-04"
+  ]
+ },
+ {
+  "id": "F17",
+  "item": "Rate used to value CNY-denominated fees",
+  "why": "The tariff sets fees in CNY and does not say which rate converts a USD wire amount for the 1‰ commission. The model values CNY items at the board midpoint; the possible difference is bounded by the bid–ask width (0.42% of the fee).",
+  "sources": [
+   "FEE-02",
+   "FEE-01"
+  ]
+ },
+ {
+  "id": "F18",
+  "item": "Electronic-channel discounts at Bank of China",
+  "why": "The tariff says e-channels follow counter pricing with channel-specific discounts published elsewhere; that schedule was not retrieved, so the counter tariff is used.",
+  "sources": [
+   "FEE-02",
+   "FEE-05"
+  ]
+ },
+ {
+  "id": "F19",
+  "item": "Board rates are indicative",
+  "why": "Bank of China states that the executed rate at the counter or in e-banking governs. The board snapshot is stamped 2026/11/10 07:32:39.",
+  "sources": [
+   "FEE-01"
+  ]
+ },
+ {
+  "id": "F20",
+  "item": "IRS FBAR page recorded as paraphrase",
+  "why": "No verbatim sentence was kept from that page; the threshold and due dates are quoted verbatim from the IRS comparison page instead.",
+  "sources": [
+   "US-01",
+   "US-02"
+  ]
+ },
+ {
+  "id": "F21",
+  "item": "Sources read only as official-domain text returned by the search tool",
+  "why": "Operative clauses were quoted from official-domain page text but the pages were not opened separately: 国税发〔2005〕13号, STA/SAFE 2013 No. 40, the 2021 No. 19 interpretation, the savings-interest note, 国税发〔2006〕108号, the 2011 SAFE Q&A, the Wise CNY guide and the Chase footnote. Manual re-check recommended.",
+  "sources": [
+   "CN-TAX-01",
+   "CN-TAX-02",
+   "CN-TAX-03",
+   "CN-TAX-06",
+   "CN-TAX-07",
+   "CN-FX-11",
+   "FEE-07",
+   "FEE-09"
+  ]
+ },
+ {
+  "id": "F22",
+  "item": "Cross-border RMB remittance and offshore conversion",
+  "why": "Earlier editions list sending RMB out and converting offshore. The governing PBOC notice was not retrieved in this session; no steps or numbers are shown.",
+  "sources": [
+   "CN-FX-09"
+  ]
+ },
+ {
+  "id": "F23",
+  "item": "Irregularities inside an official guide",
+  "why": "The SAFE Hebei inheritance guide repeats the emigrant condition (property owned before obtaining foreign status) and cites 国税发〔2005〕16号 where the emigrant guide and the tax authority's library give 国税发〔2005〕13号.",
+  "sources": [
+   "CN-FX-08",
+   "CN-FX-07",
+   "CN-TAX-01"
+  ]
+ },
+ {
+  "id": "F25",
+  "item": "Cost of obtaining documents",
+  "why": "Notary fees, consular certification, translations and travel to file in person were not retrieved. Totals for the approval routes are transfer costs only.",
+  "sources": [
+   "CN-FX-07",
+   "CN-FX-08"
+  ]
+ },
+ {
+  "id": "F26",
+  "item": "Company-side wire tariff for dividends",
+  "why": "The dividend is remitted by the company under its bank's corporate tariff, which was not retrieved. Only the withholding tax is computed.",
+  "sources": [
+   "CN-FX-04"
+  ]
+ },
+ {
+  "id": "F27",
+  "item": "Cash routes: travel and US deposit charges",
+  "why": "The cost of each trip is personal and no US cash-deposit charge was retrieved. Cash rows show the exchange margin and the permit fee only.",
+  "sources": [
+   "CN-FX-02",
+   "US-09"
+  ]
+ },
+ {
+  "id": "F24",
+  "item": "Tax paperwork for an overseas individual's own large remittance",
+  "why": "Guidelines Art. 59 require source documents including tax evidence; Art. 49(4) and Announcement 2013 No. 40 require a tax filing for single payments above USD 50,000, while Announcement 40 Art. 4 sends overseas individuals back to the individual FX rules. Which paper the desk asks for is the bank's call (Art. 68).",
+  "sources": [
+   "CN-FX-02",
+   "CN-TAX-02"
+  ]
+ }
+]

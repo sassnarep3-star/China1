@@ -1,0 +1,27 @@
+[
+ {
+  "cny_sent": "66763",
+  "fee_cny": "435.16",
+  "source": "FEE-10"
+ },
+ {
+  "cny_sent": "133525",
+  "fee_cny": "846.53",
+  "source": "FEE-11"
+ },
+ {
+  "cny_sent": "200288",
+  "fee_cny": "1225.85",
+  "source": "FEE-12"
+ },
+ {
+  "cny_sent": "267050",
+  "fee_cny": "1571.21",
+  "source": "FEE-13"
+ },
+ {
+  "cny_sent": "300000",
+  "fee_cny": "1741.67",
+  "source": "FEE-08"
+ }
+]
