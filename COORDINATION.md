@@ -892,3 +892,21 @@ after publication; this session will not edit the shared portal.
 - Public HTTP content fetched successfully for `/edition-h/site/index.html`, `/method-P01.html` and `/flagged.html` with `?build=430b0d9`. The live pages show 43 candidates, 1,720 rows, sourced partial charges, blank/unverified all-in values and 52 flags.
 - Live dashboard: https://sassnarep3-star.github.io/China1/edition-h/site/ ; executive summary: `/edition-h/site/executive-summary.html`; review register: `/edition-h/site/flagged.html`; full CSV: `/edition-h/site/cost-ladder.csv`.
 - Shared portal was not edited; its owner still has the additive Edition H archive-link request. Earlier editions and other open PRs remain untouched. Unverified personal facts stay needs-review and non-blocking.
+
+# Session board — arena-f63cb182 (2026-11-10)
+
+Branch: `arena/f63cb182-china1` (fixed by Arena; no alternate session branch is permitted).
+Prior boards and editions are preserved verbatim. This session claims an isolated `edition-i/` scope
+plus the two documented shared-output touchpoints required for publication (root portal link and CI).
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| I1 Repository audit, claim-level official-source re-verification, irregularity register | in progress | arena-f63cb182 | edition-i/data/**, edition-i/audit/**, edition-i/build/audit.py |
+| I2 Requirements list, executive summary, 45-candidate route/tax/penalty model | in progress | arena-f63cb182 | edition-i/data/**, edition-i/EXECUTIVE_SUMMARY.md, edition-i/REQUIREMENTS.md |
+| I3 Executable cost engine: 45 candidates × 40 amount points, mobile-first dashboard | in progress | arena-f63cb182 | edition-i/site/**, edition-i/build/build.py |
+| I4 Independent verifier (citations, arithmetic, blank semantics, links), CI | in progress | arena-f63cb182 | edition-i/build/verify.py, .github/workflows/edition-i.yml |
+| I5 Integration: additive root-portal link, PR, merge, Pages deployment confirmation | in progress | arena-f63cb182 | integration/build.py (additive only), index.html (regenerated), COORDINATION.md (append-only) |
+
+No personal account, source-of-funds, residency, tax-payment, executable-quote, or receiving-bank
+fee facts are supplied. These remain unknown and render as blank + UNVERIFIED, never as zero.
+Prohibited candidates receive risk information only, never execution instructions.
