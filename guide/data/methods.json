@@ -1,0 +1,863 @@
+{
+ "categories": {
+  "bank": "Bank wire with documents",
+  "special": "Special legal routes",
+  "provider": "Non-bank providers",
+  "physical": "Cash and cards",
+  "prohibited": "Prohibited — do not use"
+ },
+ "methods": [
+  {
+   "id": "M01",
+   "cat": "bank",
+   "name": "Bank of China: convert and wire to your own US account",
+   "status": "Lawful",
+   "verdict": "Best fully priced route for large sums",
+   "who": "Foreign passport holder whose CNY is lawful China current-account income (for example salary) and who can show the amount and the tax paid.",
+   "limit": "No fixed cap in the rule; the bank converts what your documents support.",
+   "cost": "FX margin 0.2094% + commission 1‰ (CNY 50–260) + cable CNY 150 + USD 25 full-amount delivery + receiving-bank fee.",
+   "pros": [
+    "Bank fees are capped, so the percentage cost falls as the amount grows",
+    "Every price is published by the bank",
+    "Legal basis is explicit for foreign individuals"
+   ],
+   "cons": [
+    "Needs tax vouchers matching the amount",
+    "Branch visit and bank review",
+    "Above USD 50,000 per payment a tax-filing form may be asked for"
+   ],
+   "steps": [
+    {
+     "t": "Collect proof that the CNY is lawful China income, showing amounts: employment contract or payslips and your individual income tax payment record.",
+     "src": [
+      "CN-ART59",
+      "CN-RULES"
+     ]
+    },
+    {
+     "t": "Take your passport and the documents to the bank that holds the account.",
+     "src": [
+      "CN-MEASURES"
+     ]
+    },
+    {
+     "t": "For a single payment above USD 50,000, ask the bank whether it needs a tax-filing form; if so, file it with the local tax office first.",
+     "src": [
+      "CN-TAXFILING"
+     ]
+    },
+    {
+     "t": "Ask the bank to convert the CNY to USD at its telegraphic selling rate. The board rate is a reference; the rate at the moment of the transaction applies.",
+     "src": [
+      "CN-FXBOARD"
+     ]
+    },
+    {
+     "t": "Order a SWIFT wire to your US account and choose full-amount delivery so correspondent charges are a fixed USD 25 instead of a deduction.",
+     "src": [
+      "CN-BOCTARIFF"
+     ]
+    },
+    {
+     "t": "Pay the commission (1‰, minimum CNY 50, maximum CNY 260) and the CNY 150 cable fee.",
+     "src": [
+      "CN-BOCTARIFF"
+     ]
+    },
+    {
+     "t": "Send the whole documented amount in one wire. Do not split it into smaller pieces to avoid review.",
+     "src": [
+      "CN-MEASURES"
+     ]
+    },
+    {
+     "t": "When the wire arrives your US bank may charge an incoming-wire fee (Chase: USD 15).",
+     "src": [
+      "US-CHASE"
+     ]
+    },
+    {
+     "t": "Keep the conversion slip and wire receipt, and file the FBAR and Form 8938 if the account passed the thresholds during the year.",
+     "src": [
+      "US-8938FBAR"
+     ]
+    }
+   ],
+   "src": [
+    "CN-ART59",
+    "CN-BOCTARIFF",
+    "CN-FXBOARD"
+   ],
+   "flags": [
+    "F01",
+    "F19",
+    "F20",
+    "F22"
+   ],
+   "ladder": "boc"
+  },
+  {
+   "id": "M02",
+   "cat": "bank",
+   "name": "HSBC China (Premier or Advance): convert and wire",
+   "status": "Lawful",
+   "verdict": "Fees published, exchange rate not — compare on the day",
+   "who": "Same legal basis as M01, for customers of HSBC China. Premier needs an average balance of CNY 500,000.",
+   "limit": "No fixed cap in the rule; the bank converts what your documents support.",
+   "cost": "Commission 0.1% (CNY 100–500) + cable CNY 120 + CNY 200 pre-collected for full-amount delivery. FX margin not published.",
+   "pros": [
+    "Same bank group on both sides if you also bank with HSBC abroad",
+    "Fees are capped"
+   ],
+   "cons": [
+    "Exchange rate not verified, so no all-in total",
+    "Higher fee cap than Bank of China",
+    "Correspondent charges above CNY 200 are collected later"
+   ],
+   "steps": [
+    {
+     "t": "Prepare the same evidence as for M01: passport, proof of the income amount and tax vouchers.",
+     "src": [
+      "CN-ART59"
+     ]
+    },
+    {
+     "t": "Ask for the bank's selling rate before you confirm and compare it with the Bank of China board.",
+     "src": [
+      "CN-FXBOARD"
+     ]
+    },
+    {
+     "t": "Order the outward telegraphic transfer; pay 0.1% (minimum CNY 100, maximum CNY 500) plus CNY 120 cable.",
+     "src": [
+      "PR-HSBC"
+     ]
+    },
+    {
+     "t": "If you want the full USD amount delivered, the bank pre-collects CNY 200 toward overseas agent charges and bills any shortfall later.",
+     "src": [
+      "PR-HSBC"
+     ]
+    },
+    {
+     "t": "Complete the US filings as in M01.",
+     "src": [
+      "US-8938FBAR"
+     ]
+    }
+   ],
+   "src": [
+    "PR-HSBC",
+    "CN-ART59"
+   ],
+   "flags": [
+    "F02",
+    "F01"
+   ],
+   "ladder": "hsbc"
+  },
+  {
+   "id": "M03",
+   "cat": "bank",
+   "name": "Another mainland bank (ICBC, CCB, ABC, CMB and others)",
+   "status": "Lawful",
+   "verdict": "Same rule, prices not verified",
+   "who": "Same legal basis as M01 at whichever bank holds your account.",
+   "limit": "No fixed cap in the rule; the bank converts what your documents support.",
+   "cost": "",
+   "pros": [
+    "No need to move the money to another bank first"
+   ],
+   "cons": [
+    "No official tariff was verified for these banks",
+    "Staff experience with foreign customers varies"
+   ],
+   "steps": [
+    {
+     "t": "Prepare passport, proof of the income amount and tax vouchers.",
+     "src": [
+      "CN-ART59"
+     ]
+    },
+    {
+     "t": "Ask the bank for its published tariff and selling rate, then proceed as in M01.",
+     "src": [
+      "CN-MEASURES"
+     ]
+    }
+   ],
+   "src": [
+    "CN-ART59"
+   ],
+   "flags": [
+    "F03"
+   ],
+   "ladder": "blank"
+  },
+  {
+   "id": "M04",
+   "cat": "special",
+   "name": "Foreign Permanent Resident ID: annual facilitation quota",
+   "status": "Lawful — only with the card",
+   "verdict": "Annual quota applies if you hold the card",
+   "who": "Foreign individuals who hold a China Foreign Permanent Resident ID Card.",
+   "limit": "USD 50,000 equivalent per person per year.",
+   "cost": "Same bank charges as M01.",
+   "pros": [
+    "The annual facilitation quota applies to you"
+   ],
+   "cons": [
+    "Few foreigners hold the card",
+    "Above the quota you are back to M01 with documents",
+    "Splitting or using other people's quotas is prohibited"
+   ],
+   "steps": [
+    {
+     "t": "Show the Foreign Permanent Resident ID Card at the bank and buy up to the annual quota.",
+     "src": [
+      "CN-PR",
+      "CN-RULES"
+     ]
+    },
+    {
+     "t": "Wire the USD as in M01.",
+     "src": [
+      "CN-BOCTARIFF"
+     ]
+    },
+    {
+     "t": "For anything above the quota use M01 with tax vouchers; do not split or borrow quotas.",
+     "src": [
+      "CN-MEASURES"
+     ]
+    }
+   ],
+   "src": [
+    "CN-PR",
+    "CN-RULES"
+   ],
+   "flags": [
+    "F15"
+   ],
+   "ladder": "pr_quota"
+  },
+  {
+   "id": "M15",
+   "cat": "special",
+   "name": "Convert back CNY you originally exchanged from foreign currency",
+   "status": "Lawful with the exchange memo",
+   "verdict": "Simplest route if the CNY came from dollars you brought in less than 24 months ago",
+   "who": "Foreign individual holding unused CNY that was obtained by exchanging foreign currency in China.",
+   "limit": "The unused part of the amount on the original exchange memo, within 24 months of the exchange date.",
+   "cost": "Bank charges as M01.",
+   "pros": [
+    "Needs only your ID and the original exchange memo",
+    "No tax voucher is mentioned for this case"
+   ],
+   "cons": [
+    "Only within 24 months of the original exchange",
+    "Only up to what the memo shows",
+    "Useless without the original memo"
+   ],
+   "steps": [
+    {
+     "t": "Find the original exchange memo (兑换水单) from when you turned foreign currency into CNY; it is valid for converting back for 24 months from the exchange date.",
+     "src": [
+      "CN-RULES"
+     ]
+    },
+    {
+     "t": "Take your passport and the memo to the bank and convert the unused CNY back to foreign currency.",
+     "src": [
+      "CN-RULES"
+     ]
+    },
+    {
+     "t": "Wire the USD to your own account as in M01.",
+     "src": [
+      "CN-BOCTARIFF"
+     ]
+    }
+   ],
+   "src": [
+    "CN-RULES"
+   ],
+   "flags": [],
+   "ladder": "boc"
+  },
+  {
+   "id": "M05",
+   "cat": "special",
+   "name": "House-sale proceeds",
+   "status": "Lawful with documents",
+   "verdict": "Use when the CNY came from selling property",
+   "who": "Foreign individual who sold a home on the mainland.",
+   "limit": "The sale proceeds supported by the contract and tax voucher.",
+   "cost": "Bank charges as M01, plus China tax on the gain (20% of gain).",
+   "pros": [
+    "Explicitly remittable",
+    "Large single amounts are normal for this route"
+   ],
+   "cons": [
+    "Tax voucher required; tax-filing form above USD 50,000",
+    "Approval path differs by city"
+   ],
+   "steps": [
+    {
+     "t": "Pay the tax on the sale and obtain the tax voucher. Gain is taxed at 20% of proceeds less original value and reasonable expenses.",
+     "src": [
+      "CN-IIT"
+     ]
+    },
+    {
+     "t": "Bring passport, the house transfer contract and registration certificate, and the tax voucher.",
+     "src": [
+      "CN-SHPROP"
+     ]
+    },
+    {
+     "t": "If the amount exceeds USD 50,000, file the tax-filing form for external payments.",
+     "src": [
+      "CN-SHPROP",
+      "CN-TAXFILING"
+     ]
+    },
+    {
+     "t": "The bank (with SAFE approval where required) converts and remits the proceeds.",
+     "src": [
+      "CN-MEASURES"
+     ]
+    },
+    {
+     "t": "In the US, report the sale on your return and claim a credit for the China tax.",
+     "src": [
+      "US-ABROAD",
+      "US-FTC"
+     ]
+    }
+   ],
+   "src": [
+    "CN-SHPROP",
+    "CN-MEASURES"
+   ],
+   "flags": [
+    "F17"
+   ],
+   "ladder": "boc"
+  },
+  {
+   "id": "M06",
+   "cat": "special",
+   "name": "Emigrant property transfer (移民财产转移)",
+   "status": "Lawful — approval needed",
+   "verdict": "For former mainland residents moving their pre-emigration assets",
+   "who": "A person who emigrated from China and transfers property lawfully owned before emigrating.",
+   "limit": "The amount approved by SAFE; may be sent in one or several wires.",
+   "cost": "Bank charges as M01 once approved.",
+   "pros": [
+    "Covers savings and assets that are not recent salary",
+    "Since 2014: no staged instalments, no head-office filing, no notarisation"
+   ],
+   "cons": [
+    "SAFE branch approval and tax certificate required",
+    "Wire only to your own overseas account",
+    "Property without provable lawful source is refused"
+   ],
+   "steps": [
+    {
+     "t": "Apply to the SAFE branch of your former household registration.",
+     "src": [
+      "CN-CAP2014"
+     ]
+    },
+    {
+     "t": "Submit proof of lawful source and tax certificates or tax-payment vouchers.",
+     "src": [
+      "CN-PROPTRANS"
+     ]
+    },
+    {
+     "t": "After approval the bank may remit the approved amount in one or several wires.",
+     "src": [
+      "CN-CAP2014"
+     ]
+    },
+    {
+     "t": "Funds go directly to your own account abroad; foreign cash may not be withdrawn in China.",
+     "src": [
+      "CN-PROPTRANS"
+     ]
+    }
+   ],
+   "src": [
+    "CN-PROPTRANS",
+    "CN-CAP2014"
+   ],
+   "flags": [
+    "F18"
+   ],
+   "ladder": "boc"
+  },
+  {
+   "id": "M07",
+   "cat": "special",
+   "name": "Inheritance transfer (继承财产转移)",
+   "status": "Lawful — approval needed",
+   "verdict": "For money inherited from someone in China",
+   "who": "A foreign citizen who lawfully inherits an estate in China.",
+   "limit": "The amount approved by SAFE; may be sent in one or several wires.",
+   "cost": "Bank charges as M01 once approved.",
+   "pros": [
+    "Dedicated legal route for inherited money",
+    "Several inheritances can be filed together"
+   ],
+   "cons": [
+    "SAFE branch approval required",
+    "US Form 3520 if the bequest exceeds USD 100,000"
+   ],
+   "steps": [
+    {
+     "t": "Apply to the SAFE branch where the deceased had household registration.",
+     "src": [
+      "CN-CAP2014"
+     ]
+    },
+    {
+     "t": "Submit the inheritance documents and tax certificates or tax-payment vouchers.",
+     "src": [
+      "CN-PROPTRANS"
+     ]
+    },
+    {
+     "t": "After approval the bank remits in one or several wires to your own account abroad.",
+     "src": [
+      "CN-CAP2014",
+      "CN-PROPTRANS"
+     ]
+    },
+    {
+     "t": "In the US, file Form 3520 if bequests from a foreign estate exceed USD 100,000 in the year.",
+     "src": [
+      "US-3520"
+     ]
+    }
+   ],
+   "src": [
+    "CN-PROPTRANS",
+    "CN-CAP2014",
+    "US-3520"
+   ],
+   "flags": [],
+   "ladder": "boc"
+  },
+  {
+   "id": "M08",
+   "cat": "special",
+   "name": "Dividends and other investment income",
+   "status": "Lawful with documents",
+   "verdict": "Use when the CNY is investment income",
+   "who": "Foreign individual with dividends, profit or similar lawful income from China.",
+   "limit": "The income supported by documents and tax vouchers.",
+   "cost": "Bank charges as M01; China tax on the income is 20%.",
+   "pros": [
+    "Explicitly listed as a remittable item"
+   ],
+   "cons": [
+    "Tax filing for single payments above USD 50,000",
+    "Treaty and withholding details not reviewed here"
+   ],
+   "steps": [
+    {
+     "t": "Make sure the 20% tax on the dividend or interest was withheld and get the voucher.",
+     "src": [
+      "CN-IIT"
+     ]
+    },
+    {
+     "t": "For a single payment above USD 50,000 complete the tax filing.",
+     "src": [
+      "CN-TAXFILING"
+     ]
+    },
+    {
+     "t": "Convert and wire at the bank as in M01.",
+     "src": [
+      "CN-ART59",
+      "CN-BOCTARIFF"
+     ]
+    }
+   ],
+   "src": [
+    "CN-TAXFILING",
+    "CN-IIT"
+   ],
+   "flags": [
+    "F16"
+   ],
+   "ladder": "boc"
+  },
+  {
+   "id": "M09",
+   "cat": "special",
+   "name": "Send the money abroad in RMB and convert outside China",
+   "status": "Lawful with bank review",
+   "verdict": "Possible, but the conversion cost is unknown",
+   "who": "Individuals with lawful current-account RMB income; banks apply know-your-customer and due-diligence review.",
+   "limit": "Set by the bank's review.",
+   "cost": "Bank of China charges the same commission and cable for an RMB wire. Conversion cost abroad not verified.",
+   "pros": [
+    "No conversion inside China",
+    "You choose where and when to convert"
+   ],
+   "cons": [
+    "Receiving bank must accept CNY",
+    "Offshore conversion rate not verified",
+    "Still needs proof of lawful income"
+   ],
+   "steps": [
+    {
+     "t": "Confirm with the receiving bank that it accepts a CNY wire.",
+     "src": [
+      "CN-RMBX"
+     ]
+    },
+    {
+     "t": "Ask your mainland bank for a cross-border RMB remittance of your current-account income and pass its review.",
+     "src": [
+      "CN-RMBX"
+     ]
+    },
+    {
+     "t": "Pay the cross-border wire commission and cable fee.",
+     "src": [
+      "CN-BOCTARIFF"
+     ]
+    },
+    {
+     "t": "Convert to USD at the receiving bank.",
+     "src": [
+      "CN-RMBX"
+     ]
+    }
+   ],
+   "src": [
+    "CN-RMBX",
+    "CN-BOCTARIFF"
+   ],
+   "flags": [
+    "F09"
+   ],
+   "ladder": "rmb"
+  },
+  {
+   "id": "M10",
+   "cat": "provider",
+   "name": "Wise (from a China bank app or Alipay)",
+   "status": "Lawful — if eligible",
+   "verdict": "Convenient for after-tax salary, up to CNY 300,000 per transfer",
+   "who": "Non-mainland-Chinese nationals who work or worked in China and have a China tax record from the last 3 years.",
+   "limit": "CNY 300,000 per transfer by bank app, CNY 50,000 by Alipay; overall limit is your after-tax China salary.",
+   "cost": "Fee shown at quote time; five sampled quotes are in the cost ladder.",
+   "pros": [
+    "No branch visit",
+    "Mid-market rate with a visible fee"
+   ],
+   "cons": [
+    "Per-transfer and salary-based limits",
+    "Only to an account you own"
+   ],
+   "steps": [
+    {
+     "t": "Check eligibility: not a mainland Chinese national, worked in China, tax record within 3 years.",
+     "src": [
+      "PR-WISE"
+     ]
+    },
+    {
+     "t": "Upload the tax record; your limit is your after-tax China salary.",
+     "src": [
+      "PR-WISE"
+     ]
+    },
+    {
+     "t": "Create a CNY to USD transfer to an account in your own name and get the live quote.",
+     "src": [
+      "PR-WISEFEE"
+     ]
+    },
+    {
+     "t": "Pay from your China bank app (up to CNY 300,000 per transfer) or Alipay (up to CNY 50,000).",
+     "src": [
+      "PR-WISE"
+     ]
+    }
+   ],
+   "src": [
+    "PR-WISE",
+    "PR-WISEFEE"
+   ],
+   "flags": [
+    "F06"
+   ],
+   "ladder": "wise"
+  },
+  {
+   "id": "M11",
+   "cat": "provider",
+   "name": "Western Union through a partner bank",
+   "status": "Limited",
+   "verdict": "Not usable for a bank-to-bank transfer right now",
+   "who": "Customers of partner banks; a passport is accepted as ID, subject to bank restrictions.",
+   "limit": "",
+   "cost": "",
+   "pros": [
+    "Receiver can collect cash without a bank account"
+   ],
+   "cons": [
+    "Bank-account delivery shown as temporarily unavailable",
+    "Fees and limits not published",
+    "Banks restrict some countries and passport holders"
+   ],
+   "steps": [
+    {
+     "t": "Ask a partner bank branch whether it serves your passport and destination.",
+     "src": [
+      "PR-WU"
+     ]
+    },
+    {
+     "t": "Send for cash pick-up and give the receiver the tracking number.",
+     "src": [
+      "PR-WU"
+     ]
+    }
+   ],
+   "src": [
+    "PR-WU"
+   ],
+   "flags": [
+    "F07"
+   ],
+   "ladder": "blank"
+  },
+  {
+   "id": "M12",
+   "cat": "physical",
+   "name": "Carry USD cash out of China",
+   "status": "Lawful within limits",
+   "verdict": "Only for small amounts",
+   "who": "Any traveller.",
+   "limit": "Up to USD 5,000 without a permit; USD 5,000–10,000 with a bank permit; above USD 10,000 not allowed in principle.",
+   "cost": "FX margin 0.2094% on the cash purchase; permit fee waived until 2026-12-31.",
+   "pros": [
+    "No wire fees"
+   ],
+   "cons": [
+    "USD 10,000 ceiling per trip",
+    "Theft and loss risk",
+    "US report above USD 10,000; breaches fined up to 20%"
+   ],
+   "steps": [
+    {
+     "t": "Buy USD cash at the bank (same documents as M01 for a foreign individual).",
+     "src": [
+      "CN-ART59",
+      "CN-FXBOARD"
+     ]
+    },
+    {
+     "t": "For USD 5,000–10,000 ask the bank for the carrying permit (携带外汇出境许可证).",
+     "src": [
+      "CN-CASH",
+      "CN-BOCTARIFF"
+     ]
+    },
+    {
+     "t": "Do not carry more than USD 10,000 equivalent.",
+     "src": [
+      "CN-CASH"
+     ]
+    },
+    {
+     "t": "On arrival in the US, report on FinCEN Form 105 if the total exceeds USD 10,000.",
+     "src": [
+      "US-CBP"
+     ]
+    }
+   ],
+   "src": [
+    "CN-CASH",
+    "US-CBP"
+   ],
+   "flags": [],
+   "ladder": "cash"
+  },
+  {
+   "id": "M13",
+   "cat": "physical",
+   "name": "Withdraw abroad with a mainland bank card",
+   "status": "Lawful within limits",
+   "verdict": "Capped at CNY 100,000 a year",
+   "who": "Holder of a mainland bank card.",
+   "limit": "CNY 100,000 per person per calendar year; CNY 10,000 per card per day.",
+   "cost": "Bank of China: CNY 12 + 1% per withdrawal (maximum CNY 112), plus card-scheme rate and ATM-owner surcharge.",
+   "pros": [
+    "No documents at the time of withdrawal"
+   ],
+   "cons": [
+    "Annual cap is small compared with a large balance",
+    "Over 1% in bank fees before the exchange rate",
+    "Exceeding the cap suspends withdrawals for the rest of that year and the next"
+   ],
+   "steps": [
+    {
+     "t": "Withdraw at an ATM abroad, at most CNY 10,000 equivalent per card per day.",
+     "src": [
+      "CN-CARD"
+     ]
+    },
+    {
+     "t": "Stop at CNY 100,000 equivalent for the calendar year across all your cards; do not use other people's cards.",
+     "src": [
+      "CN-CARD"
+     ]
+    },
+    {
+     "t": "Expect CNY 12 + 1% per withdrawal from Bank of China and possibly a surcharge from the ATM owner.",
+     "src": [
+      "CN-BOCTARIFF"
+     ]
+    }
+   ],
+   "src": [
+    "CN-CARD",
+    "CN-BOCTARIFF"
+   ],
+   "flags": [
+    "F08"
+   ],
+   "ladder": "atm"
+  },
+  {
+   "id": "M14",
+   "cat": "physical",
+   "name": "Carry CNY cash out and exchange abroad",
+   "status": "Lawful within limits",
+   "verdict": "Negligible capacity",
+   "who": "Any traveller.",
+   "limit": "",
+   "cost": "",
+   "pros": [
+    "Simple"
+   ],
+   "cons": [
+    "Limit figure seen only in an excerpt (CNY 20,000 per trip)",
+    "Exchange rate abroad not verified"
+   ],
+   "steps": [
+    {
+     "t": "Check the current CNY cash limit before travelling.",
+     "src": [
+      "CN-CNYCASH"
+     ]
+    }
+   ],
+   "src": [
+    "CN-CNYCASH"
+   ],
+   "flags": [
+    "F10"
+   ],
+   "ladder": "blank"
+  },
+  {
+   "id": "X01",
+   "cat": "prohibited",
+   "name": "Splitting the amount or borrowing other people's USD 50,000 quotas",
+   "status": "Prohibited",
+   "verdict": "Do not use",
+   "who": "",
+   "limit": "",
+   "cost": "Fine up to 30% of the amount; 30%–100% if serious.",
+   "pros": [],
+   "cons": [
+    "Explicitly banned as evading quota supervision",
+    "Fines and possible criminal liability",
+    "US gift reporting if money arrives from other people"
+   ],
+   "steps": [],
+   "src": [
+    "CN-MEASURES",
+    "CN-FXREG"
+   ],
+   "flags": [],
+   "ladder": "penalty"
+  },
+  {
+   "id": "X02",
+   "cat": "prohibited",
+   "name": "Underground banks and private currency swaps",
+   "status": "Prohibited",
+   "verdict": "Do not use",
+   "who": "",
+   "limit": "",
+   "cost": "Fine up to 30% of the amount; 30%–100% if serious.",
+   "pros": [],
+   "cons": [
+    "Private or disguised trading of foreign exchange is illegal",
+    "Confiscation, fines and possible criminal liability",
+    "No recourse if the counterparty disappears"
+   ],
+   "steps": [],
+   "src": [
+    "CN-FXREG"
+   ],
+   "flags": [],
+   "ladder": "penalty"
+  },
+  {
+   "id": "X03",
+   "cat": "prohibited",
+   "name": "False or borrowed documents to buy foreign exchange",
+   "status": "Prohibited",
+   "verdict": "Do not use",
+   "who": "",
+   "limit": "",
+   "cost": "Fine up to 30% of the amount; 30%–100% if serious.",
+   "pros": [],
+   "cons": [
+    "Obtaining foreign exchange with false documents is punished as illegal arbitrage",
+    "Untrue documents alone: fine up to CNY 50,000 for an individual"
+   ],
+   "steps": [],
+   "src": [
+    "CN-FXREG",
+    "CN-MEASURES"
+   ],
+   "flags": [],
+   "ladder": "penalty"
+  },
+  {
+   "id": "X04",
+   "cat": "prohibited",
+   "name": "Crypto (for example buying USDT with CNY)",
+   "status": "Prohibited",
+   "verdict": "Do not use",
+   "who": "",
+   "limit": "",
+   "cost": "",
+   "pros": [],
+   "cons": [
+    "Exchange between legal tender and virtual currency is an illegal financial activity in China",
+    "Banks and payment firms may not serve it",
+    "Related civil acts can be void and losses are your own"
+   ],
+   "steps": [],
+   "src": [
+    "CN-CRYPTO"
+   ],
+   "flags": [],
+   "ladder": "crypto"
+  }
+ ]
+}

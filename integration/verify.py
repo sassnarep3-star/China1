@@ -18,7 +18,7 @@ from urllib.parse import unquote, urlsplit
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "integration"
 GENERATED = [
-    ROOT / "index.html", OUT / "costs.html", OUT / "methods.html",
+    ROOT / "legacy-portal.html", OUT / "costs.html", OUT / "methods.html",
     OUT / "tax.html", OUT / "review.html", OUT / "evidence.html",
     OUT / "methodology.html", OUT / "costs.json", OUT / "costs.csv",
     OUT / "evidence.json",
@@ -156,7 +156,7 @@ methods_html = (OUT / "methods.html").read_text(encoding="utf-8")
 assert methods_html.count('data-label="Candidate"') == 43
 for mid in [f"P{i:02d}" for i in range(1, 10)] + [f"R{i:02d}" for i in range(1, 14)] + [f"B{i:02d}" for i in range(1, 9)] + [f"A{i:02d}" for i in range(1, 6)] + [f"X{i:02d}" for i in range(1, 9)]:
     assert f"method-{mid}.html" in methods_html, mid
-root = (ROOT / "index.html").read_text(encoding="utf-8")
+root = (ROOT / "legacy-portal.html").read_text(encoding="utf-8")
 for required in ("edition-h/site/index.html", "edition-g/docs/index.html", "edition-f/site/index.html", "edition-e/site/index.html", "edition-d/docs/index.html", "edition-c/docs/index.html", "edition-b/index.html", "dossier/index.html", "docs/index.html", "overview.html", "pages/estimates.html", "COORDINATION.md"):
     assert required in root, required
 assert "under 1% at every size" not in root

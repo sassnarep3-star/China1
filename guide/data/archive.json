@@ -1,0 +1,95 @@
+{
+ "how_to_add": "Any session may append one entry here for its own component once that component is on main, then run python3 guide/build/build.py and commit the regenerated guide/archive.html. No other guide file needs to change.",
+ "entries": [
+  {
+   "href": "legacy-portal.html",
+   "title": "Previous consolidated portal",
+   "note": "The landing page before this guide; links every older edition."
+  },
+  {
+   "href": "edition-abd04d5f/index.html",
+   "title": "Edition abd04d5f",
+   "note": "Parallel edition of 2026-11-10 with its own cost model and repository review."
+  },
+  {
+   "href": "edition-l/site/index.html",
+   "title": "Edition L",
+   "note": "Parallel edition of 2026-11-10: measured spread, five cost ladders."
+  },
+  {
+   "href": "edition-k/site/index.html",
+   "title": "Edition K",
+   "note": "Parallel edition of 2026-11-10: priced ladder, 21 routes."
+  },
+  {
+   "href": "integration/costs.html",
+   "title": "Previous cost ladder",
+   "note": "Sender-fee arithmetic at CNY 6.6903 per USD, other parts blank."
+  },
+  {
+   "href": "edition-j/site/index.html",
+   "title": "Edition J",
+   "note": "21 methods, 10 ladders."
+  },
+  {
+   "href": "edition-i/site/index.html",
+   "title": "Edition I",
+   "note": "21 methods, 20 sources."
+  },
+  {
+   "href": "edition-h/site/index.html",
+   "title": "Edition H",
+   "note": "43 candidates."
+  },
+  {
+   "href": "edition-g/docs/index.html",
+   "title": "Edition G",
+   "note": ""
+  },
+  {
+   "href": "edition-f/site/index.html",
+   "title": "Edition F",
+   "note": ""
+  },
+  {
+   "href": "edition-e/site/index.html",
+   "title": "Edition E",
+   "note": ""
+  },
+  {
+   "href": "edition-d/docs/index.html",
+   "title": "Edition D",
+   "note": "Historical scenario model."
+  },
+  {
+   "href": "edition-c/docs/index.html",
+   "title": "Edition C",
+   "note": ""
+  },
+  {
+   "href": "edition-b/index.html",
+   "title": "Edition B",
+   "note": ""
+  },
+  {
+   "href": "dossier/index.html",
+   "title": "Dossier",
+   "note": ""
+  },
+  {
+   "href": "docs/index.html",
+   "title": "Supplemental dashboard",
+   "note": ""
+  },
+  {
+   "href": "overview.html",
+   "title": "Original overview",
+   "note": ""
+  },
+  {
+   "href": "pages/estimates.html",
+   "title": "Original estimate table",
+   "note": ""
+  }
+ ]
+}

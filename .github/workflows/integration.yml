@@ -14,8 +14,8 @@ jobs:
         run: |
           python3 integration/build.py
           python3 integration/verify.py
-          git diff --exit-code -- index.html integration
+          git diff --exit-code -- legacy-portal.html integration
       - name: Verify archived generator preserves the integrated portal
         run: |
           python3 edition-d/build/build.py
-          git diff --exit-code -- index.html edition-d/docs
+          git diff --exit-code -- legacy-portal.html edition-d/docs

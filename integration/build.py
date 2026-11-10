@@ -80,7 +80,7 @@ CSS = r"""
 """
 
 NAV = [
-    ("index.html", "Overview"), ("integration/costs.html", "Cost ladder"),
+    ("legacy-portal.html", "Overview"), ("integration/costs.html", "Cost ladder"),
     ("integration/methods.html", "Methods & steps"), ("integration/tax.html", "Tax & reporting"),
     ("integration/evidence.html", "Sources"), ("integration/review.html", "Flagged for Review"),
     ("edition-l/site/index.html", "Edition L — costed"),
@@ -123,7 +123,7 @@ def shell(slug, title, body) -> str:
         current = ' aria-current="page"' if href == slug else ""
         nav_items.append(f'<a href="{prefix}{href}"{current}>{e(label)}</a>')
     nav = "".join(nav_items)
-    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Source-linked CNY to USD routes, conditional sender-fee estimates, China and U.S. tax analysis"><title>{e(title)} · China Money</title><style>{CSS}</style></head><body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="{prefix}index.html">China Money</a><span class="subtitle">CNY → USD · consolidated official/primary-source review · {CHECKED} UTC</span></header><nav aria-label="Main navigation">{nav}</nav><main id="main">{body}</main><footer>Blank = unverified, never zero · Partial estimates are not all-in quotes.<br>Educational research, not individualized legal, tax, investment or immigration advice. <a href="{prefix}COORDINATION.md">Coordination</a> · <a href="{prefix}integration/methodology.html">Methodology</a></footer></body></html>'''
+    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Source-linked CNY to USD routes, conditional sender-fee estimates, China and U.S. tax analysis"><title>{e(title)} · China Money</title><style>{CSS}</style></head><body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="{prefix}legacy-portal.html">China Money</a><span class="subtitle">CNY → USD · consolidated official/primary-source review · {CHECKED} UTC</span></header><nav aria-label="Main navigation">{nav}</nav><main id="main">{body}</main><footer>Archived consolidated portal — superseded by the <a href="{prefix}index.html">current guide</a> (session arena-eb9f0490).<br>Blank = unverified, never zero · Partial estimates are not all-in quotes.<br>Educational research, not individualized legal, tax, investment or immigration advice. <a href="{prefix}COORDINATION.md">Coordination</a> · <a href="{prefix}integration/methodology.html">Methodology</a></footer></body></html>'''
 
 
 def cost_rows():
@@ -195,7 +195,8 @@ def build_index(rows):
         assert (ROOT / href).is_file(), href
         body += f'<a href="{href}">{e(title)}</a>'
     body += "</div>"
-    (ROOT / "index.html").write_text(shell("index.html", "Overview", body), encoding="utf-8")
+    # Root index.html is owned by guide/build/build.py since session arena-eb9f0490; this portal is archived.
+    (ROOT / "legacy-portal.html").write_text(shell("legacy-portal.html", "Overview", body), encoding="utf-8")
 
 
 def build_costs(rows):
