@@ -1,0 +1,52 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Source-linked CNY to USD routes, conditional sender-fee estimates, China and U.S. tax analysis"><title>Methodology · China Money — Edition J</title><style>
+:root{--navy:#102a43;--blue:#1769aa;--teal:#087f5b;--ink:#172b3a;--muted:#5c6f7c;--bg:#f4f7fa;--line:#d9e2ec;--warn:#8a4b00;--warnbg:#fff4d6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.58 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+a{color:var(--blue);text-underline-offset:2px}a:focus-visible{outline:3px solid #b57600;outline-offset:2px}
+.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:#fff;padding:8px;z-index:20}
+header{background:var(--navy);color:#fff;padding:18px 16px}header a{color:#fff;text-decoration:none}
+.brand{font-weight:800;font-size:1.15rem}.subtitle{display:block;color:#d9eaf7;font-size:.84rem;margin-top:3px}
+nav{display:flex;gap:6px;overflow-x:auto;padding:10px 12px;background:#fff;border-bottom:1px solid var(--line);white-space:nowrap}
+nav a{text-decoration:none;padding:7px 10px;border-radius:8px;font-size:.88rem}nav a[aria-current]{background:var(--navy);color:#fff}
+main{max-width:1180px;margin:auto;padding:20px 14px 64px}h1{font-size:clamp(1.7rem,4vw,2.5rem);line-height:1.16;margin:.15em 0 .45em}
+h2{font-size:1.35rem;line-height:1.25;margin-top:1.8em}h3{font-size:1.08rem}p{max-width:88ch}
+.hero{padding:26px 20px;background:linear-gradient(135deg,#102a43,#1769aa);color:#fff;border-radius:16px}.hero p{max-width:78ch}.hero a{color:#fff}
+.lead{font-size:1.08rem}.muted,small{color:var(--muted)}small{display:block;font-size:.78rem}
+.notice{border-left:5px solid #d97706;background:var(--warnbg);padding:13px 15px;border-radius:8px;margin:14px 0}
+.good{border-left-color:var(--teal);background:#e7f6ef}.danger{border-left-color:#9b1c1c;background:#fee2e2}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:12px}.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;margin:12px 0}
+.cards .card{margin:0;text-decoration:none;color:inherit}.card strong{color:var(--teal)}.card p{margin:.45em 0 0}
+.kpi{font-size:1.65rem;font-weight:800;color:var(--teal)}
+.button{display:inline-block;background:var(--navy);color:#fff;text-decoration:none;padding:9px 13px;border-radius:8px;margin:3px 5px 3px 0}
+.steps li{margin:.5em 0}
+.table-wrap{overflow-x:auto;background:#fff;border:1px solid var(--line);border-radius:10px;margin:12px 0;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:.86rem}th,td{text-align:left;vertical-align:top;padding:10px;border-top:1px solid var(--line)}
+th{background:#eaf0f5;font-size:.73rem;text-transform:uppercase;letter-spacing:.035em}tbody tr:hover{background:#f8fafc}
+.num{white-space:nowrap;font-variant-numeric:tabular-nums}
+.source{display:inline-block;margin:2px 7px 2px 0;font-size:.75rem;white-space:nowrap}
+.badge{display:inline-block;border-radius:5px;padding:2px 6px;font-size:.68rem;font-weight:800;background:#e5e7eb;color:#374151}
+.unverified{background:var(--warnbg);color:var(--warn)}
+.blank{display:inline-block;width:2.8em;border-bottom:2px dotted var(--warn);height:1em;margin-right:5px}
+footer{border-top:1px solid var(--line);padding:20px 14px;text-align:center;color:var(--muted);font-size:.83rem}
+code{overflow-wrap:anywhere}
+@media(max-width:760px){main{padding:14px 10px 48px}.hero{padding:20px 15px}
+.responsive thead{position:absolute;left:-9999px}.responsive,.responsive tbody,.responsive tr,.responsive td{display:block;width:100%}
+.responsive tr{border-top:2px solid var(--line);padding:6px 0}.responsive td{border-top:0;padding:4px 10px}
+.responsive td::before{content:attr(data-label);display:block;font-size:.68rem;font-weight:800;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}}
+</style></head><body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="index.html">China Money<span class="subtitle">Edition J — verified 2026-11-10 · CNY → USD for a U.S. citizen</span></a></header><nav aria-label="Sections"><a href="index.html">Dashboard</a><a href="executive-summary.html">Executive summary</a><a href="methods.html">Methods</a><a href="steps.html">Steps</a><a href="costs.html">Costs</a><a href="taxes.html">Tax & penalties</a><a href="sources.html">Sources</a><a href="flagged.html">Flagged for Review</a></nav><main id="main">
+<h1>Methodology and limitations</h1>
+<h2>Source hierarchy</h2>
+<ol class="steps"><li>Government, regulator, statute, court and official tax guidance for legal/tax claims.</li>
+<li>A bank or provider's own tariff/help page for its own prices and product terms only.</li>
+<li>No blog, forum, aggregator or law-firm summary supports a numeric or legal row.</li></ol>
+<h2>Cost model (worked example: USD 10,000, BOC single wire)</h2>
+<ul><li>P = 10,000 × 6.6866 = CNY66,866.00.</li>
+<li>Commission = 0.1% × P = CNY66.87 (within CNY50–260). Sender fee = 66.87 + 150 = <strong>CNY216.87</strong>.</li>
+<li>FX margin = 10,000 × 0.209813% = <strong>USD 20.98</strong> vs midpoint (indicative).</li>
+<li>Partial subtotal = 20.98 + 216.87/6.6866 = <strong>USD 53.41</strong>. All-in remains blank (receiver/intermediary/tax unknown).</li>
+<li>One transfer assumed. Tranche ladders (L3/L4) repeat the fee per USD50,000 wire — shown to expose the cost of splitting, not to recommend it.</li></ul>
+<p><a class="source" href="https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf" rel="noopener noreferrer" title="Bank of China personal finance tariff, Chapter 3 (2025-11) — Items 210105008, 210108014; notes 4, 5, 10">S06 ↗</a> <a class="source" href="https://www.boc.cn/sourcedb/whpj/" rel="noopener noreferrer" title="Bank of China indicative foreign-exchange board — USD row and disclaimer, captured 2026-11-10 13:49:58 China time">S07 ↗</a> <a class="source" href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-accouts-and-services.pdf" rel="noopener noreferrer" title="HSBC China tariff of accounts and services (effective 2026-10-31) — Items 2.2.4.1–2; notes 3, 7, 10">S08 ↗</a></p>
+<h2>What verification proves (and does not)</h2>
+<p>Mechanical verification proves deterministic arithmetic, source presence, blank semantics and local-link integrity. It does not establish legal correctness, personal eligibility, bank acceptance, an executable quote, or future external-link uptime. Earlier editions are preserved for provenance and are not re-certified here (F13).</p>
+<h2>Safety and legality</h2>
+<p>Quota splitting, underground settlement, fabricated trade and crypto/stablecoin bridges are not tax-saving recommendations. Prohibited candidates have no operational steps. Business, investment and cash routes require real underlying transactions and cannot be used to relabel an unrelated personal balance.</p>
+</main><footer>Blank = unverified, never zero · Partial estimates are not all-in quotes.<br>Educational research, not individualized legal, tax, investment or immigration advice. <a href="../../index.html">Portal</a> · <a href="sources.html">Sources</a></footer></body></html>

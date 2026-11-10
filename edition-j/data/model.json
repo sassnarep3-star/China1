@@ -1,0 +1,14 @@
+{
+  "checked": "2026-11-10",
+  "rate_snapshot": "2026-11-10 13:49:58 China time",
+  "rate_source": "S07",
+  "usd_per_100": {"buy": 665.86, "sell": 668.66, "mid": 667.26},
+  "sell_rate_cny_per_usd": 6.6866,
+  "buy_rate_cny_per_usd": 6.6586,
+  "mid_rate_cny_per_usd": 6.6726,
+  "boc_tt": {"rate": 0.001, "min_cny": 50, "max_cny": 260, "cable_cny": 150, "source": "S06"},
+  "hsbc_pa_tt": {"rate": 0.001, "min_cny": 100, "max_cny": 500, "cable_cny": 120, "source": "S08"},
+  "boc_atm": {"fixed_cny": 12, "rate": 0.01, "max_cny": 112, "source": "S06"},
+  "targets_usd": "10000..400000 step 10000 (40 values)",
+  "notes": "FX margin vs midpoint is indicative only (BOC board disclaimer: actual channel rate controls). Sender fees are published tariffs, not quotes. Receiver/intermediary/document/tax components are unknown and stay blank + UNVERIFIED. Blank never means zero."
+}

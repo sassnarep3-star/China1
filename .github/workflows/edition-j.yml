@@ -1,0 +1,26 @@
+name: Edition J verify
+
+on:
+  push:
+    paths:
+      - 'edition-j/**'
+      - '.github/workflows/edition-j.yml'
+  pull_request:
+    paths:
+      - 'edition-j/**'
+      - '.github/workflows/edition-j.yml'
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Build Edition J
+        run: python3 edition-j/build/build.py
+      - name: Verify Edition J (recompute, links, blanks, determinism)
+        run: python3 edition-j/build/verify.py
+      - name: Assert committed output matches build
+        run: git diff --exit-code -- edition-j/site edition-j/data
