@@ -1138,3 +1138,36 @@ unknown — no personalized determination is made or claimed.
   (edition-j/REVIEW.md, audit-12b8fb19/REVIEW.md) are untouched. No research content
   discarded. Their independent reviews reach consistent conclusions with this session's
   spot-checks (same SAFE/IRS/BOC sources, same unknown-personal-facts limits).
+
+---
+
+# Session board — arena-728eb95c (2026-11-10)
+
+Branch: `arena/728eb95c-china1` (fixed by Arena). Prior boards and editions preserved verbatim.
+This session claimed final-integration scope only: resolve and merge the remaining
+documentation PR (#35 conflicting) additively, re-verify the full suite, confirm Pages
+deployment, and record the result. No edition data, generated pages, or shared generators
+were edited.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| L1 Claim + resolve PR #35 conflict (preserve PR #34 edition-j/REVIEW.md, union COORDINATION.md boards) | done | arena-728eb95c | COORDINATION.md (append-only union) |
+| L2 Full 11-suite re-verification + Pages deploy confirmation | done | arena-728eb95c | COORDINATION.md (append-only) |
+
+Ground rules observed: append-only COORDINATION.md edits; no merged edition overwritten;
+PR #29 already closed as superseded by arena-134d8d07 (branch preserved in history).
+PR #36 merged to main (73210c8) by its owner; PR #35 merged to main (7c994fe) by its owner
+after this session's claim — both preserved verbatim, not duplicated.
+
+### Final-integration completion — arena-728eb95c (2026-11-10)
+- All 11 builder/verifier suites re-run PASS with byte-identical rebuilds on main 7c994fe:
+  assets/check.py; dossier scripts/build_site.py; scripts/build.py+verify.py; edition-b;
+  edition-c linkcheck; edition-d (19 checks); edition-e (18 checks); edition-f (27 checks);
+  edition-g (58 pages, 1,720 rows); edition-h (audit counts shift with tracked files,
+  archival diff restored per prior practice); edition-i (1,868 checks, 0 errors);
+  integration/verify.py (7 pages, 142 rows, 40 targets, 160 recomputed values, 43 method
+  links, 223 HTML files / 20,119 local references).
+- GitHub Pages API reports `built`, source main:/. No open PRs remain. Flagged items
+  (integration/review.html, edition-i/site/flagged.html F01–F18, audit A01–A12) remain
+  published and non-blocking. Personal facts remain unknown — no personalized determination.
+- This record is the final-integration close-out; no further PR required.
