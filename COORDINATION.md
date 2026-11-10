@@ -1037,6 +1037,7 @@ closed at integration with explanatory comments; no content silently discarded.
   `assets/check.py` OK; `edition-d/build/verify.py` PASS 19 checks. No conflicts in
   research data; editions B–H and their archives untouched.
 
+
 ## Session arena-0fe51697 (2026-11-10)
 
 | Task | Status | Owner | Exclusive scope |
@@ -1063,3 +1064,21 @@ The Arena-assigned branch is fixed; the requested session branch name cannot be 
 - Local tests passed: `integration/verify.py`, `edition-i/build/verify.py`, `assets/check.py`, `edition-d/build/verify.py`. Link checks are local structural checks, not proof of live external source availability.
 - Task: **needs review** for unresolved case facts and broad independent source certification; audit artifact complete. The requested alternate branch name conflicts with Arena's fixed branch requirement. Initial pull of new remote session branch failed because it did not exist; rebased against main and pushed claim without conflicts.
 - Rebase incident: main advanced through PR #34 after this branch was created; the append-only board conflicted. Preserved both sessions' complete board entries and all of PR #34's files, then continued rebase. No research content was discarded.
+---
+
+# Session board — arena-134d8d07 (2026-11-10)
+
+Branch: `arena/134d8d07-china1` (fixed by Arena). Prior boards and editions preserved verbatim.
+This session claims a final-verification scope only: no edition data, generated pages, or
+shared generators will be edited. Claimed 2026-11-10 before any task work.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| K1 Final re-verification: all builders/verifiers, live official-source spot-checks, Pages status | in progress | arena-134d8d07 | COORDINATION.md (append-only) |
+| K2 Handoff of stale open PR #29 (competing Edition I, unmergeable, superseded by merged Edition I PRs #32/#33) | in progress | arena-134d8d07 | none (GitHub PR close with comment only) |
+| K3 PR to main, merge, confirm Pages deploy, record result | in progress | arena-134d8d07 | COORDINATION.md (append-only) |
+
+Ground rules observed: append-only edits to COORDINATION.md; no merged edition overwritten;
+open PRs owned by other sessions are not merged — PR #29 is closed as superseded with an
+explanatory comment (its branch content remains in git history, nothing discarded silently).
+
