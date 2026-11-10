@@ -218,3 +218,17 @@ Individual Income Tax Law of the PRC (STA English text, updated 2018-08-31).
 - Art. 2: nine categories (salary and wages; personal services; author's remuneration; royalties; business operation; interest, dividends or bonuses; leasing of assets; transfer of assets; incidental income).
 - Art. 3: "(1) For comprehensive income … progressive tax rates ranging from 3 percent to 45 percent"; "(2) For income from business operation … 5 percent to 35 percent"; "(3) For income from interest, dividends or bonuses, income from leasing of assets, income from transfer of assets, and incidental income, a flat tax rate of 20 percent shall apply."
 - Art. 4(9): treaty exemptions.
+
+### S-IRS-8938-FBAR  https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements  (chunk 0 read)
+- FBAR (FinCEN Form 114): "Aggregate value of financial accounts exceeds $10,000 at any time during the calendar year"; U.S. persons incl. U.S. citizens; "Received by April 15 (6-month automatic extension to Oct 15)"; filed electronically with FinCEN BSA E-Filing, not with the tax return; "Convert to U.S. dollars using the end of the calendar year exchange rate".
+- FBAR penalties (as worded by IRS): "Civil monetary penalties are adjusted annually for inflation. For civil penalty assessment prior to Aug 1, 2016, if non-willful, up to $10,000; if willful, up to the greater of $100,000 or 50 percent of account balances; criminal penalties may also apply".
+- Form 8938 thresholds: living in the US — unmarried/MFS "more than $50,000 on the last day of the tax year, or more than $75,000 at any time during the year"; MFJ "$100,000 … or more than $150,000"; living outside the US — unmarried/MFS "$200,000 … or more than $300,000"; MFJ "$400,000 … or more than $600,000". Attached to the annual return.
+- Form 8938 penalties: "Up to $10,000 for failure to disclose and an additional $10,000 for each 30 days of non-filing after IRS notice of a failure to disclose, for a potential maximum penalty of $60,000; criminal penalties may also apply".
+- "Financial (deposit and custodial) accounts held at foreign financial institutions": reportable on both forms.
+
+### S-IRS-3520  https://www.irs.gov/businesses/gifts-from-foreign-person  (chunk 0 read)
+- "If you are a U.S. person … who received a large gift or bequest from a foreign person, you need to complete Part IV of Form 3520 … If you file Form 3520 late, or if the information provided is incomplete or incorrect, … you may be subject to penalties under IRC section 6039F(c) if you do not have reasonable cause."
+- "For gifts or bequests from a nonresident alien or foreign estate, you are required to report … only if the aggregate amount received from that nonresident alien or foreign estate, or foreign person that you know or have reason to know are related …, exceeds $100,000 during the taxable year. If the gifts or bequests exceed $100,000, you must separately identify each gift in excess of $5,000."
+- "purported gifts from foreign corporations or foreign partnerships … exceeds $20,116 for 2025, and $20,573 for 2026".
+- Due the 15th day of the 4th month after the tax year (April 15); 15th day of the 6th month if living outside the US; extension no later than Oct 15.
+- "a foreign gift or bequest is any amount received from a person other than a U.S. person (a foreign person) that the recipient treats as a gift or bequest and excludes from gross income."
