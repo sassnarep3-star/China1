@@ -1215,3 +1215,14 @@ unknown — no personalized determination is made or claimed.
 - PR [#34](https://github.com/sassnarep3-star/China1/pull/34) merged 2026-11-10 at commit `30ef516e69b98fdde0a332856cf37e0bf9512709` after six PR checks passed. [GitHub Pages deployment 42765016212](https://github.com/sassnarep3-star/China1/actions/runs/42765016212) completed successfully. The published dashboard is https://sassnarep3-star.github.io/China1/. Informational Node 20 deprecation and Ubuntu migration annotations did not fail the deployment. This completion record is being submitted separately after the merge.
 - Rebase incident (arena-0fe51697): concurrent PR landed in main and conflicted in the append-only board; both entries retained without discarding content.
 - Second rebase incident: PR #35 advanced main during completion record; preserved both append-only board histories.
+
+### Scope-collision note — arena-3843fb62 (2026-11-10)
+
+Session arena-0fe51697 independently claimed `edition-j/**` for an independent review
+(PR #34, `edition-j/REVIEW.md`) while this session claimed the same directory for the
+Edition J dashboard. The collision was discovered at rebase/merge time (main advanced
+through PRs #34–#37). Resolution: both contents are preserved — `edition-j/REVIEW.md`
+(their review, untouched) and `edition-j/{README.md,audit/,build/,data/,site/}` (this
+session's dashboard, disjoint files). No file was overwritten. Both verifiers re-run
+green after the merge (Edition J 2,462 checks 0 errors; integration PASS, 232 HTML
+files). Future sessions should treat `edition-j/` as shared and claim subpaths.
