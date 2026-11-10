@@ -136,3 +136,39 @@ SAFE Xiamen 个人外汇业务服务小贴士 (2021-10-22).
 
 ### S-HSBC-CN-TARIFF  https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-accouts-and-services.pdf
 《财富管理及个人银行业务账户和服务费率（2026年10月31日生效）》 — HSBC China. chunk 0 read (notes only): Premier (卓越理财) requires CNY 500,000 average total balance; 运筹理财 (Advance) offered since 2026-03-18 only to specific groups; note 7: fees exclude other institutions' / correspondent banks' charges. Remittance section still to be read.
+
+### S-HSBC-CN-TARIFF (cont.)  chunk 2 read
+Item 2.2.4.1 发出电汇 (海外汇款：汇出汇款：电汇): 私人银行 个人客户 免费; 卓越理财账户 (Premier) "按汇款金额的0.1%收取 每笔最低人民币100元/等值 每笔最高人民币500元/等值 另加电报费"; 运筹理财账户 (Advance) identical 0.1% / min 100 / max 500 + cable.
+Item 2.2.4.2 电报费: Premier 每笔人民币120元/等值; Advance 每笔人民币120元/等值; 私人银行个人 免费.
+备注: "如汇款人要求美元汇出汇款金额划付收款人，我行将预先向汇款人收取人民币200元/等值作为预扣海外代理行费用及我行就此项特殊安排收取的费用，不足部分再根据海外代理行的通知另行收取。" "卓越理财尊尚、卓越理财尊尚国际通客户享受该项服务免费". SHA/BEN/OUR defined: under SHA "如存在收款行或者中转行等费用，款项内扣除". "我行免费指免除汇丰费率表上我行收取的手续费，免除费率范围不包括收款行，中转行等汇款路径中产生的非我行定价费用。"
+Item 2.2.2.1: 提取外币现钞 免费; USD cash ≥ 5,000 needs 3 working days' booking.
+HSBC Global Transfers (环球转账): NOT yet read in the current tariff. Search snippets from hsbc.com.cn documents (undated "INTERNAL"-marked PDF https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/download/环球网上银行转账服务.pdf and a 2024-10 notice) say Premier free / Advance CNY 50 (USD 7) per transfer, daily cumulative USD 200,000; 境内个人 outbound single and daily max USD 50,000. -> UNVERIFIED against the 2026-10-31 tariff; do not use as a cost input.
+
+### S-ICBC-TARIFF  https://www.icbc.com.cn/column/1438058326864052304.html
+中国工商银行服务价目表: "本服务价目表自2026年8月8日起生效". Chapter 3 section 6 (国际业务) is published ONLY AS AN IMAGE (https://v.icbc.com.cn/userfiles/Resources/ICBC/fwjm/images/2026/di3zhangdi6jie202605.gif). Not machine-readable in this session -> ICBC cross-border remittance fee stays BLANK / unverified.
+
+### S-CMB-FEE  https://www.cmbchina.com/PersonalBank/Page/standfee.htm   (seen in official search result snippet only; page itself not opened)
+"向境外银行账户汇款：(1)若费用承担为“共同SHA”方式：手续费0.1%，最低人民币100元，最高1000元；电报费为100-150元" — undated page. -> not used as a cost input unless the page is opened and read.
+
+### S-CCB-FEE  (search snippets from ccb.com pages dated 2012 and 2016)
+"手续费（汇款本金的0.1%，最低20元，最高300元）及电报费（80元/笔）" — stale (2012 / 2016) -> not used.
+
+### S-WISE-GUIDE  https://wise.com/help/articles/2955298/guide-to-cny-transfers  (both chunks read)
+"Sending from CNY": "You can send money from CNY if: You're not mainland Chinese (Taiwan, Hong Kong, Macau eligible); You're working or have worked in China before; You have a valid tax record issued by the China tax authority showing taxes paid within the last 3 years".
+"Due to regulations, you can only send CNY from China to another account you own." "sending from CNY is only available for personal accounts".
+Limits: "China bank app … the maximum you can send in one transfer is 300,000 CNY." "Alipay … 50,000 CNY."
+"overall limit … In general, your overall limit is the amount of salary you've earned in China after deducting the amount of tax paid in China. Your sending limit does not expire."
+"Wise is collaborating with a licensed third party payment provider (regulated by the People's Bank of China)". Pay-in account branch "拉卡拉-备付金账户". Verification 1-2 working days; money reaches Wise 0-1 working days; "Conversion can take up to 2 working days".
+Skyremit users share the same limit.
+
+### S-WISE-PAGE  https://wise.com/us/send-money/send-money-to-the-usa-from-china?sourceAmount=66851
+"1 CNY = 0.1499 USD"; "Sending 66,851 CNY — Bank transfer — 435.70 CNY"; "We use the mid-market exchange rate"; "This feature is only available for foreign and non-mainland Chinese individuals who have worked or are currently working in China."
+FAQ on the page: the US 1% remittance excise tax from 2026-01-01 applies to transfers sent FROM the US by cash, checks or money orders — not to digital transfers.
+
+### S-WISE-QUOTES  https://wise.com/gateway/v1/price?sourceAmount={N}&sourceCurrency=CNY&targetCurrency=USD&profileCountry=CN
+(the JSON behind Wise's public calculator; option payInMethod BANK_TRANSFER / payOutMethod BANK_TRANSFER; midRate 0.149924 USD per CNY in every response)
+| sourceAmount CNY | total fee CNY | variableFee | flatFee | volume discount | targetAmount USD |
+| 66,711  | 434.84  | 410.92  | 23.92 | none    | 9,936.39  |
+| 133,422 | 845.90  | 821.98  | 23.92 | none    | 19,876.34 |
+| 300,000 | 1,741.62| 1,717.70| 23.92 | -131.51 (HAT_VOLUME_DISCOUNT) | 44,716.09 |
+Alipay pay-in for comparison (ALIPAY -> DIRECT_DEBIT): 66,711 -> total 1,312.27 (payInFee 882.88); 133,422 -> 2,601.09.
