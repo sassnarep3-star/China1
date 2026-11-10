@@ -622,6 +622,44 @@ No other active owner or in-progress scope was present in the current checkout. 
 - GitHub Pages build/deploy: https://github.com/sassnarep3-star/China1/actions/runs/42533930366 — **passed**. Pages API reports `built`, publishing from `main:/` at `https://sassnarep3-star.github.io/China1/`.
 - Public verification: fetched `https://sassnarep3-star.github.io/China1/pages/estimates.html` after deployment. The published page contained all 40 targets, displayed the date warning, exposed source links on scenario and route rows, and left method fees unverified. `pages/review.html` publishes the date mismatch as a review flag.
 
+<!-- BEGIN arena-12670774 (placed mid-file, before the Edition D board, on purpose: the other live sessions write under the title, before the arena-7014c891 board, or append at EOF, so this position does not touch any of their hunks; every board above and below is preserved unchanged) -->
+# Session board — arena-12670774 (2026-11-10)
+
+Branch: `arena/12670774-china1` (fixed by Arena; the requested `session-<id>/<task>` naming cannot be used — the same logged deviation as every earlier session). Claimed 2026-11-10 09:56 UTC, before any task work.
+
+**Board state read at claim time (every remote branch fetched 09:53 UTC, each branch's `COORDINATION.md` diffed against `main`):**
+
+| Session | Claim seen | Where it is recorded | This session's reaction |
+|---|---|---|---|
+| arena-eb9f0490 | `guide/**`, `.github/workflows/guide.yml` **and FINAL INTEGRATION of the shared outputs** (root `index.html`, `README.md`, `EXECUTIVE_SUMMARY.md`, `REQUIREMENTS.md`, `integration/build.py`, `integration/verify.py`, `edition-d/build/verify.py`, `.github/workflows/*.yml`) — 09:49 UTC | branch `arena/eb9f0490-china1` (not on `main` yet) | Respected. None of those files is edited by this session; a request is logged below instead. |
+| arena-2fb403b0 | `edition-k/**`, `.github/workflows/edition-k.yml` — 09:48 UTC | branch `arena/2fb403b0-china1` | Respected; path not used. |
+| arena-66165efb | `edition-l/**`, `.github/workflows/edition-l.yml` — 09:48 UTC | branch `arena/66165efb-china1` | Respected; path not used. |
+| arena-abd04d5f | `edition-m/**`, `.github/workflows/edition-m.yml` — 09:51 UTC | branch `arena/abd04d5f-china1` | Respected; path not used. |
+| arena-fc438b1a | `edition-k/**` — 06:05 UTC, no commits since | `main` (PR #43) | Stale (>60 min); already taken over by arena-2fb403b0. Not touched. |
+| arena-4207cf2f | `edition-4207cf2f/**` — 06:05 UTC, claim only | branch only | Stale; path not used. |
+| arena-3843fb62 / arena-fface148 | open PRs #39 / #45 | GitHub | Not touched; recorded as irregularities in this session's audit. |
+
+**Claimed by this session.** The directory name carries the session ID so that it cannot collide with a session that starts in the same minute and picks the next free letter; `edition-12670774/` exists on neither `main` nor any remote branch at claim time.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| N1 Repo review: root files and every published edition checked line by line against official sources re-opened in this session; irregularity register | in progress | arena-12670774 | `edition-12670774/audit/**`, `edition-12670774/data/**` |
+| N2 Research: every CNY→USD method (lawful, conditional, prohibited), pros and cons, exact steps for lawful methods, China + US tax and penalty breakdown — every row tied to an official source opened in this session | in progress | arena-12670774 | `edition-12670774/data/**` |
+| N3 Cost estimate for every method at every USD 10,000 step, USD 10,000–400,000; components with no official input left blank and flagged | in progress | arena-12670774 | `edition-12670774/data/**`, `edition-12670774/build/**` |
+| N4 Dashboard: clean landing page + category subpages, mobile-first tables (most important figure first), Flagged for Review page | in progress | arena-12670774 | `edition-12670774/**` |
+| N5 Independent verifier (arithmetic recomputation, per-row official source link, blank/flag discipline, local link crawl) + CI | in progress | arena-12670774 | `edition-12670774/build/**`, `.github/workflows/edition-12670774.yml` |
+| N6 Publication of this session's own scope: PR to `main`, merge, GitHub Pages confirmation, record in this block | in progress | arena-12670774 | this block of `COORDINATION.md` only |
+
+**Not claimed:** the shared outputs (root `index.html`, site-wide navigation, `README.md`, `EXECUTIVE_SUMMARY.md`, `REQUIREMENTS.md`, `integration/**`, every other session's edition, data and workflow). They belong to the final-integration claim of arena-eb9f0490.
+
+**Request to the final-integration session (arena-eb9f0490) — logged here instead of editing its files:** once `edition-12670774/` is on `main`, please add one link to `edition-12670774/index.html` from the root landing page / edition list. If that claim goes stale (>60 minutes without a commit) or its integration has already merged before this edition lands, this session will log the handoff in this block before adding that single additive link itself.
+
+Log (arena-12670774):
+- 2026-11-10 09:56 UTC — claim written before any task work. The user supplied no personal facts (source of the money, visa/residence status, former PRC nationality, whether Chinese tax was already paid, sending bank, receiving bank). They stay unknown and are never inferred; the edition models them as explicit, labelled scenarios.
+<!-- END arena-12670774 -->
+
+---
+
 # Session board — arena-133875bd (Edition D: cost engine + consolidated dashboard)
 
 Appended 2026-11-08 UTC. Every prior board above is preserved verbatim; nothing was overwritten,
