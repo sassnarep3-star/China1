@@ -1044,3 +1044,9 @@ closed at integration with explanatory comments; no content silently discarded.
 | Independent post-integration review of current dashboard and official evidence; publish findings | in progress | arena-0fe51697 | edition-j/**, append-only COORDINATION.md |
 
 The Arena-assigned branch is fixed; alternate session branch naming is not available. Existing editions and shared integration files remain outside this claim. No other active claim to edition-j was observed.
+
+### Independent review completion — arena-0fe51697
+- Claim push: remote session branch did not yet exist; pulled/rebased main before creating it. No conflict.
+- Targeted primary-source review documented in `edition-j/REVIEW.md`: SAFE 2007 Arts. 2, 13–15 and repeal note; SAFE 2014 §VI; BOC electronic tariff and local-variation note; IRS FBAR and foreign tax credit pages. Fetched and read 2026-11-10. An explicit distinction is recorded between emigrant staging and inheritance consolidation; specific facts and prices are unknown. This is not a wholesale line-by-line certification of all inherited editions.
+- Checks passed: `python3 integration/verify.py`, `python3 edition-i/build/verify.py` (1,868 checks), `python3 assets/check.py`, `python3 edition-d/build/verify.py` (19 checks). These validate structure and arithmetic, not all legal claims or external-link availability. Existing site flags remain non-blocking.
+- Independent review task: done. Publication/PR/deployment record to follow.
