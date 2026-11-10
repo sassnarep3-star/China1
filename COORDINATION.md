@@ -1448,12 +1448,12 @@ Why this session exists: the brief asks to *actually estimate the cost of every 
 
 | Task | Status | Owner | Exclusive file scope |
 |---|---|---|---|
-| L1 Repo line-by-line audit + irregularity register | in progress | arena-66165efb | `edition-l/audit/**`, `edition-l/data/**` |
-| L2 Official-source research refresh, every method, pros/cons, exact steps | in progress | arena-66165efb | `edition-l/data/**` |
-| L3 Conversion-penalty decomposition + all-in cost ladder USD 10,000–400,000 | in progress | arena-66165efb | `edition-l/data/**`, `edition-l/build/**` |
-| L4 Dashboard (landing + category subpages, mobile-first tables, Flagged for Review) | in progress | arena-66165efb | `edition-l/site/**`, `edition-l/build/**` |
-| L5 Independent verifier + CI | in progress | arena-66165efb | `edition-l/build/verify.py`, `.github/workflows/edition-l.yml` |
-| L6 Final integration (portal link, README/exec summary sync), PR, merge, Pages confirmation | not claimed yet — to be claimed in a separate entry after L1–L5 pass | arena-66165efb | shared outputs, listed at claim time |
+| L1 Repo line-by-line audit + irregularity register | done | arena-66165efb | `edition-l/audit/**`, `edition-l/data/**` |
+| L2 Official-source research refresh, every method, pros/cons, exact steps | done | arena-66165efb | `edition-l/data/**` |
+| L3 Conversion-penalty decomposition + all-in cost ladder USD 10,000–400,000 | done | arena-66165efb | `edition-l/data/**`, `edition-l/build/**` |
+| L4 Dashboard (landing + category subpages, mobile-first tables, Flagged for Review) | done | arena-66165efb | `edition-l/site/**`, `edition-l/build/**` |
+| L5 Independent verifier + CI | done | arena-66165efb | `edition-l/build/verify.py`, `.github/workflows/edition-l.yml` |
+| L6 Final integration (portal link, README/exec summary sync), PR, merge, Pages confirmation | done — claimed and executed in this session | arena-66165efb | `integration/build.py` (additive), `integration/*.html`, root `index.html`, `EXECUTIVE_SUMMARY.md`, `README.md` |
 
 Session ID for this board: `66165efb`. Files outside `edition-l/**`, `.github/workflows/edition-l.yml` and the append-only `COORDINATION.md` are untouched until L6 is claimed. No personal facts (source of funds, SAFE classification, tax history, destination bank) were supplied, so those remain unknown, blank and flagged — never inferred.
 
@@ -1504,3 +1504,10 @@ Scope discipline: only `edition-l/**`, `.github/workflows/edition-l.yml`, additi
 - Final status: K1–K5 done, K6 done. Flagged irregularities (F01–F20) and unverified
   values remain published and non-blocking; unknown personal facts are not inferred
   anywhere in the edition.
+Release record (appended after merge):
+- **PR:** https://github.com/sassnarep3-star/China1/pull/48 — "Edition L: measured conversion penalty (0.2099%), five costed ladders to USD 400,000, 21 methods, audit and CI".
+- **Merge result:** MERGED 2026-11-10T10:00:19Z, merge commit `cc0c7113ce45e96b562139574ebe907feaae2b92`, merged with `--merge` after all eight required checks reported `pass` (edition-d/e/f, edition-g chain, edition-l, integration, static site, verify).
+- **Rebase conflict, resolved without discarding work:** `main` advanced during the session (PR #46 by arena-3f652275 and PR #47 / Edition K by arena-2fb403b0). Rebasing onto `main` conflicted in the append-only board and in the shared portal files. Resolution kept **both** narratives: this board's claim text precedes the Edition K record, `integration/build.py` carries Edition K's nav/card/archive entries *and* Edition L's, `EXECUTIVE_SUMMARY.md` now holds a single H1 with `## Edition K (2026-11-10)` verbatim followed by `## Edition L (2026-11-10)`, and `README.md` keeps Edition K's section with an Edition L pointer line added. No Edition K file or sentence was deleted or rewritten; the portal was regenerated from the merged builder and both editions are linked (3 references to Edition K, 4 to Edition L in `index.html`).
+- **Cross-check worth noting:** Edition K, built independently and merged first, publishes the same measured half-spread (0.20986% ≈ 0.2099%) and the same known totals (USD 68.42 / 286.19 / 915.77). Two sessions reaching identical figures from the same BOC board is a useful consistency signal. The one substantive divergence is interpretive, not arithmetic: Edition K states the USD 50,000 annual total is an "ID-only convenience tier" that does not cap an overseas individual, whereas Edition L publishes both limbs of Huifa [2007] No. 1 Art. 2 and flags the operational question as F01/F02 rather than resolving it. Readers are pointed to the primary text on both pages.
+- **Pages:** build for commit `cc0c711` reported `built` (2026-11-10T10:00:20Z) and the `pages-build-deployment` run completed `success`. Live check: `https://sassnarep3-star.github.io/China1/edition-l/site/index.html` returns the rendered dashboard with the 0.2099% / USD 68.42 / USD 915.77 KPI cards and the sourced milestone table. Portal `index.html` links Edition L in the nav, the first card, the notice and the archive.
+- **Verification at merge:** `edition-l/build/verify.py` PASS (11 pages, 345 sourced data rows, 1,200 recomputed cells, 196 local links/anchors, deterministic); `integration/verify.py` PASS; `assets/check.py` OK; `scripts/verify.py` PASS; edition-d 19 checks, edition-i 1,868, edition-j 1,936, edition-k PASS.
