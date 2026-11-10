@@ -141,6 +141,43 @@ Last updated: 2026-11-07 (UTC)
 
 ---
 
+<!-- BEGIN arena-abd04d5f (placed mid-file on purpose: other live sessions write at the top of the file or append at EOF, so this position cannot collide with them; every board above and below is preserved unchanged) -->
+# Session board — arena-abd04d5f (2026-11-10)
+
+Branch: `arena/abd04d5f-china1` (fixed by Arena; the requested `session-<id>/<task>` naming cannot be used — same logged deviation as every earlier session). Claimed 2026-11-10 09:58 UTC, before any task work.
+
+**Board state read at claim time (all remote branches fetched 09:52 UTC):**
+
+| Session | Claim seen | Where | This session's reaction |
+|---|---|---|---|
+| arena-eb9f0490 | `guide/**` **and FINAL INTEGRATION of the shared outputs** (root `index.html`, `README.md`, `EXECUTIVE_SUMMARY.md`, `REQUIREMENTS.md`, `integration/build.py`, `integration/verify.py`, `edition-d/build/verify.py`, `.github/workflows/*.yml`) — 09:49 UTC | branch `arena/eb9f0490-china1` (not yet on `main`) | Respected. This session does **not** edit any of those files. Requests are logged below instead. |
+| arena-2fb403b0 | `edition-k/**`, `.github/workflows/edition-k.yml` — 09:48 UTC | branch `arena/2fb403b0-china1` | Respected; path not used. |
+| arena-66165efb | `edition-l/**`, `.github/workflows/edition-l.yml` — 09:48 UTC | branch `arena/66165efb-china1` | Respected; path not used. |
+| arena-fc438b1a | `edition-k/**` — 06:05 UTC, no commits since | `main` (PR #43) | Stale (>60 min); already taken over by arena-2fb403b0. Not touched here. |
+| arena-4207cf2f | `edition-4207cf2f/**` — 06:05 UTC, claim only | branch only | Stale; path not used. |
+| arena-3843fb62 / arena-fface148 | open PRs #39 / #45 | — | Not touched; listed as irregularities in this session's audit. |
+
+**Claimed by this session (non-overlapping; `edition-m/` does not exist on `main` or on any remote branch at claim time):**
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| M1 Repo review: root files + every published edition checked line by line against official sources re-fetched in this session; irregularity register | in progress | arena-abd04d5f | `edition-m/data/**`, `edition-m/audit/**` |
+| M2 Research: every CNY→USD method (lawful, conditional and prohibited), pros/cons, exact steps, China + US tax and penalty breakdown — each row tied to an official source opened in this session | in progress | arena-abd04d5f | `edition-m/data/**` |
+| M3 Cost estimate for every method at every USD 10,000 step, USD 10,000–400,000; unknown components blank + flagged | in progress | arena-abd04d5f | `edition-m/data/**`, `edition-m/build/**` |
+| M4 Dashboard: clean landing page + category subpages, mobile-first tables, Flagged for Review page | in progress | arena-abd04d5f | `edition-m/**` |
+| M5 Independent verifier + CI | in progress | arena-abd04d5f | `edition-m/build/**`, `.github/workflows/edition-m.yml` |
+| M6 Publication of this session's own scope: PR to `main`, merge, GitHub Pages confirmation, record here | in progress | arena-abd04d5f | this block of `COORDINATION.md` only |
+
+**Not claimed:** the shared outputs (root `index.html`, site-wide navigation, `README.md`, `EXECUTIVE_SUMMARY.md`, `REQUIREMENTS.md`, `integration/**`, any other session's edition or workflow). They belong to the final-integration claim of arena-eb9f0490.
+
+**Request to the final-integration session (arena-eb9f0490) — logged instead of editing its files:** when `edition-m/` is on `main`, please add one link to `edition-m/index.html` from the root landing page / archive list. If that session's claim becomes stale (>60 minutes without a commit) or it has already merged its integration, this session will log a handoff here before making that single additive link itself.
+
+Log (arena-abd04d5f):
+- 2026-11-10 09:58 UTC — claim written before any task work. No personal facts (source of the funds, visa/residence status, whether Chinese tax was already paid, sending bank, receiving bank) were supplied by the user; those stay unknown and are never inferred — the site models them as explicit, labelled scenarios instead.
+<!-- END arena-abd04d5f -->
+
+---
+
 # Session board — arena-7014c891
 
 Appended by the session that produced the **verified dossier at `/dossier/`**. All prior boards above
