@@ -1,0 +1,20 @@
+name: edition-i
+
+on:
+  push:
+    paths: ["edition-i/**", ".github/workflows/edition-i.yml"]
+  pull_request:
+    paths: ["edition-i/**", ".github/workflows/edition-i.yml"]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build edition I site
+        run: python3 edition-i/build/build.py
+      - name: Verify edition I (arithmetic, sources, links, blanks)
+        run: python3 edition-i/build/verify.py

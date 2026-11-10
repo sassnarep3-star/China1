@@ -1,0 +1,166 @@
+{
+  "retrieved": "2026-11-10",
+  "note": "Every source below was retrieved and read via direct page fetch on 2026-11-10 (govinfo S14 read as GPO 2003 edition; uscode.house.gov was in temporary-format outage — see flag F11). Government sources support law and tax rules. Provider sources (BOC, Wise) support only their own published prices/terms.",
+  "sources": [
+    {
+      "id": "S01",
+      "title": "个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange), PBOC Decree [2006] No. 3",
+      "publisher": "People's Bank of China / State Administration of Foreign Exchange",
+      "url": "https://www.safe.gov.cn/safe/2006/1225/5319.html",
+      "kind": "government",
+      "supports": "Art. 3 current vs capital account; Art. 7 no splitting/false documents; Art. 9 annual total management; Art. 12 outbound current-account remittance; Art. 13 foreign individual lawful RMB income purchase + unused-RMB re-conversion (24-month slip); Art. 14/15 cash remittance; Art. 20 emigration/inheritance transfers need SAFE approval; Art. 22 foreign individual selling mainland property may purchase FX and remit with SAFE approval; Art. 37 definitions of 境内/境外 individual; Art. 40 SAFE sets the annual total."
+    },
+    {
+      "id": "S02",
+      "title": "个人外汇管理办法实施细则 (Implementing Rules), SAFE Huifa [2007] No. 1",
+      "publisher": "State Administration of Foreign Exchange",
+      "url": "https://www.safe.gov.cn/safe/2007/0105/5320.html",
+      "kind": "government",
+      "supports": "Art. 2 annual total USD 50,000 equivalent per person per year for settlement and FX purchase; Art. 9 personal foreign-trade settlement accounts managed like institutional accounts; Art. 10 above-quota settlement document list (incl. employment income: contract + income proof; gifts, family support, inheritance, insurance, royalties, services, investment income); Art. 12 above-quota purchase with transaction-amount proof; Art. 13 foreign individual purchase with ID + proof incl. tax documents (含税务凭证), unused-RMB re-conversion with original slip valid 24 months; Art. 14 domestic individual remittance ≤ USD 50,000/day cumulative by ID, above with authenticity documents; Art. 15 foreign individual current-account FX remittance by ID; Art. 20 emigration/inheritance per 2004 Interim Measures; Art. 30/31 cash withdrawal USD 10,000/day, deposit USD 5,000/day thresholds; Art. 35(5) domestic-card overseas-use FX repayment kept out of the personal FX settlement system; endnote: Art. 39 fine clause repealed by Huifa [2023] No. 8; Art. 9(2) amended by Huifa [2016] No. 13."
+    },
+    {
+      "id": "S03",
+      "title": "关于进一步改进和调整资本项目外汇管理政策的通知 (Notice on Capital-Account FX Administration), SAFE Huifa [2014] No. 2",
+      "publisher": "State Administration of Foreign Exchange (Tianjin branch republication)",
+      "url": "https://www.safe.gov.cn/tianjin/2024/0903/2594.html",
+      "kind": "government",
+      "supports": "Section V simplified profit remittance: bank handles ≤ USD 50,000 equivalent without document review; above, board/partner profit-resolution + original tax-filing form required. Section VI simplified individual property transfers: emigration-transfer approval at former household registration office, inheritance approval at decedent's household registration office; removed SAFE-HQ filing for totals over RMB 500,000; removed mandatory staged remittance (approved amount may be sent once or in parts); consolidated inheritance applications; removed notarization of property-rights documents. Endnote: parts of Section III amended by Huifa [2023] No. 28."
+    },
+    {
+      "id": "S04",
+      "title": "个人财产对外转移售付汇管理暂行办法 (Interim Measures for Sale and Remittance of Individual Property Transferred Abroad), effective 2004-12-01",
+      "publisher": "People's Bank of China / State Administration of Foreign Exchange",
+      "url": "http://m.safe.gov.cn/safe/2004/1116/4133.html",
+      "kind": "government",
+      "supports": "Defines emigration property transfer (Chinese emigrants to foreign countries/HK/Macau settling abroad, pre-emigration assets) and inheritance property transfer (foreign citizens/HK/Macau residents inheriting mainland estate). Property must be lawful, undisputed, not under judicial restriction; applications at former household registration / decedent household registration SAFE offices. Original Art. 6 staged remittance schedule (first remittance ≤50% of approved total; after 1 year ≤50% of remainder; after 2 years the rest) — see flag F09 (superseded in part by S03 Section VI)."
+    },
+    {
+      "id": "S05",
+      "title": "Can I buy foreign exchange using the proceeds from selling my house? (Shanghai municipal government FAQ, source: Bank of China)",
+      "publisher": "Shanghai Municipal People's Government (english.shanghai.gov.cn)",
+      "url": "https://english.shanghai.gov.cn/en-FAQHome/20240204/b4426264395b4fa3adfde73778c94ad4.html",
+      "kind": "government",
+      "supports": "Non-resident selling a mainland house may purchase FX and remit proceeds. Steps: ownership transfer; settle tax at local tax authority and obtain tax-payment proof; obtain Tax Filing Form for External Payments (services/other accounts) when transaction exceeds USD 50,000; purchase FX and remit at bank with passport/ID, transfer contract + registration certificate, tax voucher (and filing form if > USD 50,000), notarized power of attorney if an agent acts."
+    },
+    {
+      "id": "S06",
+      "title": "中国银行电子银行个人服务转账汇款费率表 (BOC electronic-banking personal transfer tariff, effective 2014-11-01)",
+      "publisher": "Bank of China",
+      "url": "https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html",
+      "kind": "provider",
+      "supports": "Cross-border telegraphic transfer (跨境汇款电汇): 0.1% (1‰) of amount, minimum CNY 50, maximum CNY 260 per transaction; plus telegraph/cable fee CNY 80 (HK/Macau/Taiwan) or CNY 150 (other destinations) per transaction. Note 1: agreements, discounts and local price differences may apply."
+    },
+    {
+      "id": "S07",
+      "title": "中国银行外汇牌价 (Bank of China foreign-exchange quotation board)",
+      "publisher": "Bank of China",
+      "url": "https://www.boc.cn/sourcedb/whpj/",
+      "kind": "provider",
+      "supports": "Timestamped board snapshot read 2026-11-10 07:32:39 (units: CNY per 100 USD): spot FX buy 666.22, spot FX sell 669.03, cash buy 666.22, cash sell 669.03, BOC conversion rate 671.88. Board disclaimer: rates are for reference only; actual transaction rates are those executed at BOC channels. BOC also links a risk warning on illegal FX trading."
+    },
+    {
+      "id": "S08",
+      "title": "个人用汇讲规矩 用好用活增便利 (SAFE Shanghai branch guidance on lawful individual FX use)",
+      "publisher": "State Administration of Foreign Exchange, Shanghai branch",
+      "url": "http://www.safe.gov.cn/shanghai/2019/1213/1198.html",
+      "kind": "government",
+      "supports": "Confirms USD 50,000 annual total for settlement and purchase; above total requires authenticity documents; overseas card spending repurchased after return does not count toward the annual total (个人境外旅游消费刷卡支付的，回国后购汇还款不计入年度总额); FX purchase/remittance may not be used for overseas property purchase, securities investment, life or investment-linked insurance; prohibitions on false declarations, false materials, lending/borrowing one's quota (不得出借本人或借用他人额度), money laundering, tax evasion and underground banking (地下钱庄)."
+    },
+    {
+      "id": "S09",
+      "title": "Individual Income Tax Law of the People's Republic of China (English, 2018 amendment)",
+      "publisher": "State Taxation Administration of China",
+      "url": "https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html",
+      "kind": "government",
+      "supports": "Art. 2 lists nine taxable income categories (salary; personal-service remuneration; author's remuneration; royalties; business operation; interest/dividends/bonuses; leasing; transfer of assets; incidental income) — currency conversion is not a taxable category. Art. 3 rates: comprehensive income 3–45% progressive; business operation 5–35%; flat 20% for interest/dividends, leasing, asset transfer and incidental income. Art. 1 resident definition (183 days)."
+    },
+    {
+      "id": "S10",
+      "title": "Report of Foreign Bank and Financial Accounts (FBAR)",
+      "publisher": "U.S. Internal Revenue Service",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar",
+      "kind": "government",
+      "supports": "U.S. persons must file FinCEN Form 114 if aggregate value of foreign financial accounts exceeded USD 10,000 at any time in the calendar year; due April 15 with automatic extension to October 15; filed through FinCEN BSA E-Filing; civil and criminal penalties apply to violations; late filing should be corrected as soon as possible."
+    },
+    {
+      "id": "S11",
+      "title": "Do I need to file Form 8938, Statement of Specified Foreign Financial Assets?",
+      "publisher": "U.S. Internal Revenue Service",
+      "url": "https://www.irs.gov/businesses/corporations/do-i-need-to-file-form-8938-statement-of-specified-foreign-financial-assets",
+      "kind": "government",
+      "supports": "FATCA reporting thresholds: unmarried living in the U.S. — more than USD 50,000 on the last day of the tax year or more than USD 75,000 at any time; married filing jointly living in the U.S. — USD 100,000 / USD 150,000; taxpayers living abroad — USD 200,000 / USD 300,000 (unmarried) and USD 400,000 / USD 600,000 (joint). Form 8938 attaches to the income tax return; no filing required if no income tax return is required."
+    },
+    {
+      "id": "S12",
+      "title": "Internal Revenue Manual 5.21.6 — Foreign Financial Account Reporting (FBAR vs Form 8938 comparison)",
+      "publisher": "U.S. Internal Revenue Service",
+      "url": "https://www.irs.gov/irm/part5/irm_05-021-006",
+      "kind": "government",
+      "supports": "Penalty comparison: Form 8938 failure to disclose — up to USD 10,000 plus USD 10,000 per 30 days of non-filing after IRS notice, potential maximum USD 60,000, criminal penalties may also apply. FBAR — non-willful up to USD 10,000; willful up to the greater of USD 100,000 or 50 percent of account balances; criminal penalties may also apply. Threshold comparison FBAR USD 10,000 at any time vs 8938 thresholds above."
+    },
+    {
+      "id": "S13",
+      "title": "Foreign currency and currency exchange rates",
+      "publisher": "U.S. Internal Revenue Service",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-currency-and-currency-exchange-rates",
+      "kind": "government",
+      "supports": "Amounts on U.S. tax returns must be expressed in U.S. dollars; foreign-currency income/expenses translated at the prevailing rate when received, paid or accrued; U.S. tax payments must be remitted in U.S. dollars."
+    },
+    {
+      "id": "S14",
+      "title": "26 U.S.C. §988 — Treatment of certain foreign currency transactions (U.S. Code, GPO official text)",
+      "publisher": "U.S. Government Publishing Office (govinfo.gov)",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2003-title26/html/USCODE-2003-title26-chap1-subchapN-partIII-subpartJ-sec988.htm",
+      "kind": "government",
+      "supports": "(a)(1)(A) foreign currency gain/loss on section 988 transactions computed separately and treated as ordinary income/loss; (c)(1)(C) disposition of nonfunctional currency is a section 988 transaction; (e)(1) section 988 rules do not apply to an individual's personal transactions; (e)(2) exclusion for personal transactions — no gain recognized from exchange-rate changes if the gain does not exceed USD 200; if the gain exceeds USD 200 the exclusion does not apply (gain recognized in full); (e)(3) personal-transaction definition excludes §162/§212 expenses. Amendment notes show subsection (e) last amended by Pub. L. 105-34 (1997). Text retrieved from the GPO 2003 edition because uscode.house.gov was serving a temporary-format notice (flag F11)."
+    },
+    {
+      "id": "S15",
+      "title": "Foreign Tax Credit",
+      "publisher": "U.S. Internal Revenue Service",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit",
+      "kind": "government",
+      "supports": "Credit or deduction available for foreign income taxes paid or accrued on income also subject to U.S. tax; individuals claim on Form 1116; generally only income, war profits and excess profits taxes qualify; credit not allowed for taxes on income excluded under the foreign earned income exclusion."
+    },
+    {
+      "id": "S16",
+      "title": "LB&I Practice Unit — Disposition of Nonfunctional Currency (IRC 988)",
+      "publisher": "U.S. Internal Revenue Service",
+      "url": "https://www.irs.gov/pub/fatca/int_practice_units/fcu_t_018_02_01_08.pdf",
+      "kind": "government",
+      "supports": "Disposing of nonfunctional currency (including bank deposits) is a section 988 transaction; gain/loss equals amount realized minus adjusted basis; character generally ordinary; basis of withdrawn currency may use a consistently applied reasonable method (FIFO/LIFO/pro rata); virtual currency is not section 988 currency (cites Notice 2014-21)."
+    },
+    {
+      "id": "S17",
+      "title": "Guide to CNY transfers (Sending from CNY)",
+      "publisher": "Wise (provider help center)",
+      "url": "https://wise.com/help/articles/2955298/guide-to-cny-transfers",
+      "kind": "provider",
+      "supports": "Sending CNY from China is limited to personal accounts of non-mainland-Chinese senders (Taiwan/HK/Macau eligible) who worked in China and hold a China tax record showing tax paid within the last 3 years; funds may only be sent to an account the sender owns; single-transfer maxima CNY 300,000 (China bank app) and CNY 50,000 (Alipay); overall limit derived from after-tax salary proven by tax records; service provided with a PBOC-regulated licensed third-party payment provider; exact fees shown only when setting up a transfer (no fixed published fee table)."
+    },
+    {
+      "id": "S18",
+      "title": "关于进一步防范和处置虚拟货币交易炒作风险的通知 (Notice on preventing virtual-currency trading speculation risks), PBOC et al. Yin Fa [2021] No. 237",
+      "publisher": "People's Bank of China and nine other authorities",
+      "url": "https://www.pbc.gov.cn/tiaofasi/144941/3581332/4348658/index.html",
+      "kind": "government",
+      "supports": "Virtual currencies (incl. stablecoins) have no legal-tender status; fiat-crypto exchange, crypto-crypto exchange, market-making, information/pricing services, token issuance financing and crypto derivatives are illegal financial activities, strictly banned and subject to shutdown; offshore exchanges serving domestic residents via the internet are likewise illegal financial activities; associated gambling, fraud, money-laundering and other crimes highlighted."
+    },
+    {
+      "id": "S19",
+      "title": "行邮监管：出境、入境可以携带多少现金？ (Customs passenger cash-carrying FAQ)",
+      "publisher": "General Administration of Customs of China, Guangzhou Customs",
+      "url": "http://guangzhou.customs.gov.cn/guangzhou_customs/381679/3795484/3800229/index.html",
+      "kind": "government",
+      "supports": "RMB carrying limit CNY 20,000 per crossing (PBOC Announcement 2004 No. 18). Outbound FX cash: up to USD 5,000 equivalent no permit; above USD 5,000 up to USD 10,000 requires a bank-issued FX Carrying Permit (携带外汇出境许可证); customs will not clear cumulative bank permits over USD 10,000; above USD 10,000 requires a SAFE-issued permit. Inbound FX cash over USD 5,000 equivalent must be declared in writing. Exemptions for same-day/short-term repeat crossings."
+    },
+    {
+      "id": "S20",
+      "title": "经常项目外汇业务指引（2020年版） (Current-Account FX Business Guidelines 2020), issued under SAFE Huifa [2020] No. 14",
+      "publisher": "State Administration of Foreign Exchange (Ningxia branch document copy)",
+      "url": "https://www.safe.gov.cn/ningxia/file/file/20200903/874adc6e0cff406ba6f700dcbe52ecd6.pdf",
+      "kind": "government",
+      "supports": "Art. 89 cash carrying: inbound FX over USD 5,000 must be declared to customs; outbound FX USD 5,000–10,000 needs bank-issued carrying permit; over USD 10,000 (for travel to specified high-risk countries) needs SAFE-issued permit. Art. 65 foreign-individual current-account FX remittance: from FX account by ID; cash remittance over USD 10,000/day needs customs declaration or prior bank withdrawal slips. Document-copy source retrieved from safe.gov.cn."
+    }
+  ]
+}
