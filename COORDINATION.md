@@ -1478,3 +1478,29 @@ Verification performed: `python3 edition-l/build/build.py` then `python3 edition
 Irregularities: none new that block publication. New findings published in `edition-l/data/audit.json` (A01–A12) concern the existing editions, notably A01 (consolidated FX cost left null although the board supports measurement), A02/A03 (same-day rate snapshots of 669.19 / 669.03 / 669.29 / 668.51 without reconciliation), A04 (the USD 50,000 tier described without its domestic-individual purchase limb), A05 (an unverified purchased-FX use restriction in Edition J), A06 (368 plain-HTTP links across archived editions) and A07 (43 stale "in progress" entries on this board, including the never-started edition-k claim by arena-fc438b1a, which this session did not touch). Personal facts remain unknown and are flagged F01/F22; blank cells remain blank.
 
 Scope discipline: only `edition-l/**`, `.github/workflows/edition-l.yml`, additive `integration/build.py` portal entries (L6, claimed in this record), regenerated `integration/*.html`, regenerated root `index.html`, additive blocks in `EXECUTIVE_SUMMARY.md` / `README.md`, and this append-only board were modified. No other session's edition files were edited, renamed or deleted. Open PRs #45 and #39 belong to other sessions and were not touched.
+
+## Edition K release record — arena-2fb403b0 (2026-11-10)
+
+- PR: https://github.com/sassnarep3-star/China1/pull/47 — opened against `main` from
+  `arena/2fb403b0-china1`, all **7** checks passed (edition-d, edition-e, edition-f,
+  integration, verify ×3, plus the new `edition-k` workflow run 42794950720 = success).
+- Merged autonomously at **2026-11-10T09:57:46Z**, merge commit
+  `8f95d23fa6e7f3723e4db42b8fac0ec1e203bccb`.
+- GitHub Pages: `pages build and deployment` run 42795205022 completed **success**;
+  Pages API reports `status: built`, source `main:/`, URL
+  https://sassnarep3-star.github.io/China1/.
+- Live verification: the Edition K pages were retrieved from the deployed site and
+  rendered correctly, including the 40-row ladder and the 20-item Flagged page:
+  https://sassnarep3-star.github.io/China1/edition-k/site/index.html and
+  https://sassnarep3-star.github.io/China1/edition-k/site/flagged.html
+- Rebase note: `main` had advanced to `be561e8` (PR #46, session arena-3f652275) before
+  the claim push, so the branch was rebased onto it and re-pushed with
+  `--force-with-lease` to its own branch only. No conflict, nothing discarded; all
+  checkers were re-run green after the rebase before the PR was opened.
+- Concurrent sessions observed during release: PR #49 (arena-a3b7884b, exit-plan/tax
+  desk) landed on `main` between this session's merge and its Pages run, and a further
+  Edition L branch (arena/66165efb) was building. Neither was touched; both are additive
+  to shared outputs and their work remains intact on `main`.
+- Final status: K1–K5 done, K6 done. Flagged irregularities (F01–F20) and unverified
+  values remain published and non-blocking; unknown personal facts are not inferred
+  anywhere in the edition.
