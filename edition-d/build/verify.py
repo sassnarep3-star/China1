@@ -363,10 +363,11 @@ check("headline figures match the engine", not missing_headline,
 # ---------------------------------------------------------------------------
 # 11. root portal and archive
 # ---------------------------------------------------------------------------
-ROOT_INDEX = os.path.join(ROOT, "..", "index.html")
+# The archived portal moved to legacy-portal.html when guide/ took over the root landing page.
+ROOT_INDEX = os.path.join(ROOT, "..", "legacy-portal.html")
 portal_bad = []
 if not os.path.exists(ROOT_INDEX):
-    fail("root portal index.html missing")
+    fail("root portal legacy-portal.html missing")
 else:
     doc = open(ROOT_INDEX, encoding="utf-8").read()
     for href in re.findall(r'href="([^"]+)"', doc):

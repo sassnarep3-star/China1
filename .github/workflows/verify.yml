@@ -39,5 +39,5 @@ jobs:
       - name: Verify Edition D is reproducible and every figure is sourced
         run: |
           python3 edition-d/build/build.py
-          git diff --exit-code -- edition-d/docs index.html
+          git diff --exit-code -- edition-d/docs legacy-portal.html
           python3 edition-d/build/verify.py
