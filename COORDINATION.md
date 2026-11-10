@@ -654,7 +654,7 @@ Branch: `arena/12670774-china1` (fixed by Arena; the requested `session-<id>/<ta
 | N3 Cost estimate for every method at every USD 10,000 step, USD 10,000–400,000; components with no official input left blank and flagged | done | arena-12670774 | `edition-12670774/data/**`, `edition-12670774/build/**` |
 | N4 Dashboard: clean landing page + category subpages, mobile-first tables (most important figure first), Flagged for Review page | done | arena-12670774 | `edition-12670774/**` |
 | N5 Independent verifier (arithmetic recomputation, per-row official source link, blank/flag discipline, local link crawl) + CI | done | arena-12670774 | `edition-12670774/build/**`, `.github/workflows/edition-12670774.yml` |
-| N6 Publication of this session's own scope: PR to `main`, merge, GitHub Pages confirmation, record in this block | in progress | arena-12670774 | this block of `COORDINATION.md` only |
+| N6 Publication of this session's own scope: PR to `main`, merge, GitHub Pages confirmation, record in this block | done | arena-12670774 | this block of `COORDINATION.md` only |
 
 **Not claimed:** the shared outputs (root `index.html`, site-wide navigation, `README.md`, `EXECUTIVE_SUMMARY.md`, `REQUIREMENTS.md`, `integration/**`, every other session's edition, data and workflow). They belong to the final-integration claim of arena-eb9f0490.
 
@@ -688,6 +688,16 @@ Confirmed against pages opened today: BOC wire tariff (A09), Form 3520 threshold
 **Requests to other sessions (logged instead of editing their files).**
 - To arena-eb9f0490 (final integration): please add `edition-12670774/index.html` to `guide/data/archive.json` and rebuild, so the root landing page reaches this edition. Until then it is reachable at its direct URL.
 - To arena-66165efb (Edition L): please correct `derived.cny_per_usd_parity` from 6.6717 to 6.7167 in `edition-l/data/model.json` (and the generated `costs.json`), then rebuild; `penalty.html` will then show the selling rate 0.4705% below parity.
+
+### Publication record — arena-12670774
+
+- **Pull request:** [#56](https://github.com/sassnarep3-star/China1/pull/56) `arena/12670774-china1` → `main`. All 8 checks green before merge, including this edition's own workflow ([run 42798214590](https://github.com/sassnarep3-star/China1/actions/runs/42798214590)) and the final-integration guide check ([run 42798214587](https://github.com/sassnarep3-star/China1/actions/runs/42798214587)). **Merged 2026-11-10 10:20:33 UTC**, merge commit `9d195f32a0815bf93d53b3bf09b751820757a8c5`, without waiting for approval, as instructed.
+- **Post-merge workflows on `main` at `9d195f3`:** all succeeded — static site, consolidated portal, guide, Editions E, F, G, and `Edition 12670774 - build and verify` ([run 42798325914](https://github.com/sassnarep3-star/China1/actions/runs/42798325914)).
+- **GitHub Pages:** the build queued for `9d195f3` was superseded by the next merge on `main` (`89c2e49`, PR #57 of arena-eb9f0490, which contains `9d195f3`); that build finished **`built`** at 10:21:54 UTC ([run 42798402053](https://github.com/sassnarep3-star/China1/actions/runs/42798402053)). Pages publishes from `main:/`.
+- **Live check (fetched after the build):** `https://sassnarep3-star.github.io/China1/edition-12670774/index.html` returns the landing page with the route finder and the cost table (USD 53.43 at USD 10,000; USD 900.77 at USD 400,000), and `https://sassnarep3-star.github.io/China1/edition-12670774/flagged.html` returns the 34 flagged items with their official links.
+- **Flagged or unverified items** did not block the merge. They are published on `edition-12670774/flagged.html` with source links.
+- **Root landing page link.** The final integration (PR #55, `c1dc5ab`) merged at 10:17 UTC, before this edition landed. Its owner left a standing instruction in `guide/data/archive.json` (`how_to_add`): any session may append one entry for its own component once that component is on `main`, run `python3 guide/build/build.py`, and commit the regenerated `guide/archive.html`. This session did exactly that and nothing more: one entry appended (`edition-12670774/index.html`), `guide/archive.html` regenerated; `git status` showed only those two files changed, and `python3 guide/build/verify.py` passes (278 HTML files, 22,546 internal links, none broken). The request to arena-eb9f0490 above is therefore closed. The request to arena-66165efb (Edition L parity field) stays open.
+- **Final status:** N1–N6 **done**. Items A01–A08 and A15 on `edition-12670774/audit.html` are **needs review**, published and non-blocking. The follow-up pull request that carries this record and the archive entry is linked from PR #56's branch history; its number and result are visible on GitHub.
 <!-- END arena-12670774 -->
 
 ---
