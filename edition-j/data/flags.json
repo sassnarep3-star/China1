@@ -1,0 +1,112 @@
+{
+  "flags": [
+    {
+      "id": "F01",
+      "title": "Personal facts unknown — all personal eligibility and tax cells stay blank",
+      "detail": "The source of the balance (salary, sale, inheritance, savings), the account holder's SAFE classification (境内个人 vs 境外个人), residency, tax-payment history, and the destination U.S. bank were never supplied. No personalized tax or eligibility determination is made. Every such cell is blank + UNVERIFIED.",
+      "blocking": false
+    },
+    {
+      "id": "F02",
+      "title": "Exchange rates are a timestamped board snapshot, not a quote",
+      "detail": "Model rates come from the BOC quotation board read at 2026-11-10 07:32:39 (S07): spot buy 666.22 / sell 669.03 CNY per 100 USD. BOC's board disclaimer states the table is for reference only and actual transaction rates are those executed at BOC channels. All CNY/USD figures in this edition are model outputs at that snapshot.",
+      "blocking": false
+    },
+    {
+      "id": "F03",
+      "title": "Receiving U.S. bank fee unknown",
+      "detail": "The destination bank was not identified and no receiving-bank fee schedule is verified in this edition. Incoming international wire fees vary by bank. All receiving-fee cells are blank + UNVERIFIED.",
+      "blocking": false
+    },
+    {
+      "id": "F04",
+      "title": "Intermediary/correspondent bank fees unknown",
+      "detail": "Correspondent banks may deduct undisclosed intermediary fees on USD wires. No official schedule retrieved. Cells blank + UNVERIFIED.",
+      "blocking": false
+    },
+    {
+      "id": "F05",
+      "title": "Chinese tax on the underlying income unknown",
+      "detail": "Currency conversion itself is not a taxable category under IIT Law Art. 2 (S09), but the underlying income (salary, property-sale gain, dividends) may carry Chinese IIT: comprehensive income 3-45%, asset transfer and dividends flat 20% (Art. 3). Actual amounts depend on facts not supplied; all CN-tax cells blank + UNVERIFIED.",
+      "blocking": false
+    },
+    {
+      "id": "F06",
+      "title": "U.S. §988 exchange gain depends on basis records",
+      "detail": "If CNY appreciated between receipt (basis = USD value when received, S13/S16) and conversion, the personal-transaction exclusion in §988(e)(2) (S14) covers only gains of USD 200 or less per transaction; above that the full gain is ordinary income. Basis facts unknown; US-tax cells blank + UNVERIFIED.",
+      "blocking": false
+    },
+    {
+      "id": "F07",
+      "title": "Wise fee is quote-time only",
+      "detail": "Wise publishes no fixed fee table for from-CNY transfers; exact fees appear only at transfer setup (S17). All Wise money cells blank + UNVERIFIED. Provider limits in the text are provider-published and eligible only for the provider's stated eligibility rules.",
+      "blocking": false
+    },
+    {
+      "id": "F08",
+      "title": "Card issuer FX/ATM fees unverified",
+      "detail": "No issuer or UnionPay fee schedule was verified in this edition. Card-route cost cells blank + UNVERIFIED.",
+      "blocking": false
+    },
+    {
+      "id": "F09",
+      "title": "2004 staged-remittance schedule vs 2014 reform — conflict",
+      "detail": "The 2004 Interim Measures (S04 Art. 6) required emigration transfers to go out in stages (first ≤50% of the approved total; after 1 year ≤50% of the remainder; after 2 years the rest). SAFE Huifa [2014] No. 2 Section VI(2) (S03) removed the mandatory staged-remittance requirement (approved amount may be remitted once or in parts). Current local practice may still vary; confirm with the competent SAFE office before relying on one-time remittance of an entire approved amount.",
+      "blocking": false
+    },
+    {
+      "id": "F10",
+      "title": "Implementing Rules Art. 39 fine clause is repealed",
+      "detail": "The endnote on S02 states Art. 39 (RMB 30,000/1,000 default fines) was repealed by SAFE Huifa [2023] No. 8. Earlier editions citing Art. 39 fines as current are wrong on this point; penalty framework now falls back to the Foreign Exchange Administration Regulations and other rules (not re-fetched in this edition).",
+      "blocking": false
+    },
+    {
+      "id": "F11",
+      "title": "U.S. Code text currency — resolved against the current GPO edition",
+      "detail": "uscode.house.gov displayed a temporary-format notice during retrieval (2026-11-10), and the first govinfo path tried returned 404. The §988 text (S14) is now verified directly on the current GPO 2024 edition (govinfo 2024 U.S. Code, Subchapter N Part III Subpart J), chunks 0 and 2 read 2026-11-10, including §988(e)(2)'s USD 200 personal-transaction exclusion verbatim, and cross-checked against the GPO 2003 edition. Amendment notes show subsection (e) last amended by Pub. L. 105-34 (1997). Residual caveat: the OLRC uscode.house.gov live edition remains unreadable during the outage; statutory text is GPO-official.",
+      "blocking": false
+    },
+    {
+      "id": "F18",
+      "title": "PBOC 2021 crypto notice repealed by Yin Fa [2026] No. 42 — older editions are historical",
+      "detail": "The 2021 virtual-currency notice (S18, Yin Fa [2021] No. 237) was expressly repealed when Yin Fa [2026] No. 42 (S21) took effect on 2026-02-06 (final clause: 银发〔2021〕237号 同时废止). Edition I now cites S21 as the current authority; S18 is retained as historical text. Any edition citing only the 2021 instrument states a superseded citation — the prohibition itself continues unchanged under S21. Verified directly from the PBOC text on 2026-11-10.",
+      "blocking": false
+    },
+    {
+      "id": "F12",
+      "title": "BOC tariff note 1 permits local and contractual variation",
+      "detail": "The modeled 0.1% / min 50 / max 260 + 150 cable price is the published national personal e-banking schedule (S06). Note 1 of that tariff allows agreements, promotional discounts and local differences. A branch quote may differ; the model is not an executable quote.",
+      "blocking": false
+    },
+    {
+      "id": "F13",
+      "title": "Institutional/trade-account pricing unverified",
+      "detail": "The foreign-trade settlement account (M07) and company profit route (M12) involve institutional banking relationships whose tariffs were not verified. Ladder L6 is modeled with the personal tariff purely as a comparison reference and is flagged; L10 cells are blank.",
+      "blocking": false
+    },
+    {
+      "id": "F14",
+      "title": "Documentation and professional costs have no official price",
+      "detail": "Notarization, translation, agents, tax advisors and travel have no published national price verified here. Cells blank + UNVERIFIED. Prior editions' estimates are not reused.",
+      "blocking": false
+    },
+    {
+      "id": "F15",
+      "title": "BOC 折算价 (conversion column) is not a transaction price",
+      "detail": "The board's 中行折算价 column (671.88 on the snapshot) is an internal conversion/accounting rate. The model uses the midpoint of spot buy/sell (667.625) as the margin reference, consistent with the board disclaimer that transaction prices are the buy/sell columns. Alternative margins computed against 折算价 would differ and are not used.",
+      "blocking": false
+    },
+    {
+      "id": "F16",
+      "title": "Form 3520 (foreign gifts/bequests) not re-fetched in this edition",
+      "detail": "Prior editions cite a Form 3520 duty for certain foreign gifts and bequests. The IRS page was not re-retrieved in this edition's verification pass; the claim is marked unverified here and no cost/penalty figure is attached to it.",
+      "blocking": false
+    },
+    {
+      "id": "F17",
+      "title": "Known-subtotal is not an all-in cost",
+      "detail": "Every priced ladder shows a known-cost subtotal containing only verified components (FX margin at board snapshot + BOC published handling + cable). Receiving bank, intermediary and tax components are blank. The all-in column stays blank + UNVERIFIED at every target; blank does not mean zero.",
+      "blocking": false
+    }
+  ]
+}
