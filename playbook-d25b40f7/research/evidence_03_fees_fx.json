@@ -1,0 +1,98 @@
+[
+ {
+  "id": "FEE-01",
+  "title": "中国银行外汇牌价 (Bank of China exchange-rate board)",
+  "doc_no": "board stamp 2026/11/10 07:32:39",
+  "issuer": "Bank of China",
+  "kind": "provider-primary",
+  "url": "https://www.boc.cn/sourcedb/whpj/",
+  "retrieved_utc": "2026-11-10",
+  "retrieval": "page read in this session; the board changes during the day, the stamp identifies the snapshot used",
+  "quotes": [
+   {"loc": "美元 row (人民币/100外币)", "text": "现汇买入价 666.22 | 现钞买入价 666.22 | 现汇卖出价 669.03 | 现钞卖出价 669.03 | 中行折算价 671.88 | 发布日期 2026/11/10 07:32:39"},
+   {"loc": "page note", "text": "本汇率表单位为100外币换算人民币，仅供参考，客户办理结/购汇业务时，应以中国银行网上银行、手机银行、智能柜台或网点柜台实际交易汇率为准。"}
+  ]
+ },
+ {
+  "id": "FEE-02",
+  "title": "中国银行服务价目表 — 第三章 个人客户服务收费业务（一、个人金融） (Bank of China tariff, personal finance chapter)",
+  "doc_no": "价目表 effective 2025-11-11",
+  "issuer": "Bank of China",
+  "kind": "provider-primary",
+  "url": "https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf",
+  "retrieved_utc": "2026-11-10",
+  "retrieval": "full PDF text read in this session",
+  "quotes": [
+   {"loc": "210105008 个人本外币跨境汇款", "text": "本外币跨境汇款：电汇/票汇按汇款金额的1‰，最低收取50元/笔，最高收取260元/笔，电汇另收电讯费（中国港澳台地区发电80元/笔，国际发电150元/笔，下同），票汇另收邮费（如有）；汇款人要求修改按最高50元/笔收取，另收电讯费（如有）；汇款人要求退汇按20元/笔收取，另收电讯费（如有）"},
+   {"loc": "210105008 备注", "text": "各电子渠道该业务收费标准与柜台定价一致，具体折扣和优惠详见各电子渠道收费说明；电子渠道可办理业务品种以各渠道实际提供的服务为准"},
+   {"loc": "公告说明 1", "text": "中国银行费用计价单位如无特别说明均为人民币，可收取人民币或按客户要求收取等值外汇。收取等值外汇时，按交易时中国银行外汇买入价折算。"},
+   {"loc": "公告说明 4", "text": "凡业务中发生的境外银行收费，均按实向客户收取"},
+   {"loc": "公告说明 5 全额到账", "text": "全额到账是指跨境汇款转汇过程中，境外转汇行收取的转汇费不再从汇款本金中扣除，而是直接向汇款人收取固定金额费用，确保境外收款人能够全额收到汇款（此服务仅适用于汇款行与收款行无直接账户关系，需通过至少一家中转行办理的汇款业务）。……按币种另行加收：美元，收款行在我行纽约分行开立账户的，15 美元/笔，其他均为 25 美元/笔（美国境内美元全额到账汇款金额须小于 1 亿美元）"},
+   {"loc": "210101002 出具个人银行业务相关证明材料", "text": "存款证明：20元—40元/份；外币携带证：10元/份；开具资信证明：最高100元/笔 | 外币携带证自2025年4月1日起至2026年12月31日免收费。"},
+   {"loc": "210108014 ATM取现 (tariff text before 2026-11-11)", "text": "长城借记卡：本行同城、异地 ATM 取现免费；……跨境 ATM 取现按每笔（12 元+取现金额的 1%）收取，最高 112 元/笔 长城国际借记卡：境外 ATM 取现按取现金额的 5‰，最低 3 美元/笔，最高 5 美元/笔收取"},
+   {"loc": "公告说明 10", "text": "按照国际惯例，在 ATM 跨境取现手续费以外，一些境外 ATM 收单行会收取额外手续费（surcharge），并在屏幕上提示收费标准，请以当地 ATM 屏幕提示的信息为准。"},
+   {"loc": "210107011 外币兑换", "text": "自营外币兑换按最高 60 元/笔收取；代兑机构外币兑换按最高为兑换外币金额的 1‰收取，不足 1 元以 1 元计收 | 我行网点提供的外币兑换服务不收取此项费用"}
+  ]
+ },
+ {
+  "id": "FEE-03",
+  "title": "中国银行服务价目表 (Bank of China tariff landing page)",
+  "doc_no": "",
+  "issuer": "Bank of China",
+  "kind": "provider-primary",
+  "url": "https://www.bankofchina.com/custserv/fd5/",
+  "retrieved_utc": "2026-11-10",
+  "retrieval": "page read in this session",
+  "quotes": [
+   {"loc": "header", "text": "本价目表自2025年11月11日起实施，至本价目表失效之日终止，另有规定的从其规定。"},
+   {"loc": "价格分类说明", "text": "第二章为政府指导价政府定价，第三章至第五章均为市场调节价。"}
+  ]
+ },
+ {
+  "id": "FEE-04",
+  "title": "关于调整部分个人服务收费内容的公告(2026年11月11日起) (BOC notice: ATM withdrawal pricing from 2026-11-11)",
+  "doc_no": "2026-08-11",
+  "issuer": "Bank of China",
+  "kind": "provider-primary",
+  "url": "https://www.bankofchina.com/pbservice/bi2/202608/t20260811_25684907.html",
+  "retrieved_utc": "2026-11-10",
+  "retrieval": "full text read in this session",
+  "quotes": [
+   {"loc": "调整后收费标准 210108014", "text": "国外及中国港澳台：银联：每笔（12 元+取现金额的1%）收取，最高 112 元/笔 万事达、VISA：取现金额的2.5%，最低等值3美元/笔，最高等值40美元/笔收取"},
+   {"loc": "正文", "text": "我行调整了部分个人服务收费标准，将于2026年11月11日起实施。"}
+  ]
+ },
+ {
+  "id": "FEE-05",
+  "title": "中国银行服务价目表 — 第五章 综合客户服务收费业务（十、电子银行）",
+  "doc_no": "价目表 effective 2025-11-11",
+  "issuer": "Bank of China",
+  "kind": "provider-primary",
+  "url": "https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646093390083.pdf",
+  "retrieved_utc": "2026-11-10",
+  "retrieval": "full PDF text read in this session",
+  "quotes": [
+   {"loc": "公告说明", "text": "通过电子渠道进行转账汇款、投资理财、国际结算等交易，相关收费标准已纳入对应的业务价格表中公示。"}
+  ]
+ },
+ {
+  "id": "FEE-06",
+  "title": "HSBC China — Tariff of Accounts and Services for Wealth and Personal Banking Business (English)",
+  "doc_no": "Effective from 31 Oct 2026",
+  "issuer": "HSBC Bank (China) Company Limited",
+  "kind": "provider-primary",
+  "url": "https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf",
+  "retrieved_utc": "2026-11-10",
+  "retrieval": "PDF text chunks 1, 4, 7 and 8 of 14 read in this session (important notes, account tariff, cash services, outward telegraphic transfer)",
+  "quotes": [
+   {"loc": "2.2.4.1 Telegraphic Transfer Issuance", "text": "Private Banking: For individual customer: Free … | Premier: 0.1% of remittance amount Min. CNY100 / equivalent per transaction Max. CNY500 / equivalent per transaction Plus Cable Charge | Advance: 0.1% of remittance amount Min. CNY100 / equivalent per transaction Max. CNY500 / equivalent per transaction Plus Cable Charge"},
+   {"loc": "2.2.4.2 Cable Charges", "text": "Private Banking: For individual customer: Free … | Premier: CNY120 / equivalent per cable | Advance: CNY120 / equivalent per cable"},
+   {"loc": "2.2.4 Remark 1.1 (Pay Exact)", "text": "If the remitter would like to ensure the beneficiary receive full payment of the USD remittance proceeds (Pay Exact), CNY200 / equivalent will be collected from the remitter to cover the overseas bank charge and handling fee for this special arrangement. In case of any shortfall in overseas bank charge, the outstanding part will be collected from the remitter. Premier Elite customers and Premier Elite passport customers will enjoy the benefit of service fee exemption"},
+   {"loc": "2.1.1 Monthly Service Fee", "text": "Private Banking: Not Applicable | Premier: CNY300 or equivalent* / month | Advance: Free"},
+   {"loc": "Important Notes 3(1)", "text": "Last month's Total Relationship Balance is not below the Premier Minimum Total Relationship Balance requirement, which is CNY 500,000 or equivalent;"},
+   {"loc": "Important Notes 4", "text": "From 18 Mar 2026, only the following types of customers are eligible to apply for advance account and services: staff of HSBC Group, home mortgage loan customers, Employee Workplace Solutions customers and Premier downgrade customers."},
+   {"loc": "Important Notes 7", "text": "The charges shown in this tariff do not include charges collected by other institutions (including, without limitation, fund management companies, insurance companies, wealth management companies, any other HSBC Group members, whether situated within or outside Mainland China or any agent banks) or duties, levies, charges or taxes imposed by governmental or regulatory authorities."},
+   {"loc": "2.2.2.1 Foreign Currency Notes Withdrawal Over Counter", "text": "Free | Free | Free … For each cash withdrawal, if meet any of below criteria, it is subject to at least three working days' advance notice … 1) USD/HKD: amount equal to or above USD5,000 equivalent."}
+  ]
+ }
+]

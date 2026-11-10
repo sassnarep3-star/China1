@@ -1,0 +1,134 @@
+[
+ {
+  "id": "CN-FX-07",
+  "title": "移民财产转移购付汇核准 — 办事指南 (SAFE service guide: emigrant property transfer approval)",
+  "doc_no": "行政许可事项编码 000171111002",
+  "issuer": "SAFE Hebei Branch (guide based on 汇发〔2024〕12号 §6.4)",
+  "kind": "official",
+  "url": "https://www.safe.gov.cn/hebei/file/file/20240816/86fd609207224d71b23cfda39ebe4bbb.pdf",
+  "retrieved_utc": "2026-11-10",
+  "retrieval": "full PDF text read in this session",
+  "quotes": [
+   {"loc": "三（一）准予行政许可的条件 1-3", "text": "1. 申请人取得外国永久居留权、外国公民身份或港澳台地区居民身份。2.申请汇出资金为申请人在取得外国永久居留权、外国公民身份或港澳台地区居民身份之前在境内拥有的合法财产变现。3.申请汇出资金不属于司法、监察等部门依法限制对外转移的财产变现。"},
+   {"loc": "五（一）2（2）", "text": "申请人为取得外国公民身份的，应提供：①申请人居住国居民身份证或其他有效身份证明（如护照）。②中国驻外使领馆出具（或认证）的申请人在国外定居证明（根据有关公约规定豁免的除外）。③移居前户籍所在地公安机关出具的境内户籍注销证明。"},
+   {"loc": "五（一）3-5", "text": "3.申请人收入来源证明以及财产权利证明文件。……4.主管税务部门出具的税务证明原件（按规定无需提交的除外）……税务备案采用电子化方式的，可在网上核验相关电子化税务凭证。5.委托他人办理的应提供委托代理协议和代理人身份证明。"},
+   {"loc": "八", "text": "（一）承诺受理时限：5 个工作日（二）法定审批时限：20 个工作日 ……（四）承诺审批时限：20 个工作日"},
+   {"loc": "九", "text": "（一）办理行政许可是否收费：否"},
+   {"loc": "十", "text": "（二）审批结果名称：《资本项目外汇业务核准件》（三）审批结果的有效期限：当次 ……（九）审批结果的有效地域范围：全国"},
+   {"loc": "十五", "text": "（五）是否网办：否 ……（七）到办事现场次数：1"}
+  ]
+ },
+ {
+  "id": "CN-FX-08",
+  "title": "继承财产转移购付汇核准 — 办事指南 (SAFE service guide: inheritance property transfer approval)",
+  "doc_no": "行政许可事项编码 000171111005",
+  "issuer": "SAFE Hebei Branch (guide based on 汇发〔2024〕12号 §6.4)",
+  "kind": "official",
+  "url": "https://www.safe.gov.cn/hebei/file/file/20240816/186ef46ed22745009f16c6715f2a54f1.pdf",
+  "retrieved_utc": "2026-11-10",
+  "retrieval": "full PDF text read in this session",
+  "quotes": [
+   {"loc": "三（二）1", "text": "《个人财产对外转移售付汇管理暂行办法》（中国人民银行公告〔2004〕16 号）第二条：“继承转移是指外国公民或香港特别行政区、澳门特别行政区及台湾地区居民（以下简称继承人）将依法继承的境内遗产变现，通过外汇指定银行购汇和汇出境外的行为。”"},
+   {"loc": "三（二）2", "text": "第五条：“申请人办理继承转移需向被继承人生前户籍所在地外汇局申请。”"},
+   {"loc": "三（二）3", "text": "第十二条：“司法、纪检监察等部门依法限制对外转移的财产对外转移申请，外汇局不予受理。”"},
+   {"loc": "五（一）2①", "text": "申请人为外国公民的，应提供：申请人持有的外国护照或其他证明其国籍的证明文件。申请人居住国居民身份证或其他有效身份证明。中国驻外使领馆出具（或认证）的申请人在该国定居证明（根据有关公约规定豁免的除外）。"},
+   {"loc": "五（一）3-6", "text": "3. 申请人获得继承财产的证明文件（包括但不限于继承公证、遗嘱公证等）。4. 被继承人财产权利证明文件……5. 主管税务部门出具的税务证明原件（按规定无需提交的除外）……6. 委托他人办理的应提供委托代理协议和代理人身份证明。"},
+   {"loc": "八", "text": "（一）承诺受理时限：5 个工作日（二）法定审批时限：20 个工作日"},
+   {"loc": "九", "text": "（一）办理行政许可是否收费：否"},
+   {"loc": "三（一）1-2 [wording irregularity]", "text": "1.申请人取得外国永久居留权、外国公民身份或港澳台地区居民身份。2.申请汇出资金为申请人在取得外国永久居留权、外国公民身份或港澳台地区居民身份之前在境内拥有的合法财产变现。"},
+   {"loc": "一（五）3 [citation irregularity]", "text": "《国家税务总局 国家外汇管理局关于个人财产对外转移提交税收证明或者完税凭证有关问题的通知》（国税发〔2005〕16 号）第二条。"}
+  ]
+ },
+ {
+  "id": "CN-TAX-01",
+  "title": "国家税务总局 国家外汇管理局关于个人财产对外转移提交税收证明或者完税凭证有关问题的通知",
+  "doc_no": "国税发〔2005〕13号 (as amended by STA Announcement 2018 No. 31)",
+  "issuer": "State Taxation Administration; SAFE — STA policy library",
+  "kind": "official",
+  "url": "https://fgk.chinatax.gov.cn/zcfgk/c100012/c5193664/content.html",
+  "retrieved_utc": "2026-11-10",
+  "retrieval": "official-domain page text returned by the search tool (operative clauses quoted); page not separately re-fetched",
+  "quotes": [
+   {"loc": "二", "text": "申请人拟转移的财产已取得完税凭证的，可直接向外汇管理部门提供完税凭证，不需向税务机关另外申请税收证明。申请人拟转移的财产总价值在人民币15万元以下的，可不需向税务机关申请税收证明。"},
+   {"loc": "三（二）", "text": "申请人资料齐全的，税务机关应当在15日内开具税收证明；申请人提供资料不全的，可要求其补正，待补正后开具。"},
+   {"loc": "五", "text": "必要时税务机关应当对以上资料进行核实；对申请人没有缴税的应税行为，应当责成纳税人缴清税款并按照税收征管法的规定处理后开具税收证明。"}
+  ]
+ },
+ {
+  "id": "CN-TAX-02",
+  "title": "国家税务总局 国家外汇管理局关于服务贸易等项目对外支付税务备案有关问题的公告",
+  "doc_no": "国家税务总局 国家外汇管理局公告2013年第40号",
+  "issuer": "State Taxation Administration; SAFE — STA policy library",
+  "kind": "official",
+  "url": "https://fgk.chinatax.gov.cn/zcfgk/c100012/c5194375/content.html",
+  "retrieved_utc": "2026-11-10",
+  "retrieval": "official-domain page text returned by the search tool (operative clauses quoted); page not separately re-fetched",
+  "quotes": [
+   {"loc": "一", "text": "境内机构和个人向境外单笔支付等值5万美元以上（不含等值5万美元，下同）下列外汇资金，除本公告第三条规定的情形外，均应向所在地主管税务机关进行税务备案：……（二）境外个人在境内的工作报酬，境外机构或个人从境内获得的股息、红利、利润、直接债务利息、担保费以及非资本转移的捐赠、赔偿、税收、偶然性所得等收益和经常转移收入;（三）境外机构或个人从境内获得的融资租赁租金、不动产的转让收入、股权转让所得以及外国投资者其他合法所得。"},
+   {"loc": "四", "text": "境外个人办理服务贸易、收益和经常转移项下对外支付，应按照个人外汇管理的相关规定办理。"},
+   {"loc": "八", "text": "主管税务机关应自收到《备案表》后15个工作日内，对备案人提交的《备案表》及所附资料进行审查，并可要求备案人进一步提供相关资料。审查的内容包括：（一）备案信息与实际支付项目是否一致;（二）对外支付项目是否已按规定缴纳各项税款;（三）申请享受减免税待遇的，是否符合相关税收法律法规和税收协定（安排）的规定。"}
+  ]
+ },
+ {
+  "id": "CN-TAX-03",
+  "title": "关于《国家税务总局 国家外汇管理局关于服务贸易等项目对外支付税务备案有关问题的补充公告》的解读",
+  "doc_no": "解读 of STA/SAFE Announcement 2021 No. 19",
+  "issuer": "State Taxation Administration — STA policy library",
+  "kind": "official",
+  "url": "https://fgk.chinatax.gov.cn/zcfgk/c100015/c5210805/content.html",
+  "retrieved_utc": "2026-11-10",
+  "retrieval": "official-domain page text returned by the search tool (operative clauses quoted); page not separately re-fetched",
+  "quotes": [
+   {"loc": "二", "text": "一是多次支付仅需一次备案。同一笔合同需要多次对外支付的，由原来的每次支付均需备案改为仅需在首次付汇前办理备案，减少了备案次数。"},
+   {"loc": "备案金额标准", "text": "《公告》不改变40号公告规定的备案金额标准，即未超过等值5万美元的单笔对外支付无需进行税务备案。基于同一合同需要多次对外支付的，仅需在单笔支付首次超过等值5万美元时进行税务备案。"}
+  ]
+ },
+ {
+  "id": "CN-TAX-04",
+  "title": "中华人民共和国个人所得税法 (Individual Income Tax Law, 2018 amendment)",
+  "doc_no": "主席令第九号 (seventh amendment, 2018-08-31)",
+  "issuer": "National People's Congress Standing Committee; published by the State Taxation Administration (Guangdong)",
+  "kind": "official",
+  "url": "https://guangdong.chinatax.gov.cn/gdsw/zjfg/2018-08/31/content_a735b4c382d94439b581054c32a4e7f4.shtml",
+  "retrieved_utc": "2026-11-10",
+  "retrieval": "full text read in this session (the two annexed rate tables are images on this page and were not machine-readable)",
+  "quotes": [
+   {"loc": "第一条", "text": "在中国境内有住所，或者无住所而一个纳税年度内在中国境内居住累计满一百八十三天的个人，为居民个人。居民个人从中国境内和境外取得的所得，依照本法规定缴纳个人所得税。在中国境内无住所又不居住，或者无住所而一个纳税年度内在中国境内居住累计不满一百八十三天的个人，为非居民个人。非居民个人从中国境内取得的所得，依照本法规定缴纳个人所得税。"},
+   {"loc": "第二条", "text": "下列各项个人所得，应当缴纳个人所得税：（一）工资、薪金所得；（二）劳务报酬所得；（三）稿酬所得；（四）特许权使用费所得；（五）经营所得；（六）利息、股息、红利所得；（七）财产租赁所得；（八）财产转让所得；（九）偶然所得。"},
+   {"loc": "第三条", "text": "个人所得税的税率：（一）综合所得，适用百分之三至百分之四十五的超额累进税率（税率表附后）；（二）经营所得，适用百分之五至百分之三十五的超额累进税率（税率表附后）；（三）利息、股息、红利所得，财产租赁所得，财产转让所得和偶然所得，适用比例税率，税率为百分之二十。"},
+   {"loc": "第四条", "text": "下列各项个人所得，免征个人所得税：……（二）国债和国家发行的金融债券利息；……（五）保险赔款；"},
+   {"loc": "第六条（四）（五）（六）", "text": "（四）财产租赁所得，每次收入不超过四千元的，减除费用八百元；四千元以上的，减除百分之二十的费用，其余额为应纳税所得额。（五）财产转让所得，以转让财产的收入额减除财产原值和合理费用后的余额，为应纳税所得额。（六）利息、股息、红利所得和偶然所得，以每次收入额为应纳税所得额。"},
+   {"loc": "第十三条", "text": "纳税人取得应税所得没有扣缴义务人的，应当在取得所得的次月十五日内向税务机关报送纳税申报表，并缴纳税款。纳税人取得应税所得，扣缴义务人未扣缴税款的，纳税人应当在取得所得的次年六月三十日前，缴纳税款；……纳税人因移居境外注销中国户籍的，应当在注销中国户籍前办理税款清算。"},
+   {"loc": "第十五条第二款", "text": "个人转让不动产的，税务机关应当根据不动产登记等相关信息核验应缴的个人所得税，登记机构办理转移登记时，应当查验与该不动产转让相关的个人所得税的完税凭证。"},
+   {"loc": "第十八条", "text": "对储蓄存款利息所得开征、减征、停征个人所得税及其具体办法，由国务院规定，并报全国人民代表大会常务委员会备案。"}
+  ]
+ },
+ {
+  "id": "CN-TAX-05",
+  "title": "财政部 税务总局关于外籍个人股息红利个人所得税政策有关事项的公告",
+  "doc_no": "财政部 税务总局公告2026年第27号 (2026-09-01)",
+  "issuer": "Ministry of Finance; State Taxation Administration (posted by STA Shanghai)",
+  "kind": "official",
+  "url": "https://shanghai.chinatax.gov.cn/zzzb/zcwj/202609/t481448.html",
+  "retrieved_utc": "2026-11-10",
+  "retrieval": "full text read in this session",
+  "quotes": [
+   {"loc": "一", "text": "外籍个人从外商投资企业取得的股息红利所得，按照“利息、股息、红利所得”缴纳个人所得税，适用20%税率。"},
+   {"loc": "二", "text": "外商投资企业向外籍个人支付股息红利时，应当代扣代缴税款，并于支付所得的次月15日内申报纳税。"},
+   {"loc": "三", "text": "本公告自2026年9月1日起执行，《财政部 国家税务总局关于个人所得税若干政策问题的通知》（财税字〔1994〕20号）第二条第（八）项同时废止。"}
+  ]
+ },
+ {
+  "id": "CN-TAX-06",
+  "title": "国家税务总局关于储蓄存款利息所得征收个人所得税若干业务问题的通知 (carrying the STA note on 财税〔2008〕132号)",
+  "doc_no": "国税发〔1999〕180号; note citing 财税〔2008〕132号",
+  "issuer": "State Taxation Administration — STA policy library",
+  "kind": "official",
+  "url": "https://fgk.chinatax.gov.cn/zcfgk/c100012/c5193326/content.html",
+  "retrieved_utc": "2026-11-10",
+  "retrieval": "official-domain page text returned by the search tool (operative sentence quoted); page not separately re-fetched",
+  "quotes": [
+   {"loc": "STA note", "text": "根据《财政部　国家税务总局关于储蓄存款利息所得有关个人所得税政策的通知》（财税〔2008〕132号），储蓄存款在2008年10月9日后（含10月9日）孳生的利息所得，暂免征收个人所得税。"}
+  ]
+ }
+]
