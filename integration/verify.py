@@ -35,6 +35,7 @@ class Page(HTMLParser):
         self.ids = set()
         self.rows = []
         self.row = None
+        self.row_has_cells = False
         self.viewport = False
         self.mobile_labels = 0
 
@@ -48,6 +49,9 @@ class Page(HTMLParser):
             self.mobile_labels += 1
         if tag == "tr":
             self.row = []
+            self.row_has_cells = False
+        if tag == "td" and self.row is not None:
+            self.row_has_cells = True
         if tag in {"a", "link", "script", "img"}:
             attr = "href" if tag in {"a", "link"} else "src"
             if attr in a:
@@ -57,7 +61,7 @@ class Page(HTMLParser):
 
     def handle_endtag(self, tag):
         if tag == "tr" and self.row is not None:
-            self.rows.append(self.row)
+            self.rows.append((self.row_has_cells, self.row))
             self.row = None
 
 
@@ -112,6 +116,10 @@ allowed = {
     "www.icbcasia.com", "www.gdhmo.gov.cn",
 }
 
+probe = Page()
+probe.feed("<table><tr><th>Header</th></tr><tr><td>Uncited</td></tr></table>")
+assert probe.rows == [(False, []), (True, [])], "citation-free data rows must not be skipped"
+
 parsers = {}
 row_count = 0
 for path in PAGES:
@@ -122,9 +130,9 @@ for path in PAGES:
     assert parser.viewport, f"missing viewport: {path}"
     assert "<table" not in text or parser.mobile_labels > 0, f"missing mobile data labels: {path}"
     assert "<script" not in text
-    for row in parser.rows:
-        if not row:
-            continue  # header
+    for has_cells, row in parser.rows:
+        if not has_cells:
+            continue  # header, including citation-free <th> rows
         row_count += 1
         assert any(urlsplit(h).scheme == "https" and urlsplit(h).netloc in allowed for h in row), (path, row)
     for href in parser.links:

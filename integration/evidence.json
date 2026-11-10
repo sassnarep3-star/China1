@@ -281,6 +281,18 @@
       [
         "S45"
       ]
+    ],
+    [
+      "J13 · Audit scope and historical links",
+      "A follow-up audit independently checked selected primary sources and corrected a mechanical test that could skip data rows without any links. The consolidated pages now require a source on every data row; a source link alone does not prove every claim. Archived editions were not re-certified line by line, and some archival official links use HTTP. The comparison rate is historical, not a live execution quote. See the audit record for exact scope and outstanding limitations.",
+      [
+        "S03",
+        "S14",
+        "S16",
+        "S18",
+        "S20",
+        "S40"
+      ]
     ]
   ],
   "inherited_catalog": {
