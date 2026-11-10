@@ -166,7 +166,7 @@ FLAGS = [
  ("F26", "Penalties", "Fine for converting through virtual currency: blank.",
   "The 2026 notice says offenders are punished under the relevant rules and may face criminal liability; it gives no percentage.", ["N19"]),
  ("F27", "Repo", "Edition L stores the central parity as 6.6717 CNY per USD; its own source figure is 671.67 per USD 100, which is 6.7167.",
-  "Two digits appear transposed in edition-l/data/model.json and costs.json; edition-l/build/build.py reads that field. A correction request is logged in COORDINATION.md; the file belongs to another session and was not edited.", ["N02"]),
+  "Two digits appear transposed in edition-l/data/model.json and costs.json. Its build reads that field, so its penalty page prints 0.2008% where the correct figure is 0.4705% below parity. Its cost ladders are not affected. A correction request is logged in COORDINATION.md; the files belong to another session and were not edited.", ["N02"]),
  ("F28", "Repo", "Seven older areas cite Yinfa [2021] No. 237 as the virtual-currency rule and never mention its repeal.",
   "The 2026 notice opened today repeals it. The prohibition continues, so the conclusion stands; the citation is out of date in edition-b, edition-c, edition-d, edition-f, edition-g, data and dossier.", ["N19"]),
  ("F29", "Repo", "The repository holds several different Bank of China rate snapshots; the root portal and executive summary compute at 6.6903.",

@@ -7,8 +7,8 @@
   {
    "id": "A01",
    "status": "needs review",
-   "finding": "Edition L stores the central parity as 6.6717 CNY per USD. Its own source value is 671.67 per USD 100, which is 6.7167. edition-l/build/build.py line 35 reads the field.",
-   "where_html": "<a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/edition-l/data/model.json\" rel=\"noopener\">edition-l/data/model.json</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/edition-l/data/costs.json\" rel=\"noopener\">edition-l/data/costs.json</a>",
+   "finding": "Edition L stores the central parity as 6.6717 CNY per USD. Its own source value is 671.67 per USD 100, which is 6.7167. Its build reads the field, so its published penalty page prints \"a negative penalty of 0.2008%\"; with 6.7167 the selling rate is 0.4705% below the parity. Its cost ladders use the buy and sell rates and are not affected.",
+   "where_html": "<a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/edition-l/data/model.json\" rel=\"noopener\">edition-l/data/model.json</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/edition-l/data/costs.json\" rel=\"noopener\">edition-l/data/costs.json</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/edition-l/site/penalty.html\" rel=\"noopener\">edition-l/site/penalty.html</a>",
    "sources": [
     "N02"
    ],
