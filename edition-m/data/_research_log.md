@@ -172,3 +172,8 @@ FAQ on the page: the US 1% remittance excise tax from 2026-01-01 applies to tran
 | 133,422 | 845.90  | 821.98  | 23.92 | none    | 19,876.34 |
 | 300,000 | 1,741.62| 1,717.70| 23.92 | -131.51 (HAT_VOLUME_DISCOUNT) | 44,716.09 |
 Alipay pay-in for comparison (ALIPAY -> DIRECT_DEBIT): 66,711 -> total 1,312.27 (payInFee 882.88); 133,422 -> 2,601.09.
+| 200,133 | 1,224.98 | (page figure; "32.16 CNY volume discount") | | -32.16 | (not shown on page) |
+| 266,844 | 1,570.09 | (page figure; "98.52 CNY volume discount") | | -98.52 | (not shown on page) |
+Sources for the last two rows: https://wise.com/us/send-money/send-money-to-the-usa-from-china?sourceAmount=200133 and ...?sourceAmount=266844 (human-readable calculator page, "Sending N CNY | Bank transfer | fee").
+Page text: "You're sending a lot so we discounted our fee — Savings on this transfer, and eligible transfers for the rest of the month." "Pay less when you send over 25,000 USD or equivalent."
+-> Volume discount depends on the sender's monthly volume; a ladder built from independent single-transfer quotes is therefore conservative for multi-transfer rows.
