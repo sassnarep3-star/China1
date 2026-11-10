@@ -43,6 +43,6 @@ assert root.count('aria-label="Unverified tax"')==40
 assert root.count('aria-label="Unverified all-in total"')==40
 assert root.count('CNY 200–410</td>')==40
 assert 'under 1% at every size' not in root
-for edition in 'defg':assert f'edition-{edition}/' in root
-assert rows==60,rows # 6 findings, 40 amounts, 8 flags, 6 evidence rows
+for edition in 'defgh':assert f'edition-{edition}/' in root
+assert rows==61,rows # 6 findings, 40 amounts, 9 flags, 6 evidence rows
 print(f'PASS: 3 pages; {rows} primary-source-linked rows; {links} links; 40 targets; 80 blank unknown cells; deterministic rebuild. External live links and personal eligibility not certified.')

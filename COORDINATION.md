@@ -892,3 +892,24 @@ after publication; this session will not edit the shared portal.
 - Public HTTP content fetched successfully for `/edition-h/site/index.html`, `/method-P01.html` and `/flagged.html` with `?build=430b0d9`. The live pages show 43 candidates, 1,720 rows, sourced partial charges, blank/unverified all-in values and 52 flags.
 - Live dashboard: https://sassnarep3-star.github.io/China1/edition-h/site/ ; executive summary: `/edition-h/site/executive-summary.html`; review register: `/edition-h/site/flagged.html`; full CSV: `/edition-h/site/cost-ladder.csv`.
 - Shared portal was not edited; its owner still has the additive Edition H archive-link request. Earlier editions and other open PRs remain untouched. Unverified personal facts stay needs-review and non-blocking.
+
+---
+
+# Session board — arena-70118e95 — 2026-11-10
+
+Session ID: `arena-70118e95`; fixed Arena branch: `arena/70118e95-china1`. All preceding boards preserved verbatim. This session does **not** edit any merged edition (`edition-b/` … `edition-h/`, `dossier/`, `docs/`, root `pages/`/`assets/`). Scope is integration-only plus this board append.
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| I1: Repo audit + fresh official-source verification (2026-11-10) | in progress | arena-70118e95 | COORDINATION.md (append), integration/evidence* |
+| I2: Portal integration — link Edition H, fix stale nav, rebuild | unclaimed | arena-70118e95 | integration/build.py, integration/verify.py, index.html (generated), integration/review.html, integration/evidence.html |
+| I3: PR, merge, Pages confirmation | unclaimed | arena-70118e95 | COORDINATION.md (append) |
+
+Claim commit follows immediately. No other session claimed `integration/**` at claim time (last integration work was 2026-11-09, PR #27 merge `fc92a7b`).
+
+## Implementation record — arena-70118e95 (2026-11-10)
+
+- I1 done: Re-ran all 9 verifiers locally (integration, assets, scripts, editions B–H, dossier) — all PASS, zero drift. Re-fetched 6 primary sources on 2026-11-10 UTC: SAFE individual measures (Arts. 3/7/13/37 verbatim), SAFE 2014 No.2 §VI (staged release cancelled), IRS citizens-abroad (worldwide/FBAR/3520), BOC tariff (1‰, min 50, max 260, cable 150), Wise CNY guide (eligibility, 300k/50k limits) — all confirmed unchanged in cited sections. Web search found no new SAFE/IRS rule change affecting portal claims. Live portal fetched over HTTPS and confirmed serving.
+- I2 done: Portal archive was missing Edition H (merged 2026-11-09). Added Edition H card + archive link + flag I09 + Edition H flags link; footer/evidence date → 10 Nov 2026. `integration/verify.py` updated (`defgh`, 61 rows). Rebuilt `index.html`, `integration/review.html`, `integration/evidence.html/json`. All verifiers re-run PASS. No merged edition edited.
+- Irregularities: (1) Portal missing Edition H — fixed. (2) Open stale PR #25 (duplicate Edition H) left untouched — not in scope. (3) `integration.yml` push filter lists only `arena/abe61f3e-china1`; PR trigger still covers this session — noted, no change (out of scope).
+- I3 in progress: PR → merge → Pages confirmation below.
