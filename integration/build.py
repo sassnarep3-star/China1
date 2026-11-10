@@ -82,6 +82,7 @@ NAV = [
     ("index.html", "Overview"), ("integration/costs.html", "Cost ladder"),
     ("integration/methods.html", "Methods & steps"), ("integration/tax.html", "Tax & reporting"),
     ("integration/evidence.html", "Sources"), ("integration/review.html", "Flagged for Review"),
+    ("edition-i/site/index.html", "Edition I dashboard"),
 ]
 
 
@@ -151,6 +152,7 @@ def build_index(rows):
         ("integration/costs.html", "40-amount cost ladder", "Amount-specific BOC and HSBC sender-fee scenarios; unknown all-in values stay blank."),
         ("integration/methods.html", "43 candidates, steps, pros & cons", "Personal, bank/provider, business, adjacent and rejected options; every row has primary-source links."),
         ("edition-h/site/costs.html", "Every method × every amount", "Edition H's 1,720 rows and downloadable CSV, including per-transaction formulas and unavailable routes."),
+        ("edition-i/site/index.html", "Edition I — 2026-11-10 verified refresh", "21 methods with pros and cons, 10 cost ladders × 40 targets, tax and penalty breakdown, 20-source register."),
         ("integration/tax.html", "Tax & U.S. reporting", "Separate underlying tax, personal FX gain, FBAR/FATCA, gifts and penalty exposure."),
         ("integration/evidence.html", "Evidence log", "Directly inspected clauses, provider/government classification and retrieval dates."),
         ("integration/review.html", "Flagged for Review", "Material irregularities, stale archived claims and unresolved personal facts."),
@@ -170,6 +172,7 @@ def build_index(rows):
 <h2>Preserved research archive</h2><p>Edition H is the latest broad catalog. Older editions are preserved for traceability and can contain stale or conflicting claims; inclusion is not re-certification.</p><div class="archive">'''
     archive = [
         ("edition-h/site/index.html", "Edition H — latest 43-candidate dashboard"),
+        ("edition-i/site/index.html", "Edition I — 2026-11-10 verified refresh (21 methods, 20 sources)"),
         ("pages/estimates.html", "Original USD scenario table"), ("overview.html", "Original overview"),
         ("docs/index.html", "Supplemental dashboard"), ("dossier/index.html", "Dossier"),
         ("edition-b/index.html", "Edition B"), ("edition-c/docs/index.html", "Edition C"),
@@ -234,7 +237,7 @@ def build_tax():
 
 def build_review():
     rows = [[e(a), e(b), links(c)] for a,b,c in FLAGS]
-    body = f'''<h1>Flagged for Review</h1><div class="notice"><strong>These items are published and non-blocking.</strong> Unverified values stay blank. A citation verifies the cited rule or provider term, not personal eligibility, a bank's acceptance, or an all-in price.</div>{table(["Flag", "Finding / disposition", "Official / primary sources"], rows)}<h2>Detailed inherited review registers</h2><p><a href="../edition-h/site/flagged.html">Edition H — 52 flags</a> · <a href="../edition-h/site/repo-review.html">Edition H repository audit</a> · <a href="../edition-g/docs/flagged.html">Edition G flags</a> · <a href="../edition-f/site/flagged.html">Edition F flags</a> · <a href="../edition-d/docs/pages/flagged.html">Edition D flags</a></p>'''
+    body = f'''<h1>Flagged for Review</h1><div class="notice"><strong>These items are published and non-blocking.</strong> Unverified values stay blank. A citation verifies the cited rule or provider term, not personal eligibility, a bank's acceptance, or an all-in price.</div>{table(["Flag", "Finding / disposition", "Official / primary sources"], rows)}<h2>Detailed inherited review registers</h2><p><a href="../edition-h/site/flagged.html">Edition H — 52 flags</a> · <a href="../edition-i/site/flagged.html">Edition I — 17 flags (F01–F17)</a> · <a href="../edition-h/site/repo-review.html">Edition H repository audit</a> · <a href="../edition-i/audit/REPO_AUDIT.md">Edition I repository audit (A01–A12)</a> · <a href="../edition-g/docs/flagged.html">Edition G flags</a> · <a href="../edition-f/site/flagged.html">Edition F flags</a> · <a href="../edition-d/docs/pages/flagged.html">Edition D flags</a></p>'''
     (OUT / "review.html").write_text(shell("integration/review.html", "Flagged for Review", body), encoding="utf-8")
 
 

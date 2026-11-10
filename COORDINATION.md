@@ -935,3 +935,104 @@ Prior editions remain read-only. Any conflict will stop implementation for inspe
 - RELEASE COMPLETE: PR #30 `Publish consolidated CNY-to-USD decision dashboard` was merged autonomously at 2026-11-10T01:23:07Z; merge commit `a07c58313024ad6f938fcad47f8b8c94e4ffca8e`. All six PR checks passed (Edition D, E, F, integration and both prior-edition/static verify jobs). Main push workflows and Pages run `42735412353` completed successfully. Pages API reports `built`, public URL `https://sassnarep3-star.github.io/China1/`, legacy source `main` `/`.
 - Live HTTP verification with cache-buster `?build=a07c583` succeeded for `/`, `/integration/costs.html`, `/integration/methods.html` and `/integration/review.html`. The deployed root shows the corrected decision-first guidance; costs shows the 40-row ladder, CNY6.6903 comparison rate and blank/UNVERIFIED all-in cells; methods shows 43 sourced candidates and Edition H procedure links; review shows the published irregularities. No unresolved merge blocker remains. Platform annotations only: GitHub’s standard Node 20 deprecation and Ubuntu 26 migration notices; neither affected deployment.
 - Final-integration task status: J1, J2, J3 and J4 complete. Open PRs owned by other sessions remain untouched. Unknown personal eligibility, tax and live all-in provider values remain intentionally flagged and are not represented as verified facts.
+
+---
+
+# Session board — arena-e90d36c3 (2026-11-10)
+
+Branch: `arena/e90d36c3-china1` (fixed by Arena). Prior boards and editions preserved.
+This session claims an isolated `edition-i/` scope so it cannot overwrite another session's
+research, data, generated pages, or verification. Claimed 2026-11-10 before any task work.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| I1 Repo line-by-line audit and official-source research refresh | in progress | arena-e90d36c3 | edition-i/data/**, edition-i/audit/** |
+| I2 Requirements, CNY→USD methods with pros/cons, tax-penalty breakdown | in progress | arena-e90d36c3 | edition-i/data/** |
+| I3 Cost tables $10K–$400K per method, step-by-step procedures | in progress | arena-e90d36c3 | edition-i/data/**, edition-i/build/** |
+| I4 Mobile-first dashboard site + Flagged for Review | in progress | arena-e90d36c3 | edition-i/site/**, edition-i/build/** |
+| I5 Verifier, CI, final integration, PR, merge, Pages | in progress | arena-e90d36c3 | edition-i/**, .github/workflows/edition-i.yml, append-only COORDINATION.md/README.md, root index.html portal link (final integration only) |
+
+Handoff note: open PRs #12, #14, #25 belong to sessions with no commits for >60 minutes
+(last activity 2026-11-08/09). Their subjects are already represented in `main` (Edition D
+and Edition H merged via PRs #22–#27). They will be reviewed at integration and either
+closed with a note or merged additively; nothing will be discarded silently.
+
+Log:
+- 2026-11-10: Scope claimed. No personal account, source-of-funds, residency, or quote facts
+  are available; those values stay unknown/blank + flagged. Government sources support law
+  and tax; provider-published tariffs support provider prices only.
+
+## Edition I completion record — arena-e90d36c3 (2026-11-10)
+
+| Task | Status | Owner | Result |
+|---|---|---|---|
+| I1 Repo line-by-line audit and official-source research refresh | done | arena-e90d36c3 | 20 sources fetched/read 2026-11-10; audit at `edition-i/audit/REPO_AUDIT.md` (12 findings A01–A12) |
+| I2 Requirements, methods with pros/cons, tax-penalty breakdown | done | arena-e90d36c3 | 21 methods (15 lawful/conditional + 6 prohibited risk-only); 14 tax findings |
+| I3 Cost tables $10K–$400K per method, step-by-step procedures | done | arena-e90d36c3 | 10 ladders × 40 targets = 400 rows; 240 priced cells recomputed independently; 1,440 cells blank+flagged |
+| I4 Mobile-first dashboard site + Flagged for Review | done | arena-e90d36c3 | `edition-i/site/` 8 pages; 17 flags F01–F17 published, non-blocking |
+| I5 Verifier, CI, final integration, PR, merge, Pages | done | arena-e90d36c3 | `verify.py` 1,858 checks 0 errors; workflow `edition-i.yml`; portal integration below |
+
+Sources (all fetched 2026-11-10, register at `edition-i/site/sources.html`): PBOC Decree
+[2006] No. 3 (safe.gov.cn/safe/2006/1225/5319.html); SAFE Huifa [2007] No. 1 implementing
+rules incl. USD 50,000 annual total Art. 2 (safe.gov.cn/safe/2007/0105/5320.html); SAFE
+Huifa [2014] No. 2 §§V–VI (safe.gov.cn/tianjin/2024/0903/2594.html); 2004 Interim Measures
+for individual property transfer (m.safe.gov.cn/safe/2004/1116/4133.html); Shanghai
+property-sale FX FAQ (english.shanghai.gov.cn/en-FAQHome/20240204/b4426264395b4fa3adfde73778c94ad4.html);
+BOC e-banking personal remittance tariff (boc.cn/ebanking/service/cs1/200905/t20090506_990712.html);
+BOC FX board snapshot 2026-11-10 07:32:39 (boc.cn/sourcedb/whpj/); SAFE Shanghai 2019
+guidance (safe.gov.cn/shanghai/2019/1213/1198.html); China IIT Law (chinatax.gov.cn);
+IRS FBAR / Form 8938 / IRM 5.21.6 / foreign-currency / foreign-tax-credit pages (irs.gov);
+26 U.S.C. §988 GPO text (govinfo.gov); IRS LB&I §988 practice unit (irs.gov); Wise CNY
+guide (wise.com/help/articles/2955298); PBOC Yin Fa [2021] No. 237 (pbc.gov.cn); Guangzhou
+Customs cash FAQ (guangzhou.customs.gov.cn); SAFE 2020 current-account guide PDF
+(safe.gov.cn/ningxia/...). Retrieval method: direct page fetch; figures read from fetched
+text. Live future availability not claimed.
+
+Verification performed: `python3 edition-i/build/build.py` (8 pages) and
+`python3 edition-i/build/verify.py` = 1,858 checks, 0 errors — byte-identical rebuild,
+independent recomputation of every priced cell from `data/model.json`, exact 40-target
+grid, UNVERIFIED markers on every unconfirmed cell, internal link/anchor resolution,
+external-URL restricted to the 20 registered sources, prohibited methods carry no steps.
+Cross-checkers after portal integration: `python3 integration/verify.py` PASS (3 pages,
+60 rows, 158 links), `python3 assets/check.py` OK (6 pages, 95 rows),
+`edition-d/build/verify.py` PASS 19 checks, `edition-i/build/verify.py` still 0 errors.
+
+Irregularities published (`edition-i/site/flagged.html` + audit A01–A12), all non-blocking:
+F09/A04 2004 staged-remittance vs 2014 §VI(2) conflict; F10/A03 repealed Implementing-Rules
+Art. 39 fines (edition-c handles correctly); A01 README "four numbers" embed an assumed
+$15 Chase receiving fee and are scenario arithmetic, not quotes; F11/A11 uscode.house.gov
+outage (§988 from GPO 2003 edition; subsection (e) unchanged since 1997 per amendment
+notes); F07 Wise fees quote-time only; F12 BOC tariff note-1 local variation; A07/A08
+edition-d tax brackets and edition-c enforcement cases not re-certified (not reused);
+A12 no wholesale re-certification of editions B–H rows. Personal facts (source of funds,
+境内/境外 classification, tax history, destination bank) unknown — F01.
+
+Final integration (this session, sole active session; all other board items done or
+needs-review): `integration/build.py` updated additively — Edition H archive link added
+(fulfilling the logged cross-session request from arena-c2310264) and Edition I cards/nav/
+archive links added; root `index.html` regenerated deterministically; all shared checkers
+pass. Historical editions untouched.
+
+Handoff of stale open PRs #12, #14, #25 (sessions dead >60 min; subjects already
+represented in `main`; PR #25 also edits `edition-d/build/build.py` outside its scope):
+closed at integration with explanatory comments; no content silently discarded.
+
+### Rebase incident and final integration — arena-e90d36c3 (2026-11-10)
+
+- `git pull --rebase origin main` hit conflicts: origin/main had advanced through PRs
+  #28–#31 (sessions arena-70118e95 and arena-0d6abfa6, both active 2026-11-10). Per the
+  coordination rule, stopped to inspect and resolved without discarding any concurrent
+  work: both their complete boards were preserved alongside this session's board
+  (append-only union), and their rewritten consolidated `integration/build.py` generator
+  was kept as the base — this session's earlier edits to the superseded generator were
+  dropped from the patch (its Edition H archive link is already present in the new
+  generator via PR #28/#30) and re-applied additively to the new generator instead:
+  Edition I nav entry, Edition I card, Edition I archive link, and Edition I flag/audit
+  links on the Flagged page. Note correcting the earlier completion record: the portal
+  stats quoted there (3 pages/60 rows) belonged to the superseded generator; the current
+  consolidated portal after this integration verifies as 7 pages / 142 sourced rows /
+  40 targets / 160 recomputed values / 43 method links / 223 HTML files / 20,119 local
+  references, deterministic (`integration/verify.py` PASS). All other checkers re-run
+  green after the merge: `edition-i/build/verify.py` 1,858 checks 0 errors;
+  `assets/check.py` OK; `edition-d/build/verify.py` PASS 19 checks. No conflicts in
+  research data; editions B–H and their archives untouched.

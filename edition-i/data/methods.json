@@ -1,0 +1,360 @@
+{
+  "note": "Legal routes are conditional entitlements, not guarantees: eligibility depends on facts not supplied (source of funds, ID classification, tax records). Prohibited routes carry risk information only and deliberately contain no execution steps.",
+  "methods": [
+    {
+      "id": "M01",
+      "name": "Documented current-account income wire (foreign individual)",
+      "category": "Personal — documented income",
+      "who": "境外个人 (foreign individual per S01 Art. 37: a non-PRC-ID holder, e.g. a U.S. citizen without a mainland resident ID) with lawful RMB income earned in China (salary, services, royalties, rent, etc.).",
+      "rule": "S01 Art. 13: a foreign individual's lawful current-account RMB income may be purchased into FX and remitted with ID and transaction-amount evidence, including tax documents. S02 Art. 13(1) repeats the tax-document requirement. No annual USD total is stated for this route in either text; the bank reviews authenticity.",
+      "docs": "Passport/ID; employment or service contract; income evidence; Chinese tax payment voucher (税务凭证); remittance application; receiving-account details.",
+      "pros": ["No published per-year USD ceiling in the rule text (unlike the domestic-individual quota).", "Tax already paid on the income means the conversion itself adds no Chinese tax (S09 Art. 2 — conversion is not a taxable category).", "One documented route can move the whole balance in one or several wires."],
+      "cons": ["Requires a genuine documented income trail with tax vouchers; undocumented savings do not qualify.", "Bank has authenticity-review discretion; processing may take longer for large amounts.", "Wire fees and FX margin apply at every transfer (see ladder L1)."],
+      "steps": [
+        "Confirm with the bank that the account holder is classified as 境外个人 (foreign individual) under S01 Art. 37, and that the balance has a current-account income trail.",
+        "Assemble documents: passport, employment/service contract, income statements, Chinese individual-income-tax payment vouchers for the amounts involved.",
+        "At the bank (counter or eligible e-banking channel), submit a FX purchase (购汇) application for the CNY amount with the supporting documents; bank records it through the SAFE personal FX system (S02 Art. 6, 32–36).",
+        "Submit the outward remittance (汇出) application to the destination account you own; pay the published handling fee and cable fee (S06).",
+        "Keep the exchange slip (兑换水单) and remittance receipt; they support §988 basis records and re-conversion rights (S02 Art. 13(2)).",
+        "Reconcile U.S. reporting for the year: worldwide income (S13), FBAR if foreign accounts exceeded USD 10,000 aggregate (S10), Form 8938 if thresholds met (S11), and §988 gain if the CNY appreciated since receipt (S14)."
+      ],
+      "cost_ladder": "L1",
+      "sources": ["S01", "S02", "S06", "S07", "S09", "S10", "S11", "S13", "S14"]
+    },
+    {
+      "id": "M02",
+      "name": "Annual USD 50,000 convenience quota (domestic individual)",
+      "category": "Personal — quota",
+      "who": "境内个人 (domestic individual per S01 Art. 37: PRC citizen holding a mainland resident ID). A U.S. citizen who also holds a PRC resident ID may fall here; classification is a bank determination (flag F01).",
+      "rule": "S02 Art. 2: settlement and FX purchase are managed under an annual total of USD 50,000 equivalent per person per year; within the total, ID only is required (S01 Art. 9).",
+      "docs": "Valid ID. (Above-quota amounts need transaction evidence — see M03.)",
+      "pros": ["Simplest lawful channel: ID only, no income documents within the quota.", "Cumulative quota across banks is tracked through the SAFE personal FX system (S02 Art. 32–36)."],
+      "cons": ["Hard ceiling of USD 50,000 per calendar year per person — USD 400,000 needs 8 years (or more persons, which is prohibited structuring if organized to evade limits — see P01).", "Uses of purchased FX cannot include overseas property, securities or insurance (S08).", "Each wire carries its own fee and cable charge (ladder L2 shows chunked costs)."],
+      "steps": [
+        "Verify remaining quota for the calendar year with the bank (personal FX settlement system).",
+        "Purchase USD within the remaining annual total with ID; conversion at the bank's published sell rate (S07 board is a reference snapshot only).",
+        "Remit to the overseas account you own; ≤ USD 50,000/day cumulative from an FX savings account is handled on ID alone (S02 Art. 14).",
+        "Repeat in later calendar years for larger balances; keep every exchange slip and remittance receipt.",
+        "File U.S. reporting as in M01 step 6."
+      ],
+      "cost_ladder": "L2",
+      "sources": ["S01", "S02", "S06", "S07", "S08"]
+    },
+    {
+      "id": "M03",
+      "name": "Above-quota documented current-account purchase and remittance (domestic individual)",
+      "category": "Personal — documented income",
+      "who": "境内个人 with current-account income (salary, services, royalties, family support, inheritance receipts, insurance payouts, investment income) beyond the annual total.",
+      "rule": "S02 Art. 10 lists the evidence per income type (employment: contract + income proof); Art. 12 covers above-quota purchases with transaction-amount proof; S01 Art. 12 covers above-quota outbound remittance with authenticity documents.",
+      "docs": "ID plus the Art. 10 evidence for the income type (e.g. employment contract + income proof + tax records), and transaction-amount proof for the purchase.",
+      "pros": ["Removes the USD 50,000 ceiling for genuine documented current-account income.", "Same bank-wire mechanics and published tariff as the quota route."],
+      "cons": ["Document assembly is heavier; banks scrutinize large amounts.", "Chinese income tax compliance on the underlying income is expected; unpaid-tax situations are not cured by paperwork."],
+      "steps": [
+        "Classify the balance by true income type per S02 Art. 10 and collect the matching evidence (contracts, income proof, tax payment records).",
+        "Submit above-quota FX purchase at the bank with ID + evidence; bank records the transaction in the personal FX system.",
+        "Remit abroad with authenticity documents; cash remittance over USD 10,000/day needs extra slips per S02 Art. 14 (bank-account remittance ≤ USD 50,000/day by ID, above with proof).",
+        "Keep all slips; complete U.S. reporting for the year (S10, S11, S13, S14)."
+      ],
+      "cost_ladder": "L3",
+      "sources": ["S01", "S02", "S06", "S07", "S09"]
+    },
+    {
+      "id": "M04",
+      "name": "Mainland property sale proceeds repatriation",
+      "category": "Personal — capital (property)",
+      "who": "境外个人 (non-resident) who sold a self-owned mainland commodity house; S01 Art. 22 permits FX purchase and remittance of the RMB proceeds with SAFE-approval framework; S05 gives the operational steps sourced from Bank of China.",
+      "rule": "S01 Art. 22; S05 steps; S03 Section VI simplified related approvals. The sale itself is a taxable event in China (asset-transfer income, S09 Art. 2(8)/Art. 3(3) flat 20% on income — actual computation and any local concessions not verified, blank in tables).",
+      "docs": "Passport; commodity-house transfer contract and registration certificate; tax-payment voucher from the local tax authority; Tax Filing Form for External Payments when the transaction exceeds USD 50,000; notarized power of attorney if an agent acts.",
+      "pros": ["Explicitly lawful channel with a published step list.", "S03 Section VI removed mandatory staged remittance and document notarization requirements."],
+      "cons": ["Chinese tax on the sale must be settled first and evidenced (S05 steps 3–4).", "Tax amount depends on facts (holding period, cost basis, local practice) — left blank (flag F05).", "Bank and SAFE review of paperwork; timelines vary."],
+      "steps": [
+        "Complete the sale: property-ownership review, contract signing, ownership transfer registration (S05 steps 1–2).",
+        "Settle the property-sale tax at the local tax authority and obtain the tax-payment proof (S05 step 3).",
+        "Obtain the Tax Filing Form for External Payments for Trade in Services and Other Accounts from the tax authority if the amount exceeds USD 50,000 (S05 step 4).",
+        "At the bank, purchase FX with the proceeds and remit, presenting passport, contract, registration certificate, tax voucher and (if applicable) the filing form and power of attorney (S05 step 5).",
+        "Retain all receipts; report U.S. side: FBAR/8938 for the account, and any U.S. tax effects of the sale (S10, S11). Property-sale gain taxation on the U.S. side depends on facts and is blank (flag F01/F06)."
+      ],
+      "cost_ladder": "L4",
+      "sources": ["S01", "S03", "S05", "S06", "S07", "S09"]
+    },
+    {
+      "id": "M05",
+      "name": "Emigration property transfer (移民财产转移)",
+      "category": "Personal — capital (approved transfer)",
+      "who": "A person who emigrated abroad (or settled in HK/Macau) and held lawful mainland property before obtaining emigrant status — the 2004 Measures frame it for Chinese emigrants; a U.S. citizen in this project may or may not qualify (flag F01).",
+      "rule": "S02 Art. 20 routes emigration transfers to the 2004 Interim Measures (S04); S03 Section VI simplified approvals: approval at former household registration SAFE office, HQ filing for totals over RMB 500,000 removed, mandatory staged remittance removed (approved amount may go out once or in parts), property-rights document notarization dropped.",
+      "docs": "Identity + emigration-status documents (e.g. household-registration cancellation proof per S04); property-rights evidence; lawful-source evidence; SAFE approval document; bank remittance papers.",
+      "pros": ["Designed for exactly this use: converting pre-emigration assets and sending them abroad.", "2014 reforms made it faster (no forced batches, no HQ filing, no notarization)."],
+      "cons": ["Requires formal SAFE approval; property must be lawful, undisputed and free of judicial restriction (S04).", "2004 text on staged remittance (Art. 6) conflicts with S03 Section VI — implementation varies by office (flag F09).", "Approval and document work are slow; professional help is often needed (cost unverifiable — blank)."],
+      "steps": [
+        "Determine eligibility under S04: the property must pre-date emigrant status and be lawful, undisputed, unrestricted.",
+        "Apply to the SAFE branch at the former household registration place (S03 Section VI(1); S04 Art. 5) with identity, emigration and property documents.",
+        "Receive the SAFE approval document specifying the approved amount.",
+        "At the bank, purchase FX and remit within the approved amount, once or in several remittances (S03 Section VI(2)).",
+        "Retain approval, slips and receipts; complete U.S. reporting (S10, S11)."
+      ],
+      "cost_ladder": "L5",
+      "sources": ["S02", "S03", "S04", "S06", "S07"]
+    },
+    {
+      "id": "M06",
+      "name": "Inheritance property transfer (继承财产转移)",
+      "category": "Personal — capital (approved transfer)",
+      "who": "Foreign citizens (or HK/Macau residents) who lawfully inherit mainland estate (S04). U.S. heirs of mainland property fit here; also relevant to the reverse case flagged in F01.",
+      "rule": "S02 Art. 20; S04 defines the route; S03 Section VI(3)-(4): inheritors from several decedents may consolidate applications at one office; notarization of property-rights documents removed.",
+      "docs": "Inheritance legal documents or notarized instruments (S02 Art. 10(3)); identity; property evidence; SAFE approval; bank papers.",
+      "pros": ["Lawful capital route for heirs with a genuine estate.", "Consolidated application allowed across decedents (2014 reform)."],
+      "cons": ["SAFE approval required; estate must be lawful and undisputed.", "Estate tax and income-tax treatment in China and the U.S. depends on facts (blank; flag F05/F01).", "Cross-border estate administration is document-heavy."],
+      "steps": [
+        "Obtain inheritance legal documents (court judgment, notarized succession certificate, etc. per S02 Art. 10(3)).",
+        "Apply to the SAFE branch at the decedent's last household registration place (S03 Section VI(1); S04 Art. 5).",
+        "After approval, sell/liquidate assets if needed, settle any Chinese taxes, purchase FX and remit once or in parts (S03 Section VI(2)-(3)).",
+        "Keep the full paper trail; U.S. reporting may include FBAR/8938 and possibly Form 3520 for foreign gifts/bequests — Form 3520 requirement cited in prior editions is IRS-published but not re-fetched in this edition (flag F16)."
+      ],
+      "cost_ladder": "L5",
+      "sources": ["S02", "S03", "S04", "S06", "S07"]
+    },
+    {
+      "id": "M07",
+      "name": "Personal foreign-trade settlement account (个人对外贸易经营者)",
+      "category": "Business — trade",
+      "who": "An individual who completed business registration and foreign-trade operator filing (S02 Art. 9(1)).",
+      "rule": "S01 Art. 10; S02 Art. 9: trade FX receipts and settlement run through the individual's FX settlement account and are managed like institutional accounts — no annual total limit (SAFE press Q&A for S02 confirms settlement accounts are not subject to the annual total).",
+      "docs": "Business registration / trade-operator filing; trade contracts; customs declarations or, for agency exports, agency contracts + logistics documents (S02 Art. 9(2) as amended by Huifa [2016] No. 13); invoices.",
+      "pros": ["No annual quota ceiling for genuine trade flows.", "Suited to actual exporters/importers with trade documents."],
+      "cons": ["Only for real trade — using it to relabel savings is false-documenting (P03).", "Institutional-account bank pricing is not the personal e-banking tariff; modeled costs are flagged (F13).", "Requires ongoing compliance (registration, declarations, verification)."],
+      "steps": [
+        "Register the business and file for foreign-trade operator status (S02 Art. 9(1)).",
+        "Open the personal FX settlement account at a designated bank (S02 Art. 25).",
+        "Receive export proceeds into the settlement account with trade documents; settle (结汇) per institutional rules without the annual total.",
+        "Purchase FX for genuine import payments or remit per trade terms; keep customs declarations and contracts.",
+        "Complete international-payments declarations (S01 Art. 8) and U.S. reporting for the accounts and income."
+      ],
+      "cost_ladder": "L6",
+      "sources": ["S01", "S02", "S06", "S07"]
+    },
+    {
+      "id": "M08",
+      "name": "Family support, gifts and other documented inbound transfers",
+      "category": "Personal — documented income",
+      "who": "Domestic individuals receiving family support (赡家款), notarized gifts, or similar one-way current-account transfers from abroad (S02 Art. 10(1)-(2)).",
+      "rule": "S02 Art. 10: above-quota settlement of gifts requires a notarized gift agreement; family support requires kinship proof + donor income evidence (bank proof, tax payment certificate). The money then follows quota or above-quota purchase rules (M02/M03).",
+      "docs": "Notarized gift agreement or kinship proof; donor's income evidence (bank deposit certificate, personal income tax voucher); IDs of both parties.",
+      "pros": ["Lawful for genuine family flows.", "Can supplement the annual quota with documented above-quota settlement."],
+      "cons": ["Genuine family relationship and donor income must be evidenced.", "Gifts must comply with national rules (S02 Art. 10(1)).", "Not a device to move the user's own savings — that is structuring (P01)."],
+      "steps": [
+        "Have the donor send the transfer with a clear purpose and retain donor income evidence.",
+        "Settle at the bank within the annual total on ID; above it, present notarized gift/kinship documents (S02 Art. 10).",
+        "Purchase FX and remit per M02/M03 rules as applicable.",
+        "Keep records on both sides; U.S. persons receiving foreign gifts may have Form 3520 duties (flag F16)."
+      ],
+      "cost_ladder": "L2",
+      "sources": ["S02", "S06", "S07"]
+    },
+    {
+      "id": "M09",
+      "name": "Wise from-CNY transfer (licensed-provider route)",
+      "category": "Provider rail",
+      "who": "Non-mainland-Chinese individuals (Taiwan/HK/Macau eligible) who worked in China and hold a China tax record showing tax paid within the last 3 years; personal accounts only; recipient must be an account the sender owns (S17).",
+      "rule": "Provider terms under a PBOC-regulated licensed third-party payment partner (S17). Limits: CNY 300,000 per transfer via China bank app, CNY 50,000 via Alipay; overall limit derived from after-tax salary proven by tax records; limits do not expire.",
+      "docs": "Wise verification (1–2 working days first time); China tax records within the last 3 years; Chinese bank account or Alipay; destination account the sender owns.",
+      "pros": ["Digital onboarding; no counter visit.", "Overall limit tied to documented after-tax salary — can exceed the bank quota route for eligible earners.", "Funds arrive in an account you own abroad."],
+      "cons": ["Eligibility excludes mainland-Chinese senders and anyone without recent China tax records.", "No fixed published fee table — exact fees appear only at transfer setup (S17); all fee cells blank (F07).", "Single-transfer caps force multiple transfers at larger amounts."],
+      "steps": [
+        "Check eligibility: non-mainland-Chinese sender with China work/tax history (S17).",
+        "Complete Wise verification once (1–2 working days) and upload qualifying tax records to set the overall limit.",
+        "Create the transfer to your own overseas account; pay from the China bank app (≤ CNY 300,000) or Alipay (≤ CNY 50,000).",
+        "Compare Wise's live quote against the bank quote for the same net USD before sending; Wise's fee is only knowable at quote time (F07).",
+        "Keep records; complete U.S. reporting (S10, S11)."
+      ],
+      "cost_ladder": "L7",
+      "sources": ["S17", "S07", "S10", "S11"]
+    },
+    {
+      "id": "M10",
+      "name": "Bank-card overseas spending with post-return FX repayment",
+      "category": "Provider rail — spending",
+      "who": "Anyone with a mainland-issued bank card spending or withdrawing abroad within card rules; the FX-purchase repayment after return does not count toward the annual total (S08; S02 Art. 35(5)).",
+      "rule": "S08: 个人境外旅游消费刷卡支付的，回国后购汇还款不计入年度总额 — overseas card spending repaid by FX purchase after return is outside the annual-quota system; S02 Art. 35(5) keeps such repayments outside the personal FX settlement system.",
+      "docs": "Card and statement; repayment via the card account.",
+      "pros": ["Does not consume the USD 50,000 quota for the repayment leg.", "No wire fee or wire paperwork per transaction.", "Lawful for genuine consumption/withdrawal needs."],
+      "cons": ["This spends money abroad; it does not deliver cash to a U.S. bank account.", "Card issuer FX conversion, ATM and withdrawal fees are not verified from official schedules here (blank; flag F08).", "Card networks enforce their own overseas withdrawal caps (not verified here)."],
+      "steps": [
+        "Use the mainland-issued card for genuine overseas purchases or ATM withdrawals.",
+        "Repay the card in CNY after returning; the FX-purchase repayment stays outside the annual total (S08).",
+        "Keep statements; there is no transfer receipt since no wire occurs.",
+        "For large future conversions, this is a consumption channel, not a repatriation channel."
+      ],
+      "cost_ladder": "L8",
+      "sources": ["S02", "S08"]
+    },
+    {
+      "id": "M11",
+      "name": "Physical cash carrying with declaration and permits",
+      "category": "Personal — cash",
+      "who": "Any traveler crossing the border with FX cash.",
+      "rule": "S19/S20: outbound ≤ USD 5,000 equivalent no permit; USD 5,000–10,000 with bank-issued FX Carrying Permit; over USD 10,000 requires SAFE permit (and per S20 is tied to travel to specified countries); inbound over USD 5,000 must be declared; RMB limit CNY 20,000 per crossing.",
+      "docs": "Customs declaration form; bank or SAFE issued 携带证 (FX Carrying Permit) when applicable; ID.",
+      "pros": ["No wire or correspondent fees.", "Simple for small amounts within the permit-free band."],
+      "cons": ["Strict hard caps; over-limit cash without permits is returned or confiscated with fines (S19).", "Insurance, security and travel costs are unpriced here (blank).", "USD 400,000 cannot lawfully cross at once; many trips would look like evasion and are impractical.", "Cash still needs lawful-source answers on both sides of the border."],
+      "steps": [
+        "Convert CNY to USD cash at the bank within applicable purchase rules (M02/M03 for the purchase leg).",
+        "For USD 5,000–10,000, obtain the bank-issued FX Carrying Permit before departure (S19/S20).",
+        "Declare cash at customs per the thresholds; keep the declaration form.",
+        "Deposit in the destination bank; expect source-of-funds questions for large cash deposits (U.S. banks file currency transaction reports — not fetched here; blank F14)."
+      ],
+      "cost_ladder": "L9",
+      "sources": ["S19", "S20", "S07"]
+    },
+    {
+      "id": "M12",
+      "name": "Company profit/dividend remittance from a foreign-invested enterprise",
+      "category": "Business — capital",
+      "who": "A foreign individual/shareholder receiving genuine declared profits from a company they invested in (FIE route; S03 Section V).",
+      "rule": "S03 Section V: banks handle profit remittance ≤ USD 50,000 equivalent without document review; above, board/partner profit-distribution resolution + original tax-filing form required, with the bank stamping the form after remittance.",
+      "docs": "Board/partner profit-distribution resolution; tax-filing form (tax authority); company audit basis for distributable profit; shareholder identity.",
+      "pros": ["Explicitly facilitated channel for genuine distributions (2014 reform).", "Above USD 50,000 the document list is short and fixed."],
+      "cons": ["Requires a real profitable company with declared dividends; it cannot relabel personal savings.", "Corporate tax and dividend withholding precede remittance (rates not modeled — blank F05).", "Company bank pricing differs from the personal tariff (F13)."],
+      "steps": [
+        "Declare dividends via the company with a board/partner resolution; settle corporate-level taxes per Chinese tax rules.",
+        "Obtain the tax authority's tax-filing form for external payments.",
+        "Have the bank remit the profit (≤ USD 50,000 simplified; above, present resolution + original tax-filing form — S03 Section V).",
+        "Bank stamps the tax form with the actual remitted amount and date; keep copies.",
+        "U.S. side: dividend income reporting and foreign tax credit (Form 1116, S15); FBAR/8938 for accounts (S10, S11)."
+      ],
+      "cost_ladder": "L10",
+      "sources": ["S03", "S06", "S07", "S15"]
+    },
+    {
+      "id": "M13",
+      "name": "Insurance payout settlement (foreign-exchange insurance proceeds)",
+      "category": "Personal — documented income",
+      "who": "Domestic individuals receiving FX insurance payouts under compliant policies (S02 Art. 10(4), 19).",
+      "rule": "S02 Art. 10(4): above-quota settlement with insurance contract + insurer payment proof; Art. 19: payouts may be held in the FX savings account or settled to RMB. FX life-insurance premiums themselves are restricted (Art. 19; S08 bars using FX purchase for life/investment insurance abroad).",
+      "docs": "Insurance policy; insurer payment certificate; ID.",
+      "pros": ["Documented route for genuine claims/payouts.", "Payout can stay in FX without settlement."],
+      "cons": ["Only for lawful policies; only payout amounts qualify.", "Niche: not a route for general savings."],
+      "steps": [
+        "Receive the payout into the FX savings account with policy and payment proof (S02 Art. 19).",
+        "Settle or remit per quota/above-quota rules (M02/M03).",
+        "Keep policy, payout proof and slips; complete U.S. reporting."
+      ],
+      "cost_ladder": "L3",
+      "sources": ["S02", "S06", "S07"]
+    },
+    {
+      "id": "M14",
+      "name": "Unused-RMB re-conversion on original exchange slip (foreign individual)",
+      "category": "Personal — reversal",
+      "who": "境外个人 who converted FX to RMB earlier and has not used it all (S01 Art. 15; S02 Art. 13(2)).",
+      "rule": "S02 Art. 13(2): unused converted RMB may be converted back to FX on the original exchange slip, valid 24 months from conversion; daily small amounts (≤ USD 500, or ≤ USD 1,000 pre-departure in restricted zones) need ID only. S01 Art. 14: unspent FX originally remitted in can be returned by the original route with ID.",
+      "docs": "Original exchange slip (兑换水单); ID; for larger amounts the slip is mandatory.",
+      "pros": ["Restores FX without income documents — it is a reversal, not a new purchase.", "Original-route refund of remitted-in FX is even simpler (S01 Art. 14)."],
+      "cons": ["Only covers amounts traceable to a slip within 24 months — not general savings.", "Then the FX still needs a lawful remittance leg to leave China."],
+      "steps": [
+        "Locate the original exchange slip(s) within the 24-month validity (S02 Art. 13(2)).",
+        "At the bank, convert the unused RMB back to USD against the slip.",
+        "Remit the FX abroad (S02 Art. 15 for foreign individuals: by ID from FX savings account).",
+        "Keep the new slip; report as usual."
+      ],
+      "cost_ladder": "L1",
+      "sources": ["S01", "S02", "S06", "S07"]
+    },
+    {
+      "id": "M15",
+      "name": "Qualified domestic institutional overseas investment (QDII-type)",
+      "category": "Capital — investment",
+      "who": "境内个人 investing abroad through qualified domestic institutions (banks, fund managers) per S01 Art. 17 / S02 Art. 17.",
+      "rule": "S01 Art. 17 / S02 Art. 17: domestic individuals may use FX or RMB for overseas fixed-income and equity investment through qualified domestic institutional investors; employee stock plans go through the employer/agent with SAFE approval (S02 Art. 18).",
+      "docs": "Product subscription documents at the qualified institution; KYC.",
+      "pros": ["Lawful capital-account outflow channel for investment purposes.", "Institution handles FX and remittance mechanics."],
+      "cons": ["Money ends up invested, not in a U.S. bank account; redemption is a separate step.", "Product fees/prices are not verified here (blank).", "S08 confirms FX purchase may not be used for overseas securities directly — this route works only through the qualified institutions framework."],
+      "steps": [
+        "Choose a qualified domestic institution product (S02 Art. 17).",
+        "Subscribe with RMB or FX; institution performs the conversion and outbound investment formalities.",
+        "Hold/ redeem per product terms; proceeds follow the product's return rules.",
+        "Report foreign accounts/securities on FBAR/8938 as applicable (S10, S11)."
+      ],
+      "cost_ladder": null,
+      "sources": ["S01", "S02", "S08", "S10", "S11"]
+    },
+    {
+      "id": "P01",
+      "name": "Structuring: splitting transfers or using relatives' quotas",
+      "category": "Prohibited — enforcement risk",
+      "who": "—",
+      "rule": "S01 Art. 7 forbids splitting (分拆) to evade limit supervision; S08 forbids lending one's quota or borrowing others' (不得出借本人或借用他人额度). Banks detect patterns through the personal FX system (S02 Art. 32–36).",
+      "docs": "—",
+      "pros": [],
+      "cons": ["Explicitly prohibited; transactions can be rejected, accounts restricted, and penalties applied.", "Pattern detection is systematic, not anecdotal.", "No execution steps are provided by design."],
+      "steps": [],
+      "cost_ladder": null,
+      "sources": ["S01", "S02", "S08"]
+    },
+    {
+      "id": "P02",
+      "name": "Underground banking (地下钱庄) / black-market exchange",
+      "category": "Prohibited — criminal risk",
+      "who": "—",
+      "rule": "S08 explicitly names underground-banking participation as a violation; PBOC/SAFE enforcement treats such value transfer as illegal; associated money-laundering crimes are prosecuted (context in S18's list of harms).",
+      "docs": "—",
+      "pros": [],
+      "cons": ["Criminal exposure (illegal business operations, money laundering) plus total-loss risk on funds.", "No recourse if the counterparty disappears.", "No execution steps are provided by design."],
+      "steps": [],
+      "cost_ladder": null,
+      "sources": ["S08", "S18"]
+    },
+    {
+      "id": "P03",
+      "name": "False trade documents, over-invoicing or sham services",
+      "category": "Prohibited — fraud risk",
+      "who": "—",
+      "rule": "S01 Art. 7 forbids using false commercial documents or vouchers to evade authenticity management; S08 forbids false declarations and untrue materials.",
+      "docs": "—",
+      "pros": [],
+      "cons": ["Customs/tax/AML cross-checks compare invoices, logistics and payments.", "Criminal fraud and tax-evasion exposure on top of FX penalties.", "No execution steps are provided by design."],
+      "steps": [],
+      "cost_ladder": null,
+      "sources": ["S01", "S08"]
+    },
+    {
+      "id": "P04",
+      "name": "Cryptocurrency / stablecoin cash-out",
+      "category": "Prohibited — illegal financial activity",
+      "who": "—",
+      "rule": "S18 (Yin Fa [2021] No. 237): fiat-crypto exchange and related services are illegal financial activities, strictly banned; offshore exchanges serving domestic residents are likewise illegal; virtual currency has no legal-tender status.",
+      "docs": "—",
+      "pros": [],
+      "cons": ["Declared illegal financial activity in China; counterparties and platforms are enforcement targets.", "Funds can be frozen during investigations; contract protections do not apply.", "U.S. tax treatment of crypto dispositions is separate and adds reporting complexity (not a tax-free channel).", "No execution steps are provided by design."],
+      "steps": [],
+      "cost_ladder": null,
+      "sources": ["S18"]
+    },
+    {
+      "id": "P05",
+      "name": "Misusing FX purchase quota for overseas property, securities or insurance",
+      "category": "Prohibited — misuse of purpose",
+      "who": "—",
+      "rule": "S08: 个人购付汇不得用于境外购房、证券投资、购买人寿保险和投资性返还分红类保险 — FX purchase/remittance may not be used for overseas home purchase, securities investment, life insurance or investment-linked insurance. (Investment abroad goes only through qualified institutions — M15.)",
+      "docs": "—",
+      "pros": [],
+      "cons": ["Banks ask purchase purpose and can require evidence; false purpose is the fraud route P03.", "Transactions can be reversed and quota privileges suspended.", "No execution steps are provided by design."],
+      "steps": [],
+      "cost_ladder": null,
+      "sources": ["S08", "S02"]
+    },
+    {
+      "id": "P06",
+      "name": "Letting others move money through your account (money-mule / pass-through)",
+      "category": "Prohibited — laundering risk",
+      "who": "—",
+      "rule": "S01 Art. 36 requires banks to record, analyze and report large or suspicious FX transactions under AML rules; S08 forbids money laundering participation.",
+      "docs": "—",
+      "pros": [],
+      "cons": ["AML monitoring flags third-party flows; account freezes are common.", "Criminal accessory exposure for laundering or illegal FX operations.", "No execution steps are provided by design."],
+      "steps": [],
+      "cost_ladder": null,
+      "sources": ["S01", "S08"]
+    }
+  ]
+}
