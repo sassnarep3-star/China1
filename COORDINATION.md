@@ -966,7 +966,7 @@ integration session. No other session's files are in scope. Open PR #25
 - Verification: `python3 edition-i/build/verify.py` passed 7,558 checks, including
   independent re-derivation of every cost row, 40-row ladders, source presence, blank
   semantics, prohibited-route step checks, internal links/fragments and byte-identical
-  rebuild. The repository crawler read 211 archived HTML pages: 0 broken internal links,
+  rebuild. The repository crawler read all 253 committed HTML pages: 0 broken internal links,
   0 unresolved fragments, 0 duplicate IDs, 0 invalid JSON.
 - Irregularities published: 19 items, including Edition B's repealed 2004 staged release,
   Edition D's assumed all-in totals, the conflicting domestic-individual definition, and a

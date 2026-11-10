@@ -67,7 +67,7 @@ internal links and fragments resolve, and that a rebuild is byte-identical.
 - 2026 rules confirmed: PBOC AML order 2025 No. 11 (effective 1 Jan 2026);
   PBOC eight-department crypto notice 2026 No. 42; MOF/STA dividend announcement
   2026 No. 27; MOF/STA housing VAT announcement 2025 No. 17.
-- Mechanical crawl of 211 archived HTML pages: 0 broken internal links, 0 unresolved
+- Mechanical crawl of all 253 committed HTML pages: 0 broken internal links, 0 unresolved
   fragments, 0 duplicate IDs, 0 invalid JSON.
 - 7,556 verifier checks pass.
 - Unverified values are blank and listed in `data/flags.json`. None blocks publication.

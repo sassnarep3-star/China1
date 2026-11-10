@@ -2,8 +2,8 @@
  "generated_utc": "2026-11-10",
  "summary": {
   "html_files": 253,
-  "internal_refs": 20814,
-  "external_refs": 21299,
+  "internal_refs": 20815,
+  "external_refs": 21303,
   "missing_links": 0,
   "bad_anchors": 0,
   "duplicate_ids": 0,
@@ -19,12 +19,12 @@
   },
   {
    "check": "Internal references resolved",
-   "result": "20814",
+   "result": "20815",
    "detail": "0 broken (file or path missing)."
   },
   {
    "check": "Fragment (anchor) targets",
-   "result": "20814",
+   "result": "20815",
    "detail": "0 fragments did not resolve to an element ID."
   },
   {
@@ -39,7 +39,7 @@
   },
   {
    "check": "External references",
-   "result": "21299",
+   "result": "21303",
    "detail": "Not fetched during the audit; external availability is not assured."
   },
   {
@@ -119,6 +119,14 @@
    "count_capped": 8,
    "hits": [
     {
+     "path": "COORDINATION.md",
+     "context": "E individual measures (Arts. 3/7/13/37 verbatim), SAFE 2014 No.2 §VI (staged release cancelled), IRS citizens-abroad (worldwide/FBAR/3520), BOC tariff (1‰"
+    },
+    {
+     "path": "COORDINATION.md",
+     "context": "regularities published: 19 items, including Edition B's repealed 2004 staged release,   Edition D's assumed all-in totals, the conflicting domestic-indivi"
+    },
+    {
      "path": "dossier/channels.html",
      "context": "k\" rel=\"noopener\" title=\"SAFE Q&amp;A on 个人财产对外转移 (approval tiers and staged release)\">CN-07 · SAFE</a><br><a class=\"src\" href=\"http://m.safe.gov.cn/safe/"
     },
@@ -141,14 +149,6 @@
     {
      "path": "dossier/sources.html",
      "context": "le personal balance; the RMB 200,000 one-shot threshold; the two-year staged release; the hukou-cancellation + overseas-settlement + tax-clearance prerequ"
-    },
-    {
-     "path": "dossier/sources.html",
-     "context": "><b>CN-07</b></td><td><b>SAFE Q&amp;A on 个人财产对外转移 (approval tiers and staged release)</b><br><span style=\"color:var(--muted);font-size:13px\">SAFE · zh</sp"
-    },
-    {
-     "path": "dossier/sources.html",
-     "context": "超过等值50万元（含50万元）人民币的，由省级外汇局初审后报国家外汇管理局批准。对超过20万元（含20万元）人民币的移民转移采取“一次申请、分步汇出”。</span></td><td>The RMB 500,000 approval-tier split between the prov"
     }
    ]
   },
