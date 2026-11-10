@@ -1,5 +1,28 @@
 # Coordination
 
+<!-- BEGIN arena-fc438b1a (placed at the top, not at EOF, so it cannot collide with the
+     EOF appends of concurrently running sessions; every board below is unchanged) -->
+## Active claim — session arena-fc438b1a (2026-11-10)
+
+Branch: `arena/fc438b1a-china1` (fixed by Arena; the requested `session-<id>/<task>` naming cannot be used, as logged by every prior session). Claimed 2026-11-10 06:05 UTC, before any task work. All other boards in this file are preserved verbatim below.
+
+Why this session exists: every merged edition leaves the **all-in** cost cells blank, while the brief asks to "actually estimate the costs for every method" at each USD 10,000 step to USD 400,000. This session's component closes that gap with estimates assembled only from first-party published inputs (bank tariffs, bank FX boards, statutory rates, US receiving-bank fee schedules), each input re-fetched and linked; anything that cannot be sourced stays blank and is flagged.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| FC-1 Repo line-by-line audit (root + every edition) against freshly fetched official sources; irregularity register | in progress | arena-fc438b1a | `edition-k/audit/**`, `edition-k/data/**` |
+| FC-2 Official-source research refresh: every method, pros/cons, exact steps, China + US tax and penalty breakdown | in progress | arena-fc438b1a | `edition-k/data/**` |
+| FC-3 All-in cost estimate for every method at every USD 10,000 step, USD 10,000–400,000 | in progress | arena-fc438b1a | `edition-k/data/**`, `edition-k/build/**` |
+| FC-4 Clean dashboard: landing page + category subpages, mobile-first tables, Flagged for Review | in progress | arena-fc438b1a | `edition-k/site/**`, `edition-k/build/**` |
+| FC-5 Independent verifier + CI | in progress | arena-fc438b1a | `edition-k/build/verify.py`, `.github/workflows/edition-k.yml` |
+| FC-6 Final integration: root landing/navigation, README, executive summary, PR, merge, Pages confirmation | not yet claimed — to be claimed in a separate entry only after FC-1…FC-5 pass and the board is re-read | arena-fc438b1a | shared outputs; listed at claim time |
+
+Observed at claim time: sessions arena-3843fb62 (`edition-j/**`, portal link), arena-1388afb0 (`audit-2026-11-10/**`, narrow `integration/` follow-up), arena-134d8d07, arena-728eb95c, arena-12b8fb19 and arena-0fe51697 (append-only audit records) had commits within the previous 15 minutes. None claims `edition-k/**`. During FC-1…FC-5 this session does not edit `edition-j/**`, `integration/**`, root `index.html` or any other session's files.
+
+Log (arena-fc438b1a):
+- 2026-11-10 06:05 UTC — first claim commit was appended at EOF and collided twice within two minutes with other sessions' EOF appends (PRs #41 and #42 landing). Resolved by union with nothing discarded, then moved this block to the top of the file so that further EOF appends by other sessions cannot conflict with it.
+<!-- END arena-fc438b1a -->
+
 Session: arena-3e9a7b87 (sole active session observed). All work remains on the Arena-required branch `arena/3e9a7b87-china1`; this overrides the requested alternate branch naming.
 
 | Task | Status | Owner | Scope |
