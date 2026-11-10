@@ -103,7 +103,7 @@ def page_index():
         ("steps.html", "Step-by-step procedures", "Exactly what to do, in order, for every lawful route."),
         ("costs.html", "Cost tables $10K → $400K", "Ten ladders × 40 targets. Verified components priced; unknown components blank + flagged."),
         ("taxes.html", "Tax &amp; penalty breakdown", "China IIT, U.S. §988, FBAR, Form 8938, foreign tax credit — what is actually taxed and what is not."),
-        ("sources.html", "20 verified sources", "Every row links to the official page it was checked against, with retrieval notes."),
+        ("sources.html", f"{len(sources)} verified sources", "Every row links to the official page it was checked against, with retrieval notes."),
         ("flagged.html", "Flagged for Review", f"{len(flags)} published irregularities and unverified values. Non-blocking."),
     ]
     body = (
@@ -131,7 +131,7 @@ def page_index():
         ("4. Pre-emigration assets / inheritance", "SAFE approval route (emigration or inheritance transfer); 2014 reforms removed forced staged remittance and document notarization.", ["S03", "S04"]),
         ("5. Real business flows", "Personal foreign-trade settlement accounts and company profit remittances have no quota ceiling for genuine transactions.", ["S02", "S03"]),
         ("6. Tax side", "Conversion is untaxed; pay/document the underlying tax once, claim the U.S. foreign tax credit (Form 1116), keep §988 FX gains ≤ $200 per personal transaction or report them, file FBAR/8938 on time.", ["S09", "S14", "S15", "S10", "S11"]),
-        ("7. What not to do", "Structuring across relatives, underground banking, false trade documents, crypto cash-out and quota misuse are prohibited — risk information only, no steps published.", ["S01", "S08", "S18"]),
+        ("7. What not to do", "Structuring across relatives, underground banking, false trade documents, crypto cash-out and quota misuse are prohibited — risk information only, no steps published.", ["S01", "S08", "S21"]),
     ]
     rows = "".join(f"<tr><td>{e(t)}</td><td>{e(d)}</td><td>{src_links(s)}</td></tr>" for t, d, s in decisions)
     body += (
@@ -388,7 +388,7 @@ def page_taxes():
 
 def page_sources():
     body = (
-        "<h1>Source register — 20 entries, all retrieved 2026-11-10</h1>"
+        f"<h1>Source register — {len(sources)} entries, all retrieved 2026-11-10</h1>"
         '<p class="lead">Each source was opened and read during this edition\'s verification pass. '
         "Government sources support law and tax claims; provider sources (BOC, Wise) support only their own "
         "published prices and terms.</p>"
@@ -431,7 +431,7 @@ def page_flagged():
 
 def page_summary():
     body = (
-        '<p class="pill">Executive summary · Edition I · verified against 20 official sources</p>'
+        '<p class="pill">Executive summary · Edition I · verified against ' + str(len(sources)) + ' official sources</p>'
         "<h1>Executive summary</h1>"
         '<h2 style="border:none;margin-top:.6em">Question</h2>'
         "<p>Money is stuck in a Chinese bank account as CNY. What is the best way to convert and move it to "
@@ -460,8 +460,9 @@ def page_summary():
         f"{usd(wire_costs(400000,8)['known'])} ({pct(wire_costs(400000,8)['known']*100/400000)}). Receiving-bank "
         "fees, intermediaries and taxes are unverified and shown blank (F03–F05).</li>"
         "<li><strong>Avoid every shortcut.</strong> Splitting transfers across relatives, underground banking, "
-        "false trade papers and crypto cash-out are prohibited (S01 Art. 7, S08, S18) with criminal exposure. "
-        "The penalties that actually get charged in practice are filing penalties: FBAR up to $10,000 "
+        "false trade papers and crypto cash-out are prohibited (S01 Art. 7, S08, S21 — the 2021 crypto notice "
+        "S18 was expressly repealed by Yin Fa [2026] No. 42 and the ban continues under it) with criminal "
+        "exposure. The penalties that actually get charged in practice are filing penalties: FBAR up to $10,000 "
         "(non-willful) or 50% of balances (willful), Form 8938 up to $10,000 + $10,000/30 days capped at "
         "$60,000 (S12).</li>"
         "</ol>"

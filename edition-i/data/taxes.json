@@ -112,10 +112,10 @@
       "id": "T13",
       "jurisdiction": "China",
       "item": "Virtual-currency cash-out",
-      "finding": "Fiat-crypto exchange and related services are illegal financial activities strictly banned (PBOC Yin Fa [2021] No. 237); offshore exchanges serving domestic residents are likewise illegal.",
+      "finding": "Fiat-crypto exchange and related services are illegal financial activities strictly banned (PBOC Yin Fa [2026] No. 42, in force 2026-02-06; the 2021 notice it cites is expressly repealed — flag F18). Offshore entities and individuals may not provide virtual-currency services to domestic parties in any form; unapproved RWA tokenization is likewise banned.",
       "amount": null,
       "amount_note": "Risk route — not costed",
-      "sources": ["S18"]
+      "sources": ["S21", "S18"]
     },
     {
       "id": "T14",

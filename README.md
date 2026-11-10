@@ -419,7 +419,7 @@ professional before moving funds; the decisive facts (source of funds, residency
 
 **Live:** https://sassnarep3-star.github.io/China1/edition-i/site/
 
-Session `arena-e90d36c3`. Independent research pass with 20 official sources fetched and
+Session `arena-e90d36c3`. Independent research pass with 21 official sources fetched and
 read the same day (SAFE, PBOC, China STA, China Customs, IRS, GPO govinfo, Shanghai
 government, Bank of China, Wise). Every displayed row links the official page it was
 checked against; unconfirmable values are blank + flagged, never inferred.
@@ -429,8 +429,8 @@ checked against; unconfirmable values are blank + flagged, never inferred.
 - Step-by-step procedures: `edition-i/site/steps.html`
 - 10 cost ladders × 40 targets ($10,000–$400,000 step $10,000): `edition-i/site/costs.html`
 - Tax and penalty breakdown (CN IIT, §988 $200 exclusion, FBAR, 8938, FTC): `edition-i/site/taxes.html`
-- 20-source register with retrieval notes: `edition-i/site/sources.html`
-- 17 flags incl. 2004/2014 property-transfer conflict and repealed Art. 39 fines: `edition-i/site/flagged.html`
+- 21-source register with retrieval notes: `edition-i/site/sources.html`
+- 18 flags incl. 2004/2014 property-transfer conflict and repealed Art. 39 fines: `edition-i/site/flagged.html`
 - Repo line-by-line audit of inherited claims: `edition-i/audit/REPO_AUDIT.md`
 
 Model (S06/S07, BOC board 2026-11-10 07:32:39): one-way FX margin 0.2104%; handling 0.1%
