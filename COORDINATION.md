@@ -23,6 +23,40 @@ Log (arena-fc438b1a):
 - 2026-11-10 06:05 UTC — first claim commit was appended at EOF and collided twice within two minutes with other sessions' EOF appends (PRs #41 and #42 landing). Resolved by union with nothing discarded, then moved this block to the top of the file so that further EOF appends by other sessions cannot conflict with it.
 <!-- END arena-fc438b1a -->
 
+<!-- BEGIN arena-1ee3ca2b (placed at the top, directly under the previous top block, so it
+     cannot collide with the EOF appends of concurrently running sessions; every board
+     below is unchanged) -->
+## Active claim — session arena-1ee3ca2b (2026-11-10)
+
+Branch: `arena/1ee3ca2b-china1` (fixed by Arena; the requested `session-<id>/<task>` naming cannot be used, as logged by every prior session). Claimed 2026-11-10 09:52 UTC, before any task work. All other boards in this file are preserved verbatim.
+
+Board read before claiming (main `dd39727` **and every remote session branch**, because claims pushed to a session branch are invisible on `main`):
+
+| Other session | State observed 09:49 UTC | Scope it holds | This session's handling |
+|---|---|---|---|
+| arena-2fb403b0 | active (claim commit 09:48:50) | `edition-k/**`, `.github/workflows/edition-k.yml` (took over the stale arena-fc438b1a claim) | not touched |
+| arena-66165efb | active (claim commit 09:48:33) | `edition-l/**`, `.github/workflows/edition-l.yml` | not touched |
+| arena-4207cf2f | claim 06:05, no commits since (>60 min) | `edition-4207cf2f/**` | not taken over — path left alone, nothing to hand off |
+| arena-fc438b1a | claim 06:01, no commits since (>60 min) | `edition-k/**` (already handed off to arena-2fb403b0) | not touched |
+| PRs #39 (arena-3843fb62), #45 (arena-fface148) | open, no commits since 06:04 | their own branches | not merged, not closed |
+
+`edition-m/` is unused on `main` and on all 46 remote branches, so this session isolates its component work there.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| M1 Repo line-by-line audit of the published site against freshly fetched official sources; irregularity register with links for manual review | in progress | arena-1ee3ca2b | `edition-m/audit/**` |
+| M2 Official-source research: every CNY→USD method, pros/cons, exact steps, China-side and US-side tax + penalty breakdown | in progress | arena-1ee3ca2b | `edition-m/data/**` |
+| M3 Cost estimate for every method at every USD 10,000 step, USD 10,000–400,000 (each input linked to its official source; unsourced inputs blank + flagged) | in progress | arena-1ee3ca2b | `edition-m/data/**`, `edition-m/build/**` |
+| M4 Dashboard: landing page + category subpages, mobile-first tables, Flagged for Review page | in progress | arena-1ee3ca2b | `edition-m/*.html`, `edition-m/assets/**`, `edition-m/build/**` |
+| M5 Independent verifier + CI | in progress | arena-1ee3ca2b | `edition-m/build/verify.py`, `.github/workflows/edition-m.yml` |
+| M6 Final integration: additive portal link, README/executive-summary pointer, PR, merge, Pages confirmation | not yet claimed — claimed in a separate entry only after M1–M5 pass and the board (main + all remote branches) is re-read | arena-1ee3ca2b | shared outputs; listed at claim time |
+
+Ground rules for this session: no file of any other edition, of `integration/**`, or the root `index.html` is edited during M1–M5. No personal facts (source of funds, SAFE resident/non-resident classification, PRC tax history, destination bank, live quote) were supplied, so they stay unknown, blank and flagged — never inferred. Prohibited channels are listed with their legal exposure only, never with execution steps.
+
+Log (arena-1ee3ca2b):
+- 2026-11-10 09:52 UTC — claim written at the top of the file (not EOF) to avoid the EOF-append collisions logged by arena-fc438b1a; committed and pushed before any research or build work.
+<!-- END arena-1ee3ca2b -->
+
 Session: arena-3e9a7b87 (sole active session observed). All work remains on the Arena-required branch `arena/3e9a7b87-china1`; this overrides the requested alternate branch naming.
 
 | Task | Status | Owner | Scope |
