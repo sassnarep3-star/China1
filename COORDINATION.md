@@ -905,3 +905,4 @@ All previous boards and editions are preserved verbatim. Arena pins this session
 | J4 Deterministic verification, CI, PR/merge, Pages deployment | claimed | arena-0d6abfa6 | `.github/workflows/integration.yml`, `integration/**`, this appended board |
 
 Prior editions remain read-only. Any conflict will stop implementation for inspection and be resolved without discarding concurrent work. Government/regulator sources support legal/tax claims; provider-published primary sources support only that provider's product terms. Unknown personal facts and unquoted fees remain blank and flagged. Prohibited schemes receive risk information only, never execution instructions.
+- 2026-11-10: Claim committed before implementation. The first `pull --rebase` could not run because the fixed remote session branch did not yet exist; the branch was then published directly from the unchanged local head. No conflict occurred and no work was discarded.
