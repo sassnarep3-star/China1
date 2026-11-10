@@ -1,91 +1,292 @@
 {
-  "checked_utc": "2026-11-09",
-  "method": "Direct fetch_page relevant text inspection",
+  "checked_utc": "2026-11-10",
+  "method": "Direct fetch_page retrieval and listed operative-scope inspection",
   "sources": {
-    "SAFE": [
-      "SAFE individual FX measures, Articles 7, 13, 26, 28, 37",
-      "https://www.safe.gov.cn/safe/2006/1225/5319.html"
-    ],
-    "AMEND": [
-      "SAFE 2014 No. 2, Section VI (amended republication)",
-      "https://www.safe.gov.cn/tianjin/2024/0903/2594.html"
-    ],
-    "IRS": [
-      "IRS: U.S. citizens and resident aliens abroad, opening and reporting sections",
-      "https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad"
-    ],
-    "BOC": [
-      "BOC personal electronic-banking tariff, cross-border TT and note 1",
-      "https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
-    ],
-    "WISE": [
-      "Wise: Guide to CNY transfers, Sending from CNY section",
-      "https://wise.com/help/articles/2955298/guide-to-cny-transfers"
-    ],
-    "DIV": [
-      "MOF/STA 2026 No. 27, Sections I\u2013III",
-      "https://shanghai.chinatax.gov.cn/zzzb/zcwj/202609/t481448.html"
-    ]
+    "S01": {
+      "title": "State Council Order 532 — Regulation on Foreign Exchange Administration",
+      "url": "https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm",
+      "kind": "government",
+      "locator": "Arts. 12, 22, 39–45, 52",
+      "scope": "Real transaction basis; liquidation remittance; administrative violation bands; definitions."
+    },
+    "S02": {
+      "title": "PBOC Order [2006] No. 3 — Individual Foreign Exchange Measures",
+      "url": "https://www.safe.gov.cn/safe/2006/1225/5319.html",
+      "kind": "government",
+      "locator": "Arts. 3, 7, 9, 13, 22, 26, 28, 37",
+      "scope": "Current/capital distinction; anti-splitting; overseas-person income and property rules; account identity classification."
+    },
+    "S03": {
+      "title": "SAFE Huifa [2020] No. 14 — Current Account Guidelines",
+      "url": "https://www.gov.cn/gongbao/content/2020/content_5560296.htm",
+      "kind": "government",
+      "locator": "Arts. 47–49, 54–65, 68, 86–89",
+      "scope": "USD50,000 facilitation tier; documented purchases; Art. 59 tax/source evidence; existing-FX remittance; authenticity and cash rules."
+    },
+    "S04": {
+      "title": "PBOC Announcement [2004] No. 16 — Individual Property Transfer Abroad",
+      "url": "https://www.gov.cn/gongbao/content/2005/content_64294.htm",
+      "kind": "government",
+      "locator": "Arts. 2, 5–12",
+      "scope": "Emigrant/inheritance definitions, evidence and own-account remittance. Historical staging in Art. 6 is modified by S05."
+    },
+    "S05": {
+      "title": "SAFE Huifa [2014] No. 2 — amended republication",
+      "url": "https://www.safe.gov.cn/tianjin/2024/0903/2594.html",
+      "kind": "government",
+      "locator": "Section VI",
+      "scope": "Removes mandatory staged emigrant remittance; permits one or multiple remittances within approval; combines specified inheritance applications."
+    },
+    "S07": {
+      "title": "SAFE Hebei — emigrant property transfer service guide",
+      "url": "https://www.safe.gov.cn/hebei/file/file/20240816/86fd609207224d71b23cfda39ebe4bbb.pdf",
+      "kind": "government",
+      "locator": "Sections 3, 5, 7–9",
+      "scope": "Pre-status property, identity/hukou, source/tax documents, approval procedure, 20-working-day statutory period and no administrative fee."
+    },
+    "S08": {
+      "title": "SAFE Hebei — inheritance property transfer service guide",
+      "url": "https://www.safe.gov.cn/hebei/file/file/20240816/186ef46ed22745009f16c6715f2a54f1.pdf",
+      "kind": "government",
+      "locator": "Sections 3, 5, 7–9",
+      "scope": "Inheritance/property/tax documents and approval. Section 3 contains pre-status wording inconsistent with the inheritance definition; flagged."
+    },
+    "S12": {
+      "title": "SAFE Henan — overseas insurance beneficiary Q&A",
+      "url": "https://www.safe.gov.cn/henan/2022/0718/1245.html",
+      "kind": "government",
+      "locator": "Full Q&A",
+      "scope": "Lawful compliant insurance proceeds may use the overseas-person lawful-RMB-income process with policy and insurer payment proof."
+    },
+    "S14": {
+      "title": "Bank of China personal finance tariff, Chapter 3",
+      "url": "https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf",
+      "kind": "provider",
+      "locator": "Items 210101002, 210105008, 210108014; notes 4, 5, 10",
+      "scope": "TT/draft 0.1%, min CNY50/max CNY260; international cable CNY150; actual overseas charges; USD15/25 conditional full-arrival; ATM and carry-permit terms."
+    },
+    "S16": {
+      "title": "Bank of China indicative foreign-exchange board",
+      "url": "https://www.boc.cn/sourcedb/whpj/",
+      "kind": "provider",
+      "locator": "USD row and disclaimer, captured 2026-11-10 07:32:39 China time",
+      "scope": "USD100 bid CNY666.22 / telegraphic ask CNY669.03 / reference CNY671.88. Indicative only; actual channel/counter execution rate controls."
+    },
+    "S18": {
+      "title": "HSBC China tariff of accounts and services (effective 2026-10-31)",
+      "url": "https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-accouts-and-services.pdf",
+      "kind": "provider",
+      "locator": "Notes 3, 7, 10; items 2.2.4.1–2, 2.2.6.1, 2.2.16.7",
+      "scope": "Private-individual TT commission/cable free; Premier/Advance 0.1%, min CNY100/max CNY500 + CNY120 cable; Global Transfer and ATM terms; exclusions."
+    },
+    "S20": {
+      "title": "Wise — Guide to CNY transfers",
+      "url": "https://wise.com/help/articles/2955298/guide-to-cny-transfers",
+      "kind": "provider",
+      "locator": "Sending from CNY",
+      "scope": "Eligible non-mainland-Chinese people with China work/tax records; own-account destination; CNY300,000 bank-app / CNY50,000 Alipay per-transfer caps; after-tax-income overall limit."
+    },
+    "S25": {
+      "title": "Western Union China — send money",
+      "url": "https://www.westernunion.com/cn/en/send-money.html",
+      "kind": "provider",
+      "locator": "Availability notice and online/in-person instructions",
+      "scope": "Bank-account payout temporarily unavailable; partner-bank cash-pickup route and local restrictions. No numeric fee schedule inferred."
+    },
+    "S28": {
+      "title": "SAFE — overseas bank-card cash withdrawal explainer",
+      "url": "https://www.safe.gov.cn/safe/2017/1230/8130.html",
+      "kind": "government",
+      "locator": "Full explainer for Huifa [2017] No. 29",
+      "scope": "CNY100,000/person/year and CNY10,000/card/day overseas ATM caps; borrowed-card evasion prohibited."
+    },
+    "S30": {
+      "title": "U.S. CBP — currency reporting reminder",
+      "url": "https://www.cbp.gov/newsroom/local-media-release/cbp-encourages-travelers-plan-ahead-summer-travel-season-begins",
+      "kind": "government",
+      "locator": "Currency reporting paragraph",
+      "scope": "More than USD10,000 in currency/monetary instruments entering or leaving the U.S. must be declared on FinCEN Form 105."
+    },
+    "S31": {
+      "title": "PRC Individual Income Tax Law (2018 amendment)",
+      "url": "https://guangdong.chinatax.gov.cn/gdsw/zjfg/2018-08/31/content_a735b4c382d94439b581054c32a4e7f4.shtml",
+      "kind": "government",
+      "locator": "Arts. 1–3, 6–7, 10, 13, 15–16",
+      "scope": "Residence; nine income categories; 20% proportional categories; property gain net basis; foreign tax credit; emigration tax clearance."
+    },
+    "S33": {
+      "title": "MOF/STA Announcement 2026 No. 27 — foreign-individual dividends",
+      "url": "https://shanghai.chinatax.gov.cn/zzzb/zcwj/202609/t481448.html",
+      "kind": "government",
+      "locator": "Full text",
+      "scope": "20% IIT on FIE dividends paid to foreign individuals from 2026-09-01; specified 1994 exemption repealed. Treaty/application facts remain separate."
+    },
+    "S37": {
+      "title": "IRS — Foreign Tax Credit",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit",
+      "kind": "government",
+      "locator": "Qualifying taxes and compliance issues",
+      "scope": "Possible credit for qualifying foreign income taxes on the same income; treaty-reduced-tax and excluded-income limitations."
+    },
+    "S39": {
+      "title": "26 U.S.C. §988 (2024 U.S. Code)",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm",
+      "kind": "government",
+      "locator": "Subsections (a), (c)(1)(C), (e)",
+      "scope": "Disposition of nonfunctional currency; ordinary-treatment default; personal-transaction exclusion does not apply when transaction gain exceeds USD200."
+    },
+    "S40": {
+      "title": "IRS — Form 8938 and FBAR comparison",
+      "url": "https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements",
+      "kind": "government",
+      "locator": "Reporting threshold and penalty table",
+      "scope": "FBAR aggregate foreign-account threshold exceeds USD10,000 at any time; separate Form 8938 thresholds and filing mechanics."
+    },
+    "S42": {
+      "title": "Bittner v. United States, No. 21-1195 (2023)",
+      "url": "https://www.supremecourt.gov/opinions/22pdf/21-1195_h3ci.pdf",
+      "kind": "government",
+      "locator": "Syllabus and holding",
+      "scope": "Nonwillful FBAR statutory penalty accrues per report, not per account. Willful account-based provisions are distinct."
+    },
+    "S43": {
+      "title": "IRS — Gifts from foreign person",
+      "url": "https://www.irs.gov/businesses/gifts-from-foreign-person",
+      "kind": "government",
+      "locator": "Reporting requirements",
+      "scope": "Form 3520 above USD100,000 from nonresident alien/foreign estate; 2026 foreign-entity purported-gift threshold USD20,573; aggregation rules."
+    },
+    "S44": {
+      "title": "IRS IR-2026-48 — remittance transfer tax proposed regulations",
+      "url": "https://www.irs.gov/newsroom/treasury-irs-issue-proposed-regulations-on-the-new-remittance-transfer-tax-established-under-the-one-big-beautiful-bill",
+      "kind": "government",
+      "locator": "Full release",
+      "scope": "1% tax from 2026-01-01 on specified physical-instrument-funded remittances sent from the United States, not China-to-U.S. transfers."
+    },
+    "S45": {
+      "title": "PBOC et al. Yinfa [2026] No. 42 — virtual currency and RWA risks",
+      "url": "https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html",
+      "kind": "government",
+      "locator": "Sections 1, 3(6), 6 and final repeal clause",
+      "scope": "Mainland virtual-currency exchange business prohibited; 2021 No. 237 expressly repealed."
+    },
+    "S53": {
+      "title": "SAFE/Customs Huifa [2003] No. 102 — carrying foreign-currency cash",
+      "url": "https://www.safe.gov.cn/tianjin/2024/0430/2466.html",
+      "kind": "government",
+      "locator": "Main notice paragraph 2",
+      "scope": "USD5,000 no-permit tier; USD5,000–10,000 bank permit; above USD10,000 only specified special cases with SAFE permit."
+    },
+    "IRS-W": {
+      "title": "IRS — U.S. citizens and resident aliens abroad",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad",
+      "kind": "government",
+      "locator": "Opening and reporting sections",
+      "scope": "Worldwide taxable income; foreign-account reporting even without taxable income; Form 3520 overview."
+    }
   },
   "flags": [
     [
-      "I01 \u00b7 Removed universal price claim",
-      "Root landing previously claimed costs under 1% at all sizes and exact totals ($83.45 at $10,000; $932.72 at $400,000). These are scenario arithmetic, not a verified quote. A bid/ask gap does not establish one-way customer loss; an assumed recipient fee does not establish this account\u2019s fee. Archived Edition D remains unchanged.",
+      "J01 · Root summary corrected",
+      "The inherited root EXECUTIVE_SUMMARY.md called a roughly 0.42% bid/ask gap the one-way conversion cost, repeated superseded emigrant staging, and described willful FBAR exposure as per year. Those statements are not carried into the consolidated summary. A bid/ask gap is not a measured one-way customer loss; the 2014 amendment controls staging; penalty application depends on the violation.",
       [
-        "BOC"
+        "S05",
+        "S16",
+        "S42"
       ]
     ],
     [
-      "I02 \u00b7 Removed blanket $0 conversion tax",
-      "U.S. worldwide-income and currency-gain analysis cannot be replaced with a universal tax-free statement. Unknown basis, income history, residence and compliance history prevent personal tax calculation.",
+      "J02 · Exact personal all-in cost remains unverified",
+      "Source-of-funds, bank classification, CNY basis/acquisition dates, PRC and U.S. tax history, receiving bank, actual transfer count, executable FX and document quotes were not supplied. All-in and personal-tax cells remain blank. Blank never means zero.",
       [
-        "IRS"
+        "S03",
+        "S14",
+        "S18",
+        "S31",
+        "S39"
       ]
     ],
     [
-      "I03 \u00b7 Identity is necessary, not sufficient",
-      "A passport alone is not a right to export any balance. Article 13 requires lawful current-account income with supporting documents; capital property has separate rules.",
+      "J03 · Indicative quote, not an execution offer",
+      "The consolidated scenario uses BOC's USD100 ask CNY669.03 at 2026-11-10 07:32:39 China time. BOC says actual transaction-channel rates control. The ask was below its displayed reference rate, so no positive FX 'spread cost' is inferred. Edition H's prior-day grids use CNY669.19 and are retained unchanged.",
       [
-        "SAFE"
+        "S16"
       ]
     ],
     [
-      "I04 \u00b7 Old staged emigrant rules",
-      "Section VI of the 2014 amendment cancels mandatory staged emigrant remittances. Do not rely on the original 2004 staging schedule without this amendment.",
+      "J04 · Known sender fee is not a total",
+      "BOC overseas charges are actual; its full-arrival option is conditional. HSBC excludes other institutions' and government charges. Intermediate and U.S. receiving fees are unknown. Scenario values cover only published sender commission/cable and a comparison-rate conversion.",
       [
-        "AMEND"
+        "S14",
+        "S18"
       ]
     ],
     [
-      "I05 \u00b7 Recent dividend rule",
-      "Rechecked official Shanghai STA page: MOF/STA 2026 No. 27 states 20% IIT for foreign individuals\u2019 FIE dividends effective 1 September 2026 and repeals the specified 1994 exemption. Earlier exemption claims are stale. Individual treaty effects and applicability remain case-specific.",
+      "J05 · Identity classification can conflict",
+      "The 2006 individual measures use ID-based domestic/overseas categories, while the broader FX regulation has a separate residence-based definition. A U.S. citizen with legacy PRC identity documents must resolve the bank's classification rather than assume quota eligibility.",
       [
-        "DIV"
+        "S01",
+        "S02"
       ]
     ],
     [
-      "I06 \u00b7 Provider eligibility and limits",
-      "Wise requires qualifying work history and tax records; own-account destination; CNY 300,000 per bank-app transfer or CNY 50,000 via Alipay, plus overall after-tax-income limit. It is not an unrestricted route for accumulated savings.",
+      "J06 · Official inheritance-guide irregularity",
+      "SAFE Hebei's inheritance guide repeats emigrant pre-status wording in its eligibility section even though its definition and document checklist concern inherited property. It is flagged verbatim rather than silently rewritten; the competent SAFE office must confirm the current local checklist.",
       [
-        "WISE"
+        "S04",
+        "S08"
       ]
     ],
     [
-      "I07 \u00b7 Missing user facts",
-      "Bank, account holder classification, source dates, tax status, CNY balance, USD basis and recipient fees are unknown. No account-specific total, tax amount, net USD or best provider is certified.",
+      "J07 · Wise eligibility and grid limitations",
+      "Wise from-CNY requires qualifying non-mainland status, China work/tax history, own-account destination and an after-tax-income overall limit. Its bank-app and Alipay caps can force multiple transfers. No current 40-point fee schedule was verified, so Wise grid values remain blank in Edition H.",
       [
-        "SAFE",
-        "IRS",
-        "BOC"
+        "S20"
       ]
     ],
     [
-      "I08 \u00b7 Verification limits",
-      "This integration directly re-read six primary-source pages and reviewed root claims. Prior catalog citations and audit records are inherited, not a new line-by-line legal re-certification. Mechanical row/link checks cannot prove every legal proposition or future source availability.",
+      "J08 · Provider corridors can change",
+      "Western Union's checked China page says bank-account payout is temporarily unavailable and offers cash pickup through partner banks. No fee or FX amount is inferred. MoneyGram/PayPal and other unsupported own-account CNY corridors stay unverified in the inherited catalog.",
       [
-        "SAFE",
-        "IRS"
+        "S25"
+      ]
+    ],
+    [
+      "J09 · Cash is not a large-balance workaround",
+      "China generally restricts carrying more than USD10,000 cash abroad to specified special cases with SAFE permission; U.S. entry/exit above USD10,000 requires declaration. ATM caps and transport/deposit risks apply. No splitting instructions are provided.",
+      [
+        "S28",
+        "S30",
+        "S53"
+      ]
+    ],
+    [
+      "J10 · Archived editions are evidence, not certification",
+      "The consolidated method catalog links Edition H's 43 candidates, steps and 1,720 amount rows. This integration directly re-read the load-bearing sources listed in its evidence log and ran all edition checkers. It does not claim a fresh legal opinion on every archived line or guarantee external-link uptime.",
+      [
+        "S02",
+        "S03"
+      ]
+    ],
+    [
+      "J11 · Current dividend rule",
+      "MOF/STA 2026 No. 27 applies 20% IIT to foreign individuals' FIE dividends from 2026-09-01 and repeals the specified old exemption. Older archived exemptions are stale. Treaty and beneficial-owner analysis remains case-specific.",
+      [
+        "S33"
+      ]
+    ],
+    [
+      "J12 · Prohibited-route authority updated",
+      "PBOC Yinfa [2026] No. 42 expressly repealed the 2021 virtual-currency notice. Older archives citing only the 2021 instrument retain historical text but are not the consolidated authority.",
+      [
+        "S45"
       ]
     ]
-  ]
+  ],
+  "inherited_catalog": {
+    "edition": "H",
+    "methods": 43,
+    "cost_rows": 1720,
+    "independently_recertified": false
+  }
 }

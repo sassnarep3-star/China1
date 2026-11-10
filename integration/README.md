@@ -1,52 +1,39 @@
-# Consolidated executive summary — 9 November 2026
+# Consolidated dashboard
 
-The bank balance's source and documentation determine the lawful route. A U.S.
-passport is not, by itself, permission to convert and export any balance.
+This is the maintained integration layer, not a new independent research edition. It combines the prior editions with directly retrieved government, court and first-party provider sources dated 2026-11-10.
 
-1. **Documented lawful current income:** investigate the bank purchase/remittance
-   route under [SAFE Article 13](https://www.safe.gov.cn/safe/2006/1225/5319.html).
-   If applicable, compare the bank's executable quote with an eligible provider.
-2. **Pre-emigration property / inheritance:** investigate the corresponding SAFE
-   approval route. [Section VI of the 2014 amendment](https://www.safe.gov.cn/tianjin/2024/0903/2594.html)
-   removed mandatory staged emigrant releases. Approval and evidence still matter.
-3. **Tax:** separate tax on the underlying income from FX gains, transfer charges
-   and reporting penalties. U.S. citizens face [worldwide-income and foreign-account
-   reporting rules](https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad).
-   No personal tax amount is established by the supplied information.
-4. **Fees:** BOC's [published electronic-banking base tariff](https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html)
-   lists 0.1% commission, CNY 50 minimum / CNY 260 maximum, plus CNY 150 cable
-   outside Hong Kong/Macau/Taiwan. The CNY 200–410 envelope is not a quote for
-   every target, a complete cost, or a promise that this channel is available.
-   Discounts, local terms, FX and downstream charges require separate treatment.
-5. **Provider limitations:** [Wise's outbound guide](https://wise.com/help/articles/2955298/guide-to-cny-transfers)
-   requires eligible work/tax history and own-account destinations. It does not
-   make all savings freely transferable.
+## Build and verify
 
-The root site now exposes the existing 43-candidate, 1,720-row catalog plus a
-compact 40-target ladder. No additional duplicate research edition was created.
-Unknown tax and all-in amounts remain blank. The prior exact-cost and universal
-$0-tax landing claims have been removed; archived editions remain unchanged with
-prominent review warnings.
-
-## Scope of verification
-
-Six directly retrieved primary-source pages support the integration's findings;
-see `evidence.html` and `evidence.json`. All inherited edition checkers were run.
-Those checkers establish internal consistency, citations, reproducibility and
-local links, **not** legal correctness of every inherited line or bank eligibility.
-The inherited line-scan audit remains linked, with its limitations disclosed.
-The integration does not assert that every inherited claim was independently
-verified anew. Exact all-in estimates for every method remain unverified rather
-than fabricated.
-
-## Reproduce
-
-```sh
+```bash
 python3 integration/build.py
 python3 integration/verify.py
-python3 edition-d/build/build.py
 ```
 
-The Edition D generator delegates only its root portal output to this integration.
-Its archived research and historical numeric model are preserved unchanged.
-Publication records are appended to `../COORDINATION.md`.
+`build.py` is the source of truth for the registry, findings, refreshed partial-cost formulas and consolidated templates. It generates:
+
+- `../index.html` — executive portal and historical-edition access;
+- `costs.html`, `costs.json`, `costs.csv` — 40 scenarios, $10,000–$400,000;
+- `methods.html` — 43 candidates linked to Edition H’s procedures and grids;
+- `tax.html` — tax/reporting distinctions and primary law;
+- `review.html` — visible unresolved items and irregularities;
+- `evidence.html` / `evidence.json` — direct source registry;
+- `methodology.html` — formulas, source hierarchy and limitations.
+
+Generated outputs are committed because Pages uses the legacy `main` / root source. No runtime dependencies, scripts, web fonts or credentials are used.
+
+## Evidence and blanks
+
+The 40 refreshed scenarios use BOC’s observed USD100 cash ask of CNY669.03 on 2026-11-10 (CNY6.6903/USD). BOC and HSBC values are published sending commissions plus cable charges only. Unknown FX execution, downstream, document, tax and all-in amounts remain JSON `null` and display as blank + UNVERIFIED. Blank never means zero.
+
+The separate Edition H grid uses its own dated CNY6.6919 observation and remains historical. Provider pages support only that provider’s terms; government/regulator/court pages support law and tax. Source presence does not certify an individual’s eligibility or guarantee external uptime.
+
+## Maintenance contract
+
+1. Update source records and findings in `build.py`; do not hand-edit generated HTML/JSON/CSV.
+2. Do not replace an unknown with zero or a plausible estimate.
+3. Keep prohibited candidates free of execution instructions.
+4. Preserve narrow-screen table labels and every historical-edition link.
+5. Run the integration verifier, Edition D root preservation check and all prior-edition checks before release.
+6. Record material decisions and deployment results in `../COORDINATION.md`.
+
+`verify.py` independently recomputes 160 fee/conversion values, checks all 40 targets and 43 method links, enforces per-row source hosts, compares deterministic output hashes, and crawls local references across every repository HTML file. It is a structural/arithmetic check, not legal advice or a live transaction test.
