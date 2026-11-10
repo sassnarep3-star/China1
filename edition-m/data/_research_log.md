@@ -189,3 +189,17 @@ Bank of America Advantage Plus Banking clarity statement: "International wire tr
 
 ### S-SCHWAB-FEES  https://www.schwab.com/legal/schwab-pricing-guide-for-individual-investors  (official-page excerpt returned by the search tool; page not opened)
 Charles Schwab Pricing Guide for Individual Investors: "Wire transfer: Incoming — No fee". (Same line in the April 2026 PDF https://disclosures.schwab.com/SchwabDashboard/61330/REG23060.pdf.)
+
+### S-FX-REG  https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm
+《中华人民共和国外汇管理条例》 国务院令第532号 (2008-08-05), read in full.
+- 第五条: "国家对经常性国际支付和转移不予限制。"
+- 第十二条: "经常项目外汇收支应当具有真实、合法的交易基础。… 对交易单证的真实性及其与外汇收支的一致性进行合理审查。"
+- 第二十二条: 资本项目外汇支出 … 国家规定应当经外汇管理机关批准的，应当在外汇支付前办理批准手续。
+- 第三十九条 (逃汇): "责令限期调回外汇，处逃汇金额30%以下的罚款；情节严重的，处逃汇金额30%以上等值以下的罚款；构成犯罪的，依法追究刑事责任。"
+- 第四十条 (非法套汇, incl. "以虚假、无效的交易单证等 … 骗购外汇"): "责令对非法套汇资金予以回兑，处非法套汇金额30%以下的罚款；情节严重的，处非法套汇金额30%以上等值以下的罚款；构成犯罪的，依法追究刑事责任。"
+- 第四十二条: "违反规定携带外汇出入境的，由外汇管理机关给予警告，可以处违法金额20%以下的罚款。法律、行政法规规定由海关予以处罚的，从其规定。"
+- 第四十五条: "私自买卖外汇、变相买卖外汇、倒买倒卖外汇或者非法介绍买卖外汇数额较大的，由外汇管理机关给予警告，没收违法所得，处违法金额30%以下的罚款；情节严重的，处违法金额30%以上等值以下的罚款；构成犯罪的，依法追究刑事责任。"
+- 第四十八条: 对个人可以处5万元以下的罚款 for (一) 未按照规定进行国际收支统计申报; (三) 未按照规定提交有效单证或者提交的单证不真实; (四) 违反外汇账户管理规定; etc.
+- 第五十一条: 行政复议 / 行政诉讼.
+- 第五十二条(二): "境内个人，是指中国公民和在中华人民共和国境内连续居住满1年的外国人，外国驻华外交人员和国际组织驻华代表除外。"
+  IRREGULARITY between official texts: the Regulation defines 境内个人 by residence (a foreigner resident 1 year continuously is 境内个人), while PBOC Decree [2006] No.3 art.37 and SAFE practice (Xiamen tips 之七 Q1-Q2) classify by identity document (passport holder = 境外个人, no USD 50,000 purchase quota).
