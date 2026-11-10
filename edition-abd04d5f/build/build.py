@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Edition M generator. Deterministic: no clock, no network. Run: python3 edition-m/build/build.py"""
+"""Edition abd04d5f generator. Deterministic: no clock, no network. Run: python3 edition-abd04d5f/build/build.py"""
 import csv, html, json, os, sys
 from decimal import Decimal as D, ROUND_HALF_UP, ROUND_CEILING
 HERE = os.path.dirname(os.path.abspath(__file__)); OUT = os.path.dirname(HERE)
@@ -321,5 +321,5 @@ def main():
     dump("sources.json", S); dump("methods.json", M)
     dump("flags.json", {k: {"title": t, "detail": d, "sources": s} for k, (t, d, s) in F.items()})
     build_index(); build_methods(); build_costs(); build_steps(); build_taxes(); build_flagged(); build_sources(); build_review()
-    print("edition-m built: 8 pages, %d sources, %d methods, %d flags, %d cost rows" % (len(S), len(M), len(F), len(ROWS)))
+    print("edition-abd04d5f built: 8 pages, %d sources, %d methods, %d flags, %d cost rows" % (len(S), len(M), len(F), len(ROWS)))
 if __name__ == "__main__": main()

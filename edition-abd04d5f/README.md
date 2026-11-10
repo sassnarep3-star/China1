@@ -1,8 +1,8 @@
-# Edition M — China Money (CNY → USD), session arena-abd04d5f
+# China Money (CNY → USD) — edition of session arena-abd04d5f
 
-Live: https://sassnarep3-star.github.io/China1/edition-m/
+Live: https://sassnarep3-star.github.io/China1/edition-abd04d5f/
 
-Self-contained edition. Nothing outside `edition-m/` is read at page-render time and nothing outside it is written.
+Self-contained edition. First claimed as `edition-m/`; moved to `edition-abd04d5f/` on 2026-11-10 because session arena-1ee3ca2b claimed the same path 84 seconds later and was already writing there. Nothing outside `edition-abd04d5f/` is read at page-render time and nothing outside it is written.
 
 | Path | What it is |
 |---|---|
@@ -22,8 +22,8 @@ Self-contained edition. Nothing outside `edition-m/` is read at page-render time
 Rebuild and check:
 
 ```
-python3 edition-m/build/build.py
-python3 edition-m/build/verify.py
+python3 edition-abd04d5f/build/build.py
+python3 edition-abd04d5f/build/verify.py
 ```
 
 Rules followed: a value appears only if it was read on an official page on 2026-11-10; otherwise the cell says

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Independent verifier for Edition M. Does not import build.py: recomputes every published
+"""Independent verifier for Edition abd04d5f. Does not import build.py: recomputes every published
 figure with exact fractions, re-parses the generated HTML, and checks the source discipline.
 Exit code 1 on any failure."""
 import csv, json, os, re, sys, subprocess
@@ -185,7 +185,7 @@ snap = {f: open(os.path.join(OUT, f), "rb").read() for f in pages}
 subprocess.run([sys.executable, os.path.join(HERE, "build.py")], check=True, stdout=subprocess.DEVNULL)
 ok(all(open(os.path.join(OUT, f), "rb").read() == b for f, b in snap.items()), "build is not deterministic or outputs are stale")
 
-print("Edition M verify: %d checks, %d table rows, %d blank+flagged cells, %d sources (%d read in full), %d flags" % (
+print("Edition abd04d5f verify: %d checks, %d table rows, %d blank+flagged cells, %d sources (%d read in full), %d flags" % (
     checks, total_rows, total_blank, len(C.S), sum(v["how"] == "full" for v in C.S.values()), len(C.F)))
 if fails:
     print("FAILED (%d):" % len(fails)); [print(" -", x) for x in fails[:60]]; sys.exit(1)

@@ -1,14 +1,14 @@
-name: edition-m
+name: edition-abd04d5f
 on:
   pull_request:
     paths:
-      - 'edition-m/**'
-      - '.github/workflows/edition-m.yml'
+      - 'edition-abd04d5f/**'
+      - '.github/workflows/edition-abd04d5f.yml'
   push:
     branches: [main]
     paths:
-      - 'edition-m/**'
-      - '.github/workflows/edition-m.yml'
+      - 'edition-abd04d5f/**'
+      - '.github/workflows/edition-abd04d5f.yml'
 permissions:
   contents: read
 jobs:
@@ -20,8 +20,8 @@ jobs:
         with:
           python-version: '3.12'
       - name: Rebuild
-        run: python3 edition-m/build/build.py
+        run: python3 edition-abd04d5f/build/build.py
       - name: Generated files are committed
-        run: git diff --exit-code -- edition-m
+        run: git diff --exit-code -- edition-abd04d5f
       - name: Verify
-        run: python3 edition-m/build/verify.py
+        run: python3 edition-abd04d5f/build/verify.py
