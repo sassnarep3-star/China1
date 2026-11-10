@@ -1,0 +1,112 @@
+[
+ {
+  "id": "CN-FX-09",
+  "title": "关于进一步防范和处置虚拟货币等相关风险的通知",
+  "doc_no": "银发〔2026〕42号 (2026-02-06)",
+  "issuer": "People's Bank of China and seven other authorities",
+  "kind": "official",
+  "url": "https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html",
+  "retrieved_utc": "2026-11-10",
+  "retrieval": "full text read in this session",
+  "quotes": [
+   {"loc": "一（一）", "text": "虚拟货币相关业务活动属于非法金融活动。在境内开展法定货币与虚拟货币兑换业务、虚拟货币之间的兑换业务、作为中央对手方买卖虚拟货币、为虚拟货币交易提供信息中介和定价服务、代币发行融资以及虚拟货币相关金融产品交易等虚拟货币相关业务活动，涉嫌非法发售代币票券、擅自公开发行证券、非法经营证券期货业务、非法集资等非法金融活动，一律严格禁止，坚决依法取缔。境外单位和个人不得以任何形式非法向境内主体提供虚拟货币相关服务。"},
+   {"loc": "三（六）", "text": "金融机构（含非银行支付机构）不得为虚拟货币相关业务活动提供账户开立、资金划转和清算结算等服务"},
+   {"loc": "六（十九）", "text": "任何单位和个人投资虚拟货币、现实世界资产代币及相关金融产品，违背公序良俗的，相关民事法律行为无效，由此引发的损失由其自行承担；涉嫌破坏金融秩序、危害金融安全的，由相关部门依法查处。"},
+   {"loc": "结尾", "text": "本通知自发布之日起施行。中国人民银行等十部门《关于进一步防范和处置虚拟货币交易炒作风险的通知》（银发〔2021〕237号）同时废止。"}
+  ]
+ },
+ {
+  "id": "CN-FX-10",
+  "title": "规范银行卡境外大额提取现金 完善跨境反洗钱监管 (SAFE explainer of 汇发〔2017〕29号)",
+  "doc_no": "汇发〔2017〕29号, effective 2018-01-01",
+  "issuer": "State Administration of Foreign Exchange",
+  "kind": "official",
+  "url": "https://www.safe.gov.cn/safe/2017/1230/8130.html",
+  "retrieved_utc": "2026-11-10",
+  "retrieval": "full text read in this session",
+  "quotes": [
+   {"loc": "主要内容", "text": "一是个人持境内银行卡在境外提取现金，本人名下银行卡（含附属卡）合计每个自然年度不得超过等值10万元人民币；二是将人民币卡、外币卡境外提取现金每卡每日额度统一为等值1万元人民币；三是个人持境内银行卡境外提取现金超过年度额度的，本年及次年将被暂停持境内银行卡在境外提取现金；四是个人不得通过借用他人银行卡或出借本人银行卡等方式规避或协助规避境外提取现金管理。"},
+   {"loc": "末段", "text": "《通知》自2018年1月1日起实施。"}
+  ]
+ },
+ {
+  "id": "FEE-07",
+  "title": "Wise — Guide to CNY transfers",
+  "doc_no": "",
+  "issuer": "Wise",
+  "kind": "provider-primary",
+  "url": "https://wise.com/help/articles/2955298/guide-to-cny-transfers",
+  "retrieved_utc": "2026-11-10",
+  "retrieval": "provider page text returned by the search tool; page not separately re-fetched",
+  "quotes": [
+   {"loc": "Who can send money from CNY?", "text": "You can send money from CNY if: You're not mainland Chinese … You're working or have worked in China before … You have a valid tax record issued by the China tax authority showing taxes paid within the last 3 years"},
+   {"loc": "Who can receive transfers that are paid from-CNY?", "text": "Due to regulations, you can only send CNY from China to another account you own. This can be your bank account outside of China, or your Wise Account."},
+   {"loc": "How much can I send? — China bank app", "text": "If you're sending CNY from your China bank app, the maximum you can send in one transfer is 300,000 CNY."},
+   {"loc": "Total sending limits", "text": "Aside from the single transfer limit, Wise also adheres to China's regulations and applies a limit on how much you can send out of China. This is known as overall limit and it's calculated based on: Your annual income; The amount of tax you have paid in China; The number of years you've paid taxes on, proven through tax record(s) submitted."},
+   {"loc": "Sending from CNY", "text": "Wise is collaborating with a licensed third party payment provider (regulated by the People's Bank of China) in China to provide this service."}
+  ]
+ },
+ {
+  "id": "FEE-08",
+  "title": "Wise — Send money to the USA from China (public quote, sourceAmount=300000)",
+  "doc_no": "quote displayed 2026-11-10",
+  "issuer": "Wise",
+  "kind": "provider-primary",
+  "url": "https://wise.com/us/send-money/send-money-to-the-usa-from-china?sourceAmount=300000",
+  "retrieved_utc": "2026-11-10",
+  "retrieval": "page read in this session; quotes are live and change, the recipient amount was not rendered in the retrieved text",
+  "quotes": [
+   {"loc": "calculator", "text": "1 CNY = 0.1499 USD … Total fees Included in CNY amount 1,741.67 CNY 131.45 CNY volume discount"},
+   {"loc": "eligibility note", "text": "This feature is only available for foreign and non-mainland Chinese individuals who have worked or are currently working in China."},
+   {"loc": "Cheapest way", "text": "Sending 300,000 CNY | Transfer cost | Bank transfer | 1,741.67 CNY"},
+   {"loc": "rate statement", "text": "We use the mid-market exchange rate — the fairest rate — and always show your fees upfront."},
+   {"loc": "volume discount", "text": "You're sending a lot so we discounted our fee Savings on this transfer, and eligible transfers for the rest of the month."},
+   {"loc": "FAQ — US remittance tax", "text": "Starting January 1, 2026, a 1% excise tax (from the One Big Beautiful Bill Act) applies to international transfers sent from the US using physical payment methods like cash, checks, or money orders."}
+  ]
+ },
+ {
+  "id": "FEE-09",
+  "title": "Chase Secure Banking — account page footnote on incoming wires",
+  "doc_no": "",
+  "issuer": "JPMorgan Chase Bank, N.A.",
+  "kind": "provider-primary",
+  "url": "https://personal.chase.com/personal/secure-banking",
+  "retrieved_utc": "2026-11-10",
+  "retrieval": "provider page text returned by the search tool; page not separately re-fetched",
+  "quotes": [
+   {"loc": "footnote 15", "text": "Domestic and international incoming wires have a $15 fee per transfer. Financial institutions may deduct processing fees and/or charges from the amount of the wire transfer, including on returned wire transfers."}
+  ]
+ },
+ {
+  "id": "US-07",
+  "title": "Agreement between the United States and the People's Republic of China for the Avoidance of Double Taxation (1984)",
+  "doc_no": "U.S.–China income tax treaty",
+  "issuer": "Internal Revenue Service (treaty document)",
+  "kind": "official",
+  "url": "https://www.irs.gov/pub/irs-trty/china.pdf",
+  "retrieved_utc": "2026-11-10",
+  "retrieval": "Articles 1–11 read in this session (PDF text chunks 2–4 of 9); Articles 12–28 and the Protocol were NOT read in this session",
+  "quotes": [
+   {"loc": "Article 6(1)", "text": "Income derived by a resident of a Contracting State from real property situated in the other Contracting State may be taxed in that other Contracting State."},
+   {"loc": "Article 9(2)", "text": "However, such dividends may also be taxed in the Contracting State of which the company paying the dividends is a resident, and according to the laws of that Contracting State, but if the recipient is the beneficial owner of the dividends the tax so charged shall not exceed 10 percent of the gross amount of the dividends."},
+   {"loc": "Article 10(2)", "text": "However, such interest may also be taxed in the contracting State in which it arises and according to the laws of that Contracting State, but if the recipient is the beneficial owner of the interest, the tax so charged shall not exceed 10 percent of the gross amount of the interest."},
+   {"loc": "Article 4(1)", "text": "For the purposes of this Agreement, the term \"resident of a Contracting State\" means any person who, under the laws of that Contracting State, is liable to tax therein by reason of his domicile, residence, place of head office, place of incorporation or any other criterion of a similar nature."}
+  ]
+ },
+ {
+  "id": "US-08",
+  "title": "U.S. citizens and resident aliens abroad",
+  "doc_no": "",
+  "issuer": "Internal Revenue Service",
+  "kind": "official",
+  "url": "https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad",
+  "retrieved_utc": "2026-11-10",
+  "retrieval": "first of three page chunks read in this session",
+  "quotes": [
+   {"loc": "intro", "text": "If you are a U.S. citizen or resident alien, the rules for filing income, estate, and gift tax returns and paying estimated tax are generally the same whether you are in the United States or abroad. You are subject to tax on worldwide income from all sources and must report all taxable income and pay taxes according to the Internal Revenue Code."},
+   {"loc": "FBAR paragraph", "text": "U.S. taxpayers who own or have an interest in certain foreign financial accounts in excess of the reporting threshold must report those accounts to the U.S. Treasury Department, even if the accounts don't generate any taxable income."},
+   {"loc": "Form 3520 list", "text": "Receipt of more than $100,000 in gifts or bequests from a nonresident alien individual or foreign estate (including foreign persons related to that nonresident alien individual or foreign estate)"},
+   {"loc": "benefits", "text": "Many Americans living abroad qualify for special tax benefits, such as the foreign earned income exclusion and foreign tax credit, but they can only get these benefits by filing a relevant U.S. return."}
+  ]
+ }
+]
