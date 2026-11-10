@@ -1,0 +1,104 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Source-linked CNY to USD cost dashboard: 21 methods, five priced routes, 40 target sizes, and an explicit conversion-penalty decomposition."><title>Dashboard · China Money Edition L</title><style>
+:root{--navy:#0f2a43;--blue:#17679f;--teal:#0a7a5a;--ink:#16232e;--muted:#5b6b78;--bg:#f5f8fa;--line:#dbe3ea;--warn:#8a4b00;--warnbg:#fff5da;--bad:#8c1d18;--badbg:#fde9e7}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+a{color:var(--blue);text-underline-offset:2px}a:focus-visible{outline:3px solid #b57600;outline-offset:2px}
+header{background:var(--navy);color:#fff;padding:14px 14px 12px}header .brand{font-weight:800;font-size:1.05rem;color:#fff;text-decoration:none}
+header .sub{display:block;color:#cfe3f2;font-size:.78rem;margin-top:2px}
+nav{display:flex;gap:6px;overflow-x:auto;padding:8px 10px;background:#fff;border-bottom:1px solid var(--line);white-space:nowrap}
+nav a{text-decoration:none;padding:6px 9px;border-radius:7px;font-size:.84rem;color:var(--navy)}
+nav a[aria-current]{background:var(--navy);color:#fff}
+main{max-width:1120px;margin:auto;padding:18px 12px 56px}
+h1{font-size:clamp(1.5rem,5vw,2.2rem);line-height:1.15;margin:.2em 0 .5em}
+h2{font-size:1.18rem;margin:1.9em 0 .4em}h3{font-size:1rem;margin:1.4em 0 .3em}
+p,li{max-width:82ch}.lead{font-size:1.04rem}.muted,small{color:var(--muted)}small{display:block;font-size:.76rem}
+.hero{background:linear-gradient(135deg,#0f2a43,#17679f);color:#fff;border-radius:14px;padding:22px 16px;margin-bottom:16px}
+.hero p{color:#e8f2f9}.hero a{color:#fff}
+.box{background:#fff;border:1px solid var(--line);border-radius:11px;padding:14px;margin:12px 0}
+.note{border-left:5px solid #cf8500;background:var(--warnbg);border-radius:8px;padding:11px 13px;margin:12px 0}
+.ok{border-left-color:var(--teal);background:#e9f7f1}.bad{border-left-color:var(--bad);background:var(--badbg)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:12px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:11px;padding:13px;text-decoration:none;color:inherit}
+.card b{display:block;color:var(--teal);font-size:1.02rem;margin-bottom:3px}
+.kpi{font-size:1.5rem;font-weight:800;color:var(--teal);line-height:1.1}
+.tw{overflow-x:auto;background:#fff;border:1px solid var(--line);border-radius:10px;margin:12px 0}
+table{border-collapse:collapse;width:100%;font-size:.85rem}
+th,td{text-align:left;vertical-align:top;padding:9px;border-top:1px solid var(--line)}
+th{background:#e9eff4;font-size:.7rem;text-transform:uppercase;letter-spacing:.04em;font-weight:800}
+tbody tr:hover{background:#f8fbfd}.n{white-space:nowrap;font-variant-numeric:tabular-nums}
+.src{display:inline-block;font-size:.72rem;margin:1px 6px 1px 0;white-space:nowrap}
+.blank{display:inline-block;border-bottom:2px dotted var(--warn);width:2.6em;height:1em;margin-right:4px}
+.tag{display:inline-block;font-size:.68rem;font-weight:800;border-radius:5px;padding:2px 6px;background:#e6eaee;color:#374a57}
+.warn{background:var(--warnbg);color:var(--warn)}.stop{background:var(--badbg);color:var(--bad)}.live{background:#e2f5ec;color:var(--teal)}
+.steps li{margin:.45em 0}
+details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:9px 0}
+summary{cursor:pointer;font-weight:700}
+footer{border-top:1px solid var(--line);padding:18px 12px;text-align:center;color:var(--muted);font-size:.8rem}
+code{overflow-wrap:anywhere;background:#eef2f5;padding:1px 4px;border-radius:4px;font-size:.85em}
+@media(max-width:720px){
+ .stacked thead{position:absolute;left:-9999px}
+ .stacked,.stacked tbody,.stacked tr,.stacked td{display:block;width:100%}
+ .stacked tr{border-top:7px solid var(--line);padding:6px 0}.stacked tr:first-child{border-top:0}
+ .stacked td{border:0;padding:5px 10px 5px 42%;position:relative;min-height:26px}
+ .stacked td::before{content:attr(data-label);position:absolute;left:10px;top:5px;width:36%;font-size:.66rem;font-weight:800;text-transform:uppercase;color:var(--muted)}
+ .stacked td:first-child{font-size:1rem;background:#f1f6f9}
+ .tw{border:0;overflow:visible;background:transparent}.n{white-space:normal}
+}
+@media print{header,nav,footer{display:none}main{max-width:none}.tw{overflow:visible}}
+</style></head><body><a class="skip" href="#main" style="position:absolute;left:-9999px">Skip to content</a><header><a class="brand" href="index.html">China Money · Edition L</a><span class="sub">CNY to USD, costed from published tariffs · every figure sourced or blank</span></header><nav aria-label="Site"><a href="index.html" aria-current="page">Dashboard</a><a href="summary.html">Executive summary</a><a href="costs.html">Cost tables</a><a href="penalty.html">Conversion penalty</a><a href="methods.html">All methods</a><a href="steps.html">Step by step</a><a href="tax.html">Tax &amp; penalties</a><a href="flagged.html">Flagged for Review</a><a href="audit.html">Repo audit</a><a href="sources.html">Sources</a><a href="methodology.html">Method &amp; limits</a></nav><main id="main">
+<div class="hero"><h1>Getting money out of China: what it actually costs</h1>
+<p class="lead">A US citizen with CNY in a Chinese bank faces two different problems, and they are usually confused.
+<strong>Tax is not the main one.</strong> The binding constraints are (1) proving the money is yours and lawful, and (2) the
+payments rules that decide how much can be converted. The conversion itself costs a measured fraction of one percent.</p>
+<p>Every number below is arithmetic on a published document that is linked on the same row. Nothing is estimated, inferred or filled in.
+Where a cost has no published value, the cell is blank and marked <span class="tag warn">UNVERIFIED</span>.</p></div>
+
+<div class="cards">
+<a class="card" href="penalty.html"><span class="kpi">0.2099%</span><b>Conversion penalty</b>
+One-way cost of the bank's own bid-ask bracket. It is a spread, not a tax. Measured from BOC's board of 2026-11-10 17:39:58 and the same board's bid.</a>
+<a class="card" href="costs.html"><span class="kpi">$68.42</span><b>Known cost at USD 10,000</b>
+$68.42 of $10,000.00 is 0.68% - dominated by fixed cable and receiving charges.</a>
+<a class="card" href="costs.html"><span class="kpi">$915.77</span><b>Known cost at USD 400,000</b>
+0.23% - the commission caps at CNY 260, so size makes it cheap per dollar.</a>
+<a class="card" href="tax.html"><span class="kpi">USD 16,536</span><b>The largest penalty in the file</b>
+Maximum non-willful FBAR penalty per report, inflation-adjusted (31 CFR 1010.821). Larger than any conversion fee at any size in this model.</a>
+</div>
+
+<h2 id="answer">The answer in five lines</h2>
+<ol class="steps">
+<li><strong>Establish the route before optimising the price.</strong> A US passport holder is an <em>overseas individual</em> (S02 Art. 37(2)),
+whose purchase rule is documentary - lawful current-account RMB income plus tax vouchers (S02 Art. 13; S04). The USD 50,000 annual total is written for
+settlement by anyone plus <em>purchase by a domestic individual</em> (S03 Art. 2). That distinction decides whether USD 400,000 is a one-time file or eight years of wires.</li>
+<li><strong>Price the wire, not the rumour.</strong> BOC charges 0.1% of the CNY amount, floored at CNY 50, capped at CNY 260, plus CNY 150 cable (S11).
+Bank of America charges USD 15 to receive it (S14). Those three numbers plus the spread are the whole published cost.</li>
+<li><strong>The conversion penalty is about a fifth of one percent.</strong> BOC's own board on 2026-11-10 showed it would buy USD at 665.71 and sell at 668.51 per USD 100;
+half of that CNY 2.80 bracket is 0.2099% of the amount. That is the entire "conversion" cost at the counter - the tariff charges no separate conversion commission (S11 item 210107011).</li>
+<li><strong>Do not confuse the daily fixing with a mid-market rate.</strong> The CFETS parity for the same day was 6.7167 while BOC sold at 6.6851,
+so the bank's offer was <em>below</em> the fixing. Computing a "penalty against parity" produces nonsense; measured against the bank's own bracket it does not.
+See <a href="flagged.html#f20">F20</a>.</li>
+<li><strong>The real penalties are elsewhere.</strong> PRC administrative fines reach 30% of the amount for evasion or disguised FX dealing (S01 Arts. 39, 45);
+a property sale is taxed at 20% of the gain (S10 Art. 3(3)); and US reporting failures run to USD 16,536 non-willful or USD 165,353 willful per FBAR (S19).
+None of those is a conversion tax, and all of them are avoidable by paperwork.</li>
+</ol>
+
+<h2 id="glance">Known cost at the milestones (route that can move the full amount now)</h2>
+<p>BOC outward telegraphic transfer of the full amount to a US account, with the published spread, commission, cable and receiving fee.
+The last column is what remains unpriced on every row - it is blank because no source publishes it, not because it is zero.</p>
+<div class="tw"><table class="stacked"><thead><tr><th scope="col">USD target</th><th scope="col">CNY at the board</th><th scope="col">FX half-spread</th><th scope="col">BOC commission</th><th scope="col">US receiving</th><th scope="col">Known total</th><th scope="col">% of target</th><th scope="col">Still unpriced</th><th scope="col">Sources</th></tr></thead><tbody><tr><td data-label="USD target"><strong>$10,000.00</strong></td><td data-label="CNY at the board"><span class="n">CNY 66,851.00</span></td><td data-label="FX half-spread"><span class="n">$20.99</span></td><td data-label="BOC commission"><span class="n">CNY 66.85</span></td><td data-label="US receiving"><span class="n">$15.00</span></td><td data-label="Known total"><strong class="n">$68.42</strong></td><td data-label="% of target"><span class="n">0.6842%</span></td><td data-label="Still unpriced"><span class="blank" aria-label="Blank, Intermediary deduction"></span><span class="tag warn">UNVERIFIED</span></td><td data-label="Sources"><a class="src" href="https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf" rel="noopener noreferrer" title="Bank of China tariff for personal customers, Chapter 3 (individual finance) — Items 210101002, 210105008, 210107011, 210108014; announcement notes 4, 5, 10">S11 ↗</a> <a class="src" href="https://www.boc.cn/sourcedb/whpj/" rel="noopener noreferrer" title="Bank of China foreign-exchange rate board — USD row and disclaimer; quotation dated 2026/11/10, 17:39:58 China time">S12 ↗</a> <a class="src" href="https://www.bankofamerica.com/salesservices/deposits/resources/personal-schedule-fees/" rel="noopener noreferrer" title="Bank of America Personal Schedule of Fees (effective 2026-08-07) — Other Account Fees and Services - Miscellaneous: Wire Transfers, Incoming or Outgoing">S14 ↗</a></td></tr><tr><td data-label="USD target"><strong>$50,000.00</strong></td><td data-label="CNY at the board"><span class="n">CNY 334,255.00</span></td><td data-label="FX half-spread"><span class="n">$104.93</span></td><td data-label="BOC commission"><span class="n">CNY 260.00</span></td><td data-label="US receiving"><span class="n">$15.00</span></td><td data-label="Known total"><strong class="n">$181.26</strong></td><td data-label="% of target"><span class="n">0.3625%</span></td><td data-label="Still unpriced"><span class="blank" aria-label="Blank, Intermediary deduction"></span><span class="tag warn">UNVERIFIED</span></td><td data-label="Sources"><a class="src" href="https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf" rel="noopener noreferrer" title="Bank of China tariff for personal customers, Chapter 3 (individual finance) — Items 210101002, 210105008, 210107011, 210108014; announcement notes 4, 5, 10">S11 ↗</a> <a class="src" href="https://www.boc.cn/sourcedb/whpj/" rel="noopener noreferrer" title="Bank of China foreign-exchange rate board — USD row and disclaimer; quotation dated 2026/11/10, 17:39:58 China time">S12 ↗</a> <a class="src" href="https://www.bankofamerica.com/salesservices/deposits/resources/personal-schedule-fees/" rel="noopener noreferrer" title="Bank of America Personal Schedule of Fees (effective 2026-08-07) — Other Account Fees and Services - Miscellaneous: Wire Transfers, Incoming or Outgoing">S14 ↗</a></td></tr><tr><td data-label="USD target"><strong>$100,000.00</strong></td><td data-label="CNY at the board"><span class="n">CNY 668,510.00</span></td><td data-label="FX half-spread"><span class="n">$209.86</span></td><td data-label="BOC commission"><span class="n">CNY 260.00</span></td><td data-label="US receiving"><span class="n">$15.00</span></td><td data-label="Known total"><strong class="n">$286.19</strong></td><td data-label="% of target"><span class="n">0.2862%</span></td><td data-label="Still unpriced"><span class="blank" aria-label="Blank, Intermediary deduction"></span><span class="tag warn">UNVERIFIED</span></td><td data-label="Sources"><a class="src" href="https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf" rel="noopener noreferrer" title="Bank of China tariff for personal customers, Chapter 3 (individual finance) — Items 210101002, 210105008, 210107011, 210108014; announcement notes 4, 5, 10">S11 ↗</a> <a class="src" href="https://www.boc.cn/sourcedb/whpj/" rel="noopener noreferrer" title="Bank of China foreign-exchange rate board — USD row and disclaimer; quotation dated 2026/11/10, 17:39:58 China time">S12 ↗</a> <a class="src" href="https://www.bankofamerica.com/salesservices/deposits/resources/personal-schedule-fees/" rel="noopener noreferrer" title="Bank of America Personal Schedule of Fees (effective 2026-08-07) — Other Account Fees and Services - Miscellaneous: Wire Transfers, Incoming or Outgoing">S14 ↗</a></td></tr><tr><td data-label="USD target"><strong>$200,000.00</strong></td><td data-label="CNY at the board"><span class="n">CNY 1,337,020.00</span></td><td data-label="FX half-spread"><span class="n">$419.72</span></td><td data-label="BOC commission"><span class="n">CNY 260.00</span></td><td data-label="US receiving"><span class="n">$15.00</span></td><td data-label="Known total"><strong class="n">$496.05</strong></td><td data-label="% of target"><span class="n">0.2480%</span></td><td data-label="Still unpriced"><span class="blank" aria-label="Blank, Intermediary deduction"></span><span class="tag warn">UNVERIFIED</span></td><td data-label="Sources"><a class="src" href="https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf" rel="noopener noreferrer" title="Bank of China tariff for personal customers, Chapter 3 (individual finance) — Items 210101002, 210105008, 210107011, 210108014; announcement notes 4, 5, 10">S11 ↗</a> <a class="src" href="https://www.boc.cn/sourcedb/whpj/" rel="noopener noreferrer" title="Bank of China foreign-exchange rate board — USD row and disclaimer; quotation dated 2026/11/10, 17:39:58 China time">S12 ↗</a> <a class="src" href="https://www.bankofamerica.com/salesservices/deposits/resources/personal-schedule-fees/" rel="noopener noreferrer" title="Bank of America Personal Schedule of Fees (effective 2026-08-07) — Other Account Fees and Services - Miscellaneous: Wire Transfers, Incoming or Outgoing">S14 ↗</a></td></tr><tr><td data-label="USD target"><strong>$300,000.00</strong></td><td data-label="CNY at the board"><span class="n">CNY 2,005,530.00</span></td><td data-label="FX half-spread"><span class="n">$629.58</span></td><td data-label="BOC commission"><span class="n">CNY 260.00</span></td><td data-label="US receiving"><span class="n">$15.00</span></td><td data-label="Known total"><strong class="n">$705.91</strong></td><td data-label="% of target"><span class="n">0.2353%</span></td><td data-label="Still unpriced"><span class="blank" aria-label="Blank, Intermediary deduction"></span><span class="tag warn">UNVERIFIED</span></td><td data-label="Sources"><a class="src" href="https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf" rel="noopener noreferrer" title="Bank of China tariff for personal customers, Chapter 3 (individual finance) — Items 210101002, 210105008, 210107011, 210108014; announcement notes 4, 5, 10">S11 ↗</a> <a class="src" href="https://www.boc.cn/sourcedb/whpj/" rel="noopener noreferrer" title="Bank of China foreign-exchange rate board — USD row and disclaimer; quotation dated 2026/11/10, 17:39:58 China time">S12 ↗</a> <a class="src" href="https://www.bankofamerica.com/salesservices/deposits/resources/personal-schedule-fees/" rel="noopener noreferrer" title="Bank of America Personal Schedule of Fees (effective 2026-08-07) — Other Account Fees and Services - Miscellaneous: Wire Transfers, Incoming or Outgoing">S14 ↗</a></td></tr><tr><td data-label="USD target"><strong>$400,000.00</strong></td><td data-label="CNY at the board"><span class="n">CNY 2,674,040.00</span></td><td data-label="FX half-spread"><span class="n">$839.44</span></td><td data-label="BOC commission"><span class="n">CNY 260.00</span></td><td data-label="US receiving"><span class="n">$15.00</span></td><td data-label="Known total"><strong class="n">$915.77</strong></td><td data-label="% of target"><span class="n">0.2289%</span></td><td data-label="Still unpriced"><span class="blank" aria-label="Blank, Intermediary deduction"></span><span class="tag warn">UNVERIFIED</span></td><td data-label="Sources"><a class="src" href="https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf" rel="noopener noreferrer" title="Bank of China tariff for personal customers, Chapter 3 (individual finance) — Items 210101002, 210105008, 210107011, 210108014; announcement notes 4, 5, 10">S11 ↗</a> <a class="src" href="https://www.boc.cn/sourcedb/whpj/" rel="noopener noreferrer" title="Bank of China foreign-exchange rate board — USD row and disclaimer; quotation dated 2026/11/10, 17:39:58 China time">S12 ↗</a> <a class="src" href="https://www.bankofamerica.com/salesservices/deposits/resources/personal-schedule-fees/" rel="noopener noreferrer" title="Bank of America Personal Schedule of Fees (effective 2026-08-07) — Other Account Fees and Services - Miscellaneous: Wire Transfers, Incoming or Outgoing">S14 ↗</a></td></tr></tbody></table></div>
+<p><a class="button" href="costs.html">Open all 40 steps, five routes and the quota-split comparison →</a></p>
+
+<div class="note"><strong>Read this before using any number.</strong> A known total is not a quote. It excludes the intermediary bank's deduction,
+any tax on the underlying money, the exchange rate you will actually be given, and any documentation cost. BOC itself says the board is indicative and the
+executed rate governs (S12).</div>
+
+<h2>Where to go next</h2>
+<div class="cards">
+<a class="card" href="summary.html"><b>Executive summary</b>The decision order, the two tax systems, and the five-step playbook.</a>
+<a class="card" href="penalty.html"><b>Conversion penalty, decomposed</b>Spread, fixed charges and policy cost, separated and measured.</a>
+<a class="card" href="methods.html"><b>All 21 methods</b>Status, eligibility, steps, pros, cons and tax treatment for each.</a>
+<a class="card" href="costs.html"><b>Cost tables, 40 steps</b>USD 10,000 to 400,000, five routes, plus what splitting costs.</a>
+<a class="card" href="tax.html"><b>Tax and penalties</b>China's nine categories, section 988, FBAR/8938/3520, and the fine bands.</a>
+<a class="card" href="flagged.html"><b>Flagged for Review</b>22 unresolved items, each with what is missing and why it matters.</a>
+<a class="card" href="audit.html"><b>Repository audit</b>12 findings against the prior editions in this repository.</a>
+<a class="card" href="sources.html"><b>Sources</b>21 documents, with the exact article or page inspected.</a>
+</div>
+</main><footer>Blank means unverified, never zero. Partial totals are not quotes.<br>Educational research compiled from public official and first-party documents on 2026-11-10; not legal, tax, investment or immigration advice.</footer></body></html>

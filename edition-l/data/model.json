@@ -1,0 +1,91 @@
+{
+  "quotation": {
+    "source": "S12",
+    "date": "2026-11-10",
+    "time_china": "17:39:58",
+    "unit": "CNY per USD 100",
+    "buy_spot": 665.71,
+    "buy_cash": 665.71,
+    "sell_spot": 668.51,
+    "sell_cash": 668.51,
+    "reference": 671.67,
+    "disclaimer": "Bank of China states the board is for reference only and that the rate actually executed through its online, mobile, smart-counter or branch channel governs."
+  },
+  "parity": {
+    "source": "S20",
+    "date": "2026-11-10",
+    "unit": "CNY per USD 100",
+    "usd": 671.67,
+    "note": "Daily RMB central parity published via CFETS. It is a fixing, not a customer or interbank tradable rate."
+  },
+  "derived": {
+    "cny_per_usd_sell": 6.6851,
+    "cny_per_usd_buy": 6.6571,
+    "cny_per_usd_mid": 6.6711,
+    "cny_per_usd_parity": 6.6717,
+    "spread_pct_round_trip": 0.4196,
+    "spread_pct_one_way": 0.2098,
+    "sell_vs_parity_pct": -0.4703,
+    "note": "All derived values are recomputed from the two published boards by build.py and again independently by verify.py. One-way figure = (sell - mid) / mid, i.e. the half-spread a customer pays on a CNY-to-USD conversion when the bank's own bid and offer bracket the mid."
+  },
+  "boc": {
+    "source": "S11",
+    "commission_rate": 0.001,
+    "commission_min_cny": 50,
+    "commission_max_cny": 260,
+    "cable_international_cny": 150,
+    "cable_hk_mo_tw_cny": 80,
+    "draft_postage": "actual cost, not published",
+    "full_arrival_usd_if_correspondent_at_boc_ny": 15,
+    "full_arrival_usd_otherwise": 25,
+    "counter_conversion_commission": 0,
+    "counter_conversion_note": "Item 210107011 states that conversion at BOC's own branches carries no separate fee: the exchange rate is the price."
+  },
+  "hsbc": {
+    "source": "S13",
+    "commission_rate": 0.001,
+    "commission_min_cny": 100,
+    "commission_max_cny": 500,
+    "cable_cny": 120,
+    "private_banking_individual_commission": 0,
+    "private_banking_individual_cable": 0,
+    "fully_paid_to_beneficiary_precollect_cny": 200,
+    "fx_rate_published": false
+  },
+  "receiving_bank": {
+    "source": "S14",
+    "name": "Bank of America",
+    "incoming_international_wire_usd": 15,
+    "note": "Bank of America states other fees or amounts may also apply, including those charged by the sending institution and foreign taxes."
+  },
+  "atm": {
+    "source": "S11",
+    "per_withdrawal_fixed_cny": 12,
+    "per_withdrawal_rate": 0.01,
+    "per_withdrawal_cap_cny": 112,
+    "annual_cap_cny": 100000,
+    "daily_cap_per_card_cny": 10000,
+    "annual_cap_source": "S07"
+  },
+  "carry": {
+    "source": "S08",
+    "no_permit_up_to_usd": 5000,
+    "permit_required_up_to_usd": 10000,
+    "permit_fee_cny": 10,
+    "permit_fee_waived_until": "2026-12-31",
+    "permit_fee_source": "S11"
+  },
+  "quota": {
+    "source": "S03",
+    "usd_per_person_per_year": 50000,
+    "scope": "Settlement by any individual and FX purchase by a domestic individual."
+  },
+  "limits": {
+    "cash_remit_id_only_usd_per_day": 50000,
+    "cash_withdrawal_prefile_usd_per_day": 10000,
+    "cash_deposit_customs_declaration_usd": 5000,
+    "us_entry_declaration_usd": 10000
+  },
+  "targets": {"start_usd": 10000, "end_usd": 400000, "step_usd": 10000},
+  "sensitivity_pct_points": 1.0
+}

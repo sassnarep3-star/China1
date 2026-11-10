@@ -1,5 +1,7 @@
 # China Money
 
+**Newest edition (2026-11-10):** [Edition L](https://sassnarep3-star.github.io/China1/edition-l/site/index.html) — measures the conversion penalty (0.2099%) instead of leaving it blank, prices five ladders to USD 400,000, lists 21 methods with steps, publishes 22 review flags and a 12-finding audit of the earlier editions.
+
 **Live site:** https://sassnarep3-star.github.io/China1/ — the landing page is a portal; the current, fully priced dashboard is [Edition K](https://sassnarep3-star.github.io/China1/edition-k/site/index.html).
 
 ---

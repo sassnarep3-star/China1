@@ -1,0 +1,546 @@
+{
+  "note": "21 candidate routes. 'lawful' = permitted on the cited rule when its conditions are met; 'conditional' = lawful only for a defined entitlement the reader must actually have; 'not-a-cashout' = a real transaction that is not a way to withdraw an existing balance; 'prohibited' = illegal or enforcement-risk, listed only to name the risk and never with execution instructions. Nothing here is a personal eligibility determination.",
+  "methods": [
+    {
+      "id": "M01",
+      "cat": "bank",
+      "name": "Overseas individual remits lawful current-account RMB income (documented purchase)",
+      "status": "lawful",
+      "rail": "L1",
+      "eligibility": "You are an overseas individual (passport holder - S02 Art. 37(2)) with current-account RMB in the account that came from lawful, taxed income earned or received in China.",
+      "steps": [
+        "Ask the bank to classify you as an overseas individual and to confirm which current-account item your balance is (salary, services, dividend already taxed, etc.).",
+        "Assemble identity plus the source-of-funds package the rule names: contract or invoice for the underlying item, and the China tax record or withholding voucher (S04).",
+        "Request a same-day executable quote for the exact amount and confirm whether the bank will execute at the counter rate or an app rate.",
+        "Instruct the remittance to your own overseas account, choosing SHA or OUR and stating who pays correspondent and receiver charges (S11 note 4; S13).",
+        "Keep the purchase slip, the SWIFT reference, the tax voucher and the bank's fee debit."
+      ],
+      "pros": [
+        "The only route whose legal basis is written specifically for a non-resident passport holder with money already in the account (S02 Art. 13; S04).",
+        "No published annual USD 50,000 ceiling is attached to this text - the ceiling in S03 Art. 2 is written for settlement by any individual plus purchase by a domestic individual.",
+        "Same bank mechanics and tariff as every other wire, so the cheapest known fee structure applies."
+      ],
+      "cons": [
+        "Eligibility is proved document by document; the bank, not the reader, decides whether the file is complete.",
+        "The 2020 guidelines quote is short and local practice may still apply a convenience-quota screen - confirm at the branch before relying on the distinction.",
+        "Any gap between the balance and the documented income leaves an unexplained residue that cannot lawfully be purchased this way."
+      ],
+      "tax_cn": "FX conversion is not one of the nine categories in S10 Art. 2, so no PRC income tax is triggered by the conversion itself. The underlying income must already have borne whatever PRC tax applied, and a tax voucher is part of the file.",
+      "tax_us": "Converting your own principal is not new income. A currency gain on the CNY is a section 988 item; for a personal transaction no gain is recognised unless it would exceed USD 200 (S15 (e)), and the personal-transaction test excludes holdings whose expenses are section 162/212 expenses. The Chinese account must also be FBAR/8938-reported while it exists (S16, S17).",
+      "sources": ["S02", "S03", "S04", "S10", "S11", "S15", "S16"],
+      "flag": "F01"
+    },
+    {
+      "id": "M02",
+      "cat": "bank",
+      "name": "Annual USD 50,000 facilitation quota (domestic-individual pattern)",
+      "status": "conditional",
+      "rail": "L2",
+      "eligibility": "The bank treats you as a domestic individual - typically a PRC citizen holding a resident ID (S02 Art. 37(1)). It is not available to a passport-only overseas individual on the face of S03 Art. 2.",
+      "steps": [
+        "Confirm in writing how the bank has classified you before assuming any quota is available.",
+        "If a quota applies, convert within the annual total on ID alone (S03 Art. 2).",
+        "Remit from the FX savings account: up to USD 50,000/day on ID, more with transaction documents (S03 Art. 14).",
+        "Repeat in later calendar years rather than splitting a single amount across people (S02 Art. 7 prohibits splitting to evade limits)."
+      ],
+      "pros": [
+        "Fully documented, well understood at every branch, and requires only ID inside the quota.",
+        "Predictable fee per wire: the BOC commission caps at CNY 260, so larger single wires are cheaper per dollar."
+      ],
+      "cons": [
+        "USD 50,000 per person per calendar year - USD 400,000 takes eight calendar years if this is the only route.",
+        "Using relatives' quotas to move one person's money is the prohibited splitting pattern in S02 Art. 7.",
+        "Each year adds a separate cable and receiving charge and exposes the whole balance to another year of exchange-rate movement."
+      ],
+      "tax_cn": "No PRC tax on the conversion itself (S10 Art. 2 categories); the quota is a payments rule, not a tax rule.",
+      "tax_us": "Same analysis as M01: principal is not income; section 988 applies to the currency leg with the USD 200 personal-transaction rule (S15 (e)).",
+      "sources": ["S02", "S03", "S10", "S15"],
+      "flag": "F02"
+    },
+    {
+      "id": "M03",
+      "cat": "bank",
+      "name": "HSBC China outward telegraphic transfer (Premier/Advance, Private Banking)",
+      "status": "lawful",
+      "rail": "L3",
+      "eligibility": "You hold an HSBC China account in the relevant tier. Premier/Advance pricing requires the tier conditions in the tariff (S13 note 3); private-banking individuals pay no HSBC commission or cable fee.",
+      "steps": [
+        "Confirm your tier, because the tariff price differs by tier.",
+        "Obtain the FX rate HSBC will apply - the tariff publishes the commission but not the rate.",
+        "Choose SHA/BEN/OUR deliberately: 'free' in the tariff removes only HSBC's own fee, not correspondent or receiver charges (S13 item 2.2.4.1 note).",
+        "If you ask for the USD to be paid in full to the beneficiary, expect the CNY 200 pre-collection plus any shortfall.",
+        "(Because the FX price is unpublished, this route cannot be ranked on all-in cost until you hold a written quote.)"
+      ],
+      "pros": [
+        "Published commission is capped at CNY 500, so a large single wire is cheap per dollar on the HSBC side.",
+        "Private-banking individuals pay neither commission nor cable fee.",
+        "Cash foreign-currency exchange is free for HSBC Group customers (S13 item 2.2.2.2)."
+      ],
+      "cons": [
+        "The exchange rate is the dominant cost and HSBC does not publish it - no all-in estimate is possible from documents alone.",
+        "The full-arrival request pre-collects CNY 200 before the real correspondent cost is known.",
+        "Tier pricing depends on monthly average balances; falling below the threshold changes the price."
+      ],
+      "tax_cn": "No separate conversion tax; same S10 analysis as M01.",
+      "tax_us": "Identical to M01. The choice of bank changes the fee and the rate, not the tax character.",
+      "sources": ["S13", "S10", "S15"],
+      "flag": "F03"
+    },
+    {
+      "id": "M04",
+      "cat": "bank",
+      "name": "Outward transfer from another Chinese bank (ICBC, CMB, CCB, ABC, BoCom, postal savings)",
+      "status": "lawful",
+      "rail": null,
+      "eligibility": "Account holder at that bank; same regulatory route as M01 or M02.",
+      "steps": [
+        "Obtain that bank's current published personal tariff (this session did not fetch it, so no number is shown here).",
+        "Obtain a same-day quote for the exact amount.",
+        "Compare the quote on the same amount and the same day against the BOC computation in this edition."
+      ],
+      "pros": [
+        "Competition is real: commission floors, caps and cable charges differ by bank.",
+        "Keeping the money where it already sits avoids an internal transfer step."
+      ],
+      "cons": [
+        "No price is shown in this edition because the tariff was not retrieved - blank, not zero.",
+        "Local branches apply the same documentation review, so the cheapest published tariff can still lose on documentation delays."
+      ],
+      "tax_cn": "Same as M01 - no conversion tax category in S10 Art. 2.",
+      "tax_us": "Same as M01.",
+      "sources": ["S02", "S03"],
+      "flag": "F04"
+    },
+    {
+      "id": "M05",
+      "cat": "third",
+      "name": "Wise transfer sent from CNY to your own overseas account",
+      "status": "conditional",
+      "rail": "L6",
+      "eligibility": "Not mainland Chinese; has worked in China; holds a China tax record showing tax paid within the last three years; destination is an account you own; personal accounts only (S21).",
+      "steps": [
+        "Check the three eligibility tests before funding anything.",
+        "Complete Wise verification (1-2 working days) with the tax record.",
+        "Set up the transfer to your own overseas account, respecting CNY 300,000 per transfer from a bank app or CNY 50,000 from Alipay.",
+        "Read the fee and rate shown on the confirmation screen - that is the only price Wise publishes."
+      ],
+      "pros": [
+        "Uses the mid-market rate plus a disclosed fee rather than a bank board rate, so the headline rate is usually better than a branch quote.",
+        "Fully app-based, no branch visit."
+      ],
+      "cons": [
+        "The overall limit is your after-tax salary already earned in China, so it cannot reach money that was not salary.",
+        "Only same-owner destinations are allowed - you cannot pay a third party.",
+        "No fixed fee schedule is published; every fee cell in this edition is therefore blank and flagged."
+      ],
+      "tax_cn": "No conversion tax; the route itself is built around proof that PRC tax was paid (S21).",
+      "tax_us": "Principal is not income; the same section 988 personal-transaction analysis applies. A transfer to your own account is not a gift.",
+      "sources": ["S21", "S10", "S15"],
+      "flag": "F05"
+    },
+    {
+      "id": "M06",
+      "cat": "bank",
+      "name": "Banker's draft (demand draft, 'piaohui') mailed or couriered instead of a wire",
+      "status": "lawful",
+      "rail": "L7",
+      "eligibility": "Same regulatory route as M01/M02; the bank must be willing to issue a draft in your name.",
+      "steps": [
+        "Ask the bank to issue a draft payable to you, not to a third party.",
+        "Confirm the postage/courier charge, which the tariff leaves at actual cost (S11 item 210105008).",
+        "Deposit the draft with your US bank and check its collection or negotiation fee before depositing.",
+        "Record the draft number, the purchase slip and the deposit advice."
+      ],
+      "pros": [
+        "Same published commission band as a wire (1 per mille, CNY 50-260).",
+        "No cable charge - only postage - so on paper the cheapest BOC channel."
+      ],
+      "cons": [
+        "Loss or delay in transit; a stopped draft costs up to CNY 50 plus cable.",
+        "The receiving bank's collection/negotiation fee is not published in the source used here, so the total is incomplete.",
+        "Slower clearing means a longer exposure to the exchange rate."
+      ],
+      "tax_cn": "No conversion tax.",
+      "tax_us": "Same as M01.",
+      "sources": ["S11", "S02"],
+      "flag": "F06"
+    },
+    {
+      "id": "M07",
+      "cat": "cash",
+      "name": "Buy USD cash at the counter and carry it out",
+      "status": "conditional",
+      "rail": "L5",
+      "eligibility": "A genuine travel need; amounts above USD 5,000 need a carrying permit and above USD 10,000 are in principle not permitted (S08).",
+      "steps": [
+        "Buy USD cash at the counter at the cash selling rate (S12 shows the same rate as the spot rate for USD today).",
+        "Up to USD 5,000: no permit. USD 5,000-10,000: obtain a carrying permit from an authorised bank (S08).",
+        "Declare on entry to the United States if you carry more than USD 10,000 (FinCEN Form 105).",
+        "Deposit the cash in the US promptly and expect the bank's cash-deposit rules to apply."
+      ],
+      "pros": [
+        "No cable charge and no receiving-bank wire fee.",
+        "Settles instantly - no correspondent bank deductions."
+      ],
+      "cons": [
+        "USD 10,000 per trip is a hard practical ceiling, so USD 400,000 needs 40+ trips.",
+        "Physical loss/theft risk and insurance cost are unpriced.",
+        "Carrying permit fee is CNY 10 today but is only waived to 2026-12-31 (S11 item 210101002)."
+      ],
+      "tax_cn": "No conversion tax; exceeding the carrying limit is an FX violation with a fine of up to 20% of the amount (S01 Art. 42).",
+      "tax_us": "No income tax on moving your own cash; the section 988 currency leg is the same. Not declaring more than USD 10,000 on entry is a separate customs matter.",
+      "sources": ["S08", "S11", "S12", "S01", "S15"],
+      "flag": "F07"
+    },
+    {
+      "id": "M08",
+      "cat": "cash",
+      "name": "Withdraw cash abroad from a Chinese debit card at foreign ATMs",
+      "status": "conditional",
+      "rail": "L4",
+      "eligibility": "Domestic bank card; within the annual and daily caps (S07).",
+      "steps": [
+        "Confirm the card's overseas withdrawal is enabled.",
+        "Withdraw at ATMs, remembering the CNY 10,000 per card per day and CNY 100,000 per person per calendar year caps (S07).",
+        "Keep every receipt; foreign ATM operators may add their own surcharge (S11 note 10).",
+        "Deposit or spend the cash in the US and keep the deposit records."
+      ],
+      "pros": [
+        "No application, no documents, no branch visit.",
+        "Works in small amounts immediately."
+      ],
+      "cons": [
+        "The BOC fee is CNY 12 plus 1% per withdrawal, capped at CNY 112 - roughly 1% of everything you move, an order of magnitude above a wire.",
+        "The annual cap of CNY 100,000 means a USD 400,000 objective takes about 27 years at the cap.",
+        "Foreign ATM surcharges and US cash-handling friction are extra and unpriced."
+      ],
+      "tax_cn": "No conversion tax. The cap is an FX/payments rule; exceeding it suspends the facility for the current and following year (S07).",
+      "tax_us": "No tax on withdrawing your own money; section 988 applies to the currency leg.",
+      "sources": ["S07", "S11", "S15"],
+      "flag": "F08"
+    },
+    {
+      "id": "M09",
+      "cat": "cash",
+      "name": "Spend the balance abroad on a Chinese card instead of converting it",
+      "status": "not-a-cashout",
+      "rail": null,
+      "eligibility": "Any cardholder buying goods or services abroad.",
+      "steps": [
+        "Use the card for genuine purchases abroad.",
+        "Do not treat this as a way to obtain dollars: it settles a purchase, it does not put cash in your US account."
+      ],
+      "pros": [
+        "Consumes no purchase quota on the face of the SAFE explainer, which says the card rules do not change the USD 50,000 convenience quota (S07).",
+        "No transfer paperwork."
+      ],
+      "cons": [
+        "It is consumption, not repatriation - for a lump sum in an account it solves nothing.",
+        "Card FX pricing and the issuer's own conversion margin are not published in the sources used here.",
+        "Manufacturing purchases to extract cash is structuring and is prohibited (S02 Art. 7)."
+      ],
+      "tax_cn": "Not a taxable conversion; a purchase.",
+      "tax_us": "Not income. Foreign-currency card transactions are still section 988 items but normally immaterial.",
+      "sources": ["S07", "S02"],
+      "flag": "F09"
+    },
+    {
+      "id": "M10",
+      "cat": "capital",
+      "name": "Emigrant property transfer (yimin caichan zhuanyi)",
+      "status": "conditional",
+      "rail": "L8",
+      "eligibility": "A natural person who has moved from mainland China to a foreign country (or HK/Macau) and is transferring property lawfully owned before acquiring emigrant status (S05 Art. 2). Requires cancellation of PRC household registration and proof of overseas settlement (S05 Art. 8).",
+      "steps": [
+        "Convert qualifying pre-emigration property into RMB and assemble title documents.",
+        "Obtain the tax certificate or tax-payment voucher from the competent tax authority (S05 Art. 8(6)).",
+        "Apply to the SAFE office at the original household-registration place, submitting the application, forms, ID, hukou-cancellation proof, property-rights documents and tax evidence (S05 Arts. 5, 8).",
+        "After approval, take the approval and registration certificate to the bank, which must remit directly to your own overseas account and may not pay cash inside China (S05 Art. 11).",
+        "Remit once or in instalments within the approved amount - the old staged releases were cancelled (S06 VI.2)."
+      ],
+      "pros": [
+        "The only route expressly designed to move a large pre-emigration balance out, with no published amount ceiling once approved.",
+        "No PRC tax on the transfer itself; the tax certificate evidences tax already paid on the property.",
+        "Administered by one SAFE office, with the old headquarters filing removed for amounts over CNY 500,000 (S06 VI.1)."
+      ],
+      "cons": [
+        "You must genuinely have emigrated and cancelled PRC household registration - a US passport alone is not the same test, and the file must show it.",
+        "Requires an actual property entitlement; cash savings in an account are not 'property realised before emigration' unless the provenance fits.",
+        "No published fee schedule: the cost is the bank's FX and wire charge plus whatever the tax clearance produces, and approval time is not a cost you can price."
+      ],
+      "tax_cn": "The transfer is not itself taxed. Tax on the underlying property disposal (20% of gain for property transfer under S10 Art. 3(3) and 6(5)) must be settled before the certificate issues.",
+      "tax_us": "Selling the property can create US gain computed in USD; the remittance itself is not income. Report the account on FBAR/8938 while held (S16, S17), and claim any PRC tax as a foreign tax credit only if it is a qualifying income tax on the same gain.",
+      "sources": ["S05", "S06", "S10", "S01", "S16"],
+      "flag": "F10"
+    },
+    {
+      "id": "M11",
+      "cat": "capital",
+      "name": "Inheritance property transfer (jicheng caichan zhuanyi)",
+      "status": "conditional",
+      "rail": "L8",
+      "eligibility": "A foreign citizen or HK/Macau resident who has lawfully inherited property in mainland China (S05 Art. 2).",
+      "steps": [
+        "Realise the inherited property and collect the inheritance documents.",
+        "Obtain the deceased's property-rights documents and the tax certificate or payment voucher from the tax authority where the property is located (S05 Art. 9(5)).",
+        "Apply to the SAFE office at the deceased's pre-death household-registration place; heirs of several deceased persons may now combine applications (S05 Art. 5; S06 VI.3).",
+        "Have the bank remit to your own overseas account after approval, in one or several payments (S05 Art. 11; S06 VI.2)."
+      ],
+      "pros": [
+        "Lawful route for genuinely inherited assets with no published ceiling after approval.",
+        "Notarisation of property-right and agency documents is no longer required (S06 VI.4), which removes a real cost."
+      ],
+      "cons": [
+        "Requires a completed inheritance with clean title; disputed estates are refused (S05 Arts. 3, 12).",
+        "Tax clearance must precede the transfer.",
+        "Timeline depends on probate and the local SAFE office; nothing about it is instantaneous."
+      ],
+      "tax_cn": "No PRC inheritance tax exists in the sources reviewed; the property-transfer tax on realising the asset still applies (S10 Arts. 3(3), 6(5)).",
+      "tax_us": "A bequest received from a nonresident alien is reportable on Form 3520 only above the USD 100,000 aggregate threshold for gifts/bequests from that person (S18). Inherited property takes a US basis under the estate rules, which this edition does not compute.",
+      "sources": ["S05", "S06", "S10", "S18"],
+      "flag": "F11"
+    },
+    {
+      "id": "M12",
+      "cat": "asset",
+      "name": "Overseas individual sells mainland commercial housing and remits the proceeds",
+      "status": "conditional",
+      "rail": "L8",
+      "eligibility": "An overseas individual who owns mainland commercial housing bought for self-use; the proceeds may be purchased and remitted with SAFE approval (S02 Art. 22).",
+      "steps": [
+        "Complete the sale and pay the PRC property-transfer tax; obtain the tax payment certificate.",
+        "Apply for SAFE approval for the purchase and remittance of the RMB proceeds (S02 Art. 22).",
+        "Take the approval to the bank and remit to your own overseas account.",
+        "Keep the sale contract, title, tax certificate and remittance advice for both tax systems."
+      ],
+      "pros": [
+        "Explicit statutory route for a genuine property sale by a foreign passport holder.",
+        "Property gains are computed on a net basis (proceeds minus original value and reasonable expenses), so the taxable base is not the whole price (S10 Art. 6(5))."
+      ],
+      "cons": [
+        "The self-use condition and approval are judged case by case.",
+        "PRC tax of 20% of the gain applies to the disposal (S10 Art. 3(3)) - this is the largest 'penalty' in the whole project and it is a tax on the asset, not on the transfer.",
+        "Local practice on documentation varies; the statute is short and the operational checklist is local."
+      ],
+      "tax_cn": "20% of the gain on the property transfer (S10 Arts. 3(3), 6(5)), payable before the tax certificate can support the remittance.",
+      "tax_us": "The sale is a US taxable disposition with gain computed in USD; foreign tax paid may be creditable if it is a qualifying income tax. The remittance is not income.",
+      "sources": ["S02", "S10", "S16"],
+      "flag": "F12"
+    },
+    {
+      "id": "M13",
+      "cat": "asset",
+      "name": "Dividends or profit distribution from a Chinese company you own",
+      "status": "conditional",
+      "rail": "L9",
+      "eligibility": "You hold equity in a PRC company that has distributable profits and has passed the required resolution.",
+      "steps": [
+        "Pass the profit-distribution resolution and complete the tax filing.",
+        "Pay PRC withholding on the dividend (20% for dividends under S10 Art. 3(3)).",
+        "Have the company or bank remit the after-tax dividend to your overseas account under the capital-account profit-remittance procedure.",
+        "Report the dividend as US income and claim a foreign tax credit if the PRC tax qualifies."
+      ],
+      "pros": [
+        "A genuine business entitlement, not a workaround; the tax treatment is explicit.",
+        "Profit remittance is a documented, routine channel for companies."
+      ],
+      "cons": [
+        "20% PRC tax on the gross dividend is a hard cost.",
+        "You need real distributable profit and a compliant resolution - inventing one is a criminal exposure, not a fee.",
+        "Double taxation is only relieved by credit, not eliminated."
+      ],
+      "tax_cn": "20% of the dividend (S10 Art. 3(3)); the tax is withheld before remittance.",
+      "tax_us": "Dividends are US income; a foreign tax credit may reduce double taxation but does not offset US tax on other income.",
+      "sources": ["S10", "S01"],
+      "flag": "F13"
+    },
+    {
+      "id": "M14",
+      "cat": "asset",
+      "name": "Liquidation proceeds of a foreign-invested enterprise",
+      "status": "conditional",
+      "rail": "L9",
+      "eligibility": "You are the foreign investor in a lawfully liquidated FIE.",
+      "steps": [
+        "Complete the liquidation and pay all taxes due.",
+        "Obtain the liquidation and tax documents.",
+        "The RMB attributable to the foreign investor may be purchased and remitted (S01 Art. 22).",
+        "Keep the liquidation file for both jurisdictions."
+      ],
+      "pros": [
+        "Explicit in the FX Regulation: post-liquidation, post-tax RMB belonging to the foreign investor may be purchased and remitted (S01 Art. 22).",
+        "No artificial ceiling once the liquidation is complete."
+      ],
+      "cons": [
+        "Requires an actual liquidation - months of work and real advisory cost.",
+        "Tax on the liquidation is jurisdiction- and structure- specific and is not computed here.",
+        "Not available to an individual holding cash in a personal account."
+      ],
+      "tax_cn": "Tax on the liquidation is settled first; the regulation only addresses the remittance after tax (S01 Art. 22).",
+      "tax_us": "Liquidation can produce US gain or loss and may interact with the section 988 and foreign-corporation rules; not computed here.",
+      "sources": ["S01", "S10"],
+      "flag": "F14"
+    },
+    {
+      "id": "M15",
+      "cat": "asset",
+      "name": "Salary earned while working in China, then remitted",
+      "status": "lawful",
+      "rail": "L9",
+      "eligibility": "You are or were employed in China and the balance is that salary.",
+      "steps": [
+        "Confirm the employer withheld PRC individual income tax and obtain the tax record.",
+        "Present the employment contract, income proof and tax vouchers to the bank (S04).",
+        "Purchase and remit under the overseas-individual income route (S02 Art. 13; S04)."
+      ],
+      "pros": [
+        "The cleanest documentary story: an employment contract plus a tax record.",
+        "The bank procedure is expressly described in a 2026 SAFE answer (S04)."
+      ],
+      "cons": [
+        "Only covers money that really is salary; savings accumulated from other sources do not qualify under this heading.",
+        "PRC tax already reduced the amount before it reached the account (3%-45% progressive on comprehensive income, S10 Art. 3(1)).",
+        "A non-resident's monthly computation differs from a resident's (S10 Art. 6(2))."
+      ],
+      "tax_cn": "PRC individual income tax at 3%-45% progressive on comprehensive income, with a monthly CNY 5,000 deduction for a non-resident's salary (S10 Arts. 3(1), 6(2)); withheld before the money reaches the account.",
+      "tax_us": "US tax on worldwide income with a foreign tax credit for qualifying PRC tax; the salary is income regardless of whether it is remitted.",
+      "sources": ["S02", "S04", "S10"],
+      "flag": "F01"
+    },
+    {
+      "id": "M16",
+      "cat": "asset",
+      "name": "Insurance proceeds or benefits paid under a compliant policy",
+      "status": "conditional",
+      "rail": "L8",
+      "eligibility": "A genuine claim payment or maturity benefit under a policy that complied with FX rules.",
+      "steps": [
+        "Obtain the policy and the insurer's payment proof.",
+        "Present them to the bank under the insurance-income item in S03 Art. 10(4).",
+        "Remit to your own account."
+      ],
+      "pros": [
+        "Listed as a documented current-account item, so the file is defined (S03 Art. 10(4)).",
+        "Insurance indemnity is expressly exempt from PRC individual income tax in the cases listed in S10 Art. 4(5)."
+      ],
+      "cons": [
+        "Only real policy money qualifies; buying a policy now to move existing savings is a different question and may breach the use restrictions on purchased FX.",
+        "Insurer documentation and the bank's review take time."
+      ],
+      "tax_cn": "Insurance indemnity is listed among exempt income in S10 Art. 4(5); other benefits may be taxable depending on type.",
+      "tax_us": "US treatment of foreign life-insurance proceeds is complex and not computed here; a cash-value policy can also create PFIC issues. Obtain advice.",
+      "sources": ["S03", "S10"],
+      "flag": "F15"
+    },
+    {
+      "id": "M17",
+      "cat": "asset",
+      "name": "Approved cross-border investment schemes (QDII and similar)",
+      "status": "not-a-cashout",
+      "rail": null,
+      "eligibility": "An investor buying an approved product through a domestic institution.",
+      "steps": [
+        "Buy the approved product inside China; the institution uses its own approved quota.",
+        "Any return is repatriated under the product's rules.",
+        "(This does not convert an existing cash balance into dollars in your own overseas account.)"
+      ],
+      "pros": [
+        "Lawful and institutionally run.",
+        "Diversifies without an individual FX application."
+      ],
+      "cons": [
+        "It is an investment, not a repatriation channel; the money stays inside the scheme until redeemed.",
+        "Product, custody and redemption fees are not published in the sources reviewed here.",
+        "Market risk on the principal is far larger than the transfer costs analysed in this edition."
+      ],
+      "tax_cn": "Product-specific; not computed.",
+      "tax_us": "Foreign funds can be PFICs with punitive US tax treatment; this is a reason to avoid treating a fund purchase as a money-movement trick.",
+      "sources": ["S03"],
+      "flag": "F16"
+    },
+    {
+      "id": "M18",
+      "cat": "third",
+      "name": "Receive a gift from a China-resident relative",
+      "status": "conditional",
+      "rail": "L1",
+      "eligibility": "A genuine gift from a relative who independently owns the money. The relative still has to convert it lawfully under their own route.",
+      "steps": [
+        "The relative converts and remits under M01 or M02 in their own name, for their own genuine purpose.",
+        "You receive the funds into your own account.",
+        "If the aggregate from that person exceeds USD 100,000 in the year, file Form 3520 Part IV (S18).",
+        "Keep the gift documentation."
+      ],
+      "pros": [
+        "A genuine family gift is lawful and not US taxable income to the recipient.",
+        "Uses the relative's own entitlement rather than yours."
+      ],
+      "cons": [
+        "If the purpose is to move your money through someone else's quota, it is the prohibited splitting pattern in S02 Art. 7 and is not a gift at all.",
+        "Form 3520 is a reporting trap: failure can attract penalties under IRC 6039F(c) (S18).",
+        "The relative's bank applies the same documentation review."
+      ],
+      "tax_cn": "A genuine gift is not income; the conversion by the relative is their transaction.",
+      "tax_us": "Foreign gifts are not taxable income but above USD 100,000 aggregate from a nonresident alien they are reportable on Form 3520 (S18). No US gift tax falls on the recipient.",
+      "sources": ["S18", "S02", "S03"],
+      "flag": "F17"
+    },
+    {
+      "id": "M19",
+      "cat": "prohibited",
+      "name": "Underground bank / 'duiqiao' matched transfers / private money changer",
+      "status": "prohibited",
+      "rail": null,
+      "eligibility": "None. Listed only to name the risk.",
+      "steps": ["No execution steps are provided."],
+      "pros": ["None that survives enforcement; counterparty theft is common."],
+      "cons": [
+        "Private or disguised FX dealing is penalised with confiscation of the proceeds and a fine of up to 30% of the amount, rising in serious cases (S01 Art. 45).",
+        "Criminal liability is expressly contemplated for serious cases (S01 Art. 45).",
+        "The counterparty holds your money; there is no legal recourse when it disappears."
+      ],
+      "tax_cn": "Not a tax question: an administrative and potentially criminal violation.",
+      "tax_us": "Unreported foreign transactions can also break FBAR/8938 and, if the money is recharacterised, create US income.",
+      "sources": ["S01"],
+      "flag": "F18"
+    },
+    {
+      "id": "M20",
+      "cat": "prohibited",
+      "name": "Buy USDT or another virtual currency in China and sell it abroad",
+      "status": "prohibited",
+      "rail": null,
+      "eligibility": "None. Listed only to name the risk.",
+      "steps": ["No execution steps are provided."],
+      "pros": ["None that is lawful inside mainland China."],
+      "cons": [
+        "Exchange between fiat and virtual currency carried on in mainland China is illegal financial activity that is strictly prohibited, and financial institutions may not process it (S09 Section 1).",
+        "The 2026 notice replaced the 2021 notice and kept the prohibition (S09 final clause).",
+        "Civil acts contrary to public order are void and the investor bears the loss (S09 Section 6(19))."
+      ],
+      "tax_cn": "Not a tax question: prohibited financial activity.",
+      "tax_us": "Virtual-currency disposals are separately reportable in the US and do not cure an unlawful source.",
+      "sources": ["S09"],
+      "flag": "F19"
+    },
+    {
+      "id": "M21",
+      "cat": "prohibited",
+      "name": "False invoices, nominee quotas, splitting across relatives or repeated small transfers",
+      "status": "prohibited",
+      "rail": null,
+      "eligibility": "None. Listed only to name the risk.",
+      "steps": ["No execution steps are provided."],
+      "pros": ["None."],
+      "cons": [
+        "Splitting to evade limits and using false commercial documents are expressly prohibited (S02 Art. 7).",
+        "Illegal FX arbitrage is penalised with a fine of up to 30% of the amount, and serious cases face the same or more (S01 Art. 40).",
+        "The bank is required to review authenticity, so the pattern is the one most likely to be detected and reported (S01 Art. 12)."
+      ],
+      "tax_cn": "Not a tax question: an FX violation.",
+      "tax_us": "Falsified documentation can also create US tax and fraud exposure.",
+      "sources": ["S02", "S01"],
+      "flag": "F20"
+    }
+  ]
+}

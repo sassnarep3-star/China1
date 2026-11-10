@@ -1,5 +1,34 @@
 # Executive summary
 
+## Edition L (2026-11-10) — the conversion penalty, measured
+
+**Reader:** a U.S. citizen holding CNY in a Chinese bank account. **Live dashboard:** https://sassnarep3-star.github.io/China1/edition-l/site/index.html
+
+## The finding, in five sentences
+
+1. **There is no conversion tax to avoid.** The PRC Individual Income Tax Law lists nine taxable categories (Art. 2) and a currency conversion is not one of them. What the money is *made of* may already have been taxed; the conversion itself is not a second taxable event.
+2. **The conversion penalty is a spread, and it is measurable.** On Bank of China's own board of 2026-11-10 17:39:58 the bank bid CNY 665.71 and offered CNY 668.51 per USD 100. Crossing half that bracket costs **0.2099%** of the amount, and BOC's tariff charges no separate conversion commission at its branches (item 210107011).
+3. **The published transfer cost is small and it shrinks with size.** BOC charges 0.1%, floored at CNY 50 and capped at CNY 260, plus CNY 150 cable; Bank of America charges USD 15 to receive an international wire. That gives a known total of **USD 68.42 at USD 10,000 (0.68%)** falling to **USD 915.77 at USD 400,000 (0.23%)**.
+4. **The binding constraint is entitlement, not tax.** A passport holder is an "overseas individual" (PBOC Order [2006] No. 3, Art. 37(2)) whose purchase rule is documentary — lawful current-account RMB income plus tax vouchers (Art. 13; SAFE's 2026 answer quoting the 2020 guidelines, Art. 59). The USD 50,000 annual total is written for settlement by anyone plus purchase by a *domestic* individual (Huifa [2007] No. 1, Art. 2). If the bank applies that total instead, USD 400,000 needs eight wires and costs USD 1,450.09.
+5. **The large numbers are penalties and asset taxes, not conversion costs.** PRC administrative fines reach 30% of the amount for evasion or disguised dealing (FX Regulation Arts. 39, 45); a property gain is taxed at 20% (IIT Law Art. 3(3)); and US reporting failures run to USD 16,536 non-willful or USD 165,353 willful per FBAR (31 CFR 1010.821). All three are avoidable, and none is a conversion tax.
+
+## What is deliberately left blank
+
+Five components have no published value and are blank on every row, never zero: the intermediary bank's deduction, HSBC's exchange rate, other Chinese banks' tariffs, Wise's fee, and any tax on an unknown gain. Twenty-two flags document each gap and name the document that would close it.
+
+## Least-tax route, stated as a procedure
+
+1. Ask the bank, in writing, how it classifies you and which current-account item your balance is.
+2. Assemble the source document and the China tax record for that item.
+3. Obtain same-day executable quotes from BOC and at least one other bank, requesting SHA and OUR separately.
+4. Send one wire rather than several: the commission caps at CNY 260 and the fixed charges repeat per wire.
+5. File the FBAR and Form 8938 for the Chinese account in the same year, and Form 3520 if a foreign person gave you more than USD 100,000.
+
+## Scope
+
+This edition adds `edition-l/` and a portal link; it does not edit the earlier editions. It publishes a 12-finding audit of them, including a stale-rate finding (the same day's USD ask appears in this repository as 669.19, 669.03, 669.29 and 668.51) and a wording finding on the USD 50,000 tier. Personal eligibility, live quotes and all-in totals are not certified.
+
+
 ## Edition K (2026-11-10) — what the numbers actually are
 
 **The one-sentence answer.** There is no tax on converting CNY into USD in either
