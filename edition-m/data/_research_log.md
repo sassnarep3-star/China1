@@ -112,3 +112,27 @@ SAFE Xiamen 个人外汇业务服务小贴士 (2021-10-22).
 - 之七 Q14: "境外个人外汇储蓄账户资金汇出无金额和用途限制，凭本人有效身份证件直接在银行办理。"
 - 之六 Q6: "在境内工作、居住满 1 年的境外个人，可以用来源于境内的收入购买商业银行发行的外币或人民币理财产品。"
 - 之八 Q1: "（二）境外个人在境内买卖商品房直接在银行办理。" Q2: 售房款汇出金额以合同、资金划转证明、完税证明金额为准.
+
+### S-BOC-TARIFF-INDEX  https://www.bankofchina.com/custserv/fd5/
+《中国银行服务价目表》 page dated 2025-11-11: "本价目表自2025年11月11日起实施，至本价目表失效之日终止". Chapter 3 "个人客户服务收费业务 一、个人金融" links to the PDF below. 第三章至第五章均为市场调节价.
+
+### S-BOC-TARIFF  https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf
+第三章：个人客户服务收费业务（1个人金融）, 6 pages.
+- 210105008 个人本外币跨境汇款: "电汇/票汇按汇款金额的1‰，最低收取50元/笔，最高收取260元/笔，电汇另收电讯费（中国港澳台地区发电80元/笔，国际发电150元/笔，下同）"; 修改 最高50元/笔; 退汇 20元/笔. 备注: "各电子渠道该业务收费标准与柜台定价一致，具体折扣和优惠详见各电子渠道收费说明".
+- 210101002: 存款证明 20元—40元/份; 外币携带证 10元/份; "外币携带证自2025年4月1日起至2026年12月31日免收费。"
+- 210107011: 我行网点提供的外币兑换服务不收取此项费用.
+- 210108014 ATM取现 (text in force to 2026-11-10): 长城借记卡 "跨境 ATM 取现按每笔（12 元+取现金额的 1%）收取，最高 112 元/笔"; 长城国际借记卡 "境外 ATM 取现按取现金额的 5‰，最低 3 美元/笔，最高 5 美元/笔".
+- 公告说明 1: fees are in CNY unless stated; may be collected in equivalent FX at BOC's buying rate.
+- 公告说明 4: "凡业务中发生的境外银行收费，均按实向客户收取".
+- 公告说明 5 (全额到账): "全额到账是指跨境汇款转汇过程中，境外转汇行收取的转汇费不再从汇款本金中扣除，而是直接向汇款人收取固定金额费用，确保境外收款人能够全额收到汇款（此服务仅适用于汇款行与收款行无直接账户关系，需通过至少一家中转行办理的汇款业务）。… 在收取个人汇出境外汇款电汇手续费、电讯费基础上（退汇、修改费用仍正常收取），按币种另行加收：美元，收款行在我行纽约分行开立账户的，15 美元/笔，其他均为 25美元/笔（美国境内美元全额到账汇款金额须小于 1 亿美元）".
+  -> This is in the PERSONAL tariff ("个人汇出境外汇款"). Edition D flagged the USD 15/25 figure as corporate-tariff origin; the personal chapter itself states it.
+- 公告说明 10: "在 ATM 跨境取现手续费以外，一些境外 ATM 收单行会收取额外手续费（surcharge），并在屏幕上提示收费标准".
+
+### S-BOC-EBANK-FEE  https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html
+中国银行电子银行个人服务转账汇款费率表: "跨境汇款（电汇） 每笔汇款金额的1‰，最低收取50元/笔，最高收取260元/笔；另收电讯费,港澳台地区人民币80元/笔,非港澳台地区人民币150元/笔。" (same as counter).
+
+### S-BOC-ATM-2026  https://www.bankofchina.com/pbservice/bi2/202608/t20260811_25684907.html
+关于调整部分个人服务收费内容的公告(2026年11月11日起), dated 2026-08-11. From 2026-11-11, ATM withdrawals 国外及中国港澳台: "银联：每笔（12 元+取现金额的1%）收取，最高 112 元/笔; 万事达、VISA：取现金额的2.5%，最低等值3美元/笔，最高等值40美元/笔收取". (UnionPay unchanged; the old 长城国际借记卡 0.5% / USD 3–5 scale is replaced by 2.5% / USD 3–40.)
+
+### S-HSBC-CN-TARIFF  https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-accouts-and-services.pdf
+《财富管理及个人银行业务账户和服务费率（2026年10月31日生效）》 — HSBC China. chunk 0 read (notes only): Premier (卓越理财) requires CNY 500,000 average total balance; 运筹理财 (Advance) offered since 2026-03-18 only to specific groups; note 7: fees exclude other institutions' / correspondent banks' charges. Remittance section still to be read.
