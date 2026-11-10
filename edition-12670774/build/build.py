@@ -310,7 +310,7 @@ def audit_data():
     F = [
      ('A01', 'needs review', 'Edition L stores the central parity as 6.6717 CNY per USD. Its own source value is 671.67 per USD 100, which is 6.7167. edition-l/build/build.py line 35 reads the field.',
       gh('edition-l/data/model.json') + ' ' + gh('edition-l/data/costs.json'), ['N02'], ['F27']),
-     ('A02', 'needs review', 'By the line scan, these areas cite Yinfa [2021] No. 237 as the virtual-currency rule and never mention Yinfa [2026] No. 42, which repealed it on 2026-02-06: %s. The prohibition continues, so the conclusion stands.' % ', '.join(stale),
+     ('A02', 'needs review', 'By the line scan, these areas cite Yinfa [2021] No. 237 as the virtual-currency rule and never mention Yinfa [2026] No. 42, which repealed it on 2026-02-06: %s. The prohibition continues, so the conclusion stands. The root portal already records this as its item J12; the older files themselves are unchanged.' % ', '.join(stale),
       ' '.join(gh(a) for a in stale if a != '(root)'), ['N19'], ['F28']),
      ('A03', 'needs review', 'Several Bank of China snapshots coexist. Sell 669.03 appears in: %s. Sell 669.29 appears in: %s. Sell 668.51, the board at 17:39:58 on 2026-11-10, appears in: %s. The root summary computes at 6.6903. Totals across editions are therefore not comparable.' % (where('669.03'), where('669.29'), where('668.51')),
       gh('EXECUTIVE_SUMMARY.md') + ' ' + gh('integration/costs.json'), ['N02'], ['F29']),

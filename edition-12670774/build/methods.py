@@ -272,7 +272,7 @@ SUMMARY = [
  ("One wire beats many.", "USD 400,000 sent as eight wires of USD 50,000 costs {split} in bank charges and margin against {c400} as a single wire, because each wire pays its own commission and cable fee.", ["N04", "N01"], []),
  ("US tax follows income, not the transfer.", "Worldwide income is taxable when earned, with credit for China tax. A currency gain on a personal transaction counts only above USD 200. The 1% remittance tax applies to money leaving the US, not arriving.", ["N22", "N13", "N25"], ["F23", "F20"]),
  ("US paperwork carries the real exposure.", "FBAR above USD 10,000, Form 8938 above its thresholds, Form 3520 for foreign gifts or bequests above USD 100,000, FinCEN 105 for cash above USD 10,000.", ["N11", "N12", "N03", "N24"], ["F21"]),
- ("Shortcuts cost far more than the lawful fee.", "Underground banks, false documents and sham transactions carry fines of up to 30% of the amount, up to the whole amount in serious cases, and criminal liability. Splitting and quota borrowing put you on a watch list for three years.", ["N09", "N01", "N19"], ["F25"]),
+ ("Shortcuts cost far more than the lawful fee.", "Underground banks, false documents and sham transactions carry fines of up to 30% of the amount, up to the whole amount in serious cases, and criminal liability. Splitting and quota borrowing put you on a watch list for the year of listing and the two after.", ["N09", "N01", "N19"], ["F25"]),
 ]
 
 REQUIREMENTS = [
