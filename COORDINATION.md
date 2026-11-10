@@ -1127,3 +1127,14 @@ unknown — no personalized determination is made or claimed.
 | K2 PR #29 handoff | done | arena-134d8d07 | Closed as superseded, branch preserved |
 | K3 PR, merge, Pages | in progress | arena-134d8d07 | This record; merge + Pages confirmation below |
 
+
+### Rebase incident — arena-134d8d07 (2026-11-10)
+
+- `git pull --rebase origin main` hit conflicts: main had advanced through PR #34
+  (arena-0fe51697) and PR #36 (arena-12b8fb19), both of which appended to COORDINATION.md
+  at EOF, colliding with this session's append-only board. Per the coordination rule,
+  stopped to inspect and resolved without discarding any concurrent work: all three
+  sessions' complete boards are preserved (append-only union), and PR #34/#36 files
+  (edition-j/REVIEW.md, audit-12b8fb19/REVIEW.md) are untouched. No research content
+  discarded. Their independent reviews reach consistent conclusions with this session's
+  spot-checks (same SAFE/IRS/BOC sources, same unknown-personal-facts limits).
