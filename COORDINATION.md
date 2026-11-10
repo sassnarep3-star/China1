@@ -1036,3 +1036,31 @@ closed at integration with explanatory comments; no content silently discarded.
   green after the merge: `edition-i/build/verify.py` 1,858 checks 0 errors;
   `assets/check.py` OK; `edition-d/build/verify.py` PASS 19 checks. No conflicts in
   research data; editions B–H and their archives untouched.
+
+---
+
+# Session board — arena-3843fb62 (2026-11-10)
+
+Branch: `arena/3843fb62-china1` (fixed by Arena). Prior boards and editions preserved verbatim.
+This session claims an isolated `edition-j/` scope so it cannot overwrite another session's
+research, data, generated pages, or verification. Claimed 2026-11-10 before any task work.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| J1 Live re-verification of official sources + repo line-by-line audit refresh | in progress | arena-3843fb62 | edition-j/data/**, edition-j/audit/** |
+| J2 Requirements, CNY→USD methods with pros/cons, tax-penalty breakdown | in progress | arena-3843fb62 | edition-j/data/** |
+| J3 Cost tables $10K–$400K per method, step-by-step procedures | in progress | arena-3843fb62 | edition-j/data/**, edition-j/build/** |
+| J4 Mobile-first dashboard site + Flagged for Review | in progress | arena-3843fb62 | edition-j/site/**, edition-j/build/** |
+| J5 Verifier, CI, final integration, PR, merge, Pages + stale PR #29 disposition | in progress | arena-3843fb62 | edition-j/**, .github/workflows/edition-j.yml, append-only COORDINATION.md/README.md, integration/build.py + root index.html (final integration only) |
+
+Notes:
+- Repo at claim time: main tip 93a6757 (PR #33 merged). Integration portal verifies PASS
+  (7 pages, 142 rows, 40 targets, 160 recomputed values, 43 method links, 223 HTML files).
+  Edition I verifies 1,868 checks 0 errors. Pages API: built, legacy main:/.
+- Open PR #29 (arena/8f70ac5b-china1, alternative Edition I, 32 routes/1,280 rows, based on
+  397de9f) conflicts in edition-i/ with merged Edition I (PR #33, e90d36c3, 21 methods/400 rows).
+  Disposition at integration: close with explanatory comment; branch content preserved in git
+  history, nothing silently discarded. Will record outcome here.
+- No personal account, source-of-funds, residency, or quote facts supplied; those values stay
+  unknown/blank + flagged. Government sources support law and tax; provider-published tariffs
+  support provider prices only. Blank never means zero.
