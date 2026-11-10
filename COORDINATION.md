@@ -1200,18 +1200,18 @@ Any needed shared portal changes will be claimed separately after examining curr
 
 # Session board — arena-4207cf2f (2026-11-10)
 
-Branch: `arena/4207cf2f-china1` (fixed by Arena; alternate `session-<id>/<task>` branch names are not permitted by the environment). All prior boards, editions (`edition-b` through `edition-j`), and audits are preserved verbatim.
-Active concurrent PRs observed at claim time: PR #39 (`arena/3843fb62-china1`, claiming `edition-j/**` and `integration/**`) and PR #41 (`arena/1388afb0-china1`, completion record on `COORDINATION.md`). To guarantee zero file-scope overlap, this session claims the isolated directory `edition-k/**` and workflow `.github/workflows/edition-k.yml` only; shared integration outputs (`integration/**`, `index.html`, `README.md`) will only be updated in a final integration step once active concurrent sessions have completed.
+Branch: `arena/4207cf2f-china1` (fixed by Arena; alternate `session-<id>/<task>` branch names are not permitted by the environment). All prior boards, editions (`edition-b` through `edition-j`), active claims (`edition-k` owned by `arena-fc438b1a`), and audits are preserved verbatim.
+Scope-collision avoidance update: `arena-fc438b1a` merged PR #43 claiming `edition-k/**` concurrently with this session's initial claim. Per the coordination protocol, this session immediately updates its exclusive scope to the UUID-isolated directory `edition-4207cf2f/**` and workflow `.github/workflows/edition-4207cf2f.yml` before writing any task files, guaranteeing zero overlap with `edition-k/**`, `edition-j/**`, or any sequential edition letter. Shared integration outputs (`integration/**`, `index.html`, `README.md`) remain untouched during component implementation and will only be updated in a final integration step if uncontested after re-reading `COORDINATION.md` (or logged as a cross-session request if owned by another active session).
 
 | ID | Task | Status | Owner | Exclusive file scope |
 |---|---|---|---|---|
-| K42-1 | Line-by-line repo review & freshly retrieved official-source verification | in progress | arena-4207cf2f | `edition-k/audit/**`, `edition-k/data/sources.json` |
-| K42-2 | Exhaustive CNY→USD method inventory, pros/cons, step-by-step procedures & conversion/tax penalty decomposition | claimed | arena-4207cf2f | `edition-k/data/**`, `edition-k/EXECUTIVE_SUMMARY.md`, `edition-k/REQUIREMENTS.md` |
-| K42-3 | Complete $10,000–$400,000 ($10k increment) mobile-friendly cost estimation tables across every method | claimed | arena-4207cf2f | `edition-k/data/costs.json`, `edition-k/build/**`, `edition-k/site/**` |
-| K42-4 | Clean dashboard site, category subpages, Flagged for Review page & deterministic line-by-line verifier + CI | claimed | arena-4207cf2f | `edition-k/site/**`, `edition-k/build/verify.py`, `.github/workflows/edition-k.yml` |
-| K42-5 | Final integration (after concurrent PRs finish), combined re-verification, PR, merge & live GitHub Pages check | claimed | arena-4207cf2f | append-only `COORDINATION.md` / `README.md`; additive portal link once `integration/**` is uncontested |
+| M42-1 | Line-by-line repo review & freshly retrieved official-source verification | in progress | arena-4207cf2f | `edition-4207cf2f/audit/**`, `edition-4207cf2f/data/sources.json` |
+| M42-2 | Exhaustive CNY→USD method inventory, pros/cons, step-by-step procedures & conversion/tax penalty decomposition | in progress | arena-4207cf2f | `edition-4207cf2f/data/**`, `edition-4207cf2f/EXECUTIVE_SUMMARY.md`, `edition-4207cf2f/REQUIREMENTS.md` |
+| M42-3 | Complete $10,000–$400,000 ($10k increment) mobile-friendly cost estimation tables across every method | in progress | arena-4207cf2f | `edition-4207cf2f/data/costs.json`, `edition-4207cf2f/build/**`, `edition-4207cf2f/site/**` |
+| M42-4 | Clean dashboard site, category subpages, Flagged for Review page & deterministic line-by-line verifier + CI | in progress | arena-4207cf2f | `edition-4207cf2f/site/**`, `edition-4207cf2f/build/verify.py`, `.github/workflows/edition-4207cf2f.yml` |
+| M42-5 | Final integration (or cross-session portal handoff if contested), combined re-verification, PR, merge & live GitHub Pages check | claimed | arena-4207cf2f | append-only `COORDINATION.md` / `README.md`; additive portal link once `integration/**` is uncontested |
 
-Claim committed and pushed immediately before starting research/implementation. Unknown personal facts (source of funds, PRC tax history, SAFE residency classification, executable bank/provider FX quote, intermediary/receiving bank fees) will remain blank and flagged as unverified—never inferred or filled with zeros.
+Claim committed and pushed immediately before writing any component files. Unknown personal facts (source of funds, PRC tax history, SAFE residency classification, executable bank/provider FX quote, final US beneficiary bank incoming wire fee) will remain blank and flagged as unverified—never inferred or filled with zeros.
 
 
 ### Second rebase incident — arena-134d8d07 (2026-11-10)
