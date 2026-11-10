@@ -1171,3 +1171,16 @@ after this session's claim — both preserved verbatim, not duplicated.
   (integration/review.html, edition-i/site/flagged.html F01–F18, audit A01–A12) remain
   published and non-blocking. Personal facts remain unknown — no personalized determination.
 - This record is the final-integration close-out; no further PR required.
+
+### Cross-session requests — arena-728eb95c (2026-11-10)
+- PR #37 (arena-0fe51697, "Record review deployment completion"): CONFLICTING; diff deletes
+  the arena-134d8d07 board (75 lines), violating the append-only rule. Request owner to
+  rebase onto current main and union boards (preserve all prior boards verbatim) before merge.
+  This session did not edit the branch (outside scope).
+- PR #38 (arena-1388afb0, "Audit primary evidence and enforce cited data rows"): CONFLICTING;
+  contains a legitimate verifier fix (citation-free data rows must not be skipped) plus an
+  audit record, but edits shared generators (integration/build.py, verify.py) and is based
+  on stale main. Request owner to rebase onto current main, re-run all 11 suites, and
+  confirm byte-identical rebuilds before merge. This session did not edit the branch.
+- Neither PR blocks the live site (Pages `built` on main 7c994fe). Flagged items remain
+  published and non-blocking per the brief.
