@@ -1,0 +1,113 @@
+{
+  "note": "Repository review performed in this session against the sources listed on the Sources page. Each finding names the file, what was checked and the official comparator. Findings are published for review; none is silently corrected outside this edition's own directory.",
+  "findings": [
+    {
+      "id": "A01",
+      "severity": "high",
+      "title": "Consolidated cost table leaves the FX cost blank although an official board supports measuring it",
+      "finding": "integration/costs.json writes null into fx_cost_usd, downstream_usd, documentation_usd, tax_usd and all_in_usd for all 40 rows, and integration/verify.py asserts that those fields stay null. The published BOC board gives both a bid and an offer for the same moment, so a one-way half-spread is measurable. The result is that the most-read dashboard shows the smallest component of the cost and hides the largest published one.",
+      "location": "integration/costs.json (40 rows); integration/verify.py (assertions on null fields); index.html",
+      "comparator": ["S12", "S11"],
+      "recommendation": "Either compute the half-spread from a timestamped board or label the column as deliberately unmeasured. This edition does the former and states the formula."
+    },
+    {
+      "id": "A02",
+      "severity": "medium",
+      "title": "'Cash ask' label and unstated snapshot time in the root executive summary",
+      "finding": "EXECUTIVE_SUMMARY.md describes CNY 669.03 per USD 100 as 'BOC's observed 2026-11-10 cash ask'. On the board these figures come from, the cash and spot selling rates for USD are identical, so 'cash' adds no information; and the time of observation is not given in the sentence itself. The same board showed CNY 668.51 at 17:39:58, a 0.08% move within the day.",
+      "location": "EXECUTIVE_SUMMARY.md (most-important-result section)",
+      "comparator": ["S12"],
+      "recommendation": "Say 'selling rate observed at HH:MM China time' and drop 'cash' for USD."
+    },
+    {
+      "id": "A03",
+      "severity": "medium",
+      "title": "Four different same-day USD rates are published across editions with no reconciliation",
+      "finding": "Searches over the data files return CNY 669.19, 669.03, 669.29 (6.6929) and 6.6919 for the same 2026-11-10 session, and this edition's fresh fetch gives 668.51 at 17:39:58. Each was correct when captured, but a reader comparing editions sees inconsistent prices for one day.",
+      "location": "edition-h/data/*, edition-i/data/*, edition-j/data/*, integration/costs.json",
+      "comparator": ["S12"],
+      "recommendation": "Show the capture time next to every rate and never compare two grids captured at different times."
+    },
+    {
+      "id": "A04",
+      "severity": "high",
+      "title": "The USD 50,000 tier is described without saying whose purchase it covers",
+      "finding": "The consolidated evidence entry describes S03 as the 'USD50,000 facilitation tier'. The rule itself applies the annual total to settlement by any individual and to FX purchase by a domestic individual (S03 Art. 2). A US-citizen reader can reasonably conclude that a passport holder has a USD 50,000 purchase allowance; the text does not say that.",
+      "location": "integration/build.py (S03 scope string); integration/costs.html wording; several archived editions",
+      "comparator": ["S03", "S02"],
+      "recommendation": "State the two limbs separately and add the overseas-individual route (S02 Art. 13; S04) beside them."
+    },
+    {
+      "id": "A05",
+      "severity": "medium",
+      "title": "A use restriction on purchased FX is asserted without a source that supports it in this review",
+      "finding": "Edition J's quota method lists as a drawback that purchased FX 'cannot include overseas property, securities or insurance' and cites its own S08. That specific source was not re-fetched here and no source read in this session contains that restriction, so the claim is neither confirmed nor refuted - it is unverified and should be labelled as such.",
+      "location": "edition-j/data/methods.json (M02 cons)",
+      "comparator": ["S03", "S02"],
+      "recommendation": "Re-retrieve the instrument that imposes the use restriction before repeating it as fact."
+    },
+    {
+      "id": "A06",
+      "severity": "medium",
+      "title": "368 plain-HTTP external links remain in archived editions",
+      "finding": "Counted by directory: edition-b 82, edition-d 76, edition-g 45, edition-f 43, edition-j 37, edition-i 35, dossier 34, edition-c 8, docs 4, edition-e 2, edition-h 2. The consolidated verifier enforces HTTPS-only for its own pages, so the repository applies two different link standards.",
+      "location": "edition-b/** through dossier/** (generated pages)",
+      "comparator": ["S01", "S11"],
+      "recommendation": "Upgrade archived links to HTTPS or mark them as historical. This edition uses HTTPS only."
+    },
+    {
+      "id": "A07",
+      "severity": "medium",
+      "title": "43 items are still marked 'in progress' in the shared board, including a scope that was never started",
+      "finding": "COORDINATION.md contains 43 occurrences of 'in progress'. They include a six-task claim on edition-k by session arena-fc438b1a that has no commits, and a 2026-11-07 board for session arena-3e9a7b87 whose CI/PR/merge task is still listed as in progress even though its release is recorded. Under the board's own 60-minute takeover rule these are stale.",
+      "location": "COORDINATION.md (lines cited in the audit table on the Audit page)",
+      "comparator": [],
+      "recommendation": "Close stale claims or mark them abandoned. This session did not touch them because they fall outside its scope."
+    },
+    {
+      "id": "A08",
+      "severity": "low",
+      "title": "Method counts disagree between dashboards (43 / 21 / 20)",
+      "finding": "The portal advertises 43 candidates from Edition H, Edition I publishes 21 and Edition J 21 with different framing. No page states which list is canonical, so a reader can pick any number.",
+      "location": "index.html; integration/methods.html; edition-h/site/methods.html; edition-i/site/methods.html",
+      "comparator": [],
+      "recommendation": "Publish one canonical inventory with archived lists marked historical. This edition publishes 21 with a category column."
+    },
+    {
+      "id": "A09",
+      "severity": "low",
+      "title": "Duplicated generated dashboards make stale data hard to spot",
+      "finding": "edition-h alone is 5.6 MB of generated HTML and CSV; edition-g is 3.9 MB. Several editions publish their own 40-target grids at rates captured hours apart. The repository has 397 files and no single 'current numbers' page.",
+      "location": "edition-h/**, edition-g/**, edition-j/**, integration/**",
+      "comparator": [],
+      "recommendation": "Keep one current numeric edition and label the rest as archive with their capture dates."
+    },
+    {
+      "id": "A10",
+      "severity": "low",
+      "title": "The external-host allow-list is broader than the verified evidence set",
+      "finding": "integration/verify.py permits westernunion.com, moneygram.com and paypal.com as sources, but a host appearing on an allow-list is not evidence that anything was checked. Structural checks are being read as source verification.",
+      "location": "integration/verify.py (allowed host set)",
+      "comparator": ["S21"],
+      "recommendation": "Separate 'host allowed' from 'source retrieved and read'. This edition records a locator and a retrieval date per source."
+    },
+    {
+      "id": "A11",
+      "severity": "low",
+      "title": "Two executive summaries exist with no indication of which is current",
+      "finding": "EXECUTIVE_SUMMARY.md sits at the repository root and edition-b/EXECUTIVE-SUMMARY.md sits inside an archived edition. Both are titled as the executive summary and neither links to the other.",
+      "location": "EXECUTIVE_SUMMARY.md; edition-b/EXECUTIVE-SUMMARY.md",
+      "comparator": [],
+      "recommendation": "Mark archived summaries as superseded at the top of the file."
+    },
+    {
+      "id": "A12",
+      "severity": "low",
+      "title": "The consolidated verifier hard-codes prose assertions about the executive summary",
+      "finding": "integration/verify.py asserts particular strings are present or absent in EXECUTIVE_SUMMARY.md and REQUIREMENTS.md. A legitimate wording update therefore fails CI until the verifier is edited, which encourages people to edit the test rather than the page.",
+      "location": "integration/verify.py (final assertions)",
+      "comparator": [],
+      "recommendation": "Assert structure (a figure per row, a source per row) rather than sentences."
+    }
+  ]
+}

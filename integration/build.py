@@ -83,6 +83,7 @@ NAV = [
     ("index.html", "Overview"), ("integration/costs.html", "Cost ladder"),
     ("integration/methods.html", "Methods & steps"), ("integration/tax.html", "Tax & reporting"),
     ("integration/evidence.html", "Sources"), ("integration/review.html", "Flagged for Review"),
+    ("edition-l/site/index.html", "Edition L — costed"),
     ("edition-k/site/index.html", "Edition K dashboard"),
     ("edition-j/site/index.html", "Edition J dashboard"),
     ("edition-i/site/index.html", "Edition I dashboard"),
@@ -152,6 +153,7 @@ def fee_cells(row):
 
 def build_index(rows):
     cards = [
+        ("edition-l/site/index.html", "Edition L — conversion penalty measured, every method priced", "0.2099% measured half-spread, five cost ladders to USD 400,000, 21 methods, 22 review flags and a 12-finding repository audit. Blank stays blank."),
         ("integration/costs.html", "40-amount cost ladder", "Amount-specific BOC and HSBC sender-fee scenarios; unknown all-in values stay blank."),
         ("integration/methods.html", "43 candidates, steps, pros & cons", "Personal, bank/provider, business, adjacent and rejected options; every row has primary-source links."),
         ("edition-h/site/costs.html", "Every method × every amount", "Edition H's 1,720 rows and downloadable CSV, including per-transaction formulas and unavailable routes."),
@@ -169,6 +171,7 @@ def build_index(rows):
         boc, hsbc = fee_cells(row)
         quick.append(([f'<strong>USD {row["target_usd"]:,}</strong>', boc, hsbc, blank("All-in components unavailable"), links(["S14", "S16", "S18"])]))
     body = f'''<section class="hero"><h1>Move CNY to USD lawfully—with the costs separated.</h1><p class="lead">The best available first route is <strong>documented lawful current income</strong>, if that is what the balance contains. Otherwise, match property, inheritance, insurance or business proceeds to their own legal route. Do not choose a provider before establishing eligibility.</p><p><a class="button" href="integration/methods.html">Find your route</a><a class="button" href="integration/costs.html">See all 40 amounts</a></p></section>
+<div class="notice"><strong>Edition L measures what earlier editions left blank.</strong> The conversion penalty is the half of the bank's own bid-ask bracket - 0.2099% on BOC's 2026-11-10 board - not a tax. Known cost is USD 68.42 at USD 10,000 and USD 915.77 at USD 400,000 through a BOC wire to a U.S. account. <a href="edition-l/site/index.html">Open Edition L</a>.</div>
 <div class="notice"><strong>Bottom line:</strong> no universal “conversion tax” or exact personal tax penalty is verified. Bank tariffs can be estimated; a lawful entitlement and an executable all-in quote cannot be inferred from U.S. citizenship or a stuck bank balance.</div>
 <div class="cards">{"".join(f'<a class="card" href="{href}"><strong>{e(title)} →</strong><p>{e(desc)}</p></a>' for href,title,desc in cards)}</div>
 <h2>Decision summary</h2>{table(["Priority", "What the evidence supports", "Official / primary sources"], [[e(a),e(b),links(c)] for a,b,c in FINDINGS])}
@@ -176,6 +179,7 @@ def build_index(rows):
 <h2>Recommended order of work</h2><ol class="steps"><li>Classify each tranche by its true source and confirm the bank's individual-FX identity classification.</li><li>Collect transaction-amount source evidence and applicable PRC tax records. Do not relabel savings as salary, trade, a gift or a dividend.</li><li>Use the matching entitlement: current income, pre-emigration property, inheritance, property sale, insurance, unused prior conversion, or genuine business transaction.</li><li>Only then compare same-time executable BOC, HSBC and eligible provider quotes, including FX and every downstream charge.</li><li>Keep purchase slips, SWIFT/receipt records and tax evidence; reconcile U.S. worldwide-income, FBAR/FATCA and any Form 3520 duties.</li></ol><p>{links(['S02','S03','S04','S05','S14','S18','S20','S37','S40'])}</p>
 <h2>Preserved research archive</h2><p>Edition H is the latest broad catalog. Older editions are preserved for traceability and can contain stale or conflicting claims; inclusion is not re-certification.</p><div class="archive">'''
     archive = [
+        ("edition-l/site/index.html", "Edition L — 2026-11-10 measured conversion penalty and priced ladders"),
         ("edition-k/site/index.html", "Edition K — 2026-11-10 priced all-in ladder and route audit"),
         ("edition-j/site/index.html", "Edition J — 2026-11-10 comprehensive CNY→USD dashboard"),
         ("edition-h/site/index.html", "Edition H — latest 43-candidate dashboard"),

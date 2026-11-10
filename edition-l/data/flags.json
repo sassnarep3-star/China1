@@ -1,0 +1,181 @@
+{
+  "note": "Every item below is published for the reader's review. A flag is never a reason to fill a cell with an invented number; it is the reason the cell is blank. Severity reflects how much the item could change the answer, not how confident the compiler is.",
+  "flags": [
+    {
+      "id": "F01",
+      "severity": "high",
+      "title": "Which individual are you? The whole cost structure turns on it",
+      "detail": "A US citizen holding a Chinese bank account is an 'overseas individual' on the face of S02 Art. 37(2) (passport holder). The published rules then split: an overseas individual purchases FX against documented lawful current-account income (S02 Art. 13; S04 quoting the 2020 guidelines Art. 59), while the USD 50,000 annual total is written for settlement by any individual plus FX purchase by a domestic individual (S03 Art. 2). This edition therefore shows two different first steps, not one. No personal fact was supplied, so it makes no determination.",
+      "sources": ["S02", "S03", "S04"],
+      "action": "Ask the bank in writing to state your classification and the exact document list for your balance."
+    },
+    {
+      "id": "F02",
+      "severity": "medium",
+      "title": "Local practice may apply a quota screen to an overseas individual anyway",
+      "detail": "The regulation texts above do not attach a published annual purchase ceiling to the overseas-individual route, but the individual FX system is operated branch by branch and a branch may still quote a convenience limit. The texts reviewed do not resolve operational practice.",
+      "sources": ["S02", "S03", "S04"],
+      "action": "Obtain the branch's written answer rather than relying on this distinction."
+    },
+    {
+      "id": "F03",
+      "severity": "high",
+      "title": "HSBC's FX rate is not published, so its ladder is fees only",
+      "detail": "HSBC China publishes its commission and cable charge but not the exchange rate it applies. The FX component is therefore blank for every HSBC row. A fees-only comparison would understate HSBC's total cost by an unknown amount and must not be read as a ranking.",
+      "sources": ["S13"],
+      "action": "Request a written all-in quote for the exact amount on the day of the transfer."
+    },
+    {
+      "id": "F04",
+      "severity": "medium",
+      "title": "Other Chinese banks are unpriced in this edition",
+      "detail": "ICBC, CMB, CCB, ABC, BoCom and postal savings all publish personal tariffs, but none was retrieved in this session. Their rows are blank by design. Bank choice can change the commission floor and the cable charge materially at small amounts.",
+      "sources": ["S02", "S03"],
+      "action": "Collect two or three written quotes for the same amount on the same day."
+    },
+    {
+      "id": "F05",
+      "severity": "medium",
+      "title": "Wise publishes no fixed fee schedule",
+      "detail": "Wise's own help page says the fee is shown only when a transfer is set up. Every Wise fee cell is blank. Its eligibility test is also strict: not mainland Chinese, China work history, a China tax record within three years, and a same-owner destination only.",
+      "sources": ["S21"],
+      "action": "Set up an unfunded transfer to read the live price, and check the overall limit first."
+    },
+    {
+      "id": "F06",
+      "severity": "low",
+      "title": "Draft postage and the US collection fee are unpublished",
+      "detail": "The BOC tariff leaves postage at actual cost and the receiving bank's collection or negotiation fee is not in the Bank of America schedule used here. The draft route therefore has a published commission but an incomplete total.",
+      "sources": ["S11", "S14"],
+      "action": "Ask both banks for the total before choosing a draft over a wire."
+    },
+    {
+      "id": "F07",
+      "severity": "medium",
+      "title": "Carrying cash: unquantified risk and a hard ceiling",
+      "detail": "There is no published price for the risk of carrying cash, no insurance figure, and a practical ceiling of USD 10,000 per trip (S08). US entry above USD 10,000 requires a FinCEN Form 105 declaration. Any cell here would be an invention except the permit fee.",
+      "sources": ["S08", "S11"],
+      "action": "Treat cash as a small-amount channel only."
+    },
+    {
+      "id": "F08",
+      "severity": "low",
+      "title": "Foreign ATM surcharges are set by the ATM operator",
+      "detail": "The BOC tariff warns that overseas ATM operators may add a surcharge shown on screen. That amount is not published in advance and is excluded from the ATM ladder.",
+      "sources": ["S11", "S07"],
+      "action": "Read the on-screen surcharge before confirming."
+    },
+    {
+      "id": "F09",
+      "severity": "low",
+      "title": "Card spending abroad is not a way to withdraw a balance",
+      "detail": "Spending on a Chinese card settles a purchase. It does not put dollars in a US account, and manufacturing purchases to extract cash is the structuring pattern prohibited by S02 Art. 7.",
+      "sources": ["S07", "S02"],
+      "action": "Do not treat card spending as a repatriation route."
+    },
+    {
+      "id": "F10",
+      "severity": "high",
+      "title": "Emigrant transfer has no published fee schedule and a strict identity test",
+      "detail": "The 2004 measures plus the 2014 amendments define documents and procedure but publish no administrative fee. The gating fact is the cancellation of PRC household registration and proof of settlement abroad (S05 Art. 8), which a passport alone does not evidence. The tax certificate must be obtained first.",
+      "sources": ["S05", "S06"],
+      "action": "Ask the SAFE office at the original household-registration place for its current checklist."
+    },
+    {
+      "id": "F11",
+      "severity": "medium",
+      "title": "Inheritance route wording has been inconsistent across official guides",
+      "detail": "Prior editions of this repository flagged official inheritance service guides that repeat emigrant 'pre-status' wording in the eligibility section. That specific wording was not re-fetched here, so it is carried as a prior-session observation rather than a new finding. The statute itself is clear: the route is for a foreign citizen or HK/Macau resident who has lawfully inherited (S05 Art. 2).",
+      "sources": ["S05", "S06"],
+      "action": "Use the local SAFE checklist and the statute, not a summary page."
+    },
+    {
+      "id": "F12",
+      "severity": "medium",
+      "title": "Property sale: the statute is short, local practice is not",
+      "detail": "S02 Art. 22 permits an overseas individual to purchase and remit proceeds of selling self-use commercial housing with SAFE approval, and S10 taxes the gain at 20%. The operational document list and the valuation of 'original value' are local matters and are not published in the sources reviewed.",
+      "sources": ["S02", "S10"],
+      "action": "Get the local tax and SAFE checklists before signing a sale."
+    },
+    {
+      "id": "F13",
+      "severity": "medium",
+      "title": "Dividend withholding and treaty relief",
+      "detail": "S10 Art. 3(3) applies a flat 20% to dividends. Treaty relief for a US person depends on residence and beneficial ownership, which this edition does not determine. Prior editions flagged a 2026 change to the position of foreign individuals receiving FIE dividends; that instrument was not re-fetched here.",
+      "sources": ["S10"],
+      "action": "Obtain a withholding analysis before distribution."
+    },
+    {
+      "id": "F14",
+      "severity": "low",
+      "title": "Liquidation route is a corporate event, not a wallet",
+      "detail": "S01 Art. 22 covers RMB belonging to the foreign investor after liquidation and tax. It cannot be used for a personal cash balance, and the tax on liquidation is structure-specific.",
+      "sources": ["S01"],
+      "action": "Treat as a separate project with advisers."
+    },
+    {
+      "id": "F15",
+      "severity": "low",
+      "title": "Insurance proceeds: US treatment not computed",
+      "detail": "PRC exemption for insurance indemnity is listed in S10 Art. 4(5). The US treatment of a foreign policy, particularly a cash-value policy, can involve PFIC and other rules that this edition does not compute.",
+      "sources": ["S10", "S03"],
+      "action": "Obtain US advice on the policy itself."
+    },
+    {
+      "id": "F16",
+      "severity": "low",
+      "title": "QDII is an investment, not a repatriation channel",
+      "detail": "Money placed in an approved scheme stays in the scheme. Fees and redemption terms were not retrieved.",
+      "sources": ["S03"],
+      "action": "Do not use an investment product to solve a cash-movement problem."
+    },
+    {
+      "id": "F17",
+      "severity": "high",
+      "title": "Form 3520 penalty amount not verified in this session",
+      "detail": "The IRS page confirms that a failure to file, or an incomplete or incorrect filing, may attract penalties under IRC 6039F(c) absent reasonable cause, but the statutory percentage was not re-fetched. No percentage is shown anywhere in this edition.",
+      "sources": ["S18"],
+      "action": "Read the Form 3520 instructions before receiving a large gift."
+    },
+    {
+      "id": "F18",
+      "severity": "high",
+      "title": "Correspondent and intermediary charges are not published",
+      "detail": "BOC collects overseas bank charges at actual cost (S11 note 4) and Bank of America warns that other amounts may apply, including the sender's charges (S14). No intermediary charge is published, so this component is blank on every row. In practice an intermediary deduction is common and reduces the amount received.",
+      "sources": ["S11", "S14"],
+      "action": "Ask for OUR pricing if the exact received amount matters."
+    },
+    {
+      "id": "F19",
+      "severity": "medium",
+      "title": "The same-day rate moved between snapshots",
+      "detail": "The BOC USD ask for 2026-11-10 has been recorded in this repository at CNY 669.19, 669.03, 669.29 and now 668.51 per USD 100 at 17:39:58 China time. The drift across one day (about 0.08-0.12%) is roughly half of the bid-ask half-spread. Any cost comparison must be timestamped.",
+      "sources": ["S12"],
+      "action": "Compare quotes taken in the same hour."
+    },
+    {
+      "id": "F20",
+      "severity": "high",
+      "title": "Central parity must not be used as a 'mid-market' benchmark for a retail conversion",
+      "detail": "On 2026-11-10 the CFETS/SAFE parity was CNY 6.7167 per USD while BOC's sell rate was 6.6851 - the bank's offer was 0.47% better than the daily fixing. Reading that as a negative penalty, or computing a penalty against the fixing on another day, would produce a meaningless number. This edition measures the conversion penalty only against the bank's own bid-ask bracket.",
+      "sources": ["S20", "S12"],
+      "action": "Compare executable quotes, not fixings."
+    },
+    {
+      "id": "F21",
+      "severity": "high",
+      "title": "The USD 200 section 988 rule is an exclusion, not an allowance",
+      "detail": "For a personal transaction no gain is recognised unless it would exceed USD 200 (S15 (e)(2)). The exclusion does not apply to a transaction whose allocable expenses meet section 162 or 212 (S15 (e)(3)), so a balance held as an investment may fall outside it. CNY weakened over the period reviewed, which for a USD-basis holder tends to produce a loss rather than a gain, but the reader's own basis and dates decide this.",
+      "sources": ["S15"],
+      "action": "Give the acquisition dates and cost basis to a US preparer."
+    },
+    {
+      "id": "F22",
+      "severity": "high",
+      "title": "No personal facts were supplied",
+      "detail": "Source of the balance, classification by the bank, tax history, destination bank, account tier and any property entitlement are all unknown. Every personal conclusion is therefore unavailable, and every personal cell is blank.",
+      "sources": ["S02", "S03", "S10", "S16"],
+      "action": "Supply the facts to the handling bank and to advisers; the site needs no input to remain correct."
+    }
+  ]
+}
