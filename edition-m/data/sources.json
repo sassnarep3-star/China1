@@ -1,0 +1,219 @@
+{
+ "S01": {
+  "how": "full",
+  "pub": "State Council (gov.cn)",
+  "t": "State Council Order 532 — Foreign Exchange Administration Regulation (外汇管理条例)",
+  "u": "https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm",
+  "v": "Art. 5 (current international payments and transfers are not restricted) and Art. 22 (liquidated foreign-invested enterprise: after liquidation and tax, the foreign investor's RMB may be converted and remitted) — these two re-read on the SAFE Beijing copy via excerpt; Art. 12 (genuine, lawful transaction basis; bank reviews documents); Art. 39, 40, 45 (fines up to 30% of the amount; 30%–100% if serious; criminal liability); Art. 42 (cash carried in breach: warning, fine up to 20%); Art. 52 (definitions)."
+ },
+ "S02": {
+  "how": "excerpt",
+  "pub": "SAFE portal (safe.gov.cn)",
+  "t": "PBOC Order [2006] No. 3 — Measures for Individual Foreign Exchange (个人外汇管理办法)",
+  "u": "http://m.safe.gov.cn/safe/2006/1225/5319.html",
+  "v": "Art. 2 (overseas individual = foreign citizen holding a passport); Art. 7 (no splitting to evade limits, no false documents); Art. 13 (overseas individual's lawful current-account RMB income may be converted and remitted with ID and supporting documents); Art. 14 (unused foreign currency remitted in may be sent back the way it came); Art. 22 (proceeds of selling a home may be converted and remitted)."
+ },
+ "S03": {
+  "how": "full",
+  "pub": "SAFE Qinghai branch (safe.gov.cn)",
+  "t": "SAFE Huifa [2007] No. 1 — Implementing Rules for the Individual FX Measures (实施细则)",
+  "u": "https://www.safe.gov.cn/qinghai/2015/0519/46.html",
+  "v": "Art. 2 (USD 50,000 annual total applies to settlement by individuals and to purchases by DOMESTIC individuals); Art. 13(1) (overseas individual buys FX against lawful RMB income with ID + documents showing the amount, including tax vouchers); Art. 13(2) (re-conversion of unused RMB with the original exchange memo, valid 24 months; with ID only, up to USD 500 equivalent a day); Art. 15 (overseas individual remits from own FX account with ID); Art. 30 (cash withdrawal above USD 10,000 a day needs prior filing); Art. 38–39."
+ },
+ "S04": {
+  "how": "full",
+  "pub": "SAFE Shanghai branch (safe.gov.cn)",
+  "t": "SAFE Shanghai — Policy Q&A No. 321 (foreign teacher remitting salary)",
+  "u": "https://www.safe.gov.cn/shanghai/2019/0215/988.html",
+  "v": "For an overseas individual the bank reviews the SOURCE of the RMB, not the use of the foreign currency; salary is converted under Art. 13 against income documents including tax vouchers; no quota is mentioned."
+ },
+ "S05": {
+  "how": "full",
+  "pub": "State Council Gazette (gov.cn)",
+  "t": "PBOC Announcement [2004] No. 16 — Interim Measures on Sale and Payment of FX for Transfer of Personal Property Abroad",
+  "u": "https://www.gov.cn/gongbao/content/2005/content_64294.htm",
+  "v": "Art. 2 (emigrant transfer and inheritance transfer defined); application goes to the SAFE branch of the former household registration (emigrant) or of the deceased's household registration (inheritance); document lists include proof of cancelled household registration, consular-certified proof of settlement abroad, property documents and tax certificates; Art. 11 (bank remits straight to the applicant's own account abroad, no cash); Art. 12–13 (refusals, penalties)."
+ },
+ "S06": {
+  "how": "full",
+  "pub": "SAFE Tianjin branch (safe.gov.cn)",
+  "t": "SAFE Huifa [2014] No. 2 — Further improving capital-account FX policies (as amended)",
+  "u": "https://www.safe.gov.cn/tianjin/2024/0903/2594.html",
+  "v": "Section 6 (asset transfers approved by the local SAFE branch; filing with SAFE head office above CNY 500,000 abolished; staged remittance for emigrants abolished — one or several remittances within the approved amount; heirs may combine applications; notarisation of property documents and agency agreements abolished)."
+ },
+ "S07": {
+  "how": "full",
+  "pub": "SAFE Tianjin branch (safe.gov.cn)",
+  "t": "SAFE / Customs Huifa [2003] No. 102 — Carrying foreign-currency cash across the border",
+  "u": "https://www.safe.gov.cn/tianjin/2024/0430/2466.html",
+  "v": "Up to USD 5,000 equivalent: no permit; above USD 5,000 up to USD 10,000: permit issued by the bank; above USD 10,000: not allowed in principle, SAFE permit only in listed special cases."
+ },
+ "S08": {
+  "how": "full",
+  "pub": "SAFE (safe.gov.cn)",
+  "t": "SAFE explainer on Huifa [2017] No. 29 — large overseas cash withdrawals by bank card",
+  "u": "https://www.safe.gov.cn/safe/2017/1230/8130.html",
+  "v": "Overseas cash withdrawals with mainland cards: CNY 100,000 equivalent per person per calendar year (all cards combined); CNY 10,000 equivalent per card per day; exceeding the annual cap suspends overseas withdrawals for that year and the next; borrowing or lending cards to get around the cap is prohibited. In force from 1 January 2018."
+ },
+ "S09": {
+  "how": "full",
+  "pub": "Bank of China (boc.cn)",
+  "t": "Bank of China — foreign-exchange rate board (外汇牌价)",
+  "u": "https://www.boc.cn/sourcedb/whpj/",
+  "v": "USD row published 2026/11/10 17:39:58: spot buying 665.71, cash buying 665.71, spot selling 668.51, cash selling 668.51 (CNY per USD 100). Board disclaimer: indicative only; the actual transaction rate applies."
+ },
+ "S10": {
+  "how": "full",
+  "pub": "Bank of China (bankofchina.com)",
+  "t": "Bank of China — Personal customer tariff, chapter 3 (个人客户服务收费)",
+  "u": "https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf",
+  "v": "Item 210105008: cross-border remittance 0.1% of amount, min CNY 50, max CNY 260 per item, plus cable fee CNY 150 (international). Note 4: charges of banks abroad are passed on at cost. Note 5: full-amount-arrival option for USD adds USD 25 (USD 15 if the receiving bank has an account with BOC New York). Item 210101002: foreign-currency carrying permit CNY 10, waived 2025-04-01 to 2026-12-31. Item 210108014: Great Wall debit card overseas ATM withdrawal CNY 12 + 1% per withdrawal, max CNY 112. Note 10: overseas ATM owners may add their own surcharge."
+ },
+ "S11": {
+  "how": "full",
+  "pub": "HSBC Bank (China) (hsbc.com.cn)",
+  "t": "HSBC China — Wealth and Personal Banking tariff of accounts and services (effective 2026-10-31)",
+  "u": "https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-accouts-and-services.pdf",
+  "v": "Parts 1–3 of 6 read. Item 2.2.4.1 outward telegraphic transfer: Premier and Advance accounts 0.1%, min CNY 100, max CNY 500, plus cable; private-banking individual customers free. A remark says Premier Elite customers get 'this service' free — which service it refers to is ambiguous, so it is not priced. Item 2.2.4.2 cable fee CNY 120. Remark: full-amount delivery in USD pre-collects CNY 200; receiving-bank and intermediary charges are not covered by HSBC's waiver. Note 7: other institutions' fees excluded."
+ },
+ "S12": {
+  "how": "excerpt",
+  "pub": "China Construction Bank (ccb.com)",
+  "t": "China Construction Bank — online overseas remittance page (dated 2016-08-22)",
+  "u": "https://www1.ccb.com/he/cn/faverable/20160822_1471836289.html",
+  "v": "Fee stated on the page: 0.1% of principal, min CNY 20, max CNY 300, plus cable CNY 80 per item. Page is dated 2016 — see flag F07."
+ },
+ "S13": {
+  "how": "full",
+  "pub": "Wise (wise.com)",
+  "t": "Wise Help Centre — Guide to CNY transfers",
+  "u": "https://wise.com/help/articles/2955298/guide-to-cny-transfers",
+  "v": "Sending from CNY: not for mainland Chinese nationals; must be working or have worked in China; valid Chinese tax record showing tax paid within the last 3 years; recipient must be an account you own; max CNY 300,000 per transfer from a China bank app, CNY 50,000 from Alipay; overall limit is roughly salary earned in China after tax. Fees are not stated on the page (links to a live price page)."
+ },
+ "S14": {
+  "how": "full",
+  "pub": "State Taxation Administration, Guangdong (chinatax.gov.cn)",
+  "t": "Individual Income Tax Law of the PRC (2018 amendment)",
+  "u": "https://guangdong.chinatax.gov.cn/gdsw/zjfg/2018-08/31/content_a735b4c382d94439b581054c32a4e7f4.shtml",
+  "v": "Art. 2 (nine taxable income categories — converting currency is not one of them); Art. 3 (comprehensive income 3%–45% progressive; interest, dividends, rental, property-transfer and incidental income 20%); Art. 6 (taxable income; property transfer = proceeds minus original cost and reasonable expenses); Art. 15 (tax clearance checked on property / equity transfer registration). The bracket table is published as an image and was not machine-readable — flag F02."
+ },
+ "S15": {
+  "how": "excerpt",
+  "pub": "State Taxation Administration policy database (chinatax.gov.cn)",
+  "t": "Caishui [2008] No. 132 — individual income tax on savings-deposit interest",
+  "u": "https://fgk.chinatax.gov.cn/zcfgk/c102416/c5203286/content.html",
+  "v": "From 9 October 2008, individual income tax on savings-deposit interest is temporarily exempted."
+ },
+ "S16": {
+  "how": "excerpt",
+  "pub": "State Taxation Administration, Hainan (chinatax.gov.cn)",
+  "t": "Tax Collection and Administration Law of the PRC",
+  "u": "https://hainan.chinatax.gov.cn/xxgk_6_1/24153106.html",
+  "v": "Art. 32 (late-payment surcharge 0.05% of the overdue tax per day); Art. 63 (tax evasion: tax + surcharge + fine of 50% to 5 times the unpaid tax; criminal liability); Art. 64 (failure to file: same fine range)."
+ },
+ "S17": {
+  "how": "excerpt",
+  "pub": "State Taxation Administration policy database (chinatax.gov.cn)",
+  "t": "STA / SAFE Announcement 2013 No. 40 — tax filing for outbound payments under trade in services etc.",
+  "u": "https://fgk.chinatax.gov.cn/zcfgk/c100012/c5194375/content.html",
+  "v": "Art. 1: single outbound payments above USD 50,000 of the listed items (incl. an overseas individual's work remuneration in China, dividends, real-estate transfer income, equity-transfer income) require a tax filing with the tax authority. Art. 4 (overseas individuals follow the individual FX rules) was seen only in a non-official reprint and is not relied on — flag F15."
+ },
+ "S18": {
+  "how": "excerpt",
+  "pub": "SAFE Guangdong branch (safe.gov.cn)",
+  "t": "SAFE operating guidelines for capital-account business (2017 circular annex) — remitting proceeds of a home sale by an overseas individual",
+  "u": "https://www.safe.gov.cn/guangdong/file/file/20170727/b67b0d24cad9428ea77dc2cbeb424cf3.pdf",
+  "v": "Review materials: ID; home transfer contract and registration proof; outbound-payment tax filing form (not needed at or below USD 50,000) or other tax-payment proof; notarised power of attorney if an agent acts. Principles: amount remitted may not exceed the transfer price minus taxes; ownership transfer must already be registered; bank checks the tax document amount."
+ },
+ "S19": {
+  "how": "excerpt",
+  "pub": "SAFE (safe.gov.cn)",
+  "t": "SAFE — Real-estate market FX policy Q&A (2011)",
+  "u": "http://m.safe.gov.cn/safe/2011/0826/2498.html",
+  "v": "Q18 (older practice): proceeds of a home sold by an overseas individual could be converted after the local SAFE branch reviewed the application, the transfer contract and the tax-clearance proof. Kept to show the rule changed — flag F14."
+ },
+ "S20": {
+  "how": "excerpt",
+  "pub": "People's Bank of China (pbc.gov.cn)",
+  "t": "PBOC and seven other bodies, Yinfa [2026] No. 42 — preventing and handling virtual-currency risks",
+  "u": "https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html",
+  "v": "Virtual currency has no legal-tender status; exchanging legal tender and virtual currency in the mainland is an illegal financial activity, strictly prohibited; overseas entities may not provide such services to mainland users."
+ },
+ "S21": {
+  "how": "excerpt",
+  "pub": "Hunan Provincial Government portal (hunan.gov.cn)",
+  "t": "Supreme People's Court / Supreme People's Procuratorate Interpretation Fashi [2019] No. 1 — illegal payment settlement and illegal FX trading",
+  "u": "http://www.hunan.gov.cn/zqt/zcsd/201901/t20190131_13641628.html",
+  "v": "Art. 2: reselling or disguised trading of foreign exchange, if serious, is the crime of illegal business operations (Criminal Law Art. 225). Art. 3: 'serious' from CNY 5 million of business amount or CNY 100,000 of illegal gains."
+ },
+ "S22": {
+  "how": "excerpt",
+  "pub": "General Administration of Customs, Guangzhou (customs.gov.cn)",
+  "t": "Guangzhou Customs — how much cash may be carried in or out",
+  "u": "http://guangzhou.customs.gov.cn/guangzhou_customs/381679/3795484/3800229/index.html",
+  "v": "PBOC Announcement [2004] No. 18: RMB cash limit CNY 20,000 per person per crossing."
+ },
+ "S23": {
+  "how": "full",
+  "pub": "Internal Revenue Service (irs.gov)",
+  "t": "IRS — Comparison of Form 8938 and FBAR requirements",
+  "u": "https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements",
+  "v": "FBAR: aggregate foreign accounts above USD 10,000 at any time in the year; due April 15, automatic extension to October 15; statutory civil penalty up to USD 10,000 non-willful, greater of USD 100,000 or 50% of the balance if willful (inflation-adjusted). Form 8938: thresholds USD 50,000 / 75,000 (unmarried, living in the US), 100,000 / 150,000 (joint), 200,000 / 300,000 and 400,000 / 600,000 (living abroad); penalty up to USD 10,000 plus USD 10,000 per 30 days after notice, maximum USD 60,000."
+ },
+ "S24": {
+  "how": "full",
+  "pub": "Internal Revenue Service (irs.gov)",
+  "t": "IRS — Gifts from foreign person",
+  "u": "https://www.irs.gov/businesses/gifts-from-foreign-person",
+  "v": "Form 3520 Part IV is required when gifts or bequests from a nonresident alien or foreign estate exceed USD 100,000 in the tax year; purported gifts from foreign corporations or partnerships above USD 20,573 for 2026; penalties under IRC 6039F(c) for late or incomplete filing."
+ },
+ "S25": {
+  "how": "excerpt",
+  "pub": "Internal Revenue Service (irs.gov)",
+  "t": "IRS — FAQ about international individual tax matters",
+  "u": "https://www.irs.gov/individuals/international-taxpayers/frequently-asked-questions-about-international-individual-tax-matters",
+  "v": "A US citizen's worldwide income is subject to US income tax regardless of where the person lives; exclusions and foreign tax credits may apply."
+ },
+ "S26": {
+  "how": "excerpt",
+  "pub": "Internal Revenue Service (irs.gov)",
+  "t": "IRS — Instructions for Form 1116 (Foreign Tax Credit)",
+  "u": "https://www.irs.gov/instructions/i1116",
+  "v": "A credit may be taken for income taxes paid or accrued to a foreign country."
+ },
+ "S27": {
+  "how": "excerpt",
+  "pub": "US Government Publishing Office (govinfo.gov)",
+  "t": "26 U.S.C. § 988 — Treatment of certain foreign currency transactions",
+  "u": "https://www.govinfo.gov/link/uscode/26/988",
+  "v": "§ 988(e)(2): no gain is recognised on an individual's personal transaction by reason of exchange-rate changes, unless the gain would exceed USD 200. § 988(e)(3): definition of personal transaction."
+ },
+ "S28": {
+  "how": "excerpt",
+  "pub": "Federal Register via GPO (govinfo.gov)",
+  "t": "FinCEN — Inflation Adjustment of Civil Monetary Penalties, 90 FR (17 Jan 2025)",
+  "u": "https://www.govinfo.gov/content/pkg/FR-2025-01-17/pdf/2025-01374.pdf",
+  "v": "31 U.S.C. 5321(a)(5)(B)(i), non-willful foreign-account violation: statutory USD 10,000 adjusted to USD 16,536 for penalties assessed from 17 January 2025."
+ },
+ "S29": {
+  "how": "excerpt",
+  "pub": "US Customs and Border Protection (cbp.gov)",
+  "t": "US Customs and Border Protection — Admission into United States: currency reporting",
+  "u": "https://www.cbp.gov/travel/international-visitors/applying-admission-united-states",
+  "v": "Any amount may be carried; more than USD 10,000 in currency or monetary instruments carried into or out of the US at one time must be reported on FinCEN Form 105; family members may not split amounts to stay under the threshold."
+ },
+ "S30": {
+  "how": "excerpt",
+  "pub": "Internal Revenue Service (irs.gov)",
+  "t": "IRS news release IR-2026-48 — proposed regulations on the remittance transfer tax",
+  "u": "https://www.irs.gov/newsroom/treasury-irs-issue-proposed-regulations-on-the-new-remittance-transfer-tax-established-under-the-one-big-beautiful-bill",
+  "v": "From 1 January 2026 a 1% tax applies to remittances sent FROM the United States to foreign recipients when funded with cash, a money order, a cashier's check or a similar physical instrument."
+ },
+ "S31": {
+  "how": "excerpt",
+  "pub": "JPMorgan Chase Bank (chase.com)",
+  "t": "Chase — Total Checking account fees",
+  "u": "https://www.chase.com/personal/fees/total-checking",
+  "v": "Incoming wire: USD 15 per transfer, or USD 0 if originally sent with a Chase banker or through chase.com / Chase Mobile."
+ }
+}

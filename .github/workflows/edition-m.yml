@@ -1,0 +1,27 @@
+name: edition-m
+on:
+  pull_request:
+    paths:
+      - 'edition-m/**'
+      - '.github/workflows/edition-m.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'edition-m/**'
+      - '.github/workflows/edition-m.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Rebuild
+        run: python3 edition-m/build/build.py
+      - name: Generated files are committed
+        run: git diff --exit-code -- edition-m
+      - name: Verify
+        run: python3 edition-m/build/verify.py
