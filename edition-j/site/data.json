@@ -1,0 +1,1836 @@
+{
+  "edition": "J",
+  "built_utc": "2026-11-10",
+  "market": {
+    "boc_board": {
+      "unit_per": 100.0,
+      "cash_buy": 666.22,
+      "cash_sell": 669.03,
+      "conversion_mid": 671.88,
+      "published": "2026/11/10 07:32:39",
+      "source": "BOC-BOARD"
+    },
+    "parity": {
+      "usd_cny": 6.7188,
+      "quote_time": "2026-11-09 09:15",
+      "monthly_avg_oct_2026": 6.7223,
+      "source": "CFETS-FIX"
+    }
+  },
+  "derived": {
+    "ask_cny_per_usd": 6.6903,
+    "bid_cny_per_usd": 6.6622,
+    "spread_pct_of_bid": 0.004218,
+    "mid_cny_per_usd": 6.67625,
+    "one_way_cost_pct": 0.002104,
+    "round_trip_pct": 0.004218,
+    "parity_gap_pct_rejected": -0.004242
+  },
+  "sources": {
+    "CN-FXREG": {
+      "tier": "A",
+      "publisher": "State Council of the PRC (国务院令第532号)",
+      "title": "中华人民共和国外汇管理条例 (Foreign Exchange Administration Regulations)",
+      "url": "https://www.gov.cn/gongbao/content/2008/content_1071846.htm",
+      "scope": "Full text retrieved; Articles 5, 12, 21, 22, 39, 40, 41, 42, 45, 48, 52 read.",
+      "supports": "The statutory penalty ladder: 逃汇 (Art. 39) up to 30% then 30%-100%; 非法套汇 (Art. 40) same; cash carried in/out of the border (Art. 42) up to 20%; private/illegal FX dealing (Art. 45); and Art. 5 free current-account payments.",
+      "retrieved": "2026-11-10"
+    },
+    "CN-PBOC3": {
+      "tier": "A",
+      "publisher": "People's Bank of China (中国人民银行令[2006]第3号), published by SAFE",
+      "title": "个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)",
+      "url": "https://www.safe.gov.cn/safe/2006/1225/5319.html",
+      "scope": "Full instrument retrieved; Articles 2, 3, 7, 9, 12-15, 16-26, 27-36, 37 read.",
+      "supports": "The 境内个人 / 境外个人 split (Art. 2, Art. 37 definitions), current-account convertibility versus capital-account 'convertibility process' (Art. 3), the no-splitting rule (Art. 7), the quota/over-quota structure (Art. 9), the overseas individual documented-income route (Art. 13), property-sale remittance (Art. 22) and outward property transfer (Art. 26).",
+      "retrieved": "2026-11-10"
+    },
+    "CN-GUIDE2020": {
+      "tier": "A",
+      "publisher": "SAFE, 汇发〔2020〕14号, republished in State Council Gazette 2020 No. 31",
+      "title": "经常项目外汇业务指引（2020年版） (Current-Account FX Business Guide, 2020 edition)",
+      "url": "https://www.gov.cn/gongbao/content/2020/content_5560296.htm",
+      "scope": "All six chunks of the Gazette page retrieved; Articles 47-49, 54-63, 64-67, 76-79, 86-89, 132, 137, 177-179 read in the operative text.",
+      "supports": "Annual facilitation quota of USD 50,000 per person per year for 个人结汇 and 境内个人购汇 (Art. 54); 境外个人 purchases against documented current-account income with no stated annual cap (Art. 59); service-trade documentary threshold of USD 50,000 (Art. 49); splitting/'watch list' rules (Art. 62); the USD 50,000 outward-remittance documentary threshold (Art. 64); cash rules: USD 10,000 per day withdrawal/deposit and the USD 5,000 inbound declaration and USD 5,000-10,000 carry-permit bands (Arts. 86-89); payment-institution single-transaction cap of USD 50,000 (Art. 132).",
+      "retrieved": "2026-11-10"
+    },
+    "CN-PROPERTY2004": {
+      "tier": "A",
+      "publisher": "People's Bank of China 公告〔2004〕第16号, published by SAFE",
+      "title": "个人财产对外转移售付汇管理暂行办法 (Interim Measures on Sale and Payment of FX for Outward Transfer of Personal Property)",
+      "url": "http://m.safe.gov.cn/safe/2004/1116/5461.html",
+      "scope": "Full instrument retrieved; Articles 2-15 read, including Art. 6 staging and Art. 10 approval split.",
+      "supports": "Defines emigrant transfer and inheritance transfer (Art. 2); original staging (Art. 6); document list including the tax certificate/完税凭证 (Arts. 8-9); the RMB 500,000 approval threshold (Art. 10); ban on taking out cash in China (Art. 11).",
+      "retrieved": "2026-11-10"
+    },
+    "CN-CAP2014": {
+      "tier": "A",
+      "publisher": "SAFE, 汇发〔2014〕2号, amended republication on the Tianjin branch site",
+      "title": "国家外汇管理局关于进一步改进和调整资本项目外汇管理政策的通知 (Section VI: personal property transfer)",
+      "url": "https://www.safe.gov.cn/tianjin/2024/0903/2594.html",
+      "scope": "Full notice retrieved; Section VI paragraphs (一)-(四) read, plus the 汇发〔2023〕28号 amendment note for Section III.",
+      "supports": "Cancels the RMB 500,000 national-level filing (VI-一), cancels mandatory staged emigrant releases so an approved amount may be remitted once or in instalments (VI-二), allows merged applications from different decedents (VI-三), and removes the notarisation requirement for property-rights documents (VI-四). This supersedes the staging in CN-PROPERTY2004 Art. 6.",
+      "retrieved": "2026-11-10"
+    },
+    "CN-PROPERTYQA": {
+      "tier": "A",
+      "publisher": "SAFE Tianjin branch (国家外汇管理局天津市分局)",
+      "title": "个人财产转移购付汇业务问答（六） (Q&A on outward transfer of personal property, part 6)",
+      "url": "http://www.safe.gov.cn/tianjin/2026/0318/3017.html",
+      "scope": "Full item retrieved (published 2026-03-18).",
+      "supports": "Confirms, as of March 2026, that the operative definition of 个人财产对外转移 still rests on PBOC Announcement [2004] No. 16 and covers emigrant and inheritance transfers. It does not restate the 2014 staging removal, so the two must be read together.",
+      "retrieved": "2026-11-10"
+    },
+    "CN-IIT": {
+      "tier": "A",
+      "publisher": "State Taxation Administration (English translation of the statute)",
+      "title": "Individual Income Tax Law of the PRC",
+      "url": "https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html",
+      "scope": "Chunks 0 and 1 retrieved; Articles 1-13 read.",
+      "supports": "Nine taxable income categories (Art. 2) - a currency exchange is not among them; 20% flat rate on interest/dividends, asset leasing, asset transfer and incidental income (Art. 3(3)); 3%-45% progressive on comprehensive income (Art. 3(1)); taxable-income computation for asset transfers net of original value and reasonable expenses (Art. 6(5)); the exit filing trigger when emigrating and cancelling household registration (Art. 10(5)).",
+      "retrieved": "2026-11-10"
+    },
+    "CN-DIV2026": {
+      "tier": "A",
+      "publisher": "Ministry of Finance & STA, 财政部 税务总局公告2026年第27号 (Shanghai STA reprint)",
+      "title": "关于外籍个人股息红利个人所得税政策有关事项的公告",
+      "url": "https://shanghai.chinatax.gov.cn/zzzb/zcwj/202609/t481448.html",
+      "scope": "Full announcement retrieved; paragraphs 1-3 read.",
+      "supports": "From 2026-09-01, dividends paid by a foreign-invested enterprise to a foreign individual are taxed at 20% under 'interest, dividends and bonuses', withholding applies, and the 1994 exemption in 财税字〔1994〕20号 Art. 2(8) is repealed.",
+      "retrieved": "2026-11-10"
+    },
+    "CN-SHFAQ": {
+      "tier": "B",
+      "publisher": "Shanghai Municipal Government English portal, sourced to Bank of China",
+      "title": "Can I buy foreign exchange using the proceeds from selling my house?",
+      "url": "https://english.shanghai.gov.cn/en-FAQHome/20240204/b4426264395b4fa3adfde73778c94ad4.html",
+      "scope": "Full FAQ retrieved (5 steps, 4 document items).",
+      "supports": "The operational sequence for a non-resident selling mainland property: ownership transfer, tax settlement and tax-payment proof, the external-payment tax filing form above USD 50,000, then purchase and remittance. Government-hosted but content attributed to a commercial bank, so it evidences procedure, not statute.",
+      "retrieved": "2026-11-10"
+    },
+    "CN-CARDS2017": {
+      "tier": "B",
+      "publisher": "SAFE, 汇发〔2017〕29号, via the State Council portal Q&A reprint",
+      "title": "规范银行卡境外大额提取现金交易 (Overseas card cash-withdrawal limits)",
+      "url": "https://www.gov.cn/zhengce/2017-12/31/content_5251958.htm",
+      "scope": "Official Q&A reprint retrieved; the four operative points and the consumption carve-out read.",
+      "supports": "Aggregate overseas cash withdrawal on a person's domestic bank cards is capped at CNY 100,000 per calendar year; per-card daily limit is CNY 10,000 equivalent; exceeding it suspends overseas cash access for the current and following year; card spending abroad does not consume the USD 50,000 facilitation quota.",
+      "retrieved": "2026-11-10"
+    },
+    "CN-VA2026": {
+      "tier": "B",
+      "publisher": "Eight ministries incl. PBOC and SAFE, 银发〔2026〕42号; full text as republished by a Shenzhen district government portal",
+      "title": "关于进一步防范和处置虚拟货币等相关风险的通知",
+      "url": "https://www.szns.gov.cn/ztzl/ffjzxsjb/zcfg/content/post_12958317.html",
+      "scope": "Full notice retrieved; Parts I-VI read including the repeal clause.",
+      "supports": "Virtual-currency business activity in mainland China is characterised as illegal financial activity and strictly prohibited; financial and payment institutions may not provide account, transfer or settlement services for it; it took effect 2026-02-06 and repealed 银发〔2021〕237号. The PBOC original is the primary source; this government portal reprint was used because the PBOC page was not retrievable from this sandbox.",
+      "retrieved": "2026-11-10"
+    },
+    "BOC-BOARD": {
+      "tier": "P",
+      "publisher": "Bank of China (中国银行) - 外汇牌价",
+      "title": "中国银行外汇牌价 (BOC foreign-exchange board)",
+      "url": "https://www.boc.cn/sourcedb/whpj/",
+      "scope": "Live board retrieved 2026-11-10; USD row read: 现汇买入价 666.22, 现钞买入价 666.22, 现汇卖出价 669.03, 现钞卖出价 669.03, 中行折算价 671.88, published 2026/11/10 07:32:39. Board note 1 states the table is indicative and the actual transaction rate at the counter/online/mobile channel governs.",
+      "supports": "Only the published bid/ask numbers on that timestamp. It is not a quote for any particular customer, amount or date after the timestamp.",
+      "retrieved": "2026-11-10"
+    },
+    "BOC-TARIFF": {
+      "tier": "P",
+      "publisher": "Bank of China (中国银行) - 电子银行个人服务转账汇款费率表",
+      "title": "中国银行电子银行个人服务转账汇款费率表 (personal e-banking transfer tariff, effective 2014-11-01)",
+      "url": "https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html",
+      "scope": "Full tariff page retrieved; the cross-border TT row, the domestic interbank tiered row, the intra-bank foreign-currency transfer row and notes 1-3 read.",
+      "supports": "Cross-border telegraphic transfer: 1 per mille of the remittance, minimum CNY 50, maximum CNY 260, plus cable CNY 80 (Hong Kong/Macau/Taiwan) or CNY 150 (elsewhere). Domestic interbank: tiered CNY 2/5/10/15 up to CNY 50,000, then 0.03% capped at CNY 50. Intra-bank foreign-currency transfer: 1 per mille capped at CNY 200. Note 1 allows separate agreements, discounts and local differences.",
+      "retrieved": "2026-11-10"
+    },
+    "CFETS-FIX": {
+      "tier": "A",
+      "publisher": "China Foreign Exchange Trade System / 中国货币网, authorised by the PBOC",
+      "title": "人民币汇率中间价 (RMB central parity)",
+      "url": "https://www.chinamoney.com.cn/chinese/bkccpr/",
+      "scope": "Live page retrieved 2026-11-10; the USD/CNY quote block read: 6.7188 at 2026-11-09 09:15, with the October 2026 monthly average 6.7223.",
+      "supports": "The PBOC-authorised central parity, and the published methodology (market-maker quotes, highest and lowest dropped, weighted average).",
+      "retrieved": "2026-11-10"
+    },
+    "WISE-CNY": {
+      "tier": "P",
+      "publisher": "Wise - Help Centre",
+      "title": "Guide to CNY transfers",
+      "url": "https://wise.com/help/articles/2955298/guide-to-cny-transfers",
+      "scope": "First chunk retrieved; 'Sending from CNY' section read (eligibility, limits, verification).",
+      "supports": "Eligibility for sending from CNY is limited to non-mainland-Chinese senders who work or have worked in China and hold a China tax record showing tax paid in the last three years; the recipient must be an account the sender owns; CNY 300,000 per transfer via a China bank app, CNY 50,000 via Alipay; an overall limit based on after-tax salary. Fees are quote-based, not a published schedule - the page says to check live pricing.",
+      "retrieved": "2026-11-10"
+    },
+    "US-988": {
+      "tier": "A",
+      "publisher": "Legal Information Institute, Cornell Law School (26 U.S.C. §988)",
+      "title": "26 U.S. Code §988 - Treatment of certain foreign currency transactions",
+      "url": "https://www.law.cornell.edu/uscode/text/26/988",
+      "scope": "Chunks 0, 2 and 3 retrieved; subsection (e) 'Application to individuals' read in full.",
+      "supports": "§988(e)(2): for an individual's personal transaction in nonfunctional currency, no gain is recognised from exchange-rate movement between acquisition and disposition, and §988(e)(3) defines 'personal transaction'. §988(e)(2) withdraws that relief when the gain would exceed USD 200. Cornell is a republication of the Code, used here because the uscode.house.gov granule URLs returned HTTP 404 and govinfo was unreachable.",
+      "retrieved": "2026-11-10"
+    },
+    "US-5321": {
+      "tier": "A",
+      "publisher": "Legal Information Institute, Cornell Law School (31 U.S.C. §5321)",
+      "title": "31 U.S. Code §5321 - Civil penalties",
+      "url": "https://www.law.cornell.edu/uscode/text/31/5321",
+      "scope": "First chunk retrieved; subsection (a)(5) foreign financial agency transaction violation read.",
+      "supports": "FBAR civil penalty structure: non-willful capped at USD 10,000 per violation with a reasonable-cause exception; willful raised to the greater of USD 100,000 or 50% of the account balance at the time of the violation, and the reasonable-cause defence is unavailable for willful violations. Statutory caps are inflation-adjusted annually.",
+      "retrieved": "2026-11-10"
+    },
+    "US-1010821": {
+      "tier": "A",
+      "publisher": "eCFR (Office of the Federal Register), 31 CFR 1010.821",
+      "title": "§1010.821 Penalty adjustment and table",
+      "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821",
+      "scope": "Chunks 0 and 1 retrieved; the penalty table rows for 31 U.S.C. 5321(a)(5)(B)(i) and (C)(i) read.",
+      "supports": "Current inflation-adjusted FBAR maxima for penalties assessed on or after 2025-01-17: non-willful USD 16,536; willful USD 165,353 (and the 50%-of-balance alternative in the statute continues to apply).",
+      "retrieved": "2026-11-10"
+    },
+    "US-6038D": {
+      "tier": "A",
+      "publisher": "Legal Information Institute, Cornell Law School (26 U.S.C. §6038D)",
+      "title": "26 U.S. Code §6038D - Information with respect to foreign financial assets",
+      "url": "https://www.law.cornell.edu/uscode/text/26/6038D",
+      "scope": "Full section retrieved; subsections (a), (d) and (g) read.",
+      "supports": "Form 8938 attachment duty above USD 50,000 aggregate; USD 10,000 penalty for failure to disclose plus USD 10,000 per 30-day period after notice, capped at USD 50,000 additional; reasonable-cause exception in (g).",
+      "retrieved": "2026-11-10"
+    },
+    "US-FBAR": {
+      "tier": "A",
+      "publisher": "Internal Revenue Service",
+      "title": "Report of Foreign Bank and Financial Accounts (FBAR)",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar",
+      "scope": "First chunk retrieved; who-must-file, due date, recordkeeping and penalties sections read.",
+      "supports": "USD 10,000 aggregate reporting trigger, April 15 due date with automatic October 15 extension, five-year record retention, and confirmation that producing no taxable income does not remove the filing duty.",
+      "retrieved": "2026-11-10"
+    },
+    "US-8938": {
+      "tier": "A",
+      "publisher": "Internal Revenue Service",
+      "title": "Comparison of Form 8938 and FBAR requirements",
+      "url": "https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements",
+      "scope": "First chunk retrieved; the full threshold and penalty comparison table read.",
+      "supports": "Form 8938 thresholds by filing status and residence (USD 50,000/75,000 single in the US, 100,000/150,000 joint, 200,000/300,000 and 400,000/600,000 abroad) and the USD 10,000 plus USD 10,000/30-days to a USD 60,000 maximum penalty description.",
+      "retrieved": "2026-11-10"
+    },
+    "US-3520": {
+      "tier": "A",
+      "publisher": "Internal Revenue Service",
+      "title": "Instructions for Form 3520 (12/2025)",
+      "url": "https://www.irs.gov/instructions/i3520",
+      "scope": "Chunks 0 and 2 retrieved; the who-must-file items and the gifts/bequests threshold read.",
+      "supports": "Form 3520 is required on receipt of more than USD 100,000 from a nonresident alien individual or foreign estate treated as a gift or bequest, and for foreign-trust transactions; it is an information return filed apart from the income tax return.",
+      "retrieved": "2026-11-10"
+    },
+    "US-1010340": {
+      "tier": "A",
+      "publisher": "eCFR (Office of the Federal Register), 31 CFR 1010.340",
+      "title": "§1010.340 Reports of transportation of currency or monetary instruments",
+      "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-C/section-1010.340",
+      "scope": "Full section retrieved; paragraphs (a), (b) and (d) read.",
+      "supports": "A FinCEN 105 report is required to transport, mail or ship more than USD 10,000 in currency or monetary instruments into or out of the United States at one time; paragraph (d) confirms a funds transfer through normal banking channels that involves no physical transport is outside this section.",
+      "retrieved": "2026-11-10"
+    },
+    "US-IRS-FX": {
+      "tier": "A",
+      "publisher": "Internal Revenue Service",
+      "title": "Foreign currency and currency exchange rates",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-currency-and-currency-exchange-rates",
+      "scope": "Full page retrieved.",
+      "supports": "US-dollar functional currency, translation at the rate prevailing when an item is received/paid/accrued, and the IRS's list of governmental rate resources.",
+      "retrieved": "2026-11-10"
+    },
+    "US-IRS-ABROAD": {
+      "tier": "A",
+      "publisher": "Internal Revenue Service",
+      "title": "U.S. citizens and resident aliens abroad",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad",
+      "scope": "First chunk retrieved; worldwide-income, FBAR and Form 3520 paragraphs read.",
+      "supports": "US citizens are taxed on worldwide income regardless of residence, and must report foreign accounts even where no taxable income arises.",
+      "retrieved": "2026-11-10"
+    }
+  },
+  "routes": [
+    {
+      "id": "R01",
+      "name": "Bank purchase and TT remittance against documented current-account income",
+      "zh": "境外个人凭经常项目合法人民币收入购汇汇出",
+      "category": "A",
+      "lawful": "lawful",
+      "law_basis": [
+        "CN-PBOC3",
+        "CN-GUIDE2020"
+      ],
+      "law_text": "个人外汇管理办法 Art. 13; 经常项目指引(2020) Art. 59",
+      "limit_basis": [
+        "CN-GUIDE2020"
+      ],
+      "limit": "No annual cap stated for 境外个人 purchasing against documented income (Art. 59). Above USD 50,000 per payment the bank applies enhanced documentary review.",
+      "cost_basis": [
+        "BOC-TARIFF",
+        "BOC-BOARD",
+        "CFETS-FIX"
+      ],
+      "verifiability": "verified",
+      "pros": [
+        "The only route that is unrestricted in size once the income trail is documented.",
+        "Priced from a published bank tariff, so the fee is knowable before you commit.",
+        "Leaves a clean audit trail for both SAFE and the IRS."
+      ],
+      "cons": [
+        "Requires an evidence chain linking each CNY to specific lawful income.",
+        "Banks may still refuse or escalate; the rule gives them discretion on documentary adequacy.",
+        "Does not remove Chinese income tax already due on the underlying income."
+      ],
+      "steps": [
+        "Classify the balance by source and period; separate documented income from pre-emigration savings.",
+        "Ask the bank to confirm you are booked as 境外个人 (foreign individual) on the account, because the quota rules differ.",
+        "Assemble the documentary set: passport, China tax record or withholding slips, employment or service contract, and bank statements showing the credits.",
+        "Submit the purchase (购汇) application; above USD 50,000 the bank performs enhanced review under Art. 59.",
+        "Settle the FX at the counter/online rate, request the TT, and keep the 结售汇 slip and the remittance receipt.",
+        "Report the account and the transfer on your US return: FBAR if the aggregate exceeded USD 10,000 at any point, Form 8938 if the threshold applies."
+      ],
+      "estimate": {
+        "mode": "boc_tt"
+      }
+    },
+    {
+      "id": "R02",
+      "name": "Annual facilitation-quota purchase (USD 50,000 per person per year)",
+      "zh": "年度便利化额度购汇",
+      "category": "A",
+      "lawful": "conditional",
+      "law_basis": [
+        "CN-GUIDE2020",
+        "CN-PBOC3"
+      ],
+      "law_text": "经常项目指引(2020) Art. 54; 个人外汇管理办法 Art. 9",
+      "limit_basis": [
+        "CN-GUIDE2020"
+      ],
+      "limit": "USD 50,000 equivalent per person per calendar year, for 个人结汇 and 境内个人购汇.",
+      "cost_basis": [
+        "BOC-TARIFF",
+        "BOC-BOARD",
+        "CFETS-FIX"
+      ],
+      "verifiability": "partly",
+      "pros": [
+        "Fast and largely documentary-free inside the quota.",
+        "Can be done online or on the mobile app at most banks."
+      ],
+      "cons": [
+        "The purchase quota is framed for 境内个人 (Chinese citizens with a resident ID); a US citizen holding a foreign passport is generally 境外个人, so this quota is the wrong lane and a bank may refuse it.",
+        "USD 50,000 a year cannot move USD 400,000 quickly; you would need eight years, and stacking relatives to speed it up is prohibited (see R28).",
+        "Using it to disguise a capital-account transfer is the classic violation."
+      ],
+      "steps": [
+        "Confirm with the bank whether you are recorded as 境内个人 or 境外个人 - this determines whether the quota is even available to you.",
+        "If available, submit the purchase application with your valid ID inside the annual quota.",
+        "Record the quota usage; it is aggregated per person across all banks.",
+        "Remit and retain the slips."
+      ],
+      "estimate": {
+        "mode": "boc_tt"
+      }
+    },
+    {
+      "id": "R03",
+      "name": "Salary, bonus and severance paid from a mainland employer",
+      "zh": "工资薪金及离职补偿购汇汇出",
+      "category": "A",
+      "lawful": "lawful",
+      "law_basis": [
+        "CN-PBOC3",
+        "CN-GUIDE2020",
+        "CN-IIT"
+      ],
+      "law_text": "个人外汇管理办法 Art. 13; 经常项目指引(2020) Art. 59; IIT Law Art. 2(1)",
+      "limit_basis": [
+        "CN-GUIDE2020"
+      ],
+      "limit": "No annual cap for 境外个人 against documented income; documentary review above USD 50,000.",
+      "cost_basis": [
+        "BOC-TARIFF",
+        "BOC-BOARD",
+        "CFETS-FIX"
+      ],
+      "verifiability": "verified",
+      "pros": [
+        "The strongest documentary position available: payroll records and withholding slips already exist.",
+        "Chinese individual income tax has usually been withheld monthly, so no fresh Chinese tax event arises on the transfer."
+      ],
+      "cons": [
+        "Only covers the salary portion of the balance, not savings accumulated from other sources.",
+        "Severance may need the termination agreement and the tax treatment confirmed locally."
+      ],
+      "steps": [
+        "Obtain the employment contract, the payroll history and the annual 个人所得税 withholding record.",
+        "Have the employer or the tax bureau confirm the tax-paid position for the period.",
+        "Present the package to the bank with the purchase application.",
+        "Convert, remit, and reconcile the gross and net amounts in USD on your US return."
+      ],
+      "estimate": {
+        "mode": "boc_tt"
+      }
+    },
+    {
+      "id": "R04",
+      "name": "Service-trade income: consulting, freelance, royalties",
+      "zh": "服务贸易项下收入购汇汇出",
+      "category": "A",
+      "lawful": "lawful",
+      "law_basis": [
+        "CN-GUIDE2020",
+        "CN-PBOC3"
+      ],
+      "law_text": "经常项目指引(2020) Art. 49 and Art. 59",
+      "limit_basis": [
+        "CN-GUIDE2020"
+      ],
+      "limit": "Payments up to USD 50,000: the bank may waive documentary review (Art. 49). Above that: full documentary review, plus the external-payment tax filing form where applicable.",
+      "cost_basis": [
+        "BOC-TARIFF",
+        "BOC-BOARD",
+        "CFETS-FIX"
+      ],
+      "verifiability": "verified",
+      "pros": [
+        "Fits consultants, contractors and royalty owners who invoiced from China.",
+        "Below USD 50,000 per payment the documentary burden is at the bank's discretion, which is usually faster."
+      ],
+      "cons": [
+        "Requires genuine contracts and invoices - fabricating them is the offence in R30.",
+        "Above USD 50,000 the tax filing form requirement adds a step at the tax bureau."
+      ],
+      "steps": [
+        "Gather contracts, invoices, payment receipts and the tax treatment of the service income.",
+        "Confirm whether the payment needs the 服务贸易等项目对外支付税务备案表.",
+        "Apply at the bank for purchase and remittance.",
+        "Retain everything; report the income and the account in the US."
+      ],
+      "estimate": {
+        "mode": "boc_tt"
+      }
+    },
+    {
+      "id": "R05",
+      "name": "Rent collected from mainland property you own",
+      "zh": "自有房产租金收入汇出",
+      "category": "A",
+      "lawful": "lawful",
+      "law_basis": [
+        "CN-PBOC3",
+        "CN-IIT"
+      ],
+      "law_text": "个人外汇管理办法 Art. 13; IIT Law Art. 2(7) and Art. 3(3)",
+      "limit_basis": [
+        "CN-GUIDE2020"
+      ],
+      "limit": "Current-account treatment with no annual cap; documentary review applies.",
+      "cost_basis": [
+        "BOC-TARIFF",
+        "BOC-BOARD",
+        "CFETS-FIX"
+      ],
+      "verifiability": "partly",
+      "pros": [
+        "Recurring, well documented, and small enough to stay inside simple documentary review.",
+        "Chinese IIT on rental income is a flat 20% category with a computable base."
+      ],
+      "cons": [
+        "Moves only the rental yield, not the property's capital value.",
+        "Requires a lease, tax-paid evidence and often a property-rights document."
+      ],
+      "steps": [
+        "Register or confirm the lease and the rental tax payments.",
+        "Present the lease, the tax record and the bank statements showing rent credits.",
+        "Apply for purchase and remittance of the net rent."
+      ],
+      "estimate": {
+        "mode": "boc_tt"
+      }
+    },
+    {
+      "id": "R06",
+      "name": "Deposit interest and dividends (bank deposits, fund distributions, FIE dividends)",
+      "zh": "利息、股息、红利所得购汇汇出",
+      "category": "A",
+      "lawful": "lawful",
+      "law_basis": [
+        "CN-IIT",
+        "CN-DIV2026",
+        "CN-PBOC3"
+      ],
+      "law_text": "IIT Law Art. 2(6) and Art. 3(3); 财政部 税务总局公告2026年第27号",
+      "limit_basis": [
+        "CN-GUIDE2020"
+      ],
+      "limit": "Current-account treatment; documentary review applies.",
+      "cost_basis": [
+        "BOC-TARIFF",
+        "BOC-BOARD",
+        "CFETS-FIX"
+      ],
+      "verifiability": "verified",
+      "pros": [
+        "Flat 20% Chinese rate makes the tax arithmetic simple and predictable.",
+        "Withholding is usually done by the payer, so the net amount is already clean."
+      ],
+      "cons": [
+        "The 1994 exemption for foreign individuals' FIE dividends was repealed for payments from 2026-09-01; older guides still claim it is tax-free.",
+        "20% is a real cost on the income itself, and it dominates bank fees for large balances."
+      ],
+      "steps": [
+        "Identify each distribution and whether 20% was withheld at source.",
+        "Obtain the withholding certificates.",
+        "Apply at the bank for purchase and remittance of the net amount.",
+        "Claim the Chinese tax as a foreign tax credit on the US return where eligible."
+      ],
+      "estimate": {
+        "mode": "boc_tt",
+        "tax_rate": 0.2,
+        "tax_basis": "CN-DIV2026"
+      }
+    },
+    {
+      "id": "R07",
+      "name": "Sale of mainland residential property by a non-resident owner",
+      "zh": "境外个人出售境内房产购汇汇出",
+      "category": "B",
+      "lawful": "lawful",
+      "law_basis": [
+        "CN-PBOC3",
+        "CN-SHFAQ",
+        "CN-IIT"
+      ],
+      "law_text": "个人外汇管理办法 Art. 22; IIT Law Art. 2(8) and Art. 6(5)",
+      "limit_basis": [
+        "CN-GUIDE2020",
+        "CN-SHFAQ"
+      ],
+      "limit": "No cap on the proceeds themselves; each outward payment above USD 50,000 needs the external-payment tax filing form.",
+      "cost_basis": [
+        "BOC-TARIFF",
+        "BOC-BOARD",
+        "CFETS-FIX"
+      ],
+      "verifiability": "verified",
+      "pros": [
+        "The single most common way a large balance legitimately leaves China: real asset, real contract, real tax receipt.",
+        "Chinese capital-gains tax is computed on gain, not gross proceeds (Art. 6(5))."
+      ],
+      "cons": [
+        "Requires the property to actually be sold, at market price, with the tax settled first.",
+        "The tax filing form and the title documents create real lead time.",
+        "You must not rely on the seller-side cash discount stories; the bank checks the tax voucher."
+      ],
+      "steps": [
+        "Sign the sale contract and complete the ownership-transfer registration at the real-estate authority.",
+        "Settle property transfer taxes at the local tax bureau and obtain the tax-payment proof.",
+        "Obtain the 服务贸易等项目对外支付税务备案表 for amounts above USD 50,000.",
+        "Present passport, contract, registration certificate and tax voucher to the bank.",
+        "Purchase FX and remit to your own overseas account; keep the 结售汇 slip."
+      ],
+      "estimate": {
+        "mode": "boc_tt",
+        "tax_note": "Capital-gains tax is on gain, not gross; amount unknown."
+      }
+    },
+    {
+      "id": "R08",
+      "name": "Emigrant property transfer with SAFE approval (移民财产转移)",
+      "zh": "移民财产对外转移",
+      "category": "B",
+      "lawful": "conditional",
+      "law_basis": [
+        "CN-PROPERTY2004",
+        "CN-CAP2014",
+        "CN-PBOC3"
+      ],
+      "law_text": "PBOC公告〔2004〕16号 Arts. 2, 8, 10; 汇发〔2014〕2号 Section VI",
+      "limit_basis": [
+        "CN-PROPERTY2004"
+      ],
+      "limit": "No amount cap; approval is required. The original staged-release rule (50%, then 50%, then the rest over two years) was cancelled by 汇发〔2014〕2号 Section VI-二, so an approved amount may be remitted once or in instalments.",
+      "cost_basis": [
+        "BOC-TARIFF",
+        "BOC-BOARD",
+        "CFETS-FIX"
+      ],
+      "verifiability": "partly",
+      "pros": [
+        "The designed route for pre-emigration savings that are not documented income.",
+        "Since 2014 there is no mandatory staging and no notarisation duty for property-rights documents."
+      ],
+      "cons": [
+        "Conditional on having emigrated and cancelled Chinese household registration, with consular proof of settlement abroad.",
+        "The local branch still applies its own checklist; the 2014 cancellation of staging is not restated on every branch page.",
+        "Requires a Chinese tax certificate or tax-paid evidence for the property."
+      ],
+      "steps": [
+        "Confirm eligibility: settled abroad and Chinese household registration cancelled.",
+        "File the written application and the two prescribed forms with the FX bureau at your former household-registration location.",
+        "Provide identity documents, the consular certificate of settlement abroad, and the property-rights and realisation documents.",
+        "Provide the Chinese tax certificate or tax-paid vouchers for the property being transferred.",
+        "Obtain the approval and 核准件, then apply at the designated bank to purchase FX and remit.",
+        "Keep the approval, the 核准件 and each remittance receipt for the US side."
+      ],
+      "estimate": {
+        "mode": "boc_tt"
+      }
+    },
+    {
+      "id": "R09",
+      "name": "Inheritance transfer with SAFE approval (继承财产转移)",
+      "zh": "继承财产对外转移",
+      "category": "B",
+      "lawful": "conditional",
+      "law_basis": [
+        "CN-PROPERTY2004",
+        "CN-CAP2014"
+      ],
+      "law_text": "PBOC公告〔2004〕16号 Arts. 2, 9, 10; 汇发〔2014〕2号 Section VI-三",
+      "limit_basis": [
+        "CN-PROPERTY2004"
+      ],
+      "limit": "No amount cap; approval required. Inheritances from different decedents may now be merged into one application (2014 Section VI-三).",
+      "cost_basis": [
+        "BOC-TARIFF",
+        "BOC-BOARD",
+        "CFETS-FIX"
+      ],
+      "verifiability": "partly",
+      "pros": [
+        "The only lawful route for inherited mainland assets that were never your own income.",
+        "Merging applications from multiple decedents removes a duplication burden."
+      ],
+      "cons": [
+        "Requires proof of inheritance and evidence of the decedent's property rights.",
+        "The decedent's tax-paid position must be demonstrated.",
+        "US side: a foreign gift or bequest above USD 100,000 triggers Form 3520."
+      ],
+      "steps": [
+        "Obtain the inheritance documentation and the decedent's property-rights documents.",
+        "Obtain the decedent's Chinese tax certificate or tax-paid vouchers.",
+        "File the application at the FX bureau where the decedent's household was registered.",
+        "Receive approval, then purchase and remit at the designated bank.",
+        "File Form 3520 on the US side if the bequest exceeded USD 100,000."
+      ],
+      "estimate": {
+        "mode": "boc_tt",
+        "tax_note": "US Form 3520 information return, not a tax on the bequest."
+      }
+    },
+    {
+      "id": "R10",
+      "name": "Company liquidation, capital reduction or equity-sale proceeds",
+      "zh": "外商投资企业清算、减资、股权转让所得汇出",
+      "category": "B",
+      "lawful": "conditional",
+      "law_basis": [
+        "CN-FXREG",
+        "CN-PBOC3"
+      ],
+      "law_text": "外汇管理条例 Art. 22 final paragraph; 个人外汇管理办法 Art. 31",
+      "limit_basis": [
+        "CN-FXREG"
+      ],
+      "limit": "No cap; requires the liquidation/tax clearance and the capital-account registration to be in order.",
+      "cost_basis": [
+        "BOC-TARIFF",
+        "BOC-BOARD",
+        "CFETS-FIX"
+      ],
+      "verifiability": "partly",
+      "pros": [
+        "A statutory entitlement: after lawful liquidation and tax payment, the foreign investor's share may be purchased and remitted.",
+        "Scales to any size because it is a capital-account transaction, not a quota transaction."
+      ],
+      "cons": [
+        "Requires an actual corporate event - you cannot manufacture a liquidation.",
+        "Multiple authorities in sequence: tax clearance, market regulator, bank, FX registration."
+      ],
+      "steps": [
+        "Complete the liquidation or capital reduction and obtain the tax clearance.",
+        "Update the capital-account registration with the FX bureau.",
+        "Present the liquidation documents, tax clearance and registration to the bank.",
+        "Purchase FX and remit the distributable amount."
+      ],
+      "estimate": {
+        "mode": "boc_tt"
+      }
+    },
+    {
+      "id": "R11",
+      "name": "Sell the mainland asset to a non-resident buyer who pays you offshore",
+      "zh": "向境外买方转让资产并在境外收款",
+      "category": "B",
+      "lawful": "conditional",
+      "law_basis": [
+        "CN-FXREG",
+        "CN-PBOC3"
+      ],
+      "law_text": "外汇管理条例 Art. 22; 个人外汇管理办法 Art. 26",
+      "limit_basis": [
+        "CN-FXREG"
+      ],
+      "limit": "No FX cap, because no CNY-to-USD conversion inside China occurs - the consideration is already in foreign currency offshore.",
+      "cost_basis": [],
+      "verifiability": "unverified",
+      "pros": [
+        "If it is a genuine arm's-length offshore sale, the conversion problem disappears because the proceeds never enter the mainland banking system.",
+        "No Chinese FX purchase fee applies."
+      ],
+      "cons": [
+        "Only workable where the asset can lawfully change hands to a non-resident without an onshore settlement.",
+        "Restrictions on foreigners buying mainland property, and capital-account registration duties, may block it.",
+        "Pricing the deal to keep the money offshore while the asset stays in China is evasion, not structuring."
+      ],
+      "steps": [
+        "Confirm with a Chinese lawyer whether the specific asset class can be transferred to a non-resident with offshore settlement.",
+        "Complete any required capital-account or real-estate registration.",
+        "Settle offshore in USD and document the arm's-length price."
+      ],
+      "estimate": {
+        "mode": "not_applicable"
+      }
+    },
+    {
+      "id": "R12",
+      "name": "FIE dividend distribution to a foreign individual shareholder",
+      "zh": "外商投资企业向外籍个人股东分配股息",
+      "category": "C",
+      "lawful": "lawful",
+      "law_basis": [
+        "CN-DIV2026",
+        "CN-IIT"
+      ],
+      "law_text": "财政部 税务总局公告2026年第27号; IIT Law Art. 2(6), Art. 3(3)",
+      "limit_basis": [
+        "CN-FXREG"
+      ],
+      "limit": "No cap; distribution must come from distributable profits.",
+      "cost_basis": [
+        "BOC-TARIFF",
+        "BOC-BOARD",
+        "CFETS-FIX"
+      ],
+      "verifiability": "verified",
+      "pros": [
+        "The 20% rate is now unambiguous and the withholding obligation sits with the company.",
+        "Scales without a quota and is a routine bank transaction once the tax is paid."
+      ],
+      "cons": [
+        "20% withholding is the dominant cost - far larger than any bank fee.",
+        "The old 'foreign individuals are exempt' claim is dead for payments from 2026-09-01.",
+        "Needs genuine distributable profit and a board resolution."
+      ],
+      "steps": [
+        "Pass the profit-distribution resolution.",
+        "The company withholds 20% and files within 15 days of the month after payment.",
+        "Obtain the withholding certificate.",
+        "The company or you apply at the bank to remit the net dividend."
+      ],
+      "estimate": {
+        "mode": "boc_tt",
+        "tax_rate": 0.2,
+        "tax_basis": "CN-DIV2026"
+      }
+    },
+    {
+      "id": "R13",
+      "name": "Foreign-investor special account (资本金/外投) after approval",
+      "zh": "外国投资者专用外汇账户",
+      "category": "C",
+      "lawful": "conditional",
+      "law_basis": [
+        "CN-PBOC3"
+      ],
+      "law_text": "个人外汇管理办法 Art. 31",
+      "limit_basis": [
+        "CN-PBOC3"
+      ],
+      "limit": "No cap stated; account conversion requires FX-bureau approval.",
+      "cost_basis": [
+        "BOC-TARIFF"
+      ],
+      "verifiability": "partly",
+      "pros": [
+        "Lets a genuine foreign direct investor hold and convert FX inside China lawfully."
+      ],
+      "cons": [
+        "Requires an approved direct-investment project - not available for personal savings.",
+        "Approval-gated and slow."
+      ],
+      "steps": [
+        "Obtain the direct-investment approval from the competent authority.",
+        "Apply to the FX bureau to open the special account.",
+        "Apply for approval to convert the account balance."
+      ],
+      "estimate": {
+        "mode": "quote_only",
+        "reason": "Approval-gated; no published fee applies to the approval step."
+      }
+    },
+    {
+      "id": "R14",
+      "name": "Licensed outbound investment product bought while still resident (QDII and similar)",
+      "zh": "合格境内机构投资者（QDII）等境外投资产品",
+      "category": "C",
+      "lawful": "conditional",
+      "law_basis": [
+        "CN-PBOC3",
+        "CN-FXREG"
+      ],
+      "law_text": "个人外汇管理办法 Art. 17; 外汇管理条例 Art. 17",
+      "limit_basis": [
+        "CN-PBOC3"
+      ],
+      "limit": "Subject to the individual product quota; not an unrestricted personal channel.",
+      "cost_basis": [],
+      "verifiability": "unverified",
+      "pros": [
+        "A lawful way to hold foreign-currency exposure without moving cash out yourself."
+      ],
+      "cons": [
+        "Only works if you are still 境内个人 at purchase time; once you are 境外个人 most domestic financial products are closed to you (Art. 23).",
+        "The money stays inside the domestic custody chain - it does not become spendable USD abroad."
+      ],
+      "steps": [
+        "Confirm your 境内/境外 classification at the time of purchase.",
+        "Buy through a licensed domestic institution within its approved quota."
+      ],
+      "estimate": {
+        "mode": "quote_only",
+        "reason": "Product-specific fees; no published government schedule."
+      }
+    },
+    {
+      "id": "R15",
+      "name": "Domestic FX deposit account inside China (convert now, remit later)",
+      "zh": "境内个人外币存款账户",
+      "category": "C",
+      "lawful": "lawful",
+      "law_basis": [
+        "CN-PBOC3"
+      ],
+      "law_text": "个人外汇管理办法 Arts. 27, 32",
+      "limit_basis": [
+        "CN-GUIDE2020"
+      ],
+      "limit": "Account may hold FX. Outward remittance from the account: USD 50,000 per day with ID only; above that documentary review (Art. 64).",
+      "cost_basis": [
+        "BOC-TARIFF",
+        "BOC-BOARD",
+        "CFETS-FIX"
+      ],
+      "verifiability": "partly",
+      "pros": [
+        "Converts CNY exposure into USD exposure immediately, using the same bank spread.",
+        "Lets you choose the remittance timing separately from the conversion.",
+        "Remittance from an FX account up to USD 50,000 a day needs only ID."
+      ],
+      "cons": [
+        "The money is still in China and remains reportable as a foreign account.",
+        "You pay the spread now and again on any later conversion.",
+        "Does not create a right to remit capital-account money later."
+      ],
+      "steps": [
+        "Open or confirm the 外币储蓄账户 at the bank.",
+        "Purchase FX into the account and keep the 结售汇 slip.",
+        "Remit later within the Art. 64 rules, or convert back if needed."
+      ],
+      "estimate": {
+        "mode": "boc_tt"
+      }
+    },
+    {
+      "id": "R16",
+      "name": "B-share or cross-border securities account for a foreign individual",
+      "zh": "境外个人B股及跨境证券账户",
+      "category": "C",
+      "lawful": "conditional",
+      "law_basis": [
+        "CN-PBOC3"
+      ],
+      "law_text": "个人外汇管理办法 Arts. 17, 23",
+      "limit_basis": [
+        "CN-PBOC3"
+      ],
+      "limit": "Securities-specific; not a remittance channel for existing cash.",
+      "cost_basis": [],
+      "verifiability": "unverified",
+      "pros": [
+        "A recognised lawful investment channel for foreign individuals."
+      ],
+      "cons": [
+        "Converts savings into market exposure, which is a different decision from moving money.",
+        "Capital is then subject to securities repatriation rules, not personal remittance rules."
+      ],
+      "steps": [
+        "Confirm eligibility for the specific account type.",
+        "Open through a licensed domestic securities institution."
+      ],
+      "estimate": {
+        "mode": "quote_only",
+        "reason": "Brokerage-specific; no published government schedule."
+      }
+    },
+    {
+      "id": "R17",
+      "name": "Spend on a mainland-issued card abroad (no conversion by you)",
+      "zh": "境内银行卡境外消费",
+      "category": "D",
+      "lawful": "lawful",
+      "law_basis": [
+        "CN-CARDS2017",
+        "CN-GUIDE2020"
+      ],
+      "law_text": "SAFE 汇发〔2017〕29号 Q&A; 经常项目指引(2020) Art. 76(3)",
+      "limit_basis": [
+        "CN-CARDS2017"
+      ],
+      "limit": "Card spending abroad does not consume the USD 50,000 facilitation quota. The CNY 100,000 annual cap applies to cash withdrawals, not to purchases.",
+      "cost_basis": [],
+      "verifiability": "partly",
+      "pros": [
+        "Legitimate, quota-free, and the card network does the conversion.",
+        "Useful for travel, tuition and genuine consumption."
+      ],
+      "cons": [
+        "Purchases, not cash: it cannot fund a US bank account.",
+        "The card conversion rate and any card FX fee are set by the issuer and are not published in a way that can be modelled here.",
+        "Spending down USD 400,000 of consumption you do not need is not a transfer strategy."
+      ],
+      "steps": [
+        "Use the card for genuine consumption abroad.",
+        "Keep the statements for US reporting and for the foreign-account question."
+      ],
+      "estimate": {
+        "mode": "limit_only",
+        "reason": "Issuer card FX fee is not published as a schedule."
+      }
+    },
+    {
+      "id": "R18",
+      "name": "Overseas ATM cash withdrawal on a mainland card",
+      "zh": "境内银行卡境外提取现金",
+      "category": "D",
+      "lawful": "lawful",
+      "law_basis": [
+        "CN-CARDS2017"
+      ],
+      "law_text": "SAFE 汇发〔2017〕29号",
+      "limit_basis": [
+        "CN-CARDS2017",
+        "CN-GUIDE2020"
+      ],
+      "limit": "CNY 10,000 equivalent per card per day; CNY 100,000 equivalent per person per calendar year across all cards. Exceeding it suspends overseas cash access for this year and next.",
+      "cost_basis": [],
+      "verifiability": "verified",
+      "pros": [
+        "Small, lawful, and simple."
+      ],
+      "cons": [
+        "CNY 100,000 a year is roughly USD 14,000 - nowhere near USD 400,000.",
+        "Attracts ATM and issuer fees plus a spread that is not published as a schedule.",
+        "Breaching the annual cap triggers an automatic suspension and possible penalties.",
+        "Carrying cash into the US above USD 10,000 requires a FinCEN 105 report."
+      ],
+      "steps": [
+        "Withdraw within the per-card daily and per-person annual limits.",
+        "If carrying more than USD 10,000 into the US, file FinCEN 105."
+      ],
+      "estimate": {
+        "mode": "limit_only",
+        "reason": "ATM and issuer fees are not published as a schedule."
+      }
+    },
+    {
+      "id": "R19",
+      "name": "Carry cash across the border within the permit band",
+      "zh": "携带外币现钞出境",
+      "category": "D",
+      "lawful": "lawful",
+      "law_basis": [
+        "CN-GUIDE2020",
+        "CN-FXREG"
+      ],
+      "law_text": "经常项目指引(2020) Arts. 86-89; 外汇管理条例 Art. 42",
+      "limit_basis": [
+        "CN-GUIDE2020"
+      ],
+      "limit": "Inbound: declare above USD 5,000. Outbound: USD 5,000-10,000 needs a 携带外汇出境许可证 from the bank; above USD 10,000 needs one from the FX bureau. Withdrawal of cash above USD 10,000 a day needs prior FX-bureau filing.",
+      "cost_basis": [],
+      "verifiability": "verified",
+      "pros": [
+        "Lawful inside the bands, and no bank wire fee."
+      ],
+      "cons": [
+        "Physically impractical and unsafe at scale, and the permit ceiling is low.",
+        "Unapproved breach is an offence under Art. 42 (warning, up to 20% of the amount) and can become smuggling.",
+        "US side: more than USD 10,000 at one time requires a FinCEN 105 report; structuring to avoid it is itself an offence.",
+        "No insurance, no trace, no receipt."
+      ],
+      "steps": [
+        "Withdraw with prior FX-bureau filing if above USD 10,000 a day.",
+        "Obtain the 携带外汇出境许可证 in the applicable band.",
+        "Declare to China Customs and, on entry to the US, file FinCEN 105 if above USD 10,000."
+      ],
+      "estimate": {
+        "mode": "limit_only",
+        "reason": "No published per-item fee; permit issuance fee not verified."
+      }
+    },
+    {
+      "id": "R20",
+      "name": "Alipay or WeChat cross-border remittance",
+      "zh": "支付宝/微信跨境汇款",
+      "category": "D",
+      "lawful": "conditional",
+      "law_basis": [
+        "CN-GUIDE2020"
+      ],
+      "law_text": "经常项目指引(2020) Arts. 120-137 (payment institutions)",
+      "limit_basis": [
+        "CN-GUIDE2020",
+        "WISE-CNY"
+      ],
+      "limit": "Payment institutions: USD 50,000 equivalent single-transaction cap (Art. 132). Wallet-side limits vary; Wise publishes CNY 50,000 per Alipay transfer.",
+      "cost_basis": [],
+      "verifiability": "partly",
+      "pros": [
+        "Fast and app-based; familiar.",
+        "Uses the same regulated payment-institution framework as larger providers."
+      ],
+      "cons": [
+        "Tight per-transaction caps make a large balance a long series of small moves.",
+        "Fees and the FX rate are set in the app and are not published as a schedule you can audit.",
+        "Eligibility is usually tied to documented purpose."
+      ],
+      "steps": [
+        "Confirm the wallet's eligibility and per-transfer and annual limits.",
+        "Complete identity and purpose verification.",
+        "Send and keep the electronic receipts."
+      ],
+      "estimate": {
+        "mode": "quote_only",
+        "reason": "App-quoted; no published schedule."
+      }
+    },
+    {
+      "id": "R21",
+      "name": "Licensed remittance provider with a China tax record (e.g. Wise from-CNY)",
+      "zh": "持牌跨境汇款机构（凭完税记录）",
+      "category": "D",
+      "lawful": "conditional",
+      "law_basis": [
+        "CN-GUIDE2020",
+        "WISE-CNY"
+      ],
+      "law_text": "经常项目指引(2020) Art. 120-137; provider terms",
+      "limit_basis": [
+        "WISE-CNY"
+      ],
+      "limit": "Provider-published: CNY 300,000 per transfer from the China bank app; CNY 50,000 via Alipay; an overall limit equal to after-tax salary evidenced by tax records.",
+      "cost_basis": [],
+      "verifiability": "verified",
+      "pros": [
+        "Transparent, licensed, and reaches a US account you own.",
+        "Fees are shown before you send; no bank branch visit."
+      ],
+      "cons": [
+        "Eligibility is narrow: you must have worked in China and hold a China tax record showing tax paid in the last three years.",
+        "The overall limit is your after-tax salary - savings outside that formula do not qualify.",
+        "The recipient must be an account you own."
+      ],
+      "steps": [
+        "Collect China tax records covering the last three years.",
+        "Complete provider verification (1-2 working days).",
+        "Link your Chinese bank account or Alipay as the funding source.",
+        "Send to your own overseas account and download the receipt."
+      ],
+      "estimate": {
+        "mode": "quote_only",
+        "reason": "Provider prices per quote; no published schedule."
+      }
+    },
+    {
+      "id": "R22",
+      "name": "International postal money order or courier of a monetary instrument",
+      "zh": "国际邮政汇款/邮寄支付凭证",
+      "category": "D",
+      "lawful": "conditional",
+      "law_basis": [
+        "CN-FXREG",
+        "US-1010340"
+      ],
+      "law_text": "外汇管理条例 Art. 42; 31 CFR 1010.340",
+      "limit_basis": [],
+      "limit": "No reliable published FX limit for personal outbound postal remittance of CNY was located. What is published is the reporting duty: mailing or shipping monetary instruments above USD 10,000 into or out of the US requires a FinCEN 105 report.",
+      "cost_basis": [],
+      "limit_known": false,
+      "verifiability": "unverified",
+      "pros": [
+        "Historically used for small family remittances."
+      ],
+      "cons": [
+        "No official CNY-outbound limit was found, which means the risk cannot be bounded - the safest reading is that this is not a lawful large-value channel.",
+        "Mailing instruments above USD 10,000 without a report is a US offence.",
+        "Loss and fraud exposure with no recourse."
+      ],
+      "steps": [
+        "Do not use for material amounts without written guidance from the bank and the FX bureau."
+      ],
+      "estimate": {
+        "mode": "quote_only",
+        "reason": "No published limit or fee; deliberately left blank."
+      }
+    },
+    {
+      "id": "R23",
+      "name": "Leave the CNY on deposit and spend it on future trips to China",
+      "zh": "保留人民币存款、境内消费",
+      "category": "E",
+      "lawful": "lawful",
+      "law_basis": [
+        "CN-PBOC3"
+      ],
+      "law_text": "个人外汇管理办法 Arts. 27-36 (accounts); no conversion occurs",
+      "limit_basis": [
+        "CN-PBOC3"
+      ],
+      "limit": "Not applicable - nothing crosses the border.",
+      "cost_basis": [],
+      "verifiability": "verified",
+      "pros": [
+        "Zero conversion cost, zero remittance fee, no FX evidence burden.",
+        "Keeps optionality if you return to China."
+      ],
+      "cons": [
+        "The money stays exposed to CNY/USD movement and to Chinese deposit rates.",
+        "Still reportable to the US every year while it is a foreign account.",
+        "Consuming it requires being in China."
+      ],
+      "steps": [
+        "Keep the account compliant and file FBAR/8938 as applicable."
+      ],
+      "estimate": {
+        "mode": "not_applicable"
+      }
+    },
+    {
+      "id": "R24",
+      "name": "Convert inside China into USD and hold the USD in a mainland bank",
+      "zh": "境内购汇后持有外币存款",
+      "category": "E",
+      "lawful": "lawful",
+      "law_basis": [
+        "CN-PBOC3",
+        "CN-GUIDE2020"
+      ],
+      "law_text": "个人外汇管理办法 Art. 32; 经常项目指引(2020) Art. 64",
+      "limit_basis": [
+        "CN-GUIDE2020"
+      ],
+      "limit": "Same as R15: remittance from an FX account up to USD 50,000 a day on ID alone.",
+      "cost_basis": [
+        "BOC-TARIFF",
+        "BOC-BOARD",
+        "CFETS-FIX"
+      ],
+      "verifiability": "partly",
+      "pros": [
+        "Removes CNY exposure at a known spread.",
+        "Splits the conversion decision from the remittance decision."
+      ],
+      "cons": [
+        "Two spreads instead of one if it is later converted back.",
+        "Chinese USD deposit rates are typically lower than US rates, and the deposit remains a reportable foreign account."
+      ],
+      "steps": [
+        "Purchase FX into the foreign-currency savings account.",
+        "Hold or remit later under Art. 64."
+      ],
+      "estimate": {
+        "mode": "boc_tt"
+      }
+    },
+    {
+      "id": "R25",
+      "name": "Buy a globally priced asset in China (e.g. gold) and sell it abroad",
+      "zh": "境内购入黄金等全球定价资产、境外出售",
+      "category": "E",
+      "lawful": "conditional",
+      "law_basis": [
+        "CN-PBOC3",
+        "CN-FXREG"
+      ],
+      "law_text": "个人外汇管理办法 Art. 30; 外汇管理条例 Arts. 8, 39",
+      "limit_basis": [],
+      "limit": "Not verified. Cross-border movement of gold and of the sale proceeds engages customs, FX and capital-account rules that were not read in this session.",
+      "cost_basis": [],
+      "limit_known": false,
+      "verifiability": "unverified",
+      "pros": [
+        "Gold is globally priced, so in theory the conversion is embedded in the asset."
+      ],
+      "cons": [
+        "Taking the metal out of China is itself a customs and FX event with its own limits.",
+        "The purchase premium, the assay and resale discount, and the insurance usually exceed the FX spread you were avoiding.",
+        "Carrying value out inside an asset without declaration is evasion if the purpose is to defeat FX controls."
+      ],
+      "steps": [
+        "Do not treat this as a conversion channel without written customs and FX advice specific to the asset."
+      ],
+      "estimate": {
+        "mode": "quote_only",
+        "reason": "No published end-to-end cost; left blank."
+      }
+    },
+    {
+      "id": "R26",
+      "name": "Use the balance for genuine obligations that are payable in CNY",
+      "zh": "用于境内应付的人民币义务",
+      "category": "E",
+      "lawful": "lawful",
+      "law_basis": [
+        "CN-FXREG"
+      ],
+      "law_text": "外汇管理条例 Art. 5, Art. 12 (genuine current-account payments)",
+      "limit_basis": [],
+      "limit": "Bounded only by the genuine obligation itself.",
+      "cost_basis": [],
+      "verifiability": "partly",
+      "pros": [
+        "No conversion at all: paying a Chinese supplier, tuition, medical bills or taxes in CNY is a current-account payment, not a capital transfer.",
+        "Often the cheapest way to get value out of a trapped balance - you get the goods or services."
+      ],
+      "cons": [
+        "You receive value, not dollars; it does not fund a US account.",
+        "Paying a non-existent obligation to move money to a related party offshore is evasion."
+      ],
+      "steps": [
+        "Identify genuine CNY obligations and pay them from the account.",
+        "Keep the invoices and contracts."
+      ],
+      "estimate": {
+        "mode": "not_applicable"
+      }
+    },
+    {
+      "id": "R27",
+      "name": "Underground bank / private FX dealer (地下钱庄, 对敲)",
+      "zh": "地下钱庄、变相买卖外汇",
+      "category": "F",
+      "lawful": "prohibited",
+      "law_basis": [
+        "CN-FXREG",
+        "CN-PBOC3"
+      ],
+      "law_text": "外汇管理条例 Art. 45; 个人外汇管理办法 Art. 7",
+      "limit_basis": [
+        "CN-FXREG"
+      ],
+      "limit": "Not applicable - the activity is unlawful at any size.",
+      "cost_basis": [],
+      "risk_basis": [
+        "CN-FXREG"
+      ],
+      "verifiability": "verified",
+      "pros": [],
+      "cons": [
+        "Warning, confiscation of the illegal gain, and a fine of up to 30% of the amount, or 30%-100% if serious (Art. 45); criminal liability follows where it constitutes a crime.",
+        "The counterparty usually holds the funds, and there is no legal recourse when they disappear.",
+        "You become a participant in the counterparty's money-laundering chain, which is a separate exposure."
+      ],
+      "steps": [],
+      "estimate": {
+        "mode": "prohibited"
+      }
+    },
+    {
+      "id": "R28",
+      "name": "Splitting the quota across family, friends or staff (分拆)",
+      "zh": "分拆结售汇",
+      "category": "F",
+      "lawful": "prohibited",
+      "law_basis": [
+        "CN-PBOC3",
+        "CN-GUIDE2020"
+      ],
+      "law_text": "个人外汇管理办法 Art. 7; 经常项目指引(2020) Art. 62",
+      "limit_basis": [
+        "CN-GUIDE2020"
+      ],
+      "limit": "Zero - the conduct is prohibited in any amount.",
+      "cost_basis": [],
+      "risk_basis": [
+        "CN-PBOC3",
+        "CN-GUIDE2020",
+        "CN-FXREG"
+      ],
+      "verifiability": "verified",
+      "pros": [],
+      "cons": [
+        "Lending your quota to someone else brings a risk warning the first time and a place on the 'watch list' the second; borrowing someone else's puts you on it directly (Art. 62).",
+        "Watch-list status lasts the current year plus two more, and every subsequent transaction then needs full documentary review.",
+        "Penalties under the FX Regulations follow, and the receiving bank may close the relationship."
+      ],
+      "steps": [],
+      "estimate": {
+        "mode": "prohibited"
+      }
+    },
+    {
+      "id": "R29",
+      "name": "Crypto or stablecoin conversion (USDT intermediation)",
+      "zh": "虚拟货币/稳定币兑换",
+      "category": "F",
+      "lawful": "prohibited",
+      "law_basis": [
+        "CN-VA2026",
+        "CN-FXREG"
+      ],
+      "law_text": "银发〔2026〕42号; 外汇管理条例 Art. 45",
+      "limit_basis": [
+        "CN-VA2026"
+      ],
+      "limit": "Prohibited as business activity in mainland China at any size.",
+      "cost_basis": [],
+      "risk_basis": [
+        "CN-VA2026",
+        "CN-FXREG"
+      ],
+      "verifiability": "verified",
+      "pros": [],
+      "cons": [
+        "Virtual-currency business activity is characterised as illegal financial activity and strictly prohibited; the 2021 notice it replaced has been repealed, so older guides are out of date.",
+        "Financial and payment institutions may not provide account, transfer or settlement services for it, so the CNY leg usually has to go through an unlawful intermediary anyway.",
+        "Where a court treats the token as the medium for converting CNY into FX, it is analysed as disguised FX dealing under Art. 45."
+      ],
+      "steps": [],
+      "estimate": {
+        "mode": "prohibited"
+      }
+    },
+    {
+      "id": "R30",
+      "name": "False or inflated trade and service documents",
+      "zh": "虚构贸易背景、虚假单证",
+      "category": "F",
+      "lawful": "prohibited",
+      "law_basis": [
+        "CN-FXREG",
+        "CN-GUIDE2020",
+        "CN-PBOC3"
+      ],
+      "law_text": "外汇管理条例 Arts. 12, 39, 40; 经常项目指引(2020) Art. 47",
+      "limit_basis": [
+        "CN-FXREG"
+      ],
+      "limit": "Zero - prohibited.",
+      "cost_basis": [],
+      "risk_basis": [
+        "CN-FXREG"
+      ],
+      "verifiability": "verified",
+      "pros": [],
+      "cons": [
+        "Using false or invalid documents to buy FX is 非法套汇: refund of the funds and a fine of up to 30%, or 30%-100% if serious (Art. 40).",
+        "Moving funds abroad by deception is 逃汇 under Art. 39 with the same ladder.",
+        "The bank is separately penalised (Art. 47), which is why it audits the underlying documents."
+      ],
+      "steps": [],
+      "estimate": {
+        "mode": "prohibited"
+      }
+    }
+  ],
+  "penalty_lines": [
+    {
+      "id": "P01",
+      "component": "Bank FX spread (bid/ask)",
+      "kind": "unavoidable",
+      "value": "computed",
+      "basis": "BOC board 666.22 / 669.03; half of the 0.4218% bid/ask spread",
+      "sources": [
+        "BOC-BOARD"
+      ],
+      "note": "Paid on every conversion, at every size, and not deductible anywhere. Measured against the bank's own mid, not against the PBOC parity, because the two are published at different times."
+    },
+    {
+      "id": "P02",
+      "component": "Bank commission on cross-border TT",
+      "kind": "unavoidable",
+      "value": "computed",
+      "basis": "BOC tariff: 1 per mille, min CNY 50, max CNY 260",
+      "sources": [
+        "BOC-TARIFF"
+      ],
+      "note": "Caps out at CNY 260, so it shrinks to rounding at large sizes."
+    },
+    {
+      "id": "P03",
+      "component": "Cable / postage charge",
+      "kind": "unavoidable",
+      "value": "computed",
+      "basis": "BOC tariff: CNY 150 non-HK/Macau/Taiwan, CNY 80 for HK/Macau/Taiwan",
+      "sources": [
+        "BOC-TARIFF"
+      ],
+      "note": "Flat per transfer, so splitting a transfer into pieces multiplies it."
+    },
+    {
+      "id": "P04",
+      "component": "Correspondent and receiving-bank charges",
+      "kind": "unavoidable",
+      "value": null,
+      "basis": "Not published by any bank read in this session",
+      "sources": [
+        "BOC-TARIFF"
+      ],
+      "note": "Typically deducted by the receiving bank; the amount depends on your US bank. Left blank."
+    },
+    {
+      "id": "P05",
+      "component": "Chinese tax on the underlying income",
+      "kind": "tax-on-income",
+      "value": "20% on the enumerated categories",
+      "basis": "IIT Law Art. 3(3); dividends from 2026-09-01 under 2026 No. 27",
+      "sources": [
+        "CN-IIT",
+        "CN-DIV2026"
+      ],
+      "note": "Not a conversion tax. It is due whether or not you move the money, and it is the largest legitimate cost for income-type balances."
+    },
+    {
+      "id": "P06",
+      "component": "Chinese tax on asset-transfer gain",
+      "kind": "tax-on-income",
+      "value": "20% of gain after original value and reasonable expenses",
+      "basis": "IIT Law Art. 2(8), Art. 6(5)",
+      "sources": [
+        "CN-IIT"
+      ],
+      "note": "Property and equity sales. Computed on gain; the basis is unknown here, so no amount is shown."
+    },
+    {
+      "id": "P07",
+      "component": "US income tax on the same income",
+      "kind": "tax-on-income",
+      "value": null,
+      "basis": "Worldwide taxation; foreign tax credit against it",
+      "sources": [
+        "US-IRS-ABROAD"
+      ],
+      "note": "Depends on your bracket and on the credit for Chinese tax already paid. Not calculable from the facts supplied."
+    },
+    {
+      "id": "P08",
+      "component": "US §988 exchange gain on the currency itself",
+      "kind": "tax-on-income",
+      "value": "excluded for personal transactions up to USD 200 of gain",
+      "basis": "26 U.S.C. §988(e)(2)-(3)",
+      "sources": [
+        "US-988"
+      ],
+      "note": "For an individual's personal transaction the gain is disregarded; above USD 200 the exclusion withdraws. Basis and holding period are unknown."
+    },
+    {
+      "id": "P09",
+      "component": "SAFE fine for evasion or illegal FX purchase",
+      "kind": "penalty-risk",
+      "value": "up to 30%, or 30%-100% if serious",
+      "basis": "外汇管理条例 Arts. 39, 40",
+      "sources": [
+        "CN-FXREG"
+      ],
+      "note": "The real 'conversion penalty' people describe. It is a punishment, not a fee: zero if the route is lawful."
+    },
+    {
+      "id": "P10",
+      "component": "SAFE fine for cash or private dealing",
+      "kind": "penalty-risk",
+      "value": "up to 20% (cash), up to 30% (private dealing)",
+      "basis": "Arts. 42, 45",
+      "sources": [
+        "CN-FXREG"
+      ],
+      "note": "Applies to unapproved cash movement and to dealer transactions."
+    },
+    {
+      "id": "P11",
+      "component": "Watch-list consequence of splitting",
+      "kind": "penalty-risk",
+      "value": "current year plus two more years of enhanced review",
+      "basis": "经常项目指引(2020) Art. 62",
+      "sources": [
+        "CN-GUIDE2020"
+      ],
+      "note": "A non-monetary cost with a long tail: every transaction afterwards is document-heavy."
+    },
+    {
+      "id": "P12",
+      "component": "FBAR civil penalty",
+      "kind": "penalty-risk",
+      "value": "USD 16,536 non-willful / USD 165,353 or 50% willful",
+      "basis": "31 U.S.C. §5321(a)(5); 31 CFR 1010.821",
+      "sources": [
+        "US-5321",
+        "US-1010821"
+      ],
+      "note": "Per violation, inflation-adjusted. This is the only component that can exceed the balance."
+    },
+    {
+      "id": "P13",
+      "component": "Form 8938 penalty",
+      "kind": "penalty-risk",
+      "value": "USD 10,000 plus up to USD 50,000 more",
+      "basis": "26 U.S.C. §6038D(d)",
+      "sources": [
+        "US-6038D"
+      ],
+      "note": "Capped, and unlike the FBAR it is tied to the filed return."
+    },
+    {
+      "id": "P14",
+      "component": "Form 3520 late information return",
+      "kind": "penalty-risk",
+      "value": null,
+      "basis": "Instructions for Form 3520 penalties section",
+      "sources": [
+        "US-3520"
+      ],
+      "note": "The 25%/35% figures circulating are not stated on the page read here, so no number is shown."
+    },
+    {
+      "id": "P15",
+      "component": "Chinese tax already withheld on the income",
+      "kind": "baseline",
+      "value": "not a conversion cost",
+      "basis": "Sunk at the moment the income arose",
+      "sources": [
+        "CN-IIT"
+      ],
+      "note": "Listed so it is not double-counted as a cost of moving the money."
+    },
+    {
+      "id": "P16",
+      "component": "Time value of the money while it is stuck",
+      "kind": "baseline",
+      "value": null,
+      "basis": "Requires your alternative USD return",
+      "sources": [
+        "US-IRS-FX"
+      ],
+      "note": "Honest answer is a range from zero to substantial; not computable without your opportunity cost."
+    },
+    {
+      "id": "P17",
+      "component": "Round-trip spread if converted twice",
+      "kind": "avoidable",
+      "value": "double P01",
+      "basis": "Arithmetic on the same board",
+      "sources": [
+        "BOC-BOARD"
+      ],
+      "note": "Avoided by converting once, in the right direction, at the right time."
+    },
+    {
+      "id": "P18",
+      "component": "Extra cable fees from splitting into many transfers",
+      "kind": "avoidable",
+      "value": "CNY 150 x number of extra transfers",
+      "basis": "BOC tariff",
+      "sources": [
+        "BOC-TARIFF"
+      ],
+      "note": "The one fee that is entirely within your control."
+    },
+    {
+      "id": "P19",
+      "component": "Notarisation, translation and agent fees",
+      "kind": "avoidable",
+      "value": null,
+      "basis": "Notarisation duty for property-rights documents was cancelled in 2014",
+      "sources": [
+        "CN-CAP2014"
+      ],
+      "note": "Still charged in practice by some agents. No official schedule exists, so blank."
+    },
+    {
+      "id": "P20",
+      "component": "Travel and time to attend in person",
+      "kind": "avoidable",
+      "value": null,
+      "basis": "No published figure",
+      "sources": [
+        "CN-SHFAQ"
+      ],
+      "note": "Real but personal; left blank rather than estimated."
+    },
+    {
+      "id": "P21",
+      "component": "Provider fees (Wise, Alipay, banks other than BOC)",
+      "kind": "avoidable",
+      "value": null,
+      "basis": "Quote-based; no published schedule on the pages read",
+      "sources": [
+        "WISE-CNY"
+      ],
+      "note": "The Wise page says to check live pricing, so there is nothing to transcribe."
+    },
+    {
+      "id": "P22",
+      "component": "Penalty for a false declaration on entry to the US",
+      "kind": "penalty-risk",
+      "value": null,
+      "basis": "31 CFR 1010.340 (reporting duty); penalty amount not read in this session",
+      "sources": [
+        "US-1010340"
+      ],
+      "note": "The duty is verified; the penalty figure is not, so it is blank."
+    },
+    {
+      "id": "P23",
+      "component": "Cost of doing nothing",
+      "kind": "baseline",
+      "value": "zero fees, full currency and country exposure",
+      "basis": "Arithmetic",
+      "sources": [
+        "CN-PBOC3"
+      ],
+      "note": "The comparison baseline. Not free, but no cash leaves."
+    },
+    {
+      "id": "P24",
+      "component": "Bank spread on a CNY-USD-CNY round trip",
+      "kind": "avoidable",
+      "value": "computed",
+      "basis": "Same board, both directions",
+      "sources": [
+        "BOC-BOARD"
+      ],
+      "note": "Shown so the 0.42%-style figures quoted elsewhere can be reconciled: they are round-trip numbers."
+    }
+  ],
+  "flags": [
+    {
+      "id": "FJ01",
+      "severity": "high",
+      "title": "Account-specific facts are unknown",
+      "detail": "Bank, account holder classification (境内个人 vs 境外个人), balance, source of funds, residency status, filing history and receiving bank are all unknown. Every all-in cost and every tax figure that depends on them is blank on this site, including whether FBAR is owed at all.",
+      "sources": [
+        "CN-PBOC3",
+        "US-IRS-ABROAD",
+        "US-FBAR"
+      ]
+    },
+    {
+      "id": "FJ02",
+      "severity": "high",
+      "title": "Rates move; the board and parity are snapshots",
+      "detail": "The BOC board is timestamped 2026/11/10 07:32:39 and the parity 2026-11-09 09:15. The board itself states the counter/online rate governs, so every computed FX figure is illustrative of that timestamp, not a quote.",
+      "sources": [
+        "BOC-BOARD",
+        "CFETS-FIX"
+      ]
+    },
+    {
+      "id": "FJ03",
+      "severity": "high",
+      "title": "Form 3520 penalty percentages left blank",
+      "detail": "Widely quoted 25%/35% late-filing percentages were not found in the instructions chunk read here. The row stays blank rather than repeating an unverified figure.",
+      "sources": [
+        "US-3520",
+        "US-8938"
+      ]
+    },
+    {
+      "id": "FJ04",
+      "severity": "medium",
+      "title": "Two SAFE property-transfer texts conflict on staging",
+      "detail": "The 2004 Measures still contain staged release. 汇发〔2014〕2号 Section VI cancelled it, and the 2026 Tianjin Q&A cites the 2004 text without mentioning the amendment. Read together, single or instalment release after approval is correct; a branch applying the old text would not be.",
+      "sources": [
+        "CN-PROPERTY2004",
+        "CN-CAP2014",
+        "CN-PROPERTYQA"
+      ]
+    },
+    {
+      "id": "FJ05",
+      "severity": "medium",
+      "title": "Virtual-currency notice read from a government reprint",
+      "detail": "银发〔2026〕42号 was read on a Shenzhen district government portal because the PBOC page did not load from this sandbox. The content is consistent across the reprints located, but the canonical PBOC URL is the one to cite in a filing.",
+      "sources": [
+        "CN-VA2026"
+      ]
+    },
+    {
+      "id": "FJ06",
+      "severity": "medium",
+      "title": "US Code read via Cornell, not uscode.house.gov",
+      "detail": "uscode.house.gov granule links returned 404 and govinfo was unreachable from this sandbox, so §988, §5321 and §6038D were read on the Legal Information Institute's republication. The IRS and eCFR pages used for FBAR and the inflation table are primary.",
+      "sources": [
+        "US-988",
+        "US-5321",
+        "US-6038D"
+      ]
+    },
+    {
+      "id": "FJ07",
+      "severity": "medium",
+      "title": "Facilitation quota may not be available to a foreign passport holder",
+      "detail": "Art. 54 frames the USD 50,000 quota around 个人结汇 and 境内个人购汇. Whether a US citizen holding a Chinese account is booked as 境内个人 or 境外个人 is an account-level fact. R02 is marked conditional for this reason and should not be planned around.",
+      "sources": [
+        "CN-GUIDE2020",
+        "CN-PBOC3"
+      ]
+    },
+    {
+      "id": "FJ08",
+      "severity": "medium",
+      "title": "Only one bank's tariff could be read",
+      "detail": "ICBC's fee schedule page did not expose a readable tariff table and the HSBC PDF returned 404. All fee arithmetic therefore uses BOC alone; other banks may differ in either direction, and BOC's own note 1 allows agreed or local pricing.",
+      "sources": [
+        "BOC-TARIFF"
+      ]
+    },
+    {
+      "id": "FJ09",
+      "severity": "low",
+      "title": "Postal remittance limit unverified",
+      "detail": "No official CNY-outbound limit or fee for international postal money orders could be confirmed. The row carries no limit and no price, and is not recommended for material amounts.",
+      "sources": [
+        "US-1010340"
+      ]
+    },
+    {
+      "id": "FJ10",
+      "severity": "low",
+      "title": "Receiving-bank fees are blank everywhere",
+      "detail": "No US bank's incoming wire fee was read in this session, so no receiver cost is included in any row. Adding one would change every all-in total, which is why the totals stay blank rather than half-complete.",
+      "sources": [
+        "BOC-TARIFF"
+      ]
+    },
+    {
+      "id": "FJ11",
+      "severity": "low",
+      "title": "Gold and offshore-asset routes are unverified",
+      "detail": "R25 and R11 rest on rules read only in outline (customs, capital registration, foreign buyer restrictions). They are listed for completeness with no estimate and no limit.",
+      "sources": [
+        "CN-FXREG",
+        "CN-PBOC3"
+      ]
+    },
+    {
+      "id": "FJ12",
+      "severity": "medium",
+      "title": "Chinese tax on the underlying income is not modelled per route",
+      "detail": "Only the flat 20% categories can be computed from a published rate; whether that tax has already been withheld, and on what base, is unknown. R06 and R12 show a 20% figure for the withholding case only, and no figure is claimed for capital gains because the basis is unknown.",
+      "sources": [
+        "CN-IIT",
+        "CN-DIV2026"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "J1",
+      "title": "Converting CNY to USD is not a taxable event in either jurisdiction",
+      "detail": "China taxes nine enumerated categories of income; currency exchange is not one of them (IIT Law Art. 2). The US taxes your income, not the act of changing currency, and for an individual's personal transaction §988(e)(2) disregards exchange-rate gain unless it exceeds USD 200. So the 'tax on converting' in the brief does not exist as a separate charge.",
+      "sources": [
+        "CN-IIT",
+        "US-988"
+      ]
+    },
+    {
+      "id": "J2",
+      "title": "What people experience as a conversion penalty is a bank spread, and it is small",
+      "detail": "On the BOC board read for this edition, one USD costs CNY 6.6903 to buy and fetches CNY 6.6622 to sell. The gap is 0.42% of the bid, so a round trip costs that much and a single conversion costs about 0.21% - half the spread, measured against the bank's own mid. That is the entire 'penalty' at the currency layer. Note that comparing the ask to the PBOC central parity gives a negative number on this snapshot, because the two are from different days; see the explanation on the penalty page.",
+      "sources": [
+        "BOC-BOARD",
+        "CFETS-FIX"
+      ]
+    },
+    {
+      "id": "J3",
+      "title": "The real barrier is convertibility, not tax",
+      "detail": "Current-account items are convertible in principle; capital-account items follow a 'convertibility process' that means approval (Measures Art. 3). A balance with no documented current-account source has no default lawful route, which is why it feels stuck.",
+      "sources": [
+        "CN-PBOC3"
+      ]
+    },
+    {
+      "id": "J4",
+      "title": "A US passport changes which quota applies - and usually helps",
+      "detail": "The USD 50,000 annual facilitation quota is framed around 境内个人 (Chinese citizens with a resident ID). For 境外个人 buying against documented lawful current-account income, Art. 59 of the 2020 Guide states no annual cap. The binding constraint becomes evidence, not size.",
+      "sources": [
+        "CN-GUIDE2020"
+      ]
+    },
+    {
+      "id": "J5",
+      "title": "The largest number on this site is a US penalty, not a Chinese fee",
+      "detail": "A willful FBAR violation carries a civil maximum of the greater of USD 165,353 or 50% of the account balance at the time of the violation. At USD 400,000 that is USD 200,000 - roughly 46 times the entire bank cost of moving the money.",
+      "sources": [
+        "US-5321",
+        "US-1010821"
+      ]
+    },
+    {
+      "id": "J6",
+      "title": "Chinese tax on the money can dwarf every fee, and one exemption just ended",
+      "detail": "Interest, dividends, asset transfers and incidental income are taxed at a flat 20% (IIT Law Art. 3(3)). The long-standing exemption for foreign individuals' FIE dividends was repealed with effect from 2026-09-01, so any guide still calling those dividends tax-free is out of date.",
+      "sources": [
+        "CN-IIT",
+        "CN-DIV2026"
+      ]
+    },
+    {
+      "id": "J7",
+      "title": "Six of the thirty catalogued routes are prohibited, and one has a fresh legal basis",
+      "detail": "Dealer intermediation, quota splitting, crypto, and false documents are joined by two more structural traps. The crypto basis changed on 2026-02-06: 银发〔2026〕42号 replaced the 2021 notice entirely.",
+      "sources": [
+        "CN-FXREG",
+        "CN-VA2026",
+        "CN-GUIDE2020"
+      ]
+    },
+    {
+      "id": "J8",
+      "title": "Staging rules you may find online for property transfers were cancelled in 2014",
+      "detail": "The 2004 Measures required emigrant transfers in three stages over two years. 汇发〔2014〕2号 Section VI cancelled the staging, the national-level filing above RMB 500,000, and the notarisation duty. The 2026 SAFE Q&A still cites the 2004 Measures without restating the amendment, which is how the stale version keeps circulating.",
+      "sources": [
+        "CN-PROPERTY2004",
+        "CN-CAP2014",
+        "CN-PROPERTYQA"
+      ]
+    },
+    {
+      "id": "J9",
+      "title": "No method in this catalogue can be given an exact all-in price today",
+      "detail": "Two components are published and computed here: the FX spread and the BOC sender tariff. Receiving-bank fees, intermediary charges, Chinese tax on the underlying income, and notarisation or travel costs are all unknown for this account. Those cells are blank on purpose and counted on the verification page.",
+      "sources": [
+        "BOC-TARIFF",
+        "BOC-BOARD"
+      ]
+    },
+    {
+      "id": "J10",
+      "title": "The cheapest lawful route is the one that matches how the money was earned",
+      "detail": "If the balance is documented salary or service income, R01 is lawful, uncapped and priced. If it is pre-emigration savings, R08 needs an approval but no quota. If it is inherited, R09 does. The choice is decided by evidence you already have, not by provider shopping.",
+      "sources": [
+        "CN-PBOC3",
+        "CN-GUIDE2020",
+        "CN-PROPERTY2004"
+      ]
+    }
+  ]
+}

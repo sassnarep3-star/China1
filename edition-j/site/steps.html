@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Official-source research on getting CNY out of mainland China as a US citizen: 30 routes, pros and cons, statutory penalty decomposition, and a computed cost ladder from USD 10,000 to USD 400,000 in 10,000 steps.">
+<title>Step by step · China Money · Edition J</title>
+<style>
+:root{--ink:#12222b;--dim:#5a6b75;--line:#d9e2e8;--bg:#f6f8fa;--card:#fff;--accent:#0b6b5b;
+--accent-soft:#e6f2ee;--warn:#8a5b00;--warn-soft:#fff6e2;--bad:#8f2020;--bad-soft:#fdecec;
+--ok:#1c5f3a;--ok-soft:#e7f4ec;--mono:ui-monospace,SFMono-Regular,Menlo,monospace}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:2px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #b8860b;outline-offset:2px}
+header.top{background:#0d2b33;color:#fff;padding:10px 0}
+header.top .wrap{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+header.top a{color:#dff3ee}
+header.top .brand{font-weight:700;color:#fff;text-decoration:none;letter-spacing:.2px}
+header.top nav{display:flex;gap:6px;flex-wrap:wrap;font-size:.82rem}
+header.top nav a{padding:5px 9px;border-radius:99px;text-decoration:none;border:1px solid transparent}
+header.top nav a:hover{background:rgba(255,255,255,.12)}
+header.top nav a[aria-current]{background:#fff;color:#0d2b33;font-weight:650}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+main{padding:22px 0 64px}
+h1{font-size:clamp(1.6rem,4.6vw,2.6rem);line-height:1.15;margin:.2em 0 .35em;letter-spacing:-.4px}
+h2{font-size:clamp(1.2rem,2.8vw,1.55rem);margin:2.1em 0 .5em;letter-spacing:-.2px}
+h3{font-size:1.05rem;margin:1.6em 0 .4em}
+p{margin:.6em 0}
+.lead{font-size:1.06rem;color:#26383f;max-width:74ch}
+.dim,.muted{color:var(--dim)}
+small{font-size:.82rem}
+.pill{display:inline-block;padding:4px 11px;border-radius:99px;background:var(--accent-soft);
+color:#0a4f43;font-size:.78rem;font-weight:650;letter-spacing:.2px}
+.pill.warn{background:var(--warn-soft);color:var(--warn)}
+.pill.bad{background:var(--bad-soft);color:var(--bad)}
+.notice{border-left:4px solid #b8860b;background:var(--warn-soft);padding:13px 16px;border-radius:0 10px 10px 0;
+margin:18px 0}
+.notice.soft{border-left-color:var(--accent);background:var(--accent-soft)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(232px,1fr));gap:12px;margin:16px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 16px;
+text-decoration:none;color:inherit;display:block;transition:box-shadow .15s,border-color .15s}
+a.card:hover{box-shadow:0 4px 16px rgba(13,43,51,.1);border-color:#9fbec5}
+.card strong{display:block;color:var(--accent);font-size:.98rem;margin-bottom:3px}
+.card p{margin:0;font-size:.88rem;color:var(--dim)}
+.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:12px;margin:18px 0}
+.kpi div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+.kpi .n{font-family:var(--mono);font-size:1.32rem;font-weight:700;color:#0d2b33;letter-spacing:-.5px}
+.kpi .l{font-size:.76rem;color:var(--dim);text-transform:uppercase;letter-spacing:.5px;margin-top:2px}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;background:var(--card);border:1px solid var(--line);
+border-radius:12px;margin:12px 0}
+table{border-collapse:collapse;width:100%;font-size:.87rem}
+caption{text-align:left;padding:12px 14px 6px;font-weight:650;color:#0d2b33;font-size:.9rem}
+th,td{padding:9px 11px;text-align:left;border-bottom:1px solid #e7edf1;vertical-align:top}
+th{background:#eef3f5;font-size:.76rem;text-transform:uppercase;letter-spacing:.4px;color:#33474f;
+position:sticky;top:0;white-space:nowrap}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover{background:#fafcfd}
+td.num,th.num{text-align:right;font-family:var(--mono);font-size:.82rem;white-space:nowrap}
+.src{display:inline-block;font-size:.68rem;font-family:var(--mono);padding:2px 5px;border-radius:5px;
+margin:1px 3px 1px 0;text-decoration:none;white-space:nowrap;border:1px solid}
+.t-law{background:#e8f0fb;color:#1c3f73;border-color:#c5d7f0}
+.t-gov{background:#eef4ee;color:#2c5b33;border-color:#cfe0d0}
+.t-provider{background:#f4eef8;color:#573b6e;border-color:#ded0e8}
+.blank{display:inline-block;min-width:46px;text-align:center;color:#8a6a00;background:#fff8e6;
+border:1px dashed #d9b44a;border-radius:5px;font-size:.74rem;padding:1px 5px;font-family:inherit}
+.tnote{font-size:.78rem;color:var(--dim);margin:-4px 0 14px}
+.badge{display:inline-block;font-size:.72rem;font-weight:700;padding:2px 7px;border-radius:5px;white-space:nowrap}
+.b-lawful{background:var(--ok-soft);color:var(--ok)}
+.b-conditional{background:var(--warn-soft);color:var(--warn)}
+.b-prohibited{background:var(--bad-soft);color:var(--bad)}
+.b-verified{background:#e6f2ee;color:#0a4f43}
+.b-partly{background:#fff6e2;color:#8a5b00}
+.b-unverified{background:#fdecec;color:#8f2020}
+details{background:var(--card);border:1px solid var(--line);border-radius:11px;margin:9px 0;overflow:hidden}
+details[open]{border-color:#b9cdd4}
+summary{padding:13px 15px;cursor:pointer;font-weight:650;display:flex;gap:9px;align-items:baseline;
+flex-wrap:wrap;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"+";font-family:var(--mono);color:var(--accent);font-weight:700;width:12px}
+details[open] summary::before{content:"–"}
+summary .rid{font-family:var(--mono);font-size:.78rem;color:var(--dim);background:#eef3f5;
+padding:2px 6px;border-radius:5px}
+.detail{padding:0 15px 15px;border-top:1px solid var(--line)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.two ul{margin:.3em 0;padding-left:1.15em}
+.two li{margin:.28em 0;font-size:.88rem}
+.two h4{margin:12px 0 4px;font-size:.8rem;text-transform:uppercase;letter-spacing:.5px;color:var(--dim)}
+ol.steps{padding-left:1.3em;margin:.5em 0}
+ol.steps li{margin:.4em 0;font-size:.89rem}
+footer{border-top:1px solid var(--line);margin-top:44px;padding:20px 0 40px;color:var(--dim);font-size:.82rem}
+footer a{color:var(--dim)}
+.flag-h{background:var(--bad-soft);border-left:4px solid var(--bad);padding:11px 14px;border-radius:0 9px 9px 0;
+margin:12px 0;font-size:.9rem}
+@media(max-width:760px){
+ .two{grid-template-columns:1fr}
+ .responsive thead{display:none}
+ .responsive,.responsive tbody,.responsive tr,.responsive td{display:block;width:100%}
+ .responsive tr{border:1px solid var(--line);border-radius:10px;margin:9px 0;background:var(--card);
+  padding:4px 0;overflow:hidden}
+ .responsive td{display:grid;grid-template-columns:38% 62%;gap:8px;padding:7px 12px;border:none;
+  border-bottom:1px solid #eef3f5;font-size:.86rem}
+ .responsive td:last-child{border-bottom:none}
+ .responsive td::before{content:attr(data-label);font-size:.7rem;text-transform:uppercase;
+  letter-spacing:.4px;color:var(--dim);font-weight:650;padding-top:2px}
+ .responsive td:empty{display:none}
+ th,td{padding:8px 9px}
+ .kpi .n{font-size:1.12rem}
+}
+@media(min-width:761px){.responsive td:first-child{font-weight:600}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="index.html">China Money · Edition J</a>
+<nav aria-label="Site"><a href="index.html">Overview</a><a href="routes.html">All 30 routes</a><a href="ladder.html">Cost ladder</a><a href="penalties.html">Penalty breakdown</a><a href="tax.html">Tax &amp; reporting</a><a href="steps.html" aria-current="page">Step by step</a><a href="methodology.html">Verification</a><a href="flagged.html">Flagged for review</a></nav>
+</div></header>
+<main><div class="wrap">
+
+<p class="pill">Step by step</p>
+<h1>Exactly how each route works, in order</h1>
+<p class="lead">Twenty-four lawful or conditional routes, each as a numbered procedure with the provision that
+authorises the step. The six prohibited routes are excluded by design - this page does not explain how to break
+the law.</p>
+<div class="notice soft">These are the procedural steps described in the cited instruments, not a substitute for
+your bank's current checklist. Banks apply their own documentary standards and may ask for more.</div>
+
+<h3 id="R01">R01 · Bank purchase and TT remittance against documented current-account income <span class="badge b-lawful">lawful</span></h3>
+<p class="dim">个人外汇管理办法 Art. 13; 经常项目指引(2020) Art. 59 · <a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a><a class="src t-law" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" rel="noopener noreferrer" title="SAFE, 汇发〔2020〕14号, republished in State Council Gazette 2020 No. 31 - 经常项目外汇业务指引（2020年版） (Current-Account FX Business Guide, 2020 edition)">CN-GUIDE2020 ↗</a></p>
+<ol class="steps"><li>Classify the balance by source and period; separate documented income from pre-emigration savings.</li><li>Ask the bank to confirm you are booked as 境外个人 (foreign individual) on the account, because the quota rules differ.</li><li>Assemble the documentary set: passport, China tax record or withholding slips, employment or service contract, and bank statements showing the credits.</li><li>Submit the purchase (购汇) application; above USD 50,000 the bank performs enhanced review under Art. 59.</li><li>Settle the FX at the counter/online rate, request the TT, and keep the 结售汇 slip and the remittance receipt.</li><li>Report the account and the transfer on your US return: FBAR if the aggregate exceeded USD 10,000 at any point, Form 8938 if the threshold applies.</li></ol>
+<h3 id="R02">R02 · Annual facilitation-quota purchase (USD 50,000 per person per year) <span class="badge b-conditional">conditional</span></h3>
+<p class="dim">经常项目指引(2020) Art. 54; 个人外汇管理办法 Art. 9 · <a class="src t-law" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" rel="noopener noreferrer" title="SAFE, 汇发〔2020〕14号, republished in State Council Gazette 2020 No. 31 - 经常项目外汇业务指引（2020年版） (Current-Account FX Business Guide, 2020 edition)">CN-GUIDE2020 ↗</a><a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a></p>
+<ol class="steps"><li>Confirm with the bank whether you are recorded as 境内个人 or 境外个人 - this determines whether the quota is even available to you.</li><li>If available, submit the purchase application with your valid ID inside the annual quota.</li><li>Record the quota usage; it is aggregated per person across all banks.</li><li>Remit and retain the slips.</li></ol>
+<h3 id="R03">R03 · Salary, bonus and severance paid from a mainland employer <span class="badge b-lawful">lawful</span></h3>
+<p class="dim">个人外汇管理办法 Art. 13; 经常项目指引(2020) Art. 59; IIT Law Art. 2(1) · <a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a><a class="src t-law" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" rel="noopener noreferrer" title="SAFE, 汇发〔2020〕14号, republished in State Council Gazette 2020 No. 31 - 经常项目外汇业务指引（2020年版） (Current-Account FX Business Guide, 2020 edition)">CN-GUIDE2020 ↗</a><a class="src t-law" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" rel="noopener noreferrer" title="State Taxation Administration (English translation of the statute) - Individual Income Tax Law of the PRC">CN-IIT ↗</a></p>
+<ol class="steps"><li>Obtain the employment contract, the payroll history and the annual 个人所得税 withholding record.</li><li>Have the employer or the tax bureau confirm the tax-paid position for the period.</li><li>Present the package to the bank with the purchase application.</li><li>Convert, remit, and reconcile the gross and net amounts in USD on your US return.</li></ol>
+<h3 id="R04">R04 · Service-trade income: consulting, freelance, royalties <span class="badge b-lawful">lawful</span></h3>
+<p class="dim">经常项目指引(2020) Art. 49 and Art. 59 · <a class="src t-law" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" rel="noopener noreferrer" title="SAFE, 汇发〔2020〕14号, republished in State Council Gazette 2020 No. 31 - 经常项目外汇业务指引（2020年版） (Current-Account FX Business Guide, 2020 edition)">CN-GUIDE2020 ↗</a><a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a></p>
+<ol class="steps"><li>Gather contracts, invoices, payment receipts and the tax treatment of the service income.</li><li>Confirm whether the payment needs the 服务贸易等项目对外支付税务备案表.</li><li>Apply at the bank for purchase and remittance.</li><li>Retain everything; report the income and the account in the US.</li></ol>
+<h3 id="R05">R05 · Rent collected from mainland property you own <span class="badge b-lawful">lawful</span></h3>
+<p class="dim">个人外汇管理办法 Art. 13; IIT Law Art. 2(7) and Art. 3(3) · <a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a><a class="src t-law" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" rel="noopener noreferrer" title="State Taxation Administration (English translation of the statute) - Individual Income Tax Law of the PRC">CN-IIT ↗</a></p>
+<ol class="steps"><li>Register or confirm the lease and the rental tax payments.</li><li>Present the lease, the tax record and the bank statements showing rent credits.</li><li>Apply for purchase and remittance of the net rent.</li></ol>
+<h3 id="R06">R06 · Deposit interest and dividends (bank deposits, fund distributions, FIE dividends) <span class="badge b-lawful">lawful</span></h3>
+<p class="dim">IIT Law Art. 2(6) and Art. 3(3); 财政部 税务总局公告2026年第27号 · <a class="src t-law" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" rel="noopener noreferrer" title="State Taxation Administration (English translation of the statute) - Individual Income Tax Law of the PRC">CN-IIT ↗</a><a class="src t-law" href="https://shanghai.chinatax.gov.cn/zzzb/zcwj/202609/t481448.html" rel="noopener noreferrer" title="Ministry of Finance &amp; STA, 财政部 税务总局公告2026年第27号 (Shanghai STA reprint) - 关于外籍个人股息红利个人所得税政策有关事项的公告">CN-DIV2026 ↗</a><a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a></p>
+<ol class="steps"><li>Identify each distribution and whether 20% was withheld at source.</li><li>Obtain the withholding certificates.</li><li>Apply at the bank for purchase and remittance of the net amount.</li><li>Claim the Chinese tax as a foreign tax credit on the US return where eligible.</li></ol>
+<h3 id="R07">R07 · Sale of mainland residential property by a non-resident owner <span class="badge b-lawful">lawful</span></h3>
+<p class="dim">个人外汇管理办法 Art. 22; IIT Law Art. 2(8) and Art. 6(5) · <a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a><a class="src t-gov" href="https://english.shanghai.gov.cn/en-FAQHome/20240204/b4426264395b4fa3adfde73778c94ad4.html" rel="noopener noreferrer" title="Shanghai Municipal Government English portal, sourced to Bank of China - Can I buy foreign exchange using the proceeds from selling my house?">CN-SHFAQ ↗</a><a class="src t-law" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" rel="noopener noreferrer" title="State Taxation Administration (English translation of the statute) - Individual Income Tax Law of the PRC">CN-IIT ↗</a></p>
+<ol class="steps"><li>Sign the sale contract and complete the ownership-transfer registration at the real-estate authority.</li><li>Settle property transfer taxes at the local tax bureau and obtain the tax-payment proof.</li><li>Obtain the 服务贸易等项目对外支付税务备案表 for amounts above USD 50,000.</li><li>Present passport, contract, registration certificate and tax voucher to the bank.</li><li>Purchase FX and remit to your own overseas account; keep the 结售汇 slip.</li></ol>
+<h3 id="R08">R08 · Emigrant property transfer with SAFE approval (移民财产转移) <span class="badge b-conditional">conditional</span></h3>
+<p class="dim">PBOC公告〔2004〕16号 Arts. 2, 8, 10; 汇发〔2014〕2号 Section VI · <a class="src t-law" href="http://m.safe.gov.cn/safe/2004/1116/5461.html" rel="noopener noreferrer" title="People&#x27;s Bank of China 公告〔2004〕第16号, published by SAFE - 个人财产对外转移售付汇管理暂行办法 (Interim Measures on Sale and Payment of FX for Outward Transfer of Personal Property)">CN-PROPERTY2004 ↗</a><a class="src t-law" href="https://www.safe.gov.cn/tianjin/2024/0903/2594.html" rel="noopener noreferrer" title="SAFE, 汇发〔2014〕2号, amended republication on the Tianjin branch site - 国家外汇管理局关于进一步改进和调整资本项目外汇管理政策的通知 (Section VI: personal property transfer)">CN-CAP2014 ↗</a><a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a></p>
+<ol class="steps"><li>Confirm eligibility: settled abroad and Chinese household registration cancelled.</li><li>File the written application and the two prescribed forms with the FX bureau at your former household-registration location.</li><li>Provide identity documents, the consular certificate of settlement abroad, and the property-rights and realisation documents.</li><li>Provide the Chinese tax certificate or tax-paid vouchers for the property being transferred.</li><li>Obtain the approval and 核准件, then apply at the designated bank to purchase FX and remit.</li><li>Keep the approval, the 核准件 and each remittance receipt for the US side.</li></ol>
+<h3 id="R09">R09 · Inheritance transfer with SAFE approval (继承财产转移) <span class="badge b-conditional">conditional</span></h3>
+<p class="dim">PBOC公告〔2004〕16号 Arts. 2, 9, 10; 汇发〔2014〕2号 Section VI-三 · <a class="src t-law" href="http://m.safe.gov.cn/safe/2004/1116/5461.html" rel="noopener noreferrer" title="People&#x27;s Bank of China 公告〔2004〕第16号, published by SAFE - 个人财产对外转移售付汇管理暂行办法 (Interim Measures on Sale and Payment of FX for Outward Transfer of Personal Property)">CN-PROPERTY2004 ↗</a><a class="src t-law" href="https://www.safe.gov.cn/tianjin/2024/0903/2594.html" rel="noopener noreferrer" title="SAFE, 汇发〔2014〕2号, amended republication on the Tianjin branch site - 国家外汇管理局关于进一步改进和调整资本项目外汇管理政策的通知 (Section VI: personal property transfer)">CN-CAP2014 ↗</a></p>
+<ol class="steps"><li>Obtain the inheritance documentation and the decedent&#x27;s property-rights documents.</li><li>Obtain the decedent&#x27;s Chinese tax certificate or tax-paid vouchers.</li><li>File the application at the FX bureau where the decedent&#x27;s household was registered.</li><li>Receive approval, then purchase and remit at the designated bank.</li><li>File Form 3520 on the US side if the bequest exceeded USD 100,000.</li></ol>
+<h3 id="R10">R10 · Company liquidation, capital reduction or equity-sale proceeds <span class="badge b-conditional">conditional</span></h3>
+<p class="dim">外汇管理条例 Art. 22 final paragraph; 个人外汇管理办法 Art. 31 · <a class="src t-law" href="https://www.gov.cn/gongbao/content/2008/content_1071846.htm" rel="noopener noreferrer" title="State Council of the PRC (国务院令第532号) - 中华人民共和国外汇管理条例 (Foreign Exchange Administration Regulations)">CN-FXREG ↗</a><a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a></p>
+<ol class="steps"><li>Complete the liquidation or capital reduction and obtain the tax clearance.</li><li>Update the capital-account registration with the FX bureau.</li><li>Present the liquidation documents, tax clearance and registration to the bank.</li><li>Purchase FX and remit the distributable amount.</li></ol>
+<h3 id="R11">R11 · Sell the mainland asset to a non-resident buyer who pays you offshore <span class="badge b-conditional">conditional</span></h3>
+<p class="dim">外汇管理条例 Art. 22; 个人外汇管理办法 Art. 26 · <a class="src t-law" href="https://www.gov.cn/gongbao/content/2008/content_1071846.htm" rel="noopener noreferrer" title="State Council of the PRC (国务院令第532号) - 中华人民共和国外汇管理条例 (Foreign Exchange Administration Regulations)">CN-FXREG ↗</a><a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a></p>
+<ol class="steps"><li>Confirm with a Chinese lawyer whether the specific asset class can be transferred to a non-resident with offshore settlement.</li><li>Complete any required capital-account or real-estate registration.</li><li>Settle offshore in USD and document the arm&#x27;s-length price.</li></ol>
+<h3 id="R12">R12 · FIE dividend distribution to a foreign individual shareholder <span class="badge b-lawful">lawful</span></h3>
+<p class="dim">财政部 税务总局公告2026年第27号; IIT Law Art. 2(6), Art. 3(3) · <a class="src t-law" href="https://shanghai.chinatax.gov.cn/zzzb/zcwj/202609/t481448.html" rel="noopener noreferrer" title="Ministry of Finance &amp; STA, 财政部 税务总局公告2026年第27号 (Shanghai STA reprint) - 关于外籍个人股息红利个人所得税政策有关事项的公告">CN-DIV2026 ↗</a><a class="src t-law" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" rel="noopener noreferrer" title="State Taxation Administration (English translation of the statute) - Individual Income Tax Law of the PRC">CN-IIT ↗</a></p>
+<ol class="steps"><li>Pass the profit-distribution resolution.</li><li>The company withholds 20% and files within 15 days of the month after payment.</li><li>Obtain the withholding certificate.</li><li>The company or you apply at the bank to remit the net dividend.</li></ol>
+<h3 id="R13">R13 · Foreign-investor special account (资本金/外投) after approval <span class="badge b-conditional">conditional</span></h3>
+<p class="dim">个人外汇管理办法 Art. 31 · <a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a></p>
+<ol class="steps"><li>Obtain the direct-investment approval from the competent authority.</li><li>Apply to the FX bureau to open the special account.</li><li>Apply for approval to convert the account balance.</li></ol>
+<h3 id="R14">R14 · Licensed outbound investment product bought while still resident (QDII and similar) <span class="badge b-conditional">conditional</span></h3>
+<p class="dim">个人外汇管理办法 Art. 17; 外汇管理条例 Art. 17 · <a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a><a class="src t-law" href="https://www.gov.cn/gongbao/content/2008/content_1071846.htm" rel="noopener noreferrer" title="State Council of the PRC (国务院令第532号) - 中华人民共和国外汇管理条例 (Foreign Exchange Administration Regulations)">CN-FXREG ↗</a></p>
+<ol class="steps"><li>Confirm your 境内/境外 classification at the time of purchase.</li><li>Buy through a licensed domestic institution within its approved quota.</li></ol>
+<h3 id="R15">R15 · Domestic FX deposit account inside China (convert now, remit later) <span class="badge b-lawful">lawful</span></h3>
+<p class="dim">个人外汇管理办法 Arts. 27, 32 · <a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a></p>
+<ol class="steps"><li>Open or confirm the 外币储蓄账户 at the bank.</li><li>Purchase FX into the account and keep the 结售汇 slip.</li><li>Remit later within the Art. 64 rules, or convert back if needed.</li></ol>
+<h3 id="R16">R16 · B-share or cross-border securities account for a foreign individual <span class="badge b-conditional">conditional</span></h3>
+<p class="dim">个人外汇管理办法 Arts. 17, 23 · <a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a></p>
+<ol class="steps"><li>Confirm eligibility for the specific account type.</li><li>Open through a licensed domestic securities institution.</li></ol>
+<h3 id="R17">R17 · Spend on a mainland-issued card abroad (no conversion by you) <span class="badge b-lawful">lawful</span></h3>
+<p class="dim">SAFE 汇发〔2017〕29号 Q&amp;A; 经常项目指引(2020) Art. 76(3) · <a class="src t-gov" href="https://www.gov.cn/zhengce/2017-12/31/content_5251958.htm" rel="noopener noreferrer" title="SAFE, 汇发〔2017〕29号, via the State Council portal Q&amp;A reprint - 规范银行卡境外大额提取现金交易 (Overseas card cash-withdrawal limits)">CN-CARDS2017 ↗</a><a class="src t-law" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" rel="noopener noreferrer" title="SAFE, 汇发〔2020〕14号, republished in State Council Gazette 2020 No. 31 - 经常项目外汇业务指引（2020年版） (Current-Account FX Business Guide, 2020 edition)">CN-GUIDE2020 ↗</a></p>
+<ol class="steps"><li>Use the card for genuine consumption abroad.</li><li>Keep the statements for US reporting and for the foreign-account question.</li></ol>
+<h3 id="R18">R18 · Overseas ATM cash withdrawal on a mainland card <span class="badge b-lawful">lawful</span></h3>
+<p class="dim">SAFE 汇发〔2017〕29号 · <a class="src t-gov" href="https://www.gov.cn/zhengce/2017-12/31/content_5251958.htm" rel="noopener noreferrer" title="SAFE, 汇发〔2017〕29号, via the State Council portal Q&amp;A reprint - 规范银行卡境外大额提取现金交易 (Overseas card cash-withdrawal limits)">CN-CARDS2017 ↗</a></p>
+<ol class="steps"><li>Withdraw within the per-card daily and per-person annual limits.</li><li>If carrying more than USD 10,000 into the US, file FinCEN 105.</li></ol>
+<h3 id="R19">R19 · Carry cash across the border within the permit band <span class="badge b-lawful">lawful</span></h3>
+<p class="dim">经常项目指引(2020) Arts. 86-89; 外汇管理条例 Art. 42 · <a class="src t-law" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" rel="noopener noreferrer" title="SAFE, 汇发〔2020〕14号, republished in State Council Gazette 2020 No. 31 - 经常项目外汇业务指引（2020年版） (Current-Account FX Business Guide, 2020 edition)">CN-GUIDE2020 ↗</a><a class="src t-law" href="https://www.gov.cn/gongbao/content/2008/content_1071846.htm" rel="noopener noreferrer" title="State Council of the PRC (国务院令第532号) - 中华人民共和国外汇管理条例 (Foreign Exchange Administration Regulations)">CN-FXREG ↗</a></p>
+<ol class="steps"><li>Withdraw with prior FX-bureau filing if above USD 10,000 a day.</li><li>Obtain the 携带外汇出境许可证 in the applicable band.</li><li>Declare to China Customs and, on entry to the US, file FinCEN 105 if above USD 10,000.</li></ol>
+<h3 id="R20">R20 · Alipay or WeChat cross-border remittance <span class="badge b-conditional">conditional</span></h3>
+<p class="dim">经常项目指引(2020) Arts. 120-137 (payment institutions) · <a class="src t-law" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" rel="noopener noreferrer" title="SAFE, 汇发〔2020〕14号, republished in State Council Gazette 2020 No. 31 - 经常项目外汇业务指引（2020年版） (Current-Account FX Business Guide, 2020 edition)">CN-GUIDE2020 ↗</a></p>
+<ol class="steps"><li>Confirm the wallet&#x27;s eligibility and per-transfer and annual limits.</li><li>Complete identity and purpose verification.</li><li>Send and keep the electronic receipts.</li></ol>
+<h3 id="R21">R21 · Licensed remittance provider with a China tax record (e.g. Wise from-CNY) <span class="badge b-conditional">conditional</span></h3>
+<p class="dim">经常项目指引(2020) Art. 120-137; provider terms · <a class="src t-law" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" rel="noopener noreferrer" title="SAFE, 汇发〔2020〕14号, republished in State Council Gazette 2020 No. 31 - 经常项目外汇业务指引（2020年版） (Current-Account FX Business Guide, 2020 edition)">CN-GUIDE2020 ↗</a><a class="src t-provider" href="https://wise.com/help/articles/2955298/guide-to-cny-transfers" rel="noopener noreferrer" title="Wise - Help Centre - Guide to CNY transfers">WISE-CNY ↗</a></p>
+<ol class="steps"><li>Collect China tax records covering the last three years.</li><li>Complete provider verification (1-2 working days).</li><li>Link your Chinese bank account or Alipay as the funding source.</li><li>Send to your own overseas account and download the receipt.</li></ol>
+<h3 id="R22">R22 · International postal money order or courier of a monetary instrument <span class="badge b-conditional">conditional</span></h3>
+<p class="dim">外汇管理条例 Art. 42; 31 CFR 1010.340 · <a class="src t-law" href="https://www.gov.cn/gongbao/content/2008/content_1071846.htm" rel="noopener noreferrer" title="State Council of the PRC (国务院令第532号) - 中华人民共和国外汇管理条例 (Foreign Exchange Administration Regulations)">CN-FXREG ↗</a><a class="src t-law" href="https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-C/section-1010.340" rel="noopener noreferrer" title="eCFR (Office of the Federal Register), 31 CFR 1010.340 - §1010.340 Reports of transportation of currency or monetary instruments">US-1010340 ↗</a></p>
+<ol class="steps"><li>Do not use for material amounts without written guidance from the bank and the FX bureau.</li></ol>
+<h3 id="R23">R23 · Leave the CNY on deposit and spend it on future trips to China <span class="badge b-lawful">lawful</span></h3>
+<p class="dim">个人外汇管理办法 Arts. 27-36 (accounts); no conversion occurs · <a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a></p>
+<ol class="steps"><li>Keep the account compliant and file FBAR/8938 as applicable.</li></ol>
+<h3 id="R24">R24 · Convert inside China into USD and hold the USD in a mainland bank <span class="badge b-lawful">lawful</span></h3>
+<p class="dim">个人外汇管理办法 Art. 32; 经常项目指引(2020) Art. 64 · <a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a><a class="src t-law" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" rel="noopener noreferrer" title="SAFE, 汇发〔2020〕14号, republished in State Council Gazette 2020 No. 31 - 经常项目外汇业务指引（2020年版） (Current-Account FX Business Guide, 2020 edition)">CN-GUIDE2020 ↗</a></p>
+<ol class="steps"><li>Purchase FX into the foreign-currency savings account.</li><li>Hold or remit later under Art. 64.</li></ol>
+<h3 id="R25">R25 · Buy a globally priced asset in China (e.g. gold) and sell it abroad <span class="badge b-conditional">conditional</span></h3>
+<p class="dim">个人外汇管理办法 Art. 30; 外汇管理条例 Arts. 8, 39 · <a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a><a class="src t-law" href="https://www.gov.cn/gongbao/content/2008/content_1071846.htm" rel="noopener noreferrer" title="State Council of the PRC (国务院令第532号) - 中华人民共和国外汇管理条例 (Foreign Exchange Administration Regulations)">CN-FXREG ↗</a></p>
+<ol class="steps"><li>Do not treat this as a conversion channel without written customs and FX advice specific to the asset.</li></ol>
+<h3 id="R26">R26 · Use the balance for genuine obligations that are payable in CNY <span class="badge b-lawful">lawful</span></h3>
+<p class="dim">外汇管理条例 Art. 5, Art. 12 (genuine current-account payments) · <a class="src t-law" href="https://www.gov.cn/gongbao/content/2008/content_1071846.htm" rel="noopener noreferrer" title="State Council of the PRC (国务院令第532号) - 中华人民共和国外汇管理条例 (Foreign Exchange Administration Regulations)">CN-FXREG ↗</a></p>
+<ol class="steps"><li>Identify genuine CNY obligations and pay them from the account.</li><li>Keep the invoices and contracts.</li></ol><p class="dim">26 procedures. Four routes carry no procedure because they are unlawful, and two because they involve no transfer.</p>
+</div></main>
+<footer><div class="wrap">
+<p><strong>Research, not legal, tax or investment advice.</strong> Every rule is linked to the instrument
+that states it; every price to the provider that publishes it. Values that could not be confirmed for this
+account are left blank and counted on the <a href="methodology.html">verification page</a>. Rates are
+snapshots, not quotes.</p>
+<p><a href="index.html">Overview</a> · <a href="routes.html">Routes</a> ·
+<a href="ladder.html">Cost ladder</a> · <a href="penalties.html">Penalties</a> ·
+<a href="tax.html">Tax &amp; reporting</a> · <a href="steps.html">Steps</a> ·
+<a href="methodology.html">Verification</a> · <a href="flagged.html">Flagged for review</a> ·
+<a href="/China1/index.html">All editions</a> · <a href="/China1/COORDINATION.md">Coordination log</a></p>
+<p>Edition J · built 2026-11-10 UTC · source snapshot 2026-11-10</p>
+</div></footer>
+</body>
+</html>

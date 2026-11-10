@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Official-source research on getting CNY out of mainland China as a US citizen: 30 routes, pros and cons, statutory penalty decomposition, and a computed cost ladder from USD 10,000 to USD 400,000 in 10,000 steps.">
+<title>Tax and reporting · China Money · Edition J</title>
+<style>
+:root{--ink:#12222b;--dim:#5a6b75;--line:#d9e2e8;--bg:#f6f8fa;--card:#fff;--accent:#0b6b5b;
+--accent-soft:#e6f2ee;--warn:#8a5b00;--warn-soft:#fff6e2;--bad:#8f2020;--bad-soft:#fdecec;
+--ok:#1c5f3a;--ok-soft:#e7f4ec;--mono:ui-monospace,SFMono-Regular,Menlo,monospace}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:2px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #b8860b;outline-offset:2px}
+header.top{background:#0d2b33;color:#fff;padding:10px 0}
+header.top .wrap{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+header.top a{color:#dff3ee}
+header.top .brand{font-weight:700;color:#fff;text-decoration:none;letter-spacing:.2px}
+header.top nav{display:flex;gap:6px;flex-wrap:wrap;font-size:.82rem}
+header.top nav a{padding:5px 9px;border-radius:99px;text-decoration:none;border:1px solid transparent}
+header.top nav a:hover{background:rgba(255,255,255,.12)}
+header.top nav a[aria-current]{background:#fff;color:#0d2b33;font-weight:650}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+main{padding:22px 0 64px}
+h1{font-size:clamp(1.6rem,4.6vw,2.6rem);line-height:1.15;margin:.2em 0 .35em;letter-spacing:-.4px}
+h2{font-size:clamp(1.2rem,2.8vw,1.55rem);margin:2.1em 0 .5em;letter-spacing:-.2px}
+h3{font-size:1.05rem;margin:1.6em 0 .4em}
+p{margin:.6em 0}
+.lead{font-size:1.06rem;color:#26383f;max-width:74ch}
+.dim,.muted{color:var(--dim)}
+small{font-size:.82rem}
+.pill{display:inline-block;padding:4px 11px;border-radius:99px;background:var(--accent-soft);
+color:#0a4f43;font-size:.78rem;font-weight:650;letter-spacing:.2px}
+.pill.warn{background:var(--warn-soft);color:var(--warn)}
+.pill.bad{background:var(--bad-soft);color:var(--bad)}
+.notice{border-left:4px solid #b8860b;background:var(--warn-soft);padding:13px 16px;border-radius:0 10px 10px 0;
+margin:18px 0}
+.notice.soft{border-left-color:var(--accent);background:var(--accent-soft)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(232px,1fr));gap:12px;margin:16px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 16px;
+text-decoration:none;color:inherit;display:block;transition:box-shadow .15s,border-color .15s}
+a.card:hover{box-shadow:0 4px 16px rgba(13,43,51,.1);border-color:#9fbec5}
+.card strong{display:block;color:var(--accent);font-size:.98rem;margin-bottom:3px}
+.card p{margin:0;font-size:.88rem;color:var(--dim)}
+.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:12px;margin:18px 0}
+.kpi div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+.kpi .n{font-family:var(--mono);font-size:1.32rem;font-weight:700;color:#0d2b33;letter-spacing:-.5px}
+.kpi .l{font-size:.76rem;color:var(--dim);text-transform:uppercase;letter-spacing:.5px;margin-top:2px}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;background:var(--card);border:1px solid var(--line);
+border-radius:12px;margin:12px 0}
+table{border-collapse:collapse;width:100%;font-size:.87rem}
+caption{text-align:left;padding:12px 14px 6px;font-weight:650;color:#0d2b33;font-size:.9rem}
+th,td{padding:9px 11px;text-align:left;border-bottom:1px solid #e7edf1;vertical-align:top}
+th{background:#eef3f5;font-size:.76rem;text-transform:uppercase;letter-spacing:.4px;color:#33474f;
+position:sticky;top:0;white-space:nowrap}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover{background:#fafcfd}
+td.num,th.num{text-align:right;font-family:var(--mono);font-size:.82rem;white-space:nowrap}
+.src{display:inline-block;font-size:.68rem;font-family:var(--mono);padding:2px 5px;border-radius:5px;
+margin:1px 3px 1px 0;text-decoration:none;white-space:nowrap;border:1px solid}
+.t-law{background:#e8f0fb;color:#1c3f73;border-color:#c5d7f0}
+.t-gov{background:#eef4ee;color:#2c5b33;border-color:#cfe0d0}
+.t-provider{background:#f4eef8;color:#573b6e;border-color:#ded0e8}
+.blank{display:inline-block;min-width:46px;text-align:center;color:#8a6a00;background:#fff8e6;
+border:1px dashed #d9b44a;border-radius:5px;font-size:.74rem;padding:1px 5px;font-family:inherit}
+.tnote{font-size:.78rem;color:var(--dim);margin:-4px 0 14px}
+.badge{display:inline-block;font-size:.72rem;font-weight:700;padding:2px 7px;border-radius:5px;white-space:nowrap}
+.b-lawful{background:var(--ok-soft);color:var(--ok)}
+.b-conditional{background:var(--warn-soft);color:var(--warn)}
+.b-prohibited{background:var(--bad-soft);color:var(--bad)}
+.b-verified{background:#e6f2ee;color:#0a4f43}
+.b-partly{background:#fff6e2;color:#8a5b00}
+.b-unverified{background:#fdecec;color:#8f2020}
+details{background:var(--card);border:1px solid var(--line);border-radius:11px;margin:9px 0;overflow:hidden}
+details[open]{border-color:#b9cdd4}
+summary{padding:13px 15px;cursor:pointer;font-weight:650;display:flex;gap:9px;align-items:baseline;
+flex-wrap:wrap;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"+";font-family:var(--mono);color:var(--accent);font-weight:700;width:12px}
+details[open] summary::before{content:"–"}
+summary .rid{font-family:var(--mono);font-size:.78rem;color:var(--dim);background:#eef3f5;
+padding:2px 6px;border-radius:5px}
+.detail{padding:0 15px 15px;border-top:1px solid var(--line)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.two ul{margin:.3em 0;padding-left:1.15em}
+.two li{margin:.28em 0;font-size:.88rem}
+.two h4{margin:12px 0 4px;font-size:.8rem;text-transform:uppercase;letter-spacing:.5px;color:var(--dim)}
+ol.steps{padding-left:1.3em;margin:.5em 0}
+ol.steps li{margin:.4em 0;font-size:.89rem}
+footer{border-top:1px solid var(--line);margin-top:44px;padding:20px 0 40px;color:var(--dim);font-size:.82rem}
+footer a{color:var(--dim)}
+.flag-h{background:var(--bad-soft);border-left:4px solid var(--bad);padding:11px 14px;border-radius:0 9px 9px 0;
+margin:12px 0;font-size:.9rem}
+@media(max-width:760px){
+ .two{grid-template-columns:1fr}
+ .responsive thead{display:none}
+ .responsive,.responsive tbody,.responsive tr,.responsive td{display:block;width:100%}
+ .responsive tr{border:1px solid var(--line);border-radius:10px;margin:9px 0;background:var(--card);
+  padding:4px 0;overflow:hidden}
+ .responsive td{display:grid;grid-template-columns:38% 62%;gap:8px;padding:7px 12px;border:none;
+  border-bottom:1px solid #eef3f5;font-size:.86rem}
+ .responsive td:last-child{border-bottom:none}
+ .responsive td::before{content:attr(data-label);font-size:.7rem;text-transform:uppercase;
+  letter-spacing:.4px;color:var(--dim);font-weight:650;padding-top:2px}
+ .responsive td:empty{display:none}
+ th,td{padding:8px 9px}
+ .kpi .n{font-size:1.12rem}
+}
+@media(min-width:761px){.responsive td:first-child{font-weight:600}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="index.html">China Money · Edition J</a>
+<nav aria-label="Site"><a href="index.html">Overview</a><a href="routes.html">All 30 routes</a><a href="ladder.html">Cost ladder</a><a href="penalties.html">Penalty breakdown</a><a href="tax.html" aria-current="page">Tax &amp; reporting</a><a href="steps.html">Step by step</a><a href="methodology.html">Verification</a><a href="flagged.html">Flagged for review</a></nav>
+</div></header>
+<main><div class="wrap">
+
+<p class="pill">Tax and reporting</p>
+<h1>Two tax systems, four forms, one rule: report first</h1>
+<p class="lead">China taxes the income. The US taxes your worldwide income and, separately, punishes failure to
+report the account. None of these is a fee for converting, and all of them are larger than the bank charges.</p>
+
+<h2>China</h2>
+<div class="scroll"><table class="responsive"><caption>Table 5 — Chinese tax provisions that actually bite</caption><thead><tr><th scope="col">Instrument</th><th scope="col">What it says</th><th scope="col">Effect on this question</th><th scope="col">Source</th></tr></thead><tbody><tr><td data-label="Instrument">IIT Law Art. 2</td><td data-label="What it says">Nine categories of taxable income</td><td data-label="Effect on this question">Currency exchange is not one of them. There is no Chinese conversion tax.</td><td data-label="Source"><a class="src t-law" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" rel="noopener noreferrer" title="State Taxation Administration (English translation of the statute) - Individual Income Tax Law of the PRC">CN-IIT ↗</a></td></tr><tr><td data-label="Instrument">IIT Law Art. 3(3)</td><td data-label="What it says">Flat 20% on interest, dividends, asset leasing, asset transfer, incidental income</td><td data-label="Effect on this question">The rate that applies to most non-salary balances.</td><td data-label="Source"><a class="src t-law" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" rel="noopener noreferrer" title="State Taxation Administration (English translation of the statute) - Individual Income Tax Law of the PRC">CN-IIT ↗</a></td></tr><tr><td data-label="Instrument">IIT Law Art. 6(5)</td><td data-label="What it says">Asset transfer taxed on gain after original value and reasonable expenses</td><td data-label="Effect on this question">Property and equity: the base is the gain, not the price.</td><td data-label="Source"><a class="src t-law" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" rel="noopener noreferrer" title="State Taxation Administration (English translation of the statute) - Individual Income Tax Law of the PRC">CN-IIT ↗</a></td></tr><tr><td data-label="Instrument">IIT Law Art. 10(5)</td><td data-label="What it says">Filing duty when emigrating and cancelling household registration</td><td data-label="Effect on this question">An exit filing trigger that is easy to miss.</td><td data-label="Source"><a class="src t-law" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" rel="noopener noreferrer" title="State Taxation Administration (English translation of the statute) - Individual Income Tax Law of the PRC">CN-IIT ↗</a></td></tr><tr><td data-label="Instrument">财政部 税务总局公告2026年第27号</td><td data-label="What it says">20% on FIE dividends to foreign individuals, withheld by the payer, from 2026-09-01</td><td data-label="Effect on this question">The 1994 exemption is repealed. Old guidance is wrong.</td><td data-label="Source"><a class="src t-law" href="https://shanghai.chinatax.gov.cn/zzzb/zcwj/202609/t481448.html" rel="noopener noreferrer" title="Ministry of Finance &amp; STA, 财政部 税务总局公告2026年第27号 (Shanghai STA reprint) - 关于外籍个人股息红利个人所得税政策有关事项的公告">CN-DIV2026 ↗</a></td></tr></tbody></table></div>
+
+<h2>United States</h2>
+<div class="scroll"><table class="responsive"><caption>Table 6 — the US side, and what each failure costs</caption><thead><tr><th scope="col">Duty</th><th scope="col">Trigger</th><th scope="col">Penalty if missed</th><th scope="col">Source</th></tr></thead><tbody><tr><td data-label="Duty">Worldwide income</td><td data-label="Trigger">You are a US citizen or resident</td><td data-label="Penalty if missed">Tax plus interest plus accuracy penalties</td><td data-label="Source"><a class="src t-law" href="https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad" rel="noopener noreferrer" title="Internal Revenue Service - U.S. citizens and resident aliens abroad">US-IRS-ABROAD ↗</a></td></tr><tr><td data-label="Duty">FBAR (FinCEN 114)</td><td data-label="Trigger">Foreign accounts aggregate above USD 10,000 at any point in the year</td><td data-label="Penalty if missed">Non-willful up to USD 16,536; willful up to the greater of USD 165,353 or 50% of the balance</td><td data-label="Source"><a class="src t-law" href="https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar" rel="noopener noreferrer" title="Internal Revenue Service - Report of Foreign Bank and Financial Accounts (FBAR)">US-FBAR ↗</a><a class="src t-law" href="https://www.law.cornell.edu/uscode/text/31/5321" rel="noopener noreferrer" title="Legal Information Institute, Cornell Law School (31 U.S.C. §5321) - 31 U.S. Code §5321 - Civil penalties">US-5321 ↗</a><a class="src t-law" href="https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821" rel="noopener noreferrer" title="eCFR (Office of the Federal Register), 31 CFR 1010.821 - §1010.821 Penalty adjustment and table">US-1010821 ↗</a></td></tr><tr><td data-label="Duty">Form 8938</td><td data-label="Trigger">Specified foreign assets above the threshold for your filing status and residence</td><td data-label="Penalty if missed">USD 10,000, plus up to USD 50,000 more after notice</td><td data-label="Source"><a class="src t-law" href="https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements" rel="noopener noreferrer" title="Internal Revenue Service - Comparison of Form 8938 and FBAR requirements">US-8938 ↗</a><a class="src t-law" href="https://www.law.cornell.edu/uscode/text/26/6038D" rel="noopener noreferrer" title="Legal Information Institute, Cornell Law School (26 U.S.C. §6038D) - 26 U.S. Code §6038D - Information with respect to foreign financial assets">US-6038D ↗</a></td></tr><tr><td data-label="Duty">Form 3520</td><td data-label="Trigger">Gift or bequest above USD 100,000 from a nonresident alien, or foreign-trust events</td><td data-label="Penalty if missed">Information return; the penalty amount is flagged as unverified here</td><td data-label="Source"><a class="src t-law" href="https://www.irs.gov/instructions/i3520" rel="noopener noreferrer" title="Internal Revenue Service - Instructions for Form 3520 (12/2025)">US-3520 ↗</a></td></tr><tr><td data-label="Duty">FinCEN 105</td><td data-label="Trigger">More than USD 10,000 in currency or monetary instruments into or out of the US at one time</td><td data-label="Penalty if missed">Duty verified; amount flagged</td><td data-label="Source"><a class="src t-law" href="https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-C/section-1010.340" rel="noopener noreferrer" title="eCFR (Office of the Federal Register), 31 CFR 1010.340 - §1010.340 Reports of transportation of currency or monetary instruments">US-1010340 ↗</a></td></tr><tr><td data-label="Duty">§988 currency gain</td><td data-label="Trigger">Personal transaction: disregarded unless the gain exceeds USD 200</td><td data-label="Penalty if missed">Ordinary income treatment above that</td><td data-label="Source"><a class="src t-law" href="https://www.law.cornell.edu/uscode/text/26/988" rel="noopener noreferrer" title="Legal Information Institute, Cornell Law School (26 U.S.C. §988) - 26 U.S. Code §988 - Treatment of certain foreign currency transactions">US-988 ↗</a></td></tr></tbody></table></div>
+
+<div class="notice"><strong>Why FBAR dominates every other number in this project.</strong> At a USD 400,000
+balance, one willful violation has a statutory maximum of USD 200,000.
+The published bank cost of moving the same USD 400,000 through BOC is about
+USD 61. Filing on time is the highest-return action available, and
+it does not require moving anything.</div>
+
+<div class="notice soft"><strong>The clean sequence.</strong> Report the account while it is still in China (FBAR,
+8938). Pay or confirm Chinese tax on the income. Then convert through the route whose documentary basis matches
+the source, and claim the Chinese tax as a foreign tax credit. The order matters because the reporting duty
+attaches to the account, not to the transfer.</div>
+
+</div></main>
+<footer><div class="wrap">
+<p><strong>Research, not legal, tax or investment advice.</strong> Every rule is linked to the instrument
+that states it; every price to the provider that publishes it. Values that could not be confirmed for this
+account are left blank and counted on the <a href="methodology.html">verification page</a>. Rates are
+snapshots, not quotes.</p>
+<p><a href="index.html">Overview</a> · <a href="routes.html">Routes</a> ·
+<a href="ladder.html">Cost ladder</a> · <a href="penalties.html">Penalties</a> ·
+<a href="tax.html">Tax &amp; reporting</a> · <a href="steps.html">Steps</a> ·
+<a href="methodology.html">Verification</a> · <a href="flagged.html">Flagged for review</a> ·
+<a href="/China1/index.html">All editions</a> · <a href="/China1/COORDINATION.md">Coordination log</a></p>
+<p>Edition J · built 2026-11-10 UTC · source snapshot 2026-11-10</p>
+</div></footer>
+</body>
+</html>

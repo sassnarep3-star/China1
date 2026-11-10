@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Official-source research on getting CNY out of mainland China as a US citizen: 30 routes, pros and cons, statutory penalty decomposition, and a computed cost ladder from USD 10,000 to USD 400,000 in 10,000 steps.">
+<title>Overview · China Money · Edition J</title>
+<style>
+:root{--ink:#12222b;--dim:#5a6b75;--line:#d9e2e8;--bg:#f6f8fa;--card:#fff;--accent:#0b6b5b;
+--accent-soft:#e6f2ee;--warn:#8a5b00;--warn-soft:#fff6e2;--bad:#8f2020;--bad-soft:#fdecec;
+--ok:#1c5f3a;--ok-soft:#e7f4ec;--mono:ui-monospace,SFMono-Regular,Menlo,monospace}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:2px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #b8860b;outline-offset:2px}
+header.top{background:#0d2b33;color:#fff;padding:10px 0}
+header.top .wrap{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+header.top a{color:#dff3ee}
+header.top .brand{font-weight:700;color:#fff;text-decoration:none;letter-spacing:.2px}
+header.top nav{display:flex;gap:6px;flex-wrap:wrap;font-size:.82rem}
+header.top nav a{padding:5px 9px;border-radius:99px;text-decoration:none;border:1px solid transparent}
+header.top nav a:hover{background:rgba(255,255,255,.12)}
+header.top nav a[aria-current]{background:#fff;color:#0d2b33;font-weight:650}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+main{padding:22px 0 64px}
+h1{font-size:clamp(1.6rem,4.6vw,2.6rem);line-height:1.15;margin:.2em 0 .35em;letter-spacing:-.4px}
+h2{font-size:clamp(1.2rem,2.8vw,1.55rem);margin:2.1em 0 .5em;letter-spacing:-.2px}
+h3{font-size:1.05rem;margin:1.6em 0 .4em}
+p{margin:.6em 0}
+.lead{font-size:1.06rem;color:#26383f;max-width:74ch}
+.dim,.muted{color:var(--dim)}
+small{font-size:.82rem}
+.pill{display:inline-block;padding:4px 11px;border-radius:99px;background:var(--accent-soft);
+color:#0a4f43;font-size:.78rem;font-weight:650;letter-spacing:.2px}
+.pill.warn{background:var(--warn-soft);color:var(--warn)}
+.pill.bad{background:var(--bad-soft);color:var(--bad)}
+.notice{border-left:4px solid #b8860b;background:var(--warn-soft);padding:13px 16px;border-radius:0 10px 10px 0;
+margin:18px 0}
+.notice.soft{border-left-color:var(--accent);background:var(--accent-soft)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(232px,1fr));gap:12px;margin:16px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 16px;
+text-decoration:none;color:inherit;display:block;transition:box-shadow .15s,border-color .15s}
+a.card:hover{box-shadow:0 4px 16px rgba(13,43,51,.1);border-color:#9fbec5}
+.card strong{display:block;color:var(--accent);font-size:.98rem;margin-bottom:3px}
+.card p{margin:0;font-size:.88rem;color:var(--dim)}
+.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:12px;margin:18px 0}
+.kpi div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+.kpi .n{font-family:var(--mono);font-size:1.32rem;font-weight:700;color:#0d2b33;letter-spacing:-.5px}
+.kpi .l{font-size:.76rem;color:var(--dim);text-transform:uppercase;letter-spacing:.5px;margin-top:2px}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;background:var(--card);border:1px solid var(--line);
+border-radius:12px;margin:12px 0}
+table{border-collapse:collapse;width:100%;font-size:.87rem}
+caption{text-align:left;padding:12px 14px 6px;font-weight:650;color:#0d2b33;font-size:.9rem}
+th,td{padding:9px 11px;text-align:left;border-bottom:1px solid #e7edf1;vertical-align:top}
+th{background:#eef3f5;font-size:.76rem;text-transform:uppercase;letter-spacing:.4px;color:#33474f;
+position:sticky;top:0;white-space:nowrap}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover{background:#fafcfd}
+td.num,th.num{text-align:right;font-family:var(--mono);font-size:.82rem;white-space:nowrap}
+.src{display:inline-block;font-size:.68rem;font-family:var(--mono);padding:2px 5px;border-radius:5px;
+margin:1px 3px 1px 0;text-decoration:none;white-space:nowrap;border:1px solid}
+.t-law{background:#e8f0fb;color:#1c3f73;border-color:#c5d7f0}
+.t-gov{background:#eef4ee;color:#2c5b33;border-color:#cfe0d0}
+.t-provider{background:#f4eef8;color:#573b6e;border-color:#ded0e8}
+.blank{display:inline-block;min-width:46px;text-align:center;color:#8a6a00;background:#fff8e6;
+border:1px dashed #d9b44a;border-radius:5px;font-size:.74rem;padding:1px 5px;font-family:inherit}
+.tnote{font-size:.78rem;color:var(--dim);margin:-4px 0 14px}
+.badge{display:inline-block;font-size:.72rem;font-weight:700;padding:2px 7px;border-radius:5px;white-space:nowrap}
+.b-lawful{background:var(--ok-soft);color:var(--ok)}
+.b-conditional{background:var(--warn-soft);color:var(--warn)}
+.b-prohibited{background:var(--bad-soft);color:var(--bad)}
+.b-verified{background:#e6f2ee;color:#0a4f43}
+.b-partly{background:#fff6e2;color:#8a5b00}
+.b-unverified{background:#fdecec;color:#8f2020}
+details{background:var(--card);border:1px solid var(--line);border-radius:11px;margin:9px 0;overflow:hidden}
+details[open]{border-color:#b9cdd4}
+summary{padding:13px 15px;cursor:pointer;font-weight:650;display:flex;gap:9px;align-items:baseline;
+flex-wrap:wrap;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"+";font-family:var(--mono);color:var(--accent);font-weight:700;width:12px}
+details[open] summary::before{content:"–"}
+summary .rid{font-family:var(--mono);font-size:.78rem;color:var(--dim);background:#eef3f5;
+padding:2px 6px;border-radius:5px}
+.detail{padding:0 15px 15px;border-top:1px solid var(--line)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.two ul{margin:.3em 0;padding-left:1.15em}
+.two li{margin:.28em 0;font-size:.88rem}
+.two h4{margin:12px 0 4px;font-size:.8rem;text-transform:uppercase;letter-spacing:.5px;color:var(--dim)}
+ol.steps{padding-left:1.3em;margin:.5em 0}
+ol.steps li{margin:.4em 0;font-size:.89rem}
+footer{border-top:1px solid var(--line);margin-top:44px;padding:20px 0 40px;color:var(--dim);font-size:.82rem}
+footer a{color:var(--dim)}
+.flag-h{background:var(--bad-soft);border-left:4px solid var(--bad);padding:11px 14px;border-radius:0 9px 9px 0;
+margin:12px 0;font-size:.9rem}
+@media(max-width:760px){
+ .two{grid-template-columns:1fr}
+ .responsive thead{display:none}
+ .responsive,.responsive tbody,.responsive tr,.responsive td{display:block;width:100%}
+ .responsive tr{border:1px solid var(--line);border-radius:10px;margin:9px 0;background:var(--card);
+  padding:4px 0;overflow:hidden}
+ .responsive td{display:grid;grid-template-columns:38% 62%;gap:8px;padding:7px 12px;border:none;
+  border-bottom:1px solid #eef3f5;font-size:.86rem}
+ .responsive td:last-child{border-bottom:none}
+ .responsive td::before{content:attr(data-label);font-size:.7rem;text-transform:uppercase;
+  letter-spacing:.4px;color:var(--dim);font-weight:650;padding-top:2px}
+ .responsive td:empty{display:none}
+ th,td{padding:8px 9px}
+ .kpi .n{font-size:1.12rem}
+}
+@media(min-width:761px){.responsive td:first-child{font-weight:600}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="index.html">China Money · Edition J</a>
+<nav aria-label="Site"><a href="index.html" aria-current="page">Overview</a><a href="routes.html">All 30 routes</a><a href="ladder.html">Cost ladder</a><a href="penalties.html">Penalty breakdown</a><a href="tax.html">Tax &amp; reporting</a><a href="steps.html">Step by step</a><a href="methodology.html">Verification</a><a href="flagged.html">Flagged for review</a></nav>
+</div></header>
+<main><div class="wrap">
+
+<p class="pill">Edition J · 2026-11-10 · no manual input required</p>
+<h1>What it actually costs to get CNY out of China</h1>
+<p class="lead">Thirty routes, priced where a published price exists and blank where it does not. The short
+version: <strong>there is no conversion tax in either country</strong>. What looks like a penalty is a bank
+spread of about 0.21%, plus a capped commission and a flat cable fee. The genuinely large numbers
+on this page are Chinese tax on the income itself and US penalties for not reporting the account.</p>
+
+<div class="kpi"><div><div class="n">0.21%</div><div class="l">one-way FX cost (half the bid/ask spread)</div></div><div><div class="n">$32</div><div class="l">published BOC fees at USD 10,000</div></div><div><div class="n">$61</div><div class="l">published BOC fees at USD 400,000</div></div><div><div class="n">$200,000</div><div class="l">largest US penalty at USD 400,000</div></div><div><div class="n">30</div><div class="l">routes catalogued</div></div><div><div class="n">6</div><div class="l">prohibited, with no steps</div></div></div>
+
+<div class="notice"><strong>Read this before any number.</strong> FX cost is measured as half the bid/ask spread on
+the Bank of China board published 2026/11/10 07:32:39 - that is, what you give up by paying the ask
+instead of the bank's own mid. BOC's page states the counter/online rate governs, and the board is a snapshot.
+Receiving-bank fees, intermediary charges, Chinese tax on your specific income and the balance itself are unknown,
+so <strong>no all-in total is claimed</strong>. Blank is not zero.</div>
+
+<h2>The six things that matter</h2>
+<div class="cards">
+<a class="card" href="#f-J1"><strong>J1 · Converting CNY to USD is not a taxable event in either jur…</strong>
+<p>China taxes nine enumerated categories of income; currency exchange is not one of them (IIT Law Art. 2). The US taxes your income, n…</p></a>
+<a class="card" href="#f-J2"><strong>J2 · What people experience as a conversion penalty is a bank s…</strong>
+<p>On the BOC board read for this edition, one USD costs CNY 6.6903 to buy and fetches CNY 6.6622 to sell. The gap is 0.42% of the bid,…</p></a>
+<a class="card" href="#f-J3"><strong>J3 · The real barrier is convertibility, not tax</strong>
+<p>Current-account items are convertible in principle; capital-account items follow a &#x27;convertibility process&#x27; that means approval (Mea…</p></a>
+<a class="card" href="#f-J4"><strong>J4 · A US passport changes which quota applies - and usually he…</strong>
+<p>The USD 50,000 annual facilitation quota is framed around 境内个人 (Chinese citizens with a resident ID). For 境外个人 buying against docume…</p></a>
+<a class="card" href="#f-J5"><strong>J5 · The largest number on this site is a US penalty, not a Chi…</strong>
+<p>A willful FBAR violation carries a civil maximum of the greater of USD 165,353 or 50% of the account balance at the time of the viol…</p></a>
+<a class="card" href="#f-J6"><strong>J6 · Chinese tax on the money can dwarf every fee, and one exem…</strong>
+<p>Interest, dividends, asset transfers and incidental income are taxed at a flat 20% (IIT Law Art. 3(3)). The long-standing exemption …</p></a></div>
+
+<h2>Decision order, in five lines</h2>
+<div class="scroll"><table class="responsive"><caption>Figure 1 — the order in which each question has to be answered</caption><thead><tr><th scope="col">Order</th><th scope="col">What to do first</th><th scope="col">Why</th><th scope="col">Source</th></tr></thead><tbody><tr><td data-label="Order">1</td><td data-label="What to do first">Classify the balance by source</td><td data-label="Why">The lawful route is determined by how the money was earned, not by which provider is cheapest.</td><td data-label="Source"><a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a></td></tr><tr><td data-label="Order">2</td><td data-label="What to do first">Confirm your bank classification</td><td data-label="Why">境内个人 and 境外个人 have different quota and documentary rules.</td><td data-label="Source"><a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a><a class="src t-law" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" rel="noopener noreferrer" title="SAFE, 汇发〔2020〕14号, republished in State Council Gazette 2020 No. 31 - 经常项目外汇业务指引（2020年版） (Current-Account FX Business Guide, 2020 edition)">CN-GUIDE2020 ↗</a></td></tr><tr><td data-label="Order">3</td><td data-label="What to do first">Pick the matching route family</td><td data-label="Why">Documented income → R01. Property → R07. Pre-emigration savings → R08. Inheritance → R09.</td><td data-label="Source"><a class="src t-law" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" rel="noopener noreferrer" title="SAFE, 汇发〔2020〕14号, republished in State Council Gazette 2020 No. 31 - 经常项目外汇业务指引（2020年版） (Current-Account FX Business Guide, 2020 edition)">CN-GUIDE2020 ↗</a><a class="src t-law" href="http://m.safe.gov.cn/safe/2004/1116/5461.html" rel="noopener noreferrer" title="People&#x27;s Bank of China 公告〔2004〕第16号, published by SAFE - 个人财产对外转移售付汇管理暂行办法 (Interim Measures on Sale and Payment of FX for Outward Transfer of Personal Property)">CN-PROPERTY2004 ↗</a></td></tr><tr><td data-label="Order">4</td><td data-label="What to do first">Only then compare execution</td><td data-label="Why">BOC tariff versus a licensed provider; the FX spread is similar, the fixed fees are not.</td><td data-label="Source"><a class="src t-provider" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" rel="noopener noreferrer" title="Bank of China (中国银行) - 电子银行个人服务转账汇款费率表 - 中国银行电子银行个人服务转账汇款费率表 (personal e-banking transfer tariff, effective 2014-11-01)">BOC-TARIFF ↗</a><a class="src t-provider" href="https://wise.com/help/articles/2955298/guide-to-cny-transfers" rel="noopener noreferrer" title="Wise - Help Centre - Guide to CNY transfers">WISE-CNY ↗</a></td></tr><tr><td data-label="Order">5</td><td data-label="What to do first">File the US side on time</td><td data-label="Why">The reporting penalty is larger than the entire transfer cost.</td><td data-label="Source"><a class="src t-law" href="https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar" rel="noopener noreferrer" title="Internal Revenue Service - Report of Foreign Bank and Financial Accounts (FBAR)">US-FBAR ↗</a><a class="src t-law" href="https://www.law.cornell.edu/uscode/text/31/5321" rel="noopener noreferrer" title="Legal Information Institute, Cornell Law School (31 U.S.C. §5321) - 31 U.S. Code §5321 - Civil penalties">US-5321 ↗</a></td></tr></tbody></table></div>
+
+<h2>The cost shape, at a glance</h2>
+<p>The FX spread scales with the amount; the bank fees do not. That single fact drives every row of the cost
+ladder: at USD 10,000 the fixed and capped fees are about
+0.32% of the transfer, and at USD 400,000 they fall to about
+0.015%. The FX cost, by contrast, is
+$841.79 at USD 400,000 and $21.04 at USD 10,000 - always the
+same 0.21%.</p>
+<div class="scroll"><table class="responsive"><caption>Figure 2 — R01, the documented-income bank route, at six sizes</caption><thead><tr><th scope="col">USD sent</th><th scope="col">CNY needed at BOC selling rate</th><th scope="col">FX cost vs parity</th><th scope="col">BOC commission + cable</th><th scope="col">All-in total</th></tr></thead><tbody><tr><td data-label="USD sent">$10,000</td><td data-label="CNY needed at BOC selling rate">66,903.00</td><td data-label="FX cost vs parity">21.04</td><td data-label="BOC commission + cable">32.42</td><td data-label="All-in total"><span class="blank" title="Not verified - deliberately blank">blank</span></td></tr><tr><td data-label="USD sent">$50,000</td><td data-label="CNY needed at BOC selling rate">334,515.00</td><td data-label="FX cost vs parity">105.22</td><td data-label="BOC commission + cable">61.28</td><td data-label="All-in total"><span class="blank" title="Not verified - deliberately blank">blank</span></td></tr><tr><td data-label="USD sent">$100,000</td><td data-label="CNY needed at BOC selling rate">669,030.00</td><td data-label="FX cost vs parity">210.45</td><td data-label="BOC commission + cable">61.28</td><td data-label="All-in total"><span class="blank" title="Not verified - deliberately blank">blank</span></td></tr><tr><td data-label="USD sent">$200,000</td><td data-label="CNY needed at BOC selling rate">1,338,060.00</td><td data-label="FX cost vs parity">420.89</td><td data-label="BOC commission + cable">61.28</td><td data-label="All-in total"><span class="blank" title="Not verified - deliberately blank">blank</span></td></tr><tr><td data-label="USD sent">$300,000</td><td data-label="CNY needed at BOC selling rate">2,007,090.00</td><td data-label="FX cost vs parity">631.34</td><td data-label="BOC commission + cable">61.28</td><td data-label="All-in total"><span class="blank" title="Not verified - deliberately blank">blank</span></td></tr><tr><td data-label="USD sent">$400,000</td><td data-label="CNY needed at BOC selling rate">2,676,120.00</td><td data-label="FX cost vs parity">841.79</td><td data-label="BOC commission + cable">61.28</td><td data-label="All-in total"><span class="blank" title="Not verified - deliberately blank">blank</span></td></tr></tbody></table></div><p class="tnote">All-in total is blank because the receiving bank's charge is unknown; adding a guessed number would be the exact failure this edition was built to avoid. Full 40-row ladder on the Cost ladder page.</p>
+
+<h2>Six route families</h2>
+<div class="cards"><a class="card" href="routes.html#A"><strong>Current account - income you can document (6)</strong><p>The only family of routes without a hard amount ceiling, but each requires an evidence chain from the CNY to specific lawful income. Start here if any part of the balance is documented earnings.</p></a><a class="card" href="routes.html#B"><strong>Capital account - property, inheritance and business exit (5)</strong><p>The lawful home for pre-emigration savings and inherited assets. All of these are approval-gated, and none of them is a way to relabel income you cannot document.</p></a><a class="card" href="routes.html#C"><strong>Business, dividends and investment (5)</strong><p>Company-level and investment routes. Real costs here are Chinese taxes, not bank fees.</p></a><a class="card" href="routes.html#D"><strong>Cash, cards, wallets and retail channels (6)</strong><p>Small, fast and capped. Useful for genuine consumption; incapable of moving a six-figure balance.</p></a><a class="card" href="routes.html#E"><strong>Keep in place, or avoid converting at all (4)</strong><p>Sometimes the right answer is not to convert. These rows exist so the comparison is honest about the zero-cost option and about the routes that only look clever.</p></a><a class="card" href="routes.html#F"><strong>Prohibited - do not use (4)</strong><p>Listed because they are what people are actually offered. They carry the largest expected cost of any row on this site, and no execution steps are published here.</p></a></div>
+
+<h2>Findings</h2>
+<details id="f-J1"><summary><span class="rid">J1</span> Converting CNY to USD is not a taxable event in either jurisdiction</summary><div class="detail"><p>China taxes nine enumerated categories of income; currency exchange is not one of them (IIT Law Art. 2). The US taxes your income, not the act of changing currency, and for an individual&#x27;s personal transaction §988(e)(2) disregards exchange-rate gain unless it exceeds USD 200. So the &#x27;tax on converting&#x27; in the brief does not exist as a separate charge.</p><p><a class="src t-law" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" rel="noopener noreferrer" title="State Taxation Administration (English translation of the statute) - Individual Income Tax Law of the PRC">CN-IIT ↗</a><a class="src t-law" href="https://www.law.cornell.edu/uscode/text/26/988" rel="noopener noreferrer" title="Legal Information Institute, Cornell Law School (26 U.S.C. §988) - 26 U.S. Code §988 - Treatment of certain foreign currency transactions">US-988 ↗</a></p></div></details><details id="f-J2"><summary><span class="rid">J2</span> What people experience as a conversion penalty is a bank spread, and it is small</summary><div class="detail"><p>On the BOC board read for this edition, one USD costs CNY 6.6903 to buy and fetches CNY 6.6622 to sell. The gap is 0.42% of the bid, so a round trip costs that much and a single conversion costs about 0.21% - half the spread, measured against the bank&#x27;s own mid. That is the entire &#x27;penalty&#x27; at the currency layer. Note that comparing the ask to the PBOC central parity gives a negative number on this snapshot, because the two are from different days; see the explanation on the penalty page.</p><p><a class="src t-provider" href="https://www.boc.cn/sourcedb/whpj/" rel="noopener noreferrer" title="Bank of China (中国银行) - 外汇牌价 - 中国银行外汇牌价 (BOC foreign-exchange board)">BOC-BOARD ↗</a><a class="src t-law" href="https://www.chinamoney.com.cn/chinese/bkccpr/" rel="noopener noreferrer" title="China Foreign Exchange Trade System / 中国货币网, authorised by the PBOC - 人民币汇率中间价 (RMB central parity)">CFETS-FIX ↗</a></p></div></details><details id="f-J3"><summary><span class="rid">J3</span> The real barrier is convertibility, not tax</summary><div class="detail"><p>Current-account items are convertible in principle; capital-account items follow a &#x27;convertibility process&#x27; that means approval (Measures Art. 3). A balance with no documented current-account source has no default lawful route, which is why it feels stuck.</p><p><a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a></p></div></details><details id="f-J4"><summary><span class="rid">J4</span> A US passport changes which quota applies - and usually helps</summary><div class="detail"><p>The USD 50,000 annual facilitation quota is framed around 境内个人 (Chinese citizens with a resident ID). For 境外个人 buying against documented lawful current-account income, Art. 59 of the 2020 Guide states no annual cap. The binding constraint becomes evidence, not size.</p><p><a class="src t-law" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" rel="noopener noreferrer" title="SAFE, 汇发〔2020〕14号, republished in State Council Gazette 2020 No. 31 - 经常项目外汇业务指引（2020年版） (Current-Account FX Business Guide, 2020 edition)">CN-GUIDE2020 ↗</a></p></div></details><details id="f-J5"><summary><span class="rid">J5</span> The largest number on this site is a US penalty, not a Chinese fee</summary><div class="detail"><p>A willful FBAR violation carries a civil maximum of the greater of USD 165,353 or 50% of the account balance at the time of the violation. At USD 400,000 that is USD 200,000 - roughly 46 times the entire bank cost of moving the money.</p><p><a class="src t-law" href="https://www.law.cornell.edu/uscode/text/31/5321" rel="noopener noreferrer" title="Legal Information Institute, Cornell Law School (31 U.S.C. §5321) - 31 U.S. Code §5321 - Civil penalties">US-5321 ↗</a><a class="src t-law" href="https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821" rel="noopener noreferrer" title="eCFR (Office of the Federal Register), 31 CFR 1010.821 - §1010.821 Penalty adjustment and table">US-1010821 ↗</a></p></div></details><details id="f-J6"><summary><span class="rid">J6</span> Chinese tax on the money can dwarf every fee, and one exemption just ended</summary><div class="detail"><p>Interest, dividends, asset transfers and incidental income are taxed at a flat 20% (IIT Law Art. 3(3)). The long-standing exemption for foreign individuals&#x27; FIE dividends was repealed with effect from 2026-09-01, so any guide still calling those dividends tax-free is out of date.</p><p><a class="src t-law" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" rel="noopener noreferrer" title="State Taxation Administration (English translation of the statute) - Individual Income Tax Law of the PRC">CN-IIT ↗</a><a class="src t-law" href="https://shanghai.chinatax.gov.cn/zzzb/zcwj/202609/t481448.html" rel="noopener noreferrer" title="Ministry of Finance &amp; STA, 财政部 税务总局公告2026年第27号 (Shanghai STA reprint) - 关于外籍个人股息红利个人所得税政策有关事项的公告">CN-DIV2026 ↗</a></p></div></details><details id="f-J7"><summary><span class="rid">J7</span> Six of the thirty catalogued routes are prohibited, and one has a fresh legal basis</summary><div class="detail"><p>Dealer intermediation, quota splitting, crypto, and false documents are joined by two more structural traps. The crypto basis changed on 2026-02-06: 银发〔2026〕42号 replaced the 2021 notice entirely.</p><p><a class="src t-law" href="https://www.gov.cn/gongbao/content/2008/content_1071846.htm" rel="noopener noreferrer" title="State Council of the PRC (国务院令第532号) - 中华人民共和国外汇管理条例 (Foreign Exchange Administration Regulations)">CN-FXREG ↗</a><a class="src t-gov" href="https://www.szns.gov.cn/ztzl/ffjzxsjb/zcfg/content/post_12958317.html" rel="noopener noreferrer" title="Eight ministries incl. PBOC and SAFE, 银发〔2026〕42号; full text as republished by a Shenzhen district government portal - 关于进一步防范和处置虚拟货币等相关风险的通知">CN-VA2026 ↗</a><a class="src t-law" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" rel="noopener noreferrer" title="SAFE, 汇发〔2020〕14号, republished in State Council Gazette 2020 No. 31 - 经常项目外汇业务指引（2020年版） (Current-Account FX Business Guide, 2020 edition)">CN-GUIDE2020 ↗</a></p></div></details><details id="f-J8"><summary><span class="rid">J8</span> Staging rules you may find online for property transfers were cancelled in 2014</summary><div class="detail"><p>The 2004 Measures required emigrant transfers in three stages over two years. 汇发〔2014〕2号 Section VI cancelled the staging, the national-level filing above RMB 500,000, and the notarisation duty. The 2026 SAFE Q&amp;A still cites the 2004 Measures without restating the amendment, which is how the stale version keeps circulating.</p><p><a class="src t-law" href="http://m.safe.gov.cn/safe/2004/1116/5461.html" rel="noopener noreferrer" title="People&#x27;s Bank of China 公告〔2004〕第16号, published by SAFE - 个人财产对外转移售付汇管理暂行办法 (Interim Measures on Sale and Payment of FX for Outward Transfer of Personal Property)">CN-PROPERTY2004 ↗</a><a class="src t-law" href="https://www.safe.gov.cn/tianjin/2024/0903/2594.html" rel="noopener noreferrer" title="SAFE, 汇发〔2014〕2号, amended republication on the Tianjin branch site - 国家外汇管理局关于进一步改进和调整资本项目外汇管理政策的通知 (Section VI: personal property transfer)">CN-CAP2014 ↗</a><a class="src t-law" href="http://www.safe.gov.cn/tianjin/2026/0318/3017.html" rel="noopener noreferrer" title="SAFE Tianjin branch (国家外汇管理局天津市分局) - 个人财产转移购付汇业务问答（六） (Q&amp;A on outward transfer of personal property, part 6)">CN-PROPERTYQA ↗</a></p></div></details><details id="f-J9"><summary><span class="rid">J9</span> No method in this catalogue can be given an exact all-in price today</summary><div class="detail"><p>Two components are published and computed here: the FX spread and the BOC sender tariff. Receiving-bank fees, intermediary charges, Chinese tax on the underlying income, and notarisation or travel costs are all unknown for this account. Those cells are blank on purpose and counted on the verification page.</p><p><a class="src t-provider" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" rel="noopener noreferrer" title="Bank of China (中国银行) - 电子银行个人服务转账汇款费率表 - 中国银行电子银行个人服务转账汇款费率表 (personal e-banking transfer tariff, effective 2014-11-01)">BOC-TARIFF ↗</a><a class="src t-provider" href="https://www.boc.cn/sourcedb/whpj/" rel="noopener noreferrer" title="Bank of China (中国银行) - 外汇牌价 - 中国银行外汇牌价 (BOC foreign-exchange board)">BOC-BOARD ↗</a></p></div></details><details id="f-J10"><summary><span class="rid">J10</span> The cheapest lawful route is the one that matches how the money was earned</summary><div class="detail"><p>If the balance is documented salary or service income, R01 is lawful, uncapped and priced. If it is pre-emigration savings, R08 needs an approval but no quota. If it is inherited, R09 does. The choice is decided by evidence you already have, not by provider shopping.</p><p><a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a><a class="src t-law" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" rel="noopener noreferrer" title="SAFE, 汇发〔2020〕14号, republished in State Council Gazette 2020 No. 31 - 经常项目外汇业务指引（2020年版） (Current-Account FX Business Guide, 2020 edition)">CN-GUIDE2020 ↗</a><a class="src t-law" href="http://m.safe.gov.cn/safe/2004/1116/5461.html" rel="noopener noreferrer" title="People&#x27;s Bank of China 公告〔2004〕第16号, published by SAFE - 个人财产对外转移售付汇管理暂行办法 (Interim Measures on Sale and Payment of FX for Outward Transfer of Personal Property)">CN-PROPERTY2004 ↗</a></p></div></details>
+
+<h2>Where to go next</h2>
+<div class="cards">
+<a class="card" href="ladder.html"><strong>Cost ladder →</strong><p>All 40 USD targets, every priced route, and the routes that deliberately show blanks.</p></a>
+<a class="card" href="penalties.html"><strong>Penalty breakdown →</strong><p>24 components sorted into unavoidable cost, tax on income, penalty risk and avoidable waste.</p></a>
+<a class="card" href="flagged.html"><strong>Flagged for review →</strong><p>Twelve items where the evidence is thin, conflicting or simply missing.</p></a>
+</div>
+
+</div></main>
+<footer><div class="wrap">
+<p><strong>Research, not legal, tax or investment advice.</strong> Every rule is linked to the instrument
+that states it; every price to the provider that publishes it. Values that could not be confirmed for this
+account are left blank and counted on the <a href="methodology.html">verification page</a>. Rates are
+snapshots, not quotes.</p>
+<p><a href="index.html">Overview</a> · <a href="routes.html">Routes</a> ·
+<a href="ladder.html">Cost ladder</a> · <a href="penalties.html">Penalties</a> ·
+<a href="tax.html">Tax &amp; reporting</a> · <a href="steps.html">Steps</a> ·
+<a href="methodology.html">Verification</a> · <a href="flagged.html">Flagged for review</a> ·
+<a href="/China1/index.html">All editions</a> · <a href="/China1/COORDINATION.md">Coordination log</a></p>
+<p>Edition J · built 2026-11-10 UTC · source snapshot 2026-11-10</p>
+</div></footer>
+</body>
+</html>

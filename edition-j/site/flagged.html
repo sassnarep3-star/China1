@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Official-source research on getting CNY out of mainland China as a US citizen: 30 routes, pros and cons, statutory penalty decomposition, and a computed cost ladder from USD 10,000 to USD 400,000 in 10,000 steps.">
+<title>Flagged for review · China Money · Edition J</title>
+<style>
+:root{--ink:#12222b;--dim:#5a6b75;--line:#d9e2e8;--bg:#f6f8fa;--card:#fff;--accent:#0b6b5b;
+--accent-soft:#e6f2ee;--warn:#8a5b00;--warn-soft:#fff6e2;--bad:#8f2020;--bad-soft:#fdecec;
+--ok:#1c5f3a;--ok-soft:#e7f4ec;--mono:ui-monospace,SFMono-Regular,Menlo,monospace}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:2px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #b8860b;outline-offset:2px}
+header.top{background:#0d2b33;color:#fff;padding:10px 0}
+header.top .wrap{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+header.top a{color:#dff3ee}
+header.top .brand{font-weight:700;color:#fff;text-decoration:none;letter-spacing:.2px}
+header.top nav{display:flex;gap:6px;flex-wrap:wrap;font-size:.82rem}
+header.top nav a{padding:5px 9px;border-radius:99px;text-decoration:none;border:1px solid transparent}
+header.top nav a:hover{background:rgba(255,255,255,.12)}
+header.top nav a[aria-current]{background:#fff;color:#0d2b33;font-weight:650}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+main{padding:22px 0 64px}
+h1{font-size:clamp(1.6rem,4.6vw,2.6rem);line-height:1.15;margin:.2em 0 .35em;letter-spacing:-.4px}
+h2{font-size:clamp(1.2rem,2.8vw,1.55rem);margin:2.1em 0 .5em;letter-spacing:-.2px}
+h3{font-size:1.05rem;margin:1.6em 0 .4em}
+p{margin:.6em 0}
+.lead{font-size:1.06rem;color:#26383f;max-width:74ch}
+.dim,.muted{color:var(--dim)}
+small{font-size:.82rem}
+.pill{display:inline-block;padding:4px 11px;border-radius:99px;background:var(--accent-soft);
+color:#0a4f43;font-size:.78rem;font-weight:650;letter-spacing:.2px}
+.pill.warn{background:var(--warn-soft);color:var(--warn)}
+.pill.bad{background:var(--bad-soft);color:var(--bad)}
+.notice{border-left:4px solid #b8860b;background:var(--warn-soft);padding:13px 16px;border-radius:0 10px 10px 0;
+margin:18px 0}
+.notice.soft{border-left-color:var(--accent);background:var(--accent-soft)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(232px,1fr));gap:12px;margin:16px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 16px;
+text-decoration:none;color:inherit;display:block;transition:box-shadow .15s,border-color .15s}
+a.card:hover{box-shadow:0 4px 16px rgba(13,43,51,.1);border-color:#9fbec5}
+.card strong{display:block;color:var(--accent);font-size:.98rem;margin-bottom:3px}
+.card p{margin:0;font-size:.88rem;color:var(--dim)}
+.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:12px;margin:18px 0}
+.kpi div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+.kpi .n{font-family:var(--mono);font-size:1.32rem;font-weight:700;color:#0d2b33;letter-spacing:-.5px}
+.kpi .l{font-size:.76rem;color:var(--dim);text-transform:uppercase;letter-spacing:.5px;margin-top:2px}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;background:var(--card);border:1px solid var(--line);
+border-radius:12px;margin:12px 0}
+table{border-collapse:collapse;width:100%;font-size:.87rem}
+caption{text-align:left;padding:12px 14px 6px;font-weight:650;color:#0d2b33;font-size:.9rem}
+th,td{padding:9px 11px;text-align:left;border-bottom:1px solid #e7edf1;vertical-align:top}
+th{background:#eef3f5;font-size:.76rem;text-transform:uppercase;letter-spacing:.4px;color:#33474f;
+position:sticky;top:0;white-space:nowrap}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover{background:#fafcfd}
+td.num,th.num{text-align:right;font-family:var(--mono);font-size:.82rem;white-space:nowrap}
+.src{display:inline-block;font-size:.68rem;font-family:var(--mono);padding:2px 5px;border-radius:5px;
+margin:1px 3px 1px 0;text-decoration:none;white-space:nowrap;border:1px solid}
+.t-law{background:#e8f0fb;color:#1c3f73;border-color:#c5d7f0}
+.t-gov{background:#eef4ee;color:#2c5b33;border-color:#cfe0d0}
+.t-provider{background:#f4eef8;color:#573b6e;border-color:#ded0e8}
+.blank{display:inline-block;min-width:46px;text-align:center;color:#8a6a00;background:#fff8e6;
+border:1px dashed #d9b44a;border-radius:5px;font-size:.74rem;padding:1px 5px;font-family:inherit}
+.tnote{font-size:.78rem;color:var(--dim);margin:-4px 0 14px}
+.badge{display:inline-block;font-size:.72rem;font-weight:700;padding:2px 7px;border-radius:5px;white-space:nowrap}
+.b-lawful{background:var(--ok-soft);color:var(--ok)}
+.b-conditional{background:var(--warn-soft);color:var(--warn)}
+.b-prohibited{background:var(--bad-soft);color:var(--bad)}
+.b-verified{background:#e6f2ee;color:#0a4f43}
+.b-partly{background:#fff6e2;color:#8a5b00}
+.b-unverified{background:#fdecec;color:#8f2020}
+details{background:var(--card);border:1px solid var(--line);border-radius:11px;margin:9px 0;overflow:hidden}
+details[open]{border-color:#b9cdd4}
+summary{padding:13px 15px;cursor:pointer;font-weight:650;display:flex;gap:9px;align-items:baseline;
+flex-wrap:wrap;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"+";font-family:var(--mono);color:var(--accent);font-weight:700;width:12px}
+details[open] summary::before{content:"–"}
+summary .rid{font-family:var(--mono);font-size:.78rem;color:var(--dim);background:#eef3f5;
+padding:2px 6px;border-radius:5px}
+.detail{padding:0 15px 15px;border-top:1px solid var(--line)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.two ul{margin:.3em 0;padding-left:1.15em}
+.two li{margin:.28em 0;font-size:.88rem}
+.two h4{margin:12px 0 4px;font-size:.8rem;text-transform:uppercase;letter-spacing:.5px;color:var(--dim)}
+ol.steps{padding-left:1.3em;margin:.5em 0}
+ol.steps li{margin:.4em 0;font-size:.89rem}
+footer{border-top:1px solid var(--line);margin-top:44px;padding:20px 0 40px;color:var(--dim);font-size:.82rem}
+footer a{color:var(--dim)}
+.flag-h{background:var(--bad-soft);border-left:4px solid var(--bad);padding:11px 14px;border-radius:0 9px 9px 0;
+margin:12px 0;font-size:.9rem}
+@media(max-width:760px){
+ .two{grid-template-columns:1fr}
+ .responsive thead{display:none}
+ .responsive,.responsive tbody,.responsive tr,.responsive td{display:block;width:100%}
+ .responsive tr{border:1px solid var(--line);border-radius:10px;margin:9px 0;background:var(--card);
+  padding:4px 0;overflow:hidden}
+ .responsive td{display:grid;grid-template-columns:38% 62%;gap:8px;padding:7px 12px;border:none;
+  border-bottom:1px solid #eef3f5;font-size:.86rem}
+ .responsive td:last-child{border-bottom:none}
+ .responsive td::before{content:attr(data-label);font-size:.7rem;text-transform:uppercase;
+  letter-spacing:.4px;color:var(--dim);font-weight:650;padding-top:2px}
+ .responsive td:empty{display:none}
+ th,td{padding:8px 9px}
+ .kpi .n{font-size:1.12rem}
+}
+@media(min-width:761px){.responsive td:first-child{font-weight:600}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="index.html">China Money · Edition J</a>
+<nav aria-label="Site"><a href="index.html">Overview</a><a href="routes.html">All 30 routes</a><a href="ladder.html">Cost ladder</a><a href="penalties.html">Penalty breakdown</a><a href="tax.html">Tax &amp; reporting</a><a href="steps.html">Step by step</a><a href="methodology.html">Verification</a><a href="flagged.html" aria-current="page">Flagged for review</a></nav>
+</div></header>
+<main><div class="wrap">
+
+<p class="pill bad">Flagged for review</p>
+<h1>12 items to review, none of which blocked publication</h1>
+<p class="lead">These are the places where the evidence is thin, conflicting or simply unavailable. Each carries
+the source that was read, so the reader can check the reasoning rather than take the conclusion.</p>
+<div class="notice"><strong>Why publish anyway.</strong> Leaving a gap invisible is worse than leaving it blank.
+Everything on this page stays visible until an official source closes it, and the corresponding table cells stay
+empty in the meantime.</div>
+<div class="scroll"><table class="responsive"><caption>Table 10 — open review items</caption><thead><tr><th scope="col">#</th><th scope="col">Severity</th><th scope="col">Item and detail</th><th scope="col">Sources</th></tr></thead><tbody><tr><td data-label="#"><strong>FJ01</strong></td><td data-label="Severity"><span class="badge b-prohibited">high</span></td><td data-label="Item and detail">Account-specific facts are unknown<br><span class="dim">Bank, account holder classification (境内个人 vs 境外个人), balance, source of funds, residency status, filing history and receiving bank are all unknown. Every all-in cost and every tax figure that depends on them is blank on this site, including whether FBAR is owed at all.</span></td><td data-label="Sources"><a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a><a class="src t-law" href="https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad" rel="noopener noreferrer" title="Internal Revenue Service - U.S. citizens and resident aliens abroad">US-IRS-ABROAD ↗</a><a class="src t-law" href="https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar" rel="noopener noreferrer" title="Internal Revenue Service - Report of Foreign Bank and Financial Accounts (FBAR)">US-FBAR ↗</a></td></tr><tr><td data-label="#"><strong>FJ02</strong></td><td data-label="Severity"><span class="badge b-prohibited">high</span></td><td data-label="Item and detail">Rates move; the board and parity are snapshots<br><span class="dim">The BOC board is timestamped 2026/11/10 07:32:39 and the parity 2026-11-09 09:15. The board itself states the counter/online rate governs, so every computed FX figure is illustrative of that timestamp, not a quote.</span></td><td data-label="Sources"><a class="src t-provider" href="https://www.boc.cn/sourcedb/whpj/" rel="noopener noreferrer" title="Bank of China (中国银行) - 外汇牌价 - 中国银行外汇牌价 (BOC foreign-exchange board)">BOC-BOARD ↗</a><a class="src t-law" href="https://www.chinamoney.com.cn/chinese/bkccpr/" rel="noopener noreferrer" title="China Foreign Exchange Trade System / 中国货币网, authorised by the PBOC - 人民币汇率中间价 (RMB central parity)">CFETS-FIX ↗</a></td></tr><tr><td data-label="#"><strong>FJ03</strong></td><td data-label="Severity"><span class="badge b-prohibited">high</span></td><td data-label="Item and detail">Form 3520 penalty percentages left blank<br><span class="dim">Widely quoted 25%/35% late-filing percentages were not found in the instructions chunk read here. The row stays blank rather than repeating an unverified figure.</span></td><td data-label="Sources"><a class="src t-law" href="https://www.irs.gov/instructions/i3520" rel="noopener noreferrer" title="Internal Revenue Service - Instructions for Form 3520 (12/2025)">US-3520 ↗</a><a class="src t-law" href="https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements" rel="noopener noreferrer" title="Internal Revenue Service - Comparison of Form 8938 and FBAR requirements">US-8938 ↗</a></td></tr><tr><td data-label="#"><strong>FJ04</strong></td><td data-label="Severity"><span class="badge b-conditional">medium</span></td><td data-label="Item and detail">Two SAFE property-transfer texts conflict on staging<br><span class="dim">The 2004 Measures still contain staged release. 汇发〔2014〕2号 Section VI cancelled it, and the 2026 Tianjin Q&amp;A cites the 2004 text without mentioning the amendment. Read together, single or instalment release after approval is correct; a branch applying the old text would not be.</span></td><td data-label="Sources"><a class="src t-law" href="http://m.safe.gov.cn/safe/2004/1116/5461.html" rel="noopener noreferrer" title="People&#x27;s Bank of China 公告〔2004〕第16号, published by SAFE - 个人财产对外转移售付汇管理暂行办法 (Interim Measures on Sale and Payment of FX for Outward Transfer of Personal Property)">CN-PROPERTY2004 ↗</a><a class="src t-law" href="https://www.safe.gov.cn/tianjin/2024/0903/2594.html" rel="noopener noreferrer" title="SAFE, 汇发〔2014〕2号, amended republication on the Tianjin branch site - 国家外汇管理局关于进一步改进和调整资本项目外汇管理政策的通知 (Section VI: personal property transfer)">CN-CAP2014 ↗</a><a class="src t-law" href="http://www.safe.gov.cn/tianjin/2026/0318/3017.html" rel="noopener noreferrer" title="SAFE Tianjin branch (国家外汇管理局天津市分局) - 个人财产转移购付汇业务问答（六） (Q&amp;A on outward transfer of personal property, part 6)">CN-PROPERTYQA ↗</a></td></tr><tr><td data-label="#"><strong>FJ05</strong></td><td data-label="Severity"><span class="badge b-conditional">medium</span></td><td data-label="Item and detail">Virtual-currency notice read from a government reprint<br><span class="dim">银发〔2026〕42号 was read on a Shenzhen district government portal because the PBOC page did not load from this sandbox. The content is consistent across the reprints located, but the canonical PBOC URL is the one to cite in a filing.</span></td><td data-label="Sources"><a class="src t-gov" href="https://www.szns.gov.cn/ztzl/ffjzxsjb/zcfg/content/post_12958317.html" rel="noopener noreferrer" title="Eight ministries incl. PBOC and SAFE, 银发〔2026〕42号; full text as republished by a Shenzhen district government portal - 关于进一步防范和处置虚拟货币等相关风险的通知">CN-VA2026 ↗</a></td></tr><tr><td data-label="#"><strong>FJ06</strong></td><td data-label="Severity"><span class="badge b-conditional">medium</span></td><td data-label="Item and detail">US Code read via Cornell, not uscode.house.gov<br><span class="dim">uscode.house.gov granule links returned 404 and govinfo was unreachable from this sandbox, so §988, §5321 and §6038D were read on the Legal Information Institute&#x27;s republication. The IRS and eCFR pages used for FBAR and the inflation table are primary.</span></td><td data-label="Sources"><a class="src t-law" href="https://www.law.cornell.edu/uscode/text/26/988" rel="noopener noreferrer" title="Legal Information Institute, Cornell Law School (26 U.S.C. §988) - 26 U.S. Code §988 - Treatment of certain foreign currency transactions">US-988 ↗</a><a class="src t-law" href="https://www.law.cornell.edu/uscode/text/31/5321" rel="noopener noreferrer" title="Legal Information Institute, Cornell Law School (31 U.S.C. §5321) - 31 U.S. Code §5321 - Civil penalties">US-5321 ↗</a><a class="src t-law" href="https://www.law.cornell.edu/uscode/text/26/6038D" rel="noopener noreferrer" title="Legal Information Institute, Cornell Law School (26 U.S.C. §6038D) - 26 U.S. Code §6038D - Information with respect to foreign financial assets">US-6038D ↗</a></td></tr><tr><td data-label="#"><strong>FJ07</strong></td><td data-label="Severity"><span class="badge b-conditional">medium</span></td><td data-label="Item and detail">Facilitation quota may not be available to a foreign passport holder<br><span class="dim">Art. 54 frames the USD 50,000 quota around 个人结汇 and 境内个人购汇. Whether a US citizen holding a Chinese account is booked as 境内个人 or 境外个人 is an account-level fact. R02 is marked conditional for this reason and should not be planned around.</span></td><td data-label="Sources"><a class="src t-law" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" rel="noopener noreferrer" title="SAFE, 汇发〔2020〕14号, republished in State Council Gazette 2020 No. 31 - 经常项目外汇业务指引（2020年版） (Current-Account FX Business Guide, 2020 edition)">CN-GUIDE2020 ↗</a><a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a></td></tr><tr><td data-label="#"><strong>FJ08</strong></td><td data-label="Severity"><span class="badge b-conditional">medium</span></td><td data-label="Item and detail">Only one bank&#x27;s tariff could be read<br><span class="dim">ICBC&#x27;s fee schedule page did not expose a readable tariff table and the HSBC PDF returned 404. All fee arithmetic therefore uses BOC alone; other banks may differ in either direction, and BOC&#x27;s own note 1 allows agreed or local pricing.</span></td><td data-label="Sources"><a class="src t-provider" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" rel="noopener noreferrer" title="Bank of China (中国银行) - 电子银行个人服务转账汇款费率表 - 中国银行电子银行个人服务转账汇款费率表 (personal e-banking transfer tariff, effective 2014-11-01)">BOC-TARIFF ↗</a></td></tr><tr><td data-label="#"><strong>FJ09</strong></td><td data-label="Severity"><span class="badge b-lawful">low</span></td><td data-label="Item and detail">Postal remittance limit unverified<br><span class="dim">No official CNY-outbound limit or fee for international postal money orders could be confirmed. The row carries no limit and no price, and is not recommended for material amounts.</span></td><td data-label="Sources"><a class="src t-law" href="https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-C/section-1010.340" rel="noopener noreferrer" title="eCFR (Office of the Federal Register), 31 CFR 1010.340 - §1010.340 Reports of transportation of currency or monetary instruments">US-1010340 ↗</a></td></tr><tr><td data-label="#"><strong>FJ10</strong></td><td data-label="Severity"><span class="badge b-lawful">low</span></td><td data-label="Item and detail">Receiving-bank fees are blank everywhere<br><span class="dim">No US bank&#x27;s incoming wire fee was read in this session, so no receiver cost is included in any row. Adding one would change every all-in total, which is why the totals stay blank rather than half-complete.</span></td><td data-label="Sources"><a class="src t-provider" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" rel="noopener noreferrer" title="Bank of China (中国银行) - 电子银行个人服务转账汇款费率表 - 中国银行电子银行个人服务转账汇款费率表 (personal e-banking transfer tariff, effective 2014-11-01)">BOC-TARIFF ↗</a></td></tr><tr><td data-label="#"><strong>FJ11</strong></td><td data-label="Severity"><span class="badge b-lawful">low</span></td><td data-label="Item and detail">Gold and offshore-asset routes are unverified<br><span class="dim">R25 and R11 rest on rules read only in outline (customs, capital registration, foreign buyer restrictions). They are listed for completeness with no estimate and no limit.</span></td><td data-label="Sources"><a class="src t-law" href="https://www.gov.cn/gongbao/content/2008/content_1071846.htm" rel="noopener noreferrer" title="State Council of the PRC (国务院令第532号) - 中华人民共和国外汇管理条例 (Foreign Exchange Administration Regulations)">CN-FXREG ↗</a><a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a></td></tr><tr><td data-label="#"><strong>FJ12</strong></td><td data-label="Severity"><span class="badge b-conditional">medium</span></td><td data-label="Item and detail">Chinese tax on the underlying income is not modelled per route<br><span class="dim">Only the flat 20% categories can be computed from a published rate; whether that tax has already been withheld, and on what base, is unknown. R06 and R12 show a 20% figure for the withholding case only, and no figure is claimed for capital gains because the basis is unknown.</span></td><td data-label="Sources"><a class="src t-law" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" rel="noopener noreferrer" title="State Taxation Administration (English translation of the statute) - Individual Income Tax Law of the PRC">CN-IIT ↗</a><a class="src t-law" href="https://shanghai.chinatax.gov.cn/zzzb/zcwj/202609/t481448.html" rel="noopener noreferrer" title="Ministry of Finance &amp; STA, 财政部 税务总局公告2026年第27号 (Shanghai STA reprint) - 关于外籍个人股息红利个人所得税政策有关事项的公告">CN-DIV2026 ↗</a></td></tr></tbody></table></div>
+<h2>How to close each one</h2>
+<div class="scroll"><table class="responsive"><caption>Table 11 — closure path for each flag</caption><thead><tr><th scope="col">Item</th><th scope="col">What would close it</th></tr></thead><tbody><tr><td data-label="Item">FJ01</td><td data-label="What would close it">A statement of the account's booking classification and source documents, from the bank.</td></tr><tr><td data-label="Item">FJ02</td><td data-label="What would close it">Re-read the BOC board and the parity on the day of the transfer.</td></tr><tr><td data-label="Item">FJ03</td><td data-label="What would close it">The Form 3520 instructions penalties section, read in full.</td></tr><tr><td data-label="Item">FJ04</td><td data-label="What would close it">A written position from the relevant SAFE branch on which text it applies.</td></tr><tr><td data-label="Item">FJ05</td><td data-label="What would close it">Retrieve the PBOC original of 银发〔2026〕42号.</td></tr><tr><td data-label="Item">FJ06</td><td data-label="What would close it">Re-read §988, §5321 and §6038D on uscode.house.gov or govinfo when reachable.</td></tr><tr><td data-label="Item">FJ07</td><td data-label="What would close it">Written confirmation of your 境内/境外 classification from the bank.</td></tr><tr><td data-label="Item">FJ08</td><td data-label="What would close it">A readable tariff from a second bank.</td></tr><tr><td data-label="Item">FJ09</td><td data-label="What would close it">An official postal-remittance limit and fee schedule.</td></tr><tr><td data-label="Item">FJ10</td><td data-label="What would close it">Your receiving bank's incoming-wire fee schedule.</td></tr><tr><td data-label="Item">FJ11</td><td data-label="What would close it">Customs and capital-account rules for gold and offshore asset sales.</td></tr><tr><td data-label="Item">FJ12</td><td data-label="What would close it">The Chinese withholding certificates for the specific income.</td></tr></tbody></table></div>
+
+</div></main>
+<footer><div class="wrap">
+<p><strong>Research, not legal, tax or investment advice.</strong> Every rule is linked to the instrument
+that states it; every price to the provider that publishes it. Values that could not be confirmed for this
+account are left blank and counted on the <a href="methodology.html">verification page</a>. Rates are
+snapshots, not quotes.</p>
+<p><a href="index.html">Overview</a> · <a href="routes.html">Routes</a> ·
+<a href="ladder.html">Cost ladder</a> · <a href="penalties.html">Penalties</a> ·
+<a href="tax.html">Tax &amp; reporting</a> · <a href="steps.html">Steps</a> ·
+<a href="methodology.html">Verification</a> · <a href="flagged.html">Flagged for review</a> ·
+<a href="/China1/index.html">All editions</a> · <a href="/China1/COORDINATION.md">Coordination log</a></p>
+<p>Edition J · built 2026-11-10 UTC · source snapshot 2026-11-10</p>
+</div></footer>
+</body>
+</html>

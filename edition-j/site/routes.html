@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Official-source research on getting CNY out of mainland China as a US citizen: 30 routes, pros and cons, statutory penalty decomposition, and a computed cost ladder from USD 10,000 to USD 400,000 in 10,000 steps.">
+<title>All routes · China Money · Edition J</title>
+<style>
+:root{--ink:#12222b;--dim:#5a6b75;--line:#d9e2e8;--bg:#f6f8fa;--card:#fff;--accent:#0b6b5b;
+--accent-soft:#e6f2ee;--warn:#8a5b00;--warn-soft:#fff6e2;--bad:#8f2020;--bad-soft:#fdecec;
+--ok:#1c5f3a;--ok-soft:#e7f4ec;--mono:ui-monospace,SFMono-Regular,Menlo,monospace}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:2px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #b8860b;outline-offset:2px}
+header.top{background:#0d2b33;color:#fff;padding:10px 0}
+header.top .wrap{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+header.top a{color:#dff3ee}
+header.top .brand{font-weight:700;color:#fff;text-decoration:none;letter-spacing:.2px}
+header.top nav{display:flex;gap:6px;flex-wrap:wrap;font-size:.82rem}
+header.top nav a{padding:5px 9px;border-radius:99px;text-decoration:none;border:1px solid transparent}
+header.top nav a:hover{background:rgba(255,255,255,.12)}
+header.top nav a[aria-current]{background:#fff;color:#0d2b33;font-weight:650}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+main{padding:22px 0 64px}
+h1{font-size:clamp(1.6rem,4.6vw,2.6rem);line-height:1.15;margin:.2em 0 .35em;letter-spacing:-.4px}
+h2{font-size:clamp(1.2rem,2.8vw,1.55rem);margin:2.1em 0 .5em;letter-spacing:-.2px}
+h3{font-size:1.05rem;margin:1.6em 0 .4em}
+p{margin:.6em 0}
+.lead{font-size:1.06rem;color:#26383f;max-width:74ch}
+.dim,.muted{color:var(--dim)}
+small{font-size:.82rem}
+.pill{display:inline-block;padding:4px 11px;border-radius:99px;background:var(--accent-soft);
+color:#0a4f43;font-size:.78rem;font-weight:650;letter-spacing:.2px}
+.pill.warn{background:var(--warn-soft);color:var(--warn)}
+.pill.bad{background:var(--bad-soft);color:var(--bad)}
+.notice{border-left:4px solid #b8860b;background:var(--warn-soft);padding:13px 16px;border-radius:0 10px 10px 0;
+margin:18px 0}
+.notice.soft{border-left-color:var(--accent);background:var(--accent-soft)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(232px,1fr));gap:12px;margin:16px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 16px;
+text-decoration:none;color:inherit;display:block;transition:box-shadow .15s,border-color .15s}
+a.card:hover{box-shadow:0 4px 16px rgba(13,43,51,.1);border-color:#9fbec5}
+.card strong{display:block;color:var(--accent);font-size:.98rem;margin-bottom:3px}
+.card p{margin:0;font-size:.88rem;color:var(--dim)}
+.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:12px;margin:18px 0}
+.kpi div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+.kpi .n{font-family:var(--mono);font-size:1.32rem;font-weight:700;color:#0d2b33;letter-spacing:-.5px}
+.kpi .l{font-size:.76rem;color:var(--dim);text-transform:uppercase;letter-spacing:.5px;margin-top:2px}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;background:var(--card);border:1px solid var(--line);
+border-radius:12px;margin:12px 0}
+table{border-collapse:collapse;width:100%;font-size:.87rem}
+caption{text-align:left;padding:12px 14px 6px;font-weight:650;color:#0d2b33;font-size:.9rem}
+th,td{padding:9px 11px;text-align:left;border-bottom:1px solid #e7edf1;vertical-align:top}
+th{background:#eef3f5;font-size:.76rem;text-transform:uppercase;letter-spacing:.4px;color:#33474f;
+position:sticky;top:0;white-space:nowrap}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover{background:#fafcfd}
+td.num,th.num{text-align:right;font-family:var(--mono);font-size:.82rem;white-space:nowrap}
+.src{display:inline-block;font-size:.68rem;font-family:var(--mono);padding:2px 5px;border-radius:5px;
+margin:1px 3px 1px 0;text-decoration:none;white-space:nowrap;border:1px solid}
+.t-law{background:#e8f0fb;color:#1c3f73;border-color:#c5d7f0}
+.t-gov{background:#eef4ee;color:#2c5b33;border-color:#cfe0d0}
+.t-provider{background:#f4eef8;color:#573b6e;border-color:#ded0e8}
+.blank{display:inline-block;min-width:46px;text-align:center;color:#8a6a00;background:#fff8e6;
+border:1px dashed #d9b44a;border-radius:5px;font-size:.74rem;padding:1px 5px;font-family:inherit}
+.tnote{font-size:.78rem;color:var(--dim);margin:-4px 0 14px}
+.badge{display:inline-block;font-size:.72rem;font-weight:700;padding:2px 7px;border-radius:5px;white-space:nowrap}
+.b-lawful{background:var(--ok-soft);color:var(--ok)}
+.b-conditional{background:var(--warn-soft);color:var(--warn)}
+.b-prohibited{background:var(--bad-soft);color:var(--bad)}
+.b-verified{background:#e6f2ee;color:#0a4f43}
+.b-partly{background:#fff6e2;color:#8a5b00}
+.b-unverified{background:#fdecec;color:#8f2020}
+details{background:var(--card);border:1px solid var(--line);border-radius:11px;margin:9px 0;overflow:hidden}
+details[open]{border-color:#b9cdd4}
+summary{padding:13px 15px;cursor:pointer;font-weight:650;display:flex;gap:9px;align-items:baseline;
+flex-wrap:wrap;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"+";font-family:var(--mono);color:var(--accent);font-weight:700;width:12px}
+details[open] summary::before{content:"–"}
+summary .rid{font-family:var(--mono);font-size:.78rem;color:var(--dim);background:#eef3f5;
+padding:2px 6px;border-radius:5px}
+.detail{padding:0 15px 15px;border-top:1px solid var(--line)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.two ul{margin:.3em 0;padding-left:1.15em}
+.two li{margin:.28em 0;font-size:.88rem}
+.two h4{margin:12px 0 4px;font-size:.8rem;text-transform:uppercase;letter-spacing:.5px;color:var(--dim)}
+ol.steps{padding-left:1.3em;margin:.5em 0}
+ol.steps li{margin:.4em 0;font-size:.89rem}
+footer{border-top:1px solid var(--line);margin-top:44px;padding:20px 0 40px;color:var(--dim);font-size:.82rem}
+footer a{color:var(--dim)}
+.flag-h{background:var(--bad-soft);border-left:4px solid var(--bad);padding:11px 14px;border-radius:0 9px 9px 0;
+margin:12px 0;font-size:.9rem}
+@media(max-width:760px){
+ .two{grid-template-columns:1fr}
+ .responsive thead{display:none}
+ .responsive,.responsive tbody,.responsive tr,.responsive td{display:block;width:100%}
+ .responsive tr{border:1px solid var(--line);border-radius:10px;margin:9px 0;background:var(--card);
+  padding:4px 0;overflow:hidden}
+ .responsive td{display:grid;grid-template-columns:38% 62%;gap:8px;padding:7px 12px;border:none;
+  border-bottom:1px solid #eef3f5;font-size:.86rem}
+ .responsive td:last-child{border-bottom:none}
+ .responsive td::before{content:attr(data-label);font-size:.7rem;text-transform:uppercase;
+  letter-spacing:.4px;color:var(--dim);font-weight:650;padding-top:2px}
+ .responsive td:empty{display:none}
+ th,td{padding:8px 9px}
+ .kpi .n{font-size:1.12rem}
+}
+@media(min-width:761px){.responsive td:first-child{font-weight:600}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="index.html">China Money · Edition J</a>
+<nav aria-label="Site"><a href="index.html">Overview</a><a href="routes.html" aria-current="page">All 30 routes</a><a href="ladder.html">Cost ladder</a><a href="penalties.html">Penalty breakdown</a><a href="tax.html">Tax &amp; reporting</a><a href="steps.html">Step by step</a><a href="methodology.html">Verification</a><a href="flagged.html">Flagged for review</a></nav>
+</div></header>
+<main><div class="wrap">
+
+<p class="pill">Route catalogue</p>
+<h1>All 30 ways a US citizen can move or use CNY</h1>
+<p class="lead">Each route states its legal basis, its published limit, its pros and cons, and whether a price
+could be verified. Prohibited routes carry no execution steps - only what the instrument prohibits and what it
+costs you if you do it anyway.</p>
+<div class="notice soft"><strong>How to read the badges.</strong>
+<span class="badge b-lawful">lawful</span> available if the documentary facts fit ·
+<span class="badge b-conditional">conditional</span> lawful only with an approval or an eligibility fact ·
+<span class="badge b-prohibited">prohibited</span> unlawful, risk information only. Verification badges:
+<span class="badge b-verified">verified</span> rule and price both read ·
+<span class="badge b-partly">partly</span> rule read, price or practice not ·
+<span class="badge b-unverified">unverified</span> not confirmable from official sources.</div>
+<h2 id="A">Current account - income you can document <span class="dim" style="font-weight:400">(6)</span></h2><p class="dim">The only family of routes without a hard amount ceiling, but each requires an evidence chain from the CNY to specific lawful income. Start here if any part of the balance is documented earnings.</p>
+<details id="R01">
+<summary><span class="rid">R01</span> Bank purchase and TT remittance against documented current-account income
+<span class="badge b-lawful">lawful</span>
+<span class="badge b-verified">verified</span></summary>
+<div class="detail">
+<p class="dim"><strong>境外个人凭经常项目合法人民币收入购汇汇出</strong> · 个人外汇管理办法 Art. 13; 经常项目指引(2020) Art. 59 · <a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a><a class="src t-law" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" rel="noopener noreferrer" title="SAFE, 汇发〔2020〕14号, republished in State Council Gazette 2020 No. 31 - 经常项目外汇业务指引（2020年版） (Current-Account FX Business Guide, 2020 edition)">CN-GUIDE2020 ↗</a></p>
+<p><strong>Published limit.</strong> No annual cap stated for 境外个人 purchasing against documented income (Art. 59). Above USD 50,000 per payment the bank applies enhanced documentary review.</p>
+<p><strong>Price basis.</strong> Priced: FX spread + BOC published tariff <a class="src t-provider" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" rel="noopener noreferrer" title="Bank of China (中国银行) - 电子银行个人服务转账汇款费率表 - 中国银行电子银行个人服务转账汇款费率表 (personal e-banking transfer tariff, effective 2014-11-01)">BOC-TARIFF ↗</a> <a class="src t-provider" href="https://www.boc.cn/sourcedb/whpj/" rel="noopener noreferrer" title="Bank of China (中国银行) - 外汇牌价 - 中国银行外汇牌价 (BOC foreign-exchange board)">BOC-BOARD ↗</a> <a class="src t-law" href="https://www.chinamoney.com.cn/chinese/bkccpr/" rel="noopener noreferrer" title="China Foreign Exchange Trade System / 中国货币网, authorised by the PBOC - 人民币汇率中间价 (RMB central parity)">CFETS-FIX ↗</a>
+</p>
+<div class="two">
+<div><h4>Pros</h4><ul><li>The only route that is unrestricted in size once the income trail is documented.</li><li>Priced from a published bank tariff, so the fee is knowable before you commit.</li><li>Leaves a clean audit trail for both SAFE and the IRS.</li></ul></div>
+<div><h4>Cons</h4><ul><li>Requires an evidence chain linking each CNY to specific lawful income.</li><li>Banks may still refuse or escalate; the rule gives them discretion on documentary adequacy.</li><li>Does not remove Chinese income tax already due on the underlying income.</li></ul></div>
+</div>
+<h4>Steps</h4><ol class="steps"><li>Classify the balance by source and period; separate documented income from pre-emigration savings.</li><li>Ask the bank to confirm you are booked as 境外个人 (foreign individual) on the account, because the quota rules differ.</li><li>Assemble the documentary set: passport, China tax record or withholding slips, employment or service contract, and bank statements showing the credits.</li><li>Submit the purchase (购汇) application; above USD 50,000 the bank performs enhanced review under Art. 59.</li><li>Settle the FX at the counter/online rate, request the TT, and keep the 结售汇 slip and the remittance receipt.</li><li>Report the account and the transfer on your US return: FBAR if the aggregate exceeded USD 10,000 at any point, Form 8938 if the threshold applies.</li></ol>
+<p><a href="ladder-R01.html">Cost ladder for this route →</a></p>
+</div></details>
+<details id="R02">
+<summary><span class="rid">R02</span> Annual facilitation-quota purchase (USD 50,000 per person per year)
+<span class="badge b-conditional">conditional</span>
+<span class="badge b-partly">partly</span></summary>
+<div class="detail">
+<p class="dim"><strong>年度便利化额度购汇</strong> · 经常项目指引(2020) Art. 54; 个人外汇管理办法 Art. 9 · <a class="src t-law" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" rel="noopener noreferrer" title="SAFE, 汇发〔2020〕14号, republished in State Council Gazette 2020 No. 31 - 经常项目外汇业务指引（2020年版） (Current-Account FX Business Guide, 2020 edition)">CN-GUIDE2020 ↗</a><a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a></p>
+<p><strong>Published limit.</strong> USD 50,000 equivalent per person per calendar year, for 个人结汇 and 境内个人购汇.</p>
+<p><strong>Price basis.</strong> Priced: FX spread + BOC published tariff <a class="src t-provider" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" rel="noopener noreferrer" title="Bank of China (中国银行) - 电子银行个人服务转账汇款费率表 - 中国银行电子银行个人服务转账汇款费率表 (personal e-banking transfer tariff, effective 2014-11-01)">BOC-TARIFF ↗</a> <a class="src t-provider" href="https://www.boc.cn/sourcedb/whpj/" rel="noopener noreferrer" title="Bank of China (中国银行) - 外汇牌价 - 中国银行外汇牌价 (BOC foreign-exchange board)">BOC-BOARD ↗</a> <a class="src t-law" href="https://www.chinamoney.com.cn/chinese/bkccpr/" rel="noopener noreferrer" title="China Foreign Exchange Trade System / 中国货币网, authorised by the PBOC - 人民币汇率中间价 (RMB central parity)">CFETS-FIX ↗</a>
+</p>
+<div class="two">
+<div><h4>Pros</h4><ul><li>Fast and largely documentary-free inside the quota.</li><li>Can be done online or on the mobile app at most banks.</li></ul></div>
+<div><h4>Cons</h4><ul><li>The purchase quota is framed for 境内个人 (Chinese citizens with a resident ID); a US citizen holding a foreign passport is generally 境外个人, so this quota is the wrong lane and a bank may refuse it.</li><li>USD 50,000 a year cannot move USD 400,000 quickly; you would need eight years, and stacking relatives to speed it up is prohibited (see R28).</li><li>Using it to disguise a capital-account transfer is the classic violation.</li></ul></div>
+</div>
+<h4>Steps</h4><ol class="steps"><li>Confirm with the bank whether you are recorded as 境内个人 or 境外个人 - this determines whether the quota is even available to you.</li><li>If available, submit the purchase application with your valid ID inside the annual quota.</li><li>Record the quota usage; it is aggregated per person across all banks.</li><li>Remit and retain the slips.</li></ol>
+<p><a href="ladder-R02.html">Cost ladder for this route →</a></p>
+</div></details>
+<details id="R03">
+<summary><span class="rid">R03</span> Salary, bonus and severance paid from a mainland employer
+<span class="badge b-lawful">lawful</span>
+<span class="badge b-verified">verified</span></summary>
+<div class="detail">
+<p class="dim"><strong>工资薪金及离职补偿购汇汇出</strong> · 个人外汇管理办法 Art. 13; 经常项目指引(2020) Art. 59; IIT Law Art. 2(1) · <a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a><a class="src t-law" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" rel="noopener noreferrer" title="SAFE, 汇发〔2020〕14号, republished in State Council Gazette 2020 No. 31 - 经常项目外汇业务指引（2020年版） (Current-Account FX Business Guide, 2020 edition)">CN-GUIDE2020 ↗</a><a class="src t-law" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" rel="noopener noreferrer" title="State Taxation Administration (English translation of the statute) - Individual Income Tax Law of the PRC">CN-IIT ↗</a></p>
+<p><strong>Published limit.</strong> No annual cap for 境外个人 against documented income; documentary review above USD 50,000.</p>
+<p><strong>Price basis.</strong> Priced: FX spread + BOC published tariff <a class="src t-provider" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" rel="noopener noreferrer" title="Bank of China (中国银行) - 电子银行个人服务转账汇款费率表 - 中国银行电子银行个人服务转账汇款费率表 (personal e-banking transfer tariff, effective 2014-11-01)">BOC-TARIFF ↗</a> <a class="src t-provider" href="https://www.boc.cn/sourcedb/whpj/" rel="noopener noreferrer" title="Bank of China (中国银行) - 外汇牌价 - 中国银行外汇牌价 (BOC foreign-exchange board)">BOC-BOARD ↗</a> <a class="src t-law" href="https://www.chinamoney.com.cn/chinese/bkccpr/" rel="noopener noreferrer" title="China Foreign Exchange Trade System / 中国货币网, authorised by the PBOC - 人民币汇率中间价 (RMB central parity)">CFETS-FIX ↗</a>
+</p>
+<div class="two">
+<div><h4>Pros</h4><ul><li>The strongest documentary position available: payroll records and withholding slips already exist.</li><li>Chinese individual income tax has usually been withheld monthly, so no fresh Chinese tax event arises on the transfer.</li></ul></div>
+<div><h4>Cons</h4><ul><li>Only covers the salary portion of the balance, not savings accumulated from other sources.</li><li>Severance may need the termination agreement and the tax treatment confirmed locally.</li></ul></div>
+</div>
+<h4>Steps</h4><ol class="steps"><li>Obtain the employment contract, the payroll history and the annual 个人所得税 withholding record.</li><li>Have the employer or the tax bureau confirm the tax-paid position for the period.</li><li>Present the package to the bank with the purchase application.</li><li>Convert, remit, and reconcile the gross and net amounts in USD on your US return.</li></ol>
+<p><a href="ladder-R03.html">Cost ladder for this route →</a></p>
+</div></details>
+<details id="R04">
+<summary><span class="rid">R04</span> Service-trade income: consulting, freelance, royalties
+<span class="badge b-lawful">lawful</span>
+<span class="badge b-verified">verified</span></summary>
+<div class="detail">
+<p class="dim"><strong>服务贸易项下收入购汇汇出</strong> · 经常项目指引(2020) Art. 49 and Art. 59 · <a class="src t-law" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" rel="noopener noreferrer" title="SAFE, 汇发〔2020〕14号, republished in State Council Gazette 2020 No. 31 - 经常项目外汇业务指引（2020年版） (Current-Account FX Business Guide, 2020 edition)">CN-GUIDE2020 ↗</a><a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a></p>
+<p><strong>Published limit.</strong> Payments up to USD 50,000: the bank may waive documentary review (Art. 49). Above that: full documentary review, plus the external-payment tax filing form where applicable.</p>
+<p><strong>Price basis.</strong> Priced: FX spread + BOC published tariff <a class="src t-provider" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" rel="noopener noreferrer" title="Bank of China (中国银行) - 电子银行个人服务转账汇款费率表 - 中国银行电子银行个人服务转账汇款费率表 (personal e-banking transfer tariff, effective 2014-11-01)">BOC-TARIFF ↗</a> <a class="src t-provider" href="https://www.boc.cn/sourcedb/whpj/" rel="noopener noreferrer" title="Bank of China (中国银行) - 外汇牌价 - 中国银行外汇牌价 (BOC foreign-exchange board)">BOC-BOARD ↗</a> <a class="src t-law" href="https://www.chinamoney.com.cn/chinese/bkccpr/" rel="noopener noreferrer" title="China Foreign Exchange Trade System / 中国货币网, authorised by the PBOC - 人民币汇率中间价 (RMB central parity)">CFETS-FIX ↗</a>
+</p>
+<div class="two">
+<div><h4>Pros</h4><ul><li>Fits consultants, contractors and royalty owners who invoiced from China.</li><li>Below USD 50,000 per payment the documentary burden is at the bank&#x27;s discretion, which is usually faster.</li></ul></div>
+<div><h4>Cons</h4><ul><li>Requires genuine contracts and invoices - fabricating them is the offence in R30.</li><li>Above USD 50,000 the tax filing form requirement adds a step at the tax bureau.</li></ul></div>
+</div>
+<h4>Steps</h4><ol class="steps"><li>Gather contracts, invoices, payment receipts and the tax treatment of the service income.</li><li>Confirm whether the payment needs the 服务贸易等项目对外支付税务备案表.</li><li>Apply at the bank for purchase and remittance.</li><li>Retain everything; report the income and the account in the US.</li></ol>
+<p><a href="ladder-R04.html">Cost ladder for this route →</a></p>
+</div></details>
+<details id="R05">
+<summary><span class="rid">R05</span> Rent collected from mainland property you own
+<span class="badge b-lawful">lawful</span>
+<span class="badge b-partly">partly</span></summary>
+<div class="detail">
+<p class="dim"><strong>自有房产租金收入汇出</strong> · 个人外汇管理办法 Art. 13; IIT Law Art. 2(7) and Art. 3(3) · <a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a><a class="src t-law" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" rel="noopener noreferrer" title="State Taxation Administration (English translation of the statute) - Individual Income Tax Law of the PRC">CN-IIT ↗</a></p>
+<p><strong>Published limit.</strong> Current-account treatment with no annual cap; documentary review applies.</p>
+<p><strong>Price basis.</strong> Priced: FX spread + BOC published tariff <a class="src t-provider" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" rel="noopener noreferrer" title="Bank of China (中国银行) - 电子银行个人服务转账汇款费率表 - 中国银行电子银行个人服务转账汇款费率表 (personal e-banking transfer tariff, effective 2014-11-01)">BOC-TARIFF ↗</a> <a class="src t-provider" href="https://www.boc.cn/sourcedb/whpj/" rel="noopener noreferrer" title="Bank of China (中国银行) - 外汇牌价 - 中国银行外汇牌价 (BOC foreign-exchange board)">BOC-BOARD ↗</a> <a class="src t-law" href="https://www.chinamoney.com.cn/chinese/bkccpr/" rel="noopener noreferrer" title="China Foreign Exchange Trade System / 中国货币网, authorised by the PBOC - 人民币汇率中间价 (RMB central parity)">CFETS-FIX ↗</a>
+</p>
+<div class="two">
+<div><h4>Pros</h4><ul><li>Recurring, well documented, and small enough to stay inside simple documentary review.</li><li>Chinese IIT on rental income is a flat 20% category with a computable base.</li></ul></div>
+<div><h4>Cons</h4><ul><li>Moves only the rental yield, not the property&#x27;s capital value.</li><li>Requires a lease, tax-paid evidence and often a property-rights document.</li></ul></div>
+</div>
+<h4>Steps</h4><ol class="steps"><li>Register or confirm the lease and the rental tax payments.</li><li>Present the lease, the tax record and the bank statements showing rent credits.</li><li>Apply for purchase and remittance of the net rent.</li></ol>
+<p><a href="ladder-R05.html">Cost ladder for this route →</a></p>
+</div></details>
+<details id="R06">
+<summary><span class="rid">R06</span> Deposit interest and dividends (bank deposits, fund distributions, FIE dividends)
+<span class="badge b-lawful">lawful</span>
+<span class="badge b-verified">verified</span></summary>
+<div class="detail">
+<p class="dim"><strong>利息、股息、红利所得购汇汇出</strong> · IIT Law Art. 2(6) and Art. 3(3); 财政部 税务总局公告2026年第27号 · <a class="src t-law" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" rel="noopener noreferrer" title="State Taxation Administration (English translation of the statute) - Individual Income Tax Law of the PRC">CN-IIT ↗</a><a class="src t-law" href="https://shanghai.chinatax.gov.cn/zzzb/zcwj/202609/t481448.html" rel="noopener noreferrer" title="Ministry of Finance &amp; STA, 财政部 税务总局公告2026年第27号 (Shanghai STA reprint) - 关于外籍个人股息红利个人所得税政策有关事项的公告">CN-DIV2026 ↗</a><a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a></p>
+<p><strong>Published limit.</strong> Current-account treatment; documentary review applies.</p>
+<p><strong>Price basis.</strong> Priced: FX spread + BOC published tariff <a class="src t-provider" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" rel="noopener noreferrer" title="Bank of China (中国银行) - 电子银行个人服务转账汇款费率表 - 中国银行电子银行个人服务转账汇款费率表 (personal e-banking transfer tariff, effective 2014-11-01)">BOC-TARIFF ↗</a> <a class="src t-provider" href="https://www.boc.cn/sourcedb/whpj/" rel="noopener noreferrer" title="Bank of China (中国银行) - 外汇牌价 - 中国银行外汇牌价 (BOC foreign-exchange board)">BOC-BOARD ↗</a> <a class="src t-law" href="https://www.chinamoney.com.cn/chinese/bkccpr/" rel="noopener noreferrer" title="China Foreign Exchange Trade System / 中国货币网, authorised by the PBOC - 人民币汇率中间价 (RMB central parity)">CFETS-FIX ↗</a>
+</p>
+<div class="two">
+<div><h4>Pros</h4><ul><li>Flat 20% Chinese rate makes the tax arithmetic simple and predictable.</li><li>Withholding is usually done by the payer, so the net amount is already clean.</li></ul></div>
+<div><h4>Cons</h4><ul><li>The 1994 exemption for foreign individuals&#x27; FIE dividends was repealed for payments from 2026-09-01; older guides still claim it is tax-free.</li><li>20% is a real cost on the income itself, and it dominates bank fees for large balances.</li></ul></div>
+</div>
+<h4>Steps</h4><ol class="steps"><li>Identify each distribution and whether 20% was withheld at source.</li><li>Obtain the withholding certificates.</li><li>Apply at the bank for purchase and remittance of the net amount.</li><li>Claim the Chinese tax as a foreign tax credit on the US return where eligible.</li></ol>
+<p><a href="ladder-R06.html">Cost ladder for this route →</a></p>
+</div></details><h2 id="B">Capital account - property, inheritance and business exit <span class="dim" style="font-weight:400">(5)</span></h2><p class="dim">The lawful home for pre-emigration savings and inherited assets. All of these are approval-gated, and none of them is a way to relabel income you cannot document.</p>
+<details id="R07">
+<summary><span class="rid">R07</span> Sale of mainland residential property by a non-resident owner
+<span class="badge b-lawful">lawful</span>
+<span class="badge b-verified">verified</span></summary>
+<div class="detail">
+<p class="dim"><strong>境外个人出售境内房产购汇汇出</strong> · 个人外汇管理办法 Art. 22; IIT Law Art. 2(8) and Art. 6(5) · <a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a><a class="src t-gov" href="https://english.shanghai.gov.cn/en-FAQHome/20240204/b4426264395b4fa3adfde73778c94ad4.html" rel="noopener noreferrer" title="Shanghai Municipal Government English portal, sourced to Bank of China - Can I buy foreign exchange using the proceeds from selling my house?">CN-SHFAQ ↗</a><a class="src t-law" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" rel="noopener noreferrer" title="State Taxation Administration (English translation of the statute) - Individual Income Tax Law of the PRC">CN-IIT ↗</a></p>
+<p><strong>Published limit.</strong> No cap on the proceeds themselves; each outward payment above USD 50,000 needs the external-payment tax filing form.</p>
+<p><strong>Price basis.</strong> Priced: FX spread + BOC published tariff <a class="src t-provider" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" rel="noopener noreferrer" title="Bank of China (中国银行) - 电子银行个人服务转账汇款费率表 - 中国银行电子银行个人服务转账汇款费率表 (personal e-banking transfer tariff, effective 2014-11-01)">BOC-TARIFF ↗</a> <a class="src t-provider" href="https://www.boc.cn/sourcedb/whpj/" rel="noopener noreferrer" title="Bank of China (中国银行) - 外汇牌价 - 中国银行外汇牌价 (BOC foreign-exchange board)">BOC-BOARD ↗</a> <a class="src t-law" href="https://www.chinamoney.com.cn/chinese/bkccpr/" rel="noopener noreferrer" title="China Foreign Exchange Trade System / 中国货币网, authorised by the PBOC - 人民币汇率中间价 (RMB central parity)">CFETS-FIX ↗</a>
+</p>
+<div class="two">
+<div><h4>Pros</h4><ul><li>The single most common way a large balance legitimately leaves China: real asset, real contract, real tax receipt.</li><li>Chinese capital-gains tax is computed on gain, not gross proceeds (Art. 6(5)).</li></ul></div>
+<div><h4>Cons</h4><ul><li>Requires the property to actually be sold, at market price, with the tax settled first.</li><li>The tax filing form and the title documents create real lead time.</li><li>You must not rely on the seller-side cash discount stories; the bank checks the tax voucher.</li></ul></div>
+</div>
+<h4>Steps</h4><ol class="steps"><li>Sign the sale contract and complete the ownership-transfer registration at the real-estate authority.</li><li>Settle property transfer taxes at the local tax bureau and obtain the tax-payment proof.</li><li>Obtain the 服务贸易等项目对外支付税务备案表 for amounts above USD 50,000.</li><li>Present passport, contract, registration certificate and tax voucher to the bank.</li><li>Purchase FX and remit to your own overseas account; keep the 结售汇 slip.</li></ol>
+<p><a href="ladder-R07.html">Cost ladder for this route →</a></p>
+</div></details>
+<details id="R08">
+<summary><span class="rid">R08</span> Emigrant property transfer with SAFE approval (移民财产转移)
+<span class="badge b-conditional">conditional</span>
+<span class="badge b-partly">partly</span></summary>
+<div class="detail">
+<p class="dim"><strong>移民财产对外转移</strong> · PBOC公告〔2004〕16号 Arts. 2, 8, 10; 汇发〔2014〕2号 Section VI · <a class="src t-law" href="http://m.safe.gov.cn/safe/2004/1116/5461.html" rel="noopener noreferrer" title="People&#x27;s Bank of China 公告〔2004〕第16号, published by SAFE - 个人财产对外转移售付汇管理暂行办法 (Interim Measures on Sale and Payment of FX for Outward Transfer of Personal Property)">CN-PROPERTY2004 ↗</a><a class="src t-law" href="https://www.safe.gov.cn/tianjin/2024/0903/2594.html" rel="noopener noreferrer" title="SAFE, 汇发〔2014〕2号, amended republication on the Tianjin branch site - 国家外汇管理局关于进一步改进和调整资本项目外汇管理政策的通知 (Section VI: personal property transfer)">CN-CAP2014 ↗</a><a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a></p>
+<p><strong>Published limit.</strong> No amount cap; approval is required. The original staged-release rule (50%, then 50%, then the rest over two years) was cancelled by 汇发〔2014〕2号 Section VI-二, so an approved amount may be remitted once or in instalments.</p>
+<p><strong>Price basis.</strong> Priced: FX spread + BOC published tariff <a class="src t-provider" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" rel="noopener noreferrer" title="Bank of China (中国银行) - 电子银行个人服务转账汇款费率表 - 中国银行电子银行个人服务转账汇款费率表 (personal e-banking transfer tariff, effective 2014-11-01)">BOC-TARIFF ↗</a> <a class="src t-provider" href="https://www.boc.cn/sourcedb/whpj/" rel="noopener noreferrer" title="Bank of China (中国银行) - 外汇牌价 - 中国银行外汇牌价 (BOC foreign-exchange board)">BOC-BOARD ↗</a> <a class="src t-law" href="https://www.chinamoney.com.cn/chinese/bkccpr/" rel="noopener noreferrer" title="China Foreign Exchange Trade System / 中国货币网, authorised by the PBOC - 人民币汇率中间价 (RMB central parity)">CFETS-FIX ↗</a>
+</p>
+<div class="two">
+<div><h4>Pros</h4><ul><li>The designed route for pre-emigration savings that are not documented income.</li><li>Since 2014 there is no mandatory staging and no notarisation duty for property-rights documents.</li></ul></div>
+<div><h4>Cons</h4><ul><li>Conditional on having emigrated and cancelled Chinese household registration, with consular proof of settlement abroad.</li><li>The local branch still applies its own checklist; the 2014 cancellation of staging is not restated on every branch page.</li><li>Requires a Chinese tax certificate or tax-paid evidence for the property.</li></ul></div>
+</div>
+<h4>Steps</h4><ol class="steps"><li>Confirm eligibility: settled abroad and Chinese household registration cancelled.</li><li>File the written application and the two prescribed forms with the FX bureau at your former household-registration location.</li><li>Provide identity documents, the consular certificate of settlement abroad, and the property-rights and realisation documents.</li><li>Provide the Chinese tax certificate or tax-paid vouchers for the property being transferred.</li><li>Obtain the approval and 核准件, then apply at the designated bank to purchase FX and remit.</li><li>Keep the approval, the 核准件 and each remittance receipt for the US side.</li></ol>
+<p><a href="ladder-R08.html">Cost ladder for this route →</a></p>
+</div></details>
+<details id="R09">
+<summary><span class="rid">R09</span> Inheritance transfer with SAFE approval (继承财产转移)
+<span class="badge b-conditional">conditional</span>
+<span class="badge b-partly">partly</span></summary>
+<div class="detail">
+<p class="dim"><strong>继承财产对外转移</strong> · PBOC公告〔2004〕16号 Arts. 2, 9, 10; 汇发〔2014〕2号 Section VI-三 · <a class="src t-law" href="http://m.safe.gov.cn/safe/2004/1116/5461.html" rel="noopener noreferrer" title="People&#x27;s Bank of China 公告〔2004〕第16号, published by SAFE - 个人财产对外转移售付汇管理暂行办法 (Interim Measures on Sale and Payment of FX for Outward Transfer of Personal Property)">CN-PROPERTY2004 ↗</a><a class="src t-law" href="https://www.safe.gov.cn/tianjin/2024/0903/2594.html" rel="noopener noreferrer" title="SAFE, 汇发〔2014〕2号, amended republication on the Tianjin branch site - 国家外汇管理局关于进一步改进和调整资本项目外汇管理政策的通知 (Section VI: personal property transfer)">CN-CAP2014 ↗</a></p>
+<p><strong>Published limit.</strong> No amount cap; approval required. Inheritances from different decedents may now be merged into one application (2014 Section VI-三).</p>
+<p><strong>Price basis.</strong> Priced: FX spread + BOC published tariff <a class="src t-provider" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" rel="noopener noreferrer" title="Bank of China (中国银行) - 电子银行个人服务转账汇款费率表 - 中国银行电子银行个人服务转账汇款费率表 (personal e-banking transfer tariff, effective 2014-11-01)">BOC-TARIFF ↗</a> <a class="src t-provider" href="https://www.boc.cn/sourcedb/whpj/" rel="noopener noreferrer" title="Bank of China (中国银行) - 外汇牌价 - 中国银行外汇牌价 (BOC foreign-exchange board)">BOC-BOARD ↗</a> <a class="src t-law" href="https://www.chinamoney.com.cn/chinese/bkccpr/" rel="noopener noreferrer" title="China Foreign Exchange Trade System / 中国货币网, authorised by the PBOC - 人民币汇率中间价 (RMB central parity)">CFETS-FIX ↗</a>
+</p>
+<div class="two">
+<div><h4>Pros</h4><ul><li>The only lawful route for inherited mainland assets that were never your own income.</li><li>Merging applications from multiple decedents removes a duplication burden.</li></ul></div>
+<div><h4>Cons</h4><ul><li>Requires proof of inheritance and evidence of the decedent&#x27;s property rights.</li><li>The decedent&#x27;s tax-paid position must be demonstrated.</li><li>US side: a foreign gift or bequest above USD 100,000 triggers Form 3520.</li></ul></div>
+</div>
+<h4>Steps</h4><ol class="steps"><li>Obtain the inheritance documentation and the decedent&#x27;s property-rights documents.</li><li>Obtain the decedent&#x27;s Chinese tax certificate or tax-paid vouchers.</li><li>File the application at the FX bureau where the decedent&#x27;s household was registered.</li><li>Receive approval, then purchase and remit at the designated bank.</li><li>File Form 3520 on the US side if the bequest exceeded USD 100,000.</li></ol>
+<p><a href="ladder-R09.html">Cost ladder for this route →</a></p>
+</div></details>
+<details id="R10">
+<summary><span class="rid">R10</span> Company liquidation, capital reduction or equity-sale proceeds
+<span class="badge b-conditional">conditional</span>
+<span class="badge b-partly">partly</span></summary>
+<div class="detail">
+<p class="dim"><strong>外商投资企业清算、减资、股权转让所得汇出</strong> · 外汇管理条例 Art. 22 final paragraph; 个人外汇管理办法 Art. 31 · <a class="src t-law" href="https://www.gov.cn/gongbao/content/2008/content_1071846.htm" rel="noopener noreferrer" title="State Council of the PRC (国务院令第532号) - 中华人民共和国外汇管理条例 (Foreign Exchange Administration Regulations)">CN-FXREG ↗</a><a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a></p>
+<p><strong>Published limit.</strong> No cap; requires the liquidation/tax clearance and the capital-account registration to be in order.</p>
+<p><strong>Price basis.</strong> Priced: FX spread + BOC published tariff <a class="src t-provider" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" rel="noopener noreferrer" title="Bank of China (中国银行) - 电子银行个人服务转账汇款费率表 - 中国银行电子银行个人服务转账汇款费率表 (personal e-banking transfer tariff, effective 2014-11-01)">BOC-TARIFF ↗</a> <a class="src t-provider" href="https://www.boc.cn/sourcedb/whpj/" rel="noopener noreferrer" title="Bank of China (中国银行) - 外汇牌价 - 中国银行外汇牌价 (BOC foreign-exchange board)">BOC-BOARD ↗</a> <a class="src t-law" href="https://www.chinamoney.com.cn/chinese/bkccpr/" rel="noopener noreferrer" title="China Foreign Exchange Trade System / 中国货币网, authorised by the PBOC - 人民币汇率中间价 (RMB central parity)">CFETS-FIX ↗</a>
+</p>
+<div class="two">
+<div><h4>Pros</h4><ul><li>A statutory entitlement: after lawful liquidation and tax payment, the foreign investor&#x27;s share may be purchased and remitted.</li><li>Scales to any size because it is a capital-account transaction, not a quota transaction.</li></ul></div>
+<div><h4>Cons</h4><ul><li>Requires an actual corporate event - you cannot manufacture a liquidation.</li><li>Multiple authorities in sequence: tax clearance, market regulator, bank, FX registration.</li></ul></div>
+</div>
+<h4>Steps</h4><ol class="steps"><li>Complete the liquidation or capital reduction and obtain the tax clearance.</li><li>Update the capital-account registration with the FX bureau.</li><li>Present the liquidation documents, tax clearance and registration to the bank.</li><li>Purchase FX and remit the distributable amount.</li></ol>
+<p><a href="ladder-R10.html">Cost ladder for this route →</a></p>
+</div></details>
+<details id="R11">
+<summary><span class="rid">R11</span> Sell the mainland asset to a non-resident buyer who pays you offshore
+<span class="badge b-conditional">conditional</span>
+<span class="badge b-unverified">unverified</span></summary>
+<div class="detail">
+<p class="dim"><strong>向境外买方转让资产并在境外收款</strong> · 外汇管理条例 Art. 22; 个人外汇管理办法 Art. 26 · <a class="src t-law" href="https://www.gov.cn/gongbao/content/2008/content_1071846.htm" rel="noopener noreferrer" title="State Council of the PRC (国务院令第532号) - 中华人民共和国外汇管理条例 (Foreign Exchange Administration Regulations)">CN-FXREG ↗</a><a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a></p>
+<p><strong>Published limit.</strong> No FX cap, because no CNY-to-USD conversion inside China occurs - the consideration is already in foreign currency offshore.</p>
+<p><strong>Price basis.</strong> No conversion occurs, so no conversion cost 
+</p>
+<div class="two">
+<div><h4>Pros</h4><ul><li>If it is a genuine arm&#x27;s-length offshore sale, the conversion problem disappears because the proceeds never enter the mainland banking system.</li><li>No Chinese FX purchase fee applies.</li></ul></div>
+<div><h4>Cons</h4><ul><li>Only workable where the asset can lawfully change hands to a non-resident without an onshore settlement.</li><li>Restrictions on foreigners buying mainland property, and capital-account registration duties, may block it.</li><li>Pricing the deal to keep the money offshore while the asset stays in China is evasion, not structuring.</li></ul></div>
+</div>
+<h4>Steps</h4><ol class="steps"><li>Confirm with a Chinese lawyer whether the specific asset class can be transferred to a non-resident with offshore settlement.</li><li>Complete any required capital-account or real-estate registration.</li><li>Settle offshore in USD and document the arm&#x27;s-length price.</li></ol>
+<p><a href="ladder.html#R11">Why this route has no ladder →</a></p>
+</div></details><h2 id="C">Business, dividends and investment <span class="dim" style="font-weight:400">(5)</span></h2><p class="dim">Company-level and investment routes. Real costs here are Chinese taxes, not bank fees.</p>
+<details id="R12">
+<summary><span class="rid">R12</span> FIE dividend distribution to a foreign individual shareholder
+<span class="badge b-lawful">lawful</span>
+<span class="badge b-verified">verified</span></summary>
+<div class="detail">
+<p class="dim"><strong>外商投资企业向外籍个人股东分配股息</strong> · 财政部 税务总局公告2026年第27号; IIT Law Art. 2(6), Art. 3(3) · <a class="src t-law" href="https://shanghai.chinatax.gov.cn/zzzb/zcwj/202609/t481448.html" rel="noopener noreferrer" title="Ministry of Finance &amp; STA, 财政部 税务总局公告2026年第27号 (Shanghai STA reprint) - 关于外籍个人股息红利个人所得税政策有关事项的公告">CN-DIV2026 ↗</a><a class="src t-law" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" rel="noopener noreferrer" title="State Taxation Administration (English translation of the statute) - Individual Income Tax Law of the PRC">CN-IIT ↗</a></p>
+<p><strong>Published limit.</strong> No cap; distribution must come from distributable profits.</p>
+<p><strong>Price basis.</strong> Priced: FX spread + BOC published tariff <a class="src t-provider" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" rel="noopener noreferrer" title="Bank of China (中国银行) - 电子银行个人服务转账汇款费率表 - 中国银行电子银行个人服务转账汇款费率表 (personal e-banking transfer tariff, effective 2014-11-01)">BOC-TARIFF ↗</a> <a class="src t-provider" href="https://www.boc.cn/sourcedb/whpj/" rel="noopener noreferrer" title="Bank of China (中国银行) - 外汇牌价 - 中国银行外汇牌价 (BOC foreign-exchange board)">BOC-BOARD ↗</a> <a class="src t-law" href="https://www.chinamoney.com.cn/chinese/bkccpr/" rel="noopener noreferrer" title="China Foreign Exchange Trade System / 中国货币网, authorised by the PBOC - 人民币汇率中间价 (RMB central parity)">CFETS-FIX ↗</a>
+</p>
+<div class="two">
+<div><h4>Pros</h4><ul><li>The 20% rate is now unambiguous and the withholding obligation sits with the company.</li><li>Scales without a quota and is a routine bank transaction once the tax is paid.</li></ul></div>
+<div><h4>Cons</h4><ul><li>20% withholding is the dominant cost - far larger than any bank fee.</li><li>The old &#x27;foreign individuals are exempt&#x27; claim is dead for payments from 2026-09-01.</li><li>Needs genuine distributable profit and a board resolution.</li></ul></div>
+</div>
+<h4>Steps</h4><ol class="steps"><li>Pass the profit-distribution resolution.</li><li>The company withholds 20% and files within 15 days of the month after payment.</li><li>Obtain the withholding certificate.</li><li>The company or you apply at the bank to remit the net dividend.</li></ol>
+<p><a href="ladder-R12.html">Cost ladder for this route →</a></p>
+</div></details>
+<details id="R13">
+<summary><span class="rid">R13</span> Foreign-investor special account (资本金/外投) after approval
+<span class="badge b-conditional">conditional</span>
+<span class="badge b-partly">partly</span></summary>
+<div class="detail">
+<p class="dim"><strong>外国投资者专用外汇账户</strong> · 个人外汇管理办法 Art. 31 · <a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a></p>
+<p><strong>Published limit.</strong> No cap stated; account conversion requires FX-bureau approval.</p>
+<p><strong>Price basis.</strong> Quote-only: no published schedule <a class="src t-provider" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" rel="noopener noreferrer" title="Bank of China (中国银行) - 电子银行个人服务转账汇款费率表 - 中国银行电子银行个人服务转账汇款费率表 (personal e-banking transfer tariff, effective 2014-11-01)">BOC-TARIFF ↗</a>
+</p>
+<div class="two">
+<div><h4>Pros</h4><ul><li>Lets a genuine foreign direct investor hold and convert FX inside China lawfully.</li></ul></div>
+<div><h4>Cons</h4><ul><li>Requires an approved direct-investment project - not available for personal savings.</li><li>Approval-gated and slow.</li></ul></div>
+</div>
+<h4>Steps</h4><ol class="steps"><li>Obtain the direct-investment approval from the competent authority.</li><li>Apply to the FX bureau to open the special account.</li><li>Apply for approval to convert the account balance.</li></ol>
+<p><a href="ladder.html#R13">Why this route has no ladder →</a></p>
+</div></details>
+<details id="R14">
+<summary><span class="rid">R14</span> Licensed outbound investment product bought while still resident (QDII and similar)
+<span class="badge b-conditional">conditional</span>
+<span class="badge b-unverified">unverified</span></summary>
+<div class="detail">
+<p class="dim"><strong>合格境内机构投资者（QDII）等境外投资产品</strong> · 个人外汇管理办法 Art. 17; 外汇管理条例 Art. 17 · <a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a><a class="src t-law" href="https://www.gov.cn/gongbao/content/2008/content_1071846.htm" rel="noopener noreferrer" title="State Council of the PRC (国务院令第532号) - 中华人民共和国外汇管理条例 (Foreign Exchange Administration Regulations)">CN-FXREG ↗</a></p>
+<p><strong>Published limit.</strong> Subject to the individual product quota; not an unrestricted personal channel.</p>
+<p><strong>Price basis.</strong> Quote-only: no published schedule 
+</p>
+<div class="two">
+<div><h4>Pros</h4><ul><li>A lawful way to hold foreign-currency exposure without moving cash out yourself.</li></ul></div>
+<div><h4>Cons</h4><ul><li>Only works if you are still 境内个人 at purchase time; once you are 境外个人 most domestic financial products are closed to you (Art. 23).</li><li>The money stays inside the domestic custody chain - it does not become spendable USD abroad.</li></ul></div>
+</div>
+<h4>Steps</h4><ol class="steps"><li>Confirm your 境内/境外 classification at the time of purchase.</li><li>Buy through a licensed domestic institution within its approved quota.</li></ol>
+<p><a href="ladder.html#R14">Why this route has no ladder →</a></p>
+</div></details>
+<details id="R15">
+<summary><span class="rid">R15</span> Domestic FX deposit account inside China (convert now, remit later)
+<span class="badge b-lawful">lawful</span>
+<span class="badge b-partly">partly</span></summary>
+<div class="detail">
+<p class="dim"><strong>境内个人外币存款账户</strong> · 个人外汇管理办法 Arts. 27, 32 · <a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a></p>
+<p><strong>Published limit.</strong> Account may hold FX. Outward remittance from the account: USD 50,000 per day with ID only; above that documentary review (Art. 64).</p>
+<p><strong>Price basis.</strong> Priced: FX spread + BOC published tariff <a class="src t-provider" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" rel="noopener noreferrer" title="Bank of China (中国银行) - 电子银行个人服务转账汇款费率表 - 中国银行电子银行个人服务转账汇款费率表 (personal e-banking transfer tariff, effective 2014-11-01)">BOC-TARIFF ↗</a> <a class="src t-provider" href="https://www.boc.cn/sourcedb/whpj/" rel="noopener noreferrer" title="Bank of China (中国银行) - 外汇牌价 - 中国银行外汇牌价 (BOC foreign-exchange board)">BOC-BOARD ↗</a> <a class="src t-law" href="https://www.chinamoney.com.cn/chinese/bkccpr/" rel="noopener noreferrer" title="China Foreign Exchange Trade System / 中国货币网, authorised by the PBOC - 人民币汇率中间价 (RMB central parity)">CFETS-FIX ↗</a>
+</p>
+<div class="two">
+<div><h4>Pros</h4><ul><li>Converts CNY exposure into USD exposure immediately, using the same bank spread.</li><li>Lets you choose the remittance timing separately from the conversion.</li><li>Remittance from an FX account up to USD 50,000 a day needs only ID.</li></ul></div>
+<div><h4>Cons</h4><ul><li>The money is still in China and remains reportable as a foreign account.</li><li>You pay the spread now and again on any later conversion.</li><li>Does not create a right to remit capital-account money later.</li></ul></div>
+</div>
+<h4>Steps</h4><ol class="steps"><li>Open or confirm the 外币储蓄账户 at the bank.</li><li>Purchase FX into the account and keep the 结售汇 slip.</li><li>Remit later within the Art. 64 rules, or convert back if needed.</li></ol>
+<p><a href="ladder-R15.html">Cost ladder for this route →</a></p>
+</div></details>
+<details id="R16">
+<summary><span class="rid">R16</span> B-share or cross-border securities account for a foreign individual
+<span class="badge b-conditional">conditional</span>
+<span class="badge b-unverified">unverified</span></summary>
+<div class="detail">
+<p class="dim"><strong>境外个人B股及跨境证券账户</strong> · 个人外汇管理办法 Arts. 17, 23 · <a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a></p>
+<p><strong>Published limit.</strong> Securities-specific; not a remittance channel for existing cash.</p>
+<p><strong>Price basis.</strong> Quote-only: no published schedule 
+</p>
+<div class="two">
+<div><h4>Pros</h4><ul><li>A recognised lawful investment channel for foreign individuals.</li></ul></div>
+<div><h4>Cons</h4><ul><li>Converts savings into market exposure, which is a different decision from moving money.</li><li>Capital is then subject to securities repatriation rules, not personal remittance rules.</li></ul></div>
+</div>
+<h4>Steps</h4><ol class="steps"><li>Confirm eligibility for the specific account type.</li><li>Open through a licensed domestic securities institution.</li></ol>
+<p><a href="ladder.html#R16">Why this route has no ladder →</a></p>
+</div></details><h2 id="D">Cash, cards, wallets and retail channels <span class="dim" style="font-weight:400">(6)</span></h2><p class="dim">Small, fast and capped. Useful for genuine consumption; incapable of moving a six-figure balance.</p>
+<details id="R17">
+<summary><span class="rid">R17</span> Spend on a mainland-issued card abroad (no conversion by you)
+<span class="badge b-lawful">lawful</span>
+<span class="badge b-partly">partly</span></summary>
+<div class="detail">
+<p class="dim"><strong>境内银行卡境外消费</strong> · SAFE 汇发〔2017〕29号 Q&amp;A; 经常项目指引(2020) Art. 76(3) · <a class="src t-gov" href="https://www.gov.cn/zhengce/2017-12/31/content_5251958.htm" rel="noopener noreferrer" title="SAFE, 汇发〔2017〕29号, via the State Council portal Q&amp;A reprint - 规范银行卡境外大额提取现金交易 (Overseas card cash-withdrawal limits)">CN-CARDS2017 ↗</a><a class="src t-law" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" rel="noopener noreferrer" title="SAFE, 汇发〔2020〕14号, republished in State Council Gazette 2020 No. 31 - 经常项目外汇业务指引（2020年版） (Current-Account FX Business Guide, 2020 edition)">CN-GUIDE2020 ↗</a></p>
+<p><strong>Published limit.</strong> Card spending abroad does not consume the USD 50,000 facilitation quota. The CNY 100,000 annual cap applies to cash withdrawals, not to purchases.</p>
+<p><strong>Price basis.</strong> Limit published, price not published as a schedule 
+</p>
+<div class="two">
+<div><h4>Pros</h4><ul><li>Legitimate, quota-free, and the card network does the conversion.</li><li>Useful for travel, tuition and genuine consumption.</li></ul></div>
+<div><h4>Cons</h4><ul><li>Purchases, not cash: it cannot fund a US bank account.</li><li>The card conversion rate and any card FX fee are set by the issuer and are not published in a way that can be modelled here.</li><li>Spending down USD 400,000 of consumption you do not need is not a transfer strategy.</li></ul></div>
+</div>
+<h4>Steps</h4><ol class="steps"><li>Use the card for genuine consumption abroad.</li><li>Keep the statements for US reporting and for the foreign-account question.</li></ol>
+<p><a href="ladder-R17.html">Cost ladder for this route →</a></p>
+</div></details>
+<details id="R18">
+<summary><span class="rid">R18</span> Overseas ATM cash withdrawal on a mainland card
+<span class="badge b-lawful">lawful</span>
+<span class="badge b-verified">verified</span></summary>
+<div class="detail">
+<p class="dim"><strong>境内银行卡境外提取现金</strong> · SAFE 汇发〔2017〕29号 · <a class="src t-gov" href="https://www.gov.cn/zhengce/2017-12/31/content_5251958.htm" rel="noopener noreferrer" title="SAFE, 汇发〔2017〕29号, via the State Council portal Q&amp;A reprint - 规范银行卡境外大额提取现金交易 (Overseas card cash-withdrawal limits)">CN-CARDS2017 ↗</a></p>
+<p><strong>Published limit.</strong> CNY 10,000 equivalent per card per day; CNY 100,000 equivalent per person per calendar year across all cards. Exceeding it suspends overseas cash access for this year and next.</p>
+<p><strong>Price basis.</strong> Limit published, price not published as a schedule 
+</p>
+<div class="two">
+<div><h4>Pros</h4><ul><li>Small, lawful, and simple.</li></ul></div>
+<div><h4>Cons</h4><ul><li>CNY 100,000 a year is roughly USD 14,000 - nowhere near USD 400,000.</li><li>Attracts ATM and issuer fees plus a spread that is not published as a schedule.</li><li>Breaching the annual cap triggers an automatic suspension and possible penalties.</li><li>Carrying cash into the US above USD 10,000 requires a FinCEN 105 report.</li></ul></div>
+</div>
+<h4>Steps</h4><ol class="steps"><li>Withdraw within the per-card daily and per-person annual limits.</li><li>If carrying more than USD 10,000 into the US, file FinCEN 105.</li></ol>
+<p><a href="ladder-R18.html">Cost ladder for this route →</a></p>
+</div></details>
+<details id="R19">
+<summary><span class="rid">R19</span> Carry cash across the border within the permit band
+<span class="badge b-lawful">lawful</span>
+<span class="badge b-verified">verified</span></summary>
+<div class="detail">
+<p class="dim"><strong>携带外币现钞出境</strong> · 经常项目指引(2020) Arts. 86-89; 外汇管理条例 Art. 42 · <a class="src t-law" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" rel="noopener noreferrer" title="SAFE, 汇发〔2020〕14号, republished in State Council Gazette 2020 No. 31 - 经常项目外汇业务指引（2020年版） (Current-Account FX Business Guide, 2020 edition)">CN-GUIDE2020 ↗</a><a class="src t-law" href="https://www.gov.cn/gongbao/content/2008/content_1071846.htm" rel="noopener noreferrer" title="State Council of the PRC (国务院令第532号) - 中华人民共和国外汇管理条例 (Foreign Exchange Administration Regulations)">CN-FXREG ↗</a></p>
+<p><strong>Published limit.</strong> Inbound: declare above USD 5,000. Outbound: USD 5,000-10,000 needs a 携带外汇出境许可证 from the bank; above USD 10,000 needs one from the FX bureau. Withdrawal of cash above USD 10,000 a day needs prior FX-bureau filing.</p>
+<p><strong>Price basis.</strong> Limit published, price not published as a schedule 
+</p>
+<div class="two">
+<div><h4>Pros</h4><ul><li>Lawful inside the bands, and no bank wire fee.</li></ul></div>
+<div><h4>Cons</h4><ul><li>Physically impractical and unsafe at scale, and the permit ceiling is low.</li><li>Unapproved breach is an offence under Art. 42 (warning, up to 20% of the amount) and can become smuggling.</li><li>US side: more than USD 10,000 at one time requires a FinCEN 105 report; structuring to avoid it is itself an offence.</li><li>No insurance, no trace, no receipt.</li></ul></div>
+</div>
+<h4>Steps</h4><ol class="steps"><li>Withdraw with prior FX-bureau filing if above USD 10,000 a day.</li><li>Obtain the 携带外汇出境许可证 in the applicable band.</li><li>Declare to China Customs and, on entry to the US, file FinCEN 105 if above USD 10,000.</li></ol>
+<p><a href="ladder-R19.html">Cost ladder for this route →</a></p>
+</div></details>
+<details id="R20">
+<summary><span class="rid">R20</span> Alipay or WeChat cross-border remittance
+<span class="badge b-conditional">conditional</span>
+<span class="badge b-partly">partly</span></summary>
+<div class="detail">
+<p class="dim"><strong>支付宝/微信跨境汇款</strong> · 经常项目指引(2020) Arts. 120-137 (payment institutions) · <a class="src t-law" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" rel="noopener noreferrer" title="SAFE, 汇发〔2020〕14号, republished in State Council Gazette 2020 No. 31 - 经常项目外汇业务指引（2020年版） (Current-Account FX Business Guide, 2020 edition)">CN-GUIDE2020 ↗</a></p>
+<p><strong>Published limit.</strong> Payment institutions: USD 50,000 equivalent single-transaction cap (Art. 132). Wallet-side limits vary; Wise publishes CNY 50,000 per Alipay transfer.</p>
+<p><strong>Price basis.</strong> Quote-only: no published schedule 
+</p>
+<div class="two">
+<div><h4>Pros</h4><ul><li>Fast and app-based; familiar.</li><li>Uses the same regulated payment-institution framework as larger providers.</li></ul></div>
+<div><h4>Cons</h4><ul><li>Tight per-transaction caps make a large balance a long series of small moves.</li><li>Fees and the FX rate are set in the app and are not published as a schedule you can audit.</li><li>Eligibility is usually tied to documented purpose.</li></ul></div>
+</div>
+<h4>Steps</h4><ol class="steps"><li>Confirm the wallet&#x27;s eligibility and per-transfer and annual limits.</li><li>Complete identity and purpose verification.</li><li>Send and keep the electronic receipts.</li></ol>
+<p><a href="ladder.html#R20">Why this route has no ladder →</a></p>
+</div></details>
+<details id="R21">
+<summary><span class="rid">R21</span> Licensed remittance provider with a China tax record (e.g. Wise from-CNY)
+<span class="badge b-conditional">conditional</span>
+<span class="badge b-verified">verified</span></summary>
+<div class="detail">
+<p class="dim"><strong>持牌跨境汇款机构（凭完税记录）</strong> · 经常项目指引(2020) Art. 120-137; provider terms · <a class="src t-law" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" rel="noopener noreferrer" title="SAFE, 汇发〔2020〕14号, republished in State Council Gazette 2020 No. 31 - 经常项目外汇业务指引（2020年版） (Current-Account FX Business Guide, 2020 edition)">CN-GUIDE2020 ↗</a><a class="src t-provider" href="https://wise.com/help/articles/2955298/guide-to-cny-transfers" rel="noopener noreferrer" title="Wise - Help Centre - Guide to CNY transfers">WISE-CNY ↗</a></p>
+<p><strong>Published limit.</strong> Provider-published: CNY 300,000 per transfer from the China bank app; CNY 50,000 via Alipay; an overall limit equal to after-tax salary evidenced by tax records.</p>
+<p><strong>Price basis.</strong> Quote-only: no published schedule 
+</p>
+<div class="two">
+<div><h4>Pros</h4><ul><li>Transparent, licensed, and reaches a US account you own.</li><li>Fees are shown before you send; no bank branch visit.</li></ul></div>
+<div><h4>Cons</h4><ul><li>Eligibility is narrow: you must have worked in China and hold a China tax record showing tax paid in the last three years.</li><li>The overall limit is your after-tax salary - savings outside that formula do not qualify.</li><li>The recipient must be an account you own.</li></ul></div>
+</div>
+<h4>Steps</h4><ol class="steps"><li>Collect China tax records covering the last three years.</li><li>Complete provider verification (1-2 working days).</li><li>Link your Chinese bank account or Alipay as the funding source.</li><li>Send to your own overseas account and download the receipt.</li></ol>
+<p><a href="ladder.html#R21">Why this route has no ladder →</a></p>
+</div></details>
+<details id="R22">
+<summary><span class="rid">R22</span> International postal money order or courier of a monetary instrument
+<span class="badge b-conditional">conditional</span>
+<span class="badge b-unverified">unverified</span></summary>
+<div class="detail">
+<p class="dim"><strong>国际邮政汇款/邮寄支付凭证</strong> · 外汇管理条例 Art. 42; 31 CFR 1010.340 · <a class="src t-law" href="https://www.gov.cn/gongbao/content/2008/content_1071846.htm" rel="noopener noreferrer" title="State Council of the PRC (国务院令第532号) - 中华人民共和国外汇管理条例 (Foreign Exchange Administration Regulations)">CN-FXREG ↗</a><a class="src t-law" href="https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-C/section-1010.340" rel="noopener noreferrer" title="eCFR (Office of the Federal Register), 31 CFR 1010.340 - §1010.340 Reports of transportation of currency or monetary instruments">US-1010340 ↗</a></p>
+<p><strong>Published limit.</strong> No reliable published FX limit for personal outbound postal remittance of CNY was located. What is published is the reporting duty: mailing or shipping monetary instruments above USD 10,000 into or out of the US requires a FinCEN 105 report.</p>
+<p><strong>Price basis.</strong> Quote-only: no published schedule 
+</p>
+<div class="two">
+<div><h4>Pros</h4><ul><li>Historically used for small family remittances.</li></ul></div>
+<div><h4>Cons</h4><ul><li>No official CNY-outbound limit was found, which means the risk cannot be bounded - the safest reading is that this is not a lawful large-value channel.</li><li>Mailing instruments above USD 10,000 without a report is a US offence.</li><li>Loss and fraud exposure with no recourse.</li></ul></div>
+</div>
+<h4>Steps</h4><ol class="steps"><li>Do not use for material amounts without written guidance from the bank and the FX bureau.</li></ol>
+<p><a href="ladder.html#R22">Why this route has no ladder →</a></p>
+</div></details><h2 id="E">Keep in place, or avoid converting at all <span class="dim" style="font-weight:400">(4)</span></h2><p class="dim">Sometimes the right answer is not to convert. These rows exist so the comparison is honest about the zero-cost option and about the routes that only look clever.</p>
+<details id="R23">
+<summary><span class="rid">R23</span> Leave the CNY on deposit and spend it on future trips to China
+<span class="badge b-lawful">lawful</span>
+<span class="badge b-verified">verified</span></summary>
+<div class="detail">
+<p class="dim"><strong>保留人民币存款、境内消费</strong> · 个人外汇管理办法 Arts. 27-36 (accounts); no conversion occurs · <a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a></p>
+<p><strong>Published limit.</strong> Not applicable - nothing crosses the border.</p>
+<p><strong>Price basis.</strong> No conversion occurs, so no conversion cost 
+</p>
+<div class="two">
+<div><h4>Pros</h4><ul><li>Zero conversion cost, zero remittance fee, no FX evidence burden.</li><li>Keeps optionality if you return to China.</li></ul></div>
+<div><h4>Cons</h4><ul><li>The money stays exposed to CNY/USD movement and to Chinese deposit rates.</li><li>Still reportable to the US every year while it is a foreign account.</li><li>Consuming it requires being in China.</li></ul></div>
+</div>
+<h4>Steps</h4><ol class="steps"><li>Keep the account compliant and file FBAR/8938 as applicable.</li></ol>
+<p><a href="ladder.html#R23">Why this route has no ladder →</a></p>
+</div></details>
+<details id="R24">
+<summary><span class="rid">R24</span> Convert inside China into USD and hold the USD in a mainland bank
+<span class="badge b-lawful">lawful</span>
+<span class="badge b-partly">partly</span></summary>
+<div class="detail">
+<p class="dim"><strong>境内购汇后持有外币存款</strong> · 个人外汇管理办法 Art. 32; 经常项目指引(2020) Art. 64 · <a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a><a class="src t-law" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" rel="noopener noreferrer" title="SAFE, 汇发〔2020〕14号, republished in State Council Gazette 2020 No. 31 - 经常项目外汇业务指引（2020年版） (Current-Account FX Business Guide, 2020 edition)">CN-GUIDE2020 ↗</a></p>
+<p><strong>Published limit.</strong> Same as R15: remittance from an FX account up to USD 50,000 a day on ID alone.</p>
+<p><strong>Price basis.</strong> Priced: FX spread + BOC published tariff <a class="src t-provider" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" rel="noopener noreferrer" title="Bank of China (中国银行) - 电子银行个人服务转账汇款费率表 - 中国银行电子银行个人服务转账汇款费率表 (personal e-banking transfer tariff, effective 2014-11-01)">BOC-TARIFF ↗</a> <a class="src t-provider" href="https://www.boc.cn/sourcedb/whpj/" rel="noopener noreferrer" title="Bank of China (中国银行) - 外汇牌价 - 中国银行外汇牌价 (BOC foreign-exchange board)">BOC-BOARD ↗</a> <a class="src t-law" href="https://www.chinamoney.com.cn/chinese/bkccpr/" rel="noopener noreferrer" title="China Foreign Exchange Trade System / 中国货币网, authorised by the PBOC - 人民币汇率中间价 (RMB central parity)">CFETS-FIX ↗</a>
+</p>
+<div class="two">
+<div><h4>Pros</h4><ul><li>Removes CNY exposure at a known spread.</li><li>Splits the conversion decision from the remittance decision.</li></ul></div>
+<div><h4>Cons</h4><ul><li>Two spreads instead of one if it is later converted back.</li><li>Chinese USD deposit rates are typically lower than US rates, and the deposit remains a reportable foreign account.</li></ul></div>
+</div>
+<h4>Steps</h4><ol class="steps"><li>Purchase FX into the foreign-currency savings account.</li><li>Hold or remit later under Art. 64.</li></ol>
+<p><a href="ladder-R24.html">Cost ladder for this route →</a></p>
+</div></details>
+<details id="R25">
+<summary><span class="rid">R25</span> Buy a globally priced asset in China (e.g. gold) and sell it abroad
+<span class="badge b-conditional">conditional</span>
+<span class="badge b-unverified">unverified</span></summary>
+<div class="detail">
+<p class="dim"><strong>境内购入黄金等全球定价资产、境外出售</strong> · 个人外汇管理办法 Art. 30; 外汇管理条例 Arts. 8, 39 · <a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a><a class="src t-law" href="https://www.gov.cn/gongbao/content/2008/content_1071846.htm" rel="noopener noreferrer" title="State Council of the PRC (国务院令第532号) - 中华人民共和国外汇管理条例 (Foreign Exchange Administration Regulations)">CN-FXREG ↗</a></p>
+<p><strong>Published limit.</strong> Not verified. Cross-border movement of gold and of the sale proceeds engages customs, FX and capital-account rules that were not read in this session.</p>
+<p><strong>Price basis.</strong> Quote-only: no published schedule 
+</p>
+<div class="two">
+<div><h4>Pros</h4><ul><li>Gold is globally priced, so in theory the conversion is embedded in the asset.</li></ul></div>
+<div><h4>Cons</h4><ul><li>Taking the metal out of China is itself a customs and FX event with its own limits.</li><li>The purchase premium, the assay and resale discount, and the insurance usually exceed the FX spread you were avoiding.</li><li>Carrying value out inside an asset without declaration is evasion if the purpose is to defeat FX controls.</li></ul></div>
+</div>
+<h4>Steps</h4><ol class="steps"><li>Do not treat this as a conversion channel without written customs and FX advice specific to the asset.</li></ol>
+<p><a href="ladder.html#R25">Why this route has no ladder →</a></p>
+</div></details>
+<details id="R26">
+<summary><span class="rid">R26</span> Use the balance for genuine obligations that are payable in CNY
+<span class="badge b-lawful">lawful</span>
+<span class="badge b-partly">partly</span></summary>
+<div class="detail">
+<p class="dim"><strong>用于境内应付的人民币义务</strong> · 外汇管理条例 Art. 5, Art. 12 (genuine current-account payments) · <a class="src t-law" href="https://www.gov.cn/gongbao/content/2008/content_1071846.htm" rel="noopener noreferrer" title="State Council of the PRC (国务院令第532号) - 中华人民共和国外汇管理条例 (Foreign Exchange Administration Regulations)">CN-FXREG ↗</a></p>
+<p><strong>Published limit.</strong> Bounded only by the genuine obligation itself.</p>
+<p><strong>Price basis.</strong> No conversion occurs, so no conversion cost 
+</p>
+<div class="two">
+<div><h4>Pros</h4><ul><li>No conversion at all: paying a Chinese supplier, tuition, medical bills or taxes in CNY is a current-account payment, not a capital transfer.</li><li>Often the cheapest way to get value out of a trapped balance - you get the goods or services.</li></ul></div>
+<div><h4>Cons</h4><ul><li>You receive value, not dollars; it does not fund a US account.</li><li>Paying a non-existent obligation to move money to a related party offshore is evasion.</li></ul></div>
+</div>
+<h4>Steps</h4><ol class="steps"><li>Identify genuine CNY obligations and pay them from the account.</li><li>Keep the invoices and contracts.</li></ol>
+<p><a href="ladder.html#R26">Why this route has no ladder →</a></p>
+</div></details><h2 id="F">Prohibited - do not use <span class="dim" style="font-weight:400">(4)</span></h2><p class="dim">Listed because they are what people are actually offered. They carry the largest expected cost of any row on this site, and no execution steps are published here.</p>
+<details id="R27">
+<summary><span class="rid">R27</span> Underground bank / private FX dealer (地下钱庄, 对敲)
+<span class="badge b-prohibited">prohibited</span>
+<span class="badge b-verified">verified</span></summary>
+<div class="detail">
+<p class="dim"><strong>地下钱庄、变相买卖外汇</strong> · 外汇管理条例 Art. 45; 个人外汇管理办法 Art. 7 · <a class="src t-law" href="https://www.gov.cn/gongbao/content/2008/content_1071846.htm" rel="noopener noreferrer" title="State Council of the PRC (国务院令第532号) - 中华人民共和国外汇管理条例 (Foreign Exchange Administration Regulations)">CN-FXREG ↗</a><a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a></p>
+<p><strong>Published limit.</strong> Not applicable - the activity is unlawful at any size.</p>
+<p><strong>Price basis.</strong> Not priced: unlawful 
+<a class="src t-law" href="https://www.gov.cn/gongbao/content/2008/content_1071846.htm" rel="noopener noreferrer" title="State Council of the PRC (国务院令第532号) - 中华人民共和国外汇管理条例 (Foreign Exchange Administration Regulations)">CN-FXREG ↗</a></p>
+<div class="two">
+<div><h4>Pros</h4><ul><li class="dim">None. This route is unlawful.</li></ul></div>
+<div><h4>Cons</h4><ul><li>Warning, confiscation of the illegal gain, and a fine of up to 30% of the amount, or 30%-100% if serious (Art. 45); criminal liability follows where it constitutes a crime.</li><li>The counterparty usually holds the funds, and there is no legal recourse when they disappear.</li><li>You become a participant in the counterparty&#x27;s money-laundering chain, which is a separate exposure.</li></ul></div>
+</div>
+<h4>Steps</h4><p class="flag-h">No execution steps are published for this route. It is unlawful and the only correct action is not to use it.</p>
+<p><a href="ladder.html#R27">Why this route has no ladder →</a></p>
+</div></details>
+<details id="R28">
+<summary><span class="rid">R28</span> Splitting the quota across family, friends or staff (分拆)
+<span class="badge b-prohibited">prohibited</span>
+<span class="badge b-verified">verified</span></summary>
+<div class="detail">
+<p class="dim"><strong>分拆结售汇</strong> · 个人外汇管理办法 Art. 7; 经常项目指引(2020) Art. 62 · <a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a><a class="src t-law" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" rel="noopener noreferrer" title="SAFE, 汇发〔2020〕14号, republished in State Council Gazette 2020 No. 31 - 经常项目外汇业务指引（2020年版） (Current-Account FX Business Guide, 2020 edition)">CN-GUIDE2020 ↗</a></p>
+<p><strong>Published limit.</strong> Zero - the conduct is prohibited in any amount.</p>
+<p><strong>Price basis.</strong> Not priced: unlawful 
+<a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a> <a class="src t-law" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" rel="noopener noreferrer" title="SAFE, 汇发〔2020〕14号, republished in State Council Gazette 2020 No. 31 - 经常项目外汇业务指引（2020年版） (Current-Account FX Business Guide, 2020 edition)">CN-GUIDE2020 ↗</a> <a class="src t-law" href="https://www.gov.cn/gongbao/content/2008/content_1071846.htm" rel="noopener noreferrer" title="State Council of the PRC (国务院令第532号) - 中华人民共和国外汇管理条例 (Foreign Exchange Administration Regulations)">CN-FXREG ↗</a></p>
+<div class="two">
+<div><h4>Pros</h4><ul><li class="dim">None. This route is unlawful.</li></ul></div>
+<div><h4>Cons</h4><ul><li>Lending your quota to someone else brings a risk warning the first time and a place on the &#x27;watch list&#x27; the second; borrowing someone else&#x27;s puts you on it directly (Art. 62).</li><li>Watch-list status lasts the current year plus two more, and every subsequent transaction then needs full documentary review.</li><li>Penalties under the FX Regulations follow, and the receiving bank may close the relationship.</li></ul></div>
+</div>
+<h4>Steps</h4><p class="flag-h">No execution steps are published for this route. It is unlawful and the only correct action is not to use it.</p>
+<p><a href="ladder.html#R28">Why this route has no ladder →</a></p>
+</div></details>
+<details id="R29">
+<summary><span class="rid">R29</span> Crypto or stablecoin conversion (USDT intermediation)
+<span class="badge b-prohibited">prohibited</span>
+<span class="badge b-verified">verified</span></summary>
+<div class="detail">
+<p class="dim"><strong>虚拟货币/稳定币兑换</strong> · 银发〔2026〕42号; 外汇管理条例 Art. 45 · <a class="src t-gov" href="https://www.szns.gov.cn/ztzl/ffjzxsjb/zcfg/content/post_12958317.html" rel="noopener noreferrer" title="Eight ministries incl. PBOC and SAFE, 银发〔2026〕42号; full text as republished by a Shenzhen district government portal - 关于进一步防范和处置虚拟货币等相关风险的通知">CN-VA2026 ↗</a><a class="src t-law" href="https://www.gov.cn/gongbao/content/2008/content_1071846.htm" rel="noopener noreferrer" title="State Council of the PRC (国务院令第532号) - 中华人民共和国外汇管理条例 (Foreign Exchange Administration Regulations)">CN-FXREG ↗</a></p>
+<p><strong>Published limit.</strong> Prohibited as business activity in mainland China at any size.</p>
+<p><strong>Price basis.</strong> Not priced: unlawful 
+<a class="src t-gov" href="https://www.szns.gov.cn/ztzl/ffjzxsjb/zcfg/content/post_12958317.html" rel="noopener noreferrer" title="Eight ministries incl. PBOC and SAFE, 银发〔2026〕42号; full text as republished by a Shenzhen district government portal - 关于进一步防范和处置虚拟货币等相关风险的通知">CN-VA2026 ↗</a> <a class="src t-law" href="https://www.gov.cn/gongbao/content/2008/content_1071846.htm" rel="noopener noreferrer" title="State Council of the PRC (国务院令第532号) - 中华人民共和国外汇管理条例 (Foreign Exchange Administration Regulations)">CN-FXREG ↗</a></p>
+<div class="two">
+<div><h4>Pros</h4><ul><li class="dim">None. This route is unlawful.</li></ul></div>
+<div><h4>Cons</h4><ul><li>Virtual-currency business activity is characterised as illegal financial activity and strictly prohibited; the 2021 notice it replaced has been repealed, so older guides are out of date.</li><li>Financial and payment institutions may not provide account, transfer or settlement services for it, so the CNY leg usually has to go through an unlawful intermediary anyway.</li><li>Where a court treats the token as the medium for converting CNY into FX, it is analysed as disguised FX dealing under Art. 45.</li></ul></div>
+</div>
+<h4>Steps</h4><p class="flag-h">No execution steps are published for this route. It is unlawful and the only correct action is not to use it.</p>
+<p><a href="ladder.html#R29">Why this route has no ladder →</a></p>
+</div></details>
+<details id="R30">
+<summary><span class="rid">R30</span> False or inflated trade and service documents
+<span class="badge b-prohibited">prohibited</span>
+<span class="badge b-verified">verified</span></summary>
+<div class="detail">
+<p class="dim"><strong>虚构贸易背景、虚假单证</strong> · 外汇管理条例 Arts. 12, 39, 40; 经常项目指引(2020) Art. 47 · <a class="src t-law" href="https://www.gov.cn/gongbao/content/2008/content_1071846.htm" rel="noopener noreferrer" title="State Council of the PRC (国务院令第532号) - 中华人民共和国外汇管理条例 (Foreign Exchange Administration Regulations)">CN-FXREG ↗</a><a class="src t-law" href="https://www.gov.cn/gongbao/content/2020/content_5560296.htm" rel="noopener noreferrer" title="SAFE, 汇发〔2020〕14号, republished in State Council Gazette 2020 No. 31 - 经常项目外汇业务指引（2020年版） (Current-Account FX Business Guide, 2020 edition)">CN-GUIDE2020 ↗</a><a class="src t-law" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People&#x27;s Bank of China (中国人民银行令[2006]第3号), published by SAFE - 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)">CN-PBOC3 ↗</a></p>
+<p><strong>Published limit.</strong> Zero - prohibited.</p>
+<p><strong>Price basis.</strong> Not priced: unlawful 
+<a class="src t-law" href="https://www.gov.cn/gongbao/content/2008/content_1071846.htm" rel="noopener noreferrer" title="State Council of the PRC (国务院令第532号) - 中华人民共和国外汇管理条例 (Foreign Exchange Administration Regulations)">CN-FXREG ↗</a></p>
+<div class="two">
+<div><h4>Pros</h4><ul><li class="dim">None. This route is unlawful.</li></ul></div>
+<div><h4>Cons</h4><ul><li>Using false or invalid documents to buy FX is 非法套汇: refund of the funds and a fine of up to 30%, or 30%-100% if serious (Art. 40).</li><li>Moving funds abroad by deception is 逃汇 under Art. 39 with the same ladder.</li><li>The bank is separately penalised (Art. 47), which is why it audits the underlying documents.</li></ul></div>
+</div>
+<h4>Steps</h4><p class="flag-h">No execution steps are published for this route. It is unlawful and the only correct action is not to use it.</p>
+<p><a href="ladder.html#R30">Why this route has no ladder →</a></p>
+</div></details>
+</div></main>
+<footer><div class="wrap">
+<p><strong>Research, not legal, tax or investment advice.</strong> Every rule is linked to the instrument
+that states it; every price to the provider that publishes it. Values that could not be confirmed for this
+account are left blank and counted on the <a href="methodology.html">verification page</a>. Rates are
+snapshots, not quotes.</p>
+<p><a href="index.html">Overview</a> · <a href="routes.html">Routes</a> ·
+<a href="ladder.html">Cost ladder</a> · <a href="penalties.html">Penalties</a> ·
+<a href="tax.html">Tax &amp; reporting</a> · <a href="steps.html">Steps</a> ·
+<a href="methodology.html">Verification</a> · <a href="flagged.html">Flagged for review</a> ·
+<a href="/China1/index.html">All editions</a> · <a href="/China1/COORDINATION.md">Coordination log</a></p>
+<p>Edition J · built 2026-11-10 UTC · source snapshot 2026-11-10</p>
+</div></footer>
+</body>
+</html>
