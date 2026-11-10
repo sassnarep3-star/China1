@@ -1,0 +1,34 @@
+{
+  "china": [
+    {"item": "Converting or wiring the money", "figure": "No charge found in the rules read", "explain": "None of the rules read for this guide charges a tax on the conversion or the remittance itself. What the bank checks is that tax on the underlying income was already paid. This is a reading of the cited rules, not a certified statement.", "src": ["CN-FXREG", "CN-ART59"], "flags": []},
+    {"item": "Salary and other comprehensive income", "figure": "3%–45%", "explain": "Progressive rates. Normally withheld by the employer; the tax record is the voucher the bank asks for. If already taxed, the rules read add nothing more when you convert.", "src": ["CN-IIT"], "flags": []},
+    {"item": "Gain on selling property", "figure": "20% of the gain", "explain": "Gain = sale income less original value and reasonable expenses. The tax voucher is required to remit the proceeds.", "src": ["CN-IIT", "CN-SHPROP"], "flags": []},
+    {"item": "Dividends, interest and bonuses", "figure": "20%", "explain": "Charged on each payment. Treaty relief and the treatment of bank-deposit interest were not verified.", "src": ["CN-IIT"], "flags": ["F12", "F16"]},
+    {"item": "Business income", "figure": "5%–35%", "explain": "Progressive rates for individual business income.", "src": ["CN-IIT"], "flags": []},
+    {"item": "Income that was never taxed", "figure": "", "explain": "The tax above for that type of income becomes due first; without the voucher the bank cannot convert. Late-payment surcharge and fines were seen only in an excerpt and are left blank.", "src": ["CN-ART59", "CN-TAXCOLL"], "flags": ["F11"]},
+    {"item": "Tax-filing form for a single payment above USD 50,000", "figure": "No charge stated", "explain": "A filing, not a tax. Required for listed items such as work pay, dividends and property-sale income paid abroad.", "src": ["CN-TAXFILING"], "flags": ["F01"]}
+  ],
+  "china_penalties": [
+    {"item": "Evading FX controls (moving funds abroad in breach of the rules)", "figure": "Up to 30% of the amount; 30%–100% if serious", "explain": "Plus criminal liability where a crime is constituted.", "src": ["CN-FXREG"], "flags": []},
+    {"item": "Buying foreign exchange with false or invalid documents", "figure": "Up to 30% of the amount; 30%–100% if serious", "explain": "Treated as illegal arbitrage.", "src": ["CN-FXREG"], "flags": []},
+    {"item": "Private or disguised trading of foreign exchange", "figure": "Up to 30% of the amount; 30%–100% if serious", "explain": "Illegal gains confiscated; criminal liability where a crime is constituted.", "src": ["CN-FXREG"], "flags": []},
+    {"item": "Submitting untrue documents", "figure": "Up to CNY 50,000", "explain": "Fine for an individual.", "src": ["CN-FXREG"], "flags": []},
+    {"item": "Carrying foreign currency across the border in breach of the rules", "figure": "Up to 20% of the amount", "explain": "With a warning.", "src": ["CN-FXREG", "CN-CASH"], "flags": []},
+    {"item": "Splitting to evade limits", "figure": "Prohibited; no separate figure stated", "explain": "Prohibited by the Individual FX Measures; the fine scale that applies depends on how the breach is classified, so no figure is stated.", "src": ["CN-MEASURES"], "flags": []}
+  ],
+  "us": [
+    {"item": "Wiring your own money into the US", "figure": "No charge found in the pages read", "explain": "A US citizen is taxed on worldwide income when it is earned, wherever it sits. The pages read state no tax on moving money you already own; this is a reading, not a certified statement.", "src": ["US-ABROAD"], "flags": []},
+    {"item": "Income earned in China (salary, interest, gains)", "figure": "US rates on worldwide income", "explain": "Reportable in the year earned, translated to USD at the rate when received. If it was not reported in earlier years, that is the US exposure — not the transfer.", "src": ["US-ABROAD", "US-FX"], "flags": []},
+    {"item": "Credit for China tax paid", "figure": "Credit or deduction", "explain": "Claim on Form 1116. Not available for income excluded under the foreign earned income exclusion.", "src": ["US-FTC"], "flags": []},
+    {"item": "Exchange gain when the CNY is converted", "figure": "Not recognised up to USD 200", "explain": "For a personal transaction, a gain from rate changes is ignored unless it exceeds USD 200. Treatment above USD 200 and of losses was not verified.", "src": ["US-988"], "flags": ["F13"]},
+    {"item": "1% remittance transfer tax", "figure": "Does not apply to money arriving", "explain": "Applies to remittances sent from the United States to recipients abroad when funded with cash or a similar physical instrument.", "src": ["US-REMIT"], "flags": []}
+  ],
+  "us_reporting": [
+    {"item": "FBAR (FinCEN Form 114)", "figure": "Over USD 10,000 at any time in the year", "explain": "Aggregate of all foreign accounts. Due April 15, automatic extension to October 15. Filed online, not with the tax return.", "src": ["US-8938FBAR"], "flags": []},
+    {"item": "FBAR penalty", "figure": "USD 16,536 non-willful; USD 165,353 willful", "explain": "Maximum amounts for penalties assessed on or after 2025-01-17.", "src": ["US-FBARPEN"], "flags": ["F14"]},
+    {"item": "Form 8938 (with the tax return)", "figure": "Over USD 50,000 at year end or USD 75,000 at any time", "explain": "Unmarried, living in the US. Married filing jointly: USD 100,000 / 150,000. Living abroad: USD 200,000 / 300,000 (jointly USD 400,000 / 600,000).", "src": ["US-8938FBAR"], "flags": []},
+    {"item": "Form 8938 penalty", "figure": "USD 10,000, up to USD 60,000", "explain": "USD 10,000 for failure to disclose plus USD 10,000 per 30 days after IRS notice.", "src": ["US-8938FBAR"], "flags": []},
+    {"item": "Form 3520 (foreign gifts and bequests)", "figure": "Over USD 100,000 in the year", "explain": "From a nonresident alien or foreign estate. Relevant to inheritance and to money routed through other people.", "src": ["US-3520"], "flags": []},
+    {"item": "FinCEN Form 105 (cash at the border)", "figure": "Over USD 10,000", "explain": "Report when entering or leaving the US; the threshold applies to a family or group together. Unreported cash can be seized.", "src": ["US-CBP"], "flags": []}
+  ]
+}

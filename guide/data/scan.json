@@ -1,0 +1,456 @@
+{
+ "scanned_at_commit": "baf2354",
+ "areas": {
+  "assets": {
+   "files": 3,
+   "lines": 191,
+   "binary": 0,
+   "hits": 9
+  },
+  "audit-12b8fb19": {
+   "files": 1,
+   "lines": 29,
+   "binary": 0,
+   "hits": 3
+  },
+  "audit-2026-11-10": {
+   "files": 1,
+   "lines": 26,
+   "binary": 0,
+   "hits": 2
+  },
+  "data": {
+   "files": 5,
+   "lines": 2077,
+   "binary": 0,
+   "hits": 59
+  },
+  "docs": {
+   "files": 9,
+   "lines": 413,
+   "binary": 0,
+   "hits": 12
+  },
+  "dossier": {
+   "files": 9,
+   "lines": 828,
+   "binary": 0,
+   "hits": 77
+  },
+  "edition-b": {
+   "files": 17,
+   "lines": 5632,
+   "binary": 0,
+   "hits": 136
+  },
+  "edition-c": {
+   "files": 32,
+   "lines": 5953,
+   "binary": 0,
+   "hits": 77
+  },
+  "edition-d": {
+   "files": 29,
+   "lines": 7741,
+   "binary": 0,
+   "hits": 141
+  },
+  "edition-e": {
+   "files": 36,
+   "lines": 32324,
+   "binary": 0,
+   "hits": 215
+  },
+  "edition-f": {
+   "files": 30,
+   "lines": 6000,
+   "binary": 0,
+   "hits": 88
+  },
+  "edition-g": {
+   "files": 72,
+   "lines": 47363,
+   "binary": 0,
+   "hits": 208
+  },
+  "edition-h": {
+   "files": 74,
+   "lines": 54316,
+   "binary": 0,
+   "hits": 277
+  },
+  "edition-i": {
+   "files": 20,
+   "lines": 1849,
+   "binary": 0,
+   "hits": 94
+  },
+  "edition-j": {
+   "files": 19,
+   "lines": 1633,
+   "binary": 0,
+   "hits": 95
+  },
+  "integration": {
+   "files": 12,
+   "lines": 1642,
+   "binary": 0,
+   "hits": 54
+  },
+  "legacy-portal.html": {
+   "files": 1,
+   "lines": 10,
+   "binary": 0,
+   "hits": 5
+  },
+  "overview.html": {
+   "files": 1,
+   "lines": 1,
+   "binary": 0,
+   "hits": 1
+  },
+  "pages": {
+   "files": 5,
+   "lines": 5,
+   "binary": 0,
+   "hits": 8
+  },
+  "scripts": {
+   "files": 8,
+   "lines": 2234,
+   "binary": 0,
+   "hits": 87
+  }
+ },
+ "total_files": 384,
+ "total_lines": 170267,
+ "total_hits": 1648,
+ "rules": {
+  "R01": {
+   "lines": 62,
+   "files": 44,
+   "check": 42,
+   "consistent": 20,
+   "examples": [
+    {
+     "rule": "R01",
+     "file": "data/sources.json",
+     "line": 157,
+     "state": "check",
+     "excerpt": "\"title\": \"Xinhua report on 银发〔2021〕237号 — 十部门《关于进一步防范和处置虚拟货币交易炒作风险的通知》\","
+    },
+    {
+     "rule": "R01",
+     "file": "dossier/channels.html",
+     "line": 88,
+     "state": "check",
+     "excerpt": "7898838.htm\" target=\"_blank\" rel=\"noopener\" title=\"Xinhua report on 银发〔2021〕237号 — 十部门《关于进一步防范和处置虚拟货币交易炒作风险的通知》\">CN-16 · Xinhua (新华社) — state news ag"
+    },
+    {
+     "rule": "R01",
+     "file": "dossier/sources.html",
+     "line": 57,
+     "state": "check",
+     "excerpt": "d=\"CN-16\"><td class=\"mono\"><b>CN-16</b></td><td><b>Xinhua report on 银发〔2021〕237号 — 十部门《关于进一步防范和处置虚拟货币交易炒作风险的通知》</b><br><span style=\"color:var(--muted"
+    }
+   ]
+  },
+  "R02": {
+   "lines": 92,
+   "files": 61,
+   "check": 48,
+   "consistent": 44,
+   "examples": [
+    {
+     "rule": "R02",
+     "file": "assets/build.py",
+     "line": 91,
+     "state": "check",
+     "excerpt": "r/index.html\">Open the verified dossier →</a> · 35 routes, a measured 0.42% conversion spread, the capital-account taxonomy and 20 flagged items."
+    },
+    {
+     "rule": "R02",
+     "file": "data/channels.json",
+     "line": 11,
+     "state": "check",
+     "excerpt": "\"cost\": \"Bank bid/ask spread ≈ 0.42% (measured on BOC USD quotes of 2026-11-08); bank wire fees not verifi"
+    },
+    {
+     "rule": "R02",
+     "file": "data/costs.json",
+     "line": 4,
+     "state": "check",
+     "excerpt": "\"value\": \"0.42%\","
+    }
+   ]
+  },
+  "R03": {
+   "lines": 130,
+   "files": 85,
+   "check": 38,
+   "consistent": 92,
+   "examples": [
+    {
+     "rule": "R03",
+     "file": "assets/build.py",
+     "line": 122,
+     "state": "check",
+     "excerpt": "ce / emigration property transfer','No standalone estimate: approval, staged release, documentary costs and tax clearance vary; not the ordinary a"
+    },
+    {
+     "rule": "R03",
+     "file": "data/channels.json",
+     "line": 274,
+     "state": "check",
+     "excerpt": "\"cap\": \"The whole declared balance, but staged: first release ≤ 50% of the declared total; after 1 year a further ≤"
+    },
+    {
+     "rule": "R03",
+     "file": "data/sources.json",
+     "line": 66,
+     "state": "check",
+     "excerpt": "\"title\": \"SAFE Q&A on 个人财产对外转移 (approval tiers and staged release)\","
+    }
+   ]
+  },
+  "R04": {
+   "lines": 43,
+   "files": 37,
+   "check": 34,
+   "consistent": 9,
+   "examples": [
+    {
+     "rule": "R04",
+     "file": "data/channels.json",
+     "line": 276,
+     "state": "check",
+     "excerpt": "ion/notarisation; possible agent cost (not verified). Approval: below CNY 500,000 handled by the provincial SAFE branch; CNY 500,000 and above goes to SAFE headquarters after provincial review.\","
+    },
+    {
+     "rule": "R04",
+     "file": "data/flagged.json",
+     "line": 209,
+     "state": "check",
+     "excerpt": "release still depends on approval at the time of each instalment, and SAFE HQ approval is needed at CNY 500,000 and above. The statute does not guarantee that each instalment is gra"
+    },
+    {
+     "rule": "R04",
+     "file": "data/sources.json",
+     "line": 71,
+     "state": "check",
+     "excerpt": "\"verifies\": \"The RMB 500,000 approval-tier split between the provincial SAFE branch and SAFE headquarters.\""
+    }
+   ]
+  },
+  "R05": {
+   "lines": 164,
+   "files": 90,
+   "check": 164,
+   "consistent": 0,
+   "examples": [
+    {
+     "rule": "R05",
+     "file": "assets/build.py",
+     "line": 107,
+     "state": "check",
+     "excerpt": "BOC_BUY = 669.29 # CNY per USD 100; official board showed rate date 2026/11/09 at ret"
+    },
+    {
+     "rule": "R05",
+     "file": "assets/build.py",
+     "line": 108,
+     "state": "check",
+     "excerpt": "BOC_SELL = 666.48 # CNY per USD 100."
+    },
+    {
+     "rule": "R05",
+     "file": "audit-2026-11-10/REVIEW.md",
+     "line": 15,
+     "state": "check",
+     "excerpt": "026-11-10 13:49:58 China time, its USD telegraphic sell price was CNY 668.66/100; this differs from the dashboard's earlier 07:32:39 snapshot. Nei"
+    }
+   ]
+  },
+  "R06": {
+   "lines": 44,
+   "files": 25,
+   "check": 0,
+   "consistent": 44,
+   "examples": [
+    {
+     "rule": "R06",
+     "file": "edition-b/EXECUTIVE-SUMMARY.md",
+     "line": 32,
+     "state": "consistent",
+     "excerpt": "US reporting penalties | FBAR / Form 8938 / Form 3520 failure | **USD 16,536 non-willful, USD 165,353 or 50% willful, per report** | S19, S20 |"
+    },
+    {
+     "rule": "R06",
+     "file": "edition-b/EXECUTIVE-SUMMARY.md",
+     "line": 90,
+     "state": "consistent",
+     "excerpt": "s no effect on whether it is reportable. Maximum civil penalty: **USD 16,536 per report** for non-willful violations, **USD 165,353 or 50% of the"
+    },
+    {
+     "rule": "R06",
+     "file": "edition-b/EXECUTIVE-SUMMARY.md",
+     "line": 132,
+     "state": "consistent",
+     "excerpt": "US information-reporting exposure** on the account, which runs to USD 16,536 per report non-willfully and USD 165,353 or half the balance willfull"
+    }
+   ]
+  },
+  "R07": {
+   "lines": 0,
+   "files": 0,
+   "check": 0,
+   "consistent": 0,
+   "examples": []
+  },
+  "R08": {
+   "lines": 47,
+   "files": 39,
+   "check": 17,
+   "consistent": 30,
+   "examples": [
+    {
+     "rule": "R08",
+     "file": "edition-g/data/methods.json",
+     "line": 376,
+     "state": "check",
+     "excerpt": "\"id\":\"X08\",\"name\":\"Adding the U.S. 1% remittance tax to China-to-US costs\",\"category\":\"rejected\",\"kind\":\"rejected\",\"status"
+    },
+    {
+     "rule": "R08",
+     "file": "edition-g/data/sources.json",
+     "line": 52,
+     "state": "check",
+     "excerpt": "{\"id\":\"S44\",\"title\":\"IRS remittance transfer tax proposed regulations release, IR-2026-48\",\"issuer\":\"IRS\",\"type\":\"gove"
+    },
+    {
+     "rule": "R08",
+     "file": "edition-g/docs/method-X08.html",
+     "line": 3,
+     "state": "check",
+     "excerpt": "<title>X08 Adding the U.S. 1% remittance tax to China-to-US costs · China Money · Edition G</title><style>"
+    }
+   ]
+  },
+  "R09": {
+   "lines": 26,
+   "files": 21,
+   "check": 26,
+   "consistent": 0,
+   "examples": [
+    {
+     "rule": "R09",
+     "file": "data/channels.json",
+     "line": 458,
+     "state": "check",
+     "excerpt": "\"name_zh\": \"携带人民币现钞出境（限额2万元）\","
+    },
+    {
+     "rule": "R09",
+     "file": "data/channels.json",
+     "line": 461,
+     "state": "check",
+     "excerpt": "\"cap\": \"CNY 20,000 per person per trip; over-limit amounts are not released.\","
+    },
+    {
+     "rule": "R09",
+     "file": "data/channels.json",
+     "line": 470,
+     "state": "check",
+     "excerpt": "\"CNY 20,000 is roughly USD 3,000 — immaterial for the purpose.\","
+    }
+   ]
+  },
+  "R10": {
+   "lines": 711,
+   "files": 237,
+   "check": 711,
+   "consistent": 0,
+   "examples": [
+    {
+     "rule": "R10",
+     "file": "assets/build.py",
+     "line": 38,
+     "state": "check",
+     "excerpt": "s individual holding the foreign permanent-residence ID has an annual USD 50,000 equivalent purchase facilitation quota.', 'May simplify eligible purc"
+    },
+    {
+     "rule": "R10",
+     "file": "assets/build.py",
+     "line": 57,
+     "state": "check",
+     "excerpt": "ty guidance says a filing form is required if the transaction exceeds USD 50,000. Filing is not a 50,000-dollar tax or a universal individual exemptio"
+    },
+    {
+     "rule": "R10",
+     "file": "assets/build.py",
+     "line": 76,
+     "state": "check",
+     "excerpt": "ty filing threshold', 'Shanghai’s FAQ mentions a tax filing form over $50,000; it is specific guidance for that process, not proof of an automatic"
+    }
+   ]
+  },
+  "R11": {
+   "lines": 3,
+   "files": 2,
+   "check": 3,
+   "consistent": 0,
+   "examples": [
+    {
+     "rule": "R11",
+     "file": "edition-f/data/sources.json",
+     "line": 501,
+     "state": "check",
+     "excerpt": "0 CNY bank-transfer fee 1,224.40 CNY after 31.93 CNY volume discount; Wise-balance cheapest 1,208.11 CNY; >USD 25,000 volume discount; US 1% remittance excise from 2026-01-01 applies only to US-outbound physica"
+    },
+    {
+     "rule": "R11",
+     "file": "edition-f/site/sources.html",
+     "line": 69,
+     "state": "check",
+     "excerpt": "0 CNY bank-transfer fee 1,224.40 CNY after 31.93 CNY volume discount; Wise-balance cheapest 1,208.11 CNY; &gt;USD 25,000 volume discount; US 1% remittance excise from 2026-01-01 applies only to US-outbound physica"
+    },
+    {
+     "rule": "R11",
+     "file": "edition-f/site/sources.html",
+     "line": 70,
+     "state": "check",
+     "excerpt": "vider-primary</span></td><td class=\"\"><strong>Pricing hub</strong><br>Wise</td><td class=\"\">2026-11-08</td><td class=\"\">Retrieved pricing hub: fees from 0.23%; USD wire/SWIFT receive USD 6.11.</td><td class=\"\">Generic pricing, n"
+    }
+   ]
+  },
+  "R12": {
+   "lines": 326,
+   "files": 179,
+   "check": 60,
+   "consistent": 266,
+   "examples": [
+    {
+     "rule": "R12",
+     "file": "audit-12b8fb19/REVIEW.md",
+     "line": 21,
+     "state": "check",
+     "excerpt": "legal effect of every source, actual eligibility, live FX execution, all-in price, tax liability, or user-specific penalty. Provider tariff citat"
+    },
+    {
+     "rule": "R12",
+     "file": "edition-d/build/build.py",
+     "line": 603,
+     "state": "check",
+     "excerpt": "\"Totals are the all-in cost of ending up with the stated number of US dollars in a US accoun"
+    },
+    {
+     "rule": "R12",
+     "file": "edition-d/build/build.py",
+     "line": 647,
+     "state": "check",
+     "excerpt": "\"M01\", \"boc_documented\", \"Documented remittance, all-in cost\","
+    }
+   ]
+  }
+ }
+}
