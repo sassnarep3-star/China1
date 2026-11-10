@@ -1,0 +1,219 @@
+{
+  "as_of": "2026-11-10",
+  "targets": {
+    "start_usd": 10000,
+    "stop_usd": 400000,
+    "step_usd": 10000
+  },
+  "rates": {
+    "pboc_mid_cny_per_usd": {
+      "value": 6.7167,
+      "source": "S01",
+      "label": "PBOC/CFETS official central parity, 2026-11-10 09:25"
+    },
+    "boc_buy_cny_per_usd": {
+      "value": 6.6571,
+      "source": "S02",
+      "label": "BOC cash-remittance buying rate (per 100 USD: 665.71)"
+    },
+    "boc_sell_cny_per_usd": {
+      "value": 6.6851,
+      "source": "S02",
+      "label": "BOC cash-remittance selling rate (per 100 USD: 668.51)"
+    }
+  },
+  "derived": {
+    "boc_board_mid": {
+      "formula": "(boc_buy + boc_sell) / 2",
+      "source": "S02",
+      "note": "Midpoint of the two BOC quotes taken from the same snapshot, so no timing mismatch is introduced."
+    },
+    "fx_spread_pct_one_way": {
+      "formula": "((boc_sell - boc_buy) / 2) / board_mid",
+      "source": "S02",
+      "note": "Half the bank's published bid-ask spread, expressed against the midpoint of that same pair of quotes. This is the estimated cost of one one-way conversion relative to mid."
+    }
+  },
+  "rails": [
+    {
+      "id": "boc",
+      "name": "Bank of China wire",
+      "short": "BOC",
+      "priced": true,
+      "commission_pct": 0.001,
+      "commission_min_cny": 50,
+      "commission_max_cny": 260,
+      "cable_cny": 150,
+      "fx_spread_pct": 0.002098604428,
+      "receiving_usd": 15,
+      "sources": [
+        "S02",
+        "S03",
+        "S18"
+      ],
+      "include_fx": true,
+      "notes": "0.1% of the CNY amount, min CNY 50, max CNY 260, plus CNY 150 cable. Receiving charge is Chase's published USD 15, used as a representative US bank fee."
+    },
+    {
+      "id": "hsbc",
+      "name": "HSBC China wire (Premier)",
+      "short": "HSBC",
+      "priced": true,
+      "commission_pct": 0.001,
+      "commission_min_cny": 100,
+      "commission_max_cny": 500,
+      "cable_cny": 120,
+      "fx_spread_pct": null,
+      "receiving_usd": 0,
+      "sources": [
+        "S04"
+      ],
+      "include_fx": false,
+      "notes": "Commission and cable only. HSBC publishes no FX spread in the tariff read, so its all-in total is blank rather than borrowed from another bank. Its inbound wire into HSBC China is listed free, which is not the same as a US receiving bank being free."
+    },
+    {
+      "id": "hsbc_global",
+      "name": "HSBC Global Transfer (Premier, same-name)",
+      "short": "HSBC GT",
+      "priced": true,
+      "commission_pct": 0.0,
+      "commission_min_cny": 0,
+      "commission_max_cny": 0,
+      "cable_cny": 0,
+      "fx_spread_pct": null,
+      "receiving_usd": 0,
+      "sources": [
+        "S04"
+      ],
+      "include_fx": false,
+      "notes": "Service fee waived for Premier by tariff. FX spread unpublished, so all-in is blank. Requires an HSBC account in the destination country."
+    },
+    {
+      "id": "wise",
+      "name": "Wise CNY to USD",
+      "short": "Wise",
+      "priced": false,
+      "sources": [
+        "S17"
+      ],
+      "include_fx": false,
+      "notes": "Wise states the fee depends on delivery method and is only displayed when a transfer is created. No figure is published to copy, so the column stays blank."
+    }
+  ],
+  "penalties": {
+    "standard_max_pct": 0.3,
+    "serious_min_pct": 0.3,
+    "serious_max_pct": 1.0,
+    "cash_max_pct": 0.2,
+    "individual_admin_cap_cny": 50000,
+    "sources": [
+      "S08"
+    ],
+    "quote": "逃汇…处逃汇金额30%以下的罚款；情节严重的，处逃汇金额30%以上等值以下的罚款 (Art. 39); 私自买卖外汇、变相买卖外汇…处违法金额30%以下的罚款；情节严重的，处违法金额30%以上等值以下的罚款 (Art. 45); 违反规定携带外汇出入境…可以处违法金额20%以下的罚款 (Art. 42)"
+  },
+  "tax_scenarios": [
+    {
+      "id": "principal",
+      "title": "Your own already-taxed savings",
+      "china_rate": "0% on the conversion",
+      "us_rate": "0% on the principal; FX gain under USD 200 not recognised",
+      "sources": [
+        "S13",
+        "S10"
+      ],
+      "assumption": "The money was earned and taxed in earlier years and no new income or gain arises."
+    },
+    {
+      "id": "salary",
+      "title": "Unremitted salary earned in China",
+      "china_rate": "3%-45% progressive comprehensive income",
+      "us_rate": "Taxable wages; foreign tax credit for Chinese tax on the same income",
+      "sources": [
+        "S10",
+        "S15",
+        "S16"
+      ],
+      "assumption": "China withholdings were correct and the US return includes the wages."
+    },
+    {
+      "id": "asset",
+      "title": "Gain on sale of property or other assets",
+      "china_rate": "20% flat on transfer income",
+      "us_rate": "Capital gain; foreign tax credit potentially available",
+      "sources": [
+        "S10",
+        "S15"
+      ],
+      "assumption": "Assumes the disposal is real and the cost basis is documented in CNY."
+    },
+    {
+      "id": "interest",
+      "title": "Interest and dividends in the Chinese account",
+      "china_rate": "20% flat",
+      "us_rate": "Ordinary or qualified dividend treatment; credit for Chinese tax",
+      "sources": [
+        "S10",
+        "S15"
+      ],
+      "assumption": "Assumes the income was not already included on a prior US return."
+    },
+    {
+      "id": "gift",
+      "title": "Gift or bequest from a Chinese relative",
+      "china_rate": "Not a China income event for you; donor side not verified",
+      "us_rate": "No income tax; Form 3520 above USD 100,000 aggregate",
+      "sources": [
+        "S14",
+        "S16"
+      ],
+      "assumption": "Genuine donative intent, documented."
+    }
+  ],
+  "reporting": [
+    {
+      "form": "FinCEN 114 (FBAR)",
+      "trigger": "Aggregate foreign financial accounts exceed USD 10,000 at any time in the calendar year",
+      "due": "15 April; automatic extension to 15 October",
+      "cost_of_missing": "Civil penalties adjusted annually for inflation; criminal exposure exists",
+      "sources": [
+        "S11"
+      ]
+    },
+    {
+      "form": "Form 8938",
+      "trigger": "US-resident single filer: over USD 50,000 at year end or USD 75,000 at any time; MFJ: USD 100,000 / USD 150,000. Higher thresholds apply to filers living abroad.",
+      "due": "With the income tax return, including extensions",
+      "cost_of_missing": "Up to USD 10,000, plus USD 10,000 per 30 days after notice, maximum USD 60,000",
+      "sources": [
+        "S12"
+      ]
+    },
+    {
+      "form": "Form 3520 Part IV",
+      "trigger": "Gifts or bequests from a nonresident individual or foreign estate exceeding USD 100,000 aggregate in the year",
+      "due": "15 April, or 15 June for citizens living abroad; extensions capped at 15 October",
+      "cost_of_missing": "Penalties under IRC 6039F(c) where reasonable cause is absent",
+      "sources": [
+        "S14"
+      ]
+    },
+    {
+      "form": "FinCEN 105 (CMIR)",
+      "trigger": "Physically transporting more than USD 10,000 in currency or monetary instruments into or out of the US",
+      "due": "At the time of transport",
+      "cost_of_missing": "Separate US offence; declaration is not optional",
+      "sources": [
+        "S19"
+      ]
+    },
+    {
+      "form": "Form 1116",
+      "trigger": "Claiming a credit for Chinese tax on income also taxed by the US",
+      "due": "With the income tax return",
+      "cost_of_missing": "Not a penalty; you simply pay twice on the same income",
+      "sources": [
+        "S15"
+      ]
+    }
+  ]
+}

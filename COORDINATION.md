@@ -1323,3 +1323,78 @@ Final integration: `integration/build.py` updated additively — Edition J NAV e
 
 - `git pull --rebase origin main` hit conflicts: main advanced through PRs #34, #36, #38, #40, #41 (sessions arena-0fe51697, 12b8fb19, 134d8d07, 1388afb0). Per coordination rule, stopped to inspect and resolved without discarding any work: all concurrent boards preserved (append-only union), their audit records kept, and their updated consolidated `integration/build.py` kept as base — this session's portal edits (Edition J card/NAV/archive/flagged) were re-applied additively to the new generator. Rebuilt `integration/` deterministically; re-verified: `integration/verify.py` PASS 143 rows, `edition-j/build/verify.py` 1,936 0 errors, `assets/check.py` PASS. No research data overwritten; editions B–J preserved.
 
+
+---
+
+# Edition K completion record — arena-2fb403b0 (2026-11-10)
+
+Claimed at the top of this file (K1–K5), with the handoff of the stale `edition-k` claim
+by arena-fc438b1a logged there. All work is inside `edition-k/**` plus additive changes
+to shared outputs listed below. No other session's files were modified or deleted.
+
+| Task | Status | Owner | Result |
+|---|---|---|---|
+| K1 Repo line-by-line audit vs re-fetched official sources | done | arena-2fb403b0 | `edition-k/audit/REPO_AUDIT.md`, 12 findings A01–A12 |
+| K2 Official-source research: methods, pros/cons, steps, CN+US tax | done | arena-2fb403b0 | 21 routes (17 lawful/conditional, 4 prohibited), 19 sources fetched and quoted verbatim |
+| K3 All-in cost per method at every USD 10,000 step to 400,000 | done | arena-2fb403b0 | 40 priced rows + 40 comparison rows + 40 penalty rows; formula decomposed; unpriceable rails blank |
+| K4 Dashboard: landing page + category subpages, mobile-first | done | arena-2fb403b0 | 8 pages in `edition-k/site/`, stacked-card tables at 720px |
+| K5 Independent verifier + CI | done | arena-2fb403b0 | `edition-k/build/verify.py` 2,465 checks 0 errors; `.github/workflows/edition-k.yml` |
+| K6 Final integration, PR, merge, Pages | in progress | arena-2fb403b0 | portal card/nav/archive/flagged links added additively; release record below |
+
+## Sources (all fetched and read 2026-11-10; register at `edition-k/site/sources.html`)
+
+PBOC/CFETS central parity 2026-11-10 (pbc.gov.cn, 1 USD = 6.7167); BOC FX board
+2026-11-10 17:39:58 (boc.cn, bid 6.6571 / ask 6.6851); BOC personal remittance tariff
+(boc.cn, 1‰ min 50 max 260 + cable 150); HSBC China tariff effective 2026-10-31
+(hsbc.com.cn PDF, 0.1% min 100 max 500 + 120 cable, Global Transfers free for Premier,
+FX drafts discontinued 2019-12-01); SAFE Huifa [2007] No.1 (safe.gov.cn, annual total
+USD 50,000, Arts. 10/12/13/14/30, Art. 39 repealed by Huifa [2023] No.8); 2004 individual
+property-transfer measures (safe.gov.cn); SAFE Huifa [2014] No.2 §6 (safe.gov.cn, staged
+release and CNY 500,000 filing cancelled); State Council FX Regulations Order 532
+(gov.cn, Arts. 39/40/42/45/48); SAFE+Customs Huifa [2003] No.102 (cash 5,000/10,000);
+China IIT Law (chinatax.gov.cn, Arts. 1–3); IRS FBAR; IRS 8938-vs-FBAR comparison; IRS
+gifts from foreign person; IRS foreign tax credit; IRS US citizens abroad; 26 USC §988
+(govinfo.gov, esp. (e)(2) USD 200); FinCEN FIN-2011-R001 (CMIR above USD 10,000); Wise
+CNY guide; Chase incoming-wire fee page.
+
+Retrieval failures recorded in `edition-k/research/SOURCE_LOG.md` rather than hidden:
+chinamoney.com.cn parity page is script-rendered (shell only), and four URLs returned 404
+(IRS foreign-currency page, CBP currency page, FinCEN 105 direct PDF, a Chase PDF). Each
+was replaced by a working first-party alternative; none was substituted with a
+third-party source.
+
+## Verification performed
+
+- `python3 edition-k/build/build.py` → 8 pages; `python3 edition-k/build/verify.py` →
+  **2,465 checks, 0 errors**: independent recomputation of every priced cell (40 + 40 + 40
+  rows) from raw parameters with a separate implementation, byte-identical rebuild,
+  a source link on every table row, internal link/anchor resolution, external URLs
+  restricted to the 19 registered sources, blank-vs-zero semantics, and prohibited routes
+  publishing no steps.
+- Regression: `integration/verify.py` PASS (7 pages, 143 sourced rows, 239 HTML files,
+  20,425 local references, deterministic); `edition-i/build/verify.py` 1,868 and 1,936
+  checks 0 errors; `edition-d/build/verify.py` PASS 19 checks; `assets/check.py` OK.
+- Cross-check: Edition D independently derived a one-way FX margin of 0.2104% from a
+  different BOC snapshot; Edition K derives 0.20986%. Two independent derivations agree.
+
+## Irregularities (published, non-blocking)
+
+F01 personal facts never supplied; F02 spread is measured, not executed; F03 BOC ask sat
+below the day's PBOC mid (timing artifact, disclosed rather than netted); F04 BOC note-1
+local variation; F05 HSBC spread unpublished; F06 Wise publishes no fixed fee; F07
+intermediary fees excluded; F08 Chase $15 is representative only; F09 2004 staged wording
+vs 2014 reform; F10 repealed Art. 39; F11 "no conversion tax" is structural inference;
+F12 property/gift taxes not verified; F13 A-share and insurance tax not verified; F14
+crypto authority not re-fetched; F15 境内/境外 individual split unresolved; F16 bank
+approval discretionary; F17 §988 USD 200 is conditional; F18 "serious circumstances"
+undefined; F19 earlier editions not re-certified; F20 20% is a rate, not a liability.
+All published at `edition-k/site/flagged.html`; none blocks publication.
+
+## Additive shared-file changes
+
+`integration/build.py` — Edition K nav entry, card, archive link, and flagged/audit links
+inserted alongside the existing Edition J entries; rebuilt deterministically.
+`README.md` — Edition K section added at the top; live-site line updated.
+`EXECUTIVE_SUMMARY.md` — Edition K summary prepended; the prior summary retained below it
+as a subsection rather than deleted.
+`COORDINATION.md` — this record appended; the claim at the top preserved.

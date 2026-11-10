@@ -1,0 +1,146 @@
+{
+  "as_of": "2026-11-10",
+  "note": "Every item below is unresolved, published rather than hidden. 'Impact' states what a reader could get wrong if the item is ignored. Nothing here blocks publication and nothing here is patched over elsewhere on the site.",
+  "flags": [
+    {
+      "id": "F01",
+      "title": "No case facts were ever supplied",
+      "detail": "The user's residency, immigration status, household registration, the character and source of the funds (salary, property proceeds, inheritance, gift, business capital), which bank holds the money, the destination US bank, and the US filing position are all unknown. The brief said no manual input, so nothing was asked for and nothing was assumed.",
+      "impact": "Every route's availability, and therefore the cheapest lawful cost, depends on these facts. The prices on this site are rail prices; they are not a determination that any route is open to this reader.",
+      "sources": []
+    },
+    {
+      "id": "F02",
+      "title": "FX conversion cost is a measured half-spread, not an observed transaction",
+      "detail": "The 0.20986% figure is half of Bank of China's published bid-ask spread on one board snapshot, expressed against the midpoint of that same pair of quotes. No executed conversion at that price was observed.",
+      "impact": "Actual executed rates differ by amount, channel, relationship tier and time of day. Large tickets are sometimes negotiated. Treat the figure as an order of magnitude, not a quote.",
+      "sources": ["S02"]
+    },
+    {
+      "id": "F03",
+      "title": "BOC's selling rate sat below the official PBOC mid-rate on the same day",
+      "detail": "PBOC's central parity was 6.7167 CNY/USD at 09:25 (S01). BOC's own board at 17:39 showed a 6.6851 selling rate and a 6.6571 buying rate (S02). The bank's ask was therefore about 0.47% below the morning reference.",
+      "impact": "This is an intra-day timing effect, not a discount and not a cost. Anyone computing 'bank rate minus PBOC mid' would get a negative cost and conclude conversion is free, which is wrong. That is why this edition computes the spread inside a single snapshot instead.",
+      "sources": ["S01", "S02"]
+    },
+    {
+      "id": "F04",
+      "title": "BOC's own tariff warns of local variation",
+      "detail": "Note 1 on the BOC remittance tariff states that separate agreements, promotional pricing and local fee differences are charged according to the agreement or the local published schedule.",
+      "impact": "The CNY 50/260 commission and CNY 150 cable fee are the national published figures. A specific branch may quote differently. Confirm at the branch before relying on the figure.",
+      "sources": ["S03"]
+    },
+    {
+      "id": "F05",
+      "title": "HSBC's FX spread is not in the tariff read, so its all-in total is blank",
+      "detail": "The HSBC China tariff (effective 2026-10-31) publishes commission and cable fees but no FX board or spread in the document retrieved.",
+      "impact": "The HSBC column shows sender charges only. Its all-in cost could be lower or higher than BOC's; presenting a borrowed spread would have been an invention.",
+      "sources": ["S04"]
+    },
+    {
+      "id": "F06",
+      "title": "Wise publishes no fee for the CNY-out corridor",
+      "detail": "Wise's own guide says fees differ by delivery method and are shown only when a transfer is set up. It also states the eligibility gates: not a mainland Chinese national, prior China work, and a tax record showing tax paid within three years.",
+      "impact": "No Wise cost appears in any ladder. A reader who is a mainland Chinese national cannot use this rail at all, regardless of price.",
+      "sources": ["S17"]
+    },
+    {
+      "id": "F07",
+      "title": "Correspondent and intermediary bank charges are unverified and excluded",
+      "detail": "No first-party schedule was found for the banks that handle the USD leg between the Chinese sender and a US recipient. These charges are typically deducted in transit.",
+      "impact": "The delivered amount can be lower than the ladder's 'you receive' figure. The gap is unknown; it is not zero, and it is not modelled.",
+      "sources": ["S03", "S04"]
+    },
+    {
+      "id": "F08",
+      "title": "US receiving bank is unknown; Chase's $15 is representative only",
+      "detail": "The ladder includes exactly one receiving charge, Chase's published $15 per incoming international wire. The user's actual bank and account type were never supplied.",
+      "impact": "A recipient at a different bank may pay nothing, or considerably more. The receiving column is a stated assumption, not a measured cost.",
+      "sources": ["S18"]
+    },
+    {
+      "id": "F09",
+      "title": "The 2004 property-transfer text still contains superseded staged-release wording",
+      "detail": "The 2004 interim measures require one application and staged release (half, then half the remainder after a year, then the rest after two years). SAFE Huifa [2014] No.2 section 6 cancelled the staged-release requirement and the CNY 500,000 central filing threshold.",
+      "impact": "Both texts are official and both are live on government sites. A bank or a reader relying on the 2004 page alone would expect a slower, more restrictive process than the 2014 amendments allow. Ask the competent SAFE branch which procedure it applies today.",
+      "sources": ["S06", "S07"]
+    },
+    {
+      "id": "F10",
+      "title": "Article 39 of the 2007 implementing rules is repealed — do not cite its fine schedule",
+      "detail": "The SAFE page carrying Huifa [2007] No.1 states that Article 39 was deleted by Huifa [2023] No.8, appendix 3. Older mirrors still reproduce the article and its CNY 30,000 / CNY 1,000 fine language.",
+      "impact": "Quoting a repealed fining provision would misstate the law. Penalty exposure must be taken from the State Council FX Regulations instead (S08).",
+      "sources": ["S05", "S08"]
+    },
+    {
+      "id": "F11",
+      "title": "'No tax on conversion' is an inference from the structure of the income list, not an exemption clause",
+      "detail": "The China IIT Law taxes nine listed categories of income (S10). Currency exchange is not among them. No article was found that says, in terms, 'converting currency is not taxable'.",
+      "impact": "The conclusion is strong but is an inference. A reader with a specific fact pattern should have it confirmed by a China tax adviser rather than relying on the absence of a category.",
+      "sources": ["S10"]
+    },
+    {
+      "id": "F12",
+      "title": "China property and gift taxes were not verified in this edition",
+      "detail": "VAT, deed tax, and any gift-tax treatment were not read from a first-party rate table here.",
+      "impact": "The 20% IIT figure on asset-transfer income is verified; the other transaction taxes on a property sale are not. A property-sale plan costed only at 20% may be incomplete.",
+      "sources": ["S10"]
+    },
+    {
+      "id": "F13",
+      "title": "A-share and insurance routes carry unverified tax treatment",
+      "detail": "Capital-gains treatment on listed shares, and the tax character of an insurance surrender, were not established from a first-party source in this edition.",
+      "impact": "Those two routes are listed as conditional with an explicit UNVERIFIED tax line rather than a rate. Do not plan around a zero.",
+      "sources": ["S10"]
+    },
+    {
+      "id": "F14",
+      "title": "The virtual-currency regulatory position was not re-fetched, so it is not described",
+      "detail": "Prior editions in this repository cite PBOC notices on virtual currency, including a 2026 notice said to repeal the 2021 notice. That text was not retrieved in this session.",
+      "impact": "The prohibited-crypto entry therefore states only that the route is not recommended and gives no legal detail. Readers should read the current PBOC notice directly instead of any summary here.",
+      "sources": []
+    },
+    {
+      "id": "F15",
+      "title": "Domestic-individual versus overseas-individual classification is unresolved",
+      "detail": "SAFE Huifa [2007] No.1 applies different articles to 境内个人 and 境外个人: Article 10/12/14 for domestic individuals, Article 11/13/15 for overseas individuals. A US citizen can be either, depending on residence and household registration.",
+      "impact": "Which article governs your bank visit, and therefore which documents are demanded, turns on a fact not supplied. Both paths are described, neither is asserted.",
+      "sources": ["S05", "S08"]
+    },
+    {
+      "id": "F16",
+      "title": "Bank approval is discretionary even when the documents are complete",
+      "detail": "The rules require banks to review authenticity (Huifa [2007] No.1 Art. 6) but do not guarantee that a given evidentiary package will be accepted. There is no published appeal against a counter refusal.",
+      "impact": "A lawful route can still fail at the counter. Budget time and be prepared to escalate to the branch's compliance team or move banks.",
+      "sources": ["S05"]
+    },
+    {
+      "id": "F17",
+      "title": "The §988 personal-transaction exclusion is conditional",
+      "detail": "26 USC 988(e)(2) disapplies recognition of FX gain on a personal transaction only while the gain does not exceed $200. Above that threshold the exclusion does not apply. The provision also creates no deduction for personal FX losses.",
+      "impact": "'No US tax on converting' is true for ordinary personal amounts and stops being automatically true when a large FX gain is realised on a nonfunctional-currency position. The $200 test is per transaction, and how it aggregates over many conversions is a facts-and-circumstances question not resolved here.",
+      "sources": ["S13"]
+    },
+    {
+      "id": "F18",
+      "title": "'Serious circumstances' is undefined, and the fine range spans 30% to 100%",
+      "detail": "The FX Regulations set a fine of up to 30% of the amount normally, and 30% up to the full equivalent where circumstances are serious (Arts. 39, 45). The regulation does not define 'serious'.",
+      "impact": "The penalty band on the Prohibited page is a statutory range, not a likely outcome. The low end is the statutory ceiling for ordinary cases, not a floor that a first offence will land on.",
+      "sources": ["S08"]
+    },
+    {
+      "id": "F19",
+      "title": "This edition does not re-certify the ten earlier editions in this repository",
+      "detail": "Editions B through J and several audit folders exist in this repository from concurrent sessions, with overlapping claims, different rate snapshots and different cost formulas. This session read the repository for conflicts but verified only the sources listed here.",
+      "impact": "Numbers differ between editions because the snapshots differ. Where editions conflict, the later fetched first-party page governs the fact, but no edition — including this one — should be treated as certification of another.",
+      "sources": []
+    },
+    {
+      "id": "F20",
+      "title": "The 20% China rate is a rate, not a liability",
+      "detail": "IIT Law Art. 3(3) applies a flat 20% to transfer income, interest, dividends, leasing and incidental income. The taxable base is net of permitted deductions and cost basis, which were not modelled.",
+      "impact": "Applying 20% to the whole transferred amount would overstate the tax for anyone with a cost basis. This site therefore states the rate and refuses to multiply it by the balance.",
+      "sources": ["S10"]
+    }
+  ]
+}
