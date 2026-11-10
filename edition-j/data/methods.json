@@ -1,0 +1,427 @@
+[
+  {
+    "id": "M01",
+    "category": "Current account",
+    "name": "Overseas-person lawful RMB income — purchase + remittance",
+    "status": "Lawful (conditional)",
+    "when": "You are a 境外个人 (passport holder) with lawful China-source RMB income (salary, labour, royalties, etc.).",
+    "pros": [
+      "No annual purchase cap in the rule text for this route (Art. 59); tax/source evidence is the gate, not a quota.",
+      "Single documented wire; BOC/HSBC sender fees are small and capped (see costs)."
+    ],
+    "cons": [
+      "Requires genuine income + tax records; bank reviews authenticity (Art. 68).",
+      "Cannot be used for unrelated savings — relabelling principal as salary is prohibited."
+    ],
+    "steps": [
+      "Confirm your bank classifies you as 境外个人 (passport) and will accept the income category.",
+      "Gather: passport, employment/labour contract, payroll records, China IIT payment records (Art. 59 requires tax vouchers).",
+      "At the bank: apply to purchase FX against the income, then remit to your own overseas account (Art. 65: ID only for existing FX).",
+      "Keep purchase slip, SWIFT copy and tax records; reconcile U.S. reporting (FBAR/8938, worldwide income)."
+    ],
+    "sources": [
+      "S01",
+      "S02"
+    ]
+  },
+  {
+    "id": "M02",
+    "category": "Current account",
+    "name": "Existing FX remittance (FX already held)",
+    "status": "Lawful (conditional)",
+    "when": "You already hold USD/FX in a China FX account (e.g. prior lawful purchase, remittance received).",
+    "pros": [
+      "Overseas-person FX remittance needs only ID (Art. 65) — no purchase quota involved.",
+      "No conversion spread if already in USD."
+    ],
+    "cons": [
+      "Does not solve the CNY-conversion problem; only helps if FX is already held.",
+      "Account identity (境内/境外) still controls; bank may still review source."
+    ],
+    "steps": [
+      "Confirm FX balance is in an FX account under your own name.",
+      "Instruct remittance to your own overseas account; 境内个人 over USD50,000/day needs transaction evidence (Art. 64).",
+      "Retain remittance receipt for U.S. reporting reconciliation."
+    ],
+    "sources": [
+      "S01",
+      "S02"
+    ]
+  },
+  {
+    "id": "M03",
+    "category": "Current account",
+    "name": "境内个人 annual facilitation quota (USD50,000/yr)",
+    "status": "Lawful only if classified 境内个人",
+    "when": "You are classified 境内个人 (Chinese citizen holding a resident ID) — normally NOT a U.S. citizen with a U.S. passport.",
+    "pros": [
+      "Within quota: ID only, no transaction evidence (Arts. 54–55).",
+      "Simple bank purchase + remittance."
+    ],
+    "cons": [
+      "A U.S. citizen holding a U.S. passport is 境外个人 under Art. 37 — this quota route does not apply.",
+      "Splitting across people/years to evade limits is prohibited (Art. 7; Art. 62 watchlist)."
+    ],
+    "steps": [
+      "Confirm classification with the bank first — do not assume it.",
+      "If 境内个人: purchase within USD50,000/yr, remit; over quota needs transaction evidence (Art. 56).",
+      "Never borrow another person's quota."
+    ],
+    "sources": [
+      "S01",
+      "S02"
+    ]
+  },
+  {
+    "id": "M04",
+    "category": "Current account",
+    "name": "Return of unused prior conversion",
+    "status": "Lawful (conditional)",
+    "when": "You previously converted FX to RMB and did not use the RMB.",
+    "pros": [
+      "Direct return path (Art. 14) with ID; no new purchase needed."
+    ],
+    "cons": [
+      "Only covers the unused converted amount; needs original exchange slip within 24 months (Art. 60)."
+    ],
+    "steps": [
+      "Bring passport + original exchange slip.",
+      "Apply at bank for return conversion and remittance."
+    ],
+    "sources": [
+      "S01",
+      "S02"
+    ]
+  },
+  {
+    "id": "M05",
+    "category": "Rails",
+    "name": "Wise from-CNY transfer",
+    "status": "Lawful (conditional)",
+    "when": "Non-mainland person with China work history and China tax records within the last 3 years; destination must be your own account.",
+    "pros": [
+      "Designed for exactly this profile; own-account rule keeps it compliant.",
+      "Per-transfer caps are clear: CNY300,000 (bank app) / CNY50,000 (Alipay)."
+    ],
+    "cons": [
+      "Overall limit = after-tax China salary — cannot move unrelated principal.",
+      "Fee is quote-time only; no 40-point schedule verified — cost cells stay blank."
+    ],
+    "steps": [
+      "Verify identity + tax records with Wise (1–2 working days first time).",
+      "Start transfer from China bank app or Alipay; confirm remaining overall limit covers the amount.",
+      "Destination must be your own overseas account/Wise account."
+    ],
+    "sources": [
+      "S09"
+    ]
+  },
+  {
+    "id": "M06",
+    "category": "Rails",
+    "name": "Bank telegraphic transfer (BOC / HSBC China)",
+    "status": "Rail — needs an entitlement first",
+    "when": "Any lawful entitlement (M01, M07–M11) executed as a bank wire.",
+    "pros": [
+      "Published capped sender fees (BOC max CNY410 all-in sender; HSBC max CNY620).",
+      "SWIFT record; full-arrival option available (BOC note 5: USD15/25)."
+    ],
+    "cons": [
+      "Rail only — does not create entitlement; bank still reviews the underlying transaction.",
+      "Intermediary/receiving charges excluded from tariff; FX execution rate is the real variable."
+    ],
+    "steps": [
+      "Present entitlement documents to the bank (see the entitlement method's steps).",
+      "Choose SHA/BEN/OUR charge option; consider full-arrival if intermediary deductions are a concern.",
+      "Confirm the executed FX rate and all deductions on the receipt."
+    ],
+    "sources": [
+      "S06",
+      "S08"
+    ]
+  },
+  {
+    "id": "M07",
+    "category": "Capital account",
+    "name": "Emigrant property transfer",
+    "status": "Lawful (conditional)",
+    "when": "You have emigrated / are emigrating and transfer pre-emigration property abroad.",
+    "pros": [
+      "The only general capital-account exit for personal property; own-account remittance.",
+      "2014 reform: no mandatory staged releases — one or multiple remittances within approval."
+    ],
+    "cons": [
+      "Requires emigration status + approval by the original household-registration SAFE office.",
+      "Evidence-heavy (identity, hukou, property, tax); approval timelines apply."
+    ],
+    "steps": [
+      "Apply to SAFE at original hukou location with identity/property/tax evidence.",
+      "Obtain approval; remit to your own overseas account within the approved amount (one or multiple times)."
+    ],
+    "sources": [
+      "S01",
+      "S03",
+      "S15"
+    ]
+  },
+  {
+    "id": "M08",
+    "category": "Capital account",
+    "name": "Inheritance property transfer",
+    "status": "Lawful (conditional)",
+    "when": "You inherit China property/funds as a 境外个人 heir.",
+    "pros": [
+      "Capital-account entitlement; 2014 reform allows combined applications across estates."
+    ],
+    "cons": [
+      "Needs notarised entitlement + tax/document review; bank/SAFE approval required.",
+      "Inheritance-guide wording inconsistencies flagged (F11) — confirm locally."
+    ],
+    "steps": [
+      "Collect death/relationship/entitlement documents and tax records.",
+      "Apply for approval; remit to your own account."
+    ],
+    "sources": [
+      "S01",
+      "S03",
+      "S15"
+    ]
+  },
+  {
+    "id": "M09",
+    "category": "Capital account",
+    "name": "Sale of China property (境外个人)",
+    "status": "Lawful (conditional)",
+    "when": "You actually sell China property held for own use.",
+    "pros": [
+      "Sale proceeds are an approved capital-account exit (Art. 22)."
+    ],
+    "cons": [
+      "Needs a real sale, IIT on net gain (Art. 6(5)), registration and bank review.",
+      "No generic tax rate inferred — basis/proceeds records control."
+    ],
+    "steps": [
+      "Complete a genuine sale; pay/evidence IIT on net gain; register transfer.",
+      "Apply for SAFE approval to purchase FX and remit proceeds."
+    ],
+    "sources": [
+      "S01",
+      "S05"
+    ]
+  },
+  {
+    "id": "M10",
+    "category": "Capital account",
+    "name": "Insurance proceeds",
+    "status": "Lawful (conditional)",
+    "when": "You receive lawful insurance proceeds in China.",
+    "pros": [
+      "May use the overseas-person lawful-income process with policy + insurer payment proof."
+    ],
+    "cons": [
+      "Needs genuine policy/proceeds; bank reviews authenticity."
+    ],
+    "steps": [
+      "Gather policy and insurer payment proof.",
+      "Apply via the M01 income process."
+    ],
+    "sources": [
+      "S01",
+      "S02"
+    ]
+  },
+  {
+    "id": "M11",
+    "category": "Business",
+    "name": "Genuine trade / service settlement",
+    "status": "Lawful (conditional)",
+    "when": "You have real export/service income with contracts, invoices and customs/tax records.",
+    "pros": [
+      "Current-account settlement for real transactions; no personal quota involved."
+    ],
+    "cons": [
+      "Cannot be used to relabel personal savings — fictitious trade is prohibited (Arts. 7, 47).",
+      "Bank reviews transaction documents; service payments over USD50,000 need tax filing records."
+    ],
+    "steps": [
+      "Maintain genuine contracts/invoices/customs records.",
+      "Settle through the bank with transaction documents."
+    ],
+    "sources": [
+      "S01",
+      "S02"
+    ]
+  },
+  {
+    "id": "M12",
+    "category": "Rails",
+    "name": "Bank draft / cashier's order",
+    "status": "Rail — needs an entitlement first",
+    "when": "Same entitlement as M06, executed as a draft instead of a wire.",
+    "pros": [
+      "BOC draft tariff is identical to TT (item 210105008).",
+      "Useful where wire rails are unavailable."
+    ],
+    "cons": [
+      "Slower; overseas charges still apply; same entitlement review."
+    ],
+    "steps": [
+      "Present entitlement documents; request draft issuance at the same tariff as TT (item 210105008).",
+      "Mail or present the draft per the bank's instructions; confirm overseas charges and delivery time before issuing."
+    ],
+    "sources": [
+      "S06"
+    ]
+  },
+  {
+    "id": "M13",
+    "category": "Rails",
+    "name": "Overseas ATM cash withdrawal (China card)",
+    "status": "Lawful but capped — not a bulk exit",
+    "when": "Small amounts only; you hold a China bank card and travel abroad.",
+    "pros": [
+      "No conversion decision needed at the China bank; cash in hand."
+    ],
+    "cons": [
+      "SAFE caps: CNY100,000/person/year and CNY10,000/card/day; suspension beyond annual cap.",
+      "BOC tariff (12 + 1%, max CNY112) plus possible overseas surcharge; card network/issuer limits also apply."
+    ],
+    "steps": [
+      "Withdraw within CNY10,000/day and CNY100,000/year across all your cards.",
+      "Never use another person's card (prohibited).",
+      "Declare cash over USD10,000 entering the U.S. (FinCEN 105) — see flag F08."
+    ],
+    "sources": [
+      "S04",
+      "S06"
+    ]
+  },
+  {
+    "id": "M14",
+    "category": "Rails",
+    "name": "Physical cash carry + customs declaration",
+    "status": "Lawful but capped — not a bulk exit",
+    "when": "Small amounts only; you travel with cash.",
+    "pros": [
+      "No bank FX spread on carried cash."
+    ],
+    "cons": [
+      "Carry limits, customs declaration and U.S. declaration rules apply; permits needed above thresholds.",
+      "Not scalable to USD100,000+; security/AML scrutiny."
+    ],
+    "steps": [
+      "Check carry limits and permit requirements before travel.",
+      "Declare on both sides as required; keep declarations."
+    ],
+    "sources": [
+      "S01",
+      "S02"
+    ]
+  },
+  {
+    "id": "M15",
+    "category": "Prohibited",
+    "name": "Underground bank / hawala / informal settlement",
+    "status": "Prohibited — risk only, no steps",
+    "when": "—",
+    "pros": [
+      "None claimed."
+    ],
+    "cons": [
+      "Illegal FX settlement; administrative fines and possible criminal liability; funds at risk."
+    ],
+    "steps": [],
+    "sources": [
+      "S01"
+    ]
+  },
+  {
+    "id": "M16",
+    "category": "Prohibited",
+    "name": "Quota splitting / nominee quotas",
+    "status": "Prohibited — risk only, no steps",
+    "when": "—",
+    "pros": [
+      "None claimed."
+    ],
+    "cons": [
+      "Art. 7 prohibits splitting to evade limits; Art. 62 watchlist (3-year enhanced review); fines under FX Regulation."
+    ],
+    "steps": [],
+    "sources": [
+      "S01",
+      "S02"
+    ]
+  },
+  {
+    "id": "M17",
+    "category": "Prohibited",
+    "name": "Falsified trade / invoices",
+    "status": "Prohibited — risk only, no steps",
+    "when": "—",
+    "pros": [
+      "None claimed."
+    ],
+    "cons": [
+      "False commercial documents to evade authenticity review; fines, account closure, criminal referral."
+    ],
+    "steps": [],
+    "sources": [
+      "S01",
+      "S02"
+    ]
+  },
+  {
+    "id": "M18",
+    "category": "Prohibited",
+    "name": "Virtual-currency / stablecoin bridge",
+    "status": "Prohibited — risk only, no steps",
+    "when": "—",
+    "pros": [
+      "None claimed."
+    ],
+    "cons": [
+      "PBC 2026 No. 42: mainland virtual-currency exchange business strictly prohibited; 2021 notice repealed and replaced."
+    ],
+    "steps": [],
+    "sources": [
+      "S14"
+    ]
+  },
+  {
+    "id": "M19",
+    "category": "Prohibited",
+    "name": "Sham asset sale / gift relabelling",
+    "status": "Prohibited — risk only, no steps",
+    "when": "—",
+    "pros": [
+      "None claimed."
+    ],
+    "cons": [
+      "Creating a fake sale/gift to move unrelated principal misstates the transaction; tax and FX penalties."
+    ],
+    "steps": [],
+    "sources": [
+      "S01",
+      "S05"
+    ]
+  },
+  {
+    "id": "M20",
+    "category": "Prohibited",
+    "name": "Structuring around bank review thresholds",
+    "status": "Prohibited — risk only, no steps",
+    "when": "—",
+    "pros": [
+      "None claimed."
+    ],
+    "cons": [
+      "Deliberately splitting to avoid review is the Art. 7 violation pattern; watchlist and fines apply."
+    ],
+    "steps": [],
+    "sources": [
+      "S01",
+      "S02"
+    ]
+  }
+]

@@ -1,0 +1,114 @@
+{
+  "S01": {
+    "title": "PBOC Order [2006] No. 3 — Individual Foreign Exchange Measures",
+    "url": "https://www.safe.gov.cn/safe/2006/1225/5319.html",
+    "kind": "government",
+    "locator": "Arts. 3, 7, 9, 13, 14, 22, 26, 33–35, 37",
+    "scope": "Current/capital distinction; anti-splitting; overseas-person income; property sale/transfer; cash carry; 境内/境外 definitions."
+  },
+  "S02": {
+    "title": "SAFE Huifa [2020] No. 14 — Current Account Guidelines (2020 edition)",
+    "url": "https://www.gov.cn/gongbao/content/2020/content_5560296.htm",
+    "kind": "government",
+    "locator": "Arts. 47–49, 54–65, 68, 86–88",
+    "scope": "USD50,000/yr facilitation tier; Art. 59 overseas-person income purchase; Art. 64–65 remittance; Art. 62 watchlist; cash rules."
+  },
+  "S03": {
+    "title": "SAFE Huifa [2014] No. 2 — amended republication (capital account)",
+    "url": "https://www.safe.gov.cn/tianjin/2024/0903/2594.html",
+    "kind": "government",
+    "locator": "Section VI",
+    "scope": "Removes mandatory staged emigrant remittance; combines inheritance applications; removes notarisation requirement."
+  },
+  "S04": {
+    "title": "SAFE — overseas bank-card cash withdrawal explainer (Huifa [2017] No. 29)",
+    "url": "https://www.safe.gov.cn/safe/2017/1230/8130.html",
+    "kind": "government",
+    "locator": "Full explainer",
+    "scope": "CNY100,000/person/year and CNY10,000/card/day overseas ATM caps; borrowed-card evasion prohibited."
+  },
+  "S05": {
+    "title": "PRC Individual Income Tax Law (2018 amendment)",
+    "url": "https://guangdong.chinatax.gov.cn/gdsw/zjfg/2018-08/31/content_a735b4c382d94439b581054c32a4e7f4.shtml",
+    "kind": "government",
+    "locator": "Arts. 1–3, 6–7, 10, 13, 15–16",
+    "scope": "Residence; nine income categories; 20% proportional categories; property gain net basis; foreign tax credit; emigration clearance."
+  },
+  "S06": {
+    "title": "Bank of China personal finance tariff, Chapter 3 (2025-11)",
+    "url": "https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf",
+    "kind": "provider",
+    "locator": "Items 210105008, 210108014; notes 4, 5, 10",
+    "scope": "TT/draft 0.1% min CNY50/max CNY260 + CNY150 international cable; ATM (12 + 1%, max CNY112); USD15/25 conditional full-arrival; overseas charges at cost."
+  },
+  "S07": {
+    "title": "Bank of China indicative foreign-exchange board",
+    "url": "https://www.boc.cn/sourcedb/whpj/",
+    "kind": "provider",
+    "locator": "USD row and disclaimer, captured 2026-11-10 13:49:58 China time",
+    "scope": "USD100 buy CNY665.86 / telegraphic ask CNY668.66 / reference CNY671.67. Indicative only; actual channel/counter rate controls."
+  },
+  "S08": {
+    "title": "HSBC China tariff of accounts and services (effective 2026-10-31)",
+    "url": "https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-accouts-and-services.pdf",
+    "kind": "provider",
+    "locator": "Items 2.2.4.1–2; notes 3, 7, 10",
+    "scope": "Premier/Advance TT 0.1% min CNY100/max CNY500 + CNY120 cable; private-banking personal free; SHA/BEN/OUR charge options; exclusions."
+  },
+  "S09": {
+    "title": "Wise — Guide to CNY transfers",
+    "url": "https://wise.com/help/articles/2955298/guide-to-cny-transfers",
+    "kind": "provider",
+    "locator": "Sending from CNY",
+    "scope": "Eligible non-mainland people with China work/tax records; own-account destination; CNY300,000 bank-app / CNY50,000 Alipay per-transfer caps; after-tax-income overall limit."
+  },
+  "S10": {
+    "title": "26 U.S.C. §988 (2024 U.S. Code, GPO)",
+    "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm",
+    "kind": "government",
+    "locator": "Subsections (a), (c)(1)(C), (e)",
+    "scope": "Disposition of nonfunctional currency; ordinary-treatment default; personal-transaction exclusion fails when gain exceeds USD200."
+  },
+  "S11": {
+    "title": "IRS — Form 8938 and FBAR comparison",
+    "url": "https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements",
+    "kind": "government",
+    "locator": "Threshold and penalty table",
+    "scope": "FBAR aggregate >USD10,000 at any time; Form 8938 $50k/$75k (US-resident single) tiers; penalty table."
+  },
+  "S12": {
+    "title": "IRS — Gifts from foreign person",
+    "url": "https://www.irs.gov/businesses/gifts-from-foreign-person",
+    "kind": "government",
+    "locator": "Reporting requirements",
+    "scope": "Form 3520 above USD100,000 from nonresident alien/foreign estate; 2026 foreign-entity purported-gift threshold USD20,573; aggregation."
+  },
+  "S13": {
+    "title": "IRS — Foreign Tax Credit",
+    "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit",
+    "kind": "government",
+    "locator": "Qualifying taxes and compliance issues",
+    "scope": "Possible credit for qualifying foreign income taxes on the same income; treaty-reduced-tax and excluded-income limitations."
+  },
+  "S14": {
+    "title": "PBOC et al. Yinfa [2026] No. 42 — virtual currency and RWA risks",
+    "url": "https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html",
+    "kind": "government",
+    "locator": "Sections 1, 3(6), 6 and final repeal clause",
+    "scope": "Mainland virtual-currency exchange business prohibited; 2021 No. 237 expressly repealed."
+  },
+  "S15": {
+    "title": "PBOC Announcement [2004] No. 16 — Individual Property Transfer Abroad",
+    "url": "https://www.gov.cn/gongbao/content/2005/content_64294.htm",
+    "kind": "government",
+    "locator": "Arts. 2, 5–12",
+    "scope": "Emigrant/inheritance definitions, evidence and own-account remittance. Staging in Art. 6 modified by S03. Inherited from integration evidence log; not re-fetched this session — see flag F12."
+  },
+  "S16": {
+    "title": "IRS IR-2026-48 — remittance transfer tax proposed regulations",
+    "url": "https://www.irs.gov/newsroom/treasury-irs-issue-proposed-regulations-on-the-new-remittance-transfer-tax-established-under-the-one-big-beautiful-bill",
+    "kind": "government",
+    "locator": "Full release",
+    "scope": "1% tax from 2026-01-01 on specified physical-instrument-funded remittances sent from the United States, not China-to-U.S. Inherited from integration evidence log; not re-fetched this session — see flag F12."
+  }
+}

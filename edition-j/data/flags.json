@@ -1,0 +1,129 @@
+[
+  {
+    "id": "F01",
+    "finding": "Source of funds, 境内/境外 classification, China tax history and destination bank are unknown. No personal all-in total or 'best route' is certified.",
+    "disposition": "Blank + flagged; conditional decision order published instead.",
+    "sources": [
+      "S01"
+    ]
+  },
+  {
+    "id": "F02",
+    "finding": "Executable FX rate, intermediary/receiving charges, document costs and personal tax are unknown. Sender tariffs are partial, not all-in quotes.",
+    "disposition": "All-in cells blank + UNVERIFIED in every ladder.",
+    "sources": [
+      "S06",
+      "S07",
+      "S08"
+    ]
+  },
+  {
+    "id": "F03",
+    "finding": "BOC board is indicative; the ask moved from CNY669.03 (07:32) to CNY668.66 (13:49) on 2026-11-10. Edition J uses the 13:49 snapshot only.",
+    "disposition": "Dated snapshot; never mixed with Edition H/I observations.",
+    "sources": [
+      "S07"
+    ]
+  },
+  {
+    "id": "F04",
+    "finding": "Wise fee for a personal from-CNY transfer is quote-time only; no 40-point schedule verified.",
+    "disposition": "Wise ladder blank + UNVERIFIED.",
+    "sources": [
+      "S09"
+    ]
+  },
+  {
+    "id": "F05",
+    "finding": "BOC tariff note 1: local branches may vary; electronic-channel discounts possible.",
+    "disposition": "Tariff shown as published national schedule; confirm at the handling branch.",
+    "sources": [
+      "S06"
+    ]
+  },
+  {
+    "id": "F06",
+    "finding": "HSBC Premier/Advance eligibility (balance/relationship) is not established for the reader.",
+    "disposition": "HSBC ladder labelled Premier/Advance only; other tiers differ.",
+    "sources": [
+      "S08"
+    ]
+  },
+  {
+    "id": "F07",
+    "finding": "ATM/cash routes are capped (CNY100,000/yr; CNY10,000/day) and cannot scale to USD100,000+.",
+    "disposition": "Shown as capped rails with feasibility flag, not bulk exits.",
+    "sources": [
+      "S04"
+    ]
+  },
+  {
+    "id": "F08",
+    "finding": "U.S. physical-currency declaration (FinCEN 105, >USD10,000) and China carry permits are separate from FX rules.",
+    "disposition": "Flagged; cash methods carry declaration steps.",
+    "sources": [
+      "S01",
+      "S02"
+    ]
+  },
+  {
+    "id": "F09",
+    "finding": "2004 staged-emigrant text vs 2014 §VI conflict: 2014 removed mandatory staging.",
+    "disposition": "2014 controls; 2004 cited only for definitions/evidence.",
+    "sources": [
+      "S03",
+      "S15"
+    ]
+  },
+  {
+    "id": "F10",
+    "finding": "Emigrant/inheritance approval timelines and local SAFE practice vary by province.",
+    "disposition": "Confirm with the handling SAFE office; no timeline inferred.",
+    "sources": [
+      "S03"
+    ]
+  },
+  {
+    "id": "F11",
+    "finding": "Inheritance service-guide wording (pre-status language) is inconsistent across provincial guides.",
+    "disposition": "Flagged; confirm entitlement documents locally.",
+    "sources": [
+      "S03"
+    ]
+  },
+  {
+    "id": "F12",
+    "finding": "S15 and S16 are inherited from the integration evidence log (retrieved 2026-11-10 by that session) and were not re-fetched by this session.",
+    "disposition": "Marked inherited; load-bearing figures do not depend on them.",
+    "sources": [
+      "S15",
+      "S16"
+    ]
+  },
+  {
+    "id": "F13",
+    "finding": "No wholesale re-certification of editions B–I rows was performed; disagreements are in edition-i/audit/REPO_AUDIT.md.",
+    "disposition": "Edition J certifies only its own rows.",
+    "sources": [
+      "S01"
+    ]
+  },
+  {
+    "id": "F14",
+    "finding": "Criminal (as distinct from administrative) exposure is outside quantified scope.",
+    "disposition": "Penalty bands quoted as administrative; criminal referral noted, not quantified.",
+    "sources": [
+      "S01"
+    ]
+  },
+  {
+    "id": "F15",
+    "finding": "Provider availability and tariffs can change without notice; live uptime is not certified.",
+    "disposition": "Dated 2026-11-10; re-check before executing.",
+    "sources": [
+      "S06",
+      "S08",
+      "S09"
+    ]
+  }
+]

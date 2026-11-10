@@ -1,0 +1,139 @@
+[
+  {
+    "id": "T01",
+    "jurisdiction": "China",
+    "item": "Conversion itself",
+    "position": "No conversion tax. The nine IIT categories (Art. 2) do not include currency exchange; the blocker is capital-account inconvertibility (Measures Art. 3), not a tax.",
+    "sources": [
+      "S05",
+      "S01"
+    ]
+  },
+  {
+    "id": "T02",
+    "jurisdiction": "China",
+    "item": "Salary / labour income",
+    "position": "Comprehensive income 3–45% progressive (Art. 3(1)); non-resident monthly deduction CNY5,000 (Art. 6(2)). Withholding + annual reconciliation (Arts. 11–13).",
+    "sources": [
+      "S05"
+    ]
+  },
+  {
+    "id": "T03",
+    "jurisdiction": "China",
+    "item": "Interest / dividends / royalties",
+    "position": "20% proportional rate (Art. 3(3)).",
+    "sources": [
+      "S05"
+    ]
+  },
+  {
+    "id": "T04",
+    "jurisdiction": "China",
+    "item": "Property transfer gain",
+    "position": "20% on (proceeds − basis − reasonable fees) (Arts. 3(3), 6(5)). Registration requires tax-payment proof (Art. 15).",
+    "sources": [
+      "S05"
+    ]
+  },
+  {
+    "id": "T05",
+    "jurisdiction": "China",
+    "item": "Foreign tax credit",
+    "position": "Residents may credit foreign IIT paid, capped at the China tax on that income (Art. 7).",
+    "sources": [
+      "S05"
+    ]
+  },
+  {
+    "id": "T06",
+    "jurisdiction": "China",
+    "item": "Emigration clearance",
+    "position": "Cancelling hukou on emigration requires prior tax settlement (Arts. 10(5), 13).",
+    "sources": [
+      "S05"
+    ]
+  },
+  {
+    "id": "T07",
+    "jurisdiction": "U.S.",
+    "item": "Own principal",
+    "position": "Moving your own already-taxed principal is not automatically new U.S. income — but characterise the original income, interest, dividends and gains separately. No blanket exemption claimed.",
+    "sources": [
+      "S13"
+    ]
+  },
+  {
+    "id": "T08",
+    "jurisdiction": "U.S.",
+    "item": "§988 currency gain/loss",
+    "position": "Disposition of nonfunctional currency is a §988 transaction, ordinary by default (a)(1), (c)(1)(C). Personal-transaction exclusion fails if gain exceeds USD200 (e)(2) — not a universal USD200 deduction.",
+    "sources": [
+      "S10"
+    ]
+  },
+  {
+    "id": "T09",
+    "jurisdiction": "U.S.",
+    "item": "FBAR (FinCEN 114)",
+    "position": "Aggregate foreign accounts >USD10,000 at any time. Separate from the tax return; automatic extension to Oct 15.",
+    "sources": [
+      "S11"
+    ]
+  },
+  {
+    "id": "T10",
+    "jurisdiction": "U.S.",
+    "item": "Form 8938 (FATCA)",
+    "position": "US-resident single: >USD50,000 year-end or >USD75,000 intra-year; higher tiers abroad. Filed with the return.",
+    "sources": [
+      "S11"
+    ]
+  },
+  {
+    "id": "T11",
+    "jurisdiction": "U.S.",
+    "item": "Form 3520 (foreign gifts)",
+    "position": "Report gifts/bequests from a nonresident alien/foreign estate above USD100,000 (aggregate, related parties). Foreign corp/partnership purported gifts: USD20,573 for 2026.",
+    "sources": [
+      "S12"
+    ]
+  },
+  {
+    "id": "T12",
+    "jurisdiction": "U.S.",
+    "item": "Foreign tax credit",
+    "position": "Credit for qualifying foreign income taxes on the same income (Form 1116); treaty-reduced-tax and excluded-income limits apply.",
+    "sources": [
+      "S13"
+    ]
+  },
+  {
+    "id": "T13",
+    "jurisdiction": "U.S.",
+    "item": "1% remittance transfer tax",
+    "position": "Applies to specified physical-instrument-funded remittances sent FROM the U.S. (from 2026-01-01), not China-to-U.S. transfers. Inherited source — see F12.",
+    "sources": [
+      "S16"
+    ]
+  },
+  {
+    "id": "T14",
+    "jurisdiction": "Penalty exposure",
+    "item": "China FX violations",
+    "position": "Administrative fines under the FX Administration Regulation for splitting/false documents; watchlist consequences (2020 Art. 62). Criminal referral possible — not quantified here.",
+    "sources": [
+      "S01",
+      "S02"
+    ]
+  },
+  {
+    "id": "T15",
+    "jurisdiction": "Penalty exposure",
+    "item": "U.S. reporting penalties",
+    "position": "FBAR civil penalties inflation-adjusted; willful up to the greater of USD100,000 or 50% of balances (pre-2016 figures on IRS table; current amounts adjusted annually). Form 8938 up to USD60,000. Criminal penalties may apply.",
+    "sources": [
+      "S11"
+    ]
+  }
+]

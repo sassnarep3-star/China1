@@ -1037,6 +1037,80 @@ closed at integration with explanatory comments; no content silently discarded.
   `assets/check.py` OK; `edition-d/build/verify.py` PASS 19 checks. No conflicts in
   research data; editions B–H and their archives untouched.
 
+---
+
+# Session board — arena-3843fb62 (2026-11-10)
+
+Branch: `arena/3843fb62-china1` (fixed by Arena). Prior boards and editions preserved verbatim.
+This session claims an isolated `edition-j/` scope so it cannot overwrite another session's
+research, data, generated pages, or verification. Claimed 2026-11-10 before any task work.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| J1 Live re-verification of official sources + repo line-by-line audit refresh | in progress | arena-3843fb62 | edition-j/data/**, edition-j/audit/** |
+| J2 Requirements, CNY→USD methods with pros/cons, tax-penalty breakdown | in progress | arena-3843fb62 | edition-j/data/** |
+| J3 Cost tables $10K–$400K per method, step-by-step procedures | in progress | arena-3843fb62 | edition-j/data/**, edition-j/build/** |
+| J4 Mobile-first dashboard site + Flagged for Review | in progress | arena-3843fb62 | edition-j/site/**, edition-j/build/** |
+| J5 Verifier, CI, final integration, PR, merge, Pages + stale PR #29 disposition | in progress | arena-3843fb62 | edition-j/**, .github/workflows/edition-j.yml, append-only COORDINATION.md/README.md, integration/build.py + root index.html (final integration only) |
+
+Notes:
+- Repo at claim time: main tip 93a6757 (PR #33 merged). Integration portal verifies PASS
+  (7 pages, 142 rows, 40 targets, 160 recomputed values, 43 method links, 223 HTML files).
+  Edition I verifies 1,868 checks 0 errors. Pages API: built, legacy main:/.
+- Open PR #29 (arena/8f70ac5b-china1, alternative Edition I, 32 routes/1,280 rows, based on
+  397de9f) conflicts in edition-i/ with merged Edition I (PR #33, e90d36c3, 21 methods/400 rows).
+  Disposition at integration: close with explanatory comment; branch content preserved in git
+  history, nothing silently discarded. Will record outcome here.
+- No personal account, source-of-funds, residency, or quote facts supplied; those values stay
+  unknown/blank + flagged. Government sources support law and tax; provider-published tariffs
+  support provider prices only. Blank never means zero.
+
+## Edition J completion record — arena-3843fb62 (2026-11-10)
+
+| Task | Status | Owner | Result |
+|---|---|---|---|
+| J1 Live re-verification + repo audit refresh | done | arena-3843fb62 | 14 sources fetched/read live 2026-11-10; audit at `edition-j/audit/REPO_AUDIT.md` (A01–A11) |
+| J2 Requirements, methods with pros/cons, tax-penalty breakdown | done | arena-3843fb62 | 20 methods (14 lawful/conditional + 6 prohibited risk-only); 15 tax findings |
+| J3 Cost tables $10K–$400K per method, step-by-step procedures | done | arena-3843fb62 | 8 ladders × 40 targets = 320 rows; all priced cells recomputed independently; all-in cells blank+flagged |
+| J4 Mobile-first dashboard site + Flagged for Review | done | arena-3843fb62 | `edition-j/site/` 9 pages; 15 flags F01–F15 published, non-blocking |
+| J5 Verifier, CI, final integration, PR, merge, Pages + stale PR #29 disposition | done | arena-3843fb62 | `verify.py` 2,462 checks 0 errors; workflow `edition-j.yml`; portal integration below |
+
+Sources (all fetched 2026-11-10, register at `edition-j/site/sources.html`): PBOC Decree
+[2006] No. 3 (safe.gov.cn/safe/2006/1225/5319.html); SAFE Huifa [2020] No. 14
+(gov.cn/gongbao/content/2020/content_5560296.htm); SAFE Huifa [2014] No. 2 §VI
+(safe.gov.cn/tianjin/2024/0903/2594.html); SAFE card-cash explainer
+(safe.gov.cn/safe/2017/1230/8130.html); China IIT Law (chinatax.gov.cn); BOC tariff PDF
+(pic.bankofchina.com); BOC board snapshot 2026-11-10 13:49:58 (boc.cn/sourcedb/whpj/);
+HSBC tariff PDF (hsbc.com.cn); Wise CNY guide (wise.com); 26 U.S.C. §988 GPO text
+(govinfo.gov); IRS 8938/FBAR comparison, gifts, FTC pages (irs.gov); PBC Yinfa [2026]
+No. 42 (pbc.gov.cn). S15/S16 inherited from the integration evidence log and flagged
+(F12); no load-bearing figure depends on them.
+
+Verification performed: `python3 edition-j/build/build.py` (9 pages) and
+`python3 edition-j/build/verify.py` = 2,462 checks, 0 errors — byte-identical rebuild,
+independent recomputation of every priced cell from `data/model.json`, exact 40-target
+grid, UNVERIFIED markers on every unconfirmed cell, internal link/anchor resolution,
+external URLs restricted to the 16 registered sources, prohibited methods carry no steps.
+Cross-checkers after portal integration: `python3 integration/verify.py` PASS (7 pages,
+142 rows, 232 HTML files, deterministic); `edition-i/build/verify.py` 1,868 checks
+0 errors; `assets/check.py` OK; `scripts/verify.py` PASS; `edition-d/build/verify.py`
+PASS. Headline outputs: BOC $10,000 = $53.41; BOC $400,000 = $900.57; HSBC $400,000 =
+$931.97 (partial sender-side subtotals, not all-in quotes).
+
+Irregularities published (`edition-j/site/flagged.html` + audit A01–A11), all non-blocking:
+intraday BOC board move 07:32→13:49 (A02/F03); conversion-tax premise (A03); USD50,000
+conflation (A04); §988 $200 misquote (A05); staged-emigrant conflict (A06/F09); gift
+thresholds (A07); remittance-tax direction (A08); virtual-currency update (A09); stale
+PR #29 (A10); no wholesale re-certification of B–I (A11/F13). Personal facts unknown — F01.
+
+Final integration (this session, sole active session): `integration/build.py` updated
+additively — Edition J nav entry, Edition J card, Edition J archive link, and Edition J
+flag/audit links on the Flagged page; root `index.html` regenerated deterministically;
+all shared checkers pass. Historical editions untouched.
+
+Stale PR #29 disposition: already closed by session arena-134d8d07 on 2026-11-10 with an
+explanatory comment (superseded by merged Edition I via PR #33; branch content preserved
+in git history). This session's independent assessment agrees — no further action.
 
 ## Session arena-0fe51697 (2026-11-10)
 
@@ -1141,3 +1215,14 @@ unknown — no personalized determination is made or claimed.
 - PR [#34](https://github.com/sassnarep3-star/China1/pull/34) merged 2026-11-10 at commit `30ef516e69b98fdde0a332856cf37e0bf9512709` after six PR checks passed. [GitHub Pages deployment 42765016212](https://github.com/sassnarep3-star/China1/actions/runs/42765016212) completed successfully. The published dashboard is https://sassnarep3-star.github.io/China1/. Informational Node 20 deprecation and Ubuntu migration annotations did not fail the deployment. This completion record is being submitted separately after the merge.
 - Rebase incident (arena-0fe51697): concurrent PR landed in main and conflicted in the append-only board; both entries retained without discarding content.
 - Second rebase incident: PR #35 advanced main during completion record; preserved both append-only board histories.
+
+### Scope-collision note — arena-3843fb62 (2026-11-10)
+
+Session arena-0fe51697 independently claimed `edition-j/**` for an independent review
+(PR #34, `edition-j/REVIEW.md`) while this session claimed the same directory for the
+Edition J dashboard. The collision was discovered at rebase/merge time (main advanced
+through PRs #34–#37). Resolution: both contents are preserved — `edition-j/REVIEW.md`
+(their review, untouched) and `edition-j/{README.md,audit/,build/,data/,site/}` (this
+session's dashboard, disjoint files). No file was overwritten. Both verifiers re-run
+green after the merge (Edition J 2,462 checks 0 errors; integration PASS, 232 HTML
+files). Future sessions should treat `edition-j/` as shared and claim subpaths.
