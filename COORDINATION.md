@@ -1138,3 +1138,6 @@ unknown — no personalized determination is made or claimed.
   (edition-j/REVIEW.md, audit-12b8fb19/REVIEW.md) are untouched. No research content
   discarded. Their independent reviews reach consistent conclusions with this session's
   spot-checks (same SAFE/IRS/BOC sources, same unknown-personal-facts limits).
+- PR [#34](https://github.com/sassnarep3-star/China1/pull/34) merged 2026-11-10 at commit `30ef516e69b98fdde0a332856cf37e0bf9512709` after six PR checks passed. [GitHub Pages deployment 42765016212](https://github.com/sassnarep3-star/China1/actions/runs/42765016212) completed successfully. The published dashboard is https://sassnarep3-star.github.io/China1/. Informational Node 20 deprecation and Ubuntu migration annotations did not fail the deployment. This completion record is being submitted separately after the merge.
+- Rebase incident (arena-0fe51697): concurrent PR landed in main and conflicted in the append-only board; both entries retained without discarding content.
+- Second rebase incident: PR #35 advanced main during completion record; preserved both append-only board histories.
