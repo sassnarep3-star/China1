@@ -1213,4 +1213,45 @@ Any needed shared portal changes will be claimed separately after examining curr
   successfully; Pages API reports `built` at https://sassnarep3-star.github.io/China1/.
 - Open PRs #39 (arena-3843fb62) and #41 (arena-1388afb0) belong to active sessions and
   were not touched. This session's scope (K1–K3) is complete.
+---
+
+# Session board — arena-fface148 (2026-11-10)
+
+Branch: `arena/fface148-china1` (fixed by Arena). Prior boards and editions preserved verbatim.
+This session isolates its work to `edition-j/` to avoid overwriting any other session's research, data, generated pages, or verification. Claimed 2026-11-10 before any task work.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| J1 Repo line-by-line audit and official-source research verification | done | arena-fface148 | edition-j/data/**, edition-j/audit/** |
+| J2 Methods with pros/cons, tax-penalty breakdown, step-by-step procedures | done | arena-fface148 | edition-j/data/** |
+| J3 Cost ladders $10K–$400K per method, mobile-friendly tables | done | arena-fface148 | edition-j/data/**, edition-j/build/** |
+| J4 Dashboard site + Flagged for Review, verification & CI | done | arena-fface148 | edition-j/site/**, edition-j/build/** |
+| J5 Final integration, PR, merge, Pages deploy | done | arena-fface148 | edition-j/**, .github/workflows/edition-j.yml, append-only COORDINATION.md/README.md, root portal link (integration only) |
+
+Handoff note: prior sessions' PRs are already merged into main (PR #33). No open competing claims conflict with this scope. Unknown personal account facts remain blank+flagged; provider tariffs support only that provider's prices.
+
+Log:
+- 2026-11-10: Scope claimed. No personal account, source-of-funds, residency, or quote facts available; those values remain unknown/blank+flagged. Government sources support law/tax; provider sources support only published tariffs/terms.
+
+## Edition J completion record — arena-fface148 (2026-11-10)
+
+| Task | Status | Owner | Result |
+|---|---|---|---|
+| J1 Repo line-by-line audit and official-source research verification | done | arena-fface148 | 21 sources fetched/read 2026-11-10; audit at `edition-j/audit/REPO_AUDIT.md` (12 findings A01–A12) |
+| J2 Methods with pros/cons, tax-penalty breakdown, step-by-step procedures | done | arena-fface148 | 21 methods (15 lawful/conditional + 6 prohibited risk-only); 14 tax positions; executive summary answering least-tax route |
+| J3 Cost ladders $10K–$400K per method, mobile-friendly tables | done | arena-fface148 | 10 ladders × 40 targets = 400 rows; priced cells recomputed independently; 1,200+ blank+flagged cells; mobile data-label layout |
+| J4 Dashboard site + Flagged for Review + verification & CI | done | arena-fface148 | `edition-j/site/` 8 pages; 18 flags F01–F18 published non-blocking; verify 1,936 checks 0 errors; workflow edition-j.yml |
+| J5 Final integration, PR, merge, Pages deploy | done | arena-fface148 | Portal updated additively (Edition J card, NAV, archive, flagged links); integration 143 rows 160 values deterministic; PR/merge below |
+
+Sources (all fetched 2026-11-10, register at `edition-j/site/sources.html`): PBOC Decree [2006] No.3 (safe.gov.cn/safe/2006/1225/5319.html); SAFE Huifa [2007] No.1 annual total Art.2 (safe.gov.cn/safe/2007/0105/5320.html); SAFE Huifa [2014] No.2 §§V–VI (safe.gov.cn/tianjin/2024/0903/2594.html); 2004 Interim Measures (m.safe.gov.cn/safe/2004/1116/4133.html); Shanghai FX FAQ (english.shanghai.gov.cn/en-FAQHome/20240204/b4426264395b4fa3adfde73778c94ad4.html); BOC e-banking tariff (boc.cn/ebanking/service/cs1/200905/t20090506_990712.html); BOC board 2026-11-10 07:32:39 (boc.cn/sourcedb/whpj/); SAFE Shanghai 2019 (safe.gov.cn/shanghai/2019/1213/1198.html); China IIT Law (chinatax.gov.cn); IRS FBAR/Form8938/IRM 5.21.6/foreign-currency/foreign-tax-credit (irs.gov); 26 U.S.C. §988 GPO (govinfo.gov); IRS LB&I §988 unit (irs.gov); Wise guide (wise.com/help/articles/2955298); PBOC Yin Fa [2021] No.237 (pbc.gov.cn); Guangzhou Customs cash (guangzhou.customs.gov.cn); SAFE 2020 guide PDF (safe.gov.cn/ningxia/...). Retrieval: direct page fetch; figures read from fetched text.
+
+Verification performed: `python3 edition-j/build/build.py` 8 pages + `python3 edition-j/build/verify.py` 1,936 checks 0 errors — byte-identical rebuild, independent recomputation of every priced cell, exact 40-target grid, blank semantics, prohibited disposition, link/anchor + external-URL allowlist. Cross-checkers: `python3 integration/verify.py` PASS 143 rows/160 values/231 files, `python3 edition-i/build/verify.py` 1,868 0 errors, `python3 edition-d/build/verify.py` 19 checks PASS, `assets/check.py` PASS. All prior editions untouched.
+
+Irregularities published (`edition-j/site/flagged.html` A01–A12/F01–F18): 2004 staged vs 2014 reform conflict, repealed Art.39, assumed $15 Chase fee, §988 GPO vs uscode outage, Wise quote-time, BOC tariff note-1 variation, institutional pricing unverified, conversion column, 3520, all-in blank, etc. — all non-blocking. Personal facts (source, classification, tax history, destination bank) unknown — F01.
+
+Final integration: `integration/build.py` updated additively — Edition J NAV entry + card + archive link + flagged links; root `index.html` regenerated deterministically; all checkers PASS. Only edition-j scope edited aside from additive portal updates; no history discarded.
+
+### Rebase incidents — arena-fface148 (2026-11-10)
+
+- `git pull --rebase origin main` hit conflicts: main advanced through PRs #34, #36, #38, #40, #41 (sessions arena-0fe51697, 12b8fb19, 134d8d07, 1388afb0). Per coordination rule, stopped to inspect and resolved without discarding any work: all concurrent boards preserved (append-only union), their audit records kept, and their updated consolidated `integration/build.py` kept as base — this session's portal edits (Edition J card/NAV/archive/flagged) were re-applied additively to the new generator. Rebuilt `integration/` deterministically; re-verified: `integration/verify.py` PASS 143 rows, `edition-j/build/verify.py` 1,936 0 errors, `assets/check.py` PASS. No research data overwritten; editions B–J preserved.
 

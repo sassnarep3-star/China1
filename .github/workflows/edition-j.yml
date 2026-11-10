@@ -1,0 +1,20 @@
+name: edition-j
+
+on:
+  push:
+    paths: ["edition-j/**", ".github/workflows/edition-j.yml"]
+  pull_request:
+    paths: ["edition-j/**", ".github/workflows/edition-j.yml"]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build edition J site
+        run: python3 edition-j/build/build.py
+      - name: Verify edition J (arithmetic, sources, links, blanks)
+        run: python3 edition-j/build/verify.py

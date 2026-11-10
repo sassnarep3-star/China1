@@ -1,0 +1,130 @@
+{
+  "rows": [
+    {
+      "id": "T01",
+      "jurisdiction": "China",
+      "item": "Currency conversion itself",
+      "finding": "Not a taxable category. IIT Law Art. 2 lists exactly nine income categories; converting CNY to USD is not among them. Taxes attach to the underlying income, not the exchange.",
+      "amount": null,
+      "amount_note": "—",
+      "sources": ["S09"]
+    },
+    {
+      "id": "T02",
+      "jurisdiction": "China",
+      "item": "Tax on the underlying income (salary/services)",
+      "finding": "Comprehensive income taxed 3–45% progressive for residents; non-residents monthly/transaction basis (IIT Law Art. 2–3). Foreign-individual FX purchase for lawful income requires tax documents (S02 Art. 13), i.e. the income-tax trail is part of the transfer dossier.",
+      "amount": null,
+      "amount_note": "Personal facts unknown (F01/F05) — blank",
+      "sources": ["S09", "S02"]
+    },
+    {
+      "id": "T03",
+      "jurisdiction": "China",
+      "item": "Tax on property sale (asset transfer)",
+      "finding": "Transfer-of-assets income is a taxable category at a flat 20% rate on income (IIT Law Art. 2(8), Art. 3(3)). Shanghai's official FAQ confirms tax must be settled and evidenced before FX purchase and remittance of the proceeds.",
+      "amount": null,
+      "amount_note": "Gain computation and any local relief unverified (F05) — blank",
+      "sources": ["S09", "S05"]
+    },
+    {
+      "id": "T04",
+      "jurisdiction": "China",
+      "item": "Tax on dividends",
+      "finding": "Interest, dividends and bonuses taxed at a flat 20% (IIT Law Art. 3(3)); profit remittance needs the tax authority's filing form (S03 Section V).",
+      "amount": null,
+      "amount_note": "Company-specific amounts unverified (F05) — blank",
+      "sources": ["S09", "S03"]
+    },
+    {
+      "id": "T05",
+      "jurisdiction": "United States",
+      "item": "Currency conversion (§988) for personal transactions",
+      "finding": "Disposition of nonfunctional currency is a section 988 transaction; for an individual's personal transactions no gain is recognized from exchange-rate changes if the gain is USD 200 or less (§988(e)(2)). If the gain exceeds USD 200 the exclusion does not apply and the gain is ordinary income (§988(a)(1)(A)).",
+      "amount": "$200 de minimis per personal transaction",
+      "amount_note": "Gain above threshold = full amount, not excess only",
+      "sources": ["S14", "S16"]
+    },
+    {
+      "id": "T06",
+      "jurisdiction": "United States",
+      "item": "Worldwide income reporting",
+      "finding": "U.S. citizens are taxed on worldwide income; amounts must be reported in USD using the prevailing rate at receipt/payment/accrual.",
+      "amount": null,
+      "amount_note": "—",
+      "sources": ["S13"]
+    },
+    {
+      "id": "T07",
+      "jurisdiction": "United States",
+      "item": "FBAR (FinCEN Form 114)",
+      "finding": "Required if aggregate foreign financial accounts exceeded USD 10,000 at any time in the calendar year. Due April 15, automatic extension to October 15. Whether the accounts produced income is irrelevant.",
+      "amount": "$10,000 aggregate threshold",
+      "amount_note": "Filing duty, not a transfer cost",
+      "sources": ["S10"]
+    },
+    {
+      "id": "T08",
+      "jurisdiction": "United States",
+      "item": "Form 8938 (FATCA)",
+      "finding": "Thresholds: unmarried in the U.S. — USD 50,000 year-end / USD 75,000 anytime; married filing jointly in the U.S. — USD 100,000 / 150,000; unmarried abroad — USD 200,000 / 300,000; married filing jointly abroad — USD 400,000 / 600,000.",
+      "amount": "$50,000–$600,000 depending on status",
+      "amount_note": "Filing duty, not a transfer cost",
+      "sources": ["S11"]
+    },
+    {
+      "id": "T09",
+      "jurisdiction": "United States",
+      "item": "FBAR penalties",
+      "finding": "Non-willful violations up to USD 10,000 (statutory maximum, inflation-adjusted per 31 CFR 1010.821); willful violations up to the greater of USD 100,000 or 50 percent of account balances; criminal penalties may also apply.",
+      "amount": "up to $10,000 non-willful; greater of $100,000 or 50% of balances willful",
+      "amount_note": "Statutory maxima per IRM 5.21.6",
+      "sources": ["S12", "S10"]
+    },
+    {
+      "id": "T10",
+      "jurisdiction": "United States",
+      "item": "Form 8938 penalties",
+      "finding": "Failure to disclose: up to USD 10,000, plus USD 10,000 per 30 days of continued non-filing after IRS notice, to a potential maximum of USD 60,000; criminal penalties may also apply.",
+      "amount": "up to $10,000 + $10,000/30 days, max $60,000",
+      "amount_note": "Per IRM 5.21.6",
+      "sources": ["S12", "S11"]
+    },
+    {
+      "id": "T11",
+      "jurisdiction": "United States",
+      "item": "Foreign tax credit",
+      "finding": "Chinese income tax paid on the same income generally qualifies for a credit (or deduction) via Form 1116; the credit is the main tool to avoid double taxation of the underlying income.",
+      "amount": null,
+      "amount_note": "Depends on tax actually paid (F01/F05) — blank",
+      "sources": ["S15"]
+    },
+    {
+      "id": "T12",
+      "jurisdiction": "China",
+      "item": "FX-rule violations (structuring, quota lending, false documents)",
+      "finding": "Prohibited by S01 Art. 7 and S08. Underground banking and money laundering are named enforcement targets (S08). The Implementing Rules' default fine clause (Art. 39) was repealed by Huifa [2023] No. 8 (F10); enforcement now runs through the Foreign Exchange Administration Regulations and criminal law.",
+      "amount": null,
+      "amount_note": "Current fine schedule not re-fetched — blank",
+      "sources": ["S01", "S08", "S02"]
+    },
+    {
+      "id": "T13",
+      "jurisdiction": "China",
+      "item": "Virtual-currency cash-out",
+      "finding": "Fiat-crypto exchange and related services are illegal financial activities strictly banned (PBOC Yin Fa [2026] No. 42, in force 2026-02-06; the 2021 notice it cites is expressly repealed — flag F18). Offshore entities and individuals may not provide virtual-currency services to domestic parties in any form; unapproved RWA tokenization is likewise banned.",
+      "amount": null,
+      "amount_note": "Risk route — not costed",
+      "sources": ["S21", "S18"]
+    },
+    {
+      "id": "T14",
+      "jurisdiction": "Both",
+      "item": "Bottom line on 'tax penalties' for moving your own money",
+      "finding": "Neither jurisdiction taxes the conversion itself for personal transactions (China: not a taxable category; U.S.: §988(e) personal exclusion). The 'considerable tax' usually feared is (a) Chinese income tax on the underlying earnings if unpaid, (b) U.S. tax on unreported income or §988 gains, and (c) FBAR/8938 filing penalties. All three are avoided by documentation and filing, not by finding an untaxed channel.",
+      "amount": null,
+      "amount_note": "Summary finding — sources as listed",
+      "sources": ["S09", "S14", "S10", "S11", "S15"]
+    }
+  ]
+}

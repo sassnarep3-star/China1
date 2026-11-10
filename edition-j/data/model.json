@@ -1,0 +1,125 @@
+{
+  "built": "2026-11-10",
+  "currency": "CNY per 100 USD unless noted",
+  "fx_board": {
+    "source": "S07",
+    "board_time": "2026-11-10 07:32:39",
+    "spot_buy": 666.22,
+    "spot_sell": 669.03,
+    "cash_buy": 666.22,
+    "cash_sell": 669.03,
+    "boc_conversion": 671.88,
+    "mid": 667.625,
+    "sell_per_usd": 6.6903,
+    "mid_per_usd": 6.67625,
+    "one_way_margin_pct": 0.2104487,
+    "margin_note": "One-way margin vs board midpoint of spot buy/sell: (669.03-667.625)/667.625 = 0.21045%. Board disclaimer: reference only, actual rates are those executed at BOC channels (flag F02). The 中行折算价 column (671.88) is an accounting conversion rate, not a transaction price (flag F15)."
+  },
+  "boc_tariff": {
+    "source": "S06",
+    "effective": "2014-11-01",
+    "handling_pct": 0.001,
+    "handling_min_cny": 50,
+    "handling_max_cny": 260,
+    "cable_cny_other": 150,
+    "cable_cny_hkmt": 80,
+    "note": "Cross-border telegraphic transfer, personal e-banking channel. Note 1 of the tariff permits agreements, discounts and local variations (flag F12)."
+  },
+  "targets_usd": [10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000, 100000, 110000, 120000, 130000, 140000, 150000, 160000, 170000, 180000, 190000, 200000, 210000, 220000, 230000, 240000, 250000, 260000, 270000, 280000, 290000, 300000, 310000, 320000, 330000, 340000, 350000, 360000, 370000, 380000, 390000, 400000],
+  "ladders": {
+    "L1": {
+      "label": "Single wire — documented income (M01, M14)",
+      "transfers": "one transfer of the full target",
+      "priced": true,
+      "fee_source": "S06",
+      "fx_source": "S07",
+      "blanks": ["receiving_bank_fee", "intermediary_fee", "cn_tax", "us_tax"]
+    },
+    "L2": {
+      "label": "Quota chunked — USD 50,000 per calendar year (M02, M08)",
+      "transfers": "ceil(target / 50,000) transfers, one per calendar year within quota",
+      "priced": true,
+      "fee_source": "S06",
+      "fx_source": "S07",
+      "blanks": ["receiving_bank_fee", "intermediary_fee", "cn_tax", "us_tax"]
+    },
+    "L3": {
+      "label": "Single wire — above-quota documented purchase (M03, M13)",
+      "transfers": "one transfer of the full target",
+      "priced": true,
+      "fee_source": "S06",
+      "fx_source": "S07",
+      "blanks": ["receiving_bank_fee", "intermediary_fee", "cn_tax", "us_tax"]
+    },
+    "L4": {
+      "label": "Property sale proceeds (M04)",
+      "transfers": "one transfer of the full target",
+      "priced": true,
+      "fee_source": "S06",
+      "fx_source": "S07",
+      "blanks": ["receiving_bank_fee", "intermediary_fee", "cn_property_tax", "us_tax"]
+    },
+    "L5": {
+      "label": "Emigration / inheritance approved transfer (M05, M06)",
+      "transfers": "one or more transfers within the SAFE-approved amount",
+      "priced": true,
+      "fee_source": "S06",
+      "fx_source": "S07",
+      "blanks": ["receiving_bank_fee", "intermediary_fee", "cn_tax", "us_tax", "approval_costs"]
+    },
+    "L6": {
+      "label": "Foreign-trade settlement account (M07)",
+      "transfers": "one or more trade-based transfers",
+      "priced": true,
+      "priced_note": "Modeled with the personal e-banking tariff as the only verified published price; institutional account pricing is not verified (flag F13).",
+      "fee_source": "S06",
+      "fx_source": "S07",
+      "blanks": ["receiving_bank_fee", "intermediary_fee", "cn_tax", "us_tax"]
+    },
+    "L7": {
+      "label": "Wise from-CNY (M09)",
+      "transfers": "target / 300,000 CNY per bank-app transfer (Alipay: 50,000 CNY)",
+      "priced": false,
+      "priced_note": "Fees are quote-time only (S17); no fixed published fee exists. FX rate at execution unknown. All money cells blank (flag F07).",
+      "fee_source": "S17",
+      "fx_source": "S07",
+      "blanks": ["wise_fee", "wise_fx_margin", "all_in"]
+    },
+    "L8": {
+      "label": "Card spending + post-return FX repayment (M10)",
+      "transfers": "n/a — consumption channel, no wire",
+      "priced": false,
+      "priced_note": "Card issuer FX/ATM fees not verified from official schedules (flag F08). Repayment leg is outside the annual total (S08).",
+      "fee_source": null,
+      "fx_source": "S07",
+      "blanks": ["card_fx_cost", "atm_fees", "all_in"]
+    },
+    "L9": {
+      "label": "Physical cash with permits (M11)",
+      "transfers": "per crossing; permit-free to USD 5,000, permit USD 5,000–10,000, SAFE permit above",
+      "priced": false,
+      "priced_note": "No wire fee; counter exchange margin, travel and insurance costs unverified (blank).",
+      "fee_source": null,
+      "fx_source": "S07",
+      "blanks": ["counter_costs", "travel_costs", "all_in"]
+    },
+    "L10": {
+      "label": "Company profit/dividend remittance (M12)",
+      "transfers": "per declared distribution",
+      "priced": false,
+      "priced_note": "Corporate remittance pricing and dividend-tax rates not verified (flags F05, F13).",
+      "fee_source": null,
+      "fx_source": "S07",
+      "blanks": ["corporate_fee", "dividend_tax", "all_in"]
+    }
+  },
+  "computation": {
+    "cny_needed": "target_usd * 6.6903 (BOC sell board, snapshot)",
+    "fx_margin_usd": "target_usd * 0.002104487 (one-way margin vs board midpoint)",
+    "handling_cny_per_transfer": "min(max(0.001 * cny_amount, 50), 260)",
+    "cable_cny_per_transfer": "150 (non-HK/Macau/Taiwan)",
+    "known_subtotal_usd": "fx_margin_usd + (handling_cny + cable_cny) * n_transfers / 6.6903",
+    "rounding": "computed with full precision; displayed to cents; percentages to 4 decimals",
+    "all_in": "blank — receiving bank, intermediary and tax components unverified"
+  }
+}
