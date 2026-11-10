@@ -1,0 +1,681 @@
+{
+ "lines_by_area": {
+  "(root files)": 1612,
+  ".github": 185,
+  "assets": 191,
+  "data": 2077,
+  "docs": 413,
+  "dossier": 828,
+  "edition-b": 5632,
+  "edition-c": 5953,
+  "edition-d": 7734,
+  "edition-e": 32324,
+  "edition-f": 6000,
+  "edition-g": 47363,
+  "edition-h": 54316,
+  "integration": 271,
+  "pages": 5,
+  "scripts": 2234
+ },
+ "patterns": {
+  "crypto_237": {
+   "by_area": {
+    "(root files)": 3,
+    "data": 1,
+    "dossier": 2,
+    "edition-b": 19,
+    "edition-c": 6,
+    "edition-d": 3,
+    "edition-e": 16,
+    "edition-f": 8,
+    "edition-g": 2,
+    "edition-h": 9,
+    "scripts": 1
+   },
+   "description": "Crypto authority cited as Yinfa [2021] No. 237",
+   "examples": [
+    {
+     "area": "(root files)",
+     "file": "COORDINATION.md",
+     "line": 509,
+     "text": "| CN-06 | 银发〔2021〕237号, virtual currency | search-index excerpt |"
+    },
+    {
+     "area": "(root files)",
+     "file": "COORDINATION.md",
+     "line": 883,
+     "text": "- 2026-11-09: Material review corrections include PBOC 2026 No. 42 superseding 2021 No. 237, foreign-individual FIE dividend exemption ending 2026-09-01, current BOC FX/ATM dates, Wise quote drift, and the inherited SAFE"
+    },
+    {
+     "area": "data",
+     "file": "data/sources.json",
+     "line": 157,
+     "text": "\"title\": \"Xinhua report on 银发〔2021〕237号 — 十部门《关于进一步防范和处置虚拟货币交易炒作风险的通知》\","
+    },
+    {
+     "area": "dossier",
+     "file": "dossier/channels.html",
+     "line": 88,
+     "text": "<tr><td colspan=\"4\" style=\"padding:0;background:#fcfdff\"><details><summary>Detail, pros and cons — D3</summary><div class=\"inner\"><div><h4>Documents</h4><p>n/a</p></div><div><h4>Cost</h4><p>Total loss risk plus regulator"
+    },
+    {
+     "area": "dossier",
+     "file": "dossier/sources.html",
+     "line": 57,
+     "text": "<tr id=\"CN-16\"><td class=\"mono\"><b>CN-16</b></td><td><b>Xinhua report on 银发〔2021〕237号 — 十部门《关于进一步防范和处置虚拟货币交易炒作风险的通知》</b><br><span style=\"color:var(--muted);font-size:13px\">Xinhua (新华社) — state news agency; primary instru"
+    },
+    {
+     "area": "edition-b",
+     "file": "edition-b/data/flagged.json",
+     "line": 79,
+     "text": "\"subject\": \"S13 — Yin Fa [2021] No.237 virtual currency notice\","
+    },
+    {
+     "area": "edition-b",
+     "file": "edition-b/data/flagged.json",
+     "line": 80,
+     "text": "\"finding\": \"The PBoC original page for 银发〔2021〕237号 could not be retrieved in this session (an earlier safe.gov.cn URL returned a 404). The notice is cited from a full republication on a government-affiliated investment-"
+    },
+    {
+     "area": "edition-c",
+     "file": "edition-c/COORDINATION.md",
+     "line": 100,
+     "text": "| State Council of the PRC | `gov.cn` | Regulation on Foreign Exchange Administration; Interim Measures for the Transfer of Individual Property Abroad (PBOC Announcement [2004] No.16), State Council Gazette text; Yinfa ["
+    },
+    {
+     "area": "edition-c",
+     "file": "edition-c/COORDINATION.md",
+     "line": 101,
+     "text": "| People's Bank of China | `pbc.gov.cn` | Yinfa [2021] No.237, the ten-agency notice |"
+    },
+    {
+     "area": "edition-d",
+     "file": "edition-d/data/sources.json",
+     "line": 136,
+     "text": "\"doc\": \"Yinfa [2021] No. 237 (银发〔2021〕237号), 2021-09-24\","
+    },
+    {
+     "area": "edition-d",
+     "file": "edition-d/docs/pages/sources.html",
+     "line": 23,
+     "text": "<section><div class=\"tablewrap\"><table class=\"data \"><thead><tr><th scope=\"col\">Id</th><th scope=\"col\">Source</th><th scope=\"col\">Issuer</th><th scope=\"col\">Document</th><th scope=\"col\">Tier</th><th scope=\"col\">Retrieval"
+    },
+    {
+     "area": "edition-e",
+     "file": "edition-e/audit.md",
+     "line": 9,
+     "text": "| A03 | high | Older crypto authority | 2021 No.237 is cited; PBOC 2026 No.42 expressly repeals it. | Outdated authority; current notice cited. |"
+    },
+    {
+     "area": "edition-e",
+     "file": "edition-e/build/make_data.py",
+     "line": 47,
+     "text": "r('R27','excluded','CNY–crypto–USD bridge','prohibited','Anyone attempting fiat/virtual-currency exchange to move value','Do not use. Mainland fiat/virtual-currency exchange and related business are prohibited illegal fi"
+    },
+    {
+     "area": "edition-f",
+     "file": "edition-f/data/sources.json",
+     "line": 223,
+     "text": "\"title\": \"银发〔2021〕237号 — virtual-currency trading/speculation risk notice\","
+    }
+   ],
+   "regex": "237号|\\[2021\\]\\s*No\\.?\\s*237|2021[^\\n]{0,20}?No\\.?\\s*237",
+   "total_lines": 70
+  },
+  "crypto_42": {
+   "by_area": {
+    "(root files)": 1,
+    "edition-e": 10,
+    "edition-h": 19
+   },
+   "description": "Crypto authority cited as Yinfa [2026] No. 42",
+   "examples": [
+    {
+     "area": "(root files)",
+     "file": "COORDINATION.md",
+     "line": 411,
+     "text": "- 2026-11-08: E3/E4/E5/E7 claimed by the same session before implementation. E6 awaits a passing component build; shared files remain untouched until that gate. Official-page checks found that PBOC notice [2026] No.42 re"
+    },
+    {
+     "area": "edition-e",
+     "file": "edition-e/data/sources.json",
+     "line": 529,
+     "text": "\"title\": \"Notice on virtual-currency and related risks, Yinfa [2026] No.42\","
+    },
+    {
+     "area": "edition-e",
+     "file": "edition-e/site/audit.html",
+     "line": 7,
+     "text": "<main id=\"main\" class=\"wrap\"><h1>Inherited-edition audit</h1><p class=\"lede\">Prior editions are preserved. This page adjudicates selected load-bearing claims against the retrieved evidence.</p><div class=\"tablewrap\"><tab"
+    },
+    {
+     "area": "edition-h",
+     "file": "edition-h/data/flags.json",
+     "line": 448,
+     "text": "\"detail\": \"PBOC Yinfa [2026] No. 42 now governs virtual currency and expressly repealed Yinfa [2021] No. 237. Edition H uses the current rule; earlier editions citing only the repealed notice are flagged for review.\","
+    },
+    {
+     "area": "edition-h",
+     "file": "edition-h/data/methods.json",
+     "line": 1695,
+     "text": "\"summary\": \"Rejected. PBOC Yinfa [2026] No. 42 prohibits virtual-currency exchange business in mainland China and expressly repealed the 2021 notice. A crypto/stablecoin bridge is not a lawful workaround; no execution st"
+    }
+   ],
+   "regex": "〔2026〕\\s*42号|\\[2026\\]\\s*No\\.?\\s*42",
+   "total_lines": 30
+  },
+  "div_1994_20": {
+   "by_area": {
+    "edition-g": 1
+   },
+   "description": "FIE dividend exemption cited from Caishui [1994] No. 20",
+   "examples": [
+    {
+     "area": "edition-g",
+     "file": "edition-g/build/audit.py",
+     "line": 25,
+     "text": "(\"STALE_DIVIDEND_EXEMPTION\", r\"外籍个人从外商投资企业取得的股息红利所得.*免征|dividends.*foreign individuals.*exempt|财税字〔1994〕20号\","
+    }
+   ],
+   "regex": "〔1994〕\\s*20号|\\[1994\\]\\s*(No\\.?\\s*)?20\\b",
+   "total_lines": 1
+  },
+  "div_2026_27": {
+   "by_area": {
+    "edition-g": 10,
+    "edition-h": 15,
+    "integration": 6
+   },
+   "description": "FIE dividend rule cited as MOF/STA Announcement 2026 No. 27",
+   "examples": [
+    {
+     "area": "edition-g",
+     "file": "edition-g/build/audit.py",
+     "line": 26,
+     "text": "\"Foreign-individual FIE dividend exemption repealed by MOF/STA 2026 No. 27 effective 2026-09-01.\"),"
+    },
+    {
+     "area": "edition-g",
+     "file": "edition-g/data/flags.json",
+     "line": 36,
+     "text": "{\"id\":\"F33\",\"severity\":\"high\",\"status\":\"resolved-for-edition-g\",\"title\":\"Foreign-individual FIE dividend exemption repealed\",\"detail\":\"MOF/STA 2026 No. 27 imposes 20% IIT from 2026-09-01. Prior editions' exemption claims"
+    },
+    {
+     "area": "edition-h",
+     "file": "edition-h/build/audit.py",
+     "line": 57,
+     "text": "{\"id\": \"RR08\", \"severity\": \"high\", \"title\": \"Foreign-individual FIE dividend exemption has ended\", \"detail\": \"Any inherited statement that foreign individuals remain exempt on FIE dividends is outdated for payments from "
+    },
+    {
+     "area": "edition-h",
+     "file": "edition-h/data/flags.json",
+     "line": 350,
+     "text": "\"detail\": \"MOF/STA 2026 No. 27 imposes 20% IIT from 2026-09-01. Prior editions' exemption claims are flagged as outdated.\","
+    },
+    {
+     "area": "integration",
+     "file": "integration/build.py",
+     "line": 12,
+     "text": "'DIV': ('MOF/STA 2026 No. 27, Sections I–III', 'https://shanghai.chinatax.gov.cn/zzzb/zcwj/202609/t481448.html'),"
+    },
+    {
+     "area": "integration",
+     "file": "integration/build.py",
+     "line": 54,
+     "text": "('I05 · Recent dividend rule','Rechecked official Shanghai STA page: MOF/STA 2026 No. 27 states 20% IIT for foreign individuals’ FIE dividends effective 1 September 2026 and repeals the specified 1994 exemption. Earlier "
+    }
+   ],
+   "regex": "2026年第27号|2026\\s*No\\.?\\s*27\\b",
+   "total_lines": 31
+  },
+  "fbar_adjusted": {
+   "by_area": {
+    "(root files)": 1,
+    "edition-b": 25,
+    "edition-c": 11,
+    "edition-f": 2,
+    "edition-g": 2,
+    "edition-h": 4
+   },
+   "description": "FBAR maxima quoted at the inflation-adjusted amounts (16,536 / 165,353)",
+   "examples": [
+    {
+     "area": "(root files)",
+     "file": "README.md",
+     "line": 191,
+     "text": "**No PRC tax arises on the conversion — 0%.** Savings interest has been exempt since 2008-10-09 for both RMB and FX deposits. The cost is a **quota wall** of USD 50,000/person/year, a retail spread, and — for a US citize"
+    },
+    {
+     "area": "edition-b",
+     "file": "edition-b/EXECUTIVE-SUMMARY.md",
+     "line": 32,
+     "text": "| D. US reporting penalties | FBAR / Form 8938 / Form 3520 failure | **USD 16,536 non-willful, USD 165,353 or 50% willful, per report** | S19, S20 |"
+    },
+    {
+     "area": "edition-b",
+     "file": "edition-b/EXECUTIVE-SUMMARY.md",
+     "line": 90,
+     "text": "- **FBAR (FinCEN 114)** is required when the aggregate value of foreign financial accounts exceeded **USD 10,000 at any time** in the calendar year. The IRS states expressly that whether the account produced taxable inco"
+    },
+    {
+     "area": "edition-c",
+     "file": "edition-c/data/penalties.json",
+     "line": 84,
+     "text": "{\"item\": \"FBAR non-willful penalty\", \"rate\": \"Statutory USD 10,000; adjusted maximum USD 16,536\", \"source\": \"S26\"},"
+    },
+    {
+     "area": "edition-c",
+     "file": "edition-c/data/penalties.json",
+     "line": 85,
+     "text": "{\"item\": \"FBAR willful penalty\", \"rate\": \"Statutory USD 100,000; adjusted maximum USD 165,353, with the statute also providing for up to 50% of the account balance\", \"source\": \"S26\"},"
+    },
+    {
+     "area": "edition-f",
+     "file": "edition-f/data/repo_audit.json",
+     "line": 54,
+     "text": "\"detail\": \"edition-c/data/penalties.json, tax.json and summary.json state adjusted maxima USD 16,536 / USD 165,353. This session read IRM 4.26.16 and 31 USC 5321 but not an official current-year adjusted table, so those "
+    },
+    {
+     "area": "edition-f",
+     "file": "edition-f/site/audit.html",
+     "line": 31,
+     "text": "<tr ><td class=\"\"><strong>A05</strong><br><span class=\"badge status-high\">high</span></td><td class=\"\"><strong>Edition C states adjusted FBAR dollars without a retrieved adjusted table</strong><br>edition-c/data/penaltie"
+    },
+    {
+     "area": "edition-g",
+     "file": "edition-g/data/sources.json",
+     "line": 49,
+     "text": "{\"id\":\"S41\",\"title\":\"31 CFR 1010.821 penalty adjustment table\",\"issuer\":\"eCFR / FinCEN\",\"type\":\"government\",\"url\":\"https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821\",\"verifie"
+    },
+    {
+     "area": "edition-h",
+     "file": "edition-h/data/penalty.json",
+     "line": 86,
+     "text": "\"verified\": \"Personal FX gain above USD200 is reported as capital gain per IRS Pub. 525; §988 disapplies the personal exclusion for that transaction. Current eCFR table shows nonwillful FBAR maximum USD16,536 and willful"
+    },
+    {
+     "area": "edition-h",
+     "file": "edition-h/data/sources.json",
+     "line": 496,
+     "text": "\"supports\": \"Adjusted maxima USD16,536 nonwillful / USD165,353 willful for assessments on/after 2025-01-17. eCFR is continuously updated but not the official legal edition; statutory ceiling remains USD100k or 50% for wi"
+    }
+   ],
+   "regex": "16,536|165,353",
+   "total_lines": 45
+  },
+  "fbar_statutory": {
+   "by_area": {
+    "(root files)": 1,
+    "data": 2,
+    "dossier": 1,
+    "scripts": 2
+   },
+   "description": "FBAR non-willful maximum quoted as the statutory $10,000",
+   "examples": [
+    {
+     "area": "(root files)",
+     "file": "COORDINATION.md",
+     "line": 806,
+     "text": "| https://www.govinfo.gov/content/pkg/USCODE-2024-title31/html/USCODE-2024-title31-subtitleIV-chap53-subchapII-sec5321.htm — 31 U.S.C. §5321 (2024 ed.) | §5321(a)(5)(B): non-willful ≤ $10,000 (statutory, inflation-adjust"
+    },
+    {
+     "area": "data",
+     "file": "data/sources.json",
+     "line": 181,
+     "text": "\"key_text\": \"FBAR threshold: aggregate value of financial accounts exceeds $10,000 at any time during the calendar year. Form 8938 thresholds (living in the US, unmarried): >$50,000 last day or >$75,000 any time; married"
+    },
+    {
+     "area": "data",
+     "file": "data/sources.json",
+     "line": 201,
+     "text": "\"key_text\": \"§5321(a)(5)(B)(i) non-willful maximum $10,000; §5321(a)(5)(C) willful: greater of $100,000 or 50% of the balance in the account at the time of the violation; both adjusted for inflation under §5321 note.\","
+    },
+    {
+     "area": "dossier",
+     "file": "dossier/sources.html",
+     "line": 42,
+     "text": "<tr id=\"US-03\"><td class=\"mono\"><b>US-03</b></td><td><b>31 U.S.C. § 5321 — civil penalties (FBAR)</b><br><span style=\"color:var(--muted);font-size:13px\">U.S. Code (Office of the Law Revision Counsel) · en</span><br><span"
+    },
+    {
+     "area": "scripts",
+     "file": "scripts/data_sources.py",
+     "line": 146,
+     "text": "key_text=\"FBAR threshold: aggregate value of financial accounts exceeds $10,000 at any time during the calendar year. Form 8938 thresholds (living in the US, unmarried): >$50,000 last day or >$75,000 any time; married fi"
+    },
+    {
+     "area": "scripts",
+     "file": "scripts/data_sources.py",
+     "line": 160,
+     "text": "key_text=\"§5321(a)(5)(B)(i) non-willful maximum $10,000; §5321(a)(5)(C) willful: greater of $100,000 or 50% of the balance in the account at the time of the violation; both adjusted for inflation under §5321 note.\","
+    }
+   ],
+   "regex": "(?i)non-?willful[^\\n]{0,100}?\\$\\s?10,000|\\$\\s?10,000[^\\n]{0,100}?non-?willful",
+   "total_lines": 6
+  },
+  "spread_021": {
+   "by_area": {
+    "(root files)": 3,
+    "edition-d": 20,
+    "edition-f": 2,
+    "edition-g": 2
+   },
+   "description": "FX one-way margin quoted as about 0.21%",
+   "examples": [
+    {
+     "area": "(root files)",
+     "file": "COORDINATION.md",
+     "line": 530,
+     "text": "one-way margin 0.2104%  round-trip 0.4198%"
+    },
+    {
+     "area": "(root files)",
+     "file": "COORDINATION.md",
+     "line": 554,
+     "text": "| R01 | Root summary labels the **round-trip** spread (0.42%) as \"the real conversion cost\". The one-way margin measured from the same board is 0.2104%. | irregularity |"
+    },
+    {
+     "area": "edition-d",
+     "file": "edition-d/data/review.json",
+     "line": 17,
+     "text": "\"finding\": \"The root executive summary is headed 'The real conversion cost is about 0.42%' and derives it as (669.29 - 666.48) / 669.29. That is the round-trip bid/ask spread: the loss from converting and converting back"
+    },
+    {
+     "area": "edition-d",
+     "file": "edition-d/data/review.json",
+     "line": 18,
+     "text": "\"evidence\": \"EXECUTIVE_SUMMARY.md line 5 ('the real cost of a lawful conversion is a bank spread of about 0.42%'), line 24 (the heading) and line 28 (the formula). data/costs.json line 35 states it correctly as 'A round "
+    },
+    {
+     "area": "edition-f",
+     "file": "edition-f/data/repo_audit.json",
+     "line": 113,
+     "text": "\"detail\": \"Merged D computes one-way margin as (ask-mid)/mid = 0.2103%; Edition F computes (ask-mid)/ask = 0.2099239% and round-trip (ask-bid)/ask = 0.4198479%. Both are transparent proxies if labelled; neither is an exe"
+    },
+    {
+     "area": "edition-f",
+     "file": "edition-f/site/audit.html",
+     "line": 36,
+     "text": "<tr ><td class=\"\"><strong>A10</strong><br><span class=\"badge status-low\">low</span></td><td class=\"\"><strong>Merged Edition D one-way margin denominator differs from Edition F</strong><br>Merged D computes one-way margin"
+    },
+    {
+     "area": "edition-g",
+     "file": "edition-g/data/repo-review.json",
+     "line": 2037,
+     "text": "\"excerpt\": \"  <p>The commission is capped at CNY 260 and the cable fee is flat at CNY 150. At $10,000 those fixed items are 0.62% of the amount; at $400,000 they are 0.02%. The FX margin is the only component that scales"
+    },
+    {
+     "area": "edition-g",
+     "file": "edition-g/docs/repo-review.html",
+     "line": 34,
+     "text": "<div class=\"table-wrap\"><table><thead><tr><th>Rule</th><th>Location</th><th>Issue</th><th>Excerpt</th></tr></thead><tbody><tr><td>SPREAD_AS_ONE_WAY_COST</td><td>EXECUTIVE_SUMMARY.md:5</td><td>Bid/ask round-trip spread is"
+    }
+   ],
+   "regex": "0\\.21\\d*\\s*%",
+   "total_lines": 27
+  },
+  "spread_042": {
+   "by_area": {
+    "(root files)": 15,
+    "assets": 1,
+    "data": 8,
+    "docs": 1,
+    "dossier": 17,
+    "edition-d": 8,
+    "edition-e": 5,
+    "edition-f": 6,
+    "edition-g": 12,
+    "edition-h": 10,
+    "scripts": 17
+   },
+   "description": "FX spread quoted as 0.42%",
+   "examples": [
+    {
+     "area": "(root files)",
+     "file": "COORDINATION.md",
+     "line": 102,
+     "text": "| PR | [#6](https://github.com/sassnarep3-star/China1/pull/6) — \"Verified CNY→USD dossier: 35 routes, measured 0.42% spread, capital-account taxonomy, 20 flagged items\" |"
+    },
+    {
+     "area": "(root files)",
+     "file": "COORDINATION.md",
+     "line": 328,
+     "text": "| Conversion spread | `dossier/` measures **0.42%** from Bank of China's published board with a capture timestamp | Left **blank** as flag **F01** | Not a conflict. No regulatory instrument fixes a retail spread, so this"
+    },
+    {
+     "area": "assets",
+     "file": "assets/build.py",
+     "line": 91,
+     "text": "overview='''<section><p><strong>Expanded research:</strong> <a href=\"docs/index.html\">Open the supplemental dashboard →</a> · 18 routes and variants, provider eligibility, detailed costs, source registry and additional r"
+    },
+    {
+     "area": "data",
+     "file": "data/channels.json",
+     "line": 11,
+     "text": "\"cost\": \"Bank bid/ask spread ≈ 0.42% (measured on BOC USD quotes of 2026-11-08); bank wire fees not verified.\","
+    },
+    {
+     "area": "data",
+     "file": "data/costs.json",
+     "line": 4,
+     "text": "\"value\": \"0.42%\","
+    },
+    {
+     "area": "docs",
+     "file": "docs/index.html",
+     "line": 1,
+     "text": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta name=\"description\" content=\"Official-source research on lawful China CNY to USD transfe"
+    },
+    {
+     "area": "dossier",
+     "file": "dossier/channels.html",
+     "line": 28,
+     "text": "<tr><td colspan=\"4\" style=\"padding:0;background:#fcfdff\"><details><summary>Detail, pros and cons — A1</summary><div class=\"inner\"><div><h4>Documents</h4><p>Valid ID document only (within quota).</p></div><div><h4>Cost</h"
+    },
+    {
+     "area": "dossier",
+     "file": "dossier/costs.html",
+     "line": 22,
+     "text": "<div class=\"grid g4\" style=\"margin-bottom:8px\"><div class=\"stat ok\"><div class=\"big\">0.42%</div><div class=\"lab\">Measured bank spread</div><div class=\"desc\">The real, unavoidable &#x27;conversion penalty&#x27; on a lawfu"
+    },
+    {
+     "area": "edition-d",
+     "file": "edition-d/build/build.py",
+     "line": 551,
+     "text": "[\"2\", \"The conversion margin is {} one way\".format(pct(ONE_WAY)), \"Derived from BOC's USD board: sell 669.29, buy 666.48, midpoint 667.885. The often-quoted 0.42% is the round trip, i.e. twice the one-way margin. See R01"
+    },
+    {
+     "area": "edition-d",
+     "file": "edition-d/data/review.json",
+     "line": 17,
+     "text": "\"finding\": \"The root executive summary is headed 'The real conversion cost is about 0.42%' and derives it as (669.29 - 666.48) / 669.29. That is the round-trip bid/ask spread: the loss from converting and converting back"
+    },
+    {
+     "area": "edition-e",
+     "file": "edition-e/audit.md",
+     "line": 7,
+     "text": "| A01 | medium | Root summary / data/costs.json | 0.42% is full bid/ask gap divided by ask, described as round-trip loss. | Different metric, not a universal conversion cost. Edition E labels a one-way midpoint proxy. |"
+    },
+    {
+     "area": "edition-e",
+     "file": "edition-e/build/make_data.py",
+     "line": 96,
+     "text": "{'id':'A01','severity':'medium','subject':'Root EXECUTIVE_SUMMARY.md and data/costs.json','finding':'The 0.42% figure is the full bid/ask gap divided by the ask, described as a round-trip loss. It is not the one-way midp"
+    },
+    {
+     "area": "edition-f",
+     "file": "edition-f/EXECUTIVE_SUMMARY.md",
+     "line": 43,
+     "text": "- Root headline overclaims “no tax in either jurisdiction” and uses 0.42% round-trip spread as the conversion cost; root deposit-interest row says 20% withheld despite official savings-interest exemption. [Root summary]("
+    },
+    {
+     "area": "edition-f",
+     "file": "edition-f/data/repo_audit.json",
+     "line": 5,
+     "text": "\"title\": \"Root headline says no tax in either jurisdiction and uses 0.42% as the conversion cost\","
+    }
+   ],
+   "regex": "0\\.42\\s*%",
+   "total_lines": 100
+  },
+  "staging": {
+   "by_area": {
+    "edition-b": 3,
+    "edition-d": 2,
+    "edition-e": 8
+   },
+   "description": "Emigrant transfer described as staged 50% / 25% / 25%",
+   "examples": [
+    {
+     "area": "edition-b",
+     "file": "edition-b/data/methods.json",
+     "line": 140,
+     "text": "\"Staged release: 50% now, 25% after a year, 25% after two years.\","
+    },
+    {
+     "area": "edition-b",
+     "file": "edition-b/lawful.html",
+     "line": 93,
+     "text": "<td><ul class=\"cons\"><li>Requires cancellation of PRC household registration (户籍注销) plus certified proof of foreign residence — a one-way door for a PRC citizen.</li><li>Requires a PRC tax clearance certificate first.</l"
+    },
+    {
+     "area": "edition-d",
+     "file": "edition-d/build/build.py",
+     "line": 557,
+     "text": "[\"6\", \"Emigration transfer is the purpose-built route\", \"One application for the whole pre-emigration estate; releases of 50%, 25%, 25% above CNY 200,000; provincial approval below CNY 500,000.\", src_links([\"CN-04\"])],"
+    },
+    {
+     "area": "edition-d",
+     "file": "edition-d/docs/pages/summary.html",
+     "line": 23,
+     "text": "<section><div class=\"tablewrap\"><table class=\"data \"><thead><tr><th scope=\"col\">#</th><th scope=\"col\">Finding</th><th scope=\"col\">Detail</th><th scope=\"col\">Sources</th></tr></thead><tbody><tr><td>1</td><td>No conversion"
+    },
+    {
+     "area": "edition-e",
+     "file": "edition-e/audit.md",
+     "line": 10,
+     "text": "| A04 | high | Emigrant staging | 50%/25%/25% schedule presented as current; 2014 circular allows lump sum/batches within approval; full current section 6.4 not isolated. | Not confirmed current; staging blank. |"
+    },
+    {
+     "area": "edition-e",
+     "file": "edition-e/build/make_data.py",
+     "line": 80,
+     "text": "{'id':'F07','severity':'high','title':'Old emigrant staged-release schedule not confirmed current','detail':'Inherited editions present 50%/25%/25% staging. The 2014 circular allows lump sum or batches within approval; t"
+    }
+   ],
+   "regex": "50\\s*%[^\\n]{0,120}?25\\s*%[^\\n]{0,120}?25\\s*%",
+   "total_lines": 13
+  },
+  "staging_cancelled": {
+   "by_area": {
+    "(root files)": 3,
+    "assets": 1,
+    "data": 1,
+    "dossier": 1,
+    "edition-b": 2,
+    "edition-f": 2,
+    "edition-g": 18,
+    "edition-h": 10,
+    "integration": 5,
+    "pages": 1,
+    "scripts": 1
+   },
+   "description": "Staging requirement described as cancelled (correct)",
+   "examples": [
+    {
+     "area": "(root files)",
+     "file": "COORDINATION.md",
+     "line": 912,
+     "text": "- I1 done: Re-ran all 9 verifiers locally (integration, assets, scripts, editions B–H, dossier) — all PASS, zero drift. Re-fetched 6 primary sources on 2026-11-10 UTC: SAFE individual measures (Arts. 3/7/13/37 verbatim),"
+    },
+    {
+     "area": "(root files)",
+     "file": "README.md",
+     "line": 193,
+     "text": "Only two lawful routes move a whole balance: **emigrant transfer** (needs cancelled PRC household registration + certified foreign residence + PRC tax clearance, staged over ~2 years) and **inheritance transfer** (needs "
+    },
+    {
+     "area": "assets",
+     "file": "assets/build.py",
+     "line": 75,
+     "text": "('Inheritance rules changed', 'The 2004 PBOC text contains older approval thresholds and staged remittances; SAFE’s 2014 circular cancels the specified threshold reporting and mandatory installments for emigrant transfer"
+    },
+    {
+     "area": "data",
+     "file": "data/sources.json",
+     "line": 61,
+     "text": "\"verifies\": \"The only general capital-account channel for moving a whole personal balance; the RMB 200,000 one-shot threshold; the two-year staged release; the hukou-cancellation + overseas-settlement + tax-clearance pre"
+    },
+    {
+     "area": "dossier",
+     "file": "dossier/sources.html",
+     "line": 31,
+     "text": "<tr id=\"CN-06\"><td class=\"mono\"><b>CN-06</b></td><td><b>个人财产对外转移售付汇管理暂行办法, PBOC Announcement [2004] No. 16 — State Council Gazette 2005 No. 22</b><br><span style=\"color:var(--muted);font-size:13px\">People&#x27;s Bank of "
+    },
+    {
+     "area": "edition-b",
+     "file": "edition-b/EXECUTIVE-SUMMARY.md",
+     "line": 47,
+     "text": "- **移民转移 (emigrant property transfer)** — for someone who has emigrated from the mainland or settled in Hong Kong/Macau. Requires cancellation of PRC household registration, certified proof of foreign residence, and a PR"
+    },
+    {
+     "area": "edition-b",
+     "file": "edition-b/executive-summary.html",
+     "line": 94,
+     "text": "<li>**移民转移 (emigrant property transfer)** — for someone who has emigrated from the mainland or settled in Hong Kong/Macau. Requires cancellation of PRC household registration, certified proof of foreign residence, and a "
+    },
+    {
+     "area": "edition-f",
+     "file": "edition-f/site/mechanics.html",
+     "line": 44,
+     "text": "<tr ><td class=\"\">3</td><td class=\"\">Complete overseas account approval separately; then use a lawful purchase/remittance route (M01–M03) to fund it.</td><td class=\"\">Account opening does not create FX permission; SAFE p"
+    },
+    {
+     "area": "edition-f",
+     "file": "edition-f/site/methods.html",
+     "line": 31,
+     "text": "<tr ><td class=\"\"><a href=\"mechanics.html#M07\"><strong>M07</strong> BOC overseas-account witnessing (account-opening aid, not a transfer route)</a><br><span class=\"badge status-conditional\">conditional</span></td><td cla"
+    },
+    {
+     "area": "edition-g",
+     "file": "edition-g/build/audit.py",
+     "line": 24,
+     "text": "\"Superseded staged emigrant-release wording; amended Huifa [2014] No. 2 removed staged remittance.\"),"
+    },
+    {
+     "area": "edition-g",
+     "file": "edition-g/data/flags.json",
+     "line": 7,
+     "text": "{\"id\":\"F04\",\"severity\":\"medium\",\"status\":\"resolved-for-edition-g\",\"title\":\"Old staged emigrant-release rule superseded\",\"detail\":\"2004 text staged releases; amended 2014 rules removed the staged requirement. Edition G us"
+    },
+    {
+     "area": "edition-h",
+     "file": "edition-h/build/audit.py",
+     "line": 56,
+     "text": "{\"id\": \"RR07\", \"severity\": \"medium\", \"title\": \"Historical staged emigrant-release wording is obsolete\", \"detail\": \"Older 2004 provisions staged emigrant transfers. SAFE 2014 No. 2 removed that requirement; approved amoun"
+    },
+    {
+     "area": "edition-h",
+     "file": "edition-h/data/flags.json",
+     "line": 45,
+     "text": "\"detail\": \"2004 text staged releases; amended 2014 rules removed the staged requirement. Edition G uses the amended rule and 2024-based service guides.\","
+    },
+    {
+     "area": "integration",
+     "file": "integration/README.md",
+     "line": 11,
+     "text": "removed mandatory staged emigrant releases. Approval and evidence still matter."
+    }
+   ],
+   "regex": "(?i)(cancel|abolish|remov|no longer|取消)[^\\n]{0,120}?(stag|instal|tranche|分次)|(stag|instal|tranche|分次)[^\\n]{0,120}?(cancel|abolish|remov|no longer|取消)",
+   "total_lines": 45
+  }
+ },
+ "scanned_commit": "57942c7f7200b24fcf1683f1ff75bc406c266383",
+ "scope": "every git-tracked file outside playbook-d25b40f7/",
+ "stats": {
+  "binary_or_unreadable": 0,
+  "files": 348,
+  "lines": 167138,
+  "text_files": 348
+ }
+}

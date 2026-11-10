@@ -1,0 +1,396 @@
+[
+ {
+  "category": "personal",
+  "id": "P05",
+  "name": "Insurance proceeds paid to an overseas beneficiary",
+  "page": "edition-h/site/method-P05.html",
+  "sources": [
+   {
+    "id": "S12",
+    "title": "SAFE FAQ: Insurance proceeds for overseas beneficiary (2022)",
+    "url": "https://www.safe.gov.cn/henan/2022/0718/1245.html"
+   },
+   {
+    "id": "S03",
+    "title": "Current Account Foreign Exchange Business Guidelines (2020), Huifa [2020] No. 14",
+    "url": "https://www.gov.cn/gongbao/content/2020/content_5560296.htm"
+   }
+  ],
+  "status": "lawful-conditional"
+ },
+ {
+  "category": "personal",
+  "id": "P09",
+  "name": "Above-quota genuine current-account expenditure",
+  "page": "edition-h/site/method-P09.html",
+  "sources": [
+   {
+    "id": "S03",
+    "title": "Current Account Foreign Exchange Business Guidelines (2020), Huifa [2020] No. 14",
+    "url": "https://www.gov.cn/gongbao/content/2020/content_5560296.htm"
+   },
+   {
+    "id": "S35",
+    "title": "Outbound service-trade tax filing supplementary announcement / FAQ",
+    "url": "https://tianjin.chinatax.gov.cn/11200000000/0300/030005/20230313165703616.shtml"
+   }
+  ],
+  "status": "lawful-conditional"
+ },
+ {
+  "category": "rails",
+  "id": "R02",
+  "name": "Bank of China foreign-currency demand draft",
+  "page": "edition-h/site/method-R02.html",
+  "sources": [
+   {
+    "id": "S03",
+    "title": "Current Account Foreign Exchange Business Guidelines (2020), Huifa [2020] No. 14",
+    "url": "https://www.gov.cn/gongbao/content/2020/content_5560296.htm"
+   },
+   {
+    "id": "S14",
+    "title": "Bank of China personal finance tariff, Chapter 3 (effective 2025-11-11)",
+    "url": "https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf"
+   }
+  ],
+  "status": "available-conditional"
+ },
+ {
+  "category": "rails",
+  "id": "R05",
+  "name": "HSBC Global Transfer to self-name overseas HSBC account",
+  "page": "edition-h/site/method-R05.html",
+  "sources": [
+   {
+    "id": "S03",
+    "title": "Current Account Foreign Exchange Business Guidelines (2020), Huifa [2020] No. 14",
+    "url": "https://www.gov.cn/gongbao/content/2020/content_5560296.htm"
+   },
+   {
+    "id": "S18",
+    "title": "HSBC China tariff of accounts and services (Chinese, effective 2026-10-31)",
+    "url": "https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-accouts-and-services.pdf"
+   }
+  ],
+  "status": "available-conditional"
+ },
+ {
+  "category": "rails",
+  "id": "R08",
+  "name": "Western Union China outbound cash pickup",
+  "page": "edition-h/site/method-R08.html",
+  "sources": [
+   {
+    "id": "S03",
+    "title": "Current Account Foreign Exchange Business Guidelines (2020), Huifa [2020] No. 14",
+    "url": "https://www.gov.cn/gongbao/content/2020/content_5560296.htm"
+   },
+   {
+    "id": "S25",
+    "title": "Western Union China outbound send-money page",
+    "url": "https://www.westernunion.com/cn/en/send-money.html"
+   }
+  ],
+  "status": "available-conditional"
+ },
+ {
+  "category": "rails",
+  "id": "R10",
+  "name": "HSBC China debit card overseas ATM cash",
+  "page": "edition-h/site/method-R10.html",
+  "sources": [
+   {
+    "id": "S18",
+    "title": "HSBC China tariff of accounts and services (Chinese, effective 2026-10-31)",
+    "url": "https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-accouts-and-services.pdf"
+   },
+   {
+    "id": "S28",
+    "title": "SAFE card overseas cash withdrawal notice explainer, Huifa [2017] No. 29",
+    "url": "https://www.safe.gov.cn/safe/2017/1230/8130.html"
+   }
+  ],
+  "status": "available-conditional"
+ },
+ {
+  "category": "rails",
+  "id": "R12",
+  "name": "MoneyGram agent location from China",
+  "page": "edition-h/site/method-R12.html",
+  "sources": [
+   {
+    "id": "S03",
+    "title": "Current Account Foreign Exchange Business Guidelines (2020), Huifa [2020] No. 14",
+    "url": "https://www.gov.cn/gongbao/content/2020/content_5560296.htm"
+   },
+   {
+    "id": "S26",
+    "title": "MoneyGram China how to send money",
+    "url": "https://www.moneygram.com/r/cn/en/how-to-send-money"
+   }
+  ],
+  "status": "unverified"
+ },
+ {
+  "category": "rails",
+  "id": "R13",
+  "name": "PayPal C2 international payment",
+  "page": "edition-h/site/method-R13.html",
+  "sources": [
+   {
+    "id": "S03",
+    "title": "Current Account Foreign Exchange Business Guidelines (2020), Huifa [2020] No. 14",
+    "url": "https://www.gov.cn/gongbao/content/2020/content_5560296.htm"
+   },
+   {
+    "id": "S27",
+    "title": "PayPal C2 help: How do I send money?",
+    "url": "https://www.paypal.com/c2/cshelp/article/how-do-i-send-money-help293?locale.x=en_C2"
+   }
+  ],
+  "status": "unverified"
+ },
+ {
+  "category": "business",
+  "id": "B02",
+  "name": "FIE dividend to a foreign corporate shareholder",
+  "page": "edition-h/site/method-B02.html",
+  "sources": [
+   {
+    "id": "S01",
+    "title": "Regulation on Foreign Exchange Administration, State Council Order No. 532 (2008)",
+    "url": "https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm"
+   },
+   {
+    "id": "S03",
+    "title": "Current Account Foreign Exchange Business Guidelines (2020), Huifa [2020] No. 14",
+    "url": "https://www.gov.cn/gongbao/content/2020/content_5560296.htm"
+   }
+  ],
+  "status": "lawful-conditional"
+ },
+ {
+  "category": "business",
+  "id": "B03",
+  "name": "Registered capital reduction returned to a foreign investor",
+  "page": "edition-h/site/method-B03.html",
+  "sources": [
+   {
+    "id": "S01",
+    "title": "Regulation on Foreign Exchange Administration, State Council Order No. 532 (2008)",
+    "url": "https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm"
+   },
+   {
+    "id": "S06",
+    "title": "Capital Account Foreign Exchange Business Guidelines (2024), Huifa [2024] No. 12",
+    "url": "https://www.safe.gov.cn/beijing/file/file/20240426/25d01a93b9b148fe8920198c1a24adfd.pdf"
+   }
+  ],
+  "status": "lawful-conditional"
+ },
+ {
+  "category": "business",
+  "id": "B04",
+  "name": "Sale of equity in a Chinese entity to a foreign buyer",
+  "page": "edition-h/site/method-B04.html",
+  "sources": [
+   {
+    "id": "S01",
+    "title": "Regulation on Foreign Exchange Administration, State Council Order No. 532 (2008)",
+    "url": "https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm"
+   },
+   {
+    "id": "S06",
+    "title": "Capital Account Foreign Exchange Business Guidelines (2024), Huifa [2024] No. 12",
+    "url": "https://www.safe.gov.cn/beijing/file/file/20240426/25d01a93b9b148fe8920198c1a24adfd.pdf"
+   }
+  ],
+  "status": "lawful-conditional"
+ },
+ {
+  "category": "business",
+  "id": "B06",
+  "name": "Genuine service or royalty export by a Chinese entity",
+  "page": "edition-h/site/method-B06.html",
+  "sources": [
+   {
+    "id": "S01",
+    "title": "Regulation on Foreign Exchange Administration, State Council Order No. 532 (2008)",
+    "url": "https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm"
+   },
+   {
+    "id": "S03",
+    "title": "Current Account Foreign Exchange Business Guidelines (2020), Huifa [2020] No. 14",
+    "url": "https://www.gov.cn/gongbao/content/2020/content_5560296.htm"
+   }
+  ],
+  "status": "lawful-conditional"
+ },
+ {
+  "category": "business",
+  "id": "B07",
+  "name": "Goods export / individual foreign-trade operator / cross-border e-commerce",
+  "page": "edition-h/site/method-B07.html",
+  "sources": [
+   {
+    "id": "S02",
+    "title": "Measures for the Administration of Individual Foreign Exchange, PBOC Order [2006] No. 3",
+    "url": "https://www.safe.gov.cn/safe/2006/1225/5319.html"
+   },
+   {
+    "id": "S03",
+    "title": "Current Account Foreign Exchange Business Guidelines (2020), Huifa [2020] No. 14",
+    "url": "https://www.gov.cn/gongbao/content/2020/content_5560296.htm"
+   }
+  ],
+  "status": "lawful-conditional"
+ },
+ {
+  "category": "business",
+  "id": "B08",
+  "name": "Outbound intercompany lending or cross-border cash pooling",
+  "page": "edition-h/site/method-B08.html",
+  "sources": [
+   {
+    "id": "S01",
+    "title": "Regulation on Foreign Exchange Administration, State Council Order No. 532 (2008)",
+    "url": "https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm"
+   },
+   {
+    "id": "S06",
+    "title": "Capital Account Foreign Exchange Business Guidelines (2024), Huifa [2024] No. 12",
+    "url": "https://www.safe.gov.cn/beijing/file/file/20240426/25d01a93b9b148fe8920198c1a24adfd.pdf"
+   }
+  ],
+  "status": "lawful-conditional"
+ },
+ {
+  "category": "alternatives",
+  "id": "A01",
+  "name": "QDII / overseas investment plan",
+  "page": "edition-h/site/method-A01.html",
+  "sources": [
+   {
+    "id": "S17",
+    "title": "HSBC China mandatory information / current tariff index",
+    "url": "https://www.hsbc.com.cn/en-cn/help/mandatory-info/"
+   },
+   {
+    "id": "S51",
+    "title": "HSBC China QDII holiday subscription suspension notice (2026-10-27)",
+    "url": "https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/mandatory-info/2026/notification-on-the-suspension-of-qdii-subscription-jun-20261028-en.pdf"
+   }
+  ],
+  "status": "not-repatriation"
+ },
+ {
+  "category": "alternatives",
+  "id": "A02",
+  "name": "Greater Bay Area Wealth Management Connect Southbound",
+  "page": "edition-h/site/method-A02.html",
+  "sources": [
+   {
+    "id": "S49",
+    "title": "Guangdong government release on Wealth Management Connect 2.0",
+    "url": "https://www.gdhmo.gov.cn/xwzx/hzjl/jjjr/content/post_75299.html"
+   },
+   {
+    "id": "S50",
+    "title": "ICBC Asia Wealth Management Connect product page",
+    "url": "https://www.icbcasia.com/hk/en/cross-border/cross-border-services/greater-bay-financial-services/cross-boundary-wealth-management-connect-scheme/default.html"
+   }
+  ],
+  "status": "not-repatriation"
+ },
+ {
+  "category": "alternatives",
+  "id": "A03",
+  "name": "Registered employee stock incentive plan",
+  "page": "edition-h/site/method-A03.html",
+  "sources": [
+   {
+    "id": "S47",
+    "title": "SAFE employee stock incentive plan notice, Huifa [2012] No. 7",
+    "url": "https://www.safe.gov.cn/tianjin/2025/0828/2870.html"
+   },
+   {
+    "id": "S06",
+    "title": "Capital Account Foreign Exchange Business Guidelines (2024), Huifa [2024] No. 12",
+    "url": "https://www.safe.gov.cn/beijing/file/file/20240426/25d01a93b9b148fe8920198c1a24adfd.pdf"
+   }
+  ],
+  "status": "not-repatriation"
+ },
+ {
+  "category": "alternatives",
+  "id": "A04",
+  "name": "Outward direct investment / special-purpose vehicle",
+  "page": "edition-h/site/method-A04.html",
+  "sources": [
+   {
+    "id": "S01",
+    "title": "Regulation on Foreign Exchange Administration, State Council Order No. 532 (2008)",
+    "url": "https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm"
+   },
+   {
+    "id": "S06",
+    "title": "Capital Account Foreign Exchange Business Guidelines (2024), Huifa [2024] No. 12",
+    "url": "https://www.safe.gov.cn/beijing/file/file/20240426/25d01a93b9b148fe8920198c1a24adfd.pdf"
+   }
+  ],
+  "status": "not-repatriation"
+ },
+ {
+  "category": "alternatives",
+  "id": "A05",
+  "name": "Keep CNY in China or spend it lawfully in China",
+  "page": "edition-h/site/method-A05.html",
+  "sources": [
+   {
+    "id": "S01",
+    "title": "Regulation on Foreign Exchange Administration, State Council Order No. 532 (2008)",
+    "url": "https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm"
+   },
+   {
+    "id": "S03",
+    "title": "Current Account Foreign Exchange Business Guidelines (2020), Huifa [2020] No. 14",
+    "url": "https://www.gov.cn/gongbao/content/2020/content_5560296.htm"
+   }
+  ],
+  "status": "alternative"
+ },
+ {
+  "category": "rejected",
+  "id": "X05",
+  "name": "Using the facilitation quota for overseas property or securities",
+  "page": "edition-h/site/method-X05.html",
+  "sources": [
+   {
+    "id": "S02",
+    "title": "Measures for the Administration of Individual Foreign Exchange, PBOC Order [2006] No. 3",
+    "url": "https://www.safe.gov.cn/safe/2006/1225/5319.html"
+   },
+   {
+    "id": "S03",
+    "title": "Current Account Foreign Exchange Business Guidelines (2020), Huifa [2020] No. 14",
+    "url": "https://www.gov.cn/gongbao/content/2020/content_5560296.htm"
+   }
+  ],
+  "status": "prohibited"
+ },
+ {
+  "category": "rejected",
+  "id": "X07",
+  "name": "Revolut / Remitly / Xoom as China-outbound CNY rails",
+  "page": "edition-h/site/method-X07.html",
+  "sources": [
+   {
+    "id": "S03",
+    "title": "Current Account Foreign Exchange Business Guidelines (2020), Huifa [2020] No. 14",
+    "url": "https://www.gov.cn/gongbao/content/2020/content_5560296.htm"
+   }
+  ],
+  "status": "unverified"
+ }
+]

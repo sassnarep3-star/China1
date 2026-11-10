@@ -9,10 +9,22 @@
   "retrieved_utc": "2026-11-10",
   "retrieval": "page read in this session; quotes are live and change, the recipient amount was not rendered in the retrieved text",
   "quotes": [
-   {"loc": "calculator", "text": "1 CNY = 0.1499 USD … Total fees Included in CNY amount 435.16 CNY"},
-   {"loc": "Cheapest way", "text": "Sending 66,763 CNY | Transfer cost | Bank transfer | 435.16 CNY"},
-   {"loc": "large amounts", "text": "Sending over 25,000 USD or equivalent? We'll discount our fee"},
-   {"loc": "pay-out", "text": "The recipient gets money in USD directly from Wise's local bank account."}
+   {
+    "loc": "calculator",
+    "text": "1 CNY = 0.1499 USD … Total fees Included in CNY amount 435.16 CNY"
+   },
+   {
+    "loc": "Cheapest way",
+    "text": "Sending 66,763 CNY | Transfer cost | Bank transfer | 435.16 CNY"
+   },
+   {
+    "loc": "large amounts",
+    "text": "Sending over 25,000 USD or equivalent? We'll discount our fee"
+   },
+   {
+    "loc": "pay-out",
+    "text": "The recipient gets money in USD directly from Wise's local bank account."
+   }
   ]
  },
  {
@@ -25,11 +37,26 @@
   "retrieved_utc": "2026-11-10",
   "retrieval": "full page read in this session",
   "quotes": [
-   {"loc": "Federal Mandate", "text": "Federal law mandates that when entering or leaving the United States you must report amounts exceeding $10,000 to U.S. Customs and Border Protection (CBP)."},
-   {"loc": "Who Must File?", "text": "Anyone who brings, sends, or receives currency or monetary instruments totaling more than $10,000 at one time, either into or out of the United States, must report it."},
-   {"loc": "Who Must File?", "text": "When families or groups are involved, the $10,000 threshold applies to the total amount they are carrying or sending collectively, not per individual."},
-   {"loc": "What if I don't file?", "text": "An Individual who fails to file a report or submit false or fraudulent information, risk having their currency or monetary instruments forfeited and seized. In some instances, they may face civil or criminal penalties such as fines or imprisonment."},
-   {"loc": "How Do I File?", "text": "You can file electronically on the FinCEN Form 105 Website."}
+   {
+    "loc": "Federal Mandate",
+    "text": "Federal law mandates that when entering or leaving the United States you must report amounts exceeding $10,000 to U.S. Customs and Border Protection (CBP)."
+   },
+   {
+    "loc": "Who Must File?",
+    "text": "Anyone who brings, sends, or receives currency or monetary instruments totaling more than $10,000 at one time, either into or out of the United States, must report it."
+   },
+   {
+    "loc": "Who Must File?",
+    "text": "When families or groups are involved, the $10,000 threshold applies to the total amount they are carrying or sending collectively, not per individual."
+   },
+   {
+    "loc": "What if I don't file?",
+    "text": "An Individual who fails to file a report or submit false or fraudulent information, risk having their currency or monetary instruments forfeited and seized. In some instances, they may face civil or criminal penalties such as fines or imprisonment."
+   },
+   {
+    "loc": "How Do I File?",
+    "text": "You can file electronically on the FinCEN Form 105 Website."
+   }
   ]
  },
  {
@@ -42,9 +69,18 @@
   "retrieved_utc": "2026-11-10",
   "retrieval": "official-domain page text returned by the search tool (operative clauses quoted); page not separately re-fetched",
   "quotes": [
-   {"loc": "引言", "text": "个人转让住房，以其转让收入额减除财产原值和合理费用后的余额为应纳税所得额，按照“财产转让所得”项目缴纳个人所得税。"},
-   {"loc": "二", "text": "对转让住房收入计算个人所得税应纳税所得额时，纳税人可凭原购房合同、发票等有效凭证，经税务机关审核后，允许从其转让收入中减除房屋原值、转让住房过程中缴纳的税金及有关合理费用。"},
-   {"loc": "三", "text": "纳税人未提供完整、准确的房屋原值凭证，不能正确计算房屋原值和应纳税额的，税务机关可根据《中华人民共和国税收征收管理法》第三十五条的规定，对其实行核定征税，即按纳税人住房转让收入的一定比例核定应纳个人所得税额。具体比例由省级地方税务局或者省级地方税务局授权的地市级地方税务局根据纳税人出售住房的所处区域、地理位置、建造时间、房屋类型、住房平均价格水平等因素，在住房转让收入1%-3%的幅度内确定。"}
+   {
+    "loc": "引言",
+    "text": "个人转让住房，以其转让收入额减除财产原值和合理费用后的余额为应纳税所得额，按照“财产转让所得”项目缴纳个人所得税。"
+   },
+   {
+    "loc": "二",
+    "text": "对转让住房收入计算个人所得税应纳税所得额时，纳税人可凭原购房合同、发票等有效凭证，经税务机关审核后，允许从其转让收入中减除房屋原值、转让住房过程中缴纳的税金及有关合理费用。"
+   },
+   {
+    "loc": "三",
+    "text": "纳税人未提供完整、准确的房屋原值凭证，不能正确计算房屋原值和应纳税额的，税务机关可根据《中华人民共和国税收征收管理法》第三十五条的规定，对其实行核定征税，即按纳税人住房转让收入的一定比例核定应纳个人所得税额。具体比例由省级地方税务局或者省级地方税务局授权的地市级地方税务局根据纳税人出售住房的所处区域、地理位置、建造时间、房屋类型、住房平均价格水平等因素，在住房转让收入1%-3%的幅度内确定。"
+   }
   ]
  },
  {
@@ -57,7 +93,10 @@
   "retrieved_utc": "2026-11-10",
   "retrieval": "official-domain page text returned by the search tool; page not separately re-fetched; this is a 2011 text and later guidelines changed the procedure",
   "quotes": [
-   {"loc": "问答 18", "text": "境内分支、代表机构和境外个人转让所购境内商品房取得的人民币资金，经商品房所在地国家外汇管理局分支局、外汇管理部审核确认以下文件后，方可购汇汇出：（一）购汇申请书；（二）商品房转让合同；（三）房屋权属转让的完税证明文件。"}
+   {
+    "loc": "问答 18",
+    "text": "境内分支、代表机构和境外个人转让所购境内商品房取得的人民币资金，经商品房所在地国家外汇管理局分支局、外汇管理部审核确认以下文件后，方可购汇汇出：（一）购汇申请书；（二）商品房转让合同；（三）房屋权属转让的完税证明文件。"
+   }
   ]
  },
  {
@@ -71,8 +110,74 @@
   "retrieval": "text seen only as a result excerpt on the safe.gov.cn search page; the item page itself was NOT fetched in this session, so everything resting on it is flagged",
   "paraphrase_only": true,
   "quotes": [
-   {"loc": "外汇业务知识问答（一百二十七） [search-result excerpt]", "text": "根据《资本项目外汇业务操作指引（2017版）》第6.26条的规定，申请人可提交以下材料直接通过银行办理售房资金的汇出手续，无需到外汇局备案：1、身份证明文件；2、商品房转让合同及登记证明文件；3、《服务贸易等项目对外支付税务备案表》（金额在5万美元及以下的无需提交）或其他完税证明材料；4、如委托其他人办理，应提供经公证的授权委托书及受托人的有效身份证明。"},
-   {"loc": "rental-income item [search-result excerpt]", "text": "境外个人在境内的房产只可以自住，不可以出租，因此，租赁收入作为不合规收入不能汇出境外。"}
+   {
+    "loc": "外汇业务知识问答（一百二十七） [search-result excerpt]",
+    "text": "根据《资本项目外汇业务操作指引（2017版）》第6.26条的规定，申请人可提交以下材料直接通过银行办理售房资金的汇出手续，无需到外汇局备案：1、身份证明文件；2、商品房转让合同及登记证明文件；3、《服务贸易等项目对外支付税务备案表》（金额在5万美元及以下的无需提交）或其他完税证明材料；4、如委托其他人办理，应提供经公证的授权委托书及受托人的有效身份证明。"
+   },
+   {
+    "loc": "rental-income item [search-result excerpt]",
+    "text": "境外个人在境内的房产只可以自住，不可以出租，因此，租赁收入作为不合规收入不能汇出境外。"
+   }
+  ]
+ },
+ {
+  "id": "FEE-11",
+  "title": "Wise — Send money to the USA from China (public quote, sourceAmount=133525)",
+  "doc_no": "quote displayed 2026-11-10",
+  "issuer": "Wise",
+  "kind": "provider-primary",
+  "url": "https://wise.com/us/send-money/send-money-to-the-usa-from-china?sourceAmount=133525",
+  "retrieved_utc": "2026-11-10",
+  "retrieval": "page read in this session; quotes are live and change, the recipient amount was not rendered in the retrieved text",
+  "quotes": [
+   {
+    "loc": "calculator",
+    "text": "1 CNY = 0.1499 USD … Total fees Included in CNY amount 846.53 CNY"
+   },
+   {
+    "loc": "Cheapest way",
+    "text": "Sending 133,525 CNY | Transfer cost | Bank transfer | 846.53 CNY"
+   }
+  ]
+ },
+ {
+  "id": "FEE-12",
+  "title": "Wise — Send money to the USA from China (public quote, sourceAmount=200288)",
+  "doc_no": "quote displayed 2026-11-10",
+  "issuer": "Wise",
+  "kind": "provider-primary",
+  "url": "https://wise.com/us/send-money/send-money-to-the-usa-from-china?sourceAmount=200288",
+  "retrieved_utc": "2026-11-10",
+  "retrieval": "page read in this session; quotes are live and change, the recipient amount was not rendered in the retrieved text",
+  "quotes": [
+   {
+    "loc": "calculator",
+    "text": "1 CNY = 0.1499 USD … Total fees Included in CNY amount 1,225.85 CNY 32.26 CNY volume discount"
+   },
+   {
+    "loc": "Cheapest way",
+    "text": "Sending 200,288 CNY | Transfer cost | Bank transfer | 1,225.85 CNY"
+   }
+  ]
+ },
+ {
+  "id": "FEE-13",
+  "title": "Wise — Send money to the USA from China (public quote, sourceAmount=267050)",
+  "doc_no": "quote displayed 2026-11-10",
+  "issuer": "Wise",
+  "kind": "provider-primary",
+  "url": "https://wise.com/us/send-money/send-money-to-the-usa-from-china?sourceAmount=267050",
+  "retrieved_utc": "2026-11-10",
+  "retrieval": "page read in this session; quotes are live and change, the recipient amount was not rendered in the retrieved text",
+  "quotes": [
+   {
+    "loc": "calculator",
+    "text": "1 CNY = 0.1499 USD … Total fees Included in CNY amount 1,571.21 CNY 98.68 CNY volume discount"
+   },
+   {
+    "loc": "Cheapest way",
+    "text": "Sending 267,050 CNY | Transfer cost | Bank transfer | 1,571.21 CNY"
+   }
   ]
  }
 ]
