@@ -1,0 +1,558 @@
+{
+ "as_of": "2026-11-10",
+ "china": [
+  {
+   "item": "Converting or remitting, as such",
+   "rule": "No tax found",
+   "detail": "The law taxes nine categories of income. Conversion and remittance are not among them. This is an absence finding.",
+   "sources": [
+    "N17"
+   ],
+   "flags": [
+    "F19"
+   ]
+  },
+  {
+   "item": "Tax vouchers demanded by the bank",
+   "rule": "Not a tax",
+   "detail": "They prove that tax on the income behind the money was paid. If it was not, the tax office collects it and applies the tax-law penalties.",
+   "sources": [
+    "N01",
+    "N14"
+   ],
+   "flags": []
+  },
+  {
+   "item": "Wages and other comprehensive income",
+   "rule": "3% to 45%, progressive",
+   "detail": "Non-residents: computed monthly after deducting CNY 5,000 a month. Brackets are not reproduced here.",
+   "sources": [
+    "N17"
+   ],
+   "flags": [
+    "F16"
+   ]
+  },
+  {
+   "item": "Business income",
+   "rule": "5% to 35%, progressive",
+   "detail": "After costs, expenses and losses.",
+   "sources": [
+    "N17"
+   ],
+   "flags": [
+    "F16"
+   ]
+  },
+  {
+   "item": "Interest, dividends, bonuses",
+   "rule": "20%",
+   "detail": "On the full amount of each payment.",
+   "sources": [
+    "N17"
+   ],
+   "flags": [
+    "F17"
+   ]
+  },
+  {
+   "item": "Rent",
+   "rule": "20%",
+   "detail": "After deducting CNY 800 from a payment up to CNY 4,000, or 20% from a larger one.",
+   "sources": [
+    "N17"
+   ],
+   "flags": []
+  },
+  {
+   "item": "Gain on transfer of assets, such as a home sale",
+   "rule": "20%",
+   "detail": "On the price less the original value and reasonable expenses.",
+   "sources": [
+    "N17"
+   ],
+   "flags": []
+  },
+  {
+   "item": "Incidental income",
+   "rule": "20%",
+   "detail": "On the full amount.",
+   "sources": [
+    "N17"
+   ],
+   "flags": []
+  },
+  {
+   "item": "Resident or non-resident",
+   "rule": "183 days",
+   "detail": "Domiciled in China, or present 183 days or more in a tax year: taxed on worldwide income. Otherwise taxed on China-source income.",
+   "sources": [
+    "N17"
+   ],
+   "flags": []
+  },
+  {
+   "item": "Tax filing for one outward payment above USD 50,000",
+   "rule": "Not a tax",
+   "detail": "Required for listed items, including a foreign individual's China work pay, dividends, interest and property-transfer income.",
+   "sources": [
+    "N14"
+   ],
+   "flags": [
+    "F14"
+   ]
+  },
+  {
+   "item": "Tax certificate for a property transfer abroad",
+   "rule": "Not needed at CNY 150,000 or less",
+   "detail": "An existing tax-payment voucher can be handed in instead of a new certificate.",
+   "sources": [
+    "N15"
+   ],
+   "flags": [
+    "F15"
+   ]
+  },
+  {
+   "item": "Inheritance or gift tax",
+   "rule": null,
+   "detail": null,
+   "sources": [
+    "N17"
+   ],
+   "flags": [
+    "F18"
+   ]
+  }
+ ],
+ "us": [
+  {
+   "item": "Moving your own money from your China account to your US account",
+   "rule": "No tax found on the transfer",
+   "detail": "The opened sources tax income and currency gain. None names a transfer between your own accounts as taxable. This is an absence finding.",
+   "sources": [
+    "N20",
+    "N13"
+   ],
+   "flags": [
+    "F19"
+   ]
+  },
+  {
+   "item": "Income the money earned (wages, interest, rent, gains)",
+   "rule": "Taxed as worldwide income",
+   "detail": "A US citizen's worldwide income is generally subject to US income tax wherever they live.",
+   "sources": [
+    "N22"
+   ],
+   "flags": [
+    "F23"
+   ]
+  },
+  {
+   "item": "China income tax already paid on that income",
+   "rule": "Foreign tax credit",
+   "detail": "Claimed on Form 1116 against US tax on the same foreign income.",
+   "sources": [
+    "N22"
+   ],
+   "flags": [
+    "F23"
+   ]
+  },
+  {
+   "item": "Translating RMB income into dollars",
+   "rule": "Rate when received",
+   "detail": "Use the exchange rate prevailing when the item is received, paid or accrued.",
+   "sources": [
+    "N20"
+   ],
+   "flags": []
+  },
+  {
+   "item": "Currency gain when RMB is turned into dollars",
+   "rule": "Recognised only above USD 200 for a personal transaction",
+   "detail": "Disposing of a foreign-currency deposit is a section 988 transaction. For an individual's personal transaction, exchange gain is not recognised unless it exceeds USD 200.",
+   "sources": [
+    "N13"
+   ],
+   "flags": [
+    "F20"
+   ]
+  },
+  {
+   "item": "FBAR, FinCEN Form 114",
+   "rule": "Above USD 10,000 in aggregate at any time in the year",
+   "detail": "Due April 15 with automatic extension to October 15. Filed with FinCEN, not with the tax return. No tax is due with it.",
+   "sources": [
+    "N11"
+   ],
+   "flags": [
+    "F21"
+   ]
+  },
+  {
+   "item": "Form 8938, living in the US",
+   "rule": "Above USD 50,000 at year end or USD 75,000 at any time",
+   "detail": "Married filing jointly: USD 100,000 or USD 150,000. Attached to the tax return.",
+   "sources": [
+    "N12"
+   ],
+   "flags": [
+    "F21"
+   ]
+  },
+  {
+   "item": "Form 8938, living abroad",
+   "rule": "Above USD 200,000 at year end or USD 300,000 at any time",
+   "detail": "Married filing jointly: USD 400,000 or USD 600,000.",
+   "sources": [
+    "N12"
+   ],
+   "flags": [
+    "F21"
+   ]
+  },
+  {
+   "item": "Gift or bequest from a foreign person, Form 3520",
+   "rule": "Above USD 100,000 in the year",
+   "detail": "From a nonresident alien or foreign estate, counting related givers together. Each gift above USD 5,000 is then listed. The recipient treats it as excluded from income.",
+   "sources": [
+    "N03"
+   ],
+   "flags": [
+    "F21"
+   ]
+  },
+  {
+   "item": "Purported gift from a foreign corporation or partnership",
+   "rule": "Above USD 20,573 for 2026",
+   "detail": "USD 20,116 for 2025. The IRS may recharacterise such gifts.",
+   "sources": [
+    "N03"
+   ],
+   "flags": []
+  },
+  {
+   "item": "Cash carried into the US",
+   "rule": "Report above USD 10,000",
+   "detail": "FinCEN Form 105. The threshold applies to a family or group together. A bank wire is not a monetary instrument for this report.",
+   "sources": [
+    "N24"
+   ],
+   "flags": []
+  },
+  {
+   "item": "1% remittance transfer tax",
+   "rule": "Does not apply to money coming in",
+   "detail": "It applies to remittances sent from the United States and paid for with cash, a money order or a cashier's check.",
+   "sources": [
+    "N25"
+   ],
+   "flags": []
+  },
+  {
+   "item": "State income tax; US–China tax treaty",
+   "rule": null,
+   "detail": null,
+   "sources": [
+    "N22"
+   ],
+   "flags": [
+    "F22"
+   ]
+  }
+ ],
+ "conversion_penalty": [
+  {
+   "part": "FX margin",
+   "size": "0.2099%",
+   "note": "Half of Bank of China's own buy–sell gap. The largest part at every amount.",
+   "sources": [
+    "N02"
+   ],
+   "flags": [
+    "F04"
+   ]
+  },
+  {
+   "part": "Wire commission",
+   "size": "0.1% of the amount, at least CNY 50, at most CNY 260",
+   "note": "Reaches its ceiling near USD 39,000.",
+   "sources": [
+    "N04"
+   ],
+   "flags": [
+    "F03"
+   ]
+  },
+  {
+   "part": "Cable fee",
+   "size": "CNY 150 per wire",
+   "note": "Fixed. Splitting one sum into many wires multiplies it.",
+   "sources": [
+    "N04"
+   ],
+   "flags": [
+    "F03"
+   ]
+  },
+  {
+   "part": "Intermediary bank deductions",
+   "size": null,
+   "note": null,
+   "sources": [
+    "N26"
+   ],
+   "flags": [
+    "F05"
+   ]
+  },
+  {
+   "part": "US receiving-bank fee",
+   "size": "USD 15 per wire at Chase (example)",
+   "note": "Excerpt level, so kept out of the headline cost.",
+   "sources": [
+    "N26"
+   ],
+   "flags": [
+    "F06"
+   ]
+  },
+  {
+   "part": "Tax on converting or remitting",
+   "size": "None found",
+   "note": "Neither the China law nor the US sources opened tax the conversion itself.",
+   "sources": [
+    "N17",
+    "N13"
+   ],
+   "flags": [
+    "F19"
+   ]
+  },
+  {
+   "part": "China tax on the income behind the money, if not yet paid",
+   "size": "20% on gains, interest, dividends, rent; 3–45% on pay",
+   "note": "This is what the bank's request for tax vouchers brings to light. It is tax on the income, not on the conversion.",
+   "sources": [
+    "N17",
+    "N14"
+   ],
+   "flags": [
+    "F16"
+   ]
+  },
+  {
+   "part": "US tax on currency gain",
+   "size": "Only if the gain on a personal transaction exceeds USD 200",
+   "note": "Arises only if the RMB rose against the dollar while you held it.",
+   "sources": [
+    "N13"
+   ],
+   "flags": [
+    "F20"
+   ]
+  },
+  {
+   "part": "SAFE approval fee, emigrant or inheritance transfer",
+   "size": "None",
+   "note": "The service guides state the approval is free.",
+   "sources": [
+    "N05",
+    "N06"
+   ],
+   "flags": []
+  },
+  {
+   "part": "Documents, translations, notarisation, authentication, travel",
+   "size": null,
+   "note": null,
+   "sources": [
+    "N05"
+   ],
+   "flags": [
+    "F32"
+   ]
+  }
+ ],
+ "routes": [
+  {
+   "situation": "US passport holder; the RMB is salary or other income earned in China, tax paid",
+   "method": "M01",
+   "cap": "No yearly cap in the text",
+   "key_paper": "Proof of source with amounts, and China tax vouchers",
+   "sources": [
+    "N01",
+    "N18"
+   ]
+  },
+  {
+   "situation": "US passport holder; the RMB is what you got for selling your China home",
+   "method": "M02",
+   "cap": "Sale price less the taxes of the sale",
+   "key_paper": "Registered transfer contract and tax certificate",
+   "sources": [
+    "N08"
+   ]
+  },
+  {
+   "situation": "Former Chinese national, now a US citizen; assets owned in China before that",
+   "method": "M03",
+   "cap": "Amount approved by SAFE",
+   "key_paper": "Hukou cancellation, settlement-abroad proof, tax certificate",
+   "sources": [
+    "N05",
+    "N23"
+   ]
+  },
+  {
+   "situation": "You inherited from someone whose household registration was in China",
+   "method": "M04",
+   "cap": "Amount approved by SAFE",
+   "key_paper": "Proof of inheritance and the deceased's title documents",
+   "sources": [
+    "N06",
+    "N23"
+   ]
+  },
+  {
+   "situation": "You hold a PRC ID or a Chinese Foreign Permanent Resident ID Card",
+   "method": "M05",
+   "cap": "USD 50,000 per calendar year",
+   "key_paper": "Your own ID",
+   "sources": [
+    "N01",
+    "N18"
+   ]
+  },
+  {
+   "situation": "You brought foreign currency in less than 24 months ago and did not use it all",
+   "method": "M06",
+   "cap": "The unused part of that exchange",
+   "key_paper": "Original exchange memo",
+   "sources": [
+    "N01"
+   ]
+  },
+  {
+   "situation": "The RMB has no documents or no tax record",
+   "method": null,
+   "cap": null,
+   "key_paper": "Declare and pay any unpaid tax first; then one of the routes above may open",
+   "sources": [
+    "N15",
+    "N14"
+   ]
+  }
+ ],
+ "summary": [
+  {
+   "finding": "The premise does not match the rules read.",
+   "detail": "No China or US source opened taxes the act of converting RMB or wiring it out. What banks ask for is proof that tax on the income behind the money was paid.",
+   "sources": [
+    "N17",
+    "N01",
+    "N14"
+   ],
+   "flags": [
+    "F19"
+   ]
+  },
+  {
+   "finding": "The gate is documents, not tax.",
+   "detail": "A US passport holder is a 境外个人. The USD 50,000 on-ID purchase quota is for 境内个人 and for holders of a Chinese Foreign Permanent Resident ID Card.",
+   "sources": [
+    "N18",
+    "N01"
+   ],
+   "flags": [
+    "F11"
+   ]
+  },
+  {
+   "finding": "Documented China income has no yearly cap in the text.",
+   "detail": "A foreign individual buys foreign currency against lawful current-account RMB income earned in China with ID and source material that includes tax vouchers.",
+   "sources": [
+    "N01",
+    "N18"
+   ],
+   "flags": [
+    "F14"
+   ]
+  },
+  {
+   "finding": "Capital has its own routes.",
+   "detail": "Home-sale proceeds go through the bank up to the price less taxes. Assets held before emigration, and inherited estates, need a free SAFE approval that takes up to 20 working days.",
+   "sources": [
+    "N08",
+    "N05",
+    "N06",
+    "N23"
+   ],
+   "flags": [
+    "F12",
+    "F13"
+   ]
+  },
+  {
+   "finding": "The measured cost of one documented wire is small.",
+   "detail": "At Bank of China: $53.43 on USD 10,000 (0.534%), $271.19 on USD 100,000 (0.271%), $900.77 on USD 400,000 (0.225%). The FX margin of 0.2099% is the main part.",
+   "sources": [
+    "N02",
+    "N04"
+   ],
+   "flags": [
+    "F04",
+    "F05"
+   ]
+  },
+  {
+   "finding": "One wire beats many.",
+   "detail": "USD 400,000 sent as eight wires of USD 50,000 costs $1,330.08 in bank charges and margin against $900.77 as a single wire, because each wire pays its own commission and cable fee.",
+   "sources": [
+    "N04",
+    "N01"
+   ],
+   "flags": []
+  },
+  {
+   "finding": "US tax follows income, not the transfer.",
+   "detail": "Worldwide income is taxable when earned, with credit for China tax. A currency gain on a personal transaction counts only above USD 200. The 1% remittance tax applies to money leaving the US, not arriving.",
+   "sources": [
+    "N22",
+    "N13",
+    "N25"
+   ],
+   "flags": [
+    "F23",
+    "F20"
+   ]
+  },
+  {
+   "finding": "US paperwork carries the real exposure.",
+   "detail": "FBAR above USD 10,000, Form 8938 above its thresholds, Form 3520 for foreign gifts or bequests above USD 100,000, FinCEN 105 for cash above USD 10,000.",
+   "sources": [
+    "N11",
+    "N12",
+    "N03",
+    "N24"
+   ],
+   "flags": [
+    "F21"
+   ]
+  },
+  {
+   "finding": "Shortcuts cost far more than the lawful fee.",
+   "detail": "Underground banks, false documents and sham transactions carry fines of up to 30% of the amount, up to the whole amount in serious cases, and criminal liability. Splitting and quota borrowing put you on a watch list for three years.",
+   "sources": [
+    "N09",
+    "N01",
+    "N19"
+   ],
+   "flags": [
+    "F25"
+   ]
+  }
+ ]
+}

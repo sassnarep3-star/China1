@@ -1,0 +1,761 @@
+method,usd,units,unit,fee_cny,fee_usd,fx_usd,cost_usd,pct,fine_usd,fine_serious_usd,sources,source_urls,flags
+M01,10000,1,wire,216.85,32.44,20.99,53.43,0.534,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,20000,1,wire,283.70,42.44,41.97,84.41,0.422,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,30000,1,wire,350.55,52.44,62.96,115.40,0.385,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,40000,1,wire,410.00,61.33,83.94,145.27,0.363,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,50000,1,wire,410.00,61.33,104.93,166.26,0.333,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,60000,1,wire,410.00,61.33,125.92,187.25,0.312,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,70000,1,wire,410.00,61.33,146.90,208.23,0.297,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,80000,1,wire,410.00,61.33,167.89,229.22,0.287,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,90000,1,wire,410.00,61.33,188.87,250.20,0.278,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,100000,1,wire,410.00,61.33,209.86,271.19,0.271,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,110000,1,wire,410.00,61.33,230.85,292.18,0.266,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,120000,1,wire,410.00,61.33,251.83,313.16,0.261,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,130000,1,wire,410.00,61.33,272.82,334.15,0.257,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,140000,1,wire,410.00,61.33,293.80,355.13,0.254,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,150000,1,wire,410.00,61.33,314.79,376.12,0.251,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,160000,1,wire,410.00,61.33,335.78,397.11,0.248,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,170000,1,wire,410.00,61.33,356.76,418.09,0.246,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,180000,1,wire,410.00,61.33,377.75,439.08,0.244,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,190000,1,wire,410.00,61.33,398.73,460.06,0.242,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,200000,1,wire,410.00,61.33,419.72,481.05,0.241,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,210000,1,wire,410.00,61.33,440.71,502.04,0.239,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,220000,1,wire,410.00,61.33,461.69,523.02,0.238,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,230000,1,wire,410.00,61.33,482.68,544.01,0.237,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,240000,1,wire,410.00,61.33,503.67,565.00,0.235,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,250000,1,wire,410.00,61.33,524.65,585.98,0.234,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,260000,1,wire,410.00,61.33,545.64,606.97,0.233,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,270000,1,wire,410.00,61.33,566.62,627.95,0.233,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,280000,1,wire,410.00,61.33,587.61,648.94,0.232,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,290000,1,wire,410.00,61.33,608.60,669.93,0.231,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,300000,1,wire,410.00,61.33,629.58,690.91,0.230,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,310000,1,wire,410.00,61.33,650.57,711.90,0.230,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,320000,1,wire,410.00,61.33,671.55,732.88,0.229,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,330000,1,wire,410.00,61.33,692.54,753.87,0.228,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,340000,1,wire,410.00,61.33,713.53,774.86,0.228,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,350000,1,wire,410.00,61.33,734.51,795.84,0.227,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,360000,1,wire,410.00,61.33,755.50,816.83,0.227,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,370000,1,wire,410.00,61.33,776.48,837.81,0.226,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,380000,1,wire,410.00,61.33,797.47,858.80,0.226,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,390000,1,wire,410.00,61.33,818.46,879.79,0.226,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M01,400000,1,wire,410.00,61.33,839.44,900.77,0.225,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,10000,1,wire,216.85,32.44,20.99,53.43,0.534,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,20000,1,wire,283.70,42.44,41.97,84.41,0.422,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,30000,1,wire,350.55,52.44,62.96,115.40,0.385,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,40000,1,wire,410.00,61.33,83.94,145.27,0.363,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,50000,1,wire,410.00,61.33,104.93,166.26,0.333,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,60000,1,wire,410.00,61.33,125.92,187.25,0.312,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,70000,1,wire,410.00,61.33,146.90,208.23,0.297,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,80000,1,wire,410.00,61.33,167.89,229.22,0.287,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,90000,1,wire,410.00,61.33,188.87,250.20,0.278,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,100000,1,wire,410.00,61.33,209.86,271.19,0.271,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,110000,1,wire,410.00,61.33,230.85,292.18,0.266,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,120000,1,wire,410.00,61.33,251.83,313.16,0.261,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,130000,1,wire,410.00,61.33,272.82,334.15,0.257,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,140000,1,wire,410.00,61.33,293.80,355.13,0.254,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,150000,1,wire,410.00,61.33,314.79,376.12,0.251,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,160000,1,wire,410.00,61.33,335.78,397.11,0.248,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,170000,1,wire,410.00,61.33,356.76,418.09,0.246,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,180000,1,wire,410.00,61.33,377.75,439.08,0.244,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,190000,1,wire,410.00,61.33,398.73,460.06,0.242,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,200000,1,wire,410.00,61.33,419.72,481.05,0.241,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,210000,1,wire,410.00,61.33,440.71,502.04,0.239,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,220000,1,wire,410.00,61.33,461.69,523.02,0.238,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,230000,1,wire,410.00,61.33,482.68,544.01,0.237,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,240000,1,wire,410.00,61.33,503.67,565.00,0.235,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,250000,1,wire,410.00,61.33,524.65,585.98,0.234,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,260000,1,wire,410.00,61.33,545.64,606.97,0.233,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,270000,1,wire,410.00,61.33,566.62,627.95,0.233,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,280000,1,wire,410.00,61.33,587.61,648.94,0.232,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,290000,1,wire,410.00,61.33,608.60,669.93,0.231,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,300000,1,wire,410.00,61.33,629.58,690.91,0.230,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,310000,1,wire,410.00,61.33,650.57,711.90,0.230,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,320000,1,wire,410.00,61.33,671.55,732.88,0.229,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,330000,1,wire,410.00,61.33,692.54,753.87,0.228,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,340000,1,wire,410.00,61.33,713.53,774.86,0.228,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,350000,1,wire,410.00,61.33,734.51,795.84,0.227,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,360000,1,wire,410.00,61.33,755.50,816.83,0.227,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,370000,1,wire,410.00,61.33,776.48,837.81,0.226,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,380000,1,wire,410.00,61.33,797.47,858.80,0.226,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,390000,1,wire,410.00,61.33,818.46,879.79,0.226,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M02,400000,1,wire,410.00,61.33,839.44,900.77,0.225,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,10000,1,wire,216.85,32.44,20.99,53.43,0.534,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,20000,1,wire,283.70,42.44,41.97,84.41,0.422,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,30000,1,wire,350.55,52.44,62.96,115.40,0.385,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,40000,1,wire,410.00,61.33,83.94,145.27,0.363,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,50000,1,wire,410.00,61.33,104.93,166.26,0.333,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,60000,1,wire,410.00,61.33,125.92,187.25,0.312,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,70000,1,wire,410.00,61.33,146.90,208.23,0.297,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,80000,1,wire,410.00,61.33,167.89,229.22,0.287,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,90000,1,wire,410.00,61.33,188.87,250.20,0.278,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,100000,1,wire,410.00,61.33,209.86,271.19,0.271,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,110000,1,wire,410.00,61.33,230.85,292.18,0.266,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,120000,1,wire,410.00,61.33,251.83,313.16,0.261,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,130000,1,wire,410.00,61.33,272.82,334.15,0.257,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,140000,1,wire,410.00,61.33,293.80,355.13,0.254,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,150000,1,wire,410.00,61.33,314.79,376.12,0.251,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,160000,1,wire,410.00,61.33,335.78,397.11,0.248,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,170000,1,wire,410.00,61.33,356.76,418.09,0.246,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,180000,1,wire,410.00,61.33,377.75,439.08,0.244,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,190000,1,wire,410.00,61.33,398.73,460.06,0.242,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,200000,1,wire,410.00,61.33,419.72,481.05,0.241,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,210000,1,wire,410.00,61.33,440.71,502.04,0.239,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,220000,1,wire,410.00,61.33,461.69,523.02,0.238,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,230000,1,wire,410.00,61.33,482.68,544.01,0.237,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,240000,1,wire,410.00,61.33,503.67,565.00,0.235,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,250000,1,wire,410.00,61.33,524.65,585.98,0.234,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,260000,1,wire,410.00,61.33,545.64,606.97,0.233,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,270000,1,wire,410.00,61.33,566.62,627.95,0.233,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,280000,1,wire,410.00,61.33,587.61,648.94,0.232,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,290000,1,wire,410.00,61.33,608.60,669.93,0.231,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,300000,1,wire,410.00,61.33,629.58,690.91,0.230,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,310000,1,wire,410.00,61.33,650.57,711.90,0.230,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,320000,1,wire,410.00,61.33,671.55,732.88,0.229,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,330000,1,wire,410.00,61.33,692.54,753.87,0.228,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,340000,1,wire,410.00,61.33,713.53,774.86,0.228,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,350000,1,wire,410.00,61.33,734.51,795.84,0.227,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,360000,1,wire,410.00,61.33,755.50,816.83,0.227,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,370000,1,wire,410.00,61.33,776.48,837.81,0.226,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,380000,1,wire,410.00,61.33,797.47,858.80,0.226,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,390000,1,wire,410.00,61.33,818.46,879.79,0.226,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M03,400000,1,wire,410.00,61.33,839.44,900.77,0.225,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,10000,1,wire,216.85,32.44,20.99,53.43,0.534,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,20000,1,wire,283.70,42.44,41.97,84.41,0.422,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,30000,1,wire,350.55,52.44,62.96,115.40,0.385,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,40000,1,wire,410.00,61.33,83.94,145.27,0.363,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,50000,1,wire,410.00,61.33,104.93,166.26,0.333,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,60000,1,wire,410.00,61.33,125.92,187.25,0.312,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,70000,1,wire,410.00,61.33,146.90,208.23,0.297,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,80000,1,wire,410.00,61.33,167.89,229.22,0.287,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,90000,1,wire,410.00,61.33,188.87,250.20,0.278,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,100000,1,wire,410.00,61.33,209.86,271.19,0.271,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,110000,1,wire,410.00,61.33,230.85,292.18,0.266,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,120000,1,wire,410.00,61.33,251.83,313.16,0.261,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,130000,1,wire,410.00,61.33,272.82,334.15,0.257,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,140000,1,wire,410.00,61.33,293.80,355.13,0.254,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,150000,1,wire,410.00,61.33,314.79,376.12,0.251,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,160000,1,wire,410.00,61.33,335.78,397.11,0.248,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,170000,1,wire,410.00,61.33,356.76,418.09,0.246,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,180000,1,wire,410.00,61.33,377.75,439.08,0.244,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,190000,1,wire,410.00,61.33,398.73,460.06,0.242,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,200000,1,wire,410.00,61.33,419.72,481.05,0.241,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,210000,1,wire,410.00,61.33,440.71,502.04,0.239,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,220000,1,wire,410.00,61.33,461.69,523.02,0.238,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,230000,1,wire,410.00,61.33,482.68,544.01,0.237,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,240000,1,wire,410.00,61.33,503.67,565.00,0.235,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,250000,1,wire,410.00,61.33,524.65,585.98,0.234,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,260000,1,wire,410.00,61.33,545.64,606.97,0.233,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,270000,1,wire,410.00,61.33,566.62,627.95,0.233,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,280000,1,wire,410.00,61.33,587.61,648.94,0.232,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,290000,1,wire,410.00,61.33,608.60,669.93,0.231,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,300000,1,wire,410.00,61.33,629.58,690.91,0.230,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,310000,1,wire,410.00,61.33,650.57,711.90,0.230,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,320000,1,wire,410.00,61.33,671.55,732.88,0.229,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,330000,1,wire,410.00,61.33,692.54,753.87,0.228,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,340000,1,wire,410.00,61.33,713.53,774.86,0.228,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,350000,1,wire,410.00,61.33,734.51,795.84,0.227,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,360000,1,wire,410.00,61.33,755.50,816.83,0.227,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,370000,1,wire,410.00,61.33,776.48,837.81,0.226,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,380000,1,wire,410.00,61.33,797.47,858.80,0.226,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,390000,1,wire,410.00,61.33,818.46,879.79,0.226,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M04,400000,1,wire,410.00,61.33,839.44,900.77,0.225,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,10000,1,"calendar years, one wire each",216.85,32.44,20.99,53.43,0.534,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,20000,1,"calendar years, one wire each",283.70,42.44,41.97,84.41,0.422,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,30000,1,"calendar years, one wire each",350.55,52.44,62.96,115.40,0.385,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,40000,1,"calendar years, one wire each",410.00,61.33,83.94,145.27,0.363,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,50000,1,"calendar years, one wire each",410.00,61.33,104.93,166.26,0.333,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,60000,2,"calendar years, one wire each",626.85,93.77,125.92,219.69,0.366,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,70000,2,"calendar years, one wire each",693.70,103.77,146.90,250.67,0.358,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,80000,2,"calendar years, one wire each",760.55,113.77,167.89,281.66,0.352,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,90000,2,"calendar years, one wire each",820.00,122.66,188.87,311.53,0.346,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,100000,2,"calendar years, one wire each",820.00,122.66,209.86,332.52,0.333,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,110000,3,"calendar years, one wire each",1036.85,155.10,230.85,385.95,0.351,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,120000,3,"calendar years, one wire each",1103.70,165.10,251.83,416.93,0.347,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,130000,3,"calendar years, one wire each",1170.55,175.10,272.82,447.92,0.345,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,140000,3,"calendar years, one wire each",1230.00,183.99,293.80,477.79,0.341,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,150000,3,"calendar years, one wire each",1230.00,183.99,314.79,498.78,0.333,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,160000,4,"calendar years, one wire each",1446.85,216.43,335.78,552.21,0.345,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,170000,4,"calendar years, one wire each",1513.70,226.43,356.76,583.19,0.343,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,180000,4,"calendar years, one wire each",1580.55,236.43,377.75,614.18,0.341,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,190000,4,"calendar years, one wire each",1640.00,245.32,398.73,644.05,0.339,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,200000,4,"calendar years, one wire each",1640.00,245.32,419.72,665.04,0.333,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,210000,5,"calendar years, one wire each",1856.85,277.76,440.71,718.47,0.342,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,220000,5,"calendar years, one wire each",1923.70,287.76,461.69,749.45,0.341,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,230000,5,"calendar years, one wire each",1990.55,297.76,482.68,780.44,0.339,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,240000,5,"calendar years, one wire each",2050.00,306.65,503.66,810.31,0.338,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,250000,5,"calendar years, one wire each",2050.00,306.65,524.65,831.30,0.333,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,260000,6,"calendar years, one wire each",2266.85,339.09,545.64,884.73,0.340,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,270000,6,"calendar years, one wire each",2333.70,349.09,566.62,915.71,0.339,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,280000,6,"calendar years, one wire each",2400.55,359.09,587.61,946.70,0.338,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,290000,6,"calendar years, one wire each",2460.00,367.98,608.59,976.57,0.337,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,300000,6,"calendar years, one wire each",2460.00,367.98,629.58,997.56,0.333,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,310000,7,"calendar years, one wire each",2676.85,400.42,650.57,1050.99,0.339,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,320000,7,"calendar years, one wire each",2743.70,410.42,671.55,1081.97,0.338,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,330000,7,"calendar years, one wire each",2810.55,420.42,692.54,1112.96,0.337,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,340000,7,"calendar years, one wire each",2870.00,429.31,713.52,1142.83,0.336,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,350000,7,"calendar years, one wire each",2870.00,429.31,734.51,1163.82,0.333,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,360000,8,"calendar years, one wire each",3086.85,461.75,755.50,1217.25,0.338,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,370000,8,"calendar years, one wire each",3153.70,471.75,776.48,1248.23,0.337,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,380000,8,"calendar years, one wire each",3220.55,481.75,797.47,1279.22,0.337,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,390000,8,"calendar years, one wire each",3280.00,490.64,818.45,1309.09,0.336,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M05,400000,8,"calendar years, one wire each",3280.00,490.64,839.44,1330.08,0.333,,,N01 N02 N04,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,10000,1,wire,216.85,32.44,20.99,53.43,0.534,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,20000,1,wire,283.70,42.44,41.97,84.41,0.422,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,30000,1,wire,350.55,52.44,62.96,115.40,0.385,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,40000,1,wire,410.00,61.33,83.94,145.27,0.363,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,50000,1,wire,410.00,61.33,104.93,166.26,0.333,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,60000,1,wire,410.00,61.33,125.92,187.25,0.312,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,70000,1,wire,410.00,61.33,146.90,208.23,0.297,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,80000,1,wire,410.00,61.33,167.89,229.22,0.287,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,90000,1,wire,410.00,61.33,188.87,250.20,0.278,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,100000,1,wire,410.00,61.33,209.86,271.19,0.271,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,110000,1,wire,410.00,61.33,230.85,292.18,0.266,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,120000,1,wire,410.00,61.33,251.83,313.16,0.261,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,130000,1,wire,410.00,61.33,272.82,334.15,0.257,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,140000,1,wire,410.00,61.33,293.80,355.13,0.254,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,150000,1,wire,410.00,61.33,314.79,376.12,0.251,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,160000,1,wire,410.00,61.33,335.78,397.11,0.248,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,170000,1,wire,410.00,61.33,356.76,418.09,0.246,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,180000,1,wire,410.00,61.33,377.75,439.08,0.244,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,190000,1,wire,410.00,61.33,398.73,460.06,0.242,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,200000,1,wire,410.00,61.33,419.72,481.05,0.241,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,210000,1,wire,410.00,61.33,440.71,502.04,0.239,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,220000,1,wire,410.00,61.33,461.69,523.02,0.238,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,230000,1,wire,410.00,61.33,482.68,544.01,0.237,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,240000,1,wire,410.00,61.33,503.67,565.00,0.235,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,250000,1,wire,410.00,61.33,524.65,585.98,0.234,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,260000,1,wire,410.00,61.33,545.64,606.97,0.233,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,270000,1,wire,410.00,61.33,566.62,627.95,0.233,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,280000,1,wire,410.00,61.33,587.61,648.94,0.232,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,290000,1,wire,410.00,61.33,608.60,669.93,0.231,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,300000,1,wire,410.00,61.33,629.58,690.91,0.230,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,310000,1,wire,410.00,61.33,650.57,711.90,0.230,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,320000,1,wire,410.00,61.33,671.55,732.88,0.229,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,330000,1,wire,410.00,61.33,692.54,753.87,0.228,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,340000,1,wire,410.00,61.33,713.53,774.86,0.228,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,350000,1,wire,410.00,61.33,734.51,795.84,0.227,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,360000,1,wire,410.00,61.33,755.50,816.83,0.227,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,370000,1,wire,410.00,61.33,776.48,837.81,0.226,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,380000,1,wire,410.00,61.33,797.47,858.80,0.226,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,390000,1,wire,410.00,61.33,818.46,879.79,0.226,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M06,400000,1,wire,410.00,61.33,839.44,900.77,0.225,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,10000,1,wire,216.85,32.44,20.99,53.43,0.534,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,20000,1,wire,283.70,42.44,41.97,84.41,0.422,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,30000,1,wire,350.55,52.44,62.96,115.40,0.385,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,40000,1,wire,410.00,61.33,83.94,145.27,0.363,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,50000,1,wire,410.00,61.33,104.93,166.26,0.333,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,60000,1,wire,410.00,61.33,125.92,187.25,0.312,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,70000,1,wire,410.00,61.33,146.90,208.23,0.297,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,80000,1,wire,410.00,61.33,167.89,229.22,0.287,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,90000,1,wire,410.00,61.33,188.87,250.20,0.278,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,100000,1,wire,410.00,61.33,209.86,271.19,0.271,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,110000,1,wire,410.00,61.33,230.85,292.18,0.266,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,120000,1,wire,410.00,61.33,251.83,313.16,0.261,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,130000,1,wire,410.00,61.33,272.82,334.15,0.257,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,140000,1,wire,410.00,61.33,293.80,355.13,0.254,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,150000,1,wire,410.00,61.33,314.79,376.12,0.251,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,160000,1,wire,410.00,61.33,335.78,397.11,0.248,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,170000,1,wire,410.00,61.33,356.76,418.09,0.246,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,180000,1,wire,410.00,61.33,377.75,439.08,0.244,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,190000,1,wire,410.00,61.33,398.73,460.06,0.242,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,200000,1,wire,410.00,61.33,419.72,481.05,0.241,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,210000,1,wire,410.00,61.33,440.71,502.04,0.239,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,220000,1,wire,410.00,61.33,461.69,523.02,0.238,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,230000,1,wire,410.00,61.33,482.68,544.01,0.237,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,240000,1,wire,410.00,61.33,503.67,565.00,0.235,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,250000,1,wire,410.00,61.33,524.65,585.98,0.234,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,260000,1,wire,410.00,61.33,545.64,606.97,0.233,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,270000,1,wire,410.00,61.33,566.62,627.95,0.233,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,280000,1,wire,410.00,61.33,587.61,648.94,0.232,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,290000,1,wire,410.00,61.33,608.60,669.93,0.231,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,300000,1,wire,410.00,61.33,629.58,690.91,0.230,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,310000,1,wire,410.00,61.33,650.57,711.90,0.230,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,320000,1,wire,410.00,61.33,671.55,732.88,0.229,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,330000,1,wire,410.00,61.33,692.54,753.87,0.228,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,340000,1,wire,410.00,61.33,713.53,774.86,0.228,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,350000,1,wire,410.00,61.33,734.51,795.84,0.227,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,360000,1,wire,410.00,61.33,755.50,816.83,0.227,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,370000,1,wire,410.00,61.33,776.48,837.81,0.226,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,380000,1,wire,410.00,61.33,797.47,858.80,0.226,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,390000,1,wire,410.00,61.33,818.46,879.79,0.226,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M07,400000,1,wire,410.00,61.33,839.44,900.77,0.225,,,N02 N04,https://www.boc.cn/sourcedb/whpj/ https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html,F04 F05 F06
+M08,10000,1,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,20000,1,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,30000,1,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,40000,1,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,50000,2,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,60000,2,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,70000,2,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,80000,2,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,90000,3,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,100000,3,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,110000,3,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,120000,3,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,130000,3,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,140000,4,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,150000,4,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,160000,4,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,170000,4,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,180000,5,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,190000,5,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,200000,5,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,210000,5,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,220000,5,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,230000,6,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,240000,6,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,250000,6,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,260000,6,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,270000,7,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,280000,7,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,290000,7,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,300000,7,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,310000,7,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,320000,8,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,330000,8,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,340000,8,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,350000,8,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,360000,9,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,370000,9,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,380000,9,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,390000,9,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M08,400000,9,transfers,,,,,,,,N21 N02,https://wise.com/help/articles/2955298/guide-to-cny-transfers https://www.boc.cn/sourcedb/whpj/,F07 F34
+M09,10000,1,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,20000,2,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,30000,3,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,40000,3,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,50000,4,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,60000,5,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,70000,5,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,80000,6,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,90000,7,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,100000,7,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,110000,8,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,120000,9,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,130000,9,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,140000,10,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,150000,11,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,160000,11,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,170000,12,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,180000,13,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,190000,13,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,200000,14,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,210000,15,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,220000,15,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,230000,16,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,240000,17,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,250000,17,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,260000,18,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,270000,19,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,280000,19,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,290000,20,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,300000,21,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,310000,21,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,320000,22,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,330000,23,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,340000,23,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,350000,24,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,360000,25,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,370000,25,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,380000,26,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,390000,27,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M09,400000,27,calendar years,,,,,,,,N16 N02,http://m.safe.gov.cn/safe/2017/1230/8129.html https://www.boc.cn/sourcedb/whpj/,F08 F34
+M10,10000,1,trips with a bank permit,0,0,20.99,20.99,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,20000,2,trips with a bank permit,0,0,41.97,41.97,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,30000,3,trips with a bank permit,0,0,62.96,62.96,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,40000,4,trips with a bank permit,0,0,83.94,83.94,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,50000,5,trips with a bank permit,0,0,104.93,104.93,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,60000,6,trips with a bank permit,0,0,125.92,125.92,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,70000,7,trips with a bank permit,0,0,146.90,146.90,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,80000,8,trips with a bank permit,0,0,167.89,167.89,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,90000,9,trips with a bank permit,0,0,188.87,188.87,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,100000,10,trips with a bank permit,0,0,209.86,209.86,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,110000,11,trips with a bank permit,0,0,230.85,230.85,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,120000,12,trips with a bank permit,0,0,251.83,251.83,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,130000,13,trips with a bank permit,0,0,272.82,272.82,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,140000,14,trips with a bank permit,0,0,293.80,293.80,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,150000,15,trips with a bank permit,0,0,314.79,314.79,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,160000,16,trips with a bank permit,0,0,335.78,335.78,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,170000,17,trips with a bank permit,0,0,356.76,356.76,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,180000,18,trips with a bank permit,0,0,377.75,377.75,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,190000,19,trips with a bank permit,0,0,398.73,398.73,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,200000,20,trips with a bank permit,0,0,419.72,419.72,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,210000,21,trips with a bank permit,0,0,440.71,440.71,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,220000,22,trips with a bank permit,0,0,461.69,461.69,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,230000,23,trips with a bank permit,0,0,482.68,482.68,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,240000,24,trips with a bank permit,0,0,503.67,503.67,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,250000,25,trips with a bank permit,0,0,524.65,524.65,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,260000,26,trips with a bank permit,0,0,545.64,545.64,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,270000,27,trips with a bank permit,0,0,566.62,566.62,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,280000,28,trips with a bank permit,0,0,587.61,587.61,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,290000,29,trips with a bank permit,0,0,608.60,608.60,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,300000,30,trips with a bank permit,0,0,629.58,629.58,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,310000,31,trips with a bank permit,0,0,650.57,650.57,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,320000,32,trips with a bank permit,0,0,671.55,671.55,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,330000,33,trips with a bank permit,0,0,692.54,692.54,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,340000,34,trips with a bank permit,0,0,713.53,713.53,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,350000,35,trips with a bank permit,0,0,734.51,734.51,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,360000,36,trips with a bank permit,0,0,755.50,755.50,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,370000,37,trips with a bank permit,0,0,776.48,776.48,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,380000,38,trips with a bank permit,0,0,797.47,797.47,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,390000,39,trips with a bank permit,0,0,818.46,818.46,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M10,400000,40,trips with a bank permit,0,0,839.44,839.44,0.210,,,N01 N02 N24,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.boc.cn/sourcedb/whpj/ https://www.cbp.gov/travel/international-visitors/kbyg/money,F04 F32
+M11,10000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,20000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,30000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,40000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,50000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,60000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,70000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,80000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,90000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,100000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,110000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,120000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,130000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,140000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,150000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,160000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,170000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,180000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,190000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,200000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,210000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,220000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,230000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,240000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,250000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,260000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,270000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,280000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,290000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,300000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,310000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,320000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,330000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,340000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,350000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,360000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,370000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,380000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,390000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M11,400000,0,conversions,0,0,0,0,0.000,,,N11,https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar,
+M12,10000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,20000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,30000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,40000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,50000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,60000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,70000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,80000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,90000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,100000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,110000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,120000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,130000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,140000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,150000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,160000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,170000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,180000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,190000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,200000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,210000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,220000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,230000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,240000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,250000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,260000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,270000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,280000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,290000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,300000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,310000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,320000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,330000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,340000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,350000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,360000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,370000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,380000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,390000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M12,400000,,,,,,,,,,N16,http://m.safe.gov.cn/safe/2017/1230/8129.html,F08
+M13,10000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,20000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,30000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,40000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,50000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,60000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,70000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,80000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,90000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,100000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,110000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,120000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,130000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,140000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,150000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,160000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,170000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,180000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,190000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,200000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,210000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,220000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,230000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,240000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,250000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,260000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,270000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,280000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,290000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,300000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,310000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,320000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,330000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,340000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,350000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,360000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,370000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,380000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,390000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+M13,400000,,,,,,,,,,N18,https://www.safe.gov.cn/safe/2006/1225/5319.html,F10
+P01,10000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,20000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,30000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,40000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,50000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,60000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,70000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,80000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,90000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,100000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,110000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,120000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,130000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,140000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,150000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,160000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,170000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,180000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,190000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,200000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,210000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,220000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,230000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,240000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,250000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,260000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,270000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,280000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,290000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,300000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,310000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,320000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,330000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,340000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,350000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,360000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,370000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,380000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,390000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P01,400000,,,,,,,,,,N01 N18 N09,https://www.gov.cn/gongbao/content/2020/content_5560296.htm https://www.safe.gov.cn/safe/2006/1225/5319.html https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,F25
+P02,10000,,,,,,,,3000.00,10000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,20000,,,,,,,,6000.00,20000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,30000,,,,,,,,9000.00,30000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,40000,,,,,,,,12000.00,40000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,50000,,,,,,,,15000.00,50000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,60000,,,,,,,,18000.00,60000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,70000,,,,,,,,21000.00,70000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,80000,,,,,,,,24000.00,80000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,90000,,,,,,,,27000.00,90000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,100000,,,,,,,,30000.00,100000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,110000,,,,,,,,33000.00,110000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,120000,,,,,,,,36000.00,120000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,130000,,,,,,,,39000.00,130000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,140000,,,,,,,,42000.00,140000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,150000,,,,,,,,45000.00,150000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,160000,,,,,,,,48000.00,160000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,170000,,,,,,,,51000.00,170000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,180000,,,,,,,,54000.00,180000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,190000,,,,,,,,57000.00,190000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,200000,,,,,,,,60000.00,200000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,210000,,,,,,,,63000.00,210000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,220000,,,,,,,,66000.00,220000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,230000,,,,,,,,69000.00,230000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,240000,,,,,,,,72000.00,240000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,250000,,,,,,,,75000.00,250000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,260000,,,,,,,,78000.00,260000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,270000,,,,,,,,81000.00,270000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,280000,,,,,,,,84000.00,280000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,290000,,,,,,,,87000.00,290000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,300000,,,,,,,,90000.00,300000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,310000,,,,,,,,93000.00,310000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,320000,,,,,,,,96000.00,320000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,330000,,,,,,,,99000.00,330000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,340000,,,,,,,,102000.00,340000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,350000,,,,,,,,105000.00,350000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,360000,,,,,,,,108000.00,360000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,370000,,,,,,,,111000.00,370000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,380000,,,,,,,,114000.00,380000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,390000,,,,,,,,117000.00,390000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P02,400000,,,,,,,,120000.00,400000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,10000,,,,,,,,3000.00,10000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,20000,,,,,,,,6000.00,20000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,30000,,,,,,,,9000.00,30000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,40000,,,,,,,,12000.00,40000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,50000,,,,,,,,15000.00,50000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,60000,,,,,,,,18000.00,60000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,70000,,,,,,,,21000.00,70000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,80000,,,,,,,,24000.00,80000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,90000,,,,,,,,27000.00,90000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,100000,,,,,,,,30000.00,100000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,110000,,,,,,,,33000.00,110000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,120000,,,,,,,,36000.00,120000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,130000,,,,,,,,39000.00,130000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,140000,,,,,,,,42000.00,140000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,150000,,,,,,,,45000.00,150000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,160000,,,,,,,,48000.00,160000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,170000,,,,,,,,51000.00,170000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,180000,,,,,,,,54000.00,180000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,190000,,,,,,,,57000.00,190000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,200000,,,,,,,,60000.00,200000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,210000,,,,,,,,63000.00,210000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,220000,,,,,,,,66000.00,220000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,230000,,,,,,,,69000.00,230000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,240000,,,,,,,,72000.00,240000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,250000,,,,,,,,75000.00,250000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,260000,,,,,,,,78000.00,260000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,270000,,,,,,,,81000.00,270000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,280000,,,,,,,,84000.00,280000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,290000,,,,,,,,87000.00,290000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,300000,,,,,,,,90000.00,300000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,310000,,,,,,,,93000.00,310000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,320000,,,,,,,,96000.00,320000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,330000,,,,,,,,99000.00,330000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,340000,,,,,,,,102000.00,340000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,350000,,,,,,,,105000.00,350000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,360000,,,,,,,,108000.00,360000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,370000,,,,,,,,111000.00,370000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,380000,,,,,,,,114000.00,380000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,390000,,,,,,,,117000.00,390000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P03,400000,,,,,,,,120000.00,400000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P04,10000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,20000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,30000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,40000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,50000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,60000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,70000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,80000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,90000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,100000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,110000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,120000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,130000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,140000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,150000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,160000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,170000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,180000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,190000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,200000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,210000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,220000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,230000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,240000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,250000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,260000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,270000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,280000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,290000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,300000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,310000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,320000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,330000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,340000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,350000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,360000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,370000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,380000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,390000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P04,400000,,,,,,,,,,N19,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html,F26
+P05,10000,,,,,,,,2000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,20000,,,,,,,,4000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,30000,,,,,,,,6000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,40000,,,,,,,,8000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,50000,,,,,,,,10000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,60000,,,,,,,,12000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,70000,,,,,,,,14000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,80000,,,,,,,,16000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,90000,,,,,,,,18000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,100000,,,,,,,,20000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,110000,,,,,,,,22000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,120000,,,,,,,,24000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,130000,,,,,,,,26000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,140000,,,,,,,,28000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,150000,,,,,,,,30000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,160000,,,,,,,,32000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,170000,,,,,,,,34000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,180000,,,,,,,,36000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,190000,,,,,,,,38000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,200000,,,,,,,,40000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,210000,,,,,,,,42000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,220000,,,,,,,,44000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,230000,,,,,,,,46000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,240000,,,,,,,,48000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,250000,,,,,,,,50000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,260000,,,,,,,,52000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,270000,,,,,,,,54000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,280000,,,,,,,,56000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,290000,,,,,,,,58000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,300000,,,,,,,,60000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,310000,,,,,,,,62000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,320000,,,,,,,,64000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,330000,,,,,,,,66000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,340000,,,,,,,,68000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,350000,,,,,,,,70000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,360000,,,,,,,,72000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,370000,,,,,,,,74000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,380000,,,,,,,,76000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,390000,,,,,,,,78000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P05,400000,,,,,,,,80000.00,,N09 N24,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm https://www.cbp.gov/travel/international-visitors/kbyg/money,
+P06,10000,,,,,,,,3000.00,10000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,20000,,,,,,,,6000.00,20000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,30000,,,,,,,,9000.00,30000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,40000,,,,,,,,12000.00,40000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,50000,,,,,,,,15000.00,50000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,60000,,,,,,,,18000.00,60000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,70000,,,,,,,,21000.00,70000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,80000,,,,,,,,24000.00,80000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,90000,,,,,,,,27000.00,90000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,100000,,,,,,,,30000.00,100000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,110000,,,,,,,,33000.00,110000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,120000,,,,,,,,36000.00,120000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,130000,,,,,,,,39000.00,130000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,140000,,,,,,,,42000.00,140000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,150000,,,,,,,,45000.00,150000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,160000,,,,,,,,48000.00,160000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,170000,,,,,,,,51000.00,170000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,180000,,,,,,,,54000.00,180000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,190000,,,,,,,,57000.00,190000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,200000,,,,,,,,60000.00,200000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,210000,,,,,,,,63000.00,210000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,220000,,,,,,,,66000.00,220000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,230000,,,,,,,,69000.00,230000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,240000,,,,,,,,72000.00,240000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,250000,,,,,,,,75000.00,250000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,260000,,,,,,,,78000.00,260000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,270000,,,,,,,,81000.00,270000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,280000,,,,,,,,84000.00,280000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,290000,,,,,,,,87000.00,290000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,300000,,,,,,,,90000.00,300000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,310000,,,,,,,,93000.00,310000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,320000,,,,,,,,96000.00,320000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,330000,,,,,,,,99000.00,330000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,340000,,,,,,,,102000.00,340000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,350000,,,,,,,,105000.00,350000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,360000,,,,,,,,108000.00,360000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,370000,,,,,,,,111000.00,370000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,380000,,,,,,,,114000.00,380000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,390000,,,,,,,,117000.00,390000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,
+P06,400000,,,,,,,,120000.00,400000.00,N09,https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm,

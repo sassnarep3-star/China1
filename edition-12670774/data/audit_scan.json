@@ -1,0 +1,4100 @@
+{
+ "scanned_commit": "23b3265",
+ "files_total": 436,
+ "files_text": 428,
+ "files_binary_or_skipped": 8,
+ "lines_total": 183472,
+ "areas": {
+  ".github": {
+   "files": 10,
+   "text_files": 10,
+   "lines": 268,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  "(root)": {
+   "files": 7,
+   "text_files": 6,
+   "lines": 2212,
+   "urls": 115,
+   "official": 79,
+   "institution": 36,
+   "other": 0
+  },
+  "assets": {
+   "files": 3,
+   "text_files": 3,
+   "lines": 188,
+   "urls": 26,
+   "official": 24,
+   "institution": 2,
+   "other": 0
+  },
+  "audit-12b8fb19": {
+   "files": 1,
+   "text_files": 1,
+   "lines": 28,
+   "urls": 4,
+   "official": 4,
+   "institution": 0,
+   "other": 0
+  },
+  "audit-2026-11-10": {
+   "files": 1,
+   "text_files": 1,
+   "lines": 25,
+   "urls": 8,
+   "official": 4,
+   "institution": 4,
+   "other": 0
+  },
+  "data": {
+   "files": 5,
+   "text_files": 5,
+   "lines": 2077,
+   "urls": 33,
+   "official": 30,
+   "institution": 2,
+   "other": 1
+  },
+  "docs": {
+   "files": 9,
+   "text_files": 9,
+   "lines": 411,
+   "urls": 91,
+   "official": 58,
+   "institution": 33,
+   "other": 0
+  },
+  "dossier": {
+   "files": 9,
+   "text_files": 9,
+   "lines": 819,
+   "urls": 257,
+   "official": 241,
+   "institution": 13,
+   "other": 3
+  },
+  "edition-b": {
+   "files": 17,
+   "text_files": 17,
+   "lines": 5616,
+   "urls": 522,
+   "official": 510,
+   "institution": 0,
+   "other": 12
+  },
+  "edition-c": {
+   "files": 32,
+   "text_files": 31,
+   "lines": 5924,
+   "urls": 136,
+   "official": 133,
+   "institution": 3,
+   "other": 0
+  },
+  "edition-d": {
+   "files": 29,
+   "text_files": 28,
+   "lines": 7715,
+   "urls": 1680,
+   "official": 679,
+   "institution": 1001,
+   "other": 0
+  },
+  "edition-e": {
+   "files": 36,
+   "text_files": 35,
+   "lines": 32303,
+   "urls": 176,
+   "official": 142,
+   "institution": 34,
+   "other": 0
+  },
+  "edition-f": {
+   "files": 30,
+   "text_files": 29,
+   "lines": 5970,
+   "urls": 1150,
+   "official": 610,
+   "institution": 540,
+   "other": 0
+  },
+  "edition-g": {
+   "files": 72,
+   "text_files": 71,
+   "lines": 47349,
+   "urls": 6238,
+   "official": 5062,
+   "institution": 1174,
+   "other": 2
+  },
+  "edition-h": {
+   "files": 74,
+   "text_files": 73,
+   "lines": 54300,
+   "urls": 7265,
+   "official": 5066,
+   "institution": 2197,
+   "other": 2
+  },
+  "edition-i": {
+   "files": 20,
+   "text_files": 19,
+   "lines": 1837,
+   "urls": 1041,
+   "official": 251,
+   "institution": 790,
+   "other": 0
+  },
+  "edition-j": {
+   "files": 19,
+   "text_files": 19,
+   "lines": 1622,
+   "urls": 1059,
+   "official": 267,
+   "institution": 792,
+   "other": 0
+  },
+  "edition-k": {
+   "files": 17,
+   "text_files": 17,
+   "lines": 3622,
+   "urls": 654,
+   "official": 342,
+   "institution": 312,
+   "other": 0
+  },
+  "edition-l": {
+   "files": 20,
+   "text_files": 20,
+   "lines": 7313,
+   "urls": 1015,
+   "official": 439,
+   "institution": 576,
+   "other": 0
+  },
+  "integration": {
+   "files": 12,
+   "text_files": 12,
+   "lines": 1642,
+   "urls": 411,
+   "official": 214,
+   "institution": 197,
+   "other": 0
+  },
+  "pages": {
+   "files": 5,
+   "text_files": 5,
+   "lines": 5,
+   "urls": 119,
+   "official": 76,
+   "institution": 43,
+   "other": 0
+  },
+  "scripts": {
+   "files": 8,
+   "text_files": 8,
+   "lines": 2226,
+   "urls": 43,
+   "official": 38,
+   "institution": 4,
+   "other": 1
+  }
+ },
+ "hosts_other": [
+  [
+   "www.shanghaiinvest.com",
+   12
+  ],
+  [
+   "www.news.cn",
+   5
+  ],
+  [
+   "www.law.cornell.edu",
+   4
+  ]
+ ],
+ "hosts_official_count": 39,
+ "hosts_institution_count": 16,
+ "checks": {
+  "boc_usd_quote": {
+   "650.54": {
+    "edition-i": 5,
+    "edition-j": 5
+   },
+   "650.57": {
+    "edition-k": 1,
+    "edition-l": 5
+   },
+   "650.76": {
+    "edition-e": 7,
+    "edition-f": 3,
+    "pages": 1
+   },
+   "650.85": {
+    "edition-k": 1
+   },
+   "651.00": {
+    "edition-f": 3,
+    "edition-h": 11,
+    "pages": 1
+   },
+   "651.98": {
+    "edition-l": 3
+   },
+   "652.13": {
+    "edition-d": 9
+   },
+   "652.39": {
+    "edition-i": 6,
+    "edition-j": 6
+   },
+   "652.43": {
+    "edition-d": 1
+   },
+   "653.00": {
+    "pages": 1
+   },
+   "653.58": {
+    "edition-f": 3
+   },
+   "653.81": {
+    "edition-i": 1,
+    "edition-j": 1
+   },
+   "654.51": {
+    "edition-l": 1
+   },
+   "655.00": {
+    "pages": 1
+   },
+   "656.87": {
+    "edition-f": 2
+   },
+   "657.00": {
+    "edition-f": 3,
+    "pages": 1
+   },
+   "659.00": {
+    "edition-k": 1,
+    "edition-l": 1
+   },
+   "659.25": {
+    "edition-d": 3
+   },
+   "659.72": {
+    "edition-l": 1
+   },
+   "662.08": {
+    "edition-l": 3
+   },
+   "663.94": {
+    "edition-k": 2,
+    "edition-l": 4
+   },
+   "664.93": {
+    "edition-l": 3
+   },
+   "665.71": {
+    "(root)": 1,
+    "edition-k": 6,
+    "edition-l": 20
+   },
+   "665.86": {
+    "(root)": 1
+   },
+   "666.03": {
+    "edition-i": 2,
+    "edition-j": 1
+   },
+   "666.22": {
+    "(root)": 1,
+    "edition-i": 10,
+    "edition-j": 13,
+    "integration": 5
+   },
+   "666.38": {
+    "edition-h": 4
+   },
+   "666.48": {
+    "(root)": 6,
+    "assets": 1,
+    "data": 5,
+    "dossier": 7,
+    "edition-d": 18,
+    "edition-e": 3,
+    "edition-f": 5,
+    "edition-g": 8,
+    "edition-h": 2,
+    "pages": 1,
+    "scripts": 7
+   },
+   "666.67": {
+    "edition-l": 3
+   },
+   "667.11": {
+    "edition-l": 2
+   },
+   "668.51": {
+    "(root)": 3,
+    "edition-k": 6,
+    "edition-l": 32
+   },
+   "668.66": {
+    "(root)": 1,
+    "audit-2026-11-10": 1
+   },
+   "669.03": {
+    "(root)": 4,
+    "edition-i": 13,
+    "edition-j": 21,
+    "edition-l": 6,
+    "integration": 13
+   },
+   "669.19": {
+    "(root)": 2,
+    "edition-h": 15,
+    "edition-l": 6,
+    "integration": 3
+   },
+   "669.29": {
+    "(root)": 10,
+    "assets": 1,
+    "data": 7,
+    "dossier": 10,
+    "edition-d": 24,
+    "edition-e": 3,
+    "edition-f": 7,
+    "edition-g": 8,
+    "edition-h": 3,
+    "edition-l": 4,
+    "pages": 2,
+    "scripts": 10
+   },
+   "669.50": {
+    "pages": 1
+   },
+   "670.04": {
+    "edition-f": 3
+   },
+   "671.55": {
+    "edition-k": 1,
+    "edition-l": 5
+   },
+   "671.58": {
+    "edition-i": 5,
+    "edition-j": 5
+   },
+   "671.67": {
+    "edition-k": 3,
+    "edition-l": 13
+   },
+   "671.68": {
+    "data": 1,
+    "dossier": 1,
+    "edition-d": 3,
+    "edition-e": 1,
+    "edition-f": 3,
+    "edition-g": 4,
+    "edition-h": 2,
+    "scripts": 1
+   },
+   "671.76": {
+    "edition-e": 7,
+    "edition-f": 3,
+    "pages": 1
+   },
+   "671.84": {
+    "edition-k": 1
+   },
+   "671.88": {
+    "edition-h": 4,
+    "edition-i": 4,
+    "edition-j": 4,
+    "integration": 2
+   },
+   "672.00": {
+    "edition-i": 6,
+    "integration": 1
+   },
+   "673.17": {
+    "edition-d": 9
+   },
+   "673.43": {
+    "edition-i": 6,
+    "edition-j": 6
+   },
+   "673.47": {
+    "edition-d": 1
+   },
+   "673.50": {
+    "pages": 1
+   },
+   "674.04": {
+    "edition-k": 1
+   },
+   "674.27": {
+    "edition-f": 2
+   },
+   "674.46": {
+    "edition-l": 3
+   },
+   "675.60": {
+    "edition-f": 2
+   },
+   "676.00": {
+    "edition-h": 11
+   },
+   "679.00": {
+    "edition-k": 1,
+    "edition-l": 1
+   },
+   "680.28": {
+    "edition-d": 3
+   },
+   "683.07": {
+    "edition-l": 3
+   },
+   "684.93": {
+    "edition-k": 2,
+    "edition-l": 4
+   },
+   "686.00": {
+    "pages": 1
+   },
+   "691.03": {
+    "edition-f": 3
+   },
+   "692.42": {
+    "edition-f": 3
+   },
+   "692.54": {
+    "edition-k": 1,
+    "edition-l": 5
+   },
+   "692.63": {
+    "edition-i": 6,
+    "edition-j": 5
+   },
+   "692.75": {
+    "edition-e": 7,
+    "edition-f": 3,
+    "pages": 1
+   },
+   "692.82": {
+    "edition-k": 1
+   },
+   "693.81": {
+    "edition-i": 1,
+    "edition-j": 1
+   },
+   "694.21": {
+    "edition-d": 9
+   },
+   "694.48": {
+    "edition-i": 6,
+    "edition-j": 6
+   },
+   "694.51": {
+    "edition-d": 1
+   },
+   "696.94": {
+    "edition-l": 3
+   },
+   "697.06": {
+    "edition-f": 2
+   }
+  },
+  "cny_per_usd_4dp": {
+   "6.6309": {
+    "edition-k": 1
+   },
+   "6.6571": {
+    "(root)": 2,
+    "edition-k": 9,
+    "edition-l": 5
+   },
+   "6.6648": {
+    "edition-e": 5,
+    "edition-f": 2,
+    "edition-k": 1
+   },
+   "6.6711": {
+    "edition-k": 1,
+    "edition-l": 12
+   },
+   "6.6717": {
+    "edition-l": 2
+   },
+   "6.6762": {
+    "edition-k": 1
+   },
+   "6.6788": {
+    "edition-k": 1
+   },
+   "6.6851": {
+    "(root)": 2,
+    "edition-k": 14,
+    "edition-l": 23
+   },
+   "6.6903": {
+    "(root)": 6,
+    "edition-i": 7,
+    "edition-j": 4,
+    "edition-k": 1,
+    "integration": 11
+   },
+   "6.6919": {
+    "(root)": 2,
+    "edition-h": 12,
+    "edition-k": 1,
+    "edition-l": 2,
+    "integration": 1
+   },
+   "6.6929": {
+    "edition-d": 20,
+    "edition-e": 17,
+    "edition-f": 6,
+    "edition-k": 1,
+    "edition-l": 2
+   },
+   "6.7050": {
+    "edition-e": 8
+   },
+   "6.7167": {
+    "(root)": 1,
+    "edition-k": 11,
+    "edition-l": 8
+   },
+   "6.7168": {
+    "edition-e": 3
+   }
+  },
+  "form3520_entity_threshold": {
+   "20,116": {
+    "edition-b": 4,
+    "edition-k": 3
+   },
+   "20,573": {
+    "(root)": 1,
+    "edition-b": 4,
+    "edition-d": 2,
+    "edition-g": 4,
+    "edition-h": 4,
+    "edition-j": 2,
+    "edition-k": 4,
+    "edition-l": 4,
+    "integration": 7
+   }
+  },
+  "crypto_notice_2021_237": {
+   "2021 No. 237": {
+    "(root)": 1,
+    "edition-h": 7,
+    "integration": 3
+   },
+   "2021 No.237": {
+    "edition-b": 2,
+    "edition-e": 15
+   },
+   "2021] No. 237": {
+    "(root)": 1,
+    "edition-d": 3,
+    "edition-g": 2,
+    "edition-h": 3,
+    "edition-i": 8,
+    "edition-j": 9,
+    "edition-l": 2
+   },
+   "2021] No.237": {
+    "(root)": 1,
+    "edition-b": 7,
+    "edition-c": 7
+   },
+   "3581332/4348658": {
+    "edition-c": 3,
+    "edition-d": 11,
+    "edition-f": 9,
+    "edition-g": 90,
+    "edition-i": 6,
+    "edition-j": 6
+   },
+   "〔2021〕237号": {
+    "(root)": 1,
+    "data": 1,
+    "dossier": 2,
+    "edition-b": 10,
+    "edition-d": 3,
+    "edition-e": 1,
+    "edition-f": 8,
+    "edition-i": 4,
+    "edition-j": 4,
+    "scripts": 1
+   }
+  },
+  "crypto_notice_2026_42": {
+   "2026 No. 42": {
+    "(root)": 1,
+    "edition-h": 5
+   },
+   "2026 No.42": {
+    "edition-e": 16,
+    "edition-j": 2
+   },
+   "2026020619591971323": {
+    "(root)": 3,
+    "edition-e": 4,
+    "edition-h": 94,
+    "edition-i": 9,
+    "edition-j": 9,
+    "edition-l": 5,
+    "integration": 6
+   },
+   "2026] No. 42": {
+    "(root)": 2,
+    "edition-h": 105,
+    "edition-i": 15,
+    "edition-j": 13,
+    "edition-l": 7,
+    "integration": 11
+   },
+   "2026] No.42": {
+    "(root)": 1,
+    "edition-e": 50
+   },
+   "2026]No.42": {
+    "edition-j": 1
+   }
+  }
+ },
+ "files": [
+  {
+   "file": ".github/workflows/edition-e.yml",
+   "lines": 18,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": ".github/workflows/edition-f.yml",
+   "lines": 18,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": ".github/workflows/edition-g-verify.yml",
+   "lines": 42,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": ".github/workflows/edition-h.yml",
+   "lines": 37,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": ".github/workflows/edition-i.yml",
+   "lines": 20,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": ".github/workflows/edition-j.yml",
+   "lines": 20,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": ".github/workflows/edition-k.yml",
+   "lines": 27,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": ".github/workflows/edition-l.yml",
+   "lines": 22,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": ".github/workflows/integration.yml",
+   "lines": 21,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": ".github/workflows/verify.yml",
+   "lines": 43,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "COORDINATION.md",
+   "lines": 1544,
+   "urls": 30,
+   "official": 23,
+   "institution": 7,
+   "other": 0
+  },
+  {
+   "file": "EXECUTIVE_SUMMARY.md",
+   "lines": 116,
+   "urls": 20,
+   "official": 15,
+   "institution": 5,
+   "other": 0
+  },
+  {
+   "file": "README.md",
+   "lines": 487,
+   "urls": 7,
+   "official": 6,
+   "institution": 1,
+   "other": 0
+  },
+  {
+   "file": "REQUIREMENTS.md",
+   "lines": 53,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "assets/build.py",
+   "lines": 143,
+   "urls": 26,
+   "official": 24,
+   "institution": 2,
+   "other": 0
+  },
+  {
+   "file": "assets/check.py",
+   "lines": 44,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "assets/style.css",
+   "lines": 1,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "audit-12b8fb19/REVIEW.md",
+   "lines": 28,
+   "urls": 4,
+   "official": 4,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "audit-2026-11-10/REVIEW.md",
+   "lines": 25,
+   "urls": 8,
+   "official": 4,
+   "institution": 4,
+   "other": 0
+  },
+  {
+   "file": "data/channels.json",
+   "lines": 915,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "data/costs.json",
+   "lines": 320,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "data/flagged.json",
+   "lines": 251,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "data/sources.json",
+   "lines": 314,
+   "urls": 33,
+   "official": 30,
+   "institution": 2,
+   "other": 1
+  },
+  {
+   "file": "data/taxes.json",
+   "lines": 277,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "docs/app.js",
+   "lines": 16,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "docs/costs.html",
+   "lines": 1,
+   "urls": 11,
+   "official": 6,
+   "institution": 5,
+   "other": 0
+  },
+  {
+   "file": "docs/data.json",
+   "lines": 388,
+   "urls": 10,
+   "official": 8,
+   "institution": 2,
+   "other": 0
+  },
+  {
+   "file": "docs/index.html",
+   "lines": 1,
+   "urls": 9,
+   "official": 4,
+   "institution": 5,
+   "other": 0
+  },
+  {
+   "file": "docs/review.html",
+   "lines": 1,
+   "urls": 17,
+   "official": 12,
+   "institution": 5,
+   "other": 0
+  },
+  {
+   "file": "docs/routes.html",
+   "lines": 1,
+   "urls": 25,
+   "official": 11,
+   "institution": 14,
+   "other": 0
+  },
+  {
+   "file": "docs/sources.html",
+   "lines": 1,
+   "urls": 10,
+   "official": 8,
+   "institution": 2,
+   "other": 0
+  },
+  {
+   "file": "docs/style.css",
+   "lines": 1,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "docs/tax.html",
+   "lines": 1,
+   "urls": 9,
+   "official": 9,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "dossier/assets/style.css",
+   "lines": 96,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "dossier/channels.html",
+   "lines": 128,
+   "urls": 72,
+   "official": 68,
+   "institution": 3,
+   "other": 1
+  },
+  {
+   "file": "dossier/costs.html",
+   "lines": 94,
+   "urls": 30,
+   "official": 26,
+   "institution": 4,
+   "other": 0
+  },
+  {
+   "file": "dossier/flagged.html",
+   "lines": 65,
+   "urls": 33,
+   "official": 32,
+   "institution": 1,
+   "other": 0
+  },
+  {
+   "file": "dossier/index.html",
+   "lines": 118,
+   "urls": 16,
+   "official": 15,
+   "institution": 1,
+   "other": 0
+  },
+  {
+   "file": "dossier/methodology.html",
+   "lines": 55,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "dossier/sources.html",
+   "lines": 76,
+   "urls": 66,
+   "official": 60,
+   "institution": 4,
+   "other": 2
+  },
+  {
+   "file": "dossier/strategy.html",
+   "lines": 109,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "dossier/taxes.html",
+   "lines": 78,
+   "urls": 40,
+   "official": 40,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-b/EXECUTIVE-SUMMARY.md",
+   "lines": 136,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-b/assets/style.css",
+   "lines": 208,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-b/build/generate.py",
+   "lines": 732,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-b/build/verify.py",
+   "lines": 307,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-b/data/flagged.json",
+   "lines": 166,
+   "urls": 14,
+   "official": 12,
+   "institution": 0,
+   "other": 2
+  },
+  {
+   "file": "edition-b/data/methods.json",
+   "lines": 902,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-b/data/penalties.json",
+   "lines": 264,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-b/data/sources.json",
+   "lines": 453,
+   "urls": 27,
+   "official": 26,
+   "institution": 0,
+   "other": 1
+  },
+  {
+   "file": "edition-b/executive-summary.html",
+   "lines": 226,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-b/flagged.html",
+   "lines": 235,
+   "urls": 14,
+   "official": 12,
+   "institution": 0,
+   "other": 2
+  },
+  {
+   "file": "edition-b/index.html",
+   "lines": 337,
+   "urls": 14,
+   "official": 14,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-b/lawful.html",
+   "lines": 293,
+   "urls": 138,
+   "official": 138,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-b/methods.html",
+   "lines": 421,
+   "urls": 191,
+   "official": 188,
+   "institution": 0,
+   "other": 3
+  },
+  {
+   "file": "edition-b/penalty.html",
+   "lines": 276,
+   "urls": 33,
+   "official": 33,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-b/prohibited.html",
+   "lines": 197,
+   "urls": 53,
+   "official": 50,
+   "institution": 0,
+   "other": 3
+  },
+  {
+   "file": "edition-b/sources.html",
+   "lines": 333,
+   "urls": 27,
+   "official": 26,
+   "institution": 0,
+   "other": 1
+  },
+  {
+   "file": "edition-b/us-reporting.html",
+   "lines": 130,
+   "urls": 11,
+   "official": 11,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-c/COORDINATION.md",
+   "lines": 190,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-c/README.md",
+   "lines": 109,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-c/build/build.py",
+   "lines": 1345,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-c/build/linkcheck.py",
+   "lines": 492,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-c/data/.build-digests.json",
+   "lines": 22,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-c/data/flags.json",
+   "lines": 198,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-c/data/penalties.json",
+   "lines": 179,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-c/data/repo-review.json",
+   "lines": 103,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-c/data/routes.json",
+   "lines": 1049,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-c/data/sources.json",
+   "lines": 703,
+   "urls": 46,
+   "official": 45,
+   "institution": 1,
+   "other": 0
+  },
+  {
+   "file": "edition-c/data/summary.json",
+   "lines": 151,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-c/data/tax.json",
+   "lines": 437,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-c/docs/assessed-and-rejected.html",
+   "lines": 44,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-c/docs/asset-channels.html",
+   "lines": 44,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-c/docs/assets/css/style.css",
+   "lines": 151,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-c/docs/assets/js/site.js",
+   "lines": 47,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-c/docs/corporate-channels.html",
+   "lines": 44,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-c/docs/executive-summary.html",
+   "lines": 44,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-c/docs/flagged.html",
+   "lines": 44,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-c/docs/index.html",
+   "lines": 44,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-c/docs/individual-channels.html",
+   "lines": 44,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-c/docs/methodology.html",
+   "lines": 44,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-c/docs/penalty.html",
+   "lines": 44,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-c/docs/prohibited.html",
+   "lines": 44,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-c/docs/repo-review.html",
+   "lines": 44,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-c/docs/routes.html",
+   "lines": 44,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-c/docs/sources.html",
+   "lines": 44,
+   "urls": 90,
+   "official": 88,
+   "institution": 2,
+   "other": 0
+  },
+  {
+   "file": "edition-c/docs/tax-china.html",
+   "lines": 44,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-c/docs/tax-treaty.html",
+   "lines": 44,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-c/docs/tax-us.html",
+   "lines": 44,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-c/docs/trade-channels.html",
+   "lines": 44,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-d/build/build.py",
+   "lines": 1074,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-d/build/verify.py",
+   "lines": 409,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-d/data/flags.json",
+   "lines": 237,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-d/data/methods.json",
+   "lines": 589,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-d/data/parameters.json",
+   "lines": 113,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-d/data/review.json",
+   "lines": 185,
+   "urls": 2,
+   "official": 2,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-d/data/sources.json",
+   "lines": 342,
+   "urls": 17,
+   "official": 12,
+   "institution": 5,
+   "other": 0
+  },
+  {
+   "file": "edition-d/docs/assets/style.css",
+   "lines": 209,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-d/docs/data.json",
+   "lines": 3107,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-d/docs/index.html",
+   "lines": 57,
+   "urls": 43,
+   "official": 21,
+   "institution": 22,
+   "other": 0
+  },
+  {
+   "file": "edition-d/docs/pages/costs-boc-documented.html",
+   "lines": 38,
+   "urls": 244,
+   "official": 80,
+   "institution": 164,
+   "other": 0
+  },
+  {
+   "file": "edition-d/docs/pages/costs-boc-quota.html",
+   "lines": 38,
+   "urls": 204,
+   "official": 40,
+   "institution": 164,
+   "other": 0
+  },
+  {
+   "file": "edition-d/docs/pages/costs-cash.html",
+   "lines": 38,
+   "urls": 124,
+   "official": 80,
+   "institution": 44,
+   "other": 0
+  },
+  {
+   "file": "edition-d/docs/pages/costs-emigration.html",
+   "lines": 38,
+   "urls": 204,
+   "official": 40,
+   "institution": 164,
+   "other": 0
+  },
+  {
+   "file": "edition-d/docs/pages/costs-hold-usd.html",
+   "lines": 38,
+   "urls": 124,
+   "official": 40,
+   "institution": 84,
+   "other": 0
+  },
+  {
+   "file": "edition-d/docs/pages/costs-inheritance.html",
+   "lines": 38,
+   "urls": 204,
+   "official": 40,
+   "institution": 164,
+   "other": 0
+  },
+  {
+   "file": "edition-d/docs/pages/costs-prohibited.html",
+   "lines": 38,
+   "urls": 44,
+   "official": 40,
+   "institution": 4,
+   "other": 0
+  },
+  {
+   "file": "edition-d/docs/pages/costs-property.html",
+   "lines": 38,
+   "urls": 204,
+   "official": 80,
+   "institution": 124,
+   "other": 0
+  },
+  {
+   "file": "edition-d/docs/pages/costs.html",
+   "lines": 59,
+   "urls": 41,
+   "official": 12,
+   "institution": 29,
+   "other": 0
+  },
+  {
+   "file": "edition-d/docs/pages/flagged.html",
+   "lines": 208,
+   "urls": 32,
+   "official": 25,
+   "institution": 7,
+   "other": 0
+  },
+  {
+   "file": "edition-d/docs/pages/methodology.html",
+   "lines": 66,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-d/docs/pages/methods.html",
+   "lines": 279,
+   "urls": 44,
+   "official": 44,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-d/docs/pages/repo-review.html",
+   "lines": 46,
+   "urls": 15,
+   "official": 9,
+   "institution": 6,
+   "other": 0
+  },
+  {
+   "file": "edition-d/docs/pages/reporting.html",
+   "lines": 46,
+   "urls": 9,
+   "official": 9,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-d/docs/pages/sources.html",
+   "lines": 170,
+   "urls": 51,
+   "official": 36,
+   "institution": 15,
+   "other": 0
+  },
+  {
+   "file": "edition-d/docs/pages/steps.html",
+   "lines": 108,
+   "urls": 21,
+   "official": 21,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-d/docs/pages/summary.html",
+   "lines": 46,
+   "urls": 20,
+   "official": 15,
+   "institution": 5,
+   "other": 0
+  },
+  {
+   "file": "edition-d/docs/pages/tax.html",
+   "lines": 61,
+   "urls": 33,
+   "official": 33,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-e/EXECUTIVE_SUMMARY.md",
+   "lines": 35,
+   "urls": 11,
+   "official": 9,
+   "institution": 2,
+   "other": 0
+  },
+  {
+   "file": "edition-e/audit.md",
+   "lines": 18,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-e/build/build.py",
+   "lines": 235,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-e/build/make_data.py",
+   "lines": 124,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-e/build/verify.py",
+   "lines": 154,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-e/data/audit.json",
+   "lines": 153,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-e/data/flags.json",
+   "lines": 284,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-e/data/parameters.json",
+   "lines": 42,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-e/data/penalties.json",
+   "lines": 65,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-e/data/routes.json",
+   "lines": 986,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-e/data/sources.json",
+   "lines": 570,
+   "urls": 40,
+   "official": 31,
+   "institution": 9,
+   "other": 0
+  },
+  {
+   "file": "edition-e/data/summary.json",
+   "lines": 69,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-e/data/tax.json",
+   "lines": 207,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-e/research/README.md",
+   "lines": 23,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-e/research/arithmetic.md",
+   "lines": 63,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-e/research/retrieval-log.md",
+   "lines": 34,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-e/research/source-notes.md",
+   "lines": 49,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-e/site/assets/style.css",
+   "lines": 2,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-e/site/audit.html",
+   "lines": 9,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-e/site/capital.html",
+   "lines": 39,
+   "urls": 21,
+   "official": 21,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-e/site/cash.html",
+   "lines": 39,
+   "urls": 12,
+   "official": 8,
+   "institution": 4,
+   "other": 0
+  },
+  {
+   "file": "edition-e/site/costs.html",
+   "lines": 21,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-e/site/data/grids.csv",
+   "lines": 1281,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-e/site/data/grids.json",
+   "lines": 27597,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-e/site/earned.html",
+   "lines": 54,
+   "urls": 28,
+   "official": 20,
+   "institution": 8,
+   "other": 0
+  },
+  {
+   "file": "edition-e/site/excluded.html",
+   "lines": 44,
+   "urls": 15,
+   "official": 14,
+   "institution": 1,
+   "other": 0
+  },
+  {
+   "file": "edition-e/site/executive-summary.html",
+   "lines": 9,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-e/site/flagged.html",
+   "lines": 9,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-e/site/index.html",
+   "lines": 14,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-e/site/investment.html",
+   "lines": 29,
+   "urls": 9,
+   "official": 8,
+   "institution": 1,
+   "other": 0
+  },
+  {
+   "file": "edition-e/site/methodology.html",
+   "lines": 9,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-e/site/penalties.html",
+   "lines": 9,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-e/site/requirements.html",
+   "lines": 9,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-e/site/sources.html",
+   "lines": 9,
+   "urls": 40,
+   "official": 31,
+   "institution": 9,
+   "other": 0
+  },
+  {
+   "file": "edition-e/site/tax.html",
+   "lines": 9,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-f/EXECUTIVE_SUMMARY.md",
+   "lines": 50,
+   "urls": 58,
+   "official": 33,
+   "institution": 25,
+   "other": 0
+  },
+  {
+   "file": "edition-f/README.md",
+   "lines": 57,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-f/REQUIREMENTS.md",
+   "lines": 37,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-f/audit/REVIEW_NOTES.md",
+   "lines": 28,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-f/build/build.py",
+   "lines": 571,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-f/build/style.css",
+   "lines": 22,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-f/build/verify.py",
+   "lines": 289,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-f/data/cost_inputs.json",
+   "lines": 79,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-f/data/flags.json",
+   "lines": 277,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-f/data/methods.json",
+   "lines": 1240,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-f/data/penalty_layers.json",
+   "lines": 184,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-f/data/repo_audit.json",
+   "lines": 190,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-f/data/sources.json",
+   "lines": 549,
+   "urls": 47,
+   "official": 35,
+   "institution": 12,
+   "other": 0
+  },
+  {
+   "file": "edition-f/data/tax_reporting.json",
+   "lines": 287,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-f/index.html",
+   "lines": 1,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-f/site/assets/style.css",
+   "lines": 22,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-f/site/audit.html",
+   "lines": 52,
+   "urls": 28,
+   "official": 16,
+   "institution": 12,
+   "other": 0
+  },
+  {
+   "file": "edition-f/site/cost-ladder.csv",
+   "lines": 41,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-f/site/cost-ladder.json",
+   "lines": 1282,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-f/site/costs.html",
+   "lines": 163,
+   "urls": 501,
+   "official": 151,
+   "institution": 350,
+   "other": 0
+  },
+  {
+   "file": "edition-f/site/flagged.html",
+   "lines": 69,
+   "urls": 88,
+   "official": 59,
+   "institution": 29,
+   "other": 0
+  },
+  {
+   "file": "edition-f/site/index.html",
+   "lines": 60,
+   "urls": 71,
+   "official": 42,
+   "institution": 29,
+   "other": 0
+  },
+  {
+   "file": "edition-f/site/mechanics.html",
+   "lines": 81,
+   "urls": 136,
+   "official": 105,
+   "institution": 31,
+   "other": 0
+  },
+  {
+   "file": "edition-f/site/methodology.html",
+   "lines": 51,
+   "urls": 18,
+   "official": 12,
+   "institution": 6,
+   "other": 0
+  },
+  {
+   "file": "edition-f/site/methods.html",
+   "lines": 59,
+   "urls": 91,
+   "official": 69,
+   "institution": 22,
+   "other": 0
+  },
+  {
+   "file": "edition-f/site/penalty.html",
+   "lines": 53,
+   "urls": 31,
+   "official": 19,
+   "institution": 12,
+   "other": 0
+  },
+  {
+   "file": "edition-f/site/reporting.html",
+   "lines": 47,
+   "urls": 6,
+   "official": 6,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-f/site/sources.html",
+   "lines": 81,
+   "urls": 47,
+   "official": 35,
+   "institution": 12,
+   "other": 0
+  },
+  {
+   "file": "edition-f/site/tax.html",
+   "lines": 48,
+   "urls": 28,
+   "official": 28,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/README.md",
+   "lines": 31,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/REQUIREMENTS.md",
+   "lines": 31,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/build/audit.py",
+   "lines": 107,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/build/build.py",
+   "lines": 414,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/build/verify.py",
+   "lines": 204,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/data/costs.json",
+   "lines": 41399,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/data/flags.json",
+   "lines": 52,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/data/methods.json",
+   "lines": 382,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/data/penalty.json",
+   "lines": 12,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/data/repo-review.json",
+   "lines": 2199,
+   "urls": 1,
+   "official": 0,
+   "institution": 1,
+   "other": 0
+  },
+  {
+   "file": "edition-g/data/sources.json",
+   "lines": 62,
+   "urls": 52,
+   "official": 34,
+   "institution": 17,
+   "other": 1
+  },
+  {
+   "file": "edition-g/data/summary.json",
+   "lines": 22,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/data/taxes.json",
+   "lines": 21,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/category-alternatives.html",
+   "lines": 32,
+   "urls": 13,
+   "official": 10,
+   "institution": 3,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/category-business.html",
+   "lines": 32,
+   "urls": 32,
+   "official": 32,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/category-personal.html",
+   "lines": 32,
+   "urls": 33,
+   "official": 33,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/category-rails.html",
+   "lines": 32,
+   "urls": 47,
+   "official": 25,
+   "institution": 22,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/category-rejected.html",
+   "lines": 32,
+   "urls": 13,
+   "official": 13,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/costs.html",
+   "lines": 38,
+   "urls": 4,
+   "official": 0,
+   "institution": 4,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/executive-summary.html",
+   "lines": 37,
+   "urls": 38,
+   "official": 24,
+   "institution": 14,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/flagged.html",
+   "lines": 32,
+   "urls": 78,
+   "official": 53,
+   "institution": 25,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/index.html",
+   "lines": 50,
+   "urls": 38,
+   "official": 24,
+   "institution": 14,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-A01.html",
+   "lines": 44,
+   "urls": 123,
+   "official": 41,
+   "institution": 82,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-A02.html",
+   "lines": 44,
+   "urls": 82,
+   "official": 41,
+   "institution": 41,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-A03.html",
+   "lines": 44,
+   "urls": 82,
+   "official": 82,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-A04.html",
+   "lines": 44,
+   "urls": 123,
+   "official": 123,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-A05.html",
+   "lines": 44,
+   "urls": 123,
+   "official": 123,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-B01.html",
+   "lines": 44,
+   "urls": 287,
+   "official": 287,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-B02.html",
+   "lines": 44,
+   "urls": 246,
+   "official": 246,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-B03.html",
+   "lines": 44,
+   "urls": 123,
+   "official": 123,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-B04.html",
+   "lines": 44,
+   "urls": 164,
+   "official": 164,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-B05.html",
+   "lines": 44,
+   "urls": 123,
+   "official": 123,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-B06.html",
+   "lines": 44,
+   "urls": 164,
+   "official": 164,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-B07.html",
+   "lines": 44,
+   "urls": 82,
+   "official": 82,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-B08.html",
+   "lines": 44,
+   "urls": 123,
+   "official": 123,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-P01.html",
+   "lines": 44,
+   "urls": 164,
+   "official": 164,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-P02.html",
+   "lines": 44,
+   "urls": 246,
+   "official": 246,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-P03.html",
+   "lines": 44,
+   "urls": 287,
+   "official": 287,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-P04.html",
+   "lines": 44,
+   "urls": 123,
+   "official": 123,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-P05.html",
+   "lines": 44,
+   "urls": 123,
+   "official": 123,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-P06.html",
+   "lines": 44,
+   "urls": 82,
+   "official": 82,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-P07.html",
+   "lines": 44,
+   "urls": 82,
+   "official": 82,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-P08.html",
+   "lines": 44,
+   "urls": 123,
+   "official": 123,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-P09.html",
+   "lines": 44,
+   "urls": 123,
+   "official": 123,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-R01.html",
+   "lines": 44,
+   "urls": 164,
+   "official": 82,
+   "institution": 82,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-R02.html",
+   "lines": 44,
+   "urls": 82,
+   "official": 41,
+   "institution": 41,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-R03.html",
+   "lines": 44,
+   "urls": 205,
+   "official": 82,
+   "institution": 123,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-R04.html",
+   "lines": 44,
+   "urls": 123,
+   "official": 82,
+   "institution": 41,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-R05.html",
+   "lines": 44,
+   "urls": 164,
+   "official": 82,
+   "institution": 82,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-R06.html",
+   "lines": 44,
+   "urls": 287,
+   "official": 82,
+   "institution": 205,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-R07.html",
+   "lines": 44,
+   "urls": 123,
+   "official": 82,
+   "institution": 41,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-R08.html",
+   "lines": 44,
+   "urls": 164,
+   "official": 123,
+   "institution": 41,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-R09.html",
+   "lines": 44,
+   "urls": 164,
+   "official": 82,
+   "institution": 82,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-R10.html",
+   "lines": 44,
+   "urls": 123,
+   "official": 82,
+   "institution": 41,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-R11.html",
+   "lines": 44,
+   "urls": 164,
+   "official": 123,
+   "institution": 41,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-R12.html",
+   "lines": 44,
+   "urls": 82,
+   "official": 41,
+   "institution": 41,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-R13.html",
+   "lines": 44,
+   "urls": 82,
+   "official": 41,
+   "institution": 41,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-X01.html",
+   "lines": 44,
+   "urls": 82,
+   "official": 82,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-X02.html",
+   "lines": 44,
+   "urls": 82,
+   "official": 82,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-X03.html",
+   "lines": 44,
+   "urls": 41,
+   "official": 41,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-X04.html",
+   "lines": 44,
+   "urls": 82,
+   "official": 82,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-X05.html",
+   "lines": 44,
+   "urls": 82,
+   "official": 82,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-X06.html",
+   "lines": 44,
+   "urls": 82,
+   "official": 82,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-X07.html",
+   "lines": 44,
+   "urls": 41,
+   "official": 41,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/method-X08.html",
+   "lines": 44,
+   "urls": 41,
+   "official": 41,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/methodology.html",
+   "lines": 37,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/penalty.html",
+   "lines": 32,
+   "urls": 21,
+   "official": 15,
+   "institution": 6,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/repo-review.html",
+   "lines": 37,
+   "urls": 1,
+   "official": 0,
+   "institution": 1,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/requirements.html",
+   "lines": 32,
+   "urls": 128,
+   "official": 103,
+   "institution": 25,
+   "other": 0
+  },
+  {
+   "file": "edition-g/docs/sources.html",
+   "lines": 33,
+   "urls": 52,
+   "official": 34,
+   "institution": 17,
+   "other": 1
+  },
+  {
+   "file": "edition-g/docs/taxes.html",
+   "lines": 33,
+   "urls": 29,
+   "official": 29,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/README.md",
+   "lines": 24,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/audit/verification.json",
+   "lines": 56,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/build/audit.py",
+   "lines": 62,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/build/build.py",
+   "lines": 405,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/build/verify.py",
+   "lines": 147,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/data/costs.json",
+   "lines": 48054,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/data/flags.json",
+   "lines": 568,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/data/methods.json",
+   "lines": 1861,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/data/penalty.json",
+   "lines": 117,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/data/repo-review.json",
+   "lines": 137,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/data/sources.json",
+   "lines": 645,
+   "urls": 53,
+   "official": 35,
+   "institution": 17,
+   "other": 1
+  },
+  {
+   "file": "edition-h/data/summary.json",
+   "lines": 104,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/data/taxes.json",
+   "lines": 235,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/assets/style.css",
+   "lines": 7,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/category-alternatives.html",
+   "lines": 1,
+   "urls": 12,
+   "official": 9,
+   "institution": 3,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/category-business.html",
+   "lines": 1,
+   "urls": 32,
+   "official": 32,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/category-personal.html",
+   "lines": 1,
+   "urls": 51,
+   "official": 33,
+   "institution": 18,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/category-rails.html",
+   "lines": 1,
+   "urls": 47,
+   "official": 25,
+   "institution": 22,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/category-rejected.html",
+   "lines": 1,
+   "urls": 13,
+   "official": 13,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/cost-ladder.csv",
+   "lines": 1721,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/costs.html",
+   "lines": 3,
+   "urls": 162,
+   "official": 112,
+   "institution": 50,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/executive-summary.html",
+   "lines": 5,
+   "urls": 51,
+   "official": 28,
+   "institution": 23,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/flagged.html",
+   "lines": 1,
+   "urls": 91,
+   "official": 56,
+   "institution": 35,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/index.html",
+   "lines": 6,
+   "urls": 59,
+   "official": 29,
+   "institution": 30,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-A01.html",
+   "lines": 3,
+   "urls": 82,
+   "official": 0,
+   "institution": 82,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-A02.html",
+   "lines": 3,
+   "urls": 82,
+   "official": 41,
+   "institution": 41,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-A03.html",
+   "lines": 3,
+   "urls": 82,
+   "official": 82,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-A04.html",
+   "lines": 3,
+   "urls": 123,
+   "official": 123,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-A05.html",
+   "lines": 3,
+   "urls": 123,
+   "official": 123,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-B01.html",
+   "lines": 3,
+   "urls": 287,
+   "official": 287,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-B02.html",
+   "lines": 3,
+   "urls": 246,
+   "official": 246,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-B03.html",
+   "lines": 3,
+   "urls": 123,
+   "official": 123,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-B04.html",
+   "lines": 3,
+   "urls": 164,
+   "official": 164,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-B05.html",
+   "lines": 3,
+   "urls": 123,
+   "official": 123,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-B06.html",
+   "lines": 3,
+   "urls": 164,
+   "official": 164,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-B07.html",
+   "lines": 3,
+   "urls": 82,
+   "official": 82,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-B08.html",
+   "lines": 3,
+   "urls": 123,
+   "official": 123,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-P01.html",
+   "lines": 3,
+   "urls": 246,
+   "official": 164,
+   "institution": 82,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-P02.html",
+   "lines": 3,
+   "urls": 328,
+   "official": 246,
+   "institution": 82,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-P03.html",
+   "lines": 3,
+   "urls": 369,
+   "official": 287,
+   "institution": 82,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-P04.html",
+   "lines": 3,
+   "urls": 205,
+   "official": 123,
+   "institution": 82,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-P05.html",
+   "lines": 3,
+   "urls": 205,
+   "official": 123,
+   "institution": 82,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-P06.html",
+   "lines": 3,
+   "urls": 164,
+   "official": 82,
+   "institution": 82,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-P07.html",
+   "lines": 3,
+   "urls": 164,
+   "official": 82,
+   "institution": 82,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-P08.html",
+   "lines": 3,
+   "urls": 205,
+   "official": 123,
+   "institution": 82,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-P09.html",
+   "lines": 3,
+   "urls": 205,
+   "official": 123,
+   "institution": 82,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-R01.html",
+   "lines": 3,
+   "urls": 204,
+   "official": 82,
+   "institution": 122,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-R02.html",
+   "lines": 3,
+   "urls": 122,
+   "official": 41,
+   "institution": 81,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-R03.html",
+   "lines": 3,
+   "urls": 245,
+   "official": 82,
+   "institution": 163,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-R04.html",
+   "lines": 3,
+   "urls": 163,
+   "official": 82,
+   "institution": 81,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-R05.html",
+   "lines": 3,
+   "urls": 164,
+   "official": 82,
+   "institution": 82,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-R06.html",
+   "lines": 3,
+   "urls": 287,
+   "official": 82,
+   "institution": 205,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-R07.html",
+   "lines": 3,
+   "urls": 123,
+   "official": 82,
+   "institution": 41,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-R08.html",
+   "lines": 3,
+   "urls": 164,
+   "official": 123,
+   "institution": 41,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-R09.html",
+   "lines": 3,
+   "urls": 164,
+   "official": 82,
+   "institution": 82,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-R10.html",
+   "lines": 3,
+   "urls": 123,
+   "official": 82,
+   "institution": 41,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-R11.html",
+   "lines": 3,
+   "urls": 204,
+   "official": 123,
+   "institution": 81,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-R12.html",
+   "lines": 3,
+   "urls": 82,
+   "official": 41,
+   "institution": 41,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-R13.html",
+   "lines": 3,
+   "urls": 82,
+   "official": 41,
+   "institution": 41,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-X01.html",
+   "lines": 3,
+   "urls": 82,
+   "official": 82,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-X02.html",
+   "lines": 3,
+   "urls": 82,
+   "official": 82,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-X03.html",
+   "lines": 3,
+   "urls": 41,
+   "official": 41,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-X04.html",
+   "lines": 3,
+   "urls": 82,
+   "official": 82,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-X05.html",
+   "lines": 3,
+   "urls": 82,
+   "official": 82,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-X06.html",
+   "lines": 3,
+   "urls": 82,
+   "official": 82,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-X07.html",
+   "lines": 3,
+   "urls": 41,
+   "official": 41,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/method-X08.html",
+   "lines": 3,
+   "urls": 41,
+   "official": 41,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/methodology.html",
+   "lines": 1,
+   "urls": 7,
+   "official": 3,
+   "institution": 4,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/penalty.html",
+   "lines": 1,
+   "urls": 21,
+   "official": 15,
+   "institution": 6,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/repo-review.html",
+   "lines": 1,
+   "urls": 23,
+   "official": 14,
+   "institution": 9,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/requirements.html",
+   "lines": 3,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-h/site/sources.html",
+   "lines": 1,
+   "urls": 53,
+   "official": 35,
+   "institution": 17,
+   "other": 1
+  },
+  {
+   "file": "edition-h/site/taxes.html",
+   "lines": 1,
+   "urls": 35,
+   "official": 35,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-i/README.md",
+   "lines": 65,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-i/audit/REPO_AUDIT.md",
+   "lines": 51,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-i/build/build.py",
+   "lines": 515,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-i/build/style.css",
+   "lines": 56,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-i/build/verify.py",
+   "lines": 185,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-i/data/flags.json",
+   "lines": 112,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-i/data/methods.json",
+   "lines": 360,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-i/data/model.json",
+   "lines": 125,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-i/data/sources.json",
+   "lines": 174,
+   "urls": 21,
+   "official": 18,
+   "institution": 3,
+   "other": 0
+  },
+  {
+   "file": "edition-i/data/taxes.json",
+   "lines": 130,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-i/site/assets/style.css",
+   "lines": 56,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-i/site/costs.html",
+   "lines": 1,
+   "urls": 680,
+   "official": 0,
+   "institution": 680,
+   "other": 0
+  },
+  {
+   "file": "edition-i/site/executive-summary.html",
+   "lines": 1,
+   "urls": 16,
+   "official": 0,
+   "institution": 16,
+   "other": 0
+  },
+  {
+   "file": "edition-i/site/flagged.html",
+   "lines": 1,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-i/site/index.html",
+   "lines": 1,
+   "urls": 28,
+   "official": 18,
+   "institution": 10,
+   "other": 0
+  },
+  {
+   "file": "edition-i/site/methods.html",
+   "lines": 1,
+   "urls": 160,
+   "official": 110,
+   "institution": 50,
+   "other": 0
+  },
+  {
+   "file": "edition-i/site/sources.html",
+   "lines": 1,
+   "urls": 42,
+   "official": 36,
+   "institution": 6,
+   "other": 0
+  },
+  {
+   "file": "edition-i/site/steps.html",
+   "lines": 1,
+   "urls": 67,
+   "official": 42,
+   "institution": 25,
+   "other": 0
+  },
+  {
+   "file": "edition-i/site/taxes.html",
+   "lines": 1,
+   "urls": 27,
+   "official": 27,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-j/REVIEW.md",
+   "lines": 20,
+   "urls": 7,
+   "official": 6,
+   "institution": 1,
+   "other": 0
+  },
+  {
+   "file": "edition-j/audit/REPO_AUDIT.md",
+   "lines": 43,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-j/build/build.py",
+   "lines": 353,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-j/build/style.css",
+   "lines": 56,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-j/build/verify.py",
+   "lines": 185,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-j/data/flags.json",
+   "lines": 112,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-j/data/methods.json",
+   "lines": 360,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-j/data/model.json",
+   "lines": 125,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-j/data/sources.json",
+   "lines": 174,
+   "urls": 21,
+   "official": 18,
+   "institution": 3,
+   "other": 0
+  },
+  {
+   "file": "edition-j/data/taxes.json",
+   "lines": 130,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-j/site/assets/style.css",
+   "lines": 56,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-j/site/costs.html",
+   "lines": 1,
+   "urls": 697,
+   "official": 0,
+   "institution": 697,
+   "other": 0
+  },
+  {
+   "file": "edition-j/site/executive-summary.html",
+   "lines": 1,
+   "urls": 10,
+   "official": 10,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-j/site/flagged.html",
+   "lines": 1,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-j/site/index.html",
+   "lines": 1,
+   "urls": 28,
+   "official": 18,
+   "institution": 10,
+   "other": 0
+  },
+  {
+   "file": "edition-j/site/methods.html",
+   "lines": 1,
+   "urls": 160,
+   "official": 110,
+   "institution": 50,
+   "other": 0
+  },
+  {
+   "file": "edition-j/site/sources.html",
+   "lines": 1,
+   "urls": 42,
+   "official": 36,
+   "institution": 6,
+   "other": 0
+  },
+  {
+   "file": "edition-j/site/steps.html",
+   "lines": 1,
+   "urls": 67,
+   "official": 42,
+   "institution": 25,
+   "other": 0
+  },
+  {
+   "file": "edition-j/site/taxes.html",
+   "lines": 1,
+   "urls": 27,
+   "official": 27,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-k/audit/REPO_AUDIT.md",
+   "lines": 170,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-k/build/build.py",
+   "lines": 835,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-k/build/verify.py",
+   "lines": 301,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-k/data/flags.json",
+   "lines": 146,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-k/data/methods.json",
+   "lines": 676,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-k/data/model.json",
+   "lines": 219,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-k/data/sources.json",
+   "lines": 253,
+   "urls": 19,
+   "official": 14,
+   "institution": 5,
+   "other": 0
+  },
+  {
+   "file": "edition-k/research/SOURCE_LOG.md",
+   "lines": 68,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-k/site/assets/style.css",
+   "lines": 72,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-k/site/costs.html",
+   "lines": 72,
+   "urls": 303,
+   "official": 48,
+   "institution": 255,
+   "other": 0
+  },
+  {
+   "file": "edition-k/site/flagged.html",
+   "lines": 37,
+   "urls": 22,
+   "official": 14,
+   "institution": 8,
+   "other": 0
+  },
+  {
+   "file": "edition-k/site/index.html",
+   "lines": 75,
+   "urls": 37,
+   "official": 16,
+   "institution": 21,
+   "other": 0
+  },
+  {
+   "file": "edition-k/site/methods.html",
+   "lines": 438,
+   "urls": 98,
+   "official": 86,
+   "institution": 12,
+   "other": 0
+  },
+  {
+   "file": "edition-k/site/prohibited.html",
+   "lines": 43,
+   "urls": 48,
+   "official": 48,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-k/site/sources.html",
+   "lines": 40,
+   "urls": 19,
+   "official": 14,
+   "institution": 5,
+   "other": 0
+  },
+  {
+   "file": "edition-k/site/steps.html",
+   "lines": 121,
+   "urls": 48,
+   "official": 42,
+   "institution": 6,
+   "other": 0
+  },
+  {
+   "file": "edition-k/site/taxes.html",
+   "lines": 56,
+   "urls": 60,
+   "official": 60,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-l/build/build.py",
+   "lines": 1153,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-l/build/verify.py",
+   "lines": 333,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-l/data/audit.json",
+   "lines": 113,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-l/data/costs.csv",
+   "lines": 201,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-l/data/costs.json",
+   "lines": 3425,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-l/data/flags.json",
+   "lines": 181,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-l/data/methods.json",
+   "lines": 546,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-l/data/model.json",
+   "lines": 91,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-l/data/sources.json",
+   "lines": 195,
+   "urls": 21,
+   "official": 16,
+   "institution": 5,
+   "other": 0
+  },
+  {
+   "file": "edition-l/site/audit.html",
+   "lines": 80,
+   "urls": 22,
+   "official": 10,
+   "institution": 12,
+   "other": 0
+  },
+  {
+   "file": "edition-l/site/costs.html",
+   "lines": 93,
+   "urls": 580,
+   "official": 173,
+   "institution": 407,
+   "other": 0
+  },
+  {
+   "file": "edition-l/site/flagged.html",
+   "lines": 59,
+   "urls": 80,
+   "official": 60,
+   "institution": 20,
+   "other": 0
+  },
+  {
+   "file": "edition-l/site/index.html",
+   "lines": 104,
+   "urls": 18,
+   "official": 0,
+   "institution": 18,
+   "other": 0
+  },
+  {
+   "file": "edition-l/site/methodology.html",
+   "lines": 82,
+   "urls": 30,
+   "official": 9,
+   "institution": 21,
+   "other": 0
+  },
+  {
+   "file": "edition-l/site/methods.html",
+   "lines": 251,
+   "urls": 120,
+   "official": 106,
+   "institution": 14,
+   "other": 0
+  },
+  {
+   "file": "edition-l/site/penalty.html",
+   "lines": 95,
+   "urls": 57,
+   "official": 8,
+   "institution": 49,
+   "other": 0
+  },
+  {
+   "file": "edition-l/site/sources.html",
+   "lines": 64,
+   "urls": 21,
+   "official": 16,
+   "institution": 5,
+   "other": 0
+  },
+  {
+   "file": "edition-l/site/steps.html",
+   "lines": 82,
+   "urls": 8,
+   "official": 1,
+   "institution": 7,
+   "other": 0
+  },
+  {
+   "file": "edition-l/site/summary.html",
+   "lines": 81,
+   "urls": 35,
+   "official": 17,
+   "institution": 18,
+   "other": 0
+  },
+  {
+   "file": "edition-l/site/tax.html",
+   "lines": 84,
+   "urls": 23,
+   "official": 23,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "index.html",
+   "lines": 11,
+   "urls": 46,
+   "official": 24,
+   "institution": 22,
+   "other": 0
+  },
+  {
+   "file": "integration/README.md",
+   "lines": 39,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "integration/build.py",
+   "lines": 304,
+   "urls": 26,
+   "official": 21,
+   "institution": 5,
+   "other": 0
+  },
+  {
+   "file": "integration/costs.csv",
+   "lines": 41,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "integration/costs.html",
+   "lines": 8,
+   "urls": 123,
+   "official": 0,
+   "institution": 123,
+   "other": 0
+  },
+  {
+   "file": "integration/costs.json",
+   "lines": 735,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "integration/evidence.html",
+   "lines": 4,
+   "urls": 26,
+   "official": 21,
+   "institution": 5,
+   "other": 0
+  },
+  {
+   "file": "integration/evidence.json",
+   "lines": 304,
+   "urls": 26,
+   "official": 21,
+   "institution": 5,
+   "other": 0
+  },
+  {
+   "file": "integration/methodology.html",
+   "lines": 4,
+   "urls": 7,
+   "official": 3,
+   "institution": 4,
+   "other": 0
+  },
+  {
+   "file": "integration/methods.html",
+   "lines": 4,
+   "urls": 155,
+   "official": 112,
+   "institution": 43,
+   "other": 0
+  },
+  {
+   "file": "integration/review.html",
+   "lines": 4,
+   "urls": 30,
+   "official": 18,
+   "institution": 12,
+   "other": 0
+  },
+  {
+   "file": "integration/tax.html",
+   "lines": 4,
+   "urls": 18,
+   "official": 18,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "integration/verify.py",
+   "lines": 191,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "overview.html",
+   "lines": 1,
+   "urls": 12,
+   "official": 11,
+   "institution": 1,
+   "other": 0
+  },
+  {
+   "file": "pages/costs.html",
+   "lines": 1,
+   "urls": 10,
+   "official": 10,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "pages/estimates.html",
+   "lines": 1,
+   "urls": 51,
+   "official": 9,
+   "institution": 42,
+   "other": 0
+  },
+  {
+   "file": "pages/reporting.html",
+   "lines": 1,
+   "urls": 10,
+   "official": 10,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "pages/review.html",
+   "lines": 1,
+   "urls": 18,
+   "official": 17,
+   "institution": 1,
+   "other": 0
+  },
+  {
+   "file": "pages/routes.html",
+   "lines": 1,
+   "urls": 30,
+   "official": 30,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "scripts/build.py",
+   "lines": 61,
+   "urls": 10,
+   "official": 8,
+   "institution": 2,
+   "other": 0
+  },
+  {
+   "file": "scripts/build_site.py",
+   "lines": 853,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "scripts/data_channels.py",
+   "lines": 625,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "scripts/data_costs.py",
+   "lines": 146,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "scripts/data_flagged.py",
+   "lines": 153,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "scripts/data_sources.py",
+   "lines": 240,
+   "urls": 33,
+   "official": 30,
+   "institution": 2,
+   "other": 1
+  },
+  {
+   "file": "scripts/data_taxes.py",
+   "lines": 119,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "scripts/verify.py",
+   "lines": 29,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  }
+ ]
+}

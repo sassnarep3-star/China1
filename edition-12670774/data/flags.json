@@ -1,0 +1,327 @@
+{
+ "as_of": "2026-11-10",
+ "flags": [
+  {
+   "id": "F01",
+   "group": "Your facts",
+   "what": "Where the money came from (salary, home sale, inheritance, gift, investment) is not known.",
+   "why": "The route, the cap and the documents all depend on it. Every scenario is shown; none is assumed.",
+   "sources": [
+    "N01",
+    "N18"
+   ]
+  },
+  {
+   "id": "F02",
+   "group": "Your facts",
+   "what": "Whether you were once a Chinese national, and whether you hold a Chinese ID or a Chinese Foreign Permanent Resident ID Card, is not known.",
+   "why": "It decides between the documented-income route, the emigrant-transfer approval and the USD 50,000 quota.",
+   "sources": [
+    "N18",
+    "N05",
+    "N01"
+   ]
+  },
+  {
+   "id": "F03",
+   "group": "Costs",
+   "what": "Fee schedules of ICBC, CCB, ABC, CMB, HSBC China and other banks: blank.",
+   "why": "Only the Bank of China tariff page was opened in this session. Other banks' fees are not filled in from memory or from earlier editions.",
+   "sources": [
+    "N04"
+   ]
+  },
+  {
+   "id": "F04",
+   "group": "Costs",
+   "what": "The rate you will actually be given can differ from the board.",
+   "why": "Bank of China states the board is for reference and the rate dealt through its channels governs. The FX margin here is half of BOC's own published buy–sell gap at one moment.",
+   "sources": [
+    "N02"
+   ]
+  },
+  {
+   "id": "F05",
+   "group": "Costs",
+   "what": "Deductions by intermediary (correspondent) banks: blank.",
+   "why": "No official schedule for these was found. Chase's page says other institutions may deduct processing fees from the wire.",
+   "sources": [
+    "N26",
+    "N04"
+   ]
+  },
+  {
+   "id": "F06",
+   "group": "Costs",
+   "what": "US receiving-bank fee: only one example (Chase, USD 15) and only at excerpt level; kept out of the headline cost.",
+   "why": "The footnote was read in the official site's search excerpt, not on the opened page. Your own bank's fee schedule governs.",
+   "sources": [
+    "N26"
+   ]
+  },
+  {
+   "id": "F07",
+   "group": "Costs",
+   "what": "Wise fee and Wise exchange rate for sending from CNY: blank.",
+   "why": "The help page gives eligibility and limits but no fee; it refers to a live pricing page that depends on the transfer.",
+   "sources": [
+    "N21"
+   ]
+  },
+  {
+   "id": "F08",
+   "group": "Costs",
+   "what": "Fees and exchange rate for overseas ATM withdrawals and card spending: blank. The CNY 100,000 yearly cap is excerpt level.",
+   "why": "The SAFE Q&A was read as an official-site search excerpt. Card-network and bank fees were not opened.",
+   "sources": [
+    "N16"
+   ]
+  },
+  {
+   "id": "F09",
+   "group": "Rules",
+   "what": "Limit on carrying RMB banknotes out of China: blank.",
+   "why": "No official page stating the RMB banknote limit was opened in this session. Only the foreign-currency cash limits were read.",
+   "sources": [
+    "N01"
+   ]
+  },
+  {
+   "id": "F10",
+   "group": "Rules",
+   "what": "Sending RMB abroad and converting it outside China (cross-border RMB remittance by an individual): everything blank.",
+   "why": "No official rule for individuals was opened in this session, so the method is listed without caps, steps or cost.",
+   "sources": [
+    "N18"
+   ]
+  },
+  {
+   "id": "F11",
+   "group": "Rules",
+   "what": "Two official texts define 境内个人 differently.",
+   "why": "The 2008 Regulations (Art. 52) include foreigners who have lived in China continuously for a year; the 2006 Individual FX Measures (Art. 37) include only Chinese citizens holding PRC ID. Under the Measures a US passport holder is a 境外个人 however long they stay. Which one a bank applies was not confirmed.",
+   "sources": [
+    "N09",
+    "N18"
+   ]
+  },
+  {
+   "id": "F12",
+   "group": "Rules",
+   "what": "Who approves remitting home-sale proceeds: SAFE or the bank.",
+   "why": "The 2006 Measures (Art. 22) say SAFE approval; the 2025 operating guidelines describe the bank handling it against documents. The later text is used here; confirm with the bank.",
+   "sources": [
+    "N18",
+    "N08"
+   ]
+  },
+  {
+   "id": "F13",
+   "group": "Rules",
+   "what": "The official inheritance guide repeats emigrant wording in its conditions.",
+   "why": "Its conditions speak of assets owned before the applicant acquired foreign citizenship, which does not match the inheritance definition quoted in the same document. Not harmonised here.",
+   "sources": [
+    "N06"
+   ]
+  },
+  {
+   "id": "F14",
+   "group": "Rules",
+   "what": "Whether a tax filing form is demanded when a foreign individual remits more than USD 50,000 of their own China salary in one payment.",
+   "why": "Announcement 40 Art. 1 lists a foreign individual's China work pay; Art. 4 sends foreign individuals to the individual FX rules, which ask for tax vouchers. Bank practice was not confirmed.",
+   "sources": [
+    "N14",
+    "N01"
+   ]
+  },
+  {
+   "id": "F15",
+   "group": "Rules",
+   "what": "The CNY 150,000 threshold below which no tax certificate is needed for a property transfer is excerpt level.",
+   "why": "Guoshuifa [2005] No. 13 was read only as an official-site search excerpt.",
+   "sources": [
+    "N15"
+   ]
+  },
+  {
+   "id": "F16",
+   "group": "Tax",
+   "what": "China income-tax brackets within the 3–45% range: blank; no tax amount is computed.",
+   "why": "The rate schedule attached to the law was not opened, and your income is unknown.",
+   "sources": [
+    "N17"
+   ]
+  },
+  {
+   "id": "F17",
+   "group": "Tax",
+   "what": "China tax treatment of bank deposit interest: blank.",
+   "why": "The law lists interest at 20%; any exemption notice was not opened in this session.",
+   "sources": [
+    "N17"
+   ]
+  },
+  {
+   "id": "F18",
+   "group": "Tax",
+   "what": "Whether China taxes inheritances or gifts: blank.",
+   "why": "No official source on this point was opened in this session.",
+   "sources": [
+    "N17"
+   ]
+  },
+  {
+   "id": "F19",
+   "group": "Tax",
+   "what": "\"No tax on the conversion itself\" is an absence finding, not a quoted rule.",
+   "why": "The opened China law taxes nine categories of income and the opened US sources tax income and currency gain; none names conversion or a transfer between your own accounts as a taxable event. No sentence saying so outright was found.",
+   "sources": [
+    "N17",
+    "N13",
+    "N20"
+   ]
+  },
+  {
+   "id": "F20",
+   "group": "Tax",
+   "what": "US treatment of a currency loss on a personal transaction, and how to track your dollar basis in RMB: blank.",
+   "why": "The statute text opened covers gains; the loss rule and basis mechanics were not opened.",
+   "sources": [
+    "N13"
+   ]
+  },
+  {
+   "id": "F21",
+   "group": "Tax",
+   "what": "Dollar amounts of FBAR, Form 8938 and Form 3520 penalties: blank.",
+   "why": "The IRS pages opened say penalties exist and that FBAR maximums are adjusted every year; the amounts were not opened.",
+   "sources": [
+    "N11",
+    "N12",
+    "N03"
+   ]
+  },
+  {
+   "id": "F22",
+   "group": "Tax",
+   "what": "US state income tax and the US–China tax treaty: blank.",
+   "why": "Not opened in this session.",
+   "sources": [
+    "N22"
+   ]
+  },
+  {
+   "id": "F23",
+   "group": "Tax",
+   "what": "Worldwide taxation and the foreign tax credit are quoted at excerpt level.",
+   "why": "IRS Publication 54 was read as an official-site search excerpt, not opened.",
+   "sources": [
+    "N22"
+   ]
+  },
+  {
+   "id": "F24",
+   "group": "Rules",
+   "what": "The Regulations text opened is the 2008 promulgation page.",
+   "why": "The newest State Council amending decision (Order No. 851) was opened and does not touch them; an exhaustive search for other amendments was not made.",
+   "sources": [
+    "N09",
+    "N10"
+   ]
+  },
+  {
+   "id": "F25",
+   "group": "Penalties",
+   "what": "Fine for splitting amounts or borrowing another person's quota: blank.",
+   "why": "The guideline text opened sets the watch-list consequence only. Whether a percentage fine applies depends on how the authority characterises the conduct.",
+   "sources": [
+    "N01",
+    "N09"
+   ]
+  },
+  {
+   "id": "F26",
+   "group": "Penalties",
+   "what": "Fine for converting through virtual currency: blank.",
+   "why": "The 2026 notice says offenders are punished under the relevant rules and may face criminal liability; it gives no percentage.",
+   "sources": [
+    "N19"
+   ]
+  },
+  {
+   "id": "F27",
+   "group": "Repo",
+   "what": "Edition L stores the central parity as 6.6717 CNY per USD; its own source figure is 671.67 per USD 100, which is 6.7167.",
+   "why": "Two digits appear transposed in edition-l/data/model.json and costs.json; edition-l/build/build.py reads that field. A correction request is logged in COORDINATION.md; the file belongs to another session and was not edited.",
+   "sources": [
+    "N02"
+   ]
+  },
+  {
+   "id": "F28",
+   "group": "Repo",
+   "what": "Seven older areas cite Yinfa [2021] No. 237 as the virtual-currency rule and never mention its repeal.",
+   "why": "The 2026 notice opened today repeals it. The prohibition continues, so the conclusion stands; the citation is out of date in edition-b, edition-c, edition-d, edition-f, edition-g, data and dossier.",
+   "sources": [
+    "N19"
+   ]
+  },
+  {
+   "id": "F29",
+   "group": "Repo",
+   "what": "The repository holds several different Bank of China rate snapshots; the root portal and executive summary compute at 6.6903.",
+   "why": "The board showed 6.6851 at 17:39:58 on 2026-11-10. Earlier editions are dated snapshots, not errors, but totals across editions are not comparable.",
+   "sources": [
+    "N02"
+   ]
+  },
+  {
+   "id": "F30",
+   "group": "Repo",
+   "what": "Older editions link to hosts that are neither government nor the institution concerned.",
+   "why": "Found by the line scan: a law-school mirror of the US Code, a news agency, an investment-promotion site and others. Listed on the audit page.",
+   "sources": [
+    "N13"
+   ]
+  },
+  {
+   "id": "F31",
+   "group": "Repo",
+   "what": "Pull requests #39, #45 and #51 are open, and several claims on the board have no commits for more than 60 minutes.",
+   "why": "They belong to other sessions and were not touched.",
+   "sources": [
+    "N01"
+   ]
+  },
+  {
+   "id": "F32",
+   "group": "Costs",
+   "what": "Cost of documents (tax certificates, translations, notarisation, consular authentication or apostille, travel): blank.",
+   "why": "SAFE charges nothing for its approval; no official price list for the other items was opened.",
+   "sources": [
+    "N05",
+    "N06"
+   ]
+  },
+  {
+   "id": "F33",
+   "group": "Costs",
+   "what": "How long a bank takes to review documents: blank.",
+   "why": "Only the SAFE approval time (20 working days, one extension of 10) is published in the guides opened.",
+   "sources": [
+    "N05"
+   ]
+  },
+  {
+   "id": "F34",
+   "group": "Costs",
+   "what": "Counts of Wise transfers and ATM years use the Bank of China selling rate as a stand-in.",
+   "why": "The provider's own rate is not published on the pages opened, so the counts are indicative.",
+   "sources": [
+    "N21",
+    "N16",
+    "N02"
+   ]
+  }
+ ]
+}

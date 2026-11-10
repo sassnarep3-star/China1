@@ -182,3 +182,8 @@ URL: https://www.cbp.gov/travel/international-visitors/kbyg/money (redirects to 
 URL: https://www.irs.gov/newsroom/treasury-irs-issue-proposed-regulations-on-the-new-remittance-transfer-tax-established-under-the-one-big-beautiful-bill — opened 2026-11-10, read in full.
 - "Beginning Jan. 1, 2026, a 1% remittance transfer tax applies to remittances sent from the United States to recipients in foreign countries when the sender provides cash, a money order, a cashier's check, or other similar physical instrument to the remittance transfer provider. The sender is liable for the tax …"
 - Direction is FROM the United States; a transfer from China to the United States is not the transaction described.
+
+## N26 — Chase: Chase Secure Banking page (bank's own site)
+URL: https://personal.chase.com/personal/secure-banking — the page was opened on 2026-11-10 (chunk 0 of 3), but the footnote that carries the fee sits in a later chunk that was not read. The fee text below is therefore excerpt level: it is the chase.com text returned by the site search.
+- "Domestic and international incoming wires have a $15 fee per transfer. Financial institutions may deduct processing fees and/or charges from the amount of the wire transfer, including on returned wire transfers."
+- Used only as an example of a receiving-bank fee. It is not part of the headline cost.

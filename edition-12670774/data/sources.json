@@ -1,0 +1,206 @@
+{
+ "as_of": "2026-11-10",
+ "session": "arena-12670774",
+ "sources": [
+  {
+   "id": "N01",
+   "level": "opened",
+   "kind": "gov-cn",
+   "title": "SAFE Huifa [2020] No. 14 — Current-Account FX Business Guidelines (2020), State Council Gazette",
+   "url": "https://www.gov.cn/gongbao/content/2020/content_5560296.htm",
+   "read": "Arts. 54–56, 59–62, 64–65, 68, 86, 89: quota of USD 50,000 a year for settlement by any individual and for purchase by a 境内个人; a 境外个人 buys FX against documented lawful China-source current-account RMB income with ID plus source material including tax vouchers; splitting and quota borrowing lead to the watch list; cash carry limits."
+  },
+  {
+   "id": "N02",
+   "level": "opened",
+   "kind": "bank",
+   "title": "Bank of China FX quotation board (USD row, 2026-11-10 17:39:58 Beijing time)",
+   "url": "https://www.boc.cn/sourcedb/whpj/",
+   "read": "Per USD 100: spot buy 665.71, spot sell 668.51, cash sell 668.51, BOC conversion rate 671.67. The page states the board is for reference and the rate actually dealt governs."
+  },
+  {
+   "id": "N03",
+   "level": "opened",
+   "kind": "gov-us",
+   "title": "IRS — Gifts from foreign person (Form 3520)",
+   "url": "https://www.irs.gov/businesses/gifts-from-foreign-person",
+   "read": "Report gifts or bequests from a nonresident alien or foreign estate only if the aggregate exceeds USD 100,000 in the tax year; purported gifts from foreign corporations or partnerships above USD 20,116 (2025) / USD 20,573 (2026)."
+  },
+  {
+   "id": "N04",
+   "level": "opened",
+   "kind": "bank",
+   "title": "Bank of China — e-banking personal transfer and remittance tariff (standard from 2014-11-01)",
+   "url": "https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html",
+   "read": "Cross-border wire: 1‰ of the amount, minimum CNY 50, maximum CNY 260 per wire, plus cable fee CNY 150 (CNY 80 for Hong Kong, Macao, Taiwan). Local differences and discounts may apply."
+  },
+  {
+   "id": "N05",
+   "level": "opened",
+   "kind": "gov-cn",
+   "title": "SAFE Hebei branch — service guide: emigrant property transfer approval (2024-08-16)",
+   "url": "https://www.safe.gov.cn/hebei/file/file/20240816/86fd609207224d71b23cfda39ebe4bbb.pdf",
+   "read": "Conditions, documents, 20 working days, no fee, one visit, result is a single-use approval valid nationwide; quotes PBOC Announcement [2004] No. 16 Art. 2 and the 2024 Capital-Account Guidelines 6.4."
+  },
+  {
+   "id": "N06",
+   "level": "opened",
+   "kind": "gov-cn",
+   "title": "SAFE Guizhou branch — service guide: inheritance property transfer approval (2025-05-19)",
+   "url": "https://www.safe.gov.cn/guizhou/file/file/20250519/0390455ff31d4e0ea19ec8c45675ba77.pdf",
+   "read": "Foreign citizens remit a lawfully inherited China estate after approval by the SAFE branch of the deceased's last household registration; documents; 20 working days; no fee."
+  },
+  {
+   "id": "N08",
+   "level": "opened",
+   "kind": "gov-cn",
+   "title": "SAFE Anhui branch — operating guidelines annexed to Huifa [2025] No. 43 (2025-09-25)",
+   "url": "https://www.safe.gov.cn/anhui/file/file/20250925/43f09589bb2046c2a01a58d3a80c2b5f.pdf",
+   "read": "Foreign individual selling a China home: the amount remitted may not exceed the sale price less the taxes of that sale and may not exceed the amount on the tax certificate; title must already be transferred; refunds of failed purchases go back the way they came, with reasonable interest."
+  },
+  {
+   "id": "N09",
+   "level": "opened",
+   "kind": "gov-cn",
+   "title": "Foreign Exchange Administration Regulations (State Council Order No. 532, 2008)",
+   "url": "https://www.gov.cn/zwgk/2008-08/06/content_1066085.htm",
+   "read": "Arts. 39, 40, 45: fine up to 30% of the amount, and 30% up to the full amount in serious cases, plus criminal liability; Art. 42: warning and fine up to 20% for carrying FX across the border in breach; Art. 48: fine up to CNY 50,000 for an individual who submits untrue documents; Art. 52: definition of 境内个人."
+  },
+  {
+   "id": "N10",
+   "level": "opened",
+   "kind": "gov-cn",
+   "title": "State Council Order No. 851 (2026-10-29) — latest decision amending and repealing regulations",
+   "url": "https://www.gov.cn/zhengce/content/202611/content_7085098.htm",
+   "read": "Amends 14 regulations and repeals 4; the Foreign Exchange Administration Regulations are not among them."
+  },
+  {
+   "id": "N11",
+   "level": "opened",
+   "kind": "gov-us",
+   "title": "IRS — Report of Foreign Bank and Financial Accounts (FBAR)",
+   "url": "https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar",
+   "read": "A US person files FinCEN Form 114 if foreign accounts exceeded USD 10,000 in aggregate at any time in the year; due April 15 with automatic extension to October 15; filed through FinCEN, not with the tax return."
+  },
+  {
+   "id": "N12",
+   "level": "opened",
+   "kind": "gov-us",
+   "title": "IRS — Summary of FATCA reporting for U.S. taxpayers (Form 8938)",
+   "url": "https://www.irs.gov/businesses/corporations/summary-of-fatca-reporting-for-us-taxpayers",
+   "read": "Living in the US, unmarried: more than USD 50,000 on the last day of the year or USD 75,000 at any time; joint: USD 100,000 / 150,000. Living abroad: USD 200,000 / 300,000; joint: USD 400,000 / 600,000."
+  },
+  {
+   "id": "N13",
+   "level": "opened",
+   "kind": "gov-us",
+   "title": "26 U.S.C. §988 — Treatment of certain foreign currency transactions (U.S. Code, GPO)",
+   "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm",
+   "read": "(c)(1)(C): disposing of nonfunctional currency, including foreign-currency bank deposits, is a section 988 transaction; (e)(2): an individual's personal transaction recognises no exchange-rate gain unless the gain exceeds USD 200."
+  },
+  {
+   "id": "N14",
+   "level": "opened",
+   "kind": "gov-cn",
+   "title": "STA and SAFE Announcement 2013 No. 40 — tax filing for outward payments (current text)",
+   "url": "https://fgk.chinatax.gov.cn/zcfgk/c100012/c5194375/content.html",
+   "read": "A single outward payment above USD 50,000 for listed items (a foreign individual's China work pay, dividends, interest, property-transfer income and others) requires a tax filing; if tax was not paid, it is collected. Art. 4: foreign individuals follow the individual FX rules."
+  },
+  {
+   "id": "N15",
+   "level": "excerpt",
+   "kind": "gov-cn",
+   "title": "STA and SAFE Guoshuifa [2005] No. 13 — tax certificate for individual property transfers abroad",
+   "url": "https://fgk.chinatax.gov.cn/zcfgk/c100012/c5193664/content.html",
+   "read": "An existing tax-payment voucher can be given directly; no tax certificate is needed when the property to be transferred totals CNY 150,000 or less; unpaid tax may be declared and paid, after which the certificate is issued."
+  },
+  {
+   "id": "N16",
+   "level": "excerpt",
+   "kind": "gov-cn",
+   "title": "SAFE — Q&A on Huifa [2017] No. 29 (overseas cash withdrawals with domestic bank cards)",
+   "url": "http://m.safe.gov.cn/safe/2017/1230/8129.html",
+   "read": "All cards of one person together: at most CNY 100,000 equivalent per calendar year; CNY 10,000 equivalent per card per day; exceeding the annual amount suspends overseas withdrawals for that year and the next; card spending abroad does not use the USD 50,000 purchase quota."
+  },
+  {
+   "id": "N17",
+   "level": "opened",
+   "kind": "gov-cn",
+   "title": "State Taxation Administration — Individual Income Tax Law (2018 amendment, English text)",
+   "url": "https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html",
+   "read": "Art. 1: 183-day residence test; Art. 2: nine categories of taxable income; Art. 3: 3–45% on comprehensive income, 5–35% on business income, flat 20% on interest, dividends, leasing, transfer of assets and incidental income; Art. 6: how taxable income is computed."
+  },
+  {
+   "id": "N18",
+   "level": "opened",
+   "kind": "gov-cn",
+   "title": "PBOC Decree [2006] No. 3 — Measures for the Administration of Individual Foreign Exchange",
+   "url": "https://www.safe.gov.cn/safe/2006/1225/5319.html",
+   "read": "Art. 13: a 境外个人 may buy and remit FX against lawful current-account RMB income earned in China; Art. 26: property transfers abroad follow the property-transfer rules; Art. 37: 境内个人 = Chinese citizens holding a PRC ID, 境外个人 = foreign citizens holding passports."
+  },
+  {
+   "id": "N19",
+   "level": "opened",
+   "kind": "gov-cn",
+   "title": "PBOC and seven other agencies — Yinfa [2026] No. 42 on virtual-currency risks (2026-02-06)",
+   "url": "https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html",
+   "read": "Exchanging legal tender and virtual currency in China is an illegal financial activity and strictly prohibited; financial institutions may not provide accounts or transfers for it; repeals Yinfa [2021] No. 237."
+  },
+  {
+   "id": "N20",
+   "level": "opened",
+   "kind": "gov-us",
+   "title": "IRS — Foreign currency and currency exchange rates",
+   "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-currency-and-currency-exchange-rates",
+   "read": "Amounts on a US return are in US dollars; foreign-currency income is translated at the exchange rate prevailing when it is received, paid or accrued."
+  },
+  {
+   "id": "N21",
+   "level": "opened",
+   "kind": "provider",
+   "title": "Wise Help Centre — Guide to CNY transfers (provider's own page)",
+   "url": "https://wise.com/help/articles/2955298/guide-to-cny-transfers",
+   "read": "Sending from CNY: not for mainland Chinese nationals; you work or have worked in China; a China tax record from the last 3 years; only to an account you own; CNY 300,000 per transfer from a bank app; overall limit is after-tax China salary. No fee figure is stated on the page."
+  },
+  {
+   "id": "N22",
+   "level": "excerpt",
+   "kind": "gov-us",
+   "title": "IRS Publication 54 — Tax Guide for U.S. Citizens and Resident Aliens Abroad",
+   "url": "https://www.irs.gov/publications/p54",
+   "read": "A US citizen's worldwide income is generally subject to US income tax wherever they live; foreign income tax paid may be claimed as a foreign tax credit on Form 1116."
+  },
+  {
+   "id": "N23",
+   "level": "opened",
+   "kind": "gov-cn",
+   "title": "SAFE Huifa [2014] No. 2, as amended — SAFE Tianjin branch posting (2024-09-03)",
+   "url": "https://www.safe.gov.cn/tianjin/2024/0903/2594.html",
+   "read": "Art. 6: approval by the SAFE branch of the former household registration; the staged-remittance requirement for emigrants is abolished, so the bank may remit once or in several payments within the approved amount; notarisation of title documents and agency papers no longer required."
+  },
+  {
+   "id": "N24",
+   "level": "opened",
+   "kind": "gov-us",
+   "title": "U.S. Customs and Border Protection — Money and Other Monetary Instruments",
+   "url": "https://www.cbp.gov/travel/international-visitors/kbyg/money",
+   "read": "Currency or monetary instruments exceeding USD 10,000 carried into or out of the United States must be reported on FinCEN Form 105; the threshold applies to a family or group together; unreported currency can be seized."
+  },
+  {
+   "id": "N25",
+   "level": "opened",
+   "kind": "gov-us",
+   "title": "IRS news release IR-2026-48 — remittance transfer tax",
+   "url": "https://www.irs.gov/newsroom/treasury-irs-issue-proposed-regulations-on-the-new-remittance-transfer-tax-established-under-the-one-big-beautiful-bill",
+   "read": "From 2026-01-01 a 1% tax applies to remittances sent from the United States to foreign recipients when the sender pays with cash, a money order, a cashier's check or a similar physical instrument."
+  },
+  {
+   "id": "N26",
+   "level": "excerpt",
+   "kind": "bank",
+   "title": "Chase — Chase Secure Banking page, footnote on incoming wires",
+   "url": "https://personal.chase.com/personal/secure-banking",
+   "read": "Domestic and international incoming wires have a USD 15 fee per transfer; other institutions may deduct processing fees from the wire amount."
+  }
+ ]
+}
