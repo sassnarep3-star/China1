@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Verified, mobile-first research on moving CNY out of China as a U.S. citizen: lawful routes, published costs, tax treatment and flagged gaps.">
+<meta name="color-scheme" content="light">
+<title>Tax &amp; reporting · China Money · Edition I</title>
+<style>
+:root{--ink:#12222c;--muted:#556773;--line:#d7e0e6;--bg:#f4f7f9;--card:#fff;
+--accent:#0b6b5f;--accent-2:#e3f1ee;--warn:#8a5300;--warnbg:#fff4e0;
+--danger:#962626;--dangerbg:#fdecec;--ok:#1c5c3a;--radius:14px}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #b57b00;outline-offset:2px}
+.skip{position:absolute;left:-999px}
+.skip:focus{left:8px;top:8px;background:#fff;padding:10px;z-index:50;border:2px solid var(--accent)}
+header.top{background:#0d2b33;color:#fff;position:sticky;top:0;z-index:20;box-shadow:0 2px 10px rgba(0,0,0,.15)}
+.top-inner{max-width:1120px;margin:auto;padding:10px 16px;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.brand{color:#fff;text-decoration:none;font-weight:700;letter-spacing:.2px;display:flex;gap:10px;align-items:center}
+.brand span.mark{background:#1d5c63;border:1px solid #3b7d84;border-radius:8px;padding:3px 8px;font-size:.85rem}
+.brand small{display:block;font-weight:400;font-size:.7rem;letter-spacing:.12em;color:#a9c6cc;text-transform:uppercase}
+nav.main{display:flex;gap:4px;overflow-x:auto;max-width:1120px;margin:0 auto;padding:0 8px 8px;-webkit-overflow-scrolling:touch;scrollbar-width:thin}
+nav.main a{color:#cfe3e6;text-decoration:none;padding:8px 11px;border-radius:999px;font-size:.86rem;white-space:nowrap;border:1px solid transparent}
+nav.main a:hover{background:#15424b;color:#fff}
+nav.main a[aria-current="page"]{background:#e8f3f1;color:#0d2b33;font-weight:650}
+main{max-width:1120px;margin:auto;padding:22px 16px 64px}
+h1{font-size:clamp(1.75rem,5vw,2.7rem);line-height:1.14;margin:.25em 0 .35em;max-width:26ch;letter-spacing:-.01em}
+h2{font-size:clamp(1.25rem,3.4vw,1.65rem);margin:2.1em 0 .5em;line-height:1.25}
+h3{font-size:1.06rem;margin:1.4em 0 .35em}
+p{margin:.55em 0}
+.lead{font-size:1.08rem;color:#2b3c47;max-width:78ch}
+.muted{color:var(--muted)}
+.small{font-size:.85rem}
+.pill{display:inline-block;background:var(--accent-2);color:#134b43;border-radius:999px;padding:5px 11px;font-size:.78rem;font-weight:650;letter-spacing:.02em;margin:0 6px 6px 0}
+.pill.warn{background:var(--warnbg);color:var(--warn)}
+.pill.danger{background:var(--dangerbg);color:var(--danger)}
+.notice{border-left:4px solid #b57b00;background:var(--warnbg);padding:14px 16px;border-radius:0 10px 10px 0;margin:18px 0}
+.notice.danger{border-color:var(--danger);background:var(--dangerbg)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 16px 14px;margin:12px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.grid.two{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+a.card{display:block;text-decoration:none;color:inherit;transition:border-color .15s,transform .15s}
+a.card:hover{border-color:#7fb3ab;transform:translateY(-1px)}
+a.card strong{color:var(--accent);font-size:1.02rem}
+a.card p{color:var(--muted);font-size:.9rem;margin:.35em 0 0}
+.kpi{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.kpi b{font-size:1.5rem;letter-spacing:-.02em}
+.tablewrap{overflow-x:auto;background:#fff;border:1px solid var(--line);border-radius:12px;margin:12px 0}
+table{border-collapse:collapse;width:100%;font-size:.9rem}
+th,td{padding:11px 10px;text-align:left;vertical-align:top;border-bottom:1px solid #e7edf1}
+th{background:#eef4f6;font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;color:#3b525f;font-weight:700;position:sticky;top:0}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover{background:#fafcfd}
+.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.blank{background:#fffdf5;color:#7a6a45}
+.src{white-space:nowrap;font-size:.76rem;margin-right:5px;text-decoration:none;border-bottom:1px dotted var(--accent)}
+.badge{display:inline-block;padding:3px 8px;border-radius:6px;font-size:.74rem;font-weight:700;white-space:nowrap}
+.b-candidate{background:#dff0e6;color:var(--ok)}
+.b-conditional{background:#e6eefb;color:#1f4b8f}
+.b-limited{background:#fff2d9;color:var(--warn)}
+.b-prohibited{background:var(--dangerbg);color:var(--danger)}
+.b-unverified{background:#eceff1;color:#4a5a63}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:6px 0 10px;-webkit-overflow-scrolling:touch}
+.chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 13px;font-size:.84rem;white-space:nowrap;cursor:pointer;color:#29414d}
+.chip[aria-pressed="true"]{background:#0d2b33;color:#fff;border-color:#0d2b33}
+.searchbox{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 12px}
+.searchbox input,.searchbox select{padding:10px 12px;border:1px solid var(--line);border-radius:10px;font-size:.95rem;background:#fff;min-width:0}
+.searchbox input{flex:1 1 220px}
+.steps{counter-reset:s;list-style:none;padding:0;margin:.6em 0}
+.steps li{counter-increment:s;position:relative;padding:0 0 10px 34px}
+.steps li::before{content:counter(s);position:absolute;left:0;top:1px;width:23px;height:23px;border-radius:50%;
+background:#0d2b33;color:#fff;font-size:.78rem;font-weight:700;display:grid;place-items:center}
+ul.plain{padding-left:1.1em;margin:.5em 0}
+ul.plain li{margin:.25em 0}
+.pros li{color:#1c5c3a}
+.cons li{color:#7a2b2b}
+details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:10px 0}
+summary{cursor:pointer;font-weight:650}
+footer{margin-top:44px;border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:.86rem}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+@media (max-width:640px){
+  h1{font-size:1.6rem}
+  .tablewrap{border:0;background:transparent;overflow:visible}
+  table.responsive,table.responsive tbody,table.responsive tr,table.responsive td{display:block;width:100%}
+  table.responsive thead{position:absolute;left:-9999px}
+  table.responsive tr{background:#fff;border:1px solid var(--line);border-radius:12px;margin:0 0 10px;padding:6px 4px}
+  table.responsive td{display:grid;grid-template-columns:44% 56%;gap:8px;border-bottom:1px dashed #e7edf1;padding:8px 10px;text-align:left}
+  table.responsive td:last-child{border-bottom:0}
+  table.responsive td::before{content:attr(data-label);font-size:.72rem;text-transform:uppercase;letter-spacing:.04em;color:#5a6b76;font-weight:700}
+  table.responsive td.num{text-align:left}
+  main{padding:16px 12px 48px}
+  .card{padding:14px}
+}
+@media print{header.top,nav.main,.chips,.searchbox{display:none}body{background:#fff}.tablewrap{overflow:visible}}
+</style></head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="top-inner">
+<a class="brand" href="index.html"><span class="mark">&#165;&#8594;$</span><span>China Money<small>Edition I · verified 10 Nov 2026</small></span></a>
+<span class="pill">No personal data input required</span>
+</div><nav class="main" aria-label="Main"><a href="index.html">Overview</a><a href="routes.html">Routes</a><a href="costs.html">Costs</a><a href="penalty.html">Penalty</a><a href="taxes.html" aria-current="page">Tax &amp; reporting</a><a href="review.html">Flagged</a><a href="sources.html">Sources</a><a href="repo-review.html">Repo audit</a><a href="methodology.html">Method</a><a href="requirements.html">Coverage</a></nav></header>
+<main id="main">
+<h1>Tax and reporting, separated</h1>
+<p class="lead">Two systems apply at once, and neither is a conversion tax. China taxes the event that created the money. The United States taxes you on worldwide income and on currency movements. Reporting duties exist even when nothing is taxable.</p>
+<div class="notice"><strong>No personal tax figure is shown.</strong> Without residency, basis, acquisition dates, source documents and compliance history, any number would be fabricated. What is shown is the rule and the rate, with the official source.</div>
+<h2>Rule table</h2>
+<div class="tablewrap"><table class="responsive"><thead><tr><th scope="col">Jurisdiction</th><th scope="col">Topic</th><th scope="col">Amount</th><th scope="col">Status</th><th scope="col">Source</th></tr></thead><tbody><tr><td data-label="Jurisdiction">China</td><td data-label="Topic"><strong>Who is a resident individual</strong><br><span class="small muted">Domiciled in China, or resident 183 days or more in a tax year</span></td><td data-label="Amount" class="">Residency determines whether worldwide or China-source income is taxed</td><td data-label="Status"><span class="badge b-candidate">Verified</span></td><td data-label="Source"><a class="src" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" rel="noopener noreferrer" title="State Taxation Administration: Individual Income Tax Law of the People's Republic of China (English translation, updated 2018-08-31)">S15&nbsp;&#8599;</a></td></tr><tr><td data-label="Jurisdiction">China</td><td data-label="Topic"><strong>Wages and salary</strong><br><span class="small muted">Comprehensive income, progressive</span></td><td data-label="Amount" class="">3%-45%</td><td data-label="Status"><span class="badge b-candidate">Verified</span></td><td data-label="Source"><a class="src" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" rel="noopener noreferrer" title="State Taxation Administration: Individual Income Tax Law of the People's Republic of China (English translation, updated 2018-08-31)">S15&nbsp;&#8599;</a></td></tr><tr><td data-label="Jurisdiction">China</td><td data-label="Topic"><strong>Transfer of assets (property, equity)</strong><br><span class="small muted">Flat rate on taxable gain</span></td><td data-label="Amount" class="">20%</td><td data-label="Status"><span class="badge b-candidate">Verified</span></td><td data-label="Source"><a class="src" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" rel="noopener noreferrer" title="State Taxation Administration: Individual Income Tax Law of the People's Republic of China (English translation, updated 2018-08-31)">S15&nbsp;&#8599;</a><a class="src" href="https://shanghai.chinatax.gov.cn/xwdt/ztzl/grsx/fwjy/csfclsx/202411/t474236.html" rel="noopener noreferrer" title="Shanghai Municipal Tax Service, STA: 个人出售购入不足2年的住房 (tax checklist)">S18&nbsp;&#8599;</a><a class="src" href="https://shanghai.chinatax.gov.cn/xwdt/ztzl/grsx/fwjy/csfclsx/202411/t474237.html" rel="noopener noreferrer" title="Shanghai Municipal Tax Service, STA: 个人出售购入超过2年的住房 (tax checklist)">S19&nbsp;&#8599;</a></td></tr><tr><td data-label="Jurisdiction">China</td><td data-label="Topic"><strong>Housing sale VAT</strong><br><span class="small muted">Full 3% if held under 2 years; exempt at 2 years or more</span></td><td data-label="Amount" class="">3% or 0%</td><td data-label="Status"><span class="badge b-candidate">Verified</span></td><td data-label="Source"><a class="src" href="http://neimenggu.chinatax.gov.cn/zcwj/zxwj/202512/t20251231_889488.html" rel="noopener noreferrer" title="Ministry of Finance / STA: 关于个人销售住房增值税政策的公告, 财政部 税务总局公告2025年第17号">S17&nbsp;&#8599;</a><a class="src" href="https://shanghai.chinatax.gov.cn/xwdt/ztzl/grsx/fwjy/csfclsx/202411/t474237.html" rel="noopener noreferrer" title="Shanghai Municipal Tax Service, STA: 个人出售购入超过2年的住房 (tax checklist)">S19&nbsp;&#8599;</a></td></tr><tr><td data-label="Jurisdiction">China</td><td data-label="Topic"><strong>Sole-home IIT exemption</strong><br><span class="small muted">Self-used 5+ years and only family home</span></td><td data-label="Amount" class="">Exempt</td><td data-label="Status"><span class="badge b-candidate">Verified</span></td><td data-label="Source"><a class="src" href="https://shanghai.chinatax.gov.cn/xwdt/ztzl/grsx/fwjy/csfclsx/202411/t474237.html" rel="noopener noreferrer" title="Shanghai Municipal Tax Service, STA: 个人出售购入超过2年的住房 (tax checklist)">S19&nbsp;&#8599;</a></td></tr><tr><td data-label="Jurisdiction">China</td><td data-label="Topic"><strong>FIE dividends to a foreign individual</strong><br><span class="small muted">20% withholding since 2026-09-01</span></td><td data-label="Amount" class="">20%</td><td data-label="Status"><span class="badge b-candidate">Verified</span></td><td data-label="Source"><a class="src" href="https://shanghai.chinatax.gov.cn/zzzb/zcwj/202609/t481448.html" rel="noopener noreferrer" title="Ministry of Finance / STA: 关于外籍个人股息红利个人所得税政策有关事项的公告, 财政部 税务总局公告2026年第27号">S16&nbsp;&#8599;</a></td></tr><tr><td data-label="Jurisdiction">China</td><td data-label="Topic"><strong>Inheritance</strong><br><span class="small muted">No inheritance-tax statute located in this session</span></td><td data-label="Amount" class="blank">UNVERIFIED</td><td data-label="Status"><span class="badge b-unverified">UNVERIFIED</span></td><td data-label="Source"><a class="src" href="http://m.safe.gov.cn/safe/2004/1116/4133.html" rel="noopener noreferrer" title="People's Bank of China / SAFE: 个人财产对外转移售付汇管理暂行办法 (2004), PBOC announcement and full text">S07&nbsp;&#8599;</a></td></tr><tr><td data-label="Jurisdiction">United States</td><td data-label="Topic"><strong>Worldwide income</strong><br><span class="small muted">Citizens are taxed on income from all sources</span></td><td data-label="Amount" class="">Ordinary or capital rates</td><td data-label="Status"><span class="badge b-candidate">Verified</span></td><td data-label="Source"><a class="src" href="https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad" rel="noopener noreferrer" title="Internal Revenue Service: U.S. citizens and resident aliens abroad">S20&nbsp;&#8599;</a></td></tr><tr><td data-label="Jurisdiction">United States</td><td data-label="Topic"><strong>Foreign currency gain</strong><br><span class="small muted">Section 988 ordinary gain on disposition of nonfunctional currency</span></td><td data-label="Amount" class="">Ordinary rates on the rate-driven gain</td><td data-label="Status"><span class="badge b-candidate">Verified</span></td><td data-label="Source"><a class="src" href="https://www.govinfo.gov/content/pkg/USCODE-2023-title26/html/USCODE-2023-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm" rel="noopener noreferrer" title="U.S. Government Publishing Office: 26 U.S.C. §988 - Treatment of certain foreign currency transactions">S24&nbsp;&#8599;</a><a class="src" href="https://www.irs.gov/individuals/international-taxpayers/foreign-currency-and-currency-exchange-rates" rel="noopener noreferrer" title="Internal Revenue Service: Foreign currency and currency exchange rates">S23&nbsp;&#8599;</a></td></tr><tr><td data-label="Jurisdiction">United States</td><td data-label="Topic"><strong>Foreign tax credit</strong><br><span class="small muted">Credit for foreign income taxes paid or accrued, subject to limitation</span></td><td data-label="Amount" class="">Credit, not exclusion</td><td data-label="Status"><span class="badge b-candidate">Verified</span></td><td data-label="Source"><a class="src" href="https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit" rel="noopener noreferrer" title="Internal Revenue Service: Foreign tax credit">S28&nbsp;&#8599;</a></td></tr><tr><td data-label="Jurisdiction">United States</td><td data-label="Topic"><strong>Treaty with China</strong><br><span class="small muted">1984 convention limits source-country tax on dividends, interest and royalties to 10%</span></td><td data-label="Amount" class="">10% cap where the treaty applies</td><td data-label="Status"><span class="badge b-candidate">Verified</span></td><td data-label="Source"><a class="src" href="https://www.irs.gov/pub/irs-trty/china.pdf" rel="noopener noreferrer" title="Internal Revenue Service: United States - People's Republic of China Income Tax Convention (1984, in force 1987)">S25&nbsp;&#8599;</a></td></tr><tr><td data-label="Jurisdiction">United States</td><td data-label="Topic"><strong>Gifts and bequests from abroad</strong><br><span class="small muted">Form 3520 if more than USD 100,000 from a nonresident alien or foreign estate</span></td><td data-label="Amount" class="">Reporting; generally not income</td><td data-label="Status"><span class="badge b-candidate">Verified</span></td><td data-label="Source"><a class="src" href="https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad" rel="noopener noreferrer" title="Internal Revenue Service: U.S. citizens and resident aliens abroad">S20&nbsp;&#8599;</a><a class="src" href="https://www.irs.gov/forms-pubs/about-form-3520" rel="noopener noreferrer" title="Internal Revenue Service: About Form 3520, Annual Return To Report Transactions With Foreign Trusts and Receipt of Certain Foreign Gifts">S29&nbsp;&#8599;</a></td></tr><tr><td data-label="Jurisdiction">United States</td><td data-label="Topic"><strong>Foreign account reporting</strong><br><span class="small muted">FBAR above USD 10,000 aggregate; Form 8938 above the applicable threshold</span></td><td data-label="Amount" class="">Information returns</td><td data-label="Status"><span class="badge b-candidate">Verified</span></td><td data-label="Source"><a class="src" href="https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar" rel="noopener noreferrer" title="Internal Revenue Service: Report of Foreign Bank and Financial Accounts (FBAR)">S21&nbsp;&#8599;</a><a class="src" href="https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements" rel="noopener noreferrer" title="Internal Revenue Service: Comparison of Form 8938 and FBAR requirements">S22&nbsp;&#8599;</a></td></tr><tr><td data-label="Jurisdiction">United States</td><td data-label="Topic"><strong>State tax</strong><br><span class="small muted">State residency and sourcing rules</span></td><td data-label="Amount" class="blank">UNVERIFIED</td><td data-label="Status"><span class="badge b-unverified">UNVERIFIED</span></td><td data-label="Source"></td></tr></tbody></table></div>
+<h2>The order of operations</h2>
+<ol class="steps">
+<li>Tax attaches to the event, not to the wire.</li><li>China taxes first at the source event: wages 3-45%, asset gains 20%, dividends 20%.</li><li>The U.S. then taxes the person on worldwide income; the foreign tax credit reduces double taxation but is limited.</li><li>Section 988 can add ordinary income purely from RMB appreciation, even when the principal was already taxed.</li><li>Reporting penalties (FBAR, 8938, 3520) are fixed-dollar exposures that have nothing to do with the amount converted.</li>
+</ol>
+<h2>Reporting calendar</h2>
+<div class="tablewrap"><table class="responsive"><thead><tr><th scope="col">Filing</th><th scope="col">Threshold</th><th scope="col">Due</th><th scope="col">Source</th></tr></thead><tbody><tr>FBAR (FinCEN 114)Aggregate foreign accounts over USD 10,000 at any time15 April, automatic extension to 15 October<a class="src" href="https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar" rel="noopener noreferrer" title="Internal Revenue Service: Report of Foreign Bank and Financial Accounts (FBAR)">S21&nbsp;&#8599;</a></tr><tr>Form 8938USD 50,000 year-end / 75,000 any time (unmarried, living in the U.S.); higher thresholds abroadWith the income tax return, including extensions<a class="src" href="https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements" rel="noopener noreferrer" title="Internal Revenue Service: Comparison of Form 8938 and FBAR requirements">S22&nbsp;&#8599;</a></tr><tr>Form 3520Gifts or bequests over USD 100,000 from a nonresident alien or foreign estateWith the income tax return<a class="src" href="https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad" rel="noopener noreferrer" title="Internal Revenue Service: U.S. citizens and resident aliens abroad">S20&nbsp;&#8599;</a><a class="src" href="https://www.irs.gov/forms-pubs/about-form-3520" rel="noopener noreferrer" title="Internal Revenue Service: About Form 3520, Annual Return To Report Transactions With Foreign Trusts and Receipt of Certain Foreign Gifts">S29&nbsp;&#8599;</a></tr><tr>Form 1116Claiming the foreign tax creditWith the income tax return<a class="src" href="https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit" rel="noopener noreferrer" title="Internal Revenue Service: Foreign tax credit">S28&nbsp;&#8599;</a></tr></tbody></table></div>
+<h2>Three mistakes this page is designed to prevent</h2>
+<div class="grid two">
+<div class="card"><h3>"The conversion is taxed at X%"</h3><p>There is no such rate. China taxes wages, gains and dividends; the U.S. taxes income and section 988 currency gain. A wire fee is a fee.</p></div>
+<div class="card"><h3>"I already paid tax in China, so the U.S. is settled"</h3><p>The foreign tax credit is real but limited. It is claimed on Form 1116 and can leave residual U.S. tax, especially across baskets.</p></div>
+<div class="card"><h3>"If I move it, reporting ends"</h3><p>FBAR and 8938 look at the year's maximum balances. Moving money after 31 December does not undo a reporting requirement for that year.</p></div>
+</div>
+
+<footer>
+<p><strong>Research, not legal, tax or investment advice.</strong> Unknown values are blank, never inferred. Official agencies establish the rules; bank and provider pages establish only their own published terms. A citation does not establish your eligibility for a route.</p>
+<p>Data as of 10 November 2026 (UTC). Rates are a single published snapshot, not a quote. <a href="sources.html">Source register</a> · <a href="review.html">Flagged for review</a> · <a href="methodology.html">Method and limits</a> · <a href="requirements.html">Requirement coverage</a></p>
+</footer></main></body></html>

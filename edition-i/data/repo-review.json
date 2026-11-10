@@ -1,0 +1,269 @@
+{
+ "generated_utc": "2026-11-10",
+ "summary": {
+  "html_files": 253,
+  "internal_refs": 20814,
+  "external_refs": 21299,
+  "missing_links": 0,
+  "bad_anchors": 0,
+  "duplicate_ids": 0,
+  "json_files": 65,
+  "invalid_json": 0,
+  "content_leads": 5
+ },
+ "issues": [
+  {
+   "check": "HTML pages parsed",
+   "result": "253",
+   "detail": "Every committed .html file was parsed."
+  },
+  {
+   "check": "Internal references resolved",
+   "result": "20814",
+   "detail": "0 broken (file or path missing)."
+  },
+  {
+   "check": "Fragment (anchor) targets",
+   "result": "20814",
+   "detail": "0 fragments did not resolve to an element ID."
+  },
+  {
+   "check": "Duplicate element IDs",
+   "result": "0",
+   "detail": "Duplicate IDs break in-page navigation and accessibility."
+  },
+  {
+   "check": "JSON documents parsed",
+   "result": "65",
+   "detail": "0 failed to parse."
+  },
+  {
+   "check": "External references",
+   "result": "21299",
+   "detail": "Not fetched during the audit; external availability is not assured."
+  },
+  {
+   "check": "Stale or risky content patterns",
+   "result": "5",
+   "detail": "Patterns are reported as leads for human review, not as verdicts."
+  }
+ ],
+ "missing": [],
+ "bad_anchor": [],
+ "duplicate_id_pages": [],
+ "largest": [
+  {
+   "path": "edition-e/site/earned.html",
+   "bytes": 357022,
+   "lines": 54
+  },
+  {
+   "path": "edition-e/site/capital.html",
+   "bytes": 258256,
+   "lines": 39
+  },
+  {
+   "path": "edition-e/site/excluded.html",
+   "bytes": 248765,
+   "lines": 44
+  },
+  {
+   "path": "edition-e/site/cash.html",
+   "bytes": 213409,
+   "lines": 39
+  },
+  {
+   "path": "edition-f/site/costs.html",
+   "bytes": 182088,
+   "lines": 164
+  },
+  {
+   "path": "edition-e/site/investment.html",
+   "bytes": 148034,
+   "lines": 29
+  },
+  {
+   "path": "edition-h/site/method-R06.html",
+   "bytes": 117884,
+   "lines": 3
+  },
+  {
+   "path": "edition-h/site/method-P03.html",
+   "bytes": 117020,
+   "lines": 3
+  },
+  {
+   "path": "edition-h/site/method-P02.html",
+   "bytes": 113951,
+   "lines": 3
+  },
+  {
+   "path": "edition-h/site/method-B01.html",
+   "bytes": 111824,
+   "lines": 3
+  },
+  {
+   "path": "edition-f/site/methods.html",
+   "bytes": 111447,
+   "lines": 60
+  },
+  {
+   "path": "edition-i/site/method-P01.html",
+   "bytes": 107237,
+   "lines": 127
+  }
+ ],
+ "content_findings": [
+  {
+   "pattern": "Staged release (2004 rule)",
+   "count_capped": 8,
+   "hits": [
+    {
+     "path": "dossier/channels.html",
+     "context": "k\" rel=\"noopener\" title=\"SAFE Q&amp;A on 个人财产对外转移 (approval tiers and staged release)\">CN-07 · SAFE</a><br><a class=\"src\" href=\"http://m.safe.gov.cn/safe/"
+    },
+    {
+     "path": "dossier/channels.html",
+     "context": "k\" rel=\"noopener\" title=\"SAFE Q&amp;A on 个人财产对外转移 (approval tiers and staged release)\">CN-07 · SAFE</a><br><a class=\"src\" href=\"https://www.nia.gov.cn/Enq"
+    },
+    {
+     "path": "dossier/flagged.html",
+     "context": "k\" rel=\"noopener\" title=\"SAFE Q&amp;A on 个人财产对外转移 (approval tiers and staged release)\">CN-07 · SAFE</a></td></tr> <tr><td class=\"mono\"><b>F18</b></td><td>"
+    },
+    {
+     "path": "dossier/flagged.html",
+     "context": "pproval thresholds in the emigration-transfer procedure, the two-year staged release, the 20% IIT rates, the 30%/30%-100% FX penalty bands, the USD 10,000"
+    },
+    {
+     "path": "dossier/sources.html",
+     "context": "var(--muted)\">第二条 个人财产对外转移包括移民财产转移和继承财产转移；第六条 移民转移必须一次性申请拟转移出境的全部财产金额，分步汇出。首次可汇出金额不得超过全部申请转移财产的一半；自首次汇出满1年后…满2年后可汇出全部剩余财产。全部申请转移财产在等值人民币20万元以下（含"
+    },
+    {
+     "path": "dossier/sources.html",
+     "context": "le personal balance; the RMB 200,000 one-shot threshold; the two-year staged release; the hukou-cancellation + overseas-settlement + tax-clearance prerequ"
+    },
+    {
+     "path": "dossier/sources.html",
+     "context": "><b>CN-07</b></td><td><b>SAFE Q&amp;A on 个人财产对外转移 (approval tiers and staged release)</b><br><span style=\"color:var(--muted);font-size:13px\">SAFE · zh</sp"
+    },
+    {
+     "path": "dossier/sources.html",
+     "context": "超过等值50万元（含50万元）人民币的，由省级外汇局初审后报国家外汇管理局批准。对超过20万元（含20万元）人民币的移民转移采取“一次申请、分步汇出”。</span></td><td>The RMB 500,000 approval-tier split between the prov"
+    }
+   ]
+  },
+  {
+   "pattern": "Exact all-in total $83.45",
+   "count_capped": 8,
+   "hits": [
+    {
+     "path": "COORDINATION.md",
+     "context": "ost pages one-way margin 0.2104%  round-trip 0.4198%   $10,000: total $83.45 (0.834%)   $100,000: total $301.62 (0.302%)   $400,000: total $932.72"
+    },
+    {
+     "path": "README.md",
+     "context": "amed US receiving fee | | What does it cost all-in at USD 10,000? | **$83.45 (0.834%)** | Same machinery; the capped commission and cable fee domi"
+    },
+    {
+     "path": "edition-d/docs/index.html",
+     "context": "n></div><div class=\"stat\"><small>Total cost at $10,000</small><strong>$83.45</strong><span>0.83% — the same machinery, a fixed cost spread thinner"
+    },
+    {
+     "path": "edition-d/docs/pages/costs-boc-documented.html",
+     "context": "d>$21.04</td><td>$32.41</td><td>$15.00</td><td>$15.00</td><td><strong>$83.45</strong></td><td>0.83%</td><td>$9,917</td><td><a class=\"src\" href=\"ht"
+    },
+    {
+     "path": "edition-d/docs/pages/costs-boc-quota.html",
+     "context": "d>$21.04</td><td>$32.41</td><td>$15.00</td><td>$15.00</td><td><strong>$83.45</strong></td><td>0.83%</td><td>$9,917</td><td><a class=\"src\" href=\"ht"
+    },
+    {
+     "path": "edition-d/docs/pages/costs-emigration.html",
+     "context": "d>$21.04</td><td>$32.41</td><td>$15.00</td><td>$15.00</td><td><strong>$83.45</strong></td><td>0.83%</td><td>$9,917</td><td><a class=\"src\" href=\"ht"
+    },
+    {
+     "path": "edition-d/docs/pages/costs-inheritance.html",
+     "context": "d>$21.04</td><td>$32.41</td><td>$15.00</td><td>$15.00</td><td><strong>$83.45</strong></td><td>0.83%</td><td>$9,917</td><td><a class=\"src\" href=\"ht"
+    },
+    {
+     "path": "edition-d/docs/pages/costs-property.html",
+     "context": "d>$21.04</td><td>$32.41</td><td>$15.00</td><td>$15.00</td><td><strong>$83.45</strong></td><td>0.83%</td><td>$9,917</td><td><a class=\"src\" href=\"ht"
+    }
+   ]
+  },
+  {
+   "pattern": "Exact all-in total $932.72",
+   "count_capped": 7,
+   "hits": [
+    {
+     "path": "COORDINATION.md",
+     "context": " $83.45 (0.834%)   $100,000: total $301.62 (0.302%)   $400,000: total $932.72 (0.233%)  $ python3 edition-d/build/verify.py RESULT: PASS — 19 check"
+    },
+    {
+     "path": "README.md",
+     "context": "48, midpoint 667.885 | | What does it cost all-in at USD 400,000? | **$932.72 (0.233%)** | BOC tariff + full-amount surcharge + named US receiving "
+    },
+    {
+     "path": "edition-d/docs/index.html",
+     "context": "></div><div class=\"stat\"><small>Total cost at $400,000</small><strong>$932.72</strong><span>0.23% of the amount, all fees included</span></div><div"
+    },
+    {
+     "path": "edition-d/docs/pages/costs-boc-documented.html",
+     "context": ">$841.46</td><td>$61.26</td><td>$15.00</td><td>$15.00</td><td><strong>$932.72</strong></td><td>0.23%</td><td>$399,067</td><td><a class=\"src\" href=\""
+    },
+    {
+     "path": "edition-d/docs/pages/costs-inheritance.html",
+     "context": ">$841.46</td><td>$61.26</td><td>$15.00</td><td>$15.00</td><td><strong>$932.72</strong></td><td>0.23%</td><td>$399,067</td><td><a class=\"src\" href=\""
+    },
+    {
+     "path": "edition-d/docs/pages/costs-property.html",
+     "context": ">$841.46</td><td>$61.26</td><td>$15.00</td><td>$15.00</td><td><strong>$932.72</strong></td><td>0.23%</td><td>$399,067</td><td><a class=\"src\" href=\""
+    },
+    {
+     "path": "integration/review.html",
+     "context": "imed costs under 1% at all sizes and exact totals ($83.45 at $10,000; $932.72 at $400,000). These are scenario arithmetic, not a verified quote. A "
+    }
+   ]
+  },
+  {
+   "pattern": "Blanket tax-free claim",
+   "count_capped": 6,
+   "hits": [
+    {
+     "path": "docs/tax.html",
+     "context": "d review; do not assume all principal is taxable or all conversion is tax-free.</td><td><a href=\"https://www.govinfo.gov/content/pkg/USCODE-2024-tit"
+    },
+    {
+     "path": "edition-f/site/flagged.html",
+     "context": "ain &gt;USD 200. The USD 200 amount is a recognition threshold, not a tax-free allowance.</td><td class=\"\">fx_gain_character; personal_us_tax</td><t"
+    },
+    {
+     "path": "edition-f/site/penalty.html",
+     "context": "e-rate gain can be taxable. USD 200 is a recognition threshold, not a tax-free allowance. Personal amount blank.</td><td class=\"\"><span class=\"badge"
+    },
+    {
+     "path": "edition-f/site/reporting.html",
+     "context": "ss=\"callout\"><strong>Reporting is not tax.</strong> A transfer can be tax-free and still reportable; a reportable account can produce no taxable inc"
+    },
+    {
+     "path": "edition-f/site/sources.html",
+     "context": " is flagged F02. The USD 200 amount is a recognition threshold, not a tax-free allowance.</td><td class=\"\"><a class=\"src\" href=\"https://www.govinfo."
+    },
+    {
+     "path": "integration/review.html",
+     "context": "income and currency-gain analysis cannot be replaced with a universal tax-free statement. Unknown basis, income history, residence and compliance hi"
+    }
+   ]
+  },
+  {
+   "pattern": "Under-1% universal claim",
+   "count_capped": 1,
+   "hits": [
+    {
+     "path": "integration/review.html",
+     "context": "d universal price claim</td><td>Root landing previously claimed costs under 1% at all sizes and exact totals ($83.45 at $10,000; $932.72 at $400,000"
+    }
+   ]
+  }
+ ],
+ "limits": "A mechanical audit proves internal consistency and navigability. It does not prove any legal proposition, and it does not fetch external URLs."
+}

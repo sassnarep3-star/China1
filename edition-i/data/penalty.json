@@ -1,0 +1,372 @@
+{
+  "_meta": {
+    "edition": "I",
+    "as_of_utc": "2026-11-10",
+    "fx": {
+      "board_source": "S08",
+      "board_date": "2026-11-10",
+      "board_time": "07:32:39 (Beijing)",
+      "usd_cash_buy_cny_per_100": 666.22,
+      "usd_spot_buy_cny_per_100": 666.22,
+      "usd_spot_sell_cny_per_100": 669.03,
+      "usd_cash_sell_cny_per_100": 669.03,
+      "mid_cny_per_usd": 6.67625,
+      "sell_cny_per_usd": 6.6903,
+      "central_parity_cny_per_usd": 6.7188,
+      "parity_source": "S10",
+      "one_way_margin_pct": 0.210443,
+      "round_trip_margin_pct": 0.420886,
+      "formula": "one-way = (sell - mid) / mid where mid = (buy + sell) / 2",
+      "warning": "Snapshot of a published board. It is not a quote, not the PBOC fixing, and not a forecast. The bank's actual execution rate governs."
+    },
+    "note": "Costs are decomposed so that published items are computed and unpublished items stay blank. No tax amount is computed for a person whose facts are unknown."
+  },
+  "lines": [
+    {
+      "id": "FX1",
+      "label": "Bank FX margin on RMB to USD purchase (one way)",
+      "class": "conversion",
+      "basis": "BOC board: spot sell 6.6903 vs spot buy 6.6622; midpoint 6.67625",
+      "display": "0.2104% of principal",
+      "numeric_pct": 0.210443,
+      "status": "verified",
+      "sources": ["S08"],
+      "note": "The margin is half the bid/ask spread. It is the bank's compensation and is separate from commission."
+    },
+    {
+      "id": "FX2",
+      "label": "Round-trip FX margin if you convert twice",
+      "class": "conversion",
+      "basis": "Same board; buy and sell spread",
+      "display": "0.4209% of principal",
+      "numeric_pct": 0.420886,
+      "status": "verified",
+      "sources": ["S08"],
+      "note": "Converting RMB to USD and back costs roughly double the one-way margin. Avoid unnecessary round trips."
+    },
+    {
+      "id": "FX3",
+      "label": "PBOC central parity vs BOC customer rate",
+      "class": "conversion",
+      "basis": "Central parity 6.7188 (S10) vs BOC mid 6.67625 (S08)",
+      "display": "Difference 0.637% — NOT a fee",
+      "numeric_pct": 0.6373,
+      "status": "verified",
+      "sources": ["S08", "S10"],
+      "note": "The fixing is a reference rate, not a tradeable price. Do not present the gap between the fixing and a bank rate as a customer cost."
+    },
+    {
+      "id": "FEE1",
+      "label": "BOC cross-border telegraphic transfer commission",
+      "class": "fee",
+      "basis": "0.1% of the remitted amount, minimum CNY 50, maximum CNY 260",
+      "display": "0.1%, floor CNY 50, cap CNY 260",
+      "numeric_pct": 0.1,
+      "floor_cny": 50,
+      "cap_cny": 260,
+      "status": "verified",
+      "sources": ["S09"],
+      "note": "Note 1 of the tariff allows negotiated, discounted or local variations."
+    },
+    {
+      "id": "FEE2",
+      "label": "BOC cable / telecommunications charge",
+      "class": "fee",
+      "basis": "CNY 150 per transfer outside Hong Kong, Macau and Taiwan; CNY 80 within",
+      "display": "CNY 150 (USD 22.42 at the board rate)",
+      "cny": 150,
+      "status": "verified",
+      "sources": ["S09", "S08"],
+      "note": "Published base schedule; local variation possible under note 1."
+    },
+    {
+      "id": "FEE3",
+      "label": "Intermediary (correspondent) bank deduction",
+      "class": "unverified",
+      "basis": "SWIFT chains may pass through one or more correspondents, each of which may deduct a fee",
+      "display": "UNVERIFIED",
+      "status": "unverified",
+      "sources": [],
+      "note": "No official schedule applies. It depends on the routing banks and the charge code used. Left blank rather than guessed."
+    },
+    {
+      "id": "FEE4",
+      "label": "Receiving bank incoming-wire fee",
+      "class": "unverified",
+      "basis": "Set by the U.S. receiving bank and account tier; not verified for this user",
+      "display": "UNVERIFIED",
+      "status": "unverified",
+      "sources": [],
+      "note": "Ask your U.S. bank for its published incoming international wire fee and whether it is waived for your account tier."
+    },
+    {
+      "id": "FEE5",
+      "label": "AML identity verification above CNY 5,000 / USD 1,000",
+      "class": "compliance",
+      "basis": "PBOC order 2025 No. 11, Article 34, effective 2026-01-01",
+      "display": "No published fee; may add time",
+      "status": "verified",
+      "sources": ["S11"],
+      "note": "This is a compliance step, not a charge. It can delay a transfer and may trigger document requests."
+    },
+    {
+      "id": "CN1",
+      "label": "China IIT on wage and salary income",
+      "class": "tax-cn",
+      "basis": "Progressive 3% to 45% for comprehensive income",
+      "display": "3%-45%",
+      "status": "verified",
+      "sources": ["S15"],
+      "note": "Applies when earned, not when converted. If already withheld and paid, conversion adds no wage tax."
+    },
+    {
+      "id": "CN2",
+      "label": "China IIT on transfer of assets (property, equity)",
+      "class": "tax-cn",
+      "basis": "Flat 20% of taxable gain",
+      "display": "20% of gain",
+      "status": "verified",
+      "sources": ["S15", "S18", "S19"],
+      "note": "For housing, if the original value cannot be documented, a 1% deemed assessment on the transfer amount may apply (S18)."
+    },
+    {
+      "id": "CN3",
+      "label": "China IIT on FIE dividends to a foreign individual",
+      "class": "tax-cn",
+      "basis": "20% from 2026-09-01; the former exemption is repealed",
+      "display": "20%",
+      "status": "verified",
+      "sources": ["S16"],
+      "note": "A treaty may reduce the rate, but relief is fact-specific and requires analysis (S25)."
+    },
+    {
+      "id": "CN4",
+      "label": "China VAT on sale of housing",
+      "class": "tax-cn",
+      "basis": "3% of the full amount if held under 2 years; exempt at 2 years or more, from 2026-01-01",
+      "display": "3% / exempt",
+      "status": "verified",
+      "sources": ["S17", "S19"],
+      "note": "Residential housing only; non-residential property has different treatment."
+    },
+    {
+      "id": "CN5",
+      "label": "China IIT exemption for sole home held 5+ years",
+      "class": "tax-cn",
+      "basis": "Exempt if the property was self-used for 5+ years and is the family's only home",
+      "display": "Exempt if conditions met",
+      "status": "verified",
+      "sources": ["S19"],
+      "note": "Requires a written undertaking and supporting family/housing documents."
+    },
+    {
+      "id": "CN6",
+      "label": "China inheritance tax",
+      "class": "tax-cn",
+      "basis": "No current inheritance-tax statute was located in this session",
+      "display": "UNVERIFIED / none identified",
+      "status": "unverified",
+      "sources": [],
+      "note": "Do not assume zero. The absence of a located statute is not proof that no charge applies to a specific estate."
+    },
+    {
+      "id": "US1",
+      "label": "U.S. income tax on the underlying income",
+      "class": "tax-us",
+      "basis": "U.S. citizens are taxed on worldwide income",
+      "display": "Ordinary rates / capital rates as applicable",
+      "status": "verified",
+      "sources": ["S20"],
+      "note": "Moving money does not create income by itself, but it does not erase the tax on income already earned either."
+    },
+    {
+      "id": "US2",
+      "label": "Section 988 foreign currency gain on converting RMB",
+      "class": "tax-us",
+      "basis": "Disposition of nonfunctional currency is a section 988 transaction; gain is ordinary income",
+      "display": "Ordinary income on RMB appreciation between acquisition and conversion",
+      "status": "verified",
+      "sources": ["S24", "S23"],
+      "note": "Requires a USD basis for each tranche of RMB. Without acquisition records the gain cannot be computed."
+    },
+    {
+      "id": "US3",
+      "label": "Foreign tax credit for China tax paid",
+      "class": "tax-us",
+      "basis": "Nonrefundable credit for foreign income taxes paid or accrued, subject to limitation",
+      "display": "Credit, not an exclusion; Form 1116",
+      "status": "verified",
+      "sources": ["S28"],
+      "note": "The credit is limited to U.S. tax on foreign-source income in the relevant basket."
+    },
+    {
+      "id": "US4",
+      "label": "FBAR (FinCEN 114) non-filing",
+      "class": "penalty-us",
+      "basis": "Aggregate foreign accounts over USD 10,000 at any time; civil maximums adjusted annually for inflation",
+      "display": "Up to USD 10,000 per non-willful violation; willful greater of USD 100,000 or 50% of balance",
+      "status": "verified",
+      "sources": ["S21", "S22"],
+      "note": "Penalty maximums are inflation-adjusted; the figures shown are the published base amounts in the IRS comparison table."
+    },
+    {
+      "id": "US5",
+      "label": "Form 8938 non-filing",
+      "class": "penalty-us",
+      "basis": "Thresholds from USD 50,000 (unmarried, living in the U.S.) / 200,000 (living abroad); up to USD 10,000 plus USD 10,000 per 30 days after notice, maximum USD 60,000",
+      "display": "USD 10,000 + up to USD 50,000",
+      "status": "verified",
+      "sources": ["S22"],
+      "note": "Separate from and additional to the FBAR."
+    },
+    {
+      "id": "US6",
+      "label": "Form 3520 for a foreign gift or bequest over USD 100,000",
+      "class": "penalty-us",
+      "basis": "Receipt of more than USD 100,000 from a nonresident alien individual or foreign estate",
+      "display": "Reporting required; penalties can apply",
+      "status": "verified",
+      "sources": ["S20", "S29"],
+      "note": "A gift is generally not taxable income to the recipient, but the information return is still required."
+    },
+    {
+      "id": "US7",
+      "label": "State income tax",
+      "class": "tax-us",
+      "basis": "State rules vary; not researched per state",
+      "display": "UNVERIFIED",
+      "status": "unverified",
+      "sources": [],
+      "note": "Residency and domicile facts are unknown."
+    },
+    {
+      "id": "US8",
+      "label": "U.S. exit tax",
+      "class": "tax-us",
+      "basis": "Not applicable to a citizen who remains a citizen; expatriation rules are a different fact pattern",
+      "display": "Not applicable on these facts",
+      "status": "verified",
+      "sources": ["S20"],
+      "note": "Included to close a common misconception: converting or transferring funds is not an expatriation event."
+    },
+    {
+      "id": "IL1",
+      "label": "Penalty for evasion (逃汇) or illegal FX purchase (非法套汇)",
+      "class": "penalty-cn",
+      "basis": "Fines up to 30% of the amount; 30% up to the equivalent amount if serious",
+      "display": "0%-100% of the amount",
+      "status": "verified",
+      "sources": ["S27"],
+      "note": "This dwarfs every lawful fee. It is the real 'conversion penalty' risk to avoid."
+    },
+    {
+      "id": "IL2",
+      "label": "Penalty for private FX trading",
+      "class": "penalty-cn",
+      "basis": "Confiscation of gains plus fines up to 30%, or 30%-100% if serious",
+      "display": "0%-100% of the amount plus confiscation",
+      "status": "verified",
+      "sources": ["S27"],
+      "note": "Applies to underground banks and private brokers."
+    },
+    {
+      "id": "IL3",
+      "label": "Penalty for illegal cash carriage",
+      "class": "penalty-cn",
+      "basis": "Warning and fines up to 20% of the amount; customs rules may also apply",
+      "display": "0%-20%",
+      "status": "verified",
+      "sources": ["S27", "S14"],
+      "note": "Cash above the permitted amount can be detained or confiscated."
+    },
+    {
+      "id": "TM1",
+      "label": "Delay and opportunity cost",
+      "class": "unverified",
+      "basis": "Approval timelines, bank processing and rate movement",
+      "display": "UNVERIFIED",
+      "status": "unverified",
+      "sources": [],
+      "note": "No published service standard exists for SAFE approval of an individual property transfer."
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "SC1",
+      "title": "Already-taxed documented salary, converted lawfully",
+      "assumption": "The entire balance is post-tax salary already reported in the U.S., and the RMB was acquired at the same exchange rate as conversion.",
+      "amount_usd": 400000,
+      "china_tax": "0 incremental (tax was withheld when paid)",
+      "us_tax": "0 incremental on principal; section 988 gain may still arise if RMB appreciated",
+      "why": "Conversion is not itself a taxable event; the tax attaches to the income when earned.",
+      "label": "ILLUSTRATION ONLY — facts unknown",
+      "sources": ["S20", "S24", "S03"]
+    },
+    {
+      "id": "SC2",
+      "title": "Section 988 gain if RMB appreciated 1%",
+      "assumption": "USD 400,000 of RMB was acquired when RMB was 1% weaker; converted now.",
+      "amount_usd": 400000,
+      "china_tax": "none",
+      "us_tax": "Gain 4,000 taxed as ordinary income: about 960 at 24%, 1,280 at 32%, 1,480 at 37%",
+      "why": "Section 988 treats the currency disposition as ordinary gain or loss measured by rate movement.",
+      "label": "SENSITIVITY ILLUSTRATION — not a personal estimate",
+      "sources": ["S24", "S23"]
+    },
+    {
+      "id": "SC3",
+      "title": "Property gain taxed at 20%",
+      "assumption": "USD 400,000 sale proceeds with a USD 280,000 documented cost basis and no exemption.",
+      "amount_usd": 400000,
+      "china_tax": "20% of 120,000 = 24,000, plus VAT only if held under 2 years",
+      "us_tax": "U.S. tax on the gain, with a foreign tax credit for the China tax subject to limitation",
+      "why": "Asset-transfer income is taxed at a flat 20% in China.",
+      "label": "ILLUSTRATION ONLY — no property facts supplied",
+      "sources": ["S15", "S18", "S19", "S28"]
+    },
+    {
+      "id": "SC4",
+      "title": "Property sale with no original-value proof (deemed 1%)",
+      "assumption": "USD 400,000 proceeds and no complete original-value documentation.",
+      "amount_usd": 400000,
+      "china_tax": "1% of 400,000 = 4,000 deemed IIT",
+      "us_tax": "Depends on basis and gain; credit may be limited",
+      "why": "Where original value cannot be established, the checklist allows deemed assessment at 1% of the transfer amount.",
+      "label": "ILLUSTRATION ONLY",
+      "sources": ["S18", "S19"]
+    },
+    {
+      "id": "SC5",
+      "title": "FIE dividend to a foreign individual",
+      "assumption": "USD 400,000 gross dividend from an FIE to a foreign individual shareholder.",
+      "amount_usd": 400000,
+      "china_tax": "20% = 80,000 (40,000 only if a treaty reduces the rate to 10% and relief is granted)",
+      "us_tax": "U.S. tax on the gross dividend with a foreign tax credit subject to limitation",
+      "why": "2026 No. 27 repealed the old exemption from 2026-09-01.",
+      "label": "ILLUSTRATION ONLY — treaty relief unverified for your facts",
+      "sources": ["S16", "S25", "S28"]
+    },
+    {
+      "id": "SC6",
+      "title": "Inheritance received from China",
+      "assumption": "USD 400,000 inheritance from a Chinese relative, already taxed where required.",
+      "amount_usd": 400000,
+      "china_tax": "No inheritance-tax statute located; transfer still needs SAFE approval and tax clearance on the estate assets",
+      "us_tax": "Not taxable income to the recipient; Form 3520 may be required above USD 100,000",
+      "why": "Inheritances are generally not income in the U.S., but information reporting still applies.",
+      "label": "ILLUSTRATION ONLY — legal conclusion unverified",
+      "sources": ["S07", "S20", "S29"]
+    },
+    {
+      "id": "SC7",
+      "title": "Using an illegal route",
+      "assumption": "USD 400,000 moved through a private broker.",
+      "amount_usd": 400000,
+      "china_tax": "Potential fine 0-30% (120,000) or up to 100% (400,000) if serious, plus confiscation",
+      "us_tax": "Unchanged: U.S. tax and reporting still apply",
+      "why": "The penalty range under the FX Regulations is larger than any lawful fee.",
+      "label": "RISK ILLUSTRATION",
+      "sources": ["S27"]
+    }
+  ]
+}

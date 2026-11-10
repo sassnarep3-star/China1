@@ -1,0 +1,1191 @@
+{
+  "_meta": {
+    "edition": "I",
+    "route_count": 32,
+    "categories": [
+      "personal",
+      "capital",
+      "rail",
+      "card",
+      "hold",
+      "prohibited"
+    ],
+    "status_legend": {
+      "candidate": "Lawful route that may fit, subject to facts and bank approval",
+      "conditional": "Lawful only if specific eligibility and documentary conditions are met",
+      "limited": "Lawful but capped at a size that cannot move the full balance",
+      "prohibited": "Unlawful or legally void; risk information only, no execution steps",
+      "unverified": "Plausible but no official rule or published price could be confirmed"
+    },
+    "disclaimer": "No personal fact (account type, residency, source of funds, tax paid, receiving bank) is known. Status is a legal-eligibility screen, not advice or an approval."
+  },
+  "routes": [
+    {
+      "id": "P01",
+      "name": "Bank purchase and wire of documented China current-account income (overseas individual)",
+      "zh": "境外个人经常项目合法人民币收入购汇汇出",
+      "category": "personal",
+      "status": "candidate",
+      "one_line": "If the RMB is lawful current-account income earned in China and you are an overseas individual, the bank may buy USD with it and remit abroad on documentary proof.",
+      "who": "Passport holder classified by the bank as an overseas individual (境外个人) under S01 Article 37.",
+      "steps": [
+        "Ask the bank to confirm your account-holder classification (境内个人 vs 境外个人) and which article it will apply.",
+        "Assemble identity, the source-of-funds trail for each portion of the balance, and the China tax payment evidence (S03 requires a tax record or an explanation that the income is non-taxable).",
+        "Submit a purchase (购汇) application at the bank; the bank reviews authenticity and consistency of documents (S27 Article 12).",
+        "The bank converts RMB to USD at its prevailing rate and remits to your own overseas account; retain the purchase slip and remittance receipt.",
+        "Reconcile the receipt with U.S. income reporting, FBAR/8938 and any section 988 currency gain."
+      ],
+      "pros": [
+        "No USD 50,000 annual purchase quota is published for overseas individuals (S05; S03).",
+        "Built on current-account convertibility (S27 Article 5; S01 Article 13).",
+        "Bank tariff is published and computable (S09)."
+      ],
+      "cons": [
+        "Bank discretion on documents is the binding constraint, not a published checklist.",
+        "Tax evidence is required in substance; unpaid China tax can block the purchase.",
+        "Only covers income that is genuinely current-account; savings or capital gains need another route."
+      ],
+      "limits": [
+        "No published annual purchase cap for 境外个人",
+        "Documentary review per transaction",
+        "Single remittance identity checks above CNY 5,000 / USD 1,000 (S11)"
+      ],
+      "docs": [
+        "Passport",
+        "Source-of-funds evidence",
+        "China tax record / non-taxable explanation",
+        "Remittance purpose statement"
+      ],
+      "cost_model": "boc_fx_wire",
+      "sources": [
+        "S01",
+        "S03",
+        "S05",
+        "S27",
+        "S08",
+        "S09",
+        "S11"
+      ],
+      "note": "This is the only route in the catalog that combines published current-account convertibility with no published annual purchase cap."
+    },
+    {
+      "id": "P02",
+      "name": "Employer payroll remittance of salary (overseas individual)",
+      "zh": "境外个人工资薪金由单位代发汇出",
+      "category": "personal",
+      "status": "conditional",
+      "one_line": "Some employers remit net salary abroad through a payroll partner; the bank still performs the individual purchase review.",
+      "who": "Current employee of a China entity with payroll remittance service.",
+      "steps": [
+        "Confirm with payroll whether the employer remits abroad or only credits a China account.",
+        "Provide the payroll provider the same identity, tax and source documents the bank requires.",
+        "Check who bears the wire fee and at which rate the conversion is done; obtain the trade confirmation.",
+        "Keep the payroll statement, tax withholding record and remittance advice for U.S. reporting."
+      ],
+      "pros": [
+        "Recurring and administratively simple if offered",
+        "Employer may absorb fees",
+        "Tax withholding record doubles as source evidence"
+      ],
+      "cons": [
+        "Not available to former employees or accumulated balances",
+        "Fee and FX markup are set by the employer's bank, often undisclosed to you",
+        "Payroll providers may refuse non-resident classifications"
+      ],
+      "limits": [
+        "Only current salary flows",
+        "Employer-dependent"
+      ],
+      "docs": [
+        "Employment contract",
+        "Payroll statements",
+        "Tax withholding record"
+      ],
+      "cost_model": "boc_fx_wire",
+      "sources": [
+        "S03",
+        "S09",
+        "S11"
+      ],
+      "note": "Modeled on the published BOC tariff only; the actual payroll rail and its pricing are unknown."
+    },
+    {
+      "id": "P03",
+      "name": "Convert back unused RMB within 24 months of the original exchange",
+      "zh": "原兑换未用完人民币兑回",
+      "category": "personal",
+      "status": "limited",
+      "one_line": "RMB left over from a documented foreign-currency exchange can be converted back with the original slip for 24 months.",
+      "who": "Holder of the original exchange receipt (水单).",
+      "steps": [
+        "Locate the original exchange slip (水单) showing the earlier FX-to-RMB conversion.",
+        "Present ID and the slip at the bank within 24 months of the exchange date.",
+        "For small same-day amounts (up to USD 500, or USD 1,000 at land-border departure points), ID alone is sufficient per S02 Article 13(2).",
+        "Retain the reversal slip for U.S. records."
+      ],
+      "pros": [
+        "Explicit published rule with a 24-month window",
+        "Small amounts need no receipt",
+        "No quota question for overseas individuals"
+      ],
+      "cons": [
+        "Capped by the original exchange amount",
+        "Requires a slip most people no longer hold",
+        "Expires"
+      ],
+      "limits": [
+        "24 months from exchange",
+        "USD 500/day without receipt",
+        "USD 1,000/day at departure points without receipt"
+      ],
+      "docs": [
+        "Original exchange slip",
+        "Passport"
+      ],
+      "cost_model": "boc_fx_wire",
+      "sources": [
+        "S01",
+        "S02",
+        "S08",
+        "S09"
+      ],
+      "note": "Amounts beyond the original exchange are outside this route."
+    },
+    {
+      "id": "P04",
+      "name": "Return unused inbound foreign currency by the original route",
+      "zh": "境外个人未使用境外汇入外汇原路汇回",
+      "category": "personal",
+      "status": "limited",
+      "one_line": "Foreign currency wired in and not used can be sent back the same way with ID.",
+      "who": "Overseas individual with unused inbound FX still in the account.",
+      "steps": [
+        "Identify the original inbound remittance and confirm the funds remain in the FX account.",
+        "Request the return remittance with ID; the bank matches it to the inbound record.",
+        "Confirm the return leg's fee schedule and rate with the bank before sending."
+      ],
+      "pros": [
+        "Simple documentary basis",
+        "No conversion purchase question if the funds are still in FX"
+      ],
+      "cons": [
+        "Applies to FX, not to RMB already held",
+        "Capped at the unused inbound amount",
+        "Return leg fees are charged again"
+      ],
+      "limits": [
+        "Unused inbound amount only"
+      ],
+      "docs": [
+        "Passport",
+        "Inbound remittance record"
+      ],
+      "cost_model": "boc_wire_only",
+      "sources": [
+        "S01",
+        "S09"
+      ],
+      "note": "Useful only for funds that entered as foreign currency and were never converted."
+    },
+    {
+      "id": "P05",
+      "name": "Domestic-individual annual facilitation quota (USD 50,000)",
+      "zh": "境内个人年度便利化购汇额度5万美元",
+      "category": "personal",
+      "status": "limited",
+      "one_line": "If you are classified as a domestic individual, USD 50,000 per calendar year can be purchased with ID alone.",
+      "who": "Chinese citizen with a resident ID, or a foreigner holding a permanent-resident ID (S04).",
+      "steps": [
+        "Confirm with the bank that you are classified as a domestic individual (or hold a permanent-resident ID).",
+        "Purchase within the USD 50,000 annual facilitation quota with ID.",
+        "Remit the purchased FX to your own overseas account; keep the purchase slip.",
+        "Repeat in later calendar years only if the quota is genuinely available to you; quotas cannot be carried over or borrowed."
+      ],
+      "pros": [
+        "No documentary source review inside the quota",
+        "Predictable and widely available",
+        "Low bank fees"
+      ],
+      "cons": [
+        "Capped at USD 50,000 per person per calendar year (S02 Article 2)",
+        "Does not apply to plain overseas individuals (S05)",
+        "Using another person's quota is prohibited splitting (S01 Article 7)"
+      ],
+      "limits": [
+        "USD 50,000 per person per calendar year",
+        "Quota does not roll over"
+      ],
+      "docs": [
+        "Resident ID or permanent-resident ID"
+      ],
+      "cost_model": "boc_fx_wire",
+      "cap_step_usd": 50000,
+      "cap_kind": "annual",
+      "sources": [
+        "S02",
+        "S04",
+        "S05",
+        "S09"
+      ],
+      "note": "At USD 400,000 this route needs at least eight calendar years if nothing else applies."
+    },
+    {
+      "id": "P06",
+      "name": "Domestic-individual purchase above quota with transaction documents",
+      "zh": "境内个人超额度经常项目购汇",
+      "category": "personal",
+      "status": "conditional",
+      "one_line": "Above the quota, a domestic individual can purchase FX for a genuine current-account purpose with supporting documents.",
+      "who": "Domestic individual with a documented current-account use (study, medical, travel, family support).",
+      "steps": [
+        "Identify the permitted current-account purpose and the documents that evidence it.",
+        "Submit the purchase application with ID and the purpose documents; the bank reviews consistency.",
+        "Remit to the counterparty or your own account as the purpose requires.",
+        "Retain the full document set; the bank may re-check after the fact."
+      ],
+      "pros": [
+        "No fixed cap if the purpose is genuine and documented",
+        "Same published bank tariff"
+      ],
+      "cons": [
+        "Cannot be used to move savings without a qualifying purpose",
+        "Purpose must match the remittance",
+        "Bank may refuse"
+      ],
+      "limits": [
+        "Purpose-bound",
+        "No published cap"
+      ],
+      "docs": [
+        "ID",
+        "Purpose documents (admission letter, medical invoice, etc.)"
+      ],
+      "cost_model": "boc_fx_wire",
+      "sources": [
+        "S02",
+        "S27",
+        "S09"
+      ],
+      "note": "This is not a route for relabeling a general savings balance."
+    },
+    {
+      "id": "P07",
+      "name": "Permanent-resident ID holder using the facilitation quota",
+      "zh": "持外国人永久居留身份证适用购汇额度",
+      "category": "personal",
+      "status": "limited",
+      "one_line": "An overseas individual holding a foreign permanent-resident ID may use the USD 50,000 purchase quota.",
+      "who": "Overseas individual with a valid 外国人永久居留身份证.",
+      "steps": [
+        "Present the permanent-resident ID and passport.",
+        "Use the annual facilitation quota for purchase.",
+        "Reconcile the resulting remittance in U.S. reporting."
+      ],
+      "pros": [
+        "Document-light inside the quota",
+        "Officially confirmed for PR-ID holders (S04)"
+      ],
+      "cons": [
+        "Capped at USD 50,000 per year",
+        "Requires the PR ID",
+        "Does not convert capital-account balances"
+      ],
+      "limits": [
+        "USD 50,000 per person per calendar year"
+      ],
+      "docs": [
+        "Foreign permanent-resident ID",
+        "Passport"
+      ],
+      "cost_model": "boc_fx_wire",
+      "cap_step_usd": 50000,
+      "cap_kind": "annual",
+      "sources": [
+        "S04",
+        "S02",
+        "S09"
+      ],
+      "note": "A rare case where the quota is available to a non-citizen."
+    },
+    {
+      "id": "P08",
+      "name": "Remit foreign currency already sitting in the FX savings account",
+      "zh": "外汇储蓄账户内外汇直接汇出",
+      "category": "personal",
+      "status": "candidate",
+      "one_line": "If part of the balance is already USD or another foreign currency, it can be remitted without any RMB conversion.",
+      "who": "Overseas individual with an FX savings account.",
+      "steps": [
+        "Confirm the account is an FX savings account and the currency is actually held (not RMB).",
+        "Request the outward remittance with ID; overseas individuals can remit from an FX savings account with ID (S02 Article 15).",
+        "Pay commission and cable charges; no FX margin applies because no conversion occurs."
+      ],
+      "pros": [
+        "No FX conversion margin",
+        "ID-only documentary basis for the remittance leg",
+        "Fast"
+      ],
+      "cons": [
+        "Only works for the FX portion of the balance",
+        "Cash-based FX is harder than account-based FX",
+        "Receiving and intermediary fees still apply"
+      ],
+      "limits": [
+        "Only the FX amount held"
+      ],
+      "docs": [
+        "Passport"
+      ],
+      "cost_model": "boc_wire_only",
+      "sources": [
+        "S02",
+        "S09"
+      ],
+      "note": "The cheapest rail per dollar when the balance is already in USD."
+    },
+    {
+      "id": "C01",
+      "name": "Emigrant property transfer (pre-emigration assets)",
+      "zh": "移民财产转移",
+      "category": "capital",
+      "status": "conditional",
+      "one_line": "A person who emigrated from mainland China can transfer property owned before obtaining the immigration status, after SAFE approval.",
+      "who": "Natural person who moved from mainland China to a foreign country and owns lawful pre-emigration property.",
+      "steps": [
+        "Confirm the assets were owned before the immigration status was obtained (S07 Article 2).",
+        "Apply to the SAFE branch at the original household-registration location with the application, identity, immigration proof and property-source documents.",
+        "Obtain the approval and 核准件, then take it to the designated bank.",
+        "The bank sells FX and remits directly to your own overseas account; cash withdrawal in China is not permitted (S07 Article 11).",
+        "No staged release is required after 汇发[2014]2号 (S06); the bank may remit once or in installments within the approved amount."
+      ],
+      "pros": [
+        "Handles large pre-emigration capital",
+        "Staging requirement cancelled in 2014 (S06)",
+        "No 500,000 CNY central filing threshold since 2014 (S06)"
+      ],
+      "cons": [
+        "SAFE approval required",
+        "Property must predate the immigration status",
+        "Notarisation and source documents still take time; approval is discretionary"
+      ],
+      "limits": [
+        "Approved amount only",
+        "Pre-emigration property only"
+      ],
+      "docs": [
+        "Written application",
+        "Passport and immigration proof",
+        "Property ownership and disposal documents",
+        "China tax payment certificate"
+      ],
+      "cost_model": "boc_fx_wire",
+      "sources": [
+        "S07",
+        "S06",
+        "S30",
+        "S09"
+      ],
+      "note": "This is the main lawful route for a US citizen who emigrated with assets still in China."
+    },
+    {
+      "id": "C02",
+      "name": "Inheritance property transfer",
+      "zh": "继承财产转移",
+      "category": "capital",
+      "status": "conditional",
+      "one_line": "A foreign citizen who lawfully inherited Chinese assets can remit the realised proceeds after SAFE approval.",
+      "who": "Foreign citizen or HK/Macau resident who inherited mainland assets.",
+      "steps": [
+        "Obtain the inheritance documents (will, court judgment or notarised succession).",
+        "Apply to the SAFE branch where the deceased was registered, with identity, inheritance proof and the deceased's asset documents plus tax evidence.",
+        "After approval, take the 核准件 to the bank for purchase and remittance to your own overseas account.",
+        "Multiple decedents can now be combined in one application (S06)."
+      ],
+      "pros": [
+        "Designed for foreign heirs",
+        "Combined application allowed since 2014",
+        "No staged release"
+      ],
+      "cons": [
+        "Requires completed succession, which can take years",
+        "Tax clearance for the deceased's assets is required",
+        "Approval is discretionary"
+      ],
+      "limits": [
+        "Approved inherited amount only"
+      ],
+      "docs": [
+        "Inheritance judgment or notarised succession",
+        "Passport",
+        "Deceased's asset and tax documents"
+      ],
+      "cost_model": "boc_fx_wire",
+      "sources": [
+        "S07",
+        "S06",
+        "S01",
+        "S09"
+      ],
+      "note": "This is the only published capital-account route for a foreign heir."
+    },
+    {
+      "id": "C03",
+      "name": "Sale of domestic property by an overseas individual",
+      "zh": "境外个人出售境内商品房购汇汇出",
+      "category": "capital",
+      "status": "conditional",
+      "one_line": "An overseas individual who sells self-use domestic property may remit the RMB proceeds after SAFE approval.",
+      "who": "Overseas individual who owned and sold domestic commercial housing.",
+      "steps": [
+        "Complete the sale and pay the applicable China taxes (VAT and IIT; see the tax page).",
+        "Apply to SAFE for approval to purchase FX with the sale proceeds (S01 Article 22).",
+        "Take the approval to the bank; proceeds must go to your own overseas account.",
+        "Retain the sale contract, tax receipts and approval for U.S. reporting."
+      ],
+      "pros": [
+        "Explicit legal basis in S01 Article 22",
+        "Can be large",
+        "Tax treatment is published"
+      ],
+      "cons": [
+        "SAFE approval required",
+        "China IIT 20% on the gain (or 1% deemed) applies",
+        "Property must have been self-use and lawfully held"
+      ],
+      "limits": [
+        "Approved net proceeds"
+      ],
+      "docs": [
+        "Sale contract",
+        "Title documents",
+        "China tax receipts",
+        "Passport"
+      ],
+      "cost_model": "boc_fx_wire",
+      "sources": [
+        "S01",
+        "S17",
+        "S18",
+        "S19",
+        "S09"
+      ],
+      "note": "Tax is on the property gain, not on the conversion."
+    },
+    {
+      "id": "C04",
+      "name": "Domestic individual selling property and remitting proceeds",
+      "zh": "境内个人出售房产后购汇汇出",
+      "category": "capital",
+      "status": "conditional",
+      "one_line": "A domestic individual selling property faces the capital-account rules and cannot simply wire the proceeds abroad.",
+      "who": "Chinese citizen with resident ID selling domestic property.",
+      "steps": [
+        "Settle the property taxes and obtain the tax receipts.",
+        "Determine whether an emigrant-transfer or other capital-account approval applies; a plain sale does not create a right to remit.",
+        "If approved, purchase FX at the bank and remit to your own overseas account."
+      ],
+      "pros": [
+        "Published tax treatment",
+        "Possible if an emigration or other approved basis exists"
+      ],
+      "cons": [
+        "Domestic individuals cannot freely remit property proceeds",
+        "Approval depends on a qualifying capital-account basis",
+        "20% IIT on the gain"
+      ],
+      "limits": [
+        "Approval-bound"
+      ],
+      "docs": [
+        "Sale contract",
+        "Tax receipts",
+        "Approval documents"
+      ],
+      "cost_model": "boc_fx_wire",
+      "sources": [
+        "S01",
+        "S27",
+        "S18",
+        "S19"
+      ],
+      "note": "Flagged because many online guides present a domestic property sale as a simple remittance route; it is not."
+    },
+    {
+      "id": "C05",
+      "name": "Foreign-invested enterprise dividend to a foreign individual shareholder",
+      "zh": "外商投资企业向外籍个人股东分配股息",
+      "category": "capital",
+      "status": "conditional",
+      "one_line": "Genuine FIE profits can be distributed, but from 1 September 2026 the 20% dividend rate applies to foreign individuals.",
+      "who": "Foreign individual shareholder of a China FIE with distributable profits.",
+      "steps": [
+        "Confirm the company has audited distributable profits and a board resolution.",
+        "Withholding is due at 20% under 2026 No. 27 (S16); treaty relief, if any, must be analysed separately.",
+        "The company withholds and the bank remits the net dividend against the resolution and tax filing.",
+        "Report the gross dividend and the Chinese tax on your U.S. return; claim a foreign tax credit where allowed."
+      ],
+      "pros": [
+        "Lawful for genuine profits",
+        "Withholding is handled by the company",
+        "Treaty may cap China tax at 10% in some cases (unverified for your facts)"
+      ],
+      "cons": [
+        "20% China tax since 2026-09-01 (the old exemption is repealed)",
+        "Requires real profits and corporate formalities",
+        "Treaty relief is fact-specific"
+      ],
+      "limits": [
+        "Distributable profits only"
+      ],
+      "docs": [
+        "Board resolution",
+        "Audited financials",
+        "Tax payment records"
+      ],
+      "cost_model": "boc_fx_wire",
+      "sources": [
+        "S16",
+        "S15",
+        "S25",
+        "S09"
+      ],
+      "note": "This route is not available for personal savings disguised as a dividend."
+    },
+    {
+      "id": "C06",
+      "name": "Equity transfer proceeds",
+      "zh": "股权转让所得汇出",
+      "category": "capital",
+      "status": "conditional",
+      "one_line": "Proceeds from a genuine equity transfer can be remitted after China tax and registration steps.",
+      "who": "Foreign individual transferring equity in a China company.",
+      "steps": [
+        "Complete the equity transfer and the market-supervision registration.",
+        "Pay 20% IIT on the transfer gain as asset-transfer income (S15 Article 3).",
+        "Take the transfer documents, tax receipt and registration to the bank for remittance."
+      ],
+      "pros": [
+        "Established capital-account path",
+        "20% flat rate on the gain"
+      ],
+      "cons": [
+        "Valuation disputes are common",
+        "Tax must be settled first",
+        "Bank documentary review"
+      ],
+      "limits": [
+        "Net proceeds after tax"
+      ],
+      "docs": [
+        "Transfer agreement",
+        "Registration",
+        "Tax receipt"
+      ],
+      "cost_model": "boc_fx_wire",
+      "sources": [
+        "S15",
+        "S01",
+        "S09"
+      ],
+      "note": "Assumes a genuine arm's-length transfer."
+    },
+    {
+      "id": "C07",
+      "name": "Liquidation proceeds of a foreign-invested enterprise",
+      "zh": "外商投资企业清算所得汇出",
+      "category": "capital",
+      "status": "conditional",
+      "one_line": "After lawful liquidation and tax, the foreign investor's RMB share may be purchased and remitted.",
+      "who": "Foreign investor in a liquidated FIE.",
+      "steps": [
+        "Complete liquidation, tax clearance and deregistration.",
+        "Present the liquidation and tax documents to the bank for purchase and remittance.",
+        "Retain the distribution computation for U.S. reporting."
+      ],
+      "pros": [
+        "Explicit provision in S27 Article 22",
+        "Handles the final exit"
+      ],
+      "cons": [
+        "Slow and expensive process",
+        "Tax clearance first",
+        "Only for genuine equity"
+      ],
+      "limits": [
+        "Liquidation distribution only"
+      ],
+      "docs": [
+        "Liquidation report",
+        "Tax clearance",
+        "Deregistration"
+      ],
+      "cost_model": "boc_fx_wire",
+      "sources": [
+        "S27",
+        "S15",
+        "S09"
+      ],
+      "note": "A business exit, not a personal-transfer workaround."
+    },
+    {
+      "id": "C08",
+      "name": "B-share sale proceeds",
+      "zh": "境外个人B股交易所得",
+      "category": "capital",
+      "status": "conditional",
+      "one_line": "Overseas individuals may hold B shares; sale proceeds follow securities and FX rules.",
+      "who": "Overseas individual with a B-share account.",
+      "steps": [
+        "Sell through the licensed securities company.",
+        "Follow the broker's and bank's FX settlement procedure for the proceeds.",
+        "Report the gain on your U.S. return."
+      ],
+      "pros": [
+        "Explicitly permitted for overseas individuals (S01 Article 23)",
+        "Market-priced"
+      ],
+      "cons": [
+        "Only applies to B-share holdings",
+        "Securities and FX procedures apply",
+        "Market risk"
+      ],
+      "limits": [
+        "Sale proceeds of existing holdings only"
+      ],
+      "docs": [
+        "Securities account",
+        "Trade confirmations",
+        "Passport"
+      ],
+      "cost_model": "none_published",
+      "sources": [
+        "S01"
+      ],
+      "note": "No published bank tariff specific to B-share settlement was located; costs are UNVERIFIED."
+    },
+    {
+      "id": "R01",
+      "name": "Bank counter or e-banking telegraphic transfer (BOC published tariff)",
+      "zh": "银行柜面/电子银行电汇",
+      "category": "rail",
+      "status": "candidate",
+      "one_line": "The execution rail for most lawful routes: BOC publishes 0.1% commission (min CNY 50, max CNY 260) plus CNY 150 cable outside HK/Macau/Taiwan.",
+      "who": "Anyone with an approved purchase or FX balance.",
+      "steps": [
+        "Obtain the purchase approval or FX balance.",
+        "Submit the remittance with the beneficiary's own-name account details.",
+        "Pay commission plus cable charge at the published schedule; confirm any local discount or surcharge.",
+        "Keep the remittance advice; allow for intermediary and receiving-bank deductions."
+      ],
+      "pros": [
+        "Published, calculable tariff",
+        "Works with every lawful route",
+        "Widely available"
+      ],
+      "cons": [
+        "Intermediary and receiving bank fees are not published by BOC",
+        "Local pricing can differ (note 1 of S09)",
+        "Rate is set at execution, not at quote"
+      ],
+      "limits": [
+        "One fee per transfer",
+        "No published cap on amount"
+      ],
+      "docs": [
+        "Approval or FX balance",
+        "Beneficiary details"
+      ],
+      "cost_model": "boc_fx_wire",
+      "sources": [
+        "S08",
+        "S09",
+        "S10"
+      ],
+      "note": "This is the backbone cost model used for every bank-based route on this site."
+    },
+    {
+      "id": "R02",
+      "name": "Other Chinese bank tariffs (ICBC, CCB, ABC, CMB, HSBC China)",
+      "zh": "其他中资银行个人跨境汇款费率",
+      "category": "rail",
+      "status": "unverified",
+      "one_line": "Other banks publish their own tariffs, but no current mainland personal schedule was verified in this session.",
+      "who": "Account holders at those banks.",
+      "steps": [
+        "Ask the branch for its current published personal cross-border remittance schedule in writing.",
+        "Compare total cost for the same USD outcome at the same time, including FX rate and all fees.",
+        "Do not rely on this site for another bank's price; it was not verified."
+      ],
+      "pros": [
+        "Competition may produce lower local pricing",
+        "Relationship pricing is possible"
+      ],
+      "cons": [
+        "No verified schedule here",
+        "Prices vary by branch and channel",
+        "Comparison must be same-time to be meaningful"
+      ],
+      "limits": [
+        "Unverified"
+      ],
+      "docs": [
+        "Bank's own published schedule"
+      ],
+      "cost_model": "none_published",
+      "sources": [
+        "S09"
+      ],
+      "note": "Deliberately left unquantified rather than estimated."
+    },
+    {
+      "id": "R03",
+      "name": "Wise transfer from CNY",
+      "zh": "Wise 人民币汇出",
+      "category": "rail",
+      "status": "conditional",
+      "one_line": "Wise supports sending from CNY only for eligible workers or former workers with China tax records, to an account you own abroad.",
+      "who": "Non-mainland-Chinese person who worked in China and has a China tax record showing tax paid in the last three years.",
+      "steps": [
+        "Confirm eligibility: work history in China and a qualifying tax record (S26).",
+        "Complete Wise verification (typically 1-2 working days).",
+        "Send from the China bank app (max CNY 300,000 per transfer) or Alipay (max CNY 50,000) to your own overseas account.",
+        "Check the live fee and rate in the quote before confirming; retain the receipt."
+      ],
+      "pros": [
+        "Transparent mid-market rate in the quote",
+        "No need to visit a branch",
+        "Uses a licensed China payment partner"
+      ],
+      "cons": [
+        "Eligibility excludes people without China work/tax history",
+        "Overall limit is based on after-tax salary, not the account balance",
+        "Fee is dynamic and not published as a schedule"
+      ],
+      "limits": [
+        "CNY 300,000 per bank-app transfer",
+        "CNY 50,000 per Alipay transfer",
+        "Overall limit tied to documented after-tax income"
+      ],
+      "docs": [
+        "China tax record",
+        "Passport",
+        "Own overseas account"
+      ],
+      "cost_model": "none_published",
+      "sources": [
+        "S26",
+        "S11"
+      ],
+      "note": "A rail, not a legal basis: the underlying funds still need a lawful source. The fee was not quantified because it is quote-based."
+    },
+    {
+      "id": "R04",
+      "name": "Alipay / WeChat cross-border remittance for mainland residents",
+      "zh": "支付宝/微信跨境汇款（境内居民）",
+      "category": "rail",
+      "status": "unverified",
+      "one_line": "Payment apps offer remittance to mainland residents under their own limits; availability to an overseas individual was not verified.",
+      "who": "Mainland resident users, subject to each app's rules.",
+      "steps": [
+        "Check the app's own eligibility and limits; no official rule confirming access for a non-resident was located.",
+        "Compare the all-in cost, including the app's FX markup, against a bank wire.",
+        "Retain the receipt."
+      ],
+      "pros": [
+        "Convenient",
+        "Often cheaper headline fee"
+      ],
+      "cons": [
+        "Eligibility unclear for this user",
+        "FX markup is the real cost and is not published as a rate",
+        "Limits are low"
+      ],
+      "limits": [
+        "Unverified"
+      ],
+      "docs": [
+        "App verification",
+        "ID"
+      ],
+      "cost_model": "none_published",
+      "sources": [
+        "S11"
+      ],
+      "note": "Flagged: no official confirmation of access for an overseas individual."
+    },
+    {
+      "id": "R05",
+      "name": "Spend RMB directly abroad with a UnionPay card",
+      "zh": "银联卡境外消费",
+      "category": "card",
+      "status": "limited",
+      "one_line": "Card spending abroad uses RMB without a purchase-quota charge, but it is spending, not a transfer of the balance.",
+      "who": "Holder of a mainland-issued UnionPay card.",
+      "steps": [
+        "Use the card for genuine purchases abroad.",
+        "The issuer converts at its card rate; no separate purchase application is made.",
+        "Check the statement for the applied rate and any foreign-transaction fee."
+      ],
+      "pros": [
+        "Does not consume the USD 50,000 purchase quota (S13)",
+        "No wire fee",
+        "Useful for ongoing expenses"
+      ],
+      "cons": [
+        "Cannot convert the balance into USD cash",
+        "FX markup is set by the issuer and not published here",
+        "Merchant acceptance limits use"
+      ],
+      "limits": [
+        "Spending only",
+        "Issuer limits apply"
+      ],
+      "docs": [
+        "Card"
+      ],
+      "cost_model": "card",
+      "sources": [
+        "S13"
+      ],
+      "note": "A consumption tool, not a repatriation route."
+    },
+    {
+      "id": "R06",
+      "name": "Withdraw RMB cash abroad at an ATM",
+      "zh": "境外ATM提取人民币现钞",
+      "category": "card",
+      "status": "limited",
+      "one_line": "ATMs abroad dispense local currency within a CNY 10,000/day and CNY 100,000/year per-person cap.",
+      "who": "Holder of a mainland-issued bank card.",
+      "steps": [
+        "Withdraw at an overseas ATM within the daily and annual caps (S13).",
+        "Compare the issuer's conversion rate and ATM operator fee.",
+        "Track the annual total; exceeding it suspends overseas cash access for the current and following year (S13)."
+      ],
+      "pros": [
+        "Works today",
+        "No purchase application",
+        "Useful for smaller amounts"
+      ],
+      "cons": [
+        "CNY 100,000/year cap makes USD 400,000 impossible (about 4 years at the cap)",
+        "ATM and issuer fees are not published here",
+        "Cash handling risk"
+      ],
+      "limits": [
+        "CNY 10,000 per card per day",
+        "CNY 100,000 per person per calendar year"
+      ],
+      "docs": [
+        "Bank card"
+      ],
+      "cost_model": "atm",
+      "cap_step_usd": 14000,
+      "cap_kind": "annual",
+      "sources": [
+        "S13"
+      ],
+      "note": "Cap converted for display only at the BOC board rate; the rule is stated in CNY, not USD."
+    },
+    {
+      "id": "R07",
+      "name": "Carry foreign-currency cash out",
+      "zh": "携带外币现钞出境",
+      "category": "card",
+      "status": "limited",
+      "one_line": "Cash carriage is capped at USD 5,000 without a permit and USD 10,000 with a bank carriage certificate.",
+      "who": "Traveller departing China.",
+      "steps": [
+        "Purchase the foreign currency lawfully first; cash uses the bank's cash rate.",
+        "Up to USD 5,000 equivalent normally needs no carriage permit (S14).",
+        "From USD 5,000 to USD 10,000, obtain a 携带外汇出境许可证 from the designated bank (S14).",
+        "Above USD 10,000 the permit must come from SAFE, and carrying more than USD 10,000 is exceptional (S14).",
+        "Do not split trips or use other travellers to evade the limit (S01 Article 7; S27 Article 42)."
+      ],
+      "pros": [
+        "Simple for small amounts",
+        "No wire fee"
+      ],
+      "cons": [
+        "Cannot move USD 400,000 lawfully: 80 trips at the USD 5,000 threshold",
+        "Physical and theft risk",
+        "Excess carriage is punishable (S27 Article 42)"
+      ],
+      "limits": [
+        "USD 5,000 per trip normally without a permit",
+        "USD 5,000-10,000 needs a bank-issued carriage permit",
+        "Above USD 10,000 needs a SAFE-issued permit and is exceptional",
+        "Permit valid 30 days, single use"
+      ],
+      "docs": [
+        "Passport",
+        "Bank carriage certificate",
+        "Customs declaration"
+      ],
+      "cost_model": "boc_cash",
+      "cap_step_usd": 5000,
+      "cap_kind": "per_trip",
+      "sources": [
+        "S14",
+        "S02",
+        "S27",
+        "S08"
+      ],
+      "note": "For USD 400,000 this is 80 trips at the no-permit threshold: not a practical route. Thresholds verified against SAFE, not against a customs page."
+    },
+    {
+      "id": "R08",
+      "name": "RMB wire to an offshore RMB account (CNH)",
+      "zh": "人民币跨境汇至境外人民币账户",
+      "category": "rail",
+      "status": "unverified",
+      "one_line": "Sending RMB itself to an offshore account may be possible for some current-account purposes, but no rule confirming access for this user was verified.",
+      "who": "Holder of an offshore RMB account and a qualifying current-account purpose.",
+      "steps": [
+        "Ask the bank whether it will process an individual cross-border RMB remittance for your purpose and to your jurisdiction.",
+        "Obtain the receiving bank's confirmation that it accepts RMB.",
+        "Price the conversion at the offshore end separately."
+      ],
+      "pros": [
+        "Avoids an onshore USD purchase",
+        "May preserve RMB exposure"
+      ],
+      "cons": [
+        "No verified individual rule",
+        "US banks rarely accept RMB",
+        "Offshore conversion has its own spread"
+      ],
+      "limits": [
+        "Unverified"
+      ],
+      "docs": [
+        "Receiving bank confirmation",
+        "Source documents"
+      ],
+      "cost_model": "none_published",
+      "sources": [
+        "S01",
+        "S27"
+      ],
+      "note": "Flagged as unverified rather than recommended."
+    },
+    {
+      "id": "H01",
+      "name": "Hold RMB and convert later, or spend it on future China trips",
+      "zh": "保留人民币，择机兑换或未来消费",
+      "category": "hold",
+      "status": "candidate",
+      "one_line": "Doing nothing is a real option: no fee is paid, but you keep currency and policy risk.",
+      "who": "Anyone not forced to convert now.",
+      "steps": [
+        "Estimate near-term RMB needs for travel, family or China expenses.",
+        "Keep that portion in RMB; convert the rest when a lawful route and a favourable rate exist.",
+        "Review annually; rules and rates change."
+      ],
+      "pros": [
+        "Zero conversion cost today",
+        "Keeps optionality",
+        "Useful if you still spend in China"
+      ],
+      "cons": [
+        "FX exposure is unhedged",
+        "Policy can tighten",
+        "Inflation and opportunity cost"
+      ],
+      "limits": [
+        "No fee; no conversion"
+      ],
+      "docs": [],
+      "cost_model": "hold",
+      "sources": [
+        "S08",
+        "S10"
+      ],
+      "note": "The only route with a verified zero fee, because nothing is converted."
+    },
+    {
+      "id": "X01",
+      "name": "Crypto / USDT OTC conversion and transfer",
+      "zh": "虚拟货币/USDT场外兑换",
+      "category": "prohibited",
+      "status": "prohibited",
+      "one_line": "Converting RMB to crypto in China is prohibited; the 2026 notice treats fiat-crypto exchange as illegal financial activity.",
+      "who": "Not lawful.",
+      "steps": [],
+      "pros": [],
+      "cons": [
+        "Fiat-to-crypto conversion in China is prohibited (S12).",
+        "Financial institutions may not provide accounts or settlement for it (S12).",
+        "No legal recourse if the counterparty disappears.",
+        "U.S. tax and FBAR obligations still apply to any offshore account."
+      ],
+      "limits": [
+        "Prohibited"
+      ],
+      "docs": [],
+      "cost_model": "prohibited",
+      "sources": [
+        "S12",
+        "S27"
+      ],
+      "note": "Risk information only. No execution steps are provided."
+    },
+    {
+      "id": "X02",
+      "name": "Underground bank / private currency broker (地下钱庄)",
+      "zh": "地下钱庄",
+      "category": "prohibited",
+      "status": "prohibited",
+      "one_line": "Private cross-border settlement is illegal and exposed to confiscation and criminal liability.",
+      "who": "Not lawful.",
+      "steps": [],
+      "pros": [],
+      "cons": [
+        "Illegal trading of foreign exchange carries confiscation and fines up to 30% (or 30%-100% if serious) under S27 Article 45.",
+        "Funds can be seized or lost entirely.",
+        "U.S. reporting duties are unaffected."
+      ],
+      "limits": [
+        "Prohibited"
+      ],
+      "docs": [],
+      "cost_model": "prohibited",
+      "sources": [
+        "S27",
+        "S01"
+      ],
+      "note": "Risk information only."
+    },
+    {
+      "id": "X03",
+      "name": "Splitting the balance across friends' or family quotas",
+      "zh": "分拆结售汇（借用他人额度）",
+      "category": "prohibited",
+      "status": "prohibited",
+      "one_line": "Using other people's quotas or splitting transactions to evade limits is expressly prohibited.",
+      "who": "Not lawful.",
+      "steps": [],
+      "pros": [],
+      "cons": [
+        "S01 Article 7 prohibits splitting to evade limit supervision.",
+        "Participants can be placed on a watch list and lose quota access.",
+        "Funds can be frozen during investigation."
+      ],
+      "limits": [
+        "Prohibited"
+      ],
+      "docs": [],
+      "cost_model": "prohibited",
+      "sources": [
+        "S01",
+        "S02",
+        "S27"
+      ],
+      "note": "Risk information only."
+    },
+    {
+      "id": "X04",
+      "name": "False trade or service invoices (misinvoicing)",
+      "zh": "虚假贸易/服务单证",
+      "category": "prohibited",
+      "status": "prohibited",
+      "one_line": "Fabricated commercial documents to obtain FX are illegal, even if a real good or service exists elsewhere.",
+      "who": "Not lawful.",
+      "steps": [],
+      "pros": [],
+      "cons": [
+        "S01 Article 7 prohibits false commercial documents to evade authenticity review.",
+        "Illegal FX purchase under S27 Article 40 carries fines up to 30% (or 30%-100%) plus repatriation orders.",
+        "Criminal exposure in serious cases."
+      ],
+      "limits": [
+        "Prohibited"
+      ],
+      "docs": [],
+      "cost_model": "prohibited",
+      "sources": [
+        "S01",
+        "S27"
+      ],
+      "note": "Risk information only."
+    },
+    {
+      "id": "X05",
+      "name": "Buying overseas property or investment insurance with purchased FX",
+      "zh": "购汇用于境外买房或投资性保险",
+      "category": "prohibited",
+      "status": "prohibited",
+      "one_line": "Overseas property and securities investment are capital-account uses that are not open to individual purchase.",
+      "who": "Not lawful without approval.",
+      "steps": [],
+      "pros": [],
+      "cons": [
+        "Capital-account FX payments require approval (S27 Article 22; S01 Articles 16-17, 20).",
+        "Overseas individuals are separately barred from most domestic financial products (S01 Article 23) — the mirror logic applies outward.",
+        "Mis-describing the purpose is a false-declaration risk."
+      ],
+      "limits": [
+        "Prohibited without approval"
+      ],
+      "docs": [],
+      "cost_model": "prohibited",
+      "sources": [
+        "S27",
+        "S01"
+      ],
+      "note": "The specific prohibited-use list in the 个人购汇申请书 was not retrieved verbatim in this session and is flagged."
+    },
+    {
+      "id": "X06",
+      "name": "Export gold or precious metals to bypass FX rules",
+      "zh": "出口黄金或贵金属规避外汇管理",
+      "category": "prohibited",
+      "status": "unverified",
+      "one_line": "Gold export is subject to separate restrictions, but the exact personal limit was not verified here.",
+      "who": "Not established as lawful.",
+      "steps": [],
+      "pros": [],
+      "cons": [
+        "Precious-metal export is separately regulated; no official personal allowance was confirmed in this session.",
+        "Carrying or shipping metal to realise value abroad raises customs and AML issues (S11).",
+        "Any gain is still taxable in the U.S."
+      ],
+      "limits": [
+        "Unverified"
+      ],
+      "docs": [],
+      "cost_model": "prohibited",
+      "sources": [
+        "S11",
+        "S14"
+      ],
+      "note": "Flagged as unverified; not presented as a route."
+    },
+    {
+      "id": "X07",
+      "name": "Gift the RMB to a relative abroad to avoid approval",
+      "zh": "以赠与境外亲属方式转移",
+      "category": "prohibited",
+      "status": "prohibited",
+      "one_line": "Outward gifts of capital require approval; calling a transfer a gift does not remove the requirement.",
+      "who": "Only with SAFE approval under the capital-account rules.",
+      "steps": [],
+      "pros": [],
+      "cons": [
+        "S01 Article 20 requires approval for outward donations and property transfers.",
+        "Relabeling a capital transfer as a gift is a false declaration.",
+        "On the U.S. side, a foreign gift over USD 100,000 triggers Form 3520 reporting (S29), though not income tax."
+      ],
+      "limits": [
+        "Approval-bound"
+      ],
+      "docs": [],
+      "cost_model": "none_published",
+      "sources": [
+        "S01",
+        "S29"
+      ],
+      "note": "Included to correct a common misconception; no approval-free gift route was found."
+    }
+  ]
+}

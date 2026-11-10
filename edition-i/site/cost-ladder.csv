@@ -1,0 +1,1281 @@
+route_id,target_usd,fx_margin_usd,commission_usd,cable_usd,receiver_fee_usd,sender_total_usd,pct_of_principal,feasibility
+P01,10000,21.04,10.00,22.42,,53.47,0.5347,No published per-transfer cap
+P01,20000,42.09,20.00,22.42,,84.51,0.4226,No published per-transfer cap
+P01,30000,63.13,30.00,22.42,,115.55,0.3852,No published per-transfer cap
+P01,40000,84.18,38.86,22.42,,145.46,0.3637,No published per-transfer cap
+P01,50000,105.22,38.86,22.42,,166.51,0.3330,No published per-transfer cap
+P01,60000,126.27,38.86,22.42,,187.55,0.3126,No published per-transfer cap
+P01,70000,147.31,38.86,22.42,,208.60,0.2980,No published per-transfer cap
+P01,80000,168.36,38.86,22.42,,229.64,0.2871,No published per-transfer cap
+P01,90000,189.40,38.86,22.42,,250.69,0.2785,No published per-transfer cap
+P01,100000,210.45,38.86,22.42,,271.73,0.2717,No published per-transfer cap
+P01,110000,231.49,38.86,22.42,,292.77,0.2662,No published per-transfer cap
+P01,120000,252.54,38.86,22.42,,313.82,0.2615,No published per-transfer cap
+P01,130000,273.58,38.86,22.42,,334.86,0.2576,No published per-transfer cap
+P01,140000,294.63,38.86,22.42,,355.91,0.2542,No published per-transfer cap
+P01,150000,315.67,38.86,22.42,,376.95,0.2513,No published per-transfer cap
+P01,160000,336.72,38.86,22.42,,398.00,0.2487,No published per-transfer cap
+P01,170000,357.76,38.86,22.42,,419.04,0.2465,No published per-transfer cap
+P01,180000,378.81,38.86,22.42,,440.09,0.2445,No published per-transfer cap
+P01,190000,399.85,38.86,22.42,,461.13,0.2427,No published per-transfer cap
+P01,200000,420.89,38.86,22.42,,482.18,0.2411,No published per-transfer cap
+P01,210000,441.94,38.86,22.42,,503.22,0.2396,No published per-transfer cap
+P01,220000,462.98,38.86,22.42,,524.27,0.2383,No published per-transfer cap
+P01,230000,484.03,38.86,22.42,,545.31,0.2371,No published per-transfer cap
+P01,240000,505.07,38.86,22.42,,566.36,0.2360,No published per-transfer cap
+P01,250000,526.12,38.86,22.42,,587.40,0.2350,No published per-transfer cap
+P01,260000,547.16,38.86,22.42,,608.45,0.2340,No published per-transfer cap
+P01,270000,568.21,38.86,22.42,,629.49,0.2331,No published per-transfer cap
+P01,280000,589.25,38.86,22.42,,650.54,0.2323,No published per-transfer cap
+P01,290000,610.30,38.86,22.42,,671.58,0.2316,No published per-transfer cap
+P01,300000,631.34,38.86,22.42,,692.63,0.2309,No published per-transfer cap
+P01,310000,652.39,38.86,22.42,,713.67,0.2302,No published per-transfer cap
+P01,320000,673.43,38.86,22.42,,734.71,0.2296,No published per-transfer cap
+P01,330000,694.48,38.86,22.42,,755.76,0.2290,No published per-transfer cap
+P01,340000,715.52,38.86,22.42,,776.80,0.2285,No published per-transfer cap
+P01,350000,736.57,38.86,22.42,,797.85,0.2280,No published per-transfer cap
+P01,360000,757.61,38.86,22.42,,818.89,0.2275,No published per-transfer cap
+P01,370000,778.66,38.86,22.42,,839.94,0.2270,No published per-transfer cap
+P01,380000,799.70,38.86,22.42,,860.98,0.2266,No published per-transfer cap
+P01,390000,820.75,38.86,22.42,,882.03,0.2262,No published per-transfer cap
+P01,400000,841.79,38.86,22.42,,903.07,0.2258,No published per-transfer cap
+P02,10000,21.04,10.00,22.42,,53.47,0.5347,No published per-transfer cap
+P02,20000,42.09,20.00,22.42,,84.51,0.4226,No published per-transfer cap
+P02,30000,63.13,30.00,22.42,,115.55,0.3852,No published per-transfer cap
+P02,40000,84.18,38.86,22.42,,145.46,0.3637,No published per-transfer cap
+P02,50000,105.22,38.86,22.42,,166.51,0.3330,No published per-transfer cap
+P02,60000,126.27,38.86,22.42,,187.55,0.3126,No published per-transfer cap
+P02,70000,147.31,38.86,22.42,,208.60,0.2980,No published per-transfer cap
+P02,80000,168.36,38.86,22.42,,229.64,0.2871,No published per-transfer cap
+P02,90000,189.40,38.86,22.42,,250.69,0.2785,No published per-transfer cap
+P02,100000,210.45,38.86,22.42,,271.73,0.2717,No published per-transfer cap
+P02,110000,231.49,38.86,22.42,,292.77,0.2662,No published per-transfer cap
+P02,120000,252.54,38.86,22.42,,313.82,0.2615,No published per-transfer cap
+P02,130000,273.58,38.86,22.42,,334.86,0.2576,No published per-transfer cap
+P02,140000,294.63,38.86,22.42,,355.91,0.2542,No published per-transfer cap
+P02,150000,315.67,38.86,22.42,,376.95,0.2513,No published per-transfer cap
+P02,160000,336.72,38.86,22.42,,398.00,0.2487,No published per-transfer cap
+P02,170000,357.76,38.86,22.42,,419.04,0.2465,No published per-transfer cap
+P02,180000,378.81,38.86,22.42,,440.09,0.2445,No published per-transfer cap
+P02,190000,399.85,38.86,22.42,,461.13,0.2427,No published per-transfer cap
+P02,200000,420.89,38.86,22.42,,482.18,0.2411,No published per-transfer cap
+P02,210000,441.94,38.86,22.42,,503.22,0.2396,No published per-transfer cap
+P02,220000,462.98,38.86,22.42,,524.27,0.2383,No published per-transfer cap
+P02,230000,484.03,38.86,22.42,,545.31,0.2371,No published per-transfer cap
+P02,240000,505.07,38.86,22.42,,566.36,0.2360,No published per-transfer cap
+P02,250000,526.12,38.86,22.42,,587.40,0.2350,No published per-transfer cap
+P02,260000,547.16,38.86,22.42,,608.45,0.2340,No published per-transfer cap
+P02,270000,568.21,38.86,22.42,,629.49,0.2331,No published per-transfer cap
+P02,280000,589.25,38.86,22.42,,650.54,0.2323,No published per-transfer cap
+P02,290000,610.30,38.86,22.42,,671.58,0.2316,No published per-transfer cap
+P02,300000,631.34,38.86,22.42,,692.63,0.2309,No published per-transfer cap
+P02,310000,652.39,38.86,22.42,,713.67,0.2302,No published per-transfer cap
+P02,320000,673.43,38.86,22.42,,734.71,0.2296,No published per-transfer cap
+P02,330000,694.48,38.86,22.42,,755.76,0.2290,No published per-transfer cap
+P02,340000,715.52,38.86,22.42,,776.80,0.2285,No published per-transfer cap
+P02,350000,736.57,38.86,22.42,,797.85,0.2280,No published per-transfer cap
+P02,360000,757.61,38.86,22.42,,818.89,0.2275,No published per-transfer cap
+P02,370000,778.66,38.86,22.42,,839.94,0.2270,No published per-transfer cap
+P02,380000,799.70,38.86,22.42,,860.98,0.2266,No published per-transfer cap
+P02,390000,820.75,38.86,22.42,,882.03,0.2262,No published per-transfer cap
+P02,400000,841.79,38.86,22.42,,903.07,0.2258,No published per-transfer cap
+P03,10000,21.04,10.00,22.42,,53.47,0.5347,No published per-transfer cap
+P03,20000,42.09,20.00,22.42,,84.51,0.4226,No published per-transfer cap
+P03,30000,63.13,30.00,22.42,,115.55,0.3852,No published per-transfer cap
+P03,40000,84.18,38.86,22.42,,145.46,0.3637,No published per-transfer cap
+P03,50000,105.22,38.86,22.42,,166.51,0.3330,No published per-transfer cap
+P03,60000,126.27,38.86,22.42,,187.55,0.3126,No published per-transfer cap
+P03,70000,147.31,38.86,22.42,,208.60,0.2980,No published per-transfer cap
+P03,80000,168.36,38.86,22.42,,229.64,0.2871,No published per-transfer cap
+P03,90000,189.40,38.86,22.42,,250.69,0.2785,No published per-transfer cap
+P03,100000,210.45,38.86,22.42,,271.73,0.2717,No published per-transfer cap
+P03,110000,231.49,38.86,22.42,,292.77,0.2662,No published per-transfer cap
+P03,120000,252.54,38.86,22.42,,313.82,0.2615,No published per-transfer cap
+P03,130000,273.58,38.86,22.42,,334.86,0.2576,No published per-transfer cap
+P03,140000,294.63,38.86,22.42,,355.91,0.2542,No published per-transfer cap
+P03,150000,315.67,38.86,22.42,,376.95,0.2513,No published per-transfer cap
+P03,160000,336.72,38.86,22.42,,398.00,0.2487,No published per-transfer cap
+P03,170000,357.76,38.86,22.42,,419.04,0.2465,No published per-transfer cap
+P03,180000,378.81,38.86,22.42,,440.09,0.2445,No published per-transfer cap
+P03,190000,399.85,38.86,22.42,,461.13,0.2427,No published per-transfer cap
+P03,200000,420.89,38.86,22.42,,482.18,0.2411,No published per-transfer cap
+P03,210000,441.94,38.86,22.42,,503.22,0.2396,No published per-transfer cap
+P03,220000,462.98,38.86,22.42,,524.27,0.2383,No published per-transfer cap
+P03,230000,484.03,38.86,22.42,,545.31,0.2371,No published per-transfer cap
+P03,240000,505.07,38.86,22.42,,566.36,0.2360,No published per-transfer cap
+P03,250000,526.12,38.86,22.42,,587.40,0.2350,No published per-transfer cap
+P03,260000,547.16,38.86,22.42,,608.45,0.2340,No published per-transfer cap
+P03,270000,568.21,38.86,22.42,,629.49,0.2331,No published per-transfer cap
+P03,280000,589.25,38.86,22.42,,650.54,0.2323,No published per-transfer cap
+P03,290000,610.30,38.86,22.42,,671.58,0.2316,No published per-transfer cap
+P03,300000,631.34,38.86,22.42,,692.63,0.2309,No published per-transfer cap
+P03,310000,652.39,38.86,22.42,,713.67,0.2302,No published per-transfer cap
+P03,320000,673.43,38.86,22.42,,734.71,0.2296,No published per-transfer cap
+P03,330000,694.48,38.86,22.42,,755.76,0.2290,No published per-transfer cap
+P03,340000,715.52,38.86,22.42,,776.80,0.2285,No published per-transfer cap
+P03,350000,736.57,38.86,22.42,,797.85,0.2280,No published per-transfer cap
+P03,360000,757.61,38.86,22.42,,818.89,0.2275,No published per-transfer cap
+P03,370000,778.66,38.86,22.42,,839.94,0.2270,No published per-transfer cap
+P03,380000,799.70,38.86,22.42,,860.98,0.2266,No published per-transfer cap
+P03,390000,820.75,38.86,22.42,,882.03,0.2262,No published per-transfer cap
+P03,400000,841.79,38.86,22.42,,903.07,0.2258,No published per-transfer cap
+P04,10000,21.04,10.00,22.42,,53.47,0.5347,No published per-transfer cap
+P04,20000,42.09,20.00,22.42,,84.51,0.4226,No published per-transfer cap
+P04,30000,63.13,30.00,22.42,,115.55,0.3852,No published per-transfer cap
+P04,40000,84.18,38.86,22.42,,145.46,0.3637,No published per-transfer cap
+P04,50000,105.22,38.86,22.42,,166.51,0.3330,No published per-transfer cap
+P04,60000,126.27,38.86,22.42,,187.55,0.3126,No published per-transfer cap
+P04,70000,147.31,38.86,22.42,,208.60,0.2980,No published per-transfer cap
+P04,80000,168.36,38.86,22.42,,229.64,0.2871,No published per-transfer cap
+P04,90000,189.40,38.86,22.42,,250.69,0.2785,No published per-transfer cap
+P04,100000,210.45,38.86,22.42,,271.73,0.2717,No published per-transfer cap
+P04,110000,231.49,38.86,22.42,,292.77,0.2662,No published per-transfer cap
+P04,120000,252.54,38.86,22.42,,313.82,0.2615,No published per-transfer cap
+P04,130000,273.58,38.86,22.42,,334.86,0.2576,No published per-transfer cap
+P04,140000,294.63,38.86,22.42,,355.91,0.2542,No published per-transfer cap
+P04,150000,315.67,38.86,22.42,,376.95,0.2513,No published per-transfer cap
+P04,160000,336.72,38.86,22.42,,398.00,0.2487,No published per-transfer cap
+P04,170000,357.76,38.86,22.42,,419.04,0.2465,No published per-transfer cap
+P04,180000,378.81,38.86,22.42,,440.09,0.2445,No published per-transfer cap
+P04,190000,399.85,38.86,22.42,,461.13,0.2427,No published per-transfer cap
+P04,200000,420.89,38.86,22.42,,482.18,0.2411,No published per-transfer cap
+P04,210000,441.94,38.86,22.42,,503.22,0.2396,No published per-transfer cap
+P04,220000,462.98,38.86,22.42,,524.27,0.2383,No published per-transfer cap
+P04,230000,484.03,38.86,22.42,,545.31,0.2371,No published per-transfer cap
+P04,240000,505.07,38.86,22.42,,566.36,0.2360,No published per-transfer cap
+P04,250000,526.12,38.86,22.42,,587.40,0.2350,No published per-transfer cap
+P04,260000,547.16,38.86,22.42,,608.45,0.2340,No published per-transfer cap
+P04,270000,568.21,38.86,22.42,,629.49,0.2331,No published per-transfer cap
+P04,280000,589.25,38.86,22.42,,650.54,0.2323,No published per-transfer cap
+P04,290000,610.30,38.86,22.42,,671.58,0.2316,No published per-transfer cap
+P04,300000,631.34,38.86,22.42,,692.63,0.2309,No published per-transfer cap
+P04,310000,652.39,38.86,22.42,,713.67,0.2302,No published per-transfer cap
+P04,320000,673.43,38.86,22.42,,734.71,0.2296,No published per-transfer cap
+P04,330000,694.48,38.86,22.42,,755.76,0.2290,No published per-transfer cap
+P04,340000,715.52,38.86,22.42,,776.80,0.2285,No published per-transfer cap
+P04,350000,736.57,38.86,22.42,,797.85,0.2280,No published per-transfer cap
+P04,360000,757.61,38.86,22.42,,818.89,0.2275,No published per-transfer cap
+P04,370000,778.66,38.86,22.42,,839.94,0.2270,No published per-transfer cap
+P04,380000,799.70,38.86,22.42,,860.98,0.2266,No published per-transfer cap
+P04,390000,820.75,38.86,22.42,,882.03,0.2262,No published per-transfer cap
+P04,400000,841.79,38.86,22.42,,903.07,0.2258,No published per-transfer cap
+P05,10000,21.04,10.00,22.42,,53.47,0.5347,Within the annual cap
+P05,20000,42.09,20.00,22.42,,84.51,0.4226,Within the annual cap
+P05,30000,63.13,30.00,22.42,,115.55,0.3852,Within the annual cap
+P05,40000,84.18,38.86,22.42,,145.46,0.3637,Within the annual cap
+P05,50000,105.22,38.86,22.42,,166.51,0.3330,Within the annual cap
+P05,60000,126.27,38.86,22.42,,187.55,0.3126,Needs 2 calendar years at the cap
+P05,70000,147.31,38.86,22.42,,208.60,0.2980,Needs 2 calendar years at the cap
+P05,80000,168.36,38.86,22.42,,229.64,0.2871,Needs 2 calendar years at the cap
+P05,90000,189.40,38.86,22.42,,250.69,0.2785,Needs 2 calendar years at the cap
+P05,100000,210.45,38.86,22.42,,271.73,0.2717,Needs 2 calendar years at the cap
+P05,110000,231.49,38.86,22.42,,292.77,0.2662,Needs 3 calendar years at the cap
+P05,120000,252.54,38.86,22.42,,313.82,0.2615,Needs 3 calendar years at the cap
+P05,130000,273.58,38.86,22.42,,334.86,0.2576,Needs 3 calendar years at the cap
+P05,140000,294.63,38.86,22.42,,355.91,0.2542,Needs 3 calendar years at the cap
+P05,150000,315.67,38.86,22.42,,376.95,0.2513,Needs 3 calendar years at the cap
+P05,160000,336.72,38.86,22.42,,398.00,0.2487,Needs 4 calendar years at the cap
+P05,170000,357.76,38.86,22.42,,419.04,0.2465,Needs 4 calendar years at the cap
+P05,180000,378.81,38.86,22.42,,440.09,0.2445,Needs 4 calendar years at the cap
+P05,190000,399.85,38.86,22.42,,461.13,0.2427,Needs 4 calendar years at the cap
+P05,200000,420.89,38.86,22.42,,482.18,0.2411,Needs 4 calendar years at the cap
+P05,210000,441.94,38.86,22.42,,503.22,0.2396,Needs 5 calendar years at the cap
+P05,220000,462.98,38.86,22.42,,524.27,0.2383,Needs 5 calendar years at the cap
+P05,230000,484.03,38.86,22.42,,545.31,0.2371,Needs 5 calendar years at the cap
+P05,240000,505.07,38.86,22.42,,566.36,0.2360,Needs 5 calendar years at the cap
+P05,250000,526.12,38.86,22.42,,587.40,0.2350,Needs 5 calendar years at the cap
+P05,260000,547.16,38.86,22.42,,608.45,0.2340,Needs 6 calendar years at the cap
+P05,270000,568.21,38.86,22.42,,629.49,0.2331,Needs 6 calendar years at the cap
+P05,280000,589.25,38.86,22.42,,650.54,0.2323,Needs 6 calendar years at the cap
+P05,290000,610.30,38.86,22.42,,671.58,0.2316,Needs 6 calendar years at the cap
+P05,300000,631.34,38.86,22.42,,692.63,0.2309,Needs 6 calendar years at the cap
+P05,310000,652.39,38.86,22.42,,713.67,0.2302,Needs 7 calendar years at the cap
+P05,320000,673.43,38.86,22.42,,734.71,0.2296,Needs 7 calendar years at the cap
+P05,330000,694.48,38.86,22.42,,755.76,0.2290,Needs 7 calendar years at the cap
+P05,340000,715.52,38.86,22.42,,776.80,0.2285,Needs 7 calendar years at the cap
+P05,350000,736.57,38.86,22.42,,797.85,0.2280,Needs 7 calendar years at the cap
+P05,360000,757.61,38.86,22.42,,818.89,0.2275,Needs 8 calendar years at the cap
+P05,370000,778.66,38.86,22.42,,839.94,0.2270,Needs 8 calendar years at the cap
+P05,380000,799.70,38.86,22.42,,860.98,0.2266,Needs 8 calendar years at the cap
+P05,390000,820.75,38.86,22.42,,882.03,0.2262,Needs 8 calendar years at the cap
+P05,400000,841.79,38.86,22.42,,903.07,0.2258,Needs 8 calendar years at the cap
+P06,10000,21.04,10.00,22.42,,53.47,0.5347,No published per-transfer cap
+P06,20000,42.09,20.00,22.42,,84.51,0.4226,No published per-transfer cap
+P06,30000,63.13,30.00,22.42,,115.55,0.3852,No published per-transfer cap
+P06,40000,84.18,38.86,22.42,,145.46,0.3637,No published per-transfer cap
+P06,50000,105.22,38.86,22.42,,166.51,0.3330,No published per-transfer cap
+P06,60000,126.27,38.86,22.42,,187.55,0.3126,No published per-transfer cap
+P06,70000,147.31,38.86,22.42,,208.60,0.2980,No published per-transfer cap
+P06,80000,168.36,38.86,22.42,,229.64,0.2871,No published per-transfer cap
+P06,90000,189.40,38.86,22.42,,250.69,0.2785,No published per-transfer cap
+P06,100000,210.45,38.86,22.42,,271.73,0.2717,No published per-transfer cap
+P06,110000,231.49,38.86,22.42,,292.77,0.2662,No published per-transfer cap
+P06,120000,252.54,38.86,22.42,,313.82,0.2615,No published per-transfer cap
+P06,130000,273.58,38.86,22.42,,334.86,0.2576,No published per-transfer cap
+P06,140000,294.63,38.86,22.42,,355.91,0.2542,No published per-transfer cap
+P06,150000,315.67,38.86,22.42,,376.95,0.2513,No published per-transfer cap
+P06,160000,336.72,38.86,22.42,,398.00,0.2487,No published per-transfer cap
+P06,170000,357.76,38.86,22.42,,419.04,0.2465,No published per-transfer cap
+P06,180000,378.81,38.86,22.42,,440.09,0.2445,No published per-transfer cap
+P06,190000,399.85,38.86,22.42,,461.13,0.2427,No published per-transfer cap
+P06,200000,420.89,38.86,22.42,,482.18,0.2411,No published per-transfer cap
+P06,210000,441.94,38.86,22.42,,503.22,0.2396,No published per-transfer cap
+P06,220000,462.98,38.86,22.42,,524.27,0.2383,No published per-transfer cap
+P06,230000,484.03,38.86,22.42,,545.31,0.2371,No published per-transfer cap
+P06,240000,505.07,38.86,22.42,,566.36,0.2360,No published per-transfer cap
+P06,250000,526.12,38.86,22.42,,587.40,0.2350,No published per-transfer cap
+P06,260000,547.16,38.86,22.42,,608.45,0.2340,No published per-transfer cap
+P06,270000,568.21,38.86,22.42,,629.49,0.2331,No published per-transfer cap
+P06,280000,589.25,38.86,22.42,,650.54,0.2323,No published per-transfer cap
+P06,290000,610.30,38.86,22.42,,671.58,0.2316,No published per-transfer cap
+P06,300000,631.34,38.86,22.42,,692.63,0.2309,No published per-transfer cap
+P06,310000,652.39,38.86,22.42,,713.67,0.2302,No published per-transfer cap
+P06,320000,673.43,38.86,22.42,,734.71,0.2296,No published per-transfer cap
+P06,330000,694.48,38.86,22.42,,755.76,0.2290,No published per-transfer cap
+P06,340000,715.52,38.86,22.42,,776.80,0.2285,No published per-transfer cap
+P06,350000,736.57,38.86,22.42,,797.85,0.2280,No published per-transfer cap
+P06,360000,757.61,38.86,22.42,,818.89,0.2275,No published per-transfer cap
+P06,370000,778.66,38.86,22.42,,839.94,0.2270,No published per-transfer cap
+P06,380000,799.70,38.86,22.42,,860.98,0.2266,No published per-transfer cap
+P06,390000,820.75,38.86,22.42,,882.03,0.2262,No published per-transfer cap
+P06,400000,841.79,38.86,22.42,,903.07,0.2258,No published per-transfer cap
+P07,10000,21.04,10.00,22.42,,53.47,0.5347,Within the annual cap
+P07,20000,42.09,20.00,22.42,,84.51,0.4226,Within the annual cap
+P07,30000,63.13,30.00,22.42,,115.55,0.3852,Within the annual cap
+P07,40000,84.18,38.86,22.42,,145.46,0.3637,Within the annual cap
+P07,50000,105.22,38.86,22.42,,166.51,0.3330,Within the annual cap
+P07,60000,126.27,38.86,22.42,,187.55,0.3126,Needs 2 calendar years at the cap
+P07,70000,147.31,38.86,22.42,,208.60,0.2980,Needs 2 calendar years at the cap
+P07,80000,168.36,38.86,22.42,,229.64,0.2871,Needs 2 calendar years at the cap
+P07,90000,189.40,38.86,22.42,,250.69,0.2785,Needs 2 calendar years at the cap
+P07,100000,210.45,38.86,22.42,,271.73,0.2717,Needs 2 calendar years at the cap
+P07,110000,231.49,38.86,22.42,,292.77,0.2662,Needs 3 calendar years at the cap
+P07,120000,252.54,38.86,22.42,,313.82,0.2615,Needs 3 calendar years at the cap
+P07,130000,273.58,38.86,22.42,,334.86,0.2576,Needs 3 calendar years at the cap
+P07,140000,294.63,38.86,22.42,,355.91,0.2542,Needs 3 calendar years at the cap
+P07,150000,315.67,38.86,22.42,,376.95,0.2513,Needs 3 calendar years at the cap
+P07,160000,336.72,38.86,22.42,,398.00,0.2487,Needs 4 calendar years at the cap
+P07,170000,357.76,38.86,22.42,,419.04,0.2465,Needs 4 calendar years at the cap
+P07,180000,378.81,38.86,22.42,,440.09,0.2445,Needs 4 calendar years at the cap
+P07,190000,399.85,38.86,22.42,,461.13,0.2427,Needs 4 calendar years at the cap
+P07,200000,420.89,38.86,22.42,,482.18,0.2411,Needs 4 calendar years at the cap
+P07,210000,441.94,38.86,22.42,,503.22,0.2396,Needs 5 calendar years at the cap
+P07,220000,462.98,38.86,22.42,,524.27,0.2383,Needs 5 calendar years at the cap
+P07,230000,484.03,38.86,22.42,,545.31,0.2371,Needs 5 calendar years at the cap
+P07,240000,505.07,38.86,22.42,,566.36,0.2360,Needs 5 calendar years at the cap
+P07,250000,526.12,38.86,22.42,,587.40,0.2350,Needs 5 calendar years at the cap
+P07,260000,547.16,38.86,22.42,,608.45,0.2340,Needs 6 calendar years at the cap
+P07,270000,568.21,38.86,22.42,,629.49,0.2331,Needs 6 calendar years at the cap
+P07,280000,589.25,38.86,22.42,,650.54,0.2323,Needs 6 calendar years at the cap
+P07,290000,610.30,38.86,22.42,,671.58,0.2316,Needs 6 calendar years at the cap
+P07,300000,631.34,38.86,22.42,,692.63,0.2309,Needs 6 calendar years at the cap
+P07,310000,652.39,38.86,22.42,,713.67,0.2302,Needs 7 calendar years at the cap
+P07,320000,673.43,38.86,22.42,,734.71,0.2296,Needs 7 calendar years at the cap
+P07,330000,694.48,38.86,22.42,,755.76,0.2290,Needs 7 calendar years at the cap
+P07,340000,715.52,38.86,22.42,,776.80,0.2285,Needs 7 calendar years at the cap
+P07,350000,736.57,38.86,22.42,,797.85,0.2280,Needs 7 calendar years at the cap
+P07,360000,757.61,38.86,22.42,,818.89,0.2275,Needs 8 calendar years at the cap
+P07,370000,778.66,38.86,22.42,,839.94,0.2270,Needs 8 calendar years at the cap
+P07,380000,799.70,38.86,22.42,,860.98,0.2266,Needs 8 calendar years at the cap
+P07,390000,820.75,38.86,22.42,,882.03,0.2262,Needs 8 calendar years at the cap
+P07,400000,841.79,38.86,22.42,,903.07,0.2258,Needs 8 calendar years at the cap
+P08,10000,21.04,10.00,22.42,,53.47,0.5347,No published per-transfer cap
+P08,20000,42.09,20.00,22.42,,84.51,0.4226,No published per-transfer cap
+P08,30000,63.13,30.00,22.42,,115.55,0.3852,No published per-transfer cap
+P08,40000,84.18,38.86,22.42,,145.46,0.3637,No published per-transfer cap
+P08,50000,105.22,38.86,22.42,,166.51,0.3330,No published per-transfer cap
+P08,60000,126.27,38.86,22.42,,187.55,0.3126,No published per-transfer cap
+P08,70000,147.31,38.86,22.42,,208.60,0.2980,No published per-transfer cap
+P08,80000,168.36,38.86,22.42,,229.64,0.2871,No published per-transfer cap
+P08,90000,189.40,38.86,22.42,,250.69,0.2785,No published per-transfer cap
+P08,100000,210.45,38.86,22.42,,271.73,0.2717,No published per-transfer cap
+P08,110000,231.49,38.86,22.42,,292.77,0.2662,No published per-transfer cap
+P08,120000,252.54,38.86,22.42,,313.82,0.2615,No published per-transfer cap
+P08,130000,273.58,38.86,22.42,,334.86,0.2576,No published per-transfer cap
+P08,140000,294.63,38.86,22.42,,355.91,0.2542,No published per-transfer cap
+P08,150000,315.67,38.86,22.42,,376.95,0.2513,No published per-transfer cap
+P08,160000,336.72,38.86,22.42,,398.00,0.2487,No published per-transfer cap
+P08,170000,357.76,38.86,22.42,,419.04,0.2465,No published per-transfer cap
+P08,180000,378.81,38.86,22.42,,440.09,0.2445,No published per-transfer cap
+P08,190000,399.85,38.86,22.42,,461.13,0.2427,No published per-transfer cap
+P08,200000,420.89,38.86,22.42,,482.18,0.2411,No published per-transfer cap
+P08,210000,441.94,38.86,22.42,,503.22,0.2396,No published per-transfer cap
+P08,220000,462.98,38.86,22.42,,524.27,0.2383,No published per-transfer cap
+P08,230000,484.03,38.86,22.42,,545.31,0.2371,No published per-transfer cap
+P08,240000,505.07,38.86,22.42,,566.36,0.2360,No published per-transfer cap
+P08,250000,526.12,38.86,22.42,,587.40,0.2350,No published per-transfer cap
+P08,260000,547.16,38.86,22.42,,608.45,0.2340,No published per-transfer cap
+P08,270000,568.21,38.86,22.42,,629.49,0.2331,No published per-transfer cap
+P08,280000,589.25,38.86,22.42,,650.54,0.2323,No published per-transfer cap
+P08,290000,610.30,38.86,22.42,,671.58,0.2316,No published per-transfer cap
+P08,300000,631.34,38.86,22.42,,692.63,0.2309,No published per-transfer cap
+P08,310000,652.39,38.86,22.42,,713.67,0.2302,No published per-transfer cap
+P08,320000,673.43,38.86,22.42,,734.71,0.2296,No published per-transfer cap
+P08,330000,694.48,38.86,22.42,,755.76,0.2290,No published per-transfer cap
+P08,340000,715.52,38.86,22.42,,776.80,0.2285,No published per-transfer cap
+P08,350000,736.57,38.86,22.42,,797.85,0.2280,No published per-transfer cap
+P08,360000,757.61,38.86,22.42,,818.89,0.2275,No published per-transfer cap
+P08,370000,778.66,38.86,22.42,,839.94,0.2270,No published per-transfer cap
+P08,380000,799.70,38.86,22.42,,860.98,0.2266,No published per-transfer cap
+P08,390000,820.75,38.86,22.42,,882.03,0.2262,No published per-transfer cap
+P08,400000,841.79,38.86,22.42,,903.07,0.2258,No published per-transfer cap
+C01,10000,21.04,10.00,22.42,,53.47,0.5347,No published per-transfer cap
+C01,20000,42.09,20.00,22.42,,84.51,0.4226,No published per-transfer cap
+C01,30000,63.13,30.00,22.42,,115.55,0.3852,No published per-transfer cap
+C01,40000,84.18,38.86,22.42,,145.46,0.3637,No published per-transfer cap
+C01,50000,105.22,38.86,22.42,,166.51,0.3330,No published per-transfer cap
+C01,60000,126.27,38.86,22.42,,187.55,0.3126,No published per-transfer cap
+C01,70000,147.31,38.86,22.42,,208.60,0.2980,No published per-transfer cap
+C01,80000,168.36,38.86,22.42,,229.64,0.2871,No published per-transfer cap
+C01,90000,189.40,38.86,22.42,,250.69,0.2785,No published per-transfer cap
+C01,100000,210.45,38.86,22.42,,271.73,0.2717,No published per-transfer cap
+C01,110000,231.49,38.86,22.42,,292.77,0.2662,No published per-transfer cap
+C01,120000,252.54,38.86,22.42,,313.82,0.2615,No published per-transfer cap
+C01,130000,273.58,38.86,22.42,,334.86,0.2576,No published per-transfer cap
+C01,140000,294.63,38.86,22.42,,355.91,0.2542,No published per-transfer cap
+C01,150000,315.67,38.86,22.42,,376.95,0.2513,No published per-transfer cap
+C01,160000,336.72,38.86,22.42,,398.00,0.2487,No published per-transfer cap
+C01,170000,357.76,38.86,22.42,,419.04,0.2465,No published per-transfer cap
+C01,180000,378.81,38.86,22.42,,440.09,0.2445,No published per-transfer cap
+C01,190000,399.85,38.86,22.42,,461.13,0.2427,No published per-transfer cap
+C01,200000,420.89,38.86,22.42,,482.18,0.2411,No published per-transfer cap
+C01,210000,441.94,38.86,22.42,,503.22,0.2396,No published per-transfer cap
+C01,220000,462.98,38.86,22.42,,524.27,0.2383,No published per-transfer cap
+C01,230000,484.03,38.86,22.42,,545.31,0.2371,No published per-transfer cap
+C01,240000,505.07,38.86,22.42,,566.36,0.2360,No published per-transfer cap
+C01,250000,526.12,38.86,22.42,,587.40,0.2350,No published per-transfer cap
+C01,260000,547.16,38.86,22.42,,608.45,0.2340,No published per-transfer cap
+C01,270000,568.21,38.86,22.42,,629.49,0.2331,No published per-transfer cap
+C01,280000,589.25,38.86,22.42,,650.54,0.2323,No published per-transfer cap
+C01,290000,610.30,38.86,22.42,,671.58,0.2316,No published per-transfer cap
+C01,300000,631.34,38.86,22.42,,692.63,0.2309,No published per-transfer cap
+C01,310000,652.39,38.86,22.42,,713.67,0.2302,No published per-transfer cap
+C01,320000,673.43,38.86,22.42,,734.71,0.2296,No published per-transfer cap
+C01,330000,694.48,38.86,22.42,,755.76,0.2290,No published per-transfer cap
+C01,340000,715.52,38.86,22.42,,776.80,0.2285,No published per-transfer cap
+C01,350000,736.57,38.86,22.42,,797.85,0.2280,No published per-transfer cap
+C01,360000,757.61,38.86,22.42,,818.89,0.2275,No published per-transfer cap
+C01,370000,778.66,38.86,22.42,,839.94,0.2270,No published per-transfer cap
+C01,380000,799.70,38.86,22.42,,860.98,0.2266,No published per-transfer cap
+C01,390000,820.75,38.86,22.42,,882.03,0.2262,No published per-transfer cap
+C01,400000,841.79,38.86,22.42,,903.07,0.2258,No published per-transfer cap
+C02,10000,21.04,10.00,22.42,,53.47,0.5347,No published per-transfer cap
+C02,20000,42.09,20.00,22.42,,84.51,0.4226,No published per-transfer cap
+C02,30000,63.13,30.00,22.42,,115.55,0.3852,No published per-transfer cap
+C02,40000,84.18,38.86,22.42,,145.46,0.3637,No published per-transfer cap
+C02,50000,105.22,38.86,22.42,,166.51,0.3330,No published per-transfer cap
+C02,60000,126.27,38.86,22.42,,187.55,0.3126,No published per-transfer cap
+C02,70000,147.31,38.86,22.42,,208.60,0.2980,No published per-transfer cap
+C02,80000,168.36,38.86,22.42,,229.64,0.2871,No published per-transfer cap
+C02,90000,189.40,38.86,22.42,,250.69,0.2785,No published per-transfer cap
+C02,100000,210.45,38.86,22.42,,271.73,0.2717,No published per-transfer cap
+C02,110000,231.49,38.86,22.42,,292.77,0.2662,No published per-transfer cap
+C02,120000,252.54,38.86,22.42,,313.82,0.2615,No published per-transfer cap
+C02,130000,273.58,38.86,22.42,,334.86,0.2576,No published per-transfer cap
+C02,140000,294.63,38.86,22.42,,355.91,0.2542,No published per-transfer cap
+C02,150000,315.67,38.86,22.42,,376.95,0.2513,No published per-transfer cap
+C02,160000,336.72,38.86,22.42,,398.00,0.2487,No published per-transfer cap
+C02,170000,357.76,38.86,22.42,,419.04,0.2465,No published per-transfer cap
+C02,180000,378.81,38.86,22.42,,440.09,0.2445,No published per-transfer cap
+C02,190000,399.85,38.86,22.42,,461.13,0.2427,No published per-transfer cap
+C02,200000,420.89,38.86,22.42,,482.18,0.2411,No published per-transfer cap
+C02,210000,441.94,38.86,22.42,,503.22,0.2396,No published per-transfer cap
+C02,220000,462.98,38.86,22.42,,524.27,0.2383,No published per-transfer cap
+C02,230000,484.03,38.86,22.42,,545.31,0.2371,No published per-transfer cap
+C02,240000,505.07,38.86,22.42,,566.36,0.2360,No published per-transfer cap
+C02,250000,526.12,38.86,22.42,,587.40,0.2350,No published per-transfer cap
+C02,260000,547.16,38.86,22.42,,608.45,0.2340,No published per-transfer cap
+C02,270000,568.21,38.86,22.42,,629.49,0.2331,No published per-transfer cap
+C02,280000,589.25,38.86,22.42,,650.54,0.2323,No published per-transfer cap
+C02,290000,610.30,38.86,22.42,,671.58,0.2316,No published per-transfer cap
+C02,300000,631.34,38.86,22.42,,692.63,0.2309,No published per-transfer cap
+C02,310000,652.39,38.86,22.42,,713.67,0.2302,No published per-transfer cap
+C02,320000,673.43,38.86,22.42,,734.71,0.2296,No published per-transfer cap
+C02,330000,694.48,38.86,22.42,,755.76,0.2290,No published per-transfer cap
+C02,340000,715.52,38.86,22.42,,776.80,0.2285,No published per-transfer cap
+C02,350000,736.57,38.86,22.42,,797.85,0.2280,No published per-transfer cap
+C02,360000,757.61,38.86,22.42,,818.89,0.2275,No published per-transfer cap
+C02,370000,778.66,38.86,22.42,,839.94,0.2270,No published per-transfer cap
+C02,380000,799.70,38.86,22.42,,860.98,0.2266,No published per-transfer cap
+C02,390000,820.75,38.86,22.42,,882.03,0.2262,No published per-transfer cap
+C02,400000,841.79,38.86,22.42,,903.07,0.2258,No published per-transfer cap
+C03,10000,21.04,10.00,22.42,,53.47,0.5347,No published per-transfer cap
+C03,20000,42.09,20.00,22.42,,84.51,0.4226,No published per-transfer cap
+C03,30000,63.13,30.00,22.42,,115.55,0.3852,No published per-transfer cap
+C03,40000,84.18,38.86,22.42,,145.46,0.3637,No published per-transfer cap
+C03,50000,105.22,38.86,22.42,,166.51,0.3330,No published per-transfer cap
+C03,60000,126.27,38.86,22.42,,187.55,0.3126,No published per-transfer cap
+C03,70000,147.31,38.86,22.42,,208.60,0.2980,No published per-transfer cap
+C03,80000,168.36,38.86,22.42,,229.64,0.2871,No published per-transfer cap
+C03,90000,189.40,38.86,22.42,,250.69,0.2785,No published per-transfer cap
+C03,100000,210.45,38.86,22.42,,271.73,0.2717,No published per-transfer cap
+C03,110000,231.49,38.86,22.42,,292.77,0.2662,No published per-transfer cap
+C03,120000,252.54,38.86,22.42,,313.82,0.2615,No published per-transfer cap
+C03,130000,273.58,38.86,22.42,,334.86,0.2576,No published per-transfer cap
+C03,140000,294.63,38.86,22.42,,355.91,0.2542,No published per-transfer cap
+C03,150000,315.67,38.86,22.42,,376.95,0.2513,No published per-transfer cap
+C03,160000,336.72,38.86,22.42,,398.00,0.2487,No published per-transfer cap
+C03,170000,357.76,38.86,22.42,,419.04,0.2465,No published per-transfer cap
+C03,180000,378.81,38.86,22.42,,440.09,0.2445,No published per-transfer cap
+C03,190000,399.85,38.86,22.42,,461.13,0.2427,No published per-transfer cap
+C03,200000,420.89,38.86,22.42,,482.18,0.2411,No published per-transfer cap
+C03,210000,441.94,38.86,22.42,,503.22,0.2396,No published per-transfer cap
+C03,220000,462.98,38.86,22.42,,524.27,0.2383,No published per-transfer cap
+C03,230000,484.03,38.86,22.42,,545.31,0.2371,No published per-transfer cap
+C03,240000,505.07,38.86,22.42,,566.36,0.2360,No published per-transfer cap
+C03,250000,526.12,38.86,22.42,,587.40,0.2350,No published per-transfer cap
+C03,260000,547.16,38.86,22.42,,608.45,0.2340,No published per-transfer cap
+C03,270000,568.21,38.86,22.42,,629.49,0.2331,No published per-transfer cap
+C03,280000,589.25,38.86,22.42,,650.54,0.2323,No published per-transfer cap
+C03,290000,610.30,38.86,22.42,,671.58,0.2316,No published per-transfer cap
+C03,300000,631.34,38.86,22.42,,692.63,0.2309,No published per-transfer cap
+C03,310000,652.39,38.86,22.42,,713.67,0.2302,No published per-transfer cap
+C03,320000,673.43,38.86,22.42,,734.71,0.2296,No published per-transfer cap
+C03,330000,694.48,38.86,22.42,,755.76,0.2290,No published per-transfer cap
+C03,340000,715.52,38.86,22.42,,776.80,0.2285,No published per-transfer cap
+C03,350000,736.57,38.86,22.42,,797.85,0.2280,No published per-transfer cap
+C03,360000,757.61,38.86,22.42,,818.89,0.2275,No published per-transfer cap
+C03,370000,778.66,38.86,22.42,,839.94,0.2270,No published per-transfer cap
+C03,380000,799.70,38.86,22.42,,860.98,0.2266,No published per-transfer cap
+C03,390000,820.75,38.86,22.42,,882.03,0.2262,No published per-transfer cap
+C03,400000,841.79,38.86,22.42,,903.07,0.2258,No published per-transfer cap
+C04,10000,21.04,10.00,22.42,,53.47,0.5347,No published per-transfer cap
+C04,20000,42.09,20.00,22.42,,84.51,0.4226,No published per-transfer cap
+C04,30000,63.13,30.00,22.42,,115.55,0.3852,No published per-transfer cap
+C04,40000,84.18,38.86,22.42,,145.46,0.3637,No published per-transfer cap
+C04,50000,105.22,38.86,22.42,,166.51,0.3330,No published per-transfer cap
+C04,60000,126.27,38.86,22.42,,187.55,0.3126,No published per-transfer cap
+C04,70000,147.31,38.86,22.42,,208.60,0.2980,No published per-transfer cap
+C04,80000,168.36,38.86,22.42,,229.64,0.2871,No published per-transfer cap
+C04,90000,189.40,38.86,22.42,,250.69,0.2785,No published per-transfer cap
+C04,100000,210.45,38.86,22.42,,271.73,0.2717,No published per-transfer cap
+C04,110000,231.49,38.86,22.42,,292.77,0.2662,No published per-transfer cap
+C04,120000,252.54,38.86,22.42,,313.82,0.2615,No published per-transfer cap
+C04,130000,273.58,38.86,22.42,,334.86,0.2576,No published per-transfer cap
+C04,140000,294.63,38.86,22.42,,355.91,0.2542,No published per-transfer cap
+C04,150000,315.67,38.86,22.42,,376.95,0.2513,No published per-transfer cap
+C04,160000,336.72,38.86,22.42,,398.00,0.2487,No published per-transfer cap
+C04,170000,357.76,38.86,22.42,,419.04,0.2465,No published per-transfer cap
+C04,180000,378.81,38.86,22.42,,440.09,0.2445,No published per-transfer cap
+C04,190000,399.85,38.86,22.42,,461.13,0.2427,No published per-transfer cap
+C04,200000,420.89,38.86,22.42,,482.18,0.2411,No published per-transfer cap
+C04,210000,441.94,38.86,22.42,,503.22,0.2396,No published per-transfer cap
+C04,220000,462.98,38.86,22.42,,524.27,0.2383,No published per-transfer cap
+C04,230000,484.03,38.86,22.42,,545.31,0.2371,No published per-transfer cap
+C04,240000,505.07,38.86,22.42,,566.36,0.2360,No published per-transfer cap
+C04,250000,526.12,38.86,22.42,,587.40,0.2350,No published per-transfer cap
+C04,260000,547.16,38.86,22.42,,608.45,0.2340,No published per-transfer cap
+C04,270000,568.21,38.86,22.42,,629.49,0.2331,No published per-transfer cap
+C04,280000,589.25,38.86,22.42,,650.54,0.2323,No published per-transfer cap
+C04,290000,610.30,38.86,22.42,,671.58,0.2316,No published per-transfer cap
+C04,300000,631.34,38.86,22.42,,692.63,0.2309,No published per-transfer cap
+C04,310000,652.39,38.86,22.42,,713.67,0.2302,No published per-transfer cap
+C04,320000,673.43,38.86,22.42,,734.71,0.2296,No published per-transfer cap
+C04,330000,694.48,38.86,22.42,,755.76,0.2290,No published per-transfer cap
+C04,340000,715.52,38.86,22.42,,776.80,0.2285,No published per-transfer cap
+C04,350000,736.57,38.86,22.42,,797.85,0.2280,No published per-transfer cap
+C04,360000,757.61,38.86,22.42,,818.89,0.2275,No published per-transfer cap
+C04,370000,778.66,38.86,22.42,,839.94,0.2270,No published per-transfer cap
+C04,380000,799.70,38.86,22.42,,860.98,0.2266,No published per-transfer cap
+C04,390000,820.75,38.86,22.42,,882.03,0.2262,No published per-transfer cap
+C04,400000,841.79,38.86,22.42,,903.07,0.2258,No published per-transfer cap
+C05,10000,21.04,10.00,22.42,,53.47,0.5347,No published per-transfer cap
+C05,20000,42.09,20.00,22.42,,84.51,0.4226,No published per-transfer cap
+C05,30000,63.13,30.00,22.42,,115.55,0.3852,No published per-transfer cap
+C05,40000,84.18,38.86,22.42,,145.46,0.3637,No published per-transfer cap
+C05,50000,105.22,38.86,22.42,,166.51,0.3330,No published per-transfer cap
+C05,60000,126.27,38.86,22.42,,187.55,0.3126,No published per-transfer cap
+C05,70000,147.31,38.86,22.42,,208.60,0.2980,No published per-transfer cap
+C05,80000,168.36,38.86,22.42,,229.64,0.2871,No published per-transfer cap
+C05,90000,189.40,38.86,22.42,,250.69,0.2785,No published per-transfer cap
+C05,100000,210.45,38.86,22.42,,271.73,0.2717,No published per-transfer cap
+C05,110000,231.49,38.86,22.42,,292.77,0.2662,No published per-transfer cap
+C05,120000,252.54,38.86,22.42,,313.82,0.2615,No published per-transfer cap
+C05,130000,273.58,38.86,22.42,,334.86,0.2576,No published per-transfer cap
+C05,140000,294.63,38.86,22.42,,355.91,0.2542,No published per-transfer cap
+C05,150000,315.67,38.86,22.42,,376.95,0.2513,No published per-transfer cap
+C05,160000,336.72,38.86,22.42,,398.00,0.2487,No published per-transfer cap
+C05,170000,357.76,38.86,22.42,,419.04,0.2465,No published per-transfer cap
+C05,180000,378.81,38.86,22.42,,440.09,0.2445,No published per-transfer cap
+C05,190000,399.85,38.86,22.42,,461.13,0.2427,No published per-transfer cap
+C05,200000,420.89,38.86,22.42,,482.18,0.2411,No published per-transfer cap
+C05,210000,441.94,38.86,22.42,,503.22,0.2396,No published per-transfer cap
+C05,220000,462.98,38.86,22.42,,524.27,0.2383,No published per-transfer cap
+C05,230000,484.03,38.86,22.42,,545.31,0.2371,No published per-transfer cap
+C05,240000,505.07,38.86,22.42,,566.36,0.2360,No published per-transfer cap
+C05,250000,526.12,38.86,22.42,,587.40,0.2350,No published per-transfer cap
+C05,260000,547.16,38.86,22.42,,608.45,0.2340,No published per-transfer cap
+C05,270000,568.21,38.86,22.42,,629.49,0.2331,No published per-transfer cap
+C05,280000,589.25,38.86,22.42,,650.54,0.2323,No published per-transfer cap
+C05,290000,610.30,38.86,22.42,,671.58,0.2316,No published per-transfer cap
+C05,300000,631.34,38.86,22.42,,692.63,0.2309,No published per-transfer cap
+C05,310000,652.39,38.86,22.42,,713.67,0.2302,No published per-transfer cap
+C05,320000,673.43,38.86,22.42,,734.71,0.2296,No published per-transfer cap
+C05,330000,694.48,38.86,22.42,,755.76,0.2290,No published per-transfer cap
+C05,340000,715.52,38.86,22.42,,776.80,0.2285,No published per-transfer cap
+C05,350000,736.57,38.86,22.42,,797.85,0.2280,No published per-transfer cap
+C05,360000,757.61,38.86,22.42,,818.89,0.2275,No published per-transfer cap
+C05,370000,778.66,38.86,22.42,,839.94,0.2270,No published per-transfer cap
+C05,380000,799.70,38.86,22.42,,860.98,0.2266,No published per-transfer cap
+C05,390000,820.75,38.86,22.42,,882.03,0.2262,No published per-transfer cap
+C05,400000,841.79,38.86,22.42,,903.07,0.2258,No published per-transfer cap
+C06,10000,21.04,10.00,22.42,,53.47,0.5347,No published per-transfer cap
+C06,20000,42.09,20.00,22.42,,84.51,0.4226,No published per-transfer cap
+C06,30000,63.13,30.00,22.42,,115.55,0.3852,No published per-transfer cap
+C06,40000,84.18,38.86,22.42,,145.46,0.3637,No published per-transfer cap
+C06,50000,105.22,38.86,22.42,,166.51,0.3330,No published per-transfer cap
+C06,60000,126.27,38.86,22.42,,187.55,0.3126,No published per-transfer cap
+C06,70000,147.31,38.86,22.42,,208.60,0.2980,No published per-transfer cap
+C06,80000,168.36,38.86,22.42,,229.64,0.2871,No published per-transfer cap
+C06,90000,189.40,38.86,22.42,,250.69,0.2785,No published per-transfer cap
+C06,100000,210.45,38.86,22.42,,271.73,0.2717,No published per-transfer cap
+C06,110000,231.49,38.86,22.42,,292.77,0.2662,No published per-transfer cap
+C06,120000,252.54,38.86,22.42,,313.82,0.2615,No published per-transfer cap
+C06,130000,273.58,38.86,22.42,,334.86,0.2576,No published per-transfer cap
+C06,140000,294.63,38.86,22.42,,355.91,0.2542,No published per-transfer cap
+C06,150000,315.67,38.86,22.42,,376.95,0.2513,No published per-transfer cap
+C06,160000,336.72,38.86,22.42,,398.00,0.2487,No published per-transfer cap
+C06,170000,357.76,38.86,22.42,,419.04,0.2465,No published per-transfer cap
+C06,180000,378.81,38.86,22.42,,440.09,0.2445,No published per-transfer cap
+C06,190000,399.85,38.86,22.42,,461.13,0.2427,No published per-transfer cap
+C06,200000,420.89,38.86,22.42,,482.18,0.2411,No published per-transfer cap
+C06,210000,441.94,38.86,22.42,,503.22,0.2396,No published per-transfer cap
+C06,220000,462.98,38.86,22.42,,524.27,0.2383,No published per-transfer cap
+C06,230000,484.03,38.86,22.42,,545.31,0.2371,No published per-transfer cap
+C06,240000,505.07,38.86,22.42,,566.36,0.2360,No published per-transfer cap
+C06,250000,526.12,38.86,22.42,,587.40,0.2350,No published per-transfer cap
+C06,260000,547.16,38.86,22.42,,608.45,0.2340,No published per-transfer cap
+C06,270000,568.21,38.86,22.42,,629.49,0.2331,No published per-transfer cap
+C06,280000,589.25,38.86,22.42,,650.54,0.2323,No published per-transfer cap
+C06,290000,610.30,38.86,22.42,,671.58,0.2316,No published per-transfer cap
+C06,300000,631.34,38.86,22.42,,692.63,0.2309,No published per-transfer cap
+C06,310000,652.39,38.86,22.42,,713.67,0.2302,No published per-transfer cap
+C06,320000,673.43,38.86,22.42,,734.71,0.2296,No published per-transfer cap
+C06,330000,694.48,38.86,22.42,,755.76,0.2290,No published per-transfer cap
+C06,340000,715.52,38.86,22.42,,776.80,0.2285,No published per-transfer cap
+C06,350000,736.57,38.86,22.42,,797.85,0.2280,No published per-transfer cap
+C06,360000,757.61,38.86,22.42,,818.89,0.2275,No published per-transfer cap
+C06,370000,778.66,38.86,22.42,,839.94,0.2270,No published per-transfer cap
+C06,380000,799.70,38.86,22.42,,860.98,0.2266,No published per-transfer cap
+C06,390000,820.75,38.86,22.42,,882.03,0.2262,No published per-transfer cap
+C06,400000,841.79,38.86,22.42,,903.07,0.2258,No published per-transfer cap
+C07,10000,21.04,10.00,22.42,,53.47,0.5347,No published per-transfer cap
+C07,20000,42.09,20.00,22.42,,84.51,0.4226,No published per-transfer cap
+C07,30000,63.13,30.00,22.42,,115.55,0.3852,No published per-transfer cap
+C07,40000,84.18,38.86,22.42,,145.46,0.3637,No published per-transfer cap
+C07,50000,105.22,38.86,22.42,,166.51,0.3330,No published per-transfer cap
+C07,60000,126.27,38.86,22.42,,187.55,0.3126,No published per-transfer cap
+C07,70000,147.31,38.86,22.42,,208.60,0.2980,No published per-transfer cap
+C07,80000,168.36,38.86,22.42,,229.64,0.2871,No published per-transfer cap
+C07,90000,189.40,38.86,22.42,,250.69,0.2785,No published per-transfer cap
+C07,100000,210.45,38.86,22.42,,271.73,0.2717,No published per-transfer cap
+C07,110000,231.49,38.86,22.42,,292.77,0.2662,No published per-transfer cap
+C07,120000,252.54,38.86,22.42,,313.82,0.2615,No published per-transfer cap
+C07,130000,273.58,38.86,22.42,,334.86,0.2576,No published per-transfer cap
+C07,140000,294.63,38.86,22.42,,355.91,0.2542,No published per-transfer cap
+C07,150000,315.67,38.86,22.42,,376.95,0.2513,No published per-transfer cap
+C07,160000,336.72,38.86,22.42,,398.00,0.2487,No published per-transfer cap
+C07,170000,357.76,38.86,22.42,,419.04,0.2465,No published per-transfer cap
+C07,180000,378.81,38.86,22.42,,440.09,0.2445,No published per-transfer cap
+C07,190000,399.85,38.86,22.42,,461.13,0.2427,No published per-transfer cap
+C07,200000,420.89,38.86,22.42,,482.18,0.2411,No published per-transfer cap
+C07,210000,441.94,38.86,22.42,,503.22,0.2396,No published per-transfer cap
+C07,220000,462.98,38.86,22.42,,524.27,0.2383,No published per-transfer cap
+C07,230000,484.03,38.86,22.42,,545.31,0.2371,No published per-transfer cap
+C07,240000,505.07,38.86,22.42,,566.36,0.2360,No published per-transfer cap
+C07,250000,526.12,38.86,22.42,,587.40,0.2350,No published per-transfer cap
+C07,260000,547.16,38.86,22.42,,608.45,0.2340,No published per-transfer cap
+C07,270000,568.21,38.86,22.42,,629.49,0.2331,No published per-transfer cap
+C07,280000,589.25,38.86,22.42,,650.54,0.2323,No published per-transfer cap
+C07,290000,610.30,38.86,22.42,,671.58,0.2316,No published per-transfer cap
+C07,300000,631.34,38.86,22.42,,692.63,0.2309,No published per-transfer cap
+C07,310000,652.39,38.86,22.42,,713.67,0.2302,No published per-transfer cap
+C07,320000,673.43,38.86,22.42,,734.71,0.2296,No published per-transfer cap
+C07,330000,694.48,38.86,22.42,,755.76,0.2290,No published per-transfer cap
+C07,340000,715.52,38.86,22.42,,776.80,0.2285,No published per-transfer cap
+C07,350000,736.57,38.86,22.42,,797.85,0.2280,No published per-transfer cap
+C07,360000,757.61,38.86,22.42,,818.89,0.2275,No published per-transfer cap
+C07,370000,778.66,38.86,22.42,,839.94,0.2270,No published per-transfer cap
+C07,380000,799.70,38.86,22.42,,860.98,0.2266,No published per-transfer cap
+C07,390000,820.75,38.86,22.42,,882.03,0.2262,No published per-transfer cap
+C07,400000,841.79,38.86,22.42,,903.07,0.2258,No published per-transfer cap
+C08,10000,,,,,,,No published per-transfer cap
+C08,20000,,,,,,,No published per-transfer cap
+C08,30000,,,,,,,No published per-transfer cap
+C08,40000,,,,,,,No published per-transfer cap
+C08,50000,,,,,,,No published per-transfer cap
+C08,60000,,,,,,,No published per-transfer cap
+C08,70000,,,,,,,No published per-transfer cap
+C08,80000,,,,,,,No published per-transfer cap
+C08,90000,,,,,,,No published per-transfer cap
+C08,100000,,,,,,,No published per-transfer cap
+C08,110000,,,,,,,No published per-transfer cap
+C08,120000,,,,,,,No published per-transfer cap
+C08,130000,,,,,,,No published per-transfer cap
+C08,140000,,,,,,,No published per-transfer cap
+C08,150000,,,,,,,No published per-transfer cap
+C08,160000,,,,,,,No published per-transfer cap
+C08,170000,,,,,,,No published per-transfer cap
+C08,180000,,,,,,,No published per-transfer cap
+C08,190000,,,,,,,No published per-transfer cap
+C08,200000,,,,,,,No published per-transfer cap
+C08,210000,,,,,,,No published per-transfer cap
+C08,220000,,,,,,,No published per-transfer cap
+C08,230000,,,,,,,No published per-transfer cap
+C08,240000,,,,,,,No published per-transfer cap
+C08,250000,,,,,,,No published per-transfer cap
+C08,260000,,,,,,,No published per-transfer cap
+C08,270000,,,,,,,No published per-transfer cap
+C08,280000,,,,,,,No published per-transfer cap
+C08,290000,,,,,,,No published per-transfer cap
+C08,300000,,,,,,,No published per-transfer cap
+C08,310000,,,,,,,No published per-transfer cap
+C08,320000,,,,,,,No published per-transfer cap
+C08,330000,,,,,,,No published per-transfer cap
+C08,340000,,,,,,,No published per-transfer cap
+C08,350000,,,,,,,No published per-transfer cap
+C08,360000,,,,,,,No published per-transfer cap
+C08,370000,,,,,,,No published per-transfer cap
+C08,380000,,,,,,,No published per-transfer cap
+C08,390000,,,,,,,No published per-transfer cap
+C08,400000,,,,,,,No published per-transfer cap
+R01,10000,21.04,10.00,22.42,,53.47,0.5347,No published per-transfer cap
+R01,20000,42.09,20.00,22.42,,84.51,0.4226,No published per-transfer cap
+R01,30000,63.13,30.00,22.42,,115.55,0.3852,No published per-transfer cap
+R01,40000,84.18,38.86,22.42,,145.46,0.3637,No published per-transfer cap
+R01,50000,105.22,38.86,22.42,,166.51,0.3330,No published per-transfer cap
+R01,60000,126.27,38.86,22.42,,187.55,0.3126,No published per-transfer cap
+R01,70000,147.31,38.86,22.42,,208.60,0.2980,No published per-transfer cap
+R01,80000,168.36,38.86,22.42,,229.64,0.2871,No published per-transfer cap
+R01,90000,189.40,38.86,22.42,,250.69,0.2785,No published per-transfer cap
+R01,100000,210.45,38.86,22.42,,271.73,0.2717,No published per-transfer cap
+R01,110000,231.49,38.86,22.42,,292.77,0.2662,No published per-transfer cap
+R01,120000,252.54,38.86,22.42,,313.82,0.2615,No published per-transfer cap
+R01,130000,273.58,38.86,22.42,,334.86,0.2576,No published per-transfer cap
+R01,140000,294.63,38.86,22.42,,355.91,0.2542,No published per-transfer cap
+R01,150000,315.67,38.86,22.42,,376.95,0.2513,No published per-transfer cap
+R01,160000,336.72,38.86,22.42,,398.00,0.2487,No published per-transfer cap
+R01,170000,357.76,38.86,22.42,,419.04,0.2465,No published per-transfer cap
+R01,180000,378.81,38.86,22.42,,440.09,0.2445,No published per-transfer cap
+R01,190000,399.85,38.86,22.42,,461.13,0.2427,No published per-transfer cap
+R01,200000,420.89,38.86,22.42,,482.18,0.2411,No published per-transfer cap
+R01,210000,441.94,38.86,22.42,,503.22,0.2396,No published per-transfer cap
+R01,220000,462.98,38.86,22.42,,524.27,0.2383,No published per-transfer cap
+R01,230000,484.03,38.86,22.42,,545.31,0.2371,No published per-transfer cap
+R01,240000,505.07,38.86,22.42,,566.36,0.2360,No published per-transfer cap
+R01,250000,526.12,38.86,22.42,,587.40,0.2350,No published per-transfer cap
+R01,260000,547.16,38.86,22.42,,608.45,0.2340,No published per-transfer cap
+R01,270000,568.21,38.86,22.42,,629.49,0.2331,No published per-transfer cap
+R01,280000,589.25,38.86,22.42,,650.54,0.2323,No published per-transfer cap
+R01,290000,610.30,38.86,22.42,,671.58,0.2316,No published per-transfer cap
+R01,300000,631.34,38.86,22.42,,692.63,0.2309,No published per-transfer cap
+R01,310000,652.39,38.86,22.42,,713.67,0.2302,No published per-transfer cap
+R01,320000,673.43,38.86,22.42,,734.71,0.2296,No published per-transfer cap
+R01,330000,694.48,38.86,22.42,,755.76,0.2290,No published per-transfer cap
+R01,340000,715.52,38.86,22.42,,776.80,0.2285,No published per-transfer cap
+R01,350000,736.57,38.86,22.42,,797.85,0.2280,No published per-transfer cap
+R01,360000,757.61,38.86,22.42,,818.89,0.2275,No published per-transfer cap
+R01,370000,778.66,38.86,22.42,,839.94,0.2270,No published per-transfer cap
+R01,380000,799.70,38.86,22.42,,860.98,0.2266,No published per-transfer cap
+R01,390000,820.75,38.86,22.42,,882.03,0.2262,No published per-transfer cap
+R01,400000,841.79,38.86,22.42,,903.07,0.2258,No published per-transfer cap
+R02,10000,,,,,,,No published per-transfer cap
+R02,20000,,,,,,,No published per-transfer cap
+R02,30000,,,,,,,No published per-transfer cap
+R02,40000,,,,,,,No published per-transfer cap
+R02,50000,,,,,,,No published per-transfer cap
+R02,60000,,,,,,,No published per-transfer cap
+R02,70000,,,,,,,No published per-transfer cap
+R02,80000,,,,,,,No published per-transfer cap
+R02,90000,,,,,,,No published per-transfer cap
+R02,100000,,,,,,,No published per-transfer cap
+R02,110000,,,,,,,No published per-transfer cap
+R02,120000,,,,,,,No published per-transfer cap
+R02,130000,,,,,,,No published per-transfer cap
+R02,140000,,,,,,,No published per-transfer cap
+R02,150000,,,,,,,No published per-transfer cap
+R02,160000,,,,,,,No published per-transfer cap
+R02,170000,,,,,,,No published per-transfer cap
+R02,180000,,,,,,,No published per-transfer cap
+R02,190000,,,,,,,No published per-transfer cap
+R02,200000,,,,,,,No published per-transfer cap
+R02,210000,,,,,,,No published per-transfer cap
+R02,220000,,,,,,,No published per-transfer cap
+R02,230000,,,,,,,No published per-transfer cap
+R02,240000,,,,,,,No published per-transfer cap
+R02,250000,,,,,,,No published per-transfer cap
+R02,260000,,,,,,,No published per-transfer cap
+R02,270000,,,,,,,No published per-transfer cap
+R02,280000,,,,,,,No published per-transfer cap
+R02,290000,,,,,,,No published per-transfer cap
+R02,300000,,,,,,,No published per-transfer cap
+R02,310000,,,,,,,No published per-transfer cap
+R02,320000,,,,,,,No published per-transfer cap
+R02,330000,,,,,,,No published per-transfer cap
+R02,340000,,,,,,,No published per-transfer cap
+R02,350000,,,,,,,No published per-transfer cap
+R02,360000,,,,,,,No published per-transfer cap
+R02,370000,,,,,,,No published per-transfer cap
+R02,380000,,,,,,,No published per-transfer cap
+R02,390000,,,,,,,No published per-transfer cap
+R02,400000,,,,,,,No published per-transfer cap
+R03,10000,,,,,,,No published per-transfer cap
+R03,20000,,,,,,,No published per-transfer cap
+R03,30000,,,,,,,No published per-transfer cap
+R03,40000,,,,,,,No published per-transfer cap
+R03,50000,,,,,,,No published per-transfer cap
+R03,60000,,,,,,,No published per-transfer cap
+R03,70000,,,,,,,No published per-transfer cap
+R03,80000,,,,,,,No published per-transfer cap
+R03,90000,,,,,,,No published per-transfer cap
+R03,100000,,,,,,,No published per-transfer cap
+R03,110000,,,,,,,No published per-transfer cap
+R03,120000,,,,,,,No published per-transfer cap
+R03,130000,,,,,,,No published per-transfer cap
+R03,140000,,,,,,,No published per-transfer cap
+R03,150000,,,,,,,No published per-transfer cap
+R03,160000,,,,,,,No published per-transfer cap
+R03,170000,,,,,,,No published per-transfer cap
+R03,180000,,,,,,,No published per-transfer cap
+R03,190000,,,,,,,No published per-transfer cap
+R03,200000,,,,,,,No published per-transfer cap
+R03,210000,,,,,,,No published per-transfer cap
+R03,220000,,,,,,,No published per-transfer cap
+R03,230000,,,,,,,No published per-transfer cap
+R03,240000,,,,,,,No published per-transfer cap
+R03,250000,,,,,,,No published per-transfer cap
+R03,260000,,,,,,,No published per-transfer cap
+R03,270000,,,,,,,No published per-transfer cap
+R03,280000,,,,,,,No published per-transfer cap
+R03,290000,,,,,,,No published per-transfer cap
+R03,300000,,,,,,,No published per-transfer cap
+R03,310000,,,,,,,No published per-transfer cap
+R03,320000,,,,,,,No published per-transfer cap
+R03,330000,,,,,,,No published per-transfer cap
+R03,340000,,,,,,,No published per-transfer cap
+R03,350000,,,,,,,No published per-transfer cap
+R03,360000,,,,,,,No published per-transfer cap
+R03,370000,,,,,,,No published per-transfer cap
+R03,380000,,,,,,,No published per-transfer cap
+R03,390000,,,,,,,No published per-transfer cap
+R03,400000,,,,,,,No published per-transfer cap
+R04,10000,,,,,,,No published per-transfer cap
+R04,20000,,,,,,,No published per-transfer cap
+R04,30000,,,,,,,No published per-transfer cap
+R04,40000,,,,,,,No published per-transfer cap
+R04,50000,,,,,,,No published per-transfer cap
+R04,60000,,,,,,,No published per-transfer cap
+R04,70000,,,,,,,No published per-transfer cap
+R04,80000,,,,,,,No published per-transfer cap
+R04,90000,,,,,,,No published per-transfer cap
+R04,100000,,,,,,,No published per-transfer cap
+R04,110000,,,,,,,No published per-transfer cap
+R04,120000,,,,,,,No published per-transfer cap
+R04,130000,,,,,,,No published per-transfer cap
+R04,140000,,,,,,,No published per-transfer cap
+R04,150000,,,,,,,No published per-transfer cap
+R04,160000,,,,,,,No published per-transfer cap
+R04,170000,,,,,,,No published per-transfer cap
+R04,180000,,,,,,,No published per-transfer cap
+R04,190000,,,,,,,No published per-transfer cap
+R04,200000,,,,,,,No published per-transfer cap
+R04,210000,,,,,,,No published per-transfer cap
+R04,220000,,,,,,,No published per-transfer cap
+R04,230000,,,,,,,No published per-transfer cap
+R04,240000,,,,,,,No published per-transfer cap
+R04,250000,,,,,,,No published per-transfer cap
+R04,260000,,,,,,,No published per-transfer cap
+R04,270000,,,,,,,No published per-transfer cap
+R04,280000,,,,,,,No published per-transfer cap
+R04,290000,,,,,,,No published per-transfer cap
+R04,300000,,,,,,,No published per-transfer cap
+R04,310000,,,,,,,No published per-transfer cap
+R04,320000,,,,,,,No published per-transfer cap
+R04,330000,,,,,,,No published per-transfer cap
+R04,340000,,,,,,,No published per-transfer cap
+R04,350000,,,,,,,No published per-transfer cap
+R04,360000,,,,,,,No published per-transfer cap
+R04,370000,,,,,,,No published per-transfer cap
+R04,380000,,,,,,,No published per-transfer cap
+R04,390000,,,,,,,No published per-transfer cap
+R04,400000,,,,,,,No published per-transfer cap
+R05,10000,,,,,,,No published per-transfer cap
+R05,20000,,,,,,,No published per-transfer cap
+R05,30000,,,,,,,No published per-transfer cap
+R05,40000,,,,,,,No published per-transfer cap
+R05,50000,,,,,,,No published per-transfer cap
+R05,60000,,,,,,,No published per-transfer cap
+R05,70000,,,,,,,No published per-transfer cap
+R05,80000,,,,,,,No published per-transfer cap
+R05,90000,,,,,,,No published per-transfer cap
+R05,100000,,,,,,,No published per-transfer cap
+R05,110000,,,,,,,No published per-transfer cap
+R05,120000,,,,,,,No published per-transfer cap
+R05,130000,,,,,,,No published per-transfer cap
+R05,140000,,,,,,,No published per-transfer cap
+R05,150000,,,,,,,No published per-transfer cap
+R05,160000,,,,,,,No published per-transfer cap
+R05,170000,,,,,,,No published per-transfer cap
+R05,180000,,,,,,,No published per-transfer cap
+R05,190000,,,,,,,No published per-transfer cap
+R05,200000,,,,,,,No published per-transfer cap
+R05,210000,,,,,,,No published per-transfer cap
+R05,220000,,,,,,,No published per-transfer cap
+R05,230000,,,,,,,No published per-transfer cap
+R05,240000,,,,,,,No published per-transfer cap
+R05,250000,,,,,,,No published per-transfer cap
+R05,260000,,,,,,,No published per-transfer cap
+R05,270000,,,,,,,No published per-transfer cap
+R05,280000,,,,,,,No published per-transfer cap
+R05,290000,,,,,,,No published per-transfer cap
+R05,300000,,,,,,,No published per-transfer cap
+R05,310000,,,,,,,No published per-transfer cap
+R05,320000,,,,,,,No published per-transfer cap
+R05,330000,,,,,,,No published per-transfer cap
+R05,340000,,,,,,,No published per-transfer cap
+R05,350000,,,,,,,No published per-transfer cap
+R05,360000,,,,,,,No published per-transfer cap
+R05,370000,,,,,,,No published per-transfer cap
+R05,380000,,,,,,,No published per-transfer cap
+R05,390000,,,,,,,No published per-transfer cap
+R05,400000,,,,,,,No published per-transfer cap
+R06,10000,,,,,,,Within the annual cap
+R06,20000,,,,,,,Needs 2 calendar years at the cap
+R06,30000,,,,,,,Needs 3 calendar years at the cap
+R06,40000,,,,,,,Needs 3 calendar years at the cap
+R06,50000,,,,,,,Needs 4 calendar years at the cap
+R06,60000,,,,,,,Needs 5 calendar years at the cap
+R06,70000,,,,,,,Needs 5 calendar years at the cap
+R06,80000,,,,,,,Needs 6 calendar years at the cap
+R06,90000,,,,,,,Needs 7 calendar years at the cap
+R06,100000,,,,,,,Needs 8 calendar years at the cap
+R06,110000,,,,,,,Needs 8 calendar years at the cap
+R06,120000,,,,,,,Needs 9 calendar years at the cap
+R06,130000,,,,,,,Needs 10 calendar years at the cap
+R06,140000,,,,,,,Needs 10 calendar years at the cap
+R06,150000,,,,,,,Needs 11 calendar years at the cap
+R06,160000,,,,,,,Needs 12 calendar years at the cap
+R06,170000,,,,,,,Needs 13 calendar years at the cap
+R06,180000,,,,,,,Needs 13 calendar years at the cap
+R06,190000,,,,,,,Needs 14 calendar years at the cap
+R06,200000,,,,,,,Needs 15 calendar years at the cap
+R06,210000,,,,,,,Needs 15 calendar years at the cap
+R06,220000,,,,,,,Needs 16 calendar years at the cap
+R06,230000,,,,,,,Needs 17 calendar years at the cap
+R06,240000,,,,,,,Needs 18 calendar years at the cap
+R06,250000,,,,,,,Needs 18 calendar years at the cap
+R06,260000,,,,,,,Needs 19 calendar years at the cap
+R06,270000,,,,,,,Needs 20 calendar years at the cap
+R06,280000,,,,,,,Needs 20 calendar years at the cap
+R06,290000,,,,,,,Needs 21 calendar years at the cap
+R06,300000,,,,,,,Needs 22 calendar years at the cap
+R06,310000,,,,,,,Needs 23 calendar years at the cap
+R06,320000,,,,,,,Needs 23 calendar years at the cap
+R06,330000,,,,,,,Needs 24 calendar years at the cap
+R06,340000,,,,,,,Needs 25 calendar years at the cap
+R06,350000,,,,,,,Needs 25 calendar years at the cap
+R06,360000,,,,,,,Needs 26 calendar years at the cap
+R06,370000,,,,,,,Needs 27 calendar years at the cap
+R06,380000,,,,,,,Needs 28 calendar years at the cap
+R06,390000,,,,,,,Needs 28 calendar years at the cap
+R06,400000,,,,,,,Needs 29 calendar years at the cap
+R07,10000,21.04,0.00,0.00,,21.04,0.2104,Needs 2 trips
+R07,20000,42.09,0.00,0.00,,42.09,0.2104,Needs 4 trips
+R07,30000,63.13,0.00,0.00,,63.13,0.2104,Needs 6 trips
+R07,40000,84.18,0.00,0.00,,84.18,0.2104,Needs 8 trips
+R07,50000,105.22,0.00,0.00,,105.22,0.2104,Needs 10 trips
+R07,60000,126.27,0.00,0.00,,126.27,0.2104,Needs 12 trips
+R07,70000,147.31,0.00,0.00,,147.31,0.2104,Needs 14 trips
+R07,80000,168.36,0.00,0.00,,168.36,0.2104,Needs 16 trips
+R07,90000,189.40,0.00,0.00,,189.40,0.2104,Needs 18 trips
+R07,100000,210.45,0.00,0.00,,210.45,0.2104,Needs 20 trips
+R07,110000,231.49,0.00,0.00,,231.49,0.2104,Needs 22 trips (not practical)
+R07,120000,252.54,0.00,0.00,,252.54,0.2104,Needs 24 trips (not practical)
+R07,130000,273.58,0.00,0.00,,273.58,0.2104,Needs 26 trips (not practical)
+R07,140000,294.63,0.00,0.00,,294.63,0.2104,Needs 28 trips (not practical)
+R07,150000,315.67,0.00,0.00,,315.67,0.2104,Needs 30 trips (not practical)
+R07,160000,336.72,0.00,0.00,,336.72,0.2104,Needs 32 trips (not practical)
+R07,170000,357.76,0.00,0.00,,357.76,0.2104,Needs 34 trips (not practical)
+R07,180000,378.81,0.00,0.00,,378.81,0.2104,Needs 36 trips (not practical)
+R07,190000,399.85,0.00,0.00,,399.85,0.2104,Needs 38 trips (not practical)
+R07,200000,420.89,0.00,0.00,,420.89,0.2104,Needs 40 trips (not practical)
+R07,210000,441.94,0.00,0.00,,441.94,0.2104,Needs 42 trips (not practical)
+R07,220000,462.98,0.00,0.00,,462.98,0.2104,Needs 44 trips (not practical)
+R07,230000,484.03,0.00,0.00,,484.03,0.2104,Needs 46 trips (not practical)
+R07,240000,505.07,0.00,0.00,,505.07,0.2104,Needs 48 trips (not practical)
+R07,250000,526.12,0.00,0.00,,526.12,0.2104,Needs 50 trips (not practical)
+R07,260000,547.16,0.00,0.00,,547.16,0.2104,Needs 52 trips (not practical)
+R07,270000,568.21,0.00,0.00,,568.21,0.2104,Needs 54 trips (not practical)
+R07,280000,589.25,0.00,0.00,,589.25,0.2104,Needs 56 trips (not practical)
+R07,290000,610.30,0.00,0.00,,610.30,0.2104,Needs 58 trips (not practical)
+R07,300000,631.34,0.00,0.00,,631.34,0.2104,Needs 60 trips (not practical)
+R07,310000,652.39,0.00,0.00,,652.39,0.2104,Needs 62 trips (not practical)
+R07,320000,673.43,0.00,0.00,,673.43,0.2104,Needs 64 trips (not practical)
+R07,330000,694.48,0.00,0.00,,694.48,0.2104,Needs 66 trips (not practical)
+R07,340000,715.52,0.00,0.00,,715.52,0.2104,Needs 68 trips (not practical)
+R07,350000,736.57,0.00,0.00,,736.57,0.2104,Needs 70 trips (not practical)
+R07,360000,757.61,0.00,0.00,,757.61,0.2104,Needs 72 trips (not practical)
+R07,370000,778.66,0.00,0.00,,778.66,0.2104,Needs 74 trips (not practical)
+R07,380000,799.70,0.00,0.00,,799.70,0.2104,Needs 76 trips (not practical)
+R07,390000,820.75,0.00,0.00,,820.75,0.2104,Needs 78 trips (not practical)
+R07,400000,841.79,0.00,0.00,,841.79,0.2104,Needs 80 trips (not practical)
+R08,10000,,,,,,,No published per-transfer cap
+R08,20000,,,,,,,No published per-transfer cap
+R08,30000,,,,,,,No published per-transfer cap
+R08,40000,,,,,,,No published per-transfer cap
+R08,50000,,,,,,,No published per-transfer cap
+R08,60000,,,,,,,No published per-transfer cap
+R08,70000,,,,,,,No published per-transfer cap
+R08,80000,,,,,,,No published per-transfer cap
+R08,90000,,,,,,,No published per-transfer cap
+R08,100000,,,,,,,No published per-transfer cap
+R08,110000,,,,,,,No published per-transfer cap
+R08,120000,,,,,,,No published per-transfer cap
+R08,130000,,,,,,,No published per-transfer cap
+R08,140000,,,,,,,No published per-transfer cap
+R08,150000,,,,,,,No published per-transfer cap
+R08,160000,,,,,,,No published per-transfer cap
+R08,170000,,,,,,,No published per-transfer cap
+R08,180000,,,,,,,No published per-transfer cap
+R08,190000,,,,,,,No published per-transfer cap
+R08,200000,,,,,,,No published per-transfer cap
+R08,210000,,,,,,,No published per-transfer cap
+R08,220000,,,,,,,No published per-transfer cap
+R08,230000,,,,,,,No published per-transfer cap
+R08,240000,,,,,,,No published per-transfer cap
+R08,250000,,,,,,,No published per-transfer cap
+R08,260000,,,,,,,No published per-transfer cap
+R08,270000,,,,,,,No published per-transfer cap
+R08,280000,,,,,,,No published per-transfer cap
+R08,290000,,,,,,,No published per-transfer cap
+R08,300000,,,,,,,No published per-transfer cap
+R08,310000,,,,,,,No published per-transfer cap
+R08,320000,,,,,,,No published per-transfer cap
+R08,330000,,,,,,,No published per-transfer cap
+R08,340000,,,,,,,No published per-transfer cap
+R08,350000,,,,,,,No published per-transfer cap
+R08,360000,,,,,,,No published per-transfer cap
+R08,370000,,,,,,,No published per-transfer cap
+R08,380000,,,,,,,No published per-transfer cap
+R08,390000,,,,,,,No published per-transfer cap
+R08,400000,,,,,,,No published per-transfer cap
+H01,10000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,20000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,30000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,40000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,50000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,60000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,70000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,80000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,90000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,100000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,110000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,120000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,130000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,140000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,150000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,160000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,170000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,180000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,190000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,200000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,210000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,220000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,230000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,240000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,250000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,260000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,270000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,280000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,290000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,300000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,310000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,320000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,330000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,340000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,350000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,360000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,370000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,380000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,390000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+H01,400000,0.00,0.00,0.00,,0.00,0.0000,No published per-transfer cap
+X01,10000,,,,,,,No published per-transfer cap
+X01,20000,,,,,,,No published per-transfer cap
+X01,30000,,,,,,,No published per-transfer cap
+X01,40000,,,,,,,No published per-transfer cap
+X01,50000,,,,,,,No published per-transfer cap
+X01,60000,,,,,,,No published per-transfer cap
+X01,70000,,,,,,,No published per-transfer cap
+X01,80000,,,,,,,No published per-transfer cap
+X01,90000,,,,,,,No published per-transfer cap
+X01,100000,,,,,,,No published per-transfer cap
+X01,110000,,,,,,,No published per-transfer cap
+X01,120000,,,,,,,No published per-transfer cap
+X01,130000,,,,,,,No published per-transfer cap
+X01,140000,,,,,,,No published per-transfer cap
+X01,150000,,,,,,,No published per-transfer cap
+X01,160000,,,,,,,No published per-transfer cap
+X01,170000,,,,,,,No published per-transfer cap
+X01,180000,,,,,,,No published per-transfer cap
+X01,190000,,,,,,,No published per-transfer cap
+X01,200000,,,,,,,No published per-transfer cap
+X01,210000,,,,,,,No published per-transfer cap
+X01,220000,,,,,,,No published per-transfer cap
+X01,230000,,,,,,,No published per-transfer cap
+X01,240000,,,,,,,No published per-transfer cap
+X01,250000,,,,,,,No published per-transfer cap
+X01,260000,,,,,,,No published per-transfer cap
+X01,270000,,,,,,,No published per-transfer cap
+X01,280000,,,,,,,No published per-transfer cap
+X01,290000,,,,,,,No published per-transfer cap
+X01,300000,,,,,,,No published per-transfer cap
+X01,310000,,,,,,,No published per-transfer cap
+X01,320000,,,,,,,No published per-transfer cap
+X01,330000,,,,,,,No published per-transfer cap
+X01,340000,,,,,,,No published per-transfer cap
+X01,350000,,,,,,,No published per-transfer cap
+X01,360000,,,,,,,No published per-transfer cap
+X01,370000,,,,,,,No published per-transfer cap
+X01,380000,,,,,,,No published per-transfer cap
+X01,390000,,,,,,,No published per-transfer cap
+X01,400000,,,,,,,No published per-transfer cap
+X02,10000,,,,,,,No published per-transfer cap
+X02,20000,,,,,,,No published per-transfer cap
+X02,30000,,,,,,,No published per-transfer cap
+X02,40000,,,,,,,No published per-transfer cap
+X02,50000,,,,,,,No published per-transfer cap
+X02,60000,,,,,,,No published per-transfer cap
+X02,70000,,,,,,,No published per-transfer cap
+X02,80000,,,,,,,No published per-transfer cap
+X02,90000,,,,,,,No published per-transfer cap
+X02,100000,,,,,,,No published per-transfer cap
+X02,110000,,,,,,,No published per-transfer cap
+X02,120000,,,,,,,No published per-transfer cap
+X02,130000,,,,,,,No published per-transfer cap
+X02,140000,,,,,,,No published per-transfer cap
+X02,150000,,,,,,,No published per-transfer cap
+X02,160000,,,,,,,No published per-transfer cap
+X02,170000,,,,,,,No published per-transfer cap
+X02,180000,,,,,,,No published per-transfer cap
+X02,190000,,,,,,,No published per-transfer cap
+X02,200000,,,,,,,No published per-transfer cap
+X02,210000,,,,,,,No published per-transfer cap
+X02,220000,,,,,,,No published per-transfer cap
+X02,230000,,,,,,,No published per-transfer cap
+X02,240000,,,,,,,No published per-transfer cap
+X02,250000,,,,,,,No published per-transfer cap
+X02,260000,,,,,,,No published per-transfer cap
+X02,270000,,,,,,,No published per-transfer cap
+X02,280000,,,,,,,No published per-transfer cap
+X02,290000,,,,,,,No published per-transfer cap
+X02,300000,,,,,,,No published per-transfer cap
+X02,310000,,,,,,,No published per-transfer cap
+X02,320000,,,,,,,No published per-transfer cap
+X02,330000,,,,,,,No published per-transfer cap
+X02,340000,,,,,,,No published per-transfer cap
+X02,350000,,,,,,,No published per-transfer cap
+X02,360000,,,,,,,No published per-transfer cap
+X02,370000,,,,,,,No published per-transfer cap
+X02,380000,,,,,,,No published per-transfer cap
+X02,390000,,,,,,,No published per-transfer cap
+X02,400000,,,,,,,No published per-transfer cap
+X03,10000,,,,,,,No published per-transfer cap
+X03,20000,,,,,,,No published per-transfer cap
+X03,30000,,,,,,,No published per-transfer cap
+X03,40000,,,,,,,No published per-transfer cap
+X03,50000,,,,,,,No published per-transfer cap
+X03,60000,,,,,,,No published per-transfer cap
+X03,70000,,,,,,,No published per-transfer cap
+X03,80000,,,,,,,No published per-transfer cap
+X03,90000,,,,,,,No published per-transfer cap
+X03,100000,,,,,,,No published per-transfer cap
+X03,110000,,,,,,,No published per-transfer cap
+X03,120000,,,,,,,No published per-transfer cap
+X03,130000,,,,,,,No published per-transfer cap
+X03,140000,,,,,,,No published per-transfer cap
+X03,150000,,,,,,,No published per-transfer cap
+X03,160000,,,,,,,No published per-transfer cap
+X03,170000,,,,,,,No published per-transfer cap
+X03,180000,,,,,,,No published per-transfer cap
+X03,190000,,,,,,,No published per-transfer cap
+X03,200000,,,,,,,No published per-transfer cap
+X03,210000,,,,,,,No published per-transfer cap
+X03,220000,,,,,,,No published per-transfer cap
+X03,230000,,,,,,,No published per-transfer cap
+X03,240000,,,,,,,No published per-transfer cap
+X03,250000,,,,,,,No published per-transfer cap
+X03,260000,,,,,,,No published per-transfer cap
+X03,270000,,,,,,,No published per-transfer cap
+X03,280000,,,,,,,No published per-transfer cap
+X03,290000,,,,,,,No published per-transfer cap
+X03,300000,,,,,,,No published per-transfer cap
+X03,310000,,,,,,,No published per-transfer cap
+X03,320000,,,,,,,No published per-transfer cap
+X03,330000,,,,,,,No published per-transfer cap
+X03,340000,,,,,,,No published per-transfer cap
+X03,350000,,,,,,,No published per-transfer cap
+X03,360000,,,,,,,No published per-transfer cap
+X03,370000,,,,,,,No published per-transfer cap
+X03,380000,,,,,,,No published per-transfer cap
+X03,390000,,,,,,,No published per-transfer cap
+X03,400000,,,,,,,No published per-transfer cap
+X04,10000,,,,,,,No published per-transfer cap
+X04,20000,,,,,,,No published per-transfer cap
+X04,30000,,,,,,,No published per-transfer cap
+X04,40000,,,,,,,No published per-transfer cap
+X04,50000,,,,,,,No published per-transfer cap
+X04,60000,,,,,,,No published per-transfer cap
+X04,70000,,,,,,,No published per-transfer cap
+X04,80000,,,,,,,No published per-transfer cap
+X04,90000,,,,,,,No published per-transfer cap
+X04,100000,,,,,,,No published per-transfer cap
+X04,110000,,,,,,,No published per-transfer cap
+X04,120000,,,,,,,No published per-transfer cap
+X04,130000,,,,,,,No published per-transfer cap
+X04,140000,,,,,,,No published per-transfer cap
+X04,150000,,,,,,,No published per-transfer cap
+X04,160000,,,,,,,No published per-transfer cap
+X04,170000,,,,,,,No published per-transfer cap
+X04,180000,,,,,,,No published per-transfer cap
+X04,190000,,,,,,,No published per-transfer cap
+X04,200000,,,,,,,No published per-transfer cap
+X04,210000,,,,,,,No published per-transfer cap
+X04,220000,,,,,,,No published per-transfer cap
+X04,230000,,,,,,,No published per-transfer cap
+X04,240000,,,,,,,No published per-transfer cap
+X04,250000,,,,,,,No published per-transfer cap
+X04,260000,,,,,,,No published per-transfer cap
+X04,270000,,,,,,,No published per-transfer cap
+X04,280000,,,,,,,No published per-transfer cap
+X04,290000,,,,,,,No published per-transfer cap
+X04,300000,,,,,,,No published per-transfer cap
+X04,310000,,,,,,,No published per-transfer cap
+X04,320000,,,,,,,No published per-transfer cap
+X04,330000,,,,,,,No published per-transfer cap
+X04,340000,,,,,,,No published per-transfer cap
+X04,350000,,,,,,,No published per-transfer cap
+X04,360000,,,,,,,No published per-transfer cap
+X04,370000,,,,,,,No published per-transfer cap
+X04,380000,,,,,,,No published per-transfer cap
+X04,390000,,,,,,,No published per-transfer cap
+X04,400000,,,,,,,No published per-transfer cap
+X05,10000,,,,,,,No published per-transfer cap
+X05,20000,,,,,,,No published per-transfer cap
+X05,30000,,,,,,,No published per-transfer cap
+X05,40000,,,,,,,No published per-transfer cap
+X05,50000,,,,,,,No published per-transfer cap
+X05,60000,,,,,,,No published per-transfer cap
+X05,70000,,,,,,,No published per-transfer cap
+X05,80000,,,,,,,No published per-transfer cap
+X05,90000,,,,,,,No published per-transfer cap
+X05,100000,,,,,,,No published per-transfer cap
+X05,110000,,,,,,,No published per-transfer cap
+X05,120000,,,,,,,No published per-transfer cap
+X05,130000,,,,,,,No published per-transfer cap
+X05,140000,,,,,,,No published per-transfer cap
+X05,150000,,,,,,,No published per-transfer cap
+X05,160000,,,,,,,No published per-transfer cap
+X05,170000,,,,,,,No published per-transfer cap
+X05,180000,,,,,,,No published per-transfer cap
+X05,190000,,,,,,,No published per-transfer cap
+X05,200000,,,,,,,No published per-transfer cap
+X05,210000,,,,,,,No published per-transfer cap
+X05,220000,,,,,,,No published per-transfer cap
+X05,230000,,,,,,,No published per-transfer cap
+X05,240000,,,,,,,No published per-transfer cap
+X05,250000,,,,,,,No published per-transfer cap
+X05,260000,,,,,,,No published per-transfer cap
+X05,270000,,,,,,,No published per-transfer cap
+X05,280000,,,,,,,No published per-transfer cap
+X05,290000,,,,,,,No published per-transfer cap
+X05,300000,,,,,,,No published per-transfer cap
+X05,310000,,,,,,,No published per-transfer cap
+X05,320000,,,,,,,No published per-transfer cap
+X05,330000,,,,,,,No published per-transfer cap
+X05,340000,,,,,,,No published per-transfer cap
+X05,350000,,,,,,,No published per-transfer cap
+X05,360000,,,,,,,No published per-transfer cap
+X05,370000,,,,,,,No published per-transfer cap
+X05,380000,,,,,,,No published per-transfer cap
+X05,390000,,,,,,,No published per-transfer cap
+X05,400000,,,,,,,No published per-transfer cap
+X06,10000,,,,,,,No published per-transfer cap
+X06,20000,,,,,,,No published per-transfer cap
+X06,30000,,,,,,,No published per-transfer cap
+X06,40000,,,,,,,No published per-transfer cap
+X06,50000,,,,,,,No published per-transfer cap
+X06,60000,,,,,,,No published per-transfer cap
+X06,70000,,,,,,,No published per-transfer cap
+X06,80000,,,,,,,No published per-transfer cap
+X06,90000,,,,,,,No published per-transfer cap
+X06,100000,,,,,,,No published per-transfer cap
+X06,110000,,,,,,,No published per-transfer cap
+X06,120000,,,,,,,No published per-transfer cap
+X06,130000,,,,,,,No published per-transfer cap
+X06,140000,,,,,,,No published per-transfer cap
+X06,150000,,,,,,,No published per-transfer cap
+X06,160000,,,,,,,No published per-transfer cap
+X06,170000,,,,,,,No published per-transfer cap
+X06,180000,,,,,,,No published per-transfer cap
+X06,190000,,,,,,,No published per-transfer cap
+X06,200000,,,,,,,No published per-transfer cap
+X06,210000,,,,,,,No published per-transfer cap
+X06,220000,,,,,,,No published per-transfer cap
+X06,230000,,,,,,,No published per-transfer cap
+X06,240000,,,,,,,No published per-transfer cap
+X06,250000,,,,,,,No published per-transfer cap
+X06,260000,,,,,,,No published per-transfer cap
+X06,270000,,,,,,,No published per-transfer cap
+X06,280000,,,,,,,No published per-transfer cap
+X06,290000,,,,,,,No published per-transfer cap
+X06,300000,,,,,,,No published per-transfer cap
+X06,310000,,,,,,,No published per-transfer cap
+X06,320000,,,,,,,No published per-transfer cap
+X06,330000,,,,,,,No published per-transfer cap
+X06,340000,,,,,,,No published per-transfer cap
+X06,350000,,,,,,,No published per-transfer cap
+X06,360000,,,,,,,No published per-transfer cap
+X06,370000,,,,,,,No published per-transfer cap
+X06,380000,,,,,,,No published per-transfer cap
+X06,390000,,,,,,,No published per-transfer cap
+X06,400000,,,,,,,No published per-transfer cap
+X07,10000,,,,,,,No published per-transfer cap
+X07,20000,,,,,,,No published per-transfer cap
+X07,30000,,,,,,,No published per-transfer cap
+X07,40000,,,,,,,No published per-transfer cap
+X07,50000,,,,,,,No published per-transfer cap
+X07,60000,,,,,,,No published per-transfer cap
+X07,70000,,,,,,,No published per-transfer cap
+X07,80000,,,,,,,No published per-transfer cap
+X07,90000,,,,,,,No published per-transfer cap
+X07,100000,,,,,,,No published per-transfer cap
+X07,110000,,,,,,,No published per-transfer cap
+X07,120000,,,,,,,No published per-transfer cap
+X07,130000,,,,,,,No published per-transfer cap
+X07,140000,,,,,,,No published per-transfer cap
+X07,150000,,,,,,,No published per-transfer cap
+X07,160000,,,,,,,No published per-transfer cap
+X07,170000,,,,,,,No published per-transfer cap
+X07,180000,,,,,,,No published per-transfer cap
+X07,190000,,,,,,,No published per-transfer cap
+X07,200000,,,,,,,No published per-transfer cap
+X07,210000,,,,,,,No published per-transfer cap
+X07,220000,,,,,,,No published per-transfer cap
+X07,230000,,,,,,,No published per-transfer cap
+X07,240000,,,,,,,No published per-transfer cap
+X07,250000,,,,,,,No published per-transfer cap
+X07,260000,,,,,,,No published per-transfer cap
+X07,270000,,,,,,,No published per-transfer cap
+X07,280000,,,,,,,No published per-transfer cap
+X07,290000,,,,,,,No published per-transfer cap
+X07,300000,,,,,,,No published per-transfer cap
+X07,310000,,,,,,,No published per-transfer cap
+X07,320000,,,,,,,No published per-transfer cap
+X07,330000,,,,,,,No published per-transfer cap
+X07,340000,,,,,,,No published per-transfer cap
+X07,350000,,,,,,,No published per-transfer cap
+X07,360000,,,,,,,No published per-transfer cap
+X07,370000,,,,,,,No published per-transfer cap
+X07,380000,,,,,,,No published per-transfer cap
+X07,390000,,,,,,,No published per-transfer cap
+X07,400000,,,,,,,No published per-transfer cap

@@ -1,0 +1,156 @@
+{
+  "_meta": {
+    "edition": "I",
+    "as_of_utc": "2026-11-10",
+    "note": "Two jurisdictions apply at once. China taxes the source event; the United States taxes the person on worldwide income. The transfer itself is not a third tax."
+  },
+  "rows": [
+    {
+      "id": "T01",
+      "jurisdiction": "China",
+      "topic": "Who is a resident individual",
+      "rule": "Domiciled in China, or resident 183 days or more in a tax year",
+      "amount": "Residency determines whether worldwide or China-source income is taxed",
+      "status": "verified",
+      "sources": ["S15"],
+      "note": "A U.S. citizen working in China can be a Chinese tax resident and a U.S. taxpayer at the same time."
+    },
+    {
+      "id": "T02",
+      "jurisdiction": "China",
+      "topic": "Wages and salary",
+      "rule": "Comprehensive income, progressive",
+      "amount": "3%-45%",
+      "status": "verified",
+      "sources": ["S15"],
+      "note": "Withheld by the employer; conversion later does not add wage tax."
+    },
+    {
+      "id": "T03",
+      "jurisdiction": "China",
+      "topic": "Transfer of assets (property, equity)",
+      "rule": "Flat rate on taxable gain",
+      "amount": "20%",
+      "status": "verified",
+      "sources": ["S15", "S18", "S19"],
+      "note": "Gain = proceeds minus original value, taxes paid and reasonable costs."
+    },
+    {
+      "id": "T04",
+      "jurisdiction": "China",
+      "topic": "Housing sale VAT",
+      "rule": "Full 3% if held under 2 years; exempt at 2 years or more",
+      "amount": "3% or 0%",
+      "status": "verified",
+      "sources": ["S17", "S19"],
+      "note": "Effective 2026-01-01 under MOF/STA 2025 No. 17."
+    },
+    {
+      "id": "T05",
+      "jurisdiction": "China",
+      "topic": "Sole-home IIT exemption",
+      "rule": "Self-used 5+ years and only family home",
+      "amount": "Exempt",
+      "status": "verified",
+      "sources": ["S19"],
+      "note": "Requires a signed undertaking plus family and housing evidence."
+    },
+    {
+      "id": "T06",
+      "jurisdiction": "China",
+      "topic": "FIE dividends to a foreign individual",
+      "rule": "20% withholding since 2026-09-01",
+      "amount": "20%",
+      "status": "verified",
+      "sources": ["S16"],
+      "note": "The 1994 exemption is repealed. Treaty relief is possible but fact-specific."
+    },
+    {
+      "id": "T07",
+      "jurisdiction": "China",
+      "topic": "Inheritance",
+      "rule": "No inheritance-tax statute located in this session",
+      "amount": "UNVERIFIED",
+      "status": "unverified",
+      "sources": ["S07"],
+      "note": "The transfer still requires SAFE approval and tax clearance for the estate's assets."
+    },
+    {
+      "id": "T08",
+      "jurisdiction": "United States",
+      "topic": "Worldwide income",
+      "rule": "Citizens are taxed on income from all sources",
+      "amount": "Ordinary or capital rates",
+      "status": "verified",
+      "sources": ["S20"],
+      "note": "Citizenship, not residence, drives the filing duty."
+    },
+    {
+      "id": "T09",
+      "jurisdiction": "United States",
+      "topic": "Foreign currency gain",
+      "rule": "Section 988 ordinary gain on disposition of nonfunctional currency",
+      "amount": "Ordinary rates on the rate-driven gain",
+      "status": "verified",
+      "sources": ["S24", "S23"],
+      "note": "Needs a USD basis per tranche of RMB."
+    },
+    {
+      "id": "T10",
+      "jurisdiction": "United States",
+      "topic": "Foreign tax credit",
+      "rule": "Credit for foreign income taxes paid or accrued, subject to limitation",
+      "amount": "Credit, not exclusion",
+      "status": "verified",
+      "sources": ["S28"],
+      "note": "Claimed on Form 1116; the limitation can leave a residual U.S. tax."
+    },
+    {
+      "id": "T11",
+      "jurisdiction": "United States",
+      "topic": "Treaty with China",
+      "rule": "1984 convention limits source-country tax on dividends, interest and royalties to 10%",
+      "amount": "10% cap where the treaty applies",
+      "status": "verified",
+      "sources": ["S25"],
+      "note": "The saving clause preserves U.S. taxation of citizens. Article 12 (Gains) must be read before relying on treaty relief."
+    },
+    {
+      "id": "T12",
+      "jurisdiction": "United States",
+      "topic": "Gifts and bequests from abroad",
+      "rule": "Form 3520 if more than USD 100,000 from a nonresident alien or foreign estate",
+      "amount": "Reporting; generally not income",
+      "status": "verified",
+      "sources": ["S20", "S29"],
+      "note": "Reporting is separate from tax."
+    },
+    {
+      "id": "T13",
+      "jurisdiction": "United States",
+      "topic": "Foreign account reporting",
+      "rule": "FBAR above USD 10,000 aggregate; Form 8938 above the applicable threshold",
+      "amount": "Information returns",
+      "status": "verified",
+      "sources": ["S21", "S22"],
+      "note": "Neither depends on the account producing income."
+    },
+    {
+      "id": "T14",
+      "jurisdiction": "United States",
+      "topic": "State tax",
+      "rule": "State residency and sourcing rules",
+      "amount": "UNVERIFIED",
+      "status": "unverified",
+      "sources": [],
+      "note": "No state of residence was supplied."
+    }
+  ],
+  "ordering": [
+    "Tax attaches to the event, not to the wire.",
+    "China taxes first at the source event: wages 3-45%, asset gains 20%, dividends 20%.",
+    "The U.S. then taxes the person on worldwide income; the foreign tax credit reduces double taxation but is limited.",
+    "Section 988 can add ordinary income purely from RMB appreciation, even when the principal was already taxed.",
+    "Reporting penalties (FBAR, 8938, 3520) are fixed-dollar exposures that have nothing to do with the amount converted."
+  ]
+}

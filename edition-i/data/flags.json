@@ -1,0 +1,217 @@
+{
+  "_meta": {
+    "edition": "I",
+    "as_of_utc": "2026-11-10",
+    "policy": "Unverified values are left blank, never inferred. Archived research by other sessions is not edited here; defects in their files are reported so their owners or a later integration can fix them."
+  },
+  "flags": [
+    {
+      "id": "F01",
+      "title": "Root portal did not link Edition H",
+      "detail": "Before this session's integration, index.html contained zero references to edition-h/ even though Edition H was merged and published. This session adds the Edition H and Edition I links to the portal and archive list.",
+      "severity": "medium",
+      "status": "fixed",
+      "area": "integration",
+      "sources": []
+    },
+    {
+      "id": "F02",
+      "title": "Edition B still states the repealed staged-release rule",
+      "detail": "edition-b/lawful.html says 'Staged release: 50% now, 25% after a year, 25% after two years.' That was the 2004 Article 6 rule. 汇发[2014]2号 Section VI cancelled the staged-release requirement. The archived page is not edited here; it is flagged, and this edition publishes the current rule with the amending source.",
+      "severity": "high",
+      "status": "open",
+      "area": "edition-b",
+      "sources": [
+        "S06",
+        "S30"
+      ]
+    },
+    {
+      "id": "F03",
+      "title": "Edition D still displays exact all-in totals",
+      "detail": "edition-d/docs/pages/costs-*.html show computed figures such as $83.45 at $10,000 and a 0.83% all-in rate, using assumptions for receiving-bank and intermediary fees that are not published. The root portal labels Edition D as historical. This edition computes only published components and leaves unpublished components blank.",
+      "severity": "medium",
+      "status": "open",
+      "area": "edition-d",
+      "sources": [
+        "S09"
+      ]
+    },
+    {
+      "id": "F04",
+      "title": "Two official definitions of domestic individual conflict",
+      "detail": "The FX Measures (S01 Article 37) define 境内个人 by Chinese identity documents. The FX Regulations (S27 Article 52) define 境内个人 to include foreigners resident in China for one continuous year. A U.S. citizen living in China can therefore be classified differently depending on which instrument the bank applies. The bank's classification determines whether the USD 50,000 quota applies. Treat as a bank-confirmation item, not an assumption.",
+      "severity": "high",
+      "status": "open",
+      "area": "classification",
+      "sources": [
+        "S01",
+        "S27",
+        "S02",
+        "S04"
+      ]
+    },
+    {
+      "id": "F05",
+      "title": "No-quota rule for overseas individuals is published, but bank practice is not",
+      "detail": "SAFE policy answers state that overseas individuals have no annual purchase quota (S05) and that Article 59 of the 2020 current-account guideline governs (S03). No published rule limits the amount, but individual banks may apply internal controls. This edition does not claim any specific bank will process a given amount.",
+      "severity": "medium",
+      "status": "open",
+      "area": "eligibility",
+      "sources": [
+        "S03",
+        "S05"
+      ]
+    },
+    {
+      "id": "F06",
+      "title": "Tax-certificate exemption for non-taxable income is not confirmed",
+      "detail": "A search-indexed SAFE branch Q&A suggests a tax certificate may be omitted where the income is non-taxable, but the source page retrieved in this session did not contain that text. The claim is therefore NOT published as verified. The verified rule (S03) requires a tax record or source documentation.",
+      "severity": "medium",
+      "status": "open",
+      "area": "documentation",
+      "sources": [
+        "S03"
+      ]
+    },
+    {
+      "id": "F07",
+      "title": "Receiving and intermediary bank fees are unknown",
+      "detail": "BOC publishes only its own commission and cable charge. Correspondent deductions and the U.S. receiving bank's fee depend on routing and account tier. Every all-in total on this site therefore excludes them and shows UNVERIFIED instead of a guess.",
+      "severity": "medium",
+      "status": "open",
+      "area": "costing",
+      "sources": [
+        "S09"
+      ]
+    },
+    {
+      "id": "F08",
+      "title": "Execution rate is not the published board rate",
+      "detail": "The BOC board states that actual transaction rates at its channels govern and that the table is for reference. The 2026-11-10 board is used only to estimate the size of the FX margin; the real cost will differ.",
+      "severity": "low",
+      "status": "open",
+      "area": "costing",
+      "sources": [
+        "S08"
+      ]
+    },
+    {
+      "id": "F09",
+      "title": "Treaty relief on dividends is not established",
+      "detail": "China now withholds 20% on FIE dividends to foreign individuals (S16). The 1984 treaty's letter of submittal describes a 10% cap on dividends (S25). Whether a specific shareholder qualifies, and how the relief is claimed, was not verified.",
+      "severity": "medium",
+      "status": "open",
+      "area": "tax",
+      "sources": [
+        "S16",
+        "S25"
+      ]
+    },
+    {
+      "id": "F10",
+      "title": "China inheritance tax status not established",
+      "detail": "No inheritance-tax statute was located in this session, and no official statement that none applies was retrieved. The tax is shown as UNVERIFIED. The SAFE inheritance-transfer route itself is verified (S07).",
+      "severity": "medium",
+      "status": "open",
+      "area": "tax",
+      "sources": [
+        "S07"
+      ]
+    },
+    {
+      "id": "F11",
+      "title": "Local SAFE checklist for a property transfer was not retrieved",
+      "detail": "The national framework requires approval for an overseas individual's property-sale proceeds (S01 Article 22). The local branch checklist, timeline and any additional local documents were not retrieved. No timeline or approval probability is claimed.",
+      "severity": "medium",
+      "status": "open",
+      "area": "process",
+      "sources": [
+        "S01"
+      ]
+    },
+    {
+      "id": "F12",
+      "title": "Wise fee and overall limit are quote-based",
+      "detail": "Wise publishes eligibility, per-transfer caps and the structure of its overall limit, but not a fixed fee schedule for CNY. No fee number is shown. The overall limit depends on documented after-tax income, which is unknown.",
+      "severity": "low",
+      "status": "open",
+      "area": "provider",
+      "sources": [
+        "S26"
+      ]
+    },
+    {
+      "id": "F13",
+      "title": "Open pull request from another session",
+      "detail": "PR #25 (arena/d2efa2e7-china1, 'Edition H: single landing page, 15 routes, 8 x 40-row cost ladders') remains open and unmerged. It is not part of main. This session did not touch it.",
+      "severity": "low",
+      "status": "open",
+      "area": "repo",
+      "sources": []
+    },
+    {
+      "id": "F14",
+      "title": "Gold and precious-metal export rules not verified",
+      "detail": "No official personal allowance or prohibition text for exporting gold was retrieved. The route is shown as unverified and is not presented as a method.",
+      "severity": "low",
+      "status": "open",
+      "area": "route",
+      "sources": [
+        "S14"
+      ]
+    },
+    {
+      "id": "F15",
+      "title": "Offshore RMB (CNH) individual remittance not verified",
+      "detail": "No official rule confirming that an individual can wire RMB from an onshore account to an offshore RMB account for this purpose was located. Shown as unverified.",
+      "severity": "low",
+      "status": "open",
+      "area": "route",
+      "sources": [
+        "S01"
+      ]
+    },
+    {
+      "id": "F16",
+      "title": "No personal facts were supplied",
+      "detail": "Account holder classification, residency, source of funds, acquisition dates, RMB basis, tax paid, receiving bank and account tier are all unknown. No personal tax amount, all-in total or 'best route' certification is claimed. The decision tree is conditional by construction.",
+      "severity": "high",
+      "status": "open",
+      "area": "scope",
+      "sources": []
+    },
+    {
+      "id": "F17",
+      "title": "Central parity is not a customer rate",
+      "detail": "PBOC published 6.7188 for 2026-11-09 while the BOC customer mid on 2026-11-10 was about 6.67625. Comparing the fixing with a bank rate overstates the cost of conversion by roughly 0.64 percentage points. Earlier editions that used the fixing as a benchmark should be read with that caveat.",
+      "severity": "medium",
+      "status": "open",
+      "area": "methodology",
+      "sources": [
+        "S08",
+        "S10"
+      ]
+    },
+    {
+      "id": "F18",
+      "title": "Archived editions were not re-certified line by line",
+      "detail": "This session verified its own 30 routes, 3,900 cost rows and source quotes against retrieved official pages. It mechanically crawled all 211 archived HTML pages for broken internal links, anchors and duplicate IDs (none found) but did not re-verify every inherited legal claim.",
+      "severity": "medium",
+      "status": "open",
+      "area": "verification",
+      "sources": []
+    },
+    {
+      "id": "F19",
+      "title": "A previously cited customs URL now returns 404",
+      "detail": "The customs page used in an early draft of this edition (gongbei_customs/374293/374294/375168) returned HTTP 404 on retrieval. The cash-carriage thresholds were therefore re-sourced to the SAFE Guangdong Q&A (S14), which was retrieved successfully. The mechanical audit does not fetch external URLs, so link rot outside the repository can only be caught by direct checking.",
+      "severity": "low",
+      "status": "fixed",
+      "area": "verification",
+      "sources": [
+        "S14"
+      ]
+    }
+  ]
+}

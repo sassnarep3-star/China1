@@ -1,0 +1,40 @@
+name: Edition I verification
+
+on:
+  push:
+    branches: [main, 'arena/8f70ac5b-china1']
+    paths:
+      - 'edition-i/**'
+      - 'integration/**'
+      - '.github/workflows/edition-i.yml'
+  pull_request:
+    paths:
+      - 'edition-i/**'
+      - 'integration/**'
+      - '.github/workflows/edition-i.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Mechanical audit of every committed HTML page
+        run: python3 edition-i/build/audit.py
+      - name: Build the dashboard and cost CSV
+        run: python3 edition-i/build/build.py
+      - name: Verify sources, arithmetic, blanks, links and reproducibility
+        run: python3 edition-i/build/verify.py
+      - name: Reject unexpected generated changes
+        run: git diff --exit-code -- edition-i
+      - name: Verify the consolidated portal still builds
+        run: |
+          python3 integration/build.py
+          python3 integration/verify.py
+          git diff --exit-code -- index.html integration

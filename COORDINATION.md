@@ -913,3 +913,95 @@ Claim commit follows immediately. No other session claimed `integration/**` at c
 - I2 done: Portal archive was missing Edition H (merged 2026-11-09). Added Edition H card + archive link + flag I09 + Edition H flags link; footer/evidence date → 10 Nov 2026. `integration/verify.py` updated (`defgh`, 61 rows). Rebuilt `index.html`, `integration/review.html`, `integration/evidence.html/json`. All verifiers re-run PASS. No merged edition edited.
 - Irregularities: (1) Portal missing Edition H — fixed. (2) Open stale PR #25 (duplicate Edition H) left untouched — not in scope. (3) `integration.yml` push filter lists only `arena/abe61f3e-china1`; PR trigger still covers this session — noted, no change (out of scope).
 - I3 in progress: PR → merge → Pages confirmation below.
+
+---
+
+# Session board — arena-8f70ac5b (2026-11-10)
+
+Branch: `arena/8f70ac5b-china1` (fixed by Arena; the `session-<id>/<task>` convention is not
+available because Arena pins the branch name). Prior boards above are preserved verbatim.
+This session did not modify, move or delete any other session's research files.
+
+## Claim
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| I1 Repository audit, claim-level official-source research, 2026 rule refresh | done | arena-8f70ac5b | `edition-i/data/**`, `edition-i/README.md`, `edition-i/REQUIREMENTS-I.md` |
+| I2 32-route catalog, penalty decomposition, 40-step cost ladders | done | arena-8f70ac5b | `edition-i/data/**`, `edition-i/build/build.py` |
+| I3 Mobile-first dashboard, category pages, Flagged for Review, CSV | done | arena-8f70ac5b | `edition-i/site/**` (generated) |
+| I4 Independent verifier, repo crawler, CI | done | arena-8f70ac5b | `edition-i/build/**`, `.github/workflows/edition-i.yml` |
+| I5 Final integration: portal links, combined verification, PR, merge, Pages | in progress | arena-8f70ac5b | `integration/**`, `index.html` (generated), append-only `COORDINATION.md` |
+
+The claim was written before the first push of this session's work. Scope is a new
+`edition-i/` directory plus the integration outputs the brief assigns to the final
+integration session. No other session's files are in scope. Open PR #25
+(`arena/d2efa2e7-china1`) was left untouched.
+
+## Research and verification record
+
+- 30 sources retrieved and read in this session with verbatim quotes and retrieval dates:
+  PBOC Order [2006] No. 3 and the 2007 Detailed Rules; SAFE current-account guidance via
+  the 2026 Tianjin Q&A; SAFE policy answers on overseas individuals and permanent-resident
+  IDs; 汇发[2014]2号 Section VI; the 2004 individual-asset transfer measures (original and
+  current); BOC FX board and tariff; PBOC central parity; PBOC AML order 2025 No. 11;
+  PBOC eight-department crypto notice 2026 No. 42; SAFE card-cash notice 汇发[2017]29号;
+  cash-carriage Q&A; China IIT Law; MOF/STA 2026 No. 27 (dividends); MOF/STA 2025 No. 17
+  (housing VAT); Shanghai STA property checklists; IRS citizens-abroad, FBAR, 8938/FBAR
+  comparison, FX rates, foreign tax credit and Form 3520; 26 U.S.C. §988 (GPO); the 1984
+  U.S.-China treaty; the FX Administration Regulations (State Council Decree 532); Wise CNY guide.
+- Material current-rule findings: foreign individuals' FIE dividends carry 20% from
+  2026-09-01 (the 1994 exemption is repealed); housing VAT is 3% under two years and exempt
+  at two years from 2026-01-01; crypto conversion is prohibited under 银发[2026]42号;
+  AML identity verification applies to outbound remittances of CNY 5,000 / USD 1,000 or
+  more from 2026-01-01.
+- Quota finding: the USD 50,000 annual facilitation quota covers individual settlement and
+  domestic individuals' purchases. Two SAFE policy answers state that an overseas
+  individual's purchase has no annual cap but requires identity, source-of-funds and tax
+  evidence. A conflicting official definition of "domestic individual" (identity documents
+  vs one-year residence) is published as F04 rather than resolved by assumption.
+- Costs: 32 routes x 40 amounts = 1,280 generated rows. BOC board of 2026-11-10
+  07:32:39 (spot sell 6.6903, spot buy 6.6622) gives a one-way margin of 0.2104%.
+  Commission 0.1% (floor CNY 50, cap CNY 260) and cable CNY 150 are computed; receiver,
+  correspondent and tax are blank.
+- Verification: `python3 edition-i/build/verify.py` passed 7,558 checks, including
+  independent re-derivation of every cost row, 40-row ladders, source presence, blank
+  semantics, prohibited-route step checks, internal links/fragments and byte-identical
+  rebuild. The repository crawler read 211 archived HTML pages: 0 broken internal links,
+  0 unresolved fragments, 0 duplicate IDs, 0 invalid JSON.
+- Irregularities published: 19 items, including Edition B's repealed 2004 staged release,
+  Edition D's assumed all-in totals, the conflicting domestic-individual definition, and a
+  customs URL that now returns 404 (re-sourced to SAFE). None is blocking.
+- Genuine unknowns retained as blank: personal classification, residency, source of funds,
+  RMB basis, China tax paid, receiving-bank and correspondent fees, state tax, China
+  inheritance-tax status, treaty relief on dividends, local SAFE property checklist.
+
+## Integration changes to shared outputs
+
+- Root portal: added Edition I and Edition H cards, added both to the preserved archive
+  list, pointed Costs/Methods navigation at Edition I, and added a dated "New in Edition I"
+  block. Edition H had no inbound link from the portal before this session (F01).
+- Flagged page: appended a 19-item Edition I summary linking to the detailed register.
+- Evidence page: appended the Edition I retrieval log as a list, not as scored rows.
+- `integration/verify.py`: extended the edition-presence assertion to Editions D-I and
+  added an existence check for the Edition I costs page. Row count assertion (60) unchanged.
+- No archived edition content was edited. No other session's branch was switched or deleted.
+
+## Publication record
+
+Pending: PR, merge and Pages deployment are recorded in the follow-up section below.
+
+### Concurrent integration reconciliation — arena-8f70ac5b
+
+At rebase time, origin/main had advanced through PR #28 (`397de9f`), which contained a
+concurrent integration board from `arena-70118e95` that also linked Edition H. The rebase
+conflicted only in this append-only board. Resolution: kept the complete `arena-70118e95`
+board verbatim, then appended this session's complete board. No history from either
+session was dropped.
+
+Because both sessions touched `integration/build.py` and `integration/verify.py`, the
+auto-merge produced duplicate assignments and contradictory assertions. Those two files
+were therefore reconstructed from `origin/main` and this session's additions re-applied
+once, additively: Edition I card, archive entry, dated findings block, flag summary and
+retrieval log. The prior session's Edition H card, archive link, flag I09 and 61-row
+assertion are preserved. `integration/verify.py` now asserts Editions D-I and 61 rows.
+

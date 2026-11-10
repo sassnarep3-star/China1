@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Verified, mobile-first research on moving CNY out of China as a U.S. citizen: lawful routes, published costs, tax treatment and flagged gaps.">
+<meta name="color-scheme" content="light">
+<title>Routes · China Money · Edition I</title>
+<style>
+:root{--ink:#12222c;--muted:#556773;--line:#d7e0e6;--bg:#f4f7f9;--card:#fff;
+--accent:#0b6b5f;--accent-2:#e3f1ee;--warn:#8a5300;--warnbg:#fff4e0;
+--danger:#962626;--dangerbg:#fdecec;--ok:#1c5c3a;--radius:14px}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #b57b00;outline-offset:2px}
+.skip{position:absolute;left:-999px}
+.skip:focus{left:8px;top:8px;background:#fff;padding:10px;z-index:50;border:2px solid var(--accent)}
+header.top{background:#0d2b33;color:#fff;position:sticky;top:0;z-index:20;box-shadow:0 2px 10px rgba(0,0,0,.15)}
+.top-inner{max-width:1120px;margin:auto;padding:10px 16px;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.brand{color:#fff;text-decoration:none;font-weight:700;letter-spacing:.2px;display:flex;gap:10px;align-items:center}
+.brand span.mark{background:#1d5c63;border:1px solid #3b7d84;border-radius:8px;padding:3px 8px;font-size:.85rem}
+.brand small{display:block;font-weight:400;font-size:.7rem;letter-spacing:.12em;color:#a9c6cc;text-transform:uppercase}
+nav.main{display:flex;gap:4px;overflow-x:auto;max-width:1120px;margin:0 auto;padding:0 8px 8px;-webkit-overflow-scrolling:touch;scrollbar-width:thin}
+nav.main a{color:#cfe3e6;text-decoration:none;padding:8px 11px;border-radius:999px;font-size:.86rem;white-space:nowrap;border:1px solid transparent}
+nav.main a:hover{background:#15424b;color:#fff}
+nav.main a[aria-current="page"]{background:#e8f3f1;color:#0d2b33;font-weight:650}
+main{max-width:1120px;margin:auto;padding:22px 16px 64px}
+h1{font-size:clamp(1.75rem,5vw,2.7rem);line-height:1.14;margin:.25em 0 .35em;max-width:26ch;letter-spacing:-.01em}
+h2{font-size:clamp(1.25rem,3.4vw,1.65rem);margin:2.1em 0 .5em;line-height:1.25}
+h3{font-size:1.06rem;margin:1.4em 0 .35em}
+p{margin:.55em 0}
+.lead{font-size:1.08rem;color:#2b3c47;max-width:78ch}
+.muted{color:var(--muted)}
+.small{font-size:.85rem}
+.pill{display:inline-block;background:var(--accent-2);color:#134b43;border-radius:999px;padding:5px 11px;font-size:.78rem;font-weight:650;letter-spacing:.02em;margin:0 6px 6px 0}
+.pill.warn{background:var(--warnbg);color:var(--warn)}
+.pill.danger{background:var(--dangerbg);color:var(--danger)}
+.notice{border-left:4px solid #b57b00;background:var(--warnbg);padding:14px 16px;border-radius:0 10px 10px 0;margin:18px 0}
+.notice.danger{border-color:var(--danger);background:var(--dangerbg)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 16px 14px;margin:12px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.grid.two{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+a.card{display:block;text-decoration:none;color:inherit;transition:border-color .15s,transform .15s}
+a.card:hover{border-color:#7fb3ab;transform:translateY(-1px)}
+a.card strong{color:var(--accent);font-size:1.02rem}
+a.card p{color:var(--muted);font-size:.9rem;margin:.35em 0 0}
+.kpi{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.kpi b{font-size:1.5rem;letter-spacing:-.02em}
+.tablewrap{overflow-x:auto;background:#fff;border:1px solid var(--line);border-radius:12px;margin:12px 0}
+table{border-collapse:collapse;width:100%;font-size:.9rem}
+th,td{padding:11px 10px;text-align:left;vertical-align:top;border-bottom:1px solid #e7edf1}
+th{background:#eef4f6;font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;color:#3b525f;font-weight:700;position:sticky;top:0}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover{background:#fafcfd}
+.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.blank{background:#fffdf5;color:#7a6a45}
+.src{white-space:nowrap;font-size:.76rem;margin-right:5px;text-decoration:none;border-bottom:1px dotted var(--accent)}
+.badge{display:inline-block;padding:3px 8px;border-radius:6px;font-size:.74rem;font-weight:700;white-space:nowrap}
+.b-candidate{background:#dff0e6;color:var(--ok)}
+.b-conditional{background:#e6eefb;color:#1f4b8f}
+.b-limited{background:#fff2d9;color:var(--warn)}
+.b-prohibited{background:var(--dangerbg);color:var(--danger)}
+.b-unverified{background:#eceff1;color:#4a5a63}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:6px 0 10px;-webkit-overflow-scrolling:touch}
+.chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 13px;font-size:.84rem;white-space:nowrap;cursor:pointer;color:#29414d}
+.chip[aria-pressed="true"]{background:#0d2b33;color:#fff;border-color:#0d2b33}
+.searchbox{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 12px}
+.searchbox input,.searchbox select{padding:10px 12px;border:1px solid var(--line);border-radius:10px;font-size:.95rem;background:#fff;min-width:0}
+.searchbox input{flex:1 1 220px}
+.steps{counter-reset:s;list-style:none;padding:0;margin:.6em 0}
+.steps li{counter-increment:s;position:relative;padding:0 0 10px 34px}
+.steps li::before{content:counter(s);position:absolute;left:0;top:1px;width:23px;height:23px;border-radius:50%;
+background:#0d2b33;color:#fff;font-size:.78rem;font-weight:700;display:grid;place-items:center}
+ul.plain{padding-left:1.1em;margin:.5em 0}
+ul.plain li{margin:.25em 0}
+.pros li{color:#1c5c3a}
+.cons li{color:#7a2b2b}
+details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:10px 0}
+summary{cursor:pointer;font-weight:650}
+footer{margin-top:44px;border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:.86rem}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+@media (max-width:640px){
+  h1{font-size:1.6rem}
+  .tablewrap{border:0;background:transparent;overflow:visible}
+  table.responsive,table.responsive tbody,table.responsive tr,table.responsive td{display:block;width:100%}
+  table.responsive thead{position:absolute;left:-9999px}
+  table.responsive tr{background:#fff;border:1px solid var(--line);border-radius:12px;margin:0 0 10px;padding:6px 4px}
+  table.responsive td{display:grid;grid-template-columns:44% 56%;gap:8px;border-bottom:1px dashed #e7edf1;padding:8px 10px;text-align:left}
+  table.responsive td:last-child{border-bottom:0}
+  table.responsive td::before{content:attr(data-label);font-size:.72rem;text-transform:uppercase;letter-spacing:.04em;color:#5a6b76;font-weight:700}
+  table.responsive td.num{text-align:left}
+  main{padding:16px 12px 48px}
+  .card{padding:14px}
+}
+@media print{header.top,nav.main,.chips,.searchbox{display:none}body{background:#fff}.tablewrap{overflow:visible}}
+</style></head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="top-inner">
+<a class="brand" href="index.html"><span class="mark">&#165;&#8594;$</span><span>China Money<small>Edition I · verified 10 Nov 2026</small></span></a>
+<span class="pill">No personal data input required</span>
+</div><nav class="main" aria-label="Main"><a href="index.html">Overview</a><a href="routes.html" aria-current="page">Routes</a><a href="costs.html">Costs</a><a href="penalty.html">Penalty</a><a href="taxes.html">Tax &amp; reporting</a><a href="review.html">Flagged</a><a href="sources.html">Sources</a><a href="repo-review.html">Repo audit</a><a href="methodology.html">Method</a><a href="requirements.html">Coverage</a></nav></header>
+<main id="main">
+<h1>Routes out of CNY, screened</h1>
+<p class="lead">Every route is classified by legal basis, not by how easy it is to find online. "Prohibited" means there is no lawful execution, so this page gives risk information only.</p>
+<div class="notice"><strong>Read the status, not the headline.</strong> A route marked <em>capped</em> is lawful but cannot move USD 400,000 in a reasonable time. A route marked <em>unverified</em> is not recommended — it means no official source or published price was confirmed.</div>
+<div class="chips" role="group" aria-label="Filter by category"><button class="chip" type="button" data-filter="all" aria-pressed="true">All routes</button><button class="chip" type="button" data-filter="personal" aria-pressed="false">Personal / current account</button><button class="chip" type="button" data-filter="capital" aria-pressed="false">Capital account</button><button class="chip" type="button" data-filter="rail" aria-pressed="false">Banks &amp; providers</button><button class="chip" type="button" data-filter="card" aria-pressed="false">Cards &amp; cash</button><button class="chip" type="button" data-filter="hold" aria-pressed="false">Hold or spend</button><button class="chip" type="button" data-filter="prohibited" aria-pressed="false">Prohibited / unverified</button></div>
+<div class="searchbox">
+<label class="sr" for="q">Search routes</label>
+<input id="q" type="search" placeholder="Search a route, e.g. property, inheritance, Wise" autocomplete="off">
+<label class="sr" for="st">Filter by status</label>
+<select id="st"><option value="all">All statuses</option><option value="candidate">Lawful candidate</option><option value="conditional">Conditional</option><option value="limited">Lawful but capped</option><option value="prohibited">Prohibited</option><option value="unverified">Unverified</option></select>
+</div>
+<p class="small muted" id="count" aria-live="polite"></p>
+<div id="list"><article class="card route-card" data-cat="personal" data-status="candidate" data-name="bank purchase and wire of documented china current-account income (overseas individual) 境外个人经常项目合法人民币收入购汇汇出">
+<div><span class="badge b-candidate">Lawful candidate</span> <span class="pill">P01</span></div>
+<h3><a href="method-P01.html">Bank purchase and wire of documented China current-account income (overseas individual)</a></h3>
+<p class="small muted">境外个人经常项目合法人民币收入购汇汇出</p>
+<p>If the RMB is lawful current-account income earned in China and you are an overseas individual, the bank may buy USD with it and remit abroad on documentary proof.</p>
+<p class="small"><strong>Cost model:</strong> boc_fx_wire · <strong>Limits:</strong> No published annual purchase cap for 境外个人; Documentary review per transaction; Single remittance identity checks above CNY 5,000 / USD 1,000 (S11) · <a class="src" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People's Bank of China / SAFE: 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange), PBOC Order [2006] No. 3">S01&nbsp;&#8599;</a><a class="src" href="https://www.safe.gov.cn/tianjin/2026/0713/3088.html" rel="noopener noreferrer" title="SAFE Tianjin branch: 2026年外汇管理互联网信息——个人外汇（08）: 境外个人在境内工作期间取得的劳动报酬如何购汇汇出？">S03&nbsp;&#8599;</a><a class="src" href="http://www.safe.gov.cn/hainan/2019/0423/943.html" rel="noopener noreferrer" title="SAFE Hainan branch: 外汇管理业务与政策问答（40）: 外籍人士在境内工作，所得收入能否汇出国外？额度超过5万美元怎么办？">S05&nbsp;&#8599;</a><a class="src" href="https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm" rel="noopener noreferrer" title="State Council of the PRC: 中华人民共和国外汇管理条例 (Foreign Exchange Administration Regulations), State Council Decree No. 532">S27&nbsp;&#8599;</a></p>
+</article><article class="card route-card" data-cat="personal" data-status="conditional" data-name="employer payroll remittance of salary (overseas individual) 境外个人工资薪金由单位代发汇出">
+<div><span class="badge b-conditional">Conditional</span> <span class="pill">P02</span></div>
+<h3><a href="method-P02.html">Employer payroll remittance of salary (overseas individual)</a></h3>
+<p class="small muted">境外个人工资薪金由单位代发汇出</p>
+<p>Some employers remit net salary abroad through a payroll partner; the bank still performs the individual purchase review.</p>
+<p class="small"><strong>Cost model:</strong> boc_fx_wire · <strong>Limits:</strong> Only current salary flows; Employer-dependent · <a class="src" href="https://www.safe.gov.cn/tianjin/2026/0713/3088.html" rel="noopener noreferrer" title="SAFE Tianjin branch: 2026年外汇管理互联网信息——个人外汇（08）: 境外个人在境内工作期间取得的劳动报酬如何购汇汇出？">S03&nbsp;&#8599;</a><a class="src" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" rel="noopener noreferrer" title="Bank of China: 中国银行电子银行个人服务转账汇款费率表 (personal e-banking remittance tariff)">S09&nbsp;&#8599;</a><a class="src" href="https://www.pbc.gov.cn/tiaofasi/144941/144957/5916164/index.html" rel="noopener noreferrer" title="PBOC / NFRA / CSRC: 金融机构客户尽职调查和客户身份资料及交易记录保存管理办法, 令[2025]第11号, effective 2026-01-01">S11&nbsp;&#8599;</a></p>
+</article><article class="card route-card" data-cat="personal" data-status="limited" data-name="convert back unused rmb within 24 months of the original exchange 原兑换未用完人民币兑回">
+<div><span class="badge b-limited">Lawful but capped</span> <span class="pill">P03</span></div>
+<h3><a href="method-P03.html">Convert back unused RMB within 24 months of the original exchange</a></h3>
+<p class="small muted">原兑换未用完人民币兑回</p>
+<p>RMB left over from a documented foreign-currency exchange can be converted back with the original slip for 24 months.</p>
+<p class="small"><strong>Cost model:</strong> boc_fx_wire · <strong>Limits:</strong> 24 months from exchange; USD 500/day without receipt; USD 1,000/day at departure points without receipt · <a class="src" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People's Bank of China / SAFE: 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange), PBOC Order [2006] No. 3">S01&nbsp;&#8599;</a><a class="src" href="https://www.safe.gov.cn/safe/2007/0105/5320.html" rel="noopener noreferrer" title="SAFE: 个人外汇管理办法实施细则 (Detailed Rules), 汇发[2007]1号, as amended">S02&nbsp;&#8599;</a><a class="src" href="https://www.boc.cn/sourcedb/whpj/" rel="noopener noreferrer" title="Bank of China: 中国银行外汇牌价 (BOC foreign exchange board)">S08&nbsp;&#8599;</a><a class="src" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" rel="noopener noreferrer" title="Bank of China: 中国银行电子银行个人服务转账汇款费率表 (personal e-banking remittance tariff)">S09&nbsp;&#8599;</a></p>
+</article><article class="card route-card" data-cat="personal" data-status="limited" data-name="return unused inbound foreign currency by the original route 境外个人未使用境外汇入外汇原路汇回">
+<div><span class="badge b-limited">Lawful but capped</span> <span class="pill">P04</span></div>
+<h3><a href="method-P04.html">Return unused inbound foreign currency by the original route</a></h3>
+<p class="small muted">境外个人未使用境外汇入外汇原路汇回</p>
+<p>Foreign currency wired in and not used can be sent back the same way with ID.</p>
+<p class="small"><strong>Cost model:</strong> boc_wire_only · <strong>Limits:</strong> Unused inbound amount only · <a class="src" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People's Bank of China / SAFE: 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange), PBOC Order [2006] No. 3">S01&nbsp;&#8599;</a><a class="src" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" rel="noopener noreferrer" title="Bank of China: 中国银行电子银行个人服务转账汇款费率表 (personal e-banking remittance tariff)">S09&nbsp;&#8599;</a></p>
+</article><article class="card route-card" data-cat="personal" data-status="limited" data-name="domestic-individual annual facilitation quota (usd 50,000) 境内个人年度便利化购汇额度5万美元">
+<div><span class="badge b-limited">Lawful but capped</span> <span class="pill">P05</span></div>
+<h3><a href="method-P05.html">Domestic-individual annual facilitation quota (USD 50,000)</a></h3>
+<p class="small muted">境内个人年度便利化购汇额度5万美元</p>
+<p>If you are classified as a domestic individual, USD 50,000 per calendar year can be purchased with ID alone.</p>
+<p class="small"><strong>Cost model:</strong> boc_fx_wire · <strong>Limits:</strong> USD 50,000 per person per calendar year; Quota does not roll over · <a class="src" href="https://www.safe.gov.cn/safe/2007/0105/5320.html" rel="noopener noreferrer" title="SAFE: 个人外汇管理办法实施细则 (Detailed Rules), 汇发[2007]1号, as amended">S02&nbsp;&#8599;</a><a class="src" href="https://www.safe.gov.cn/tianjin/2025/1113/2926.html" rel="noopener noreferrer" title="SAFE Tianjin branch: 2025年外汇管理互联网信息——个人外汇（十六）: 持有《外国人永久居留身份证》的境外个人是否适用5万美元便利化额度？">S04&nbsp;&#8599;</a><a class="src" href="http://www.safe.gov.cn/hainan/2019/0423/943.html" rel="noopener noreferrer" title="SAFE Hainan branch: 外汇管理业务与政策问答（40）: 外籍人士在境内工作，所得收入能否汇出国外？额度超过5万美元怎么办？">S05&nbsp;&#8599;</a><a class="src" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" rel="noopener noreferrer" title="Bank of China: 中国银行电子银行个人服务转账汇款费率表 (personal e-banking remittance tariff)">S09&nbsp;&#8599;</a></p>
+</article><article class="card route-card" data-cat="personal" data-status="conditional" data-name="domestic-individual purchase above quota with transaction documents 境内个人超额度经常项目购汇">
+<div><span class="badge b-conditional">Conditional</span> <span class="pill">P06</span></div>
+<h3><a href="method-P06.html">Domestic-individual purchase above quota with transaction documents</a></h3>
+<p class="small muted">境内个人超额度经常项目购汇</p>
+<p>Above the quota, a domestic individual can purchase FX for a genuine current-account purpose with supporting documents.</p>
+<p class="small"><strong>Cost model:</strong> boc_fx_wire · <strong>Limits:</strong> Purpose-bound; No published cap · <a class="src" href="https://www.safe.gov.cn/safe/2007/0105/5320.html" rel="noopener noreferrer" title="SAFE: 个人外汇管理办法实施细则 (Detailed Rules), 汇发[2007]1号, as amended">S02&nbsp;&#8599;</a><a class="src" href="https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm" rel="noopener noreferrer" title="State Council of the PRC: 中华人民共和国外汇管理条例 (Foreign Exchange Administration Regulations), State Council Decree No. 532">S27&nbsp;&#8599;</a><a class="src" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" rel="noopener noreferrer" title="Bank of China: 中国银行电子银行个人服务转账汇款费率表 (personal e-banking remittance tariff)">S09&nbsp;&#8599;</a></p>
+</article><article class="card route-card" data-cat="personal" data-status="limited" data-name="permanent-resident id holder using the facilitation quota 持外国人永久居留身份证适用购汇额度">
+<div><span class="badge b-limited">Lawful but capped</span> <span class="pill">P07</span></div>
+<h3><a href="method-P07.html">Permanent-resident ID holder using the facilitation quota</a></h3>
+<p class="small muted">持外国人永久居留身份证适用购汇额度</p>
+<p>An overseas individual holding a foreign permanent-resident ID may use the USD 50,000 purchase quota.</p>
+<p class="small"><strong>Cost model:</strong> boc_fx_wire · <strong>Limits:</strong> USD 50,000 per person per calendar year · <a class="src" href="https://www.safe.gov.cn/tianjin/2025/1113/2926.html" rel="noopener noreferrer" title="SAFE Tianjin branch: 2025年外汇管理互联网信息——个人外汇（十六）: 持有《外国人永久居留身份证》的境外个人是否适用5万美元便利化额度？">S04&nbsp;&#8599;</a><a class="src" href="https://www.safe.gov.cn/safe/2007/0105/5320.html" rel="noopener noreferrer" title="SAFE: 个人外汇管理办法实施细则 (Detailed Rules), 汇发[2007]1号, as amended">S02&nbsp;&#8599;</a><a class="src" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" rel="noopener noreferrer" title="Bank of China: 中国银行电子银行个人服务转账汇款费率表 (personal e-banking remittance tariff)">S09&nbsp;&#8599;</a></p>
+</article><article class="card route-card" data-cat="personal" data-status="candidate" data-name="remit foreign currency already sitting in the fx savings account 外汇储蓄账户内外汇直接汇出">
+<div><span class="badge b-candidate">Lawful candidate</span> <span class="pill">P08</span></div>
+<h3><a href="method-P08.html">Remit foreign currency already sitting in the FX savings account</a></h3>
+<p class="small muted">外汇储蓄账户内外汇直接汇出</p>
+<p>If part of the balance is already USD or another foreign currency, it can be remitted without any RMB conversion.</p>
+<p class="small"><strong>Cost model:</strong> boc_wire_only · <strong>Limits:</strong> Only the FX amount held · <a class="src" href="https://www.safe.gov.cn/safe/2007/0105/5320.html" rel="noopener noreferrer" title="SAFE: 个人外汇管理办法实施细则 (Detailed Rules), 汇发[2007]1号, as amended">S02&nbsp;&#8599;</a><a class="src" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" rel="noopener noreferrer" title="Bank of China: 中国银行电子银行个人服务转账汇款费率表 (personal e-banking remittance tariff)">S09&nbsp;&#8599;</a></p>
+</article><article class="card route-card" data-cat="capital" data-status="conditional" data-name="emigrant property transfer (pre-emigration assets) 移民财产转移">
+<div><span class="badge b-conditional">Conditional</span> <span class="pill">C01</span></div>
+<h3><a href="method-C01.html">Emigrant property transfer (pre-emigration assets)</a></h3>
+<p class="small muted">移民财产转移</p>
+<p>A person who emigrated from mainland China can transfer property owned before obtaining the immigration status, after SAFE approval.</p>
+<p class="small"><strong>Cost model:</strong> boc_fx_wire · <strong>Limits:</strong> Approved amount only; Pre-emigration property only · <a class="src" href="http://m.safe.gov.cn/safe/2004/1116/4133.html" rel="noopener noreferrer" title="People's Bank of China / SAFE: 个人财产对外转移售付汇管理暂行办法 (2004), PBOC announcement and full text">S07&nbsp;&#8599;</a><a class="src" href="https://www.safe.gov.cn/tianjin/2024/0903/2594.html" rel="noopener noreferrer" title="SAFE: 关于进一步改进和调整资本项目外汇管理政策的通知, 汇发[2014]2号 (amended republication)">S06&nbsp;&#8599;</a><a class="src" href="http://m.safe.gov.cn/safe/2004/1116/12156.html" rel="noopener noreferrer" title="People's Bank of China / SAFE: 个人财产对外转移售付汇管理暂行办法 full text (alternate SAFE publication showing Article 6 staging)">S30&nbsp;&#8599;</a><a class="src" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" rel="noopener noreferrer" title="Bank of China: 中国银行电子银行个人服务转账汇款费率表 (personal e-banking remittance tariff)">S09&nbsp;&#8599;</a></p>
+</article><article class="card route-card" data-cat="capital" data-status="conditional" data-name="inheritance property transfer 继承财产转移">
+<div><span class="badge b-conditional">Conditional</span> <span class="pill">C02</span></div>
+<h3><a href="method-C02.html">Inheritance property transfer</a></h3>
+<p class="small muted">继承财产转移</p>
+<p>A foreign citizen who lawfully inherited Chinese assets can remit the realised proceeds after SAFE approval.</p>
+<p class="small"><strong>Cost model:</strong> boc_fx_wire · <strong>Limits:</strong> Approved inherited amount only · <a class="src" href="http://m.safe.gov.cn/safe/2004/1116/4133.html" rel="noopener noreferrer" title="People's Bank of China / SAFE: 个人财产对外转移售付汇管理暂行办法 (2004), PBOC announcement and full text">S07&nbsp;&#8599;</a><a class="src" href="https://www.safe.gov.cn/tianjin/2024/0903/2594.html" rel="noopener noreferrer" title="SAFE: 关于进一步改进和调整资本项目外汇管理政策的通知, 汇发[2014]2号 (amended republication)">S06&nbsp;&#8599;</a><a class="src" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People's Bank of China / SAFE: 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange), PBOC Order [2006] No. 3">S01&nbsp;&#8599;</a><a class="src" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" rel="noopener noreferrer" title="Bank of China: 中国银行电子银行个人服务转账汇款费率表 (personal e-banking remittance tariff)">S09&nbsp;&#8599;</a></p>
+</article><article class="card route-card" data-cat="capital" data-status="conditional" data-name="sale of domestic property by an overseas individual 境外个人出售境内商品房购汇汇出">
+<div><span class="badge b-conditional">Conditional</span> <span class="pill">C03</span></div>
+<h3><a href="method-C03.html">Sale of domestic property by an overseas individual</a></h3>
+<p class="small muted">境外个人出售境内商品房购汇汇出</p>
+<p>An overseas individual who sells self-use domestic property may remit the RMB proceeds after SAFE approval.</p>
+<p class="small"><strong>Cost model:</strong> boc_fx_wire · <strong>Limits:</strong> Approved net proceeds · <a class="src" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People's Bank of China / SAFE: 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange), PBOC Order [2006] No. 3">S01&nbsp;&#8599;</a><a class="src" href="http://neimenggu.chinatax.gov.cn/zcwj/zxwj/202512/t20251231_889488.html" rel="noopener noreferrer" title="Ministry of Finance / STA: 关于个人销售住房增值税政策的公告, 财政部 税务总局公告2025年第17号">S17&nbsp;&#8599;</a><a class="src" href="https://shanghai.chinatax.gov.cn/xwdt/ztzl/grsx/fwjy/csfclsx/202411/t474236.html" rel="noopener noreferrer" title="Shanghai Municipal Tax Service, STA: 个人出售购入不足2年的住房 (tax checklist)">S18&nbsp;&#8599;</a><a class="src" href="https://shanghai.chinatax.gov.cn/xwdt/ztzl/grsx/fwjy/csfclsx/202411/t474237.html" rel="noopener noreferrer" title="Shanghai Municipal Tax Service, STA: 个人出售购入超过2年的住房 (tax checklist)">S19&nbsp;&#8599;</a></p>
+</article><article class="card route-card" data-cat="capital" data-status="conditional" data-name="domestic individual selling property and remitting proceeds 境内个人出售房产后购汇汇出">
+<div><span class="badge b-conditional">Conditional</span> <span class="pill">C04</span></div>
+<h3><a href="method-C04.html">Domestic individual selling property and remitting proceeds</a></h3>
+<p class="small muted">境内个人出售房产后购汇汇出</p>
+<p>A domestic individual selling property faces the capital-account rules and cannot simply wire the proceeds abroad.</p>
+<p class="small"><strong>Cost model:</strong> boc_fx_wire · <strong>Limits:</strong> Approval-bound · <a class="src" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People's Bank of China / SAFE: 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange), PBOC Order [2006] No. 3">S01&nbsp;&#8599;</a><a class="src" href="https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm" rel="noopener noreferrer" title="State Council of the PRC: 中华人民共和国外汇管理条例 (Foreign Exchange Administration Regulations), State Council Decree No. 532">S27&nbsp;&#8599;</a><a class="src" href="https://shanghai.chinatax.gov.cn/xwdt/ztzl/grsx/fwjy/csfclsx/202411/t474236.html" rel="noopener noreferrer" title="Shanghai Municipal Tax Service, STA: 个人出售购入不足2年的住房 (tax checklist)">S18&nbsp;&#8599;</a><a class="src" href="https://shanghai.chinatax.gov.cn/xwdt/ztzl/grsx/fwjy/csfclsx/202411/t474237.html" rel="noopener noreferrer" title="Shanghai Municipal Tax Service, STA: 个人出售购入超过2年的住房 (tax checklist)">S19&nbsp;&#8599;</a></p>
+</article><article class="card route-card" data-cat="capital" data-status="conditional" data-name="foreign-invested enterprise dividend to a foreign individual shareholder 外商投资企业向外籍个人股东分配股息">
+<div><span class="badge b-conditional">Conditional</span> <span class="pill">C05</span></div>
+<h3><a href="method-C05.html">Foreign-invested enterprise dividend to a foreign individual shareholder</a></h3>
+<p class="small muted">外商投资企业向外籍个人股东分配股息</p>
+<p>Genuine FIE profits can be distributed, but from 1 September 2026 the 20% dividend rate applies to foreign individuals.</p>
+<p class="small"><strong>Cost model:</strong> boc_fx_wire · <strong>Limits:</strong> Distributable profits only · <a class="src" href="https://shanghai.chinatax.gov.cn/zzzb/zcwj/202609/t481448.html" rel="noopener noreferrer" title="Ministry of Finance / STA: 关于外籍个人股息红利个人所得税政策有关事项的公告, 财政部 税务总局公告2026年第27号">S16&nbsp;&#8599;</a><a class="src" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" rel="noopener noreferrer" title="State Taxation Administration: Individual Income Tax Law of the People's Republic of China (English translation, updated 2018-08-31)">S15&nbsp;&#8599;</a><a class="src" href="https://www.irs.gov/pub/irs-trty/china.pdf" rel="noopener noreferrer" title="Internal Revenue Service: United States - People's Republic of China Income Tax Convention (1984, in force 1987)">S25&nbsp;&#8599;</a><a class="src" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" rel="noopener noreferrer" title="Bank of China: 中国银行电子银行个人服务转账汇款费率表 (personal e-banking remittance tariff)">S09&nbsp;&#8599;</a></p>
+</article><article class="card route-card" data-cat="capital" data-status="conditional" data-name="equity transfer proceeds 股权转让所得汇出">
+<div><span class="badge b-conditional">Conditional</span> <span class="pill">C06</span></div>
+<h3><a href="method-C06.html">Equity transfer proceeds</a></h3>
+<p class="small muted">股权转让所得汇出</p>
+<p>Proceeds from a genuine equity transfer can be remitted after China tax and registration steps.</p>
+<p class="small"><strong>Cost model:</strong> boc_fx_wire · <strong>Limits:</strong> Net proceeds after tax · <a class="src" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" rel="noopener noreferrer" title="State Taxation Administration: Individual Income Tax Law of the People's Republic of China (English translation, updated 2018-08-31)">S15&nbsp;&#8599;</a><a class="src" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People's Bank of China / SAFE: 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange), PBOC Order [2006] No. 3">S01&nbsp;&#8599;</a><a class="src" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" rel="noopener noreferrer" title="Bank of China: 中国银行电子银行个人服务转账汇款费率表 (personal e-banking remittance tariff)">S09&nbsp;&#8599;</a></p>
+</article><article class="card route-card" data-cat="capital" data-status="conditional" data-name="liquidation proceeds of a foreign-invested enterprise 外商投资企业清算所得汇出">
+<div><span class="badge b-conditional">Conditional</span> <span class="pill">C07</span></div>
+<h3><a href="method-C07.html">Liquidation proceeds of a foreign-invested enterprise</a></h3>
+<p class="small muted">外商投资企业清算所得汇出</p>
+<p>After lawful liquidation and tax, the foreign investor's RMB share may be purchased and remitted.</p>
+<p class="small"><strong>Cost model:</strong> boc_fx_wire · <strong>Limits:</strong> Liquidation distribution only · <a class="src" href="https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm" rel="noopener noreferrer" title="State Council of the PRC: 中华人民共和国外汇管理条例 (Foreign Exchange Administration Regulations), State Council Decree No. 532">S27&nbsp;&#8599;</a><a class="src" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" rel="noopener noreferrer" title="State Taxation Administration: Individual Income Tax Law of the People's Republic of China (English translation, updated 2018-08-31)">S15&nbsp;&#8599;</a><a class="src" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" rel="noopener noreferrer" title="Bank of China: 中国银行电子银行个人服务转账汇款费率表 (personal e-banking remittance tariff)">S09&nbsp;&#8599;</a></p>
+</article><article class="card route-card" data-cat="capital" data-status="conditional" data-name="b-share sale proceeds 境外个人b股交易所得">
+<div><span class="badge b-conditional">Conditional</span> <span class="pill">C08</span></div>
+<h3><a href="method-C08.html">B-share sale proceeds</a></h3>
+<p class="small muted">境外个人B股交易所得</p>
+<p>Overseas individuals may hold B shares; sale proceeds follow securities and FX rules.</p>
+<p class="small"><strong>Cost model:</strong> none_published · <strong>Limits:</strong> Sale proceeds of existing holdings only · <a class="src" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People's Bank of China / SAFE: 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange), PBOC Order [2006] No. 3">S01&nbsp;&#8599;</a></p>
+</article><article class="card route-card" data-cat="rail" data-status="candidate" data-name="bank counter or e-banking telegraphic transfer (boc published tariff) 银行柜面/电子银行电汇">
+<div><span class="badge b-candidate">Lawful candidate</span> <span class="pill">R01</span></div>
+<h3><a href="method-R01.html">Bank counter or e-banking telegraphic transfer (BOC published tariff)</a></h3>
+<p class="small muted">银行柜面/电子银行电汇</p>
+<p>The execution rail for most lawful routes: BOC publishes 0.1% commission (min CNY 50, max CNY 260) plus CNY 150 cable outside HK/Macau/Taiwan.</p>
+<p class="small"><strong>Cost model:</strong> boc_fx_wire · <strong>Limits:</strong> One fee per transfer; No published cap on amount · <a class="src" href="https://www.boc.cn/sourcedb/whpj/" rel="noopener noreferrer" title="Bank of China: 中国银行外汇牌价 (BOC foreign exchange board)">S08&nbsp;&#8599;</a><a class="src" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" rel="noopener noreferrer" title="Bank of China: 中国银行电子银行个人服务转账汇款费率表 (personal e-banking remittance tariff)">S09&nbsp;&#8599;</a><a class="src" href="https://www.pbc.gov.cn/zhengcehuobisi/125207/125217/125925/2026110908552938362/index.html" rel="noopener noreferrer" title="People's Bank of China / CFETS: 2026年11月9日中国外汇交易中心受权公布人民币汇率中间价公告">S10&nbsp;&#8599;</a></p>
+</article><article class="card route-card" data-cat="rail" data-status="unverified" data-name="other chinese bank tariffs (icbc, ccb, abc, cmb, hsbc china) 其他中资银行个人跨境汇款费率">
+<div><span class="badge b-unverified">Unverified</span> <span class="pill">R02</span></div>
+<h3><a href="method-R02.html">Other Chinese bank tariffs (ICBC, CCB, ABC, CMB, HSBC China)</a></h3>
+<p class="small muted">其他中资银行个人跨境汇款费率</p>
+<p>Other banks publish their own tariffs, but no current mainland personal schedule was verified in this session.</p>
+<p class="small"><strong>Cost model:</strong> none_published · <strong>Limits:</strong> Unverified · <a class="src" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" rel="noopener noreferrer" title="Bank of China: 中国银行电子银行个人服务转账汇款费率表 (personal e-banking remittance tariff)">S09&nbsp;&#8599;</a></p>
+</article><article class="card route-card" data-cat="rail" data-status="conditional" data-name="wise transfer from cny wise 人民币汇出">
+<div><span class="badge b-conditional">Conditional</span> <span class="pill">R03</span></div>
+<h3><a href="method-R03.html">Wise transfer from CNY</a></h3>
+<p class="small muted">Wise 人民币汇出</p>
+<p>Wise supports sending from CNY only for eligible workers or former workers with China tax records, to an account you own abroad.</p>
+<p class="small"><strong>Cost model:</strong> none_published · <strong>Limits:</strong> CNY 300,000 per bank-app transfer; CNY 50,000 per Alipay transfer; Overall limit tied to documented after-tax income · <a class="src" href="https://wise.com/help/articles/2955298/guide-to-cny-transfers" rel="noopener noreferrer" title="Wise: Guide to CNY transfers (Sending from CNY)">S26&nbsp;&#8599;</a><a class="src" href="https://www.pbc.gov.cn/tiaofasi/144941/144957/5916164/index.html" rel="noopener noreferrer" title="PBOC / NFRA / CSRC: 金融机构客户尽职调查和客户身份资料及交易记录保存管理办法, 令[2025]第11号, effective 2026-01-01">S11&nbsp;&#8599;</a></p>
+</article><article class="card route-card" data-cat="rail" data-status="unverified" data-name="alipay / wechat cross-border remittance for mainland residents 支付宝/微信跨境汇款（境内居民）">
+<div><span class="badge b-unverified">Unverified</span> <span class="pill">R04</span></div>
+<h3><a href="method-R04.html">Alipay / WeChat cross-border remittance for mainland residents</a></h3>
+<p class="small muted">支付宝/微信跨境汇款（境内居民）</p>
+<p>Payment apps offer remittance to mainland residents under their own limits; availability to an overseas individual was not verified.</p>
+<p class="small"><strong>Cost model:</strong> none_published · <strong>Limits:</strong> Unverified · <a class="src" href="https://www.pbc.gov.cn/tiaofasi/144941/144957/5916164/index.html" rel="noopener noreferrer" title="PBOC / NFRA / CSRC: 金融机构客户尽职调查和客户身份资料及交易记录保存管理办法, 令[2025]第11号, effective 2026-01-01">S11&nbsp;&#8599;</a></p>
+</article><article class="card route-card" data-cat="card" data-status="limited" data-name="spend rmb directly abroad with a unionpay card 银联卡境外消费">
+<div><span class="badge b-limited">Lawful but capped</span> <span class="pill">R05</span></div>
+<h3><a href="method-R05.html">Spend RMB directly abroad with a UnionPay card</a></h3>
+<p class="small muted">银联卡境外消费</p>
+<p>Card spending abroad uses RMB without a purchase-quota charge, but it is spending, not a transfer of the balance.</p>
+<p class="small"><strong>Cost model:</strong> card · <strong>Limits:</strong> Spending only; Issuer limits apply · <a class="src" href="http://m.safe.gov.cn/safe/2017/1230/8129.html" rel="noopener noreferrer" title="SAFE: 国家外汇管理局有关负责人就规范银行卡境外大额提取现金交易有关问题答记者问 (汇发[2017]29号)">S13&nbsp;&#8599;</a></p>
+</article><article class="card route-card" data-cat="card" data-status="limited" data-name="withdraw rmb cash abroad at an atm 境外atm提取人民币现钞">
+<div><span class="badge b-limited">Lawful but capped</span> <span class="pill">R06</span></div>
+<h3><a href="method-R06.html">Withdraw RMB cash abroad at an ATM</a></h3>
+<p class="small muted">境外ATM提取人民币现钞</p>
+<p>ATMs abroad dispense local currency within a CNY 10,000/day and CNY 100,000/year per-person cap.</p>
+<p class="small"><strong>Cost model:</strong> atm · <strong>Limits:</strong> CNY 10,000 per card per day; CNY 100,000 per person per calendar year · <a class="src" href="http://m.safe.gov.cn/safe/2017/1230/8129.html" rel="noopener noreferrer" title="SAFE: 国家外汇管理局有关负责人就规范银行卡境外大额提取现金交易有关问题答记者问 (汇发[2017]29号)">S13&nbsp;&#8599;</a></p>
+</article><article class="card route-card" data-cat="card" data-status="limited" data-name="carry foreign-currency cash out 携带外币现钞出境">
+<div><span class="badge b-limited">Lawful but capped</span> <span class="pill">R07</span></div>
+<h3><a href="method-R07.html">Carry foreign-currency cash out</a></h3>
+<p class="small muted">携带外币现钞出境</p>
+<p>Cash carriage is capped at USD 5,000 without a permit and USD 10,000 with a bank carriage certificate.</p>
+<p class="small"><strong>Cost model:</strong> boc_cash · <strong>Limits:</strong> USD 5,000 per trip normally without a permit; USD 5,000-10,000 needs a bank-issued carriage permit; Above USD 10,000 needs a SAFE-issued permit and is exceptional; Permit valid 30 days, single use · <a class="src" href="http://www.customs.gov.cn/gongbei_customs/374293/374294/375168/index.html" rel="noopener noreferrer" title="General Administration of Customs (Gongbei customs): 拱北海关提醒旅客注意申报 (Customs notice on passenger declaration, 海关总署第72号公告)">S14&nbsp;&#8599;</a><a class="src" href="https://www.safe.gov.cn/safe/2007/0105/5320.html" rel="noopener noreferrer" title="SAFE: 个人外汇管理办法实施细则 (Detailed Rules), 汇发[2007]1号, as amended">S02&nbsp;&#8599;</a><a class="src" href="https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm" rel="noopener noreferrer" title="State Council of the PRC: 中华人民共和国外汇管理条例 (Foreign Exchange Administration Regulations), State Council Decree No. 532">S27&nbsp;&#8599;</a><a class="src" href="https://www.boc.cn/sourcedb/whpj/" rel="noopener noreferrer" title="Bank of China: 中国银行外汇牌价 (BOC foreign exchange board)">S08&nbsp;&#8599;</a></p>
+</article><article class="card route-card" data-cat="rail" data-status="unverified" data-name="rmb wire to an offshore rmb account (cnh) 人民币跨境汇至境外人民币账户">
+<div><span class="badge b-unverified">Unverified</span> <span class="pill">R08</span></div>
+<h3><a href="method-R08.html">RMB wire to an offshore RMB account (CNH)</a></h3>
+<p class="small muted">人民币跨境汇至境外人民币账户</p>
+<p>Sending RMB itself to an offshore account may be possible for some current-account purposes, but no rule confirming access for this user was verified.</p>
+<p class="small"><strong>Cost model:</strong> none_published · <strong>Limits:</strong> Unverified · <a class="src" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People's Bank of China / SAFE: 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange), PBOC Order [2006] No. 3">S01&nbsp;&#8599;</a><a class="src" href="https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm" rel="noopener noreferrer" title="State Council of the PRC: 中华人民共和国外汇管理条例 (Foreign Exchange Administration Regulations), State Council Decree No. 532">S27&nbsp;&#8599;</a></p>
+</article><article class="card route-card" data-cat="hold" data-status="candidate" data-name="hold rmb and convert later, or spend it on future china trips 保留人民币，择机兑换或未来消费">
+<div><span class="badge b-candidate">Lawful candidate</span> <span class="pill">H01</span></div>
+<h3><a href="method-H01.html">Hold RMB and convert later, or spend it on future China trips</a></h3>
+<p class="small muted">保留人民币，择机兑换或未来消费</p>
+<p>Doing nothing is a real option: no fee is paid, but you keep currency and policy risk.</p>
+<p class="small"><strong>Cost model:</strong> hold · <strong>Limits:</strong> No fee; no conversion · <a class="src" href="https://www.boc.cn/sourcedb/whpj/" rel="noopener noreferrer" title="Bank of China: 中国银行外汇牌价 (BOC foreign exchange board)">S08&nbsp;&#8599;</a><a class="src" href="https://www.pbc.gov.cn/zhengcehuobisi/125207/125217/125925/2026110908552938362/index.html" rel="noopener noreferrer" title="People's Bank of China / CFETS: 2026年11月9日中国外汇交易中心受权公布人民币汇率中间价公告">S10&nbsp;&#8599;</a></p>
+</article><article class="card route-card" data-cat="prohibited" data-status="prohibited" data-name="crypto / usdt otc conversion and transfer 虚拟货币/usdt场外兑换">
+<div><span class="badge b-prohibited">Prohibited</span> <span class="pill">X01</span></div>
+<h3><a href="method-X01.html">Crypto / USDT OTC conversion and transfer</a></h3>
+<p class="small muted">虚拟货币/USDT场外兑换</p>
+<p>Converting RMB to crypto in China is prohibited; the 2026 notice treats fiat-crypto exchange as illegal financial activity.</p>
+<p class="small"><strong>Cost model:</strong> prohibited · <strong>Limits:</strong> Prohibited · <a class="src" href="https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html" rel="noopener noreferrer" title="PBOC and seven other ministries: 关于进一步防范和处置虚拟货币等相关风险的通知, 银发[2026]42号, effective 2026-02-06">S12&nbsp;&#8599;</a><a class="src" href="https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm" rel="noopener noreferrer" title="State Council of the PRC: 中华人民共和国外汇管理条例 (Foreign Exchange Administration Regulations), State Council Decree No. 532">S27&nbsp;&#8599;</a></p>
+</article><article class="card route-card" data-cat="prohibited" data-status="prohibited" data-name="underground bank / private currency broker (地下钱庄) 地下钱庄">
+<div><span class="badge b-prohibited">Prohibited</span> <span class="pill">X02</span></div>
+<h3><a href="method-X02.html">Underground bank / private currency broker (地下钱庄)</a></h3>
+<p class="small muted">地下钱庄</p>
+<p>Private cross-border settlement is illegal and exposed to confiscation and criminal liability.</p>
+<p class="small"><strong>Cost model:</strong> prohibited · <strong>Limits:</strong> Prohibited · <a class="src" href="https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm" rel="noopener noreferrer" title="State Council of the PRC: 中华人民共和国外汇管理条例 (Foreign Exchange Administration Regulations), State Council Decree No. 532">S27&nbsp;&#8599;</a><a class="src" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People's Bank of China / SAFE: 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange), PBOC Order [2006] No. 3">S01&nbsp;&#8599;</a></p>
+</article><article class="card route-card" data-cat="prohibited" data-status="prohibited" data-name="splitting the balance across friends' or family quotas 分拆结售汇（借用他人额度）">
+<div><span class="badge b-prohibited">Prohibited</span> <span class="pill">X03</span></div>
+<h3><a href="method-X03.html">Splitting the balance across friends' or family quotas</a></h3>
+<p class="small muted">分拆结售汇（借用他人额度）</p>
+<p>Using other people's quotas or splitting transactions to evade limits is expressly prohibited.</p>
+<p class="small"><strong>Cost model:</strong> prohibited · <strong>Limits:</strong> Prohibited · <a class="src" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People's Bank of China / SAFE: 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange), PBOC Order [2006] No. 3">S01&nbsp;&#8599;</a><a class="src" href="https://www.safe.gov.cn/safe/2007/0105/5320.html" rel="noopener noreferrer" title="SAFE: 个人外汇管理办法实施细则 (Detailed Rules), 汇发[2007]1号, as amended">S02&nbsp;&#8599;</a><a class="src" href="https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm" rel="noopener noreferrer" title="State Council of the PRC: 中华人民共和国外汇管理条例 (Foreign Exchange Administration Regulations), State Council Decree No. 532">S27&nbsp;&#8599;</a></p>
+</article><article class="card route-card" data-cat="prohibited" data-status="prohibited" data-name="false trade or service invoices (misinvoicing) 虚假贸易/服务单证">
+<div><span class="badge b-prohibited">Prohibited</span> <span class="pill">X04</span></div>
+<h3><a href="method-X04.html">False trade or service invoices (misinvoicing)</a></h3>
+<p class="small muted">虚假贸易/服务单证</p>
+<p>Fabricated commercial documents to obtain FX are illegal, even if a real good or service exists elsewhere.</p>
+<p class="small"><strong>Cost model:</strong> prohibited · <strong>Limits:</strong> Prohibited · <a class="src" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People's Bank of China / SAFE: 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange), PBOC Order [2006] No. 3">S01&nbsp;&#8599;</a><a class="src" href="https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm" rel="noopener noreferrer" title="State Council of the PRC: 中华人民共和国外汇管理条例 (Foreign Exchange Administration Regulations), State Council Decree No. 532">S27&nbsp;&#8599;</a></p>
+</article><article class="card route-card" data-cat="prohibited" data-status="prohibited" data-name="buying overseas property or investment insurance with purchased fx 购汇用于境外买房或投资性保险">
+<div><span class="badge b-prohibited">Prohibited</span> <span class="pill">X05</span></div>
+<h3><a href="method-X05.html">Buying overseas property or investment insurance with purchased FX</a></h3>
+<p class="small muted">购汇用于境外买房或投资性保险</p>
+<p>Overseas property and securities investment are capital-account uses that are not open to individual purchase.</p>
+<p class="small"><strong>Cost model:</strong> prohibited · <strong>Limits:</strong> Prohibited without approval · <a class="src" href="https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm" rel="noopener noreferrer" title="State Council of the PRC: 中华人民共和国外汇管理条例 (Foreign Exchange Administration Regulations), State Council Decree No. 532">S27&nbsp;&#8599;</a><a class="src" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People's Bank of China / SAFE: 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange), PBOC Order [2006] No. 3">S01&nbsp;&#8599;</a></p>
+</article><article class="card route-card" data-cat="prohibited" data-status="unverified" data-name="export gold or precious metals to bypass fx rules 出口黄金或贵金属规避外汇管理">
+<div><span class="badge b-unverified">Unverified</span> <span class="pill">X06</span></div>
+<h3><a href="method-X06.html">Export gold or precious metals to bypass FX rules</a></h3>
+<p class="small muted">出口黄金或贵金属规避外汇管理</p>
+<p>Gold export is subject to separate restrictions, but the exact personal limit was not verified here.</p>
+<p class="small"><strong>Cost model:</strong> prohibited · <strong>Limits:</strong> Unverified · <a class="src" href="https://www.pbc.gov.cn/tiaofasi/144941/144957/5916164/index.html" rel="noopener noreferrer" title="PBOC / NFRA / CSRC: 金融机构客户尽职调查和客户身份资料及交易记录保存管理办法, 令[2025]第11号, effective 2026-01-01">S11&nbsp;&#8599;</a><a class="src" href="http://www.customs.gov.cn/gongbei_customs/374293/374294/375168/index.html" rel="noopener noreferrer" title="General Administration of Customs (Gongbei customs): 拱北海关提醒旅客注意申报 (Customs notice on passenger declaration, 海关总署第72号公告)">S14&nbsp;&#8599;</a></p>
+</article><article class="card route-card" data-cat="prohibited" data-status="prohibited" data-name="gift the rmb to a relative abroad to avoid approval 以赠与境外亲属方式转移">
+<div><span class="badge b-prohibited">Prohibited</span> <span class="pill">X07</span></div>
+<h3><a href="method-X07.html">Gift the RMB to a relative abroad to avoid approval</a></h3>
+<p class="small muted">以赠与境外亲属方式转移</p>
+<p>Outward gifts of capital require approval; calling a transfer a gift does not remove the requirement.</p>
+<p class="small"><strong>Cost model:</strong> none_published · <strong>Limits:</strong> Approval-bound · <a class="src" href="https://www.safe.gov.cn/safe/2006/1225/5319.html" rel="noopener noreferrer" title="People's Bank of China / SAFE: 个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange), PBOC Order [2006] No. 3">S01&nbsp;&#8599;</a><a class="src" href="https://www.irs.gov/forms-pubs/about-form-3520" rel="noopener noreferrer" title="Internal Revenue Service: About Form 3520, Annual Return To Report Transactions With Foreign Trusts and Receipt of Certain Foreign Gifts">S29&nbsp;&#8599;</a></p>
+</article></div>
+<h2>Why the statuses differ</h2>
+<div class="tablewrap"><table class="responsive"><thead><tr><th scope="col">Status</th><th scope="col">Meaning</th><th scope="col">Example</th></tr></thead><tbody><tr><span class="badge b-candidate">Lawful candidate</span>A published current-account or capital-account route that may fit your facts.P01 documented income</tr><tr><span class="badge b-conditional">Conditional</span>Lawful only if a specific eligibility or approval condition is met.C01 emigrant transfer</tr><tr><span class="badge b-limited">Lawful but capped</span>Lawful, but a published cap makes a large transfer impractical.P05 USD 50,000 quota</tr><tr><span class="badge b-unverified">Unverified</span>Plausible but no official rule or price was confirmed here.R02 other bank tariffs</tr><tr><span class="badge b-prohibited">Prohibited</span>Unlawful or legally void. Risk information only.X01 crypto</tr></tbody></table></div>
+
+<script>
+(function(){
+ var cat='all',st='all',q='';
+ var cards=[].slice.call(document.querySelectorAll('.route-card'));
+ var chips=[].slice.call(document.querySelectorAll('.chip'));
+ var count=document.getElementById('count');
+ function apply(){
+  var n=0;
+  cards.forEach(function(c){
+   var ok=(cat==='all'||c.dataset.cat===cat)&&(st==='all'||c.dataset.status===st)&&(q===''||c.dataset.name.indexOf(q)>-1);
+   c.style.display=ok?'':'none'; if(ok)n++;
+  });
+  count.textContent=n+' of '+cards.length+' routes shown';
+ }
+ chips.forEach(function(b){b.addEventListener('click',function(){
+  cat=b.dataset.filter;chips.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});apply();
+ })});
+ document.getElementById('st').addEventListener('change',function(e){st=e.target.value;apply()});
+ document.getElementById('q').addEventListener('input',function(e){q=e.target.value.toLowerCase().trim();apply()});
+ var m=location.search.match(/cat=([a-z]+)/); if(m){cat=m[1];chips.forEach(function(x){x.setAttribute('aria-pressed',x.dataset.filter===cat?'true':'false')});}
+ apply();
+})();
+</script>
+<footer>
+<p><strong>Research, not legal, tax or investment advice.</strong> Unknown values are blank, never inferred. Official agencies establish the rules; bank and provider pages establish only their own published terms. A citation does not establish your eligibility for a route.</p>
+<p>Data as of 10 November 2026 (UTC). Rates are a single published snapshot, not a quote. <a href="sources.html">Source register</a> · <a href="review.html">Flagged for review</a> · <a href="methodology.html">Method and limits</a> · <a href="requirements.html">Requirement coverage</a></p>
+</footer></main></body></html>
