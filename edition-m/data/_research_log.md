@@ -248,3 +248,20 @@ Individual Income Tax Law of the PRC (STA English text, updated 2018-08-31).
 Yearly average exchange rates, row China — Yuan (units of yuan per USD): 2025 = 7.129 | 2024 = 7.189 | 2023 = 7.075 | 2022 = 6.730 | 2021 = 6.452.
 "To convert from foreign currency to U.S. dollars, divide the foreign currency amount by the applicable yearly average exchange rate".
 (Typos visible in the IRS table itself: Euro Zone 2024 "0,924"; Russia 2021 ".73.686" — not relevant to CNY.)
+
+### S-IRS-STREAMLINED  https://www.irs.gov/individuals/international-taxpayers/streamlined-filing-compliance-procedures  (chunk 0 read)
+"available to taxpayers certifying that their failure to report foreign financial assets and pay all tax due in respect of those assets did not result from willful conduct". "Non-willful conduct is conduct that is due to negligence, inadvertence, or mistake or conduct that is the result of a good faith misunderstanding of the requirements of the law". Not available if the IRS has initiated a civil examination or criminal investigation. Available to U.S. individual taxpayers residing outside and inside the United States (streamlined foreign / domestic offshore procedures). Returns "may be selected for audit". Willful cases: "should consider participating in the IRS Criminal Investigation Voluntary Disclosure Practice".
+### S-IRS-STREAMLINED-5PCT  https://www.irs.gov/pub/irs-news/IR-14-073.pdf  (official excerpt returned by the search tool)
+IR-2014-73: "For eligible U.S. taxpayers residing outside the United States, all penalties will be waived. For eligible U.S. taxpayers residing in the United States, the only penalty will be a miscellaneous offshore penalty equal to 5 percent of the foreign financial assets that gave rise to the tax compliance issue."
+Also https://www.irs.gov/individuals/international-taxpayers/streamlined-filing-compliance-procedures-for-us-taxpayers-residing-in-the-united-states-frequently-asked-questions-and-answers (excerpt): example "$6,500 ($130,000 x 5%)".
+### S-TAS-FBAR  https://www.taxpayeradvocate.irs.gov/get-help/international/foreign-bank-financial-accounts/  (official excerpt returned by the search tool; page dated 2026-04-16)
+"The IRS won't impose a penalty for failure to file delinquent FBARs if you reported your foreign income properly and paid any associated taxes on your U.S. tax return and it hasn't already contacted you about an audit or request for delinquent returns for the years covered by the delinquent FBARs." "You need to include a statement explaining why the filing is late."
+### DEAD LINK  https://www.irs.gov/individuals/international-taxpayers/delinquent-fbar-submission-procedures  -> "Page Not Found. Error 404." on 2026-11-10 (the long-standing IRS URL for the Delinquent FBAR Submission Procedures).
+### S-IRM-FBAR  https://www.irs.gov/irm/part4/irm_04-026-016  (official excerpt returned by the search tool)
+IRM 4.26.16: "a single non-willful reporting violation can only result in a single penalty, but a single willful reporting violation can result in multiple penalties depending on the number of accounts which were not properly reported." "The penalty should not be imposed if: The violation was due to reasonable cause, and Accurate delinquent or amended FBAR(s) are filed".
+
+### S-ECFR-1010-821  https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821  (chunks 0-1 read)
+eCFR "up to date as of 11/06/2026"; section timeline's most recent change 1/17/2025. Table 1, column "penalties assessed on or after January 17, 2025":
+- 31 U.S.C. 5321(a)(5)(B)(i) Foreign Financial Agency Transaction—Non-Willful Violation: statutory $10,000 -> $16,536.
+- 31 U.S.C. 5321(a)(5)(C)(i)(I) Foreign Financial Agency Transaction—Willful Violation: statutory $100,000 -> $165,353.
+-> No later (2026) adjustment is shown in the eCFR as of 2026-11-06.
