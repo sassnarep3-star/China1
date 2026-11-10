@@ -1,0 +1,93 @@
+{
+ "as_of": "2026-11-10",
+ "inputs": {
+  "boc_buy_per_100": {
+   "value": "665.71",
+   "source": "N02",
+   "label": "BOC spot buying rate, CNY per USD 100"
+  },
+  "boc_sell_per_100": {
+   "value": "668.51",
+   "source": "N02",
+   "label": "BOC spot selling rate, CNY per USD 100 (the rate a customer pays to buy USD)"
+  },
+  "boc_cash_sell_per_100": {
+   "value": "668.51",
+   "source": "N02",
+   "label": "BOC cash selling rate, CNY per USD 100"
+  },
+  "boc_fee_rate": {
+   "value": "0.001",
+   "source": "N04",
+   "label": "BOC cross-border wire commission, share of the amount"
+  },
+  "boc_fee_min_cny": {
+   "value": "50",
+   "source": "N04",
+   "label": "BOC commission minimum per wire, CNY"
+  },
+  "boc_fee_max_cny": {
+   "value": "260",
+   "source": "N04",
+   "label": "BOC commission maximum per wire, CNY"
+  },
+  "boc_cable_cny": {
+   "value": "150",
+   "source": "N04",
+   "label": "BOC cable fee per wire outside Hong Kong, Macao, Taiwan, CNY"
+  },
+  "quota_usd_year": {
+   "value": "50000",
+   "source": "N01",
+   "label": "Annual facilitation quota, USD per person per calendar year"
+  },
+  "wise_cap_cny": {
+   "value": "300000",
+   "source": "N21",
+   "label": "Wise maximum per transfer from a China bank app, CNY"
+  },
+  "atm_cap_cny_year": {
+   "value": "100000",
+   "source": "N16",
+   "label": "Overseas cash withdrawal cap per person per calendar year, CNY (excerpt level)"
+  },
+  "carry_free_usd": {
+   "value": "5000",
+   "source": "N01",
+   "label": "Foreign cash that may leave China without a permit, USD"
+  },
+  "carry_permit_usd": {
+   "value": "10000",
+   "source": "N01",
+   "label": "Foreign cash that may leave China with a bank-issued permit, USD"
+  },
+  "fine_ordinary": {
+   "value": "0.30",
+   "source": "N09",
+   "label": "Upper limit of the fine in an ordinary case, share of the amount (Arts. 39, 40, 45)"
+  },
+  "fine_serious": {
+   "value": "1.00",
+   "source": "N09",
+   "label": "Upper limit of the fine in a serious case, share of the amount (Arts. 39, 40, 45)"
+  },
+  "fine_carry": {
+   "value": "0.20",
+   "source": "N09",
+   "label": "Upper limit of the fine for carrying FX across the border in breach (Art. 42)"
+  },
+  "us_recv_fee_usd": {
+   "value": "15",
+   "source": "N26",
+   "label": "Example US receiving-bank fee per incoming wire, USD (Chase; excerpt level; not in the headline cost)"
+  }
+ },
+ "derived": {
+  "sell": "6.6851",
+  "buy": "6.6571",
+  "mid": "6.6711",
+  "fx_margin_share": "0.002098604428055343196774145193",
+  "cash_fx_margin_share": "0.002098604428055343196774145193"
+ },
+ "formula": "cost_usd = (clamp(0.001*usd*sell, 50, 260) + 150)/sell + usd*(sell-mid)/mid"
+}

@@ -1,0 +1,30 @@
+name: Edition 12670774 - build and verify
+
+on:
+  push:
+    paths:
+      - 'edition-12670774/**'
+      - '.github/workflows/edition-12670774.yml'
+  pull_request:
+    paths:
+      - 'edition-12670774/**'
+      - '.github/workflows/edition-12670774.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Rebuild data and pages from the hand-entered sources
+        run: python3 edition-12670774/build/build.py
+      - name: Verify (costs recomputed, official link on every row, blanks flagged, no broken links)
+        run: python3 edition-12670774/build/verify.py
+      - name: Committed output must equal the build
+        run: git diff --exit-code -- edition-12670774

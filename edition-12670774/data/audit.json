@@ -1,0 +1,449 @@
+{
+ "scanned_commit": "9e13ecd",
+ "files_total": 458,
+ "files_text": 450,
+ "lines_total": 187032,
+ "findings": [
+  {
+   "id": "A01",
+   "status": "needs review",
+   "finding": "Edition L stores the central parity as 6.6717 CNY per USD. Its own source value is 671.67 per USD 100, which is 6.7167. Its build reads the field, so its published penalty page prints \"a negative penalty of 0.2008%\"; with 6.7167 the selling rate is 0.4705% below the parity. Its cost ladders use the buy and sell rates and are not affected.",
+   "where_html": "<a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/edition-l/data/model.json\" rel=\"noopener\">edition-l/data/model.json</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/edition-l/data/costs.json\" rel=\"noopener\">edition-l/data/costs.json</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/edition-l/site/penalty.html\" rel=\"noopener\">edition-l/site/penalty.html</a>",
+   "sources": [
+    "N02"
+   ],
+   "flags": [
+    "F27"
+   ]
+  },
+  {
+   "id": "A02",
+   "status": "needs review",
+   "finding": "By the line scan, these areas cite Yinfa [2021] No. 237 as the virtual-currency rule and never mention Yinfa [2026] No. 42, which repealed it on 2026-02-06: data, dossier, edition-b, edition-c, edition-d, edition-f, edition-g, scripts. The prohibition continues, so the conclusion stands. The root portal already records this as its item J12; the older files themselves are unchanged.",
+   "where_html": "<a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/data\" rel=\"noopener\">data</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/dossier\" rel=\"noopener\">dossier</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/edition-b\" rel=\"noopener\">edition-b</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/edition-c\" rel=\"noopener\">edition-c</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/edition-d\" rel=\"noopener\">edition-d</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/edition-f\" rel=\"noopener\">edition-f</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/edition-g\" rel=\"noopener\">edition-g</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/scripts\" rel=\"noopener\">scripts</a>",
+   "sources": [
+    "N19"
+   ],
+   "flags": [
+    "F28"
+   ]
+  },
+  {
+   "id": "A03",
+   "status": "needs review",
+   "finding": "Several Bank of China snapshots coexist. Sell 669.03 appears in: (root), edition-abd04d5f, edition-i, edition-j, edition-l, integration. Sell 669.29 appears in: (root), assets, data, dossier, edition-d, edition-e, edition-f, edition-g, edition-h, edition-l, pages, scripts. Sell 668.51, the board at 17:39:58 on 2026-11-10, appears in: (root), edition-abd04d5f, edition-k, edition-l. The root summary computes at 6.6903. Totals across editions are therefore not comparable.",
+   "where_html": "<a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/EXECUTIVE_SUMMARY.md\" rel=\"noopener\">EXECUTIVE_SUMMARY.md</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/integration/costs.json\" rel=\"noopener\">integration/costs.json</a>",
+   "sources": [
+    "N02"
+   ],
+   "flags": [
+    "F29"
+   ]
+  },
+  {
+   "id": "A04",
+   "status": "needs review",
+   "finding": "Links to hosts that are neither government nor the institution concerned: www.shanghaiinvest.com, 12 links, in edition-b; www.news.cn, 5 links, in data, dossier, scripts; www.law.cornell.edu, 4 links, in edition-g, edition-h. For the US Code the official text is on govinfo.gov.",
+   "where_html": "<a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/data\" rel=\"noopener\">data</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/dossier\" rel=\"noopener\">dossier</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/edition-b\" rel=\"noopener\">edition-b</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/edition-g\" rel=\"noopener\">edition-g</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/edition-h\" rel=\"noopener\">edition-h</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/scripts\" rel=\"noopener\">scripts</a>",
+   "sources": [
+    "N13"
+   ],
+   "flags": [
+    "F30"
+   ]
+  },
+  {
+   "id": "A05",
+   "status": "needs review",
+   "finding": "Pull requests #39 and #45 are open; claims by arena-fc438b1a, arena-4207cf2f and arena-8a02a5b6 had no commits for more than 60 minutes when this session started. Not touched.",
+   "where_html": "<a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/pulls\" rel=\"noopener\">open pull requests</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/COORDINATION.md\" rel=\"noopener\">COORDINATION.md</a>",
+   "sources": [
+    "N01"
+   ],
+   "flags": [
+    "F31"
+   ]
+  },
+  {
+   "id": "A06",
+   "status": "needs review",
+   "finding": "Official texts disagree on who is a 境内个人: the 2008 Regulations Art. 52 against the 2006 Measures Art. 37. Earlier editions use the Measures' reading without noting the conflict.",
+   "where_html": "Official texts, not a repository file. Affects every edition that states the quota rule: <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/EXECUTIVE_SUMMARY.md\" rel=\"noopener\">EXECUTIVE_SUMMARY.md</a>",
+   "sources": [
+    "N09",
+    "N18"
+   ],
+   "flags": [
+    "F11"
+   ]
+  },
+  {
+   "id": "A07",
+   "status": "needs review",
+   "finding": "The 2006 Measures Art. 22 requires SAFE approval to remit home-sale proceeds; the 2025 operating guidelines describe the bank doing it against documents.",
+   "where_html": "Official texts, not a repository file. Affects every edition that describes the home-sale route: <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/README.md\" rel=\"noopener\">README.md</a>",
+   "sources": [
+    "N18",
+    "N08"
+   ],
+   "flags": [
+    "F12"
+   ]
+  },
+  {
+   "id": "A08",
+   "status": "needs review",
+   "finding": "The official inheritance service guide repeats emigrant wording in its conditions block.",
+   "where_html": "Official text, not a repository file. Affects every edition that describes the inheritance route: <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/README.md\" rel=\"noopener\">README.md</a>",
+   "sources": [
+    "N06"
+   ],
+   "flags": [
+    "F13"
+   ]
+  },
+  {
+   "id": "A09",
+   "status": "confirmed",
+   "finding": "Bank of China wire charge: 0.1%, minimum CNY 50, maximum CNY 260, plus CNY 150 cable. Re-read today on the bank's tariff page; matches the root summary and editions K and L.",
+   "where_html": "<a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/EXECUTIVE_SUMMARY.md\" rel=\"noopener\">EXECUTIVE_SUMMARY.md</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/edition-k/data/model.json\" rel=\"noopener\">edition-k/data/model.json</a>",
+   "sources": [
+    "N04"
+   ],
+   "flags": []
+  },
+  {
+   "id": "A10",
+   "status": "confirmed",
+   "finding": "Form 3520 thresholds: USD 100,000 for individuals and estates; USD 20,573 for 2026 and USD 20,116 for 2025 for foreign corporations and partnerships. Re-read today; found in: (root), edition-abd04d5f, edition-b, edition-d, edition-g, edition-h, edition-j, edition-k, edition-l, integration.",
+   "where_html": "<a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/integration/evidence.json\" rel=\"noopener\">integration/evidence.json</a>",
+   "sources": [
+    "N03"
+   ],
+   "flags": []
+  },
+  {
+   "id": "A11",
+   "status": "confirmed",
+   "finding": "Bank of China board 2026-11-10 17:39:58: buy 665.71, sell 668.51, conversion rate 671.67. Re-read today; editions K and L use the same snapshot.",
+   "where_html": "<a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/edition-k/data/model.json\" rel=\"noopener\">edition-k/data/model.json</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/edition-l/data/model.json\" rel=\"noopener\">edition-l/data/model.json</a>",
+   "sources": [
+    "N02"
+   ],
+   "flags": []
+  },
+  {
+   "id": "A12",
+   "status": "confirmed",
+   "finding": "The USD 50,000 purchase quota is for 境内个人; a foreign individual buys against documented China income. Re-read today in Arts. 54 and 59 and in the Measures Art. 37.",
+   "where_html": "<a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/EXECUTIVE_SUMMARY.md\" rel=\"noopener\">EXECUTIVE_SUMMARY.md</a>",
+   "sources": [
+    "N01",
+    "N18"
+   ],
+   "flags": []
+  },
+  {
+   "id": "A13",
+   "status": "confirmed at excerpt level",
+   "finding": "Overseas card cash: CNY 100,000 per person per year and CNY 10,000 per card per day. Matches the SAFE Q&A as returned by the official-site search; the page itself was not opened.",
+   "where_html": "<a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/EXECUTIVE_SUMMARY.md\" rel=\"noopener\">EXECUTIVE_SUMMARY.md</a>",
+   "sources": [
+    "N16"
+   ],
+   "flags": [
+    "F08"
+   ]
+  },
+  {
+   "id": "A14",
+   "status": "confirmed",
+   "finding": "Emigrant transfers: staged remittance abolished; one approval may be remitted once or in parts. Re-read today in Huifa [2014] No. 2 Art. 6.",
+   "where_html": "<a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/EXECUTIVE_SUMMARY.md\" rel=\"noopener\">EXECUTIVE_SUMMARY.md</a>",
+   "sources": [
+    "N23"
+   ],
+   "flags": []
+  },
+  {
+   "id": "A15",
+   "status": "not re-opened",
+   "finding": "HSBC China tariff, Bank of America incoming-wire fee, the Bank of China PDF price list (ATM and permit fees) and the CFETS central parity, used by editions K and L, were not re-opened in this session. They are neither confirmed nor contradicted here.",
+   "where_html": "<a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/edition-k/data/sources.json\" rel=\"noopener\">edition-k/data/sources.json</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/edition-l/data/sources.json\" rel=\"noopener\">edition-l/data/sources.json</a>",
+   "sources": [
+    "N04"
+   ],
+   "flags": [
+    "F03"
+   ]
+  }
+ ],
+ "areas": [
+  {
+   "area": ".github",
+   "files": 12,
+   "text_files": 12,
+   "lines": 325,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "area": "(root)",
+   "files": 7,
+   "text_files": 6,
+   "lines": 2321,
+   "urls": 115,
+   "official": 79,
+   "institution": 36,
+   "other": 0
+  },
+  {
+   "area": "assets",
+   "files": 3,
+   "text_files": 3,
+   "lines": 188,
+   "urls": 26,
+   "official": 24,
+   "institution": 2,
+   "other": 0
+  },
+  {
+   "area": "audit-12b8fb19",
+   "files": 1,
+   "text_files": 1,
+   "lines": 28,
+   "urls": 4,
+   "official": 4,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "area": "audit-2026-11-10",
+   "files": 1,
+   "text_files": 1,
+   "lines": 25,
+   "urls": 8,
+   "official": 4,
+   "institution": 4,
+   "other": 0
+  },
+  {
+   "area": "data",
+   "files": 5,
+   "text_files": 5,
+   "lines": 2077,
+   "urls": 33,
+   "official": 30,
+   "institution": 2,
+   "other": 1
+  },
+  {
+   "area": "docs",
+   "files": 9,
+   "text_files": 9,
+   "lines": 411,
+   "urls": 91,
+   "official": 58,
+   "institution": 33,
+   "other": 0
+  },
+  {
+   "area": "dossier",
+   "files": 9,
+   "text_files": 9,
+   "lines": 819,
+   "urls": 257,
+   "official": 241,
+   "institution": 13,
+   "other": 3
+  },
+  {
+   "area": "edition-abd04d5f",
+   "files": 20,
+   "text_files": 20,
+   "lines": 3394,
+   "urls": 1414,
+   "official": 477,
+   "institution": 937,
+   "other": 0
+  },
+  {
+   "area": "edition-b",
+   "files": 17,
+   "text_files": 17,
+   "lines": 5616,
+   "urls": 522,
+   "official": 510,
+   "institution": 0,
+   "other": 12
+  },
+  {
+   "area": "edition-c",
+   "files": 32,
+   "text_files": 31,
+   "lines": 5924,
+   "urls": 136,
+   "official": 133,
+   "institution": 3,
+   "other": 0
+  },
+  {
+   "area": "edition-d",
+   "files": 29,
+   "text_files": 28,
+   "lines": 7715,
+   "urls": 1680,
+   "official": 679,
+   "institution": 1001,
+   "other": 0
+  },
+  {
+   "area": "edition-e",
+   "files": 36,
+   "text_files": 35,
+   "lines": 32303,
+   "urls": 176,
+   "official": 142,
+   "institution": 34,
+   "other": 0
+  },
+  {
+   "area": "edition-f",
+   "files": 30,
+   "text_files": 29,
+   "lines": 5970,
+   "urls": 1150,
+   "official": 610,
+   "institution": 540,
+   "other": 0
+  },
+  {
+   "area": "edition-g",
+   "files": 72,
+   "text_files": 71,
+   "lines": 47349,
+   "urls": 6238,
+   "official": 5062,
+   "institution": 1174,
+   "other": 2
+  },
+  {
+   "area": "edition-h",
+   "files": 74,
+   "text_files": 73,
+   "lines": 54300,
+   "urls": 7265,
+   "official": 5066,
+   "institution": 2197,
+   "other": 2
+  },
+  {
+   "area": "edition-i",
+   "files": 20,
+   "text_files": 19,
+   "lines": 1837,
+   "urls": 1041,
+   "official": 251,
+   "institution": 790,
+   "other": 0
+  },
+  {
+   "area": "edition-j",
+   "files": 19,
+   "text_files": 19,
+   "lines": 1622,
+   "urls": 1059,
+   "official": 267,
+   "institution": 792,
+   "other": 0
+  },
+  {
+   "area": "edition-k",
+   "files": 17,
+   "text_files": 17,
+   "lines": 3622,
+   "urls": 654,
+   "official": 342,
+   "institution": 312,
+   "other": 0
+  },
+  {
+   "area": "edition-l",
+   "files": 20,
+   "text_files": 20,
+   "lines": 7313,
+   "urls": 1015,
+   "official": 439,
+   "institution": 576,
+   "other": 0
+  },
+  {
+   "area": "integration",
+   "files": 12,
+   "text_files": 12,
+   "lines": 1642,
+   "urls": 411,
+   "official": 214,
+   "institution": 197,
+   "other": 0
+  },
+  {
+   "area": "pages",
+   "files": 5,
+   "text_files": 5,
+   "lines": 5,
+   "urls": 119,
+   "official": 76,
+   "institution": 43,
+   "other": 0
+  },
+  {
+   "area": "scripts",
+   "files": 8,
+   "text_files": 8,
+   "lines": 2226,
+   "urls": 43,
+   "official": 38,
+   "institution": 4,
+   "other": 1
+  }
+ ],
+ "stale_237_areas": [
+  "data",
+  "dossier",
+  "edition-b",
+  "edition-c",
+  "edition-d",
+  "edition-f",
+  "edition-g",
+  "scripts"
+ ],
+ "hosts_other": [
+  [
+   "www.shanghaiinvest.com",
+   12,
+   [
+    "edition-b"
+   ]
+  ],
+  [
+   "www.news.cn",
+   5,
+   [
+    "data",
+    "dossier",
+    "scripts"
+   ]
+  ],
+  [
+   "www.law.cornell.edu",
+   4,
+   [
+    "edition-g",
+    "edition-h"
+   ]
+  ]
+ ]
+}

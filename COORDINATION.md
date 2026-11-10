@@ -622,6 +622,70 @@ No other active owner or in-progress scope was present in the current checkout. 
 - GitHub Pages build/deploy: https://github.com/sassnarep3-star/China1/actions/runs/42533930366 — **passed**. Pages API reports `built`, publishing from `main:/` at `https://sassnarep3-star.github.io/China1/`.
 - Public verification: fetched `https://sassnarep3-star.github.io/China1/pages/estimates.html` after deployment. The published page contained all 40 targets, displayed the date warning, exposed source links on scenario and route rows, and left method fees unverified. `pages/review.html` publishes the date mismatch as a review flag.
 
+<!-- BEGIN arena-12670774 (placed mid-file, before the Edition D board, on purpose: the other live sessions write under the title, before the arena-7014c891 board, or append at EOF, so this position does not touch any of their hunks; every board above and below is preserved unchanged) -->
+# Session board — arena-12670774 (2026-11-10)
+
+Branch: `arena/12670774-china1` (fixed by Arena; the requested `session-<id>/<task>` naming cannot be used — the same logged deviation as every earlier session). Claimed 2026-11-10 09:56 UTC, before any task work.
+
+**Board state read at claim time (every remote branch fetched 09:53 UTC, each branch's `COORDINATION.md` diffed against `main`):**
+
+| Session | Claim seen | Where it is recorded | This session's reaction |
+|---|---|---|---|
+| arena-eb9f0490 | `guide/**`, `.github/workflows/guide.yml` **and FINAL INTEGRATION of the shared outputs** (root `index.html`, `README.md`, `EXECUTIVE_SUMMARY.md`, `REQUIREMENTS.md`, `integration/build.py`, `integration/verify.py`, `edition-d/build/verify.py`, `.github/workflows/*.yml`) — 09:49 UTC | branch `arena/eb9f0490-china1` (not on `main` yet) | Respected. None of those files is edited by this session; a request is logged below instead. |
+| arena-2fb403b0 | `edition-k/**`, `.github/workflows/edition-k.yml` — 09:48 UTC | branch `arena/2fb403b0-china1` | Respected; path not used. |
+| arena-66165efb | `edition-l/**`, `.github/workflows/edition-l.yml` — 09:48 UTC | branch `arena/66165efb-china1` | Respected; path not used. |
+| arena-abd04d5f | `edition-m/**`, `.github/workflows/edition-m.yml` — 09:51 UTC | branch `arena/abd04d5f-china1` | Respected; path not used. |
+| arena-fc438b1a | `edition-k/**` — 06:05 UTC, no commits since | `main` (PR #43) | Stale (>60 min); already taken over by arena-2fb403b0. Not touched. |
+| arena-4207cf2f | `edition-4207cf2f/**` — 06:05 UTC, claim only | branch only | Stale; path not used. |
+| arena-3843fb62 / arena-fface148 | open PRs #39 / #45 | GitHub | Not touched; recorded as irregularities in this session's audit. |
+
+**Claimed by this session.** The directory name carries the session ID so that it cannot collide with a session that starts in the same minute and picks the next free letter; `edition-12670774/` exists on neither `main` nor any remote branch at claim time.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| N1 Repo review: root files and every published edition checked line by line against official sources re-opened in this session; irregularity register | done | arena-12670774 | `edition-12670774/audit/**`, `edition-12670774/data/**` |
+| N2 Research: every CNY→USD method (lawful, conditional, prohibited), pros and cons, exact steps for lawful methods, China + US tax and penalty breakdown — every row tied to an official source opened in this session | done | arena-12670774 | `edition-12670774/data/**` |
+| N3 Cost estimate for every method at every USD 10,000 step, USD 10,000–400,000; components with no official input left blank and flagged | done | arena-12670774 | `edition-12670774/data/**`, `edition-12670774/build/**` |
+| N4 Dashboard: clean landing page + category subpages, mobile-first tables (most important figure first), Flagged for Review page | done | arena-12670774 | `edition-12670774/**` |
+| N5 Independent verifier (arithmetic recomputation, per-row official source link, blank/flag discipline, local link crawl) + CI | done | arena-12670774 | `edition-12670774/build/**`, `.github/workflows/edition-12670774.yml` |
+| N6 Publication of this session's own scope: PR to `main`, merge, GitHub Pages confirmation, record in this block | in progress | arena-12670774 | this block of `COORDINATION.md` only |
+
+**Not claimed:** the shared outputs (root `index.html`, site-wide navigation, `README.md`, `EXECUTIVE_SUMMARY.md`, `REQUIREMENTS.md`, `integration/**`, every other session's edition, data and workflow). They belong to the final-integration claim of arena-eb9f0490.
+
+**Request to the final-integration session (arena-eb9f0490) — logged here instead of editing its files:** once `edition-12670774/` is on `main`, please add one link to `edition-12670774/index.html` from the root landing page / edition list. If that claim goes stale (>60 minutes without a commit) or its integration has already merged before this edition lands, this session will log the handoff in this block before adding that single additive link itself.
+
+Log (arena-12670774):
+- 2026-11-10 09:56 UTC — claim written before any task work. The user supplied no personal facts (source of the money, visa/residence status, former PRC nationality, whether Chinese tax was already paid, sending bank, receiving bank). They stay unknown and are never inferred; the edition models them as explicit, labelled scenarios.
+- 2026-11-10 10:02 UTC — `git pull --rebase origin main` replayed this session's claim commit onto a `main` that had advanced (PRs #46–#50). No conflict: the mid-file position of this block touched no other session's hunk. Because the rebase rewrote this session's own already-pushed commit, the branch was pushed with `--force-with-lease` (own branch only; nothing of any other session discarded). The same happened at 10:16 and 10:20 UTC after PRs #53–#55.
+- 2026-11-10 10:16 UTC — `arena-abd04d5f` had moved from `edition-m/` to `edition-abd04d5f/`, and `arena-1ee3ca2b` holds `edition-m/`. Neither path is used here.
+
+### Work record — arena-12670774 (2026-11-10)
+
+**What was built (only inside the claimed scope).** `edition-12670774/`: hand-entered sources, inputs and flags (`build/content.py`), methods, tax tables and route finder (`build/methods.py`), generator (`build/build.py`), independent verifier (`build/verify.py`), repository line scanner (`build/audit_repo.py`), research log with the passages relied on (`research/source-notes.md`), generated data (`data/*.json`, `data/costs.csv`) and ten pages (`index`, `summary`, `methods`, `steps`, `costs`, `tax`, `flagged`, `audit`, `sources`, `evidence`). Workflow: `.github/workflows/edition-12670774.yml`. No file outside this scope was edited.
+
+**Sources (all read on 2026-11-10; list with links on `edition-12670774/sources.html`, passages on `edition-12670774/evidence.html`).** 25 sources: 21 pages opened and read, 4 read only as the official site's own search excerpt and therefore flagged (N15 Guoshuifa [2005] 13, N16 SAFE Q&A on Huifa [2017] 29, N22 IRS Publication 54, N26 Chase incoming-wire footnote). Opened: gov.cn (Huifa [2020] 14 in the State Council Gazette; State Council Order 532; State Council Order 851), safe.gov.cn (PBOC Decree [2006] 3; Huifa [2014] 2 as amended; Hebei emigrant-transfer guide; Guizhou inheritance-transfer guide; Anhui posting of the operating guidelines annexed to Huifa [2025] 43), pbc.gov.cn (Yinfa [2026] 42), chinatax.gov.cn (IIT Law; Announcement 2013 No. 40 current text), boc.cn (FX board 2026-11-10 17:39:58; e-banking tariff), irs.gov (gifts from foreign person; FBAR; FATCA summary; foreign currency; IR-2026-48), govinfo.gov (26 U.S.C. 988), cbp.gov (monetary instruments), wise.com (provider's own CNY guide).
+
+**Verification performed.** `python3 edition-12670774/build/verify.py` → OK: 12,476 checks; 10 pages; 523 table rows, each with a link to an official site; 760 cost rows (19 methods × 40 amounts) recomputed with exact fractions by code that does not import the build; every blank carries a flag; no steps on prohibited methods; every local link and anchor resolves. Seven mutation tests (corrupted cost, row without official link, blank without flag, non-official source host, steps on a prohibited method, broken link, changed input) each made the verifier fail. `python3 guide/build/build.py` followed by `git diff --exit-code -- index.html guide EXECUTIVE_SUMMARY.md` and `python3 guide/build/verify.py` still pass with this edition present (278 HTML files crawled), so the final-integration checks are not disturbed.
+
+**Headline figures (formula and inputs on `costs.html`).** One documented Bank of China wire: USD 53.43 on USD 10,000 (0.534%), USD 271.19 on USD 100,000 (0.271%), USD 900.77 on USD 400,000 (0.225%); FX margin 0.2099% = half of BOC's own buy–sell gap (665.71 / 668.51). Intermediary and receiving-bank fees are blank and flagged, not included.
+
+**Irregularities found (published on `edition-12670774/audit.html` and `flagged.html`; none blocks the merge).** Line scan of 458 tracked files / 187,032 lines at `main` 9e13ecd.
+1. A01 — `edition-l/data/model.json` and `edition-l/data/costs.json` store the central parity as 6.6717; the source value is 671.67 per USD 100 = 6.7167. The build reads the field, so `edition-l/site/penalty.html` prints "a negative penalty of 0.2008%"; the correct figure is 0.4705% below parity. Edition L's cost ladders do not use the field.
+2. A02 — `data`, `dossier`, `edition-b`, `edition-c`, `edition-d`, `edition-f`, `edition-g`, `scripts` cite Yinfa [2021] 237 and never mention its repeal by Yinfa [2026] 42 (already recorded by the root portal as J12 and by the guide's review).
+3. A03 — several Bank of China snapshots coexist (sell 669.29, 669.19, 669.03, 668.51); totals across editions are not comparable.
+4. A04 — links to hosts that are neither government nor the institution concerned: `www.shanghaiinvest.com` (edition-b), `www.news.cn` (data, dossier, scripts), `www.law.cornell.edu` (edition-g, edition-h).
+5. A05 — PRs #39 and #45 open; stale claims of arena-fc438b1a, arena-4207cf2f, arena-8a02a5b6.
+6. A06–A08 — irregularities in the official texts themselves: Regulations Art. 52 against Measures Art. 37 on who is a 境内个人; Measures Art. 22 (SAFE approval for home-sale proceeds) against the 2025 operating guidelines (bank handles it); the inheritance service guide repeats emigrant wording in its conditions.
+7. A15 — HSBC China tariff, Bank of America fee, the BOC PDF price list and the CFETS parity used by Editions K and L were not re-opened here: neither confirmed nor contradicted.
+Confirmed against pages opened today: BOC wire tariff (A09), Form 3520 thresholds (A10), BOC board snapshot used by K and L (A11), scope of the USD 50,000 quota (A12), abolition of staged emigrant remittance (A14).
+
+**Requests to other sessions (logged instead of editing their files).**
+- To arena-eb9f0490 (final integration): please add `edition-12670774/index.html` to `guide/data/archive.json` and rebuild, so the root landing page reaches this edition. Until then it is reachable at its direct URL.
+- To arena-66165efb (Edition L): please correct `derived.cny_per_usd_parity` from 6.6717 to 6.7167 in `edition-l/data/model.json` (and the generated `costs.json`), then rebuild; `penalty.html` will then show the selling rate 0.4705% below parity.
+<!-- END arena-12670774 -->
+
+---
+
 # Session board — arena-133875bd (Edition D: cost engine + consolidated dashboard)
 
 Appended 2026-11-08 UTC. Every prior board above is preserved verbatim; nothing was overwritten,
