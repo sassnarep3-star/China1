@@ -1150,3 +1150,5 @@ Arena fixes this session to `arena/1388afb0-china1`; alternate branch naming is 
 | Independent audit of consolidated dashboard, source evidence, cost methodology and release status | in progress | arena-1388afb0 | `audit-2026-11-10/**`, append-only `COORDINATION.md` |
 
 Any needed shared portal changes will be claimed separately after examining current board and active sessions. Unknown case-specific taxes, eligibility and quotes cannot be verified without personal facts and remain unverified.
+- Initial claim: the remote fixed branch did not exist; `pull --rebase` against it failed, so the claim was rebased against `main` before the first push. No conflict or discarded work.
+- Completed-owner handoff: prior J4 and I5 are recorded done; no active owner of the consolidated verifier/portal was observed. Claiming a narrow integration follow-up for `integration/verify.py`, `integration/build.py`, generated `integration/review.html`, and generated `index.html` only, to close an audit-detected missing-row-citation check gap and publish audit limitations. Existing edition scopes remain untouched.
