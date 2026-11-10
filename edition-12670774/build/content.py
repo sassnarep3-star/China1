@@ -173,7 +173,7 @@ FLAGS = [
   "The board showed 6.6851 at 17:39:58 on 2026-11-10. Earlier editions are dated snapshots, not errors, but totals across editions are not comparable.", ["N02"]),
  ("F30", "Repo", "Older editions link to hosts that are neither government nor the institution concerned.",
   "Found by the line scan: a law-school mirror of the US Code, a news agency, an investment-promotion site and others. Listed on the audit page.", ["N13"]),
- ("F31", "Repo", "Pull requests #39, #45 and #51 are open, and several claims on the board have no commits for more than 60 minutes.",
+ ("F31", "Repo", "Pull requests #39 and #45 are open, and several claims on the board have no commits for more than 60 minutes.",
   "They belong to other sessions and were not touched.", ["N01"]),
  ("F32", "Costs", "Cost of documents (tax certificates, translations, notarisation, consular authentication or apostille, travel): blank.",
   "SAFE charges nothing for its approval; no official price list for the other items was opened.", ["N05", "N06"]),

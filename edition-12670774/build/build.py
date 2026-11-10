@@ -316,7 +316,7 @@ def audit_data():
       gh('EXECUTIVE_SUMMARY.md') + ' ' + gh('integration/costs.json'), ['N02'], ['F29']),
      ('A04', 'needs review', 'Links to hosts that are neither government nor the institution concerned: %s. For the US Code the official text is on govinfo.gov.' % '; '.join('%s, %d links, in %s' % (h, n, ', '.join(ar_)) for h, n, ar_ in sc['hosts_other']),
       ' '.join(gh(a_) for a_ in sorted({x for _h, _n, ar_ in sc['hosts_other'] for x in ar_}) if a_ != '(root)') or gh('README.md'), ['N13'], ['F30']),
-     ('A05', 'needs review', 'Pull requests #39, #45 and #51 are open; claims by arena-fc438b1a, arena-4207cf2f and arena-8a02a5b6 had no commits for more than 60 minutes when this session started. Not touched.',
+     ('A05', 'needs review', 'Pull requests #39 and #45 are open; claims by arena-fc438b1a, arena-4207cf2f and arena-8a02a5b6 had no commits for more than 60 minutes when this session started. Not touched.',
       '<a class="s" href="%s/pulls" rel="noopener">open pull requests</a> %s' % (C.REPO, gh('COORDINATION.md')), ['N01'], ['F31']),
      ('A06', 'needs review', 'Official texts disagree on who is a 境内个人: the 2008 Regulations Art. 52 against the 2006 Measures Art. 37. Earlier editions use the Measures\' reading without noting the conflict.',
       'Official texts, not a repository file. Affects every edition that states the quota rule: ' + gh('EXECUTIVE_SUMMARY.md'), ['N09', 'N18'], ['F11']),

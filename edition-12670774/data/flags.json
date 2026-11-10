@@ -287,7 +287,7 @@
   {
    "id": "F31",
    "group": "Repo",
-   "what": "Pull requests #39, #45 and #51 are open, and several claims on the board have no commits for more than 60 minutes.",
+   "what": "Pull requests #39 and #45 are open, and several claims on the board have no commits for more than 60 minutes.",
    "why": "They belong to other sessions and were not touched.",
    "sources": [
     "N01"

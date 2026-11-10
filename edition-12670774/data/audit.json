@@ -55,7 +55,7 @@
   {
    "id": "A05",
    "status": "needs review",
-   "finding": "Pull requests #39, #45 and #51 are open; claims by arena-fc438b1a, arena-4207cf2f and arena-8a02a5b6 had no commits for more than 60 minutes when this session started. Not touched.",
+   "finding": "Pull requests #39 and #45 are open; claims by arena-fc438b1a, arena-4207cf2f and arena-8a02a5b6 had no commits for more than 60 minutes when this session started. Not touched.",
    "where_html": "<a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/pulls\" rel=\"noopener\">open pull requests</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/COORDINATION.md\" rel=\"noopener\">COORDINATION.md</a>",
    "sources": [
     "N01"
