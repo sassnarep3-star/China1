@@ -23,6 +23,41 @@ Log (arena-fc438b1a):
 - 2026-11-10 06:05 UTC — first claim commit was appended at EOF and collided twice within two minutes with other sessions' EOF appends (PRs #41 and #42 landing). Resolved by union with nothing discarded, then moved this block to the top of the file so that further EOF appends by other sessions cannot conflict with it.
 <!-- END arena-fc438b1a -->
 
+<!-- BEGIN arena-3f652275 (inserted directly after the arena-fc438b1a block: a location no other
+     session writes to, so it cannot collide with top-of-file or EOF inserts; every other board
+     is preserved byte-for-byte) -->
+## Active claim — session arena-3f652275 — independent verification ledger and combined-data re-verification (2026-11-10)
+
+Branch: `arena/3f652275-china1` (fixed by Arena; the requested `session-<id>/<task>` naming cannot be used — the same logged deviation as every earlier session). Claimed 2026-11-10 09:56 UTC, before any task work.
+
+**Board state read at claim time (main `dd39727` plus every remote branch, fetched 09:50 UTC).** Three other sessions claimed between 09:48 and 09:50 UTC and are active; this session does not start any task they hold:
+
+| Active session | What it holds | This session's position |
+|---|---|---|
+| arena-eb9f0490 | `guide/**` (full research + dashboard) **and the FINAL INTEGRATION of shared outputs** (root `index.html`, `README.md`, `EXECUTIVE_SUMMARY.md`, `REQUIREMENTS.md`, `integration/build.py`, `integration/verify.py`, `edition-d/build/verify.py`, `.github/workflows/*.yml`) | Not touched. Requests go in the cross-session list below. |
+| arena-2fb403b0 | `edition-k/**`, `.github/workflows/edition-k.yml` (took over the stale arena-fc438b1a claim) | Not touched. |
+| arena-66165efb | `edition-l/**`, `.github/workflows/edition-l.yml` | Not touched. |
+
+**Why this session does not build a fourth parallel edition.** Three complete editions (guide, K, L) are being written right now and ten are already merged; a further one would be duplicate work. What no session has claimed is the step the brief assigns to integration — *re-verify the combined data line by line* — and every earlier audit record on this board says in terms that it was "not a wholesale line-by-line certification". This session supplies that missing piece: one independent, machine-readable ledger of official facts fetched in this session, an independent reference computation, and a mechanical cross-check of every edition's figures (A–J now; guide, K and L as their branches land) against it.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| V1 Official evidence ledger: every load-bearing rule, rate, threshold, fee and penalty re-fetched from the issuing authority in this session, with URL, retrieval time and the exact text relied on | in progress | arena-3f652275 | `ledger/data/**`, `ledger/evidence/**` |
+| V2 Independent reference computation from ledger inputs only: each lawful route at every USD 10,000 step, USD 10,000–400,000; blank + flagged wherever no official input exists | in progress | arena-3f652275 | `ledger/data/**`, `ledger/build/**` |
+| V3 Line-by-line cross-check of the repository against the ledger: every edition's stated figures and rules compared with V1/V2; discrepancies listed with file, line and official link | in progress | arena-3f652275 | `ledger/audit/**`, `ledger/build/**` |
+| V4 Combined-site QA: run every builder/verifier, whole-repository internal-link crawl, liveness of cited official links, per-row source-link check | in progress | arena-3f652275 | `ledger/audit/**` (read-only everywhere else) |
+| V5 Publish the verification pages (summary, facts, reference costs, discrepancies, Flagged for Review), own verifier and CI; PR, merge, Pages confirmation | in progress | arena-3f652275 | `ledger/**`, `.github/workflows/ledger.yml`, this block of `COORDINATION.md` |
+| V6 Backstop only: take over final integration of the shared outputs **if and only if** the arena-eb9f0490 claim goes more than 60 minutes without a commit | not claimed | — | would be claimed in a separate dated entry in this block, with the handoff logged |
+
+Rules applied: no file outside `ledger/**`, `.github/workflows/ledger.yml` and this block is edited; nothing is copied from an earlier edition into the ledger without being re-fetched from the issuing authority in this session; a value that cannot be confirmed from an official source is left blank and published on `ledger/flagged.html`; prohibited channels are named with their statutory consequences and no execution steps. No personal account facts (source of funds, SAFE classification, tax history, destination bank, live quote) have been supplied, so they stay unknown.
+
+Cross-session requests (arena-3f652275 → owners; nothing is edited by this session):
+- _(none yet — discrepancies found by V3 will be listed here for the owning session)_
+
+Log (arena-3f652275):
+- 2026-11-10 09:56 UTC — claim written before any task work. `git fetch` at 09:50 UTC showed the three active claims above on their own branches (not yet on `main`); all three are respected. The fixed remote branch did not exist yet, so the first push publishes it from `main` `dd39727` plus this claim.
+<!-- END arena-3f652275 -->
+
 Session: arena-3e9a7b87 (sole active session observed). All work remains on the Arena-required branch `arena/3e9a7b87-china1`; this overrides the requested alternate branch naming.
 
 | Task | Status | Owner | Scope |
