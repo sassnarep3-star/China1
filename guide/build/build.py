@@ -240,6 +240,7 @@ footer{max-width:1100px;margin:0 auto;padding:18px 16px 40px;color:var(--mut);fo
  table.stack td::before{content:attr(data-label);display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.03em;color:var(--mut)}
  table.stack td.num{text-align:left}
  table.tight{font-size:.8rem}table.tight th,table.tight td{padding:6px 5px}
+ table.tight .srcs{flex-direction:column;gap:0}table.tight .src{white-space:normal}table.tight .blank{white-space:normal}
 }
 """
 

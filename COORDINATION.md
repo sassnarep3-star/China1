@@ -49,12 +49,12 @@ Branch: `arena/eb9f0490-china1` (fixed by Arena; the requested `session-<id>/<ta
 
 | Task | Status | Owner | Exclusive file scope |
 |---|---|---|---|
-| EB-1 Repo review, line by line, against freshly fetched official sources; irregularity register | done — on branch, PR pending | arena-eb9f0490 | `guide/data/**`, `guide/audit/**` |
-| EB-2 Research: every lawful CNY→USD method, pros/cons, exact steps, China + US tax and penalty breakdown, each row re-fetched from an official source this session | done — on branch, PR pending | arena-eb9f0490 | `guide/data/**` |
-| EB-3 Cost estimate for every method at every USD 10,000 step, USD 10,000–400,000 (blank + flagged where no official input exists) | done — on branch, PR pending | arena-eb9f0490 | `guide/data/**`, `guide/build/**` |
-| EB-4 One clean dashboard: landing page + category subpages, mobile-first tables, Flagged for Review page | done — on branch, PR pending | arena-eb9f0490 | `guide/**` |
-| EB-5 Verifier + CI (arithmetic recomputation, per-row source links, blank/flag discipline, whole-repo broken-link crawl) | done — on branch, PR pending | arena-eb9f0490 | `guide/build/**`, `.github/workflows/guide.yml` |
-| EB-6 FINAL INTEGRATION of shared outputs: root `index.html` (landing page), `README.md`, `EXECUTIVE_SUMMARY.md`, `REQUIREMENTS.md`, and the minimum edits needed so the archived generators stop overwriting the root landing page (`integration/build.py`, `integration/verify.py`, `edition-d/build/verify.py`, `.github/workflows/*.yml`); PR, merge, Pages confirmation | in progress | arena-eb9f0490 | the shared files named in this row |
+| EB-1 Repo review, line by line, against freshly fetched official sources; irregularity register | done — merged in PR #55 | arena-eb9f0490 | `guide/data/**`, `guide/audit/**` |
+| EB-2 Research: every lawful CNY→USD method, pros/cons, exact steps, China + US tax and penalty breakdown, each row re-fetched from an official source this session | done — merged in PR #55 | arena-eb9f0490 | `guide/data/**` |
+| EB-3 Cost estimate for every method at every USD 10,000 step, USD 10,000–400,000 (blank + flagged where no official input exists) | done — merged in PR #55 | arena-eb9f0490 | `guide/data/**`, `guide/build/**` |
+| EB-4 One clean dashboard: landing page + category subpages, mobile-first tables, Flagged for Review page | done — merged in PR #55 | arena-eb9f0490 | `guide/**` |
+| EB-5 Verifier + CI (arithmetic recomputation, per-row source links, blank/flag discipline, whole-repo broken-link crawl) | done — merged in PR #55 | arena-eb9f0490 | `guide/build/**`, `.github/workflows/guide.yml` |
+| EB-6 FINAL INTEGRATION of shared outputs: root `index.html` (landing page), `README.md`, `EXECUTIVE_SUMMARY.md`, `REQUIREMENTS.md`, and the minimum edits needed so the archived generators stop overwriting the root landing page (`integration/build.py`, `integration/verify.py`, `edition-d/build/verify.py`, `.github/workflows/*.yml`); PR, merge, Pages confirmation | done — merged in PR #55, Pages built | arena-eb9f0490 | the shared files named in this row |
 
 Rules this session applies: archived editions (`docs/`, `dossier/`, `pages/`, `edition-b` … `edition-j`, `integration/`, `audit-*`) are preserved, not deleted and not re-certified; nothing from them is copied into `guide/` without being re-fetched from the official source in this session; any value that cannot be confirmed is left blank and listed on the Flagged for Review page.
 
@@ -79,7 +79,13 @@ Rules this session applies: archived editions (`docs/`, `dossier/`, `pages/`, `e
 - arena-eb204658 (`release-qa/`) and arena-a3b7884b (`exit-plan/`), and any later component: these were not on `main` when this integration was built, so they could not be linked without creating a broken link. **Standing permission:** once your component is on `main`, append one entry to `guide/data/archive.json`, run `python3 guide/build/build.py`, and commit the regenerated `guide/archive.html`. That single additive edit to `guide/` is allowed to any session; nothing else in `guide/` needs to change.
 - **Do not regenerate root `index.html` from `integration/build.py` or `edition-d/build/build.py` on an old base** — after this merge those generators write `legacy-portal.html`. Rebase first; additions to `integration/build.py` NAV/cards still work and land in `legacy-portal.html`.
 
-**Release.** PR and merge result: recorded below once created.
+**Release.**
+- PR: https://github.com/sassnarep3-star/China1/pull/55 — "Final integration: one clean guide as landing page, 19 methods priced to $400k, sources on every row" (`arena/eb9f0490-china1` → `main`), body lists summary, sources and all 22 flagged items.
+- Checks on the PR head `a15dda8`: guide, integration, edition-d, edition-e, edition-f, verify (×2) — all pass. Merge state CLEAN.
+- Merge result: **merged** 2026-11-10 10:17:09 UTC, merge commit `c1dc5abc509624be1ffa41c027b89a4fbc161e40`, no approval awaited (as instructed).
+- After merge on `main` @ `c1dc5ab`: all six verification workflows succeeded; "pages build and deployment" succeeded; Pages API `builds/latest` = `built` for commit `c1dc5ab`, no error.
+- Live check (fetched 2026-11-10 after the build): `https://sassnarep3-star.github.io/China1/index.html` serves "Home · China Money" (the new landing page); `guide/costs.html` and `guide/flagged.html` serve the new pages with all 22 flagged items. The bare root URL returned the previous portal once from the CDN cache immediately after the build; the same URL with a cache-busting query returned the new page.
+- Status of this claim: **complete**. `guide/**` stays owned by this session for corrections; the standing permission above (one additive entry in `guide/data/archive.json`) remains open to every session.
 <!-- END arena-eb9f0490 -->
 
 <!-- BEGIN arena-fc438b1a (placed at the top, not at EOF, so it cannot collide with the
