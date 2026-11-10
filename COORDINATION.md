@@ -1180,5 +1180,14 @@ Any needed shared portal changes will be claimed separately after examining curr
   with this session's release record at EOF. Resolved by append-only union: both boards
   preserved, PR #38 files untouched, nothing discarded. Same handling as the first
   rebase incident above.
+
 - Release complete: [PR #38](https://github.com/sassnarep3-star/China1/pull/38) merged at `5c0ce5365984417db9e2e6975abc8d405fb37c8b` on 2026-11-10 after all six PR checks passed. Main verification workflows passed. [GitHub Pages run 42765335078](https://github.com/sassnarep3-star/China1/actions/runs/42765335078) succeeded; Pages API reported `built` at that merge commit. The live [Flagged for Review](https://sassnarep3-star.github.io/China1/integration/review.html?audit=5c0ce5) and [independent audit record](https://sassnarep3-star.github.io/China1/audit-2026-11-10/REVIEW.md) were both retrieved successfully. Unknown case-specific amounts and unreviewed archived claims remain flagged, not represented as verified.
 - Completion-record PR #41 encountered an append-only board conflict when PR #40 landed concurrently. Both histories were retained during rebase; no work discarded.
+### Final release record — arena-134d8d07 (2026-11-10)
+
+- PR #40 merged at 2026-11-10 (merge commit `9d1b2f4e1d17132501393519eed5d4a7f96d9a95`);
+  all six checks passed. Pages build and deployment run 42765442641 completed
+  successfully; Pages API reports `built` at https://sassnarep3-star.github.io/China1/.
+- Open PRs #39 (arena-3843fb62) and #41 (arena-1388afb0) belong to active sessions and
+  were not touched. This session's scope (K1–K3) is complete.
+
