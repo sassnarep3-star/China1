@@ -203,3 +203,18 @@ Charles Schwab Pricing Guide for Individual Investors: "Wire transfer: Incoming 
 - 第五十一条: 行政复议 / 行政诉讼.
 - 第五十二条(二): "境内个人，是指中国公民和在中华人民共和国境内连续居住满1年的外国人，外国驻华外交人员和国际组织驻华代表除外。"
   IRREGULARITY between official texts: the Regulation defines 境内个人 by residence (a foreigner resident 1 year continuously is 境内个人), while PBOC Decree [2006] No.3 art.37 and SAFE practice (Xiamen tips 之七 Q1-Q2) classify by identity document (passport holder = 境外个人, no USD 50,000 purchase quota).
+
+### S-SAFE-CARD  https://www.safe.gov.cn/safe/2017/1230/8130.html
+SAFE release 2017-12-30 on 汇发〔2017〕29号 (in force 2018-01-01): "一是个人持境内银行卡在境外提取现金，本人名下银行卡（含附属卡）合计每个自然年度不得超过等值10万元人民币；二是将人民币卡、外币卡境外提取现金每卡每日额度统一为等值1万元人民币；三是 … 超过年度额度的，本年及次年将被暂停持境内银行卡在境外提取现金；四是个人不得通过借用他人银行卡或出借本人银行卡等方式规避或协助规避境外提取现金管理。" "不改变个人便利化年度5万美元购汇额度，不影响个人正常提取现金和消费".
+(Full notice text: https://www.safe.gov.cn/safe/2017/1230/8116.html — not opened.)
+
+### S-TAX-FILING  http://shanghai.chinatax.gov.cn/zcfw/zcfgk/jckss/201307/t403993.html  (official-page excerpt returned by the search tool)
+国家税务总局 国家外汇管理局公告2013年第40号 (状态：部分有效): "一、境内机构和个人向境外单笔支付等值5万美元以上（不含等值5万美元，下同）下列外汇资金，除本公告第三条规定的情形外，均应向所在地主管税务机关进行税务备案：… （二）境外个人在境内的工作报酬，境外机构或个人从境内获得的股息、红利、利润、直接债务利息、担保费以及非资本转移的捐赠、赔偿、税收、偶然性所得等收益和经常转移收入". "四、境外个人办理服务贸易、收益和经常转移项下对外支付，应按照个人外汇管理的相关规定办理。"
+STA interpretation of 2021 No.19 https://www.chinatax.gov.cn/chinatax/n810341/n810760/c5166114/content.html (excerpt): "未超过等值5万美元的单笔对外支付无需进行税务备案。基于同一合同需要多次对外支付的，仅需在单笔支付首次超过等值5万美元时进行税务备案。"
+
+### S-IIT-LAW  https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html  (chunk 0 read)
+Individual Income Tax Law of the PRC (STA English text, updated 2018-08-31).
+- Art. 1: resident individual = domiciled in China, or not domiciled but resided in China for an aggregate of 183 days or more within a tax year; residents taxed on income "from within China or overseas"; non-residents on income from within China.
+- Art. 2: nine categories (salary and wages; personal services; author's remuneration; royalties; business operation; interest, dividends or bonuses; leasing of assets; transfer of assets; incidental income).
+- Art. 3: "(1) For comprehensive income … progressive tax rates ranging from 3 percent to 45 percent"; "(2) For income from business operation … 5 percent to 35 percent"; "(3) For income from interest, dividends or bonuses, income from leasing of assets, income from transfer of assets, and incidental income, a flat tax rate of 20 percent shall apply."
+- Art. 4(9): treaty exemptions.
