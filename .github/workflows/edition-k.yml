@@ -1,0 +1,27 @@
+name: edition-k
+
+on:
+  push:
+    paths: ["edition-k/**", ".github/workflows/edition-k.yml"]
+  pull_request:
+    paths: ["edition-k/**", ".github/workflows/edition-k.yml"]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build Edition K site from data
+        run: python3 edition-k/build/build.py
+      - name: Verify (independent recomputation, sources, links, blanks, determinism)
+        run: python3 edition-k/build/verify.py
+      - name: Fail if generated site is not committed
+        run: |
+          if [ -n "$(git status --porcelain edition-k/site)" ]; then
+            echo "edition-k/site is out of date with edition-k/data; run build.py and commit."
+            git status --porcelain edition-k/site
+            exit 1
+          fi

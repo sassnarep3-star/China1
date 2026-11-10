@@ -1,6 +1,48 @@
 # China Money
 
-**Live site:** https://sassnarep3-star.github.io/China1/ — the landing page is now a portal; the dashboard is Edition D.
+**Live site:** https://sassnarep3-star.github.io/China1/ — the landing page is a portal; the current, fully priced dashboard is [Edition K](https://sassnarep3-star.github.io/China1/edition-k/site/index.html).
+
+---
+
+## Edition K — priced all-in ladder and route audit (2026-11-10)
+
+**Open it:** https://sassnarep3-star.github.io/China1/edition-k/site/index.html
+
+Edition K does the one thing the earlier editions left blank: it puts a **computed
+all-in cost** against **every USD 10,000 step from USD 10,000 to USD 400,000**, on one
+rail, from first-party published inputs only — and refuses to fill the columns it cannot
+source.
+
+| Question | Answer | Basis |
+|---|---|---|
+| Is converting CNY to USD itself taxed? | No, in either country | China IIT Law Art. 2/3 lists nine income categories and exchange is not one (S10); 26 USC 988(e)(2) ignores personal-transaction FX gain up to $200 (S13) |
+| What is the FX conversion cost? | **0.20986%** one-way | Half of BOC's published bid-ask spread (6.6571 / 6.6851) against that pair's own midpoint, 2026-11-10 17:39:58 (S02) |
+| All-in at USD 10,000 | **$68.42 (0.684%)** | FX spread + commission + cable + a $15 US receiving fee |
+| All-in at USD 400,000 | **$915.77 (0.229%)** | Same formula; the CNY 260 commission cap makes the percentage fall with size |
+| What does an illegal route cost? | **30%–100% of the amount** | State Council FX Regulations Arts. 39 and 45, plus confiscation (S08) |
+| What does the USD 50,000 annual total do? | Gates documentation, not tax | Huifa [2007] No.1 Art. 2 with the above-total routes in Arts. 10/12/14 (S05) |
+
+**Pages:** overview · 40-row cost ladder with the formula decomposed · 21 routes with
+pros/cons · step-by-step procedures · tax, reporting and penalty ladder · prohibited
+routes (recognition only) · 20 flagged items · 19-source register with verbatim quotes.
+
+**Verification:** `python3 edition-k/build/verify.py` runs 2,465 checks — independent
+recomputation of all 40 priced rows, 40 comparison rows and 40 penalty rows; a
+byte-identical rebuild; a source link on every table row; internal link and anchor
+resolution; and an external-URL allowlist restricted to the 19 registered sources.
+Build and check run in CI via `.github/workflows/edition-k.yml`.
+
+**Known limits, published rather than smoothed over:** the reader's residency, fund
+character, holding bank and US bank are unknown, so no route is certified as available
+to them; HSBC's and Wise's all-in totals are blank because those providers publish no
+spread or fixed fee for this corridor; correspondent-bank charges are excluded because no
+first-party schedule was found. See `edition-k/site/flagged.html` and
+`edition-k/audit/REPO_AUDIT.md`.
+
+**Cross-check against Edition D:** Edition D independently derived a one-way FX margin
+of 0.2104% from a different BOC snapshot (669.29 / 666.48). Edition K derives 0.20986%
+from a later snapshot. Two independent derivations agreeing to within 0.26% of each other
+is the strongest evidence in this repository that the conversion-cost method is right.
 
 ---
 

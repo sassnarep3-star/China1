@@ -83,6 +83,7 @@ NAV = [
     ("index.html", "Overview"), ("integration/costs.html", "Cost ladder"),
     ("integration/methods.html", "Methods & steps"), ("integration/tax.html", "Tax & reporting"),
     ("integration/evidence.html", "Sources"), ("integration/review.html", "Flagged for Review"),
+    ("edition-k/site/index.html", "Edition K dashboard"),
     ("edition-j/site/index.html", "Edition J dashboard"),
     ("edition-i/site/index.html", "Edition I dashboard"),
 ]
@@ -154,6 +155,7 @@ def build_index(rows):
         ("integration/costs.html", "40-amount cost ladder", "Amount-specific BOC and HSBC sender-fee scenarios; unknown all-in values stay blank."),
         ("integration/methods.html", "43 candidates, steps, pros & cons", "Personal, bank/provider, business, adjacent and rejected options; every row has primary-source links."),
         ("edition-h/site/costs.html", "Every method × every amount", "Edition H's 1,720 rows and downloadable CSV, including per-transaction formulas and unavailable routes."),
+        ("edition-k/site/index.html", "Edition K — priced all-in ladder", "21 routes, 40 amounts, one rail priced end-to-end from published board and tariff data, 19 first-party sources, 20 open items published."),
         ("edition-j/site/index.html", "Edition J — 2026-11-10 comprehensive dashboard", "21 methods plus executive summary, 10 ladders × 40 targets, mobile-friendly tables, tax-penalty breakdown, 21 verified sources."),
         ("edition-i/site/index.html", "Edition I — 2026-11-10 verified refresh", "21 methods with pros and cons, 10 cost ladders × 40 targets, tax and penalty breakdown, 20-source register."),
         ("integration/tax.html", "Tax & U.S. reporting", "Separate underlying tax, personal FX gain, FBAR/FATCA, gifts and penalty exposure."),
@@ -174,6 +176,7 @@ def build_index(rows):
 <h2>Recommended order of work</h2><ol class="steps"><li>Classify each tranche by its true source and confirm the bank's individual-FX identity classification.</li><li>Collect transaction-amount source evidence and applicable PRC tax records. Do not relabel savings as salary, trade, a gift or a dividend.</li><li>Use the matching entitlement: current income, pre-emigration property, inheritance, property sale, insurance, unused prior conversion, or genuine business transaction.</li><li>Only then compare same-time executable BOC, HSBC and eligible provider quotes, including FX and every downstream charge.</li><li>Keep purchase slips, SWIFT/receipt records and tax evidence; reconcile U.S. worldwide-income, FBAR/FATCA and any Form 3520 duties.</li></ol><p>{links(['S02','S03','S04','S05','S14','S18','S20','S37','S40'])}</p>
 <h2>Preserved research archive</h2><p>Edition H is the latest broad catalog. Older editions are preserved for traceability and can contain stale or conflicting claims; inclusion is not re-certification.</p><div class="archive">'''
     archive = [
+        ("edition-k/site/index.html", "Edition K — 2026-11-10 priced all-in ladder and route audit"),
         ("edition-j/site/index.html", "Edition J — 2026-11-10 comprehensive CNY→USD dashboard"),
         ("edition-h/site/index.html", "Edition H — latest 43-candidate dashboard"),
         ("edition-i/site/index.html", "Edition I — 2026-11-10 verified refresh (21 methods, 20 sources)"),
@@ -241,7 +244,7 @@ def build_tax():
 
 def build_review():
     rows = [[e(a), e(b), links(c)] for a,b,c in FLAGS]
-    body = f'''<h1>Flagged for Review</h1><p><a href="../audit-2026-11-10/REVIEW.md">Independent audit record and verification scope</a></p><div class="notice"><strong>These items are published and non-blocking.</strong> Unverified values stay blank. A citation verifies the cited rule or provider term, not personal eligibility, a bank's acceptance, or an all-in price.</div>{table(["Flag", "Finding / disposition", "Official / primary sources"], rows)}<h2>Detailed inherited review registers</h2><p><a href="../edition-j/site/flagged.html">Edition J — 18 flags (F01–F18)</a> · <a href="../edition-j/audit/REPO_AUDIT.md">Edition J repository audit (A01–A12)</a> · <a href="../edition-h/site/flagged.html">Edition H — 52 flags</a> · <a href="../edition-i/site/flagged.html">Edition I — 17 flags (F01–F17)</a> · <a href="../edition-h/site/repo-review.html">Edition H repository audit</a> · <a href="../edition-i/audit/REPO_AUDIT.md">Edition I repository audit (A01–A12)</a> · <a href="../edition-g/docs/flagged.html">Edition G flags</a> · <a href="../edition-f/site/flagged.html">Edition F flags</a> · <a href="../edition-d/docs/pages/flagged.html">Edition D flags</a></p>'''
+    body = f'''<h1>Flagged for Review</h1><p><a href="../audit-2026-11-10/REVIEW.md">Independent audit record and verification scope</a></p><div class="notice"><strong>These items are published and non-blocking.</strong> Unverified values stay blank. A citation verifies the cited rule or provider term, not personal eligibility, a bank's acceptance, or an all-in price.</div>{table(["Flag", "Finding / disposition", "Official / primary sources"], rows)}<h2>Detailed inherited review registers</h2><p><a href=\"../edition-k/site/flagged.html\">Edition K — 20 flags (F01–F20)</a> · <a href=\"../edition-k/audit/REPO_AUDIT.md\">Edition K repository audit (A01–A12)</a> · <a href="../edition-j/site/flagged.html">Edition J — 18 flags (F01–F18)</a> · <a href="../edition-j/audit/REPO_AUDIT.md">Edition J repository audit (A01–A12)</a> · <a href="../edition-h/site/flagged.html">Edition H — 52 flags</a> · <a href="../edition-i/site/flagged.html">Edition I — 17 flags (F01–F17)</a> · <a href="../edition-h/site/repo-review.html">Edition H repository audit</a> · <a href="../edition-i/audit/REPO_AUDIT.md">Edition I repository audit (A01–A12)</a> · <a href="../edition-g/docs/flagged.html">Edition G flags</a> · <a href="../edition-f/site/flagged.html">Edition F flags</a> · <a href="../edition-d/docs/pages/flagged.html">Edition D flags</a></p>'''
     (OUT / "review.html").write_text(shell("integration/review.html", "Flagged for Review", body), encoding="utf-8")
 
 

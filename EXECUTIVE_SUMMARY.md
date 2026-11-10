@@ -1,4 +1,39 @@
-# Executive summary — final integration
+# Executive summary
+
+## Edition K (2026-11-10) — what the numbers actually are
+
+**The one-sentence answer.** There is no tax on converting CNY into USD in either
+country; the real cost of a lawful bank conversion is about **0.23% at USD 400,000 and
+0.68% at USD 10,000**, and the five- and six-figure numbers people call "conversion
+penalties" are either a genuine tax on a genuine gain or a statutory fine for using an
+illegal channel.
+
+| The question | The verified answer | Source |
+|---|---|---|
+| Does China tax the exchange itself? | No. The IIT Law taxes nine listed categories of income; currency exchange is not one. 20% flat applies to asset-transfer income and interest/dividends, 3%–45% to salary. | [IIT Law](https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html) |
+| Does the US tax it? | No tax on moving your own after-tax principal; personal-transaction FX gain is not recognised up to USD 200. | [26 USC §988(e)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm) |
+| What is the FX conversion cost? | 0.20986% one-way, measured from BOC's own two quotes on one snapshot. | [BOC board](https://www.boc.cn/sourcedb/whpj/index.html) |
+| All-in at USD 10,000 / 100,000 / 400,000 | **USD 68.42 (0.684%) / 286.19 (0.286%) / 915.77 (0.229%)** | [Cost ladder](edition-k/site/costs.html) |
+| Does the USD 50,000 annual total mean I cannot move USD 400,000? | No. It is the ID-only convenience tier; above it the same bank processes the transfer against genuine-transaction documents. | [Huifa [2007] No.1](https://www.safe.gov.cn/safe/2007/0105/5320.html) |
+| What is the real penalty risk? | 30% of the amount for evasion or disguised FX trading, 30%–100% where serious, plus confiscation — only on prohibited routes. | [State Council Order 532](https://www.gov.cn/flfg/2008-08/06/content_1066336.htm) |
+| What must I file in the US? | FBAR above USD 10,000 aggregate; Form 8938 above its thresholds; Form 3520 above USD 100,000 of gifts; Form 1116 for the credit. | [IRS FBAR](https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar) |
+
+**The decision order that follows from it.** (1) Classify the money by its true source —
+that, not US citizenship, decides which route exists. (2) If it is current income or a
+documented entitlement (emigrant transfer, inheritance), use the matching approval route;
+this is the only thing that solves USD 400,000 rather than USD 50,000. (3) Price the
+executed transfer, not the headline rate, and expect roughly 0.2%–0.7% all-in. (4) File
+the four US reports. (5) Do not use a prohibited route: it is the only way to turn a
+0.2% problem into a 30%–100% one.
+
+**What remains unknown and is therefore flagged, not assumed:** residency and immigration
+status, the character and source of the funds, the holding bank, the destination bank,
+and HSBC's and Wise's all-in prices. Twenty items are published on the Edition K
+[Flagged for review](edition-k/site/flagged.html) page.
+
+---
+
+## Prior executive summary (final integration, preserved)
 
 **Decision date:** 2026-11-10 · **Reader:** a US citizen moving funds from a Chinese bank to USD · **Currency controls depend on immigration/residence and the money’s source, not US citizenship alone.**
 
