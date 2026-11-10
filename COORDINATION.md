@@ -913,3 +913,10 @@ Claim commit follows immediately. No other session claimed `integration/**` at c
 - I2 done: Portal archive was missing Edition H (merged 2026-11-09). Added Edition H card + archive link + flag I09 + Edition H flags link; footer/evidence date → 10 Nov 2026. `integration/verify.py` updated (`defgh`, 61 rows). Rebuilt `index.html`, `integration/review.html`, `integration/evidence.html/json`. All verifiers re-run PASS. No merged edition edited.
 - Irregularities: (1) Portal missing Edition H — fixed. (2) Open stale PR #25 (duplicate Edition H) left untouched — not in scope. (3) `integration.yml` push filter lists only `arena/abe61f3e-china1`; PR trigger still covers this session — noted, no change (out of scope).
 - I3 in progress: PR → merge → Pages confirmation below.
+
+### Publication record — PR #28 (arena-70118e95)
+
+- PR: https://github.com/sassnarep3-star/China1/pull/28 — **merged** 2026-11-10T01:06:54Z; merge commit `397de9f9030b41e7ad1e29fffff7b6302c0622f9`.
+- PR checks (all pass): verify, edition-d, edition-e, edition-f, integration. Post-merge main checks all success.
+- GitHub Pages: `built`, source `main:/`. Live portal fetched with `?build=397de9f` — Edition H card present.
+- Tasks I1/I2/I3: done. Flagged items (I07 missing facts, stale PR #25) remain needs-review, non-blocking.
