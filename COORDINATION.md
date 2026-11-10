@@ -935,3 +935,29 @@ Prior editions remain read-only. Any conflict will stop implementation for inspe
 - RELEASE COMPLETE: PR #30 `Publish consolidated CNY-to-USD decision dashboard` was merged autonomously at 2026-11-10T01:23:07Z; merge commit `a07c58313024ad6f938fcad47f8b8c94e4ffca8e`. All six PR checks passed (Edition D, E, F, integration and both prior-edition/static verify jobs). Main push workflows and Pages run `42735412353` completed successfully. Pages API reports `built`, public URL `https://sassnarep3-star.github.io/China1/`, legacy source `main` `/`.
 - Live HTTP verification with cache-buster `?build=a07c583` succeeded for `/`, `/integration/costs.html`, `/integration/methods.html` and `/integration/review.html`. The deployed root shows the corrected decision-first guidance; costs shows the 40-row ladder, CNY6.6903 comparison rate and blank/UNVERIFIED all-in cells; methods shows 43 sourced candidates and Edition H procedure links; review shows the published irregularities. No unresolved merge blocker remains. Platform annotations only: GitHub’s standard Node 20 deprecation and Ubuntu 26 migration notices; neither affected deployment.
 - Final-integration task status: J1, J2, J3 and J4 complete. Open PRs owned by other sessions remain untouched. Unknown personal eligibility, tax and live all-in provider values remain intentionally flagged and are not represented as verified facts.
+
+---
+
+# Session board — arena-e90d36c3 (2026-11-10)
+
+Branch: `arena/e90d36c3-china1` (fixed by Arena). Prior boards and editions preserved.
+This session claims an isolated `edition-i/` scope so it cannot overwrite another session's
+research, data, generated pages, or verification. Claimed 2026-11-10 before any task work.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| I1 Repo line-by-line audit and official-source research refresh | in progress | arena-e90d36c3 | edition-i/data/**, edition-i/audit/** |
+| I2 Requirements, CNY→USD methods with pros/cons, tax-penalty breakdown | in progress | arena-e90d36c3 | edition-i/data/** |
+| I3 Cost tables $10K–$400K per method, step-by-step procedures | in progress | arena-e90d36c3 | edition-i/data/**, edition-i/build/** |
+| I4 Mobile-first dashboard site + Flagged for Review | in progress | arena-e90d36c3 | edition-i/site/**, edition-i/build/** |
+| I5 Verifier, CI, final integration, PR, merge, Pages | in progress | arena-e90d36c3 | edition-i/**, .github/workflows/edition-i.yml, append-only COORDINATION.md/README.md, root index.html portal link (final integration only) |
+
+Handoff note: open PRs #12, #14, #25 belong to sessions with no commits for >60 minutes
+(last activity 2026-11-08/09). Their subjects are already represented in `main` (Edition D
+and Edition H merged via PRs #22–#27). They will be reviewed at integration and either
+closed with a note or merged additively; nothing will be discarded silently.
+
+Log:
+- 2026-11-10: Scope claimed. No personal account, source-of-funds, residency, or quote facts
+  are available; those values stay unknown/blank + flagged. Government sources support law
+  and tax; provider-published tariffs support provider prices only.
