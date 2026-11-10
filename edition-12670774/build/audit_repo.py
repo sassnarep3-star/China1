@@ -41,6 +41,7 @@ CHECKS = {
 files = [f for f in subprocess.check_output(['git', 'ls-files'], text=True, cwd=ROOT).splitlines()
          if not f.startswith(OWN)]
 per_area = collections.OrderedDict(); per_file = []; hosts = collections.Counter(); host_kind = {}
+host_areas = collections.defaultdict(set)
 check_hits = {k: collections.defaultdict(lambda: collections.Counter()) for k in CHECKS}
 total_lines = 0; binary = 0
 for f in files:
@@ -61,6 +62,7 @@ for f in files:
             h = re.sub(r'^https?://', '', u).split('/')[0]
             if not re.fullmatch(r'[A-Za-z0-9.-]+\.[A-Za-z]{2,}(?::\d+)?', h): continue
             k = host_class(h); hosts[h.lower()] += 1; host_kind[h.lower()] = k
+            host_areas[h.lower()].add(area)
             if k == 'infrastructure': continue
             rec['urls'] += 1; a['urls'] += 1
             rec[k] += 1; a[k] += 1
@@ -72,7 +74,7 @@ out = {
     'scanned_commit': subprocess.check_output(['git', 'rev-parse', '--short', 'origin/main'], text=True, cwd=ROOT).strip(),
     'files_total': len(files), 'files_text': len(per_file), 'files_binary_or_skipped': binary, 'lines_total': total_lines,
     'areas': per_area,
-    'hosts_other': sorted(((h, c) for h, c in hosts.items() if host_kind[h] == 'other'), key=lambda x: -x[1]),
+    'hosts_other': sorted(((h, c, sorted(host_areas[h])) for h, c in hosts.items() if host_kind[h] == 'other'), key=lambda x: (-x[1], x[0])),
     'hosts_official_count': sum(1 for h in hosts if host_kind[h] == 'official'),
     'hosts_institution_count': sum(1 for h in hosts if host_kind[h] == 'institution'),
     'checks': {k: {val: dict(areas) for val, areas in sorted(v.items())} for k, v in check_hits.items()},

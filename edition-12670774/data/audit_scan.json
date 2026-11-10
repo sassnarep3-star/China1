@@ -1,14 +1,14 @@
 {
- "scanned_commit": "23b3265",
- "files_total": 436,
- "files_text": 428,
+ "scanned_commit": "9e13ecd",
+ "files_total": 458,
+ "files_text": 450,
  "files_binary_or_skipped": 8,
- "lines_total": 183472,
+ "lines_total": 187032,
  "areas": {
   ".github": {
-   "files": 10,
-   "text_files": 10,
-   "lines": 268,
+   "files": 12,
+   "text_files": 12,
+   "lines": 325,
    "urls": 0,
    "official": 0,
    "institution": 0,
@@ -17,7 +17,7 @@
   "(root)": {
    "files": 7,
    "text_files": 6,
-   "lines": 2212,
+   "lines": 2321,
    "urls": 115,
    "official": 79,
    "institution": 36,
@@ -76,6 +76,15 @@
    "official": 241,
    "institution": 13,
    "other": 3
+  },
+  "edition-abd04d5f": {
+   "files": 20,
+   "text_files": 20,
+   "lines": 3394,
+   "urls": 1414,
+   "official": 477,
+   "institution": 937,
+   "other": 0
   },
   "edition-b": {
    "files": 17,
@@ -207,26 +216,42 @@
  "hosts_other": [
   [
    "www.shanghaiinvest.com",
-   12
+   12,
+   [
+    "edition-b"
+   ]
   ],
   [
    "www.news.cn",
-   5
+   5,
+   [
+    "data",
+    "dossier",
+    "scripts"
+   ]
   ],
   [
    "www.law.cornell.edu",
-   4
+   4,
+   [
+    "edition-g",
+    "edition-h"
+   ]
   ]
  ],
- "hosts_official_count": 39,
- "hosts_institution_count": 16,
+ "hosts_official_count": 40,
+ "hosts_institution_count": 17,
  "checks": {
   "boc_usd_quote": {
+   "650.00": {
+    "edition-abd04d5f": 1
+   },
    "650.54": {
     "edition-i": 5,
     "edition-j": 5
    },
    "650.57": {
+    "edition-abd04d5f": 5,
     "edition-k": 1,
     "edition-l": 5
    },
@@ -296,11 +321,18 @@
     "edition-k": 2,
     "edition-l": 4
    },
+   "664.07": {
+    "edition-abd04d5f": 4
+   },
    "664.93": {
     "edition-l": 3
    },
+   "665.00": {
+    "edition-abd04d5f": 2
+   },
    "665.71": {
     "(root)": 1,
+    "edition-abd04d5f": 9,
     "edition-k": 6,
     "edition-l": 20
    },
@@ -339,8 +371,12 @@
    "667.11": {
     "edition-l": 2
    },
+   "668.08": {
+    "edition-abd04d5f": 4
+   },
    "668.51": {
     "(root)": 3,
+    "edition-abd04d5f": 9,
     "edition-k": 6,
     "edition-l": 32
    },
@@ -350,6 +386,7 @@
    },
    "669.03": {
     "(root)": 4,
+    "edition-abd04d5f": 3,
     "edition-i": 13,
     "edition-j": 21,
     "edition-l": 6,
@@ -382,6 +419,7 @@
     "edition-f": 3
    },
    "671.55": {
+    "edition-abd04d5f": 5,
     "edition-k": 1,
     "edition-l": 5
    },
@@ -434,6 +472,9 @@
    "673.50": {
     "pages": 1
    },
+   "673.75": {
+    "edition-abd04d5f": 3
+   },
    "674.04": {
     "edition-k": 1
    },
@@ -453,8 +494,14 @@
     "edition-k": 1,
     "edition-l": 1
    },
+   "680.00": {
+    "edition-abd04d5f": 1
+   },
    "680.28": {
     "edition-d": 3
+   },
+   "681.68": {
+    "edition-abd04d5f": 1
    },
    "683.07": {
     "edition-l": 3
@@ -463,8 +510,20 @@
     "edition-k": 2,
     "edition-l": 4
    },
+   "685.00": {
+    "edition-abd04d5f": 1
+   },
+   "685.05": {
+    "edition-abd04d5f": 4
+   },
    "686.00": {
     "pages": 1
+   },
+   "689.07": {
+    "edition-abd04d5f": 4
+   },
+   "689.61": {
+    "edition-abd04d5f": 1
    },
    "691.03": {
     "edition-f": 3
@@ -473,6 +532,7 @@
     "edition-f": 3
    },
    "692.54": {
+    "edition-abd04d5f": 5,
     "edition-k": 1,
     "edition-l": 5
    },
@@ -507,6 +567,9 @@
    },
    "697.06": {
     "edition-f": 2
+   },
+   "697.54": {
+    "edition-abd04d5f": 1
    }
   },
   "cny_per_usd_4dp": {
@@ -515,6 +578,7 @@
    },
    "6.6571": {
     "(root)": 2,
+    "edition-abd04d5f": 4,
     "edition-k": 9,
     "edition-l": 5
    },
@@ -524,6 +588,7 @@
     "edition-k": 1
    },
    "6.6711": {
+    "edition-abd04d5f": 2,
     "edition-k": 1,
     "edition-l": 12
    },
@@ -538,11 +603,13 @@
    },
    "6.6851": {
     "(root)": 2,
+    "edition-abd04d5f": 4,
     "edition-k": 14,
     "edition-l": 23
    },
    "6.6903": {
     "(root)": 6,
+    "edition-abd04d5f": 2,
     "edition-i": 7,
     "edition-j": 4,
     "edition-k": 1,
@@ -581,6 +648,7 @@
    },
    "20,573": {
     "(root)": 1,
+    "edition-abd04d5f": 5,
     "edition-b": 4,
     "edition-d": 2,
     "edition-g": 4,
@@ -647,6 +715,7 @@
    },
    "2026020619591971323": {
     "(root)": 3,
+    "edition-abd04d5f": 6,
     "edition-e": 4,
     "edition-h": 94,
     "edition-i": 9,
@@ -654,8 +723,12 @@
     "edition-l": 5,
     "integration": 6
    },
+   "2026] 42": {
+    "(root)": 1
+   },
    "2026] No. 42": {
     "(root)": 2,
+    "edition-abd04d5f": 6,
     "edition-h": 105,
     "edition-i": 15,
     "edition-j": 13,
@@ -672,6 +745,22 @@
   }
  },
  "files": [
+  {
+   "file": ".github/workflows/edition-12670774.yml",
+   "lines": 30,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": ".github/workflows/edition-abd04d5f.yml",
+   "lines": 27,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
   {
    "file": ".github/workflows/edition-e.yml",
    "lines": 18,
@@ -754,7 +843,7 @@
   },
   {
    "file": "COORDINATION.md",
-   "lines": 1544,
+   "lines": 1653,
    "urls": 30,
    "official": 23,
    "institution": 7,
@@ -1005,6 +1094,166 @@
    "lines": 78,
    "urls": 40,
    "official": 40,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-abd04d5f/README.md",
+   "lines": 31,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-abd04d5f/build/build.py",
+   "lines": 325,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-abd04d5f/build/content.py",
+   "lines": 351,
+   "urls": 31,
+   "official": 25,
+   "institution": 6,
+   "other": 0
+  },
+  {
+   "file": "edition-abd04d5f/build/inventory.py",
+   "lines": 27,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-abd04d5f/build/verify.py",
+   "lines": 192,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-abd04d5f/costs.html",
+   "lines": 1,
+   "urls": 935,
+   "official": 82,
+   "institution": 853,
+   "other": 0
+  },
+  {
+   "file": "edition-abd04d5f/data/costs.csv",
+   "lines": 41,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-abd04d5f/data/costs.json",
+   "lines": 1284,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-abd04d5f/data/flags.json",
+   "lines": 158,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-abd04d5f/data/methods.json",
+   "lines": 345,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-abd04d5f/data/repo_inventory.json",
+   "lines": 384,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-abd04d5f/data/sources.json",
+   "lines": 219,
+   "urls": 31,
+   "official": 25,
+   "institution": 6,
+   "other": 0
+  },
+  {
+   "file": "edition-abd04d5f/flagged.html",
+   "lines": 1,
+   "urls": 28,
+   "official": 19,
+   "institution": 9,
+   "other": 0
+  },
+  {
+   "file": "edition-abd04d5f/index.html",
+   "lines": 1,
+   "urls": 51,
+   "official": 30,
+   "institution": 21,
+   "other": 0
+  },
+  {
+   "file": "edition-abd04d5f/methods.html",
+   "lines": 1,
+   "urls": 43,
+   "official": 32,
+   "institution": 11,
+   "other": 0
+  },
+  {
+   "file": "edition-abd04d5f/review.html",
+   "lines": 1,
+   "urls": 23,
+   "official": 10,
+   "institution": 13,
+   "other": 0
+  },
+  {
+   "file": "edition-abd04d5f/sources.html",
+   "lines": 1,
+   "urls": 31,
+   "official": 25,
+   "institution": 6,
+   "other": 0
+  },
+  {
+   "file": "edition-abd04d5f/steps.html",
+   "lines": 1,
+   "urls": 58,
+   "official": 46,
+   "institution": 12,
+   "other": 0
+  },
+  {
+   "file": "edition-abd04d5f/style.css",
+   "lines": 29,
+   "urls": 0,
+   "official": 0,
+   "institution": 0,
+   "other": 0
+  },
+  {
+   "file": "edition-abd04d5f/taxes.html",
+   "lines": 1,
+   "urls": 183,
+   "official": 183,
    "institution": 0,
    "other": 0
   },

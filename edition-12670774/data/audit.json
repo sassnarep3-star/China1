@@ -1,8 +1,8 @@
 {
- "scanned_commit": "23b3265",
- "files_total": 436,
- "files_text": 428,
- "lines_total": 183472,
+ "scanned_commit": "9e13ecd",
+ "files_total": 458,
+ "files_text": 450,
+ "lines_total": 187032,
  "findings": [
   {
    "id": "A01",
@@ -19,7 +19,7 @@
   {
    "id": "A02",
    "status": "needs review",
-   "finding": "These areas cite Yinfa [2021] No. 237 as the virtual-currency rule and never mention Yinfa [2026] No. 42, which repealed it on 2026-02-06: data, dossier, edition-b, edition-c, edition-d, edition-f, edition-g, scripts. The prohibition continues, so the conclusion stands.",
+   "finding": "By the line scan, these areas cite Yinfa [2021] No. 237 as the virtual-currency rule and never mention Yinfa [2026] No. 42, which repealed it on 2026-02-06: data, dossier, edition-b, edition-c, edition-d, edition-f, edition-g, scripts. The prohibition continues, so the conclusion stands.",
    "where_html": "<a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/data\" rel=\"noopener\">data</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/dossier\" rel=\"noopener\">dossier</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/edition-b\" rel=\"noopener\">edition-b</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/edition-c\" rel=\"noopener\">edition-c</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/edition-d\" rel=\"noopener\">edition-d</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/edition-f\" rel=\"noopener\">edition-f</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/edition-g\" rel=\"noopener\">edition-g</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/scripts\" rel=\"noopener\">scripts</a>",
    "sources": [
     "N19"
@@ -31,7 +31,7 @@
   {
    "id": "A03",
    "status": "needs review",
-   "finding": "Several Bank of China snapshots coexist. Sell 669.03 is used in: (root), edition-i, edition-j, edition-l, integration. Sell 669.29 in: (root), assets, data, dossier, edition-d, edition-e, edition-f, edition-g, edition-h, edition-l, pages, scripts. Sell 668.51, the board at 17:39:58 on 2026-11-10, in: (root), edition-k, edition-l. Totals across editions are therefore not comparable.",
+   "finding": "Several Bank of China snapshots coexist. Sell 669.03 appears in: (root), edition-abd04d5f, edition-i, edition-j, edition-l, integration. Sell 669.29 appears in: (root), assets, data, dossier, edition-d, edition-e, edition-f, edition-g, edition-h, edition-l, pages, scripts. Sell 668.51, the board at 17:39:58 on 2026-11-10, appears in: (root), edition-abd04d5f, edition-k, edition-l. The root summary computes at 6.6903. Totals across editions are therefore not comparable.",
    "where_html": "<a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/EXECUTIVE_SUMMARY.md\" rel=\"noopener\">EXECUTIVE_SUMMARY.md</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/integration/costs.json\" rel=\"noopener\">integration/costs.json</a>",
    "sources": [
     "N02"
@@ -43,8 +43,8 @@
   {
    "id": "A04",
    "status": "needs review",
-   "finding": "Links to hosts that are neither government nor the institution concerned: www.shanghaiinvest.com (12), www.news.cn (5), www.law.cornell.edu (4).",
-   "where_html": "<a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/edition-b\" rel=\"noopener\">edition-b</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/edition-f\" rel=\"noopener\">edition-f</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/edition-g\" rel=\"noopener\">edition-g</a>",
+   "finding": "Links to hosts that are neither government nor the institution concerned: www.shanghaiinvest.com, 12 links, in edition-b; www.news.cn, 5 links, in data, dossier, scripts; www.law.cornell.edu, 4 links, in edition-g, edition-h. For the US Code the official text is on govinfo.gov.",
+   "where_html": "<a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/data\" rel=\"noopener\">data</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/dossier\" rel=\"noopener\">dossier</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/edition-b\" rel=\"noopener\">edition-b</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/edition-g\" rel=\"noopener\">edition-g</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/edition-h\" rel=\"noopener\">edition-h</a> <a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/scripts\" rel=\"noopener\">scripts</a>",
    "sources": [
     "N13"
    ],
@@ -115,7 +115,7 @@
   {
    "id": "A10",
    "status": "confirmed",
-   "finding": "Form 3520 thresholds: USD 100,000 for individuals and estates; USD 20,573 for 2026 and USD 20,116 for 2025 for foreign corporations and partnerships. Re-read today; found in: (root), edition-b, edition-d, edition-g, edition-h, edition-j, edition-k, edition-l, integration.",
+   "finding": "Form 3520 thresholds: USD 100,000 for individuals and estates; USD 20,573 for 2026 and USD 20,116 for 2025 for foreign corporations and partnerships. Re-read today; found in: (root), edition-abd04d5f, edition-b, edition-d, edition-g, edition-h, edition-j, edition-k, edition-l, integration.",
    "where_html": "<a class=\"s\" href=\"https://github.com/sassnarep3-star/China1/blob/main/integration/evidence.json\" rel=\"noopener\">integration/evidence.json</a>",
    "sources": [
     "N03"
@@ -181,9 +181,9 @@
  "areas": [
   {
    "area": ".github",
-   "files": 10,
-   "text_files": 10,
-   "lines": 268,
+   "files": 12,
+   "text_files": 12,
+   "lines": 325,
    "urls": 0,
    "official": 0,
    "institution": 0,
@@ -193,7 +193,7 @@
    "area": "(root)",
    "files": 7,
    "text_files": 6,
-   "lines": 2212,
+   "lines": 2321,
    "urls": 115,
    "official": 79,
    "institution": 36,
@@ -258,6 +258,16 @@
    "official": 241,
    "institution": 13,
    "other": 3
+  },
+  {
+   "area": "edition-abd04d5f",
+   "files": 20,
+   "text_files": 20,
+   "lines": 3394,
+   "urls": 1414,
+   "official": 477,
+   "institution": 937,
+   "other": 0
   },
   {
    "area": "edition-b",
@@ -413,15 +423,27 @@
  "hosts_other": [
   [
    "www.shanghaiinvest.com",
-   12
+   12,
+   [
+    "edition-b"
+   ]
   ],
   [
    "www.news.cn",
-   5
+   5,
+   [
+    "data",
+    "dossier",
+    "scripts"
+   ]
   ],
   [
    "www.law.cornell.edu",
-   4
+   4,
+   [
+    "edition-g",
+    "edition-h"
+   ]
   ]
  ]
 }
