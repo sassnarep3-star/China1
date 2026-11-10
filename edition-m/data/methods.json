@@ -1,0 +1,403 @@
+{
+  "categories": [
+    {"id": "wire", "title": "Bank and provider transfers", "blurb": "Convert at a Chinese bank or licensed provider and send the money electronically to your own account."},
+    {"id": "approval", "title": "Routes for property, emigration and inheritance money", "blurb": "Capital-type money. Extra documents; two of the three need SAFE approval first."},
+    {"id": "small", "title": "Capped and physical channels", "blurb": "Lawful but limited by yearly or per-trip caps. Useful for small sums only."},
+    {"id": "none", "title": "Alternatives that avoid converting", "blurb": "Use the yuan where it is instead of moving it."}
+  ],
+  "methods": [
+    {
+      "id": "M01", "cat": "wire", "ladder": "boc",
+      "name": "Documented income: buy USD at your Chinese bank and wire it",
+      "short": "Bank wire (Bank of China tariff)",
+      "status": "Lawful with documents",
+      "who": "Passport holders (境外个人) whose yuan is lawful China-source current-account income such as salary, with proof of amount and tax vouchers.",
+      "cap": "No annual cap in the rule; the amount you can buy follows the amounts on your documents.",
+      "time": "",
+      "time_note": "No official processing time was found.",
+      "src": ["S01", "S14", "S32", "S30"],
+      "pros": [
+        {"t": "Lowest verified all-in cost from USD 20,000 upward: {{boc_pct_20k}} at USD 20,000 falling to {{boc_pct_400k}} at USD 400,000.", "src": ["S32", "S30", "S40"]},
+        {"t": "No yearly ceiling for a foreign passport holder; the rule ties the amount to documented income.", "src": ["S01"]},
+        {"t": "The full-amount option fixes the intermediary-bank cost at USD 25 per wire.", "src": ["S32"]}
+      ],
+      "cons": [
+        {"t": "Needs proof of source with amounts, including tax vouchers. Untaxed income must be regularised first.", "src": ["S01"]},
+        {"t": "The bank may refuse a transaction it doubts; it must explain why and how to appeal.", "src": ["S01"]},
+        {"t": "The board rate is indicative; the executed rate is whatever the bank's channel shows at that moment.", "src": ["S30"]}
+      ],
+      "steps": [
+        {"t": "Confirm how the bank classifies you. A foreign passport holder is a 境外个人 and has no USD 50,000 purchase quota, unless holding a Chinese permanent-residence ID (see M13).", "src": ["S02", "S14"]},
+        {"t": "Collect proof of where the yuan came from, showing amounts: for salary, the employment contract and pay records plus the tax voucher. The rule's wording is 有交易额的购汇资金来源材料（含税务凭证).", "src": ["S01"]},
+        {"t": "Get the tax voucher from the tax bureau. SAFE Xiamen lists two accepted forms: the 服务贸易等项目对外支付税务备案表 or a tax payment certificate (税收通用缴款书). Ask your bank which it wants for payments above USD 50,000.", "src": ["S14", "S16"]},
+        {"t": "Go to the bank that holds the yuan with your passport and the documents. The bank reviews them for authenticity and consistency.", "src": ["S01"]},
+        {"t": "Buy USD at the bank's selling rate (现汇卖出价). The board showed 668.51 yuan per USD 100 at 17:39:58 on 10 Nov 2026.", "src": ["S30"]},
+        {"t": "Instruct a telegraphic transfer (电汇) to your own US account. Bank of China charges 0.1% of the amount (minimum CNY 50, maximum CNY 260) plus CNY 150 cable fee, the same online as at the counter.", "src": ["S32", "S33"]},
+        {"t": "Ask for 全额到账 (full-amount arrival): plus USD 25 per wire, or USD 15 if the receiving bank keeps an account at BOC New York. Without it, intermediary banks' deductions are passed on at cost and are not published.", "src": ["S32"]},
+        {"t": "Your US institution credits the wire less its own incoming-wire fee: USD 15 at Chase and Bank of America, none at Schwab.", "src": ["S40", "S41", "S42"]},
+        {"t": "Keep the papers. The SAFE guide has banks keep their review records for 5 years and asks institutions and individuals to keep transaction documents for 5 years.", "src": ["S01"]},
+        {"t": "On the US side, check FBAR and Form 8938 filing for the Chinese account and work out any currency gain (see the tax page).", "src": ["S50", "S52"]}
+      ]
+    },
+    {
+      "id": "M02", "cat": "wire", "ladder": "hsbc",
+      "name": "Same route through HSBC China (Premier or Advance account)",
+      "short": "Bank wire (HSBC China tariff)",
+      "status": "Lawful with documents",
+      "who": "As M01, for customers of HSBC Bank (China). Premier needs CNY 500,000 average balance; Advance is offered only to specific groups since 18 Mar 2026.",
+      "cap": "As M01.",
+      "time": "",
+      "time_note": "No official processing time was found.",
+      "src": ["S35", "S01"],
+      "pros": [
+        {"t": "Published fee scale: 0.1% (minimum CNY 100, maximum CNY 500) plus CNY 120 cable.", "src": ["S35"]},
+        {"t": "Free for individual private-banking customers and for Premier Elite customers.", "src": ["S35"]}
+      ],
+      "cons": [
+        {"t": "Higher fee cap than Bank of China: CNY 500 against CNY 260.", "src": ["S35", "S32"]},
+        {"t": "Full-amount delivery in USD is not a fixed price: CNY 200 is collected up front and any shortfall is billed later.", "src": ["S35"]},
+        {"t": "HSBC China's exchange rate was not read, so its conversion margin is blank here.", "src": ["S35"]}
+      ],
+      "steps": [
+        {"t": "Prepare the same proof of source and tax vouchers as in M01; the foreign-exchange rule is the same at every bank.", "src": ["S01"]},
+        {"t": "Convert at HSBC China's quoted rate and instruct an outward telegraphic transfer.", "src": ["S35"]},
+        {"t": "Pay 0.1% of the amount (minimum CNY 100, maximum CNY 500) plus CNY 120 cable fee.", "src": ["S35"]},
+        {"t": "Choose who bears onward charges: SHA (deducted from the payment), BEN, or OUR. For full-amount USD delivery HSBC pre-collects CNY 200 and bills any shortfall later.", "src": ["S35"]},
+        {"t": "Your US institution applies its incoming-wire fee.", "src": ["S40", "S42"]}
+      ]
+    },
+    {
+      "id": "M03", "cat": "wire", "ladder": "wise",
+      "name": "Wise: pay in yuan by local bank transfer, receive USD in your own account",
+      "short": "Wise from CNY",
+      "status": "Lawful with documents",
+      "who": "People who are not mainland Chinese, who work or have worked in China, and who hold a Chinese tax record showing tax paid within the last 3 years.",
+      "cap": "CNY 300,000 per transfer from a bank app (CNY 50,000 via Alipay). Overall limit = salary after tax on the tax records you submit.",
+      "time": "Verification 1–2 working days; money reaches Wise in 0–1 working days; conversion up to 2 working days.",
+      "time_note": "",
+      "src": ["S37", "S38", "S39"],
+      "pros": [
+        {"t": "Cheapest verified option at USD 10,000: {{wise_pct_10k}}.", "src": ["S39"]},
+        {"t": "Wise states it converts at the mid-market rate and shows the fee up front.", "src": ["S38"]},
+        {"t": "Done online; documents are requested once, then again only when the limit is used up.", "src": ["S37"]}
+      ],
+      "cons": [
+        {"t": "Salary only in practice: the limit equals after-tax salary shown on tax records from the last 3 years.", "src": ["S37"]},
+        {"t": "Between {{wise_pct_400k}} and {{wise_pct_10k}} at every size, so dearer than a documented bank wire from USD 20,000 upward.", "src": ["S39", "S38"]},
+        {"t": "USD 400,000 needs at least {{wise_min_transfers_400k}} separate transfers because of the CNY 300,000 cap.", "src": ["S37"]},
+        {"t": "Paying in through Alipay costs about three times as much: CNY 1,312.27 against CNY 434.84 quoted for the same CNY 66,711.", "src": ["S39"]}
+      ],
+      "steps": [
+        {"t": "Check you qualify: not mainland Chinese, worked in China, tax record with tax paid in the last 3 years.", "src": ["S37"]},
+        {"t": "Open a personal Wise account and set up a CNY to USD transfer to an account in your own name. Transfers to other people are not allowed.", "src": ["S37"]},
+        {"t": "Upload your Chinese tax record. First-time verification takes 1–2 working days. Your overall limit is set from it.", "src": ["S37"]},
+        {"t": "Pay Wise from your own Chinese bank account by local transfer to the unique account details shown (branch 拉卡拉-备付金账户; choose 支付机构转账 if the app asks). Maximum CNY 300,000 per transfer.", "src": ["S37"]},
+        {"t": "Wise converts and pays out USD to your US account. Fee quoted for CNY 66,711: CNY 434.84.", "src": ["S39"]},
+        {"t": "Repeat until your limit is used. The limit does not expire; upload newer tax records to raise it.", "src": ["S37"]}
+      ]
+    },
+    {
+      "id": "M04", "cat": "wire", "ladder": "rmb",
+      "name": "Send the yuan itself abroad, then convert outside mainland China",
+      "short": "Cross-border RMB remittance",
+      "status": "Lawful with documents",
+      "who": "Foreign individuals remitting lawful China-source yuan income such as pay, under the central bank's 2018 notice.",
+      "cap": "None stated; the bank applies know-your-customer, know-your-business and due-diligence checks.",
+      "time": "",
+      "time_note": "No official processing time was found.",
+      "src": ["S23", "S24", "S32"],
+      "pros": [
+        {"t": "No conversion in China, so no Chinese bank dealing margin. The central bank's own example says it saved the conversion cost.", "src": ["S24"]},
+        {"t": "Explicitly permitted for a foreign individual's lawful yuan income.", "src": ["S23"]}
+      ],
+      "cons": [
+        {"t": "You need an account outside mainland China that accepts yuan; which institutions offer one was not researched.", "src": ["S23"]},
+        {"t": "The offshore conversion rate is set by the receiving institution and was not verified, so the total cost is blank.", "src": ["S24"]},
+        {"t": "Documents are still needed: the bank must be satisfied the income is lawful.", "src": ["S23"]}
+      ],
+      "steps": [
+        {"t": "Hold an account in your own name outside mainland China that can receive yuan.", "src": ["S23"]},
+        {"t": "Take your passport and proof of the income (contract, pay records, tax vouchers) to your Chinese bank and ask for a cross-border RMB remittance of lawful income under 银发〔2018〕3号.", "src": ["S23"]},
+        {"t": "Pay the remittance fee. Bank of China prices yuan and foreign-currency cross-border wires on the same line: 0.1% (CNY 50–260) plus CNY 150 cable, or CNY 80 to Hong Kong, Macau or Taiwan.", "src": ["S32"]},
+        {"t": "Convert to USD at the receiving institution. That rate is outside the sources read.", "src": ["S24"]}
+      ]
+    },
+    {
+      "id": "M13", "cat": "wire", "ladder": "quota",
+      "name": "Holders of a Chinese permanent-residence ID: USD 50,000 a year without documents",
+      "short": "Annual USD 50,000 quota (PR-ID holders)",
+      "status": "Lawful, capped",
+      "who": "Foreign nationals holding a 外国人永久居留身份证. Other foreign passport holders do not have this purchase quota.",
+      "cap": "USD 50,000 equivalent per person per calendar year; unused quota does not carry over.",
+      "time": "",
+      "time_note": "No official processing time was found.",
+      "src": ["S01", "S14", "S32"],
+      "pros": [
+        {"t": "Within the quota, ID alone is enough; it can be done at the counter or through e-banking.", "src": ["S01"]},
+        {"t": "Amounts above the quota can still go with documents (M01).", "src": ["S14"]}
+      ],
+      "cons": [
+        {"t": "USD 400,000 would take {{quota_years_400k}} calendar years on quota alone.", "src": ["S01"]},
+        {"t": "Splitting through other people's quotas is a violation and leads to the watch list.", "src": ["S01"]}
+      ],
+      "steps": [
+        {"t": "Confirm you hold a Chinese permanent-residence ID; the purchase quota applies to those holders.", "src": ["S01", "S14"]},
+        {"t": "Buy up to USD 50,000 in the calendar year with your ID at the counter or in e-banking.", "src": ["S01"]},
+        {"t": "Wire it to your own US account at the bank's tariff (Bank of China: 0.1%, CNY 50–260, plus CNY 150 cable).", "src": ["S32"]},
+        {"t": "Repeat in the next calendar year; quota resets on 1 January and unused quota lapses on 31 December.", "src": ["S14"]}
+      ]
+    },
+    {
+      "id": "M05", "cat": "approval", "ladder": "boc",
+      "name": "Proceeds from selling your mainland home",
+      "short": "Property-sale proceeds",
+      "status": "Lawful with documents",
+      "who": "Foreign individuals who sell a commercial home in mainland China, including former Chinese nationals who bought it after acquiring foreign nationality.",
+      "cap": "Sale price minus the taxes of this sale (your share if co-owned), and not more than the amount on the tax certificate.",
+      "time": "",
+      "time_note": "No official processing time was found.",
+      "src": ["S12", "S13", "S14"],
+      "pros": [
+        {"t": "Handled directly at the bank; the current SAFE guide lists bank documents only.", "src": ["S12", "S14"]},
+        {"t": "The whole after-tax price is remittable in one go.", "src": ["S12"]}
+      ],
+      "cons": [
+        {"t": "Title must already be transferred and the sale taxes paid before the bank will act.", "src": ["S12"]},
+        {"t": "The bank will not remit more than the amount recorded on the tax certificate.", "src": ["S12"]},
+        {"t": "An older rule still says SAFE approval is needed; current SAFE material says the bank handles it. See Flagged for Review.", "src": ["S02", "S14"]}
+      ],
+      "steps": [
+        {"t": "Sign the sale contract and complete the ownership transfer at the real-estate authority.", "src": ["S13", "S12"]},
+        {"t": "Pay the taxes on the sale at the local tax authority and get the proof of tax payment.", "src": ["S13"]},
+        {"t": "If the remittance exceeds USD 50,000, also obtain the Tax Filing Form for External Payments (服务贸易等项目对外支付税务备案表).", "src": ["S13", "S12"]},
+        {"t": "Bring to the bank: passport; the registered transfer contract and registration certificate; the tax voucher; a notarised power of attorney and the agent's ID if someone acts for you.", "src": ["S12"]},
+        {"t": "The bank checks three things: amount ≤ price minus this sale's taxes; amount ≤ the tax certificate figure; title already transferred.", "src": ["S12"]},
+        {"t": "Buy USD and wire it to your account; fees as in the Bank of China table.", "src": ["S32", "S30"]}
+      ]
+    },
+    {
+      "id": "M06", "cat": "approval", "ladder": "boc",
+      "name": "Emigrant asset transfer (移民财产转移)",
+      "short": "Emigrant transfer (SAFE approval)",
+      "status": "Needs SAFE approval",
+      "who": "People who moved abroad from mainland China and obtained foreign permanent residence or citizenship, for lawful assets they owned in China before obtaining it.",
+      "cap": "The approved amount; it may be sent at once or in instalments.",
+      "time": "SAFE: acceptance within 5 working days; decision within 20 working days, extendable once by 10.",
+      "time_note": "",
+      "src": ["S05", "S06", "S07", "S09"],
+      "pros": [
+        {"t": "Covers savings, sale proceeds and other lawful pre-emigration assets in one application.", "src": ["S07"]},
+        {"t": "SAFE charges no fee, and the old two-year staged schedule has been abolished.", "src": ["S07", "S06"]},
+        {"t": "Notarisation of property documents and agency papers is no longer required.", "src": ["S06"]}
+      ],
+      "cons": [
+        {"t": "In person, not online, at the SAFE branch of your former household-registration place.", "src": ["S07", "S09"]},
+        {"t": "Needs the household-registration cancellation certificate and a consular or Apostille-form proof of settlement abroad.", "src": ["S07"]},
+        {"t": "Assets that cannot be shown to be lawful are not accepted; large or suspicious cases are checked with police and judicial bodies.", "src": ["S05", "S07"]},
+        {"t": "The money must be wired to your own account in your country of residence; no cash.", "src": ["S10"]}
+      ],
+      "steps": [
+        {"t": "Turn the assets into yuan in your own name.", "src": ["S05"]},
+        {"t": "Prepare the file: written application with the 个人财产转移业务申请表; foreign passport or ID; proof of settlement abroad issued or authenticated by a Chinese embassy or consulate (or Apostille-form proof); the certificate that your household registration was cancelled; proof of income source and property rights; the tax certificate from the tax authority.", "src": ["S07"]},
+        {"t": "If someone will act for you, add an agency agreement signed by both of you and the agent's ID.", "src": ["S07"]},
+        {"t": "File in person at the SAFE branch for your former household-registration place.", "src": ["S09", "S07"]},
+        {"t": "SAFE accepts within 5 working days and decides within 20 working days. No fee. The result is a 资本项目外汇业务核准件.", "src": ["S07"]},
+        {"t": "Take the approval to a bank, buy USD and wire it straight to your own account in your country of residence, at once or in instalments within the approved amount.", "src": ["S05", "S06", "S10"]},
+        {"t": "Bank fees and conversion margin are as in the Bank of China table.", "src": ["S32", "S30"]}
+      ]
+    },
+    {
+      "id": "M07", "cat": "approval", "ladder": "boc",
+      "name": "Inherited assets transfer (继承财产转移)",
+      "short": "Inheritance transfer (SAFE approval)",
+      "status": "Needs SAFE approval",
+      "who": "Foreign citizens who lawfully inherit an estate in mainland China.",
+      "cap": "The approved amount; it may be sent at once or in instalments. Estates from different people can be combined in one application.",
+      "time": "SAFE: acceptance within 5 working days; decision within 20 working days, extendable once by 10.",
+      "time_note": "",
+      "src": ["S05", "S06", "S08", "S09"],
+      "pros": [
+        {"t": "Open to foreign citizens who never lived in China.", "src": ["S05"]},
+        {"t": "No SAFE fee; estates from several relatives can be filed together.", "src": ["S08", "S06"]}
+      ],
+      "cons": [
+        {"t": "Needs proof of inheritance such as an inheritance or will notarisation, plus the estate's property and tax documents.", "src": ["S08"]},
+        {"t": "Filed at the SAFE branch of the deceased's last household-registration place, in person.", "src": ["S09", "S08"]},
+        {"t": "The US side may require Form 3520 if the bequest exceeds USD 100,000 in a year.", "src": ["S51"]}
+      ],
+      "steps": [
+        {"t": "Obtain proof that you inherited: for example an inheritance notarisation or will notarisation.", "src": ["S08"]},
+        {"t": "Turn the inherited assets into yuan and collect the deceased's property-rights documents and the tax certificate.", "src": ["S05", "S08"]},
+        {"t": "Prepare your identity papers: foreign passport, ID of your country of residence, and proof of settlement there issued or authenticated by a Chinese embassy or consulate (or Apostille-form proof).", "src": ["S08"]},
+        {"t": "File the written application and 个人财产转移业务申请表 at the SAFE branch for the deceased's last household-registration place.", "src": ["S09", "S08"]},
+        {"t": "SAFE accepts within 5 working days and decides within 20 working days. No fee.", "src": ["S08"]},
+        {"t": "With the approval, buy USD at a bank and wire it to your own account in your country of residence. No cash withdrawal.", "src": ["S10", "S06"]},
+        {"t": "In the US, check whether Form 3520 Part IV applies to the bequest.", "src": ["S51"]}
+      ]
+    },
+    {
+      "id": "M08", "cat": "approval", "ladder": "boc",
+      "name": "Convert back yuan you originally bought with foreign currency",
+      "short": "Unused-yuan reconversion (24 months)",
+      "status": "Lawful with documents",
+      "who": "Foreign individuals holding yuan left over from their own earlier foreign-currency exchange, with the original exchange memo.",
+      "cap": "The unused part of what the memo shows. Without a memo: USD 500 a day, or USD 1,000 at airside counters before departure.",
+      "time": "",
+      "time_note": "No official processing time was found.",
+      "src": ["S01", "S02"],
+      "pros": [
+        {"t": "No income or tax documents: passport and the original exchange memo are enough.", "src": ["S01"]},
+        {"t": "Foreign currency you brought in and never converted can simply be sent back the way it came.", "src": ["S02"]}
+      ],
+      "cons": [
+        {"t": "The memo is valid for reconversion for 24 months from the exchange date.", "src": ["S01"]},
+        {"t": "Only covers yuan that came from your own earlier exchange, not yuan earned in China.", "src": ["S01"]}
+      ],
+      "steps": [
+        {"t": "Find the original exchange memos (原兑换水单) dated within the last 24 months.", "src": ["S01"]},
+        {"t": "Take your passport and the memos to the bank and convert the unused yuan back.", "src": ["S01"]},
+        {"t": "Remit the foreign currency from your foreign-currency account; a foreign individual does this on passport alone.", "src": ["S01", "S14"]},
+        {"t": "Foreign currency that was wired in and never converted can be returned by the same route on passport alone.", "src": ["S02"]}
+      ]
+    },
+    {
+      "id": "M09", "cat": "small", "ladder": "cash_usd",
+      "name": "USD banknotes carried out under a bank permit",
+      "short": "USD cash with permit",
+      "status": "Lawful, capped",
+      "who": "Anyone already entitled to buy the USD (see M01, M08 or M13). Not allowed for emigrant or inheritance transfers.",
+      "cap": "USD 10,000 per trip with a bank permit; USD 5,000 without. Withdrawal of USD cash: USD 10,000 a day.",
+      "time": "",
+      "time_note": "One trip per USD 10,000.",
+      "src": ["S01", "S32", "S60"],
+      "pros": [
+        {"t": "No wire or receiving-bank fee; Bank of China's permit fee is waived until 31 Dec 2026.", "src": ["S32"]},
+        {"t": "The cash selling rate equalled the spot selling rate on the board read.", "src": ["S30"]}
+      ],
+      "cons": [
+        {"t": "USD 400,000 would take {{cash_usd_trips_400k}} trips.", "src": ["S01"]},
+        {"t": "Cash is only the transport: you still need the right to buy the USD.", "src": ["S01"]},
+        {"t": "Above USD 10,000 a SAFE permit is given only for travel to a few kinds of destination.", "src": ["S01"]},
+        {"t": "US Customs: more than USD 10,000 must be reported on FinCEN Form 105; unreported cash can be seized.", "src": ["S60"]}
+      ],
+      "steps": [
+        {"t": "Buy the USD on a lawful basis first (documents as in M01 or a memo as in M08).", "src": ["S01"]},
+        {"t": "Withdraw USD cash: up to USD 10,000 equivalent a day on ID.", "src": ["S01"]},
+        {"t": "Carrying USD 5,000 or less: no permit. More than USD 5,000 and up to USD 10,000: get a 携带外汇出境许可证 from the bank. Bank of China lists CNY 10 per permit, free from 1 Apr 2025 to 31 Dec 2026.", "src": ["S01", "S32"]},
+        {"t": "Carry the permit with the cash when you leave; customs releases foreign cash within these limits.", "src": ["S01", "S20"]},
+        {"t": "On arrival in the US, file FinCEN Form 105 if you carry more than USD 10,000.", "src": ["S60"]}
+      ]
+    },
+    {
+      "id": "M10", "cat": "small", "ladder": "cash_rmb",
+      "name": "Yuan banknotes carried out, exchanged abroad",
+      "short": "RMB cash (CNY 20,000 per trip)",
+      "status": "Lawful, capped",
+      "who": "Any traveller.",
+      "cap": "CNY 20,000 per person per trip.",
+      "time": "",
+      "time_note": "One trip per CNY 20,000.",
+      "src": ["S19", "S20"],
+      "pros": [
+        {"t": "No documents and no Chinese bank fee.", "src": ["S19"]}
+      ],
+      "cons": [
+        {"t": "USD 400,000 would take {{cash_rmb_trips_400k}} trips.", "src": ["S19"]},
+        {"t": "The exchange rate outside China is not from any official source read, so the cost is blank.", "src": ["S19"]},
+        {"t": "Carrying more without declaring: warning, a fine of up to 20% of the excess, and the excess is sent back.", "src": ["S20"]}
+      ],
+      "steps": [
+        {"t": "Carry no more than CNY 20,000 per person on each exit.", "src": ["S19"]},
+        {"t": "Exchange the notes abroad. The rate is set by the exchanger and was not verified.", "src": ["S19"]}
+      ]
+    },
+    {
+      "id": "M11", "cat": "small", "ladder": "atm",
+      "name": "UnionPay debit card: cash withdrawals at ATMs abroad",
+      "short": "UnionPay ATM abroad",
+      "status": "Lawful, capped",
+      "who": "Holders of a bank card issued in mainland China.",
+      "cap": "CNY 100,000 per calendar year across all your cards; CNY 10,000 per card per day.",
+      "time": "",
+      "time_note": "About USD {{atm_usd_per_year}} a year at today's midpoint rate.",
+      "src": ["S15", "S32", "S34"],
+      "pros": [
+        {"t": "Works with the card alone: the rule sets amount caps and names no document requirement.", "src": ["S15"]},
+        {"t": "Published fee: CNY 12 plus 1% per withdrawal, at most CNY 112.", "src": ["S32", "S34"]}
+      ],
+      "cons": [
+        {"t": "USD 400,000 would take {{atm_years_400k}} calendar years.", "src": ["S15"]},
+        {"t": "{{atm_pct_10k}} in bank fees alone at USD 10,000, before the ATM owner's surcharge and the network exchange rate, neither of which was verified.", "src": ["S32"]},
+        {"t": "Going over the yearly cap suspends overseas withdrawals for that year and the next.", "src": ["S15"]},
+        {"t": "Using someone else's card, or lending yours, to get around the cap is prohibited.", "src": ["S15"]}
+      ],
+      "steps": [
+        {"t": "Use your own mainland-issued card. Limits: CNY 100,000 a calendar year over all your cards, CNY 10,000 per card per day.", "src": ["S15"]},
+        {"t": "Withdraw at an ATM abroad that takes UnionPay. Bank of China charges CNY 12 plus 1% of the amount, at most CNY 112 per withdrawal.", "src": ["S32", "S34"]},
+        {"t": "Check the screen for the ATM owner's surcharge before confirming.", "src": ["S32"]},
+        {"t": "Stop at the yearly cap; exceeding it blocks overseas withdrawals for the rest of that year and the next.", "src": ["S15"]}
+      ]
+    },
+    {
+      "id": "M12", "cat": "none", "ladder": "card",
+      "name": "Spend the yuan instead of moving it",
+      "short": "Card spending / use in China",
+      "status": "Not a conversion",
+      "who": "Anyone with a mainland-issued card or expenses payable in yuan.",
+      "cap": "No amount limit at fully-open merchant categories; USD 5,000 per transaction at amount-limited categories.",
+      "time": "",
+      "time_note": "Not applicable: nothing is converted.",
+      "src": ["S14"],
+      "pros": [
+        {"t": "Card purchases abroad for ordinary travel, shopping, lodging, medical or education costs have no amount limit and use no quota.", "src": ["S14"]},
+        {"t": "Nothing is converted to cash, so there is no wire or documentation step.", "src": ["S14"]}
+      ],
+      "cons": [
+        {"t": "It does not put USD in your US account.", "src": ["S14"]},
+        {"t": "Card network exchange rates and any issuer fee on purchases were not verified, so the cost is blank.", "src": ["S14"]}
+      ],
+      "steps": [
+        {"t": "Pay ordinary personal expenses abroad with the mainland card at merchants in the fully-open categories.", "src": ["S14"]},
+        {"t": "Keep single purchases at amount-limited merchant categories to USD 5,000 or less; prohibited categories are blocked.", "src": ["S14"]}
+      ]
+    }
+  ],
+  "prohibited": [
+    {
+      "id": "P01", "name": "Splitting, or using other people's USD 50,000 quotas",
+      "why": "The rules bar individuals from splitting to get round quota or authenticity checks, and from borrowing or lending quotas.",
+      "penalty": "Watch list for the listing year plus 2 more years (documents required for every exchange). If treated as evasion: fine up to 30% of the amount, 30%–100% in serious cases; criminal liability possible.",
+      "src": ["S01", "S04", "S14"]
+    },
+    {
+      "id": "P02", "name": "Underground banks and matched yuan-for-dollar swaps (地下钱庄)",
+      "why": "Private buying or selling of foreign exchange outside licensed institutions.",
+      "penalty": "Warning, confiscation of gains, fine up to 30% of the amount, 30%–100% in serious cases; criminal liability possible. Published cases: USD 3.331 million → fine CNY 2.157 million; USD 3.077 million → fine CNY 1.672 million; each entered in the central bank's credit system.",
+      "src": ["S04", "S21", "S22"]
+    },
+    {
+      "id": "P03", "name": "False or invalid documents to buy foreign exchange",
+      "why": "Obtaining foreign exchange with untrue or invalid transaction papers.",
+      "penalty": "The conversion is reversed; fine up to 30% of the amount, 30%–100% in serious cases; criminal liability possible. Submitting untrue documents alone: up to CNY 50,000 for an individual.",
+      "src": ["S04", "S05"]
+    },
+    {
+      "id": "P04", "name": "Buying crypto or stablecoins with yuan to cash out abroad",
+      "why": "Exchange between legal tender and virtual currency inside China is classed as illegal financial activity.",
+      "penalty": "Strictly prohibited and shut down under the 2026 notice; the notice names no fixed fine. Private foreign-exchange trading penalties (30%, up to 100%) may apply.",
+      "src": ["S25", "S04"]
+    },
+    {
+      "id": "P05", "name": "Carrying cash above the limits without declaring it",
+      "why": "More than CNY 20,000 in yuan, or foreign cash beyond the permit rules, taken out undeclared.",
+      "penalty": "China customs: warning, fine up to 20% of the excess, excess returned. Foreign-exchange rules: warning and up to 20% of the amount. US: unreported cash over USD 10,000 can be seized, with civil or criminal penalties.",
+      "src": ["S20", "S04", "S60"]
+    },
+    {
+      "id": "P06", "name": "Borrowing or lending bank cards for overseas cash withdrawals",
+      "why": "Using other people's cards to get round the CNY 100,000 yearly cash cap.",
+      "penalty": "Prohibited by the card-cash rule; exceeding the cap suspends overseas withdrawals for that year and the next. The release states no fine amount.",
+      "src": ["S15"]
+    }
+  ]
+}

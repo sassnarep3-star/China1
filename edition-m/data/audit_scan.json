@@ -1,0 +1,708 @@
+{
+ "scanned_commit": "dd39727",
+ "portal_sources": 26,
+ "portal_reread": 15,
+ "scanned_on": "2026-11-10",
+ "scope": "Every tracked text file outside edition-m/ (md, json, html, py, csv, yml, txt, css, js), read line by line.",
+ "files": 389,
+ "lines": 172119,
+ "by_area": [
+  {
+   "area": "(root)",
+   "files": 6,
+   "lines": 1850
+  },
+  {
+   "area": ".github",
+   "files": 8,
+   "lines": 219
+  },
+  {
+   "area": "assets",
+   "files": 3,
+   "lines": 188
+  },
+  {
+   "area": "audit-12b8fb19",
+   "files": 1,
+   "lines": 28
+  },
+  {
+   "area": "audit-2026-11-10",
+   "files": 1,
+   "lines": 25
+  },
+  {
+   "area": "data",
+   "files": 5,
+   "lines": 2077
+  },
+  {
+   "area": "docs",
+   "files": 9,
+   "lines": 411
+  },
+  {
+   "area": "dossier",
+   "files": 9,
+   "lines": 819
+  },
+  {
+   "area": "edition-b",
+   "files": 17,
+   "lines": 5616
+  },
+  {
+   "area": "edition-c",
+   "files": 31,
+   "lines": 5924
+  },
+  {
+   "area": "edition-d",
+   "files": 28,
+   "lines": 7715
+  },
+  {
+   "area": "edition-e",
+   "files": 35,
+   "lines": 32303
+  },
+  {
+   "area": "edition-f",
+   "files": 29,
+   "lines": 5970
+  },
+  {
+   "area": "edition-g",
+   "files": 71,
+   "lines": 47349
+  },
+  {
+   "area": "edition-h",
+   "files": 73,
+   "lines": 54300
+  },
+  {
+   "area": "edition-i",
+   "files": 19,
+   "lines": 1837
+  },
+  {
+   "area": "edition-j",
+   "files": 19,
+   "lines": 1622
+  },
+  {
+   "area": "integration",
+   "files": 12,
+   "lines": 1635
+  },
+  {
+   "area": "pages",
+   "files": 5,
+   "lines": 5
+  },
+  {
+   "area": "scripts",
+   "files": 8,
+   "lines": 2226
+  }
+ ],
+ "checks": [
+  {
+   "id": "K01",
+   "title": "Bank of China wire commission cap (CNY per wire)",
+   "read_today": [
+    "260"
+   ],
+   "src": [
+    "S32"
+   ],
+   "lines_matching_today": 919,
+   "other_values": [
+    {
+     "value": "200",
+     "lines": 24
+    },
+    {
+     "value": "220",
+     "lines": 3
+    },
+    {
+     "value": "250",
+     "lines": 1
+    }
+   ],
+   "examples": [
+    {
+     "where": "dossier/costs.html:30",
+     "value": "200",
+     "text": "<tr><td><b>Bank FX bid/ask spread (spot / 现汇)</b><br><span class=\"mono\" style=\"color:var(--muted)\">K1</span></td><td class=\"num\">0.42%</td><td>Derived from the Bank of China USD board on 2026-11-08: 现汇买入价 666.48 and 现汇卖出"
+    },
+    {
+     "where": "dossier/index.html:39",
+     "value": "200",
+     "text": "<p>Bank of China quoted USD at 666.48 (bid) and 669.29 (ask) CNY per 100 on 2026-11-08 <a class=\"src\" href=\"https://www.boc.cn/sourcedb/whpj/\" target=\"_blank\" rel=\"noopener\" title=\"Bank of China FX rate board (中国银行外汇牌价) "
+    },
+    {
+     "where": "edition-f/EXECUTIVE_SUMMARY.md:14",
+     "value": "220",
+     "text": "| $10,000 | $53.40 (0.5340%) | $38.83 (0.3883%) | ¥220.00 | blank | [BOC tariff](https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf), [BOC board](https://www.boc.cn/sourcedb/whpj/), [SkyRemit"
+    },
+    {
+     "where": "edition-g/docs/method-R01.html:36",
+     "value": "200",
+     "text": "<div class=\"table-wrap\" role=\"region\" aria-label=\"Cost grid\" tabindex=\"0\"><table><thead><tr><th>Target USD</th><th>Verified sender fee</th><th>FX cost</th><th>Downstream</th><th>Tax</th><th>All-in total</th><th>Official "
+    },
+    {
+     "where": "edition-g/docs/method-R01.html:36",
+     "value": "200",
+     "text": "<div class=\"table-wrap\" role=\"region\" aria-label=\"Cost grid\" tabindex=\"0\"><table><thead><tr><th>Target USD</th><th>Verified sender fee</th><th>FX cost</th><th>Downstream</th><th>Tax</th><th>All-in total</th><th>Official "
+    },
+    {
+     "where": "edition-g/docs/method-R01.html:36",
+     "value": "200",
+     "text": "<div class=\"table-wrap\" role=\"region\" aria-label=\"Cost grid\" tabindex=\"0\"><table><thead><tr><th>Target USD</th><th>Verified sender fee</th><th>FX cost</th><th>Downstream</th><th>Tax</th><th>All-in total</th><th>Official "
+    }
+   ]
+  },
+  {
+   "id": "K02",
+   "title": "Bank of China international cable fee (CNY)",
+   "read_today": [
+    "120",
+    "150",
+    "80"
+   ],
+   "src": [
+    "S32",
+    "S35"
+   ],
+   "lines_matching_today": 73,
+   "other_values": [
+    {
+     "value": "100",
+     "lines": 99
+    },
+    {
+     "value": "200",
+     "lines": 21
+    }
+   ],
+   "examples": [
+    {
+     "where": "audit-2026-11-10/REVIEW.md:14",
+     "value": "100",
+     "text": "| HSBC sender tariff | Items 2.2.4.1–2 list 0.1%, CNY 100 minimum and CNY 500 maximum plus CNY 120 cable for Premier and Advance. Other institution charges and account/service conditions apply. | [HSBC China tariff, effe"
+    },
+    {
+     "where": "edition-f/EXECUTIVE_SUMMARY.md:34",
+     "value": "100",
+     "text": "2. **Issuer fees:** BOC 0.1% min ¥50/max ¥260 + ¥150 cable; HSBC Premier/Advance 0.1% min ¥100/max ¥500 + ¥120 cable; SkyRemit ¥79 + observed markup. [BOC](https://pic.bankofchina.com/bocappd/pricelist/202511/P0202511106"
+    },
+    {
+     "where": "edition-f/build/build.py:322",
+     "value": "100",
+     "text": "<li>HSBC Premier/Advance local fee = clamp(0.001 × CNY principal, ¥100, ¥500) + ¥120 cable. HSBC FX spread/total blank.</li>"
+    },
+    {
+     "where": "edition-f/data/penalty_layers.json:31",
+     "value": "100",
+     "text": "\"value\": \"Premier/Advance: 0.1%, min CNY 100, max CNY 500 + CNY 120 cable; private-banking personal and Elite: CNY 0 local\","
+    },
+    {
+     "where": "edition-f/data/sources.json:457",
+     "value": "100",
+     "text": "\"evidence\": \"Read chunks 0–2. Items 2.2.4.1/2.2.4.2: private-banking personal clients free TT and cable; Premier and Advance 0.1% min CNY 100 max CNY 500 plus CNY 120 cable; Premier Elite/International free; USD full-del"
+    },
+    {
+     "where": "edition-f/data/sources.json:457",
+     "value": "200",
+     "text": "\"evidence\": \"Read chunks 0–2. Items 2.2.4.1/2.2.4.2: private-banking personal clients free TT and cable; Premier and Advance 0.1% min CNY 100 max CNY 500 plus CNY 120 cable; Premier Elite/International free; USD full-del"
+    }
+   ]
+  },
+  {
+   "id": "K03",
+   "title": "FBAR non-willful penalty, inflation-adjusted (USD)",
+   "read_today": [
+    "16,536"
+   ],
+   "src": [
+    "S58"
+   ],
+   "lines_matching_today": 20,
+   "other_values": [],
+   "examples": []
+  },
+  {
+   "id": "K04",
+   "title": "FBAR willful penalty floor, inflation-adjusted (USD)",
+   "read_today": [
+    "100,000",
+    "150,000",
+    "165,353"
+   ],
+   "src": [
+    "S58"
+   ],
+   "lines_matching_today": 22,
+   "other_values": [
+    {
+     "value": "120,000",
+     "lines": 2
+    },
+    {
+     "value": "130,000",
+     "lines": 1
+    },
+    {
+     "value": "132,900",
+     "lines": 1
+    }
+   ],
+   "examples": [
+    {
+     "where": "edition-c/data/summary.json:112",
+     "value": "130,000",
+     "text": "\"body\": \"A US citizen is taxed on worldwide income regardless of where the funds sit, so the income was already reportable in the year it arose and converting it now is not a second realisation. Publication 54 requires o"
+    },
+    {
+     "where": "edition-c/data/summary.json:112",
+     "value": "132,900",
+     "text": "\"body\": \"A US citizen is taxed on worldwide income regardless of where the funds sit, so the income was already reportable in the year it arose and converting it now is not a second realisation. Publication 54 requires o"
+    },
+    {
+     "where": "edition-d/docs/index.html:31",
+     "value": "120,000",
+     "text": "<div class=\"tablewrap\"><table class=\"data \"><thead><tr><th scope=\"col\">Finding</th><th scope=\"col\">Why</th><th scope=\"col\">Sources</th></tr></thead><tbody><tr><td>You are not taxed for converting</td><td>China charges ni"
+    },
+    {
+     "where": "edition-d/docs/pages/tax.html:51",
+     "value": "120,000",
+     "text": "<p>At USD 400,000, the lawful route costs $933. A single willful FBAR violation can be $200,000. A finding of evading FX control can be $120,000 to $400,000. The fee is not the risk.</p>"
+    }
+   ]
+  },
+  {
+   "id": "K05",
+   "title": "Form 3520 threshold for purported gifts from foreign entities (USD)",
+   "read_today": [
+    "20,116",
+    "20,573"
+   ],
+   "src": [
+    "S51"
+   ],
+   "lines_matching_today": 8,
+   "other_values": [
+    {
+     "value": "20,000",
+     "lines": 2
+    },
+    {
+     "value": "16,536",
+     "lines": 2
+    }
+   ],
+   "examples": [
+    {
+     "where": "dossier/flagged.html:57",
+     "value": "20,000",
+     "text": "<p>For clarity about what has been verified rather than merely asserted: the USD 50,000 annual figure, the USD 50,000 daily remittance line, the three-tier cash-carry permit ladder, the CNY 20,000 RMB cash limit, the CNY"
+    },
+    {
+     "where": "edition-b/EXECUTIVE-SUMMARY.md:32",
+     "value": "16,536",
+     "text": "| D. US reporting penalties | FBAR / Form 8938 / Form 3520 failure | **USD 16,536 non-willful, USD 165,353 or 50% willful, per report** | S19, S20 |"
+    },
+    {
+     "where": "edition-b/executive-summary.html:74",
+     "value": "16,536",
+     "text": "<tr><td>D. US reporting penalties</td><td>FBAR / Form 8938 / Form 3520 failure</td><td>**USD 16,536 non-willful, USD 165,353 or 50% willful, per report**</td><td>S19, S20</td></tr>"
+    },
+    {
+     "where": "scripts/build_site.py:681",
+     "value": "20,000",
+     "text": "<p>For clarity about what has been verified rather than merely asserted: the USD 50,000 annual figure, the USD 50,000 daily remittance line, the three-tier cash-carry permit ladder, the CNY 20,000 RMB cash limit, the CNY"
+    }
+   ]
+  },
+  {
+   "id": "K06",
+   "title": "Wise cap per transfer from a bank app (CNY)",
+   "read_today": [
+    "300,000",
+    "50,000"
+   ],
+   "src": [
+    "S37"
+   ],
+   "lines_matching_today": 12,
+   "other_values": [
+    {
+     "value": "100,000",
+     "lines": 2
+    }
+   ],
+   "examples": [
+    {
+     "where": "edition-e/build/make_data.py:77",
+     "value": "100,000",
+     "text": "{'id':'F04','severity':'medium','title':'Wise limit conflict','detail':'Current help lists CNY 300,000 bank-app / CNY 50,000 Alipay per transfer; an older blog says CNY 100,000. The help centre is preferred, but product "
+    },
+    {
+     "where": "edition-e/site/flagged.html:7",
+     "value": "100,000",
+     "text": "<main id=\"main\" class=\"wrap\"><h1>Flagged for review</h1><p class=\"lede\">Blank values, conflicts, excerpt-only evidence and inherited-edition issues. None is silently filled.</p><div class=\"tablewrap\"><table class=\"\"><the"
+    }
+   ]
+  },
+  {
+   "id": "K07",
+   "title": "Overseas card cash cap per calendar year (CNY)",
+   "read_today": [
+    "100,000",
+    "10万"
+   ],
+   "src": [
+    "S15"
+   ],
+   "lines_matching_today": 31,
+   "other_values": [
+    {
+     "value": "50,000",
+     "lines": 16
+    }
+   ],
+   "examples": [
+    {
+     "where": "data/sources.json:121",
+     "value": "50,000",
+     "text": "\"verifies\": \"Card cash-withdrawal caps (RMB 10,000/card/day, RMB 100,000/person/year) and that card spending abroad does not consume the USD 50,000 quota.\""
+    },
+    {
+     "where": "dossier/channels.html:36",
+     "value": "50,000",
+     "text": "<tr><td colspan=\"4\" style=\"padding:0;background:#fcfdff\"><details><summary>Detail, pros and cons — A5</summary><div class=\"inner\"><div><h4>Documents</h4><p>ID; documents above the daily line.</p></div><div><h4>Cost</h4><"
+    },
+    {
+     "where": "dossier/channels.html:36",
+     "value": "50,000",
+     "text": "<tr><td colspan=\"4\" style=\"padding:0;background:#fcfdff\"><details><summary>Detail, pros and cons — A5</summary><div class=\"inner\"><div><h4>Documents</h4><p>ID; documents above the daily line.</p></div><div><h4>Cost</h4><"
+    },
+    {
+     "where": "dossier/sources.html:63",
+     "value": "50,000",
+     "text": "<tr id=\"CN-12\"><td class=\"mono\"><b>CN-12</b></td><td><b>Bank of China republication of SAFE 汇发[2017]29号 Q&amp;A (银行卡境外大额提取现金)</b><br><span style=\"color:var(--muted);font-size:13px\">Bank of China / SAFE · zh</span><br><sp"
+    },
+    {
+     "where": "edition-b/EXECUTIVE-SUMMARY.md:60",
+     "value": "50,000",
+     "text": "**Lawful, and genuinely moves money out (current account):** the USD 50,000 quota (M01); above-quota purchase with genuine documentation (M02); remitting foreign currency you already hold, USD 50,000/day on ID (M19); ove"
+    },
+    {
+     "where": "edition-b/EXECUTIVE-SUMMARY.md:60",
+     "value": "50,000",
+     "text": "**Lawful, and genuinely moves money out (current account):** the USD 50,000 quota (M01); above-quota purchase with genuine documentation (M02); remitting foreign currency you already hold, USD 50,000/day on ID (M19); ove"
+    }
+   ]
+  },
+  {
+   "id": "K08",
+   "title": "SAFE decision period for property-transfer approval (working days)",
+   "read_today": [
+    "10",
+    "20",
+    "30",
+    "5"
+   ],
+   "src": [
+    "S07"
+   ],
+   "lines_matching_today": 4,
+   "other_values": [
+    {
+     "value": "2",
+     "lines": 6
+    }
+   ],
+   "examples": [
+    {
+     "where": "edition-f/data/methods.json:182",
+     "value": "2",
+     "text": "\"action\": \"Register a personal Wise account and complete first-time verification (provider says 1–2 working days).\","
+    },
+    {
+     "where": "edition-f/site/mechanics.html:33",
+     "value": "2",
+     "text": "<tr ><td class=\"\">3</td><td class=\"\">Submit payee/SWIFT details and genuine purpose, choose charge option, and remit; retain receipt and source records.</td><td class=\"\">Provider tariffs govern local charges; SAFE requir"
+    },
+    {
+     "where": "edition-i/data/methods.json:160",
+     "value": "2",
+     "text": "\"docs\": \"Wise verification (1–2 working days first time); China tax records within the last 3 years; Chinese bank account or Alipay; destination account the sender owns.\","
+    },
+    {
+     "where": "edition-i/data/methods.json:165",
+     "value": "2",
+     "text": "\"Complete Wise verification once (1–2 working days) and upload qualifying tax records to set the overall limit.\","
+    },
+    {
+     "where": "edition-j/data/methods.json:160",
+     "value": "2",
+     "text": "\"docs\": \"Wise verification (1–2 working days first time); China tax records within the last 3 years; Chinese bank account or Alipay; destination account the sender owns.\","
+    },
+    {
+     "where": "edition-j/data/methods.json:165",
+     "value": "2",
+     "text": "\"Complete Wise verification once (1–2 working days) and upload qualifying tax records to set the overall limit.\","
+    }
+   ]
+  },
+  {
+   "id": "K09",
+   "title": "Chase incoming wire fee (USD)",
+   "read_today": [
+    "0",
+    "15"
+   ],
+   "src": [
+    "S40"
+   ],
+   "lines_matching_today": 11,
+   "other_values": [
+    {
+     "value": "83",
+     "lines": 2
+    }
+   ],
+   "examples": [
+    {
+     "where": "edition-i/audit/REPO_AUDIT.md:23",
+     "value": "83",
+     "text": "| A01 | README.md \"four numbers\" (Edition D) presents exact all-in totals ($932.72 at $400K, $83.45 at $10K) built from a 2026-11-09 board stamp **plus an assumed $15 Chase receiving fee** (\"named example only\" in `editi"
+    },
+    {
+     "where": "edition-j/audit/REPO_AUDIT.md:19",
+     "value": "83",
+     "text": "| A01 | README \"four numbers\" ($932/$83) from Edition D embed assumed $15 Chase fee + 2026-11-09 board. Scenario arithmetic, not a quote. This edition leaves receiving fees blank (F03). | needs review | README.md; editio"
+    }
+   ]
+  }
+ ],
+ "board_values": [
+  {
+   "value": "665.86",
+   "lines": 1,
+   "areas": [
+    "(root)"
+   ]
+  },
+  {
+   "value": "666.03",
+   "lines": 1,
+   "areas": [
+    "edition-i"
+   ]
+  },
+  {
+   "value": "666.22",
+   "lines": 19,
+   "areas": [
+    "edition-i",
+    "edition-j",
+    "integration"
+   ]
+  },
+  {
+   "value": "666.38",
+   "lines": 4,
+   "areas": [
+    "edition-h"
+   ]
+  },
+  {
+   "value": "666.48",
+   "lines": 53,
+   "areas": [
+    "(root)",
+    "assets",
+    "data",
+    "dossier",
+    "edition-d",
+    "edition-e",
+    "edition-f",
+    "edition-g",
+    "edition-h",
+    "pages",
+    "scripts"
+   ]
+  },
+  {
+   "value": "668.66",
+   "lines": 2,
+   "areas": [
+    "(root)",
+    "audit-2026-11-10"
+   ]
+  },
+  {
+   "value": "669.03",
+   "lines": 28,
+   "areas": [
+    "edition-i",
+    "edition-j",
+    "integration"
+   ]
+  },
+  {
+   "value": "669.19",
+   "lines": 11,
+   "areas": [
+    "edition-h"
+   ]
+  },
+  {
+   "value": "669.29",
+   "lines": 73,
+   "areas": [
+    "(root)",
+    "assets",
+    "data",
+    "dossier",
+    "edition-d",
+    "edition-e",
+    "edition-f",
+    "edition-g",
+    "edition-h",
+    "pages",
+    "scripts"
+   ]
+  }
+ ],
+ "distinct_hosts": 60,
+ "unofficial_hosts": [
+  {
+   "host": "www.law.cornell.edu",
+   "files": 4,
+   "example": "edition-g/data/sources.json"
+  },
+  {
+   "host": "www.news.cn",
+   "files": 4,
+   "example": "data/sources.json"
+  },
+  {
+   "host": "www.shanghaiinvest.com",
+   "files": 6,
+   "example": "edition-b/data/flagged.json"
+  }
+ ],
+ "plain_http_official": [
+  {
+   "host": "english.customs.gov.cn",
+   "files": 5,
+   "example": "docs/data.json"
+  },
+  {
+   "host": "guangzhou.customs.gov.cn",
+   "files": 8,
+   "example": "edition-i/data/sources.json"
+  },
+  {
+   "host": "m.mof.gov.cn",
+   "files": 6,
+   "example": "edition-b/data/sources.json"
+  },
+  {
+   "host": "m.safe.gov.cn",
+   "files": 63,
+   "example": "README.md"
+  },
+  {
+   "host": "ningxia.chinatax.gov.cn",
+   "files": 3,
+   "example": "edition-f/data/sources.json"
+  },
+  {
+   "host": "www.csrc.gov.cn",
+   "files": 5,
+   "example": "data/sources.json"
+  },
+  {
+   "host": "www.customs.gov.cn",
+   "files": 11,
+   "example": "data/sources.json"
+  },
+  {
+   "host": "www.hunan.gov.cn",
+   "files": 2,
+   "example": "edition-c/data/sources.json"
+  },
+  {
+   "host": "www.safe.gov.cn",
+   "files": 15,
+   "example": "edition-c/data/sources.json"
+  }
+ ],
+ "repealed_2021_crypto_notice_lines": [
+  {
+   "area": "(root)",
+   "lines": 4
+  },
+  {
+   "area": "data",
+   "lines": 1
+  },
+  {
+   "area": "dossier",
+   "lines": 2
+  },
+  {
+   "area": "edition-b",
+   "lines": 19
+  },
+  {
+   "area": "edition-c",
+   "lines": 4
+  },
+  {
+   "area": "edition-d",
+   "lines": 3
+  },
+  {
+   "area": "edition-e",
+   "lines": 14
+  },
+  {
+   "area": "edition-f",
+   "lines": 7
+  },
+  {
+   "area": "edition-g",
+   "lines": 1
+  },
+  {
+   "area": "edition-h",
+   "lines": 6
+  },
+  {
+   "area": "edition-i",
+   "lines": 5
+  },
+  {
+   "area": "edition-j",
+   "lines": 5
+  },
+  {
+   "area": "integration",
+   "lines": 2
+  },
+  {
+   "area": "scripts",
+   "lines": 1
+  }
+ ],
+ "dead_irs_link_uses": []
+}

@@ -1,0 +1,87 @@
+{
+  "snapshot": {
+    "read_utc": "2026-11-10",
+    "board_time_beijing": "2026/11/10 17:39:58",
+    "note": "Every number below was read from the linked official page on 2026-11-10. Nothing is carried over from earlier editions of this repository."
+  },
+  "amounts_usd": {"start": 10000, "stop": 400000, "step": 10000},
+  "fx": {
+    "boc_spot_bid_per100": 665.71,
+    "boc_spot_ask_per100": 668.51,
+    "boc_cash_ask_per100": 668.51,
+    "boc_reference_per100": 671.67,
+    "src": "S30",
+    "yardstick": "Mid = (spot bid + spot ask) / 2 of the same Bank of China board row. The bank's dealing margin is measured against that midpoint. The board's 中行折算价 column is not used: on this snapshot it sits above the selling price."
+  },
+  "boc": {
+    "commission_rate": 0.001,
+    "commission_min_cny": 50,
+    "commission_max_cny": 260,
+    "cable_international_cny": 150,
+    "cable_hk_macau_taiwan_cny": 80,
+    "full_amount_usd": 25,
+    "full_amount_usd_if_payee_bank_at_boc_new_york": 15,
+    "carry_permit_cny": 10,
+    "carry_permit_waived_until": "2026-12-31",
+    "atm_abroad_fixed_cny": 12,
+    "atm_abroad_rate": 0.01,
+    "atm_abroad_max_cny": 112,
+    "src": "S32",
+    "src_online": "S33",
+    "src_atm_from_2026_11_11": "S34"
+  },
+  "hsbc_cn": {
+    "commission_rate": 0.001,
+    "commission_min_cny": 100,
+    "commission_max_cny": 500,
+    "cable_cny": 120,
+    "full_amount_precollect_cny": 200,
+    "src": "S35"
+  },
+  "us_receiving": {
+    "chase_incoming_wire_usd": 15,
+    "chase_src": "S40",
+    "bofa_incoming_international_wire_usd": 15,
+    "bofa_src": "S41",
+    "schwab_incoming_wire_usd": 0,
+    "schwab_src": "S42"
+  },
+  "wise": {
+    "per_transfer_cap_cny": 300000,
+    "mid_rate_usd_per_cny": 0.149924,
+    "quotes_cny": [
+      {"send_cny": 66711, "fee_cny": 434.84, "src": "S39", "check_url": "https://wise.com/us/send-money/send-money-to-the-usa-from-china?sourceAmount=66711"},
+      {"send_cny": 133422, "fee_cny": 845.90, "src": "S39", "check_url": "https://wise.com/us/send-money/send-money-to-the-usa-from-china?sourceAmount=133422"},
+      {"send_cny": 200133, "fee_cny": 1224.98, "src": "S38", "check_url": "https://wise.com/us/send-money/send-money-to-the-usa-from-china?sourceAmount=200133"},
+      {"send_cny": 266844, "fee_cny": 1570.09, "src": "S38", "check_url": "https://wise.com/us/send-money/send-money-to-the-usa-from-china?sourceAmount=266844"}
+    ],
+    "quote_at_cap": {"send_cny": 300000, "fee_cny": 1741.62, "src": "S39"},
+    "src_rules": "S37"
+  },
+  "safe_caps": {
+    "card_cash_abroad_per_year_cny": 100000,
+    "card_cash_abroad_per_card_per_day_cny": 10000,
+    "src_card": "S15",
+    "cash_withdraw_per_day_usd": 10000,
+    "cash_carry_no_permit_usd": 5000,
+    "cash_carry_bank_permit_max_usd": 10000,
+    "src_cash": "S01",
+    "rmb_cash_per_trip_cny": 20000,
+    "src_rmb_cash": "S19",
+    "tax_filing_threshold_usd": 50000,
+    "src_tax_filing": "S16"
+  },
+  "irs_yearly_average_cny_per_usd": {
+    "2025": 7.129,
+    "2024": 7.189,
+    "2023": 7.075,
+    "2022": 6.730,
+    "2021": 6.452,
+    "src": "S53"
+  },
+  "us_penalties": {
+    "fbar_nonwillful_usd": 16536,
+    "fbar_willful_floor_usd": 165353,
+    "src": "S58"
+  }
+}

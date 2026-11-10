@@ -1,0 +1,25 @@
+name: edition-m
+
+on:
+  push:
+    paths: ["edition-m/**", ".github/workflows/edition-m.yml"]
+  pull_request:
+    paths: ["edition-m/**", ".github/workflows/edition-m.yml"]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Rebuild Edition M (deterministic)
+        run: python3 edition-m/build/build.py
+      - name: Generated files match the committed files
+        run: git diff --exit-code -- edition-m
+      - name: Verify arithmetic, sources, blanks and links
+        run: python3 edition-m/build/verify.py
