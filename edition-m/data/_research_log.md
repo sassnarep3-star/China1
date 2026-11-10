@@ -177,3 +177,15 @@ Alipay pay-in for comparison (ALIPAY -> DIRECT_DEBIT): 66,711 -> total 1,312.27 
 Sources for the last two rows: https://wise.com/us/send-money/send-money-to-the-usa-from-china?sourceAmount=200133 and ...?sourceAmount=266844 (human-readable calculator page, "Sending N CNY | Bank transfer | fee").
 Page text: "You're sending a lot so we discounted our fee — Savings on this transfer, and eligible transfers for the rest of the month." "Pay less when you send over 25,000 USD or equivalent."
 -> Volume discount depends on the sender's monthly volume; a ladder built from independent single-transfer quotes is therefore conservative for multi-transfer rows.
+
+### S-CHASE-FEES  https://www.chase.com/content/dam/chase-ux/documents/personal/checking/ABSF-en.pdf  (chunks 0, 4, 5 read)
+"Additional Banking Services and Fees for Personal Accounts" — Fee Schedule, Wire Transfer Fees: "Domestic and International Incoming Wire: A wire transfer is deposited into your account — $15 per transfer OR $0 if the transfer was originally sent with the help of a Chase banker or using chase.com or Chase Mobile".
+Footnote 1: "Financial institutions may deduct processing fees and/or charges from the amount of the incoming or outgoing wire transfers, including on returned wire transfers."
+NOTE: "These fees may be waived with certain personal checking and savings account types."
+-> Edition D flagged "Chase inbound wire USD 15" as an assumption; it is now read from Chase's own fee schedule (which US bank the user holds is still unknown).
+
+### S-BOFA-FEES  https://www.bankofamerica.com/content/documents/deposits/service/pdf/docrepo/BofA_CoreChecking_en_ADA.pdf  (official-page excerpt returned by the search tool; PDF not opened)
+Bank of America Advantage Plus Banking clarity statement: "International wire transfers — $15.00 — For each incoming wire transfer: If received in a foreign currency, it will be converted into U.S. Dollars using the applicable exchange rate determined solely by us. For international wire transfers, other fees may also apply…".
+
+### S-SCHWAB-FEES  https://www.schwab.com/legal/schwab-pricing-guide-for-individual-investors  (official-page excerpt returned by the search tool; page not opened)
+Charles Schwab Pricing Guide for Individual Investors: "Wire transfer: Incoming — No fee". (Same line in the April 2026 PDF https://disclosures.schwab.com/SchwabDashboard/61330/REG23060.pdf.)
