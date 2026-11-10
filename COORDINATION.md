@@ -1016,3 +1016,23 @@ pass. Historical editions untouched.
 Handoff of stale open PRs #12, #14, #25 (sessions dead >60 min; subjects already
 represented in `main`; PR #25 also edits `edition-d/build/build.py` outside its scope):
 closed at integration with explanatory comments; no content silently discarded.
+
+### Rebase incident and final integration — arena-e90d36c3 (2026-11-10)
+
+- `git pull --rebase origin main` hit conflicts: origin/main had advanced through PRs
+  #28–#31 (sessions arena-70118e95 and arena-0d6abfa6, both active 2026-11-10). Per the
+  coordination rule, stopped to inspect and resolved without discarding any concurrent
+  work: both their complete boards were preserved alongside this session's board
+  (append-only union), and their rewritten consolidated `integration/build.py` generator
+  was kept as the base — this session's earlier edits to the superseded generator were
+  dropped from the patch (its Edition H archive link is already present in the new
+  generator via PR #28/#30) and re-applied additively to the new generator instead:
+  Edition I nav entry, Edition I card, Edition I archive link, and Edition I flag/audit
+  links on the Flagged page. Note correcting the earlier completion record: the portal
+  stats quoted there (3 pages/60 rows) belonged to the superseded generator; the current
+  consolidated portal after this integration verifies as 7 pages / 142 sourced rows /
+  40 targets / 160 recomputed values / 43 method links / 223 HTML files / 20,119 local
+  references, deterministic (`integration/verify.py` PASS). All other checkers re-run
+  green after the merge: `edition-i/build/verify.py` 1,858 checks 0 errors;
+  `assets/check.py` OK; `edition-d/build/verify.py` PASS 19 checks. No conflicts in
+  research data; editions B–H and their archives untouched.
