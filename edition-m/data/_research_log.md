@@ -232,3 +232,19 @@ Individual Income Tax Law of the PRC (STA English text, updated 2018-08-31).
 - "purported gifts from foreign corporations or foreign partnerships … exceeds $20,116 for 2025, and $20,573 for 2026".
 - Due the 15th day of the 4th month after the tax year (April 15); 15th day of the 6th month if living outside the US; extension no later than Oct 15.
 - "a foreign gift or bequest is any amount received from a person other than a U.S. person (a foreign person) that the recipient treats as a gift or bequest and excludes from gross income."
+
+### S-USC-988  https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm  (chunks 0-2 read)
+26 U.S.C. §988 (2024 edition).
+- (a)(1)(A): "any foreign currency gain or loss attributable to a section 988 transaction shall be computed separately and treated as ordinary income or loss".
+- (c)(1)(C)(i): "In the case of any disposition of any nonfunctional currency— (I) such disposition shall be treated as a section 988 transaction, and (II) any gain or loss from such transaction shall be treated as foreign currency gain or loss".
+- (c)(1)(C)(ii): "the term 'nonfunctional currency' includes coin or currency, and nonfunctional currency denominated demand or time deposits or similar instruments issued by a bank or other financial institution."
+- (e)(1): "The preceding provisions of this section shall not apply to any section 988 transaction entered into by an individual which is a personal transaction."
+- (e)(2): "If— (A) nonfunctional currency is disposed of by an individual in any transaction, and (B) such transaction is a personal transaction, no gain shall be recognized for purposes of this subtitle by reason of changes in exchange rates after such currency was acquired by such individual and before such disposition. The preceding sentence shall not apply if the gain which would otherwise be recognized on the transaction exceeds $200."
+- (e)(3): "'personal transaction' means any transaction entered into by an individual, except that such term shall not include any transaction to the extent that expenses properly allocable to such transaction meet the requirements of— (A) section 162 (other than traveling expenses described in subsection (a)(2) thereof), or (B) section 212 (other than that part of section 212 dealing with expenses incurred in connection with taxes)."
+-> The $200 rule is a cliff on GAIN per transaction for personal transactions, not a deduction; whether a deposit held for investment is a "personal transaction" is a facts question not decided here.
+
+### S-IRS-FXRATES  https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates  (read in full)
+"The Internal Revenue Service has no official exchange rate. Generally, it accepts any posted exchange rate that is used consistently." "In general, use the exchange rate prevailing (i.e., the spot rate) when you receive, pay or accrue the item." "A taxpayer may also need to recognize foreign currency gain or loss on certain foreign currency transactions. See section 988".
+Yearly average exchange rates, row China — Yuan (units of yuan per USD): 2025 = 7.129 | 2024 = 7.189 | 2023 = 7.075 | 2022 = 6.730 | 2021 = 6.452.
+"To convert from foreign currency to U.S. dollars, divide the foreign currency amount by the applicable yearly average exchange rate".
+(Typos visible in the IRS table itself: Euro Zone 2024 "0,924"; Russia 2021 ".73.686" — not relevant to CNY.)
