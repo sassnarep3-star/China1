@@ -121,7 +121,7 @@ def build_index():
       '<div class="card"><small>Bank fee per wire</small><b>%s – %s</b><span>0.1%%, min ¥50, max ¥260, + ¥150 cable</span></div>'
       '<div class="card warn"><small>Fine on unlawful routes</small><b>up to 30%% – 100%%</b><span>of the amount, plus criminal exposure</span></div>'
       '</section>') % (CHECKED, pct((ASK - MID) / MID), e(MODEL["board_time"]), cny(lo["boc_fee_cny"]), cny(hi["boc_fee_cny"]))
-    body += '<h2>What a lawful wire costs</h2><p>Bank of China, standard wire to a Chase account, one wire per amount. Charges that intermediary banks may deduct are not published and are not included (%s). <a href="costs.html">Every $10,000 step and every method →</a></p>' % flag("F04") + quick
+    body += '<h2>What a lawful wire costs</h2><p>Bank of China, standard wire to a Chase account, one wire per amount. Charges that intermediary banks may deduct are not published and are not included (%s). Parts are rounded separately, so they can differ from the total by a cent. <a href="costs.html">Every $10,000 step and every method →</a></p>' % flag("F04") + quick
     body += '<h2>Which route applies to your money</h2><p>The route is set by where the money came from, not by your citizenship. Your case was not supplied (%s), so every case is listed.</p>' % flag("F01") + cases
     body += ('<h2>Why the money looks stuck</h2><p>For a foreign passport holder the bank does not apply the USD 50,000 yearly quota that Chinese citizens have. Instead it must see where each yuan came from and that tax was handled. '
              'With papers, there is no fixed ceiling. Without papers, the bank must refuse — and the missing paper is usually the tax certificate. %s</p>') % src(["S03", "S04", "S01"])
