@@ -766,7 +766,7 @@ def build_review():
     proc = "".join(f"<li>{e(x)}</li>" for x in REVIEW["process"])
     body = f"""
 <h1>Repository review</h1>
-<p class="lead">The repository held twelve earlier editions of this research. Each archived line was checked against the official sources by rule, and the irregularities are listed here with the link to check them against.</p>
+<p class="lead">The repository holds {len(SCAN["areas"])} earlier editions and components of this research. Each archived line was checked against the official sources by rule, and the irregularities are listed here with the link to check them against.</p>
 
 <div class="kpis">
 <div class="kpi"><b>{SCAN["total_files"]:,}</b><span>archived files read</span></div>
@@ -792,23 +792,7 @@ def build_review():
     write(GUIDE / "repo-review.html", page("guide/repo-review.html", "Repository review", "Line-by-line rule scan of the archived repository against official sources, with irregularities.", body))
 
 
-ARCHIVE = [
-    ("legacy-portal.html", "Previous consolidated portal", "The landing page before this guide; links every older edition."),
-    ("integration/costs.html", "Previous cost ladder", "Sender-fee arithmetic at CNY 6.6903 per USD, other parts blank."),
-    ("edition-j/site/index.html", "Edition J", "21 methods, 10 ladders."),
-    ("edition-i/site/index.html", "Edition I", "21 methods, 20 sources."),
-    ("edition-h/site/index.html", "Edition H", "43 candidates."),
-    ("edition-g/docs/index.html", "Edition G", ""),
-    ("edition-f/site/index.html", "Edition F", ""),
-    ("edition-e/site/index.html", "Edition E", ""),
-    ("edition-d/docs/index.html", "Edition D", "Historical scenario model."),
-    ("edition-c/docs/index.html", "Edition C", ""),
-    ("edition-b/index.html", "Edition B", ""),
-    ("dossier/index.html", "Dossier", ""),
-    ("docs/index.html", "Supplemental dashboard", ""),
-    ("overview.html", "Original overview", ""),
-    ("pages/estimates.html", "Original estimate table", ""),
-]
+ARCHIVE = [(x["href"], x["title"], x["note"]) for x in load("archive.json")["entries"]]
 
 
 def build_archive():

@@ -1,5 +1,5 @@
 {
- "scanned_at_commit": "baf2354",
+ "scanned_at_commit": "f77b530",
  "areas": {
   "assets": {
    "files": 3,
@@ -36,6 +36,12 @@
    "lines": 828,
    "binary": 0,
    "hits": 77
+  },
+  "edition-abd04d5f": {
+   "files": 20,
+   "lines": 3401,
+   "binary": 0,
+   "hits": 88
   },
   "edition-b": {
    "files": 17,
@@ -91,15 +97,27 @@
    "binary": 0,
    "hits": 95
   },
+  "edition-k": {
+   "files": 17,
+   "lines": 3639,
+   "binary": 0,
+   "hits": 114
+  },
+  "edition-l": {
+   "files": 20,
+   "lines": 7322,
+   "binary": 0,
+   "hits": 222
+  },
   "integration": {
    "files": 12,
-   "lines": 1642,
+   "lines": 1649,
    "binary": 0,
-   "hits": 54
+   "hits": 56
   },
   "legacy-portal.html": {
    "files": 1,
-   "lines": 10,
+   "lines": 11,
    "binary": 0,
    "hits": 5
   },
@@ -122,15 +140,15 @@
    "hits": 87
   }
  },
- "total_files": 384,
- "total_lines": 170267,
- "total_hits": 1648,
+ "total_files": 441,
+ "total_lines": 184637,
+ "total_hits": 2074,
  "rules": {
   "R01": {
-   "lines": 62,
-   "files": 44,
+   "lines": 64,
+   "files": 46,
    "check": 42,
-   "consistent": 20,
+   "consistent": 22,
    "examples": [
     {
      "rule": "R01",
@@ -156,10 +174,10 @@
    ]
   },
   "R02": {
-   "lines": 92,
-   "files": 61,
+   "lines": 94,
+   "files": 63,
    "check": 48,
-   "consistent": 44,
+   "consistent": 46,
    "examples": [
     {
      "rule": "R02",
@@ -185,10 +203,10 @@
    ]
   },
   "R03": {
-   "lines": 130,
-   "files": 85,
-   "check": 38,
-   "consistent": 92,
+   "lines": 158,
+   "files": 103,
+   "check": 39,
+   "consistent": 119,
    "examples": [
     {
      "rule": "R03",
@@ -214,10 +232,10 @@
    ]
   },
   "R04": {
-   "lines": 43,
-   "files": 37,
+   "lines": 59,
+   "files": 51,
    "check": 34,
-   "consistent": 9,
+   "consistent": 25,
    "examples": [
     {
      "rule": "R04",
@@ -243,9 +261,9 @@
    ]
   },
   "R05": {
-   "lines": 164,
-   "files": 90,
-   "check": 164,
+   "lines": 256,
+   "files": 123,
+   "check": 256,
    "consistent": 0,
    "examples": [
     {
@@ -272,31 +290,31 @@
    ]
   },
   "R06": {
-   "lines": 44,
-   "files": 25,
+   "lines": 67,
+   "files": 38,
    "check": 0,
-   "consistent": 44,
+   "consistent": 67,
    "examples": [
     {
      "rule": "R06",
-     "file": "edition-b/EXECUTIVE-SUMMARY.md",
-     "line": 32,
+     "file": "edition-abd04d5f/build/content.py",
+     "line": 96,
      "state": "consistent",
-     "excerpt": "US reporting penalties | FBAR / Form 8938 / Form 3520 failure | **USD 16,536 non-willful, USD 165,353 or 50% willful, per report** | S19, S20 |"
+     "excerpt": "llful foreign-account violation: statutory USD 10,000 adjusted to USD 16,536 for penalties assessed from 17 January 2025.\"),"
     },
     {
      "rule": "R06",
-     "file": "edition-b/EXECUTIVE-SUMMARY.md",
-     "line": 90,
+     "file": "edition-abd04d5f/build/content.py",
+     "line": 136,
      "state": "consistent",
-     "excerpt": "s no effect on whether it is reportable. Maximum civil penalty: **USD 16,536 per report** for non-willful violations, **USD 165,353 or 50% of the"
+     "excerpt": "R penalty inflation figures\", \"Confirmed in the Federal Register: USD 16,536 non-willful for penalties assessed from 17 January 2025. The adjusted"
     },
     {
      "rule": "R06",
-     "file": "edition-b/EXECUTIVE-SUMMARY.md",
-     "line": 132,
+     "file": "edition-abd04d5f/build/content.py",
+     "line": 327,
      "state": "consistent",
-     "excerpt": "US information-reporting exposure** on the account, which runs to USD 16,536 per report non-willfully and USD 165,353 or half the balance willfull"
+     "excerpt": "(\"FBAR not filed, non-willful\", \"Up to USD 16,536\", \"Statutory USD 10,000, as adjusted for penalties assessed from 17 J"
     }
    ]
   },
@@ -308,38 +326,38 @@
    "examples": []
   },
   "R08": {
-   "lines": 47,
-   "files": 39,
-   "check": 17,
-   "consistent": 30,
+   "lines": 56,
+   "files": 46,
+   "check": 19,
+   "consistent": 37,
    "examples": [
+    {
+     "rule": "R08",
+     "file": "edition-abd04d5f/build/content.py",
+     "line": 100,
+     "state": "check",
+     "excerpt": "0\": dict(t=\"IRS news release IR-2026-48 — proposed regulations on the remittance transfer tax\", pub=\"Internal Revenue Service (irs.gov)\","
+    },
+    {
+     "rule": "R08",
+     "file": "edition-abd04d5f/data/sources.json",
+     "line": 208,
+     "state": "check",
+     "excerpt": "\"t\": \"IRS news release IR-2026-48 — proposed regulations on the remittance transfer tax\","
+    },
     {
      "rule": "R08",
      "file": "edition-g/data/methods.json",
      "line": 376,
      "state": "check",
      "excerpt": "\"id\":\"X08\",\"name\":\"Adding the U.S. 1% remittance tax to China-to-US costs\",\"category\":\"rejected\",\"kind\":\"rejected\",\"status"
-    },
-    {
-     "rule": "R08",
-     "file": "edition-g/data/sources.json",
-     "line": 52,
-     "state": "check",
-     "excerpt": "{\"id\":\"S44\",\"title\":\"IRS remittance transfer tax proposed regulations release, IR-2026-48\",\"issuer\":\"IRS\",\"type\":\"gove"
-    },
-    {
-     "rule": "R08",
-     "file": "edition-g/docs/method-X08.html",
-     "line": 3,
-     "state": "check",
-     "excerpt": "<title>X08 Adding the U.S. 1% remittance tax to China-to-US costs · China Money · Edition G</title><style>"
     }
    ]
   },
   "R09": {
-   "lines": 26,
-   "files": 21,
-   "check": 26,
+   "lines": 29,
+   "files": 24,
+   "check": 29,
    "consistent": 0,
    "examples": [
     {
@@ -366,9 +384,9 @@
    ]
   },
   "R10": {
-   "lines": 711,
-   "files": 237,
-   "check": 711,
+   "lines": 817,
+   "files": 277,
+   "check": 817,
    "consistent": 0,
    "examples": [
     {
@@ -395,9 +413,9 @@
    ]
   },
   "R11": {
-   "lines": 3,
-   "files": 2,
-   "check": 3,
+   "lines": 5,
+   "files": 4,
+   "check": 5,
    "consistent": 0,
    "examples": [
     {
@@ -424,10 +442,10 @@
    ]
   },
   "R12": {
-   "lines": 326,
-   "files": 179,
-   "check": 60,
-   "consistent": 266,
+   "lines": 469,
+   "files": 205,
+   "check": 93,
+   "consistent": 376,
    "examples": [
     {
      "rule": "R12",
@@ -438,17 +456,17 @@
     },
     {
      "rule": "R12",
-     "file": "edition-d/build/build.py",
-     "line": 603,
+     "file": "edition-abd04d5f/build/content.py",
+     "line": 191,
      "state": "check",
-     "excerpt": "\"Totals are the all-in cost of ending up with the stated number of US dollars in a US accoun"
+     "excerpt": "limit=\"None published in the tariff.\", pros=\"Lowest verified all-in cost; fee capped at CNY 260 + 150.\", cons=\"Banks along the route may"
     },
     {
      "rule": "R12",
-     "file": "edition-d/build/build.py",
-     "line": 647,
+     "file": "edition-abd04d5f/data/methods.json",
+     "line": 116,
      "state": "check",
-     "excerpt": "\"M01\", \"boc_documented\", \"Documented remittance, all-in cost\","
+     "excerpt": "\"pros\": \"Lowest verified all-in cost; fee capped at CNY 260 + 150.\","
     }
    ]
   }

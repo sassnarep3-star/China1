@@ -1,34 +1,228 @@
 {
-  "scope": ["assets", "audit-12b8fb19", "audit-2026-11-10", "data", "docs", "dossier", "edition-b", "edition-c", "edition-d", "edition-e", "edition-f", "edition-g", "edition-h", "edition-i", "edition-j", "integration", "pages", "scripts", "overview.html", "legacy-portal.html"],
-  "rules": [
-    {"id": "R01", "label": "Cites the 2021 crypto notice (银发〔2021〕237号)", "pattern": "〔2021〕\\s?237|\\[2021\\]\\s?(No\\.\\s?)?237|Yin\\s?[Ff]a.{0,12}237", "ok_if": "2026|42号|No\\.\\s?42|repeal|废止|superseded", "verdict": "Outdated unless the line also says it was repealed: the 2021 notice was repealed on 2026-02-06 by 银发〔2026〕42号.", "src": ["CN-CRYPTO"]},
-    {"id": "R02", "label": "Uses a 0.42% conversion spread", "pattern": "0\\.42\\s?%", "ok_if": "round-trip|round trip|two-way|both ways|twice|superseded|not the cost|one-way", "verdict": "0.42% is a full buy-to-sell spread. The one-way cost against the midpoint on the 2026-11-10 board is 0.2094%. Lines that present 0.42% as the cost of one conversion overstate it.", "src": ["CN-FXBOARD"]},
-    {"id": "R03", "label": "Mentions staged emigrant remittance", "pattern": "[Ss]taged|50% in the first|分次汇出", "ok_if": "abolish|remov|cancel|no longer|supersed|取消|2014|historical|earlier|older|error", "verdict": "Mandatory staged remittance was abolished by 汇发〔2014〕2号. Lines stating it as a current requirement are wrong.", "src": ["CN-CAP2014"]},
-    {"id": "R04", "label": "Mentions SAFE head-office handling above CNY 500,000", "pattern": "(CNY|RMB)\\s?500,000.{0,80}(SAFE|head|HQ)|(SAFE|head|HQ).{0,80}(CNY|RMB)\\s?500,000", "ok_if": "abolish|remov|cancel|no longer|supersed|取消|2014|historical|earlier|older", "verdict": "The head-office filing above CNY 500,000 was abolished by 汇发〔2014〕2号.", "src": ["CN-CAP2014"]},
-    {"id": "R05", "label": "Hard-codes a CNY/USD rate snapshot", "pattern": "\\b66[5-9]\\.\\d\\d\\b|\\b6\\.6[5-9]\\d\\d\\b", "ok_if": "", "verdict": "Dated observation. Archived editions use different readings (669.29, 669.03, 668.66 and others); this guide uses 668.51 sell / 665.71 buy from 2026-11-10 17:39:58. Figures from different snapshots must not be mixed.", "src": ["CN-FXBOARD"]},
-    {"id": "R06", "label": "States FBAR penalty amounts of USD 16,536 / 165,353", "pattern": "16,536|165,353", "ok_if": ".", "verdict": "Matches 31 CFR 1010.821 for penalties assessed on or after 2025-01-17.", "src": ["US-FBARPEN"]},
-    {"id": "R07", "label": "States an older FBAR penalty amount", "pattern": "16,117|161,166|15,611|156,107|14,489|144,886|12,921|129,210", "ok_if": "", "verdict": "Superseded inflation adjustment; current amounts are USD 16,536 and USD 165,353.", "src": ["US-FBARPEN"]},
-    {"id": "R08", "label": "Mentions a remittance tax", "pattern": "[Rr]emittance (transfer )?tax", "ok_if": "no remittance tax|not a remittance tax|from the United States|outbound|sent from|does not apply|physical", "verdict": "The US 1% remittance transfer tax applies to cash-funded remittances sent from the United States, not to money arriving from China.", "src": ["US-REMIT"]},
-    {"id": "R09", "label": "States the CNY 20,000 cash limit", "pattern": "(CNY|RMB|¥)\\s?20,000|20,000\\s?(yuan|RMB|CNY)|2万元", "ok_if": "", "verdict": "This session saw the figure only in an excerpt of a government article; the PBOC announcement was not opened. Treat as unverified.", "src": ["CN-CNYCASH"]},
-    {"id": "R10", "label": "Mentions USD 50,000", "pattern": "(USD|US\\$|\\$)\\s?50,000|50,000\\s?USD", "ok_if": "", "verdict": "USD 50,000 is (a) the annual quota for domestic individuals and Foreign Permanent Resident ID holders and (b) the single-payment threshold for the tax-filing form. It is not a cap on a passport-holding foreigner who has documents. Each line must be read in that light.", "src": ["CN-RULES", "CN-PR", "CN-TAXFILING"]},
-    {"id": "R11", "label": "Gives a percentage fee for Wise", "pattern": "Wise.{0,80}\\d(\\.\\d+)?\\s?%", "ok_if": "", "verdict": "Wise publishes no fixed tariff for CNY; any percentage is a dated quote. Sampled quotes on 2026-11-10 are in this guide's cost ladder.", "src": ["PR-WISEFEE"]},
-    {"id": "R12", "label": "Claims an all-in total", "pattern": "[Aa]ll-in", "ok_if": "not all-in|no all-in|not an all-in|blank|unverified|null|cannot|never|partial", "verdict": "An all-in total needs the FX margin, correspondent charges and the receiving-bank fee. Only the Bank of China route has all of them from official figures in this guide.", "src": ["CN-BOCTARIFF", "US-CHASE"]}
-  ],
-  "manual": [
-    {"where": "README.md (version before this session)", "finding": "The README was a stack of per-edition sections that contradicted each other on the exchange rate and the spread.", "fix": "Rewritten as a single short guide to the repository.", "src": ["CN-FXBOARD"]},
-    {"where": "integration/build.py and edition-d/build/build.py", "finding": "Two generators both wrote the root index.html, so the landing page depended on which ran last.", "fix": "The old portal now writes legacy-portal.html; only guide/build/build.py writes index.html.", "src": ["CN-BOCTARIFF"]},
-    {"where": "edition-h/build/audit.py", "finding": "Its output depends on the total number of tracked files and lines, so re-running it changes edition-h files; it is not reproducible.", "fix": "Not run; listed here. Edition H stays as an archive.", "src": ["CN-FXREG"]},
-    {"where": "data/channels.json, data/flagged.json, data/sources.json", "finding": "Describe SAFE head-office approval at CNY 500,000 and instalments for emigrant transfers as live requirements.", "fix": "Superseded in this guide; archive left unchanged and marked.", "src": ["CN-CAP2014"]},
-    {"where": "data/sources.json, dossier/channels.html, dossier/sources.html", "finding": "Cite the 2021 virtual-currency notice (No. 237) as the governing text.", "fix": "This guide cites 银发〔2026〕42号, which repealed it.", "src": ["CN-CRYPTO"]},
-    {"where": "assets/build.py, data/costs.json, data/channels.json", "finding": "Present 0.42% as the conversion cost and use the 669.29 board reading of 2026-11-08.", "fix": "This guide uses the one-way margin against the midpoint and a dated 2026-11-10 reading.", "src": ["CN-FXBOARD"]},
-    {"where": "EXECUTIVE_SUMMARY.md and REQUIREMENTS.md (versions before this session)", "finding": "Used CNY 6.6903 per USD and left the FX margin, correspondent and receiving fees blank, so no route had a total.", "fix": "Bank of China route now fully priced from the bank's own tariff, including full-amount delivery.", "src": ["CN-BOCTARIFF"]},
-    {"where": "All archived editions", "finding": "Editions disagree with each other on which rule gives a foreign passport holder the right to convert, several applying the USD 50,000 annual quota to foreigners.", "fix": "This guide follows SAFE's Q&A: documents and tax vouchers for foreign individuals; the quota only with a permanent-resident card.", "src": ["CN-ART59", "CN-PR"]}
-  ],
-  "process": [
-    "Pull requests #39 (conflicting) and #45 (mergeable) were still open when this session started. They are left open and are not merged by this session.",
-    "Claims by sessions arena-fc438b1a and arena-4207cf2f in COORDINATION.md were older than 60 minutes with no commits; they were taken over as allowed by the protocol and the handoff is noted there.",
-    "Twelve parallel editions (edition-b to edition-j, docs, dossier, integration) repeat the same research with different numbers. They are kept in place and linked only from the Archive page.",
-    "Branches edition-k and edition-4207cf2f exist on the remote but were never merged; their content is not used.",
-    "Archived pages are not re-verified by this session beyond the rule scan below and their own build scripts, which all pass."
-  ]
+ "scope": [
+  "assets",
+  "audit-12b8fb19",
+  "audit-2026-11-10",
+  "data",
+  "docs",
+  "dossier",
+  "edition-b",
+  "edition-c",
+  "edition-d",
+  "edition-e",
+  "edition-f",
+  "edition-g",
+  "edition-h",
+  "edition-i",
+  "edition-j",
+  "edition-k",
+  "edition-l",
+  "edition-abd04d5f",
+  "integration",
+  "pages",
+  "scripts",
+  "overview.html",
+  "legacy-portal.html"
+ ],
+ "rules": [
+  {
+   "id": "R01",
+   "label": "Cites the 2021 crypto notice (银发〔2021〕237号)",
+   "pattern": "〔2021〕\\s?237|\\[2021\\]\\s?(No\\.\\s?)?237|Yin\\s?[Ff]a.{0,12}237",
+   "ok_if": "2026|42号|No\\.\\s?42|repeal|废止|superseded",
+   "verdict": "Outdated unless the line also says it was repealed: the 2021 notice was repealed on 2026-02-06 by 银发〔2026〕42号.",
+   "src": [
+    "CN-CRYPTO"
+   ]
+  },
+  {
+   "id": "R02",
+   "label": "Uses a 0.42% conversion spread",
+   "pattern": "0\\.42\\s?%",
+   "ok_if": "round-trip|round trip|two-way|both ways|twice|superseded|not the cost|one-way",
+   "verdict": "0.42% is a full buy-to-sell spread. The one-way cost against the midpoint on the 2026-11-10 board is 0.2094%. Lines that present 0.42% as the cost of one conversion overstate it.",
+   "src": [
+    "CN-FXBOARD"
+   ]
+  },
+  {
+   "id": "R03",
+   "label": "Mentions staged emigrant remittance",
+   "pattern": "[Ss]taged|50% in the first|分次汇出",
+   "ok_if": "abolish|remov|cancel|no longer|supersed|取消|2014|historical|earlier|older|error",
+   "verdict": "Mandatory staged remittance was abolished by 汇发〔2014〕2号. Lines stating it as a current requirement are wrong.",
+   "src": [
+    "CN-CAP2014"
+   ]
+  },
+  {
+   "id": "R04",
+   "label": "Mentions SAFE head-office handling above CNY 500,000",
+   "pattern": "(CNY|RMB)\\s?500,000.{0,80}(SAFE|head|HQ)|(SAFE|head|HQ).{0,80}(CNY|RMB)\\s?500,000",
+   "ok_if": "abolish|remov|cancel|no longer|supersed|取消|2014|historical|earlier|older",
+   "verdict": "The head-office filing above CNY 500,000 was abolished by 汇发〔2014〕2号.",
+   "src": [
+    "CN-CAP2014"
+   ]
+  },
+  {
+   "id": "R05",
+   "label": "Hard-codes a CNY/USD rate snapshot",
+   "pattern": "\\b66[5-9]\\.\\d\\d\\b|\\b6\\.6[5-9]\\d\\d\\b",
+   "ok_if": "",
+   "verdict": "Dated observation. Archived editions use different readings (669.29, 669.03, 668.66 and others); this guide uses 668.51 sell / 665.71 buy from 2026-11-10 17:39:58. Figures from different snapshots must not be mixed.",
+   "src": [
+    "CN-FXBOARD"
+   ]
+  },
+  {
+   "id": "R06",
+   "label": "States FBAR penalty amounts of USD 16,536 / 165,353",
+   "pattern": "16,536|165,353",
+   "ok_if": ".",
+   "verdict": "Matches 31 CFR 1010.821 for penalties assessed on or after 2025-01-17.",
+   "src": [
+    "US-FBARPEN"
+   ]
+  },
+  {
+   "id": "R07",
+   "label": "States an older FBAR penalty amount",
+   "pattern": "16,117|161,166|15,611|156,107|14,489|144,886|12,921|129,210",
+   "ok_if": "",
+   "verdict": "Superseded inflation adjustment; current amounts are USD 16,536 and USD 165,353.",
+   "src": [
+    "US-FBARPEN"
+   ]
+  },
+  {
+   "id": "R08",
+   "label": "Mentions a remittance tax",
+   "pattern": "[Rr]emittance (transfer )?tax",
+   "ok_if": "no remittance tax|not a remittance tax|from the United States|outbound|sent from|does not apply|physical",
+   "verdict": "The US 1% remittance transfer tax applies to cash-funded remittances sent from the United States, not to money arriving from China.",
+   "src": [
+    "US-REMIT"
+   ]
+  },
+  {
+   "id": "R09",
+   "label": "States the CNY 20,000 cash limit",
+   "pattern": "(CNY|RMB|¥)\\s?20,000|20,000\\s?(yuan|RMB|CNY)|2万元",
+   "ok_if": "",
+   "verdict": "This session saw the figure only in an excerpt of a government article; the PBOC announcement was not opened. Treat as unverified.",
+   "src": [
+    "CN-CNYCASH"
+   ]
+  },
+  {
+   "id": "R10",
+   "label": "Mentions USD 50,000",
+   "pattern": "(USD|US\\$|\\$)\\s?50,000|50,000\\s?USD",
+   "ok_if": "",
+   "verdict": "USD 50,000 is (a) the annual quota for domestic individuals and Foreign Permanent Resident ID holders and (b) the single-payment threshold for the tax-filing form. It is not a cap on a passport-holding foreigner who has documents. Each line must be read in that light.",
+   "src": [
+    "CN-RULES",
+    "CN-PR",
+    "CN-TAXFILING"
+   ]
+  },
+  {
+   "id": "R11",
+   "label": "Gives a percentage fee for Wise",
+   "pattern": "Wise.{0,80}\\d(\\.\\d+)?\\s?%",
+   "ok_if": "",
+   "verdict": "Wise publishes no fixed tariff for CNY; any percentage is a dated quote. Sampled quotes on 2026-11-10 are in this guide's cost ladder.",
+   "src": [
+    "PR-WISEFEE"
+   ]
+  },
+  {
+   "id": "R12",
+   "label": "Claims an all-in total",
+   "pattern": "[Aa]ll-in",
+   "ok_if": "not all-in|no all-in|not an all-in|blank|unverified|null|cannot|never|partial",
+   "verdict": "An all-in total needs the FX margin, correspondent charges and the receiving-bank fee. Only the Bank of China route has all of them from official figures in this guide.",
+   "src": [
+    "CN-BOCTARIFF",
+    "US-CHASE"
+   ]
+  }
+ ],
+ "manual": [
+  {
+   "where": "README.md (version before this session)",
+   "finding": "The README was a stack of per-edition sections that contradicted each other on the exchange rate and the spread.",
+   "fix": "Rewritten as a single short guide to the repository.",
+   "src": [
+    "CN-FXBOARD"
+   ]
+  },
+  {
+   "where": "integration/build.py and edition-d/build/build.py",
+   "finding": "Two generators both wrote the root index.html, so the landing page depended on which ran last.",
+   "fix": "The old portal now writes legacy-portal.html; only guide/build/build.py writes index.html.",
+   "src": [
+    "CN-BOCTARIFF"
+   ]
+  },
+  {
+   "where": "edition-h/build/audit.py",
+   "finding": "Its output depends on the total number of tracked files and lines, so re-running it changes edition-h files; it is not reproducible.",
+   "fix": "Not run; listed here. Edition H stays as an archive.",
+   "src": [
+    "CN-FXREG"
+   ]
+  },
+  {
+   "where": "data/channels.json, data/flagged.json, data/sources.json",
+   "finding": "Describe SAFE head-office approval at CNY 500,000 and instalments for emigrant transfers as live requirements.",
+   "fix": "Superseded in this guide; archive left unchanged and marked.",
+   "src": [
+    "CN-CAP2014"
+   ]
+  },
+  {
+   "where": "data/sources.json, dossier/channels.html, dossier/sources.html",
+   "finding": "Cite the 2021 virtual-currency notice (No. 237) as the governing text.",
+   "fix": "This guide cites 银发〔2026〕42号, which repealed it.",
+   "src": [
+    "CN-CRYPTO"
+   ]
+  },
+  {
+   "where": "assets/build.py, data/costs.json, data/channels.json",
+   "finding": "Present 0.42% as the conversion cost and use the 669.29 board reading of 2026-11-08.",
+   "fix": "This guide uses the one-way margin against the midpoint and a dated 2026-11-10 reading.",
+   "src": [
+    "CN-FXBOARD"
+   ]
+  },
+  {
+   "where": "EXECUTIVE_SUMMARY.md and REQUIREMENTS.md (versions before this session)",
+   "finding": "Used CNY 6.6903 per USD and left the FX margin, correspondent and receiving fees blank, so no route had a total.",
+   "fix": "Bank of China route now fully priced from the bank's own tariff, including full-amount delivery.",
+   "src": [
+    "CN-BOCTARIFF"
+   ]
+  },
+  {
+   "where": "All archived editions",
+   "finding": "Editions disagree with each other on which rule gives a foreign passport holder the right to convert, several applying the USD 50,000 annual quota to foreigners.",
+   "fix": "This guide follows SAFE's Q&A: documents and tax vouchers for foreign individuals; the quota only with a permanent-resident card.",
+   "src": [
+    "CN-ART59",
+    "CN-PR"
+   ]
+  }
+ ],
+ "process": [
+  "Pull requests #39 (conflicting) and #45 (mergeable) were still open when this session started. They are left open and are not merged by this session.",
+  "Claims by sessions arena-fc438b1a and arena-4207cf2f in COORDINATION.md were older than 60 minutes with no commits; their tasks were taken over as the protocol allows and the handoff is noted there.",
+  "While this session held the final-integration claim, Editions K and L each edited shared files (integration/build.py, the root portal, README.md and EXECUTIVE_SUMMARY.md) to register themselves. Resolved without loss: their links live on in legacy-portal.html and the Archive page, and their summary text is kept verbatim in guide/archive/.",
+  "Two sessions claimed the same folder name (edition-m) within two minutes of each other; one moved to edition-abd04d5f. Noted by that session and repeated here.",
+  "Fifteen parallel editions and components repeat the same research with different numbers. They are kept in place and linked only from the Archive page.",
+  "Independent cross-check: Editions K, L and abd04d5f, built in parallel from the same Bank of China board and tariff, reach the same wire arithmetic as this guide. They express the FX margin against the midpoint (0.2099%) where this guide expresses it against the selling rate (0.2094%), and they leave full-amount delivery out of the total.",
+  "Archived pages are not re-verified by this session beyond the rule scan below and their own build scripts, which all pass."
+ ]
 }

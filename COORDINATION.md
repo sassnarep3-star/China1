@@ -49,14 +49,37 @@ Branch: `arena/eb9f0490-china1` (fixed by Arena; the requested `session-<id>/<ta
 
 | Task | Status | Owner | Exclusive file scope |
 |---|---|---|---|
-| EB-1 Repo review, line by line, against freshly fetched official sources; irregularity register | in progress | arena-eb9f0490 | `guide/data/**`, `guide/audit/**` |
-| EB-2 Research: every lawful CNY→USD method, pros/cons, exact steps, China + US tax and penalty breakdown, each row re-fetched from an official source this session | in progress | arena-eb9f0490 | `guide/data/**` |
-| EB-3 Cost estimate for every method at every USD 10,000 step, USD 10,000–400,000 (blank + flagged where no official input exists) | in progress | arena-eb9f0490 | `guide/data/**`, `guide/build/**` |
-| EB-4 One clean dashboard: landing page + category subpages, mobile-first tables, Flagged for Review page | in progress | arena-eb9f0490 | `guide/**` |
-| EB-5 Verifier + CI (arithmetic recomputation, per-row source links, blank/flag discipline, whole-repo broken-link crawl) | in progress | arena-eb9f0490 | `guide/build/**`, `.github/workflows/guide.yml` |
+| EB-1 Repo review, line by line, against freshly fetched official sources; irregularity register | done — on branch, PR pending | arena-eb9f0490 | `guide/data/**`, `guide/audit/**` |
+| EB-2 Research: every lawful CNY→USD method, pros/cons, exact steps, China + US tax and penalty breakdown, each row re-fetched from an official source this session | done — on branch, PR pending | arena-eb9f0490 | `guide/data/**` |
+| EB-3 Cost estimate for every method at every USD 10,000 step, USD 10,000–400,000 (blank + flagged where no official input exists) | done — on branch, PR pending | arena-eb9f0490 | `guide/data/**`, `guide/build/**` |
+| EB-4 One clean dashboard: landing page + category subpages, mobile-first tables, Flagged for Review page | done — on branch, PR pending | arena-eb9f0490 | `guide/**` |
+| EB-5 Verifier + CI (arithmetic recomputation, per-row source links, blank/flag discipline, whole-repo broken-link crawl) | done — on branch, PR pending | arena-eb9f0490 | `guide/build/**`, `.github/workflows/guide.yml` |
 | EB-6 FINAL INTEGRATION of shared outputs: root `index.html` (landing page), `README.md`, `EXECUTIVE_SUMMARY.md`, `REQUIREMENTS.md`, and the minimum edits needed so the archived generators stop overwriting the root landing page (`integration/build.py`, `integration/verify.py`, `edition-d/build/verify.py`, `.github/workflows/*.yml`); PR, merge, Pages confirmation | in progress | arena-eb9f0490 | the shared files named in this row |
 
 Rules this session applies: archived editions (`docs/`, `dossier/`, `pages/`, `edition-b` … `edition-j`, `integration/`, `audit-*`) are preserved, not deleted and not re-certified; nothing from them is copied into `guide/` without being re-fetched from the official source in this session; any value that cannot be confirmed is left blank and listed on the Flagged for Review page.
+
+### Work record — arena-eb9f0490 (2026-11-10)
+
+**What was built.** `guide/` (data, generator, verifier, scan), root `index.html` as a clean landing page, nine subpages (`guide/summary|methods|costs|steps|taxes|flagged|sources|repo-review|archive.html`), generated `EXECUTIVE_SUMMARY.md`, rewritten `README.md` and `REQUIREMENTS.md`, workflow `.github/workflows/guide.yml`.
+
+**Sources.** 33 official pages, each with the text relied on quoted in `guide/data/sources.json` and published on `guide/sources.html`; 31 opened and read in full this session, 2 seen only as search excerpts of the official page (Tax Collection Law arts. 32/63; CNY 20,000 cash limit) and therefore flagged. Regulators and statutes: gov.cn (State Council Order 532; PBOC Announcement [2004] 16), safe.gov.cn (PBOC Decree [2006] 3; Huifa [2007] 1; Huifa [2014] 2; Huifa [2003] 102; Huifa [2017] 29; Tianjin Q&As 2024-06-21 and 2026-07-13 quoting Huifa [2020] 14 art. 59; Shanghai Q&A 162), pbc.gov.cn (Yinfa [2026] 42), chinatax.gov.cn (IIT Law; Announcement 2013 No. 40), english.shanghai.gov.cn, irs.gov (5 pages), govinfo.gov (26 USC 988), ecfr.gov (31 CFR 1010.821), cbp.gov. Price lists: boc.cn board and fee page, pic.bankofchina.com tariff PDF, hsbc.com.cn tariff PDF, wise.com guide and Wise's own comparison API, westernunion.com, chase.com. Working log of what was read: `guide/audit/evidence-notes.md`.
+
+**Verification.** `python3 guide/build/verify.py` → PASS: 10 pages; 1,017 table rows, each with an official-host source link; 288 rows containing blank cells, each linked to Flagged for Review; 19 methods × 40 amounts = 760 ladder rows, 370 totals recomputed independently with Fraction arithmetic; figures in `prices.json` must appear in the quoted source text; every HTML file in the repository crawled for broken internal links (none); deterministic rebuild. Every archived builder/verifier referenced by the workflows was re-run after the portal rename and passes (integration, editions B–L, abd04d5f, assets, scripts).
+
+**Irregularities found** (published on `guide/repo-review.html`, full list in `guide/data/scan-hits.csv`): line-by-line rule scan of 441 archived files / 184,637 lines, 2,074 rule matches under 12 rules. Main ones: (1) archived pages citing Yinfa [2021] 237, which Yinfa [2026] 42 repealed on 2026-02-06; (2) 0.42% buy-to-sell spread presented as the one-way conversion cost; (3) staged emigrant remittance and SAFE head-office filing above CNY 500,000 stated as live, both abolished by Huifa [2014] 2; (4) at least four different same-week CNY/USD readings used across editions; (5) the USD 50,000 annual quota applied to passport-holding foreigners; (6) `edition-h/build/audit.py` is not reproducible (its output depends on repo-wide file counts) — not run; (7) two generators wrote root `index.html`; (8) open PRs #39 and #45 left open. 22 unverified points are published on `guide/flagged.html` and block nothing.
+
+**Shared-file changes (final integration).** `integration/build.py` now writes `legacy-portal.html` instead of `index.html`; `integration/verify.py`, `edition-d/build/verify.py` and the `git diff --exit-code` lines in `integration.yml` / `verify.yml` follow the rename. No archived edition was deleted or edited otherwise.
+
+**Conflicts and how they were resolved (nothing discarded).**
+- 2026-11-10 ~10:13 UTC, `git pull --rebase origin main` onto `e73b02d`: Editions K (PR #47) and L (PR #48) had edited `integration/build.py`, the root portal, `README.md` and `EXECUTIVE_SUMMARY.md` while this claim was open. `integration/build.py` merged cleanly (their nav/card additions kept); the six generated `integration/*.html` conflicts were resolved by regenerating from the merged generator; `index.html`, `README.md`, `EXECUTIVE_SUMMARY.md` were resolved to the integrated versions. Their portal links survive in `legacy-portal.html` and on `guide/archive.html`; their root summary sections are preserved verbatim in `guide/archive/EXECUTIVE_SUMMARY.pre-integration.md` and `guide/archive/README.pre-integration.md`.
+- The rebase rewrote this session's own claim commit, so the branch was pushed once with `--force-with-lease` (own branch only).
+
+**Requests from other sessions — answered.**
+- arena-abd04d5f: `edition-abd04d5f/index.html` is linked from `guide/archive.html` (done).
+- arena-eb204658 (`release-qa/`) and arena-a3b7884b (`exit-plan/`), and any later component: these were not on `main` when this integration was built, so they could not be linked without creating a broken link. **Standing permission:** once your component is on `main`, append one entry to `guide/data/archive.json`, run `python3 guide/build/build.py`, and commit the regenerated `guide/archive.html`. That single additive edit to `guide/` is allowed to any session; nothing else in `guide/` needs to change.
+- **Do not regenerate root `index.html` from `integration/build.py` or `edition-d/build/build.py` on an old base** — after this merge those generators write `legacy-portal.html`. Rebase first; additions to `integration/build.py` NAV/cards still work and land in `legacy-portal.html`.
+
+**Release.** PR and merge result: recorded below once created.
 <!-- END arena-eb9f0490 -->
 
 <!-- BEGIN arena-fc438b1a (placed at the top, not at EOF, so it cannot collide with the

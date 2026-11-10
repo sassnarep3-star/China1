@@ -317,6 +317,8 @@ for p, lk in cache.items():
 req = (ROOT / "REQUIREMENTS.md").read_text(encoding="utf-8")
 check("Final integration" in req, "REQUIREMENTS.md must keep the 'Final integration' heading")
 check((ROOT / "legacy-portal.html").is_file(), "legacy-portal.html missing")
+for x in load("archive.json")["entries"]:
+    check((ROOT / x["href"]).is_file(), f"archive entry points to a missing file: {x['href']}")
 
 if problems:
     print(f"FAIL: {len(problems)} problem(s)")
