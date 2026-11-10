@@ -1,0 +1,18 @@
+name: Verify guide
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  guide:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Rebuild the guide and fail if committed pages are stale
+        run: |
+          python3 guide/build/build.py
+          git diff --exit-code -- index.html guide EXECUTIVE_SUMMARY.md
+      - name: Sources on every row, blanks flagged, arithmetic, link crawl
+        run: python3 guide/build/verify.py
