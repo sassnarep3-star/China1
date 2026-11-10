@@ -155,7 +155,7 @@ def build_methods():
         rs, ids, ns = [], [], []
         for mm in [x for x in M if x["kind"] == kind]:
             c = mm["cost"]
-            if c == "rail": cc = ['<a href="costs.html">wire cost applies</a>'] * 3
+            if c == "rail": cc = ['%s <a href="costs.html#boc">by BOC wire</a>' % usd(BY[u]["boc_std"]) for u in (10000, 100000, 400000)]
             elif c is None: cc = [blank(mm["flag"]) if mm.get("flag") else "—"] * 3
             else:
                 cc = cost3(mm)
@@ -265,13 +265,13 @@ def build_sources():
 def build_review():
     inv = json.load(open(os.path.join(OUT, "data", "repo_inventory.json"), encoding="utf-8"))
     paths = {"R01": "README.md", "R02": "README.md", "R03": "README.md", "R04": "EXECUTIVE_SUMMARY.md", "R05": "EXECUTIVE_SUMMARY.md", "R06": "EXECUTIVE_SUMMARY.md",
-             "R07": "EXECUTIVE_SUMMARY.md", "R08": "integration/costs.html", "R09": "EXECUTIVE_SUMMARY.md", "R10": "README.md", "R11": "integration/evidence.json", "R12": "COORDINATION.md", "R13": "COORDINATION.md", "R14": "EXECUTIVE_SUMMARY.md"}
+             "R07": "EXECUTIVE_SUMMARY.md", "R08": "integration/costs.html", "R09": "EXECUTIVE_SUMMARY.md", "R10": "README.md", "R11": "integration/evidence.json", "R12": "COORDINATION.md", "R13": "COORDINATION.md", "R14": "EXECUTIVE_SUMMARY.md", "R15": "edition-l/data/costs.csv", "R16": "COORDINATION.md"}
     rows = [["<b>%s</b>" % i, '<span class="sev %s">%s</span>' % (sv.lower(), sv), e(w), e(d), e(fx), (src(s) + " " if s else "") + gh(paths[i])] for i, sv, w, d, fx, s in AUDIT]
     tot = {k: sum(v[k] for v in inv["dirs"].values()) for k in ("files", "html", "tr", "ext_links")}
     irows = [["<b>%s</b>" % e(k), str(v["files"]), str(v["html"]), format(v["tr"], ","), format(v["ext_links"], ","),
               '<a class="s" href="%s/tree/main%s" rel="noopener">Open</a>' % (REPO, "" if k == "(root)" else "/" + k)] for k, v in inv["dirs"].items()]
     irows.append(["<b>Total</b>", str(tot["files"]), str(tot["html"]), format(tot["tr"], ","), format(tot["ext_links"], ","), '<a class="s" href="%s" rel="noopener">Open</a>' % REPO])
-    body = ('<p class="note">Review of the repository as it stood on <code>main</code> at commit <code>%s</code>. The two root documents a reader meets first were checked line by line against sources re-read on %s. Every committed page was machine-scanned for broken local links (%d found) and external hosts (%d). The earlier editions\' thousands of rows were not individually re-certified — that is stated, not hidden.</p>'
+    body = ('<p class="note">Review of the repository outside this edition as it stood on <code>main</code> at commit <code>%s</code>. The two root documents a reader meets first were checked line by line against sources re-read on %s. Every committed page was machine-scanned for broken local links (%d found) and external hosts (%d). The earlier editions\' thousands of rows were not individually re-certified — that is stated, not hidden.</p>'
             '<h2 id="findings">Findings</h2>' % (inv["snapshot_commit"][:7], CHECKED, inv["broken_local_links"], len(inv["hosts"])) +
             table(["ID", "Severity", "Where", "Finding", "Suggested fix", "Source"], rows, ids=[a[0] for a in AUDIT]) +
             '<h2 id="inventory">Inventory at review time</h2>' + table(["Folder", "Files", "HTML pages", "Table rows", "External links", "Source"], irows, cls="num"))

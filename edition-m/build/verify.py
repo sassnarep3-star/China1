@@ -87,6 +87,18 @@ if os.path.exists(es):
     if "669.03" in t:  # only assert while the reviewed text is still in place
         for U, (b, h) in legacy.items(): ok(b in t and h in t, "R05: figure %s/%s not found in EXECUTIVE_SUMMARY.md" % (b, h))
 
+# ---- 3b. audit claim R15: Edition L's ladder L1 differs from ours only by the fee-conversion convention
+el = os.path.join(ROOT, "edition-l", "data", "costs.csv")
+if os.path.exists(el):
+    L = {int(r["target_usd"]): r for r in csv.DictReader(open(el, encoding="utf-8")) if r["ladder"] == "L1"}
+    if L.get(10000, {}).get("known_total_usd") == "68.42":  # only while the reviewed data is in place
+        for U in (10000, 400000):
+            ours = exp_all[U]; theirs = L[U]
+            ok(theirs["fx_half_spread_usd"] == ours["spread"], "R15: margin differs from Edition L at $%d" % U)
+            ok(abs(Fr(theirs["sender_usd"]) - Fr(ours["boc_fee_cny"]) / ASK) <= Fr(1, 100), "R15: Edition L fee is not our CNY fee at the selling rate at $%d" % U)
+            ok(Fr(ours["boc_std"]) - Fr(theirs["known_total_usd"]) <= Fr(15, 100), "R15: totals differ by more than 15 cents at $%d" % U)
+        ok(L[400000]["known_total_usd"] == "915.77", "R15: Edition L $400,000 total is not 915.77")
+
 # ---- 4. generated HTML: every table row has a source link; blanks are flagged; links resolve
 class P(HTMLParser):
     def __init__(s):
