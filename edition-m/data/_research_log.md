@@ -265,3 +265,33 @@ eCFR "up to date as of 11/06/2026"; section timeline's most recent change 1/17/2
 - 31 U.S.C. 5321(a)(5)(B)(i) Foreign Financial Agency Transaction—Non-Willful Violation: statutory $10,000 -> $16,536.
 - 31 U.S.C. 5321(a)(5)(C)(i)(I) Foreign Financial Agency Transaction—Willful Violation: statutory $100,000 -> $165,353.
 -> No later (2026) adjustment is shown in the eCFR as of 2026-11-06.
+
+### S-CUSTOMS-RMB  http://guangzhou.customs.gov.cn/guangzhou_customs/381679/3795484/3800229/index.html  (official excerpt returned by the search tool)
+Guangzhou Customs 【行邮监管】出境、入境可以携带多少现金？ (2021-08-02): "中国公民出入境、外国人入出境每人每次携带的人民币限额由原来的6000元调整为20000元" (中国人民银行公告2004第18号). "携带不超过等值5000美元的外币 … 海关予以放行；携带超过等值5000美元的外币应当向海关书面申报。"
+### S-SZ-PORT-CASH  https://ka.sz.gov.cn/xxgk/qt/gzdt/content/post_12283223.html  (official excerpt; Shenzhen Municipal Port Office, 2025-07-17)
+"每人每次携带的人民币不得超出20000元限额". Outbound foreign cash with no / beyond last inbound declaration: "携带金额≤等值5000美元的，不需申领《携带证》，海关予以放行"; "当天内第二次及以上出境时，可携带不超过等值500美元"; "15天内第二次及以上出境时，可携带不超过等值1000美元". Penalty: 《海关行政处罚实施条例》第十九条第二项、第二十条 — undeclared excess cash without concealment: "海关应当予以警告，可以并处超额携带的现金价值20%以下罚款 … 对超额携带的现金责令退回。"
+
+### S-SAFE-CASES-2023  http://m.safe.gov.cn/safe/2023/0804/23035.html  (official excerpt)
+国家外汇管理局关于外汇违规案例的通报 (2023-08-04): "2021年1月至11月，胡某通过地下钱庄非法买卖外汇19笔，金额合计333.1万美元。该行为违反《个人外汇管理办法》第三十条，根据《外汇管理条例》第四十五条，处以罚款215.7万元人民币。处罚信息纳入中国人民银行征信系统。" Also: 吴某 98笔 475.3万美元 -> 罚款288.3万元; 蔡某 58笔 413.6万美元 -> 235.5万元; 赵某 133笔 470.1万美元 -> 279.7万元; 范某 86笔 580.5万美元 -> 365.7万元.
+### S-SAFE-CASES-2024  http://www.safe.gov.cn/shaanxi/2024/0506/1853.html  (official excerpt; SAFE Shaanxi repost 2024-05-06)
+"2022年1月至2023年3月，刘某通过地下钱庄非法买卖外汇48笔，金额合计307.7万美元 … 处以罚款167.2万元人民币"; 王某 20笔 207.0万美元 -> 199.2万元; 阮某 99笔 320.5万美元 -> 173.7万元; 王某 49笔 293.3万美元 -> 152.5万元; 曾某 49笔 205.7万美元 -> 105.9万元. Each: "处罚信息纳入中国人民银行征信系统".
+
+### S-PBOC-2018-3  https://www.safe.gov.cn/henan/2018/0321/306.html  (official excerpt; SAFE Henan repost of the PBOC release on 银发〔2018〕3号)
+"《通知》明确银行可在“展业三原则”的基础上，为个人办理其他经常项目人民币跨境收付业务，便利境内个人将境外合法收入汇回境内使用，以及境外个人将境内合法人民币收入汇出境外。" ("满足个人项下雇员报酬、社会福利、赡家款等人民币跨境结算需要")
+### S-PBOC-BJ-RMB  https://beijing.pbc.gov.cn/beijing/132005/2025111421421910358/index.html  (official excerpt; PBOC Beijing)
+"一名南非籍人士办理完成了一笔汇往南非的跨境人民币汇款 … 薪酬收入为人民币，部分需要汇回南非。之前，她需要先在银行换汇再汇回南非，3号文印发后，她可以办理人民币直接汇款 … 相较之前还节省了相应的换汇费用。" "截至2018年9月底，北京地区银行共完成个人人民币薪酬跨境收付累计金额4913.29万元，累计笔数566笔。"
+
+### S-PBOC-CRYPTO-2026  https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html  (official excerpt)
+银发〔2026〕42号 (2026-02-06), PBOC + NDRC + MIIT + MPS + SAMR + NFRA + CSRC + SAFE: "虚拟货币相关业务活动属于非法金融活动。在境内开展法定货币与虚拟货币兑换业务、虚拟货币之间的兑换业务 … 一律严格禁止，坚决依法取缔。境外单位和个人不得以任何形式非法向境内主体提供虚拟货币相关服务。" "不具有法偿性，不应且不能作为货币在市场上流通使用".
+
+### S-IRS-REMIT-TAX  https://www.irs.gov/irb/2026-18_IRB  (official excerpt; REG-114499-25)
+"Section 4475 imposes a one percent tax on remittance transfers made after December 31, 2025, for which the sender provides cash, a money order, a cashier's check, or other similar physical instrument to the remittance transfer provider." (IRB 2025-43, Notice 2025-55: "the remittance transfer tax is paid by the sender"; terms defined by section 919(g) of the Electronic Fund Transfer Act.)
+-> Not read here: whether an inbound wire can ever be a "remittance transfer"; EFTA 919(g) text not opened. Wise's own page states the tax applies to transfers "sent from the US".
+
+### S-CBP-CURRENCY  https://www.cbp.gov/newsroom/local-media-release/cbp-seizes-53800-undeclared-currency-fort-lauderdale-airport  (official excerpt; CBP release 2026-07-16)
+"There is no limit to the amount of currency or other monetary instruments travelers may transport into or out of the United States. However, anyone transporting more than $10,000 in currency or monetary instruments into or out of the country must report the funds by filing a FinCEN Form 105 … Failure to report currency or filing a false report may result in the seizure of the currency and could lead to civil or criminal penalties."
+(Electronic filing: https://fincen105.cbp.dhs.gov — per another CBP release.)
+
+### S-IRS-FTC  https://www.irs.gov/individuals/international-taxpayers/foreign-taxes-that-qualify-for-the-foreign-tax-credit  (official excerpt; page dated 2026-07-09)
+Four tests: "The tax must be imposed on you; You must have paid or accrued the tax; The tax must be the legal and actual foreign tax liability; The tax must be an income tax (or a tax in lieu of an income tax)". "Foreign taxes on wages, dividends, interest, and royalties generally qualify for the credit."
+Instructions for Form 1116 https://www.irs.gov/instructions/i1116 (excerpt): "File Form 1116 to claim the foreign tax credit …"; "The foreign tax credit is allowed for the year to which the foreign tax relates."
