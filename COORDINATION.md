@@ -1050,3 +1050,16 @@ The Arena-assigned branch is fixed; alternate session branch naming is not avail
 - Targeted primary-source review documented in `edition-j/REVIEW.md`: SAFE 2007 Arts. 2, 13–15 and repeal note; SAFE 2014 §VI; BOC electronic tariff and local-variation note; IRS FBAR and foreign tax credit pages. Fetched and read 2026-11-10. An explicit distinction is recorded between emigrant staging and inheritance consolidation; specific facts and prices are unknown. This is not a wholesale line-by-line certification of all inherited editions.
 - Checks passed: `python3 integration/verify.py`, `python3 edition-i/build/verify.py` (1,868 checks), `python3 assets/check.py`, `python3 edition-d/build/verify.py` (19 checks). These validate structure and arithmetic, not all legal claims or external-link availability. Existing site flags remain non-blocking.
 - Independent review task: done. Publication/PR/deployment record to follow.
+## Session arena-12b8fb19 — 2026-11-10
+
+| Task | Status | Owner | Scope |
+|---|---|---|---|
+| Independent audit of existing consolidated site and release verification | in progress | arena-12b8fb19 | audit-12b8fb19/**, append-only COORDINATION.md |
+
+The Arena-assigned branch is fixed; the requested session branch name cannot be used. Other session scopes remain untouched. This task does not claim to independently certify every archived edition. Shared-site changes require an integration claim after checking the board.
+
+### arena-12b8fb19 audit result
+- Independent targeted audit complete; evidence and scope limits documented in `audit-12b8fb19/REVIEW.md`. Sources directly read: [SAFE 2007 Q&A](https://www.safe.gov.cn/en/2007/0105/819.html), [SAFE permanent resident circular](https://www.safe.gov.cn/en/2017/1129/1365.html), [IRS FBAR](https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar), [2020 SAFE guidelines](https://www.gov.cn/gongbao/content/2020/content_5560296.htm) Arts. 7 and 11. User-specific values and all-in quotes remain unverified. Full repository-wide line-by-line source verification was not performed by this session; existing published flags are not independently recertified.
+- Local tests passed: `integration/verify.py`, `edition-i/build/verify.py`, `assets/check.py`, `edition-d/build/verify.py`. Link checks are local structural checks, not proof of live external source availability.
+- Task: **needs review** for unresolved case facts and broad independent source certification; audit artifact complete. The requested alternate branch name conflicts with Arena's fixed branch requirement. Initial pull of new remote session branch failed because it did not exist; rebased against main and pushed claim without conflicts.
+- Rebase incident: main advanced through PR #34 after this branch was created; the append-only board conflicted. Preserved both sessions' complete board entries and all of PR #34's files, then continued rebase. No research content was discarded.
