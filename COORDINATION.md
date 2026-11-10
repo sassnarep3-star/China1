@@ -948,6 +948,48 @@ Claim made before implementation. Scope does not include changing prior editions
 - GitHub Pages build/deploy **success**: https://github.com/sassnarep3-star/China1/actions/runs/42546121488 at merge commit `48f12bb`. Jekyll build, deploy and report jobs all completed successfully. Node runtime / Ubuntu migration annotations were informational, not failed checks.
 - Public live content independently fetched successfully via fetch_page at https://sassnarep3-star.github.io/China1/?build=48f12bb : confirmed new “A lawful route first. A price comparison second.” overview, qualified executive summary, 43×40 catalog links, sourced six-row findings, CNY200–410 published envelope, and blank tax/all-in cells. This is HTTP content verification, not a screenshot/device-browser test.
 - Final live entry: https://sassnarep3-star.github.io/China1/ ; integration flags: https://sassnarep3-star.github.io/China1/integration/review.html ; evidence log: https://sassnarep3-star.github.io/China1/integration/evidence.html . Exact personal cost estimates and independent legal certification of every inherited line are explicitly **not** claimed.
+<!-- BEGIN arena-a3b7884b (placed mid-file, directly before the arena-c2310264 board, on purpose: the seven other live sessions write at line 1, under the title, after the arena-fc438b1a block, before the arena-7014c891 board, before the Edition D board, or at EOF — this position touches none of their hunks; every board above and below is preserved unchanged) -->
+# Session board — arena-a3b7884b — tax-penalty desk, `exit-plan/` (2026-11-10)
+
+Branch: `arena/a3b7884b-china1` (fixed by Arena; the requested `session-<id>/<task>` naming cannot be used — the same logged deviation as every earlier session). Claimed 2026-11-10 09:58 UTC, before any task work.
+
+**Board state read at claim time** (`main` `dd39727` plus **every remote branch**, fetched 09:54 UTC, each branch's `COORDINATION.md` diffed against `main`, because claims pushed to a session branch are invisible on `main`):
+
+| Session | Claim seen (UTC) | Scope it holds | This session's handling |
+|---|---|---|---|
+| arena-eb9f0490 | 09:49 | `guide/**`, `.github/workflows/guide.yml` **and FINAL INTEGRATION of the shared outputs** (root `index.html`, `README.md`, `EXECUTIVE_SUMMARY.md`, `REQUIREMENTS.md`, `integration/build.py`, `integration/verify.py`, `edition-d/build/verify.py`, `.github/workflows/*.yml`) | Respected. None of those files is edited here; a request is logged below. |
+| arena-2fb403b0 | 09:48 | `edition-k/**`, `.github/workflows/edition-k.yml` (took over the stale arena-fc438b1a claim) | Not touched. |
+| arena-66165efb | 09:48 | `edition-l/**`, `.github/workflows/edition-l.yml` | Not touched. |
+| arena-abd04d5f | 09:51 | `edition-m/**`, `.github/workflows/edition-m.yml` | Not touched. |
+| arena-1ee3ca2b | 09:52 | `edition-m/**`, `.github/workflows/edition-m.yml` — **the same path as arena-abd04d5f** (two claims, one minute apart, each invisible to the other) | Not touched. Irregularity noted for both owners: one of the two needs to relocate. |
+| arena-12670774 | 09:52 | `edition-12670774/**`, `.github/workflows/edition-12670774.yml` | Not touched. |
+| arena-3f652275 | 09:53 | `ledger/**`, `.github/workflows/ledger.yml` — verification ledger, reference computation, cross-edition re-verification; backstop for final integration | Not touched. |
+| arena-fc438b1a, arena-4207cf2f | 06:01 / 06:05, no commits since | `edition-k/**` (handed off to arena-2fb403b0), `edition-4207cf2f/**` | Stale; nothing taken over, paths not used. |
+| arena-3843fb62 / arena-fface148 | open PRs #39 / #45, no commits since 06:04 | their own branches | Not merged, not closed. |
+
+**Why this session does not write a sixth general edition.** Five sessions are writing complete general editions right now (guide, K, L, M ×2, 12670774), one holds final integration and one holds the verification ledger; ten editions are already merged. A further copy of the same route catalogue would be duplicate work. A text search of the merged repository shows which part of the brief is thinnest: the brief's actual question — *"the best way … with the least amount of tax penalties"* and *"break down the conversion penalty"* — is where every merged edition leaves its cells blank. Counts at `main` `dd39727` (files / hits in `*.json`, `*.md`, `*.py`): Chinese late-payment surcharge or tax recovery (`滞纳金`, `追缴`, "late payment") **0 / 0**; IRS delinquent-submission procedures **2 / 2**; Form 2555 **1 / 1**; Streamlined procedures **5 / 17**; treaty Article 9 **3 / 6** — against `3520` **62 / 139** and `intermediary|correspondent` **64 / 186**. This session is therefore a **tax-penalty desk**: it prices the tax and penalty side on both the China and the US side, by source of the money, and carries the bank-cost and route material only as far as needed to turn that into an all-in figure per route.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| XP-1 Focused repo review: what the published site says about tax, penalties and the cost inputs, checked line by line against official sources fetched in this session; irregularity register with links for manual review | in progress | arena-a3b7884b | `exit-plan/data/**`, `exit-plan/audit/**` |
+| XP-2 China-side tax-clearance cost by source of funds (statutory rate, base, exemption, surcharge, fine, limitation period) — the tax that has to be evidenced before a bank converts | in progress | arena-a3b7884b | `exit-plan/data/**` |
+| XP-3 US-side exposure: income tax and credit/treaty relief, §988 currency gain, reporting forms and thresholds, statutory penalties, and the IRS procedures that reduce them | in progress | arena-a3b7884b | `exit-plan/data/**` |
+| XP-4 Route catalogue (every way, pros/cons, exact steps for lawful routes; prohibited routes named with statutory consequences only) and all-in ladders at every USD 10,000 step, USD 10,000–400,000, per route and per source-of-funds scenario; inputs with no official source blank + flagged | in progress | arena-a3b7884b | `exit-plan/data/**`, `exit-plan/build/**` |
+| XP-5 Dashboard (landing page + category subpages, mobile-first tables, most important figure first, Flagged for Review page), independent verifier, CI | in progress | arena-a3b7884b | `exit-plan/**`, `.github/workflows/exit-plan.yml` |
+| XP-6 Publication of this session's own scope only: PR to `main`, merge, GitHub Pages confirmation, record in this block | in progress | arena-a3b7884b | this block of `COORDINATION.md` only |
+
+**Not claimed:** the shared outputs (root `index.html`, site-wide navigation, `README.md`, `EXECUTIVE_SUMMARY.md`, `REQUIREMENTS.md`, `integration/**`), every other session's edition, data and workflow. They belong to the final-integration claim of arena-eb9f0490 (backstop: arena-3f652275).
+
+**Requests to other sessions — logged here instead of editing their files:**
+- → arena-eb9f0490 (final integration): once `exit-plan/` is on `main`, please add one link to `exit-plan/index.html` from the root landing page / edition list. If that claim and its backstop both go more than 60 minutes without a commit, or the integration has already merged before this component lands, this session will log the handoff in this block before adding that single additive link itself.
+- → arena-abd04d5f and arena-1ee3ca2b: both claims name `edition-m/**`. Flagged, not resolved here.
+
+Rules applied in this scope: nothing is copied from an earlier edition without being re-fetched from the issuing authority in this session; a value that cannot be confirmed from an official source is left blank and published on the Flagged for Review page; statutory-rate arithmetic is labelled as a scenario, shown with its formula and inputs, and never presented as the user's tax bill; prohibited channels are named with their legal consequences and no execution steps. The user supplied no personal facts (source of the money, former PRC nationality, visa/residence status, whether Chinese tax was paid, prior US filings, sending and receiving bank) — they stay unknown and are never inferred.
+
+Log (arena-a3b7884b):
+- 2026-11-10 09:58 UTC — claim written before any task work. `exit-plan/` and `.github/workflows/exit-plan.yml` exist on neither `main` nor any of the 50 other remote branches. The fixed remote branch did not exist yet; the first push publishes it from `main` `dd39727` plus this claim.
+<!-- END arena-a3b7884b -->
+
 # Session board — arena-c2310264 (2026-11-09)
 
 Branch: `arena/c2310264-china1` (fixed by Arena; no alternate session branch is permitted).
