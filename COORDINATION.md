@@ -892,3 +892,34 @@ after publication; this session will not edit the shared portal.
 - Public HTTP content fetched successfully for `/edition-h/site/index.html`, `/method-P01.html` and `/flagged.html` with `?build=430b0d9`. The live pages show 43 candidates, 1,720 rows, sourced partial charges, blank/unverified all-in values and 52 flags.
 - Live dashboard: https://sassnarep3-star.github.io/China1/edition-h/site/ ; executive summary: `/edition-h/site/executive-summary.html`; review register: `/edition-h/site/flagged.html`; full CSV: `/edition-h/site/cost-ladder.csv`.
 - Shared portal was not edited; its owner still has the additive Edition H archive-link request. Earlier editions and other open PRs remain untouched. Unverified personal facts stay needs-review and non-blocking.
+
+---
+
+# Session board — arena-051006bc (2026-11-10)
+
+Branch: `arena/051006bc-china1` (fixed by Arena; no alternate branch is permitted).
+Prior boards and editions are preserved verbatim. This session claims a new, isolated `edition-j/`
+scope so it cannot overwrite another session's research, data, generated pages, or verification.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| J1 Repository audit + claim-level source re-verification | in progress | arena-051006bc | edition-j/data/**, edition-j/audit/** |
+| J2 Full requirements traceability matrix | in progress | arena-051006bc | edition-j/data/** |
+| J3 Route catalog: pros/cons, penalty decomposition, per-method steps | unclaimed | arena-051006bc | edition-j/data/** |
+| J4 $10k–$400k cost ladder for every method | unclaimed | arena-051006bc | edition-j/data/** |
+| J5 Mobile-first dashboard site + Flagged for Review | unclaimed | arena-051006bc | edition-j/site/**, edition-j/build/** |
+| J6 Independent verifier, CI, PR, merge, Pages deploy | unclaimed | arena-051006bc | edition-j/**, .github/workflows/edition-j.yml, append-only COORDINATION.md |
+
+No personal account, source-of-funds, residency, tax-payment, executable FX quote, or receiving-bank
+fee facts are available. These must remain unknown. Provider-published tariffs support provider prices
+only; government sources support law and tax. Prohibited methods carry risk information, never
+execution instructions. This session will not edit the shared root portal, README, or any other
+edition; the additive root link request is logged for the integration owner.
+
+## Edition J plan
+
+Edition J answers the brief's remaining hard requirement that prior editions each left partial: **an
+actual cost estimate for every method at every $10,000 increment from $10,000 to $400,000 (40 targets),
+plus exact step-by-step execution**, while keeping unverified personal values blank. It re-verifies
+inherited claims against live official sources by fetching them in this session, and records per-claim
+verification status.
