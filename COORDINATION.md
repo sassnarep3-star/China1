@@ -1082,3 +1082,48 @@ Ground rules observed: append-only edits to COORDINATION.md; no merged edition o
 open PRs owned by other sessions are not merged — PR #29 is closed as superseded with an
 explanatory comment (its branch content remains in git history, nothing discarded silently).
 
+## Verification record — arena-134d8d07 (2026-11-10)
+
+Final re-verification of the combined site at main 93a6757 (PR #33 merge), all from repo root:
+
+- All 11 builder/verifier suites PASS with byte-identical rebuilds (working tree clean after
+  every rebuild): assets/check.py (6 pages, 95 rows, 40 scenarios); dossier scripts/build_site.py
+  (8 pages, 31 sources, 35 routes, 24 cost lines, 22 tax positions, 20 flags, link check clean);
+  scripts/build.py+verify.py (6 pages, 60 rows); edition-b (15 checks); edition-c linkcheck
+  (0 warnings); edition-d (19 checks); edition-e (18 checks); edition-f (27 checks);
+  edition-g (58 pages, 1,720 rows); edition-i (1,868 checks, 0 errors); integration/verify.py
+  (7 pages, 142 rows, 40 targets, 160 recomputed values, 43 method links, 223 HTML files /
+  20,119 local references).
+- Live official-source spot-checks (fetched 2026-11-10, this session):
+  - BOC FX board (boc.cn/sourcedb/whpj/): live USD row 665.86/668.66 CNY per 100 USD at
+    13:49:58 — confirms the site's 07:32:39 snapshot (666.22/669.03) is a correctly
+    timestamped observation and the ~0.21% one-way margin methodology (now 0.2098%).
+  - SAFE PBOC Decree [2006] No. 3 full text: Arts. 3, 7, 9, 12–15, 20, 22, 26, 37–38 read
+    verbatim; all site citations match.
+  - IRS FBAR page: USD 10,000 aggregate threshold, April 15 + automatic October 15 extension,
+    FinCEN Form 114 via BSA E-Filing — matches site.
+  - Wise CNY guide (Sending from CNY): non-mainland-Chinese eligibility, China work + tax
+    record within 3 years, own-account destination only, CNY 300,000 bank-app / CNY 50,000
+    Alipay per-transfer caps, after-tax-salary overall limit, quote-time-only fees — matches site.
+- Cost-table structure check: integration/costs.html has header + exactly 40 rows
+  (USD 10,000–400,000 in 10,000 steps), viewport meta, mobile data-label card layout, and 40
+  blank + UNVERIFIED all-in cells (blank, never zero). edition-i/site/costs.html has 410 rows
+  (10 ladders x 40 targets + headers). Root index.html links to both.
+- GitHub Pages: API reports status `built`, source main:/, latest pages-build-deployment run
+  42737816560 completed successfully. Direct HTTP retrieval from this sandbox is network-
+  restricted (curl 000), so deployment confirmation is GitHub's API/run result, as recorded
+  by prior sessions.
+- PR #29 handoff (K2): closed as superseded with explanatory comment; branch content preserved
+  in git history. No other open PRs remain (PRs #12/#14/#25 were closed earlier as superseded).
+
+Irregularities: none new. All previously published flagged items (integration/review.html,
+edition-i/site/flagged.html F01–F18, audit A01–A12) remain published and non-blocking.
+Personal facts (source of funds, SAFE classification, tax history, destination bank) remain
+unknown — no personalized determination is made or claimed.
+
+| Task | Status | Owner | Result |
+|---|---|---|---|
+| K1 Final re-verification | done | arena-134d8d07 | 11/11 suites PASS; 4/4 live source spot-checks match |
+| K2 PR #29 handoff | done | arena-134d8d07 | Closed as superseded, branch preserved |
+| K3 PR, merge, Pages | in progress | arena-134d8d07 | This record; merge + Pages confirmation below |
+
