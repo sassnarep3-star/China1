@@ -372,7 +372,13 @@ else:
     for href in re.findall(r'href="([^"]+)"', doc):
         if href.startswith(("http://", "https://")):
             host = re.match(r"^https?://([^/]+)", href).group(1)
-            if host not in ALLOWED_HOSTS | {"wise.com"}:  # directly checked provider-primary portal source
+            # Final-integration portal sources directly inspected on 2026-11-10.
+            # This exception applies only to the root portal, not archived Edition D rows.
+            portal_hosts = ALLOWED_HOSTS | {
+                "wise.com", "pic.bankofchina.com", "www.hsbc.com.cn",
+                "guangdong.chinatax.gov.cn",
+            }
+            if host not in portal_hosts:
                 portal_bad.append("off-allowlist external: " + href)
             continue
         if href.startswith(("#", "mailto:")):

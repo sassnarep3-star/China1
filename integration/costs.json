@@ -1,0 +1,735 @@
+{
+  "checked_utc": "2026-11-10",
+  "amount_definition": "Gross USD-equivalent principal before fees; one transfer; not guaranteed net receipt.",
+  "boc_observation": {
+    "usd100_bid_cny": 666.22,
+    "usd100_ask_cny": 669.03,
+    "usd100_reference_cny": 671.88,
+    "published_china_time": "2026-11-10 07:32:39",
+    "cny_per_usd_ask": 6.6903,
+    "source": "S16"
+  },
+  "policy": "Known sender fees only. Null is blank/unverified, never zero.",
+  "rows": [
+    {
+      "target_usd": 10000,
+      "cny_scenario": 66903.0,
+      "boc_sender_cny": 216.9,
+      "boc_sender_usd_comparison": 32.42,
+      "hsbc_sender_cny": 220.0,
+      "hsbc_sender_usd_comparison": 32.88,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 20000,
+      "cny_scenario": 133806.0,
+      "boc_sender_cny": 283.81,
+      "boc_sender_usd_comparison": 42.42,
+      "hsbc_sender_cny": 253.81,
+      "hsbc_sender_usd_comparison": 37.94,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 30000,
+      "cny_scenario": 200709.0,
+      "boc_sender_cny": 350.71,
+      "boc_sender_usd_comparison": 52.42,
+      "hsbc_sender_cny": 320.71,
+      "hsbc_sender_usd_comparison": 47.94,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 40000,
+      "cny_scenario": 267612.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 387.61,
+      "hsbc_sender_usd_comparison": 57.94,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 50000,
+      "cny_scenario": 334515.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 454.52,
+      "hsbc_sender_usd_comparison": 67.94,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 60000,
+      "cny_scenario": 401418.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 521.42,
+      "hsbc_sender_usd_comparison": 77.94,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 70000,
+      "cny_scenario": 468321.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 588.32,
+      "hsbc_sender_usd_comparison": 87.94,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 80000,
+      "cny_scenario": 535224.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 620.0,
+      "hsbc_sender_usd_comparison": 92.67,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 90000,
+      "cny_scenario": 602127.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 620.0,
+      "hsbc_sender_usd_comparison": 92.67,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 100000,
+      "cny_scenario": 669030.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 620.0,
+      "hsbc_sender_usd_comparison": 92.67,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 110000,
+      "cny_scenario": 735933.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 620.0,
+      "hsbc_sender_usd_comparison": 92.67,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 120000,
+      "cny_scenario": 802836.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 620.0,
+      "hsbc_sender_usd_comparison": 92.67,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 130000,
+      "cny_scenario": 869739.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 620.0,
+      "hsbc_sender_usd_comparison": 92.67,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 140000,
+      "cny_scenario": 936642.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 620.0,
+      "hsbc_sender_usd_comparison": 92.67,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 150000,
+      "cny_scenario": 1003545.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 620.0,
+      "hsbc_sender_usd_comparison": 92.67,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 160000,
+      "cny_scenario": 1070448.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 620.0,
+      "hsbc_sender_usd_comparison": 92.67,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 170000,
+      "cny_scenario": 1137351.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 620.0,
+      "hsbc_sender_usd_comparison": 92.67,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 180000,
+      "cny_scenario": 1204254.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 620.0,
+      "hsbc_sender_usd_comparison": 92.67,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 190000,
+      "cny_scenario": 1271157.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 620.0,
+      "hsbc_sender_usd_comparison": 92.67,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 200000,
+      "cny_scenario": 1338060.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 620.0,
+      "hsbc_sender_usd_comparison": 92.67,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 210000,
+      "cny_scenario": 1404963.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 620.0,
+      "hsbc_sender_usd_comparison": 92.67,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 220000,
+      "cny_scenario": 1471866.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 620.0,
+      "hsbc_sender_usd_comparison": 92.67,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 230000,
+      "cny_scenario": 1538769.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 620.0,
+      "hsbc_sender_usd_comparison": 92.67,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 240000,
+      "cny_scenario": 1605672.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 620.0,
+      "hsbc_sender_usd_comparison": 92.67,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 250000,
+      "cny_scenario": 1672575.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 620.0,
+      "hsbc_sender_usd_comparison": 92.67,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 260000,
+      "cny_scenario": 1739478.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 620.0,
+      "hsbc_sender_usd_comparison": 92.67,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 270000,
+      "cny_scenario": 1806381.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 620.0,
+      "hsbc_sender_usd_comparison": 92.67,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 280000,
+      "cny_scenario": 1873284.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 620.0,
+      "hsbc_sender_usd_comparison": 92.67,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 290000,
+      "cny_scenario": 1940187.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 620.0,
+      "hsbc_sender_usd_comparison": 92.67,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 300000,
+      "cny_scenario": 2007090.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 620.0,
+      "hsbc_sender_usd_comparison": 92.67,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 310000,
+      "cny_scenario": 2073993.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 620.0,
+      "hsbc_sender_usd_comparison": 92.67,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 320000,
+      "cny_scenario": 2140896.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 620.0,
+      "hsbc_sender_usd_comparison": 92.67,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 330000,
+      "cny_scenario": 2207799.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 620.0,
+      "hsbc_sender_usd_comparison": 92.67,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 340000,
+      "cny_scenario": 2274702.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 620.0,
+      "hsbc_sender_usd_comparison": 92.67,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 350000,
+      "cny_scenario": 2341605.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 620.0,
+      "hsbc_sender_usd_comparison": 92.67,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 360000,
+      "cny_scenario": 2408508.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 620.0,
+      "hsbc_sender_usd_comparison": 92.67,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 370000,
+      "cny_scenario": 2475411.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 620.0,
+      "hsbc_sender_usd_comparison": 92.67,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 380000,
+      "cny_scenario": 2542314.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 620.0,
+      "hsbc_sender_usd_comparison": 92.67,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 390000,
+      "cny_scenario": 2609217.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 620.0,
+      "hsbc_sender_usd_comparison": 92.67,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    },
+    {
+      "target_usd": 400000,
+      "cny_scenario": 2676120.0,
+      "boc_sender_cny": 410.0,
+      "boc_sender_usd_comparison": 61.28,
+      "hsbc_sender_cny": 620.0,
+      "hsbc_sender_usd_comparison": 92.67,
+      "fx_cost_usd": null,
+      "downstream_usd": null,
+      "documentation_usd": null,
+      "tax_usd": null,
+      "all_in_usd": null,
+      "sources": [
+        "S14",
+        "S16",
+        "S18"
+      ]
+    }
+  ]
+}
