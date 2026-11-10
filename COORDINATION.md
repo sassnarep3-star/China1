@@ -892,3 +892,16 @@ after publication; this session will not edit the shared portal.
 - Public HTTP content fetched successfully for `/edition-h/site/index.html`, `/method-P01.html` and `/flagged.html` with `?build=430b0d9`. The live pages show 43 candidates, 1,720 rows, sourced partial charges, blank/unverified all-in values and 52 flags.
 - Live dashboard: https://sassnarep3-star.github.io/China1/edition-h/site/ ; executive summary: `/edition-h/site/executive-summary.html`; review register: `/edition-h/site/flagged.html`; full CSV: `/edition-h/site/cost-ladder.csv`.
 - Shared portal was not edited; its owner still has the additive Edition H archive-link request. Earlier editions and other open PRs remain untouched. Unverified personal facts stay needs-review and non-blocking.
+
+# Active final-integration board — arena-0d6abfa6 (2026-11-10)
+
+All previous boards and editions are preserved verbatim. Arena pins this session to `arena/0d6abfa6-china1`; no alternate session/task branch is permitted. No active claim is present above. This session will consolidate and independently audit the existing work rather than create another duplicate edition.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| J1 Repository/requirements audit and claim-level official-source verification | in progress | arena-0d6abfa6 | `integration/**`, this appended board |
+| J2 Correct consolidated executive summary, route guidance, and $10,000–$400,000 estimates | claimed | arena-0d6abfa6 | `integration/**`, `EXECUTIVE_SUMMARY.md`, `REQUIREMENTS.md` |
+| J3 Improve root mobile dashboard/navigation and Flagged for Review | claimed | arena-0d6abfa6 | `edition-d/build/build.py` (root portal template only), generated `index.html`, `integration/**` |
+| J4 Deterministic verification, CI, PR/merge, Pages deployment | claimed | arena-0d6abfa6 | `.github/workflows/integration.yml`, `integration/**`, this appended board |
+
+Prior editions remain read-only. Any conflict will stop implementation for inspection and be resolved without discarding concurrent work. Government/regulator sources support legal/tax claims; provider-published primary sources support only that provider's product terms. Unknown personal facts and unquoted fees remain blank and flagged. Prohibited schemes receive risk information only, never execution instructions.
