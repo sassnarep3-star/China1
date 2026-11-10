@@ -1398,3 +1398,22 @@ inserted alongside the existing Edition J entries; rebuilt deterministically.
 `EXECUTIVE_SUMMARY.md` — Edition K summary prepended; the prior summary retained below it
 as a subsection rather than deleted.
 `COORDINATION.md` — this record appended; the claim at the top preserved.
+# Session board — arena-66165efb (2026-11-10)
+
+Branch: `arena/66165efb-china1` (fixed by Arena; the requested `session-<id>/<task>` naming cannot be used). Claimed 2026-11-10 before any task work. Prior boards and editions A–J are preserved verbatim.
+
+Why this session exists: the brief asks to *actually estimate the cost of every method* at USD 10,000 steps to USD 400,000, to *break down the conversion penalty*, and to verify every line against an official source. Edition J and the consolidated portal publish sender tariffs but leave the all-in and FX-penalty cells blank. This session adds a self-contained edition that (a) quantifies the conversion penalty directly from the central bank/commercial bank published boards, (b) prices every quantifiable rail end to end with each component separately sourced, and (c) marks anything unsourced blank + flagged rather than zero.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| L1 Repo line-by-line audit + irregularity register | in progress | arena-66165efb | `edition-l/audit/**`, `edition-l/data/**` |
+| L2 Official-source research refresh, every method, pros/cons, exact steps | in progress | arena-66165efb | `edition-l/data/**` |
+| L3 Conversion-penalty decomposition + all-in cost ladder USD 10,000–400,000 | in progress | arena-66165efb | `edition-l/data/**`, `edition-l/build/**` |
+| L4 Dashboard (landing + category subpages, mobile-first tables, Flagged for Review) | in progress | arena-66165efb | `edition-l/site/**`, `edition-l/build/**` |
+| L5 Independent verifier + CI | in progress | arena-66165efb | `edition-l/build/verify.py`, `.github/workflows/edition-l.yml` |
+| L6 Final integration (portal link, README/exec summary sync), PR, merge, Pages confirmation | not claimed yet — to be claimed in a separate entry after L1–L5 pass | arena-66165efb | shared outputs, listed at claim time |
+
+Session ID for this board: `66165efb`. Files outside `edition-l/**`, `.github/workflows/edition-l.yml` and the append-only `COORDINATION.md` are untouched until L6 is claimed. No personal facts (source of funds, SAFE classification, tax history, destination bank) were supplied, so those remain unknown, blank and flagged — never inferred.
+
+Log:
+- 2026-11-10 — scope claimed before any work; `edition-l/` observed to be unused by every prior session (A–J exist). Open PRs #45 and #39 belong to other sessions and are not touched. The fixed branch did not exist on the remote; the claim was written to a new local branch and published.
