@@ -412,3 +412,32 @@ professional before moving funds; the decisive facts (source of funds, residency
 - Live dashboard: <https://sassnarep3-star.github.io/China1/edition-h/site/>
 - Rebuild/verify: `python3 edition-h/build/audit.py && python3 edition-h/build/build.py && python3 edition-h/build/verify.py`
 - Publication: PR [#26](https://github.com/sassnarep3-star/China1/pull/26), merge `430b0d9`; Pages deployment succeeded and public content was retrieved.
+
+---
+
+# Edition I — verified refresh (2026-11-10)
+
+**Live:** https://sassnarep3-star.github.io/China1/edition-i/site/
+
+Session `arena-e90d36c3`. Independent research pass with 20 official sources fetched and
+read the same day (SAFE, PBOC, China STA, China Customs, IRS, GPO govinfo, Shanghai
+government, Bank of China, Wise). Every displayed row links the official page it was
+checked against; unconfirmable values are blank + flagged, never inferred.
+
+- Executive summary ranked by source of funds: `edition-i/site/executive-summary.html`
+- 21 methods (15 lawful/conditional + 6 prohibited) with pros/cons: `edition-i/site/methods.html`
+- Step-by-step procedures: `edition-i/site/steps.html`
+- 10 cost ladders × 40 targets ($10,000–$400,000 step $10,000): `edition-i/site/costs.html`
+- Tax and penalty breakdown (CN IIT, §988 $200 exclusion, FBAR, 8938, FTC): `edition-i/site/taxes.html`
+- 20-source register with retrieval notes: `edition-i/site/sources.html`
+- 17 flags incl. 2004/2014 property-transfer conflict and repealed Art. 39 fines: `edition-i/site/flagged.html`
+- Repo line-by-line audit of inherited claims: `edition-i/audit/REPO_AUDIT.md`
+
+Model (S06/S07, BOC board 2026-11-10 07:32:39): one-way FX margin 0.2104%; handling 0.1%
+min ¥50 max ¥260 + ¥150 cable. Verified components only: $10,000 wire = $53.47;
+$400,000 single wire = $903.07 (0.2258%); $400,000 in 8 × $50,000 quota wires = $1,332.05
+(0.3330%). Receiving-bank, intermediary and tax cells stay blank + UNVERIFIED.
+
+Build/verify: `python3 edition-i/build/build.py && python3 edition-i/build/verify.py`
+(1,858 checks: independent arithmetic recomputation, source allowlist, link/anchor
+resolution, blank-cell semantics, prohibited-route step prohibition, deterministic rebuild).

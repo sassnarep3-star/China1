@@ -961,3 +961,58 @@ Log:
 - 2026-11-10: Scope claimed. No personal account, source-of-funds, residency, or quote facts
   are available; those values stay unknown/blank + flagged. Government sources support law
   and tax; provider-published tariffs support provider prices only.
+
+## Edition I completion record — arena-e90d36c3 (2026-11-10)
+
+| Task | Status | Owner | Result |
+|---|---|---|---|
+| I1 Repo line-by-line audit and official-source research refresh | done | arena-e90d36c3 | 20 sources fetched/read 2026-11-10; audit at `edition-i/audit/REPO_AUDIT.md` (12 findings A01–A12) |
+| I2 Requirements, methods with pros/cons, tax-penalty breakdown | done | arena-e90d36c3 | 21 methods (15 lawful/conditional + 6 prohibited risk-only); 14 tax findings |
+| I3 Cost tables $10K–$400K per method, step-by-step procedures | done | arena-e90d36c3 | 10 ladders × 40 targets = 400 rows; 240 priced cells recomputed independently; 1,440 cells blank+flagged |
+| I4 Mobile-first dashboard site + Flagged for Review | done | arena-e90d36c3 | `edition-i/site/` 8 pages; 17 flags F01–F17 published, non-blocking |
+| I5 Verifier, CI, final integration, PR, merge, Pages | done | arena-e90d36c3 | `verify.py` 1,858 checks 0 errors; workflow `edition-i.yml`; portal integration below |
+
+Sources (all fetched 2026-11-10, register at `edition-i/site/sources.html`): PBOC Decree
+[2006] No. 3 (safe.gov.cn/safe/2006/1225/5319.html); SAFE Huifa [2007] No. 1 implementing
+rules incl. USD 50,000 annual total Art. 2 (safe.gov.cn/safe/2007/0105/5320.html); SAFE
+Huifa [2014] No. 2 §§V–VI (safe.gov.cn/tianjin/2024/0903/2594.html); 2004 Interim Measures
+for individual property transfer (m.safe.gov.cn/safe/2004/1116/4133.html); Shanghai
+property-sale FX FAQ (english.shanghai.gov.cn/en-FAQHome/20240204/b4426264395b4fa3adfde73778c94ad4.html);
+BOC e-banking personal remittance tariff (boc.cn/ebanking/service/cs1/200905/t20090506_990712.html);
+BOC FX board snapshot 2026-11-10 07:32:39 (boc.cn/sourcedb/whpj/); SAFE Shanghai 2019
+guidance (safe.gov.cn/shanghai/2019/1213/1198.html); China IIT Law (chinatax.gov.cn);
+IRS FBAR / Form 8938 / IRM 5.21.6 / foreign-currency / foreign-tax-credit pages (irs.gov);
+26 U.S.C. §988 GPO text (govinfo.gov); IRS LB&I §988 practice unit (irs.gov); Wise CNY
+guide (wise.com/help/articles/2955298); PBOC Yin Fa [2021] No. 237 (pbc.gov.cn); Guangzhou
+Customs cash FAQ (guangzhou.customs.gov.cn); SAFE 2020 current-account guide PDF
+(safe.gov.cn/ningxia/...). Retrieval method: direct page fetch; figures read from fetched
+text. Live future availability not claimed.
+
+Verification performed: `python3 edition-i/build/build.py` (8 pages) and
+`python3 edition-i/build/verify.py` = 1,858 checks, 0 errors — byte-identical rebuild,
+independent recomputation of every priced cell from `data/model.json`, exact 40-target
+grid, UNVERIFIED markers on every unconfirmed cell, internal link/anchor resolution,
+external-URL restricted to the 20 registered sources, prohibited methods carry no steps.
+Cross-checkers after portal integration: `python3 integration/verify.py` PASS (3 pages,
+60 rows, 158 links), `python3 assets/check.py` OK (6 pages, 95 rows),
+`edition-d/build/verify.py` PASS 19 checks, `edition-i/build/verify.py` still 0 errors.
+
+Irregularities published (`edition-i/site/flagged.html` + audit A01–A12), all non-blocking:
+F09/A04 2004 staged-remittance vs 2014 §VI(2) conflict; F10/A03 repealed Implementing-Rules
+Art. 39 fines (edition-c handles correctly); A01 README "four numbers" embed an assumed
+$15 Chase receiving fee and are scenario arithmetic, not quotes; F11/A11 uscode.house.gov
+outage (§988 from GPO 2003 edition; subsection (e) unchanged since 1997 per amendment
+notes); F07 Wise fees quote-time only; F12 BOC tariff note-1 local variation; A07/A08
+edition-d tax brackets and edition-c enforcement cases not re-certified (not reused);
+A12 no wholesale re-certification of editions B–H rows. Personal facts (source of funds,
+境内/境外 classification, tax history, destination bank) unknown — F01.
+
+Final integration (this session, sole active session; all other board items done or
+needs-review): `integration/build.py` updated additively — Edition H archive link added
+(fulfilling the logged cross-session request from arena-c2310264) and Edition I cards/nav/
+archive links added; root `index.html` regenerated deterministically; all shared checkers
+pass. Historical editions untouched.
+
+Handoff of stale open PRs #12, #14, #25 (sessions dead >60 min; subjects already
+represented in `main`; PR #25 also edits `edition-d/build/build.py` outside its scope):
+closed at integration with explanatory comments; no content silently discarded.
