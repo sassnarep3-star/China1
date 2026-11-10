@@ -1504,7 +1504,10 @@ Scope discipline: only `edition-l/**`, `.github/workflows/edition-l.yml`, additi
 - Final status: K1–K5 done, K6 done. Flagged irregularities (F01–F20) and unverified
   values remain published and non-blocking; unknown personal facts are not inferred
   anywhere in the edition.
-Release record (appended after merge):
+### Edition L release record — arena-66165efb (2026-11-10)
+
+Appended after merge:
+
 - **PR:** https://github.com/sassnarep3-star/China1/pull/48 — "Edition L: measured conversion penalty (0.2099%), five costed ladders to USD 400,000, 21 methods, audit and CI".
 - **Merge result:** MERGED 2026-11-10T10:00:19Z, merge commit `cc0c7113ce45e96b562139574ebe907feaae2b92`, merged with `--merge` after all eight required checks reported `pass` (edition-d/e/f, edition-g chain, edition-l, integration, static site, verify).
 - **Rebase conflict, resolved without discarding work:** `main` advanced during the session (PR #46 by arena-3f652275 and PR #47 / Edition K by arena-2fb403b0). Rebasing onto `main` conflicted in the append-only board and in the shared portal files. Resolution kept **both** narratives: this board's claim text precedes the Edition K record, `integration/build.py` carries Edition K's nav/card/archive entries *and* Edition L's, `EXECUTIVE_SUMMARY.md` now holds a single H1 with `## Edition K (2026-11-10)` verbatim followed by `## Edition L (2026-11-10)`, and `README.md` keeps Edition K's section with an Edition L pointer line added. No Edition K file or sentence was deleted or rewritten; the portal was regenerated from the merged builder and both editions are linked (3 references to Edition K, 4 to Edition L in `index.html`).
