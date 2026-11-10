@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-11-09",
+  "checked_utc": "2026-11-10",
   "method": "Direct fetch_page relevant text inspection",
   "sources": {
     "SAFE": [
@@ -85,6 +85,15 @@
       [
         "SAFE",
         "IRS"
+      ]
+    ],
+    [
+      "I09 \u00b7 Edition H linked + fresh re-check 2026-11-10",
+      "Edition H (merged 2026-11-09) was missing from this portal archive; it is now linked. On 2026-11-10 the six primary sources above were re-fetched and confirmed unchanged in the cited sections (SAFE Arts. 3/7/13/37, 2014 No.2 \u00a7VI, IRS worldwide/FBAR/3520, BOC 1\u2030/50\u2013260/150 tariff, Wise eligibility/limits). No new SAFE/IRS rule change affecting these claims was found. Inherited Edition H citations remain as published.",
+      [
+        "SAFE",
+        "IRS",
+        "BOC"
       ]
     ]
   ]
