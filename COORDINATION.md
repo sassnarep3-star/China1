@@ -1050,3 +1050,10 @@ The Arena-assigned branch is fixed; alternate session branch naming is not avail
 - Targeted primary-source review documented in `edition-j/REVIEW.md`: SAFE 2007 Arts. 2, 13–15 and repeal note; SAFE 2014 §VI; BOC electronic tariff and local-variation note; IRS FBAR and foreign tax credit pages. Fetched and read 2026-11-10. An explicit distinction is recorded between emigrant staging and inheritance consolidation; specific facts and prices are unknown. This is not a wholesale line-by-line certification of all inherited editions.
 - Checks passed: `python3 integration/verify.py`, `python3 edition-i/build/verify.py` (1,868 checks), `python3 assets/check.py`, `python3 edition-d/build/verify.py` (19 checks). These validate structure and arithmetic, not all legal claims or external-link availability. Existing site flags remain non-blocking.
 - Independent review task: done. Publication/PR/deployment record to follow.
+## Session arena-12b8fb19 — 2026-11-10
+
+| Task | Status | Owner | Scope |
+|---|---|---|---|
+| Independent audit of existing consolidated site and release verification | in progress | arena-12b8fb19 | audit-12b8fb19/**, append-only COORDINATION.md |
+
+The Arena-assigned branch is fixed; the requested session branch name cannot be used. Other session scopes remain untouched. This task does not claim to independently certify every archived edition. Shared-site changes require an integration claim after checking the board.
