@@ -1620,22 +1620,22 @@ Log (arena-a3b7884b):
 <!-- BEGIN session arena-31577600 (inserted mid-file, directly after the stale arena-a3b7884b block; every other board is preserved verbatim) -->
 # Session board — arena-31577600 — enforcement desk, `enforcement-31577600/` (2026-11-11)
 
-Branch: `arena/31577600-china1` (fixed by Arena; the requested `session-<id>/<task>` naming cannot be used — same logged deviation as every earlier session). First claimed **2026-11-11 12:57 UTC** (PR #76); re-scoped 13:01 UTC (PR #77); **narrowed again 13:06 UTC** — see "Collisions" below. Base: `main` `2cee77a` (merge of PR #77).
+Branch: `arena/31577600-china1` (fixed by Arena; the requested `session-<id>/<task>` naming cannot be used — same logged deviation as every earlier session). First claimed **2026-11-11 12:57 UTC** (PR #76); re-scoped 13:00 UTC (PR #77); **narrowed again 13:03 UTC** — see "Collisions" below. Base: `main` `2cee77a` (merge of PR #77).
 
 ### Collisions and how each was resolved — first in time holds the task; nothing of another session was edited or discarded
 
-Ten sessions started within a quarter of an hour of each other and several reached the same "unclaimed" subject a minute apart, each claim invisible to the other until it reached `main`. This session lost two of those races and yields both:
+Ten sessions started within a quarter of an hour of each other and several reached the same "unclaimed" subject a minute apart, each claim invisible to the other until it reached `main`. This session yields in both cases, so that no subject is worked on twice and none is dropped by two sessions yielding to each other:
 
 | When (UTC) | This session had claimed | Earlier claim found | Resolution |
 |---|---|---|---|
-| 13:01 | RD-1 rule-row check, RD-2 rule-side flags F01/F10/F15/F17/F18/F21/F22, RD-3 procedure pack (12:57, PR #76) | `arena-c9001a4a`, 12:56, PR #75: procedure, eligibility and paperwork desk `procedure-c9001a4a/**` | **RD-1, RD-2, RD-3 released to `arena-c9001a4a`.** RD-7 (backstop) withdrawn — its P7 holds the closing backstop |
-| 13:06 | RD-8 exchange-rate exposure, RD-9 cost of waiting (13:01, PR #77) | `arena-00b28732`, 13:00, PR #78: timing desk `timing-desk-00b28732/**` (rate record, deposit and Treasury rates, waiting-cost ladder) | **RD-8 and RD-9 released to `arena-00b28732`.** No work had been started on either |
+| 13:00 | RD-1 rule-row check, RD-2 rule-side flags F01/F10/F15/F17/F18/F21/F22, RD-3 procedure pack (commit 12:57, on `main` 12:58:04 with PR #76) | `arena-c9001a4a`: procedure, eligibility and paperwork desk `procedure-c9001a4a/**` (commit 12:56, on `main` 12:56:48 with PR #75) — earlier on both counts | **RD-1, RD-2, RD-3 released to `arena-c9001a4a`.** RD-7 (backstop) withdrawn — its P7 holds the closing backstop |
+| 13:03 | RD-8 exchange-rate exposure, RD-9 cost of waiting (commit `d2f1dec` 13:00:14, on `main` 13:01:37 with PR #77) | `arena-00b28732`: timing desk `timing-desk-00b28732/**` — rate record, deposit and Treasury rates, waiting-cost ladder (commit `f60f57d` 13:00:24, on `main` 13:00:47 with PR #78). The two commits are ten seconds apart; its claim reached `main` first and timing is that session's whole scope | **RD-8 and RD-9 released to `arena-00b28732`** — a tie is settled in favour of the claim that was on `main` first. No work had been started on either. `arena-00b28732`: please do **not** yield these back; they are yours |
 
 The paths `rules-desk-31577600/` (PR #76) and `risk-desk-31577600/` (PR #77) are **not used** and were never committed. This session writes only under `enforcement-31577600/**`.
 
 Reading note handed to `arena-c9001a4a` (opened under RD-2 before the first collision was seen; not published by this session as a finding): the PDF of the 2020 Current-Account FX Guidelines attached to 汇发〔2020〕14号 ([notice page](https://www.safe.gov.cn/safe/2020/0831/17002.html), [attachment 1](https://www.safe.gov.cn/safe/file/file/20200831/f0127756271c43ef9b3908d5d157bd91.pdf)) parses through Article 81 with this session's fetch tool, which covers Chapter 3 (individuals), Articles 54–79, in full. Articles that looked relevant to your flags: 59 second paragraph (F15), 60 (reconversion with the exchange memo within 24 months; up to USD 500 a day, or USD 1,000 airside before departure, on ID alone), 65 (a foreign individual remits from his own FX account on ID — relevant to F01), 67, 68. Chapter 4 (cash, from Article 80) lies beyond the 30-page limit of the tool and was not read. Please verify on the page yourselves.
 
-**Board and remote state at 13:06 UTC** (this file on `main` `2cee77a`; every claim block read):
+**Board and remote state at 13:03 UTC** (this file on `main` `2cee77a`; every claim block read):
 
 | Session | Claimed (UTC) | Subject held | This session |
 |---|---|---|---|
@@ -1652,7 +1652,7 @@ Reading note handed to `arena-c9001a4a` (opened under RD-2 before the first coll
 |---|---|---|---|
 | RD-1, RD-2, RD-3 | **released to `arena-c9001a4a`** (13:01 UTC) | — | none |
 | RD-7 | **withdrawn** (held by `arena-c9001a4a` P7) | — | none |
-| RD-8, RD-9 | **released to `arena-00b28732`** (13:06 UTC) | — | none |
+| RD-8, RD-9 | **released to `arena-00b28732`** (13:03 UTC) | — | none |
 | RD-4a Register of the routes that are not lawful (prohibited, or lawful only inside a cap that the route is used to get around): for each, the official rule it breaks and the stated legal consequence — **no execution steps** | in progress | arena-31577600 | `enforcement-31577600/**` |
 | RD-4b Published enforcement record: every case involving an individual in the violation bulletins SAFE has published and this session can open (conduct, period, number of transactions, amount, fine, fine per dollar of the amount, legal basis, link); the watch-list and credit-record consequences as the official text states them | in progress | arena-31577600 | `enforcement-31577600/**` |
 | RD-4c Fine arithmetic at every USD 10,000 step from USD 10,000 to USD 400,000 (40 steps): the statutory range, and the range the published cases imply — arithmetic on official figures, labelled as arithmetic, never a prediction; mobile-first tables, most important figure first | in progress | arena-31577600 | `enforcement-31577600/**` |
@@ -1668,8 +1668,8 @@ Requests to other sessions (logged here instead of editing their files):
 
 Log (arena-31577600):
 - 2026-11-11 12:57 UTC — first claim (PR #76, merged 12:58:04 UTC, merge commit `ebbe161`, eight checks passed, board entry only). Tool check before the claim: the Bank of China board (reading 2026/11/11 20:39:19 Beijing time, USD 现汇买入价 665.91 / 现汇卖出价 668.71) and SAFE Tianjin Q&A 2026-07-13 were opened and read from this session. While scoping, the tax-and-penalty desk was considered and dropped on seeing `arena-c52c6a62` claim it; no tax work was started.
-- 2026-11-11 13:01 UTC — collision with `arena-c9001a4a` found; RD-1…RD-3 released; scope changed to RD-4, RD-8, RD-9 (PR #77, merged 13:01:37 UTC, merge commit `2cee77a`, eight checks passed, board entry only).
-- 2026-11-11 13:06 UTC — collision with `arena-00b28732` found on re-reading `main` after PR #77 merged (its PR #78 merged seconds earlier); RD-8 and RD-9 released; scope narrowed to RD-4 (split into RD-4a–d), path renamed before any file was committed. Work done so far under RD-4 only: the SAFE violation bulletin published 2024-03-22 was opened and read. No personal facts have been supplied by the user, so they stay unknown.
+- 2026-11-11 13:00 UTC — collision with `arena-c9001a4a` found; RD-1…RD-3 released; scope changed to RD-4, RD-8, RD-9 (commit `d2f1dec` 13:00:14; PR #77, merged 13:01:37 UTC, merge commit `2cee77a`, eight checks passed, board entry only).
+- 2026-11-11 13:03 UTC — collision with `arena-00b28732` found on re-reading `main` after PR #77 merged (its PR #78 merged seconds earlier); RD-8 and RD-9 released; scope narrowed to RD-4 (split into RD-4a–d), path renamed before any file was committed. Work done so far under RD-4 only: the SAFE violation bulletin published 2024-03-22 was opened and read. No personal facts have been supplied by the user, so they stay unknown.
 <!-- END session arena-31577600 -->
 
 # Session board — arena-c2310264 (2026-11-09)
