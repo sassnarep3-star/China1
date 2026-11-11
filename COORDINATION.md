@@ -1506,6 +1506,44 @@ Log (arena-a3b7884b):
 - 2026-11-10 09:58 UTC — claim written before any task work. `exit-plan/` and `.github/workflows/exit-plan.yml` exist on neither `main` nor any of the 50 other remote branches. The fixed remote branch did not exist yet; the first push publishes it from `main` `dd39727` plus this claim.
 <!-- END arena-a3b7884b -->
 
+<!-- BEGIN session arena-31577600 (inserted mid-file, directly after the stale arena-a3b7884b block; no other live session writes at this position — the others insert at the top of the file or after the arena-dc298e7a block — so this cannot collide with them; every other board is preserved verbatim) -->
+# Session board — arena-31577600 — rules-and-procedures desk, `rules-desk-31577600/` (2026-11-11)
+
+Branch: `arena/31577600-china1` (fixed by Arena; the requested `session-<id>/<task>` naming cannot be used — same logged deviation as every earlier session). Claimed **2026-11-11 12:57 UTC**, before any task work. Base: `main` `5aed573` (merge of PR #73).
+
+**Board and remote state read at claim time** (this file read on `main`; all 68 remote branches listed with their newest commit time via the GitHub API at 12:52 UTC, and the `COORDINATION.md` of every branch committed today diffed against `main`, because a claim pushed only to a session branch is invisible on `main`; open PRs listed):
+
+| Session | Newest commit (UTC) | Its claim | What this session does about it |
+|---|---|---|---|
+| `arena-7d410420` | 12:51 | S1–S6: re-verification of `guide/data/sources.json`, corrections, research gaps (other banks F03, HSBC rate F02, RMB route, providers), cost ladder, FINAL INTEGRATION of `guide/**`, `index.html`, `EXECUTIVE_SUMMARY.md`, `README.md`, `REQUIREMENTS.md` | **Active, first in time. Not touched.** None of those files is edited here |
+| `arena-c2e7e812` | 12:52 | C1–C6: independent rebuild/verify, per-source re-check (`verification-c2e7e812/**`), archive link for the QA report, summary/README updates, PR | Active. Not touched. (Its integration scope overlaps `arena-7d410420` — theirs to resolve) |
+| `arena-c52c6a62` | 12:51 | T1–T6: **tax-and-penalty desk** `tax-c52c6a62/**` — tax flags F11, F12, F13, F14, F16, F17 (taxes), scenario matrix by source of the money, tax/penalty ladder, relief for past non-filing | Active. Not touched. This session does **no** tax research: Chinese tax rates, US income tax, US forms and their penalties are left entirely to that desk |
+| `arena-0f7c9cf5` (PR #71), `arena-edbb7990` (PR #70), `arena-2ece572a` (PR #73) | 12:52 / 12:51 / 12:51 | Targeted audits `audit-0f7c9cf5/**`, `audit-edbb7990/**`; SAFE 2025 no-voucher clarification in the guide | Merged and marked done. Read only |
+| `arena-dc298e7a` | 07:42 | D1–D6 (claim only, PR #69) | Stale; already taken over by `arena-7d410420`. Not touched |
+| `arena-a3b7884b` (`exit-plan/`), `arena-3f652275` (`ledger/`), `arena-eb204658` (`release-qa/`) | 2026-11-10 09:57–10:01 | Claims with no content on `main` | Stale > 24 h. Their paths are not used here |
+
+Because the canonical guide, the bank and provider prices, the cost ladder, both audits and the whole tax side are claimed by sessions active right now, this session takes the part of the request that no open claim names: **the foreign-exchange rule side and the exact procedure** — "tell me exactly step by step how it would work" and "list … the pros and cons of all the ways". The canonical guide still relies on one sentence of the governing rule quoted second-hand (flag F21: the 2020 Current-Account Guidelines were never opened in full) and leaves the procedural questions flagged (F01 tax-filing form, F10 CNY cash limit, F15 who gets the annual quota, F17 who approves a house-sale remittance, F18 emigrant-transfer eligibility, F22 bank-level limits). No session lists those flags in its claim (`arena-7d410420` names F02/F03/RMB route/providers; `arena-c52c6a62` names F11–F14, F16 and the *tax* part of F17).
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| RD-1 Read-only line-by-line check of the rule rows of the canonical guide (who may use each route, limits, documents, approvals — `guide/data/methods.json`, the rule entries of `guide/data/sources.json`, rule-side flags) against the primary official text opened in this session; findings published as integration requests, not as edits | in progress | arena-31577600 | `rules-desk-31577600/**` |
+| RD-2 Primary-text research to close or narrow the open rule-side flags F01, F10, F15, F17 (procedure only, not taxes), F18, F21, F22: full text of the 2020 Current-Account FX Guidelines (individual chapter), PBOC/SAFE individual FX rules, property-transfer rules, SAFE service guides and policy Q&As — each opened and read in this session; anything not confirmed stays blank and flagged | in progress | arena-31577600 | `rules-desk-31577600/**` |
+| RD-3 Procedure pack: for each lawful route, by who you are and where the money came from — the legal basis, who decides (bank or SAFE), the document list, where to apply, statutory processing time and official fee, in order, every step with its official source | in progress | arena-31577600 | `rules-desk-31577600/**` |
+| RD-4 Enforcement evidence for the prohibited routes: violation cases published by SAFE that involve individuals (conduct, amount, fine, ratio, legal basis, link), the watch-list rules, and the fine range at every USD 10,000 step from USD 10,000 to USD 400,000 — legal consequence only, no execution steps | in progress | arena-31577600 | `rules-desk-31577600/**` |
+| RD-5 Component site (landing dashboard + category subpages + its own Flagged for Review and Sources pages, mobile-first tables, most important figure first), generator, independent verifier and CI limited to this component | in progress | arena-31577600 | `rules-desk-31577600/**`, `.github/workflows/rules-desk-31577600.yml` |
+| RD-6 Publication of this session's own scope only: pull request to `main`, merge when checks pass, confirm GitHub Pages serves the component, record PR link and result here | in progress | arena-31577600 | this block only |
+| RD-7 Backstop final integration | **not claimed** | — | Claimed in a separate, dated entry only if, when RD-1…RD-6 are on `main`, every open integration claim (`arena-7d410420` S5/S6, `arena-c2e7e812` C4–C6) is marked done or is stale under the 60-minute rule. Until then no shared output is touched |
+
+Rules this session applies: no file outside the scope above is edited (in `COORDINATION.md` only this block). Every table row carries a link to the official page opened and read in this session; a value not confirmed there is left blank and listed on the component's Flagged for Review page; nothing is inferred about the user's own facts (nationality history, visa or residence status, where the money came from, which bank). Nothing is copied from the guide or from an archived edition without being re-read on the official page. Arithmetic rows state the statutory figure and the formula and are labelled as arithmetic, not as a prediction. Prohibited routes are described by their legal consequence and published enforcement record only, never with execution steps. Tax questions are referred to the tax desk (`tax-c52c6a62/`) and not answered here.
+
+Requests to other sessions (logged here instead of editing their files):
+- → final-integration session (`arena-7d410420`, or whoever holds `guide/**` when this lands): please link `rules-desk-31577600/index.html` from `guide/archive.html` / the landing page, and consider the findings in `rules-desk-31577600/requests.html` for `guide/data/methods.json` and flags F01, F10, F15, F17, F18, F21, F22. This session will not make those edits itself while an integration claim is open.
+- → `arena-c52c6a62` (tax desk): the tax half of F17 and every tax figure stay with you; this desk covers only who approves the remittance and which documents are needed, and links to your pages for tax.
+
+Log (arena-31577600):
+- 2026-11-11 12:57 UTC — scope claimed before any task work. Tool check before the claim: the Bank of China board (reading 2026/11/11 20:39:19 Beijing time, USD 现汇买入价 665.91 / 现汇卖出价 668.71) and SAFE Tianjin Q&A 2026-07-13 were opened and read from this session. While scoping, this session first considered the tax-and-penalty desk (stale `exit-plan/` claim) and dropped it on seeing `arena-c52c6a62` claim it at 12:52 UTC; no tax work was started. No personal facts have been supplied by the user, so they stay unknown.
+<!-- END session arena-31577600 -->
+
 # Session board — arena-c2310264 (2026-11-09)
 
 Branch: `arena/c2310264-china1` (fixed by Arena; no alternate session branch is permitted).
