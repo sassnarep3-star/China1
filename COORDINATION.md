@@ -1788,3 +1788,85 @@ F99-1 and F99-2: done; **targeted** safety review, not a claim of full repositor
 
 ### F99 release
 PR https://github.com/sassnarep3-star/China1/pull/60 merged 2026-11-11 02:36:59 UTC as `6e1c86750327f4faa03219a22c11892817704b3b` after all seven PR checks passed. GitHub Pages build/deploy run https://github.com/sassnarep3-star/China1/actions/runs/42947240864 completed successfully for that merge. GitHub's Pages workflow emitted a Node 20 deprecation warning and ubuntu-latest migration notice; these did not fail deployment. The release is a targeted correction, not exhaustive verification.
+<!-- BEGIN arena-db079cfc (appended at EOF 2026-11-11; every board above is preserved verbatim) -->
+# Session board — arena-db079cfc (2026-11-11)
+
+Branch: `arena/db079cfc-china1` (fixed by Arena; same logged deviation from the
+requested `session-<id>/<task>` naming as every earlier session). Claimed
+**2026-11-11 ~03:0x UTC**, before any task work.
+
+**Board read at claim time.** `main` head `272da23` (merge of PR #59, session
+`arena-12670774`). Every other branch's newest commit is from 2026-11-10 10:30 UTC or
+earlier — 16 h+ old — so under the 60-minute rule **all open claims are stale**. In
+particular `edition-m/**` is claimed by `arena-1ee3ca2b` (last commit 2026-11-10
+10:30:14 UTC, branch unmerged, no open PR); this session does **not** take that path, and
+leaves that branch untouched for its owner.
+
+**This session's job is the standing final-integration role** left unclaimed since
+`arena-eb9f0490` merged PR #55: re-verify the canonical guide line by line against
+official pages re-opened today, refresh the dated inputs, add the one requirement the
+guide does not yet answer as a page (the questions/unknowns register a decision needs),
+rebuild, re-run every checker in the repo, publish, and record the result.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| P1 Independent re-verification of every source in `guide/data/sources.json` against the official page, re-opened today; per-source PASS/FAIL with the quoted text | in progress | arena-db079cfc | `edition-db079cfc/**` |
+| P2 Requirement gap: "a clear list of questions, information and answers that need to be addressed before any decision" → new guide page generated from data, every row sourced | in progress | arena-db079cfc | `guide/data/**`, `guide/build/**`, `guide/questions.html` |
+| P3 Refresh dated inputs: BOC board reading for 2026-11-11, recompute every ladder row, keep the old snapshot for comparison | in progress | arena-db079cfc | `guide/data/**`, `guide/build/**` |
+| P4 Repository line-by-line rule scan re-run at `main` `272da23`; new findings flagged | in progress | arena-db079cfc | `edition-db079cfc/**`, `guide/data/scan*` |
+| P5 Rebuild the whole site; run `guide/build/verify.py` plus every other edition/portal checker; crawl for broken links | in progress | arena-db079cfc | `index.html`, `guide/**`, `EXECUTIVE_SUMMARY.md` |
+| P6 PR to `main`, merge without waiting, confirm GitHub Pages deploy, record PR link + result here | in progress | arena-db079cfc | this block, `README.md` |
+
+Rules this session applies: nothing is taken from an archived edition without being
+re-read on the official page today; a value that cannot be confirmed stays blank and is
+listed on Flagged for Review; no personal facts (source of funds, residence, tax history,
+destination bank) are inferred — they are published as **questions with a "how to find
+out" step** instead.
+
+Log (arena-db079cfc):
+- 2026-11-11 — scope claimed before work. Open PRs #39 and #45 (older sessions) left
+  untouched. `edition-m/**` (arena-1ee3ca2b) left untouched.
+
+### Conflict, and how it was resolved — arena-db079cfc (2026-11-11)
+
+While this session was building, `main` advanced twice: PR #60 (`arena-faa59cc9`, a narrow
+safety correction to the tax wording plus F23), PR #62 (`arena-f766722d`, whose `cf1aa42`
+added `guide/questions.html` — 16 blocking questions, 10 known facts, 8 suggested steps —
+generated from `guide/data/questions.json`) and PR #61 (the release record). `main` moved
+from `272da23` to `59ea92a`, and PR #63 was reported `CONFLICTING`.
+
+**What happened, in order:**
+
+1. This session had independently built its own decision-questions page (18 questions, four
+   groups) in `guide/data/questions.json` and `guide/questions.html`. That is the same
+   requirement `arena-f766722d` had already delivered and verified on `main`.
+2. `git rebase origin/main` was run. Conflicts in `COORDINATION.md` were resolved by
+   keeping **both** blocks, this one after `arena-faa59cc9`'s. Conflicts in `build.py`,
+   `verify.py`, `sources.json`, `flagged.json`, `questions.json`, `questions.html` and the
+   eleven generated pages were resolved file by file **in favour of `main`**, so nothing
+   written by `arena-faa59cc9` or `arena-f766722d` was overwritten or rewritten.
+3. The duplicate draft was then **discarded, not merged**. Two competing question registers
+   would have been worse for the reader than the one already published. What this session
+   kept is the part the other sessions had not done: a re-read of the priced inputs, a
+   per-source read date, two verifier fixes, and the working record in
+   `edition-db079cfc/verification/`.
+4. The refresh was then re-applied on top of the merged files and every checker re-run
+   (see the table below). The tax wording corrected by `arena-faa59cc9` was left in place.
+
+This is logged as **P-11** in `edition-db079cfc/verification/findings.md`. No work of any
+other session was discarded; the only discarded work was this session's own duplicate page,
+and no file was deleted from `main`.
+
+### Work record — arena-db079cfc (2026-11-11)
+
+| Task | Status | Result |
+|---|---|---|
+| P1 Independent re-verification of every source | done | `edition-db079cfc/verification/source-recheck.md` — 33 entries: 16 re-opened and re-read today, 17 carried from 2026-11-10 and labelled with that date. 0 mismatches between the quoted text and the official page. |
+| P2 Questions/information/answers register | **delivered by another session** | `arena-f766722d` landed `guide/questions.html` (16 questions + 10 known facts + 8 steps) in PR #62 before this branch was rebased. This session's parallel draft (18 questions) was **dropped** rather than merged — see P-11 above. The requirement is met on `main`; this session added nothing to that page. |
+| P3 Dated inputs refreshed | done | BOC board 2026-11-11 10:25:02 (buy 666.30 / sell 669.11); five fresh Wise quotes (2026-11-11T02:35Z); 760 ladder rows recomputed, 370 totals re-derived independently by the verifier. Costs moved: USD 93.36 → 93.39 at USD 10,000 and USD 939.01 → 941.20 at USD 400,000. |
+| P4 Repository scan re-run | done | `guide/build/scan.py`: 441 files / 184,637 lines / 2,074 rule hits — identical to the previous snapshot, so the archived editions are unchanged. Findings P-01…P-11 in `edition-db079cfc/verification/findings.md`. |
+| P5 Rebuild and re-run every checker | done | `guide/build/verify.py` PASS (11 pages, 1,057 rows each with an official link, 288 blank rows flagged, 760 ladder rows, 370 recomputed, 33 sources, 23 flags, 279 HTML files / 22,591 links, deterministic). integration/verify, edition-d/e/f/g/i/j/k/l, 12670774, abd04d5f, assets/check.py, scripts/verify.py all pass. Raw output: `edition-db079cfc/verification/checks.txt`. |
+| P6 PR, merge, Pages | in progress | PR #63, rebased onto `59ea92a`; result recorded below. |
+
+Findings, in short (full text and links in `edition-db079cfc/verification/findings.md`):
+P-01 the whole guide was priced on a stale board reading (**fixed**), P-02 `verify.py` compared the ATM fee against a string derived from the old rate instead of recomputing it (**fixed**), P-03 the Wise ladder would have blanked after the rate move and was re-sampled (**fixed**), P-04 the USD 50,000 summary sentence omitted one limb of art. 2 (**fixed**), P-05 two sources are still excerpt-only (open, F10/F11), P-06 unmerged `edition-m/**` branch from `arena-1ee3ca2b` (open, untouched), P-07 PRs #39/#45 still open (open), P-08 archived editions carry different rate snapshots (open by design), P-09 the 2013 No. 40 filing question (open, F01), P-10 the house-sale procedure conflict between two official pages (open, F17), P-11 the duplicate questions page (**resolved by dropping this session's copy**).

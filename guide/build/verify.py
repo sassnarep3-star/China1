@@ -68,6 +68,7 @@ for s in sources.values():
     check(s["url"].startswith("https://"), f"source {s['id']} is not https")
     check(s["level"] in ("full", "excerpt"), f"source {s['id']} has unknown level")
     check(len(s["quote"]) > 20, f"source {s['id']} has no quoted text")
+    check(s.get("checked") in ("2026-11-10", "2026-11-11"), f"source {s['id']} has no read date")
 
 # reference integrity
 def refs_ok(where, src, fl=()):
@@ -199,7 +200,14 @@ check("CNY 420.00" in h10, "HSBC $10,000 fee component should be CNY 420.00 (100
 h400 = by[("M02", 400_000)]["made_up_of"]
 check("CNY 820.00" in h400, "HSBC $400,000 fee component should be CNY 820.00 (500 + 120 + 200)")
 a10 = by[("M13", 10_000)]["made_up_of"]
-check("CNY 751.11" in a10, "ATM $10,000 fee should be CNY 751.11 (6 × 112 + 12 + 1% × 6,711)")
+# independent: per withdrawal min(CNY 112, CNY 12 + 1%), split into CNY 10,000 daily withdrawals
+held10 = F(10_000) * mid
+days10 = int(held10 // 10_000)
+rest10 = held10 - 10_000 * days10
+fee10 = sum(min(F(112), F(12) + amt * F(1, 100)) for amt in [F(10_000)] * days10 + ([rest10] if rest10 else []))
+cents10 = (fee10 * 100 + F(1, 2)).__floor__()
+check(f"CNY {cents10 // 100:,}.{cents10 % 100:02d}" in a10,
+      f"ATM $10,000 fee should be CNY {cents10 // 100:,}.{cents10 % 100:02d} (min(112, 12 + 1%) per CNY 10,000 daily withdrawal)")
 
 # 2, 3, 7 ------------------------------------------------------------ page checks
 class Page(HTMLParser):

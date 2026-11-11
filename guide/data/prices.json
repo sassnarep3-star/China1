@@ -1,19 +1,99 @@
 {
-  "snapshot": "2026-11-10 17:39:58 (Beijing time), Bank of China board",
-  "boc_buy_per_100": "665.71",
-  "boc_sell_per_100": "668.51",
-  "boc": {"commission_rate": "0.001", "commission_min_cny": "50", "commission_max_cny": "260", "cable_cny": "150", "full_amount_usd": "25", "full_amount_usd_boc_ny": "15", "src": ["CN-BOCTARIFF", "CN-BOCFEE", "CN-FXBOARD"]},
-  "hsbc": {"commission_rate": "0.001", "commission_min_cny": "100", "commission_max_cny": "500", "cable_cny": "120", "full_amount_precollect_cny": "200", "src": ["PR-HSBC"]},
-  "atm": {"fixed_cny": "12", "rate": "0.01", "max_cny": "112", "per_card_day_cny": "10000", "per_person_year_cny": "100000", "src": ["CN-BOCTARIFF", "CN-CARD"]},
-  "receiving": {"chase_incoming_wire_usd": "15", "src": ["US-CHASE"]},
-  "wise": {"rate_usd_per_cny": "0.149931", "per_transfer_cap_cny": "300000", "src": ["PR-WISEFEE", "PR-WISE"],
+  "snapshot": "2026-11-11 10:25:02 (Beijing time), Bank of China board",
+  "boc_buy_per_100": "666.30",
+  "boc_sell_per_100": "669.11",
+  "boc": {
+    "commission_rate": "0.001",
+    "commission_min_cny": "50",
+    "commission_max_cny": "260",
+    "cable_cny": "150",
+    "full_amount_usd": "25",
+    "full_amount_usd_boc_ny": "15",
+    "src": [
+      "CN-BOCTARIFF",
+      "CN-BOCFEE",
+      "CN-FXBOARD"
+    ]
+  },
+  "hsbc": {
+    "commission_rate": "0.001",
+    "commission_min_cny": "100",
+    "commission_max_cny": "500",
+    "cable_cny": "120",
+    "full_amount_precollect_cny": "200",
+    "src": [
+      "PR-HSBC"
+    ]
+  },
+  "atm": {
+    "fixed_cny": "12",
+    "rate": "0.01",
+    "max_cny": "112",
+    "per_card_day_cny": "10000",
+    "per_person_year_cny": "100000",
+    "src": [
+      "CN-BOCTARIFF",
+      "CN-CARD"
+    ]
+  },
+  "receiving": {
+    "chase_incoming_wire_usd": "15",
+    "src": [
+      "US-CHASE"
+    ]
+  },
+  "wise": {
+    "rate_usd_per_cny": "0.149807",
+    "per_transfer_cap_cny": "300000",
+    "src": [
+      "PR-WISEFEE",
+      "PR-WISE"
+    ],
     "quotes": [
-      {"send_cny": "66711", "fee_cny": "434.84", "received_usd": "9936.85"},
-      {"send_cny": "133422", "fee_cny": "845.90", "received_usd": "19877.27"},
-      {"send_cny": "200133", "fee_cny": "1224.98", "received_usd": "29822.48"},
-      {"send_cny": "266844", "fee_cny": "1570.08", "received_usd": "39772.78"},
-      {"send_cny": "300000", "fee_cny": "1741.62", "received_usd": "44718.18"}
-    ]},
-  "cash": {"free_usd": "5000", "permit_max_usd": "10000", "src": ["CN-CASH", "CN-BOCTARIFF", "US-CBP"]},
-  "penalty": {"fine_up_to": "0.30", "serious_from": "0.30", "serious_to": "1.00", "src": ["CN-FXREG"]}
+      {
+        "send_cny": "66770.5",
+        "fee_cny": "435.20",
+        "received_usd": "9937.49"
+      },
+      {
+        "send_cny": "133541",
+        "fee_cny": "846.63",
+        "received_usd": "19878.55"
+      },
+      {
+        "send_cny": "200311.5",
+        "fee_cny": "1226.05",
+        "received_usd": "29824.39"
+      },
+      {
+        "send_cny": "267082",
+        "fee_cny": "1571.46",
+        "received_usd": "39775.34"
+      },
+      {
+        "send_cny": "300000",
+        "fee_cny": "1741.74",
+        "received_usd": "44681.18"
+      }
+    ],
+    "collected": "2026-11-11T02:35Z"
+  },
+  "cash": {
+    "free_usd": "5000",
+    "permit_max_usd": "10000",
+    "src": [
+      "CN-CASH",
+      "CN-BOCTARIFF",
+      "US-CBP"
+    ]
+  },
+  "penalty": {
+    "fine_up_to": "0.30",
+    "serious_from": "0.30",
+    "serious_to": "1.00",
+    "src": [
+      "CN-FXREG"
+    ]
+  },
+  "boc_cash_note": "cash buy and cash sell were the same as the telegraphic rates on this reading"
 }
