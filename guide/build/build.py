@@ -15,6 +15,7 @@ import csv
 import html
 import io
 import json
+import re
 from decimal import Decimal, ROUND_HALF_UP
 from pathlib import Path
 
@@ -39,6 +40,7 @@ FLAGS = {f["id"]: f for f in load("flagged.json")["items"]}
 REVIEW = load("review.json")
 SCAN = load("scan.json")
 RETRIEVED = SRC_DOC["retrieved"]
+QUESTIONS = load("questions.json")
 
 D = Decimal
 BUY = D(PRICES["boc_buy_per_100"]) / 100
@@ -180,7 +182,8 @@ LADDERS = {m["id"]: ladder(m) for m in METHODS}
 # --------------------------------------------------------------------------
 NAV = [
     ("index.html", "Home"), ("guide/summary.html", "Summary"), ("guide/methods.html", "Methods"),
-    ("guide/costs.html", "Costs"), ("guide/steps.html", "Steps"), ("guide/taxes.html", "Taxes"),
+    ("guide/decide.html", "Decide"), ("guide/costs.html", "Costs"), ("guide/steps.html", "Steps"),
+    ("guide/taxes.html", "Taxes"),
     ("guide/flagged.html", "Flagged"), ("guide/sources.html", "Sources"),
     ("guide/repo-review.html", "Repo review"), ("guide/archive.html", "Archive"),
 ]
@@ -395,6 +398,7 @@ def build_home():
     tiles = [
         ("guide/summary.html", "Executive summary", "The answer, the numbers and the risks on one page."),
         ("guide/methods.html", f"All {len(METHODS)} methods", f"{len(LAWFUL)} lawful routes and {len(BANNED)} prohibited ones, with pros and cons."),
+        ("guide/decide.html", "Before you decide", "The questions in the order they decide it, with what is still unverified."),
         ("guide/costs.html", "Cost ladder", "Every method at every $10,000 step up to $400,000."),
         ("guide/steps.html", "Step by step", "Exactly what to do for each lawful route."),
         ("guide/taxes.html", "Taxes and penalties", "The 'conversion penalty' broken down: China tax, fines, US tax and filings."),
@@ -419,6 +423,8 @@ def build_home():
 <li><b>In the US:</b> the pages read tax the income in the year it is earned, not the later transfer. File the FBAR and Form 8938 if the account passed the thresholds. {src_links(["US-ABROAD", "US-8938FBAR"])}</li>
 </ul>
 </section>
+
+<div class="note"><b>Which of these applies to you?</b> The <a href="guide/decide.html">Before you decide</a> page lists the {len(QUESTIONS["groups"][0]["items"]) + len(QUESTIONS["groups"][1]["items"]) + len(QUESTIONS["groups"][2]["items"]) + len(QUESTIONS["groups"][3]["items"])} questions in the order they decide the answer, what the rules already settle, what is still missing and how to close each gap.</div>
 
 <div class="kpis">{kpi_html}</div>
 
@@ -498,7 +504,7 @@ def build_summary():
 {risk_tbl}
 
 <h2>What is still open</h2>
-<p>{len(FLAGS)} items could not be confirmed on an official page and are left blank. The ones that matter most: whether your bank wants the tax-filing form for salary above USD 50,000 ({flag_links(["F01"], p)}), exchange rates at banks other than Bank of China ({flag_links(["F02", "F03"], p)}), and the US treatment of an exchange gain above USD 200 ({flag_links(["F13"], p)}). See <a href="flagged.html">Flagged for Review</a>.</p>
+<p>{len(FLAGS)} items could not be confirmed on an official page and are left blank. The ones that matter most: whether your bank wants the tax-filing form for salary above USD 50,000 ({flag_links(["F01"], p)}), exchange rates at banks other than Bank of China ({flag_links(["F02", "F03"], p)}), and the US treatment of an exchange gain above USD 200 ({flag_links(["F13"], p)}). See <a href="flagged.html">Flagged for Review</a>. The questions these gaps decide, and the step that would close each one, are on <a href="decide.html">Before you decide</a>.</p>
 """
     write(GUIDE / "summary.html", page("guide/summary.html", "Executive summary", "Executive summary: lawful CNY to USD route for a US citizen, costs, tax and risks, with official sources.", body))
 
@@ -809,6 +815,49 @@ def build_archive():
     write(GUIDE / "archive.html", page("guide/archive.html", "Archive", "Archived earlier editions of the China Money research.", body))
 
 
+def build_decide():
+    p = "../"
+    n_items = sum(len(g["items"]) for g in QUESTIONS["groups"])
+    n_open = sum(1 for g in QUESTIONS["groups"] for it in g["items"] if it["status"] == "open")
+    out = [f'<h1>Before you decide</h1>',
+           f'<p class="lead">{e(QUESTIONS["intro"])}</p>',
+           f'<div class="note"><b>{n_items} questions, {n_open} of them open.</b> '
+           + " ".join(f'<br><span class="badge {"b-ok" if k == "settled" else "b-blank"}">{e(k)}</span> {e(v)}'
+                      for k, v in QUESTIONS["legend"]) + "</div>"]
+
+    for g in QUESTIONS["groups"]:
+        rows = []
+        for it in g["items"]:
+            cls = "b-ok" if it["status"] == "settled" else "b-blank"
+            head = (f'<b id="{it["id"]}">{it["id"]}</b> <b>{e(it["q"])}</b><small>'
+                    f'<span class="badge {cls}">{e(it["status"])}</span></small>')
+            missing = e(it["unknown"])
+            if it["flags"]:
+                missing += " " + flag_links(it["flags"], p)
+            steps = '<ol class="steps">' + "".join(f"<li>{e(s)}</li>" for s in it["how"]) + "</ol>"
+            rows.append([head, e(it["known"]) + " " + src_links(it["src"]), missing, steps])
+        out.append(f'<h2>{e(g["title"])}</h2>')
+        out.append(f'<p class="mut small">{e(g["lead"])}</p>')
+        out.append(table([("Question", ""), ("What the rules already answer", ""),
+                          ("Still missing", ""), ("How to find it out", "")], rows))
+
+    tr = QUESTIONS["tree"]
+    trows = []
+    for money, route, why, src in tr["rows"]:
+        anchor = re.match(r"[MX]\d\d", route).group(0)
+        trows.append([e(money), f'<a href="{p}guide/methods.html#{anchor}"><b>{e(route)}</b></a>', e(why), src_links(src)])
+    out.append(f'<h2>{e(tr["title"])}</h2>')
+    out.append(f'<p class="mut small">{e(tr["lead"])}</p>')
+    out.append(table([("If the money is", ""), ("Route", ""), ("Why, and what it needs", ""), ("Official source", "")], trows))
+    out.append(f'<div class="note">This page does not know your source of funds, your residence history, '
+               f'what tax was withheld or what you filed. Each answered row still needs one fact from you, and each open row '
+               f'is published on <a href="{p}guide/flagged.html">Flagged for Review</a> with its source. '
+               f'Costs: <a href="{p}guide/costs.html">Cost ladder</a>.</div>')
+    write(GUIDE / "decide.html", page("guide/decide.html", "Before you decide",
+                                     "The questions that decide how a US citizen can lawfully convert CNY to USD, what the official rules settle, what is still unverified and how to close each gap.",
+                                     "\n".join(out)))
+
+
 def build_summary_md():
     def r(mid, n):
         x = at(mid, n)
@@ -859,6 +908,7 @@ def build():
     build_summary()
     build_methods()
     build_costs()
+    build_decide()
     build_steps()
     build_taxes()
     build_flagged()

@@ -24,7 +24,7 @@ ROOT = Path(__file__).resolve().parents[2]
 GUIDE = ROOT / "guide"
 DATA = GUIDE / "data"
 PAGES = [ROOT / "index.html"] + [GUIDE / f"{n}.html" for n in
-         ("summary", "methods", "costs", "steps", "taxes", "flagged", "sources", "repo-review", "archive")]
+         ("summary", "methods", "decide", "costs", "steps", "taxes", "flagged", "sources", "repo-review", "archive")]
 GENERATED = PAGES + [DATA / "cost-ladder.csv", ROOT / "EXECUTIVE_SUMMARY.md"]
 problems = []
 
@@ -60,6 +60,7 @@ prices = load("prices.json")
 taxes = load("taxes.json")
 review = load("review.json")
 scan = load("scan.json")
+questions = load("questions.json")
 
 OFFICIAL = {urlsplit(s["url"]).netloc for s in sources.values()}
 MANUAL = {urlsplit(m["url"]).netloc for f in flags_doc for m in f.get("manual", [])}
@@ -100,6 +101,27 @@ for r in review["rules"] + review["manual"]:
     check(r["src"], "review row without source"); refs_ok("review", r["src"]); used.update(r["src"])
 for k in ("boc", "hsbc", "atm", "receiving", "wise", "cash", "penalty"):
     refs_ok(f"prices/{k}", prices[k]["src"]); used.update(prices[k]["src"])
+q_open = q_items = 0
+for g in questions["groups"]:
+    for it in g["items"]:
+        q_items += 1
+        q_open += it["status"] == "open"
+        check(it["status"] in ("settled", "open"), f'{it["id"]}: unknown status {it["status"]}')
+        check(it["q"] and it["known"] and it["unknown"], f'{it["id"]}: incomplete')
+        check(it["how"], f'{it["id"]}: no way to find the answer out')
+        check(it["src"], f'{it["id"]}: no source')
+        if it["status"] == "open":
+            check(it["flags"], f'{it["id"]} is open but flags nothing')
+        refs_ok(it["id"], it["src"], it["flags"]); used.update(it["src"])
+for money, route, why, src in questions["tree"]["rows"]:
+    check(money and route and why, "decision tree row incomplete")
+    check(src, f"decision tree row without source: {money[:40]}")
+    refs_ok("decision tree", src); used.update(src)
+    for mid in re.findall(r"[MX]\d\d", route):
+        check(any(m["id"] == mid for m in methods), f"decision tree points at unknown method {mid}")
+check(q_items >= 12, "the decision page has fewer than 12 questions")
+check(q_open >= 1, "no open question on the decision page")
+
 for sid, s in sources.items():
     if s["level"] == "excerpt":
         check(any(sid in f["src"] for f in flags_doc), f"excerpt-only source {sid} is not flagged")
@@ -275,6 +297,11 @@ for m in methods:
     check(m["id"] in parsed[GUIDE / "methods.html"].ids, f"methods.html lacks {m['id']}")
     if m["cat"] != "prohibited":
         check(m["id"] in parsed[GUIDE / "steps.html"].ids, f"steps.html lacks {m['id']}")
+dec = parsed[GUIDE / "decide.html"]
+for g in questions["groups"]:
+    for it in g["items"]:
+        check(it["id"] in dec.ids, f"decide.html lacks anchor {it['id']}")
+check(len(dec.rows) == q_items + len(questions["tree"]["rows"]), f"decide.html has {len(dec.rows)} rows")
 check(len(costs.rows) == 40 + 9 + len(methods) * 40, f"costs.html has {len(costs.rows)} rows")
 
 # review snapshot sanity
