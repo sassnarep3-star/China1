@@ -13,7 +13,7 @@
    "name": "Bank of China: convert and wire to your own US account",
    "status": "Lawful",
    "verdict": "Best fully priced route for large sums",
-   "who": "Foreign passport holder whose CNY is lawful China current-account income (for example salary) and who can show the amount and the tax paid.",
+   "who": "Foreign passport holder with lawful China current-account income (for example salary); evidence must show the source and amount. If the income is taxable, provide the tax record; if not taxable under applicable rules, SAFE says a tax voucher is not required.",
    "limit": "No fixed cap in the rule; the bank converts what your documents support.",
    "cost": "FX margin 0.2094% + commission 1‰ (CNY 50–260) + cable CNY 150 + USD 25 full-amount delivery + receiving-bank fee.",
    "pros": [
@@ -22,15 +22,16 @@
     "Legal basis is explicit for foreign individuals"
    ],
    "cons": [
-    "Needs tax vouchers matching the amount",
+    "Tax voucher is usually required where the income is taxable; an exception applies to qualifying income not taxable under the rules.",
     "Branch visit and bank review",
     "Above USD 50,000 per payment a tax-filing form may be asked for"
    ],
    "steps": [
     {
-     "t": "Collect proof that the CNY is lawful China income, showing amounts: employment contract or payslips and your individual income tax payment record.",
+     "t": "Collect proof of the lawful income and amount (for example employment records). If the income is taxable, include the tax payment record; if it is not taxable under applicable rules, SAFE says a tax voucher is not required. Ask the bank which supporting evidence it accepts for the source and tax treatment.",
      "src": [
       "CN-ART59",
+      "CN-WORKFX2025",
       "CN-RULES"
      ]
     },
@@ -85,6 +86,7 @@
    ],
    "src": [
     "CN-ART59",
+    "CN-WORKFX2025",
     "CN-BOCTARIFF",
     "CN-FXBOARD"
    ],
@@ -116,9 +118,10 @@
    ],
    "steps": [
     {
-     "t": "Prepare the same evidence as for M01: passport, proof of the income amount and tax vouchers.",
+     "t": "Prepare the same evidence as for M01: passport and proof of lawful income and amount; include a tax record if tax is due, while SAFE says a voucher is not required for qualifying income that is not taxable under the rules.",
      "src": [
-      "CN-ART59"
+      "CN-ART59",
+      "CN-WORKFX2025"
      ]
     },
     {
@@ -148,7 +151,8 @@
    ],
    "src": [
     "PR-HSBC",
-    "CN-ART59"
+    "CN-ART59",
+    "CN-WORKFX2025"
    ],
    "flags": [
     "F02",
@@ -174,9 +178,10 @@
    ],
    "steps": [
     {
-     "t": "Prepare passport, proof of the income amount and tax vouchers.",
+     "t": "Prepare passport and proof of lawful income and amount; include a tax record if tax is due, while SAFE says a voucher is not required for qualifying income that is not taxable under the rules.",
      "src": [
-      "CN-ART59"
+      "CN-ART59",
+      "CN-WORKFX2025"
      ]
     },
     {
@@ -187,7 +192,8 @@
     }
    ],
    "src": [
-    "CN-ART59"
+    "CN-ART59",
+    "CN-WORKFX2025"
    ],
    "flags": [
     "F03"

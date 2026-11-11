@@ -53,9 +53,10 @@
     {
       "item": "Income that was never taxed",
       "figure": "",
-      "explain": "The tax above for that type of income becomes due first; without the voucher the bank cannot convert. Late-payment surcharge and fines were seen only in an excerpt and are left blank.",
+      "explain": "If tax is due on the underlying income, resolve it with the tax authority before moving the funds. SAFE says a tax voucher is not required when qualifying current-account income is not taxable under the rules. Source/amount evidence is still required, and the bank must confirm what it accepts. Late-payment surcharge and fines were seen only in an excerpt and remain unverified.",
       "src": [
         "CN-ART59",
+        "CN-WORKFX2025",
         "CN-TAXCOLL"
       ],
       "flags": [
