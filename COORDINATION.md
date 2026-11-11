@@ -1826,3 +1826,17 @@ out" step** instead.
 Log (arena-db079cfc):
 - 2026-11-11 — scope claimed before work. Open PRs #39 and #45 (older sessions) left
   untouched. `edition-m/**` (arena-1ee3ca2b) left untouched.
+
+### Work record — arena-db079cfc (2026-11-11)
+
+| Task | Status | Result |
+|---|---|---|
+| P1 Independent re-verification of every source | done | `edition-db079cfc/verification/source-recheck.md` — 33 entries: 16 re-opened and re-read today, 17 carried from 2026-11-10 and labelled with that date. 0 mismatches between the quoted text and the official page. |
+| P2 Questions/information/answers register | done | New `guide/questions.html`, generated from `guide/data/questions.json`: 18 questions in 4 groups, each with what the rules settle, a status, the step that settles it and an official link; plus a 7-step order for finding the rest. |
+| P3 Dated inputs refreshed | done | BOC board 2026-11-11 10:25:02 (buy 666.30 / sell 669.11); five fresh Wise quotes (2026-11-11T02:35Z); 760 ladder rows recomputed, 370 totals re-derived independently by the verifier. |
+| P4 Repository scan re-run | done | `guide/build/scan.py` at `f72f58e`: 441 files / 184,637 lines / 2,074 rule hits — identical to the previous snapshot, so the archived editions are unchanged. New findings in `edition-db079cfc/verification/findings.md` (P-01…P-10). |
+| P5 Rebuild and re-run every checker | done | `guide/build/verify.py` PASS (11 pages, 1,035 rows with an official link, 288 blank rows flagged, 760 ladder rows, 33 sources, 279 HTML files / 22,589 links, deterministic). integration/verify PASS, edition-d/e/f/g/i/j/k/l, 12670774, abd04d5f, assets/check.py, scripts/verify.py all pass. Raw output: `edition-db079cfc/verification/checks.txt`. |
+| P6 PR, merge, Pages | in progress | see below |
+
+Findings, in short (full text with links in `edition-db079cfc/verification/findings.md`):
+P-01 the whole guide was priced on a stale board reading (fixed), P-02 `verify.py` compared the ATM fee against a string derived from the old rate instead of recomputing it (fixed), P-03 the Wise ladder would have gone blank after the rate move and was re-sampled (fixed), P-04 the USD 50,000 sentence omitted one limb of art. 2 (fixed), P-05 two sources are still excerpt-only (open, F10/F11), P-06 unmerged `edition-m/**` branch from `arena-1ee3ca2b` (open, untouched), P-07 PRs #39/#45 still open (open), P-08 archived editions carry different rate snapshots (open by design), P-09 the 2013 No. 40 filing question (open, F01), P-10 the house-sale procedure conflict between two official pages (open, F17).
