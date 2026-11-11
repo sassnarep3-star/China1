@@ -711,8 +711,10 @@ def build_flagged():
     exc = [[f"<b>{e(s['id'])}</b>", e(s["title"]), e(s["quote"]), src_links([s["id"]])] for s in SOURCES.values() if s["level"] == "excerpt"]
     body = f"""
 <h1>Flagged for Review</h1>
-<p class="lead">{len(FLAGS)} points that could not be confirmed on an official page. Each is left blank wherever it would appear, and none was filled in by inference. They do not change the main answer, but check the ones that touch your case.</p>
+<p class="lead">{len(FLAGS)} unresolved questions, assumptions and source limitations. Some prevent a personalized decision or complete cost estimate; blank values are not zero. Review all items that touch your case.</p>
 {table([("ID", ""), ("Topic", ""), ("What is missing", ""), ("What to do", ""), ("Where to check", "")], rows)}
+
+<p>Additional independent reviews: <a href="../audit-edbb7990/index.html">source-access and dated-quote audit</a> and <a href="../quality-713a97b7/index.html">cost and tax quality review</a>. They describe earlier snapshots and may include findings corrected since then.</p>
 
 <h2>Sources seen only as an excerpt</h2>
 <p class="mut small">The official page exists, but this session saw its text only in a search-engine excerpt. Figures from these are treated as unverified.</p>
@@ -764,7 +766,7 @@ def build_review():
     proc = "".join(f"<li>{e(x)}</li>" for x in REVIEW["process"])
     body = f"""
 <h1>Repository review</h1>
-<p class="lead">The repository holds {len(SCAN["areas"])} earlier editions and components of this research. Each archived line was checked against the official sources by rule, and the irregularities are listed here with the link to check them against.</p>
+<p class="lead">The repository holds {len(SCAN["areas"])} earlier editions and components of this research. An automated text scan applied a small set of rules to archived text. It does not substantively verify every line against its official source; matches and selected irregularities are listed for manual review.</p>
 
 <div class="kpis">
 <div class="kpi"><b>{SCAN["total_files"]:,}</b><span>archived files read</span></div>
@@ -785,7 +787,7 @@ def build_review():
 <ul class="plain">{proc}</ul>
 
 <h2>Audit of the 2026-11-11 refresh</h2>
-<p>The priced inputs were re-read and every source re-checked on {RETRIEVED}. The working record — which source was re-opened, what the re-read found, and the ten irregularities that came out of it — is in <a href="{REPO_URL}/blob/main/edition-db079cfc/verification/findings.md">edition-db079cfc/verification/findings.md</a> with the per-source table in <a href="{REPO_URL}/blob/main/edition-db079cfc/verification/source-recheck.md">source-recheck.md</a>.</p>
+<p>The inherited research records a dated recheck of priced inputs and sources; the per-source record distinguishes pages re-opened from older checks. The working record — which source was re-opened, what the re-read found, and the irregularities that came out of it — is in <a href="{REPO_URL}/blob/main/edition-db079cfc/verification/findings.md">edition-db079cfc/verification/findings.md</a> with the per-source table in <a href="{REPO_URL}/blob/main/edition-db079cfc/verification/source-recheck.md">source-recheck.md</a>.</p>
 
 <h2>What was read</h2>
 <ul class="plain small">{areas}</ul>
