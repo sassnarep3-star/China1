@@ -418,7 +418,7 @@ def build_home():
 <h2 id="ans">The short answer</h2>
 <ul class="plain">
 <li><b>No rule read for this guide taxes the conversion itself.</b> The tax exposure is on how the money was earned. If China tax on it was already paid, converting adds bank charges only. {src_links(["CN-ART59", "CN-IIT"])}</li>
-<li><b>Lawful route:</b> take your passport, proof of the amount and your China tax record to the bank, buy USD and wire it to your own US account. The rule states no fixed cap for a foreign passport holder; the bank converts what the documents support. {src_links(["CN-ART59", "CN-MEASURES"])}</li>
+<li><b>Lawful route:</b> take your passport, proof of the amount and your China tax record to the bank, buy USD and wire it to your own US account. The rules state no annual total for a foreign passport holder's documented purchase; the bank converts what the documents support. {src_links(["CN-ART59", "CN-MEASURES", "CN-PR"])}</li>
 <li><b>Cost by Bank of China wire into a Chase account:</b> {usd(BOC10["total"])} for $10,000 ({pct(BOC10["share"])}), {usd(BOC100["total"])} for $100,000 ({pct(BOC100["share"])}), {usd(BOC400["total"])} for $400,000 ({pct(BOC400["share"])}). {src_links(["CN-FXBOARD", "CN-BOCTARIFF", "US-CHASE"])}</li>
 <li><b>Do not split the amount, borrow other people's quotas, use money changers or crypto.</b> Fines run up to 30% of the amount, and 30%–100% if serious, with possible criminal liability. {src_links(["CN-MEASURES", "CN-FXREG", "CN-CRYPTO"])}</li>
 <li><b>In the US:</b> the pages read tax the income in the year it is earned, not the later transfer. File the FBAR and Form 8938 if the account passed the thresholds. {src_links(["US-ABROAD", "US-8938FBAR"])}</li>
@@ -890,7 +890,7 @@ def build_summary_md():
         "## Answer",
         "",
         f"1. **No rule read for this guide taxes the conversion itself.** The exposure is tax on the underlying income if it was never taxed; the bank asks for tax vouchers. {link('CN-ART59')}, {link('CN-IIT')}",
-        f"2. **Lawful route:** passport + proof of the amount + China tax record at the bank, buy USD, wire to your own US account. No fixed cap for a foreign passport holder; the USD 50,000 quota is for domestic individuals and permanent-resident card holders. {link('CN-ART59')}, {link('CN-PR')}",
+        f"2. **Lawful route:** passport + proof of the amount + China tax record at the bank, buy USD, wire to your own US account. The rules state no annual total for a foreign passport holder's documented purchase; the USD 50,000 annual total covers foreign exchange sold for renminbi and a domestic individual's own purchase, and a Foreign Permanent Resident ID Card holder is admitted to it (open point F15). {link('CN-ART59')}, {link('CN-RULES')}, {link('CN-PR')}",
         f"3. **Cost (Bank of China wire into a Chase account):** {r('M01', 10_000)} at $10,000; {r('M01', 100_000)} at $100,000; {r('M01', 400_000)} at $400,000. {link('CN-FXBOARD')}, {link('CN-BOCTARIFF')}, {link('US-CHASE')}",
         f"4. **{wise_sentence()}** {link('PR-WISEFEE')}",
         f"5. **Prohibited:** splitting, borrowed quotas, money changers, false documents, crypto. Fines up to 30% of the amount, 30%–100% if serious, possible criminal liability. {link('CN-FXREG')}, {link('CN-MEASURES')}, {link('CN-CRYPTO')}",
@@ -906,6 +906,9 @@ def build_summary_md():
     lines += [
         "",
         f"All {len(METHODS)} methods at all {len(TARGETS)} amounts: `guide/costs.html` and `guide/data/cost-ladder.csv`.",
+        "",
+        f"The {sum(len(g['items']) for g in QUESTIONS['groups'])} questions that decide which of these applies to you — what the rules settle, "
+        f"what is still missing and how to close it — are on `guide/decide.html`.",
         "",
         "## Open points",
         "",

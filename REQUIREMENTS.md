@@ -12,6 +12,9 @@ Session `arena-eb9f0490`, 2026-11-10. Each line of the request, where it is met,
 | Cost of every method at each $10,000 step to $400,000 | `guide/costs.html`; `guide/data/cost-ladder.csv` | 40 exact steps per method; totals recomputed independently |
 | Exactly how each method works, step by step | `guide/steps.html` | Every step has a source |
 | Executive summary | `guide/summary.html`; `EXECUTIVE_SUMMARY.md` | Generated from the same data |
+| "A clear list of questions, information and answers that need to be addressed before any decision" | `guide/decide.html`: 16 questions in four groups, each row splitting what the rules settle, what is still missing and what to do about it | `verify.py` requires a source on every row, a flag on every open question, a discovery step on every question and an anchor for each |
+| "Suggestions to discover missing information" | The last column of `guide/decide.html`, plus `action` on every one of the 23 items on `guide/flagged.html` | `verify.py` fails if a question has no step |
+| Dated inputs refreshed, not carried over | `guide/data/prices.json`, `guide/data/sources.json`; `guide/repo-review.html` re-verification table | Board and five Wise quotes re-pulled 2026-11-11; the table must account for all 33 sources exactly once |
 
 ## Verification
 
@@ -20,13 +23,13 @@ Session `arena-eb9f0490`, 2026-11-10. Each line of the request, where it is met,
 | Every table row has an official source link | All tables | HTML parser: each row must link a host listed in `guide/data/sources.json` |
 | Unconfirmed values left blank and flagged, never inferred | Blank cells link to `guide/flagged.html` | Each blank cell must carry a Flagged link; each blank ladder row must carry a flag |
 | Official, trusted sources only | `guide/sources.html`: 33 sources with quoted text; 2 seen only as excerpts are flagged | Figures in `prices.json` must appear in the quoted source text |
-| Review the repository line by line; flag irregularities; links for manual review | `guide/repo-review.html`; `guide/data/scan-hits.csv` | Scan snapshot present for every rule |
+| Review the repository line by line; flag irregularities; links for manual review | `guide/repo-review.html`; `guide/data/scan-hits.csv`; `guide/data/recheck.json` | Scan snapshot present for every rule; every source classified as re-read, changed or not re-read |
 
 ## Site
 
 | Requirement | Where it is met | Checked by |
 |---|---|---|
-| Clean landing page plus subpages by category | `index.html` and nine pages under `guide/` | Landing page must link every subpage |
+| Clean landing page plus subpages by category | `index.html` and ten pages under `guide/` | Landing page must link every subpage |
 | Simple dashboard, mobile-friendly tables, most important first | Stacked tables under 720 px; answer card first on every page | Viewport tag and `data-label` on every cell; no scripts or external assets |
 | Flagged for Review page with source links | `guide/flagged.html` | Every flagged item has an anchor and a source |
 | No broken links | Whole repository, including archived editions | Crawl of every HTML file |
@@ -43,4 +46,5 @@ Session `arena-eb9f0490`, 2026-11-10. Each line of the request, where it is met,
 
 - The guide does not know your immigration history, where the money came from, what tax was withheld, or what you filed. Those decide which route applies.
 - Prices are published tariffs and one dated rate reading, not a quote.
+- 19 of the 33 sources were re-read on 2026-11-11; the other 14 keep the 2026-11-10 reading and are labelled as not re-read.
 - Archived editions are not re-verified beyond the rule scan and their own build scripts.
