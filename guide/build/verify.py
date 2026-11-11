@@ -152,7 +152,7 @@ for m in methods:
 def boc_total(n):
     held = n * mid
     comm = max(F(50), min(F(260), held / 1000))
-    return n * (1 - mid / sell) + (comm + 150) / sell + 25 + 15
+    return n * (1 - mid / sell) + (comm + 150) / mid + 25 + 15
 
 
 recomputed = 0

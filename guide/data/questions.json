@@ -3,17 +3,18 @@
   "intro": "No personal facts were supplied with the request. Every row below states what is known from official sources, what is still missing, and exactly where to find it. A blank means the answer depends on your own records — not on an estimate.",
   "known": [
     {
-      "fact": "No rule read taxes the conversion or wire itself. The bank checks that tax on the underlying income was already paid.",
-      "implication": "Untaxed income must be settled first; already-taxed income moves with bank fees only.",
+      "fact": "The China current-account rule asks for documents including tax vouchers; it does not state a separate conversion tax. US foreign-currency gain may require separate review.",
+      "implication": "Confirm the tax and documentation for the underlying source; prior China tax payment does not eliminate possible US exchange-gain tax.",
       "src": [
         "CN-ART59",
         "CN-IIT",
-        "CN-FXREG"
+        "CN-FXREG",
+        "US-988"
       ]
     },
     {
-      "fact": "A foreign passport holder may buy FX with lawful China current-account income by showing ID + proof of amount including tax vouchers. No fixed cap is stated for this route.",
-      "implication": "Documented salary, rent, dividends or property proceeds can be converted in one wire for the documented amount.",
+      "fact": "SAFE describes a documented route for lawful China current-account income of a foreign individual; eligibility depends on the bank’s classification and the source.",
+      "implication": "Ask the bank to identify the applicable route and documents; property proceeds or other capital items may require a different route and approval.",
       "src": [
         "CN-ART59",
         "CN-MEASURES",
@@ -21,8 +22,8 @@
       ]
     },
     {
-      "fact": "The USD 50,000 annual facilitation quota applies to domestic individuals and to holders of the Foreign Permanent Resident ID Card. A passport alone does not get the quota.",
-      "implication": "Do not plan around a USD 50,000 cap unless you hold the PR card. The documented-income route has no stated cap.",
+      "fact": "SAFE’s rules specify an annual USD 50,000 purchase facilitation amount for domestic individuals. The cited SAFE FAQ also describes the rule for permanent-residence card holders.",
+      "implication": "Ask the bank how it classifies you and whether the documented-income route applies; a passport or citizenship alone does not establish the answer.",
       "src": [
         "CN-PR",
         "CN-RULES",
@@ -30,8 +31,8 @@
       ]
     },
     {
-      "fact": "Splitting, borrowed quotas, money changers, false documents and crypto carry fines up to 30% (30%–100% if serious) and possible criminal liability.",
-      "implication": "Those routes are not cost-saving alternatives; they are the conversion penalty.",
+      "fact": "China FX rules prohibit certain evasion and unauthorized foreign-exchange activities; the applicable sanction depends on the conduct and facts.",
+      "implication": "Do not evade controls or use unauthorized dealers; consult the cited rules and qualified counsel on any particular activity.",
       "src": [
         "CN-FXREG",
         "CN-MEASURES",
@@ -39,8 +40,8 @@
       ]
     },
     {
-      "fact": "Bank of China wire: commission 1‰ (CNY 50–260) + cable CNY 150 + full-amount delivery USD 25 + Chase incoming USD 15. FX margin 0.2094% on the day's board.",
-      "implication": "At $10,000 cost is $93.36 (0.93%); at $400,000 $939.01 (0.23%). One large wire is cheapest because fees are capped.",
+      "fact": "Bank of China publishes a wire commission and cable fee; its full-amount fee depends on the correspondent arrangement. Chase publishes an incoming-wire fee. Rates and actual charges vary.",
+      "implication": "The cost ladder is an illustrative historical scenario, not a binding quote or a proven cheapest route.",
       "src": [
         "CN-BOCTARIFF",
         "CN-FXBOARD",
@@ -48,16 +49,16 @@
       ]
     },
     {
-      "fact": "Wise from China is limited to non-mainland nationals with a China tax record from the last 3 years, max CNY 300,000 per transfer, overall limit equal to after-tax China salary. Five live quotes 0.63%–0.57%.",
-      "implication": "Useful for smaller, eligible salary amounts. Not available above CNY 300,000 per transfer.",
+      "fact": "Wise states eligibility rules, a CNY 300,000 per-transfer China bank-app limit and, generally, an overall limit based on after-tax China salary.",
+      "implication": "Eligible users may need multiple transfers; the provider must confirm the total limit and quote.",
       "src": [
         "PR-WISE",
         "PR-WISEFEE"
       ]
     },
     {
-      "fact": "Cash: up to USD 5,000 no permit, USD 5,000–10,000 bank permit, in principle no more than USD 10,000 may be carried out. CNY cash limit CNY 20,000 per trip. US border: report over USD 10,000 on FinCEN 105.",
-      "implication": "Cash cannot move $400,000 lawfully and must be declared at the US border.",
+      "fact": "China’s foreign-currency cash guidance gives a general USD 5,000 threshold and a permit route generally up to USD 10,000; exceptions and separate declaration rules apply. US reporting applies over USD 10,000.",
+      "implication": "Large cash movements are impractical, have important exceptions and reporting requirements, and require confirmation with authorities.",
       "src": [
         "CN-CASH",
         "CN-CNYCASH",
@@ -65,25 +66,26 @@
       ]
     },
     {
-      "fact": "US citizens are taxed on worldwide income when earned, with credit for China tax. FBAR over $10,000 aggregate at any time; Form 8938 over $50,000/$75,000 if living in US.",
-      "implication": "The wire is not re-taxed in the US, but the underlying income is. Missing FBAR/8938 carries $16,536/$165,353 and $10,000–$60,000 penalties.",
+      "fact": "US citizens generally report worldwide income. A foreign tax credit may be available subject to rules and limits. FBAR and Form 8938 have separate thresholds.",
+      "implication": "Prior income reporting, a possible currency gain and filing obligations must be reviewed separately. Penalties depend on facts, law and assessment date.",
       "src": [
         "US-ABROAD",
         "US-FTC",
         "US-8938FBAR",
-        "US-FBARPEN"
+        "US-FBARPEN",
+        "US-988"
       ]
     },
     {
-      "fact": "China late-payment surcharge 0.05% per day and evasion fine 50%–500% of tax unpaid exist in law, but were seen only as database excerpts in this review.",
-      "implication": "Unpaid China tax compounds quickly. Confirm on the official law database before relying.",
+      "fact": "The cited tax-collection law’s late-payment and evasion provisions were not opened in full in the prior review; the specific amounts remain unverified.",
+      "implication": "Ask the China tax authority to calculate any liability and provide the applicable legal basis.",
       "src": [
         "CN-TAXCOLL"
       ]
     },
     {
-      "fact": "House-sale, inheritance and emigrant-property routes each need their own approval (SAFE or bank) plus tax vouchers. Funds must go directly to your own account abroad.",
-      "implication": "A plain bank wire may be refused for these funds without the extra papers.",
+      "fact": "The cited materials describe different documentation and approval routes for property sales, inheritance and certain emigrant property transfers.",
+      "implication": "Ask the bank and competent SAFE branch which route, approvals and beneficiary requirements apply to these particular funds.",
       "src": [
         "CN-SHPROP",
         "CN-PROPTRANS",
@@ -102,8 +104,8 @@
           "CN-BOCTARIFF",
           "CN-FXBOARD"
         ],
-        "when": "Documented after-tax salary/current-account income, any size, you can visit the branch",
-        "why": "Every price is published, fees are capped, cost falls with size (0.93% at $10k → 0.23% at $400k). One wire avoids doubling fixed fees. No stated cap for this route."
+        "when": "Lawful documented current-account income, subject to bank review and transaction limits",
+        "why": "Illustrative bank fees are capped, but the live FX rate, the bank’s routing and transaction limits, and tax remain to be confirmed."
       },
       {
         "rank": 2,
@@ -113,7 +115,7 @@
           "PR-WISEFEE"
         ],
         "when": "After-tax salary, smaller amounts (under ~CNY 300k per transfer), eligible for Wise, branch visit difficult",
-        "why": "Cheaper than BOC below ~$20k–$30k in live quotes; no branch queue. Not available above per-transfer cap; overall limit equals after-tax salary, not account balance."
+        "why": "Historical sample quotes are not synchronized and exclude any receiving-bank fee. Obtain current executable quotes; amounts above the per-transfer cap may require multiple transfers."
       },
       {
         "rank": 3,
@@ -124,7 +126,7 @@
           "CN-CAP2014"
         ],
         "when": "House-sale, inheritance or pre-emigration assets",
-        "why": "Only route the bank will accept for those funds. Uses same wire costs; tax on the underlying gain (20% of gain for property) comes first."
+        "why": "Determine the applicable route and tax with the bank, tax authority and SAFE; do not assume the same approvals or cost for every source."
       },
       {
         "rank": "not",
@@ -147,7 +149,7 @@
       "question": "Are you a US citizen holding the account in your own name with a foreign passport, or do you hold a Foreign Permanent Resident ID Card?",
       "have": "You stated US citizen.",
       "have_not": "Whether you hold the PR card, how long you have been resident, and whether the account is solely yours. The rules treat domestic individuals, PR-card holders and passport holders differently.",
-      "answer_if_known": "Passport holder without PR card: use the documented-income route (no stated cap). PR-card holder: also eligible for the USD 50,000 annual quota.",
+      "answer_if_known": "Ask the bank to classify the individual and identify the applicable documented-income or facilitation route.",
       "how_to_find": "Check passport and wallet for the PR card. If resident >1 year, read FX Regulation art. 52 and SAFE Q&A 2024 with the bank.",
       "src": [
         "CN-FXREG",
@@ -262,7 +264,7 @@
       "question": "What is your bank's single-wire limit, its current selling rate, and whether it charges channel discounts or requires full-amount delivery?",
       "have": "Bank of China tariff and board rate verified. Other banks' rates and tariffs not verified.",
       "have_not": "A bank's own channel limit may force two wires (doubling fixed fees). HSBC's margin was not published.",
-      "answer_if_known": "BOC selling 6.6851 on the snapshot, commission 1‰ capped, cable CNY 150, full-amount USD 25. Other banks → read their tariff page.",
+      "answer_if_known": "Review the dated BOC rate and assumed fee scenario in the cost ladder; the actual rate and tariff depend on the transaction.",
       "how_to_find": "At the branch: ask for the published tariff (服务价目表), day's selling rate, and 'single transaction maximum for outward telegraphic transfer'. Compare BOC vs. your bank at the same hour.",
       "src": [
         "CN-BOCTARIFF",
@@ -280,8 +282,8 @@
       "id": "Q09",
       "category": "Non-bank providers",
       "question": "Do you meet Wise's eligibility (non-mainland national, China tax record within 3 years) and does the amount fit its CNY 300,000 per-transfer cap?",
-      "have": "Wise quotes show 0.63% at $10,000 cheaper than BOC, but no quote above CNY 300,000.",
-      "have_not": "Overall Wise limit equals after-tax China salary earned — not the account balance. Western Union fees/limits not published and bank-account delivery is paused.",
+      "have": "Historical Wise and bank indicative quotes are shown in the cost ladder, but are not a personalized executable comparison.",
+      "have_not": "Wise generally bases the overall limit on after-tax China salary; receiving-bank charges and individualized eligibility remain unknown. Check current Western Union availability.",
       "answer_if_known": "Eligible and under cap → request a live Wise quote in the app at the same hour as the bank quote and compare net USD.",
       "how_to_find": "Open Wise app → Send money → From CNY → verify eligibility check and per-transfer limit. Ask partner bank about WU if routing through WU.",
       "src": [
@@ -299,8 +301,8 @@
       "category": "US tax status",
       "question": "What is your US filing status, residency (living in US vs. abroad), and which China-source income have you already reported to the IRS?",
       "have": "Stated US citizen. No filing status, residency history or prior returns supplied.",
-      "have_not": "Worldwide income is taxed when earned, not when wired. Credit for China tax is claimed on Form 1116; income excluded under FEIE cannot generate a credit.",
-      "answer_if_known": "Already reported → wire is not re-taxed. Never reported → income must be reported for the year earned before or with the FBAR/8938.",
+      "have_not": "Worldwide income reporting and any foreign tax credit depend on the facts. Review eligibility and potential foreign-currency gain separately.",
+      "answer_if_known": "Review the original income reporting and any currency gain separately with a US tax professional; amended or delinquent filings may be needed.",
       "how_to_find": "Pull IRS transcripts and prior 1040s. List each China income year with CNY amount, date received, and China tax paid (for Form 1116).",
       "src": [
         "US-ABROAD",
@@ -315,9 +317,9 @@
       "id": "Q11",
       "category": "FBAR / FATCA thresholds",
       "question": "Did the aggregate of all foreign accounts exceed $10,000 at any time in the year, and did specified foreign assets exceed $50,000/$75,000 (US resident) or $200,000/$300,000 (abroad)?",
-      "have": "No account aggregate was supplied, but a target up to $400,000 exceeds both thresholds.",
-      "have_not": "Penalties are $16,536 non-willful / $165,353 willful for FBAR and $10,000–$60,000 for Form 8938. The 50%-of-balance alternative for willful FBAR was seen only pre-2016.",
-      "answer_if_known": "Over threshold → file FinCEN 114 by April 15 (auto to Oct 15) and Form 8938 with the return. Keep conversion and wire slips for the filing.",
+      "have": "No account aggregate was supplied. The requested cost scenarios do not establish the actual balance or filing obligation.",
+      "have_not": "FBAR and Form 8938 thresholds, filing status, penalty calculations and assessment dates need review.",
+      "answer_if_known": "Check each filing’s applicable thresholds and due dates independently; consult a tax professional about any prior missed filings.",
       "how_to_find": "Sum maximum balances of every foreign account during each calendar year. Compare to IRS comparison table.",
       "src": [
         "US-8938FBAR",
@@ -331,9 +333,9 @@
       "id": "Q12",
       "category": "Exchange gain in the US",
       "question": "Has the CNY appreciated since you received it, creating a US-measured gain above $200 on the conversion?",
-      "have": "26 USC 988(e)(2) ignores personal gain up to $200.",
+      "have": "Section 988(e) contains a $200 gain exclusion for qualifying personal transactions; its conditions must be met.",
       "have_not": "Character of gain above $200 and deductibility of a loss were not verified on an IRS page.",
-      "answer_if_known": "At or below $200 → no gain recognized. Above $200 → give both CNY acquisition value (USD at receipt date) and conversion value to a US preparer.",
+      "answer_if_known": "Check whether this is a qualifying personal transaction and calculate gain; consult a US preparer, including where gain exceeds $200.",
       "how_to_find": "Record each receipt's date, CNY amount and USD value using the exchange rate prevailing when received (IRS foreign currency page).",
       "src": [
         "US-988",
@@ -360,9 +362,9 @@
       "id": "Q14",
       "category": "Cash vs wire decision",
       "question": "Do you need the money as cash in the US, or as a wire into a US bank account?",
-      "have": "Request is to convert to USD — presumably into a US account, not cash.",
-      "have_not": "Cash routes are capped (CNY 20,000 out, USD 10,000 out in FX) and require FBAR + FinCEN 105 reporting; wire routes are not capped for documented income.",
-      "answer_if_known": "Need a bank balance → wire is cheapest and lawful for large sums. Need cash at arrival → limited to USD 10,000 per trip.",
+      "have": "The request concerns CNY-to-USD conversion; the destination account or need for cash has not been supplied.",
+      "have_not": "Cash transport and declaration rules include limits and exceptions. Bank transaction limits and eligibility have not been confirmed.",
+      "answer_if_known": "Compare eligible routes and executable quotes for the destination; if carrying cash, verify China and US rules, exceptions and declaration obligations.",
       "how_to_find": "Decide destination account. If cash is required, read SAFE cash rule and CBP reporting page before booking.",
       "src": [
         "CN-CASH",

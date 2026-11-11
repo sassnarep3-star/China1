@@ -93,7 +93,8 @@ def boc_parts(n):
     fx = D(n) * FX_SHARE
     commission = clamp(held * D(B["commission_rate"]), B["commission_min_cny"], B["commission_max_cny"])
     fees_cny = commission + D(B["cable_cny"])
-    fees_usd = fees_cny / SELL
+    # Value additional CNY fees at the same midpoint benchmark as the starting funds.
+    fees_usd = fees_cny / MID
     total = fx + fees_usd + FULL + CHASE
     return {"held": held, "fx": fx, "fees_cny": fees_cny, "fees_usd": fees_usd, "total": total}
 
@@ -116,7 +117,7 @@ def ladder(method):
             det = (f"FX margin {usd(q2(p['fx']))} + bank fees {cny(q2(p['fees_cny']))} (≈ {usd(q2(p['fees_usd']))}) "
                    f"+ full-amount delivery {usd(FULL)} + Chase incoming wire {usd(CHASE)}")
             out.append(row(n, "value", q2(p["total"]), p["total"] / n, det,
-                           src=["CN-FXBOARD", "CN-BOCTARIFF", "US-CHASE"]))
+                           src=["CN-FXBOARD", "CN-BOCTARIFF", "US-CHASE"], flags=["F19", "F24"]))
         elif model == "hsbc":
             fees = clamp(held * D(H["commission_rate"]), H["commission_min_cny"], H["commission_max_cny"]) \
                 + D(H["cable_cny"]) + D(H["full_amount_precollect_cny"])
@@ -346,12 +347,10 @@ BANNED = [m for m in METHODS if m["cat"] == "prohibited"]
 
 def wise_sentence():
     lo, hi = WISE_ROWS[0], WISE_ROWS[-1]
-    s = (f"Wise quoted {usd(lo['total'])} ({pct(lo['share'])}) at {usd(lo['usd'], False)} and "
+    s = (f"The Wise comparison-API sample implies a {usd(lo['total'])} loss ({pct(lo['share'])}) versus the BOC midpoint at {usd(lo['usd'], False)} and "
          f"{usd(hi['total'])} ({pct(hi['share'])}) at {usd(hi['usd'], False)}")
-    if WISE_CHEAPER and BOC_CHEAPER:
-        s += (f"; it was cheaper than the Bank of China wire at {' and '.join(usd(n, False) for n in WISE_CHEAPER)}, "
-              f"and dearer from {usd(min(BOC_CHEAPER), False)}")
-    return s + ". Wise figures exclude any fee of the receiving bank. Above CNY 300,000 per transfer Wise returns no quote."
+    # Do not declare a winner from unsynchronized, incomplete quotes.
+    return s + ". These historical, non-simultaneous indicative comparisons exclude any Wise receiving-bank fee; actual rates and fees may differ. CNY 300,000 is a per-transfer limit, not a total limit."
 
 
 # --------------------------------------------------------------------------
@@ -404,7 +403,7 @@ def build_home():
         ("guide/steps.html", "Step by step", "Exactly what to do for each lawful route."),
         ("guide/taxes.html", "Taxes and penalties", "The 'conversion penalty' broken down: China tax, fines, US tax and filings."),
         ("guide/flagged.html", f"Flagged for Review ({len(FLAGS)})", "Everything left blank because it could not be confirmed, with links to check."),
-        ("guide/sources.html", f"Sources ({len(SOURCES)})", "Every official page relied on, with the text quoted."),
+        ("guide/sources.html", f"Sources ({len(SOURCES)})", "Official pages used in prior editions, with quotations and dates; not all have been independently rechecked in this session."),
         ("guide/repo-review.html", "Repository review", f"{SCAN['total_lines']:,} archived lines scanned against the official sources; irregularities listed."),
         ("guide/archive.html", "Archive", "Earlier editions kept for reference; superseded by this guide."),
     ]
@@ -418,7 +417,7 @@ def build_home():
 <h2 id="ans">The short answer</h2>
 <ul class="plain">
 <li><b>No rule read for this guide taxes the conversion itself.</b> Underlying income, bank charges and possible US foreign-currency gain require separate review; prior payment of China tax does not establish that no other tax applies. {src_links(["CN-ART59", "CN-IIT"])}</li>
-<li><b>Lawful route:</b> take your passport, proof of the amount and your China tax record to the bank, buy USD and wire it to your own US account. The rule states no fixed cap for a foreign passport holder; the bank converts what the documents support. {src_links(["CN-ART59", "CN-MEASURES"])}</li>
+<li><b>Lawful route:</b> take your passport, proof of the amount and your China tax record to the bank, buy USD and wire it to your own US account. The cited rule does not specify a fixed cap; the bank must confirm your classification, documents and its transaction limits. {src_links(["CN-ART59", "CN-MEASURES"])}</li>
 <li><b>Cost by Bank of China wire into a Chase account:</b> {usd(BOC10["total"])} for $10,000 ({pct(BOC10["share"])}), {usd(BOC100["total"])} for $100,000 ({pct(BOC100["share"])}), {usd(BOC400["total"])} for $400,000 ({pct(BOC400["share"])}). {src_links(["CN-FXBOARD", "CN-BOCTARIFF", "US-CHASE"])}</li>
 <li><b>Do not split the amount, borrow other people's quotas, use money changers or crypto.</b> Fines run up to 30% of the amount, and 30%–100% if serious, with possible criminal liability. {src_links(["CN-MEASURES", "CN-FXREG", "CN-CRYPTO"])}</li>
 <li><b>In the US:</b> the pages read tax the income in the year it is earned, not the later transfer. File the FBAR and Form 8938 if the account passed the thresholds. {src_links(["US-ABROAD", "US-8938FBAR"])}</li>
@@ -479,21 +478,21 @@ def build_summary():
 <ol class="steps">
 <li><b>There is no separate conversion tax in the rules read.</b> What people call the "conversion penalty" is made of: tax on the underlying income if it was never taxed, bank charges, fines if a prohibited route is used, and US filing penalties if reports are missed. {src_links(["CN-IIT", "CN-FXREG", "US-FBARPEN"])}</li>
 <li><b>Use the documented bank route.</b> As a foreign passport holder you may buy foreign exchange with lawful China current-account income on showing your ID and proof of the amount including tax vouchers. No fixed cap is stated. {src_links(["CN-ART59", "CN-RULES"])}</li>
-<li><b>The USD 50,000 yearly total is not written as a cap on your purchase of USD.</b> As written it covers everyone's sale of foreign exchange and a domestic individual's purchase of it; a foreign passport holder's purchase is document-driven (art. 13), and the holder of a Foreign Permanent Resident ID Card gets the total as a convenience. {src_links(["CN-RULES", "CN-ART59", "CN-PR"])}</li>
-<li><b>Send it in one wire.</b> Bank of China's commission is capped at CNY 260 and the cable fee is fixed, so one large wire costs {pct(BOC400["share"])} at $400,000 against {pct(BOC10["share"])} at $10,000. Splitting to avoid review is prohibited. {src_links(["CN-BOCTARIFF", "CN-MEASURES"])}</li>
+<li><b>The USD 50,000 yearly total is not written as a cap on your purchase of USD.</b> The cited rule covers individuals’ sale of foreign exchange and domestic individuals’ purchase; ask the bank how it classifies you and whether the documented-income route applies. {src_links(["CN-RULES", "CN-ART59", "CN-PR"])}</li>
+<li><b>Compare a single-wire scenario where the bank permits it.</b> Bank of China's commission is capped at CNY 260 and the cable fee is fixed, so the illustrative model costs {pct(BOC400["share"])} at $400,000 against {pct(BOC10["share"])} at $10,000. Splitting to avoid review is prohibited. {src_links(["CN-BOCTARIFF", "CN-MEASURES"])}</li>
 <li><b>Match the route to the money.</b> Property-sale proceeds, inheritance and pre-emigration assets each have their own route and papers. {src_links(["CN-SHPROP", "CN-PROPTRANS", "CN-CAP2014"])}</li>
 <li><b>Keep the US side clean.</b> Report worldwide income in the year earned, consider a foreign tax credit if eligible, and check FBAR reporting if the aggregate foreign-account balance exceeded $10,000. {src_links(["US-ABROAD", "US-FTC", "US-8938FBAR"])}</li>
 </ol></section>
 
 <h2>What it costs</h2>
-<p>Bank of China wire into a Chase account, all published charges included. {e(wise_sentence())} The property, inheritance and emigrant routes use the same bank charges; their taxes and approvals come on top. Full table: <a href="costs.html">Cost ladder</a>.</p>
+<p>Illustrative Bank of China wire into a Chase account, using the assumptions in the cost ladder; not a personalized or complete quote. {e(wise_sentence())} The property, inheritance and emigrant routes use the same bank charges; their taxes and approvals come on top. Full table: <a href="costs.html">Cost ladder</a>.</p>
 {top_tbl}
 
 <h2>What the "conversion penalty" is made of</h2>
 {table([("Part", ""), ("Size", ""), ("When it applies", ""), ("Official source", "")], [
     ["FX margin", e(pct(FX_SHARE, 4)) + " of the amount", "Always. Bank of China selling rate against the midpoint of its buy and sell quotes.", src_links(["CN-FXBOARD"])],
     ["Bank and wire fees", e(f"{usd(q2(boc_parts(10_000)['total'] - boc_parts(10_000)['fx']))} at $10,000; {usd(q2(boc_parts(400_000)['total'] - boc_parts(400_000)['fx']))} at $400,000"), "Per wire: commission, cable, full-amount delivery, receiving-bank fee.", src_links(["CN-BOCTARIFF", "US-CHASE"])],
-    ["China income tax", "3%–45% salary; 20% gains, dividends, interest", "Only if the income was not yet taxed. The rules read add no further tax to money already taxed.", src_links(["CN-IIT"])],
+    ["China income tax", "3%–45% salary; 20% gains, dividends, interest", "Depends on the nature of the income, tax already paid and applicable rules; other taxes or adjustments may still apply.", src_links(["CN-IIT"])],
     ["US income tax", "Depends on income and eligibility", "A foreign tax credit may be available subject to requirements and limitations.", src_links(["US-ABROAD", "US-FTC"])],
     ["Exchange gain in the US", "Depends on transaction", "The USD 200 exception has conditions; review gain and loss: " + blank(["F13"], p), src_links(["US-988"])],
     ["Fines for prohibited routes", "Up to 30%; 30%–100% if serious", "Only if you break the rules.", src_links(["CN-FXREG"])],
@@ -564,9 +563,9 @@ def build_costs():
         hs = h["detail"].split("(≈ ")[1].split(" at")[0]
         best = ""
         if w["kind"] == "value" and w["total"] < b["total"]:
-            best = "Wise"
+            best = "Wise (indicative only)"
         else:
-            best = "Bank of China"
+            best = "BOC (indicative only)" if w["kind"] == "value" else "Not compared"
         rows.append([
             f'<b>{usd(n, False)}</b>',
             f'<b>{usd(b["total"])}</b><small>{pct(b["share"])}</small>',
@@ -576,12 +575,12 @@ def build_costs():
             src_links(["CN-BOCTARIFF", "PR-WISEFEE", "PR-HSBC"])])
         classes.append("")
     main_tbl = table([("Amount", "num"), ("Bank of China wire", "num"), ("Wise", "num"), ("HSBC China", "num"),
-                      ("Cheapest fully priced", ""), ("Official source", "")], rows, cls="tight", row_classes=classes)
+                      ("Indicative comparison", ""), ("Official source", "")], rows, cls="tight", row_classes=classes)
 
     comp = table([("Component", ""), ("Figure", ""), ("How it is used", ""), ("Official source", "")], [
         ["Bank of China selling rate", f"CNY {SELL:.4f} per USD", "Rate at which your CNY buys USD (telegraphic and cash selling rates were the same).", src_links(["CN-FXBOARD"])],
         ["Bank of China buying rate", f"CNY {BUY:.4f} per USD", f"Used only to find the midpoint, CNY {MID:.4f}.", src_links(["CN-FXBOARD"])],
-        ["FX margin", pct(FX_SHARE, 4), "1 − midpoint ÷ selling rate. Charged on the whole amount.", src_links(["CN-FXBOARD"])],
+        ["FX margin", pct(FX_SHARE, 4), "1 − midpoint ÷ selling rate. Modelled loss against the illustrative midpoint, not an explicit bank fee.", src_links(["CN-FXBOARD"])],
         ["Bank of China commission", "1‰, minimum CNY 50, maximum CNY 260", "Per wire, on the CNY amount.", src_links(["CN-BOCTARIFF", "CN-BOCFEE"])],
         ["Bank of China cable fee", "CNY 150", "Per international wire.", src_links(["CN-BOCTARIFF", "CN-BOCFEE"])],
         ["Full-amount delivery", "USD 25 (USD 15 if the receiving bank has an account with BOC New York)", "Replaces deductions by correspondent banks. USD 25 is used.", src_links(["CN-BOCTARIFF"])],
@@ -600,7 +599,7 @@ def build_costs():
 <li>HSBC China publishes its fees but not its rate here, so it has no total.</li>
 <li>Every other route is either capped far below these amounts or has no official price; those cells are blank.</li>
 </ul>
-<p class="small mut">How to read a row: you hold CNY worth the amount shown at the midpoint of Bank of China's buy and sell quotes ({e(PRICES["snapshot"])}). The cost is the dollars lost between that and your US account. One wire per amount.</p>
+<p class="small mut">How to read a row: the amount is the value of CNY converted at the midpoint of Bank of China's buy and sell quotes ({e(PRICES["snapshot"])}), not the USD guaranteed to arrive. One wire is assumed. For BOC, the CNY commission and cable are assumed paid separately in addition to those funds and valued at the midpoint; the USD 25 correspondent charge is also assumed paid separately, while the Chase fee is deducted on receipt. The estimate includes these additional costs and FX loss; it is not an all-in quote for an account holding only the stated amount. The commission base, routing, discounts, tax and eligibility remain unconfirmed. Wise quotes were collected at a different time and omit receiving-bank fees.</p>
 </section>
 
 <h2>Priced routes side by side</h2>
@@ -882,10 +881,10 @@ def build_questions():
 <h2>Best way to get money out with the least tax penalty (from official sources)</h2>
 <p>{e(best["preamble"])}</p>
 {best_tbl}
-<div class="note"><b>Why no universal percentage?</b> The rules read state that tax is on the income, not on the conversion. China tax (3%–45% salary, 20% gains/dividends) and US tax (worldwide, less China credit) apply in the year the money was earned — not when it is wired. If the income was already taxed, converting adds only the bank charges above. <span class="srcs"><a class="src" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" target="_blank" rel="noopener">IIT Law</a><a class="src" href="https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad" target="_blank" rel="noopener">IRS citizens abroad</a></span></div>
+<div class="note"><b>Why no universal percentage?</b> Tax depends on the source, residence, prior filings and transaction. A foreign tax credit is conditional, not automatic, and conversion of foreign currency can create a separate US exchange gain or loss even if the underlying income was previously taxed. {src_links(["CN-IIT", "US-FTC", "US-988"])}</div>
 
 <h2>What we already know — and what it decides</h2>
-<p>These ten points are confirmed on the official page listed. They alone are enough to eliminate the prohibited routes and to price the lawful wire.</p>
+<p>The following points summarize the cited sources and open questions. Links alone do not establish every inference; confirm applicability before relying on them.</p>
 {known_tbl}
 
 <h2>16 questions that must be answered before any decision</h2>
@@ -900,7 +899,7 @@ def build_questions():
 
 <h2>What can be answered now vs. what needs your records</h2>
 {table([("Can be answered now (no personal data needed)", ""), ("Needs your records before a decision", ""), ("Official source", "")], [
-    ["<ul><li>The conversion itself is not a separate tax; tax is on the income if untaxed.</li><li>The lawful bank wire needs passport + amount proof + tax voucher; no stated cap for passport holders.</li><li>The USD 50,000 quota is for domestic/PR-card holders, not for a passport holder.</li><li>Prohibited routes carry 30%–100% fines; they are not cheaper alternatives.</li><li>Cash limits (CNY 20,000 / USD 10,000) make cash impossible for large sums.</li><li>US worldwide tax + FBAR/8938 thresholds and penalties are fixed.</li></ul>", "<ul><li>Which of the 19 methods actually applies to your money (Q02–Q07).</li><li>Whether the China tax filing form is required above USD 50,000 (Q05).</li><li>Your bank's single-wire limit and its exact selling rate on the day (Q08, F02/F03).</li><li>Whether Wise eligibility and caps cover your amount (Q09).</li><li>Your prior US reporting and exposure to FBAR/8938/3520 and exchange gain (Q10–Q13).</li><li>The final all-in cost for your amount at that bank on that day — use the cost ladder as a cross-check.</li></ul>", src_links(["CN-ART59", "CN-FXREG", "US-8938FBAR"])],
+    ["<ul><li>Documented lawful current-account income may qualify for conversion, subject to bank review.</li><li>Annual purchase rules depend on the bank’s classification of the individual.</li><li>Unlawful foreign-exchange activities can incur penalties depending on the facts.</li><li>Cash is subject to transport and declaration rules, including exceptions.</li><li>US income reporting, possible exchange gain and FBAR/8938 obligations require separate review.</li></ul>", "<ul><li>Which of the 19 methods actually applies to your money (Q02–Q07).</li><li>Whether the China tax filing form is required above USD 50,000 (Q05).</li><li>Your bank's single-wire limit and its exact selling rate on the day (Q08, F02/F03).</li><li>Whether Wise eligibility and caps cover your amount (Q09).</li><li>Your prior US reporting and exposure to FBAR/8938/3520 and exchange gain (Q10–Q13).</li><li>The final all-in cost for your amount at that bank on that day — use the cost ladder as a cross-check.</li></ul>", src_links(["CN-ART59", "CN-FXREG", "US-8938FBAR", "US-988"])],
 ])}
 
 <div class="card answer"><h2>Minimal viable next action (15 minutes)</h2><p>Open your bank app, export the 36-month statement and the current CNY balance. That single download answers Q02 and Q03 and unlocks every other estimate. If you do one thing, do step 1.</p></div>
@@ -927,7 +926,7 @@ def build_summary_md():
         "",
         f"1. **No rule read for this guide taxes the conversion itself.** The exposure is tax on the underlying income if it was never taxed; the bank asks for tax vouchers. {link('CN-ART59')}, {link('CN-IIT')}",
         f"2. **Lawful route:** passport + proof of the amount + China tax record at the bank, buy USD, wire to your own US account. The cited salary rule does not state a fixed cap; eligibility and bank requirements depend on the funds and individual status. {link('CN-ART59')}, {link('CN-PR')}",
-        f"3. **Cost (Bank of China wire into a Chase account):** {r('M01', 10_000)} at $10,000; {r('M01', 100_000)} at $100,000; {r('M01', 400_000)} at $400,000. {link('CN-FXBOARD')}, {link('CN-BOCTARIFF')}, {link('US-CHASE')}",
+        f"3. **Illustrative cost (Bank of China wire into a Chase account):** {r('M01', 10_000)} at $10,000; {r('M01', 100_000)} at $100,000; {r('M01', 400_000)} at $400,000. {link('CN-FXBOARD')}, {link('CN-BOCTARIFF')}, {link('US-CHASE')}",
         f"4. **{wise_sentence()}** {link('PR-WISEFEE')}",
         f"5. **Avoid prohibited conduct:** evasion through splitting or false documents, illegal currency dealing, and prohibited virtual-currency activities. Fines up to 30% of the amount, 30%–100% if serious, possible criminal liability. {link('CN-FXREG')}, {link('CN-MEASURES')}, {link('CN-CRYPTO')}",
         f"6. **US side:** worldwide income may be taxable; a foreign tax credit may be available subject to conditions. Converting currency may create a separate US exchange gain or loss. FBAR generally applies if aggregate foreign accounts exceed $10,000; Form 8938 thresholds depend on residence and filing status. Penalties depend on facts and assessment date. {link('US-ABROAD')}, {link('US-FTC')}, {link('US-8938FBAR')}, {link('US-FBARPEN')}, {link('US-988')}",

@@ -13,9 +13,10 @@
     {
       "item": "Salary and other comprehensive income",
       "figure": "3%–45%",
-      "explain": "Progressive rates. Normally withheld by the employer; the tax record is the voucher the bank asks for. If already taxed, the rules read add nothing more when you convert.",
+      "explain": "China comprehensive-income rates are progressive. Withholding and documentation depend on the facts; other taxes or adjustments, including possible US foreign-currency gain, require separate review.",
       "src": [
-        "CN-IIT"
+        "CN-IIT",
+        "US-988"
       ],
       "flags": []
     },

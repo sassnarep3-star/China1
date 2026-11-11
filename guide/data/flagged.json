@@ -64,7 +64,7 @@
     {
       "id": "F06",
       "topic": "Wise quotes and limits",
-      "gap": "Wise publishes no fixed tariff for CNY: the figures here are five live quotes from Wise's own comparison API taken on 2026-11-11 between 02:35:43Z and 02:35:50Z. An amount between two quoted points has no figure, and any fee charged by the receiving bank is outside the quote.",
+      "gap": "Wise publishes no fixed tariff for CNY: the figures here are five live quotes from Wise's own comparison API taken on 2026-11-11 between 02:35:43Z and 02:35:50Z. An amount between two quoted points has no figure, and any fee charged by the receiving bank is outside the quote. These comparison-API quotes and the BOC board snapshot were taken at different times; they are not personalized executable quotes, and any Wise receiving-bank fee is unknown.",
       "action": "Get a live quote in the Wise app; confirm you meet the eligibility rules and your overall limit (after-tax China salary).",
       "src": [
         "PR-WISEFEE",
@@ -232,13 +232,25 @@
     {
       "id": "F23",
       "topic": "Tax summary and historical rate snapshot require individual review",
-      "gap": "An earlier guide summary implied that paying China tax eliminates other tax, that a foreign tax credit is automatic and that all exchange gains up to USD 200 are ignored. These statements require qualifications. The cost ladder uses a November 10 historical rate, not a current transaction quote.",
+      "gap": "Prior summaries implied that China tax payment eliminates other tax, a foreign tax credit is automatic, or all exchange gains up to USD 200 are ignored. Those claims need qualification. The cost ladder uses a historical BOC rate, not an executable quote.",
       "action": "Have a US tax professional assess foreign-currency gain, credit eligibility and filing thresholds; obtain an executable bank quote and confirm the source-of-funds route before acting.",
       "src": [
         "US-988",
         "US-FTC",
         "US-8938FBAR",
         "CN-FXBOARD"
+      ]
+    },
+    {
+      "id": "F24",
+      "topic": "Cost-model funding and comparison limitations",
+      "gap": "The BOC model assumes the commission and cable are funded separately in CNY and valued at the BOC midpoint, with USD 25 full-amount service paid separately and a USD 15 Chase fee deducted. The actual commission base, correspondent routing, timing, eligibility and other fees are unconfirmed. The historical Wise estimates omit receiving-bank fees and were not obtained at the same time; neither comparison proves the cheapest route.",
+      "action": "Obtain executable quotes at the same time for the same funded amount and destination, verify actual correspondent and receiver fees, and assess tax separately.",
+      "src": [
+        "CN-BOCTARIFF",
+        "CN-FXBOARD",
+        "US-CHASE",
+        "PR-WISEFEE"
       ]
     }
   ]

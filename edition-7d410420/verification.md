@@ -1,0 +1,32 @@
+# Partial independent verification — 2026-11-11
+
+This record is deliberately limited to sources actually opened and read by session arena-7d410420. It is **not** a line-by-line verification of the entire guide or repository. The historical source entries and prior session records are not proof that this session rechecked them.
+
+| Source opened | Material checked | Result / limitation |
+|---|---|---|
+| [BOC rate board](https://www.boc.cn/sourcedb/whpj/) | Per-100-USD buy 665.91, sell 668.71 at 20:39:19 Beijing, November 11; board says actual transaction rate applies. | The cost ladder remains an earlier, separately dated 10:25:02 scenario, not a current quote. Different-time quotes are not an executable comparison. |
+| [BOC personal tariff, item 210105008 and notes 1, 4–5](https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf) | 1‰, CNY 50 minimum, 260 maximum; international cable CNY 150; USD 15/25 full-amount service depends on correspondent arrangement. | Tariff describes charges on remittance amount and discounts; a particular sender's commission base, fees and routing need confirmation. BOC states CNY-denominated charges collected in equivalent FX use its buying rate. The guide instead models CNY charges paid separately and valued at the illustrative midpoint, not the bank's FX collection rate. |
+| [Chase Total Checking fee page](https://www.chase.com/personal/fees/total-checking) | Incoming wire $15 or $0 under specified conditions. | $15 is a hypothetical account/product fee, not verified for the user. |
+| [Wise CNY guide](https://wise.com/help/articles/2955298/guide-to-cny-transfers) | Eligibility, bank-app CNY 300,000 per-transfer limit and generally after-tax salary overall limit. | Larger cumulative amounts may require multiple transfers, subject to eligibility and overall limit. |
+| [Wise comparison API](https://api.wise.com/v3/comparisons/?sourceCurrency=CNY&targetCurrency=USD&sendAmount=66770.5) | Example returned CNY 66,770.5, fee CNY 435.20, USD 9,947.44, rate 0.149957 at 12:47:27 UTC November 11. | New example is not a customer-specific quote and is not synchronized with the original BOC snapshot. The historical ladder has not been refreshed with these data. |
+| [SAFE 2007 individual exchange rules, articles 2, 13 and 15](https://www.safe.gov.cn/safe/2007/0105/5320.html) | Rules distinguish domestic-individual purchase, documented foreign-individual current-account income and foreign-account remittance. | Classification and individual bank requirements remain unknown. Article 39 is explicitly marked deleted on the page. |
+| [SAFE Tianjin Article 59 Q&A](https://www.safe.gov.cn/tianjin/2026/0713/3088.html) | Lawful current-account CNY income; ID and source materials including tax vouchers. | No assumption that the user's funds qualify or that the bank accepts a particular payment amount. |
+| [IRS exchange-rate guidance](https://www.irs.gov/individuals/international-taxpayers/foreign-currency-and-currency-exchange-rates) and [26 USC §988](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm) | US-dollar functional currency, timing and foreign-currency disposition; section 988(e) $200 exception applies only to qualifying personal transactions. | Prior China tax payment is not proof that currency conversion creates no US taxable gain. Corrected contradictory categorical statements; taxpayer-specific outcome remains unverified. |
+| [IRS 2026 remittance-transfer-tax release](https://www.irs.gov/newsroom/treasury-irs-issue-proposed-regulations-on-the-new-remittance-transfer-tax-established-under-the-one-big-beautiful-bill) | IRS describes 1% on covered US-to-foreign transfers funded with specified physical instruments. | This source is directional and does not make it a tax on a China-to-US wire. |
+
+## Verification actually run
+
+- `python3 guide/build/build.py && python3 guide/build/verify.py`: deterministic build; structural source links, flagged blanks, independent arithmetic and local-link crawl pass. These are automated structural checks, **not** independent external verification of every statement or every URL.
+- `python3 quality-713a97b7/selftest.py`: seven tests pass.
+- `python3 quality-713a97b7/audit.py`: structural checks pass; 40 BOC rows differ from the old illustrative model because this session values separately paid CNY fees at the midpoint rather than the selling rate. The previous QA model was not changed. These differences are expected model changes, not proof of an executable price; see F19/F24.
+
+Still outstanding: independent line-by-line source validation of all remaining rows and all 33 sources; refresh or explicitly retain coordinated quotes; review all prior QA requests; confirm every CI check and deploy for a release. No claim of completed final integration is made here.
+
+## Additional pages opened (selected provisions, not a complete row audit)
+
+- [IRS Foreign Tax Credit](https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit): a credit is conditional; taxes on foreign earned income excluded from US gross income cannot also be credited.
+- [IRS Form 8938 vs FBAR](https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements): separate filings and thresholds; for example, married filing jointly abroad has a $400,000 year-end / $600,000 any-time Form 8938 threshold. A hypothetical $400,000 is not enough to conclude filing is required.
+- [SAFE Tianjin permanent-residence Q&A](https://www.safe.gov.cn/tianjin/2024/0621/2529.html): foreign permanent residence ID holders can use the annual purchase facilitation amount. Other source and classification issues still require confirmation.
+- [SAFE cash notice](https://www.safe.gov.cn/tianjin/2024/0430/2466.html): $10,000 foreign-currency cash general rule expressly permits listed special-case applications; this is not an absolute statutory limit.
+- [SAFE card cash-withdrawal explanation](https://www.safe.gov.cn/safe/2017/1230/8130.html): CNY 100,000 aggregate annual and CNY 10,000 per-card daily limits, as stated on the notice.
+- [HSBC China fee schedule](https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-accouts-and-services.pdf): opening general conditions reviewed; fees do not include other institutions or government taxes, actual applicability depends on account and bank. The full tariff was not rechecked by this session.
