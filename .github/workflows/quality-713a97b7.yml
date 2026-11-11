@@ -24,7 +24,9 @@ jobs:
         run: |
           python3 quality-713a97b7/build.py
           git diff --exit-code -- quality-713a97b7/index.html
-      - name: Verify table sources, local links and cost-ladder structure
-        run: python3 quality-713a97b7/audit.py
+      - name: Test the QA checker and verify sources, links and cost-ladder structure
+        run: |
+          python3 quality-713a97b7/selftest.py
+          python3 quality-713a97b7/audit.py
       - name: Render at mobile, tablet and desktop widths
         run: npm run browser --prefix quality-713a97b7

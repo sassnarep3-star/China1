@@ -5,7 +5,7 @@
   "description": "Independent headless-browser and cost-table checks for the China Money guide",
   "scripts": {
     "browser": "node browser-check.cjs",
-    "audit": "python3 audit.py",
+    "audit": "python3 selftest.py && python3 audit.py",
     "test": "npm run audit && npm run browser"
   },
   "devDependencies": {

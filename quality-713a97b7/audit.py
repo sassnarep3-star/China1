@@ -135,6 +135,33 @@ def page_checks() -> tuple[int, int, int]:
     return len(pages), rows_count, local_count
 
 
+def repository_fragment_checks() -> tuple[int, int]:
+    # Existing site checks cover all files but historically only checked anchors
+    # on the current guide. Check fragment targets in archived HTML as well,
+    # without presenting the archived claims as re-verified.
+    excluded = {".git", "node_modules", "artifacts", "__pycache__"}
+    files = [p.resolve() for p in ROOT.rglob("*.html") if not (excluded & set(p.parts))]
+    docs: dict[Path, Document] = {}
+    for page in files:
+        parser = Document()
+        parser.feed(page.read_text(encoding="utf-8", errors="replace"))
+        docs[page] = parser
+    fragments = 0
+    for page, doc in docs.items():
+        for href in doc.links:
+            parts = urlsplit(href)
+            if not parts.fragment:
+                continue
+            target = local_destination(page, href)
+            if target is None:
+                continue
+            dest, fragment = target
+            if dest in docs:
+                fragments += 1
+                check(fragment in docs[dest].ids, f"{page.relative_to(ROOT)}: broken repository anchor {href}")
+    return len(files), fragments
+
+
 def cost_checks() -> tuple[int, int, int]:
     methods = json.loads((DATA / "methods.json").read_text(encoding="utf-8"))["methods"]
     sources = json.loads((DATA / "sources.json").read_text(encoding="utf-8"))["sources"]
@@ -208,6 +235,7 @@ def cost_checks() -> tuple[int, int, int]:
 
 def main() -> int:
     pages, table_rows, links = page_checks()
+    repo_pages, fragments = repository_fragment_checks()
     methods, rows, compared = cost_checks()
     for warning in warnings[:30]:
         print("REVIEW:", warning)
@@ -219,6 +247,7 @@ def main() -> int:
         print(f"FAIL: {len(errors)} structural errors", file=sys.stderr)
         return 1
     print(f"PASS: {pages} canonical pages; {table_rows} body rows with registered sources; {links} local links/fragments; "
+          f"{repo_pages} repository pages and {fragments} local anchors checked; "
           f"{methods} methods × 40 amounts = {rows} CSV rows; {compared} BOC example rows compared. "
           f"{len(warnings)} review notes. No external source content was fetched by this check.")
     return 0

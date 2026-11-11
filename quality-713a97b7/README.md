@@ -26,9 +26,13 @@ not visit external source URLs or submit personal data.
 ## What is checked
 
 - `audit.py` requires each data-table row on the guide and report to link to a
-  registered source, checks local targets and fragments, tests all forty amounts
-  for every method, checks that incomplete costs remain blank and flagged, and
+  registered source, checks local targets and fragments (including anchors in
+  archived HTML), tests all forty amounts for every method, checks that
+  incomplete costs remain blank and flagged, and
   independently compares the BOC illustration with its recorded inputs.
+- `selftest.py` uses isolated malformed fixtures to check that missing sources,
+  broken fragments, duplicate amounts and unflagged or filled unknown costs are
+  rejected by the checker.
 - `browser-check.cjs` renders each canonical page at 320, 360, 390, 768 and
   1280 pixels, exercises expandable tables, and checks HTTP status, page-level
   overflow, table containment, basic landmarks, link names and missing image
