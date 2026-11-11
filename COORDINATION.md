@@ -72,12 +72,17 @@ Branch: `arena/c2e7e812-china1` (fixed by Arena; the requested `session-<id>/<ta
 
 | Task | Status | Owner | Exclusive file scope |
 |---|---|---|---|
-| C1 This claim block; commit and push immediately | in progress | arena-c2e7e812 | `COORDINATION.md` (this block only) |
-| C2 Independent rebuild + full verify of the canonical guide (`build.py` deterministic rebuild; `verify.py` rows/source links/blanks/arithmetic/link crawl) | unclaimed → claimed | arena-c2e7e812 | `verification-c2e7e812/**` (record); read-only on `guide/**` for this task |
-| C3 Line-by-line re-check of the guide's load-bearing sources on official pages via web_search/fetch today; per-source PASS/FAIL record | unclaimed → claimed | arena-c2e7e812 | `verification-c2e7e812/**` |
-| C4 Integrate the still-open QA integration request: link `quality-713a97b7/index.html` from the canonical archive page; re-check the six QA wording requests against current guide data and correct only where the cited official text does not support the wording | unclaimed → claimed | arena-c2e7e812 | `guide/data/archive.json`, regenerated `guide/archive.html` (+ any data file corrections, each sourced) |
-| C5 Update `EXECUTIVE_SUMMARY.md`/`README.md`/`REQUIREMENTS.md` only if C2–C4 change something; whole-repo broken-link crawl | unclaimed → claimed | arena-c2e7e812 | files named at edit time, logged here first |
-| C6 PR to `main`, merge without waiting, confirm GitHub Pages deploys, record PR link and merge result here | unclaimed → claimed | arena-c2e7e812 | this block |
+| C1 This claim block; commit and push immediately | done (pushed 12:50 UTC) | arena-c2e7e812 | `COORDINATION.md` (this block only) |
+| C2 Independent rebuild + full verify of the canonical guide (`build.py` deterministic rebuild; `verify.py` rows/source links/blanks/arithmetic/link crawl) | done | arena-c2e7e812 | `verification-c2e7e812/**` (record); read-only on `guide/**` for this task |
+| C3 Line-by-line re-check of the guide's load-bearing sources on official pages via web_search/fetch today; per-source PASS/FAIL record | done | arena-c2e7e812 | `verification-c2e7e812/**` |
+| C4 Integrate the still-open QA integration request: link `quality-713a97b7/index.html` from the canonical archive page; re-check the six QA wording requests against current guide data and correct only where the cited official text does not support the wording | done | arena-c2e7e812 | `guide/data/archive.json`, regenerated `guide/archive.html` |
+| C5 Update `EXECUTIVE_SUMMARY.md`/`README.md`/`REQUIREMENTS.md` only if C2–C4 change something; whole-repo broken-link crawl | done — no edits needed: data unchanged (figures match current build; stale figures exist only inside historical session-board blocks, preserved verbatim per protocol); link crawl re-run by `verify.py` (PASS) | arena-c2e7e812 | none (decision logged here) |
+| C6 PR to `main`, merge without waiting, confirm GitHub Pages deploys, record PR link and merge result here | in progress | arena-c2e7e812 | this block |
+
+Log (arena-c2e7e812):
+- 2026-11-11 12:50 UTC — claim committed and pushed before any task work (commit 7219e3f).
+- 2026-11-11 ~13:00 UTC — C2/C3 done: deterministic rebuild identical before changes; `verify.py` PASS (11 pages; 1,057 rows; 288 blank-linked rows; 370 totals recomputed; 280 files / 22,600 links). 15 load-bearing sources re-checked via web_search against official-page excerpts; record in `verification-c2e7e812/`. All PASS; BOC tariff PDF consistent with its stored quote (server not fetchable from the sandbox, noted in the record). Six QA wording requests re-checked against current text — all already satisfied (F14 documents the FBAR 50% willful alternative; FTC wording conditional; Wise comparison caveated; splitting wording limited to evasion-driven splitting per PBOC Order 2006-3 art. 7; wage route conditional). No correction edits required.
+- 2026-11-11 ~13:05 UTC — C4 done: appended `quality-713a97b7/index.html` to `guide/data/archive.json` (open integration request from QA report, carried over via the dc298e7a takeover); rebuilt; `verify.py` PASS (22,601 internal links, none broken). No other guide page changed.
 
 Rules this session applies: archived editions are read-only; no figure is copied from any archived edition into the guide without being re-read on the official page in this session; unconfirmable values stay blank and flagged; prohibited routes are listed with legal consequence only, no execution steps; no personal fact about the user's account, source of funds, or tax history is inferred.
 

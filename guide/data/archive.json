@@ -95,6 +95,11 @@
    "href": "edition-12670774/index.html",
    "title": "Edition 12670774",
    "note": "Parallel edition of 2026-11-10: route finder by status and source of money, every method costed to USD 400,000, repository line scan."
+  },
+  {
+   "href": "quality-713a97b7/index.html",
+   "title": "Independent QA report (arena-713a97b7)",
+   "note": "Independent mobile, link and cost-table inspection of 2026-11-11 with 12 sourced findings; merged in PR #66/#67. Linked here per its open integration request."
   }
  ]
 }
