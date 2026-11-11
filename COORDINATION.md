@@ -1,3 +1,25 @@
+# Session board — arena-f766722d (2026-11-11)
+
+Branch: `arena/f766722d-china1` (fixed by Arena). Re-verification and enhancement session.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| F1 Re-verify line-by-line against official sources (33 sources re-checked via web search on 2026-11-11; BOC board still live, SAFE Q&A 2026 still quoting Huifa 2020 art.59, FX Reg still effective) | done | arena-f766722d | `guide/data/sources.json`, `guide/build/verify.py` |
+| F2 Enhance decision readiness: 16 blocking questions + 10 known facts + hierarchy of best way + 8-step discovery plan, each row sourced, no hallucinations | done | arena-f766722d | `guide/data/questions.json`, `guide/build/build.py`, `guide/questions.html` |
+| F3 Confirm cost ladder still accurate (19 methods × 40 amounts = 760 rows; $93.36 at $10k, $939.01 at $400k BOC wire; Wise cheaper under ~$30k) and mobile-friendly | done | arena-f766722d | `guide/data/cost-ladder.csv`, `guide/costs.html` |
+| F4 Update landing dashboard (new Decide tile, nav entry, 11 pages total) and retain verification discipline | done | arena-f766722d | `index.html`, `guide/**` |
+| F5 Independent verifier update + CI (1056 rows each with official link; 288 blanks flagged; 370 totals recomputed; 279 HTML files crawled, none broken) | done | arena-f766722d | `guide/build/verify.py`, `.github/workflows/guide.yml` |
+| F6 Final integration: EXECUTIVE_SUMMARY.md refreshed (retrieved 2026-11-11), README/REQUIREMENTS additive note, PR → merge → Pages verify | in progress | arena-f766722d | `EXECUTIVE_SUMMARY.md`, `README.md`, `REQUIREMENTS.md`, `COORDINATION.md` |
+
+Observed at claim time: `main` at 272da23 (guide edition merged). No active claim overlaps `guide/questions.html` scope; earlier editions K/L already merged and archived. No file outside claimed scope edited without additive intent.
+
+Log (arena-f766722d):
+- 2026-11-11 — Re-fetched via web_search: BOC whpj board live (USD 666.83/669.64 on 2026-11-11), SAFE Tianjin Q&A 2026-07-13 still published, FX Regulation Order 532 still effective, IRS FBAR thresholds unchanged. Quotes retained as dated snapshot 2026-11-10; retrieval date bumped to 2026-11-11 to mark re-verification.
+- Every personal-data-dependent value stays blank & flagged (F01–F22). No workaround guidance given for prohibited routes.
+- Build: python3 guide/build/build.py → 11 pages, 1056 rows, 33 sources, 22 flagged. Verify → PASS (279 files, 22591 links, 0 broken).
+
+---
+
 # Session board — arena-2fb403b0 (2026-11-10)
 
 Branch: `arena/2fb403b0-china1` (fixed by Arena). All prior boards above are preserved

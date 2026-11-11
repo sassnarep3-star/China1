@@ -1,6 +1,6 @@
 # Final integration — requirements and traceability
 
-Session `arena-eb9f0490`, 2026-11-10. Each line of the request, where it is met, and how it is checked. "Checked" means `guide/build/verify.py` fails if the statement stops being true.
+Session `arena-f766722d`, 2026-11-11 (additive on arena-eb9f0490, 2026-11-10). Each line of the request, where it is met, and how it is checked. Re-verified live via web_search on 2026-11-11; sources still publish same rules. "Checked" means `guide/build/verify.py` fails if the statement stops being true.
 
 ## Research
 
@@ -12,6 +12,7 @@ Session `arena-eb9f0490`, 2026-11-10. Each line of the request, where it is met,
 | Cost of every method at each $10,000 step to $400,000 | `guide/costs.html`; `guide/data/cost-ladder.csv` | 40 exact steps per method; totals recomputed independently |
 | Exactly how each method works, step by step | `guide/steps.html` | Every step has a source |
 | Executive summary | `guide/summary.html`; `EXECUTIVE_SUMMARY.md` | Generated from the same data |
+| Clear list of questions, have/not-have, answers and suggestions to discover missing info | `guide/questions.html`: 16 blocking questions (Q01–Q16) with have/missing/answer/how-to-find, 10 known facts, best-way hierarchy (4 ranks), 8-step discovery plan | Every row carries an official source; personal-data blanks stay blank & flagged |
 
 ## Verification
 
@@ -26,7 +27,7 @@ Session `arena-eb9f0490`, 2026-11-10. Each line of the request, where it is met,
 
 | Requirement | Where it is met | Checked by |
 |---|---|---|
-| Clean landing page plus subpages by category | `index.html` and nine pages under `guide/` | Landing page must link every subpage |
+| Clean landing page plus subpages by category | `index.html` and ten pages under `guide/` (new Decide page) | Landing page must link every subpage |
 | Simple dashboard, mobile-friendly tables, most important first | Stacked tables under 720 px; answer card first on every page | Viewport tag and `data-label` on every cell; no scripts or external assets |
 | Flagged for Review page with source links | `guide/flagged.html` | Every flagged item has an anchor and a source |
 | No broken links | Whole repository, including archived editions | Crawl of every HTML file |
@@ -35,8 +36,8 @@ Session `arena-eb9f0490`, 2026-11-10. Each line of the request, where it is met,
 
 | Requirement | Where it is met |
 |---|---|
-| Coordination protocol: claim, small commits, rebase before push, handoff notes | `COORDINATION.md`, block `arena-eb9f0490` |
-| Pull request to `main` with summary, sources and flagged items; merge; confirm deployment | Release record in `COORDINATION.md` |
+| Coordination protocol: claim, small commits, rebase before push, handoff notes | `COORDINATION.md`, block `arena-f766722d` (additive atop arena-eb9f0490) |
+| Pull request to `main` with summary, sources and flagged items; merge; confirm deployment | Release record in `COORDINATION.md` (arena-f766722d) |
 | Earlier sessions' work not discarded | All earlier editions kept in place; reachable from `guide/archive.html` |
 
 ## Limits

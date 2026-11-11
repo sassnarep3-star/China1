@@ -9,7 +9,7 @@ A research guide for a US citizen holding CNY in a mainland China bank account: 
 | Path | What it is |
 |---|---|
 | `index.html` | Landing page (generated) |
-| `guide/*.html` | Summary, methods, cost ladder, steps, taxes, Flagged for Review, sources, repository review, archive (generated) |
+| `guide/*.html` | Summary, decision readiness (16 blocking questions + 8-step plan), methods, cost ladder, steps, taxes, Flagged for Review, sources, repository review, archive (generated) |
 | `guide/data/*.json` | The data behind every page: sources with quoted text, prices, methods, taxes, flagged items, review rules |
 | `guide/data/cost-ladder.csv` | Every method at every amount (generated) |
 | `guide/build/build.py` | Builds the site from the data. Standard library only |
@@ -35,6 +35,6 @@ Both need only Python 3.9 or later. CI (`.github/workflows/guide.yml`) runs the 
 - Every table row links to the official page the figure was read on.
 - A value that could not be confirmed on an official page is left blank and listed on the Flagged for Review page. Nothing is inferred.
 - Sources are the regulator, tax authority, statute, or the bank's or provider's own price list. Third-party articles are not used.
-- Figures are dated. The exchange rate is one Bank of China board reading on 2026-11-10; re-check before acting.
+- Figures are dated. The exchange rate is one Bank of China board reading on 2026-11-10 (re-verified live on 2026-11-11); re-check before acting.
 
 This is research, not legal or tax advice.
