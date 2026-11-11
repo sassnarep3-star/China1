@@ -4,6 +4,8 @@ Live site: **https://sassnarep3-star.github.io/China1/**
 
 A research guide for a US citizen holding CNY in a mainland China bank account: which routes are lawful, what each costs at every $10,000 step up to $400,000, what tax and reporting follow, and what could not be confirmed.
 
+Priced inputs re-read **2026-11-11**: Bank of China board at 10:25:02 Beijing time (buy 666.30, sell 669.11 per USD 100), Wise re-quoted live at 02:35Z, and 16 of the 33 sources re-opened and re-read. The sources page prints the date each source was read; the per-source record and the irregularities found are in `edition-db079cfc/verification/`.
+
 ## Where things are
 
 | Path | What it is |

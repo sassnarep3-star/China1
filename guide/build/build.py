@@ -337,6 +337,7 @@ BOC10, BOC100, BOC400 = at("M01", 10_000), at("M01", 100_000), at("M01", 400_000
 WISE_ROWS = [r for r in LADDERS["M10"] if r["kind"] == "value"]
 WISE_CHEAPER = [r["usd"] for r in WISE_ROWS if r["total"] < at("M01", r["usd"])["total"]]
 BOC_CHEAPER = [r["usd"] for r in WISE_ROWS if r["total"] > at("M01", r["usd"])["total"]]
+RECHECKED = sum(1 for s in SOURCES.values() if s.get("checked") == RETRIEVED)
 N_FULL = sum(1 for s in SOURCES.values() if s["level"] == "full")
 N_EXC = len(SOURCES) - N_FULL
 LAWFUL = [m for m in METHODS if m["cat"] != "prohibited"]
@@ -478,7 +479,7 @@ def build_summary():
 <ol class="steps">
 <li><b>There is no separate conversion tax in the rules read.</b> What people call the "conversion penalty" is made of: tax on the underlying income if it was never taxed, bank charges, fines if a prohibited route is used, and US filing penalties if reports are missed. {src_links(["CN-IIT", "CN-FXREG", "US-FBARPEN"])}</li>
 <li><b>Use the documented bank route.</b> As a foreign passport holder you may buy foreign exchange with lawful China current-account income on showing your ID and proof of the amount including tax vouchers. No fixed cap is stated. {src_links(["CN-ART59", "CN-RULES"])}</li>
-<li><b>The USD 50,000 yearly quota is not your limit.</b> It applies to domestic individuals and to holders of the Foreign Permanent Resident ID Card. {src_links(["CN-RULES", "CN-PR"])}</li>
+<li><b>The USD 50,000 yearly total is not written as a cap on your purchase of USD.</b> As written it covers everyone's sale of foreign exchange and a domestic individual's purchase of it; a foreign passport holder's purchase is document-driven (art. 13), and the holder of a Foreign Permanent Resident ID Card gets the total as a convenience. {src_links(["CN-RULES", "CN-ART59", "CN-PR"])}</li>
 <li><b>Send it in one wire.</b> Bank of China's commission is capped at CNY 260 and the cable fee is fixed, so one large wire costs {pct(BOC400["share"])} at $400,000 against {pct(BOC10["share"])} at $10,000. Splitting to avoid review is prohibited. {src_links(["CN-BOCTARIFF", "CN-MEASURES"])}</li>
 <li><b>Match the route to the money.</b> Property-sale proceeds, inheritance and pre-emigration assets each have their own route and papers. {src_links(["CN-SHPROP", "CN-PROPTRANS", "CN-CAP2014"])}</li>
 <li><b>Keep the US side clean.</b> Report worldwide income in the year earned, consider a foreign tax credit if eligible, and check FBAR reporting if the aggregate foreign-account balance exceeded $10,000. {src_links(["US-ABROAD", "US-FTC", "US-8938FBAR"])}</li>
@@ -734,7 +735,7 @@ def build_sources():
         for sid in m["src"] + [x for s in m["steps"] for x in s["src"]]:
             used.setdefault(sid, set()).add(m["id"])
     out = ['<h1>Sources</h1>',
-           f'<p class="lead">{len(SOURCES)} official pages: regulators, tax authorities, statutes, and the banks\' and providers\' own price lists. {N_FULL} were opened and read in full on {RETRIEVED}; {N_EXC} were seen only as excerpts and are marked.</p>',
+           f'<p class="lead">{len(SOURCES)} official pages: regulators, tax authorities, statutes, and the banks\' and providers\' own price lists. {RECHECKED} were re-opened and re-read on {RETRIEVED} for this edition; the other {N_FULL - RECHECKED} were read in full on 2026-11-10 and keep that date. {N_EXC} were seen only as excerpts and are marked.</p>',
            '<p class="mut small">The quoted text is what was on the page when read. Chinese text is quoted in the original so it can be searched on the page.</p>']
     groups = []
     for s in SOURCES.values():
@@ -745,7 +746,7 @@ def build_sources():
         for s in SOURCES.values():
             if s["group"] != g:
                 continue
-            lvl = '<span class="badge b-ok">read in full</span>' if s["level"] == "full" else '<span class="badge b-blank">excerpt only</span>'
+            lvl = ('<span class="badge b-ok">read in full</span> ' if s["level"] == "full" else '<span class="badge b-blank">excerpt only</span> ') + f'<small>{e(s.get("checked", "2026-11-10"))}</small>'
             usedby = ", ".join(sorted(used.get(s["id"], []))) or "tables"
             rows.append([f'<b id="{s["id"]}">{e(s["id"])}</b>',
                          f'<a href="{e(s["url"])}" target="_blank" rel="noopener">{e(s["title"])}</a><small>{e(s["publisher"])}</small>',
@@ -790,6 +791,9 @@ def build_review():
 
 <h2>Process irregularities</h2>
 <ul class="plain">{proc}</ul>
+
+<h2>Audit of the 2026-11-11 refresh</h2>
+<p>The priced inputs were re-read and every source re-checked on {RETRIEVED}. The working record — which source was re-opened, what the re-read found, and the ten irregularities that came out of it — is in <a href="{REPO_URL}/blob/main/edition-db079cfc/verification/findings.md">edition-db079cfc/verification/findings.md</a> with the per-source table in <a href="{REPO_URL}/blob/main/edition-db079cfc/verification/source-recheck.md">source-recheck.md</a>.</p>
 
 <h2>What was read</h2>
 <ul class="plain small">{areas}</ul>

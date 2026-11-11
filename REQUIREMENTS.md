@@ -45,3 +45,14 @@ Session `arena-f766722d`, 2026-11-11 (additive on arena-eb9f0490, 2026-11-10). E
 - The guide does not know your immigration history, where the money came from, what tax was withheld, or what you filed. Those decide which route applies.
 - Prices are published tariffs and one dated rate reading, not a quote.
 - Archived editions are not re-verified beyond the rule scan and their own build scripts.
+
+## Refresh of the priced inputs, 2026-11-11 (session `arena-db079cfc`)
+
+| Item | Change | Checked by |
+|---|---|---|
+| Bank of China board | re-read at 2026-11-11 10:25:02 Beijing time: buy 666.30, sell 669.11 per USD 100 (was 665.71 / 668.51 on 2026-11-10) | `verify.py` recomputes all 370 totals from `prices.json` and fails if a board figure is missing from the quoted source text |
+| Wise | five fresh quotes at the amounts implied by the new midpoint (2026-11-11T02:35Z); the old five no longer matched and would have blanked the column | every figure in `prices.json` must appear in the `PR-WISEFEE` quote |
+| Sources | 16 of 33 re-opened and re-read today; the sources page now prints the read date for every entry, and an entry without one fails the build | new `checked` gate in `verify.py` |
+| ATM fee check | previously compared against a string hard-coded from the old exchange rate; now recomputed with exact fractions | mutation-resistant: changing `prices.json` re-derives the expectation |
+| Working record | `edition-db079cfc/verification/` — per-source re-check, findings P-01…P-11, raw checker output | linked from the repository-review page |
+

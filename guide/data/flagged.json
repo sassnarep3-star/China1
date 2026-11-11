@@ -64,7 +64,7 @@
     {
       "id": "F06",
       "topic": "Wise quotes and limits",
-      "gap": "Wise publishes no fixed tariff for CNY; figures here are five live quotes from Wise's own comparison API on 2026-11-10. No quote is returned above the CNY 300,000 per-transfer limit, and amounts between the sampled points are not interpolated.",
+      "gap": "Wise publishes no fixed tariff for CNY: the figures here are five live quotes from Wise's own comparison API taken on 2026-11-11 between 02:35:43Z and 02:35:50Z. An amount between two quoted points has no figure, and any fee charged by the receiving bank is outside the quote.",
       "action": "Get a live quote in the Wise app; confirm you meet the eligibility rules and your overall limit (after-tax China salary).",
       "src": [
         "PR-WISEFEE",
@@ -204,7 +204,7 @@
     {
       "id": "F20",
       "topic": "Exchange-rate snapshot",
-      "gap": "All FX figures use one Bank of China board reading (2026-11-10 17:39:58). The board states that the actual transaction rate applies.",
+      "gap": "Every FX figure uses one Bank of China board reading: 2026-11-11 10:25:02 Beijing time (buy 666.30, sell 669.11 per USD 100). The board itself states that the rate at the actual transaction applies, so the cost moves with the rate. A 0.1% move is USD 400 on a USD 400,000 transfer. Re-read the board on the day.",
       "action": "Re-read the board on the day; the percentages move with the rate.",
       "src": [
         "CN-FXBOARD"

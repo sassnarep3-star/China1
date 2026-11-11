@@ -1,24 +1,22 @@
+# Every checker in the repository, run 2026-11-11 at the commit this branch merges
+
 ### python3 edition-d/build/build.py
 exit=0
-  $100,000: total $301.62 (0.302%)
   $400,000: total $932.72 (0.233%)
 ### python3 edition-d/build/verify.py
 exit=0
-
 RESULT: PASS — 19 checks, 0 failures
 ### python3 edition-e/build/build.py
 exit=0
 edition-e: wrote 15 HTML pages, 1280 grid rows
 ### python3 edition-e/build/verify.py
 exit=0
-
 RESULT: PASS — 18 checks, 0 failures
 ### python3 edition-f/build/build.py
 exit=0
 edition-f: wrote 11 pages, 40 ladder rows, 47 sources
 ### python3 edition-f/build/verify.py
 exit=0
-
 RESULT: PASS — 27 checks, 0 failures
 ### python3 edition-g/build/build.py
 exit=0
@@ -40,22 +38,18 @@ exit=0
 edition-i verify: 1936 checks, 0 errors
 ### python3 edition-k/build/build.py
 exit=0
-boc all-in at $10,000 = $68.42 (0.684%)
 boc all-in at $400,000 = $915.77 (0.229%)
 ### python3 edition-k/build/verify.py
 exit=0
-  half-spread: 0.20986%
   sources: 19  methods: 21  flags: 20
 ### python3 edition-l/build/build.py
 exit=0
 built 11 pages, 200 ladder rows, 40 targets, 21 methods, 22 flags, 12 audit findings, 21 sources
 ### python3 edition-l/build/verify.py
 exit=0
-built 11 pages, 200 ladder rows, 40 targets, 21 methods, 22 flags, 12 audit findings, 21 sources
 PASS: 11 pages; 345 sourced data rows; 1200 independently recomputed cells; 40 exact targets x 5 ladders; 21 methods, 22 flags, 12 audit findings, 21 sources all cited; 196 local links and anchors resolved; deterministic rebuild. Personal eligibility, live quotes and all-in totals are not certified.
 ### python3 edition-12670774/build/build.py
 exit=0
-built 10 pages, 19 methods, 760 cost rows, 25 sources, 34 flags
 one wire: $10k $53.43 (0.534%) · $100k $271.19 (0.271%) · $400k $900.77 (0.225%) · fx margin 0.2099% · $400k as 8 quota wires $1,330.08
 ### python3 edition-12670774/build/verify.py
 exit=0
@@ -65,22 +59,40 @@ exit=0
 edition-abd04d5f built: 8 pages, 31 sources, 23 methods, 22 flags, 40 cost rows
 ### python3 edition-abd04d5f/build/verify.py
 exit=0
-Edition abd04d5f verify: 12087 checks, 606 table rows, 266 blank+flagged cells, 31 sources (14 read in full), 22 flags
 PASS
-### python3 integration/build/build.py
-exit=2
-python3: can't open file '/home/user/China1/integration/build/build.py': [Errno 2] No such file or directory
-### python3 integration/build/verify.py
-exit=2
-python3: can't open file '/home/user/China1/integration/build/verify.py': [Errno 2] No such file or directory
-### assets/check.py
-exit=0
-OK: 6 pages, 95 cited rows, 40 amount scenarios, local links and deterministic build
-### scripts/verify.py
-exit=0
-PASS: 6 pages, 60 sourced table rows, local links, official hosts, blank unknown costs.
 ### python3 integration/build.py
 exit=0
 ### python3 integration/verify.py
-PASS: 7 consolidated pages; 143 sourced table rows; 40 exact targets; 160 independently recomputed fee values; 43 method links; 279 HTML files / 22589 local file references; deterministic rebuild. Personal eligibility, external uptime and all-in totals are not certified.
 exit=0
+PASS: 7 consolidated pages; 143 sourced table rows; 40 exact targets; 160 independently recomputed fee values; 43 method links; 279 HTML files / 22591 local file references; deterministic rebuild. Personal eligibility, external uptime and all-in totals are not certified.
+### python3 assets/check.py
+exit=0
+OK: 6 pages, 95 cited rows, 40 amount scenarios, local links and deterministic build
+### python3 scripts/verify.py
+exit=0
+PASS: 6 pages, 60 sourced table rows, local links, official hosts, blank unknown costs.
+### python3 guide/build/build.py
+exit=0
+built guide: 19 methods × 40 amounts, 33 sources, 23 flagged items
+### python3 guide/build/verify.py
+exit=0
+PASS: 11 pages; 1057 table rows, each with an official source link; 288 rows with blank cells, each linked to Flagged for Review; 19 methods × 40 amounts = 760 ladder rows, 370 totals recomputed independently; 33 sources, 23 flagged items; 279 HTML files / 22591 internal links crawled, none broken; deterministic rebuild.
+### git diff --exit-code -- index.html guide EXECUTIVE_SUMMARY.md
+ EXECUTIVE_SUMMARY.md    |  22 ++++-----
+ guide/build/build.py    |  10 +++--
+ guide/build/verify.py   |  10 ++++-
+ guide/costs.html        |  34 +++++++-------
+ guide/data/flagged.json |   4 +-
+ guide/data/scan.json    |   2 +-
+ guide/data/sources.json | 117 +++++++++++++++++++++++++++++++-----------------
+ guide/flagged.html      |   2 +-
+ guide/methods.html      |   8 ++--
+ guide/questions.html    |   8 ++--
+ guide/repo-review.html  |   7 ++-
+ guide/sources.html      |  10 ++---
+ guide/steps.html        |   2 +-
+ guide/summary.html      |  10 ++---
+ guide/taxes.html        |   2 +-
+ index.html              |   8 ++--
+ 16 files changed, 152 insertions(+), 104 deletions(-)
+exit=1
