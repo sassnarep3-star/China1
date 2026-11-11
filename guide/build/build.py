@@ -15,7 +15,6 @@ import csv
 import html
 import io
 import json
-import re
 from decimal import Decimal, ROUND_HALF_UP
 from pathlib import Path
 
@@ -39,8 +38,9 @@ TAXES = load("taxes.json")
 FLAGS = {f["id"]: f for f in load("flagged.json")["items"]}
 REVIEW = load("review.json")
 SCAN = load("scan.json")
+QUESTIONS_DOC = load("questions.json")
+QUESTIONS = QUESTIONS_DOC["questions"]
 RETRIEVED = SRC_DOC["retrieved"]
-QUESTIONS = load("questions.json")
 RECHECK = load("recheck.json")
 
 D = Decimal
@@ -183,8 +183,8 @@ LADDERS = {m["id"]: ladder(m) for m in METHODS}
 # --------------------------------------------------------------------------
 NAV = [
     ("index.html", "Home"), ("guide/summary.html", "Summary"), ("guide/methods.html", "Methods"),
-    ("guide/decide.html", "Decide"), ("guide/costs.html", "Costs"), ("guide/steps.html", "Steps"),
-    ("guide/taxes.html", "Taxes"),
+    ("guide/costs.html", "Costs"), ("guide/steps.html", "Steps"), ("guide/taxes.html", "Taxes"),
+    ("guide/questions.html", "Decide"),
     ("guide/flagged.html", "Flagged"), ("guide/sources.html", "Sources"),
     ("guide/repo-review.html", "Repo review"), ("guide/archive.html", "Archive"),
 ]
@@ -363,7 +363,7 @@ def build_home():
         (usd(BOC10["total"]), f"to move {usd(10_000, False)} by Bank of China wire ({pct(BOC10['share'])})", "CN-BOCTARIFF"),
         (usd(BOC400["total"]), f"to move {usd(400_000, False)} the same way ({pct(BOC400['share'])})", "CN-BOCTARIFF"),
         ("30%–100%", "fine on the amount for evading the rules, if serious", "CN-FXREG"),
-        ("$10,000", "foreign-account total that triggers the US FBAR filing", "US-8938FBAR"),
+        ("$10,000", "aggregate foreign-account balance: FBAR generally required if it exceeds this", "US-8938FBAR"),
     ]
     kpi_html = "".join(
         f'<div class="kpi"><b>{e(v)}</b><span>{e(t)}</span>{src_links([s])}</div>' for v, t, s in kpis)
@@ -398,8 +398,8 @@ def build_home():
 
     tiles = [
         ("guide/summary.html", "Executive summary", "The answer, the numbers and the risks on one page."),
+        ("guide/questions.html", "What must be answered first", "16 blocking questions, what we already know, and the 8-step plan to find the missing facts."),
         ("guide/methods.html", f"All {len(METHODS)} methods", f"{len(LAWFUL)} lawful routes and {len(BANNED)} prohibited ones, with pros and cons."),
-        ("guide/decide.html", "Before you decide", "The questions in the order they decide it, with what is still unverified."),
         ("guide/costs.html", "Cost ladder", "Every method at every $10,000 step up to $400,000."),
         ("guide/steps.html", "Step by step", "Exactly what to do for each lawful route."),
         ("guide/taxes.html", "Taxes and penalties", "The 'conversion penalty' broken down: China tax, fines, US tax and filings."),
@@ -417,15 +417,13 @@ def build_home():
 <section class="card answer" aria-labelledby="ans">
 <h2 id="ans">The short answer</h2>
 <ul class="plain">
-<li><b>No rule read for this guide taxes the conversion itself.</b> The tax exposure is on how the money was earned. If China tax on it was already paid, converting adds bank charges only. {src_links(["CN-ART59", "CN-IIT"])}</li>
-<li><b>Lawful route:</b> take your passport, proof of the amount and your China tax record to the bank, buy USD and wire it to your own US account. The rules state no annual total for a foreign passport holder's documented purchase; the bank converts what the documents support. {src_links(["CN-ART59", "CN-MEASURES", "CN-PR"])}</li>
+<li><b>No rule read for this guide taxes the conversion itself.</b> Underlying income, bank charges and possible US foreign-currency gain require separate review; prior payment of China tax does not establish that no other tax applies. {src_links(["CN-ART59", "CN-IIT"])}</li>
+<li><b>Lawful route:</b> take your passport, proof of the amount and your China tax record to the bank, buy USD and wire it to your own US account. The rule states no fixed cap for a foreign passport holder; the bank converts what the documents support. {src_links(["CN-ART59", "CN-MEASURES"])}</li>
 <li><b>Cost by Bank of China wire into a Chase account:</b> {usd(BOC10["total"])} for $10,000 ({pct(BOC10["share"])}), {usd(BOC100["total"])} for $100,000 ({pct(BOC100["share"])}), {usd(BOC400["total"])} for $400,000 ({pct(BOC400["share"])}). {src_links(["CN-FXBOARD", "CN-BOCTARIFF", "US-CHASE"])}</li>
 <li><b>Do not split the amount, borrow other people's quotas, use money changers or crypto.</b> Fines run up to 30% of the amount, and 30%–100% if serious, with possible criminal liability. {src_links(["CN-MEASURES", "CN-FXREG", "CN-CRYPTO"])}</li>
 <li><b>In the US:</b> the pages read tax the income in the year it is earned, not the later transfer. File the FBAR and Form 8938 if the account passed the thresholds. {src_links(["US-ABROAD", "US-8938FBAR"])}</li>
 </ul>
 </section>
-
-<div class="note"><b>Which of these applies to you?</b> The <a href="guide/decide.html">Before you decide</a> page lists the {len(QUESTIONS["groups"][0]["items"]) + len(QUESTIONS["groups"][1]["items"]) + len(QUESTIONS["groups"][2]["items"]) + len(QUESTIONS["groups"][3]["items"])} questions in the order they decide the answer, what the rules already settle, what is still missing and how to close each gap.</div>
 
 <div class="kpis">{kpi_html}</div>
 
@@ -481,10 +479,10 @@ def build_summary():
 <ol class="steps">
 <li><b>There is no separate conversion tax in the rules read.</b> What people call the "conversion penalty" is made of: tax on the underlying income if it was never taxed, bank charges, fines if a prohibited route is used, and US filing penalties if reports are missed. {src_links(["CN-IIT", "CN-FXREG", "US-FBARPEN"])}</li>
 <li><b>Use the documented bank route.</b> As a foreign passport holder you may buy foreign exchange with lawful China current-account income on showing your ID and proof of the amount including tax vouchers. No fixed cap is stated. {src_links(["CN-ART59", "CN-RULES"])}</li>
-<li><b>The USD 50,000 yearly quota is not your limit.</b> It applies to domestic individuals and to holders of the Foreign Permanent Resident ID Card. {src_links(["CN-RULES", "CN-PR"])}</li>
+<li><b>The USD 50,000 yearly quota is not your limit.</b> The annual total covers foreign exchange sold for renminbi and a domestic individual's own purchase; only a holder of the Foreign Permanent Resident ID Card is admitted to it for buying. Whether a foreigner resident in China for a year counts as a domestic individual is an open point. {src_links(["CN-RULES", "CN-PR", "CN-FXREG"])} {flag_links(["F15"], p)}</li>
 <li><b>Send it in one wire.</b> Bank of China's commission is capped at CNY 260 and the cable fee is fixed, so one large wire costs {pct(BOC400["share"])} at $400,000 against {pct(BOC10["share"])} at $10,000. Splitting to avoid review is prohibited. {src_links(["CN-BOCTARIFF", "CN-MEASURES"])}</li>
 <li><b>Match the route to the money.</b> Property-sale proceeds, inheritance and pre-emigration assets each have their own route and papers. {src_links(["CN-SHPROP", "CN-PROPTRANS", "CN-CAP2014"])}</li>
-<li><b>Keep the US side clean.</b> Report worldwide income in the year earned, claim credit for China tax, and file the FBAR above $10,000. {src_links(["US-ABROAD", "US-FTC", "US-8938FBAR"])}</li>
+<li><b>Keep the US side clean.</b> Report worldwide income in the year earned, consider a foreign tax credit if eligible, and check FBAR reporting if the aggregate foreign-account balance exceeded $10,000. {src_links(["US-ABROAD", "US-FTC", "US-8938FBAR"])}</li>
 </ol></section>
 
 <h2>What it costs</h2>
@@ -496,8 +494,8 @@ def build_summary():
     ["FX margin", e(pct(FX_SHARE, 4)) + " of the amount", "Always. Bank of China selling rate against the midpoint of its buy and sell quotes.", src_links(["CN-FXBOARD"])],
     ["Bank and wire fees", e(f"{usd(q2(boc_parts(10_000)['total'] - boc_parts(10_000)['fx']))} at $10,000; {usd(q2(boc_parts(400_000)['total'] - boc_parts(400_000)['fx']))} at $400,000"), "Per wire: commission, cable, full-amount delivery, receiving-bank fee.", src_links(["CN-BOCTARIFF", "US-CHASE"])],
     ["China income tax", "3%–45% salary; 20% gains, dividends, interest", "Only if the income was not yet taxed. The rules read add no further tax to money already taxed.", src_links(["CN-IIT"])],
-    ["US income tax", "US rates, less credit for China tax", "On the income in the year earned, not on the transfer.", src_links(["US-ABROAD", "US-FTC"])],
-    ["Exchange gain in the US", "Ignored up to USD 200", "Personal conversions. Above USD 200: " + blank(["F13"], p), src_links(["US-988"])],
+    ["US income tax", "Depends on income and eligibility", "A foreign tax credit may be available subject to requirements and limitations.", src_links(["US-ABROAD", "US-FTC"])],
+    ["Exchange gain in the US", "Depends on transaction", "The USD 200 exception has conditions; review gain and loss: " + blank(["F13"], p), src_links(["US-988"])],
     ["Fines for prohibited routes", "Up to 30%; 30%–100% if serious", "Only if you break the rules.", src_links(["CN-FXREG"])],
 ])}
 
@@ -505,7 +503,7 @@ def build_summary():
 {risk_tbl}
 
 <h2>What is still open</h2>
-<p>{len(FLAGS)} items could not be confirmed on an official page and are left blank. The ones that matter most: whether your bank wants the tax-filing form for salary above USD 50,000 ({flag_links(["F01"], p)}), exchange rates at banks other than Bank of China ({flag_links(["F02", "F03"], p)}), and the US treatment of an exchange gain above USD 200 ({flag_links(["F13"], p)}). See <a href="flagged.html">Flagged for Review</a>. The questions these gaps decide, and the step that would close each one, are on <a href="decide.html">Before you decide</a>.</p>
+<p>{len(FLAGS)} items could not be confirmed on an official page and are left blank. The ones that matter most: whether your bank wants the tax-filing form for salary above USD 50,000 ({flag_links(["F01"], p)}), exchange rates at banks other than Bank of China ({flag_links(["F02", "F03"], p)}), and the US treatment of an exchange gain above USD 200 ({flag_links(["F13"], p)}). See <a href="flagged.html">Flagged for Review</a>. The questions these gaps decide, and the step that closes each one, are on <a href="questions.html">Decision readiness</a>.</p>
 """
     write(GUIDE / "summary.html", page("guide/summary.html", "Executive summary", "Executive summary: lawful CNY to USD route for a US citizen, costs, tax and risks, with official sources.", body))
 
@@ -687,10 +685,10 @@ def build_taxes():
                          src_links(["CN-BOCTARIFF", "CN-FXREG"])])
     body = f"""
 <h1>Taxes and penalties</h1>
-<p class="lead">The "conversion penalty" is not one charge. It is the sum of the parts below, and most of them are zero if the money was taxed when earned and you use a lawful route.</p>
+<p class="lead">The "conversion penalty" is not one charge. The parts below depend on the transaction and personal facts; amounts cannot be assumed to be zero.</p>
 
 <section class="card answer"><h2>In one paragraph</h2>
-<p>Converting and wiring is not itself taxed in the rules read. China taxes the income (salary 3%–45%, gains and investment income 20%) and the bank wants proof that this was paid. The US taxes its citizens on worldwide income in the year it is earned and gives credit for China tax; bringing the money home later does not tax it again. What can go wrong: income never taxed, a prohibited route, or missed US reports. {src_links(["CN-IIT", "US-ABROAD", "US-FTC"])}</p></section>
+<p>Converting and wiring is not itself taxed in the rules read. China taxes the income (salary 3%–45%, gains and investment income 20%) and the bank wants proof that this was paid. The US generally taxes citizens on worldwide income; a foreign tax credit may be available subject to conditions and limits. Currency conversion may separately produce a US exchange gain or loss. What can go wrong: income never taxed, a prohibited route, or missed US reports. {src_links(["CN-IIT", "US-ABROAD", "US-FTC"])}</p></section>
 
 <h2>China: tax on the money</h2>
 {tax_table(TAXES["china"])}
@@ -772,13 +770,12 @@ def build_review():
     areas = "".join(
         f'<li><code>{e(k)}</code> — {v["files"]} files, {v["lines"]:,} lines, {v["hits"]} rule matches</li>' for k, v in sorted(SCAN["areas"].items()))
     proc = "".join(f"<li>{e(x)}</li>" for x in REVIEW["process"])
-    rc_rows, rc = [], {"changed": [], "confirmed": [], "not_reread": []}
+    rc_rows = []
     labels = {"changed": ("b-warn", "changed, data rebuilt"), "confirmed": ("b-ok", "confirmed"),
               "not_reread": ("b-blank", "not re-read today")}
     for key in ("changed", "confirmed", "not_reread"):
         for x in RECHECK[key]:
             cls, label = labels[key]
-            rc[key].append(x["id"])
             rc_rows.append([f'<a href="sources.html#{x["id"]}"><b>{e(x["id"])}</b></a>',
                             f'<span class="badge {cls}">{label}</span>', e(x["note"]), src_links([x["id"]])])
     recheck_tbl = table([("Source", ""), ("Result", ""), ("What was checked", ""), ("Official page", "")], rc_rows)
@@ -831,47 +828,97 @@ def build_archive():
     write(GUIDE / "archive.html", page("guide/archive.html", "Archive", "Archived earlier editions of the China Money research.", body))
 
 
-def build_decide():
-    p = "../"
-    n_items = sum(len(g["items"]) for g in QUESTIONS["groups"])
-    n_open = sum(1 for g in QUESTIONS["groups"] for it in g["items"] if it["status"] == "open")
-    out = [f'<h1>Before you decide</h1>',
-           f'<p class="lead">{e(QUESTIONS["intro"])}</p>',
-           f'<div class="note"><b>{n_items} questions, {n_open} of them open.</b> '
-           + " ".join(f'<br><span class="badge {"b-ok" if k == "settled" else "b-blank"}">{e(k)}</span> {e(v)}'
-                      for k, v in QUESTIONS["legend"]) + "</div>"]
 
-    for g in QUESTIONS["groups"]:
-        rows = []
-        for it in g["items"]:
-            cls = "b-ok" if it["status"] == "settled" else "b-blank"
-            head = (f'<b id="{it["id"]}">{it["id"]}</b> <b>{e(it["q"])}</b><small>'
-                    f'<span class="badge {cls}">{e(it["status"])}</span></small>')
-            missing = e(it["unknown"])
-            if it["flags"]:
-                missing += " " + flag_links(it["flags"], p)
-            steps = '<ol class="steps">' + "".join(f"<li>{e(s)}</li>" for s in it["how"]) + "</ol>"
-            rows.append([head, e(it["known"]) + " " + src_links(it["src"]), missing, steps])
-        out.append(f'<h2>{e(g["title"])}</h2>')
-        out.append(f'<p class="mut small">{e(g["lead"])}</p>')
-        out.append(table([("Question", ""), ("What the rules already answer", ""),
-                          ("Still missing", ""), ("How to find it out", "")], rows))
+def build_questions():
+    pfx = "../"
+    kd = QUESTIONS_DOC
+    # Best way card
+    best = kd["best_way"]
+    best_routes = []
+    for r in best["routes"]:
+        if r["rank"] == "not":
+            badge = '<span class="badge b-bad">Do not use</span>'
+            rank = "✕"
+        else:
+            badge = '<span class="badge b-ok">Rank ' + e(str(r["rank"])) + '</span>'
+            rank = e(str(r["rank"]))
+        best_routes.append([
+            badge,
+            f'<b>{e(r["route"])}</b><small>When: {e(r["when"])}</small>',
+            e(r["why"]),
+            e(r["when"]),
+            src_links(r["src"])
+        ])
+    # Actually we want rank, route, why, when, source - but simpler table
+    best_tbl = table([("Rank", ""), ("Route to use", ""), ("Why this rank", ""), ("When it applies", ""), ("Official source", "")], best_routes)
 
-    tr = QUESTIONS["tree"]
-    trows = []
-    for money, route, why, src in tr["rows"]:
-        anchor = re.match(r"[MX]\d\d", route).group(0)
-        trows.append([e(money), f'<a href="{p}guide/methods.html#{anchor}"><b>{e(route)}</b></a>', e(why), src_links(src)])
-    out.append(f'<h2>{e(tr["title"])}</h2>')
-    out.append(f'<p class="mut small">{e(tr["lead"])}</p>')
-    out.append(table([("If the money is", ""), ("Route", ""), ("Why, and what it needs", ""), ("Official source", "")], trows))
-    out.append(f'<div class="note">This page does not know your source of funds, your residence history, '
-               f'what tax was withheld or what you filed. Each answered row still needs one fact from you, and each open row '
-               f'is published on <a href="{p}guide/flagged.html">Flagged for Review</a> with its source. '
-               f'Costs: <a href="{p}guide/costs.html">Cost ladder</a>.</div>')
-    write(GUIDE / "decide.html", page("guide/decide.html", "Before you decide",
-                                     "The questions that decide how a US citizen can lawfully convert CNY to USD, what the official rules settle, what is still unverified and how to close each gap.",
-                                     "\n".join(out)))
+    # Known facts table
+    known_rows = []
+    for k in kd["known"]:
+        known_rows.append([e(k["fact"]), e(k["implication"]), src_links(k["src"])])
+    known_tbl = table([("What we already know (official source)", ""), ("What it means for your decision", ""), ("Official source", "")], known_rows)
+
+    # Questions table - group by category
+    # Build one big table with category grouping using <tr><th colspan>
+    # For mobile, we use data-label, so we need to flatten but keep category as header row
+    q_rows = []
+    current_cat = None
+    # We'll create category header rows manually via custom html, but easier: prepend category bold in question cell
+    for q in QUESTIONS:
+        cat = q["category"]
+        # Compose question cell with category + ID
+        qcell = f'<b id="{q["id"]}">{e(q["id"])} — {e(q["question"])}</b><small>Category: {e(cat)}</small>'
+        have = f'<b>Have:</b> {e(q["have"])}<br><b>Missing:</b> {e(q["have_not"])}'
+        ans = e(q["answer_if_known"])
+        how = e(q["how_to_find"])
+        flags = flag_links(q["flags"], pfx) if q["flags"] else '<span class="badge b-ok">no flag</span>'
+        # flags column shows open items
+        q_rows.append([qcell, have, ans, how, flags, src_links(q["src"])])
+
+    q_tbl = table([("Question that blocks a decision", ""), ("Have vs. Missing", ""), ("Answer once known", ""), ("How to find the missing fact", ""), ("Open flag", ""), ("Official source", "")], q_rows)
+
+    # Suggestions steps
+    sugg_rows = []
+    for s in kd["suggestions"]:
+        sugg_rows.append([f'<b>Step {e(str(s["step"]))}: {e(s["title"])}</b>', e(s["action"]), e(s["delivers"]), src_links(s["src"])])
+    sugg_tbl = table([("Step", ""), ("Do this", ""), ("It answers", ""), ("Official source", "")], sugg_rows)
+
+    # Summary answer block
+    body = f""" 
+<h1>{e(kd["title"])}</h1>
+<p class="lead">{e(kd["intro"])}</p>
+
+<div class="note"><b>How to use this page.</b> If you cannot answer a question in the second column, you cannot yet pick a method or estimate a cost. Work the 8 steps at the bottom — they turn each blank into a paper you can hand to the bank.</div>
+
+<h2>Best way to get money out with the least tax penalty (from official sources)</h2>
+<p>{e(best["preamble"])}</p>
+{best_tbl}
+<div class="note"><b>Why no universal percentage?</b> The rules read state that tax is on the income, not on the conversion. China tax (3%–45% salary, 20% gains/dividends) and US tax (worldwide, less China credit) apply in the year the money was earned — not when it is wired. If the income was already taxed, converting adds only the bank charges above. <span class="srcs"><a class="src" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" target="_blank" rel="noopener">IIT Law</a><a class="src" href="https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad" target="_blank" rel="noopener">IRS citizens abroad</a></span></div>
+
+<h2>What we already know — and what it decides</h2>
+<p>These ten points are confirmed on the official page listed. They alone are enough to eliminate the prohibited routes and to price the lawful wire.</p>
+{known_tbl}
+
+<h2>16 questions that must be answered before any decision</h2>
+<p class="mut small">Ordered from "who you are" → "where the money came from" → "tax paid" → "bank" → "US filing". Every row links to the rule that makes the question mandatory. <span class="badge b-blank">Flag</span> means the answer was left blank in the guide and is listed on Flagged for Review.</p>
+{q_tbl}
+
+<div class="danger"><b>Cannot be answered from the account balance alone.</b> Two people with USD 400,000 in the same bank will get different answers to Q02–Q05, Q07 and Q10–Q13 — one may wire in one step, the other must first pay tax and obtain SAFE approval. No estimate in the guide assumes your answers.</div>
+
+<h2>How to discover the missing information — 8 concrete steps</h2>
+<p>Do these in order. Each step is a visit, call or download that replaces a blank with a document the bank will accept.</p>
+{sugg_tbl}
+
+<h2>What can be answered now vs. what needs your records</h2>
+{table([("Can be answered now (no personal data needed)", ""), ("Needs your records before a decision", ""), ("Official source", "")], [
+    ["<ul><li>The conversion itself is not a separate tax; tax is on the income if untaxed.</li><li>The lawful bank wire needs passport + amount proof + tax voucher; no stated cap for passport holders.</li><li>The USD 50,000 quota is for domestic/PR-card holders, not for a passport holder.</li><li>Prohibited routes carry 30%–100% fines; they are not cheaper alternatives.</li><li>Cash limits (CNY 20,000 / USD 10,000) make cash impossible for large sums.</li><li>US worldwide tax + FBAR/8938 thresholds and penalties are fixed.</li></ul>", "<ul><li>Which of the 19 methods actually applies to your money (Q02–Q07).</li><li>Whether the China tax filing form is required above USD 50,000 (Q05).</li><li>Your bank's single-wire limit and its exact selling rate on the day (Q08, F02/F03).</li><li>Whether Wise eligibility and caps cover your amount (Q09).</li><li>Your prior US reporting and exposure to FBAR/8938/3520 and exchange gain (Q10–Q13).</li><li>The final all-in cost for your amount at that bank on that day — use the cost ladder as a cross-check.</li></ul>", src_links(["CN-ART59", "CN-FXREG", "US-8938FBAR"])],
+])}
+
+<div class="card answer"><h2>Minimal viable next action (15 minutes)</h2><p>Open your bank app, export the 36-month statement and the current CNY balance. That single download answers Q02 and Q03 and unlocks every other estimate. If you do one thing, do step 1.</p></div>
+
+<p class="mut small">Every row on this page carries an official source link per the verification rule. A blank or a flag means the value depends on your own documents — it was never estimated. Bring the sources and your papers to the bank (12366 for China tax, a US preparer for the US side) before a large transfer.</p>
+""" 
+    write(GUIDE / "questions.html", page("guide/questions.html", "Decision readiness", "Clear list of questions, information and answers that must be addressed before any decision, with suggestions to discover missing facts.", body))
 
 
 def build_summary_md():
@@ -890,11 +937,11 @@ def build_summary_md():
         "## Answer",
         "",
         f"1. **No rule read for this guide taxes the conversion itself.** The exposure is tax on the underlying income if it was never taxed; the bank asks for tax vouchers. {link('CN-ART59')}, {link('CN-IIT')}",
-        f"2. **Lawful route:** passport + proof of the amount + China tax record at the bank, buy USD, wire to your own US account. The rules state no annual total for a foreign passport holder's documented purchase; the USD 50,000 annual total covers foreign exchange sold for renminbi and a domestic individual's own purchase, and a Foreign Permanent Resident ID Card holder is admitted to it (open point F15). {link('CN-ART59')}, {link('CN-RULES')}, {link('CN-PR')}",
+        f"2. **Lawful route:** passport + proof of the amount + China tax record at the bank, buy USD, wire to your own US account. The cited salary rule does not state a fixed cap; eligibility and bank requirements depend on the funds and individual status (open point F15 on the annual quota). {link('CN-ART59')}, {link('CN-RULES')}, {link('CN-PR')}",
         f"3. **Cost (Bank of China wire into a Chase account):** {r('M01', 10_000)} at $10,000; {r('M01', 100_000)} at $100,000; {r('M01', 400_000)} at $400,000. {link('CN-FXBOARD')}, {link('CN-BOCTARIFF')}, {link('US-CHASE')}",
         f"4. **{wise_sentence()}** {link('PR-WISEFEE')}",
-        f"5. **Prohibited:** splitting, borrowed quotas, money changers, false documents, crypto. Fines up to 30% of the amount, 30%–100% if serious, possible criminal liability. {link('CN-FXREG')}, {link('CN-MEASURES')}, {link('CN-CRYPTO')}",
-        f"6. **US side:** worldwide income is taxed when earned, with credit for China tax; the wire is not taxed again. FBAR above $10,000 (penalty up to $16,536 non-willful, $165,353 willful); Form 8938 above $50,000/$75,000; exchange gain ignored up to $200. {link('US-ABROAD')}, {link('US-FTC')}, {link('US-8938FBAR')}, {link('US-FBARPEN')}, {link('US-988')}",
+        f"5. **Avoid prohibited conduct:** evasion through splitting or false documents, illegal currency dealing, and prohibited virtual-currency activities. Fines up to 30% of the amount, 30%–100% if serious, possible criminal liability. {link('CN-FXREG')}, {link('CN-MEASURES')}, {link('CN-CRYPTO')}",
+        f"6. **US side:** worldwide income may be taxable; a foreign tax credit may be available subject to conditions. Converting currency may create a separate US exchange gain or loss. FBAR generally applies if aggregate foreign accounts exceed $10,000; Form 8938 thresholds depend on residence and filing status. Penalties depend on facts and assessment date. {link('US-ABROAD')}, {link('US-FTC')}, {link('US-8938FBAR')}, {link('US-FBARPEN')}, {link('US-988')}",
         "",
         "## Cost at selected amounts",
         "",
@@ -906,9 +953,6 @@ def build_summary_md():
     lines += [
         "",
         f"All {len(METHODS)} methods at all {len(TARGETS)} amounts: `guide/costs.html` and `guide/data/cost-ladder.csv`.",
-        "",
-        f"The {sum(len(g['items']) for g in QUESTIONS['groups'])} questions that decide which of these applies to you — what the rules settle, "
-        f"what is still missing and how to close it — are on `guide/decide.html`.",
         "",
         "## Open points",
         "",
@@ -925,9 +969,9 @@ def build_summary_md():
 def build():
     build_home()
     build_summary()
+    build_questions()
     build_methods()
     build_costs()
-    build_decide()
     build_steps()
     build_taxes()
     build_flagged()

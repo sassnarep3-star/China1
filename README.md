@@ -9,8 +9,8 @@ A research guide for a US citizen holding CNY in a mainland China bank account: 
 | Path | What it is |
 |---|---|
 | `index.html` | Landing page (generated) |
-| `guide/*.html` | Summary, methods, **decide** (the questions in the order they decide the answer), cost ladder, steps, taxes, Flagged for Review, sources, repository review, archive (generated) |
-| `guide/data/*.json` | The data behind every page: sources with quoted text, prices, methods, taxes, flagged items, the decision questions, the re-verification record, review rules |
+| `guide/*.html` | Summary, decision readiness (16 blocking questions + 8-step plan), methods, cost ladder, steps, taxes, Flagged for Review, sources, repository review, archive (generated) |
+| `guide/data/*.json` | The data behind every page: sources with quoted text, prices, methods, taxes, flagged items, the decision questions, the source re-verification record, review rules |
 | `guide/data/cost-ladder.csv` | Every method at every amount (generated) |
 | `guide/build/build.py` | Builds the site from the data. Standard library only |
 | `guide/build/verify.py` | Checks the site: sources on every row, blanks flagged, arithmetic recomputed, all links crawled |
@@ -35,7 +35,7 @@ Both need only Python 3.9 or later. CI (`.github/workflows/guide.yml`) runs the 
 - Every table row links to the official page the figure was read on.
 - A value that could not be confirmed on an official page is left blank and listed on the Flagged for Review page. Nothing is inferred.
 - Sources are the regulator, tax authority, statute, or the bank's or provider's own price list. Third-party articles are not used.
-- Figures are dated. The exchange rate is one Bank of China board reading, 2026-11-11 10:25:02 Beijing time, and the Wise quotes were pulled the same day; re-check before acting.
-- `guide/repo-review.html` records, source by source, which official pages were re-read on 2026-11-11 and which were not. Nothing is presented as fresh when it is not.
+- Figures are dated. The exchange rate is one Bank of China board reading, 2026-11-11 10:25:02 Beijing time, and the five Wise quotes were pulled the same day. The cost ladder is built from that reading alone; re-check before acting.
+- `guide/repo-review.html` records, source by source, which official pages were re-opened on 2026-11-11 and which were not. Nothing is presented as fresh when it is not.
 
 This is research, not legal or tax advice.

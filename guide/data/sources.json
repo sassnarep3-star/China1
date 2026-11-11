@@ -1,339 +1,339 @@
 {
- "retrieved": "2026-11-11",
- "levels": {
-  "full": "The official page itself was opened by this session and the quoted text was read on it.",
-  "excerpt": "The text was seen only in a search-engine excerpt of the official page; the page itself was not opened in full. Treated as unverified and listed on the Flagged page."
- },
- "sources": [
-  {
-   "id": "CN-FXBOARD",
-   "group": "China – prices",
-   "publisher": "Bank of China",
-   "title": "Foreign-exchange rate board (外汇牌价)",
-   "url": "https://www.boc.cn/sourcedb/whpj/",
-   "level": "full",
-   "quote": "USD, per 100: 现汇买入价 666.3 · 现钞买入价 666.3 · 现汇卖出价 669.11 · 现钞卖出价 669.11 · 中行折算价 671.91 · published 2026/11/11 10:25:02. Board note: rates are for reference; the actual transaction rate applies (客户办理结/购汇业务时，应以…实际交易汇率为准).",
-   "short": "BOC rate board"
+  "retrieved": "2026-11-11",
+  "levels": {
+    "full": "The official page itself was opened by this session and the quoted text was read on it.",
+    "excerpt": "The text was seen only in a search-engine excerpt of the official page; the page itself was not opened in full. Treated as unverified and listed on the Flagged page."
   },
-  {
-   "id": "CN-BOCTARIFF",
-   "group": "China – prices",
-   "publisher": "Bank of China",
-   "title": "Service tariff, Chapter 3: personal customers (个人客户服务收费业务)",
-   "url": "https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf",
-   "level": "full",
-   "quote": "210105008 本外币跨境汇款：电汇/票汇按汇款金额的1‰，最低收取50元/笔，最高收取260元/笔，电汇另收电讯费（中国港澳台地区发电80元/笔，国际发电150元/笔）。说明5 全额到账：美元，收款行在我行纽约分行开立账户的，15美元/笔，其他均为25美元/笔。210108014 跨境ATM取现按每笔（12元+取现金额的1%）收取，最高112元/笔。210101002 外币携带证10元/份，自2025年4月1日起至2026年12月31日免收费。210107011 备注：我行网点提供的外币兑换服务不收取此项费用。",
-   "short": "BOC tariff"
-  },
-  {
-   "id": "CN-BOCFEE",
-   "group": "China – prices",
-   "publisher": "Bank of China",
-   "title": "E-banking fee page: cross-border remittance",
-   "url": "https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html",
-   "level": "full",
-   "quote": "跨境汇款（电汇）：每笔汇款金额的1‰，最低收取50元/笔，最高收取260元/笔；另收电讯费，非港澳台地区人民币150元/笔。",
-   "short": "BOC fee page"
-  },
-  {
-   "id": "PR-HSBC",
-   "group": "China – prices",
-   "publisher": "HSBC Bank (China)",
-   "title": "Tariff of accounts and services, effective 2026-10-31",
-   "url": "https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-accouts-and-services.pdf",
-   "level": "full",
-   "quote": "2.2.4.1 发出电汇：卓越理财/运筹理财 按汇款金额的0.1%收取，每笔最低人民币100元，每笔最高人民币500元，另加电报费；2.2.4.2 电报费每笔人民币120元。备注：如汇款人要求美元汇出汇款金额划付收款人，我行将预先向汇款人收取人民币200元…不足部分再根据海外代理行的通知另行收取。本费率所载之收费并不包括其他机构所收取的费用。同一行费率表载明：私人银行业务个人客户该项汇款收费为“个人客户 免费”，电报费亦为“个人客户 免费”；卓越理财尊尚、卓越理财尊尚国际通客户享受该项服务免费。",
-   "short": "HSBC China tariff"
-  },
-  {
-   "id": "PR-WISE",
-   "group": "China – prices",
-   "publisher": "Wise",
-   "title": "Guide to CNY transfers (help article)",
-   "url": "https://wise.com/help/articles/2955298/guide-to-cny-transfers",
-   "level": "full",
-   "quote": "Eligible to send from CNY if you are not a mainland Chinese national, are working or have worked in China, and have a valid tax record from the China tax authority showing taxes paid within the last 3 years. 'You can only send CNY from China to another account you own.' Max 300,000 CNY per transfer from a China bank app; 50,000 CNY per transfer with Alipay. 'In general, your overall limit is the amount of salary you've earned in China after deducting the amount of tax paid in China.'",
-   "short": "Wise CNY guide"
-  },
-  {
-   "id": "PR-WISEFEE",
-   "group": "China – prices",
-   "publisher": "Wise",
-   "title": "Wise public comparison API, CNY to USD quotes",
-   "url": "https://api.wise.com/v3/comparisons/?sourceCurrency=CNY&targetCurrency=USD&sendAmount=66771",
-   "level": "full",
-   "quote": "Quotes collected 2026-11-11 02:35–02:37 UTC, rate 0.149807–0.149809 USD per CNY, markup 0.0, send amounts = the USD target × the mid rate of the same day's Bank of China board: send CNY 66,771 → fee CNY 435.20 → receive USD 9,937.70; 133,541 → 846.63 → 19,878.55; 200,312 → 1,226.04 → 29,824.87; 267,082 → 1,571.46 → 39,775.34; 300,000 → 1,741.74 → 44,681.18. Controls run the same minute: 300,001 → providers empty, no quote; 2,668,440 → no quote returned.",
-   "short": "Wise quotes"
-  },
-  {
-   "id": "PR-WU",
-   "group": "China – prices",
-   "publisher": "Western Union",
-   "title": "Send money from China",
-   "url": "https://www.westernunion.com/cn/en/send-money.html",
-   "level": "full",
-   "quote": "Banner: 'Transfers to the recipient's bank account are temporarily unavailable.' Sending is through partner banks (Bank of China, China Everbright Bank, SPDB, Postal Savings Bank and others); receiver collects cash. Acceptable ID includes a passport. 'Some restriction has been recently implemented by WU bank agents on money transfer service to and from selected countries and their passport holders.' No fee or limit figure is published on the page.",
-   "short": "Western Union China"
-  },
-  {
-   "id": "CN-FXREG",
-   "group": "China – rules",
-   "publisher": "State Council (gov.cn)",
-   "title": "Foreign Exchange Administration Regulation (国务院令第532号)",
-   "url": "https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm",
-   "level": "full",
-   "quote": "第五条 国家对经常性国际支付和转移不予限制。第十二条 经常项目外汇收支应当具有真实、合法的交易基础。第三十九条 逃汇…处逃汇金额30%以下的罚款；情节严重的，处逃汇金额30%以上等值以下的罚款；构成犯罪的，依法追究刑事责任。第四十条 以虚假、无效的交易单证…骗购外汇…处非法套汇金额30%以下的罚款；情节严重的，30%以上等值以下。第四十二条 违反规定携带外汇出入境的…可以处违法金额20%以下的罚款。第四十五条 私自买卖外汇、变相买卖外汇、倒买倒卖外汇或者非法介绍买卖外汇数额较大的…处违法金额30%以下的罚款；情节严重的，30%以上等值以下；构成犯罪的，依法追究刑事责任。第四十八条 提交的单证不真实的…对个人可以处5万元以下的罚款。第五十二条 境内个人，是指中国公民和在中华人民共和国境内连续居住满1年的外国人。",
-   "short": "FX Regulation"
-  },
-  {
-   "id": "CN-MEASURES",
-   "group": "China – rules",
-   "publisher": "People's Bank of China (published by SAFE)",
-   "title": "Measures for Individual Foreign Exchange (中国人民银行令〔2006〕第3号)",
-   "url": "https://www.safe.gov.cn/safe/2006/1225/5319.html",
-   "level": "full",
-   "quote": "第七条 不得以分拆等方式逃避限额监管，也不得使用虚假商业单据或者凭证逃避真实性管理。第十三条 境外个人在境内取得的经常项目项下合法人民币收入，可以凭本人有效身份证件及相关证明材料在银行办理购汇及汇出。第二十二条 境外个人出售境内商品房所得人民币，经外汇局核准可以购汇汇出。第三十七条 境外个人是指持护照…的外国公民（包括无国籍人）以及港澳台同胞。",
-   "short": "Individual FX Measures"
-  },
-  {
-   "id": "CN-RULES",
-   "group": "China – rules",
-   "publisher": "SAFE",
-   "title": "Implementing Rules for Individual Foreign Exchange (汇发〔2007〕1号)",
-   "url": "https://www.safe.gov.cn/safe/2007/0105/5320.html",
-   "level": "full",
-   "quote": "第二条 对个人结汇和境内个人购汇实行年度总额管理。年度总额分别为每人每年等值5万美元。第十三条（一）境外个人…在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的相关证明材料（含税务凭证）办理购汇。（二）原兑换未用完的人民币兑回外汇，凭本人有效身份证件和原兑换水单办理，原兑换水单的兑回有效期为自兑换日起24个月。第三十条 个人提取外币现钞当日累计等值1万美元以下（含）的，可以在银行直接办理。",
-   "short": "Individual FX Rules"
-  },
-  {
-   "id": "CN-ART59",
-   "group": "China – rules",
-   "publisher": "SAFE Tianjin branch",
-   "title": "Policy Q&A 2026-07-13: how a foreign individual buys FX with China work pay (汇发〔2020〕14号 第五十九条)",
-   "url": "https://www.safe.gov.cn/tianjin/2026/0713/3088.html",
-   "level": "full",
-   "quote": "《经常项目外汇业务指引（2020年版）》（汇发〔2020〕14号）第五十九条规定，“境外个人在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的购汇资金来源材料（含税务凭证）在银行办理购汇”。",
-   "short": "SAFE Q&A 2026"
-  },
-  {
-   "id": "CN-PR",
-   "group": "China – rules",
-   "publisher": "SAFE Tianjin branch",
-   "title": "Policy Q&A 2024-06-21: do foreign individuals get the annual facilitation quota?",
-   "url": "https://www.safe.gov.cn/tianjin/2024/0621/2529.html",
-   "level": "full",
-   "quote": "境外个人在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的购汇资金来源材料（含税务凭证）在银行办理购汇。持有外国人永久居留身份证的境外个人适用购汇年度便利化额度。",
-   "short": "SAFE Q&A 2024"
-  },
-  {
-   "id": "CN-TAXFILING",
-   "group": "China – rules",
-   "publisher": "State Taxation Administration / SAFE",
-   "title": "Announcement 2013 No. 40: tax filing for outward service-trade and other payments (as amended)",
-   "url": "https://fgk.chinatax.gov.cn/zcfgk/c100012/c5194375/content.html",
-   "level": "full",
-   "quote": "一、境内机构和个人向境外单笔支付等值5万美元以上（不含等值5万美元）下列外汇资金…均应向所在地主管税务机关进行税务备案：（二）境外个人在境内的工作报酬，境外机构或个人从境内获得的股息、红利、利润…；（三）…不动产的转让收入、股权转让所得以及外国投资者其他合法所得。四、境外个人办理服务贸易、收益和经常转移项下对外支付，应按照个人外汇管理的相关规定办理。",
-   "short": "STA/SAFE Ann. 40"
-  },
-  {
-   "id": "CN-PROPTRANS",
-   "group": "China – rules",
-   "publisher": "People's Bank of China (gov.cn gazette)",
-   "title": "Announcement 〔2004〕 No. 16: outward transfer of personal property (emigrant and inheritance transfers)",
-   "url": "https://www.gov.cn/gongbao/content/2005/content_64294.htm",
-   "level": "full",
-   "quote": "Defines 移民财产转移 (property of a person who has emigrated) and 继承财产转移 (inheritance by a foreign citizen); requires tax certificates or tax-payment vouchers (第八条、第九条); 第十一条 funds are remitted directly to the applicant's own account abroad and may not be withdrawn as foreign cash in China; 第十二条 property whose lawful source cannot be proved is not accepted; 第十三条 false materials are punished under the FX Regulation.",
-   "short": "PBOC Ann. 2004-16"
-  },
-  {
-   "id": "CN-CAP2014",
-   "group": "China – rules",
-   "publisher": "SAFE (republished by Tianjin branch 2024-09-03)",
-   "title": "汇发〔2014〕2号: simplification of capital-account FX rules",
-   "url": "https://www.safe.gov.cn/tianjin/2024/0903/2594.html",
-   "level": "full",
-   "quote": "六（一）移民财产转移购付汇核准，由移民原户籍所在地外汇局负责审批。继承财产转移购付汇核准，由被继承人生前户籍所在地外汇局负责审批。取消财产转移总金额超过等值人民币50万元报国家外汇管理局备案的要求。（二）取消移民财产转移分次汇出的要求…银行可在核准件审批额度内一次或分次汇出相关资金。（四）取消对有关财产权利文件…进行公证的要求。",
-   "short": "SAFE 2014 No. 2"
-  },
-  {
-   "id": "CN-SHPROP",
-   "group": "China – rules",
-   "publisher": "Shanghai Municipal People's Government (source: Bank of China)",
-   "title": "FAQ: remitting house-sale proceeds as a non-resident",
-   "url": "https://english.shanghai.gov.cn/en-FAQHome/20240204/b4426264395b4fa3adfde73778c94ad4.html",
-   "level": "full",
-   "quote": "'As a non-resident, you can purchase foreign exchange and remit the proceeds from the sale of your house that is located on the Chinese mainland.' Materials: passport; commodity house transfer contract and registration certificate; tax voucher (a Tax Filing Form for External Payments is also required if the transaction amount exceeds $50,000).",
-   "short": "Shanghai gov FAQ"
-  },
-  {
-   "id": "CN-CASH",
-   "group": "China – rules",
-   "publisher": "SAFE (republished by Tianjin branch)",
-   "title": "汇发〔2003〕102号: carrying foreign-currency cash across the border",
-   "url": "https://www.safe.gov.cn/tianjin/2024/0430/2466.html",
-   "level": "full",
-   "quote": "Up to USD 5,000 equivalent: no permit (《携带外汇出境许可证》). Above USD 5,000 and up to USD 10,000: a permit issued by the bank. In principle no more than USD 10,000 equivalent may be carried out (原则上不得携带超过等值10000美元).",
-   "short": "SAFE cash rule"
-  },
-  {
-   "id": "CN-CARD",
-   "group": "China – rules",
-   "publisher": "SAFE",
-   "title": "汇发〔2017〕29号: overseas cash withdrawal with mainland bank cards",
-   "url": "https://www.safe.gov.cn/safe/2017/1230/8130.html",
-   "level": "full",
-   "quote": "个人持境内银行卡在境外提取现金，本人名下银行卡（含附属卡）合计每个自然年度不得超过等值10万元人民币；每卡每日额度等值1万元人民币；不得通过借用他人银行卡或出借本人银行卡等方式规避。",
-   "short": "SAFE card rule"
-  },
-  {
-   "id": "CN-CRYPTO",
-   "group": "China – rules",
-   "publisher": "People's Bank of China and seven other authorities",
-   "title": "银发〔2026〕42号 (2026-02-06): preventing and handling virtual-currency risks",
-   "url": "https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html",
-   "level": "full",
-   "quote": "虚拟货币相关业务活动属于非法金融活动。在境内开展法定货币与虚拟货币兑换业务…一律严格禁止，坚决依法取缔。金融机构（含非银行支付机构）不得为虚拟货币相关业务活动提供账户开立、资金划转和清算结算等服务。任何单位和个人投资虚拟货币…相关民事法律行为无效，由此引发的损失由其自行承担。银发〔2021〕237号同时废止。",
-   "short": "PBOC 2026 No. 42"
-  },
-  {
-   "id": "CN-RMBX",
-   "group": "China – rules",
-   "publisher": "SAFE Shanghai branch",
-   "title": "Policy Q&A 162 (2018-05-15): cross-border RMB settlement for individuals (银发〔2018〕3号)",
-   "url": "https://www.safe.gov.cn/shanghai/2018/0515/783.html",
-   "level": "full",
-   "quote": "根据…（银发〔2018〕3号）的规定，银行可在“了解你的用户”、“了解你的业务”、“尽职审查”三原则基础上，为个人办理其他经常项目人民币跨境结算业务。",
-   "short": "SAFE Q&A 162"
-  },
-  {
-   "id": "CN-IIT",
-   "group": "China – tax",
-   "publisher": "State Taxation Administration",
-   "title": "Individual Income Tax Law of the PRC (English)",
-   "url": "https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html",
-   "level": "full",
-   "quote": "Art. 1: resident = domiciled, or present 183 days or more in a tax year. Art. 2: nine categories of taxable income. Art. 3: comprehensive income 3%–45%; business income 5%–35%; interest, dividends and bonuses, income from lease of property, income from transfer of property and incidental income: 20%. Art. 6: transfer of property — taxable income is the transfer income less the original value of the property and reasonable expenses.",
-   "short": "IIT Law"
-  },
-  {
-   "id": "CN-TAXCOLL",
-   "group": "China – tax",
-   "publisher": "State Taxation Administration (policy database)",
-   "title": "Tax Collection and Administration Law (税收征收管理法)",
-   "url": "https://fgk.chinatax.gov.cn/zcfgk/c100009/c5195081/content.html",
-   "level": "excerpt",
-   "quote": "第三十二条 …按日加收滞纳税款万分之五的滞纳金。第六十三条 …并处不缴或者少缴的税款百分之五十以上五倍以下的罚款；构成犯罪的，依法追究刑事责任。",
-   "short": "Tax Collection Law"
-  },
-  {
-   "id": "CN-CNYCASH",
-   "group": "China – rules",
-   "publisher": "Overseas Chinese Affairs Office of the State Council (gqb.gov.cn)",
-   "title": "Article citing PBOC Announcement 〔2004〕 No. 18: CNY cash limit when leaving or entering China",
-   "url": "https://www.gqb.gov.cn/news/2024/0320/58569.shtml",
-   "level": "excerpt",
-   "quote": "根据中国人民银行公告〔2004〕第18号，中国公民出入境、外国人入出境每人每次携带的人民币限额为20000元。",
-   "short": "gqb.gov.cn article"
-  },
-  {
-   "id": "US-ABROAD",
-   "group": "United States",
-   "publisher": "Internal Revenue Service",
-   "title": "U.S. citizens and resident aliens abroad",
-   "url": "https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad",
-   "level": "full",
-   "quote": "'You are subject to tax on worldwide income from all sources and must report all taxable income and pay taxes according to the Internal Revenue Code.'",
-   "short": "IRS citizens abroad"
-  },
-  {
-   "id": "US-FTC",
-   "group": "United States",
-   "publisher": "Internal Revenue Service",
-   "title": "Foreign Tax Credit",
-   "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit",
-   "level": "full",
-   "quote": "'If you paid or accrued foreign taxes to a foreign country or U.S. possession and are subject to U.S. tax on the same income, you may be able to take either a credit or an itemized deduction for those taxes.' Claimed on Form 1116. No credit for taxes on income excluded under the foreign earned income exclusion.",
-   "short": "IRS foreign tax credit"
-  },
-  {
-   "id": "US-FX",
-   "group": "United States",
-   "publisher": "Internal Revenue Service",
-   "title": "Foreign currency and currency exchange rates",
-   "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-currency-and-currency-exchange-rates",
-   "level": "full",
-   "quote": "'You must immediately translate into dollars all items of income, expense, etc. (including taxes), that you receive, pay, or accrue in a foreign currency… Use the exchange rate prevailing when you receive, pay, or accrue the item.'",
-   "short": "IRS foreign currency"
-  },
-  {
-   "id": "US-988",
-   "group": "United States",
-   "publisher": "U.S. Code (govinfo.gov)",
-   "title": "26 U.S.C. § 988 — treatment of certain foreign currency transactions",
-   "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm",
-   "level": "full",
-   "quote": "(e)(2): if nonfunctional currency is disposed of by an individual in a personal transaction, 'no gain shall be recognized for purposes of this subtitle by reason of changes in exchange rates after such currency was acquired by such individual and before such disposition. The preceding sentence shall not apply if the gain which would otherwise be recognized on the transaction exceeds $200.'",
-   "short": "26 USC 988"
-  },
-  {
-   "id": "US-8938FBAR",
-   "group": "United States",
-   "publisher": "Internal Revenue Service",
-   "title": "Comparison of Form 8938 and FBAR requirements",
-   "url": "https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements",
-   "level": "full",
-   "quote": "FBAR: 'Aggregate value of financial accounts exceeds $10,000 at any time during the calendar year'; due April 15 with automatic extension to October 15. Form 8938, living in the US, unmarried: more than $50,000 on the last day of the year or more than $75,000 at any time (married filing jointly $100,000 / $150,000); living abroad: $200,000 / $300,000 (jointly $400,000 / $600,000). Form 8938 penalty: up to $10,000 for failure to disclose, plus $10,000 for each 30 days after IRS notice, to a maximum of $60,000.",
-   "short": "IRS 8938 vs FBAR"
-  },
-  {
-   "id": "US-FBARPEN",
-   "group": "United States",
-   "publisher": "FinCEN (eCFR)",
-   "title": "31 CFR 1010.821 — penalty adjustment table",
-   "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821",
-   "level": "full",
-   "quote": "31 U.S.C. 5321(a)(5)(B)(i), foreign financial agency transaction, non-willful violation: $16,536. 31 U.S.C. 5321(a)(5)(C)(i)(I), willful violation: $165,353. Amounts for penalties assessed on or after January 17, 2025 (eCFR current as of 2026-11-06).",
-   "short": "31 CFR 1010.821"
-  },
-  {
-   "id": "US-3520",
-   "group": "United States",
-   "publisher": "Internal Revenue Service",
-   "title": "Gifts from foreign person (Form 3520)",
-   "url": "https://www.irs.gov/businesses/gifts-from-foreign-person",
-   "level": "full",
-   "quote": "Report on Form 3520, Part IV, gifts or bequests from a nonresident alien individual or foreign estate if the aggregate 'exceeds $100,000 during the taxable year'. Due on the 15th day of the 4th month after the tax year; penalties under IRC section 6039F(c) may apply.",
-   "short": "IRS Form 3520"
-  },
-  {
-   "id": "US-CBP",
-   "group": "United States",
-   "publisher": "U.S. Customs and Border Protection",
-   "title": "Money and other monetary instruments",
-   "url": "https://www.cbp.gov/travel/international-visitors/money-monetary-instruments",
-   "level": "full",
-   "quote": "'Federal law mandates that when entering or leaving the United States you must report amounts exceeding $10,000 to U.S. Customs and Border Protection.' Filed on FinCEN Form 105. For families or groups the $10,000 threshold applies to the total carried collectively. Failure to file risks forfeiture and seizure.",
-   "short": "CBP currency"
-  },
-  {
-   "id": "US-REMIT",
-   "group": "United States",
-   "publisher": "Internal Revenue Service",
-   "title": "IR-2026-48: proposed regulations on the remittance transfer tax",
-   "url": "https://www.irs.gov/newsroom/treasury-irs-issue-proposed-regulations-on-the-new-remittance-transfer-tax-established-under-the-one-big-beautiful-bill",
-   "level": "full",
-   "quote": "'Beginning Jan. 1, 2026, a 1% remittance transfer tax applies to remittances sent from the United States to recipients in foreign countries when the sender provides cash, a money order, a cashier's check, or other similar physical instrument to the remittance transfer provider.'",
-   "short": "IRS IR-2026-48"
-  },
-  {
-   "id": "US-CHASE",
-   "group": "United States",
-   "publisher": "JPMorgan Chase",
-   "title": "Chase Total Checking fees",
-   "url": "https://www.chase.com/personal/fees/total-checking",
-   "level": "full",
-   "quote": "'Incoming Wire (a wire transfer is deposited in your account from inside or outside the U.S.): $15 per transfer or $0 if the transfer was originally sent with the help of a Chase banker or using chase.com or Chase Mobile app.'",
-   "short": "Chase fees"
-  }
- ]
+  "sources": [
+    {
+      "id": "CN-FXBOARD",
+      "group": "China – prices",
+      "publisher": "Bank of China",
+      "title": "Foreign-exchange rate board (外汇牌价)",
+      "url": "https://www.boc.cn/sourcedb/whpj/",
+      "level": "full",
+      "quote": "USD, per 100: 现汇买入价 666.3 · 现钞买入价 666.3 · 现汇卖出价 669.11 · 现钞卖出价 669.11 · 中行折算价 671.91 · published 2026/11/11 10:25:02. Board note: rates are for reference; the actual transaction rate applies (客户办理结/购汇业务时，应以…实际交易汇率为准).",
+      "short": "BOC rate board"
+    },
+    {
+      "id": "CN-BOCTARIFF",
+      "group": "China – prices",
+      "publisher": "Bank of China",
+      "title": "Service tariff, Chapter 3: personal customers (个人客户服务收费业务)",
+      "url": "https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf",
+      "level": "full",
+      "quote": "210105008 本外币跨境汇款：电汇/票汇按汇款金额的1‰，最低收取50元/笔，最高收取260元/笔，电汇另收电讯费（中国港澳台地区发电80元/笔，国际发电150元/笔）。说明5 全额到账：美元，收款行在我行纽约分行开立账户的，15美元/笔，其他均为25美元/笔。210108014 跨境ATM取现按每笔（12元+取现金额的1%）收取，最高112元/笔。210101002 外币携带证10元/份，自2025年4月1日起至2026年12月31日免收费。210107011 备注：我行网点提供的外币兑换服务不收取此项费用。",
+      "short": "BOC tariff"
+    },
+    {
+      "id": "CN-BOCFEE",
+      "group": "China – prices",
+      "publisher": "Bank of China",
+      "title": "E-banking fee page: cross-border remittance",
+      "url": "https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html",
+      "level": "full",
+      "quote": "跨境汇款（电汇）：每笔汇款金额的1‰，最低收取50元/笔，最高收取260元/笔；另收电讯费，非港澳台地区人民币150元/笔。",
+      "short": "BOC fee page"
+    },
+    {
+      "id": "PR-HSBC",
+      "group": "China – prices",
+      "publisher": "HSBC Bank (China)",
+      "title": "Tariff of accounts and services, effective 2026-10-31",
+      "url": "https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-accouts-and-services.pdf",
+      "level": "full",
+      "quote": "2.2.4.1 发出电汇：卓越理财/运筹理财 按汇款金额的0.1%收取，每笔最低人民币100元，每笔最高人民币500元，另加电报费；2.2.4.2 电报费每笔人民币120元。备注：如汇款人要求美元汇出汇款金额划付收款人，我行将预先向汇款人收取人民币200元…不足部分再根据海外代理行的通知另行收取。本费率所载之收费并不包括其他机构所收取的费用。同一行费率表载明：私人银行业务个人客户该项汇款收费为“个人客户 免费”，电报费亦为“个人客户 免费”；卓越理财尊尚、卓越理财尊尚国际通客户享受该项服务免费。",
+      "short": "HSBC China tariff"
+    },
+    {
+      "id": "PR-WISE",
+      "group": "China – prices",
+      "publisher": "Wise",
+      "title": "Guide to CNY transfers (help article)",
+      "url": "https://wise.com/help/articles/2955298/guide-to-cny-transfers",
+      "level": "full",
+      "quote": "Eligible to send from CNY if you are not a mainland Chinese national, are working or have worked in China, and have a valid tax record from the China tax authority showing taxes paid within the last 3 years. 'You can only send CNY from China to another account you own.' Max 300,000 CNY per transfer from a China bank app; 50,000 CNY per transfer with Alipay. 'In general, your overall limit is the amount of salary you've earned in China after deducting the amount of tax paid in China.'",
+      "short": "Wise CNY guide"
+    },
+    {
+      "id": "PR-WISEFEE",
+      "group": "China – prices",
+      "publisher": "Wise",
+      "title": "Wise public comparison API, CNY to USD quotes",
+      "url": "https://api.wise.com/v3/comparisons/?sourceCurrency=CNY&targetCurrency=USD&sendAmount=66711",
+      "level": "full",
+      "quote": "Quotes collected 2026-11-11 02:35–02:37 UTC, rate 0.149807–0.149809 USD per CNY, markup 0.0, each send amount being the USD target × the mid rate of the same day's Bank of China board: send CNY 66,771 → fee CNY 435.20 → receive USD 9,937.70; 133,541 → 846.63 → 19,878.55; 200,312 → 1,226.04 → 29,824.87; 267,082 → 1,571.46 → 39,775.34; 300,000 → 1,741.74 → 44,681.18. Controls run the same minutes: 300,001 → no provider returned; 2,668,440 → no quote returned.",
+      "short": "Wise quotes"
+    },
+    {
+      "id": "PR-WU",
+      "group": "China – prices",
+      "publisher": "Western Union",
+      "title": "Send money from China",
+      "url": "https://www.westernunion.com/cn/en/send-money.html",
+      "level": "full",
+      "quote": "Banner: 'Transfers to the recipient's bank account are temporarily unavailable.' Sending is through partner banks (Bank of China, China Everbright Bank, SPDB, Postal Savings Bank and others); receiver collects cash. Acceptable ID includes a passport. 'Some restriction has been recently implemented by WU bank agents on money transfer service to and from selected countries and their passport holders.' No fee or limit figure is published on the page.",
+      "short": "Western Union China"
+    },
+    {
+      "id": "CN-FXREG",
+      "group": "China – rules",
+      "publisher": "State Council (gov.cn)",
+      "title": "Foreign Exchange Administration Regulation (国务院令第532号)",
+      "url": "https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm",
+      "level": "full",
+      "quote": "第五条 国家对经常性国际支付和转移不予限制。第十二条 经常项目外汇收支应当具有真实、合法的交易基础。第三十九条 逃汇…处逃汇金额30%以下的罚款；情节严重的，处逃汇金额30%以上等值以下的罚款；构成犯罪的，依法追究刑事责任。第四十条 以虚假、无效的交易单证…骗购外汇…处非法套汇金额30%以下的罚款；情节严重的，30%以上等值以下。第四十二条 违反规定携带外汇出入境的…可以处违法金额20%以下的罚款。第四十五条 私自买卖外汇、变相买卖外汇、倒买倒卖外汇或者非法介绍买卖外汇数额较大的…处违法金额30%以下的罚款；情节严重的，30%以上等值以下；构成犯罪的，依法追究刑事责任。第四十八条 提交的单证不真实的…对个人可以处5万元以下的罚款。第五十二条 境内个人，是指中国公民和在中华人民共和国境内连续居住满1年的外国人。",
+      "short": "FX Regulation"
+    },
+    {
+      "id": "CN-MEASURES",
+      "group": "China – rules",
+      "publisher": "People's Bank of China (published by SAFE)",
+      "title": "Measures for Individual Foreign Exchange (中国人民银行令〔2006〕第3号)",
+      "url": "https://www.safe.gov.cn/safe/2006/1225/5319.html",
+      "level": "full",
+      "quote": "第七条 不得以分拆等方式逃避限额监管，也不得使用虚假商业单据或者凭证逃避真实性管理。第十三条 境外个人在境内取得的经常项目项下合法人民币收入，可以凭本人有效身份证件及相关证明材料在银行办理购汇及汇出。第二十二条 境外个人出售境内商品房所得人民币，经外汇局核准可以购汇汇出。第三十七条 境外个人是指持护照…的外国公民（包括无国籍人）以及港澳台同胞。",
+      "short": "Individual FX Measures"
+    },
+    {
+      "id": "CN-RULES",
+      "group": "China – rules",
+      "publisher": "SAFE",
+      "title": "Implementing Rules for Individual Foreign Exchange (汇发〔2007〕1号)",
+      "url": "https://www.safe.gov.cn/safe/2007/0105/5320.html",
+      "level": "full",
+      "quote": "第二条 对个人结汇和境内个人购汇实行年度总额管理。年度总额分别为每人每年等值5万美元。第十三条（一）境外个人…在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的相关证明材料（含税务凭证）办理购汇。（二）原兑换未用完的人民币兑回外汇，凭本人有效身份证件和原兑换水单办理，原兑换水单的兑回有效期为自兑换日起24个月。第三十条 个人提取外币现钞当日累计等值1万美元以下（含）的，可以在银行直接办理。",
+      "short": "Individual FX Rules"
+    },
+    {
+      "id": "CN-ART59",
+      "group": "China – rules",
+      "publisher": "SAFE Tianjin branch",
+      "title": "Policy Q&A 2026-07-13: how a foreign individual buys FX with China work pay (汇发〔2020〕14号 第五十九条)",
+      "url": "https://www.safe.gov.cn/tianjin/2026/0713/3088.html",
+      "level": "full",
+      "quote": "《经常项目外汇业务指引（2020年版）》（汇发〔2020〕14号）第五十九条规定，“境外个人在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的购汇资金来源材料（含税务凭证）在银行办理购汇”。",
+      "short": "SAFE Q&A 2026"
+    },
+    {
+      "id": "CN-PR",
+      "group": "China – rules",
+      "publisher": "SAFE Tianjin branch",
+      "title": "Policy Q&A 2024-06-21: do foreign individuals get the annual facilitation quota?",
+      "url": "https://www.safe.gov.cn/tianjin/2024/0621/2529.html",
+      "level": "full",
+      "quote": "境外个人在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的购汇资金来源材料（含税务凭证）在银行办理购汇。持有外国人永久居留身份证的境外个人适用购汇年度便利化额度。",
+      "short": "SAFE Q&A 2024"
+    },
+    {
+      "id": "CN-TAXFILING",
+      "group": "China – rules",
+      "publisher": "State Taxation Administration / SAFE",
+      "title": "Announcement 2013 No. 40: tax filing for outward service-trade and other payments (as amended)",
+      "url": "https://fgk.chinatax.gov.cn/zcfgk/c100012/c5194375/content.html",
+      "level": "full",
+      "quote": "一、境内机构和个人向境外单笔支付等值5万美元以上（不含等值5万美元）下列外汇资金…均应向所在地主管税务机关进行税务备案：（二）境外个人在境内的工作报酬，境外机构或个人从境内获得的股息、红利、利润…；（三）…不动产的转让收入、股权转让所得以及外国投资者其他合法所得。四、境外个人办理服务贸易、收益和经常转移项下对外支付，应按照个人外汇管理的相关规定办理。",
+      "short": "STA/SAFE Ann. 40"
+    },
+    {
+      "id": "CN-PROPTRANS",
+      "group": "China – rules",
+      "publisher": "People's Bank of China (gov.cn gazette)",
+      "title": "Announcement 〔2004〕 No. 16: outward transfer of personal property (emigrant and inheritance transfers)",
+      "url": "https://www.gov.cn/gongbao/content/2005/content_64294.htm",
+      "level": "full",
+      "quote": "Defines 移民财产转移 (property of a person who has emigrated) and 继承财产转移 (inheritance by a foreign citizen); requires tax certificates or tax-payment vouchers (第八条、第九条); 第十一条 funds are remitted directly to the applicant's own account abroad and may not be withdrawn as foreign cash in China; 第十二条 property whose lawful source cannot be proved is not accepted; 第十三条 false materials are punished under the FX Regulation.",
+      "short": "PBOC Ann. 2004-16"
+    },
+    {
+      "id": "CN-CAP2014",
+      "group": "China – rules",
+      "publisher": "SAFE (republished by Tianjin branch 2024-09-03)",
+      "title": "汇发〔2014〕2号: simplification of capital-account FX rules",
+      "url": "https://www.safe.gov.cn/tianjin/2024/0903/2594.html",
+      "level": "full",
+      "quote": "六（一）移民财产转移购付汇核准，由移民原户籍所在地外汇局负责审批。继承财产转移购付汇核准，由被继承人生前户籍所在地外汇局负责审批。取消财产转移总金额超过等值人民币50万元报国家外汇管理局备案的要求。（二）取消移民财产转移分次汇出的要求…银行可在核准件审批额度内一次或分次汇出相关资金。（四）取消对有关财产权利文件…进行公证的要求。",
+      "short": "SAFE 2014 No. 2"
+    },
+    {
+      "id": "CN-SHPROP",
+      "group": "China – rules",
+      "publisher": "Shanghai Municipal People's Government (source: Bank of China)",
+      "title": "FAQ: remitting house-sale proceeds as a non-resident",
+      "url": "https://english.shanghai.gov.cn/en-FAQHome/20240204/b4426264395b4fa3adfde73778c94ad4.html",
+      "level": "full",
+      "quote": "'As a non-resident, you can purchase foreign exchange and remit the proceeds from the sale of your house that is located on the Chinese mainland.' Materials: passport; commodity house transfer contract and registration certificate; tax voucher (a Tax Filing Form for External Payments is also required if the transaction amount exceeds $50,000).",
+      "short": "Shanghai gov FAQ"
+    },
+    {
+      "id": "CN-CASH",
+      "group": "China – rules",
+      "publisher": "SAFE (republished by Tianjin branch)",
+      "title": "汇发〔2003〕102号: carrying foreign-currency cash across the border",
+      "url": "https://www.safe.gov.cn/tianjin/2024/0430/2466.html",
+      "level": "full",
+      "quote": "Up to USD 5,000 equivalent: no permit (《携带外汇出境许可证》). Above USD 5,000 and up to USD 10,000: a permit issued by the bank. In principle no more than USD 10,000 equivalent may be carried out (原则上不得携带超过等值10000美元).",
+      "short": "SAFE cash rule"
+    },
+    {
+      "id": "CN-CARD",
+      "group": "China – rules",
+      "publisher": "SAFE",
+      "title": "汇发〔2017〕29号: overseas cash withdrawal with mainland bank cards",
+      "url": "https://www.safe.gov.cn/safe/2017/1230/8130.html",
+      "level": "full",
+      "quote": "个人持境内银行卡在境外提取现金，本人名下银行卡（含附属卡）合计每个自然年度不得超过等值10万元人民币；每卡每日额度等值1万元人民币；不得通过借用他人银行卡或出借本人银行卡等方式规避。",
+      "short": "SAFE card rule"
+    },
+    {
+      "id": "CN-CRYPTO",
+      "group": "China – rules",
+      "publisher": "People's Bank of China and seven other authorities",
+      "title": "银发〔2026〕42号 (2026-02-06): preventing and handling virtual-currency risks",
+      "url": "https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html",
+      "level": "full",
+      "quote": "虚拟货币相关业务活动属于非法金融活动。在境内开展法定货币与虚拟货币兑换业务…一律严格禁止，坚决依法取缔。金融机构（含非银行支付机构）不得为虚拟货币相关业务活动提供账户开立、资金划转和清算结算等服务。任何单位和个人投资虚拟货币…相关民事法律行为无效，由此引发的损失由其自行承担。银发〔2021〕237号同时废止。",
+      "short": "PBOC 2026 No. 42"
+    },
+    {
+      "id": "CN-RMBX",
+      "group": "China – rules",
+      "publisher": "SAFE Shanghai branch",
+      "title": "Policy Q&A 162 (2018-05-15): cross-border RMB settlement for individuals (银发〔2018〕3号)",
+      "url": "https://www.safe.gov.cn/shanghai/2018/0515/783.html",
+      "level": "full",
+      "quote": "根据…（银发〔2018〕3号）的规定，银行可在“了解你的用户”、“了解你的业务”、“尽职审查”三原则基础上，为个人办理其他经常项目人民币跨境结算业务。",
+      "short": "SAFE Q&A 162"
+    },
+    {
+      "id": "CN-IIT",
+      "group": "China – tax",
+      "publisher": "State Taxation Administration",
+      "title": "Individual Income Tax Law of the PRC (English)",
+      "url": "https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html",
+      "level": "full",
+      "quote": "Art. 1: resident = domiciled, or present 183 days or more in a tax year. Art. 2: nine categories of taxable income. Art. 3: comprehensive income 3%–45%; business income 5%–35%; interest, dividends and bonuses, income from lease of property, income from transfer of property and incidental income: 20%. Art. 6: transfer of property — taxable income is the transfer income less the original value of the property and reasonable expenses.",
+      "short": "IIT Law"
+    },
+    {
+      "id": "CN-TAXCOLL",
+      "group": "China – tax",
+      "publisher": "State Taxation Administration (policy database)",
+      "title": "Tax Collection and Administration Law (税收征收管理法)",
+      "url": "https://fgk.chinatax.gov.cn/zcfgk/c100009/c5195081/content.html",
+      "level": "excerpt",
+      "quote": "第三十二条 …按日加收滞纳税款万分之五的滞纳金。第六十三条 …并处不缴或者少缴的税款百分之五十以上五倍以下的罚款；构成犯罪的，依法追究刑事责任。",
+      "short": "Tax Collection Law"
+    },
+    {
+      "id": "CN-CNYCASH",
+      "group": "China – rules",
+      "publisher": "Overseas Chinese Affairs Office of the State Council (gqb.gov.cn)",
+      "title": "Article citing PBOC Announcement 〔2004〕 No. 18: CNY cash limit when leaving or entering China",
+      "url": "https://www.gqb.gov.cn/news/2024/0320/58569.shtml",
+      "level": "excerpt",
+      "quote": "根据中国人民银行公告〔2004〕第18号，中国公民出入境、外国人入出境每人每次携带的人民币限额为20000元。",
+      "short": "gqb.gov.cn article"
+    },
+    {
+      "id": "US-ABROAD",
+      "group": "United States",
+      "publisher": "Internal Revenue Service",
+      "title": "U.S. citizens and resident aliens abroad",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad",
+      "level": "full",
+      "quote": "'You are subject to tax on worldwide income from all sources and must report all taxable income and pay taxes according to the Internal Revenue Code.'",
+      "short": "IRS citizens abroad"
+    },
+    {
+      "id": "US-FTC",
+      "group": "United States",
+      "publisher": "Internal Revenue Service",
+      "title": "Foreign Tax Credit",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit",
+      "level": "full",
+      "quote": "'If you paid or accrued foreign taxes to a foreign country or U.S. possession and are subject to U.S. tax on the same income, you may be able to take either a credit or an itemized deduction for those taxes.' Claimed on Form 1116. No credit for taxes on income excluded under the foreign earned income exclusion.",
+      "short": "IRS foreign tax credit"
+    },
+    {
+      "id": "US-FX",
+      "group": "United States",
+      "publisher": "Internal Revenue Service",
+      "title": "Foreign currency and currency exchange rates",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-currency-and-currency-exchange-rates",
+      "level": "full",
+      "quote": "'You must immediately translate into dollars all items of income, expense, etc. (including taxes), that you receive, pay, or accrue in a foreign currency… Use the exchange rate prevailing when you receive, pay, or accrue the item.'",
+      "short": "IRS foreign currency"
+    },
+    {
+      "id": "US-988",
+      "group": "United States",
+      "publisher": "U.S. Code (govinfo.gov)",
+      "title": "26 U.S.C. § 988 — treatment of certain foreign currency transactions",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm",
+      "level": "full",
+      "quote": "(e)(2): if nonfunctional currency is disposed of by an individual in a personal transaction, 'no gain shall be recognized for purposes of this subtitle by reason of changes in exchange rates after such currency was acquired by such individual and before such disposition. The preceding sentence shall not apply if the gain which would otherwise be recognized on the transaction exceeds $200.'",
+      "short": "26 USC 988"
+    },
+    {
+      "id": "US-8938FBAR",
+      "group": "United States",
+      "publisher": "Internal Revenue Service",
+      "title": "Comparison of Form 8938 and FBAR requirements",
+      "url": "https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements",
+      "level": "full",
+      "quote": "FBAR: 'Aggregate value of financial accounts exceeds $10,000 at any time during the calendar year'; due April 15 with automatic extension to October 15. Form 8938, living in the US, unmarried: more than $50,000 on the last day of the year or more than $75,000 at any time (married filing jointly $100,000 / $150,000); living abroad: $200,000 / $300,000 (jointly $400,000 / $600,000). Form 8938 penalty: up to $10,000 for failure to disclose, plus $10,000 for each 30 days after IRS notice, to a maximum of $60,000.",
+      "short": "IRS 8938 vs FBAR"
+    },
+    {
+      "id": "US-FBARPEN",
+      "group": "United States",
+      "publisher": "FinCEN (eCFR)",
+      "title": "31 CFR 1010.821 — penalty adjustment table",
+      "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821",
+      "level": "full",
+      "quote": "31 U.S.C. 5321(a)(5)(B)(i), foreign financial agency transaction, non-willful violation: $16,536. 31 U.S.C. 5321(a)(5)(C)(i)(I), willful violation: $165,353. Amounts for penalties assessed on or after January 17, 2025 (eCFR current as of 2026-11-06).",
+      "short": "31 CFR 1010.821"
+    },
+    {
+      "id": "US-3520",
+      "group": "United States",
+      "publisher": "Internal Revenue Service",
+      "title": "Gifts from foreign person (Form 3520)",
+      "url": "https://www.irs.gov/businesses/gifts-from-foreign-person",
+      "level": "full",
+      "quote": "Report on Form 3520, Part IV, gifts or bequests from a nonresident alien individual or foreign estate if the aggregate 'exceeds $100,000 during the taxable year'. Due on the 15th day of the 4th month after the tax year; penalties under IRC section 6039F(c) may apply.",
+      "short": "IRS Form 3520"
+    },
+    {
+      "id": "US-CBP",
+      "group": "United States",
+      "publisher": "U.S. Customs and Border Protection",
+      "title": "Money and other monetary instruments",
+      "url": "https://www.cbp.gov/travel/international-visitors/money-monetary-instruments",
+      "level": "full",
+      "quote": "'Federal law mandates that when entering or leaving the United States you must report amounts exceeding $10,000 to U.S. Customs and Border Protection.' Filed on FinCEN Form 105. For families or groups the $10,000 threshold applies to the total carried collectively. Failure to file risks forfeiture and seizure.",
+      "short": "CBP currency"
+    },
+    {
+      "id": "US-REMIT",
+      "group": "United States",
+      "publisher": "Internal Revenue Service",
+      "title": "IR-2026-48: proposed regulations on the remittance transfer tax",
+      "url": "https://www.irs.gov/newsroom/treasury-irs-issue-proposed-regulations-on-the-new-remittance-transfer-tax-established-under-the-one-big-beautiful-bill",
+      "level": "full",
+      "quote": "'Beginning Jan. 1, 2026, a 1% remittance transfer tax applies to remittances sent from the United States to recipients in foreign countries when the sender provides cash, a money order, a cashier's check, or other similar physical instrument to the remittance transfer provider.'",
+      "short": "IRS IR-2026-48"
+    },
+    {
+      "id": "US-CHASE",
+      "group": "United States",
+      "publisher": "JPMorgan Chase",
+      "title": "Chase Total Checking fees",
+      "url": "https://www.chase.com/personal/fees/total-checking",
+      "level": "full",
+      "quote": "'Incoming Wire (a wire transfer is deposited in your account from inside or outside the U.S.): $15 per transfer or $0 if the transfer was originally sent with the help of a Chase banker or using chase.com or Chase Mobile app.'",
+      "short": "Chase fees"
+    }
+  ]
 }

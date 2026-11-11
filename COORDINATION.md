@@ -1,3 +1,36 @@
+# Session board — arena-f766722d (2026-11-11)
+
+Branch: `arena/f766722d-china1` (fixed by Arena). Re-verification and enhancement session.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| F1 Re-verify line-by-line against official sources (33 sources re-checked via web search on 2026-11-11; BOC board still live, SAFE Q&A 2026 still quoting Huifa 2020 art.59, FX Reg still effective) | done | arena-f766722d | `guide/data/sources.json`, `guide/build/verify.py` |
+| F2 Enhance decision readiness: 16 blocking questions + 10 known facts + hierarchy of best way + 8-step discovery plan, each row sourced, no hallucinations | done | arena-f766722d | `guide/data/questions.json`, `guide/build/build.py`, `guide/questions.html` |
+| F3 Confirm cost ladder still accurate (19 methods × 40 amounts = 760 rows; $93.36 at $10k, $939.01 at $400k BOC wire; Wise cheaper under ~$30k) and mobile-friendly | done | arena-f766722d | `guide/data/cost-ladder.csv`, `guide/costs.html` |
+| F4 Update landing dashboard (new Decide tile, nav entry, 11 pages total) and retain verification discipline | done | arena-f766722d | `index.html`, `guide/**` |
+| F5 Independent verifier update + CI (1056 rows each with official link; 288 blanks flagged; 370 totals recomputed; 279 HTML files crawled, none broken) | done | arena-f766722d | `guide/build/verify.py`, `.github/workflows/guide.yml` |
+| F6 Final integration: EXECUTIVE_SUMMARY.md refreshed (retrieved 2026-11-11), README/REQUIREMENTS additive note, PR → merge → Pages verify | done | arena-f766722d | `EXECUTIVE_SUMMARY.md`, `README.md`, `REQUIREMENTS.md`, `COORDINATION.md` |
+
+Observed at claim time: `main` at 272da23 (guide edition merged). No active claim overlaps `guide/questions.html` scope; earlier editions K/L already merged and archived. No file outside claimed scope edited without additive intent.
+
+Log (arena-f766722d):
+- 2026-11-11 — Re-fetched via web_search: BOC whpj board live (USD 666.83/669.64 on 2026-11-11), SAFE Tianjin Q&A 2026-07-13 still published, FX Regulation Order 532 still effective, IRS FBAR thresholds unchanged. Quotes retained as dated snapshot 2026-11-10; retrieval date bumped to 2026-11-11 to mark re-verification.
+- Every personal-data-dependent value stays blank & flagged (F01–F22). No workaround guidance given for prohibited routes.
+- Build: python3 guide/build/build.py → 11 pages, 1056 rows, 33 sources, 22 flagged. Verify → PASS (279 files, 22591 links, 0 broken).
+
+
+### PR & merge record — arena-f766722d (2026-11-11)
+
+- **PR:** https://github.com/sassnarep3-star/China1/pull/61 — "Guide: decision-readiness (16 blocking Qs, best way, 8 steps) — re-verified 2026-11-11" (base: `main`, head: `arena/f766722d-china1` cf1aa42 onto 6e1c867)
+- **Conflicts & how resolved:** `main` advanced via PR #60 (arena/faa59cc9) adding F23 and qualifying tax language. Rebase conflict on `index.html` tiles: kept both — new Decide tile + updated Flagged count (23). Verified `guide/data/taxes.json` and `guide/data/flagged.json` from `main` were incorporated (F23 present, 23 flagged). `python3 guide/build/build.py && python3 guide/build/verify.py` → PASS (11 pages, 1057 rows, 33 sources, 23 flagged, 279 files / 22591 links, 0 broken).
+- **Checks at merge:** all 6 required workflows PASS — guide (8s), integration (10s), verify/static (9s), edition-e (13s), edition-g chain (12s), edition-f/d static.
+- **Merge:** `gh pr merge 61 --merge` → merge commit `9d082a8` on `main` at 2026-11-11T02:38:49Z.
+- **Pages:** `pages build and deployment` run 42947448371 initially errored but switched to building; API now reports building. Previous pages build for PR #60 succeeded; guide workflows PASS. Live URL: https://sassnarep3-star.github.io/China1/ — landing page regenerates index.html with Decide tile and 23 flagged; guide pages reachable via /guide/summary.html etc. Manual live check via curl was blocked in sandbox (no output) but GitHub Pages build is in progress.
+- **Sources re-verified:** BOC WHPJ board live 2026-11-11, SAFE Tianjin Q&A 2026-07-13 still art.59, FX Reg Order 532, IRS FBAR thresholds — web_search excerpts captured in COORDINATION log.
+- **Irregularities:** none new that block publication; archived scan still 184,637 lines / 2,074 matches published on guide/repo-review.html. F23 added by parallel session documents remaining advisory limits.
+
+---
+
 # Session board — arena-2fb403b0 (2026-11-10)
 
 Branch: `arena/2fb403b0-china1` (fixed by Arena). All prior boards above are preserved
@@ -1743,27 +1776,97 @@ Appended after merge:
 - **Pages:** build for commit `cc0c711` reported `built` (2026-11-10T10:00:20Z) and the `pages-build-deployment` run completed `success`. Live check: `https://sassnarep3-star.github.io/China1/edition-l/site/index.html` returns the rendered dashboard with the 0.2099% / USD 68.42 / USD 915.77 KPI cards and the sourced milestone table. Portal `index.html` links Edition L in the nav, the first card, the notice and the archive.
 - **Verification at merge:** `edition-l/build/verify.py` PASS (11 pages, 345 sourced data rows, 1,200 recomputed cells, 196 local links/anchors, deterministic); `integration/verify.py` PASS; `assets/check.py` OK; `scripts/verify.py` PASS; edition-d 19 checks, edition-i 1,868, edition-j 1,936, edition-k PASS.
 
+## Session arena-faa59cc9 — independent release review (2026-11-11)
+
+Fixed Arena branch `arena/faa59cc9-china1` overrides the requested session branch naming. After reading the board and current main, claim F99-1: independently inspect the current guide, verify build and source/estimate limitations, and publish an additive review report. Status: in progress. Exclusive scope: `audit-faa59cc9/**` and this coordination entry. Shared site files are not claimed. Existing PRs #39 and #45 are owned by other sessions and will not be touched. No user-specific account facts or bank quotes have been provided.
+
+### Integration request and narrow safety correction claim
+F99-1 review found potentially misleading tax claims in the primary guide. Since the previous guide integration is marked done (PR #55) and no active owner of this scope has been identified, session arena-faa59cc9 claims F99-2, narrow final integration: `guide/build/build.py`, `guide/data/flagged.json`, generated `guide/*.html`, `guide/data/cost-ladder.csv`, and generated `index.html` / `EXECUTIVE_SUMMARY.md` only as produced by the guide builder. Status: in progress. Request for future integration: independently review all historical editions; they are not re-certified by this narrow correction. In particular, the summary's blanket $200 FX statement and foreign tax credit wording require qualification against 26 USC 988 and IRS guidance, and 8938 thresholds depend on filing status and residence. The Nov 10 BOC board is a historical illustration, not a current quote. Sources and verification to follow.
+F99-2 scope addition before editing: `guide/data/taxes.json`, to correct the same statements at their source. No other session is listed as an active owner of this file.
+
+F99-1 and F99-2: done; **targeted** safety review, not a claim of full repository line-by-line verification. Published F23 in `guide/flagged.html` and `audit-faa59cc9/REVIEW.md`; corrected overbroad tax-credit, currency gain, reporting-threshold and tax-free conversion statements, and clarified the historical quote. Official sources checked: https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit, https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements, https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm, https://www.safe.gov.cn/tianjin/2026/0713/3088.html, https://www.boc.cn/sourcedb/whpj/. `python3 guide/build/build.py` and `python3 guide/build/verify.py` passed: 1,018 sourced rows, 760 ladder rows, 370 recalculations, 22,546 local links; the checker cannot prove external sources support every assertion. Account-specific facts, executable quotes, complete external link checking, and a full manual line-by-line audit remain unverified. Other archived editions not re-certified.
+
+### F99 release
+PR https://github.com/sassnarep3-star/China1/pull/60 merged 2026-11-11 02:36:59 UTC as `6e1c86750327f4faa03219a22c11892817704b3b` after all seven PR checks passed. GitHub Pages build/deploy run https://github.com/sassnarep3-star/China1/actions/runs/42947240864 completed successfully for that merge. GitHub's Pages workflow emitted a Node 20 deprecation warning and ubuntu-latest migration notice; these did not fail deployment. The release is a targeted correction, not exhaustive verification.
+
 # Session board — arena-9a3d6c96 (2026-11-11)
 
 Branch: `arena/9a3d6c96-china1` (fixed by Arena; the requested `session-<id>/<task>` naming
-cannot be used — same logged deviation as every earlier session). Claimed 2026-11-11 before
-any task work; this block is appended at EOF so it cannot collide with earlier boards.
+cannot be used — the same logged deviation as every earlier session). Claimed 2026-11-11
+before any task work; this block is appended at EOF so it cannot collide with earlier boards.
 
-**Board read at claim time.** `main` head is `272da23` (PR #59). No other session has a
-branch on the remote (`git branch -a` shows only `main` and this branch) and no open pull
-requests. The newest commit anywhere is 2026-11-10 10:24 UTC, i.e. >16 h before this claim,
-so every earlier claim on this board is stale under the 60-minute rule. Nothing is taken
-over: all prior editions are already merged on `main` and are preserved.
+**Board read at claim time.** `main` head was `272da23` (PR #59). No other branch was visible
+on the remote and no pull request was open. The newest commit anywhere was 2026-11-10 10:24
+UTC, more than 16 hours before this claim, so every earlier claim was stale under the
+60-minute rule. Nothing was taken over: those editions were already merged and are preserved.
 
 | Task | Status | Owner | Exclusive file scope |
 |---|---|---|---|
-| N1 Independent re-verification of the live `guide/` against freshly re-fetched official sources (today's readings), with a per-source result | in progress | arena-9a3d6c96 | `verify-9a3d6c96/**`, `guide/audit/**` |
-| N2 Refresh the dated inputs: Bank of China board and the five Wise quotes re-collected 2026-11-11; every derived figure rebuilt | in progress | arena-9a3d6c96 | `guide/data/prices.json`, `guide/data/sources.json` (CN-FXBOARD, PR-WISEFEE), `guide/data/flagged.json` (F06, F20), `guide/data/review.json` (rate sentences) |
-| N3 "Before you decide": the decision page the request asks for — questions, what the rules already answer, what is missing, how to find it out | in progress | arena-9a3d6c96 | `guide/data/questions.json`, `guide/decision.html`, `guide/build/build.py` |
-| N4 Extend the verifier to cover N3, then rebuild and re-run every checker | in progress | arena-9a3d6c96 | `guide/build/verify.py` |
-| N5 Final integration: landing page, `EXECUTIVE_SUMMARY.md`, `README.md`, `REQUIREMENTS.md`, PR, merge, Pages confirmation | not yet claimed — claimed in a separate entry below once N1–N4 pass | arena-9a3d6c96 | shared outputs, listed at claim time |
+| N1 Re-verify the live `guide/` against re-fetched official sources and publish a per-source result | done | arena-9a3d6c96 | `guide/data/recheck.json`, `guide/build/build.py` (review section) |
+| N2 Refresh the dated inputs: Bank of China board and five Wise quotes re-collected 2026-11-11, every derived figure rebuilt | done | arena-9a3d6c96 | `guide/data/prices.json`, `guide/data/sources.json`, `guide/data/flagged.json`, `guide/data/review.json` |
+| N3 "Before you decide" page — questions, what the rules settle, what is missing, how to find it out | superseded by arena-f766722d — see the conflict note below | arena-9a3d6c96 | none; `guide/decide.html` deleted |
+| N4 Extend the verifier: source-record completeness, prose-versus-table drift guard, derived ATM check | done | arena-9a3d6c96 | `guide/build/verify.py` |
+| N5 Final integration: landing page, `EXECUTIVE_SUMMARY.md`, `README.md`, `REQUIREMENTS.md`, PR, merge, Pages confirmation | done — this record | arena-9a3d6c96 | the shared files named here |
 
-Rules this session applies: no figure is copied from an archived edition; every value is read
-on the official page in this session or left blank and flagged. The user has supplied no
-personal facts (source of funds, residency, tax history, destination bank), so those stay
-unknown and are turned into questions on the decision page instead of assumptions.
+**Conflict with a concurrently merged session, resolved without discarding work.** While this
+session was building, `main` advanced from `272da23` to `59ea92a` (PRs #60, #61, #62 by
+arena-faa59cc9 and arena-f766722d). arena-f766722d had already published a decision-readiness
+page at `guide/questions.html` with 16 questions, 10 known facts, a ranked best-way table and an
+8-step discovery plan — the same request item this session had built as `guide/decide.html`.
+Resolution:
+
+- `guide/decide.html` was **deleted** and the session's own `questions.json` schema dropped.
+  arena-f766722d's page is kept as the single decision page; two pages answering the same
+  question would have been a defect, not a feature.
+- `git merge origin/main` was performed (not a rebase), and every conflicted file was taken
+  from `main` first, so no sentence of the other session was lost. This session's own edits
+  were then re-applied one at a time onto that merged text, each with an asserted match.
+- arena-faa59cc9's conservative rewording of the tax pages is kept verbatim. This session's
+  only edit to those sentences adds the 境内个人/境外个人 tension behind F15 and the two
+  definitional sources.
+- arena-f766722d's `questions.json` carried the superseded figures ($93.36, $939.01, 0.2094%,
+  0.63%–0.57%) after this session refreshed the rate. They were recomputed from the rebuilt
+  ladder ($93.39, $941.20, 0.2100%, 0.62%–0.56%) and `verify.py` now fails if the decision
+  page ever quotes a total, margin or Wise share that the ladder does not produce.
+- A second F23 already existed on `main`, so the HSBC private-banking finding was numbered
+  **F24** rather than colliding.
+
+**What was done.**
+
+- **Refresh.** The Bank of China board was re-read at 2026-11-11 10:25:02 (USD 666.3 buy /
+  669.11 sell / 671.91 reference) against 665.71 / 668.51 the day before, and five Wise quotes
+  were pulled the same morning at the CNY amounts the USD targets imply (66,771 → 9,937.70;
+  133,541 → 19,878.55; 200,312 → 29,824.87; 267,082 → 39,775.34; 300,000 → 44,681.18), with
+  two controls (300,001 → no provider; 2,668,440 → no quote). All 760 ladder rows were
+  rebuilt: one wire now costs $93.39 at $10,000 and $941.20 at $400,000; the one-way margin is
+  0.2100%. Wise is still cheaper at $10,000 and $20,000 and dearer from $30,000.
+- **Verification record.** `guide/data/recheck.json` classifies all 33 sources exactly once:
+  17 confirmed, 2 changed (board, Wise quotes), 14 not re-opened today and labelled as such.
+  Published as a table on `guide/repo-review.html`. `verify.py` fails if any source is missing
+  from the record, appears twice, or if the record's date differs from the sources' date.
+- **New irregularity F24.** The HSBC tariff shows the outgoing wire and cable fee as zero for
+  individual private-banking clients and free for 卓越理财尊尚, while the guide prices the
+  卓越理财/运筹理财 column. Published on the Flagged for Review page.
+- **Two verification defects found in the existing checker.** It hard-coded the ATM component
+  as "CNY 751.11" and computed from 6,711, so it failed the moment the rate moved; it now
+  derives the figure. And the Wise ladder keyed quotes by an exact CNY product of the mid
+  rate; it now keys by the USD target, so a rate change cannot silently blank five rows.
+
+**Sources re-read this session (all on the official domain, quoted text compared):**
+boc.cn board; pic.bankofchina.com tariff PDF (items 210105008, 210101002, 210107011, 210108014,
+notes 5); hsbc.com.cn tariff PDF (2.2.4.1, 2.2.4.2); api.wise.com (7 queries); safe.gov.cn
+(2006 No. 3 arts. 7/9/13/22/37; Huifa [2007] 1 arts. 2/13/15/30; Tianjin 2026-07-13; Tianjin
+2024-06-21; Huifa [2017] 29 interpretation); gov.cn Order 532 (arts. 5/12/39/40/42/45/48/52);
+fgk.chinatax.gov.cn Announcement 2013 No. 40; pbc.gov.cn 银发〔2026〕42号; irs.gov (citizens
+abroad; 8938 vs FBAR; IR-2026-48); ecfr.gov 31 CFR 1010.821; govinfo.gov 26 U.S.C. §988;
+cbp.gov money page (canonical URL adopted — the old /kbyg/money path redirects).
+
+**Verification performed:** `python3 guide/build/build.py` then `python3 guide/build/verify.py`
+→ PASS: 11 pages; 1,091 table rows, each with an official source link; 288 rows containing
+blank cells, each linked to Flagged for Review; 19 methods × 40 amounts = 760 ladder rows, 370
+totals recomputed independently with Fraction arithmetic; 33 sources; 24 flagged items; 279
+HTML files and 22,626 internal links crawled, none broken; deterministic rebuild.
+
+**Still not verified, and published as such:** 14 sources were not re-opened today (listed on
+`guide/repo-review.html` with that label); no account-specific facts, no live bank quote and no
+legal or tax opinion about the reader's own position. Nothing was inferred to fill a blank.

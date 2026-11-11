@@ -24,7 +24,7 @@ ROOT = Path(__file__).resolve().parents[2]
 GUIDE = ROOT / "guide"
 DATA = GUIDE / "data"
 PAGES = [ROOT / "index.html"] + [GUIDE / f"{n}.html" for n in
-         ("summary", "methods", "decide", "costs", "steps", "taxes", "flagged", "sources", "repo-review", "archive")]
+         ("summary", "questions", "methods", "costs", "steps", "taxes", "flagged", "sources", "repo-review", "archive")]
 GENERATED = PAGES + [DATA / "cost-ladder.csv", ROOT / "EXECUTIVE_SUMMARY.md"]
 problems = []
 
@@ -60,8 +60,7 @@ prices = load("prices.json")
 taxes = load("taxes.json")
 review = load("review.json")
 scan = load("scan.json")
-questions = load("questions.json")
-recheck = load("recheck.json")
+questions_doc = load("questions.json")
 
 OFFICIAL = {urlsplit(s["url"]).netloc for s in sources.values()}
 MANUAL = {urlsplit(m["url"]).netloc for f in flags_doc for m in f.get("manual", [])}
@@ -100,30 +99,19 @@ for f in flags_doc:
     check(f["src"], f"{f['id']} has no source link"); refs_ok(f["id"], f["src"]); used.update(f["src"])
 for r in review["rules"] + review["manual"]:
     check(r["src"], "review row without source"); refs_ok("review", r["src"]); used.update(r["src"])
+# questions validation
+for k in questions_doc["known"]:
+    refs_ok("questions/known", k["src"]); used.update(k["src"])
+for q in questions_doc["questions"]:
+    refs_ok(f"questions/{q['id']}", q["src"], q["flags"]); used.update(q["src"])
+    check(q["id"].startswith("Q"), f"question id {q['id']} must start with Q")
+for s in questions_doc["suggestions"]:
+    refs_ok(f"questions/step{s['step']}", s["src"]); used.update(s["src"])
+for r in questions_doc["best_way"]["routes"]:
+    refs_ok(f"questions/best_way rank {r['rank']}", r["src"]); used.update(r["src"])
 for k in ("boc", "hsbc", "atm", "receiving", "wise", "cash", "penalty"):
     refs_ok(f"prices/{k}", prices[k]["src"]); used.update(prices[k]["src"])
-q_open = q_items = 0
-for g in questions["groups"]:
-    for it in g["items"]:
-        q_items += 1
-        q_open += it["status"] == "open"
-        check(it["status"] in ("settled", "open"), f'{it["id"]}: unknown status {it["status"]}')
-        check(it["q"] and it["known"] and it["unknown"], f'{it["id"]}: incomplete')
-        check(it["how"], f'{it["id"]}: no way to find the answer out')
-        check(it["src"], f'{it["id"]}: no source')
-        if it["status"] == "open":
-            check(it["flags"], f'{it["id"]} is open but flags nothing')
-        refs_ok(it["id"], it["src"], it["flags"]); used.update(it["src"])
-for money, route, why, src in questions["tree"]["rows"]:
-    check(money and route and why, "decision tree row incomplete")
-    check(src, f"decision tree row without source: {money[:40]}")
-    refs_ok("decision tree", src); used.update(src)
-    for mid in re.findall(r"[MX]\d\d", route):
-        check(any(m["id"] == mid for m in methods), f"decision tree points at unknown method {mid}")
-check(q_items >= 12, "the decision page has fewer than 12 questions")
-check(q_open >= 1, "no open question on the decision page")
-
-# the re-verification record must account for every source exactly once, and claim no more than it did
+recheck = load("recheck.json")
 seen = []
 for key in ("changed", "confirmed", "not_reread"):
     seen += [x["id"] for x in recheck[key]]
@@ -140,6 +128,8 @@ for sid, s in sources.items():
     if s["level"] == "excerpt":
         check(any(sid in f["src"] for f in flags_doc), f"excerpt-only source {sid} is not flagged")
 check(len(methods) >= 15, "fewer than 15 methods")
+check(len(questions_doc["questions"]) >= 16, "fewer than 16 decision questions")
+check(len(questions_doc["suggestions"]) == 8, "need 8 suggestion steps")
 
 # 5 ------------------------------------------------------------------ figures match quoted text
 q = sources["CN-FXBOARD"]["quote"]
@@ -222,14 +212,28 @@ check("CNY 420.00" in h10, "HSBC $10,000 fee component should be CNY 420.00 (100
 h400 = by[("M02", 400_000)]["made_up_of"]
 check("CNY 820.00" in h400, "HSBC $400,000 fee component should be CNY 820.00 (500 + 120 + 200)")
 a10 = by[("M13", 10_000)]["made_up_of"]
-# Derived, never hard-coded: 6 full days at the CNY 112 cap plus one day of 12 + 1% of
-# the remainder, on the mid rate of the same board reading the ladder uses.
+# Derived, never hard-coded: full days at the CNY 112 cap plus one day of 12 + 1% of the
+# remainder, on the mid rate of the same board reading the ladder uses.
 _atm_held = 10_000 * mid
 _atm_days = int(_atm_held // 10000)
 _atm_rest = _atm_held - 10000 * _atm_days
 _atm_fee = _atm_days * 112 + 12 + _atm_rest / 100
-check(f"CNY {_atm_fee}"[:11] in a10 or f"CNY {float(_atm_fee):.2f}" in a10,
+check(f"CNY {float(_atm_fee):.2f}" in a10,
       f"ATM $10,000 fee component should be CNY {float(_atm_fee):.2f} on this board reading")
+
+# the prose on the decision page must carry the same figures as the rebuilt ladder
+qtext = (DATA / "questions.json").read_text(encoding="utf-8")
+_q10 = by[("M01", 10_000)]["total_cost_usd"]
+_q400 = by[("M01", 400_000)]["total_cost_usd"]
+_fx4 = f"{float(1 - mid / sell) * 100:.4f}%"
+check(f"${_q10}" in qtext and f"${_q400}" in qtext,
+      f"questions.json quotes a Bank of China total that is not the ladder's ({_q10} / {_q400})")
+check(_fx4 in qtext, f"questions.json quotes an FX margin other than {_fx4}")
+for stale in ("$93.36", "$939.01", "0.2094%"):
+    check(stale not in qtext, f"questions.json still carries the superseded figure {stale}")
+for n in (10_000, 40_000):
+    _share = f'{float(F(by[("M10", n)]["share_of_amount"]) * 100):.2f}%'
+    check(_share in qtext, f"questions.json lacks the Wise share {_share} at ${n:,}")
 
 # 2, 3, 7 ------------------------------------------------------------ page checks
 class Page(HTMLParser):
@@ -311,11 +315,6 @@ for m in methods:
     check(m["id"] in parsed[GUIDE / "methods.html"].ids, f"methods.html lacks {m['id']}")
     if m["cat"] != "prohibited":
         check(m["id"] in parsed[GUIDE / "steps.html"].ids, f"steps.html lacks {m['id']}")
-dec = parsed[GUIDE / "decide.html"]
-for g in questions["groups"]:
-    for it in g["items"]:
-        check(it["id"] in dec.ids, f"decide.html lacks anchor {it['id']}")
-check(len(dec.rows) == q_items + len(questions["tree"]["rows"]), f"decide.html has {len(dec.rows)} rows")
 check(len(costs.rows) == 40 + 9 + len(methods) * 40, f"costs.html has {len(costs.rows)} rows")
 
 # review snapshot sanity
