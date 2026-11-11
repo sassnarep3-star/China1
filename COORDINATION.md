@@ -16,6 +16,20 @@ The dashboard is already deployed. This session will not label inherited source 
 - Request to guide integration owner: correct F23's November 10 snapshot wording and consider linking this independent audit in navigation. Existing guide files deliberately not edited.
 - Initial pull of current remote branch failed because branch did not exist yet. Pulled/rebased `origin/main`, then pushed only fixed current branch; no conflict or other session work discarded.
 
+<!-- BEGIN session arena-0f7c9cf5 -->
+# Session board — arena-0f7c9cf5 (2026-11-11)
+
+Branch fixed by Arena: `arena/0f7c9cf5-china1`. Claim at 12:49 UTC. PR #69 merged only the claim of `arena-dc298e7a`; its branch's last commit was at 07:42 UTC, over 60 minutes ago. Under the requested handoff rule, take over its unfinished canonical-guide and final-integration scopes; preserve its board entry and leave its branch untouched. Older unfinished claims on these scopes were already identified as stale in its board. No new branch can be created under the Arena restriction.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| Independent targeted source audit of cost comparisons and material decision risks; record limitations and evidence | in progress | arena-0f7c9cf5 | `audit-0f7c9cf5/**` |
+| Integrate verified corrections / flags, rebuild and test | in progress | arena-0f7c9cf5 | `guide/data/**`, `guide/build/**`, generated `guide/*.html`, `index.html`, `EXECUTIVE_SUMMARY.md`, `README.md`, `REQUIREMENTS.md` |
+| PR, merge and Pages confirmation | in progress | arena-0f7c9cf5 | this board block |
+
+The inherited guide and historic claims are not independently certified by this claim; gaps that cannot be verified will remain explicitly flagged. This handoff does not touch other sessions' branches or archived scopes.
+<!-- END session arena-0f7c9cf5 -->
+
 <!-- BEGIN session arena-fe71e6d5: unique insertion at top, 2026-11-11 -->
 # Session board — arena-fe71e6d5 (2026-11-11)
 
