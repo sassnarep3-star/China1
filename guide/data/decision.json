@@ -523,6 +523,42 @@
      ],
      "status": "yours",
      "flags": []
+    },
+    {
+     "id": "D25",
+     "q": "Do you need cash in the US, or money in a US bank account?",
+     "why": "It removes routes at once: cash cannot carry a large balance, and the ATM route is capped at CNY 100,000 a year.",
+     "known": "Carrying cash out of China is free up to USD 5,000, needs a bank permit from USD 5,000 to USD 10,000, and in principle nothing above USD 10,000 may be carried out. Entering the US with more than USD 10,000 in currency or monetary instruments must be reported to CBP on FinCEN Form 105. Overseas card withdrawals are capped at CNY 100,000 a year in total.",
+     "src": [
+      "CN-CASH",
+      "US-CBP",
+      "CN-CARD"
+     ],
+     "missing": "Nothing in the rules; your own need decides it.",
+     "how": "If the money is for a US bank account, use a wire and skip cash entirely. If some is needed as cash, keep it inside the USD 5,000 free allowance and report anything above USD 10,000 at the border.",
+     "how_src": [
+      "CN-CASH",
+      "US-CBP"
+     ],
+     "status": "answered",
+     "flags": []
+    },
+    {
+     "id": "D26",
+     "q": "How quickly must it move, and can you attend the branch in person?",
+     "why": "Timing decides whether a route is usable at all: Wise needs identity verification first, and the bank route needs an appointment and original documents.",
+     "known": "Wise states that sending from CNY requires verification which can take 1–2 working days, and that documents are requested only on the first transfer or when a limit is reached. The bank route is handled at the counter against original documents, and the bank must review them.",
+     "src": [
+      "PR-WISE",
+      "CN-MEASURES"
+     ],
+     "missing": "Your own timeline and ability to travel to the branch. Not a matter for any source.",
+     "how": "Start the Wise verification or book the branch appointment before you need the money; the verification step cannot be compressed on the day.",
+     "how_src": [
+      "PR-WISE"
+     ],
+     "status": "yours",
+     "flags": []
     }
    ]
   }

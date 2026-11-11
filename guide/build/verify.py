@@ -60,6 +60,7 @@ prices = load("prices.json")
 taxes = load("taxes.json")
 review = load("review.json")
 scan = load("scan.json")
+questions_doc = load("questions.json")
 
 OFFICIAL = {urlsplit(s["url"]).netloc for s in sources.values()}
 MANUAL = {urlsplit(m["url"]).netloc for f in flags_doc for m in f.get("manual", [])}
@@ -98,12 +99,24 @@ for f in flags_doc:
     check(f["src"], f"{f['id']} has no source link"); refs_ok(f["id"], f["src"]); used.update(f["src"])
 for r in review["rules"] + review["manual"]:
     check(r["src"], "review row without source"); refs_ok("review", r["src"]); used.update(r["src"])
+# questions validation
+for k in questions_doc["known"]:
+    refs_ok("questions/known", k["src"]); used.update(k["src"])
+for q in questions_doc["questions"]:
+    refs_ok(f"questions/{q['id']}", q["src"], q["flags"]); used.update(q["src"])
+    check(q["id"].startswith("Q"), f"question id {q['id']} must start with Q")
+for s in questions_doc["suggestions"]:
+    refs_ok(f"questions/step{s['step']}", s["src"]); used.update(s["src"])
+for r in questions_doc["best_way"]["routes"]:
+    refs_ok(f"questions/best_way rank {r['rank']}", r["src"]); used.update(r["src"])
 for k in ("boc", "hsbc", "atm", "receiving", "wise", "cash", "penalty"):
     refs_ok(f"prices/{k}", prices[k]["src"]); used.update(prices[k]["src"])
 for sid, s in sources.items():
     if s["level"] == "excerpt":
         check(any(sid in f["src"] for f in flags_doc), f"excerpt-only source {sid} is not flagged")
 check(len(methods) >= 15, "fewer than 15 methods")
+check(len(questions_doc["questions"]) >= 16, "fewer than 16 decision questions")
+check(len(questions_doc["suggestions"]) == 8, "need 8 suggestion steps")
 
 # 5 ------------------------------------------------------------------ figures match quoted text
 q = sources["CN-FXBOARD"]["quote"]

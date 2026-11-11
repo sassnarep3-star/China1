@@ -9,7 +9,7 @@ A research guide for a US citizen holding CNY in a mainland China bank account: 
 | Path | What it is |
 |---|---|
 | `index.html` | Landing page (generated) |
-| `guide/*.html` | Summary, methods, cost ladder, **before you decide**, steps, taxes, Flagged for Review, sources, repository review, archive (generated) |
+| `guide/*.html` | Summary, before you decide (26-question register, 10 settled facts, 8-step plan), methods, cost ladder, steps, taxes, Flagged for Review, sources, repository review, archive (generated) |
 | `guide/data/*.json` | The data behind every page: sources with quoted text, prices, methods, taxes, flagged items, review rules |
 | `guide/data/cost-ladder.csv` | Every method at every amount (generated) |
 | `guide/build/build.py` | Builds the site from the data. Standard library only |
@@ -28,16 +28,14 @@ python3 guide/build/build.py
 python3 guide/build/verify.py
 ```
 
-Both need only Python 3.9 or later. CI (`.github/workflows/guide.yml`) runs the same two commands on every pull request and fails if the committed pages differ from a fresh build.
-
-Last full re-verification: **2026-11-11**. The rate board was re-read that morning (buy 666.3 / sell 669.11 per 100, board timestamp 10:25:02), the Wise quotes were re-collected from its comparison API, and each source on the Sources page now carries the date it was last read — `2026-11-11` for the 22 pages opened again in that pass, `2026-11-10` for the remainder.
+Both need only Python 3.9 or later. The Sources page carries the date each source was last read: `2026-11-11` for the pages re-opened in this pass, `2026-11-10` for the rest. CI (`.github/workflows/guide.yml`) runs the same two commands on every pull request and fails if the committed pages differ from a fresh build.
 
 ## Rules the data follows
 
 - Every table row links to the official page the figure was read on.
 - A value that could not be confirmed on an official page is left blank and listed on the Flagged for Review page. Nothing is inferred.
 - Sources are the regulator, tax authority, statute, or the bank's or provider's own price list. Third-party articles are not used.
-- `guide/decision.html` lists the questions that decide the route: what the rules answer, what only you can supply, what no official page answered (flagged), and how to find each missing fact.
-- Figures are dated. The exchange rate is one Bank of China board reading on 2026-11-10; re-check before acting.
+- Figures are dated. The exchange rate is one Bank of China board reading on **2026-11-11 10:25:02** (buy 666.3 / sell 669.11 per 100); the previous day's reading is shown beside it on the cost ladder so the effect of a rate move is visible. Re-check before acting.
+- `guide/decision.html` is the page to read first: 26 questions, each with what the rules say, what is missing, how to find it and a status. Open questions are flagged, never filled in.
 
 This is research, not legal or tax advice.

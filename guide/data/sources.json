@@ -89,7 +89,7 @@
    "title": "Foreign Exchange Administration Regulation (国务院令第532号)",
    "url": "https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm",
    "level": "full",
-   "quote": "第五条 国家对经常性国际支付和转移不予限制。第十二条 经常项目外汇收支应当具有真实、合法的交易基础…对交易单证的真实性及其与外汇收支的一致性进行合理审查。第三十九条 逃汇…处逃汇金额30%以下的罚款；情节严重的，处逃汇金额30%以上等值以下的罚款。第四十条 非法套汇…同上。第四十二条 违反规定携带外汇出入境…警告，可以处违法金额20%以下的罚款。第四十五条 私自买卖外汇、变相买卖外汇、倒买倒卖外汇…警告，没收违法所得，处违法金额30%以下的罚款；情节严重的，处30%以上等值以下罚款。第四十八条 个人可以处5万元以下的罚款（含提交的单证不真实）。第五十二条（二）境内个人是指中国公民和在中华人民共和国境内连续居住满1年的外国人。",
+   "quote": "第五条 国家对经常性国际支付和转移不予限制。第十二条 经常项目外汇收支应当具有真实、合法的交易基础。第三十九条 逃汇…处逃汇金额30%以下的罚款；情节严重的，处逃汇金额30%以上等值以下的罚款；构成犯罪的，依法追究刑事责任。第四十条 以虚假、无效的交易单证…骗购外汇…处非法套汇金额30%以下的罚款；情节严重的，30%以上等值以下。第四十二条 违反规定携带外汇出入境的…可以处违法金额20%以下的罚款。第四十五条 私自买卖外汇、变相买卖外汇、倒买倒卖外汇或者非法介绍买卖外汇数额较大的…处违法金额30%以下的罚款；情节严重的，30%以上等值以下；构成犯罪的，依法追究刑事责任。第四十八条 提交的单证不真实的…对个人可以处5万元以下的罚款。第五十二条 境内个人，是指中国公民和在中华人民共和国境内连续居住满1年的外国人。",
    "short": "FX Regulation",
    "checked": "2026-11-11"
   },
@@ -100,7 +100,7 @@
    "title": "Measures for Individual Foreign Exchange (中国人民银行令〔2006〕第3号)",
    "url": "https://www.safe.gov.cn/safe/2006/1225/5319.html",
    "level": "full",
-   "quote": "第七条 银行和个人…不得以分拆等方式逃避限额监管，也不得使用虚假商业单据或者凭证逃避真实性管理。第九条 对个人结汇和境内个人购汇实行年度总额管理…第十三条 境外个人在境内取得的经常项目项下合法人民币收入，可以凭本人有效身份证件及相关证明材料在银行办理购汇及汇出。第二十二条 境外个人出售境内商品房所得人民币，经外汇局核准可以购汇汇出。第三十七条（一）境内个人是指持有中华人民共和国居民身份证…的中国公民；（二）境外个人是指持护照…的外国公民。",
+   "quote": "第七条 不得以分拆等方式逃避限额监管，也不得使用虚假商业单据或者凭证逃避真实性管理。第十三条 境外个人在境内取得的经常项目项下合法人民币收入，可以凭本人有效身份证件及相关证明材料在银行办理购汇及汇出。第二十二条 境外个人出售境内商品房所得人民币，经外汇局核准可以购汇汇出。第三十七条 境外个人是指持护照…的外国公民（包括无国籍人）以及港澳台同胞。",
    "short": "Individual FX Measures",
    "checked": "2026-11-11"
   },
@@ -111,7 +111,7 @@
    "title": "Implementing Rules for Individual Foreign Exchange (汇发〔2007〕1号)",
    "url": "https://www.safe.gov.cn/safe/2007/0105/5320.html",
    "level": "full",
-   "quote": "第二条 对个人结汇和境内个人购汇实行年度总额管理。年度总额分别为每人每年等值5万美元。第十三条（一）在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的相关证明材料（含税务凭证）办理购汇；（二）原兑换未用完的人民币兑回外汇…有效期为24个月。第十四条 外汇储蓄账户内外汇汇出境外当日累计等值5万美元以下（含）的，凭本人有效身份证件在银行办理；超过的凭真实性凭证。第十五条 境外个人经常项目外汇汇出境外：（一）外汇储蓄账户内外汇汇出，凭本人有效身份证件办理。第十七条 境内个人可以通过银行、基金管理公司等合格境内机构投资者进行境外投资。",
+   "quote": "第二条 对个人结汇和境内个人购汇实行年度总额管理。年度总额分别为每人每年等值5万美元。第十三条（一）境外个人…在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的相关证明材料（含税务凭证）办理购汇。（二）原兑换未用完的人民币兑回外汇，凭本人有效身份证件和原兑换水单办理，原兑换水单的兑回有效期为自兑换日起24个月。第三十条 个人提取外币现钞当日累计等值1万美元以下（含）的，可以在银行直接办理。",
    "short": "Individual FX Rules",
    "checked": "2026-11-11"
   },
@@ -122,7 +122,7 @@
    "title": "Policy Q&A 2026-07-13: how a foreign individual buys FX with China work pay (汇发〔2020〕14号 第五十九条)",
    "url": "https://www.safe.gov.cn/tianjin/2026/0713/3088.html",
    "level": "full",
-   "quote": "根据《国家外汇管理局关于印发〈经常项目外汇业务指引（2020年版）〉的通知》（汇发〔2020〕14号）第五十九条规定，“境外个人在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的购汇资金来源材料（含税务凭证）在银行办理购汇”。",
+   "quote": "《经常项目外汇业务指引（2020年版）》（汇发〔2020〕14号）第五十九条规定，“境外个人在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的购汇资金来源材料（含税务凭证）在银行办理购汇”。",
    "short": "SAFE Q&A 2026",
    "checked": "2026-11-11"
   },
@@ -133,7 +133,7 @@
    "title": "Policy Q&A 2024-06-21: do foreign individuals get the annual facilitation quota?",
    "url": "https://www.safe.gov.cn/tianjin/2024/0621/2529.html",
    "level": "full",
-   "quote": "境外个人是否享受年度便利化额度购汇？根据…（汇发〔2020〕14号）第五十九条，境外个人在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的购汇资金来源材料（含税务凭证）在银行办理购汇。持有外国人永久居留身份证的境外个人适用购汇年度便利化额度。",
+   "quote": "境外个人在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的购汇资金来源材料（含税务凭证）在银行办理购汇。持有外国人永久居留身份证的境外个人适用购汇年度便利化额度。",
    "short": "SAFE Q&A 2024",
    "checked": "2026-11-11"
   },
@@ -144,7 +144,7 @@
    "title": "Announcement 2013 No. 40: tax filing for outward service-trade and other payments (as amended)",
    "url": "https://fgk.chinatax.gov.cn/zcfgk/c100012/c5194375/content.html",
    "level": "full",
-   "quote": "一、境内机构和个人向境外单笔支付等值5万美元以上…下列外汇资金…均应向所在地主管税务机关进行税务备案：（二）境外个人在境内的工作报酬，境外机构或个人从境内获得的股息、红利、利润…等收益和经常转移收入。四、境外个人办理服务贸易、收益和经常转移项下对外支付，应按照个人外汇管理的相关规定办理。",
+   "quote": "一、境内机构和个人向境外单笔支付等值5万美元以上（不含等值5万美元）下列外汇资金…均应向所在地主管税务机关进行税务备案：（二）境外个人在境内的工作报酬，境外机构或个人从境内获得的股息、红利、利润…；（三）…不动产的转让收入、股权转让所得以及外国投资者其他合法所得。四、境外个人办理服务贸易、收益和经常转移项下对外支付，应按照个人外汇管理的相关规定办理。",
    "short": "STA/SAFE Ann. 40",
    "checked": "2026-11-11"
   },
@@ -232,7 +232,7 @@
    "title": "Individual Income Tax Law of the PRC (English)",
    "url": "https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html",
    "level": "full",
-   "quote": "Article 1: an individual domiciled in China, or not domiciled but resident 183 days or more in a tax year, is a resident individual; income from within China or overseas is taxable. Article 3: comprehensive income 3%–45% progressive; business income 5%–35%; interest, dividends or bonuses, leasing, transfer of assets and incidental income a flat 20%.",
+   "quote": "Art. 1: resident = domiciled, or present 183 days or more in a tax year. Art. 2: nine categories of taxable income. Art. 3: comprehensive income 3%–45%; business income 5%–35%; interest, dividends and bonuses, income from lease of property, income from transfer of property and incidental income: 20%. Art. 6: transfer of property — taxable income is the transfer income less the original value of the property and reasonable expenses.",
    "short": "IIT Law",
    "checked": "2026-11-11"
   },
@@ -342,7 +342,7 @@
    "title": "Money and other monetary instruments",
    "url": "https://www.cbp.gov/travel/international-visitors/money-monetary-instruments",
    "level": "full",
-   "quote": "'Federal law mandates that when entering or leaving the United States you must report amounts exceeding $10,000 to U.S. Customs and Border Protection.' Filed electronically on FinCEN Form 105. For families or groups the $10,000 threshold applies to the total carried collectively. Failure to file risks forfeiture and seizure. Last modified 2025-11-24.",
+   "quote": "'Federal law mandates that when entering or leaving the United States you must report amounts exceeding $10,000 to U.S. Customs and Border Protection.' Filed on FinCEN Form 105. For families or groups the $10,000 threshold applies to the total carried collectively. Failure to file risks forfeiture and seizure.",
    "short": "CBP currency",
    "checked": "2026-11-11"
   },

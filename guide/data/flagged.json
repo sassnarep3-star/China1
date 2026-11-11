@@ -49,7 +49,7 @@
   {
    "id": "F05",
    "topic": "US receiving-bank fees other than Chase",
-   "gap": "Only Chase's incoming-wire fee (USD 15) was read on the bank's own page this session. Fees at other US banks were not re-checked, and a Schwab figure previously seen only in a search excerpt stays blank.",
+   "gap": "Only Chase's incoming-wire fee (USD 19 was not assumed; USD 15 was read) was confirmed on the bank's own page. Fees at other US banks were not re-checked in this pass, and a Schwab figure previously seen only in a search excerpt stays blank.",
    "action": "Check your own bank's fee schedule for incoming international wires.",
    "src": [
     "US-CHASE"
@@ -231,15 +231,27 @@
   },
   {
    "id": "F23",
+   "topic": "Tax summary and historical rate snapshot require individual review",
+   "gap": "An earlier guide summary implied that paying China tax eliminates other tax, that a foreign tax credit is automatic and that all exchange gains up to USD 200 are ignored. These statements require qualifications. The cost ladder is priced from one dated board reading, not from a live transaction quote.",
+   "action": "Have a US tax professional assess foreign-currency gain, credit eligibility and filing thresholds; obtain an executable bank quote and confirm the source-of-funds route before acting.",
+   "src": [
+    "US-988",
+    "US-FTC",
+    "US-8938FBAR",
+    "CN-FXBOARD"
+   ]
+  },
+  {
+   "id": "F24",
    "topic": "HSBC Global Transfer: which currency the free transfer applies to",
-   "gap": "HSBC China's tariff makes Global Transfer to your own same-name HSBC account abroad free on Premier (CNY 145 on Advance), but the table does not say whether a CNY balance is converted before or during that transfer, or at what rate. The conversion leg therefore remains unpriced.",
+   "gap": "HSBC China's tariff makes Global Transfer to your own same-name HSBC account abroad free on Premier (CNY 145 on Advance), but the table does not say whether a CNY balance is converted before or during that transfer, or at what rate. The conversion leg therefore stays unpriced.",
    "action": "Ask HSBC China, in writing, for the rate applied when a CNY balance is sent by Global Transfer to an HSBC USD account, and whether the transfer itself stays free.",
    "src": [
     "PR-HSBC"
    ]
   },
   {
-   "id": "F24",
+   "id": "F25",
    "topic": "Whether card spending abroad carries a cap or counts against any quota",
    "gap": "SAFE's 2017 notice sets the overseas cash-withdrawal caps (CNY 100,000 a year, CNY 10,000 a day) and says normal consumption is unaffected, but no spending cap, and no rule on whether spending counts toward any quota, was read.",
    "action": "Ask the card issuer and SAFE's local branch whether purchases abroad are capped or monitored separately from cash withdrawals.",
