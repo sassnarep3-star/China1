@@ -60,6 +60,30 @@ Rebase conflict note: `origin/main` advanced again via PR #71 (session `arena-0f
 
 <!-- END session arena-2ece572a -->
 
+<!-- BEGIN session arena-c2e7e812: unique insertion at top, 2026-11-11 -->
+# Session board — arena-c2e7e812 (2026-11-11)
+
+Branch: `arena/c2e7e812-china1` (fixed by Arena; the requested `session-<id>/<task>` naming is unavailable — same logged deviation as every earlier session). Claimed **2026-11-11 12:48 UTC**, before any task work. Base: `main` `0dd03d6` (merge of PR #69).
+
+**Board and remote state read at claim time** (this file read in full; all 64 remote heads and open PRs listed via the GitHub API at 12:48–12:49 UTC):
+
+- **Stale takeover (60-minute rule):** session `arena-dc298e7a` claimed final-integration tasks D1–D6 at 07:43 UTC on 2026-11-11 ("in progress"). Its newest commit is 07:42:14 UTC — over 5 hours before this claim. Its merged PR #69 contained the board entry only; task work (verification record, corrections, archive link for the QA report) was never committed. Under the >60-minute-no-commits rule this session takes over D1–D6 and logs the handoff here. Nothing of that session exists beyond its board block, so nothing is discarded.
+- Session `arena-fe71e6d5` (last commit 07:46 UTC, marked done) and every other branch (last commit ≤ 07:46 UTC) are stale or complete. Open PRs #39 and #45 belong to other sessions, stay open, and stay listed on Flagged for Review — not touched.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| C1 This claim block; commit and push immediately | in progress | arena-c2e7e812 | `COORDINATION.md` (this block only) |
+| C2 Independent rebuild + full verify of the canonical guide (`build.py` deterministic rebuild; `verify.py` rows/source links/blanks/arithmetic/link crawl) | unclaimed → claimed | arena-c2e7e812 | `verification-c2e7e812/**` (record); read-only on `guide/**` for this task |
+| C3 Line-by-line re-check of the guide's load-bearing sources on official pages via web_search/fetch today; per-source PASS/FAIL record | unclaimed → claimed | arena-c2e7e812 | `verification-c2e7e812/**` |
+| C4 Integrate the still-open QA integration request: link `quality-713a97b7/index.html` from the canonical archive page; re-check the six QA wording requests against current guide data and correct only where the cited official text does not support the wording | unclaimed → claimed | arena-c2e7e812 | `guide/data/archive.json`, regenerated `guide/archive.html` (+ any data file corrections, each sourced) |
+| C5 Update `EXECUTIVE_SUMMARY.md`/`README.md`/`REQUIREMENTS.md` only if C2–C4 change something; whole-repo broken-link crawl | unclaimed → claimed | arena-c2e7e812 | files named at edit time, logged here first |
+| C6 PR to `main`, merge without waiting, confirm GitHub Pages deploys, record PR link and merge result here | unclaimed → claimed | arena-c2e7e812 | this block |
+
+Rules this session applies: archived editions are read-only; no figure is copied from any archived edition into the guide without being re-read on the official page in this session; unconfirmable values stay blank and flagged; prohibited routes are listed with legal consequence only, no execution steps; no personal fact about the user's account, source of funds, or tax history is inferred.
+
+Requests to other sessions: do not edit `guide/**`, `index.html`, `EXECUTIVE_SUMMARY.md`, `README.md`, `REQUIREMENTS.md` while this claim is open; log the request in this file instead and it will be integrated.
+<!-- END session arena-c2e7e812 -->
+
 <!-- BEGIN session arena-fe71e6d5: unique insertion at top, 2026-11-11 -->
 # Session board — arena-fe71e6d5 (2026-11-11)
 
