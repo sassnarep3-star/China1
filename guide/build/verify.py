@@ -24,7 +24,7 @@ ROOT = Path(__file__).resolve().parents[2]
 GUIDE = ROOT / "guide"
 DATA = GUIDE / "data"
 PAGES = [ROOT / "index.html"] + [GUIDE / f"{n}.html" for n in
-         ("summary", "methods", "costs", "steps", "taxes", "flagged", "sources", "repo-review", "archive")]
+         ("summary", "methods", "costs", "decision", "steps", "taxes", "flagged", "sources", "repo-review", "archive")]
 GENERATED = PAGES + [DATA / "cost-ladder.csv", ROOT / "EXECUTIVE_SUMMARY.md"]
 problems = []
 
@@ -142,7 +142,7 @@ def boc_total(n):
 
 
 recomputed = 0
-wise = {F(x["send_cny"]): F(x["received_usd"]) for x in prices["wise"]["quotes"]}
+wise = {int(x["for_usd"]): (F(x["send_cny"]), F(x["received_usd"])) for x in prices["wise"]["quotes"]}
 for m in methods:
     for n in targets:
         r = by[(m["id"], n)]
@@ -155,8 +155,9 @@ for m in methods:
         elif model in ("hsbc", "rmb"):
             exp_status = "partial"
         elif model == "wise":
-            if n * mid in wise:
-                exp_status, exp_total = "value", n - wise[n * mid]
+            if n in wise:
+                sent, got = wise[n]
+                exp_status, exp_total = "value", sent / mid - got
             else:
                 exp_status = "blank"
         elif model == "cash":
@@ -186,7 +187,7 @@ check("CNY 420.00" in h10, "HSBC $10,000 fee component should be CNY 420.00 (100
 h400 = by[("M02", 400_000)]["made_up_of"]
 check("CNY 820.00" in h400, "HSBC $400,000 fee component should be CNY 820.00 (500 + 120 + 200)")
 a10 = by[("M13", 10_000)]["made_up_of"]
-check("CNY 751.11" in a10, "ATM $10,000 fee should be CNY 751.11 (6 × 112 + 12 + 1% × 6,711)")
+check("CNY 751.71" in a10, "ATM $10,000 fee should be CNY 751.71 (6 × 112 + 12 + 1% × 6,770.5)")
 
 # 2, 3, 7 ------------------------------------------------------------ page checks
 class Page(HTMLParser):
@@ -268,7 +269,32 @@ for m in methods:
     check(m["id"] in parsed[GUIDE / "methods.html"].ids, f"methods.html lacks {m['id']}")
     if m["cat"] != "prohibited":
         check(m["id"] in parsed[GUIDE / "steps.html"].ids, f"steps.html lacks {m['id']}")
-check(len(costs.rows) == 40 + 9 + len(methods) * 40, f"costs.html has {len(costs.rows)} rows")
+check(len(costs.rows) == 40 + 2 + 9 + len(methods) * 40, f"costs.html has {len(costs.rows)} rows")
+
+# decision page -------------------------------------------------------
+dec = load("decision.json")
+dec_items = [it for g in dec["groups"] for it in g["items"]]
+check(len(dec_items) >= 15, f"decision page has only {len(dec_items)} questions")
+check(len(dec["next"]) >= 3, "decision page has no starting checklist")
+for it in dec_items:
+    check(it["status"] in ("answered", "yours", "open"), f"{it['id']}: unknown status {it['status']}")
+    check(it["src"], f"{it['id']}: no official source")
+    check(it["how_src"], f"{it['id']}: no official source on how to find the missing fact")
+    for sid in it["src"] + it["how_src"]:
+        check(sid in sources, f"{it['id']}: unknown source {sid}")
+    for fid in it["flags"]:
+        check(fid in flags, f"{it['id']}: unknown flag {fid}")
+    if it["status"] == "open":
+        check(it["flags"], f"{it['id']}: open question must be flagged")
+    check(it["missing"] and it["how"] and it["why"], f"{it['id']}: incomplete row")
+dp = parsed[GUIDE / "decision.html"]
+for it in dec_items:
+    check(it["id"] in dp.ids, f"decision.html lacks anchor {it['id']}")
+check("Flagged for Review" in (GUIDE / "decision.html").read_text(encoding="utf-8"), "decision page does not point at the flags")
+open_ids = {it["id"] for it in dec_items if it["status"] == "open"}
+for fid in flags:
+    check(any(fid in it["flags"] for it in dec_items) or f'id="{fid}"' in (GUIDE / "flagged.html").read_text(encoding="utf-8"),
+          f"flag {fid} is neither on the decision page nor drawn as an anchor")
 
 # review snapshot sanity
 check(scan["total_lines"] > 100_000 and scan["total_files"] > 300, "scan snapshot looks incomplete")

@@ -15,7 +15,7 @@
    "verdict": "Best fully priced route for large sums",
    "who": "Foreign passport holder whose CNY is lawful China current-account income (for example salary) and who can show the amount and the tax paid.",
    "limit": "No fixed cap in the rule; the bank converts what your documents support.",
-   "cost": "FX margin 0.2094% + commission 1‰ (CNY 50–260) + cable CNY 150 + USD 25 full-amount delivery + receiving-bank fee.",
+   "cost": "FX margin 0.2100% + commission 1‰ (CNY 50–260) + cable CNY 150 + USD 25 full-amount delivery + receiving-bank fee.",
    "pros": [
     "Bank fees are capped, so the percentage cost falls as the amount grows",
     "Every price is published by the bank",
@@ -107,12 +107,14 @@
    "cost": "Commission 0.1% (CNY 100–500) + cable CNY 120 + CNY 200 pre-collected for full-amount delivery. FX margin not published.",
    "pros": [
     "Same bank group on both sides if you also bank with HSBC abroad",
-    "Fees are capped"
+    "Fees are capped",
+    "HSBC Global Transfer to your own HSBC account abroad is free on Premier (CNY 145 on Advance), so only the conversion is left to price"
    ],
    "cons": [
     "Exchange rate not verified, so no all-in total",
     "Higher fee cap than Bank of China",
-    "Correspondent charges above CNY 200 are collected later"
+    "Correspondent charges above CNY 200 are collected later",
+    "The free Global Transfer only works between HSBC accounts, and its rate is still unpublished"
    ],
    "steps": [
     {
@@ -129,6 +131,12 @@
     },
     {
      "t": "Order the outward telegraphic transfer; pay 0.1% (minimum CNY 100, maximum CNY 500) plus CNY 120 cable.",
+     "src": [
+      "PR-HSBC"
+     ]
+    },
+    {
+     "t": "If you also hold an HSBC account abroad, ask for HSBC Global Transfer to your own same-name account: free on Premier, CNY 145 on Advance, per the same tariff. The conversion from CNY to USD is still charged at the bank's own rate.",
      "src": [
       "PR-HSBC"
      ]
@@ -648,7 +656,7 @@
    "verdict": "Only for small amounts",
    "who": "Any traveller.",
    "limit": "Up to USD 5,000 without a permit; USD 5,000–10,000 with a bank permit; above USD 10,000 not allowed in principle.",
-   "cost": "FX margin 0.2094% on the cash purchase; permit fee waived until 2026-12-31.",
+   "cost": "FX margin 0.2100% on the cash purchase; permit fee waived until 2026-12-31.",
    "pros": [
     "No wire fees"
    ],
@@ -737,6 +745,55 @@
     "F08"
    ],
    "ladder": "atm"
+  },
+  {
+   "id": "M16",
+   "cat": "physical",
+   "name": "Spend it in place: mainland debit or UnionPay card abroad",
+   "status": "Limited",
+   "verdict": "No conversion, but not a way to move the balance",
+   "who": "Anyone with a mainland-issued debit or credit card. Nothing is converted: you spend the CNY where it is.",
+   "limit": "Overseas cash withdrawal is capped at CNY 100,000 a year across all your cards and CNY 10,000 a day per card; card spending is described by SAFE as unaffected by that notice, but no spending cap is stated.",
+   "cost": "",
+   "pros": [
+    "Avoids the FX margin of a conversion entirely",
+    "No branch visit and no remittance paperwork",
+    "Card use abroad is expressly said to be unaffected by the 2017 cash-withdrawal notice"
+   ],
+   "cons": [
+    "Only works for money you are going to spend, not for money you want to hold in USD",
+    "The card scheme's exchange rate and any ATM-owner surcharge are not published here",
+    "Overseas cash access is suspended for the year and the next if the annual cap is passed"
+   ],
+   "steps": [
+    {
+     "t": "Check whether the card is a CNY card or a foreign-currency card, because the settlement currency decides whether a conversion happens at all.",
+     "src": [
+      "CN-CARD"
+     ]
+    },
+    {
+     "t": "Use the card for purchases abroad; SAFE states the 2017 notice does not affect normal cash withdrawal and consumption.",
+     "src": [
+      "CN-CARD"
+     ]
+    },
+    {
+     "t": "Keep overseas cash withdrawals inside CNY 100,000 a year in total and CNY 10,000 a day per card, or access is suspended for this year and the next.",
+     "src": [
+      "CN-CARD",
+      "CN-BOCTARIFF"
+     ]
+    }
+   ],
+   "src": [
+    "CN-CARD",
+    "CN-BOCTARIFF"
+   ],
+   "flags": [
+    "F08"
+   ],
+   "ladder": "blank"
   },
   {
    "id": "M14",

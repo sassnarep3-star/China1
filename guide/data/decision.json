@@ -1,0 +1,530 @@
+{
+ "read_on": "2026-11-11",
+ "intro": "A decision needs five things that no public source can supply for you: where the money came from, whether China tax on it is paid and provable, your China residence status, which US account will receive it, and your US filing history. The tables below separate those from the questions the rules do answer, and say exactly how to close each gap.",
+ "next": [
+  {
+   "t": "Write down the origin of every deposit in the account, with the document that proves it (payslips and tax record, sale contract and tax voucher, inheritance papers, or the original exchange memo).",
+   "src": [
+    "CN-ART59",
+    "CN-PROPTRANS",
+    "CN-RULES"
+   ]
+  },
+  {
+   "t": "Get the China individual income tax record (完税证明) for those amounts from the tax office that collected the tax, and check the total matches the balance you want to move.",
+   "src": [
+    "CN-ART59"
+   ]
+  },
+  {
+   "t": "Ask the bank's personal cross-border desk two questions in writing: which purchase purpose (购汇用途) it will use for your documents, and whether it wants the tax-filing form for a single payment above USD 50,000.",
+   "src": [
+    "CN-MEASURES",
+    "CN-TAXFILING"
+   ]
+  },
+  {
+   "t": "Ask the same desk for its USD selling rate on the day, then compare it with the Bank of China board before deciding which bank converts.",
+   "src": [
+    "CN-FXBOARD",
+    "PR-HSBC"
+   ]
+  },
+  {
+   "t": "Check your US position before the money lands: which years' returns are filed, and whether the account already crossed the FBAR and Form 8938 thresholds.",
+   "src": [
+    "US-ABROAD",
+    "US-8938FBAR"
+   ]
+  }
+ ],
+ "groups": [
+  {
+   "id": "money",
+   "title": "1. Facts about the money only you can supply",
+   "items": [
+    {
+     "id": "D01",
+     "q": "Where did the CNY in the account come from?",
+     "why": "It decides which rule the bank applies. Current-account income is converted on documents; capital items such as a house sale, an inheritance or pre-emigration assets need SAFE approval or a specific route.",
+     "known": "Lawful current-account RMB income of an overseas individual is bought into foreign exchange at the bank on ID plus source-of-funds materials including tax vouchers. Sale proceeds of a mainland home by an overseas individual may be bought into FX and remitted after SAFE approval. Emigrant and inheritance transfers follow a separate property-transfer regime.",
+     "src": [
+      "CN-ART59",
+      "CN-MEASURES",
+      "CN-PROPTRANS"
+     ],
+     "missing": "Which category your balance falls into. No public source can classify your own deposits.",
+     "how": "List each deposit with its evidence. Take the list to the bank's personal cross-border (个人外汇) desk and ask which purchase purpose it will record. Where the item is capital, ask the local SAFE branch (所在地外汇局) which approval or registration it needs before you go to the bank.",
+     "how_src": [
+      "CN-MEASURES",
+      "CN-PROPTRANS"
+     ],
+     "status": "yours",
+     "flags": []
+    },
+    {
+     "id": "D02",
+     "q": "Can you prove the source is lawful?",
+     "why": "A transaction without a real, lawful basis cannot be converted at all, and property whose lawful source cannot be proved is refused under the property-transfer rules.",
+     "known": "Current-account receipts and payments must rest on a real, lawful transaction, and the bank must review the documents for authenticity and consistency. The property-transfer announcement states that property whose lawful source cannot be proved is not accepted.",
+     "src": [
+      "CN-FXREG",
+      "CN-PROPTRANS"
+     ],
+     "missing": "Nothing in the rules — this is a question about your paperwork.",
+     "how": "Assemble originals: contract or payslips, tax payment record, bank statements showing the money arriving, and any sale or inheritance documents. If a link in the chain is missing, ask the tax office (hotline 12366) and the SAFE branch what evidence they accept before booking a bank appointment.",
+     "how_src": [
+      "CN-FXREG",
+      "CN-ART59"
+     ],
+     "status": "yours",
+     "flags": []
+    },
+    {
+     "id": "D03",
+     "q": "How much is there, and is the account in your name alone?",
+     "why": "The amount sets which route is cheapest and whether the tax-filing form question arises; an account held with someone else raises whose income it is and who may remit it.",
+     "known": "The bank records the purchase against your ID; a foreign individual's own FX savings account may be remitted abroad on ID. Joint or third-party money was not covered by any rule read here.",
+     "src": [
+      "CN-RULES",
+      "CN-MEASURES"
+     ],
+     "missing": "Your balance and account structure. Not inferable from any official page.",
+     "how": "Take a bank statement showing the balance and the account holders. If anyone else is on the account, ask the bank in writing whose name the remittance can be made in.",
+     "how_src": [
+      "CN-RULES"
+     ],
+     "status": "yours",
+     "flags": []
+    },
+    {
+     "id": "D04",
+     "q": "Do you hold the Foreign Permanent Resident ID card (外国人永久居留身份证)?",
+     "why": "It is the one stated condition under which an overseas individual gets the USD 50,000 annual convenience quota. Without it the quota is not available and the bank converts against documents instead.",
+     "known": "The annual convenience quota for buying FX applies to domestic individuals, and SAFE's own answer says overseas individuals holding the Foreign Permanent Resident ID card enjoy it. A foreign passport holder with lawful current-account income converts on documents, with no figure stated for a cap.",
+     "src": [
+      "CN-PR",
+      "CN-RULES"
+     ],
+     "missing": "Whether you hold the card. Also unresolved: the FX Regulation defines a domestic individual to include a foreigner resident in China for one continuous year, while the Individual FX Measures define a domestic individual as a Chinese citizen holding a resident ID card.",
+     "how": "Check whether you hold the card. If you do not, plan on the documented route rather than the quota. Ask the bank to confirm in writing that it will treat you as 境外个人 under the Individual FX Measures.",
+     "how_src": [
+      "CN-PR",
+      "CN-FXREG",
+      "CN-MEASURES"
+     ],
+     "status": "yours",
+     "flags": [
+      "F15"
+     ]
+    },
+    {
+     "id": "D05",
+     "q": "Are you a China tax resident this year?",
+     "why": "A China tax resident is taxed by China on worldwide income, and the answer changes what you owe before anything can be remitted.",
+     "known": "An individual domiciled in China, or resident 183 days or more in a tax year, is a resident individual and is taxed on income from within China and overseas. Non-residents are taxed on China-source income.",
+     "src": [
+      "CN-IIT"
+     ],
+     "missing": "Your day count and domicile position, which depend on your visa, family and home. No public source can decide it for you.",
+     "how": "Count your days in China for the calendar year and keep the entry and exit records. Take them to a China tax adviser or the 12366 hotline and ask for a written view on your residency and on whether the balance is China-source.",
+     "how_src": [
+      "CN-IIT"
+     ],
+     "status": "yours",
+     "flags": []
+    },
+    {
+     "id": "D06",
+     "q": "Has China tax been paid on it, and can you show the record?",
+     "why": "This is the single document that decides whether a bank can convert the money at all, and it is what people mean when they fear a 'conversion penalty'.",
+     "known": "The bank converts only against source-of-funds materials that include the tax voucher. The rates themselves are 3%–45% on salary, 20% on gains, dividends and interest, and 5%–35% on business income.",
+     "src": [
+      "CN-ART59",
+      "CN-IIT",
+      "CN-RULES"
+     ],
+     "missing": "Whether the tax on your specific balance has been paid. If it has not, the amount of tax and any late-payment surcharge is a question for the tax office; the surcharge and evasion fines were only seen as an excerpt and are flagged.",
+     "how": "Request the individual income tax payment record (个人所得税纳税记录) from the tax office or the个人所得税 app. If a period is missing, ask the tax office to assess it before you approach the bank.",
+     "how_src": [
+      "CN-ART59",
+      "CN-TAXCOLL"
+     ],
+     "status": "yours",
+     "flags": [
+      "F11"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "route",
+   "title": "2. Questions the rules do answer",
+   "items": [
+    {
+     "id": "D07",
+     "q": "Can a US passport holder lawfully convert salary and wire it out?",
+     "why": "This is the core of the answer.",
+     "known": "Yes, on the text read: an overseas individual's lawful current-account RMB income earned in China is bought into foreign exchange at a bank on valid ID plus source-of-funds materials including tax vouchers, and remitted. The FX Regulation does not restrict current international payments and transfers.",
+     "src": [
+      "CN-ART59",
+      "CN-FXREG",
+      "CN-MEASURES"
+     ],
+     "missing": "Nothing in the rule. The open questions are documentary and operational (D01, D06, D13).",
+     "how": "Follow the steps for the documented bank route on the Steps page.",
+     "how_src": [
+      "CN-ART59"
+     ],
+     "status": "answered",
+     "flags": []
+    },
+    {
+     "id": "D08",
+     "q": "Is there a cap on how much can go out?",
+     "why": "It decides whether one wire of the whole balance is possible or whether the amount has to be built up in stages.",
+     "known": "The USD 50,000 a year figure is the convenience quota for domestic individuals, and SAFE states that overseas individuals holding the permanent-resident card enjoy it. For an overseas individual's documented current-account income the rule read states no cap; for the FX savings account of an overseas individual, remittance abroad is on ID with no figure stated. Cash is capped separately: USD 5,000 free, up to USD 10,000 with a bank permit, and in principle nothing above USD 10,000.",
+     "src": [
+      "CN-RULES",
+      "CN-PR",
+      "CN-CASH"
+     ],
+     "missing": "Whether your particular bank imposes its own channel limit, which is flagged.",
+     "how": "Ask the bank for its maximum single remittance and any daily limit in writing before structuring the payment.",
+     "how_src": [
+      "CN-BOCTARIFF"
+     ],
+     "status": "answered",
+     "flags": [
+      "F22"
+     ]
+    },
+    {
+     "id": "D09",
+     "q": "Can money that is already foreign currency in China be sent out?",
+     "why": "If part of the balance is already USD, the conversion question disappears for that part and only the remittance fee applies.",
+     "known": "An overseas individual's current-account FX remittance from a FX savings account is handled on valid ID. Cash held in hand is limited to USD 10,000 a day on the same basis.",
+     "src": [
+      "CN-RULES"
+     ],
+     "missing": "Nothing in the rule; your balances decide whether it applies.",
+     "how": "Check the currency of each account on your statement. Where the money is already USD, ask for a direct remittance instead of a second conversion.",
+     "how_src": [
+      "CN-RULES"
+     ],
+     "status": "answered",
+     "flags": []
+    },
+    {
+     "id": "D10",
+     "q": "Can CNY bought from foreign currency be turned back into USD?",
+     "why": "It is the cheapest lawful exit if it applies, because it reverses an exchange rather than converting new income.",
+     "known": "RMB left over from an exchange may be converted back on ID with the original exchange memo, valid for 24 months from the exchange date, and up to USD 500 a day on ID alone.",
+     "src": [
+      "CN-RULES"
+     ],
+     "missing": "Whether you still hold the 24-month window and the original memo.",
+     "how": "Find the original exchange slip. If it is lost or older than 24 months, treat the money as ordinary income instead and use the documented route.",
+     "how_src": [
+      "CN-RULES"
+     ],
+     "status": "yours",
+     "flags": []
+    },
+    {
+     "id": "D11",
+     "q": "Does selling a mainland home have its own exit?",
+     "why": "It is the largest single item many people hold, and the tax on the gain is charged before the money can leave.",
+     "known": "An overseas individual who sells a mainland commercial house may buy FX and remit the proceeds after SAFE approval; a Shanghai government FAQ sourced to Bank of China says the bank handles it with the sale contract, registration certificate and tax voucher, plus the tax-filing form above USD 50,000.",
+     "src": [
+      "CN-MEASURES",
+      "CN-SHPROP",
+      "CN-CAP2014"
+     ],
+     "missing": "Whether approval is at the bank or the SAFE branch in your city; the two descriptions differ. Flagged.",
+     "how": "Ask the local SAFE branch whether the current procedure requires its approval document (核准件) or whether the bank handles it directly, and ask the tax office for the property-tax clearance before the sale completes.",
+     "how_src": [
+      "CN-MEASURES",
+      "CN-SHPROP"
+     ],
+     "status": "open",
+     "flags": [
+      "F17"
+     ]
+    },
+    {
+     "id": "D12",
+     "q": "Does an inheritance or pre-emigration property transfer work?",
+     "why": "Both are capital-account routes with their own approval and evidence, and both are useless if the paperwork was never created.",
+     "known": "The property-transfer announcement defines emigrant and inheritance transfers, requires tax certificates, pays the money to your own account abroad and refuses property whose lawful source cannot be proved. SAFE's 2014 simplification moved approval to the SAFE branch where the emigrant was registered or where the deceased was registered, removed the CNY 500,000 reporting threshold and the staged-remittance requirement.",
+     "src": [
+      "CN-PROPTRANS",
+      "CN-CAP2014"
+     ],
+     "missing": "Whether the emigrant route is open to you at all: it is written for people who emigrated from China. Flagged.",
+     "how": "Ask the SAFE branch of the emigrant's or deceased's former household registration which documents it requires, and whether your own history qualifies.",
+     "how_src": [
+      "CN-PROPTRANS",
+      "CN-CAP2014"
+     ],
+     "status": "open",
+     "flags": [
+      "F18"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cost",
+   "title": "3. What it will cost, and what could be cheaper",
+   "items": [
+    {
+     "id": "D13",
+     "q": "Will the bank ask for the tax-filing form above USD 50,000?",
+     "why": "One form, filed with the tax office before the wire, can stop a large payment on the day if you have not done it.",
+     "known": "The 2013 announcement requires a tax filing for single outward payments of USD 50,000 or more for listed items including a foreign individual's work pay in China; its Article 4 sends an overseas individual's own current-account outward payments to the individual FX rules instead.",
+     "src": [
+      "CN-TAXFILING"
+     ],
+     "missing": "Which of the two the bank applies to your own remittance. Flagged.",
+     "how": "Put the question to the bank in writing before the appointment, and if the answer is yes, file the form (服务贸易等项目对外支付税务备案表) at the tax office and bring the stamped copy.",
+     "how_src": [
+      "CN-TAXFILING"
+     ],
+     "status": "open",
+     "flags": [
+      "F01"
+     ]
+    },
+    {
+     "id": "D14",
+     "q": "Which bank gives a better exchange rate?",
+     "why": "The FX margin is the largest part of the cost: about 0.21% of the whole amount on the Bank of China board, against capped fees of a few hundred CNY.",
+     "known": "Bank of China publishes its board and a capped commission of 1‰ (CNY 50–260) plus a CNY 150 cable fee and USD 25 for full-amount delivery. HSBC China publishes 0.1% (CNY 100–500), a CNY 120 cable fee and CNY 200 pre-collected for full-amount delivery, but not its rate.",
+     "src": [
+      "CN-FXBOARD",
+      "CN-BOCTARIFF",
+      "PR-HSBC"
+     ],
+     "missing": "HSBC China's CNY/USD rate, and the rates of ICBC, CCB, ABC and CMB, were not obtained. Flagged.",
+     "how": "On the day you decide, ask each bank you can use for its USD selling rate for the full amount, write the figures down, and compare with the published board. A difference of 0.05% on USD 400,000 is about USD 200.",
+     "how_src": [
+      "CN-FXBOARD",
+      "PR-HSBC"
+     ],
+     "status": "open",
+     "flags": [
+      "F02",
+      "F03",
+      "F23"
+     ]
+    },
+    {
+     "id": "D15",
+     "q": "Is Wise cheaper than a bank wire?",
+     "why": "It is the only route here with a live quoted fee rather than a published tariff, so it wins at some sizes and loses at others.",
+     "known": "Wise quotes a fee and a mid-market rate, sends only to an account you own, allows CNY 300,000 per transfer from a China bank app, and caps the overall amount at your after-tax China salary evidenced by a tax record from the last three years.",
+     "src": [
+      "PR-WISE",
+      "PR-WISEFEE"
+     ],
+     "missing": "Whether your own tax record supports the amount; and any fee of the receiving bank, which is not included in the quote. Flagged.",
+     "how": "Open a Wise CNY→USD quote for your exact amount and compare it with the bank's all-in figure for the same day; then check your available limit in the Wise app before you rely on it.",
+     "computed": "wise",
+     "how_src": [
+      "PR-WISEFEE",
+      "PR-WISE"
+     ],
+     "status": "yours",
+     "flags": [
+      "F06"
+     ]
+    },
+    {
+     "id": "D16",
+     "q": "Does the receiving US bank change the answer?",
+     "why": "An incoming-wire fee and any intermediary deduction come off the amount you actually receive.",
+     "known": "Chase charges USD 15 for an incoming wire. Bank of China offers full-amount delivery for USD 25 (USD 15 if the receiving bank holds an account with BOC New York), which turns unknown correspondent deductions into a fixed charge. HSBC's equivalent pre-collects CNY 200.",
+     "src": [
+      "US-CHASE",
+      "CN-BOCTARIFF",
+      "PR-HSBC"
+     ],
+     "missing": "Fees at US banks other than Chase, and what is deducted if full-amount delivery is not used. Flagged.",
+     "how": "Ask your US bank for its incoming international wire fee and whether it deducts intermediary charges, and choose full-amount delivery if the answer is unclear.",
+     "how_src": [
+      "US-CHASE",
+      "CN-BOCTARIFF"
+     ],
+     "status": "open",
+     "flags": [
+      "F04",
+      "F05"
+     ]
+    },
+    {
+     "id": "D17",
+     "q": "Would keeping the money in China and spending it from there be cheaper?",
+     "why": "A conversion avoided is a margin not paid, but only if the money is going to be spent rather than saved.",
+     "known": "Card use abroad is a separate channel with its own limits: overseas cash withdrawal is capped at CNY 100,000 a year per person across all cards and CNY 10,000 a day per card, and exceeding it suspends overseas cash access for that year and the next. The notice states it does not change the USD 50,000 convenience quota.",
+     "src": [
+      "CN-CARD",
+      "CN-BOCTARIFF"
+     ],
+     "missing": "The card scheme's exchange rate and any ATM-owner surcharge, and whether card spending counts against any limit. Flagged.",
+     "how": "Compare the card's effective rate on a small transaction with the bank's counter rate before relying on it, and remember the annual cash cap.",
+     "how_src": [
+      "CN-CARD"
+     ],
+     "status": "open",
+     "flags": [
+      "F08",
+      "F24"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us",
+   "title": "4. The US side, before the money lands",
+   "items": [
+    {
+     "id": "D18",
+     "q": "Will the US tax the transfer itself?",
+     "why": "This is the question behind 'least tax penalty'.",
+     "known": "A US citizen is taxed on worldwide income when it is earned, wherever it is held, and may claim a credit for foreign tax on the same income. For an individual's personal transaction in foreign currency, no gain is recognised on exchange-rate movement unless the gain exceeds USD 200.",
+     "src": [
+      "US-ABROAD",
+      "US-FTC",
+      "US-988"
+     ],
+     "missing": "Nothing for the transfer. What is open is the character of a gain above USD 200 and whether a personal exchange loss is deductible. Flagged.",
+     "how": "Report the income in the year it arose, with Form 1116 for the China tax; keep the conversion slips as evidence of the rate used.",
+     "how_src": [
+      "US-ABROAD",
+      "US-FTC"
+     ],
+     "status": "answered",
+     "flags": [
+      "F13"
+     ]
+    },
+    {
+     "id": "D19",
+     "q": "Do the FBAR and Form 8938 apply, and at what thresholds?",
+     "why": "Missing reports carry fixed penalties that dwarf the cost of the transfer.",
+     "known": "The FBAR is required when foreign financial accounts together exceed USD 10,000 at any time in the year. Form 8938 thresholds depend on where you live and how you file: USD 50,000 year-end or USD 75,000 at any time for an unmarried person living in the US, USD 200,000 or USD 300,000 for one living outside the US, and higher figures for joint filers. Penalties run to USD 16,536 non-willful and USD 165,353 willful on the FBAR, and up to USD 60,000 on Form 8938.",
+     "src": [
+      "US-8938FBAR",
+      "US-FBARPEN"
+     ],
+     "missing": "Which threshold applies to you turns on your filing status and where you live — facts only you can supply.",
+     "how": "Take last year's balance statement and your filing status to your preparer before the transfer, and file the FBAR electronically with FinCEN separately from the return.",
+     "how_src": [
+      "US-8938FBAR",
+      "US-FBARPEN"
+     ],
+     "status": "yours",
+     "flags": []
+    },
+    {
+     "id": "D20",
+     "q": "Is the money a gift from someone in China rather than your own?",
+     "why": "It changes both the China route (someone else's quota cannot lawfully be used for your money) and the US reporting.",
+     "known": "Receiving more than USD 100,000 in gifts or bequests from a non-resident individual or foreign estate in a year must be reported on Form 3520; the gift itself is not income. On the China side, using another person's quota or splitting an amount to evade limits is prohibited.",
+     "src": [
+      "US-3520",
+      "US-ABROAD",
+      "CN-MEASURES"
+     ],
+     "missing": "Whose money it is. Only you know.",
+     "how": "If it is a genuine gift, keep the giver's own tax-paid evidence and file Form 3520 if the total passes USD 100,000. Do not route your own money through another person's quota.",
+     "how_src": [
+      "US-3520",
+      "CN-MEASURES"
+     ],
+     "status": "yours",
+     "flags": []
+    },
+    {
+     "id": "D21",
+     "q": "Are earlier years' US returns complete?",
+     "why": "The real US exposure on old China money is usually the unfiled year, not the conversion.",
+     "known": "Worldwide income must be reported and foreign accounts disclosed; the penalty table sets the FBAR figures and the pages read state that criminal penalties may also apply.",
+     "src": [
+      "US-ABROAD",
+      "US-FBARPEN"
+     ],
+     "missing": "Your filing history and whether any year is missing. Not knowable from public sources.",
+     "how": "Pull the last six years of returns and account balances and review them with a preparer who handles foreign accounts before making a large transfer.",
+     "how_src": [
+      "US-ABROAD"
+     ],
+     "status": "yours",
+     "flags": []
+    }
+   ]
+  },
+  {
+   "id": "day",
+   "title": "5. Execution on the day",
+   "items": [
+    {
+     "id": "D22",
+     "q": "What will the rate actually be when you convert?",
+     "why": "Every total on this site is computed from one dated board reading; the board itself says the transaction rate is what counts.",
+     "known": "The Bank of China board publishes buy and sell rates per 100 units and states that customers should rely on the rate shown in online banking, the app, the self-service terminal or the counter at the time of the transaction.",
+     "src": [
+      "CN-FXBOARD"
+     ],
+     "missing": "The rate on the day. Flagged.",
+     "how": "Ask for the rate in writing at the moment of the order and check it against the board before signing. Re-run the cost ladder with that rate.",
+     "how_src": [
+      "CN-FXBOARD"
+     ],
+     "status": "open",
+     "flags": [
+      "F20"
+     ]
+    },
+    {
+     "id": "D23",
+     "q": "What happens if you do not choose full-amount delivery?",
+     "why": "Correspondent banks can deduct charges from the principal, so you receive less than the amount converted.",
+     "known": "Bank of China states that overseas bank charges are collected as incurred, and offers full-amount delivery as a fixed USD 25 (USD 15 via BOC New York). HSBC pre-collects CNY 200 and bills any shortfall later.",
+     "src": [
+      "CN-BOCTARIFF",
+      "PR-HSBC"
+     ],
+     "missing": "The size of the deductions. Flagged.",
+     "how": "Choose full-amount delivery, or ask the bank for the expected correspondent charge before you send.",
+     "how_src": [
+      "CN-BOCTARIFF"
+     ],
+     "status": "open",
+     "flags": [
+      "F04"
+     ]
+    },
+    {
+     "id": "D24",
+     "q": "Could the bank refuse or delay the payment?",
+     "why": "A refusal on the day is usually a documentary problem, and knowing which document is missing saves a second trip.",
+     "known": "The bank must review authenticity and consistency of the documents and may report large or suspicious transactions under anti-money-laundering rules. Documents are kept for at least five years.",
+     "src": [
+      "CN-FXREG",
+      "CN-MEASURES"
+     ],
+     "missing": "Your branch's own checklist and appointment rules. Not published.",
+     "how": "Ask the branch for its document checklist in writing, book an appointment for large amounts, and bring originals plus copies of every document the rules mention.",
+     "how_src": [
+      "CN-MEASURES",
+      "CN-ART59"
+     ],
+     "status": "yours",
+     "flags": []
+    }
+   ]
+  }
+ ]
+}

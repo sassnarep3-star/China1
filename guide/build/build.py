@@ -38,6 +38,7 @@ TAXES = load("taxes.json")
 FLAGS = {f["id"]: f for f in load("flagged.json")["items"]}
 REVIEW = load("review.json")
 SCAN = load("scan.json")
+DECISION = load("decision.json")
 RETRIEVED = SRC_DOC["retrieved"]
 
 D = Decimal
@@ -83,17 +84,22 @@ W = PRICES["wise"]
 CHASE = D(PRICES["receiving"]["chase_incoming_wire_usd"])
 FULL = D(B["full_amount_usd"])
 FX_SHARE = 1 - MID / SELL  # one-way margin against the midpoint
-WISE_Q = {D(qt["send_cny"]): qt for qt in W["quotes"]}
+WISE_Q = {int(qt["for_usd"]): qt for qt in W["quotes"]}
 
 
-def boc_parts(n):
-    held = D(n) * MID
-    fx = D(n) * FX_SHARE
+def boc_parts(n, buy=None, sell=None):
+    buy = BUY if buy is None else D(buy)
+    sell = SELL if sell is None else D(sell)
+    mid = (buy + sell) / 2
+    margin = 1 - mid / sell
+    held = D(n) * mid
+    fx = D(n) * margin
     commission = clamp(held * D(B["commission_rate"]), B["commission_min_cny"], B["commission_max_cny"])
     fees_cny = commission + D(B["cable_cny"])
-    fees_usd = fees_cny / SELL
+    fees_usd = fees_cny / sell
     total = fx + fees_usd + FULL + CHASE
-    return {"held": held, "fx": fx, "fees_cny": fees_cny, "fees_usd": fees_usd, "total": total}
+    return {"held": held, "fx": fx, "fees_cny": fees_cny, "fees_usd": fees_usd, "total": total,
+            "buy": buy, "sell": sell, "mid": mid, "margin": margin}
 
 
 def row(n, kind, total=None, share=None, detail="", src=(), flags=()):
@@ -126,11 +132,13 @@ def ladder(method):
                    "Conversion cost at the receiving bank not verified, so no total.")
             out.append(row(n, "partial", None, None, det, src=["CN-BOCTARIFF", "CN-RMBX"], flags=["F09"]))
         elif model == "wise":
-            qt = WISE_Q.get(held)
+            qt = WISE_Q.get(n)
             if qt:
-                lost = D(n) - D(qt["received_usd"])
-                det = (f"Quote: send {cny(held)} → fee {cny(qt['fee_cny'])} → receive {usd(qt['received_usd'])}. "
-                       "Any fee of the receiving bank is not included.")
+                sent = D(qt["send_cny"])
+                worth = sent / MID          # USD value of the CNY actually sent, at the board midpoint
+                lost = worth - D(qt["received_usd"])
+                det = (f"Quote: send {cny(sent)} → fee {cny(qt['fee_cny'])} → receive {usd(qt['received_usd'])} "
+                       f"({qt['collected']}). Any fee of the receiving bank is not included.")
                 out.append(row(n, "value", q2(lost), lost / n, det, src=["PR-WISEFEE", "PR-WISE"], flags=["F06"]))
             elif held > D(W["per_transfer_cap_cny"]):
                 out.append(row(n, "blank", detail="Above the CNY 300,000 per-transfer limit; several transfers would be needed and no quote exists.",
@@ -180,7 +188,7 @@ LADDERS = {m["id"]: ladder(m) for m in METHODS}
 # --------------------------------------------------------------------------
 NAV = [
     ("index.html", "Home"), ("guide/summary.html", "Summary"), ("guide/methods.html", "Methods"),
-    ("guide/costs.html", "Costs"), ("guide/steps.html", "Steps"), ("guide/taxes.html", "Taxes"),
+    ("guide/costs.html", "Costs"), ("guide/decision.html", "Before you decide"), ("guide/steps.html", "Steps"), ("guide/taxes.html", "Taxes"),
     ("guide/flagged.html", "Flagged"), ("guide/sources.html", "Sources"),
     ("guide/repo-review.html", "Repo review"), ("guide/archive.html", "Archive"),
 ]
@@ -334,6 +342,10 @@ BOC10, BOC100, BOC400 = at("M01", 10_000), at("M01", 100_000), at("M01", 400_000
 WISE_ROWS = [r for r in LADDERS["M10"] if r["kind"] == "value"]
 WISE_CHEAPER = [r["usd"] for r in WISE_ROWS if r["total"] < at("M01", r["usd"])["total"]]
 BOC_CHEAPER = [r["usd"] for r in WISE_ROWS if r["total"] > at("M01", r["usd"])["total"]]
+DEC_ITEMS = [it for g in DECISION["groups"] for it in g["items"]]
+DEC_OPEN = sum(1 for it in DEC_ITEMS if it["status"] == "open")
+DEC_YOURS = sum(1 for it in DEC_ITEMS if it["status"] == "yours")
+DEC_ANS = sum(1 for it in DEC_ITEMS if it["status"] == "answered")
 N_FULL = sum(1 for s in SOURCES.values() if s["level"] == "full")
 N_EXC = len(SOURCES) - N_FULL
 LAWFUL = [m for m in METHODS if m["cat"] != "prohibited"]
@@ -396,6 +408,7 @@ def build_home():
         ("guide/summary.html", "Executive summary", "The answer, the numbers and the risks on one page."),
         ("guide/methods.html", f"All {len(METHODS)} methods", f"{len(LAWFUL)} lawful routes and {len(BANNED)} prohibited ones, with pros and cons."),
         ("guide/costs.html", "Cost ladder", "Every method at every $10,000 step up to $400,000."),
+        ("guide/decision.html", f"Before you decide ({DEC_OPEN} open)", "The questions to answer first, and how to find each missing fact."),
         ("guide/steps.html", "Step by step", "Exactly what to do for each lawful route."),
         ("guide/taxes.html", "Taxes and penalties", "The 'conversion penalty' broken down: China tax, fines, US tax and filings."),
         ("guide/flagged.html", f"Flagged for Review ({len(FLAGS)})", "Everything left blank because it could not be confirmed, with links to check."),
@@ -466,6 +479,9 @@ def build_summary():
     ]
     risk_tbl = table([("Risk", ""), ("Exposure", ""), ("Official source", "")],
                      [[e(a), e(b), src_links(s)] for a, b, s in risk])
+    dec_list = "".join(
+        f'<li><a href="decision.html#{it["id"]}">{it["id"]}</a> {e(it["q"])} <span class="small mut">— {e(it["missing"])}</span></li>'
+        for it in DEC_ITEMS if it["status"] == "open")
     body = f"""
 <h1>Executive summary</h1>
 <p class="lead">You are a US citizen with CNY in a mainland bank account. This page gives the answer first, then the numbers, then the risks.</p>
@@ -496,6 +512,12 @@ def build_summary():
 
 <h2>Main risks</h2>
 {risk_tbl}
+
+<h2>Before you act</h2>
+<p>{len(DEC_ITEMS)} questions decide which route applies. {DEC_ANS} are answered outright by the rules read, {DEC_YOURS} turn on facts only you can supply, and {DEC_OPEN} have no official answer and are flagged. They are laid out with what is missing and how to find it on <a href="decision.html">Before you decide</a>.</p>
+<ul class="plain">
+{dec_list}
+</ul>
 
 <h2>What is still open</h2>
 <p>{len(FLAGS)} items could not be confirmed on an official page and are left blank. The ones that matter most: whether your bank wants the tax-filing form for salary above USD 50,000 ({flag_links(["F01"], p)}), exchange rates at banks other than Bank of China ({flag_links(["F02", "F03"], p)}), and the US treatment of an exchange gain above USD 200 ({flag_links(["F13"], p)}). See <a href="flagged.html">Flagged for Review</a>.</p>
@@ -585,6 +607,26 @@ def build_costs():
         ["Wise", "Live quote: fee shown, mid-market rate", "Five quotes sampled; nothing interpolated.", src_links(["PR-WISEFEE"])],
     ])
 
+    prev = PRICES.get("previous")
+    drift = ""
+    if prev:
+        pv10 = boc_parts(10_000, D(prev["buy"]) / 100, D(prev["sell"]) / 100)
+        pv400 = boc_parts(400_000, D(prev["buy"]) / 100, D(prev["sell"]) / 100)
+        move = (MID - pv10["mid"]) / pv10["mid"]
+        drift = f"""
+<h2>Which rate the numbers use</h2>
+<p class="small mut">Everything on this site is priced from one reading of the Bank of China board. The board is republished through the day and the
+bank states that the rate at the moment of the transaction applies. Both readings below were taken from the same board page; the second is the one used here.</p>
+{table([("Board reading", ""), ("Buy / sell per 100", ""), ("Midpoint", ""), ("One-way margin", ""),
+        ("$10,000 wire", "num"), ("$400,000 wire", "num"), ("Source", "")], [
+    [f"2026-11-10 {e(prev['time'])} <small>earlier session record</small>", f"{e(prev['buy'])} / {e(prev['sell'])}",
+     f"CNY {pv10['mid']:.4f}", pct(pv10["margin"], 4), usd(q2(pv10["total"])), usd(q2(pv400["total"])), src_links(["CN-FXBOARD"])],
+    [f"{e(PRICES['snapshot'])} <small>used for every figure on this site</small>", f"{e(PRICES['boc_buy_per_100'])} / {e(PRICES['boc_sell_per_100'])}",
+     f"CNY {MID:.4f}", pct(FX_SHARE, 4), usd(q2(BOC10["total"])), usd(q2(BOC400["total"])), src_links(["CN-FXBOARD"])],
+])}
+<p class="small">Between the two readings the midpoint moved {pct(move, 3)} and the one-way margin moved from {pct(pv10['margin'], 4)} to {pct(FX_SHARE, 4)}.
+Fees are capped, so the dollar cost barely moves; the margin, not the fee, is what a rate difference changes.</p>
+"""
     out = [f"""
 <h1>Cost ladder</h1>
 <p class="lead">What it costs to turn CNY into dollars in a US account, at every $10,000 step up to $400,000.</p>
@@ -604,6 +646,7 @@ def build_costs():
 
 <h2>What goes into the price</h2>
 {comp}
+{drift}
 
 <h2>Every method at every amount</h2>
 <p class="mut small">Open a method to see all {len(TARGETS)} steps. "Not available" means a published rule rules it out at that amount. Blank means no official price.</p>
@@ -642,6 +685,60 @@ def build_costs():
                         "" if r["share"] is None else f'{D(r["share"]):.6f}',
                         r["detail"], " ".join(r["flags"]), " ".join(SOURCES[s]["url"] for s in r["src"])])
     write(DATA / "cost-ladder.csv", buf.getvalue())
+
+
+DEC_BADGE = {"answered": ("b-ok", "Answered by the rules"),
+             "yours": ("b-warn", "Needs your facts"),
+             "open": ("b-blank", "Open — flagged")}
+
+
+def build_decision():
+    p = "../"
+    nxt = [[f"<b>{i}</b>", e(s["t"]), src_links(s["src"])] for i, s in enumerate(DECISION["next"], 1)]
+    out = [f"""
+<h1>Before you decide</h1>
+<p class="lead">{e(DECISION["intro"])}</p>
+<div class="kpis">
+<div class="kpi"><b>{DEC_ANS}</b><span>answered by the rules read</span></div>
+<div class="kpi"><b>{DEC_YOURS}</b><span>turn on facts only you can supply</span></div>
+<div class="kpi"><b>{DEC_OPEN}</b><span>no official answer yet &mdash; flagged</span></div>
+<div class="kpi"><b>{len(DEC_ITEMS)}</b><span>questions in total</span></div>
+</div>
+<div class="note"><b>How to use this page.</b> Work down the tables and answer each question for your own case. Where the status is
+<span class="badge b-warn">Needs your facts</span> the rules are settled and the gap is your paperwork. Where it is
+<span class="badge b-blank">Open &mdash; flagged</span> no official page answered it, the number is left blank in every table on this site,
+and the item also appears on the <a href="flagged.html">Flagged for Review</a> page with a link to check.</div>
+<h2>Do these five things first</h2>
+{table([("Step", "num"), ("What to do", ""), ("Official source", "")], nxt)}
+"""]
+
+    for g in DECISION["groups"]:
+        rows = []
+        for it in g["items"]:
+            cls, label = DEC_BADGE[it["status"]]
+            known = e(it["known"]) + " " + src_links(it["src"])
+            if it.get("computed") == "wise":
+                known += f' <span class="small">{e(wise_sentence())}</span>'
+            fl = f'<br>{flag_links(it["flags"], p)}' if it["flags"] else ""
+            rows.append([f'<b id="{it["id"]}">{it["id"]}</b>', f'<b>{e(it["q"])}</b>', e(it["why"]), known,
+                         e(it["missing"]) + fl, e(it["how"]) + " " + src_links(it["how_src"]),
+                         f'<span class="badge {cls}">{e(label)}</span>'])
+        out.append(f'<h2>{e(g["title"])}</h2>'
+                   + table([("ID", ""), ("Question", ""), ("Why it decides the answer", ""),
+                            ("What the official sources say", ""), ("What is still missing", ""),
+                            ("How to find it", ""), ("Status", "")], rows))
+    out.append(f"""
+<h2>What cannot be settled by research</h2>
+<p>Five things decide this case and none of them is published anywhere: where the money came from, whether the China tax on it is paid and
+provable, whether you are a China tax resident, which US account receives it, and whether your earlier US returns are complete. Until those
+are written down, any route chosen for you would be a guess. The rest of this site prices every route that is lawful once they are known.</p>
+<p class="small mut">Every row above links an official page. Nothing here is inferred: where the rules do not answer a question the cell is
+listed on <a href="flagged.html">Flagged for Review</a> instead of being filled in. Sources were read on {RETRIEVED}; the full text relied on
+is quoted on the <a href="sources.html">Sources</a> page.</p>
+""")
+    write(GUIDE / "decision.html", page("guide/decision.html", "Before you decide",
+          "The questions that must be answered before choosing a way to move CNY out of China, what the official rules say, what is missing and how to find it.",
+          "\n".join(out)))
 
 
 def build_steps():
@@ -745,7 +842,7 @@ def build_sources():
             usedby = ", ".join(sorted(used.get(s["id"], []))) or "tables"
             rows.append([f'<b id="{s["id"]}">{e(s["id"])}</b>',
                          f'<a href="{e(s["url"])}" target="_blank" rel="noopener">{e(s["title"])}</a><small>{e(s["publisher"])}</small>',
-                         e(s["quote"]), lvl, e(usedby)])
+                         e(s["quote"]), lvl + f'<small>{e(s.get("checked", RETRIEVED))}</small>', e(usedby)])
         out.append(f"<h2>{e(g)}</h2>" + table([("ID", ""), ("Official page", ""), ("Text relied on", ""), ("Checked", ""), ("Used by", "")], rows))
     write(GUIDE / "sources.html", page("guide/sources.html", "Sources", "Official sources behind every figure in the China Money guide, with quoted text.", "\n".join(out)))
 
@@ -829,7 +926,7 @@ def build_summary_md():
         f"3. **Cost (Bank of China wire into a Chase account):** {r('M01', 10_000)} at $10,000; {r('M01', 100_000)} at $100,000; {r('M01', 400_000)} at $400,000. {link('CN-FXBOARD')}, {link('CN-BOCTARIFF')}, {link('US-CHASE')}",
         f"4. **{wise_sentence()}** {link('PR-WISEFEE')}",
         f"5. **Prohibited:** splitting, borrowed quotas, money changers, false documents, crypto. Fines up to 30% of the amount, 30%–100% if serious, possible criminal liability. {link('CN-FXREG')}, {link('CN-MEASURES')}, {link('CN-CRYPTO')}",
-        f"6. **US side:** worldwide income is taxed when earned, with credit for China tax; the wire is not taxed again. FBAR above $10,000 (penalty up to $16,536 non-willful, $165,353 willful); Form 8938 above $50,000/$75,000; exchange gain ignored up to $200. {link('US-ABROAD')}, {link('US-FTC')}, {link('US-8938FBAR')}, {link('US-FBARPEN')}, {link('US-988')}",
+        f"6. **US side:** worldwide income is taxed when earned, with credit for China tax; the wire is not taxed again. FBAR above $10,000 (penalty up to $16,536 non-willful, $165,353 willful); Form 8938 above $50,000/$75,000 if you live in the US, or $200,000/$300,000 if you live outside it; exchange gain ignored up to $200. {link('US-ABROAD')}, {link('US-FTC')}, {link('US-8938FBAR')}, {link('US-FBARPEN')}, {link('US-988')}",
         "",
         "## Cost at selected amounts",
         "",
@@ -841,6 +938,16 @@ def build_summary_md():
     lines += [
         "",
         f"All {len(METHODS)} methods at all {len(TARGETS)} amounts: `guide/costs.html` and `guide/data/cost-ladder.csv`.",
+        "",
+        "## What has to be answered before you act",
+        "",
+        f"{len(DEC_ITEMS)} questions are laid out on `guide/decision.html` with what the rules say, what is missing and how to find it. "
+        f"{DEC_OPEN} of them have no official answer yet (flagged); {DEC_YOURS} turn on facts only you can supply.",
+        "",
+    ]
+    for it in [i for i in DEC_ITEMS if i["status"] != "answered"][:6]:
+        lines.append(f"- **{it['id']} {it['q']}** — {it['missing']} ({', '.join(link(x) for x in it['how_src'])})")
+    lines += [
         "",
         "## Open points",
         "",
@@ -859,6 +966,7 @@ def build():
     build_summary()
     build_methods()
     build_costs()
+    build_decision()
     build_steps()
     build_taxes()
     build_flagged()

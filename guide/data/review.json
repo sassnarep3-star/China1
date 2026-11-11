@@ -40,7 +40,7 @@
    "label": "Uses a 0.42% conversion spread",
    "pattern": "0\\.42\\s?%",
    "ok_if": "round-trip|round trip|two-way|both ways|twice|superseded|not the cost|one-way",
-   "verdict": "0.42% is a full buy-to-sell spread. The one-way cost against the midpoint on the 2026-11-10 board is 0.2094%. Lines that present 0.42% as the cost of one conversion overstate it.",
+   "verdict": "0.42% is a full buy-to-sell spread. The one-way cost against the midpoint on the 2026-11-11 board is 0.2100%. Lines that present 0.42% as the cost of one conversion overstate it.",
    "src": [
     "CN-FXBOARD"
    ]
@@ -70,7 +70,7 @@
    "label": "Hard-codes a CNY/USD rate snapshot",
    "pattern": "\\b66[5-9]\\.\\d\\d\\b|\\b6\\.6[5-9]\\d\\d\\b",
    "ok_if": "",
-   "verdict": "Dated observation. Archived editions use different readings (669.29, 669.03, 668.66 and others); this guide uses 668.51 sell / 665.71 buy from 2026-11-10 17:39:58. Figures from different snapshots must not be mixed.",
+   "verdict": "Dated observation. Archived editions use different readings (669.29, 669.03, 668.66 and others); this guide uses 669.11 sell / 666.30 buy from 2026-11-11 10:25:02. Figures from different snapshots must not be mixed.",
    "src": [
     "CN-FXBOARD"
    ]
@@ -132,7 +132,7 @@
    "label": "Gives a percentage fee for Wise",
    "pattern": "Wise.{0,80}\\d(\\.\\d+)?\\s?%",
    "ok_if": "",
-   "verdict": "Wise publishes no fixed tariff for CNY; any percentage is a dated quote. Sampled quotes on 2026-11-10 are in this guide's cost ladder.",
+   "verdict": "Wise publishes no fixed tariff for CNY; any percentage is a dated quote. The sampled quotes collected on 2026-11-11 are in this guide's cost ladder.",
    "src": [
     "PR-WISEFEE"
    ]
@@ -193,7 +193,7 @@
   {
    "where": "assets/build.py, data/costs.json, data/channels.json",
    "finding": "Present 0.42% as the conversion cost and use the 669.29 board reading of 2026-11-08.",
-   "fix": "This guide uses the one-way margin against the midpoint and a dated 2026-11-10 reading.",
+   "fix": "This guide uses the one-way margin against the midpoint and a dated 2026-11-11 reading.",
    "src": [
     "CN-FXBOARD"
    ]
@@ -214,6 +214,55 @@
     "CN-ART59",
     "CN-PR"
    ]
+  },
+  {
+   "where": "guide/build/build.py (executive summary generator), before this session",
+   "finding": "The generated summary stated the Form 8938 thresholds as $50,000/$75,000 only. The IRS comparison page gives a separate, higher pair for specified individuals living outside the United States ($200,000/$300,000 unmarried; $400,000/$600,000 jointly), which is the pair that applies to a US citizen living in China.",
+   "fix": "The summary now gives both pairs and says which depends on where the filer lives. The taxes page already carried both and was correct.",
+   "src": [
+    "US-8938FBAR"
+   ]
+  },
+  {
+   "where": "guide/data/methods.json, before this session",
+   "finding": "Two route descriptions hard-coded the FX margin as 0.2094%. That figure belongs to the 2026-11-10 board (665.71 / 668.51). Re-read on 2026-11-11 (666.3 / 669.11) the one-way margin against the selling rate is 0.2100%, so the prose had drifted from the tables and from the source.",
+   "fix": "Both descriptions now state 0.2100%. A rate-reading table was added to the cost ladder showing both board readings and what each implies, so the dependence is visible rather than buried in prose.",
+   "src": [
+    "CN-FXBOARD"
+   ]
+  },
+  {
+   "where": "guide/data/flagged.json F06 and F20, before this session",
+   "finding": "After the rate and quote refresh, the two flags still described 'five live quotes ... on 2026-11-10' and 'one board reading (2026-11-10 17:39:58)'. Left unchanged they would have described data that no longer existed.",
+   "fix": "F06 now names the four quotes collected on 2026-11-11 with their timestamps; F20 names the 2026-11-11 10:25:02 reading, its figures, and the fact that the board is republished through the day.",
+   "src": [
+    "PR-WISEFEE",
+    "CN-FXBOARD"
+   ]
+  },
+  {
+   "where": "guide/data/flagged.json F05 (US receiving banks other than Chase)",
+   "finding": "The flag referred to a Schwab figure 'seen only in a search excerpt'. That is a statement about a search result, not about the bank's own page, and no Schwab page was opened in either session.",
+   "fix": "Kept flagged and narrowed: only Chase's own page has been read, and every other US bank's incoming-wire fee stays blank.",
+   "src": [
+    "US-CHASE"
+   ]
+  },
+  {
+   "where": "guide/data/sources.json US-CBP",
+   "finding": "The CBP page cited for the $10,000 border-reporting rule now resolves to a new address (…/travel/international-visitors/money-monetary-instruments). The old URL redirected, so the link worked but pointed at a redirect rather than the page.",
+   "fix": "The register now cites the canonical URL, and the quoted text was re-read there on 2026-11-11 (FinCEN Form 105, family/group aggregation, forfeiture risk).",
+   "src": [
+    "US-CBP"
+   ]
+  },
+  {
+   "where": "guide/data/sources.json PR-HSBC",
+   "finding": "Checked against the PDF rather than the summary: items 2.2.4.1 (telegraphic transfer, 0.1%, minimum CNY 100, maximum CNY 500) and 2.2.4.2 (cable fee CNY 120) are as cited, and the CNY 200 pre-collection for full-amount delivery is in note 1 to 2.2.4.1. The same PDF also prices HSBC Global Transfer to your own HSBC account abroad as free on Premier and CNY 145 on Advance — a cheaper transfer leg than any wire, which the guide had not mentioned.",
+   "fix": "Quote updated to the verified items; the Global Transfer leg added to route M02 with its own citation. Its conversion rate is still unpublished, so the route still has no all-in total: F02, plus new F23 for the currency question.",
+   "src": [
+    "PR-HSBC"
+   ]
   }
  ],
  "process": [
@@ -222,7 +271,7 @@
   "While this session held the final-integration claim, Editions K and L each edited shared files (integration/build.py, the root portal, README.md and EXECUTIVE_SUMMARY.md) to register themselves. Resolved without loss: their links live on in legacy-portal.html and the Archive page, and their summary text is kept verbatim in guide/archive/.",
   "Two sessions claimed the same folder name (edition-m) within two minutes of each other; one moved to edition-abd04d5f. Noted by that session and repeated here.",
   "Fifteen parallel editions and components repeat the same research with different numbers. They are kept in place and linked only from the Archive page.",
-  "Independent cross-check: Editions K, L and abd04d5f, built in parallel from the same Bank of China board and tariff, reach the same wire arithmetic as this guide. They express the FX margin against the midpoint (0.2099%) where this guide expresses it against the selling rate (0.2094%), and they leave full-amount delivery out of the total.",
+  "Independent cross-check: Editions K, L and abd04d5f, built in parallel from the same Bank of China board and tariff, reach the same wire arithmetic as this guide. They express the FX margin against the midpoint where this guide expresses it against the selling rate, a difference of a few hundredths of a percentage point, and they leave full-amount delivery out of the total.",
   "Archived pages are not re-verified by this session beyond the rule scan below and their own build scripts, which all pass."
  ]
 }
