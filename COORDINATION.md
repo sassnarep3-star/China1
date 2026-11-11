@@ -1742,3 +1742,28 @@ Appended after merge:
 - **Cross-check worth noting:** Edition K, built independently and merged first, publishes the same measured half-spread (0.20986% ≈ 0.2099%) and the same known totals (USD 68.42 / 286.19 / 915.77). Two sessions reaching identical figures from the same BOC board is a useful consistency signal. The one substantive divergence is interpretive, not arithmetic: Edition K states the USD 50,000 annual total is an "ID-only convenience tier" that does not cap an overseas individual, whereas Edition L publishes both limbs of Huifa [2007] No. 1 Art. 2 and flags the operational question as F01/F02 rather than resolving it. Readers are pointed to the primary text on both pages.
 - **Pages:** build for commit `cc0c711` reported `built` (2026-11-10T10:00:20Z) and the `pages-build-deployment` run completed `success`. Live check: `https://sassnarep3-star.github.io/China1/edition-l/site/index.html` returns the rendered dashboard with the 0.2099% / USD 68.42 / USD 915.77 KPI cards and the sourced milestone table. Portal `index.html` links Edition L in the nav, the first card, the notice and the archive.
 - **Verification at merge:** `edition-l/build/verify.py` PASS (11 pages, 345 sourced data rows, 1,200 recomputed cells, 196 local links/anchors, deterministic); `integration/verify.py` PASS; `assets/check.py` OK; `scripts/verify.py` PASS; edition-d 19 checks, edition-i 1,868, edition-j 1,936, edition-k PASS.
+
+# Session board — arena-9a3d6c96 (2026-11-11)
+
+Branch: `arena/9a3d6c96-china1` (fixed by Arena; the requested `session-<id>/<task>` naming
+cannot be used — same logged deviation as every earlier session). Claimed 2026-11-11 before
+any task work; this block is appended at EOF so it cannot collide with earlier boards.
+
+**Board read at claim time.** `main` head is `272da23` (PR #59). No other session has a
+branch on the remote (`git branch -a` shows only `main` and this branch) and no open pull
+requests. The newest commit anywhere is 2026-11-10 10:24 UTC, i.e. >16 h before this claim,
+so every earlier claim on this board is stale under the 60-minute rule. Nothing is taken
+over: all prior editions are already merged on `main` and are preserved.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| N1 Independent re-verification of the live `guide/` against freshly re-fetched official sources (today's readings), with a per-source result | in progress | arena-9a3d6c96 | `verify-9a3d6c96/**`, `guide/audit/**` |
+| N2 Refresh the dated inputs: Bank of China board and the five Wise quotes re-collected 2026-11-11; every derived figure rebuilt | in progress | arena-9a3d6c96 | `guide/data/prices.json`, `guide/data/sources.json` (CN-FXBOARD, PR-WISEFEE), `guide/data/flagged.json` (F06, F20), `guide/data/review.json` (rate sentences) |
+| N3 "Before you decide": the decision page the request asks for — questions, what the rules already answer, what is missing, how to find it out | in progress | arena-9a3d6c96 | `guide/data/questions.json`, `guide/decision.html`, `guide/build/build.py` |
+| N4 Extend the verifier to cover N3, then rebuild and re-run every checker | in progress | arena-9a3d6c96 | `guide/build/verify.py` |
+| N5 Final integration: landing page, `EXECUTIVE_SUMMARY.md`, `README.md`, `REQUIREMENTS.md`, PR, merge, Pages confirmation | not yet claimed — claimed in a separate entry below once N1–N4 pass | arena-9a3d6c96 | shared outputs, listed at claim time |
+
+Rules this session applies: no figure is copied from an archived edition; every value is read
+on the official page in this session or left blank and flagged. The user has supplied no
+personal facts (source of funds, residency, tax history, destination bank), so those stay
+unknown and are turned into questions on the decision page instead of assumptions.
