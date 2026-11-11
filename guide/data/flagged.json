@@ -232,13 +232,25 @@
     {
       "id": "F23",
       "topic": "Tax summary and historical rate snapshot require individual review",
-      "gap": "An earlier guide summary implied that paying China tax eliminates other tax, that a foreign tax credit is automatic and that all exchange gains up to USD 200 are ignored. These statements require qualifications. The cost ladder uses a November 10 historical rate, not a current transaction quote.",
+      "gap": "An earlier guide summary implied that paying China tax eliminates other tax, that a foreign tax credit is automatic and that all exchange gains up to USD 200 are ignored. These statements require qualifications. The cost ladder uses a November 11 historical rate, not a current transaction quote.",
       "action": "Have a US tax professional assess foreign-currency gain, credit eligibility and filing thresholds; obtain an executable bank quote and confirm the source-of-funds route before acting.",
       "src": [
         "US-988",
         "US-FTC",
         "US-8938FBAR",
         "CN-FXBOARD"
+      ]
+    },
+    {
+      "id": "F24",
+      "topic": "Cheapest route and incomplete Wise comparison",
+      "gap": "Historical Wise samples omit any receiving-bank fee; the BOC example includes a Chase incoming wire fee. They were not contemporaneous executable quotes for this user. The cheapest complete route is unverified.",
+      "action": "Obtain simultaneous executable quotes for the same CNY amount and destination, including sender, intermediary and receiver charges, and confirm eligibility and tax treatment.",
+      "src": [
+        "PR-WISE",
+        "PR-WISEFEE",
+        "CN-BOCTARIFF",
+        "US-CHASE"
       ]
     }
   ]

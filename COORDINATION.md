@@ -16,6 +16,26 @@ The dashboard is already deployed. This session will not label inherited source 
 - Request to guide integration owner: correct F23's November 10 snapshot wording and consider linking this independent audit in navigation. Existing guide files deliberately not edited.
 - Initial pull of current remote branch failed because branch did not exist yet. Pulled/rebased `origin/main`, then pushed only fixed current branch; no conflict or other session work discarded.
 
+<!-- BEGIN session arena-0f7c9cf5 -->
+# Session board — arena-0f7c9cf5 (2026-11-11)
+
+Branch fixed by Arena: `arena/0f7c9cf5-china1`. Claim at 12:49 UTC. PR #69 merged only the claim of `arena-dc298e7a`; its branch's last commit was at 07:42 UTC, over 60 minutes ago. Under the requested handoff rule, take over its unfinished canonical-guide and final-integration scopes; preserve its board entry and leave its branch untouched. Older unfinished claims on these scopes were already identified as stale in its board. No new branch can be created under the Arena restriction.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| Independent targeted source audit of cost comparisons and material decision risks; record limitations and evidence | done | arena-0f7c9cf5 | `audit-0f7c9cf5/**` |
+| Integrate verified corrections / flags, rebuild and test | done | arena-0f7c9cf5 | `guide/data/**`, `guide/build/**`, generated `guide/*.html`, `index.html`, `EXECUTIVE_SUMMARY.md`, `README.md`, `REQUIREMENTS.md` |
+| PR, merge and Pages confirmation | in progress | arena-0f7c9cf5 | this board block |
+
+The inherited guide and historic claims are not independently certified by this claim; gaps that cannot be verified remain explicitly flagged. This handoff does not touch other sessions' branches or archived scopes.
+
+Targeted audit: `audit-0f7c9cf5/REVIEW.md` records source links, review scope and remaining limitations. Compared official-source search excerpts of [Wise CNY guide](https://wise.com/help/articles/2955298/guide-to-cny-transfers), [SAFE Q&A](https://www.safe.gov.cn/tianjin/2026/0713/3088.html), [IRS FX guidance](https://www.irs.gov/pub/fatca/int_practice_units/fcu_cu_c_18_2_1_04.pdf), [IRC §988](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm), [IRS credit](https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit) and [BOC board](https://www.boc.cn/sourcedb/whpj/). Corrected the decision page's categorical tax and penalty assertions and stale rates; incomplete Wise/BOC price comparison now blank and flagged F24. Current quotes, personal eligibility and full line-by-line verification of inherited content remain unverified; no such certification is claimed.
+
+Rebase conflict: main advanced through PR #70 while this session worked. The board had simultaneous top insertions; preserved both complete blocks and all files from PR #70. Integrated its independent review links on the Flagged page, corrected the requested F23 date, and reran the combined checks.
+
+Validation: `python3 guide/build/build.py && python3 guide/build/verify.py`, `python3 integration/verify.py`, and `python3 assets/check.py` pass. 11 canonical pages, 1,058 rows with official links, 760 ladder rows, 370 recomputed values, 24 flags; 281 HTML files / 22,654 local file references, no broken local links. These structural checks do not verify source support or external link uptime. Regression checks were added for the decision-critical qualifications.
+<!-- END session arena-0f7c9cf5 -->
+
 <!-- BEGIN session arena-fe71e6d5: unique insertion at top, 2026-11-11 -->
 # Session board — arena-fe71e6d5 (2026-11-11)
 

@@ -335,8 +335,6 @@ def at(mid, n):
 # Facts derived from the ladders, used in prose so text can never drift from the tables.
 BOC10, BOC100, BOC400 = at("M01", 10_000), at("M01", 100_000), at("M01", 400_000)
 WISE_ROWS = [r for r in LADDERS["M10"] if r["kind"] == "value"]
-WISE_CHEAPER = [r["usd"] for r in WISE_ROWS if r["total"] < at("M01", r["usd"])["total"]]
-BOC_CHEAPER = [r["usd"] for r in WISE_ROWS if r["total"] > at("M01", r["usd"])["total"]]
 RECHECKED = sum(1 for s in SOURCES.values() if s.get("checked") == RETRIEVED)
 N_FULL = sum(1 for s in SOURCES.values() if s["level"] == "full")
 N_EXC = len(SOURCES) - N_FULL
@@ -348,10 +346,8 @@ def wise_sentence():
     lo, hi = WISE_ROWS[0], WISE_ROWS[-1]
     s = (f"Wise quoted {usd(lo['total'])} ({pct(lo['share'])}) at {usd(lo['usd'], False)} and "
          f"{usd(hi['total'])} ({pct(hi['share'])}) at {usd(hi['usd'], False)}")
-    if WISE_CHEAPER and BOC_CHEAPER:
-        s += (f"; it was cheaper than the Bank of China wire at {' and '.join(usd(n, False) for n in WISE_CHEAPER)}, "
-              f"and dearer from {usd(min(BOC_CHEAPER), False)}")
-    return s + ". Wise figures exclude any fee of the receiving bank. Above CNY 300,000 per transfer Wise returns no quote."
+    return s + (". These are historical modelled shortfalls, not executable or complete quotes: Wise figures exclude any receiving-bank fee. "
+                "A cheapest route cannot be determined. China bank-app transfers are limited to CNY 300,000 each; other channels have different limits.")
 
 
 # --------------------------------------------------------------------------
@@ -562,21 +558,17 @@ def build_costs():
         b, w, h = at("M01", n), at("M10", n), at("M02", n)
         wcell = f'<b>{usd(w["total"])}</b><small>{pct(w["share"])}</small>' if w["kind"] == "value" else blank(["F06"], p)
         hs = h["detail"].split("(≈ ")[1].split(" at")[0]
-        best = ""
-        if w["kind"] == "value" and w["total"] < b["total"]:
-            best = "Wise"
-        else:
-            best = "Bank of China"
+        best = blank(["F24"], p)
         rows.append([
             f'<b>{usd(n, False)}</b>',
             f'<b>{usd(b["total"])}</b><small>{pct(b["share"])}</small>',
             wcell,
             f'{e(hs)}<small>bank fees only · FX {flag_links(["F02"], p)}</small>',
-            e(best),
+            best,
             src_links(["CN-BOCTARIFF", "PR-WISEFEE", "PR-HSBC"])])
         classes.append("")
     main_tbl = table([("Amount", "num"), ("Bank of China wire", "num"), ("Wise", "num"), ("HSBC China", "num"),
-                      ("Cheapest fully priced", ""), ("Official source", "")], rows, cls="tight", row_classes=classes)
+                      ("Cheapest route (unverified)", ""), ("Official source", "")], rows, cls="tight", row_classes=classes)
 
     comp = table([("Component", ""), ("Figure", ""), ("How it is used", ""), ("Official source", "")], [
         ["Bank of China selling rate", f"CNY {SELL:.4f} per USD", "Rate at which your CNY buys USD (telegraphic and cash selling rates were the same).", src_links(["CN-FXBOARD"])],
@@ -587,7 +579,7 @@ def build_costs():
         ["Full-amount delivery", "USD 25 (USD 15 if the receiving bank has an account with BOC New York)", "Replaces deductions by correspondent banks. USD 25 is used.", src_links(["CN-BOCTARIFF"])],
         ["Receiving bank", "Chase: USD 15 per incoming wire", "Other US banks: " + blank(["F05"], p), src_links(["US-CHASE"])],
         ["HSBC China commission and cable", "0.1%, minimum CNY 100, maximum CNY 500; cable CNY 120; CNY 200 pre-collected for full-amount delivery", "Premier and Advance. FX rate: " + blank(["F02"], p), src_links(["PR-HSBC"])],
-        ["Wise", "Live quote: fee shown, mid-market rate", "Five quotes sampled; nothing interpolated.", src_links(["PR-WISEFEE"])],
+        ["Wise", "Historical comparison quotes: fee shown", "Five samples; no interpolation. Receiving fees excluded; not a complete current quote.", src_links(["PR-WISEFEE"])],
     ])
 
     out = [f"""
@@ -719,8 +711,10 @@ def build_flagged():
     exc = [[f"<b>{e(s['id'])}</b>", e(s["title"]), e(s["quote"]), src_links([s["id"]])] for s in SOURCES.values() if s["level"] == "excerpt"]
     body = f"""
 <h1>Flagged for Review</h1>
-<p class="lead">{len(FLAGS)} points that could not be confirmed on an official page. Each is left blank wherever it would appear, and none was filled in by inference. They do not change the main answer, but check the ones that touch your case.</p>
+<p class="lead">{len(FLAGS)} unresolved questions, assumptions and source limitations. Some prevent a personalized decision or complete cost estimate; blank values are not zero. Review all items that touch your case.</p>
 {table([("ID", ""), ("Topic", ""), ("What is missing", ""), ("What to do", ""), ("Where to check", "")], rows)}
+
+<p>Additional independent reviews: <a href="../audit-edbb7990/index.html">source-access and dated-quote audit</a> and <a href="../quality-713a97b7/index.html">cost and tax quality review</a>. They describe earlier snapshots and may include findings corrected since then.</p>
 
 <h2>Sources seen only as an excerpt</h2>
 <p class="mut small">The official page exists, but this session saw its text only in a search-engine excerpt. Figures from these are treated as unverified.</p>
@@ -772,7 +766,7 @@ def build_review():
     proc = "".join(f"<li>{e(x)}</li>" for x in REVIEW["process"])
     body = f"""
 <h1>Repository review</h1>
-<p class="lead">The repository holds {len(SCAN["areas"])} earlier editions and components of this research. Each archived line was checked against the official sources by rule, and the irregularities are listed here with the link to check them against.</p>
+<p class="lead">The repository holds {len(SCAN["areas"])} earlier editions and components of this research. An automated text scan applied a small set of rules to archived text. It does not substantively verify every line against its official source; matches and selected irregularities are listed for manual review.</p>
 
 <div class="kpis">
 <div class="kpi"><b>{SCAN["total_files"]:,}</b><span>archived files read</span></div>
@@ -793,7 +787,7 @@ def build_review():
 <ul class="plain">{proc}</ul>
 
 <h2>Audit of the 2026-11-11 refresh</h2>
-<p>The priced inputs were re-read and every source re-checked on {RETRIEVED}. The working record — which source was re-opened, what the re-read found, and the ten irregularities that came out of it — is in <a href="{REPO_URL}/blob/main/edition-db079cfc/verification/findings.md">edition-db079cfc/verification/findings.md</a> with the per-source table in <a href="{REPO_URL}/blob/main/edition-db079cfc/verification/source-recheck.md">source-recheck.md</a>.</p>
+<p>The inherited research records a dated recheck of priced inputs and sources; the per-source record distinguishes pages re-opened from older checks. The working record — which source was re-opened, what the re-read found, and the irregularities that came out of it — is in <a href="{REPO_URL}/blob/main/edition-db079cfc/verification/findings.md">edition-db079cfc/verification/findings.md</a> with the per-source table in <a href="{REPO_URL}/blob/main/edition-db079cfc/verification/source-recheck.md">source-recheck.md</a>.</p>
 
 <h2>What was read</h2>
 <ul class="plain small">{areas}</ul>
@@ -829,7 +823,7 @@ def build_questions():
             badge = '<span class="badge b-bad">Do not use</span>'
             rank = "✕"
         else:
-            badge = '<span class="badge b-ok">Rank ' + e(str(r["rank"])) + '</span>'
+            badge = '<span class="badge b-warn">Option ' + e(str(r["rank"])) + '</span>'
             rank = e(str(r["rank"]))
         best_routes.append([
             badge,
@@ -839,7 +833,7 @@ def build_questions():
             src_links(r["src"])
         ])
     # Actually we want rank, route, why, when, source - but simpler table
-    best_tbl = table([("Rank", ""), ("Route to use", ""), ("Why this rank", ""), ("When it applies", ""), ("Official source", "")], best_routes)
+    best_tbl = table([("Option", ""), ("Possible route", ""), ("Considerations", ""), ("When it applies", ""), ("Official source", "")], best_routes)
 
     # Known facts table
     known_rows = []
@@ -882,17 +876,17 @@ def build_questions():
 <h2>Best way to get money out with the least tax penalty (from official sources)</h2>
 <p>{e(best["preamble"])}</p>
 {best_tbl}
-<div class="note"><b>Why no universal percentage?</b> The rules read state that tax is on the income, not on the conversion. China tax (3%–45% salary, 20% gains/dividends) and US tax (worldwide, less China credit) apply in the year the money was earned — not when it is wired. If the income was already taxed, converting adds only the bank charges above. <span class="srcs"><a class="src" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" target="_blank" rel="noopener">IIT Law</a><a class="src" href="https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad" target="_blank" rel="noopener">IRS citizens abroad</a></span></div>
+<div class="note"><b>Why no universal percentage?</b> Tax depends on the source of funds, tax residence, reporting history and other facts. A US foreign-currency gain may need separate analysis, and any foreign tax credit is conditional. Prior payment of China tax does not establish that only bank charges remain. {src_links(["CN-IIT", "US-ABROAD", "US-FTC", "US-988"])} {flag_links(["F23"], pfx)}</div>
 
 <h2>What we already know — and what it decides</h2>
-<p>These ten points are confirmed on the official page listed. They alone are enough to eliminate the prohibited routes and to price the lawful wire.</p>
+<p>These points are general research, not a determination of your eligibility, taxes or executable costs.</p>
 {known_tbl}
 
 <h2>16 questions that must be answered before any decision</h2>
 <p class="mut small">Ordered from "who you are" → "where the money came from" → "tax paid" → "bank" → "US filing". Every row links to the rule that makes the question mandatory. <span class="badge b-blank">Flag</span> means the answer was left blank in the guide and is listed on Flagged for Review.</p>
 {q_tbl}
 
-<div class="danger"><b>Cannot be answered from the account balance alone.</b> Two people with USD 400,000 in the same bank will get different answers to Q02–Q05, Q07 and Q10–Q13 — one may wire in one step, the other must first pay tax and obtain SAFE approval. No estimate in the guide assumes your answers.</div>
+<div class="danger"><b>Cannot be answered from the account balance alone.</b> Two people with USD 400,000 in the same bank will get different answers to Q02–Q05, Q07 and Q10–Q13 — one may wire in one step, the other may need a different procedure or approval. No estimate in the guide determines your eligibility.</div>
 
 <h2>How to discover the missing information — 8 concrete steps</h2>
 <p>Do these in order. Each step is a visit, call or download that replaces a blank with a document the bank will accept.</p>
@@ -900,10 +894,10 @@ def build_questions():
 
 <h2>What can be answered now vs. what needs your records</h2>
 {table([("Can be answered now (no personal data needed)", ""), ("Needs your records before a decision", ""), ("Official source", "")], [
-    ["<ul><li>The conversion itself is not a separate tax; tax is on the income if untaxed.</li><li>The lawful bank wire needs passport + amount proof + tax voucher; no stated cap for passport holders.</li><li>The USD 50,000 quota is for domestic/PR-card holders, not for a passport holder.</li><li>Prohibited routes carry 30%–100% fines; they are not cheaper alternatives.</li><li>Cash limits (CNY 20,000 / USD 10,000) make cash impossible for large sums.</li><li>US worldwide tax + FBAR/8938 thresholds and penalties are fixed.</li></ul>", "<ul><li>Which of the 19 methods actually applies to your money (Q02–Q07).</li><li>Whether the China tax filing form is required above USD 50,000 (Q05).</li><li>Your bank's single-wire limit and its exact selling rate on the day (Q08, F02/F03).</li><li>Whether Wise eligibility and caps cover your amount (Q09).</li><li>Your prior US reporting and exposure to FBAR/8938/3520 and exchange gain (Q10–Q13).</li><li>The final all-in cost for your amount at that bank on that day — use the cost ladder as a cross-check.</li></ul>", src_links(["CN-ART59", "CN-FXREG", "US-8938FBAR"])],
+    ["<ul><li>Bank evidence requirements depend on the funds and the route.</li><li>The cited SAFE work-income rule requires identity and source evidence including tax documents; it does not establish eligibility for all assets.</li><li>Do not evade review or use false documents.</li><li>US currency gains, credits, reporting thresholds and penalties depend on the circumstances.</li></ul>", "<ul><li>Which of the 19 methods actually applies to your money (Q02–Q07).</li><li>Whether the China tax filing form is required above USD 50,000 (Q05).</li><li>Your bank's single-wire limit and its exact selling rate on the day (Q08, F02/F03).</li><li>Whether Wise eligibility and caps cover your amount (Q09).</li><li>Your prior US reporting and exposure to FBAR/8938/3520 and exchange gain (Q10–Q13).</li><li>The final all-in cost for your amount at that bank on that day — use the cost ladder as a cross-check.</li></ul>", src_links(["CN-ART59", "CN-FXREG", "US-8938FBAR", "US-988"])],
 ])}
 
-<div class="card answer"><h2>Minimal viable next action (15 minutes)</h2><p>Open your bank app, export the 36-month statement and the current CNY balance. That single download answers Q02 and Q03 and unlocks every other estimate. If you do one thing, do step 1.</p></div>
+<div class="card answer"><h2>Minimal viable next action (15 minutes)</h2><p>Open your bank app, export the 36-month statement and the current CNY balance. The statement may help identify the balance and source of funds; it may not answer either question on its own. If you do one thing, do step 1.</p></div>
 
 <p class="mut small">Every row on this page carries an official source link per the verification rule. A blank or a flag means the value depends on your own documents — it was never estimated. Bring the sources and your papers to the bank (12366 for China tax, a US preparer for the US side) before a large transfer.</p>
 """ 
@@ -945,10 +939,10 @@ def build_summary_md():
         "",
         "## Open points",
         "",
-        f"{len(FLAGS)} items are left blank and listed on `guide/flagged.html`; none blocks the answer above. Most relevant:",
+        f"{len(FLAGS)} items are listed on `guide/flagged.html`; they include issues that prevent a personalized decision. Most relevant:",
         "",
     ]
-    for fid in ("F01", "F02", "F03", "F13", "F22"):
+    for fid in ("F01", "F02", "F03", "F13", "F22", "F23", "F24"):
         f = FLAGS[fid]
         lines.append(f"- **{fid} {f['topic']}** — {f['gap']} ({', '.join(link(s) for s in f['src'])})")
     lines += ["", "Research guide, not legal or tax advice.", ""]
