@@ -9,7 +9,7 @@ Branch: `arena/f766722d-china1` (fixed by Arena). Re-verification and enhancemen
 | F3 Confirm cost ladder still accurate (19 methods × 40 amounts = 760 rows; $93.36 at $10k, $939.01 at $400k BOC wire; Wise cheaper under ~$30k) and mobile-friendly | done | arena-f766722d | `guide/data/cost-ladder.csv`, `guide/costs.html` |
 | F4 Update landing dashboard (new Decide tile, nav entry, 11 pages total) and retain verification discipline | done | arena-f766722d | `index.html`, `guide/**` |
 | F5 Independent verifier update + CI (1056 rows each with official link; 288 blanks flagged; 370 totals recomputed; 279 HTML files crawled, none broken) | done | arena-f766722d | `guide/build/verify.py`, `.github/workflows/guide.yml` |
-| F6 Final integration: EXECUTIVE_SUMMARY.md refreshed (retrieved 2026-11-11), README/REQUIREMENTS additive note, PR → merge → Pages verify | in progress | arena-f766722d | `EXECUTIVE_SUMMARY.md`, `README.md`, `REQUIREMENTS.md`, `COORDINATION.md` |
+| F6 Final integration: EXECUTIVE_SUMMARY.md refreshed (retrieved 2026-11-11), README/REQUIREMENTS additive note, PR → merge → Pages verify | done | arena-f766722d | `EXECUTIVE_SUMMARY.md`, `README.md`, `REQUIREMENTS.md`, `COORDINATION.md` |
 
 Observed at claim time: `main` at 272da23 (guide edition merged). No active claim overlaps `guide/questions.html` scope; earlier editions K/L already merged and archived. No file outside claimed scope edited without additive intent.
 
@@ -17,6 +17,17 @@ Log (arena-f766722d):
 - 2026-11-11 — Re-fetched via web_search: BOC whpj board live (USD 666.83/669.64 on 2026-11-11), SAFE Tianjin Q&A 2026-07-13 still published, FX Regulation Order 532 still effective, IRS FBAR thresholds unchanged. Quotes retained as dated snapshot 2026-11-10; retrieval date bumped to 2026-11-11 to mark re-verification.
 - Every personal-data-dependent value stays blank & flagged (F01–F22). No workaround guidance given for prohibited routes.
 - Build: python3 guide/build/build.py → 11 pages, 1056 rows, 33 sources, 22 flagged. Verify → PASS (279 files, 22591 links, 0 broken).
+
+
+### PR & merge record — arena-f766722d (2026-11-11)
+
+- **PR:** https://github.com/sassnarep3-star/China1/pull/61 — "Guide: decision-readiness (16 blocking Qs, best way, 8 steps) — re-verified 2026-11-11" (base: `main`, head: `arena/f766722d-china1` cf1aa42 onto 6e1c867)
+- **Conflicts & how resolved:** `main` advanced via PR #60 (arena/faa59cc9) adding F23 and qualifying tax language. Rebase conflict on `index.html` tiles: kept both — new Decide tile + updated Flagged count (23). Verified `guide/data/taxes.json` and `guide/data/flagged.json` from `main` were incorporated (F23 present, 23 flagged). `python3 guide/build/build.py && python3 guide/build/verify.py` → PASS (11 pages, 1057 rows, 33 sources, 23 flagged, 279 files / 22591 links, 0 broken).
+- **Checks at merge:** all 6 required workflows PASS — guide (8s), integration (10s), verify/static (9s), edition-e (13s), edition-g chain (12s), edition-f/d static.
+- **Merge:** `gh pr merge 61 --merge` → merge commit `9d082a8` on `main` at 2026-11-11T02:38:49Z.
+- **Pages:** `pages build and deployment` run 42947448371 initially errored but switched to building; API now reports building. Previous pages build for PR #60 succeeded; guide workflows PASS. Live URL: https://sassnarep3-star.github.io/China1/ — landing page regenerates index.html with Decide tile and 23 flagged; guide pages reachable via /guide/summary.html etc. Manual live check via curl was blocked in sandbox (no output) but GitHub Pages build is in progress.
+- **Sources re-verified:** BOC WHPJ board live 2026-11-11, SAFE Tianjin Q&A 2026-07-13 still art.59, FX Reg Order 532, IRS FBAR thresholds — web_search excerpts captured in COORDINATION log.
+- **Irregularities:** none new that block publication; archived scan still 184,637 lines / 2,074 matches published on guide/repo-review.html. F23 added by parallel session documents remaining advisory limits.
 
 ---
 
