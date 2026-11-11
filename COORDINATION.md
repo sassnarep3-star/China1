@@ -1,3 +1,27 @@
+# Session board — arena-f5952300 (2026-11-11) — CLAIM
+
+Branch: `arena/f5952300-china1` (fixed by Arena). The requested `session-<id>/<task>` branch naming cannot be used: Arena ties this session to this one branch and forbids creating or pushing another. This deviation is logged here before any work, as earlier sessions did.
+
+**Board read before claiming.** COORDINATION.md is 197 KB of append-only boards from sessions A–L; every dated entry is from 2026-11-08 … 2026-11-10. `main` head is `272da23` (PR #59, 2026-11-10T10:25:28Z). `gh pr list --state open` shows only PR #45 (arena-fface148, updated 2026-11-10T06:04Z, COORDINATION.md only) and PR #39-style older leftovers; no session has committed in >60 minutes. Under the >60-minute handoff rule, stale `in progress` rows are not active claims; this session takes over the **tasks**, not the other sessions' paths, and leaves PR #45 open and untouched. All earlier boards are preserved verbatim; this block is prepended, others append at EOF, so concurrent appends do not collide.
+
+**Session ID:** `f5952300`. **Personal facts unknown:** source of funds, SAFE classification, tax-filing history, destination bank, residency/visa history and any existing US filings were not supplied; they remain blank + flagged, never inferred.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| M1 Line-by-line repo review against freshly re-fetched official sources; irregularity register | in progress | arena-f5952300 | `edition-m/audit/**`, `edition-m/data/review.json`, `edition-m/data/scan-hits.csv` |
+| M2 Official-source research refresh: decision questions, every CNY→USD route, pros/cons, exact steps, China + US tax and penalty decomposition | in progress | arena-f5952300 | `edition-m/data/**`, `edition-m/research/**` |
+| M3 All-in cost estimate for every method at each USD 10,000 step USD 10,000–400,000, mobile-first tables, step-by-step pricing | in progress | arena-f5952300 | `edition-m/data/**`, `edition-m/build/**` |
+| M4 Dashboard: clean landing + category subpages incl. Flagged for Review, executive summary, questions & answers | in progress | arena-f5952300 | `edition-m/site/**`, `edition-m/build/**` |
+| M5 Independent verifier + CI workflow | in progress | arena-f5952300 | `edition-m/build/verify.py`, `.github/workflows/edition-m.yml` |
+| M6 FINAL INTEGRATION — only after M1–M5 pass and the board is re-read | not yet claimed | arena-f5952300 | shared outputs only: `guide/build/build.py` (additive nav/card), `index.html` (regenerated), `EXECUTIVE_SUMMARY.md` (additive), `README.md` (additive), `REQUIREMENTS.md` (additive), `integration/build.py` (additive nav/card), `legacy-portal.html` + `integration/*.html` (regenerated), this board |
+
+Rules: no other session's edition files are edited, renamed or deleted; no figure is copied from an archived edition without re-fetching the official page in this session; any value not confirmed on an official page is blank + published on Flagged for Review; small frequent commits; `git pull --rebase` before every push; conflicts resolved without discarding work and logged; final integration re-verifies combined data line by line, confirms the site builds with no broken links, opens the PR, merges it and confirms Pages.
+
+Log:
+- 2026-11-11 — claim written, committed and pushed before any task work. No other session claims `edition-m/**` or `.github/workflows/edition-m.yml`.
+
+---
+
 # Session board — arena-2fb403b0 (2026-11-10)
 
 Branch: `arena/2fb403b0-china1` (fixed by Arena). All prior boards above are preserved
