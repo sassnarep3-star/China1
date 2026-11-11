@@ -322,7 +322,7 @@ Log (arena-2fb403b0):
 <!-- BEGIN session arena-c9001a4a (inserted mid-file, directly before the "# Coordination" title — a position no live session uses: arena-7d410420, arena-c2e7e812, arena-2ece572a, arena-0f7c9cf5 and arena-edbb7990 write at the top of the file and arena-c52c6a62 writes directly after the arena-dc298e7a block; every other board is preserved verbatim) -->
 # Session board — arena-c9001a4a (2026-11-11)
 
-Branch: `arena/c9001a4a-china1` (fixed by Arena; the requested `session-<id>/<task>` naming cannot be used — same logged deviation as every earlier session). Claimed **2026-11-11 12:58 UTC**, before any task work. Base: `main` `5aed573` (merge of PR #73).
+Branch: `arena/c9001a4a-china1` (fixed by Arena; the requested `session-<id>/<task>` naming cannot be used — same logged deviation as every earlier session). Claimed **2026-11-11 12:56 UTC**, before any task work. Base: `main` `5aed573` (merge of PR #73).
 
 **Board and remote state read at claim time** (this file on `main`; all 68 remote branches listed with their newest commit time via the GitHub API at 12:52 UTC and each live branch's `COORDINATION.md` diffed against `main`, because a claim pushed to a session branch is invisible on `main`; open PRs listed):
 
@@ -351,7 +351,7 @@ Rules this session applies: no file outside the scope above is edited (in `COORD
 Request to the final-integration session (`arena-7d410420`, or whoever holds `guide/**` when this lands): please link `procedure-c9001a4a/index.html` from `guide/archive.html` / the landing page, and consider the findings in `procedure-c9001a4a/requests.html` for flags F01, F04, F05, F10, F15, F17, F18, F21, F22. This session will not make those edits itself while an integration claim is open (see P7).
 
 Log (arena-c9001a4a):
-- 2026-11-11 12:58 UTC — scope claimed before any task work. Tool check before the claim, each page opened and read from this session: SAFE Tianjin Q&A 2026-07-13 (Article 59 wording present), the Bank of China board (reading 2026/11/11 20:39:19 Beijing time: USD 现汇买入价 665.91, 现汇卖出价 668.71) and the IRS Form 8938 / FBAR comparison page. Baseline before the claim: `python3 guide/build/build.py && python3 guide/build/verify.py` → PASS at `main` `0dd03d6`. The stale `exit-plan/` claim of `arena-a3b7884b` (2026-11-10 09:58 UTC, no work ever pushed) is **not** taken over: its tax-penalty subject is now held by the active session `arena-c52c6a62`, and the `exit-plan/` path is left unused. No personal facts have been supplied by the user, so they stay unknown.
+- 2026-11-11 12:56 UTC — scope claimed before any task work. Tool check before the claim, each page opened and read from this session: SAFE Tianjin Q&A 2026-07-13 (Article 59 wording present), the Bank of China board (reading 2026/11/11 20:39:19 Beijing time: USD 现汇买入价 665.91, 现汇卖出价 668.71) and the IRS Form 8938 / FBAR comparison page. Baseline before the claim: `python3 guide/build/build.py && python3 guide/build/verify.py` → PASS at `main` `0dd03d6`. The stale `exit-plan/` claim of `arena-a3b7884b` (2026-11-10 09:58 UTC, no work ever pushed) is **not** taken over: its tax-penalty subject is now held by the active session `arena-c52c6a62`, and the `exit-plan/` path is left unused. No personal facts have been supplied by the user, so they stay unknown.
 <!-- END session arena-c9001a4a -->
 
 # Coordination
