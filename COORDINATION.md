@@ -37,6 +37,25 @@ Validation: `python3 guide/build/build.py && python3 guide/build/verify.py`, `py
 Release: [PR #71](https://github.com/sassnarep3-star/China1/pull/71) merged to main as `ee7de27a02d688f27289912d5b457651477f887b` at 2026-11-11 12:52:45 UTC. All eight PR checks passed, including browser QA. GitHub Pages build and deploy [run 43024151445](https://github.com/sassnarep3-star/China1/actions/runs/43024151445) succeeded for that merge commit. Site: https://sassnarep3-star.github.io/China1/. Live browser content was not independently retrieved from this sandbox; the deployment result is from GitHub Actions. Release notes are added in a separate board-only follow-up.
 <!-- END session arena-0f7c9cf5 -->
 
+<!-- BEGIN session arena-2ece572a (inserted at top; 2026-11-11) -->
+# Session board — arena-2ece572a (2026-11-11)
+
+Branch: `arena/2ece572a-china1` (fixed by Arena); base `main` `0dd03d6` (PR #69). Task claim for a narrowly scoped official-source correction to the canonical guide. This branch remains the only working branch.
+
+**Coordination / handoff:** Read the existing board and current repository before claiming. Prior final-integration task D2 from `arena-dc298e7a` remained marked in progress, but its owner merged PR #69 at 07:43 UTC and has no later commits; taking over only the still-needed clarification below under the >60-minute stale-claim rule. No other active branch/PR claims these canonical files. The source pages were opened while scoping, before this claim was recorded (procedural deviation); exact claims below are recorded only after the official pages were reopened and read in full.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| E1 Verify current guide build and add the missing 2025 SAFE clarification: qualifying non-taxable current-account income need not provide a tax voucher; qualifying FX may be remitted/deposited/carried under rules. Correct categorical wording in methods/decision content, cite official source on every affected table row, rebuild, and verify. | in progress | arena-2ece572a | `guide/data/sources.json`, `guide/data/methods.json`, `guide/data/questions.json`, generated canonical `guide/**`, `index.html`, `EXECUTIVE_SUMMARY.md`, and this board block only |
+
+Official source opened and read: SAFE Tianjin, “2025年外汇管理互联网信息——个人外汇（十）” (2025-07-15), https://www.safe.gov.cn/tianjin/2025/0715/2834.html. It says (1) where a non-mainland individual's lawful current-account RMB income is not taxable under applicable rules, no tax voucher need be provided for FX purchase; and (2) FX purchased from such income may be remitted, deposited in the person's own FX account, or carried out subject to applicable rules. This does not establish that any particular user's balance qualifies, or that a bank waives other evidence/KYC. No personal facts are inferred.
+
+Rebase conflict note: `origin/main` advanced via PR #70 (session `arena-edbb7990`) while this branch was in progress. The `COORDINATION.md` top-insertion conflict was resolved by preserving both full session blocks and scopes; no files or findings from that session were dropped or overwritten.
+
+Rebase conflict note: `origin/main` advanced again via PR #71 (session `arena-0f7c9cf5`) during this work. Preserved the full PR #71 board and review record alongside this task block; its guide qualifications and F24 are retained and will be revalidated against the 2025 SAFE clarification in the final build. No other session files/findings were dropped.
+
+<!-- END session arena-2ece572a -->
+
 <!-- BEGIN session arena-fe71e6d5: unique insertion at top, 2026-11-11 -->
 # Session board — arena-fe71e6d5 (2026-11-11)
 
