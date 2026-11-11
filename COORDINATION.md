@@ -1788,3 +1788,41 @@ F99-1 and F99-2: done; **targeted** safety review, not a claim of full repositor
 
 ### F99 release
 PR https://github.com/sassnarep3-star/China1/pull/60 merged 2026-11-11 02:36:59 UTC as `6e1c86750327f4faa03219a22c11892817704b3b` after all seven PR checks passed. GitHub Pages build/deploy run https://github.com/sassnarep3-star/China1/actions/runs/42947240864 completed successfully for that merge. GitHub's Pages workflow emitted a Node 20 deprecation warning and ubuntu-latest migration notice; these did not fail deployment. The release is a targeted correction, not exhaustive verification.
+<!-- BEGIN arena-db079cfc (appended at EOF 2026-11-11; every board above is preserved verbatim) -->
+# Session board — arena-db079cfc (2026-11-11)
+
+Branch: `arena/db079cfc-china1` (fixed by Arena; same logged deviation from the
+requested `session-<id>/<task>` naming as every earlier session). Claimed
+**2026-11-11 ~03:0x UTC**, before any task work.
+
+**Board read at claim time.** `main` head `272da23` (merge of PR #59, session
+`arena-12670774`). Every other branch's newest commit is from 2026-11-10 10:30 UTC or
+earlier — 16 h+ old — so under the 60-minute rule **all open claims are stale**. In
+particular `edition-m/**` is claimed by `arena-1ee3ca2b` (last commit 2026-11-10
+10:30:14 UTC, branch unmerged, no open PR); this session does **not** take that path, and
+leaves that branch untouched for its owner.
+
+**This session's job is the standing final-integration role** left unclaimed since
+`arena-eb9f0490` merged PR #55: re-verify the canonical guide line by line against
+official pages re-opened today, refresh the dated inputs, add the one requirement the
+guide does not yet answer as a page (the questions/unknowns register a decision needs),
+rebuild, re-run every checker in the repo, publish, and record the result.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| P1 Independent re-verification of every source in `guide/data/sources.json` against the official page, re-opened today; per-source PASS/FAIL with the quoted text | in progress | arena-db079cfc | `edition-db079cfc/**` |
+| P2 Requirement gap: "a clear list of questions, information and answers that need to be addressed before any decision" → new guide page generated from data, every row sourced | in progress | arena-db079cfc | `guide/data/**`, `guide/build/**`, `guide/questions.html` |
+| P3 Refresh dated inputs: BOC board reading for 2026-11-11, recompute every ladder row, keep the old snapshot for comparison | in progress | arena-db079cfc | `guide/data/**`, `guide/build/**` |
+| P4 Repository line-by-line rule scan re-run at `main` `272da23`; new findings flagged | in progress | arena-db079cfc | `edition-db079cfc/**`, `guide/data/scan*` |
+| P5 Rebuild the whole site; run `guide/build/verify.py` plus every other edition/portal checker; crawl for broken links | in progress | arena-db079cfc | `index.html`, `guide/**`, `EXECUTIVE_SUMMARY.md` |
+| P6 PR to `main`, merge without waiting, confirm GitHub Pages deploy, record PR link + result here | in progress | arena-db079cfc | this block, `README.md` |
+
+Rules this session applies: nothing is taken from an archived edition without being
+re-read on the official page today; a value that cannot be confirmed stays blank and is
+listed on Flagged for Review; no personal facts (source of funds, residence, tax history,
+destination bank) are inferred — they are published as **questions with a "how to find
+out" step** instead.
+
+Log (arena-db079cfc):
+- 2026-11-11 — scope claimed before work. Open PRs #39 and #45 (older sessions) left
+  untouched. `edition-m/**` (arena-1ee3ca2b) left untouched.
