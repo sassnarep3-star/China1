@@ -1,0 +1,1 @@
+PASS: 11 pages; 1057 table rows, each with an official source link; 288 rows with blank cells, each linked to Flagged for Review; 19 methods × 40 amounts = 760 ladder rows, 370 totals recomputed independently; 33 sources, 23 flagged items; 281 HTML files / 22611 internal links crawled, none broken; deterministic rebuild.
