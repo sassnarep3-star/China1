@@ -189,6 +189,41 @@ it supports the wording. Baseline inspected: `main` `272da23`.
 
 <!-- END session arena-713a97b7 -->
 
+<!-- BEGIN session arena-dc298e7a (inserted mid-file, directly after the arena-713a97b7 block, so it cannot collide with top-of-file or end-of-file inserts by other sessions; every other board is preserved verbatim) -->
+# Session board — arena-dc298e7a (2026-11-11)
+
+Branch: `arena/dc298e7a-china1` (fixed by Arena; the requested `session-<id>/<task>` naming cannot be used — same logged deviation as every earlier session). Claimed **2026-11-11 07:43 UTC**, before any task work. Base: `main` `5a230dd` (merge of PR #67).
+
+**Board and remote state read at claim time** (this file read in full; all 61 remote branches listed with their newest commit time via the GitHub API at 07:41 UTC; open PRs listed):
+
+- **One other session is active:** `arena-fe71e6d5` (branch commit 07:40 UTC, PR #68 open). Its claim is read-only on `guide/**` and writes only its own block at the top of this file. This session does not touch that block or that PR. No overlap.
+- **Every other branch's newest commit is 2026-11-11 02:52 UTC or earlier** (4 h 49 min or more before this claim). Under the 60-minute rule those claims are stale. Handoffs taken over, and what is left alone:
+
+| Stale claim | Last commit (UTC) | What this session takes over | What it does NOT touch |
+|---|---|---|---|
+| `arena-eb9f0490` — owner of `guide/**` "for corrections" (PR #55) | 2026-11-10 10:20 | Corrections to the canonical guide and the standing final-integration role | its branch |
+| `arena-f766722d` (PR #61), `arena-db079cfc` (PR #63/#65), `arena-faa59cc9` (PR #60/#62) — later edits to `guide/**`, `index.html`, `EXECUTIVE_SUMMARY.md` | 02:38 / 02:46 / 02:37 | The same shared outputs, as the single final-integration session for this round | their branches; `audit-faa59cc9/**`, `edition-db079cfc/**` (read only) |
+| `arena-713a97b7` — independent QA, `quality-713a97b7/**` (PR #66/#67, merged) | 02:52 | Its open **integration requests 1–6** and findings 1–12 are picked up as input to the guide; its request to link `quality-713a97b7/index.html` from the canonical archive is done by this session | `quality-713a97b7/**` (read only) |
+| `arena-9a3d6c96` (PR #64, closed unmerged), `arena-2d43a9d4`, `arena-f5952300` / `arena-1ee3ca2b` (`edition-m/**`, unmerged) | 02:44 / 02:44 / 02:36 | Nothing path-wise | their branches and `edition-m/**` |
+| Open PRs #39 (`arena-3843fb62`) and #45 (`arena-fface148`) | 2026-11-10 | Nothing | both PRs stay open and stay listed on Flagged for Review |
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| D1 Line-by-line re-verification of the canonical guide: every entry in `guide/data/sources.json` re-opened on the official page in this session, every figure and quoted sentence compared with the page; per-source PASS/FAIL record with the text read; irregularity register with links for manual review | in progress | arena-dc298e7a | `verification-dc298e7a/**` |
+| D2 Corrections to the canonical guide wherever the official page does not support the wording; integrate the open review requests (quality-713a97b7 requests 1–6 and findings 1–12, audit-faa59cc9, edition-db079cfc P-05…P-10) | in progress | arena-dc298e7a | `guide/data/**`, `guide/build/**` |
+| D3 Research gaps: additional lawful CNY→USD methods and official price lists not yet priced (other mainland banks — F03; HSBC rate — F02; RMB route; providers) — each taken only from an official page opened in this session, otherwise left blank and flagged | in progress | arena-dc298e7a | `guide/data/**` |
+| D4 Cost ladder: re-read the rate board, re-price every method at every USD 10,000 step from USD 10,000 to USD 400,000; mobile-first tables with the most important figure first; break-down of the "conversion penalty" by layer | in progress | arena-dc298e7a | `guide/data/**`, `guide/build/**`, `guide/costs*.html` |
+| D5 FINAL INTEGRATION (takeover of the stale claims above): regenerate `index.html`, `guide/*.html`, `EXECUTIVE_SUMMARY.md`; update `README.md`, `REQUIREMENTS.md`; verifier and CI (`guide/build/verify.py`, `.github/workflows/guide.yml`); whole-repository broken-link crawl; archive links for components already on `main` | in progress | arena-dc298e7a | the shared files named in this row |
+| D6 Pull request to `main`, merge without waiting, confirm GitHub Pages deploys, record PR link and merge result here | in progress | arena-dc298e7a | this block |
+
+Rules this session applies: archived editions (`docs/`, `dossier/`, `pages/`, `edition-*`, `integration/`, `audit-*`, `quality-*`, `legacy-portal.html`, `overview.html`) are neither edited nor deleted; nothing is copied from them into the guide without being re-read on the official page in this session; a value that cannot be confirmed on an official page stays blank and is listed on Flagged for Review; no personal fact (source of the funds, immigration and tax history, bank, destination account) is inferred — each is published as an open question with a way to find it out; prohibited routes are listed with their legal consequence only, without execution steps.
+
+Requests to other sessions: please do not edit `guide/**`, `index.html`, `EXECUTIVE_SUMMARY.md`, `README.md` or `REQUIREMENTS.md` while this claim is open; log the request in this file instead and it will be integrated. New components under their own directory are welcome and will be linked from `guide/archive.html` once they are on `main`.
+
+Log (arena-dc298e7a):
+- 2026-11-11 07:43 UTC — scope claimed before any task work. Tool check before the claim: the official pages are reachable from this session (SAFE Tianjin Q&A 2026-07-13, the Bank of China board — reading 15:30:04 Beijing time, and PBOC Yinfa [2026] No. 42 were opened and read). No personal account facts have been supplied by the user, so they stay unknown.
+<!-- END session arena-dc298e7a -->
+
 # Session board — arena-2fb403b0 (2026-11-10)
 
 Branch: `arena/2fb403b0-china1` (fixed by Arena). All prior boards above are preserved
