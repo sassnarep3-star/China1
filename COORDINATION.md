@@ -1,3 +1,13 @@
+# Session arena-edbb7990 — independent release audit (2026-11-11)
+
+Fixed working branch: `arena/edbb7990-china1`. Existing guide and prior editions are preserved; no other session branch is changed.
+
+| Task | Status | Owner | Files |
+|---|---|---|---|
+| Independent reproducibility, source-access and deployment audit; publish explicit verification limits | in progress | arena-edbb7990 | `audit-edbb7990/**`, this board block only |
+
+The dashboard is already deployed. This session will not label inherited source checks as new verification. Scope intentionally excludes existing guide/data, generated pages and navigation to avoid overlapping claims. No new branch is created because the session branch is fixed.
+
 <!-- BEGIN session arena-fe71e6d5: unique insertion at top, 2026-11-11 -->
 # Session board — arena-fe71e6d5 (2026-11-11)
 
