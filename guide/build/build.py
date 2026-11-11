@@ -41,6 +41,7 @@ REVIEW = load("review.json")
 SCAN = load("scan.json")
 RETRIEVED = SRC_DOC["retrieved"]
 QUESTIONS = load("questions.json")
+RECHECK = load("recheck.json")
 
 D = Decimal
 BUY = D(PRICES["boc_buy_per_100"]) / 100
@@ -771,6 +772,17 @@ def build_review():
     areas = "".join(
         f'<li><code>{e(k)}</code> — {v["files"]} files, {v["lines"]:,} lines, {v["hits"]} rule matches</li>' for k, v in sorted(SCAN["areas"].items()))
     proc = "".join(f"<li>{e(x)}</li>" for x in REVIEW["process"])
+    rc_rows, rc = [], {"changed": [], "confirmed": [], "not_reread": []}
+    labels = {"changed": ("b-warn", "changed, data rebuilt"), "confirmed": ("b-ok", "confirmed"),
+              "not_reread": ("b-blank", "not re-read today")}
+    for key in ("changed", "confirmed", "not_reread"):
+        for x in RECHECK[key]:
+            cls, label = labels[key]
+            rc[key].append(x["id"])
+            rc_rows.append([f'<a href="sources.html#{x["id"]}"><b>{e(x["id"])}</b></a>',
+                            f'<span class="badge {cls}">{label}</span>', e(x["note"]), src_links([x["id"]])])
+    recheck_tbl = table([("Source", ""), ("Result", ""), ("What was checked", ""), ("Official page", "")], rc_rows)
+
     body = f"""
 <h1>Repository review</h1>
 <p class="lead">The repository holds {len(SCAN["areas"])} earlier editions and components of this research. Each archived line was checked against the official sources by rule, and the irregularities are listed here with the link to check them against.</p>
@@ -783,6 +795,10 @@ def build_review():
 </div>
 
 <div class="note"><b>What "line by line" means here.</b> A script read every line of every archived text file and tested it against {len(REVIEW["rules"])} rules. Each rule states a fact confirmed on an official page. A matching line is marked "consistent" when its own wording already agrees with the fact, otherwise "to check". The marking is a text heuristic, not a legal judgment; the full list with file and line number is in <a href="data/scan-hits.csv">scan-hits.csv</a>. Snapshot taken at commit <code>{e(SCAN["scanned_at_commit"])}</code>.</div>
+
+<h2>Re-verification on {RECHECK["date"]}</h2>
+<p class="mut small">{e(RECHECK["intro"])}</p>
+{recheck_tbl}
 
 <h2>Irregularities found by rule</h2>
 {table([("Rule", ""), ("What the line says", ""), ("Found", ""), ("What the official source says", ""), ("Official source", "")], rules)}

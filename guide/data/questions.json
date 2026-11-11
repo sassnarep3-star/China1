@@ -16,7 +16,7 @@
           "status": "open",
           "known": "The annual total of USD 50,000 per person per year is imposed on 个人结汇 and on 境内个人购汇 only. A 境外个人 buying foreign exchange with lawful current-account RMB income is handled by documents instead (Article 59 of the 2020 current-account guidelines, as quoted by SAFE; Article 13(1) of the 2007 implementing rules). SAFE's 2024 answer gives the annual facilitation quota to holders of a Foreign Permanent Resident ID Card.",
           "src": ["CN-RULES", "CN-ART59", "CN-PR", "CN-MEASURES"],
-          "unknown": "The FX Regulation defines 境内个人 to include a foreigner who has continuously resided in China for one year, while the Individual FX Measures define a foreign individual by passport. Which definition your bank applies to you was not confirmed.",
+          "unknown": "The Individual FX Measures define a 境内个人 as a Chinese citizen holding a resident, military or armed-police ID, and a 境外个人 as a passport or HK-Macau/Taiwan permit holder — so a US passport is an overseas individual. The FX Regulation's own definitions count a foreigner continuously resident in China for one year as a 境内个人. Which definition your bank applies was not confirmed.",
           "flags": ["F15"],
           "how": [
             "Ask the bank's 结售汇 counter, before the visit, whether its system records you as 境内个人 or 境外个人, and quote both definitions.",

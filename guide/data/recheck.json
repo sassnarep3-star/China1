@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-11",
+  "intro": "Every source behind this guide, and what this session did with it. Nineteen official pages were re-opened on 2026-11-11 and the quoted text was compared line by line with what the guide publishes. Two of them had changed and the data was rebuilt. The remaining fourteen were not re-opened this session: they keep the 2026-11-10 reading, and their quoted text on the Sources page is what was seen then.",
+  "changed": [
+    {"id": "CN-FXBOARD", "note": "The board moved overnight. USD is now 666.3 buy / 669.11 sell per 100 at 10:25:02, against 665.71 / 668.51 at 17:39:58 the day before. All 760 ladder rows were rebuilt on the new reading; the one-way margin is 0.2100% against 0.2094%."},
+    {"id": "PR-WISEFEE", "note": "Five fresh quotes were pulled for the same USD targets and the rate had moved from 0.149931 to 0.149809. Two controls were run the same minute: CNY 300,001 returned no provider, and CNY 2,668,440 returned no quote, which is the evidence for the CNY 300,000 per-transfer cap."}
+  ],
+  "confirmed": [
+    {"id": "CN-BOCTARIFF", "note": "PDF opened; items 210105008 (1‰, floor 50, cap 260, international cable 150), note 5 (USD 25 full-amount, USD 15 via Bank of China New York), 210108014 (CNY 12 + 1%, cap 112), 210101002 (fee waived to 2026-12-31) and 210107011 all read as quoted."},
+    {"id": "PR-HSBC", "note": "2.2.4.1 and 2.2.4.2 read in the 卓越理财/运筹理财 column and match. The same rows show individual private-banking clients at zero and 尊尚 free, which was not in the guide; recorded as F23."},
+    {"id": "CN-ART59", "note": "Article 59 of 汇发〔2020〕14号 quoted by the Tianjin branch, verbatim, including the parenthetical 含税务凭证."},
+    {"id": "CN-PR", "note": "The 2024 answer read in full: the quota is given to holders of the Foreign Permanent Resident ID Card."},
+    {"id": "CN-RULES", "note": "Articles 2, 13, 15 and 30 read on the notice itself. Article 15 adds that an overseas individual's outward remittance from a foreign-currency savings account is made on ID alone."},
+    {"id": "CN-TAXFILING", "note": "Article 1(2), Article 3 and Article 4 read, plus the header note that Announcement 2021 No. 19 repealed the second paragraph of Article 1 and other provisions from 2021-06-29."},
+    {"id": "CN-FXREG", "note": "Articles 5, 12, 39, 40, 42, 45, 48 and 52 read. Article 52(2) is the definition that counts a one-year resident foreigner as a domestic individual; it is now quoted inside F15."},
+    {"id": "CN-MEASURES", "note": "Articles 7, 9, 13, 22 and 37 read. Article 37(1) defines a domestic individual as a Chinese citizen holding a resident, military or armed-police ID, which is the definition that governs individual FX."},
+    {"id": "CN-CRYPTO", "note": "银发〔2026〕42号 read in full, including the final clause repealing 银发〔2021〕237号 and the article making related civil acts void with losses borne by the investor."},
+    {"id": "CN-CARD", "note": "SAFE's interpretation read: CNY 100,000 a year per person across all cards, CNY 10,000 per card per day, suspension for the rest of that year and the next, and the sentence that the rule does not change the USD 50,000 facilitation quota."},
+    {"id": "US-8938FBAR", "note": "Thresholds read in the comparison table: FBAR over USD 10,000 at any time; Form 8938 USD 50,000 / 75,000 unmarried in the US, with the higher residence-abroad figures."},
+    {"id": "US-FBARPEN", "note": "Table 1 read: USD 16,536 non-willful and USD 165,353 willful, for penalties assessed on or after 2025-01-17."},
+    {"id": "US-REMIT", "note": "IR-2026-48 read; the quoted sentence appears verbatim, and the tax is defined as applying to remittances sent from the United States."},
+    {"id": "US-CHASE", "note": "Incoming wire fee read as USD 15 per transfer, or zero when the wire was sent with Chase's help."},
+    {"id": "US-988", "note": "Subsections (a) to (e) read. Subsection (e)(2) is quoted exactly, including the sentence withdrawing the exclusion where the gain exceeds USD 200."},
+    {"id": "US-ABROAD", "note": "The worldwide-income sentence was found word for word, and the same page states the USD 100,000 gift and bequest threshold used by Form 3520."},
+    {"id": "US-CBP", "note": "Read at the current address. The old /kbyg/money path redirects here, so the source link was changed to the canonical URL."}
+  ],
+  "not_reread": [
+    {"id": "CN-BOCFEE", "note": "Not re-opened today. Supports the same Bank of China fee figures as the tariff PDF, which was re-read."},
+    {"id": "PR-WISE", "note": "Not re-opened today. Carries the eligibility conditions and the per-transfer limit."},
+    {"id": "PR-WU", "note": "Not re-opened today. Carries the Western Union findings, which are flagged and unpriced."},
+    {"id": "CN-PROPTRANS", "note": "Not re-opened today. Carries the emigrant and inheritance transfer procedure."},
+    {"id": "CN-CAP2014", "note": "Not re-opened today. Carries the 2014 simplifications."},
+    {"id": "CN-SHPROP", "note": "Not re-opened today. Carries the house-sale document list."},
+    {"id": "CN-CASH", "note": "Not re-opened today. Carries the USD 5,000 / 10,000 cash-carry thresholds."},
+    {"id": "CN-RMBX", "note": "Not re-opened today. Carries the cross-border renminbi settlement basis."},
+    {"id": "CN-IIT", "note": "Not re-opened today. Carries the individual income tax rates."},
+    {"id": "CN-TAXCOLL", "note": "Not re-opened today, and still excerpt-only: the page was not opened in full on 2026-11-10 either."},
+    {"id": "CN-CNYCASH", "note": "Not re-opened today, and still excerpt-only: the CNY 20,000 carry limit rests on an excerpt."},
+    {"id": "US-FTC", "note": "Not re-opened today. Carries the foreign tax credit wording."},
+    {"id": "US-FX", "note": "Not re-opened today. Carries the translation-at-the-rate-when-received rule."},
+    {"id": "US-3520", "note": "Not re-opened today. The same USD 100,000 threshold was confirmed today on the IRS citizens-abroad page, which is linked from the Taxes page."}
+  ]
+}

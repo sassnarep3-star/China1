@@ -61,6 +61,7 @@ taxes = load("taxes.json")
 review = load("review.json")
 scan = load("scan.json")
 questions = load("questions.json")
+recheck = load("recheck.json")
 
 OFFICIAL = {urlsplit(s["url"]).netloc for s in sources.values()}
 MANUAL = {urlsplit(m["url"]).netloc for f in flags_doc for m in f.get("manual", [])}
@@ -121,6 +122,19 @@ for money, route, why, src in questions["tree"]["rows"]:
         check(any(m["id"] == mid for m in methods), f"decision tree points at unknown method {mid}")
 check(q_items >= 12, "the decision page has fewer than 12 questions")
 check(q_open >= 1, "no open question on the decision page")
+
+# the re-verification record must account for every source exactly once, and claim no more than it did
+seen = []
+for key in ("changed", "confirmed", "not_reread"):
+    seen += [x["id"] for x in recheck[key]]
+check(len(seen) == len(set(seen)), "a source appears twice in the re-verification record")
+check(set(seen) == set(sources), f"re-verification record covers {len(set(seen))} of {len(sources)} sources")
+check(len(seen) == len(sources), "re-verification record has extra rows")
+check(recheck["date"] == load("sources.json")["retrieved"],
+      "re-verification date differs from the sources retrieval date")
+for key in ("changed", "confirmed", "not_reread"):
+    for x in recheck[key]:
+        check(x["note"] and x["id"] in sources, f"re-verification row incomplete: {x.get('id')}")
 
 for sid, s in sources.items():
     if s["level"] == "excerpt":
