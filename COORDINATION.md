@@ -1742,3 +1742,36 @@ Appended after merge:
 - **Cross-check worth noting:** Edition K, built independently and merged first, publishes the same measured half-spread (0.20986% ≈ 0.2099%) and the same known totals (USD 68.42 / 286.19 / 915.77). Two sessions reaching identical figures from the same BOC board is a useful consistency signal. The one substantive divergence is interpretive, not arithmetic: Edition K states the USD 50,000 annual total is an "ID-only convenience tier" that does not cap an overseas individual, whereas Edition L publishes both limbs of Huifa [2007] No. 1 Art. 2 and flags the operational question as F01/F02 rather than resolving it. Readers are pointed to the primary text on both pages.
 - **Pages:** build for commit `cc0c711` reported `built` (2026-11-10T10:00:20Z) and the `pages-build-deployment` run completed `success`. Live check: `https://sassnarep3-star.github.io/China1/edition-l/site/index.html` returns the rendered dashboard with the 0.2099% / USD 68.42 / USD 915.77 KPI cards and the sourced milestone table. Portal `index.html` links Edition L in the nav, the first card, the notice and the archive.
 - **Verification at merge:** `edition-l/build/verify.py` PASS (11 pages, 345 sourced data rows, 1,200 recomputed cells, 196 local links/anchors, deterministic); `integration/verify.py` PASS; `assets/check.py` OK; `scripts/verify.py` PASS; edition-d 19 checks, edition-i 1,868, edition-j 1,936, edition-k PASS.
+
+<!-- BEGIN session arena-2d43a9d4 (2026-11-11). Appended at EOF so no earlier board is edited. -->
+## Claim — session arena-2d43a9d4 (2026-11-11)
+
+Branch: `arena/2d43a9d4-china1` (fixed by Arena; the requested `session-<id>/<task>` branch naming
+cannot be used — same logged deviation as every earlier session). Claimed 2026-11-11 before any task work.
+
+**Board read at claim time (2026-11-11 ~10:30 UTC / 18:30 Beijing).** `main` head `272da23` (PR #59).
+Every earlier task on this board is `done` and merged (PRs #55–#59); the only open claims anywhere on the
+board are older than 60 minutes with no new commits, so under the coordination rule their *tasks* are
+available while the paths they reserved stay free for them if they ever resume. Two pull requests are
+open from earlier sessions and are **not touched**: #39 (`edition-j`, conflicting with `main`) and
+#45 (`COORDINATION.md` only). Both stay listed on the Flagged for Review page.
+
+This session works on the live, integrated edition in `guide/` — the one the root landing page is built
+from — rather than opening a sixteenth parallel edition directory. Nothing in `edition-*/`, `docs/`,
+`dossier/`, `pages/`, `integration/`, `audit-*`, `data/`, `scripts/`, `assets/` is edited, renamed or
+deleted.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| M1 Re-verify every published figure against the official page, fetched again 2026-11-11; record drift | in progress | arena-2d43a9d4 | `guide/data/sources.json`, `guide/audit/**` |
+| M2 Refresh the dated rate snapshot and every price input; recompute all ladders | in progress | arena-2d43a9d4 | `guide/data/prices.json`, `guide/build/build.py` |
+| M3 Decision-readiness page: the questions that must be answered before a decision, what is known, what is missing, how to get it | in progress | arena-2d43a9d4 | `guide/data/decision.json`, `guide/build/build.py` |
+| M4 Repo review line by line; irregularity register refreshed | in progress | arena-2d43a9d4 | `guide/data/review.json`, `guide/audit/**` |
+| M5 Independent verifier extended to the new page; CI green | in progress | arena-2d43a9d4 | `guide/build/verify.py`, `.github/workflows/guide.yml` |
+| M6 Integration, PR, merge, Pages confirmation | in progress | arena-2d43a9d4 | `index.html`, `guide/*.html`, `EXECUTIVE_SUMMARY.md`, `README.md`, `REQUIREMENTS.md`, this board (append only) |
+
+Rules applied: no personal fact (source of funds, residency, tax history, destination bank, sums) has been
+supplied, so those stay unknown, blank and on the Flagged for Review page — never inferred. Every figure
+published by this session is one read on an official page fetched on 2026-11-11 and quoted in
+`guide/data/sources.json`; a figure that could not be re-confirmed is blanked and flagged, not carried over.
+
