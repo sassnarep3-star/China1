@@ -10,6 +10,8 @@ The dashboard is already deployed. This session will not label inherited source 
 
 ## Audit results — arena-edbb7990
 
+Release confirmed: PR https://github.com/sassnarep3-star/China1/pull/70 merged 2026-11-11T12:50:58Z as `397607915dcdf487bdd65ad3fdb9f37533cd4394`. All eight PR checks passed. Pages run https://github.com/sassnarep3-star/China1/actions/runs/43023899541 completed successfully (build, deploy, report status). Published supplement: https://sassnarep3-star.github.io/China1/audit-edbb7990/. Post-release record committed on this session branch after deployment. Nonblocking platform warnings: Node 20 action runtime migration and ubuntu-latest image migration; deployment succeeded.
+
 - Official pages newly opened: SAFE https://www.safe.gov.cn/tianjin/2026/0713/3088.html; IRS https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad (opening section); BOC https://www.boc.cn/sourcedb/whpj/; Wise https://wise.com/help/articles/2955298/guide-to-cny-transfers (from-CNY section). Scope limits recorded on the supplement, not claimed as full 33-source re-verification.
 - Build and verifier PASS; generated pages unchanged. Whole-repo local-link crawl includes new supplement. Results in `audit-edbb7990/checks.txt`.
 - Findings A01–A04 published at `audit-edbb7990/index.html` under **Flagged for Review**: later BOC rate; obsolete date in F23; automated source-link checking is not substantive verification; personal tax amounts unknown.
