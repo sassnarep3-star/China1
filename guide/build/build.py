@@ -359,7 +359,7 @@ def build_home():
         (usd(BOC10["total"]), f"to move {usd(10_000, False)} by Bank of China wire ({pct(BOC10['share'])})", "CN-BOCTARIFF"),
         (usd(BOC400["total"]), f"to move {usd(400_000, False)} the same way ({pct(BOC400['share'])})", "CN-BOCTARIFF"),
         ("30%–100%", "fine on the amount for evading the rules, if serious", "CN-FXREG"),
-        ("$10,000", "foreign-account total that triggers the US FBAR filing", "US-8938FBAR"),
+        ("$10,000", "aggregate foreign-account balance: FBAR generally required if it exceeds this", "US-8938FBAR"),
     ]
     kpi_html = "".join(
         f'<div class="kpi"><b>{e(v)}</b><span>{e(t)}</span>{src_links([s])}</div>' for v, t, s in kpis)
@@ -412,7 +412,7 @@ def build_home():
 <section class="card answer" aria-labelledby="ans">
 <h2 id="ans">The short answer</h2>
 <ul class="plain">
-<li><b>No rule read for this guide taxes the conversion itself.</b> The tax exposure is on how the money was earned. If China tax on it was already paid, converting adds bank charges only. {src_links(["CN-ART59", "CN-IIT"])}</li>
+<li><b>No rule read for this guide taxes the conversion itself.</b> Underlying income, bank charges and possible US foreign-currency gain require separate review; prior payment of China tax does not establish that no other tax applies. {src_links(["CN-ART59", "CN-IIT"])}</li>
 <li><b>Lawful route:</b> take your passport, proof of the amount and your China tax record to the bank, buy USD and wire it to your own US account. The rule states no fixed cap for a foreign passport holder; the bank converts what the documents support. {src_links(["CN-ART59", "CN-MEASURES"])}</li>
 <li><b>Cost by Bank of China wire into a Chase account:</b> {usd(BOC10["total"])} for $10,000 ({pct(BOC10["share"])}), {usd(BOC100["total"])} for $100,000 ({pct(BOC100["share"])}), {usd(BOC400["total"])} for $400,000 ({pct(BOC400["share"])}). {src_links(["CN-FXBOARD", "CN-BOCTARIFF", "US-CHASE"])}</li>
 <li><b>Do not split the amount, borrow other people's quotas, use money changers or crypto.</b> Fines run up to 30% of the amount, and 30%–100% if serious, with possible criminal liability. {src_links(["CN-MEASURES", "CN-FXREG", "CN-CRYPTO"])}</li>
@@ -477,7 +477,7 @@ def build_summary():
 <li><b>The USD 50,000 yearly quota is not your limit.</b> It applies to domestic individuals and to holders of the Foreign Permanent Resident ID Card. {src_links(["CN-RULES", "CN-PR"])}</li>
 <li><b>Send it in one wire.</b> Bank of China's commission is capped at CNY 260 and the cable fee is fixed, so one large wire costs {pct(BOC400["share"])} at $400,000 against {pct(BOC10["share"])} at $10,000. Splitting to avoid review is prohibited. {src_links(["CN-BOCTARIFF", "CN-MEASURES"])}</li>
 <li><b>Match the route to the money.</b> Property-sale proceeds, inheritance and pre-emigration assets each have their own route and papers. {src_links(["CN-SHPROP", "CN-PROPTRANS", "CN-CAP2014"])}</li>
-<li><b>Keep the US side clean.</b> Report worldwide income in the year earned, claim credit for China tax, and file the FBAR above $10,000. {src_links(["US-ABROAD", "US-FTC", "US-8938FBAR"])}</li>
+<li><b>Keep the US side clean.</b> Report worldwide income in the year earned, consider a foreign tax credit if eligible, and check FBAR reporting if the aggregate foreign-account balance exceeded $10,000. {src_links(["US-ABROAD", "US-FTC", "US-8938FBAR"])}</li>
 </ol></section>
 
 <h2>What it costs</h2>
@@ -489,8 +489,8 @@ def build_summary():
     ["FX margin", e(pct(FX_SHARE, 4)) + " of the amount", "Always. Bank of China selling rate against the midpoint of its buy and sell quotes.", src_links(["CN-FXBOARD"])],
     ["Bank and wire fees", e(f"{usd(q2(boc_parts(10_000)['total'] - boc_parts(10_000)['fx']))} at $10,000; {usd(q2(boc_parts(400_000)['total'] - boc_parts(400_000)['fx']))} at $400,000"), "Per wire: commission, cable, full-amount delivery, receiving-bank fee.", src_links(["CN-BOCTARIFF", "US-CHASE"])],
     ["China income tax", "3%–45% salary; 20% gains, dividends, interest", "Only if the income was not yet taxed. The rules read add no further tax to money already taxed.", src_links(["CN-IIT"])],
-    ["US income tax", "US rates, less credit for China tax", "On the income in the year earned, not on the transfer.", src_links(["US-ABROAD", "US-FTC"])],
-    ["Exchange gain in the US", "Ignored up to USD 200", "Personal conversions. Above USD 200: " + blank(["F13"], p), src_links(["US-988"])],
+    ["US income tax", "Depends on income and eligibility", "A foreign tax credit may be available subject to requirements and limitations.", src_links(["US-ABROAD", "US-FTC"])],
+    ["Exchange gain in the US", "Depends on transaction", "The USD 200 exception has conditions; review gain and loss: " + blank(["F13"], p), src_links(["US-988"])],
     ["Fines for prohibited routes", "Up to 30%; 30%–100% if serious", "Only if you break the rules.", src_links(["CN-FXREG"])],
 ])}
 
@@ -680,10 +680,10 @@ def build_taxes():
                          src_links(["CN-BOCTARIFF", "CN-FXREG"])])
     body = f"""
 <h1>Taxes and penalties</h1>
-<p class="lead">The "conversion penalty" is not one charge. It is the sum of the parts below, and most of them are zero if the money was taxed when earned and you use a lawful route.</p>
+<p class="lead">The "conversion penalty" is not one charge. The parts below depend on the transaction and personal facts; amounts cannot be assumed to be zero.</p>
 
 <section class="card answer"><h2>In one paragraph</h2>
-<p>Converting and wiring is not itself taxed in the rules read. China taxes the income (salary 3%–45%, gains and investment income 20%) and the bank wants proof that this was paid. The US taxes its citizens on worldwide income in the year it is earned and gives credit for China tax; bringing the money home later does not tax it again. What can go wrong: income never taxed, a prohibited route, or missed US reports. {src_links(["CN-IIT", "US-ABROAD", "US-FTC"])}</p></section>
+<p>Converting and wiring is not itself taxed in the rules read. China taxes the income (salary 3%–45%, gains and investment income 20%) and the bank wants proof that this was paid. The US generally taxes citizens on worldwide income; a foreign tax credit may be available subject to conditions and limits. Currency conversion may separately produce a US exchange gain or loss. What can go wrong: income never taxed, a prohibited route, or missed US reports. {src_links(["CN-IIT", "US-ABROAD", "US-FTC"])}</p></section>
 
 <h2>China: tax on the money</h2>
 {tax_table(TAXES["china"])}
@@ -825,11 +825,11 @@ def build_summary_md():
         "## Answer",
         "",
         f"1. **No rule read for this guide taxes the conversion itself.** The exposure is tax on the underlying income if it was never taxed; the bank asks for tax vouchers. {link('CN-ART59')}, {link('CN-IIT')}",
-        f"2. **Lawful route:** passport + proof of the amount + China tax record at the bank, buy USD, wire to your own US account. No fixed cap for a foreign passport holder; the USD 50,000 quota is for domestic individuals and permanent-resident card holders. {link('CN-ART59')}, {link('CN-PR')}",
+        f"2. **Lawful route:** passport + proof of the amount + China tax record at the bank, buy USD, wire to your own US account. The cited salary rule does not state a fixed cap; eligibility and bank requirements depend on the funds and individual status. {link('CN-ART59')}, {link('CN-PR')}",
         f"3. **Cost (Bank of China wire into a Chase account):** {r('M01', 10_000)} at $10,000; {r('M01', 100_000)} at $100,000; {r('M01', 400_000)} at $400,000. {link('CN-FXBOARD')}, {link('CN-BOCTARIFF')}, {link('US-CHASE')}",
         f"4. **{wise_sentence()}** {link('PR-WISEFEE')}",
-        f"5. **Prohibited:** splitting, borrowed quotas, money changers, false documents, crypto. Fines up to 30% of the amount, 30%–100% if serious, possible criminal liability. {link('CN-FXREG')}, {link('CN-MEASURES')}, {link('CN-CRYPTO')}",
-        f"6. **US side:** worldwide income is taxed when earned, with credit for China tax; the wire is not taxed again. FBAR above $10,000 (penalty up to $16,536 non-willful, $165,353 willful); Form 8938 above $50,000/$75,000; exchange gain ignored up to $200. {link('US-ABROAD')}, {link('US-FTC')}, {link('US-8938FBAR')}, {link('US-FBARPEN')}, {link('US-988')}",
+        f"5. **Avoid prohibited conduct:** evasion through splitting or false documents, illegal currency dealing, and prohibited virtual-currency activities. Fines up to 30% of the amount, 30%–100% if serious, possible criminal liability. {link('CN-FXREG')}, {link('CN-MEASURES')}, {link('CN-CRYPTO')}",
+        f"6. **US side:** worldwide income may be taxable; a foreign tax credit may be available subject to conditions. Converting currency may create a separate US exchange gain or loss. FBAR generally applies if aggregate foreign accounts exceed $10,000; Form 8938 thresholds depend on residence and filing status. Penalties depend on facts and assessment date. {link('US-ABROAD')}, {link('US-FTC')}, {link('US-8938FBAR')}, {link('US-FBARPEN')}, {link('US-988')}",
         "",
         "## Cost at selected amounts",
         "",
