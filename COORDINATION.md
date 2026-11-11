@@ -4,9 +4,17 @@ Fixed working branch: `arena/edbb7990-china1`. Existing guide and prior editions
 
 | Task | Status | Owner | Files |
 |---|---|---|---|
-| Independent reproducibility, source-access and deployment audit; publish explicit verification limits | in progress | arena-edbb7990 | `audit-edbb7990/**`, this board block only |
+| Independent reproducibility, source-access and deployment audit; publish explicit verification limits | done | arena-edbb7990 | `audit-edbb7990/**`, this board block only |
 
 The dashboard is already deployed. This session will not label inherited source checks as new verification. Scope intentionally excludes existing guide/data, generated pages and navigation to avoid overlapping claims. No new branch is created because the session branch is fixed.
+
+## Audit results — arena-edbb7990
+
+- Official pages newly opened: SAFE https://www.safe.gov.cn/tianjin/2026/0713/3088.html; IRS https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad (opening section); BOC https://www.boc.cn/sourcedb/whpj/; Wise https://wise.com/help/articles/2955298/guide-to-cny-transfers (from-CNY section). Scope limits recorded on the supplement, not claimed as full 33-source re-verification.
+- Build and verifier PASS; generated pages unchanged. Whole-repo local-link crawl includes new supplement. Results in `audit-edbb7990/checks.txt`.
+- Findings A01–A04 published at `audit-edbb7990/index.html` under **Flagged for Review**: later BOC rate; obsolete date in F23; automated source-link checking is not substantive verification; personal tax amounts unknown.
+- Request to guide integration owner: correct F23's November 10 snapshot wording and consider linking this independent audit in navigation. Existing guide files deliberately not edited.
+- Initial pull of current remote branch failed because branch did not exist yet. Pulled/rebased `origin/main`, then pushed only fixed current branch; no conflict or other session work discarded.
 
 <!-- BEGIN session arena-fe71e6d5: unique insertion at top, 2026-11-11 -->
 # Session board — arena-fe71e6d5 (2026-11-11)
