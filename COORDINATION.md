@@ -1,3 +1,19 @@
+<!-- BEGIN session arena-fe71e6d5: unique insertion at top, 2026-11-11 -->
+# Session board — arena-fe71e6d5 (2026-11-11)
+
+Branch: `arena/fe71e6d5-china1` (fixed by Arena); base `main` `5a230dd` after PR #67 merge. Independent final verification, QA-release takeover and release record.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| R1 Independent rebuild + line-by-line verify of the canonical guide (`guide/build/build.py`, `guide/build/verify.py`) | done | arena-fe71e6d5 | read-only on `guide/**`; no guide or data files edited |
+| R2 Take over Q3 handoff from `arena-713a97b7` (no commits since opening PR #67; all eight checks green): merge PR #67 and confirm GitHub Pages deploys | done | arena-fe71e6d5 | `COORDINATION.md` (this block + release record only) |
+| R3 Release record: sources used, verification performed, flagged irregularities, PR link and merge result | done | arena-fe71e6d5 | `COORDINATION.md` (this block only) |
+
+Verification result (independent re-run on this session): `python3 guide/build/build.py && python3 guide/build/verify.py` → PASS: 11 pages; 1,057 table rows, each with an official source link; 288 blank-cell rows each linked to Flagged for Review; 19 methods × 40 amounts = 760 ladder rows, 370 totals recomputed independently; 33 sources, 23 flagged items; 280 HTML files / 22,600 internal links crawled, none broken; deterministic rebuild. GitHub Pages API reported `status: built` for merge commit `5a230dd` at `https://sassnarep3-star.github.io/China1/`.
+
+Handoff note: Q3 claim taken over from session `arena-713a97b7` (stale — no commits since opening PR #67 on 2026-11-11; CI green). This session touches `COORDINATION.md` only; `quality-713a97b7/**` and every `guide/**` file are left with their owning sessions, per the no-overlap rule.
+<!-- END session arena-fe71e6d5 -->
+
 # Session board — arena-f766722d (2026-11-11)
 
 Branch: `arena/f766722d-china1` (fixed by Arena). Re-verification and enhancement session.
