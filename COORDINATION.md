@@ -319,6 +319,41 @@ Log (arena-2fb403b0):
   classification, residency status, destination bank or live provider quote have been
   supplied by the user, so those stay unknown/blank and flagged — never inferred.
 
+<!-- BEGIN session arena-c9001a4a (inserted mid-file, directly before the "# Coordination" title — a position no live session uses: arena-7d410420, arena-c2e7e812, arena-2ece572a, arena-0f7c9cf5 and arena-edbb7990 write at the top of the file and arena-c52c6a62 writes directly after the arena-dc298e7a block; every other board is preserved verbatim) -->
+# Session board — arena-c9001a4a (2026-11-11)
+
+Branch: `arena/c9001a4a-china1` (fixed by Arena; the requested `session-<id>/<task>` naming cannot be used — same logged deviation as every earlier session). Claimed **2026-11-11 12:56 UTC**, before any task work. Base: `main` `5aed573` (merge of PR #73).
+
+**Board and remote state read at claim time** (this file on `main`; all 68 remote branches listed with their newest commit time via the GitHub API at 12:52 UTC and each live branch's `COORDINATION.md` diffed against `main`, because a claim pushed to a session branch is invisible on `main`; open PRs listed):
+
+| Session | Newest commit (UTC) | Its claim | What this session does about it |
+|---|---|---|---|
+| `arena-7d410420` | 12:51 | S1–S6: re-verification of `guide/data/sources.json`, corrections, research gaps (additional methods; other banks F03; HSBC rate F02; RMB route; providers), cost ladder, FINAL INTEGRATION of `guide/**`, `index.html`, `EXECUTIVE_SUMMARY.md`, `README.md`, `REQUIREMENTS.md` | **Active and first in time on those files. Not touched.** |
+| `arena-0f7c9cf5` (PR #71), `arena-c2e7e812`, `arena-2ece572a` (PR #73, merged) | 12:52 / 12:52 / 12:51 | Each also claims edits to `guide/**` and the shared outputs, plus `audit-0f7c9cf5/**` and `verification-c2e7e812/**` | Active. Not touched. Four live claims name the same `guide/**` files — noted for those owners to resolve between themselves; not this session's to decide |
+| `arena-c52c6a62` (PR #72) | 12:51 | `tax-c52c6a62/**`: the tax-and-penalty side — tax flags F11, F12, F13, F14, F16, F17 (property-sale taxes), scenario matrix by source of the money, tax-and-penalty ladder, relief for past non-filing | Active. Not touched; **no tax or penalty figure is researched or published by this session** |
+| `arena-edbb7990` (PR #70, merged) | 12:51 | `audit-edbb7990/**` reproducibility / source-access / deployment audit | Done. Not touched |
+| `arena-dc298e7a` | 07:42 | D1–D6 (claim only, PR #69) | Stale; already taken over by the sessions above. Not touched |
+
+Because the canonical guide, its prices, the tax side and three audits are all held by sessions that are active right now, this session takes the part of the request no open claim covers: **the procedure, eligibility and paperwork side of "tell me exactly step by step how it would work"**. The canonical guide leaves these items flagged and no live claim names them: F01 (does a foreign individual's own wire above USD 50,000 need the tax-filing form), F04 (intermediary-bank deductions), F05 (US receiving-bank fees other than Chase), F10 (CNY cash limit — the PBOC announcement itself was never opened), F15 (who gets the annual quota), F17 (house-sale proceeds — who approves; the procedure, not the tax), F18 (emigrant-transfer eligibility and procedure), F21 (the 2020 Current-Account Guidelines were never opened in full), F22 (bank-level limits on one wire). The guide also has no document-by-document checklist, no statement of whether someone else may act for an account holder who is outside China, and no table of which filing, permit or cap is crossed at each USD 10,000 step.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| P1 Close or narrow the open procedure, eligibility and documentation flags F01, F04, F05, F10, F15, F17 (procedure only), F18, F21, F22 on the primary official text, opened and read in this session; findings published as integration requests, not as edits to the guide | in progress | arena-c9001a4a | `procedure-c9001a4a/**` |
+| P2 Document-level runbook for each lawful route: every document the rule names, who issues it and how it is obtained, who decides (bank or SAFE branch), the stated processing time and validity, and whether an agent may act for an account holder who is abroad (authorisation, notarisation, apostille) — every row sourced; anything not confirmed stays blank and flagged | in progress | arena-c9001a4a | `procedure-c9001a4a/**` |
+| P3 Threshold-and-time ladder at every USD 10,000 step from USD 10,000 to USD 400,000 (40 steps): which filings, permits and caps are crossed at that amount, and how many wires, trips or years each capped route needs — arithmetic on official caps only, labelled as arithmetic; mobile-first tables, most important figure first | in progress | arena-c9001a4a | `procedure-c9001a4a/**` |
+| P4 Procedure and eligibility questions that must be answered before a decision, what is known and not known, and how to find each missing answer | in progress | arena-c9001a4a | `procedure-c9001a4a/**` |
+| P5 Component site (landing dashboard + category subpages + its own Flagged for Review and Sources pages), generator, independent verifier and CI limited to this component | in progress | arena-c9001a4a | `procedure-c9001a4a/**`, `.github/workflows/procedure-c9001a4a.yml` |
+| P6 Pull request to `main`, merge when checks pass, confirm GitHub Pages serves the component, record PR link and result here | in progress | arena-c9001a4a | this block only |
+| P7 Closing backstop — **conditional, not a claim on anyone's files now**: once every open claim on the shared outputs (`arena-7d410420`, `arena-0f7c9cf5`, `arena-c2e7e812`, `arena-2ece572a`) is marked done and merged, or has gone more than 60 minutes without a commit, this session re-runs every verifier and the whole-repository link crawl on the combined `main`, confirms the Pages deployment, and — only after logging the handoff in this block — adds the additive links for components that landed without one | not started | arena-c9001a4a | named in this block at handoff time |
+
+Rules this session applies: no file outside the scope above is edited (in `COORDINATION.md` only this block). Every table row carries a link to the official page read in this session; a value not confirmed there is left blank and listed on the component's Flagged for Review page; nothing is inferred about the user's own facts (where the money came from, former nationality, residence status, which bank, whether tax was paid, prior US filings). Arithmetic rows state the official cap and the formula and are labelled as arithmetic. Prohibited routes are described by their legal consequence only, with no execution steps. Sources are the regulator, the statute, or a bank's or provider's own published terms; third-party articles are not used.
+
+Request to the final-integration session (`arena-7d410420`, or whoever holds `guide/**` when this lands): please link `procedure-c9001a4a/index.html` from `guide/archive.html` / the landing page, and consider the findings in `procedure-c9001a4a/requests.html` for flags F01, F04, F05, F10, F15, F17, F18, F21, F22. This session will not make those edits itself while an integration claim is open (see P7).
+
+Log (arena-c9001a4a):
+- 2026-11-11 12:56 UTC — scope claimed before any task work. Tool check before the claim, each page opened and read from this session: SAFE Tianjin Q&A 2026-07-13 (Article 59 wording present), the Bank of China board (reading 2026/11/11 20:39:19 Beijing time: USD 现汇买入价 665.91, 现汇卖出价 668.71) and the IRS Form 8938 / FBAR comparison page. Baseline before the claim: `python3 guide/build/build.py && python3 guide/build/verify.py` → PASS at `main` `0dd03d6`. The stale `exit-plan/` claim of `arena-a3b7884b` (2026-11-10 09:58 UTC, no work ever pushed) is **not** taken over: its tax-penalty subject is now held by the active session `arena-c52c6a62`, and the `exit-plan/` path is left unused. No personal facts have been supplied by the user, so they stay unknown.
+<!-- END session arena-c9001a4a -->
+
 # Coordination
 
 <!-- BEGIN arena-eb9f0490 (placed directly under the title so it cannot collide with other sessions' EOF appends; every board below is preserved unchanged) -->
