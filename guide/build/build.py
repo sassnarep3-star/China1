@@ -83,7 +83,7 @@ W = PRICES["wise"]
 CHASE = D(PRICES["receiving"]["chase_incoming_wire_usd"])
 FULL = D(B["full_amount_usd"])
 FX_SHARE = 1 - MID / SELL  # one-way margin against the midpoint
-WISE_Q = {D(qt["send_cny"]): qt for qt in W["quotes"]}
+WISE_Q = {D(qt["target_usd"]): qt for qt in W["quotes"] if qt.get("target_usd")}
 
 
 def boc_parts(n):
@@ -126,10 +126,10 @@ def ladder(method):
                    "Conversion cost at the receiving bank not verified, so no total.")
             out.append(row(n, "partial", None, None, det, src=["CN-BOCTARIFF", "CN-RMBX"], flags=["F09"]))
         elif model == "wise":
-            qt = WISE_Q.get(held)
+            qt = WISE_Q.get(D(n))
             if qt:
                 lost = D(n) - D(qt["received_usd"])
-                det = (f"Quote: send {cny(held)} → fee {cny(qt['fee_cny'])} → receive {usd(qt['received_usd'])}. "
+                det = (f"Quote: send {cny(qt['send_cny'])} of the {cny(held)} at the mid rate → fee {cny(qt['fee_cny'])} → receive {usd(qt['received_usd'])}. "
                        "Any fee of the receiving bank is not included.")
                 out.append(row(n, "value", q2(lost), lost / n, det, src=["PR-WISEFEE", "PR-WISE"], flags=["F06"]))
             elif held > D(W["per_transfer_cap_cny"]):

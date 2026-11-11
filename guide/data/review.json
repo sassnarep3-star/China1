@@ -40,7 +40,7 @@
    "label": "Uses a 0.42% conversion spread",
    "pattern": "0\\.42\\s?%",
    "ok_if": "round-trip|round trip|two-way|both ways|twice|superseded|not the cost|one-way",
-   "verdict": "0.42% is a full buy-to-sell spread. The one-way cost against the midpoint on the 2026-11-10 board is 0.2094%. Lines that present 0.42% as the cost of one conversion overstate it.",
+   "verdict": "0.42% is a full buy-to-sell spread. The one-way cost against the midpoint on the 2026-11-11 board is 0.2100%. Lines that present 0.42% as the cost of one conversion overstate it.",
    "src": [
     "CN-FXBOARD"
    ]
@@ -70,7 +70,7 @@
    "label": "Hard-codes a CNY/USD rate snapshot",
    "pattern": "\\b66[5-9]\\.\\d\\d\\b|\\b6\\.6[5-9]\\d\\d\\b",
    "ok_if": "",
-   "verdict": "Dated observation. Archived editions use different readings (669.29, 669.03, 668.66 and others); this guide uses 668.51 sell / 665.71 buy from 2026-11-10 17:39:58. Figures from different snapshots must not be mixed.",
+   "verdict": "Dated observation. Archived editions use different readings (669.29, 669.03, 668.66 and others); this guide uses 669.11 sell / 666.3 buy from 2026-11-11 10:25:02. Figures from different snapshots must not be mixed.",
    "src": [
     "CN-FXBOARD"
    ]
@@ -132,7 +132,7 @@
    "label": "Gives a percentage fee for Wise",
    "pattern": "Wise.{0,80}\\d(\\.\\d+)?\\s?%",
    "ok_if": "",
-   "verdict": "Wise publishes no fixed tariff for CNY; any percentage is a dated quote. Sampled quotes on 2026-11-10 are in this guide's cost ladder.",
+   "verdict": "Wise publishes no fixed tariff for CNY; any percentage is a dated quote. Sampled quotes on 2026-11-11 are in this guide's cost ladder.",
    "src": [
     "PR-WISEFEE"
    ]
@@ -193,7 +193,7 @@
   {
    "where": "assets/build.py, data/costs.json, data/channels.json",
    "finding": "Present 0.42% as the conversion cost and use the 669.29 board reading of 2026-11-08.",
-   "fix": "This guide uses the one-way margin against the midpoint and a dated 2026-11-10 reading.",
+   "fix": "This guide uses the one-way margin against the midpoint and a dated 2026-11-11 reading.",
    "src": [
     "CN-FXBOARD"
    ]

@@ -142,7 +142,7 @@ def boc_total(n):
 
 
 recomputed = 0
-wise = {F(x["send_cny"]): F(x["received_usd"]) for x in prices["wise"]["quotes"]}
+wise = {F(x["target_usd"]): F(x["received_usd"]) for x in prices["wise"]["quotes"] if x.get("target_usd")}
 for m in methods:
     for n in targets:
         r = by[(m["id"], n)]
@@ -155,8 +155,8 @@ for m in methods:
         elif model in ("hsbc", "rmb"):
             exp_status = "partial"
         elif model == "wise":
-            if n * mid in wise:
-                exp_status, exp_total = "value", n - wise[n * mid]
+            if F(n) in wise and n * mid <= F(prices["wise"]["per_transfer_cap_cny"]):
+                exp_status, exp_total = "value", n - wise[F(n)]
             else:
                 exp_status = "blank"
         elif model == "cash":
@@ -186,7 +186,14 @@ check("CNY 420.00" in h10, "HSBC $10,000 fee component should be CNY 420.00 (100
 h400 = by[("M02", 400_000)]["made_up_of"]
 check("CNY 820.00" in h400, "HSBC $400,000 fee component should be CNY 820.00 (500 + 120 + 200)")
 a10 = by[("M13", 10_000)]["made_up_of"]
-check("CNY 751.11" in a10, "ATM $10,000 fee should be CNY 751.11 (6 × 112 + 12 + 1% × 6,711)")
+# Derived, never hard-coded: 6 full days at the CNY 112 cap plus one day of 12 + 1% of
+# the remainder, on the mid rate of the same board reading the ladder uses.
+_atm_held = 10_000 * mid
+_atm_days = int(_atm_held // 10000)
+_atm_rest = _atm_held - 10000 * _atm_days
+_atm_fee = _atm_days * 112 + 12 + _atm_rest / 100
+check(f"CNY {_atm_fee}"[:11] in a10 or f"CNY {float(_atm_fee):.2f}" in a10,
+      f"ATM $10,000 fee component should be CNY {float(_atm_fee):.2f} on this board reading")
 
 # 2, 3, 7 ------------------------------------------------------------ page checks
 class Page(HTMLParser):

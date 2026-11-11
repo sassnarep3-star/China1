@@ -1,5 +1,5 @@
 {
- "retrieved": "2026-11-10",
+ "retrieved": "2026-11-11",
  "levels": {
   "full": "The official page itself was opened by this session and the quoted text was read on it.",
   "excerpt": "The text was seen only in a search-engine excerpt of the official page; the page itself was not opened in full. Treated as unverified and listed on the Flagged page."
@@ -12,7 +12,7 @@
    "title": "Foreign-exchange rate board (外汇牌价)",
    "url": "https://www.boc.cn/sourcedb/whpj/",
    "level": "full",
-   "quote": "USD, per 100: 现汇买入价 665.71 · 现钞买入价 665.71 · 现汇卖出价 668.51 · 现钞卖出价 668.51 · published 2026/11/10 17:39:58. Board note: rates are for reference; the actual transaction rate applies.",
+   "quote": "USD, per 100: 现汇买入价 666.3 · 现钞买入价 666.3 · 现汇卖出价 669.11 · 现钞卖出价 669.11 · 中行折算价 671.91 · published 2026/11/11 10:25:02. Board note: rates are for reference; the actual transaction rate applies (客户办理结/购汇业务时，应以…实际交易汇率为准).",
    "short": "BOC rate board"
   },
   {
@@ -42,7 +42,7 @@
    "title": "Tariff of accounts and services, effective 2026-10-31",
    "url": "https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-accouts-and-services.pdf",
    "level": "full",
-   "quote": "2.2.4.1 发出电汇：卓越理财/运筹理财 按汇款金额的0.1%收取，每笔最低人民币100元，每笔最高人民币500元，另加电报费；2.2.4.2 电报费每笔人民币120元。备注：如汇款人要求美元汇出汇款金额划付收款人，我行将预先向汇款人收取人民币200元…不足部分再根据海外代理行的通知另行收取。本费率所载之收费并不包括其他机构所收取的费用。",
+   "quote": "2.2.4.1 发出电汇：卓越理财/运筹理财 按汇款金额的0.1%收取，每笔最低人民币100元，每笔最高人民币500元，另加电报费；2.2.4.2 电报费每笔人民币120元。备注：如汇款人要求美元汇出汇款金额划付收款人，我行将预先向汇款人收取人民币200元…不足部分再根据海外代理行的通知另行收取。本费率所载之收费并不包括其他机构所收取的费用。同一行费率表载明：私人银行业务个人客户该项汇款收费为“个人客户 免费”，电报费亦为“个人客户 免费”；卓越理财尊尚、卓越理财尊尚国际通客户享受该项服务免费。",
    "short": "HSBC China tariff"
   },
   {
@@ -60,9 +60,9 @@
    "group": "China – prices",
    "publisher": "Wise",
    "title": "Wise public comparison API, CNY to USD quotes",
-   "url": "https://api.wise.com/v3/comparisons/?sourceCurrency=CNY&targetCurrency=USD&sendAmount=66711",
+   "url": "https://api.wise.com/v3/comparisons/?sourceCurrency=CNY&targetCurrency=USD&sendAmount=66771",
    "level": "full",
-   "quote": "Quotes collected 2026-11-10 09:54–09:55 UTC, rate 0.149931 USD per CNY, markup 0.0: send CNY 66,711 → fee CNY 434.84 → receive USD 9,936.85; 133,422 → 845.90 → 19,877.27; 200,133 → 1,224.98 → 29,822.48; 266,844 → 1,570.08 → 39,772.78; 300,000 → 1,741.62 → 44,718.18; 2,668,440 → no quote returned.",
+   "quote": "Quotes collected 2026-11-11 02:35–02:37 UTC, rate 0.149807–0.149809 USD per CNY, markup 0.0, send amounts = the USD target × the mid rate of the same day's Bank of China board: send CNY 66,771 → fee CNY 435.20 → receive USD 9,937.70; 133,541 → 846.63 → 19,878.55; 200,312 → 1,226.04 → 29,824.87; 267,082 → 1,571.46 → 39,775.34; 300,000 → 1,741.74 → 44,681.18. Controls run the same minute: 300,001 → providers empty, no quote; 2,668,440 → no quote returned.",
    "short": "Wise quotes"
   },
   {
