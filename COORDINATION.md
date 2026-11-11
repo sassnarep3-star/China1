@@ -61,6 +61,15 @@ QA. This session will not touch those shared outputs. A report for final integra
 will be written under the exclusive scope above. Every external finding will be linked
 to the issuing authority, and unknown facts and live prices will not be invented.
 
+### Rebase conflict record (2026-11-11)
+
+`main` advanced from `91465a6` to `59ea92a` with PR #61 while this session was
+preparing the independent checks. Both sessions had inserted their claim at the top of
+`COORDINATION.md`; the rebase conflicted. Resolved by keeping **both complete blocks**
+in order, without dropping either session's text. No generated pages were changed by
+this conflict resolution. The fixed branch was rebased onto main and will be pushed
+with `--force-with-lease` because rebase rewrote this session's own published commits.
+
 ### Early integration requests (independent source checks, 2026-11-11)
 
 Please preserve these requests in the final Flagged for Review page and address them
