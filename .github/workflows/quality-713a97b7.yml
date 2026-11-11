@@ -1,0 +1,30 @@
+name: Independent browser and cost-table QA
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: quality-713a97b7/package-lock.json
+      - name: Install locked browser test dependencies
+        run: npm ci --prefix quality-713a97b7 --ignore-scripts --no-audit --no-fund
+      - name: Rebuild review report and check reproducibility
+        run: |
+          python3 quality-713a97b7/build.py
+          git diff --exit-code -- quality-713a97b7/index.html
+      - name: Verify table sources, local links and cost-ladder structure
+        run: python3 quality-713a97b7/audit.py
+      - name: Render at mobile, tablet and desktop widths
+        run: npm run browser --prefix quality-713a97b7

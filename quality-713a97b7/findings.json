@@ -1,0 +1,219 @@
+{
+  "reviewed_utc": "2026-11-11",
+  "baseline": "59ea92a",
+  "scope": "Targeted independent review of the canonical guide at the named baseline, not a claim to have manually verified every historical edition.",
+  "sources": [
+    {
+      "id": "FBAR-LAW",
+      "label": "31 U.S.C. § 5321(a)(5)(C)–(D)",
+      "url": "https://www.govinfo.gov/link/uscode/31/5321",
+      "quote": "For a willful violation, the statute specifies the greater of the fixed amount or 50 percent of the amount determined under subparagraph (D)."
+    },
+    {
+      "id": "FBAR-CFR",
+      "label": "31 CFR § 1010.821",
+      "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821",
+      "quote": "The table lists inflation-adjusted fixed penalty amounts and the applicable assessment-date heading."
+    },
+    {
+      "id": "WISE-GUIDE",
+      "label": "Wise: Guide to CNY transfers",
+      "url": "https://wise.com/help/articles/2955298/guide-to-cny-transfers",
+      "quote": "From-CNY eligibility, own-account requirement, funding limits and overall limit depend on the stated conditions."
+    },
+    {
+      "id": "WISE-QUOTE",
+      "label": "Wise: comparison quote endpoint",
+      "url": "https://api.wise.com/v3/comparisons/?sourceCurrency=CNY&targetCurrency=USD&sendAmount=66711",
+      "quote": "The provider returns a dated, changing comparison quote; this URL does not by itself preserve an earlier quote."
+    },
+    {
+      "id": "BOC-TARIFF",
+      "label": "Bank of China: personal tariff, notes 1 and 5",
+      "url": "https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf",
+      "quote": "Note 1: 收取等值外汇时，按交易时中国银行外汇买入价折算. Note 5: 此服务仅适用于汇款行与收款行无直接账户关系，需通过至少一家中转行办理的汇款业务."
+    },
+    {
+      "id": "BOC-RATE",
+      "label": "Bank of China: indicative exchange-rate board",
+      "url": "https://www.boc.cn/sourcedb/whpj/",
+      "quote": "本汇率表单位为100外币换算人民币，仅供参考…应以…实际交易汇率为准."
+    },
+    {
+      "id": "CHASE",
+      "label": "Chase Total Checking: wire fees",
+      "url": "https://www.chase.com/personal/fees/total-checking",
+      "quote": "Incoming wire: $15 per transfer, or $0 in the stated Chase-originated circumstances; terms depend on the account."
+    },
+    {
+      "id": "SAFE-WAGE",
+      "label": "SAFE Tianjin: foreign individuals' work income",
+      "url": "https://www.safe.gov.cn/tianjin/2026/0713/3088.html",
+      "quote": "境外个人在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的购汇资金来源材料（含税务凭证）在银行办理购汇."
+    },
+    {
+      "id": "PBOC-FX",
+      "label": "PBOC Order 2006-3, article 7",
+      "url": "https://www.safe.gov.cn/safe/2006/1225/5319.html",
+      "quote": "不得以分拆等方式逃避限额监管，也不得使用虚假商业单据或者凭证逃避真实性管理."
+    },
+    {
+      "id": "US-988",
+      "label": "26 U.S.C. § 988(c)(1)(C), (e)",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm",
+      "quote": "The statute includes nonfunctional-currency denominated bank deposits and has a conditional $200 personal-transaction gain exception."
+    },
+    {
+      "id": "IRS-FTC",
+      "label": "IRS: Foreign Tax Credit",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit",
+      "quote": "A taxpayer who pays foreign tax and is subject to U.S. tax on the same income may be able to claim a credit or itemized deduction; conditions apply."
+    },
+    {
+      "id": "FX-REG",
+      "label": "State Council FX Regulation, articles 39–45",
+      "url": "https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm",
+      "quote": "Different prohibited conduct has different legal consequences and conditions."
+    },
+    {
+      "id": "SAFE-CASH",
+      "label": "SAFE / Customs: foreign-currency cash",
+      "url": "https://www.safe.gov.cn/tianjin/2024/0430/2466.html",
+      "quote": "Above the stated amount, carrying foreign cash is in principle restricted; the notice describes exceptional cases and permits."
+    },
+    {
+      "id": "IRS-STREAMLINED",
+      "label": "IRS: streamlined filing compliance procedures",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/streamlined-filing-compliance-procedures",
+      "quote": "The procedures have specific eligibility rules, including a certification that the relevant failures were non-willful."
+    },
+    {
+      "id": "SCAN-CODE",
+      "label": "Repository: archive scan implementation",
+      "url": "https://github.com/sassnarep3-star/China1/blob/59ea92a/guide/build/scan.py",
+      "quote": "The archived repository scan is a rule-based search; matching patterns alone do not establish legal accuracy for every line."
+    }
+  ],
+  "items": [
+    {
+      "id": "QA01",
+      "priority": "High",
+      "title": "Willful FBAR penalty ceiling",
+      "observed": "The baseline summary presents the inflation-adjusted fixed amount as the willful maximum; the existing flag says the larger-of alternative was not independently opened.",
+      "finding": "The statute also provides a 50% alternative, where greater; the fixed amount is not necessarily the overall ceiling. Penalties are conditional, not transfer fees.",
+      "action": "Correct the ceiling and link both the statute and the current inflation-adjustment table; keep individual exposure blank.",
+      "sources": ["FBAR-LAW", "FBAR-CFR"],
+      "code": "https://github.com/sassnarep3-star/China1/blob/59ea92a/guide/data/taxes.json"
+    },
+    {
+      "id": "QA02",
+      "priority": "High",
+      "title": "A partial Wise quote is compared as fully priced",
+      "observed": "The baseline comparison labels a cheapest fully priced option even though Wise rows say recipient-bank fees are not included, while the BOC example includes a Chase receiving fee.",
+      "finding": "The two scenarios do not establish equal scope or a personalized cheapest route. Eligibility, payment method and receiving charges remain unknown.",
+      "action": "Show verified components and unknowns separately; avoid a definitive winner until both personalized quotes use the same assumptions.",
+      "sources": ["WISE-GUIDE", "WISE-QUOTE", "CHASE"],
+      "code": "https://github.com/sassnarep3-star/China1/blob/59ea92a/guide/build/build.py"
+    },
+    {
+      "id": "QA03",
+      "priority": "High",
+      "title": "BOC full-amount delivery and fee conversion assumptions",
+      "observed": "The baseline scenario includes a fixed full-amount charge and converts the CNY charges to USD using the selling rate.",
+      "finding": "BOC note 5 restricts that service to specified intermediary arrangements; note 1 describes the buy rate when fees are collected in equivalent foreign currency. A CNY-funded comparison needs a separately stated assumption.",
+      "action": "State the assumed correspondent relationship and fee-funding currency; show unconfirmed applicability and extra charges as blank/flagged.",
+      "sources": ["BOC-TARIFF", "BOC-RATE"],
+      "code": "https://github.com/sassnarep3-star/China1/blob/59ea92a/guide/build/build.py"
+    },
+    {
+      "id": "QA04",
+      "priority": "High",
+      "title": "Gross benchmark versus net received",
+      "observed": "The baseline ladder defines the input as CNY worth the stated USD amount at the midpoint, then deducts modeled costs.",
+      "finding": "That target is not a guarantee that the same USD amount reaches the destination. BOC says its public board is indicative; the midpoint is an analytical benchmark rather than a published bank charge.",
+      "action": "Label the target as benchmark principal and disclose the estimated net separately; do not claim the amount received without a verified quote.",
+      "sources": ["BOC-RATE", "BOC-TARIFF"],
+      "code": "https://github.com/sassnarep3-star/China1/blob/59ea92a/guide/build/build.py"
+    },
+    {
+      "id": "QA05",
+      "priority": "High",
+      "title": "Eligibility depends on the source of funds",
+      "observed": "The baseline landing page introduces one passport-and-tax-record route broadly for the user's unknown account.",
+      "finding": "The cited SAFE Q&A addresses lawful current-account income such as wages; it does not establish eligibility for every kind of property, corporate balance, inheritance or citizenship/residence history.",
+      "action": "Describe the route as conditional on the bank's classification, source documentation and any applicable approvals; leave the user's eligibility unverified.",
+      "sources": ["SAFE-WAGE", "PBOC-FX"],
+      "code": "https://github.com/sassnarep3-star/China1/blob/59ea92a/index.html"
+    },
+    {
+      "id": "QA06",
+      "priority": "High",
+      "title": "Splitting is prohibited when used to evade limits",
+      "observed": "The baseline landing page says not to split the amount without the evasion qualification, while the Wise provider publishes per-transfer limits.",
+      "finding": "PBOC article 7 targets splitting to evade limit supervision; the cited text is not a blanket prohibition of every multiple-transfer schedule.",
+      "action": "Keep the prohibition on evasion and borrowed quotas, while saying any multiple-transfer plan requires provider and bank approval and must not evade controls.",
+      "sources": ["PBOC-FX", "WISE-GUIDE"],
+      "code": "https://github.com/sassnarep3-star/China1/blob/59ea92a/index.html"
+    },
+    {
+      "id": "QA07",
+      "priority": "High",
+      "title": "US currency gain and foreign-tax credit are conditional",
+      "observed": "A parallel correction qualified the guide's main tax wording, but some baseline summary language still emphasizes only previously untaxed underlying income.",
+      "finding": "A separate US foreign-currency gain can require analysis; a credit is conditional and does not automatically remove US tax. This review does not calculate the user's tax.",
+      "action": "Keep the qualified explanation consistent in the landing page, summary, downloadable summary and tax table; refer the case to qualified US and China advisers.",
+      "sources": ["US-988", "IRS-FTC"],
+      "code": "https://github.com/sassnarep3-star/China1/blob/59ea92a/EXECUTIVE_SUMMARY.md"
+    },
+    {
+      "id": "QA08",
+      "priority": "Medium",
+      "title": "Penalty exposure is not a transfer price",
+      "observed": "The baseline CSV stores three prohibited-route penalty scenarios in a column named total_cost_usd, although their status is penalty.",
+      "finding": "The cited regulation describes distinct violation categories and conditional legal consequences; a maximum penalty is not an ordinary charge or guaranteed outcome.",
+      "action": "Separate legal exposure from actual transfer-cost columns or clearly mark those rows so downstream users cannot rank them as prices.",
+      "sources": ["FX-REG"],
+      "code": "https://github.com/sassnarep3-star/China1/blob/59ea92a/guide/data/cost-ladder.csv"
+    },
+    {
+      "id": "QA09",
+      "priority": "Medium",
+      "title": "Live quotes and historic snapshots",
+      "observed": "The guide records a dated BOC snapshot and Wise comparison samples; the cited public endpoints return current data and can change.",
+      "finding": "A dated snapshot can support an illustrative calculation but is not an executable rate or a verified historic quote once the live endpoint changes.",
+      "action": "Keep timestamp and time zone beside every illustration, explain the source snapshot, and request contemporaneous binding quotes; do not invent current prices.",
+      "sources": ["BOC-RATE", "WISE-QUOTE"],
+      "code": "https://github.com/sassnarep3-star/China1/blob/59ea92a/guide/data/prices.json"
+    },
+    {
+      "id": "QA10",
+      "priority": "Medium",
+      "title": "Foreign-currency cash exceptions",
+      "observed": "Some baseline rows describe carrying over the stated threshold as unavailable in one trip.",
+      "finding": "SAFE's notice says 'in principle' and also lists exceptional situations in which a permit may be requested; it does not imply an unconditional ban in every case.",
+      "action": "State the ordinary rule and narrow exceptions accurately, without presenting cash as a means to bypass currency controls.",
+      "sources": ["SAFE-CASH"],
+      "code": "https://github.com/sassnarep3-star/China1/blob/59ea92a/guide/build/build.py"
+    },
+    {
+      "id": "QA11",
+      "priority": "Medium",
+      "title": "Automated scan is not line-by-line legal certification",
+      "observed": "The archived-site review counts lines examined by a pattern scan and the verifier checks source-link presence and arithmetic.",
+      "finding": "Neither a pattern match nor a registered link proves every archived claim is supported by an official source; the automated checks do not fetch or interpret legal texts.",
+      "action": "Report the scan as a scoped machine search, identify what was actually re-read, and retain uncertainty for historical editions.",
+      "sources": ["SCAN-CODE"],
+      "code": "https://github.com/sassnarep3-star/China1/blob/59ea92a/guide/build/verify.py"
+    },
+    {
+      "id": "QA12",
+      "priority": "Unknown",
+      "title": "Missing US filing history",
+      "observed": "The user has not supplied whether prior returns, FBARs or information returns were required or filed.",
+      "finding": "The IRS offers procedures with specific eligibility requirements, including a non-willfulness certification. Their applicability cannot be decided from the available facts.",
+      "action": "Obtain account histories and prior filings; consult a qualified professional before choosing any disclosure or remediation procedure.",
+      "sources": ["IRS-STREAMLINED", "FBAR-LAW"],
+      "code": "https://github.com/sassnarep3-star/China1/blob/59ea92a/guide/questions.html"
+    }
+  ]
+}

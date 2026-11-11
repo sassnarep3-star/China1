@@ -19,7 +19,8 @@ const chromium = require('@sparticuz/chromium');
 const root = path.resolve(__dirname, '..');
 const base = '/China1/';
 const pages = ['index.html', ...fs.readdirSync(path.join(root, 'guide'))
-  .filter(name => name.endsWith('.html')).sort().map(name => `guide/${name}`)];
+  .filter(name => name.endsWith('.html')).sort().map(name => `guide/${name}`),
+  'quality-713a97b7/index.html'];
 const widths = [320, 360, 390, 768, 1280];
 const issues = [];
 const observations = [];
@@ -121,10 +122,11 @@ async function run() {
               if (!await tab.$eval('details', element => element.open)) logError(location, 'details summary did not open');
             }
           }
-          if (process.env.QA_SCREENSHOTS === '1' && name === 'index.html' && (width === 360 || width === 1280)) {
+          if (process.env.QA_SCREENSHOTS === '1' && (name === 'index.html' || name === 'quality-713a97b7/index.html') && (width === 360 || width === 1280)) {
             const out = path.join(__dirname, 'artifacts');
+            const label = name === 'index.html' ? 'landing' : 'review';
             fs.mkdirSync(out, {recursive: true});
-            await tab.screenshot({path: path.join(out, `landing-${width}.png`), fullPage: false});
+            await tab.screenshot({path: path.join(out, `${label}-${width}.png`), fullPage: false});
           }
           runs++;
         } catch (error) {

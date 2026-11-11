@@ -100,8 +100,9 @@ def local_destination(page: Path, href: str) -> tuple[Path, str] | None:
 
 def page_checks() -> tuple[int, int, int]:
     source_doc = json.loads((DATA / "sources.json").read_text(encoding="utf-8"))
-    source_urls = {s["url"] for s in source_doc["sources"]}
-    pages = [ROOT / "index.html", *sorted(GUIDE.glob("*.html"))]
+    review_doc = json.loads((ROOT / "quality-713a97b7/findings.json").read_text(encoding="utf-8"))
+    source_urls = {s["url"] for s in source_doc["sources"] + review_doc["sources"]}
+    pages = [ROOT / "index.html", *sorted(GUIDE.glob("*.html")), ROOT / "quality-713a97b7/index.html"]
     parsed: dict[Path, Document] = {}
 
     def parse(path: Path) -> Document:
