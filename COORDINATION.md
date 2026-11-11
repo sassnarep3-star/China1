@@ -49,8 +49,8 @@ or taking over that path or the older branches. PRs #39 and #45 are not touched.
 
 | Task | Status | Owner | Exclusive file scope |
 |---|---|---|---|
-| Q1 Independently inspect the current site for mobile/accessibility/requirements defects and cost-table consistency, recording evidence, links and source-specific caveats | in progress | arena-713a97b7 | `quality-713a97b7/**` |
-| Q2 Build reproducible checks of mobile rendering, local links, table source links, and numeric scenarios; report failures rather than silently fixing another owner's files | in progress | arena-713a97b7 | `quality-713a97b7/**`, `.github/workflows/quality-713a97b7.yml` |
+| Q1 Independently inspect the current site for mobile/accessibility/requirements defects and cost-table consistency, recording evidence, links and source-specific caveats | done — 12 findings recorded for review | arena-713a97b7 | `quality-713a97b7/**` |
+| Q2 Build reproducible checks of mobile rendering, local links, table source links, and numeric scenarios; report failures rather than silently fixing another owner's files | done — checks and CI added | arena-713a97b7 | `quality-713a97b7/**`, `.github/workflows/quality-713a97b7.yml` |
 | Q3 Publish QA findings, integration requests, independently rerun checks, PR/merge and Pages confirmation | in progress | arena-713a97b7 | `quality-713a97b7/**`, this board entry |
 
 Cross-session request: `arena-db079cfc`, `arena-2d43a9d4`, and `arena-faa59cc9`
@@ -109,6 +109,47 @@ it supports the wording. Baseline inspected: `main` `272da23`.
    addresses lawful current-account income supported by identity/source/tax records,
    not every possible source of funds. Property, inheritance, and corporate funds
    have distinct rules. Personal eligibility, source and actual costs remain unknown.
+
+### Work and verification record (2026-11-11)
+
+- `quality-713a97b7/` contains a standalone, mobile-friendly **Flagged for Review**
+  report, 12 findings, 15 source notes, deterministic generator, structural and
+  numerical checks, a headless-browser check, and seven mutation-oriented tests.
+  It is a **targeted** inspection of baseline `59ea92a`, not a claim that every
+  historical statement has been independently verified. The historical pattern
+  scan is not a substitute for legal verification of every line.
+- Official pages actually opened in this session include the
+  [FBAR statute](https://www.govinfo.gov/link/uscode/31/5321),
+  [inflation table](https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821),
+  [§ 988](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm),
+  [IRS foreign tax credit](https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit),
+  [IRS streamlined procedures](https://www.irs.gov/individuals/international-taxpayers/streamlined-filing-compliance-procedures),
+  [BOC personal tariff](https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf),
+  [BOC board](https://www.boc.cn/sourcedb/whpj/),
+  [Wise CNY guide](https://wise.com/help/articles/2955298/guide-to-cny-transfers),
+  [SAFE wage Q&A](https://www.safe.gov.cn/tianjin/2026/0713/3088.html),
+  [PBOC Order 2006-3](https://www.safe.gov.cn/safe/2006/1225/5319.html),
+  [SAFE cash notice](https://www.safe.gov.cn/tianjin/2024/0430/2466.html), and
+  [State Council FX Regulation](https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm).
+  These support the specific claims cited in `findings.json`; they do not establish
+  the user's facts or a personalized all-in quote.
+- Verification on the combined local site after PR #63: `npm ci --prefix
+  quality-713a97b7 --ignore-scripts`, `python3 quality-713a97b7/build.py`, and
+  `npm test --prefix quality-713a97b7` passed. This included 7 negative/positive
+  unit tests; 12 canonical/report pages × 5 viewport widths = 60 headless Chrome
+  renders; 1,084 registered-source table rows; 19 × 40 = 760 ladder rows;
+  40 BOC scenario comparisons; 280 repository HTML pages / 17,614 local anchor
+  references checked. `python3 guide/build/verify.py` also passed. Tests do not
+  make network requests to sources and do not prove their interpretation.
+- The 120 rows labelled `penalty` in the current CSV contain conditional legal
+  exposure rather than a transfer fee; this is logged as a review warning and on
+  the report. Individual taxes, eligibility, recipient charges and the cheapest
+  route remain unknown. Comments were sent to PRs #63 and #64, and the requests
+  are recorded above; no other session's claimed files were edited.
+- **Integration request:** once this report is on `main`, please link
+  `quality-713a97b7/index.html` from the canonical Flagged page or archive, so the
+  user can find the independent evidence. No link was added to the guide during
+  another session's active claim.
 
 <!-- END session arena-713a97b7 -->
 
