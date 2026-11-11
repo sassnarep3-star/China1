@@ -30,6 +30,128 @@ Log (arena-f766722d):
 - **Irregularities:** none new that block publication; archived scan still 184,637 lines / 2,074 matches published on guide/repo-review.html. F23 added by parallel session documents remaining advisory limits.
 
 ---
+<!-- BEGIN session arena-713a97b7: unique insertion at top, 2026-11-11 -->
+# Session board — arena-713a97b7 (2026-11-11)
+
+Branch: `arena/713a97b7-china1` is fixed by Arena; the requested
+`session-<id>/<task>` naming is unavailable. Claimed 2026-11-11 02:36 UTC,
+before task work. The base is main `272da23` (PR #59). All prior board text below
+is preserved. The requested work is coordinated on the fixed branch, not a new branch.
+
+Recent remote-branch claims inspected in addition to this board:
+`arena/db079cfc-china1` claims the current guide's research, decision page, rates,
+generator and final integration; `arena/2d43a9d4-china1` claims substantially the same
+files; `arena/faa59cc9-china1` claims a narrow tax/guide correction overlapping both.
+They were committed within minutes of each other and are active, so this session will
+not edit any of their scopes. Older unfinished `release-qa/` claims have had no commit
+for more than 60 minutes; the mobile/links QA task is handed off here, without editing
+or taking over that path or the older branches. PRs #39 and #45 are not touched.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| Q1 Independently inspect the current site for mobile/accessibility/requirements defects and cost-table consistency, recording evidence, links and source-specific caveats | done — 12 findings recorded for review | arena-713a97b7 | `quality-713a97b7/**` |
+| Q2 Build reproducible checks of mobile rendering, local links, table source links, and numeric scenarios; report failures rather than silently fixing another owner's files | done — checks and CI added | arena-713a97b7 | `quality-713a97b7/**`, `.github/workflows/quality-713a97b7.yml` |
+| Q3 Publish QA findings, integration requests, independently rerun checks, PR/merge and Pages confirmation | in progress | arena-713a97b7 | `quality-713a97b7/**`, this board entry |
+
+Cross-session request: `arena-db079cfc`, `arena-2d43a9d4`, and `arena-faa59cc9`
+have active overlapping claims on `guide/build/build.py`, generated guide HTML,
+`index.html`, and `EXECUTIVE_SUMMARY.md`. Please resolve ownership before editing,
+preserve each other's work on rebase, and incorporate fixes requested by independent
+QA. This session will not touch those shared outputs. A report for final integration
+will be written under the exclusive scope above. Every external finding will be linked
+to the issuing authority, and unknown facts and live prices will not be invented.
+
+### Rebase conflict record (2026-11-11)
+
+`main` advanced from `91465a6` to `59ea92a` with PR #61 while this session was
+preparing the independent checks. Both sessions had inserted their claim at the top of
+`COORDINATION.md`; the rebase conflicted. Resolved by keeping **both complete blocks**
+in order, without dropping either session's text. No generated pages were changed by
+this conflict resolution. The fixed branch was rebased onto main and will be pushed
+with `--force-with-lease` because rebase rewrote this session's own published commits.
+
+### Early integration requests (independent source checks, 2026-11-11)
+
+Please preserve these requests in the final Flagged for Review page and address them
+in the canonical guide rather than taking the presence of a source link as proof that
+it supports the wording. Baseline inspected: `main` `272da23`.
+
+1. **Higher FBAR willful ceiling:** the current guide calls USD 165,353 the maximum;
+   [31 U.S.C. 5321(a)(5)(C)–(D)](https://www.govinfo.gov/link/uscode/31/5321)
+   states the greater of the statutory fixed amount or 50% of the defined amount;
+   [31 CFR 1010.821](https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821)
+   provides the inflation-adjusted fixed amount. Do not present the fixed amount alone
+   as the overall maximum. Reasonable-cause exception is in subsection (B).
+2. **China-tax voucher ≠ proof that conversion adds only fees:**
+   [26 U.S.C. 988(c)(1)(C), (e)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm)
+   includes foreign-currency deposits and a conditional personal-transaction $200
+   exception; a currency gain may require a separate US analysis. The
+   [IRS](https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit)
+   says a foreign tax credit *may* apply, with conditions, not that it automatically
+   eliminates US tax. The prior guide's blanket wording is too certain.
+3. **Wise versus BOC is not a fully priced winner:** the guide compares the published
+   Wise quote without a verified recipient fee against a BOC illustration including
+   a Chase fee. The [Wise guide](https://wise.com/help/articles/2955298/guide-to-cny-transfers)
+   limits eligibility, funding, and transfers; avoid presenting the lowest of these
+   unequal/partial costs as a verified best deal.
+4. **Full-amount and conversion assumptions:** [BOC tariff PDF notes 1 and 5](https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf)
+   say full-amount service applies when banks have no direct account relationship and
+   require an intermediary; note 1 specifies the buy rate for CNY fees actually
+   collected in foreign currency. The guide's universal $25 and fee-to-USD conversion
+   require a specified assumption/flag. BOC's [rate board](https://www.boc.cn/sourcedb/whpj/)
+   says transaction rates, not its indicative board, govern; midpoint loss is an
+   analytical comparison, not an additional published fee or binding quote.
+5. **No blanket ban on all split transactions:** PBOC Decree 2006-3
+   [Art. 7](https://www.safe.gov.cn/safe/2006/1225/5319.html) prohibits splitting
+   *to evade limits*, while the [Wise official guide](https://wise.com/help/articles/2955298/guide-to-cny-transfers)
+   sets per-transfer limits. Avoid saying all multiple transfers are forbidden.
+6. **Quote the wage route as conditional:** [SAFE's 2026 Q&A](https://www.safe.gov.cn/tianjin/2026/0713/3088.html)
+   addresses lawful current-account income supported by identity/source/tax records,
+   not every possible source of funds. Property, inheritance, and corporate funds
+   have distinct rules. Personal eligibility, source and actual costs remain unknown.
+
+### Work and verification record (2026-11-11)
+
+- `quality-713a97b7/` contains a standalone, mobile-friendly **Flagged for Review**
+  report, 12 findings, 15 source notes, deterministic generator, structural and
+  numerical checks, a headless-browser check, and seven mutation-oriented tests.
+  It is a **targeted** inspection of baseline `59ea92a`, not a claim that every
+  historical statement has been independently verified. The historical pattern
+  scan is not a substitute for legal verification of every line.
+- Official pages actually opened in this session include the
+  [FBAR statute](https://www.govinfo.gov/link/uscode/31/5321),
+  [inflation table](https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821),
+  [§ 988](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm),
+  [IRS foreign tax credit](https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit),
+  [IRS streamlined procedures](https://www.irs.gov/individuals/international-taxpayers/streamlined-filing-compliance-procedures),
+  [BOC personal tariff](https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf),
+  [BOC board](https://www.boc.cn/sourcedb/whpj/),
+  [Wise CNY guide](https://wise.com/help/articles/2955298/guide-to-cny-transfers),
+  [SAFE wage Q&A](https://www.safe.gov.cn/tianjin/2026/0713/3088.html),
+  [PBOC Order 2006-3](https://www.safe.gov.cn/safe/2006/1225/5319.html),
+  [SAFE cash notice](https://www.safe.gov.cn/tianjin/2024/0430/2466.html), and
+  [State Council FX Regulation](https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm).
+  These support the specific claims cited in `findings.json`; they do not establish
+  the user's facts or a personalized all-in quote.
+- Verification on the combined local site after PR #63: `npm ci --prefix
+  quality-713a97b7 --ignore-scripts`, `python3 quality-713a97b7/build.py`, and
+  `npm test --prefix quality-713a97b7` passed. This included 7 negative/positive
+  unit tests; 12 canonical/report pages × 5 viewport widths = 60 headless Chrome
+  renders; 1,084 registered-source table rows; 19 × 40 = 760 ladder rows;
+  40 BOC scenario comparisons; 280 repository HTML pages / 17,614 local anchor
+  references checked. `python3 guide/build/verify.py` also passed. Tests do not
+  make network requests to sources and do not prove their interpretation.
+- The 120 rows labelled `penalty` in the current CSV contain conditional legal
+  exposure rather than a transfer fee; this is logged as a review warning and on
+  the report. Individual taxes, eligibility, recipient charges and the cheapest
+  route remain unknown. Comments were sent to PRs #63 and #64, and the requests
+  are recorded above; no other session's claimed files were edited.
+- **Integration request:** once this report is on `main`, please link
+  `quality-713a97b7/index.html` from the canonical Flagged page or archive, so the
+  user can find the independent evidence. No link was added to the guide during
+  another session's active claim.
+
+<!-- END session arena-713a97b7 -->
 
 # Session board — arena-2fb403b0 (2026-11-10)
 
