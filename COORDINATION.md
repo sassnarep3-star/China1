@@ -60,6 +60,37 @@ Rebase conflict note: `origin/main` advanced again via PR #71 (session `arena-0f
 
 <!-- END session arena-2ece572a -->
 
+<!-- BEGIN session arena-c2e7e812: unique insertion at top, 2026-11-11 -->
+# Session board — arena-c2e7e812 (2026-11-11)
+
+Branch: `arena/c2e7e812-china1` (fixed by Arena; the requested `session-<id>/<task>` naming is unavailable — same logged deviation as every earlier session). Claimed **2026-11-11 12:48 UTC**, before any task work. Base: `main` `0dd03d6` (merge of PR #69).
+
+**Board and remote state read at claim time** (this file read in full; all 64 remote heads and open PRs listed via the GitHub API at 12:48–12:49 UTC):
+
+- **Stale takeover (60-minute rule):** session `arena-dc298e7a` claimed final-integration tasks D1–D6 at 07:43 UTC on 2026-11-11 ("in progress"). Its newest commit is 07:42:14 UTC — over 5 hours before this claim. Its merged PR #69 contained the board entry only; task work (verification record, corrections, archive link for the QA report) was never committed. Under the >60-minute-no-commits rule this session takes over D1–D6 and logs the handoff here. Nothing of that session exists beyond its board block, so nothing is discarded.
+- Session `arena-fe71e6d5` (last commit 07:46 UTC, marked done) and every other branch (last commit ≤ 07:46 UTC) are stale or complete. Open PRs #39 and #45 belong to other sessions, stay open, and stay listed on Flagged for Review — not touched.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| C1 This claim block; commit and push immediately | done (pushed 12:50 UTC) | arena-c2e7e812 | `COORDINATION.md` (this block only) |
+| C2 Independent rebuild + full verify of the canonical guide (`build.py` deterministic rebuild; `verify.py` rows/source links/blanks/arithmetic/link crawl) | done | arena-c2e7e812 | `verification-c2e7e812/**` (record); read-only on `guide/**` for this task |
+| C3 Line-by-line re-check of the guide's load-bearing sources on official pages via web_search/fetch today; per-source PASS/FAIL record | done | arena-c2e7e812 | `verification-c2e7e812/**` |
+| C4 Integrate the still-open QA integration request: link `quality-713a97b7/index.html` from the canonical archive page; re-check the six QA wording requests against current guide data and correct only where the cited official text does not support the wording | done | arena-c2e7e812 | `guide/data/archive.json`, regenerated `guide/archive.html` |
+| C5 Update `EXECUTIVE_SUMMARY.md`/`README.md`/`REQUIREMENTS.md` only if C2–C4 change something; whole-repo broken-link crawl | done — no edits needed: data unchanged (figures match current build; stale figures exist only inside historical session-board blocks, preserved verbatim per protocol); link crawl re-run by `verify.py` (PASS) | arena-c2e7e812 | none (decision logged here) |
+| C6 PR to `main`, merge without waiting, confirm GitHub Pages deploys, record PR link and merge result here | in progress | arena-c2e7e812 | this block |
+
+Log (arena-c2e7e812):
+- 2026-11-11 12:50 UTC — claim committed and pushed before any task work (commit 7219e3f).
+- 2026-11-11 ~13:00 UTC — C2/C3 done: deterministic rebuild identical before changes; `verify.py` PASS (11 pages; 1,057 rows; 288 blank-linked rows; 370 totals recomputed; 280 files / 22,600 links). 15 load-bearing sources re-checked via web_search against official-page excerpts; record in `verification-c2e7e812/`. All PASS; BOC tariff PDF consistent with its stored quote (server not fetchable from the sandbox, noted in the record). Six QA wording requests re-checked against current text — all already satisfied (F14 documents the FBAR 50% willful alternative; FTC wording conditional; Wise comparison caveated; splitting wording limited to evasion-driven splitting per PBOC Order 2006-3 art. 7; wage route conditional). No correction edits required.
+- 2026-11-11 ~13:05 UTC — C4 done: appended `quality-713a97b7/index.html` to `guide/data/archive.json` (open integration request from QA report, carried over via the dc298e7a takeover); rebuilt; `verify.py` PASS (22,601 internal links, none broken). No other guide page changed.
+- 2026-11-11 ~13:15 UTC — **Rebase conflict record:** while this session worked, `main` advanced from `0dd03d6` to `2cee77a` through PRs #70, #71, #72, #75, #76, #77 (sessions arena-edbb7990, arena-0f7c9cf5, arena-2ece572a, arena-c52c6a62, arena-c9001a4a, arena-31577600, arena-00b28732). `git pull --rebase` conflicted on `COORDINATION.md` top insertions (sessions arena-0f7c9cf5/2ece572a claimed at 12:49 UTC, overlapping this session's 12:48 UTC takeover of the stale dc298e7a scopes — simultaneous claims under the stale-claim rule). Resolved by preserving **every** session block verbatim (their blocks first, mine after); no session's work, files or findings were dropped or overwritten. Post-rebase diff against main contains only: my board block, the archive entry + regenerated `guide/archive.html` tile, and `verification-c2e7e812/`. The overlapping integrations of the other sessions (34th source — SAFE Tianjin 2025-07-15 non-taxable-income clarification; F24; corrected decision-page wording) are intact and untouched.
+- 2026-11-11 ~13:18 UTC — post-rebase re-run on merged main `2cee77a`: `build.py` deterministic (working tree clean after rebuild), `verify.py` PASS — 11 pages; 1,059 sourced rows; 292 blank-flagged rows; 760 ladder rows; 370 totals recomputed; 34 sources; 24 flags; 281 HTML files / 22,655 internal links; none broken. Archive page now links the QA report (20 entries).
+
+Rules this session applies: archived editions are read-only; no figure is copied from any archived edition into the guide without being re-read on the official page in this session; unconfirmable values stay blank and flagged; prohibited routes are listed with legal consequence only, no execution steps; no personal fact about the user's account, source of funds, or tax history is inferred.
+
+Requests to other sessions: do not edit `guide/**`, `index.html`, `EXECUTIVE_SUMMARY.md`, `README.md`, `REQUIREMENTS.md` while this claim is open; log the request in this file instead and it will be integrated.
+<!-- END session arena-c2e7e812 -->
+
 <!-- BEGIN session arena-fe71e6d5: unique insertion at top, 2026-11-11 -->
 # Session board — arena-fe71e6d5 (2026-11-11)
 
