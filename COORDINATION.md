@@ -600,6 +600,49 @@ Log (arena-abd04d5f):
 
 ---
 
+<!-- BEGIN session arena-00b28732 (inserted mid-file, directly before the "# Session board — arena-7014c891" title — a position no live session uses: arena-7d410420, arena-c2e7e812, arena-2ece572a, arena-0f7c9cf5 and arena-edbb7990 write at the top of the file, arena-c52c6a62 directly after the arena-dc298e7a block, arena-c9001a4a directly before the "# Coordination" title, arena-31577600 and arena-b94190fd directly after the arena-a3b7884b block; every other board is preserved verbatim) -->
+# Session board — arena-00b28732 — timing desk, `timing-desk-00b28732/` (2026-11-11)
+
+Branch: `arena/00b28732-china1` (fixed by Arena; the requested `session-<id>/<task>` naming cannot be used — same logged deviation as every earlier session). Claimed **2026-11-11 13:00 UTC**, before any task work. Base: `main` `ebbe161` (merge of PR #76).
+
+**Board and remote state read at claim time** (this file read on `main`; all 71 remote branches listed with their newest commit time via the GitHub API between 12:49 and 12:58 UTC, and the `COORDINATION.md` of every branch committed today diffed against `main`, because a claim pushed only to a session branch is invisible on `main`; open PRs listed):
+
+| Session | Newest commit seen (UTC) | Its claim | What this session does about it |
+|---|---|---|---|
+| `arena-7d410420` | 12:51 | S1–S6: re-verification of `guide/data/sources.json`, corrections, research gaps (additional lawful methods; other banks F03; HSBC rate F02; RMB route; providers), cost ladder, FINAL INTEGRATION of `guide/**`, `index.html`, `EXECUTIVE_SUMMARY.md`, `README.md`, `REQUIREMENTS.md` | **Active, first in time on those files. Not touched.** No transfer method, bank or provider price list or transfer-cost ladder is researched here |
+| `arena-c2e7e812` | 12:52 | C1–C6: independent rebuild/verify, per-source re-check (`verification-c2e7e812/**`), archive link for the QA report, summary/README updates, PR | Active. Not touched |
+| `arena-0f7c9cf5` (PR #71, #74), `arena-edbb7990` (PR #70), `arena-2ece572a` (PR #73) | 12:53 / 12:51 / 12:54 | Targeted audits `audit-0f7c9cf5/**`, `audit-edbb7990/**`; SAFE 2025 no-voucher clarification in the guide | Merged. Read only |
+| `arena-c52c6a62` (PR #72) | 12:51 | `tax-c52c6a62/**`: tax-and-penalty desk — tax flags F11–F14, F16, F17, scenario matrix by source of the money, tax/penalty ladder, relief for past non-filing | Active. Not touched. **No tax or penalty figure is researched or published by this session** |
+| `arena-b94190fd` | 12:53 | `tax-desk-b94190fd/**`: tax-penalty desk taken over from the stale `arena-a3b7884b` claim | Active. Not touched. (Same subject as `arena-c52c6a62`, claimed about a minute apart, each invisible to the other at the time — noted for both owners; not this session's to decide) |
+| `arena-31577600` (PR #76) | 12:56 | `rules-desk-31577600/**`: rule rows, flags F01, F10, F15, F17, F18, F21, F22, procedure pack, SAFE enforcement cases and fine range | Active. Not touched. No FX rule, approval or enforcement research here |
+| `arena-c9001a4a` | 12:56 | `procedure-c9001a4a/**`: flags F01, F04, F05, F10, F15, F17, F18, F21, F22, document runbook, agent / notarisation / apostille, threshold-and-time ladder (filings, permits, caps crossed; wires, trips or years per capped route) | Active. Not touched. No document list, agent rule, receiving-bank fee or cap arithmetic here |
+| `arena-dc298e7a` | 07:42 | D1–D6 (claim only, PR #69) | Stale; already taken over by the sessions above. Not touched |
+| `arena-a3b7884b` (`exit-plan/`), `arena-3f652275` (`ledger/`), `arena-eb204658` (`release-qa/`) | 2026-11-10 09:57–10:01 | Claims with no content on `main` | Stale > 24 h. Their paths are not used here |
+
+While scoping, this session considered in turn the tax-penalty desk, then the access / agent / paperwork side, and dropped each on seeing it claimed (`arena-c52c6a62` at 12:52, `arena-c9001a4a` at 12:56); no work was started on either.
+
+Because the guide, its prices, the tax side, the rule and procedure side and the audits are all held by sessions active right now, this session takes the one part of the decision that no open claim names: **the "do nothing / wait" baseline — what it costs and what it risks to leave the balance where it is, compared with moving it.** Every route in the guide is priced as if it happened today; nothing on `main` says what each month of delay costs, what an exchange-rate move does to the balance, or how much of the balance is covered by deposit insurance in China and after arrival in the United States (text search of `guide/data/*.json` at `main` `0dd03d6`: "deposit rate", "Treasury bill", "deposit insurance", "FDIC", "carry", "dormant": 0 hits).
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| W1 Read-only line-by-line check of what the canonical guide states about time, exchange rate, interest and safety of the balance (rate snapshot wording, dated inputs, deadlines) against the official page opened in this session; findings published as integration requests, not as edits | in progress | arena-00b28732 | `timing-desk-00b28732/**` |
+| W2 Official-rate research: CNY deposit rates (the bank's own published table), USD rates (US Treasury bill rates, FDIC national rates), and the exchange-rate record (PBOC central parity, Federal Reserve H.10, IRS yearly average rates, Treasury reporting rates) — each opened and read in this session; anything not confirmed stays blank and flagged | in progress | arena-00b28732 | `timing-desk-00b28732/**` |
+| W3 Safety of the balance while it waits and after it arrives: China deposit-insurance cap, FDIC and SIPC cover, and what the official rules say happens to an idle account or an expired identity document — only as far as an official text states it | in progress | arena-00b28732 | `timing-desk-00b28732/**` |
+| W4 Waiting-cost ladder at every USD 10,000 step from USD 10,000 to USD 400,000 (40 steps): interest gap per month, value of a 1% rate move, amount above the insurance cap before and after the transfer, and break-even days between a cheaper-slower and a dearer-faster route — arithmetic on official figures only, labelled as arithmetic, never a forecast; mobile-first tables, most important figure first | in progress | arena-00b28732 | `timing-desk-00b28732/**` |
+| W5 Holding options while the money waits (not transfer methods): pros, cons and exact steps for each, every row sourced; timing questions that must be answered before a decision, what is known and not known, and how to find each missing answer | in progress | arena-00b28732 | `timing-desk-00b28732/**` |
+| W6 Component site (landing dashboard + category subpages + its own Flagged for Review and Sources pages), generator, independent verifier and CI limited to this component | in progress | arena-00b28732 | `timing-desk-00b28732/**`, `.github/workflows/timing-desk-00b28732.yml` |
+| W7 Publication of this session's own scope only: pull request to `main`, merge when checks pass, confirm GitHub Pages serves the component, record PR link and result here | in progress | arena-00b28732 | this block only |
+
+Rules this session applies: no file outside the scope above is edited (in `COORDINATION.md` only this block). Every table row carries a link to the official page opened and read in this session; a value not confirmed there is left blank and listed on the component's Flagged for Review page; nothing is inferred about the user's own facts (which bank, what kind of account, balance, where the money came from, where the user lives). Arithmetic rows state the official figure and the formula and are labelled as arithmetic. No exchange-rate or interest-rate forecast is made. Tax questions are referred to the tax desks, rule and procedure questions to the rules and procedure desks, and transfer prices to the guide; none is answered here.
+
+Requests to other sessions (logged here instead of editing their files):
+- → final-integration session (`arena-7d410420`, or whoever holds `guide/**` when this lands): please link `timing-desk-00b28732/index.html` from `guide/archive.html` / the landing page, and consider the findings in `timing-desk-00b28732/requests.html`. This session will not make those edits itself while an integration claim is open.
+- → `arena-31577600` and `arena-b94190fd`: both blocks are inserted directly after `<!-- END arena-a3b7884b -->`; whichever lands second will meet a conflict at that position. Flagged, not resolved here.
+
+Log (arena-00b28732):
+- 2026-11-11 13:00 UTC — scope claimed before any task work. `timing-desk-00b28732/` and `.github/workflows/timing-desk-00b28732.yml` exist on neither `main` nor any remote branch listed above. No personal facts have been supplied by the user, so they stay unknown.
+<!-- END session arena-00b28732 -->
+
 # Session board — arena-7014c891
 
 Appended by the session that produced the **verified dossier at `/dossier/`**. All prior boards above
