@@ -367,6 +367,17 @@
       "quote": "'Incoming Wire (a wire transfer is deposited in your account from inside or outside the U.S.): $15 per transfer or $0 if the transfer was originally sent with the help of a Chase banker or using chase.com or Chase Mobile app.'",
       "short": "Chase fees",
       "checked": "2026-11-10"
+    },
+    {
+      "id": "CN-WORKFX2025",
+      "group": "China – rules",
+      "publisher": "SAFE Tianjin branch",
+      "title": "2025 FX policy Q&A (10): tax-voucher exception and disposition of purchased FX for a foreign individual",
+      "url": "https://www.safe.gov.cn/tianjin/2025/0715/2834.html",
+      "level": "full",
+      "quote": "境外个人在境内取得的经常项目合法人民币收入如何办理购汇？答：（1）境外个人经常项目合法人民币收入按规定无需纳税的，购汇可以不提供税务凭证。（2）境外个人在境内取得的经常项目合法人民币收入购汇，可以汇出、可以存入本人外汇账户，或可以按有关规定携带出境。",
+      "short": "SAFE Q&A 2025",
+      "checked": "2026-11-11"
     }
   ]
 }

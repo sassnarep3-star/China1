@@ -3,22 +3,24 @@
   "intro": "No personal facts were supplied with the request. Every row below states what is known from official sources, what is still missing, and exactly where to find it. A blank means the answer depends on your own records — not on an estimate.",
   "known": [
     {
-      "fact": "The sources reviewed describe documentation for lawful current-account income and income tax on the underlying income; they do not establish that every conversion is tax-free.",
+      "fact": "The sources reviewed describe documentation for lawful current-account income and income tax on the underlying income; they do not establish that every conversion is tax-free. SAFE also says a tax voucher is not required for qualifying current-account income that is not taxable under the rules.",
       "implication": "China tax and US reporting depend on the facts; a US foreign-currency gain may also require analysis.",
       "src": [
         "CN-ART59",
         "CN-IIT",
         "CN-FXREG",
-        "US-988"
+        "US-988",
+        "CN-WORKFX2025"
       ]
     },
     {
-      "fact": "A foreign passport holder may buy FX with lawful China current-account income by showing ID + proof of amount including tax vouchers. No fixed cap is stated for this route.",
+      "fact": "A foreign passport holder may buy FX with lawful China current-account income by showing ID and proof of source and amount; tax vouchers are evidence where tax applies, while SAFE says qualifying income not taxable under the rules needs no tax voucher. The cited purchase rule states no fixed cap, but does not establish that all sources qualify or guarantee a single wire.",
       "implication": "The cited work-pay rule does not establish the route for all sources of funds, or guarantee a single wire. Ask the bank to classify the funds and verify its limit.",
       "src": [
         "CN-ART59",
         "CN-MEASURES",
-        "CN-RULES"
+        "CN-RULES",
+        "CN-WORKFX2025"
       ]
     },
     {
@@ -98,11 +100,12 @@
     "routes": [
       {
         "rank": 1,
-        "route": "Bank of China wire (M01) — passport + proof of amount including tax vouchers → buy USD at selling rate → SWIFT to your own US account in one wire with full-amount delivery",
+        "route": "Bank of China wire (M01) — passport + source/amount evidence + tax record if applicable → buy USD at selling rate → SWIFT to your own US account, subject to the bank’s requirements and transaction limits",
         "src": [
           "CN-ART59",
           "CN-BOCTARIFF",
-          "CN-FXBOARD"
+          "CN-FXBOARD",
+          "CN-WORKFX2025"
         ],
         "when": "Documented current-account income, subject to classification and the bank’s requirements and transaction limits.",
         "why": "The model uses published fees and a dated rate; it is not an executable quote or proof that the route is cheapest."
@@ -196,15 +199,16 @@
       "id": "Q04",
       "category": "China tax paid",
       "question": "For each source of income, has China Individual Income Tax been withheld or paid, and do you have the tax payment record (完税证明) matching the amount?",
-      "have": "The guide reads that banks ask for tax vouchers. No tax records were supplied.",
-      "have_not": "Tax status, exemptions, required documentation, and any late charges or penalties are unknown. The China tax collection text is excerpt-only; see F10 and F11.",
-      "answer_if_known": "Confirm the tax treatment and evidence required for this particular source with the bank and tax authority. Rates, exemptions, late charges and penalties depend on the facts.",
-      "how_to_find": "Employer payroll office for IIT withholding slips; local tax bureau (12366 hotline, app 个人所得税) for payment records. Shanghai FAQ lists tax voucher as required for house proceeds.",
+      "have": "SAFE 2026 quotes Article 59 requiring source/amount evidence including tax vouchers; SAFE 2025 says a voucher is not required for qualifying current-account income not taxable under the rules. No income source or tax facts were supplied.",
+      "have_not": "Whether tax was due and paid, what evidence your bank accepts, and any late charges or penalties. The 2025 exception does not establish that your funds qualify or remove the need to prove source and amount; China tax collection details remain excerpt-only (F10/F11).",
+      "answer_if_known": "If tax was due and paid, provide the record. If qualifying current-account income is not taxable under the rules, SAFE says no tax voucher is needed, but source/amount evidence remains necessary and the bank must confirm its checklist. If tax is due but unpaid, resolve it with the tax authority before proceeding.",
+      "how_to_find": "Match each large credit to employment, rent, dividends, sale or inheritance records. Retrieve tax records from payroll or the tax app, determine whether tax was due, and ask the account-holding branch in writing what evidence it accepts for this source and tax treatment.",
       "src": [
         "CN-ART59",
         "CN-IIT",
         "CN-TAXCOLL",
-        "CN-SHPROP"
+        "CN-SHPROP",
+        "CN-WORKFX2025"
       ],
       "flags": [
         "F11",

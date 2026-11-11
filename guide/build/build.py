@@ -414,7 +414,7 @@ def build_home():
 <h2 id="ans">The short answer</h2>
 <ul class="plain">
 <li><b>No rule read for this guide taxes the conversion itself.</b> Underlying income, bank charges and possible US foreign-currency gain require separate review; prior payment of China tax does not establish that no other tax applies. {src_links(["CN-ART59", "CN-IIT"])}</li>
-<li><b>Lawful route:</b> take your passport, proof of the amount and your China tax record to the bank, buy USD and wire it to your own US account. The rule states no fixed cap for a foreign passport holder; the bank converts what the documents support. {src_links(["CN-ART59", "CN-MEASURES"])}</li>
+<li><b>Lawful route:</b> take your passport and evidence of the lawful source and amount to the bank; provide a tax record where tax applies. SAFE says a tax voucher is not required where qualifying current-account income is not taxable under the rules. Ask the branch to confirm its evidence checklist, then buy USD and wire it to your own US account. The cited rule states no fixed cap for this documented-income route. {src_links(["CN-ART59", "CN-WORKFX2025", "CN-MEASURES"])}</li>
 <li><b>Cost by Bank of China wire into a Chase account:</b> {usd(BOC10["total"])} for $10,000 ({pct(BOC10["share"])}), {usd(BOC100["total"])} for $100,000 ({pct(BOC100["share"])}), {usd(BOC400["total"])} for $400,000 ({pct(BOC400["share"])}). {src_links(["CN-FXBOARD", "CN-BOCTARIFF", "US-CHASE"])}</li>
 <li><b>Do not split the amount, borrow other people's quotas, use money changers or crypto.</b> Fines run up to 30% of the amount, and 30%–100% if serious, with possible criminal liability. {src_links(["CN-MEASURES", "CN-FXREG", "CN-CRYPTO"])}</li>
 <li><b>In the US:</b> the pages read tax the income in the year it is earned, not the later transfer. File the FBAR and Form 8938 if the account passed the thresholds. {src_links(["US-ABROAD", "US-8938FBAR"])}</li>
@@ -426,7 +426,7 @@ def build_home():
 <h2>Pick the route that matches where the money came from</h2>
 <p class="mut small">Costs are for a Bank of China wire with full-amount delivery into a Chase account, on the {e(PRICES["snapshot"])} rates. Blank means not confirmed.</p>
 {fit_tbl}
-<div class="note"><b>If you cannot document where the money came from or that tax was paid:</b> no lawful route was verified for it. Property whose lawful source cannot be proved is refused. Get the tax position fixed first. {src_links(["CN-PROPTRANS", "CN-ART59"])}</div>
+<div class="note"><b>If you cannot document where the money came from, the amount, or its applicable tax treatment:</b> no lawful route was verified for it. Property whose lawful source cannot be proved is refused. Confirm whether tax is due and what evidence the bank accepts before proceeding. {src_links(["CN-PROPTRANS", "CN-ART59", "CN-WORKFX2025"])}</div>
 
 <h2>Explore</h2>
 <div class="tiles">{tiles_html}</div>
@@ -474,7 +474,7 @@ def build_summary():
 <section class="card answer"><h2>Answer</h2>
 <ol class="steps">
 <li><b>There is no separate conversion tax in the rules read.</b> What people call the "conversion penalty" is made of: tax on the underlying income if it was never taxed, bank charges, fines if a prohibited route is used, and US filing penalties if reports are missed. {src_links(["CN-IIT", "CN-FXREG", "US-FBARPEN"])}</li>
-<li><b>Use the documented bank route.</b> As a foreign passport holder you may buy foreign exchange with lawful China current-account income on showing your ID and proof of the amount including tax vouchers. No fixed cap is stated. {src_links(["CN-ART59", "CN-RULES"])}</li>
+<li><b>Use the documented bank route.</b> As a foreign passport holder you may buy foreign exchange with lawful China current-account income by showing your ID and proof of source and amount. Tax vouchers are part of the evidence where tax applies; SAFE says no voucher is needed if qualifying income is not taxable under the rules. No fixed cap is stated for this documented-income route. {src_links(["CN-ART59", "CN-WORKFX2025", "CN-RULES"])}</li>
 <li><b>The USD 50,000 yearly total is not written as a cap on your purchase of USD.</b> As written it covers everyone's sale of foreign exchange and a domestic individual's purchase of it; a foreign passport holder's purchase is document-driven (art. 13), and the holder of a Foreign Permanent Resident ID Card gets the total as a convenience. {src_links(["CN-RULES", "CN-ART59", "CN-PR"])}</li>
 <li><b>Send it in one wire.</b> Bank of China's commission is capped at CNY 260 and the cable fee is fixed, so one large wire costs {pct(BOC400["share"])} at $400,000 against {pct(BOC10["share"])} at $10,000. Splitting to avoid review is prohibited. {src_links(["CN-BOCTARIFF", "CN-MEASURES"])}</li>
 <li><b>Match the route to the money.</b> Property-sale proceeds, inheritance and pre-emigration assets each have their own route and papers. {src_links(["CN-SHPROP", "CN-PROPTRANS", "CN-CAP2014"])}</li>
@@ -919,8 +919,8 @@ def build_summary_md():
         "",
         "## Answer",
         "",
-        f"1. **No rule read for this guide taxes the conversion itself.** The exposure is tax on the underlying income if it was never taxed; the bank asks for tax vouchers. {link('CN-ART59')}, {link('CN-IIT')}",
-        f"2. **Lawful route:** passport + proof of the amount + China tax record at the bank, buy USD, wire to your own US account. The cited salary rule does not state a fixed cap; eligibility and bank requirements depend on the funds and individual status. {link('CN-ART59')}, {link('CN-PR')}",
+        f"1. **No rule read for this guide taxes the conversion itself.** The exposure is tax on the underlying income if tax is due but unpaid; SAFE says a tax voucher is not required for qualifying current-account income that is not taxable under the rules. {link('CN-ART59')}, {link('CN-WORKFX2025')}, {link('CN-IIT')}",
+        f"2. **Lawful route:** passport + evidence of lawful source and amount + tax record where applicable; buy USD and wire to your own US account. The cited rule states no fixed cap for this documented-income route; the bank must confirm your eligibility and evidence. {link('CN-ART59')}, {link('CN-WORKFX2025')}, {link('CN-PR')}",
         f"3. **Cost (Bank of China wire into a Chase account):** {r('M01', 10_000)} at $10,000; {r('M01', 100_000)} at $100,000; {r('M01', 400_000)} at $400,000. {link('CN-FXBOARD')}, {link('CN-BOCTARIFF')}, {link('US-CHASE')}",
         f"4. **{wise_sentence()}** {link('PR-WISEFEE')}",
         f"5. **Avoid prohibited conduct:** evasion through splitting or false documents, illegal currency dealing, and prohibited virtual-currency activities. Fines up to 30% of the amount, 30%–100% if serious, possible criminal liability. {link('CN-FXREG')}, {link('CN-MEASURES')}, {link('CN-CRYPTO')}",
