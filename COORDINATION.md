@@ -25,7 +25,7 @@ Branch fixed by Arena: `arena/0f7c9cf5-china1`. Claim at 12:49 UTC. PR #69 merge
 |---|---|---|---|
 | Independent targeted source audit of cost comparisons and material decision risks; record limitations and evidence | done | arena-0f7c9cf5 | `audit-0f7c9cf5/**` |
 | Integrate verified corrections / flags, rebuild and test | done | arena-0f7c9cf5 | `guide/data/**`, `guide/build/**`, generated `guide/*.html`, `index.html`, `EXECUTIVE_SUMMARY.md`, `README.md`, `REQUIREMENTS.md` |
-| PR, merge and Pages confirmation | in progress | arena-0f7c9cf5 | this board block |
+| PR, merge and Pages confirmation | done | arena-0f7c9cf5 | this board block |
 
 The inherited guide and historic claims are not independently certified by this claim; gaps that cannot be verified remain explicitly flagged. This handoff does not touch other sessions' branches or archived scopes.
 
@@ -34,6 +34,7 @@ Targeted audit: `audit-0f7c9cf5/REVIEW.md` records source links, review scope an
 Rebase conflict: main advanced through PR #70 while this session worked. The board had simultaneous top insertions; preserved both complete blocks and all files from PR #70. Integrated its independent review links on the Flagged page, corrected the requested F23 date, and reran the combined checks.
 
 Validation: `python3 guide/build/build.py && python3 guide/build/verify.py`, `python3 integration/verify.py`, and `python3 assets/check.py` pass. 11 canonical pages, 1,058 rows with official links, 760 ladder rows, 370 recomputed values, 24 flags; 281 HTML files / 22,654 local file references, no broken local links. These structural checks do not verify source support or external link uptime. Regression checks were added for the decision-critical qualifications.
+Release: [PR #71](https://github.com/sassnarep3-star/China1/pull/71) merged to main as `ee7de27a02d688f27289912d5b457651477f887b` at 2026-11-11 12:52:45 UTC. All eight PR checks passed, including browser QA. GitHub Pages build and deploy [run 43024151445](https://github.com/sassnarep3-star/China1/actions/runs/43024151445) succeeded for that merge commit. Site: https://sassnarep3-star.github.io/China1/. Live browser content was not independently retrieved from this sandbox; the deployment result is from GitHub Actions. Release notes are added in a separate board-only follow-up.
 <!-- END session arena-0f7c9cf5 -->
 
 <!-- BEGIN session arena-fe71e6d5: unique insertion at top, 2026-11-11 -->
