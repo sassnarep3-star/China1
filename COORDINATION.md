@@ -286,6 +286,39 @@ Log (arena-dc298e7a):
 - 2026-11-11 07:43 UTC — scope claimed before any task work. Tool check before the claim: the official pages are reachable from this session (SAFE Tianjin Q&A 2026-07-13, the Bank of China board — reading 15:30:04 Beijing time, and PBOC Yinfa [2026] No. 42 were opened and read). No personal account facts have been supplied by the user, so they stay unknown.
 <!-- END session arena-dc298e7a -->
 
+<!-- BEGIN session arena-c52c6a62 (inserted mid-file, directly after the arena-dc298e7a block, so it cannot collide with the top-of-file inserts of the three sessions that claimed minutes earlier; every other board is preserved verbatim) -->
+# Session board — arena-c52c6a62 (2026-11-11)
+
+Branch: `arena/c52c6a62-china1` (fixed by Arena; the requested `session-<id>/<task>` naming cannot be used — same logged deviation as every earlier session). Claimed **2026-11-11 12:52 UTC**, before any task work. Base: `main` `0dd03d6` (merge of PR #69).
+
+**Board and remote state read at claim time** (this file on `main`; all 65 remote branches fetched and sorted by newest commit at 12:49 UTC; open PRs listed):
+
+| Session | Newest commit (UTC) | Its claim | What this session does about it |
+|---|---|---|---|
+| `arena-7d410420` | 12:46 | S1–S6: re-verification of `guide/data/sources.json`, corrections, research gaps (other banks F03, HSBC rate F02, RMB route, providers), cost ladder, FINAL INTEGRATION of `guide/**`, `index.html`, `EXECUTIVE_SUMMARY.md`, `README.md`, `REQUIREMENTS.md` | **Active and first in time. Not touched.** This session edits none of those files |
+| `arena-0f7c9cf5` | 12:48 | `audit-0f7c9cf5/**` plus the same `guide/**` integration files | Active. Not touched. (Its integration scope overlaps `arena-7d410420`, which claimed two minutes earlier — noted for both owners to resolve; not this session's to decide) |
+| `arena-edbb7990` | 12:48 | `audit-edbb7990/**` reproducibility / source-access / deployment audit | Active. Not touched |
+| `arena-dc298e7a` | 07:42 | D1–D6 (claim only, PR #69) | Stale; already taken over by `arena-7d410420`. Not touched |
+
+Because the canonical guide, the cost ladder, the bank/provider research and both audits are all claimed by sessions that are active right now, this session takes the one part of the request that no open claim covers: **the tax-and-penalty side of "least amount of tax penalties"**. The canonical guide leaves these items blank or flagged (F11 China late-payment surcharge and fines, F12 bank-deposit interest, F13 US exchange gain/loss, F14 FBAR penalty basis, F16 dividend treaty relief, F17 property-sale taxes) and has no scenario table by where the money came from, no relief options for past non-filing, and no penalty figures per USD 10,000 step.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| T1 Read-only line-by-line check of the tax rows of the canonical guide (`guide/data/taxes.json`, tax-related flags) against the official page; findings published as integration requests, not as edits | in progress | arena-c52c6a62 | `tax-c52c6a62/**` |
+| T2 Official-source research to close or narrow the open tax flags (F11, F12, F13, F14, F16, F17): China Tax Collection Law, IIT Law and implementing rules, MOF/STA notices, US Code, CFR, IRS pages — each opened and read in this session; anything not confirmed stays blank and flagged | in progress | arena-c52c6a62 | `tax-c52c6a62/**` |
+| T3 Scenario matrix by source of the money (salary, own money brought in, property sale, inheritance, gift, dividends/interest, business income, pension/housing-fund refund): China tax, bank documents, US income tax and US forms — every row sourced | in progress | arena-c52c6a62 | `tax-c52c6a62/**` |
+| T4 Tax-and-penalty ladder: statutory tax and penalty arithmetic at every USD 10,000 step from USD 10,000 to USD 400,000 (40 steps), mobile-first tables, most important figure first; relief routes for past non-filing; tax questions that must be answered before deciding and how to find each answer | in progress | arena-c52c6a62 | `tax-c52c6a62/**` |
+| T5 Component site (landing dashboard + subpages + its own Flagged for Review and Sources pages), generator, independent verifier and CI limited to this component | in progress | arena-c52c6a62 | `tax-c52c6a62/**`, `.github/workflows/tax-c52c6a62.yml` |
+| T6 Pull request to `main`, merge when checks pass, confirm GitHub Pages serves the component, record PR link and result here | in progress | arena-c52c6a62 | this block only |
+
+Rules this session applies: no file outside the scope above is edited (in `COORDINATION.md` only this block). Every table row carries a link to the official page read in this session; a value not confirmed there is left blank and listed on the component's Flagged for Review page; nothing is inferred about the user's own facts. Arithmetic rows state the statutory rate and the formula and are labelled as arithmetic, not as the user's liability. Prohibited routes are described by their legal consequence only.
+
+Request to the final-integration session (`arena-7d410420`, or whoever holds `guide/**` when this lands): please link `tax-c52c6a62/index.html` from `guide/archive.html` / the landing page, and consider the findings in `tax-c52c6a62/requests.html` for `guide/data/taxes.json` and flags F11–F17. This session will not make those edits itself while the integration claim is open.
+
+Log (arena-c52c6a62):
+- 2026-11-11 12:52 UTC — scope claimed before any task work. Tool check: SAFE Tianjin Q&A 2026-07-13 and the Bank of China board (reading 2026/11/11 20:39:19 Beijing time, USD 665.91 / 668.71) opened and read from this session. No personal facts have been supplied by the user, so they stay unknown.
+<!-- END session arena-c52c6a62 -->
+
 # Session board — arena-2fb403b0 (2026-11-10)
 
 Branch: `arena/2fb403b0-china1` (fixed by Arena). All prior boards above are preserved
