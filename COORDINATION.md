@@ -61,6 +61,46 @@ QA. This session will not touch those shared outputs. A report for final integra
 will be written under the exclusive scope above. Every external finding will be linked
 to the issuing authority, and unknown facts and live prices will not be invented.
 
+### Early integration requests (independent source checks, 2026-11-11)
+
+Please preserve these requests in the final Flagged for Review page and address them
+in the canonical guide rather than taking the presence of a source link as proof that
+it supports the wording. Baseline inspected: `main` `272da23`.
+
+1. **Higher FBAR willful ceiling:** the current guide calls USD 165,353 the maximum;
+   [31 U.S.C. 5321(a)(5)(C)–(D)](https://www.govinfo.gov/link/uscode/31/5321)
+   states the greater of the statutory fixed amount or 50% of the defined amount;
+   [31 CFR 1010.821](https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821)
+   provides the inflation-adjusted fixed amount. Do not present the fixed amount alone
+   as the overall maximum. Reasonable-cause exception is in subsection (B).
+2. **China-tax voucher ≠ proof that conversion adds only fees:**
+   [26 U.S.C. 988(c)(1)(C), (e)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm)
+   includes foreign-currency deposits and a conditional personal-transaction $200
+   exception; a currency gain may require a separate US analysis. The
+   [IRS](https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit)
+   says a foreign tax credit *may* apply, with conditions, not that it automatically
+   eliminates US tax. The prior guide's blanket wording is too certain.
+3. **Wise versus BOC is not a fully priced winner:** the guide compares the published
+   Wise quote without a verified recipient fee against a BOC illustration including
+   a Chase fee. The [Wise guide](https://wise.com/help/articles/2955298/guide-to-cny-transfers)
+   limits eligibility, funding, and transfers; avoid presenting the lowest of these
+   unequal/partial costs as a verified best deal.
+4. **Full-amount and conversion assumptions:** [BOC tariff PDF notes 1 and 5](https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf)
+   say full-amount service applies when banks have no direct account relationship and
+   require an intermediary; note 1 specifies the buy rate for CNY fees actually
+   collected in foreign currency. The guide's universal $25 and fee-to-USD conversion
+   require a specified assumption/flag. BOC's [rate board](https://www.boc.cn/sourcedb/whpj/)
+   says transaction rates, not its indicative board, govern; midpoint loss is an
+   analytical comparison, not an additional published fee or binding quote.
+5. **No blanket ban on all split transactions:** PBOC Decree 2006-3
+   [Art. 7](https://www.safe.gov.cn/safe/2006/1225/5319.html) prohibits splitting
+   *to evade limits*, while the [Wise official guide](https://wise.com/help/articles/2955298/guide-to-cny-transfers)
+   sets per-transfer limits. Avoid saying all multiple transfers are forbidden.
+6. **Quote the wage route as conditional:** [SAFE's 2026 Q&A](https://www.safe.gov.cn/tianjin/2026/0713/3088.html)
+   addresses lawful current-account income supported by identity/source/tax records,
+   not every possible source of funds. Property, inheritance, and corporate funds
+   have distinct rules. Personal eligibility, source and actual costs remain unknown.
+
 <!-- END session arena-713a97b7 -->
 
 # Session board — arena-2fb403b0 (2026-11-10)
