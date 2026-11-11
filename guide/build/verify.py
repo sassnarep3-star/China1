@@ -291,6 +291,18 @@ for m in methods:
         check(m["id"] in parsed[GUIDE / "steps.html"].ids, f"steps.html lacks {m['id']}")
 check(len(costs.rows) == 40 + 9 + len(methods) * 40, f"costs.html has {len(costs.rows)} rows")
 
+# Regression guards for decision-critical qualifications. Structural checks do not
+# prove legal accuracy or verify the contents of external sources.
+cost_html = (GUIDE / "costs.html").read_text(encoding="utf-8")
+questions_html = (GUIDE / "questions.html").read_text(encoding="utf-8")
+check("Cheapest fully priced" not in cost_html, "partial Wise quote labelled fully priced")
+check('data-label="Cheapest route (unverified)"' in cost_html and "#F24" in cost_html,
+      "unverified cheapest-route comparison must be flagged")
+check("converting adds only the bank charges" not in questions_html,
+      "decision page omits potential currency gains and conditional credit")
+check("US-988" in [x for k in questions_doc["known"] for x in k["src"]],
+      "decision facts must cite foreign-currency treatment")
+
 # review snapshot sanity
 check(scan["total_lines"] > 100_000 and scan["total_files"] > 300, "scan snapshot looks incomplete")
 for r in review["rules"]:
