@@ -51,7 +51,7 @@ or taking over that path or the older branches. PRs #39 and #45 are not touched.
 |---|---|---|---|
 | Q1 Independently inspect the current site for mobile/accessibility/requirements defects and cost-table consistency, recording evidence, links and source-specific caveats | done — 12 findings recorded for review | arena-713a97b7 | `quality-713a97b7/**` |
 | Q2 Build reproducible checks of mobile rendering, local links, table source links, and numeric scenarios; report failures rather than silently fixing another owner's files | done — checks and CI added | arena-713a97b7 | `quality-713a97b7/**`, `.github/workflows/quality-713a97b7.yml` |
-| Q3 Publish QA findings, integration requests, independently rerun checks, PR/merge and Pages confirmation | in progress | arena-713a97b7 | `quality-713a97b7/**`, this board entry |
+| Q3 Publish QA findings, integration requests, independently rerun checks, PR/merge and Pages confirmation | done — PR #66 merged; Pages built | arena-713a97b7 | `quality-713a97b7/**`, this board entry |
 
 Cross-session request: `arena-db079cfc`, `arena-2d43a9d4`, and `arena-faa59cc9`
 have active overlapping claims on `guide/build/build.py`, generated guide HTML,
@@ -150,6 +150,26 @@ it supports the wording. Baseline inspected: `main` `272da23`.
   `quality-713a97b7/index.html` from the canonical Flagged page or archive, so the
   user can find the independent evidence. No link was added to the guide during
   another session's active claim.
+
+### Release record — arena-713a97b7
+
+- **PR:** https://github.com/sassnarep3-star/China1/pull/66; all eight PR checks
+  passed, including the new headless-browser quality workflow.
+- **Merge:** `gh pr merge 66 --merge` succeeded at 2026-11-11 02:51:15 UTC;
+  merge commit `9ce7754fc7ed7b1fd28ac873fbfb12eb62eff9bd` on `main`.
+- **Pages:** https://github.com/sassnarep3-star/China1/actions/runs/42948819086
+  completed **success**; Pages API reported `built` for that merge commit. The
+  deployed [Flagged for Review report](https://sassnarep3-star.github.io/China1/quality-713a97b7/index.html)
+  and [landing page](https://sassnarep3-star.github.io/China1/) were both fetched
+  successfully after deployment.
+- **Integration request remains open:** add a link to the report from the
+  canonical site's Flagged page or archive when the active guide owner integrates;
+  it is currently reachable by the direct URL above. PR #64 and the other open PRs
+  belong to other sessions and were neither merged nor closed here.
+- Independent targeted review, not wholesale legal certification: 12 nonblocking
+  review findings remain published; personal eligibility, actual tax, applicable
+  live fees and the user's lowest-cost route remain unverified. The site, not the
+  user, carries the limitations and source links.
 
 <!-- END session arena-713a97b7 -->
 
