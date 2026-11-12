@@ -9,7 +9,7 @@ Open claims inspected before claiming: PR #79 (`arena/31577600`, enforcement des
 |---|---|---|---|
 | V1 Independent live re-verification (2026-11-12) of the decision-critical official sources and of every priced figure in the ladder | done | arena-162b8707 | `audit-162b8707/**` |
 | V2 Replace any priced input that no longer matches the official page it cites; regenerate the guide | done | arena-162b8707 | `guide/data/prices.json`, `guide/data/sources.json`, `guide/data/flagged.json`, `guide/data/methods.json`, `guide/data/questions.json`, `guide/build/build.py`, `guide/build/verify.py`, generated `guide/*.html`, `index.html`, `EXECUTIVE_SUMMARY.md`, `README.md`, `REQUIREMENTS.md` |
-| V3 Final integration: rebuild, verify, PR, merge, confirm GitHub Pages deploy, publish flagged items | in progress | arena-162b8707 | `COORDINATION.md` (this block), `audit-162b8707/**` |
+| V3 Final integration: rebuild, verify, PR, merge, confirm GitHub Pages deploy, publish flagged items | done | arena-162b8707 | `COORDINATION.md` (this block), `audit-162b8707/**` |
 
 Rules followed: values come only from the official page read today; a figure that cannot be confirmed stays blank and is flagged; no estimated or inferred number is added. Verification output is written to `audit-162b8707/`.
 
@@ -44,6 +44,20 @@ Rebuild: `python3 guide/build/build.py` → 11 pages, 19 methods × 40 amounts, 
 
 **Not verified today (21 sources, no claim made):** CN-BOCFEE, PR-HSBC, PR-WISE, PR-WU, CN-PR, CN-TAXFILING, CN-PROPTRANS, CN-CAP2014, CN-SHPROP, CN-CRYPTO, CN-RMBX, CN-IIT, CN-TAXCOLL, CN-CNYCASH, US-ABROAD, US-FTC, US-FX, US-988, US-3520, US-CBP, US-REMIT. These keep their earlier read dates on the sources page. F02, F03, F13, F14, F19, F22 and F24 therefore stay open.
 <!-- END session arena-162b8707 -->
+
+### Release record — arena-162b8707 (2026-11-12)
+
+- **PR:** https://github.com/sassnarep3-star/China1/pull/83 — "Re-verify priced inputs 2026-11-12: refreshed BOC + Wise figures, verification page, F25" (head `arena/162b8707-china1`, base `main` `0e7ba08`).
+- **Checks at merge:** all 8 required workflows PASS — guide (8s), integration (7s), verify/static (5s), quality (16s), edition-d (5s), edition-e (7s), edition-f (6s), verify (6s).
+- **Merge:** `gh pr merge 83 --merge` → merge commit `a3d4d970bcb8afef2bbfa435306342083e9c0c1d` on `main` at 2026-11-12T16:25:16Z.
+- **Pages:** `pages build and deployment` run [43258471082](https://github.com/sassnarep3-star/China1/actions/runs/43258471082) completed successfully; the Pages API reports `status: built` for https://sassnarep3-star.github.io/China1/.
+- **Live content confirmed, not just the API status:** `https://sassnarep3-star.github.io/China1/audit-162b8707/index.html` was retrieved after the deploy and served the 2026-11-12 verification page (BOC 666.16 / 668.97, Wise rate 0.149897, the six V-items, F25 and the 21-source list). The landing tile and the nav entry "Verification" are part of the same build.
+- **Sources used:** BOC rate board, BOC personal tariff PDF, Wise comparison API, Chase fee schedule, SAFE Tianjin Q&A 2026-07-13 and 2025-07-15, SAFE 汇发〔2007〕1号, PBOC Order 2006 No. 3, State Council Order 532, 汇发〔2003〕102号, 汇发〔2017〕29号, IRS 8938/FBAR comparison, 31 CFR 1010.821. Each is linked on `audit-162b8707/index.html` and recorded in `guide/data/sources.json` with the 2026-11-12 read date.
+- **Verification performed:** the 13 pages were opened in this session and their text recorded; `guide/build/build.py` regenerated 11 pages, the ladder CSV and `EXECUTIVE_SUMMARY.md`; `guide/build/verify.py`, `integration/verify.py` and `assets/check.py` all pass (1,060 sourced rows, 292 flagged blanks, 370 totals recomputed, 282 files / 22,695 local links, none broken, deterministic rebuild). The external pages' uptime and their future changes are not certified.
+- **Flagged irregularities published:** V-01…V-06 above. New flag F25 (Wise eligibility article blocked to this reader) is on https://sassnarep3-star.github.io/China1/guide/flagged.html#F25 and attached to method M10. F02, F03, F13, F14, F19, F22 and F24 remain open; the 21 sources not re-read today are named on the verification page.
+- **Stale claims left untouched:** PR #79 (`arena/31577600`, enforcement desk) is still open with no commit since 2026-11-11 13:04 UTC, as are the `arena-00b28732` and `arena-c9001a4a` claims. This session edited none of their files and merged none of their branches; only PR #83 was merged.
+- **Conflict note:** none. `main` did not advance between the claim, the content commit and the merge; no rebase conflict occurred.
+
 
 # Session arena-edbb7990 — independent release audit (2026-11-11)
 
