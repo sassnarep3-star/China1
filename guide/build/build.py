@@ -56,8 +56,17 @@ def clamp(x, lo, hi):
     return max(D(lo), min(D(hi), x))
 
 
+def money_tokens(text):
+    """Fill cost placeholders from the ladder so prose can never drift from the table."""
+    pairs = (("{boc10k}", LADDERS["M01"][0]["total"]), ("{boc400k}", LADDERS["M01"][-1]["total"]),
+             ("{wise10k}", LADDERS["M10"][0]["total"]), ("{wise40k}", LADDERS["M10"][3]["total"]))
+    for token, value in pairs:
+        text = text.replace(token, usd(value) if value is not None else "blank (unverified)")
+    return text
+
+
 def e(text):
-    return html.escape(str(text), quote=True)
+    return html.escape(money_tokens(str(text)), quote=True)
 
 
 def usd(x, cents=True):
@@ -185,6 +194,7 @@ NAV = [
     ("guide/costs.html", "Costs"), ("guide/steps.html", "Steps"), ("guide/taxes.html", "Taxes"),
     ("guide/questions.html", "Decide"),
     ("guide/flagged.html", "Flagged"), ("guide/sources.html", "Sources"),
+    ("audit-162b8707/index.html", "Verification"),
     ("guide/repo-review.html", "Repo review"), ("guide/archive.html", "Archive"),
 ]
 
@@ -401,6 +411,7 @@ def build_home():
         ("guide/taxes.html", "Taxes and penalties", "The 'conversion penalty' broken down: China tax, fines, US tax and filings."),
         ("guide/flagged.html", f"Flagged for Review ({len(FLAGS)})", "Everything left blank because it could not be confirmed, with links to check."),
         ("guide/sources.html", f"Sources ({len(SOURCES)})", "Every official page relied on, with the text quoted."),
+        ("audit-162b8707/index.html", "Verification, 2026-11-12", "The 13 official pages re-read that day, what moved in the prices, and the 21 sources that were not re-read."),
         ("guide/repo-review.html", "Repository review", f"{SCAN['total_lines']:,} archived lines scanned against the official sources; irregularities listed."),
         ("guide/archive.html", "Archive", "Earlier editions kept for reference; superseded by this guide."),
     ]
@@ -714,7 +725,7 @@ def build_flagged():
 <p class="lead">{len(FLAGS)} unresolved questions, assumptions and source limitations. Some prevent a personalized decision or complete cost estimate; blank values are not zero. Review all items that touch your case.</p>
 {table([("ID", ""), ("Topic", ""), ("What is missing", ""), ("What to do", ""), ("Where to check", "")], rows)}
 
-<p>Additional independent reviews: <a href="../audit-edbb7990/index.html">source-access and dated-quote audit</a> and <a href="../quality-713a97b7/index.html">cost and tax quality review</a>. They describe earlier snapshots and may include findings corrected since then.</p>
+<p>Independent reviews: <a href="../audit-162b8707/index.html">2026-11-12 live re-verification of the priced inputs</a> (this edition's figures), <a href="../audit-edbb7990/index.html">source-access and dated-quote audit</a> and <a href="../quality-713a97b7/index.html">cost and tax quality review</a>. The two older reviews describe earlier snapshots and may include findings corrected since then.</p>
 
 <h2>Sources seen only as an excerpt</h2>
 <p class="mut small">The official page exists, but this session saw its text only in a search-engine excerpt. Figures from these are treated as unverified.</p>
@@ -785,6 +796,9 @@ def build_review():
 
 <h2>Process irregularities</h2>
 <ul class="plain">{proc}</ul>
+
+<h2>Audit of the 2026-11-12 re-verification</h2>
+<p>This edition's priced inputs were re-read from the publishers on 2026-11-12: the Bank of China board at 2026/11/13 00:15:11 Beijing time (buy 666.16, sell 668.97 per USD 100) and five fresh Wise quotes collected 16:20:14–16:20:20Z at Wise's rate 0.149897. Thirteen sources were opened and read again that day, and every figure they feed was recomputed. The record — which page was opened, what it said, what changed, and what could not be re-read — is in <a href="{REPO_URL}/blob/main/audit-162b8707/REVIEW.md">audit-162b8707/REVIEW.md</a> and on the <a href="../audit-162b8707/index.html">verification page</a>. The Wise eligibility article itself could not be re-read that day and is flagged F25.</p>
 
 <h2>Audit of the 2026-11-11 refresh</h2>
 <p>The inherited research records a dated recheck of priced inputs and sources; the per-source record distinguishes pages re-opened from older checks. The working record — which source was re-opened, what the re-read found, and the irregularities that came out of it — is in <a href="{REPO_URL}/blob/main/edition-db079cfc/verification/findings.md">edition-db079cfc/verification/findings.md</a> with the per-source table in <a href="{REPO_URL}/blob/main/edition-db079cfc/verification/source-recheck.md">source-recheck.md</a>.</p>

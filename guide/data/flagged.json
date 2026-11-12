@@ -64,7 +64,7 @@
     {
       "id": "F06",
       "topic": "Wise quotes and limits",
-      "gap": "Wise publishes no fixed tariff for CNY: the figures here are five live quotes from Wise's own comparison API taken on 2026-11-11 between 02:35:43Z and 02:35:50Z. An amount between two quoted points has no figure, and any fee charged by the receiving bank is outside the quote.",
+      "gap": "Wise publishes no fixed tariff for CNY: the figures here are five live quotes from Wise's own comparison API taken on 2026-11-12 between 16:20:14Z and 16:20:20Z at Wise's rate of 0.149897 USD per CNY. An amount between two quoted points has no figure, and any fee charged by the receiving bank is outside the quote.",
       "action": "Get a live quote in the Wise app; confirm you meet the eligibility rules and your overall limit (after-tax China salary).",
       "src": [
         "PR-WISEFEE",
@@ -204,7 +204,7 @@
     {
       "id": "F20",
       "topic": "Exchange-rate snapshot",
-      "gap": "Every FX figure uses one Bank of China board reading: 2026-11-11 10:25:02 Beijing time (buy 666.30, sell 669.11 per USD 100). The board itself states that the rate at the actual transaction applies, so the cost moves with the rate. A 0.1% move is USD 400 on a USD 400,000 transfer. Re-read the board on the day.",
+      "gap": "Every FX figure uses one Bank of China board reading: 2026/11/13 00:15:11 Beijing time (2026-11-12 16:15:11 UTC), buy 666.16, sell 668.97 per USD 100. The board itself states that the rate at the actual transaction applies, so the cost moves with the rate. A 0.1% move is USD 400 on a USD 400,000 transfer. Re-read the board on the day.",
       "action": "Re-read the board on the day; the percentages move with the rate.",
       "src": [
         "CN-FXBOARD"
@@ -232,7 +232,7 @@
     {
       "id": "F23",
       "topic": "Tax summary and historical rate snapshot require individual review",
-      "gap": "An earlier guide summary implied that paying China tax eliminates other tax, that a foreign tax credit is automatic and that all exchange gains up to USD 200 are ignored. These statements require qualifications. The cost ladder uses a November 11 historical rate, not a current transaction quote.",
+      "gap": "An earlier guide summary implied that paying China tax eliminates other tax, that a foreign tax credit is automatic and that all exchange gains up to USD 200 are ignored. These statements require qualifications. The cost ladder uses a November 12 historical rate, not a current transaction quote.",
       "action": "Have a US tax professional assess foreign-currency gain, credit eligibility and filing thresholds; obtain an executable bank quote and confirm the source-of-funds route before acting.",
       "src": [
         "US-988",
@@ -244,13 +244,28 @@
     {
       "id": "F24",
       "topic": "Cheapest route and incomplete Wise comparison",
-      "gap": "Historical Wise samples omit any receiving-bank fee; the BOC example includes a Chase incoming wire fee. They were not contemporaneous executable quotes for this user. The cheapest complete route is unverified.",
+      "gap": "The Wise samples taken on 2026-11-12 omit any receiving-bank fee; the BOC example includes a Chase incoming wire fee. They were not taken at the same moment as the Bank of China reading and are not executable quotes for this user. The cheapest complete route is unverified.",
       "action": "Obtain simultaneous executable quotes for the same CNY amount and destination, including sender, intermediary and receiver charges, and confirm eligibility and tax treatment.",
       "src": [
         "PR-WISE",
         "PR-WISEFEE",
         "CN-BOCTARIFF",
         "US-CHASE"
+      ]
+    },
+    {
+      "id": "F25",
+      "topic": "Wise eligibility article could not be re-read on 2026-11-12",
+      "gap": "The Wise help article 'Guide to CNY transfers' returned a machine-readable block response instead of the page on two URLs on 2026-11-12, so the eligibility wording quoted here — not a mainland Chinese national, working or worked in China, a China tax-authority tax record within the last three years, send only to another account you own, CNY 300,000 per transfer from a China bank app and CNY 50,000 per transfer with Alipay — is the text read on 2026-11-11 and was not confirmed today. Wise can change eligibility without notice.",
+      "action": "Open the article and the quote inside the Wise app yourself before relying on the eligibility rules, and read the overall limit the app shows for your account.",
+      "src": [
+        "PR-WISE"
+      ],
+      "manual": [
+        {
+          "label": "Wise help article (blocked to this session's reader on 2026-11-12)",
+          "url": "https://wise.com/help/articles/2955298/guide-to-cny-transfers"
+        }
       ]
     }
   ]

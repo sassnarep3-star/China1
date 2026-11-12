@@ -1,5 +1,5 @@
 {
-  "retrieved": "2026-11-11",
+  "retrieved": "2026-11-12",
   "levels": {
     "full": "The official page itself was opened by this session and the quoted text was read on it.",
     "excerpt": "The text was seen only in a search-engine excerpt of the official page; the page itself was not opened in full. Treated as unverified and listed on the Flagged page."
@@ -12,9 +12,9 @@
       "title": "Foreign-exchange rate board (外汇牌价)",
       "url": "https://www.boc.cn/sourcedb/whpj/",
       "level": "full",
-      "quote": "USD, per 100: 现汇买入价 666.30 · 现钞买入价 666.30 · 现汇卖出价 669.11 · 现钞卖出价 669.11 · 中行折算价 671.91 · published 2026/11/11 10:25:02. Board note: the rates are for reference; the rate at the actual transaction applies. Previous reading, used by the 2026-11-10 edition: buy 665.71, sell 668.51.",
+      "quote": "USD, per 100: 现汇买入价 666.16 · 现钞买入价 666.16 · 现汇卖出价 668.97 · 现钞卖出价 668.97 · 中行折算价 671.74 · published 2026/11/13 00:15:11 (Beijing time). Board note: the rates are for reference; the rate at the actual transaction applies. Previous reading, used by the 2026-11-11 edition: buy 666.30, sell 669.11.",
       "short": "BOC rate board",
-      "checked": "2026-11-11"
+      "checked": "2026-11-12"
     },
     {
       "id": "CN-BOCTARIFF",
@@ -25,7 +25,7 @@
       "level": "full",
       "quote": "210105008 本外币跨境汇款：电汇/票汇按汇款金额的1‰，最低收取50元/笔，最高收取260元/笔，电汇另收电讯费（中国港澳台地区发电80元/笔，国际发电150元/笔）。说明5 全额到账：美元，收款行在我行纽约分行开立账户的，15美元/笔，其他均为25美元/笔。210108014 跨境ATM取现按每笔（12元+取现金额的1%）收取，最高112元/笔。210101002 外币携带证10元/份，自2025年4月1日起至2026年12月31日免收费。210107011 备注：我行网点提供的外币兑换服务不收取此项费用。",
       "short": "BOC tariff",
-      "checked": "2026-11-11"
+      "checked": "2026-11-12"
     },
     {
       "id": "CN-BOCFEE",
@@ -64,12 +64,12 @@
       "id": "PR-WISEFEE",
       "group": "China – prices",
       "publisher": "Wise",
-      "title": "Wise public comparison API, CNY to USD quotes (2026-11-11)",
-      "url": "https://api.wise.com/v3/comparisons/?sourceCurrency=CNY&targetCurrency=USD&sendAmount=66770.5",
+      "title": "Wise public comparison API, CNY to USD quotes (2026-11-12)",
+      "url": "https://api.wise.com/v3/comparisons/?sourceCurrency=CNY&targetCurrency=USD&sendAmount=66756.5",
       "level": "full",
-      "quote": "Wise public comparison API, sourceCurrency=CNY&targetCurrency=USD, quotes collected 2026-11-11T02:35:43–02:35:50Z at rate 0.149807 USD per CNY, markup 0.0: send CNY 66,770.5 → fee CNY 435.20 → receive USD 9,937.49; 133,541 → 846.63 → 19,878.55; 200,311.5 → 1,226.05 → 29,824.39; 267,082 → 1,571.46 → 39,775.34; 300,000 → 1,741.74 → 44,681.18; 2,668,440 → no quote returned.",
+      "quote": "Wise public comparison API, sourceCurrency=CNY&targetCurrency=USD, quotes collected 2026-11-12T16:20:14–16:20:20Z at rate 0.149897 USD per CNY, markup 0.0, provider Wise: send CNY 66,756.5 → fee CNY 435.11 → receive USD 9,941.38; 133,513 → 846.45 → 19,886.32; 200,269.5 → 1,225.74 → 29,836.06; 267,026 → 1,571.07 → 39,790.90; 300,000 → 1,741.65 → 44,708.03. Each quote carried a delivery estimate of 2026-11-13T03:15Z. (An earlier request for CNY 2,668,440 returned no quote at all on 2026-11-11.)",
       "short": "Wise quotes",
-      "checked": "2026-11-11"
+      "checked": "2026-11-12"
     },
     {
       "id": "PR-WU",
@@ -91,7 +91,7 @@
       "level": "full",
       "quote": "第五条 国家对经常性国际支付和转移不予限制。第十二条 经常项目外汇收支应当具有真实、合法的交易基础。第三十九条 逃汇…处逃汇金额30%以下的罚款；情节严重的，处逃汇金额30%以上等值以下的罚款；构成犯罪的，依法追究刑事责任。第四十条 以虚假、无效的交易单证…骗购外汇…处非法套汇金额30%以下的罚款；情节严重的，30%以上等值以下。第四十二条 违反规定携带外汇出入境的…可以处违法金额20%以下的罚款。第四十五条 私自买卖外汇、变相买卖外汇、倒买倒卖外汇或者非法介绍买卖外汇数额较大的…处违法金额30%以下的罚款；情节严重的，30%以上等值以下；构成犯罪的，依法追究刑事责任。第四十八条 提交的单证不真实的…对个人可以处5万元以下的罚款。第五十二条 境内个人，是指中国公民和在中华人民共和国境内连续居住满1年的外国人。",
       "short": "FX Regulation",
-      "checked": "2026-11-10"
+      "checked": "2026-11-12"
     },
     {
       "id": "CN-MEASURES",
@@ -102,7 +102,7 @@
       "level": "full",
       "quote": "第七条 不得以分拆等方式逃避限额监管，也不得使用虚假商业单据或者凭证逃避真实性管理。第十三条 境外个人在境内取得的经常项目项下合法人民币收入，可以凭本人有效身份证件及相关证明材料在银行办理购汇及汇出。第二十二条 境外个人出售境内商品房所得人民币，经外汇局核准可以购汇汇出。第三十七条 境外个人是指持护照…的外国公民（包括无国籍人）以及港澳台同胞。 第二十六条 个人可以凭本人有效身份证件在银行开立外汇储蓄账户…第三十二条 外汇储蓄账户的收支范围为非经营性外汇收付…",
       "short": "Individual FX Measures",
-      "checked": "2026-11-11"
+      "checked": "2026-11-12"
     },
     {
       "id": "CN-RULES",
@@ -113,7 +113,7 @@
       "level": "full",
       "quote": "第二条 对个人结汇和境内个人购汇实行年度总额管理。年度总额分别为每人每年等值5万美元。第十三条（一）境外个人…在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的相关证明材料（含税务凭证）办理购汇。（二）原兑换未用完的人民币兑回外汇，凭本人有效身份证件和原兑换水单办理，原兑换水单的兑回有效期为自兑换日起24个月。第三十条 个人提取外币现钞当日累计等值1万美元以下（含）的，可以在银行直接办理。 第二十条 移居境外的境内个人将其取得合法移民身份前境内财产对外转移以及外国公民依法继承境内遗产的对外转移，按《个人财产对外转移售付汇管理暂行办法》等有关规定办理。",
       "short": "Individual FX Rules",
-      "checked": "2026-11-11"
+      "checked": "2026-11-12"
     },
     {
       "id": "CN-ART59",
@@ -124,7 +124,7 @@
       "level": "full",
       "quote": "《经常项目外汇业务指引（2020年版）》（汇发〔2020〕14号）第五十九条规定，“境外个人在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的购汇资金来源材料（含税务凭证）在银行办理购汇”。",
       "short": "SAFE Q&A 2026",
-      "checked": "2026-11-11"
+      "checked": "2026-11-12"
     },
     {
       "id": "CN-PR",
@@ -190,7 +190,7 @@
       "level": "full",
       "quote": "Up to USD 5,000 equivalent: no permit (《携带外汇出境许可证》). Above USD 5,000 and up to USD 10,000: a permit issued by the bank. In principle no more than USD 10,000 equivalent may be carried out (原则上不得携带超过等值10000美元).",
       "short": "SAFE cash rule",
-      "checked": "2026-11-11"
+      "checked": "2026-11-12"
     },
     {
       "id": "CN-CARD",
@@ -201,7 +201,7 @@
       "level": "full",
       "quote": "个人持境内银行卡在境外提取现金，本人名下银行卡（含附属卡）合计每个自然年度不得超过等值10万元人民币；每卡每日额度等值1万元人民币；不得通过借用他人银行卡或出借本人银行卡等方式规避。",
       "short": "SAFE card rule",
-      "checked": "2026-11-11"
+      "checked": "2026-11-12"
     },
     {
       "id": "CN-CRYPTO",
@@ -311,7 +311,7 @@
       "level": "full",
       "quote": "FBAR: 'Aggregate value of financial accounts exceeds $10,000 at any time during the calendar year'; due April 15 with automatic extension to October 15. Form 8938, living in the US, unmarried: more than $50,000 on the last day of the year or more than $75,000 at any time (married filing jointly $100,000 / $150,000); living abroad: $200,000 / $300,000 (jointly $400,000 / $600,000). Form 8938 penalty: up to $10,000 for failure to disclose, plus $10,000 for each 30 days after IRS notice, to a maximum of $60,000.",
       "short": "IRS 8938 vs FBAR",
-      "checked": "2026-11-10"
+      "checked": "2026-11-12"
     },
     {
       "id": "US-FBARPEN",
@@ -322,7 +322,7 @@
       "level": "full",
       "quote": "31 U.S.C. 5321(a)(5)(B)(i), foreign financial agency transaction, non-willful violation: $16,536. 31 U.S.C. 5321(a)(5)(C)(i)(I), willful violation: $165,353. Amounts for penalties assessed on or after January 17, 2025 (eCFR current as of 2026-11-06).",
       "short": "31 CFR 1010.821",
-      "checked": "2026-11-11"
+      "checked": "2026-11-12"
     },
     {
       "id": "US-3520",
@@ -366,7 +366,7 @@
       "level": "full",
       "quote": "'Incoming Wire (a wire transfer is deposited in your account from inside or outside the U.S.): $15 per transfer or $0 if the transfer was originally sent with the help of a Chase banker or using chase.com or Chase Mobile app.'",
       "short": "Chase fees",
-      "checked": "2026-11-10"
+      "checked": "2026-11-12"
     },
     {
       "id": "CN-WORKFX2025",
@@ -377,7 +377,7 @@
       "level": "full",
       "quote": "境外个人在境内取得的经常项目合法人民币收入如何办理购汇？答：（1）境外个人经常项目合法人民币收入按规定无需纳税的，购汇可以不提供税务凭证。（2）境外个人在境内取得的经常项目合法人民币收入购汇，可以汇出、可以存入本人外汇账户，或可以按有关规定携带出境。",
       "short": "SAFE Q&A 2025",
-      "checked": "2026-11-11"
+      "checked": "2026-11-12"
     }
   ]
 }

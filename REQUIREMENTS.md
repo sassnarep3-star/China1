@@ -20,7 +20,7 @@ Session `arena-f766722d`, 2026-11-11 (additive on arena-eb9f0490, 2026-11-10). E
 |---|---|---|
 | Every table row has an official source link | All tables | HTML parser: each row must link a host listed in `guide/data/sources.json` |
 | Unconfirmed values left blank and flagged, never inferred | Blank cells link to `guide/flagged.html` | Each blank cell must carry a Flagged link; each blank ladder row must carry a flag |
-| Official, trusted sources only | `guide/sources.html`: 33 sources with quoted text; 2 seen only as excerpts are flagged | Figures in `prices.json` must appear in the quoted source text |
+| Official, trusted sources only | `guide/sources.html`: 34 sources with quoted text; 2 seen only as excerpts are flagged | Figures in `prices.json` must appear in the quoted source text |
 | Review the repository line by line; flag irregularities; links for manual review | `guide/repo-review.html`; `guide/data/scan-hits.csv` | Scan snapshot present for every rule |
 
 ## Site
@@ -56,3 +56,16 @@ Session `arena-f766722d`, 2026-11-11 (additive on arena-eb9f0490, 2026-11-10). E
 | ATM fee check | previously compared against a string hard-coded from the old exchange rate; now recomputed with exact fractions | mutation-resistant: changing `prices.json` re-derives the expectation |
 | Working record | `edition-db079cfc/verification/` — per-source re-check, findings P-01…P-11, raw checker output | linked from the repository-review page |
 
+
+## Re-verification and price refresh, 2026-11-12 (session `arena-162b8707`)
+
+| Item | Change | Checked by |
+|---|---|---|
+| Bank of China board | re-read at 2026/11/13 00:15:11 Beijing time = 2026-11-12 16:15:11 UTC: buy 666.16, sell 668.97 per USD 100 (was 666.30 / 669.11) | `verify.py` recomputes all 370 totals from `prices.json` and fails if a board figure is missing from the quoted source text |
+| Wise | five fresh quotes at the send amounts implied by the new midpoint (2026-11-12T16:20Z), rate 0.149897; yesterday's quotes and rate no longer matched | every figure in `prices.json` must appear in the `PR-WISEFEE` quote |
+| Sources | 13 of 34 re-opened and re-read today, each with its read date (CN-FXBOARD, CN-BOCTARIFF, PR-WISEFEE, CN-ART59, CN-WORKFX2025, CN-RULES, CN-MEASURES, CN-FXREG, CN-CASH, CN-CARD, US-CHASE, US-8938FBAR, US-FBARPEN); the other 21 are listed as not re-read | `checked` gate in `verify.py`; the list is printed in `audit-162b8707/REVIEW.md` |
+| Prose figures | the Decide page's hard-coded cost sentence is now a build-time token (`{boc10k}`, `{boc400k}`) filled from the same ladder as the tables, so it cannot drift again | figures in the built page change when `prices.json` changes |
+| Wise eligibility article | returned a block response on two URLs today, so its quoted eligibility text was not confirmed | new flag **F25**, attached to method M10 and listed on the Flagged page |
+| Working record | `audit-162b8707/REVIEW.md` and `audit-162b8707/index.html` — the page is linked from the Flagged page and the repository review | links appear on generated pages |
+
+Limit: the re-read confirms the text of 13 official pages on 2026-11-12. It does not certify the 21 sources not reopened, and it cannot speak to your residence, source of funds, tax paid or filings.
