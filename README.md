@@ -4,7 +4,7 @@ Live site: **https://sassnarep3-star.github.io/China1/**
 
 A research guide for a US citizen holding CNY in a mainland China bank account: which routes are lawful, what each costs at every $10,000 step up to $400,000, what tax and reporting follow, and what could not be confirmed.
 
-Priced inputs re-read **2026-11-11**: Bank of China board at 10:25:02 Beijing time (buy 666.30, sell 669.11 per USD 100), Wise re-quoted live at 02:35Z, and 16 of the 33 sources re-opened and re-read. The sources page prints the date each source was read; the per-source record and the irregularities found are in `edition-db079cfc/verification/`.
+Priced inputs re-read **2026-11-12**: Bank of China board published 2026/11/13 00:15:11 Beijing time (= 2026-11-12 16:15:11 UTC, buy 666.16, sell 668.97 per USD 100), five fresh Wise quotes collected 16:20:14–16:20:20Z at Wise's rate 0.149897, and 13 of the 34 sources re-opened and re-read. The sources page prints the date each source was read. Today's per-source record and the six irregularities it produced are in `audit-162b8707/REVIEW.md` and on the [verification page](https://sassnarep3-star.github.io/China1/audit-162b8707/index.html); earlier records are in `edition-db079cfc/verification/`.
 
 ## Where things are
 
@@ -18,6 +18,7 @@ Priced inputs re-read **2026-11-11**: Bank of China board at 10:25:02 Beijing ti
 | `guide/build/verify.py` | Checks the site: sources on every row, blanks flagged, arithmetic recomputed, all links crawled |
 | `guide/build/scan.py` | Line-by-line rule scan of the archived editions; writes the snapshot used by the review page |
 | `guide/audit/evidence-notes.md` | Working log of the text read on each official page |
+| `audit-162b8707/` | Independent re-verification of 2026-11-12: what was opened, what it said, what moved, what was not re-read |
 | `EXECUTIVE_SUMMARY.md` | Short summary (generated) |
 | `REQUIREMENTS.md` | The request, item by item, and where each is met |
 | `COORDINATION.md` | Parallel-session protocol, claims and release log |
@@ -37,6 +38,6 @@ Both need only Python 3.9 or later. CI (`.github/workflows/guide.yml`) runs the 
 - Every table row links to the official page the figure was read on.
 - A value that could not be confirmed on an official page is left blank and listed on the Flagged for Review page. Nothing is inferred.
 - Sources are the regulator, tax authority, statute, or the bank's or provider's own price list. Third-party articles are not used.
-- Figures are dated. The exchange rate is one historical Bank of China board reading from 2026-11-11; it is not a live or executable quote. Re-check before acting.
+- Figures are dated. The exchange rate is one historical Bank of China board reading from 2026-11-12; it is not a live or executable quote. Re-check before acting.
 
 This is research, not legal or tax advice.

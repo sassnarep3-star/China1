@@ -1,7 +1,7 @@
 {
-  "snapshot": "2026-11-11 10:25:02 (Beijing time), Bank of China board",
-  "boc_buy_per_100": "666.30",
-  "boc_sell_per_100": "669.11",
+  "snapshot": "2026-11-13 00:15:11 (Beijing time) = 2026-11-12 16:15:11 UTC, Bank of China board",
+  "boc_buy_per_100": "666.16",
+  "boc_sell_per_100": "668.97",
   "boc": {
     "commission_rate": "0.001",
     "commission_min_cny": "50",
@@ -43,7 +43,7 @@
     ]
   },
   "wise": {
-    "rate_usd_per_cny": "0.149807",
+    "rate_usd_per_cny": "0.149897",
     "per_transfer_cap_cny": "300000",
     "src": [
       "PR-WISEFEE",
@@ -51,32 +51,32 @@
     ],
     "quotes": [
       {
-        "send_cny": "66770.5",
-        "fee_cny": "435.20",
-        "received_usd": "9937.49"
+        "send_cny": "66756.5",
+        "fee_cny": "435.11",
+        "received_usd": "9941.38"
       },
       {
-        "send_cny": "133541",
-        "fee_cny": "846.63",
-        "received_usd": "19878.55"
+        "send_cny": "133513",
+        "fee_cny": "846.45",
+        "received_usd": "19886.32"
       },
       {
-        "send_cny": "200311.5",
-        "fee_cny": "1226.05",
-        "received_usd": "29824.39"
+        "send_cny": "200269.5",
+        "fee_cny": "1225.74",
+        "received_usd": "29836.06"
       },
       {
-        "send_cny": "267082",
-        "fee_cny": "1571.46",
-        "received_usd": "39775.34"
+        "send_cny": "267026",
+        "fee_cny": "1571.07",
+        "received_usd": "39790.90"
       },
       {
         "send_cny": "300000",
-        "fee_cny": "1741.74",
-        "received_usd": "44681.18"
+        "fee_cny": "1741.65",
+        "received_usd": "44708.03"
       }
     ],
-    "collected": "2026-11-11T02:35Z"
+    "collected": "2026-11-12T16:20Z"
   },
   "cash": {
     "free_usd": "5000",

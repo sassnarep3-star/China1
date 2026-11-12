@@ -43,7 +43,7 @@
     },
     {
       "fact": "Illustrative BOC wire: commission 1‰ (CNY 50–260), cable CNY 150, assumed full-amount delivery USD 25 and Chase incoming USD 15; the FX margin is estimated from a dated board snapshot.",
-      "implication": "Under the stated model: $93.39 at $10,000 and $941.20 at $400,000. Actual costs and eligibility must be confirmed; this does not prove it is cheapest.",
+      "implication": "Under the stated model: {boc10k} at $10,000 and {boc400k} at $400,000. Actual costs and eligibility must be confirmed; this does not prove it is cheapest.",
       "src": [
         "CN-BOCTARIFF",
         "CN-FXBOARD",

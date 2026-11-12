@@ -68,7 +68,7 @@ for s in sources.values():
     check(s["url"].startswith("https://"), f"source {s['id']} is not https")
     check(s["level"] in ("full", "excerpt"), f"source {s['id']} has unknown level")
     check(len(s["quote"]) > 20, f"source {s['id']} has no quoted text")
-    check(s.get("checked") in ("2026-11-10", "2026-11-11"), f"source {s['id']} has no read date")
+    check(s.get("checked") in ("2026-11-10", "2026-11-11", "2026-11-12"), f"source {s['id']} has no read date")
 
 # reference integrity
 def refs_ok(where, src, fl=()):
