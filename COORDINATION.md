@@ -7,11 +7,42 @@ Open claims inspected before claiming: PR #79 (`arena/31577600`, enforcement des
 
 | Task | Status | Owner | Exclusive file scope |
 |---|---|---|---|
-| V1 Independent live re-verification (2026-11-12) of the decision-critical official sources and of every priced figure in the ladder | in progress | arena-162b8707 | `audit-162b8707/**` |
-| V2 Replace any priced input that no longer matches the official page it cites; regenerate the guide | in progress | arena-162b8707 | `guide/data/prices.json`, `guide/data/sources.json`, generated `guide/*.html`, `index.html`, `EXECUTIVE_SUMMARY.md` |
+| V1 Independent live re-verification (2026-11-12) of the decision-critical official sources and of every priced figure in the ladder | done | arena-162b8707 | `audit-162b8707/**` |
+| V2 Replace any priced input that no longer matches the official page it cites; regenerate the guide | done | arena-162b8707 | `guide/data/prices.json`, `guide/data/sources.json`, `guide/data/flagged.json`, `guide/data/methods.json`, `guide/data/questions.json`, `guide/build/build.py`, `guide/build/verify.py`, generated `guide/*.html`, `index.html`, `EXECUTIVE_SUMMARY.md`, `README.md`, `REQUIREMENTS.md` |
 | V3 Final integration: rebuild, verify, PR, merge, confirm GitHub Pages deploy, publish flagged items | in progress | arena-162b8707 | `COORDINATION.md` (this block), `audit-162b8707/**` |
 
 Rules followed: values come only from the official page read today; a figure that cannot be confirmed stays blank and is flagged; no estimated or inferred number is added. Verification output is written to `audit-162b8707/`.
+
+**V1/V2 result (2026-11-12).** Thirteen official pages were opened and read in this session:
+
+| Source | Page opened | Result |
+|---|---|---|
+| CN-FXBOARD | https://www.boc.cn/sourcedb/whpj/ (published 2026/11/13 00:15:11 Beijing = 2026-11-12 16:15:11 UTC) | USD per 100: buy 666.16 / cash buy 666.16 / sell 668.97 / cash sell 668.97 / 中行折算价 671.74. Previously 666.30 / 669.11. Ladder rebuilt. |
+| CN-BOCTARIFF | https://pic.bankofchina.com/bocappd/pricelist/202511/P020251110646838136627.pdf | 1‰, min CNY 50, max CNY 260; international cable CNY 150; full-amount USD 15 only if the receiving bank holds an account at BOC New York, else USD 25; cross-border ATM 12 yuan + 1%, max 112; 携带证 waived to 2026-12-31. Unchanged; ladder keeps USD 25. |
+| PR-WISEFEE | https://api.wise.com/v3/comparisons/?sourceCurrency=CNY&targetCurrency=USD&sendAmount=66756.5 | Five quotes 2026-11-12T16:20:14–16:20:20Z at rate 0.149897 (was 0.149807); 66,756.5→435.11→9,941.38; 133,513→846.45→19,886.32; 200,269.5→1,225.74→29,836.06; 267,026→1,571.07→39,790.90; 300,000→1,741.65→44,708.03. |
+| CN-ART59 | https://www.safe.gov.cn/tianjin/2026/0713/3088.html | 汇发〔2020〕14号 art. 59 unchanged: ID + source-and-amount materials incl. tax documents. States documents, not a cap. |
+| CN-WORKFX2025 | https://www.safe.gov.cn/tianjin/2025/0715/2834.html | Unchanged: no tax voucher where the income is not taxable; purchased FX may be remitted, held or carried out under the rules. |
+| CN-RULES | https://www.safe.gov.cn/safe/2007/0105/5320.html | Art. 2 USD 50,000 total (结汇 and domestic individual 购汇), art. 13(1) foreign individual documented purchase, art. 13(2) 24-month re-conversion, art. 14 domestic remittance, art. 15 foreign individual remitting from own FX account on ID. Unchanged; art. 15 newly recorded, not added to the model. |
+| CN-MEASURES | https://www.safe.gov.cn/safe/2006/1225/5319.html | Arts. 7, 13, 22, 32, 37 unchanged. |
+| CN-FXREG | https://www.gov.cn/zhengce/2008-08/06/content_2602514.htm | Arts. 39/40 (30%, 30%–100%), 42 (20%), 45, 48 (CNY 50,000 individual) unchanged. |
+| CN-CASH | https://www.safe.gov.cn/tianjin/2024/0430/2466.html | USD 5,000 / 10,000 permit thresholds unchanged. |
+| CN-CARD | https://www.safe.gov.cn/safe/2017/1230/8130.html | CNY 100,000 per year, CNY 10,000 per card per day unchanged. |
+| US-CHASE | https://www.chase.com/personal/fees/total-checking | Incoming wire $15 (or $0 under the stated conditions) unchanged. |
+| US-8938FBAR | https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements | Thresholds and 8938 penalties unchanged; the willful FBAR "greater of $100,000 or 50%" wording is limited to assessments before 2016-08-01, so F14 stays open. |
+| US-FBARPEN | https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821 | Table confirmed: non-willful 10,000 → 16,536; willful 100,000 → 165,353 (title 31 last amended 2026-11-06). |
+
+Rebuild: `python3 guide/build/build.py` → 11 pages, 19 methods × 40 amounts, 34 sources, 25 flagged items. `python3 guide/build/verify.py` → PASS: 1,060 table rows each with an official link, 292 blank rows each flagged, 760 ladder rows, 370 totals recomputed, 282 files / 22,695 local links, none broken, deterministic rebuild. `integration/verify.py` and `assets/check.py` also pass.
+
+**Irregularities found and how they were handled.**
+
+- V-01 BOC board moved and publishes on Beijing time; its "2026/11/13" date is 2026-11-12 in UTC. Fixed: figures refreshed, page prints both times, F20 re-worded.
+- V-02 Wise's rate moved and a quote only exists at the exact amount asked (derived from the BOC midpoint). Fixed: five quotes re-taken.
+- V-03 Wise's CNY eligibility article returned `{"response":"block"}` on both `/help/` and `/us/help/` URLs. Not confirmed today → new flag **F25**, attached to M10. No wording changed.
+- V-04 The USD 15 full-amount rate depends on the receiving bank holding an account at BOC New York. The ladder already uses USD 25; the assumption is now stated on the audit page.
+- V-05 The Decide page carried a hard-coded cost sentence that went stale with the rate. Fixed with build-time tokens filled from the ladder.
+- V-06 `verify.py` accepted only the dates 2026-11-10/11, so a genuine re-read today failed the build. Fixed: 2026-11-12 allowed, read date still mandatory.
+
+**Not verified today (21 sources, no claim made):** CN-BOCFEE, PR-HSBC, PR-WISE, PR-WU, CN-PR, CN-TAXFILING, CN-PROPTRANS, CN-CAP2014, CN-SHPROP, CN-CRYPTO, CN-RMBX, CN-IIT, CN-TAXCOLL, CN-CNYCASH, US-ABROAD, US-FTC, US-FX, US-988, US-3520, US-CBP, US-REMIT. These keep their earlier read dates on the sources page. F02, F03, F13, F14, F19, F22 and F24 therefore stay open.
 <!-- END session arena-162b8707 -->
 
 # Session arena-edbb7990 — independent release audit (2026-11-11)
