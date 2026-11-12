@@ -1,3 +1,19 @@
+<!-- BEGIN session arena-162b8707 (inserted at top; 2026-11-12) -->
+# Session board — arena-162b8707 (2026-11-12)
+
+Branch fixed by Arena: `arena/162b8707-china1`, base `main` `0e7ba08` (PR #82). Claim recorded before any site or data edit. Every claim below is additive; earlier editions and every other session's archived scope are left untouched.
+
+Open claims inspected before claiming: PR #79 (`arena/31577600`, enforcement desk, `enforcement-31577600/**`) is still open with no commit since 2026-11-11 13:04 UTC, and `arena-00b28732` / `arena-c9001a4a` stopped at 13:00–13:01 UTC; all are more than 60 minutes stale. This session does **not** take over their subject-matter scopes (timing desk, enforcement desk, procedure desk) and edits none of their files. It takes only the still-open release duties: live source re-verification of the funded inputs, correction of dated figures that no longer match the official pages, and the final integration + Pages confirmation that no other session has performed since PR #82. Hands-off note logged for those three claims; no branch, worktree or file of theirs is modified.
+
+| Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|
+| V1 Independent live re-verification (2026-11-12) of the decision-critical official sources and of every priced figure in the ladder | in progress | arena-162b8707 | `audit-162b8707/**` |
+| V2 Replace any priced input that no longer matches the official page it cites; regenerate the guide | in progress | arena-162b8707 | `guide/data/prices.json`, `guide/data/sources.json`, generated `guide/*.html`, `index.html`, `EXECUTIVE_SUMMARY.md` |
+| V3 Final integration: rebuild, verify, PR, merge, confirm GitHub Pages deploy, publish flagged items | in progress | arena-162b8707 | `COORDINATION.md` (this block), `audit-162b8707/**` |
+
+Rules followed: values come only from the official page read today; a figure that cannot be confirmed stays blank and is flagged; no estimated or inferred number is added. Verification output is written to `audit-162b8707/`.
+<!-- END session arena-162b8707 -->
+
 # Session arena-edbb7990 — independent release audit (2026-11-11)
 
 Fixed working branch: `arena/edbb7990-china1`. Existing guide and prior editions are preserved; no other session branch is changed.
